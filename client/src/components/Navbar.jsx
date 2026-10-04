@@ -1,7 +1,7 @@
 import React from 'react';
-import { Layers, Keyboard, BookOpen, BarChart2, Sparkles, Settings, Plus } from 'lucide-react';
+import { Layers, Keyboard, BookOpen, BarChart2, Sparkles, Settings, Plus, LogOut } from 'lucide-react';
 
-export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModal, onOpenAddModal, onOpenSettings }) {
+export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModal, onOpenAddModal, onOpenSettings, user, onLogout }) {
   return (
     <header className="navbar">
       <div className="navbar-inner">
@@ -83,6 +83,21 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
           >
             <Settings size={18} />
           </button>
+
+          {user && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginLeft: '8px', paddingLeft: '8px', borderLeft: '1px solid rgba(255,255,255,0.1)' }}>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                Hi, <strong>{user.username}</strong>
+              </span>
+              <button
+                className="btn-icon"
+                onClick={onLogout}
+                title="登出"
+              >
+                <LogOut size={18} />
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </header>

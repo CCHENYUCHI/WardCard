@@ -4,8 +4,12 @@ const cors = require('cors');
 const path = require('path');
 const multer = require('multer');
 const { parse } = require('csv-parse/sync');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 const db = require('./db');
 const { extractSpanishWords } = require('./ai');
+
+const JWT_SECRET = process.env.JWT_SECRET || 'palabracard-super-secret-key-2026';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -19,6 +23,20 @@ const upload = multer({
   limits: { fileSize: 10 * 1024 * 1024 } // 10MB
 });
 
+// --- Authentication Middleware ---
+const authenticateToken = (req, res, next) => {
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
+  
+  if (token == null) return res.status(401).json({ error: '未提供登入憑證' });
+
+  jwt.verify(token, JWT_SECRET, (err, user) => {
+    if (err) return res.status(403).json({ error: '憑證無效或已過期' });
+    req.user = user;
+    next();
+  });
+};
+
 // --- API Routes ---
 
 // Healthcheck
@@ -26,10 +44,51 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', time: new Date().toISOString() });
 });
 
-// Categories list
-app.get('/api/categories', (req, res) => {
+// Auth endpoints
+app.post('/api/auth/register', (req, res) => {
   try {
-    const rows = db.prepare(`SELECT DISTINCT category FROM cards WHERE category IS NOT NULL AND category != ''`).all();
+    const { username, password } = req.body;
+    if (!username || !password) return res.status(400).json({ error: '請提供帳號與密碼' });
+
+    const existing = db.prepare('SELECT id FROM users WHERE username = ?').get(username);
+    if (existing) return res.status(400).json({ error: '帳號已被使用' });
+
+    const hash = bcrypt.hashSync(password, 10);
+    const result = db.prepare('INSERT INTO users (username, password_hash) VALUES (?, ?)').run(username, hash);
+    
+    const token = jwt.sign({ userId: result.lastInsertRowid, username }, JWT_SECRET, { expiresIn: '7d' });
+    res.status(201).json({ success: true, token, user: { id: result.lastInsertRowid, username } });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/auth/login', (req, res) => {
+  try {
+    const { username, password } = req.body;
+    if (!username || !password) return res.status(400).json({ error: '請提供帳號與密碼' });
+
+    const user = db.prepare('SELECT * FROM users WHERE username = ?').get(username);
+    if (!user) return res.status(401).json({ error: '帳號或密碼錯誤' });
+
+    const valid = bcrypt.compareSync(password, user.password_hash);
+    if (!valid) return res.status(401).json({ error: '帳號或密碼錯誤' });
+
+    const token = jwt.sign({ userId: user.id, username: user.username }, JWT_SECRET, { expiresIn: '7d' });
+    res.json({ success: true, token, user: { id: user.id, username: user.username } });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.get('/api/auth/me', authenticateToken, (req, res) => {
+  res.json({ success: true, user: req.user });
+});
+
+// Categories list
+app.get('/api/categories', authenticateToken, (req, res) => {
+  try {
+    const rows = db.prepare(`SELECT DISTINCT category FROM cards WHERE user_id = ? AND category IS NOT NULL AND category != ''`).all(req.user.userId);
     const categories = rows.map(r => r.category);
     // ensure default categories exist in list
     const defaultCats = ['考試必背 (DELE)', '日常生活', '課堂筆記', '旅遊會話'];
@@ -41,11 +100,11 @@ app.get('/api/categories', (req, res) => {
 });
 
 // Get all cards (with optional filtering)
-app.get('/api/cards', (req, res) => {
+app.get('/api/cards', authenticateToken, (req, res) => {
   try {
     const { category, dele, search, filter } = req.query;
-    let sql = 'SELECT * FROM cards WHERE 1=1';
-    const params = [];
+    let sql = 'SELECT * FROM cards WHERE user_id = ?';
+    const params = [req.user.userId];
 
     if (category && category !== 'all') {
       sql += ' AND category = ?';
@@ -81,11 +140,11 @@ app.get('/api/cards', (req, res) => {
 });
 
 // Get cards due for review
-app.get('/api/cards/due', (req, res) => {
+app.get('/api/cards/due', authenticateToken, (req, res) => {
   try {
     const { category, limit = 50 } = req.query;
-    let sql = "SELECT * FROM cards WHERE due_date <= datetime('now', 'localtime')";
-    const params = [];
+    let sql = "SELECT * FROM cards WHERE user_id = ? AND due_date <= datetime('now', 'localtime')";
+    const params = [req.user.userId];
 
     if (category && category !== 'all') {
       sql += ' AND category = ?';
@@ -103,15 +162,16 @@ app.get('/api/cards/due', (req, res) => {
 });
 
 // Create single or batch cards
-app.post('/api/cards', (req, res) => {
+app.post('/api/cards', authenticateToken, (req, res) => {
   try {
     const body = req.body;
     const cards = Array.isArray(body) ? body : [body];
+    const userId = req.user.userId;
 
     const insertStmt = db.prepare(`
-      INSERT INTO cards (word, article, gender, part_of_speech, translation, english_translation, definition_es, example_es, example_zh, notes, category, dele_level, due_date)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
-      ON CONFLICT(word) DO UPDATE SET
+      INSERT INTO cards (user_id, word, article, gender, part_of_speech, translation, english_translation, definition_es, example_es, example_zh, notes, category, dele_level, due_date)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
+      ON CONFLICT(user_id, word) DO UPDATE SET
         article=excluded.article,
         gender=excluded.gender,
         part_of_speech=excluded.part_of_speech,
@@ -142,6 +202,7 @@ app.post('/api/cards', (req, res) => {
       }
 
       const result = insertStmt.run(
+        userId,
         w,
         a,
         card.gender || 'none',
@@ -165,15 +226,16 @@ app.post('/api/cards', (req, res) => {
 });
 
 // Update card
-app.put('/api/cards/:id', (req, res) => {
+app.put('/api/cards/:id', authenticateToken, (req, res) => {
   try {
     const { id } = req.params;
+    const userId = req.user.userId;
     const { word, article, gender, part_of_speech, translation, english_translation, definition_es, example_es, example_zh, notes, category, dele_level } = req.body;
 
     const stmt = db.prepare(`
       UPDATE cards
       SET word = ?, article = ?, gender = ?, part_of_speech = ?, translation = ?, english_translation = ?, definition_es = ?, example_es = ?, example_zh = ?, notes = ?, category = ?, dele_level = ?, updated_at = datetime('now', 'localtime')
-      WHERE id = ?
+      WHERE id = ? AND user_id = ?
     `);
 
     const result = stmt.run(
@@ -189,11 +251,12 @@ app.put('/api/cards/:id', (req, res) => {
       notes || '',
       category || '日常生活',
       dele_level || 'A2',
-      Number(id)
+      Number(id),
+      userId
     );
 
     if (result.changes === 0) {
-      return res.status(404).json({ error: 'Card not found' });
+      return res.status(404).json({ error: 'Card not found or unauthorized' });
     }
 
     const updated = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
@@ -204,11 +267,12 @@ app.put('/api/cards/:id', (req, res) => {
 });
 
 // Delete card
-app.delete('/api/cards/:id', (req, res) => {
+app.delete('/api/cards/:id', authenticateToken, (req, res) => {
   try {
     const { id } = req.params;
-    const stmt = db.prepare('DELETE FROM cards WHERE id = ?');
-    stmt.run(Number(id));
+    const stmt = db.prepare('DELETE FROM cards WHERE id = ? AND user_id = ?');
+    const result = stmt.run(Number(id), req.user.userId);
+    if (result.changes === 0) return res.status(404).json({ error: 'Card not found' });
     res.json({ success: true });
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -216,9 +280,10 @@ app.delete('/api/cards/:id', (req, res) => {
 });
 
 // Upload CSV endpoint
-app.post('/api/cards/upload-csv', upload.single('file'), (req, res) => {
+app.post('/api/cards/upload-csv', authenticateToken, upload.single('file'), (req, res) => {
   try {
     if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
+    const userId = req.user.userId;
     
     const records = parse(req.file.buffer.toString(), {
       columns: true,
@@ -227,9 +292,9 @@ app.post('/api/cards/upload-csv', upload.single('file'), (req, res) => {
     });
 
     const insertStmt = db.prepare(`
-      INSERT INTO cards (word, article, gender, translation, english_translation, notes, definition_es, example_es, example_zh, category, due_date)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
-      ON CONFLICT(word) DO UPDATE SET
+      INSERT INTO cards (user_id, word, article, gender, translation, english_translation, notes, definition_es, example_es, example_zh, category, due_date)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
+      ON CONFLICT(user_id, word) DO UPDATE SET
         article=excluded.article,
         gender=excluded.gender,
         translation=excluded.translation,
@@ -256,6 +321,7 @@ app.post('/api/cards/upload-csv', upload.single('file'), (req, res) => {
       }
 
       insertStmt.run(
+        userId,
         w,
         a,
         record.Gender || record.gender || 'none',
@@ -278,14 +344,14 @@ app.post('/api/cards/upload-csv', upload.single('file'), (req, res) => {
 });
 
 // Review card (SM-2 Spaced Repetition Algorithm)
-// rating: 1 = Again (忘記), 2 = Hard (困難), 3 = Good (良好), 4 = Easy (容易)
-app.post('/api/cards/:id/review', (req, res) => {
+app.post('/api/cards/:id/review', authenticateToken, (req, res) => {
   try {
     const { id } = req.params;
+    const userId = req.user.userId;
     const { rating, review_mode = 'flashcard' } = req.body;
     const score = Number(rating);
 
-    const card = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
+    const card = db.prepare('SELECT * FROM cards WHERE id = ? AND user_id = ?').get(Number(id), userId);
     if (!card) {
       return res.status(404).json({ error: 'Card not found' });
     }
@@ -314,7 +380,6 @@ app.post('/api/cards/:id/review', (req, res) => {
     }
 
     // Update Ease Factor (standard SM-2 formula scaled for 1-4)
-    // q from 0 to 5: mapping 1->1, 2->2, 3->4, 4->5
     const q = score === 1 ? 1 : score === 2 ? 2 : score === 3 ? 4 : 5;
     easeFactor = easeFactor + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
     if (easeFactor < 1.3) easeFactor = 1.3;
@@ -331,9 +396,9 @@ app.post('/api/cards/:id/review', (req, res) => {
 
     // Log review
     db.prepare(`
-      INSERT INTO review_logs (card_id, rating, review_mode, reviewed_at)
-      VALUES (?, ?, ?, datetime('now', 'localtime'))
-    `).run(Number(id), score, review_mode);
+      INSERT INTO review_logs (user_id, card_id, rating, review_mode, reviewed_at)
+      VALUES (?, ?, ?, ?, datetime('now', 'localtime'))
+    `).run(userId, Number(id), score, review_mode);
 
     const updated = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
     res.json({ success: true, card: updated });
@@ -343,28 +408,29 @@ app.post('/api/cards/:id/review', (req, res) => {
 });
 
 // Learning stats
-app.get('/api/stats', (req, res) => {
+app.get('/api/stats', authenticateToken, (req, res) => {
   try {
-    const total = db.prepare('SELECT count(*) as count FROM cards').get().count;
-    const due = db.prepare("SELECT count(*) as count FROM cards WHERE due_date <= datetime('now', 'localtime')").get().count;
-    const learned = db.prepare('SELECT count(*) as count FROM cards WHERE repetition > 0').get().count;
-    const mastered = db.prepare('SELECT count(*) as count FROM cards WHERE repetition >= 4').get().count;
+    const userId = req.user.userId;
+    const total = db.prepare('SELECT count(*) as count FROM cards WHERE user_id = ?').get(userId).count;
+    const due = db.prepare("SELECT count(*) as count FROM cards WHERE user_id = ? AND due_date <= datetime('now', 'localtime')").get(userId).count;
+    const learned = db.prepare('SELECT count(*) as count FROM cards WHERE user_id = ? AND repetition > 0').get(userId).count;
+    const mastered = db.prepare('SELECT count(*) as count FROM cards WHERE user_id = ? AND repetition >= 4').get(userId).count;
 
     // Reviews today
     const reviewedToday = db.prepare(`
       SELECT count(*) as count FROM review_logs
-      WHERE date(reviewed_at) = date('now', 'localtime')
-    `).get().count;
+      WHERE user_id = ? AND date(reviewed_at) = date('now', 'localtime')
+    `).get(userId).count;
 
     // Level breakdown
     const levelCounts = db.prepare(`
-      SELECT dele_level, count(*) as count FROM cards GROUP BY dele_level ORDER BY dele_level
-    `).all();
+      SELECT dele_level, count(*) as count FROM cards WHERE user_id = ? GROUP BY dele_level ORDER BY dele_level
+    `).all(userId);
 
     // Category breakdown
     const catCounts = db.prepare(`
-      SELECT category, count(*) as count FROM cards GROUP BY category ORDER BY count DESC
-    `).all();
+      SELECT category, count(*) as count FROM cards WHERE user_id = ? GROUP BY category ORDER BY count DESC
+    `).all(userId);
 
     res.json({
       total: Number(total),
@@ -381,7 +447,7 @@ app.get('/api/stats', (req, res) => {
 });
 
 // AI Extract endpoint
-app.post('/api/ai/extract', upload.single('image'), async (req, res) => {
+app.post('/api/ai/extract', authenticateToken, upload.single('image'), async (req, res) => {
   try {
     const promptText = req.body.text || '';
     const userApiKey = req.body.apiKey || req.headers['x-gemini-key'] || process.env.GEMINI_API_KEY;
@@ -397,6 +463,22 @@ app.post('/api/ai/extract', upload.single('image'), async (req, res) => {
       apiKey: userApiKey,
       imageFile: req.file || null
     });
+    
+    // Save extracted cards for the user directly
+    if (cards && cards.length > 0) {
+      const insertStmt = db.prepare(`
+        INSERT INTO cards (user_id, word, article, gender, part_of_speech, translation, english_translation, definition_es, example_es, example_zh, notes, category, dele_level, due_date)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
+        ON CONFLICT(user_id, word) DO UPDATE SET
+          translation=excluded.translation,
+          updated_at=datetime('now', 'localtime')
+      `);
+      
+      for (const card of cards) {
+        if (!card.word || !card.translation) continue;
+        insertStmt.run(req.user.userId, card.word, card.article||'', card.gender||'none', card.part_of_speech||'sustantivo', card.translation, card.english_translation||'', card.definition_es||'', card.example_es||'', card.example_zh||'', card.notes||'', card.category||'AI萃取', card.dele_level||'A1');
+      }
+    }
 
     res.json({ success: true, count: cards.length, cards });
   } catch (err) {

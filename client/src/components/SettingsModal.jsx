@@ -1,3 +1,4 @@
+import { fetchAPI } from '../utils/api';
 import React, { useState, useEffect } from 'react';
 import { X, Key, Check, Volume2, Download, Upload, ExternalLink, ShieldCheck } from 'lucide-react';
 import { playSpanishPronunciation } from '../utils/speech';
@@ -58,7 +59,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
     formData.append('file', file);
     
     try {
-      const res = await fetch('/api/cards/upload-csv', {
+      const res = await fetchAPI('/api/cards/upload-csv', {
         method: 'POST',
         body: formData
       });

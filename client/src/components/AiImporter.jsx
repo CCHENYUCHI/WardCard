@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { fetchAPI } from '../utils/api';
 import { Sparkles, Upload, FileText, Image as ImageIcon, Check, AlertCircle, X, Trash2, Edit3, ArrowRight } from 'lucide-react';
 
 export default function AiImporter({ isOpen, onClose, onImportSuccess, categories }) {
@@ -46,7 +47,7 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
         formData.append('image', selectedFile);
       }
 
-      const res = await fetch('/api/ai/extract', {
+      const res = await fetchAPI('/api/ai/extract', {
         method: 'POST',
         body: formData
       });
@@ -98,7 +99,7 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
 
     try {
       setIsLoading(true);
-      const res = await fetch('/api/cards', {
+      const res = await fetchAPI('/api/cards', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(cardsToSave)

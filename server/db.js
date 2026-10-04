@@ -15,8 +15,16 @@ db.exec('PRAGMA journal_mode = WAL;');
 
 // Initialize tables
 db.exec(`
+  CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT UNIQUE NOT NULL,
+    password_hash TEXT NOT NULL,
+    created_at TEXT DEFAULT (datetime('now', 'localtime'))
+  );
+
   CREATE TABLE IF NOT EXISTS cards (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER DEFAULT 1,
     word TEXT NOT NULL,
     article TEXT DEFAULT '',
     gender TEXT DEFAULT 'none',
@@ -42,6 +50,7 @@ db.exec(`
 
   CREATE TABLE IF NOT EXISTS review_logs (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER DEFAULT 1,
     card_id INTEGER NOT NULL,
     rating INTEGER NOT NULL,
     review_mode TEXT NOT NULL,
@@ -141,7 +150,30 @@ if (Number(countRow.count) === 0) {
   }
 }
 
-// Create unique index for word to support UPSERT (Insert or Update without duplicating)
-db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_cards_word ON cards(word);');
+// Handle schema migrations for existing databases
+try {
+  db.exec('ALTER TABLE cards ADD COLUMN user_id INTEGER DEFAULT 1;');
+} catch (e) {
+  // Column already exists
+}
+
+try {
+  db.exec('ALTER TABLE review_logs ADD COLUMN user_id INTEGER DEFAULT 1;');
+} catch (e) {
+  // Column already exists
+}
+
+// Create unique index for user_id + word to support UPSERT per user
+db.exec('DROP INDEX IF EXISTS idx_cards_word;');
+db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_cards_user_word ON cards(user_id, word);');
+
+// Create a default admin user if none exists
+const userCountRow = db.prepare('SELECT count(*) as count FROM users').get();
+if (Number(userCountRow.count) === 0) {
+  const bcrypt = require('bcryptjs');
+  // Default password: password123 (You should change this later!)
+  const hash = bcrypt.hashSync('password123', 10);
+  db.prepare('INSERT INTO users (username, password_hash) VALUES (?, ?)').run('admin', hash);
+}
 
 module.exports = db;

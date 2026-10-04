@@ -1,4 +1,6 @@
+import { fetchAPI, getToken, removeToken } from './utils/api';
 import React, { useState, useEffect, useCallback } from 'react';
+import LoginScreen from './components/LoginScreen';
 import Navbar from './components/Navbar';
 import FlashcardReview from './components/FlashcardReview';
 import SpellingReview from './components/SpellingReview';
@@ -15,6 +17,8 @@ export default function App() {
   const [categories, setCategories] = useState([]);
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState(null);
+  const [authLoading, setAuthLoading] = useState(true);
 
   // Modal states
   const [isAiModalOpen, setIsAiModalOpen] = useState(false);
@@ -26,10 +30,10 @@ export default function App() {
   const fetchData = useCallback(async () => {
     try {
       const [cardsRes, dueRes, catRes, statsRes] = await Promise.all([
-        fetch('/api/cards'),
-        fetch('/api/cards/due'),
-        fetch('/api/categories'),
-        fetch('/api/stats')
+        fetchAPI('/api/cards'),
+        fetchAPI('/api/cards/due'),
+        fetchAPI('/api/categories'),
+        fetchAPI('/api/stats')
       ]);
 
       if (cardsRes.ok) setCards(await cardsRes.json());
@@ -44,13 +48,54 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    fetchData();
-  }, [fetchData]);
+    const checkAuth = async () => {
+      const token = getToken();
+      if (!token) {
+        setAuthLoading(false);
+        return;
+      }
+      try {
+        const res = await fetchAPI('/api/auth/me');
+        if (res.ok) {
+          const data = await res.json();
+          setUser(data.user);
+        }
+      } catch (err) {
+        console.error('Auth failed:', err);
+      } finally {
+        setAuthLoading(false);
+      }
+    };
+    
+    const handleAuthExpired = () => {
+      setUser(null);
+    };
+    
+    window.addEventListener('auth-expired', handleAuthExpired);
+    checkAuth();
+    
+    return () => window.removeEventListener('auth-expired', handleAuthExpired);
+  }, []);
+
+  useEffect(() => {
+    if (user) {
+      setLoading(true);
+      fetchData();
+    }
+  }, [user, fetchData]);
+
+  if (authLoading) {
+    return <div style={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center' }}>載入中...</div>;
+  }
+
+  if (!user) {
+    return <LoginScreen onLogin={setUser} />;
+  }
 
   // Handle reviewing a card
   const handleReview = async (id, rating, mode) => {
     try {
-      const res = await fetch(`/api/cards/${id}/review`, {
+      const res = await fetchAPI(`/api/cards/${id}/review`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ rating, review_mode: mode })
@@ -69,13 +114,13 @@ export default function App() {
   const handleSaveWord = async (wordData) => {
     try {
       if (editingCard) {
-        await fetch(`/api/cards/${editingCard.id}`, {
+        await fetchAPI(`/api/cards/${editingCard.id}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(wordData)
         });
       } else {
-        await fetch('/api/cards', {
+        await fetchAPI('/api/cards', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(wordData)
@@ -92,7 +137,7 @@ export default function App() {
   const handleDeleteWord = async (id) => {
     if (!window.confirm('確定要刪除這個單字卡嗎？')) return;
     try {
-      await fetch(`/api/cards/${id}`, { method: 'DELETE' });
+      await fetchAPI(`/api/cards/${id}`, { method: 'DELETE' });
       fetchData();
     } catch (err) {
       console.error('Error deleting card:', err);
@@ -107,7 +152,7 @@ export default function App() {
 
   // Import backup cards
   const handleImportBackup = async (backupCards) => {
-    await fetch('/api/cards', {
+    await fetchAPI('/api/cards', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(backupCards)
@@ -127,6 +172,11 @@ export default function App() {
           setIsWordModalOpen(true);
         }}
         onOpenSettings={() => setIsSettingsOpen(true)}
+        user={user}
+        onLogout={() => {
+          removeToken();
+          setUser(null);
+        }}
       />
 
       <main className="main-content">
