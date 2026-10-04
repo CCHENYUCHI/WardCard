@@ -1,0 +1,33 @@
+{
+  "name": "palabracard-spanish",
+  "version": "1.0.0",
+  "description": "AI-powered Spanish Flashcard & SRS Learning App for Oracle Cloud Free Tier",
+  "main": "server/index.js",
+  "scripts": {
+    "dev:server": "node server/index.js",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "cd client && npm run build",
+    "build": "npm run build:client",
+    "start": "NODE_ENV=production node server/index.js"
+  },
+  "keywords": [
+    "spanish",
+    "flashcard",
+    "srs",
+    "spaced-repetition",
+    "gemini-ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parse": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

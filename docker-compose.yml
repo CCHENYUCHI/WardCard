@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  palabracard:
+    build: .
+    container_name: palabracard
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-1.5-flash}
+    volumes:
+      - ./data:/app/data
