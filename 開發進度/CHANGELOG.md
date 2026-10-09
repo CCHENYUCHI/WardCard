@@ -14,6 +14,9 @@
 - **Docker 建置流程優化**：調整 `Dockerfile` 與 `docker-compose.yml`，加入容器健康檢查與靜態檔載入流程。
 - **分類 API 過濾調整**：優化 `/api/categories` 取值機制。
 
+### Fixed
+- **Web 3D 單字卡文字選取防誤翻 (Mac Safari/Web)**：修復在 Mac Safari 等瀏覽器中，選取單字卡文字（單字、例句、釋義或文法筆記）時會觸發卡片翻面並導致選取狀態中斷無法複製的問題。新增 Pointer 拖曳與長按手勢判定，以及 `window.getSelection()` 選取區段過濾機制，確保使用者長按或拖曳選取文字時不會誤觸翻面，並強化 WebKit 漸層文字反白選取樣式與文字游標提示。
+
 ### In Progress
 - 字典即時查詞 API (`/api/dictionary/lookup`) 與自動入庫功能。
 - 行動端 (Expo) API 端點環境變數設定抽取。

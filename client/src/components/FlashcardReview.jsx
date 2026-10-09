@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Volume2, RotateCw, CheckCircle2, ChevronRight, HelpCircle, Sparkles, Filter } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { playSpanishPronunciation } from '../utils/speech';
@@ -11,6 +11,14 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
   const [showOnlyDue, setShowOnlyDue] = useState(true);
   const [frontMode, setFrontMode] = useState('es'); // 'es', 'zh', 'en'
   const [isCompleted, setIsCompleted] = useState(false);
+
+  const cardContainerRef = useRef(null);
+  const pointerInteractionRef = useRef({
+    startX: 0,
+    startY: 0,
+    startTime: 0,
+    isDragOrSelection: false,
+  });
 
   useEffect(() => {
     const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
@@ -34,6 +42,57 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
       playSpanishPronunciation(currentCard.article ? `${currentCard.article} ${currentCard.word}` : currentCard.word);
     }
   }, [isFlipped, currentCard]);
+
+  const handlePointerDown = (e) => {
+    // Only track primary mouse button (left-click) or touch
+    if (e.button !== 0) return;
+
+    pointerInteractionRef.current = {
+      startX: e.clientX,
+      startY: e.clientY,
+      startTime: Date.now(),
+      isDragOrSelection: false,
+    };
+  };
+
+  const handlePointerUp = (e) => {
+    const { startX, startY, startTime } = pointerInteractionRef.current;
+    const duration = Date.now() - startTime;
+    const dist = Math.hypot(e.clientX - startX, e.clientY - startY);
+
+    const selection = window.getSelection();
+    const hasSelection = Boolean(selection && selection.toString().trim().length > 0);
+
+    // If mouse moved (drag-selection), held down for a selection gesture (> 250ms with movement), or text is selected:
+    // Mark as a drag/selection interaction to avoid triggering card flip on click
+    if (hasSelection || dist > 6 || (duration > 250 && dist > 2)) {
+      pointerInteractionRef.current.isDragOrSelection = true;
+    }
+  };
+
+  const handleCardClick = (e) => {
+    // 1. If text is currently selected inside the card, do not flip to preserve selection & allow copying
+    const selection = window.getSelection();
+    const hasTextSelected = Boolean(selection && selection.toString().trim().length > 0);
+    const container = cardContainerRef.current;
+    const isSelectionInCard =
+      hasTextSelected &&
+      container &&
+      (container.contains(selection.anchorNode) || container.contains(selection.focusNode));
+
+    if (isSelectionInCard) {
+      return;
+    }
+
+    // 2. If the pointer gesture was a drag or long-press selection, do not flip
+    if (pointerInteractionRef.current.isDragOrSelection) {
+      pointerInteractionRef.current.isDragOrSelection = false;
+      return;
+    }
+
+    // Otherwise, perform the normal card flip
+    handleFlip();
+  };
 
   const handleRate = useCallback(async (rating) => {
     if (!currentCard) return;
@@ -168,7 +227,13 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
       </div>
 
       {/* 3D Flashcard */}
-      <div className="flashcard-container" onClick={handleFlip}>
+      <div
+        ref={cardContainerRef}
+        className="flashcard-container"
+        onPointerDown={handlePointerDown}
+        onPointerUp={handlePointerUp}
+        onClick={handleCardClick}
+      >
         <div className={`flashcard ${isFlipped ? 'flipped' : ''}`}>
           {/* Card Front */}
           <div className="card-face card-front">

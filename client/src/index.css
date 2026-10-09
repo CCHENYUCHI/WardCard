@@ -426,11 +426,39 @@ body {
   background: linear-gradient(165deg, rgba(28, 35, 54, 0.85) 0%, rgba(18, 23, 36, 0.95) 100%);
   backdrop-filter: blur(20px);
   box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .card-face.card-back {
   transform: rotateY(180deg);
   background: linear-gradient(165deg, rgba(32, 28, 54, 0.9) 0%, rgba(18, 20, 36, 0.98) 100%);
+}
+
+/* Ensure text selection is clearly visible and legible, especially with gradient text in Safari */
+::selection {
+  background: rgba(99, 102, 241, 0.35);
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.flashcard ::selection {
+  background: rgba(56, 189, 248, 0.45);
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.word-display,
+.article-prefix,
+.main-word,
+.main-translation,
+.example-box,
+.example-es,
+.example-zh,
+.notes-box {
+  cursor: text;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .word-display {
