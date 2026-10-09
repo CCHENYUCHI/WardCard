@@ -1,9 +1,17 @@
 node_modules/
 client/node_modules/
+mobile/node_modules/
 client/dist/
+mobile/dist/
+mobile/.expo/
 data/*.db
 data/*.db-wal
 data/*.db-shm
 .env
 .DS_Store
 *.log
+*.tar.gz
+.vscode/
+.claude/
+.idea/
+

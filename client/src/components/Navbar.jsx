@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layers, Keyboard, BookOpen, BarChart2, Sparkles, Settings, Plus, LogOut } from 'lucide-react';
+import { Layers, Keyboard, BookOpen, BarChart2, Sparkles, Settings, Plus, LogOut, Search } from 'lucide-react';
 
 export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModal, onOpenAddModal, onOpenSettings, user, onLogout }) {
   return (
@@ -42,6 +42,15 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
           >
             <BookOpen size={18} />
             <span>單字庫</span>
+          </button>
+
+          <button
+            className={`nav-tab ${activeTab === 'dictionary' ? 'active' : ''}`}
+            onClick={() => setActiveTab('dictionary')}
+            id="nav-dictionary"
+          >
+            <Search size={18} />
+            <span>字典 (Todo)</span>
           </button>
 
           <button

@@ -117,3 +117,15 @@ npm start
 ## 🔑 免費 Gemini API Key 取得方式
 前往 [Google AI Studio](https://aistudio.google.com/app/apikey) 點擊 **Create API Key**，即可免費獲得金鑰（Gemini 1.5 Flash 免費額度每日高達數千次請求，完全零成本）。
 可在網頁右上角的 ⚙️ **設定** 介面直接輸入，也可以寫入伺服端 `.env`。
+
+---
+
+## 📈 專案開發進度與 Git/GitHub 管理規範
+
+專案所有開發進度、各端實作完成度、Roadmap 與 Git 協作規範均集中記錄於 [開發進度/](./開發進度/README.md) 資料夾：
+
+- 📊 **[專案開發狀況總覽](./開發進度/專案開發狀況總覽.md)**：系統架構、Web/Mobile/Server 完成度盤點與技術債
+- 🐙 **[Git & GitHub 管理規範](./開發進度/GIT與GITHUB管理規範.md)**：分支策略、Commit 規範與**新功能同步更新進度 SOP**
+- 🗺️ **[功能清單與 Roadmap](./開發進度/功能清單與Roadmap.md)**：各模組完成度矩陣與待辦事項
+- 📝 **[更新日誌 CHANGELOG](./開發進度/CHANGELOG.md)**：版本演進歷史與變更記錄
+

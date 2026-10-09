@@ -6,6 +6,7 @@ import FlashcardReview from './components/FlashcardReview';
 import SpellingReview from './components/SpellingReview';
 import WordList from './components/WordList';
 import StatsView from './components/StatsView';
+import DictionaryView from './components/DictionaryView';
 import AiImporter from './components/AiImporter';
 import WordModal from './components/WordModal';
 import SettingsModal from './components/SettingsModal';
@@ -223,6 +224,10 @@ export default function App() {
 
             {activeTab === 'stats' && (
               <StatsView stats={stats} />
+            )}
+
+            {activeTab === 'dictionary' && (
+              <DictionaryView />
             )}
           </>
         )}

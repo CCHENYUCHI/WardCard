@@ -90,10 +90,7 @@ app.get('/api/categories', authenticateToken, (req, res) => {
   try {
     const rows = db.prepare(`SELECT DISTINCT category FROM cards WHERE user_id = ? AND category IS NOT NULL AND category != ''`).all(req.user.userId);
     const categories = rows.map(r => r.category);
-    // ensure default categories exist in list
-    const defaultCats = ['考試必背 (DELE)', '日常生活', '課堂筆記', '旅遊會話'];
-    const merged = Array.from(new Set([...defaultCats, ...categories]));
-    res.json(merged);
+    res.json(categories);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
