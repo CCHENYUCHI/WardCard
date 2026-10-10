@@ -874,14 +874,31 @@ const handleUpdateSettings = (req, res) => {
 app.put('/api/user/settings', authenticateToken, handleUpdateSettings);
 app.post('/api/user/settings', authenticateToken, handleUpdateSettings);
 
-// Learning stats
+// Learning stats (FSRS & Lifecycle Analytics)
 app.get('/api/stats', authenticateToken, (req, res) => {
   try {
     const userId = req.user.userId;
-    const total = db.prepare('SELECT count(*) as count FROM cards WHERE user_id = ?').get(userId).count;
-    const due = db.prepare("SELECT count(*) as count FROM cards WHERE user_id = ? AND due_date <= datetime('now', 'localtime')").get(userId).count;
-    const learned = db.prepare('SELECT count(*) as count FROM cards WHERE user_id = ? AND repetition > 0').get(userId).count;
-    const mastered = db.prepare('SELECT count(*) as count FROM cards WHERE user_id = ? AND repetition >= 4').get(userId).count;
+    
+    // Overview counts
+    const overview = db.prepare(`
+      SELECT 
+        COUNT(*) as total,
+        SUM(CASE WHEN lifecycle_status = 'active' THEN 1 ELSE 0 END) as active,
+        SUM(CASE WHEN lifecycle_status = 'ready' THEN 1 ELSE 0 END) as ready,
+        SUM(CASE WHEN lifecycle_status = 'inbox' THEN 1 ELSE 0 END) as inbox,
+        SUM(CASE WHEN lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as mastered,
+        SUM(CASE WHEN is_starred = 1 THEN 1 ELSE 0 END) as starred,
+        SUM(CASE WHEN mastery_stage = 1 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage1,
+        SUM(CASE WHEN mastery_stage = 2 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage2,
+        SUM(CASE WHEN mastery_stage = 3 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage3,
+        SUM(CASE WHEN mastery_stage = 4 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage4
+      FROM cards WHERE user_id = ?
+    `).get(userId);
+
+    const due = db.prepare(`
+      SELECT count(*) as count FROM cards 
+      WHERE user_id = ? AND lifecycle_status = 'active' AND due_date <= datetime('now', 'localtime')
+    `).get(userId).count;
 
     // Reviews today
     const reviewedToday = db.prepare(`
@@ -889,24 +906,61 @@ app.get('/api/stats', authenticateToken, (req, res) => {
       WHERE user_id = ? AND date(reviewed_at) = date('now', 'localtime')
     `).get(userId).count;
 
+    // Total review logs
+    const totalReviews = db.prepare(`
+      SELECT count(*) as count FROM review_logs WHERE user_id = ?
+    `).get(userId).count;
+
     // Level breakdown
     const levelCounts = db.prepare(`
       SELECT dele_level, count(*) as count FROM cards WHERE user_id = ? GROUP BY dele_level ORDER BY dele_level
     `).all(userId);
 
-    // Category breakdown
-    const catCounts = db.prepare(`
-      SELECT category, count(*) as count FROM cards WHERE user_id = ? GROUP BY category ORDER BY count DESC
+    // Curriculum units breakdown
+    const unitRows = db.prepare(`
+      SELECT 
+        COALESCE(NULLIF(curriculum_unit, ''), category, '未分類') as unit_name,
+        COUNT(*) as total,
+        SUM(CASE WHEN lifecycle_status = 'active' THEN 1 ELSE 0 END) as active_count,
+        SUM(CASE WHEN lifecycle_status = 'ready' THEN 1 ELSE 0 END) as ready_count,
+        SUM(CASE WHEN lifecycle_status = 'inbox' THEN 1 ELSE 0 END) as inbox_count,
+        SUM(CASE WHEN lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as mastered_count,
+        SUM(CASE WHEN mastery_stage >= 3 OR lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as proficient_count
+      FROM cards
+      WHERE user_id = ?
+      GROUP BY unit_name
     `).all(userId);
 
+    const unitCounts = unitRows.map(r => ({
+      unit: r.unit_name,
+      total: Number(r.total),
+      active: Number(r.active_count),
+      ready: Number(r.ready_count),
+      inbox: Number(r.inbox_count),
+      mastered: Number(r.mastered_count),
+      proficient: Number(r.proficient_count),
+      proficiencyRate: Number(r.total) > 0 ? Math.round((Number(r.proficient_count) / Number(r.total)) * 100) : 0
+    }));
+
     res.json({
-      total: Number(total),
+      total: Number(overview.total) || 0,
+      active: Number(overview.active) || 0,
+      ready: Number(overview.ready) || 0,
+      inbox: Number(overview.inbox) || 0,
+      mastered: Number(overview.mastered) || 0,
+      starred: Number(overview.starred) || 0,
       due: Number(due),
-      learned: Number(learned),
-      mastered: Number(mastered),
       reviewedToday: Number(reviewedToday),
+      totalReviews: Number(totalReviews),
+      stages: {
+        1: Number(overview.stage1) || 0,
+        2: Number(overview.stage2) || 0,
+        3: Number(overview.stage3) || 0,
+        4: Number(overview.stage4) || 0,
+        5: Number(overview.mastered) || 0
+      },
       levelCounts,
-      catCounts
+      unitCounts
     });
   } catch (err) {
     res.status(500).json({ error: err.message });

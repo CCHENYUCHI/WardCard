@@ -1,143 +1,319 @@
-import React from 'react';
-import { Award, Flame, CheckCircle, Clock, BookOpen, Layers } from 'lucide-react';
+import React, { useMemo } from 'react';
+import { 
+  Award, Flame, CheckCircle2, Clock, BookOpen, Layers, 
+  Target, TrendingUp, HelpCircle, Star, Sparkles, Check, ChevronRight
+} from 'lucide-react';
+import Tooltip from './Tooltip';
 
 export default function StatsView({ stats }) {
   if (!stats) return null;
 
   const total = stats.total || 0;
-  const masteredPercent = total > 0 ? Math.round((stats.mastered / total) * 100) : 0;
-  const learnedPercent = total > 0 ? Math.round((stats.learned / total) * 100) : 0;
+  const activeCount = stats.active || 0;
+  const readyCount = stats.ready || 0;
+  const inboxCount = stats.inbox || 0;
+  const masteredCount = stats.mastered || 0;
+
+  // Natural lesson sorting helper
+  const lessonSort = (a, b) => {
+    const numA = (a.unit.match(/第\s*(\d+)\s*課/) || [])[1];
+    const numB = (b.unit.match(/第\s*(\d+)\s*課/) || [])[1];
+    if (numA !== undefined && numB !== undefined) {
+      return parseInt(numA, 10) - parseInt(numB, 10);
+    }
+    if (numA !== undefined) return -1;
+    if (numB !== undefined) return 1;
+    return a.unit.localeCompare(b.unit, 'zh-Hant');
+  };
+
+  const sortedUnits = useMemo(() => {
+    if (!stats.unitCounts) return [];
+    return [...stats.unitCounts].sort(lessonSort);
+  }, [stats.unitCounts]);
+
+  // Stage ladder breakdown
+  const stages = stats.stages || { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+  const totalStagesActive = (stages[1] || 0) + (stages[2] || 0) + (stages[3] || 0) + (stages[4] || 0) + (stages[5] || 0);
 
   return (
-    <div style={{ maxWidth: '880px', margin: '0 auto' }}>
-      {/* 4 Stat Boxes */}
-      <div className="stats-header">
-        <div className="stat-box">
-          <div className="stat-icon" style={{ background: 'var(--google-blue-light)', color: 'var(--google-blue)' }}>
-            <BookOpen size={24} />
-          </div>
+    <div style={{ maxWidth: '960px', margin: '0 auto', padding: '0 8px' }}>
+      {/* Top Banner Header */}
+      <div style={{
+        background: '#ffffff',
+        border: '1px solid var(--border-color)',
+        borderRadius: 'var(--radius-xl)',
+        padding: '22px 28px',
+        marginBottom: '20px',
+        boxShadow: 'var(--shadow-card)',
+        position: 'relative'
+      }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          height: '6px',
+          background: 'var(--google-blue)',
+          borderTopLeftRadius: 'var(--radius-xl)',
+          borderTopRightRadius: 'var(--radius-xl)'
+        }} />
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
           <div>
-            <div className="stat-val">{stats.total}</div>
-            <div className="stat-label">總西語單字量</div>
-          </div>
-        </div>
-
-        <div className="stat-box">
-          <div className="stat-icon" style={{ background: 'var(--google-red-light)', color: 'var(--google-red)' }}>
-            <Clock size={24} />
-          </div>
-          <div>
-            <div className="stat-val" style={{ color: stats.due > 0 ? 'var(--google-red)' : 'var(--text-primary)' }}>
-              {stats.due}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+              <span style={{ background: '#e8f0fe', color: 'var(--google-blue)', padding: '2px 10px', borderRadius: '12px', fontSize: '0.78rem', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                <TrendingUp size={13} /> FSRS 數據分析
+              </span>
             </div>
-            <div className="stat-label">今日待複習</div>
+            <h1 style={{ fontSize: '1.65rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)', letterSpacing: '-0.5px' }}>
+              學習數據與記憶進度
+            </h1>
           </div>
-        </div>
-
-        <div className="stat-box">
-          <div className="stat-icon" style={{ background: 'var(--google-green-light)', color: 'var(--google-green)' }}>
-            <Award size={24} />
-          </div>
-          <div>
-            <div className="stat-val" style={{ color: 'var(--google-green)' }}>{stats.mastered}</div>
-            <div className="stat-label">已完全掌握 (熟記)</div>
-          </div>
-        </div>
-
-        <div className="stat-box">
-          <div className="stat-icon" style={{ background: 'var(--google-yellow-light)', color: 'var(--google-yellow-dark)' }}>
-            <Flame size={24} />
-          </div>
-          <div>
-            <div className="stat-val" style={{ color: 'var(--google-yellow-dark)' }}>{stats.reviewedToday}</div>
-            <div className="stat-label">今日已複習卡次</div>
+          <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', textAlign: 'right' }}>
+            累積複習次數：<strong style={{ color: 'var(--text-primary)' }}>{stats.totalReviews || 0}</strong> 次
           </div>
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '20px' }}>
-        {/* Memory Curve / Mastery Progress */}
-        <div className="glass-card">
-          <h3 style={{ fontSize: '1.15rem', marginBottom: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Layers size={20} style={{ color: 'var(--google-blue)' }} />
-            <span>記憶週期掌握率</span>
-          </h3>
-
-          <div style={{ marginBottom: '16px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.88rem', marginBottom: '6px' }}>
-              <span>已開始背誦 (熟練度 &gt; 0)</span>
-              <strong>{learnedPercent}% ({stats.learned} 字)</strong>
-            </div>
-            <div style={{ height: '8px', background: '#e0e0e0', borderRadius: '10px', overflow: 'hidden' }}>
-              <div style={{ width: `${learnedPercent}%`, height: '100%', background: 'var(--google-blue)', borderRadius: '10px' }} />
-            </div>
+      {/* 6 Key Metrics Grid */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+        gap: '12px',
+        marginBottom: '24px'
+      }}>
+        {/* Total Words */}
+        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
+          <div className="stat-icon" style={{ background: '#e8f0fe', color: 'var(--google-blue)', width: '42px', height: '42px' }}>
+            <BookOpen size={20} />
           </div>
-
-          <div style={{ marginBottom: '20px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.88rem', marginBottom: '6px' }}>
-              <span>長期記憶掌握 (熟練度 ≥ 4)</span>
-              <strong>{masteredPercent}% ({stats.mastered} 字)</strong>
-            </div>
-            <div style={{ height: '8px', background: '#e0e0e0', borderRadius: '10px', overflow: 'hidden' }}>
-              <div style={{ width: `${masteredPercent}%`, height: '100%', background: 'var(--google-green)', borderRadius: '10px' }} />
-            </div>
-          </div>
-
-          <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.5, background: '#f8f9fa', border: '1px solid var(--border-color)', padding: '12px', borderRadius: '8px' }}>
-            💡 <strong>科學記憶提示：</strong>系統使用現代 FSRS 與間隔重複演算法，根據回想難度與穩定度動態調整下一次複習天數，助你以最高效率達成永久記憶。
+          <div>
+            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800 }}>{total}</div>
+            <div className="stat-label">總西語詞庫量</div>
           </div>
         </div>
 
-        {/* Categories Breakdown */}
-        <div className="glass-card">
-          <h3 style={{ fontSize: '1.15rem', marginBottom: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <BookOpen size={20} style={{ color: 'var(--google-blue)' }} />
-            <span>分類統計 (日常 vs 考試)</span>
-          </h3>
+        {/* Active Study */}
+        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
+          <div className="stat-icon" style={{ background: '#e8f0fe', color: 'var(--google-blue)', width: '42px', height: '42px' }}>
+            <Flame size={20} />
+          </div>
+          <div>
+            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--google-blue)' }}>{activeCount}</div>
+            <div className="stat-label">⚡ 活躍學習中</div>
+          </div>
+        </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {stats.catCounts && stats.catCounts.map((cat) => {
-              const pct = total > 0 ? Math.round((cat.count / total) * 100) : 0;
+        {/* Due Today */}
+        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
+          <div className="stat-icon" style={{ background: '#fce8e6', color: 'var(--google-red)', width: '42px', height: '42px' }}>
+            <Clock size={20} />
+          </div>
+          <div>
+            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800, color: stats.due > 0 ? 'var(--google-red)' : 'var(--text-primary)' }}>
+              {stats.due}
+            </div>
+            <div className="stat-label">⏰ 今日到期複習</div>
+          </div>
+        </div>
+
+        {/* Mastered */}
+        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
+          <div className="stat-icon" style={{ background: '#e6f4ea', color: 'var(--google-green)', width: '42px', height: '42px' }}>
+            <Award size={20} />
+          </div>
+          <div>
+            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--google-green)' }}>{masteredCount}</div>
+            <div className="stat-label">🏆 已長效精通</div>
+          </div>
+        </div>
+
+        {/* Ready Reserve */}
+        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
+          <div className="stat-icon" style={{ background: '#f1f3f4', color: '#5f6368', width: '42px', height: '42px' }}>
+            <Target size={20} />
+          </div>
+          <div>
+            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--text-secondary)' }}>{readyCount}</div>
+            <div className="stat-label">🎯 待學儲備量</div>
+          </div>
+        </div>
+
+        {/* Reviewed Today */}
+        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
+          <div className="stat-icon" style={{ background: '#fef7e0', color: '#f29900', width: '42px', height: '42px' }}>
+            <CheckCircle2 size={20} />
+          </div>
+          <div>
+            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800, color: '#f29900' }}>{stats.reviewedToday}</div>
+            <div className="stat-label">🔥 今日複習卡次</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Grid: FSRS 5-Stage Mastery Ladder & Curriculum Units */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '20px', marginBottom: '24px' }}>
+        {/* FSRS 5-Stage Cognitive Mastery Ladder */}
+        <div style={{
+          background: '#ffffff',
+          border: '1px solid var(--border-color)',
+          borderRadius: 'var(--radius-xl)',
+          padding: '22px 24px',
+          boxShadow: 'var(--shadow-card)'
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '18px' }}>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Layers size={18} color="var(--google-blue)" />
+              <span>五階記憶認知梯 (FSRS Stages 1~5)</span>
+            </h3>
+            <Tooltip text="自適應五階演進：從初見辨認到長效永久精通">
+              <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center' }}>
+                <HelpCircle size={15} />
+              </span>
+            </Tooltip>
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+            {[
+              { stage: 1, name: 'S1 被動辨認', desc: '看西語辨認中文 (初始認知)', count: stages[1] || 0, color: '#ea4335', bg: '#fce8e6' },
+              { stage: 2, name: 'S2 提示回想', desc: '看中文回憶西語 (字首提示)', count: stages[2] || 0, color: '#1a73e8', bg: '#e8f0fe' },
+              { stage: 3, name: 'S3 盲測拼寫', desc: '無提示正字盲測 (拼寫精通)', count: stages[3] || 0, color: '#34a853', bg: '#e6f4ea' },
+              { stage: 4, name: 'S4 語境克漏字', desc: '例句克漏字與變位應用', count: stages[4] || 0, color: '#137333', bg: '#ceead6' },
+              { stage: 5, name: 'S5 長效精通', desc: '高穩定度永久記憶 (歸檔)', count: stages[5] || 0, color: '#8430ce', bg: '#f6e8ff' },
+            ].map(item => {
+              const pct = totalStagesActive > 0 ? Math.round((item.count / totalStagesActive) * 100) : 0;
               return (
-                <div key={cat.category}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.88rem', marginBottom: '4px' }}>
-                    <span style={{ fontWeight: 600 }}>{cat.category}</span>
-                    <span style={{ color: 'var(--text-secondary)' }}>{cat.count} 字 ({pct}%)</span>
+                <div key={item.stage}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.88rem', marginBottom: '4px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <span style={{ fontWeight: 800, color: item.color, fontSize: '0.82rem', background: item.bg, padding: '1px 6px', borderRadius: '4px' }}>
+                        {item.name}
+                      </span>
+                      <span style={{ color: 'var(--text-muted)', fontSize: '0.78rem' }}>{item.desc}</span>
+                    </div>
+                    <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>
+                      {item.count} 字 <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontWeight: 500 }}>({pct}%)</span>
+                    </span>
                   </div>
-                  <div style={{ height: '6px', background: '#e0e0e0', borderRadius: '10px', overflow: 'hidden' }}>
-                    <div style={{ width: `${pct}%`, height: '100%', background: 'var(--google-blue)', borderRadius: '10px' }} />
+                  <div style={{ height: '7px', background: '#f1f3f4', borderRadius: '4px', overflow: 'hidden' }}>
+                    <div style={{ width: `${pct}%`, height: '100%', background: item.color, borderRadius: '4px', transition: 'width 0.4s ease' }} />
                   </div>
                 </div>
               );
             })}
           </div>
+
+          <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.45, background: '#f8f9fa', border: '1px solid var(--border-color)', padding: '10px 14px', borderRadius: '8px', marginTop: '18px' }}>
+            💡 <strong>科學記憶原則：</strong>只要單字在學習中達到 <strong>Stage 3 (盲測正字拼寫)</strong>，即算作「熟練掌握 (Proficient)」。
+          </div>
         </div>
 
-        {/* DELE Level Breakdown */}
-        <div className="glass-card" style={{ gridColumn: '1 / -1' }}>
-          <h3 style={{ fontSize: '1.15rem', marginBottom: '16px' }}>DELE 檢定等級分布</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(110px, 1fr))', gap: '12px' }}>
-            {['A1', 'A2', 'B1', 'B2', 'C1'].map(lvl => {
-              const item = stats.levelCounts?.find(l => l.dele_level === lvl);
-              const count = item ? item.count : 0;
-              return (
-                <div
-                  key={lvl}
-                  style={{
-                    background: '#f8f9fa',
-                    border: '1px solid var(--border-color)',
-                    borderRadius: 'var(--radius-md)',
-                    padding: '14px',
-                    textAlign: 'center'
-                  }}
-                >
-                  <div className="badge-dele" style={{ marginBottom: '6px' }}>{lvl}</div>
-                  <div style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-primary)' }}>{count}</div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>單字</div>
-                </div>
-              );
-            })}
+        {/* Curriculum Units Leaderboard */}
+        <div style={{
+          background: '#ffffff',
+          border: '1px solid var(--border-color)',
+          borderRadius: 'var(--radius-xl)',
+          padding: '22px 24px',
+          boxShadow: 'var(--shadow-card)'
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Target size={18} color="var(--google-blue)" />
+              <span>教材單元掌握度進度排行</span>
+            </h3>
+            <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>共 {sortedUnits.length} 單元</span>
           </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', maxHeight: '360px', overflowY: 'auto', paddingRight: '4px' }}>
+            {sortedUnits.length === 0 ? (
+              <div style={{ textAlign: 'center', padding: '30px 0', color: 'var(--text-muted)', fontSize: '0.88rem' }}>
+                尚無單元資料
+              </div>
+            ) : (
+              sortedUnits.map(unit => {
+                const isActive = unit.active > 0;
+                let badgeColor = '#5f6368';
+                let badgeBg = '#f1f3f4';
+                if (isActive) {
+                  badgeColor = unit.proficiencyRate >= 70 ? '#137333' : 'var(--google-blue)';
+                  badgeBg = unit.proficiencyRate >= 70 ? '#e6f4ea' : '#e8f0fe';
+                }
+
+                return (
+                  <div key={unit.unit} style={{ background: '#f8f9fa', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)', padding: '10px 14px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <span style={{ fontSize: '0.9rem' }}>{isActive ? '⚡' : '⏳'}</span>
+                        <span style={{ fontWeight: 700, fontSize: '0.92rem', color: 'var(--text-primary)' }}>
+                          {unit.unit}
+                        </span>
+                      </div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <span style={{ fontSize: '0.75rem', background: badgeBg, color: badgeColor, padding: '2px 8px', borderRadius: '10px', fontWeight: 700 }}>
+                          {unit.proficiencyRate}% 掌握
+                        </span>
+                        <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                          ({unit.proficient || 0}/{unit.total}字)
+                        </span>
+                      </div>
+                    </div>
+                    {/* Unit Progress Bar */}
+                    <div style={{ height: '6px', background: '#e8eaed', borderRadius: '4px', overflow: 'hidden' }}>
+                      <div style={{
+                        width: `${unit.proficiencyRate}%`,
+                        height: '100%',
+                        background: unit.proficiencyRate >= 70 ? 'var(--google-green)' : (isActive ? 'var(--google-blue)' : '#bdc1c6'),
+                        borderRadius: '4px',
+                        transition: 'width 0.4s ease'
+                      }} />
+                    </div>
+                  </div>
+                );
+              })
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* DELE Level Breakdown */}
+      <div style={{
+        background: '#ffffff',
+        border: '1px solid var(--border-color)',
+        borderRadius: 'var(--radius-xl)',
+        padding: '20px 24px',
+        boxShadow: 'var(--shadow-card)',
+        marginBottom: '20px'
+      }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+          <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Award size={18} color="var(--google-blue)" />
+            <span>DELE 歐洲語言架構等級分佈</span>
+          </h3>
+          <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>A1 入門 ➔ C1 進階</span>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '10px' }}>
+          {['A1', 'A2', 'B1', 'B2', 'C1'].map(lvl => {
+            const item = stats.levelCounts?.find(l => l.dele_level === lvl);
+            const count = item ? item.count : 0;
+            const pct = total > 0 ? Math.round((count / total) * 100) : 0;
+
+            return (
+              <div
+                key={lvl}
+                style={{
+                  background: '#f8f9fa',
+                  border: '1px solid var(--border-color)',
+                  borderRadius: 'var(--radius-md)',
+                  padding: '12px 14px',
+                  textAlign: 'center'
+                }}
+              >
+                <div className="badge-dele" style={{ marginBottom: '6px', display: 'inline-block' }}>{lvl}</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-primary)' }}>{count}</div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{pct}% 佔比</div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
