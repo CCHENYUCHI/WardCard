@@ -1,0 +1,16 @@
+node_modules
+client/node_modules
+mobile/node_modules
+mobile
+client/dist
+.git
+.gitignore
+data/*.db
+data/*.db-wal
+data/*.db-shm
+*.log
+*.tar.gz
+.DS_Store
+.env
+.vscode
+.idea
