@@ -8,7 +8,7 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
   const [selectedFile, setSelectedFile] = useState(null);
   const [previewUrl, setPreviewUrl] = useState(null);
   const [targetCategory, setTargetCategory] = useState('課堂筆記');
-  const [targetDele, setTargetDele] = useState('A2');
+  const [targetDele, setTargetDele] = useState('auto');
 
   const [isLoading, setIsLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
@@ -61,7 +61,7 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
         ...c,
         id_temp: idx,
         category: targetCategory || c.category || '課堂筆記',
-        dele_level: c.dele_level || targetDele || 'A2'
+        dele_level: targetDele === 'auto' ? (c.dele_level || 'A1') : (targetDele || c.dele_level || 'A1')
       }));
 
       setExtractedCards(cardsWithDefaults);
@@ -188,12 +188,13 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
                 </select>
               </div>
               <div>
-                <label className="form-label">預設 DELE 等級</label>
+                <label className="form-label">目標 DELE 等級</label>
                 <select
                   className="form-input"
                   value={targetDele}
                   onChange={e => setTargetDele(e.target.value)}
                 >
+                  <option value="auto">✨ 智能自動評級 (CEFR 標準)</option>
                   <option value="A1">A1 (入門)</option>
                   <option value="A2">A2 (初級)</option>
                   <option value="B1">B1 (中級)</option>

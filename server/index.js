@@ -7,7 +7,7 @@ const { parse } = require('csv-parse/sync');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('./db');
-const { extractSpanishWords } = require('./ai');
+const { extractSpanishWords, calibrateDeleLevels } = require('./ai');
 const { reviewCardFSRS } = require('./fsrs');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'palabracard-super-secret-key-2026';
@@ -1005,6 +1005,58 @@ app.post('/api/ai/extract', authenticateToken, upload.single('image'), async (re
   } catch (err) {
     console.error('AI Extract Error:', err);
     res.status(500).json({ error: err.message || 'AI 萃取失敗' });
+  }
+});
+
+// AI DELE Level Calibration Endpoint
+app.post('/api/cards/calibrate-dele', authenticateToken, async (req, res) => {
+  try {
+    const userId = req.user.userId;
+    const userApiKey = req.body.apiKey || req.headers['x-gemini-key'] || process.env.GEMINI_API_KEY;
+
+    if (!userApiKey) {
+      return res.status(400).json({
+        error: '未偵測到 Gemini API Key。請在頁面設定中填入您的 API Key，或在伺服端 .env 設定 GEMINI_API_KEY。'
+      });
+    }
+
+    const cards = db.prepare('SELECT id, word, translation, dele_level FROM cards WHERE user_id = ?').all(userId);
+    if (!cards || cards.length === 0) {
+      return res.json({ success: true, totalCards: 0, updatedCount: 0, message: '目前庫中無單字' });
+    }
+
+    const BATCH_SIZE = 60;
+    const updateStmt = db.prepare('UPDATE cards SET dele_level = ?, updated_at = datetime("now", "localtime") WHERE id = ? AND user_id = ?');
+    
+    let updatedCount = 0;
+    const distribution = { A1: 0, A2: 0, B1: 0, B2: 0, C1: 0, C2: 0 };
+
+    for (let i = 0; i < cards.length; i += BATCH_SIZE) {
+      const batch = cards.slice(i, i + BATCH_SIZE);
+      const evaluated = await calibrateDeleLevels(batch, userApiKey);
+      if (Array.isArray(evaluated)) {
+        for (const item of evaluated) {
+          if (item.id && item.dele_level) {
+            const cleanLevel = String(item.dele_level).toUpperCase().trim();
+            if (['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(cleanLevel)) {
+              updateStmt.run(cleanLevel, item.id, userId);
+              updatedCount++;
+              distribution[cleanLevel] = (distribution[cleanLevel] || 0) + 1;
+            }
+          }
+        }
+      }
+    }
+
+    res.json({
+      success: true,
+      totalCards: cards.length,
+      updatedCount,
+      distribution
+    });
+  } catch (err) {
+    console.error('DELE Calibration Error:', err);
+    res.status(500).json({ error: err.message || 'DELE 自動校準失敗' });
   }
 });
 

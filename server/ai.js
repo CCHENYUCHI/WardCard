@@ -143,6 +143,71 @@ async function extractSpanishWords({ promptText, apiKey, imageFile = null }) {
   return cards;
 }
 
+/**
+ * Calibrate DELE/CEFR levels for a batch of Spanish words
+ */
+async function calibrateDeleLevels(wordsList, apiKey) {
+  const wordsToEvaluate = wordsList.map(w => ({ id: w.id, word: w.word, translation: w.translation }));
+  const prompt = `你是一位精通西班牙語檢定（Instituto Cervantes DELE / CEFR）權威專家。
+請為以下西語單字清單評估其精確的 DELE / CEFR 級別（'A1', 'A2', 'B1', 'B2', 'C1', 或 'C2'）。
+請嚴格遵循標準：
+- A1: 最基礎生存單字（例如: hola, gracias, manzana, libro, escuela, estudiante, aprender, feliz, ser, estar, comer, beber, día, agua, casa, número, pequeño）
+- A2: 基礎日常生活交流（例如: costumbre, desarrollar, viajar, tiempo, regalo, invierno, problema）
+- B1: 進階獨立表達、情感與常用抽象詞（例如: acostumbrarse, maravilloso, opinión, sociedad, éxito）
+- B2: 深度討論、專業與高級修辭
+- C1/C2: 高階學術、文學與罕見專有名詞
+
+請評估下列 ${wordsToEvaluate.length} 個單字，並嚴格回傳純 JSON 陣列（不要包含任何 markdown 標籤或額外文字）：
+${JSON.stringify(wordsToEvaluate, null, 2)}
+
+輸出格式範例：
+[
+  {"id": 2, "word": "problema", "dele_level": "A1"},
+  ...
+]`;
+
+  const https = require('https');
+  const makeRequest = (modelName) => {
+    return new Promise((resolve, reject) => {
+      const payload = JSON.stringify({
+        contents: [{ role: 'user', parts: [{ text: prompt }] }],
+        generationConfig: { temperature: 0.1, responseMimeType: 'application/json' }
+      });
+      const req = https.request({
+        hostname: 'generativelanguage.googleapis.com',
+        path: `/v1beta/models/${modelName}:generateContent?key=${apiKey}`,
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(payload)
+        }
+      }, (res) => {
+        let data = '';
+        res.on('data', chunk => data += chunk);
+        res.on('end', () => {
+          if (res.statusCode >= 200 && res.statusCode < 300) {
+            resolve(data);
+          } else {
+            reject(new Error(`API Error ${res.statusCode}: ${data}`));
+          }
+        });
+      });
+      req.on('error', err => reject(err));
+      req.write(payload);
+      req.end();
+    });
+  };
+
+  const responseText = await makeRequest(process.env.GEMINI_MODEL || 'gemini-1.5-flash');
+  const parsed = JSON.parse(responseText);
+  const text = parsed.candidates?.[0]?.content?.parts?.[0]?.text;
+  let cleanJson = text.trim();
+  if (cleanJson.startsWith('```json')) cleanJson = cleanJson.replace(/^```json\s*/, '').replace(/\s*```$/, '');
+  else if (cleanJson.startsWith('```')) cleanJson = cleanJson.replace(/^```\s*/, '').replace(/\s*```$/, '');
+  return JSON.parse(cleanJson);
+}
+
 module.exports = {
-  extractSpanishWords
+  extractSpanishWords,
+  calibrateDeleLevels
 };

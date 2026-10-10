@@ -1,6 +1,6 @@
 import { fetchAPI } from '../utils/api';
 import React, { useState, useEffect } from 'react';
-import { X, Key, Check, Volume2, Download, Upload, ExternalLink, ShieldCheck } from 'lucide-react';
+import { X, Key, Check, Volume2, Download, Upload, ExternalLink, ShieldCheck, Sparkles, RefreshCw, AlertCircle } from 'lucide-react';
 import { playSpanishPronunciation, getTtsMode, setTtsMode, TTS_MODES } from '../utils/speech';
 
 export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }) {
@@ -10,6 +10,10 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [dailyQuota, setDailyQuota] = useState(15);
   const [targetRetention, setTargetRetention] = useState(0.9);
+
+  const [isCalibrating, setIsCalibrating] = useState(false);
+  const [calibrationResult, setCalibrationResult] = useState(null);
+  const [calibrationError, setCalibrationError] = useState('');
 
   useEffect(() => {
     const key = localStorage.getItem('gemini_api_key') || '';
@@ -111,6 +115,43 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
     }
   };
 
+  const handleCalibrateDele = async () => {
+    const key = apiKey.trim() || localStorage.getItem('gemini_api_key') || '';
+    if (!key) {
+      alert('請先在上方設定並儲存 Google Gemini API Key 才能執行自動校準！');
+      return;
+    }
+
+    if (!confirm(`確定要透過 Gemini AI 重新排查並自動校準全庫 ${cards?.length || 0} 個單字的 DELE/CEFR 等級嗎？\n\n系統將依照塞萬提斯學院官方課綱（A1~C2）分批自動評定，過程約需 3~5 秒。`)) {
+      return;
+    }
+
+    setIsCalibrating(true);
+    setCalibrationResult(null);
+    setCalibrationError('');
+
+    try {
+      const res = await fetchAPI('/api/cards/calibrate-dele', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ apiKey: key })
+      });
+      const data = await res.json();
+      if (!res.ok || data.error) {
+        throw new Error(data.error || '校準失敗');
+      }
+
+      setCalibrationResult(data);
+      if (onImportBackup) {
+        onImportBackup([]); // Trigger card refresh
+      }
+    } catch (err) {
+      setCalibrationError(err.message);
+    } finally {
+      setIsCalibrating(false);
+    }
+  };
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
@@ -159,6 +200,55 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
               也可直接設定於伺服端 .env
             </span>
           </div>
+        </div>
+
+        {/* AI DELE Level Calibration Section */}
+        <div style={{ marginBottom: '24px', padding: '16px', background: '#f8f9fa', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px', flexWrap: 'wrap', gap: '8px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#e8f0fe', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#1a73e8' }}>
+                <Sparkles size={16} />
+              </div>
+              <div style={{ fontWeight: 600, fontSize: '0.92rem', color: 'var(--text-primary)' }}>
+                ✨ AI 全庫 DELE 等級自動校準
+              </div>
+            </div>
+            <button
+              className="btn btn-primary btn-sm"
+              style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
+              disabled={isCalibrating}
+              onClick={handleCalibrateDele}
+            >
+              <RefreshCw size={13} style={{ animation: isCalibrating ? 'spin 1s linear infinite' : 'none' }} />
+              <span>{isCalibrating ? '正在分析排查中...' : `一鍵 AI 校準全庫 (${cards?.length || 0} 字)`}</span>
+            </button>
+          </div>
+
+          <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '8px', lineHeight: 1.5 }}>
+            若過去單字未依官方標準標註（全庫預設為 A2），可透過 Gemini AI 依據塞萬提斯學院官方檢定標準（Instituto Cervantes / CEFR）自動將全庫單字重新排查並校準為精準的 A1~C2 等級。
+          </p>
+
+          {calibrationResult && (
+            <div style={{ marginTop: '10px', padding: '10px 12px', background: '#e6f4ea', border: '1px solid #ceead6', borderRadius: '6px', fontSize: '0.82rem', color: '#137333' }}>
+              <div style={{ fontWeight: 600, marginBottom: '4px' }}>
+                ✅ 校準完成！已成功為 {calibrationResult.updatedCount} 個單字更新等級：
+              </div>
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '4px', fontSize: '0.78rem' }}>
+                {Object.entries(calibrationResult.distribution || {}).map(([lvl, count]) => count > 0 && (
+                  <span key={lvl} style={{ padding: '2px 8px', background: '#ffffff', borderRadius: '4px', border: '1px solid #ceead6', fontWeight: 600 }}>
+                    {lvl}: {count} 字
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {calibrationError && (
+            <div style={{ marginTop: '10px', padding: '8px 12px', background: '#fce8e6', border: '1px solid #fad2cf', borderRadius: '6px', fontSize: '0.8rem', color: '#c5221f', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <AlertCircle size={14} />
+              <span>校準失敗：{calibrationError}</span>
+            </div>
+          )}
         </div>
 
         {/* FSRS Learning Preferences */}

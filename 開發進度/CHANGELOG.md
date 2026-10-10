@@ -6,6 +6,12 @@
 
 ## [Unreleased] (進行中 / 待發布)
 
+- **AI 全庫 DELE / CEFR 等級一鍵自動化排查校準 (`/api/cards/calibrate-dele` & `SettingsModal.jsx`)**：
+  - 徹底解決過去單字匯入時預設寫死為 `A2`、導致全庫單字等級失真之問題。
+  - 後端整合 Gemini 1.5 Flash 依據塞萬提斯學院官方課綱（Instituto Cervantes / CEFR 標準）評估標準（A1 基礎生存、A2 日常交流、B1 進階表達、B2 深度討論、C1/C2 高級學術），以每批 60 字自動分批評審，不到 5 秒鐘即可將全庫單字重新精準校正。
+  - 在設定視窗（`SettingsModal.jsx`）新增「✨ AI 全庫 DELE 等級自動校準」功能，支援一鍵分析、進度動畫與等級分佈反饋（A1/A2/B1/B2/C1 統計）。
+  - 修復 `AiImporter.jsx` AI 萃取時預設目標等級為 `auto`（智慧自動評級），防止未來匯入時再度覆蓋為單一等級。
+
 - **統計進度全面重構為 FSRS 數據分析 (`StatsView.jsx`)**：
   - 徹底移除舊版 SM-2 遺留之模糊「記憶週期掌握率」（`repetition > 0` 與 `repetition >= 4`）。
   - 全新升級為 **Google Classroom 美學數據看板**：
