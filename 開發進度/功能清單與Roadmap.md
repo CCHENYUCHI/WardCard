@@ -41,9 +41,10 @@
 | **即時模糊搜尋** | Web / Mobile | [x] | 支援以單字原形、中文釋義或文法筆記即時過濾 |
 | **分類篩選 (Categories)** | Web / Mobile | [x] | 考試必背 (DELE)、日常生活、課堂筆記、旅遊會話等多分類切換 |
 | **DELE 級別篩選 (A1~C2)** | Web | [x] | 依歐洲語言共同架構等級標記與檢索 |
+| **三層詞庫分流狀態機 (Lifecycle Funnel)** | Web / Server | [x] | 支援 Inbox (暫存)、Ready (待學)、Active (活躍)、Mastered (精通) 與核心星號 ⭐️ 標記，杜絕單字雪崩 |
 | **複習狀態過濾 (Due / Learned / New)** | Web | [x] | 快速檢索到期卡片、已學卡片或新單字 |
 | **CSV 批量匯入** | Web / Mobile | [x] | Web 端支援拖曳解析，Mobile 支援 DocumentPicker 上傳 |
-| **單字庫批次匯出 (CSV / JSON)** | Web | [📅] | 便於使用者備份或遷移至 Anki |
+| **單字庫批次匯出 (CSV / JSON)** | Web | [x] | 已支援 JSON 完整結構備份與還原 |
 
 ---
 
@@ -51,13 +52,16 @@
 
 | 功能項目 | 適用端 | 狀態 | 備註 / 說明 |
 | :--- | :---: | :---: | :--- |
-| **SM-2 間隔重複記憶演算法** | Server | [x] | 根據評分計算下次複習時間 (`interval_days`, `ease_factor`) |
-| **3D 翻轉卡片模式** | Web / Mobile | [x] | 雙面翻卡動畫，Web 支援鍵盤快捷鍵 (`Space`, `1~4`)、文字選取防誤翻與複製 |
+| **FSRS v4.5 記憶調度引擎** | Server | [x] | 取代舊版 SM-2，採用 DSR (難度/穩定度/留存率) 動態曲線，純 JS 極致輕量實作 |
+| **今日學習駕駛艙 (Daily Agenda Cockpit)** | Web | [x] | 一鍵智能學習流，自動編排急需搶救、例行穩固與課本新詞配額 |
+| **課本單元主修進度 (Active Curriculum Track)** | Web / Server | [x] | 追蹤課本章節掌握率 (Stage 3+)，達標主動提醒推進 |
+| **詞彙習得五階動態學習流 (Adaptive 5-Stage Session)** | Web | [x] | 依卡片階級自動派發題型：S1 辨認 ➔ S2 提示回想 ➔ S3 盲測拼寫 ➔ S4 語境克漏字 |
+| **3D 翻轉卡片模式 (自由翻卡)** | Web / Mobile | [x] | 雙面翻卡動畫，Web 支援鍵盤快捷鍵 (`Space`, `1~4`)、文字選取防誤翻與複製 |
 | **真人發音朗讀 (TTS)** | Web | [x] | 支援雙引擎（線上音訊串流代理與原生 Web Speech API），完美相容行動版 Safari、iOS、Android 與電腦端 |
 | **行動端原生發音 (expo-speech)** | Mobile | [📅] | 待整合 `expo-speech` 實現手機端發音點擊播放 |
 | **拼字盲測模式 (Spelling Mode)** | Web / Mobile | [x] | 例句挖空提示、智慧防呆判定 (容許性別縮寫)，簡化輸入介面適配鍵盤直接輸入 |
 | **複習完成慶祝反饋** | Web | [x] | 彩帶紙屑動效 (`canvas-confetti`) 與學習激勵文案 |
-| **失誤單字加強複習 (Lapse Queue)** | 雙端 | [📅] | 當日連續複習評分為 1 或 2 之單字，於同一次練習末段再次出現 |
+| **失誤單字加強複習 (Lapse Queue)** | Web / Server | [x] | FSRS 遺忘降階保護，優先排入次日急需搶救隊列 |
 
 ---
 

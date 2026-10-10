@@ -8,6 +8,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('./db');
 const { extractSpanishWords } = require('./ai');
+const { reviewCardFSRS } = require('./fsrs');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'palabracard-super-secret-key-2026';
 
@@ -130,13 +131,32 @@ app.get('/api/categories', authenticateToken, (req, res) => {
 // Get all cards (with optional filtering)
 app.get('/api/cards', authenticateToken, (req, res) => {
   try {
-    const { category, dele, search, filter } = req.query;
+    const { category, dele, search, filter, status, stage, unit, starred } = req.query;
     let sql = 'SELECT * FROM cards WHERE user_id = ?';
     const params = [req.user.userId];
 
     if (category && category !== 'all') {
       sql += ' AND category = ?';
       params.push(category);
+    }
+
+    if (unit && unit !== 'all') {
+      sql += ' AND curriculum_unit = ?';
+      params.push(unit);
+    }
+
+    if (status && status !== 'all') {
+      sql += ' AND lifecycle_status = ?';
+      params.push(status);
+    }
+
+    if (starred === '1' || starred === 'true') {
+      sql += ' AND is_starred = 1';
+    }
+
+    if (stage && stage !== 'all') {
+      sql += ' AND mastery_stage = ?';
+      params.push(Number(stage));
     }
 
     if (dele && dele !== 'all') {
@@ -151,7 +171,7 @@ app.get('/api/cards', authenticateToken, (req, res) => {
     }
 
     if (filter === 'due') {
-      sql += " AND due_date <= datetime('now', 'localtime')";
+      sql += " AND lifecycle_status = 'active' AND due_date <= datetime('now', 'localtime')";
     } else if (filter === 'learned') {
       sql += ' AND repetition > 0';
     } else if (filter === 'new') {
@@ -167,11 +187,11 @@ app.get('/api/cards', authenticateToken, (req, res) => {
   }
 });
 
-// Get cards due for review
+// Get cards due for review (Active only)
 app.get('/api/cards/due', authenticateToken, (req, res) => {
   try {
     const { category, limit = 50 } = req.query;
-    let sql = "SELECT * FROM cards WHERE user_id = ? AND due_date <= datetime('now', 'localtime')";
+    let sql = "SELECT * FROM cards WHERE user_id = ? AND lifecycle_status = 'active' AND due_date <= datetime('now', 'localtime')";
     const params = [req.user.userId];
 
     if (category && category !== 'all') {
@@ -197,8 +217,12 @@ app.post('/api/cards', authenticateToken, (req, res) => {
     const userId = req.user.userId;
 
     const insertStmt = db.prepare(`
-      INSERT INTO cards (user_id, word, article, gender, part_of_speech, translation, english_translation, definition_es, example_es, example_zh, notes, category, dele_level, due_date)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
+      INSERT INTO cards (
+        user_id, word, article, gender, part_of_speech, translation, english_translation,
+        definition_es, example_es, example_zh, notes, category, dele_level,
+        lifecycle_status, is_starred, mastery_stage, curriculum_unit, due_date
+      )
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
       ON CONFLICT(user_id, word) DO UPDATE SET
         article=excluded.article,
         gender=excluded.gender,
@@ -211,6 +235,9 @@ app.post('/api/cards', authenticateToken, (req, res) => {
         notes=excluded.notes,
         category=excluded.category,
         dele_level=excluded.dele_level,
+        lifecycle_status=excluded.lifecycle_status,
+        is_starred=excluded.is_starred,
+        curriculum_unit=excluded.curriculum_unit,
         updated_at=datetime('now', 'localtime')
     `);
 
@@ -218,7 +245,6 @@ app.post('/api/cards', authenticateToken, (req, res) => {
     for (const card of cards) {
       if (!card.word || !card.translation) continue;
       
-      // Auto-extract article if user put it in word (e.g. "la manzana")
       let w = card.word.trim();
       let a = card.article ? card.article.trim() : '';
       if (!a && w.includes(' ')) {
@@ -228,6 +254,12 @@ app.post('/api/cards', authenticateToken, (req, res) => {
           w = parts.slice(1).join(' ');
         }
       }
+
+      const cat = card.category || '日常生活';
+      const unit = card.curriculum_unit || cat;
+      const status = card.lifecycle_status || 'active';
+      const starred = card.is_starred ? 1 : 0;
+      const stage = Number(card.mastery_stage) || 1;
 
       const result = insertStmt.run(
         userId,
@@ -241,8 +273,12 @@ app.post('/api/cards', authenticateToken, (req, res) => {
         card.example_es || '',
         card.example_zh || '',
         card.notes || '',
-        card.category || '日常生活',
-        card.dele_level || 'A2'
+        cat,
+        card.dele_level || 'A2',
+        status,
+        starred,
+        stage,
+        unit
       );
       insertedIds.push(Number(result.lastInsertRowid));
     }
@@ -258,15 +294,32 @@ app.put('/api/cards/:id', authenticateToken, (req, res) => {
   try {
     const { id } = req.params;
     const userId = req.user.userId;
-    const { word, article, gender, part_of_speech, translation, english_translation, definition_es, example_es, example_zh, notes, category, dele_level } = req.body;
+    const {
+      word, article, gender, part_of_speech, translation, english_translation,
+      definition_es, example_es, example_zh, notes, category, dele_level,
+      lifecycle_status, is_starred, mastery_stage, curriculum_unit
+    } = req.body;
+
+    const existing = db.prepare('SELECT * FROM cards WHERE id = ? AND user_id = ?').get(Number(id), userId);
+    if (!existing) {
+      return res.status(404).json({ error: 'Card not found or unauthorized' });
+    }
+
+    const cat = category || existing.category || '日常生活';
+    const unit = curriculum_unit !== undefined ? curriculum_unit : (existing.curriculum_unit || cat);
+    const status = lifecycle_status || existing.lifecycle_status || 'active';
+    const starred = is_starred !== undefined ? (is_starred ? 1 : 0) : existing.is_starred;
+    const stage = mastery_stage !== undefined ? Number(mastery_stage) : existing.mastery_stage;
 
     const stmt = db.prepare(`
       UPDATE cards
-      SET word = ?, article = ?, gender = ?, part_of_speech = ?, translation = ?, english_translation = ?, definition_es = ?, example_es = ?, example_zh = ?, notes = ?, category = ?, dele_level = ?, updated_at = datetime('now', 'localtime')
+      SET word = ?, article = ?, gender = ?, part_of_speech = ?, translation = ?, english_translation = ?,
+          definition_es = ?, example_es = ?, example_zh = ?, notes = ?, category = ?, dele_level = ?,
+          lifecycle_status = ?, is_starred = ?, mastery_stage = ?, curriculum_unit = ?, updated_at = datetime('now', 'localtime')
       WHERE id = ? AND user_id = ?
     `);
 
-    const result = stmt.run(
+    stmt.run(
       word.trim(),
       article ? article.trim() : '',
       gender || 'none',
@@ -277,15 +330,15 @@ app.put('/api/cards/:id', authenticateToken, (req, res) => {
       example_es || '',
       example_zh || '',
       notes || '',
-      category || '日常生活',
+      cat,
       dele_level || 'A2',
+      status,
+      starred,
+      stage,
+      unit,
       Number(id),
       userId
     );
-
-    if (result.changes === 0) {
-      return res.status(404).json({ error: 'Card not found or unauthorized' });
-    }
 
     const updated = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
     res.json(updated);
@@ -371,12 +424,12 @@ app.post('/api/cards/upload-csv', authenticateToken, upload.single('file'), (req
   }
 });
 
-// Review card (SM-2 Spaced Repetition Algorithm)
+// Review card (FSRS v4.5 + Hybrid SM-2 Compatible)
 app.post('/api/cards/:id/review', authenticateToken, (req, res) => {
   try {
     const { id } = req.params;
     const userId = req.user.userId;
-    const { rating, review_mode = 'flashcard' } = req.body;
+    const { rating, review_mode = 'flashcard', tested_stage } = req.body;
     const score = Number(rating);
 
     const card = db.prepare('SELECT * FROM cards WHERE id = ? AND user_id = ?').get(Number(id), userId);
@@ -384,52 +437,322 @@ app.post('/api/cards/:id/review', authenticateToken, (req, res) => {
       return res.status(404).json({ error: 'Card not found' });
     }
 
+    const user = db.prepare('SELECT * FROM users WHERE id = ?').get(userId);
+    const targetRetention = user && user.target_retention ? Number(user.target_retention) : 0.9;
+
+    // 1. Run FSRS Engine
+    const fsrsRes = reviewCardFSRS(card, score, { targetRetention });
+
+    // 2. Also keep legacy SM-2 compatibility fields populated
     let repetition = Number(card.repetition) || 0;
-    let interval = Number(card.interval_days) || 0;
+    let interval = fsrsRes.intervalDays;
     let easeFactor = Number(card.ease_factor) || 2.5;
     let reviewCount = (Number(card.review_count) || 0) + 1;
-    let lapseCount = Number(card.lapse_count) || 0;
+    let lapseCount = fsrsRes.lapseCount;
 
     if (score < 3) {
-      // Failed / Again / Hard
       repetition = 0;
-      interval = 1; // repeat tomorrow or today
-      lapseCount += 1;
     } else {
-      // Good or Easy
-      if (repetition === 0) {
-        interval = 1;
-      } else if (repetition === 1) {
-        interval = score === 4 ? 6 : 4;
-      } else {
-        interval = Math.round(interval * easeFactor);
-      }
       repetition += 1;
     }
-
-    // Update Ease Factor (standard SM-2 formula scaled for 1-4)
     const q = score === 1 ? 1 : score === 2 ? 2 : score === 3 ? 4 : 5;
     easeFactor = easeFactor + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
     if (easeFactor < 1.3) easeFactor = 1.3;
 
-    // Calculate due_date
-    const dueDateSql = `datetime('now', 'localtime', '+${interval} days')`;
+    const newStatus = fsrsRes.isMastered ? 'mastered' : 'active';
 
     db.prepare(`
       UPDATE cards
-      SET repetition = ?, interval_days = ?, ease_factor = ?, review_count = ?, lapse_count = ?,
-          due_date = ${dueDateSql}, last_reviewed = datetime('now', 'localtime'), updated_at = datetime('now', 'localtime')
-      WHERE id = ?
-    `).run(repetition, interval, easeFactor, reviewCount, lapseCount, Number(id));
+      SET 
+        fsrs_stability = ?, fsrs_difficulty = ?, fsrs_reps = ?, mastery_stage = ?,
+        repetition = ?, interval_days = ?, ease_factor = ?, review_count = ?, lapse_count = ?,
+        due_date = ?, last_reviewed = datetime('now', 'localtime'),
+        lifecycle_status = ?, updated_at = datetime('now', 'localtime')
+      WHERE id = ? AND user_id = ?
+    `).run(
+      fsrsRes.stability,
+      fsrsRes.difficulty,
+      fsrsRes.reps,
+      fsrsRes.stage,
+      repetition,
+      interval,
+      easeFactor,
+      reviewCount,
+      lapseCount,
+      fsrsRes.dueDate,
+      newStatus,
+      Number(id),
+      userId
+    );
 
-    // Log review
+    // 3. Log review
     db.prepare(`
       INSERT INTO review_logs (user_id, card_id, rating, review_mode, reviewed_at)
       VALUES (?, ?, ?, ?, datetime('now', 'localtime'))
-    `).run(userId, Number(id), score, review_mode);
+    `).run(userId, Number(id), score, `${review_mode}:${tested_stage || fsrsRes.stage}`);
 
     const updated = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
-    res.json({ success: true, card: updated });
+    res.json({
+      success: true,
+      card: updated,
+      fsrs: fsrsRes
+    });
+  } catch (err) {
+    console.error('Review Error:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// --- Active Learning & Agenda APIs ---
+
+// Today's Actionable Study Agenda
+app.get('/api/study/agenda', authenticateToken, (req, res) => {
+  try {
+    const userId = req.user.userId;
+    const user = db.prepare('SELECT * FROM users WHERE id = ?').get(userId) || {};
+    const quota = Number(user.daily_new_quota) || 15;
+    const activeCurriculum = user.active_curriculum || '';
+
+    // 1. Due reviews (Active cards only)
+    const dueCards = db.prepare(`
+      SELECT * FROM cards 
+      WHERE user_id = ? AND lifecycle_status = 'active' AND due_date <= datetime('now', 'localtime')
+      ORDER BY 
+        CASE WHEN lapse_count > 0 THEN 0 ELSE 1 END,
+        due_date ASC
+      LIMIT 100
+    `).all(userId);
+
+    // Split into urgent (lapses / Stage 1) and regular
+    const urgentReviews = dueCards.filter(c => c.lapse_count > 0 || c.mastery_stage === 1);
+    const regularReviews = dueCards.filter(c => c.lapse_count === 0 && c.mastery_stage > 1);
+
+    // 2. Candidate new cards to activate for today
+    let candidateNew = [];
+    if (activeCurriculum) {
+      candidateNew = db.prepare(`
+        SELECT * FROM cards 
+        WHERE user_id = ? AND lifecycle_status = 'ready' AND curriculum_unit = ?
+        ORDER BY is_starred DESC, id ASC
+        LIMIT ?
+      `).all(userId, activeCurriculum, quota);
+    }
+    
+    // If not enough from active curriculum, take from global ready cards
+    if (candidateNew.length < quota) {
+      const remaining = quota - candidateNew.length;
+      const ids = candidateNew.map(c => c.id);
+      const notInSql = ids.length > 0 ? `AND id NOT IN (${ids.join(',')})` : '';
+      const extraNew = db.prepare(`
+        SELECT * FROM cards 
+        WHERE user_id = ? AND lifecycle_status = 'ready' ${notInSql}
+        ORDER BY is_starred DESC, id ASC
+        LIMIT ?
+      `).all(userId, remaining);
+      candidateNew = candidateNew.concat(extraNew);
+    }
+
+    // 3. Stats & Stage breakdown
+    const statsRow = db.prepare(`
+      SELECT 
+        COUNT(*) as total_cards,
+        SUM(CASE WHEN lifecycle_status = 'inbox' THEN 1 ELSE 0 END) as inbox_count,
+        SUM(CASE WHEN lifecycle_status = 'ready' THEN 1 ELSE 0 END) as ready_count,
+        SUM(CASE WHEN lifecycle_status = 'active' THEN 1 ELSE 0 END) as active_count,
+        SUM(CASE WHEN lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as mastered_count,
+        SUM(CASE WHEN mastery_stage = 1 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage1_count,
+        SUM(CASE WHEN mastery_stage = 2 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage2_count,
+        SUM(CASE WHEN mastery_stage = 3 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage3_count,
+        SUM(CASE WHEN mastery_stage = 4 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage4_count
+      FROM cards WHERE user_id = ?
+    `).get(userId);
+
+    // 4. Progress in active curriculum track
+    let curriculumProgress = null;
+    if (activeCurriculum) {
+      const curRow = db.prepare(`
+        SELECT 
+          COUNT(*) as total,
+          SUM(CASE WHEN mastery_stage >= 3 OR lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as proficient,
+          SUM(CASE WHEN lifecycle_status = 'active' THEN 1 ELSE 0 END) as active,
+          SUM(CASE WHEN lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as mastered
+        FROM cards WHERE user_id = ? AND curriculum_unit = ?
+      `).get(userId, activeCurriculum);
+      
+      const total = Number(curRow.total) || 0;
+      const proficient = Number(curRow.proficient) || 0;
+      curriculumProgress = {
+        unit: activeCurriculum,
+        total,
+        proficient,
+        percentage: total > 0 ? Math.round((proficient / total) * 100) : 0
+      };
+    }
+
+    res.json({
+      agenda: {
+        total_due: dueCards.length,
+        urgent_reviews: urgentReviews,
+        regular_reviews: regularReviews,
+        candidate_new: candidateNew,
+        daily_new_quota: quota,
+        active_curriculum: activeCurriculum,
+        curriculum_progress: curriculumProgress
+      },
+      stats: {
+        total: Number(statsRow.total_cards) || 0,
+        inbox: Number(statsRow.inbox_count) || 0,
+        ready: Number(statsRow.ready_count) || 0,
+        active: Number(statsRow.active_count) || 0,
+        mastered: Number(statsRow.mastered_count) || 0,
+        stages: {
+          1: Number(statsRow.stage1_count) || 0,
+          2: Number(statsRow.stage2_count) || 0,
+          3: Number(statsRow.stage3_count) || 0,
+          4: Number(statsRow.stage4_count) || 0,
+          5: Number(statsRow.mastered_count) || 0
+        }
+      }
+    });
+  } catch (err) {
+    console.error('Study Agenda Error:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Update card status / starred (Lifecycle Triage)
+app.patch('/api/cards/:id/status', authenticateToken, (req, res) => {
+  try {
+    const { id } = req.params;
+    const userId = req.user.userId;
+    const { lifecycle_status, is_starred, mastery_stage } = req.body;
+
+    const existing = db.prepare('SELECT * FROM cards WHERE id = ? AND user_id = ?').get(Number(id), userId);
+    if (!existing) return res.status(404).json({ error: 'Card not found' });
+
+    const newStatus = lifecycle_status !== undefined ? lifecycle_status : existing.lifecycle_status;
+    const newStarred = is_starred !== undefined ? (is_starred ? 1 : 0) : existing.is_starred;
+    const newStage = mastery_stage !== undefined ? Number(mastery_stage) : existing.mastery_stage;
+
+    // If activating from inbox/ready, set due_date to now so it's ready to learn immediately
+    let dueDateSql = 'due_date';
+    if ((existing.lifecycle_status === 'inbox' || existing.lifecycle_status === 'ready') && newStatus === 'active') {
+      dueDateSql = "datetime('now', 'localtime')";
+    }
+
+    db.prepare(`
+      UPDATE cards
+      SET lifecycle_status = ?, is_starred = ?, mastery_stage = ?, due_date = ${dueDateSql}, updated_at = datetime('now', 'localtime')
+      WHERE id = ? AND user_id = ?
+    `).run(newStatus, newStarred, newStage, Number(id), userId);
+
+    const updated = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
+    res.json(updated);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Activate batch cards into active study pool
+app.post('/api/study/activate-batch', authenticateToken, (req, res) => {
+  try {
+    const userId = req.user.userId;
+    const { card_ids, unit, limit } = req.body;
+
+    let targetIds = [];
+    if (Array.isArray(card_ids) && card_ids.length > 0) {
+      targetIds = card_ids.map(Number);
+    } else if (unit) {
+      const rows = db.prepare(`
+        SELECT id FROM cards 
+        WHERE user_id = ? AND curriculum_unit = ? AND lifecycle_status IN ('ready', 'inbox')
+        ORDER BY is_starred DESC, id ASC
+        LIMIT ?
+      `).all(userId, unit, Number(limit) || 20);
+      targetIds = rows.map(r => r.id);
+    }
+
+    if (targetIds.length === 0) {
+      return res.json({ success: true, count: 0, message: 'No cards to activate' });
+    }
+
+    const placeholders = targetIds.map(() => '?').join(',');
+    db.prepare(`
+      UPDATE cards
+      SET lifecycle_status = 'active', due_date = datetime('now', 'localtime'), updated_at = datetime('now', 'localtime')
+      WHERE user_id = ? AND id IN (${placeholders})
+    `).run(userId, ...targetIds);
+
+    res.json({ success: true, count: targetIds.length, activatedIds: targetIds });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Get curriculum units summary list
+app.get('/api/study/units', authenticateToken, (req, res) => {
+  try {
+    const userId = req.user.userId;
+    const rows = db.prepare(`
+      SELECT 
+        curriculum_unit,
+        COUNT(*) as total,
+        SUM(CASE WHEN lifecycle_status = 'inbox' THEN 1 ELSE 0 END) as inbox_count,
+        SUM(CASE WHEN lifecycle_status = 'ready' THEN 1 ELSE 0 END) as ready_count,
+        SUM(CASE WHEN lifecycle_status = 'active' THEN 1 ELSE 0 END) as active_count,
+        SUM(CASE WHEN lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as mastered_count,
+        SUM(CASE WHEN mastery_stage >= 3 OR lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as proficient_count
+      FROM cards
+      WHERE user_id = ? AND curriculum_unit IS NOT NULL AND curriculum_unit != ''
+      GROUP BY curriculum_unit
+      ORDER BY total DESC
+    `).all(userId);
+
+    const units = rows.map(r => ({
+      unit: r.curriculum_unit,
+      total: Number(r.total),
+      inbox: Number(r.inbox_count),
+      ready: Number(r.ready_count),
+      active: Number(r.active_count),
+      mastered: Number(r.mastered_count),
+      proficient: Number(r.proficient_count),
+      proficiencyRate: Number(r.total) > 0 ? Math.round((Number(r.proficient_count) / Number(r.total)) * 100) : 0
+    }));
+
+    res.json(units);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Get & Update user study preferences
+app.get('/api/user/settings', authenticateToken, (req, res) => {
+  try {
+    const user = db.prepare('SELECT id, username, daily_new_quota, target_retention, active_curriculum FROM users WHERE id = ?').get(req.user.userId);
+    res.json(user);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.put('/api/user/settings', authenticateToken, (req, res) => {
+  try {
+    const userId = req.user.userId;
+    const { daily_new_quota, target_retention, active_curriculum } = req.body;
+
+    const existing = db.prepare('SELECT * FROM users WHERE id = ?').get(userId);
+    const newQuota = daily_new_quota !== undefined ? Number(daily_new_quota) : (existing.daily_new_quota || 15);
+    const newRetention = target_retention !== undefined ? Number(target_retention) : (existing.target_retention || 0.9);
+    const newCurriculum = active_curriculum !== undefined ? String(active_curriculum).trim() : (existing.active_curriculum || '');
+
+    db.prepare(`
+      UPDATE users
+      SET daily_new_quota = ?, target_retention = ?, active_curriculum = ?
+      WHERE id = ?
+    `).run(newQuota, newRetention, newCurriculum, userId);
+
+    const updated = db.prepare('SELECT id, username, daily_new_quota, target_retention, active_curriculum FROM users WHERE id = ?').get(userId);
+    res.json(updated);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

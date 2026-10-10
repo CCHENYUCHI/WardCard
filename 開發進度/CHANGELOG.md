@@ -7,6 +7,25 @@
 ## [Unreleased] (進行中 / 待發布)
 
 ### Added
+- **FSRS (Free Spaced Repetition Scheduler) v4.5 記憶調度引擎**：
+  - 新增 `server/fsrs.js`，以純 JavaScript 輕量數學模型（無龐大外部依賴）實作現代 DSR (Difficulty, Stability, Retrievability) 遺忘曲線演算法，精準預測各單字即時遺忘機率。
+  - 取代傳統 SM-2 固定排程，支援目標留存率（預設 90%）與難度/穩定度動態調整，並兼顧向下相容舊版欄位。
+- **三層詞庫分流狀態機 (The Three-Tier Lexical Pipeline)**：
+  - 在 `cards` 資料庫擴充 `lifecycle_status` (`inbox`, `ready`, `active`, `mastered`, `frozen`)、`is_starred`、`mastery_stage` 與 `curriculum_unit`。
+  - 徹底區隔「課堂隨記暫存箱 (Inbox / 零排程壓力)」與「課本核心待學清單 (Ready / 依配額激活)」，解決初學者單字債務雪崩與後設認知疲勞。
+- **今日行動學習駕駛艙 (Daily Actionable Agenda Cockpit)**：
+  - 新增 `client/src/components/DailyAgendaCockpit.jsx` 與 `/api/study/agenda` API。
+  - 主頁提供「一鍵開始今日學習」，自動編排「🚨 緊急搶救 (Lapse) + 📚 例行穩固 + 🌱 課本主修新詞」，徹底解放每天手動挑選分類的決策負擔。
+  - 支援當前主修單元進度追蹤 (Active Curriculum Track) 與階段掌握率可視化。
+- **詞彙習得五階動態學習流 (Adaptive 5-Stage Study Session)**：
+  - 新增 `client/src/components/AdaptiveStudySession.jsx`。
+  - 根據單字所在熟練階級自動派發題型：Stage 1 (被動辨認 西->中) $\to$ Stage 2 (提示回想 中->西) $\to$ Stage 3 (盲測正字拼寫) $\to$ Stage 4 (語境克漏字與搭配詞)。
+  - 答對時 Stability 自動累加晉級，遺忘 (Lapse) 時自動降階保護。
+- **單字庫分流膠囊標籤與快捷操作**：
+  - `WordList.jsx` 新增狀態膠囊過濾列（全部、活躍、待學、暫存、已精通、核心星號）。
+  - 單字卡支援一鍵打星 ⭐️、狀態流轉按鈕與 Stage 階級標籤。
+- **學習偏好設定與配額管理**：
+  - `SettingsModal.jsx` 支援設定每日新詞配額 (10~50 字/天) 與目標記憶留存率 (85%~95%)。
 - **專案開發進度管理系統**：在專案根目錄建立 `開發進度/` 資料夾，包含總覽文件、Git/GitHub 協作管理規範、Roadmap 與 CHANGELOG。
 - **AI 智慧字典入口 (Web)**：在 Web 端新增字典 Tab 入口與未完成佔位視圖 (`DictionaryView.jsx`)。
 - **輕量級西語語音代理 API (`/api/tts`)**：在 Express 後端新增極輕量音訊代理端點，利用 Node 22 原生 `fetch` 串流高品質西語語音（`audio/mpeg`），並加上 HTTP 24 小時快取 (`Cache-Control: public, max-age=86400`)，解決行動端相容性同時保持約 35MB RAM 超輕量後端架構。

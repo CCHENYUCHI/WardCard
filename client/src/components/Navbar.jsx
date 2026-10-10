@@ -17,13 +17,22 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
 
         <nav className="nav-links">
           <button
+            className={`nav-tab ${activeTab === 'agenda' ? 'active' : ''}`}
+            onClick={() => setActiveTab('agenda')}
+            id="nav-agenda"
+          >
+            <Sparkles size={18} />
+            <span>今日學習</span>
+            {dueCount > 0 && <span className="tab-badge">{dueCount}</span>}
+          </button>
+
+          <button
             className={`nav-tab ${activeTab === 'review' ? 'active' : ''}`}
             onClick={() => setActiveTab('review')}
             id="nav-review"
           >
             <Layers size={18} />
-            <span>單字翻卡</span>
-            {dueCount > 0 && <span className="tab-badge">{dueCount}</span>}
+            <span>自由翻卡</span>
           </button>
 
           <button
@@ -32,7 +41,7 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
             id="nav-spelling"
           >
             <Keyboard size={18} />
-            <span>拼字測驗</span>
+            <span>盲測拼寫</span>
           </button>
 
           <button
@@ -42,15 +51,6 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
           >
             <BookOpen size={18} />
             <span>單字庫</span>
-          </button>
-
-          <button
-            className={`nav-tab ${activeTab === 'dictionary' ? 'active' : ''}`}
-            onClick={() => setActiveTab('dictionary')}
-            id="nav-dictionary"
-          >
-            <Search size={18} />
-            <span>字典 (Todo)</span>
           </button>
 
           <button

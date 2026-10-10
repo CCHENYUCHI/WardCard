@@ -59,6 +59,63 @@ db.exec(`
   );
 `);
 
+// Run lightweight schema migrations for FSRS and Active Learning
+function runMigrations() {
+  const cardColumns = db.prepare("PRAGMA table_info(cards)").all().map(c => c.name);
+  
+  if (!cardColumns.includes('lifecycle_status')) {
+    db.exec("ALTER TABLE cards ADD COLUMN lifecycle_status TEXT DEFAULT 'active'");
+  }
+  if (!cardColumns.includes('is_starred')) {
+    db.exec("ALTER TABLE cards ADD COLUMN is_starred INTEGER DEFAULT 0");
+  }
+  if (!cardColumns.includes('mastery_stage')) {
+    db.exec("ALTER TABLE cards ADD COLUMN mastery_stage INTEGER DEFAULT 1");
+  }
+  if (!cardColumns.includes('fsrs_stability')) {
+    db.exec("ALTER TABLE cards ADD COLUMN fsrs_stability REAL DEFAULT 0.0");
+  }
+  if (!cardColumns.includes('fsrs_difficulty')) {
+    db.exec("ALTER TABLE cards ADD COLUMN fsrs_difficulty REAL DEFAULT 5.0");
+  }
+  if (!cardColumns.includes('fsrs_reps')) {
+    db.exec("ALTER TABLE cards ADD COLUMN fsrs_reps INTEGER DEFAULT 0");
+  }
+  if (!cardColumns.includes('curriculum_unit')) {
+    db.exec("ALTER TABLE cards ADD COLUMN curriculum_unit TEXT DEFAULT ''");
+  }
+
+  // Migrate users table
+  const userColumns = db.prepare("PRAGMA table_info(users)").all().map(c => c.name);
+  if (!userColumns.includes('daily_new_quota')) {
+    db.exec("ALTER TABLE users ADD COLUMN daily_new_quota INTEGER DEFAULT 15");
+  }
+  if (!userColumns.includes('target_retention')) {
+    db.exec("ALTER TABLE users ADD COLUMN target_retention REAL DEFAULT 0.9");
+  }
+  if (!userColumns.includes('active_curriculum')) {
+    db.exec("ALTER TABLE users ADD COLUMN active_curriculum TEXT DEFAULT ''");
+  }
+
+  // Seed initial FSRS data for legacy cards if needed
+  db.exec(`
+    UPDATE cards
+    SET 
+      fsrs_stability = CASE WHEN interval_days > 0 THEN interval_days ELSE 0 END,
+      fsrs_reps = repetition,
+      mastery_stage = CASE 
+        WHEN repetition >= 6 THEN 4
+        WHEN repetition >= 3 THEN 3
+        WHEN repetition >= 1 THEN 2
+        ELSE 1 
+      END,
+      curriculum_unit = CASE WHEN curriculum_unit = '' THEN category ELSE curriculum_unit END
+    WHERE fsrs_stability = 0.0 AND repetition > 0;
+  `);
+}
+
+runMigrations();
+
 // Insert default seed cards if database is empty
 const countRow = db.prepare('SELECT count(*) as count FROM cards').get();
 if (Number(countRow.count) === 0) {

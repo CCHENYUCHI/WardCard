@@ -8,12 +8,44 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
   const [savedSuccess, setSavedSuccess] = useState(false);
   const [ttsMode, setTtsModeState] = useState(TTS_MODES.AUTO);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+  const [dailyQuota, setDailyQuota] = useState(15);
+  const [targetRetention, setTargetRetention] = useState(0.9);
 
   useEffect(() => {
     const key = localStorage.getItem('gemini_api_key') || '';
     setApiKey(key);
     setTtsModeState(getTtsMode());
+
+    // Fetch user study preferences
+    if (isOpen) {
+      fetchAPI('/api/user/settings')
+        .then(res => res.json())
+        .then(data => {
+          if (data) {
+            if (data.daily_new_quota) setDailyQuota(data.daily_new_quota);
+            if (data.target_retention) setTargetRetention(data.target_retention);
+          }
+        })
+        .catch(err => console.error('Failed to load user settings:', err));
+    }
   }, [isOpen]);
+
+  const handleSaveStudySettings = async () => {
+    try {
+      await fetchAPI('/api/user/settings', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          daily_new_quota: Number(dailyQuota),
+          target_retention: Number(targetRetention)
+        })
+      });
+      setSavedSuccess(true);
+      setTimeout(() => setSavedSuccess(false), 2000);
+    } catch (err) {
+      console.error('Failed to save study settings:', err);
+    }
+  };
 
   if (!isOpen) return null;
 
@@ -126,6 +158,58 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
             <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
               也可直接設定於伺服端 .env
             </span>
+          </div>
+        </div>
+
+        {/* FSRS Learning Preferences */}
+        <div style={{ marginBottom: '24px', padding: '16px', background: 'rgba(255, 255, 255, 0.03)', borderRadius: 'var(--radius-md)' }}>
+          <div style={{ fontWeight: 600, fontSize: '0.92rem', marginBottom: '8px' }}>
+            🧠 FSRS 記憶調度與每日配額
+          </div>
+          <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '12px' }}>
+            控制每日從待學庫存中自動推薦的新單字上限，以及目標記憶保持率：
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '12px' }}>
+            <div>
+              <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', display: 'block', marginBottom: '4px' }}>
+                每日新詞配額 (字/天)
+              </label>
+              <select
+                className="select-custom"
+                value={dailyQuota}
+                onChange={e => setDailyQuota(Number(e.target.value))}
+                style={{ width: '100%' }}
+              >
+                <option value={10}>10 字 (輕鬆起步)</option>
+                <option value={15}>15 字 (標準推薦)</option>
+                <option value={20}>20 字 (密集衝刺)</option>
+                <option value={30}>30 字 (高強度)</option>
+                <option value={50}>50 字 (極限)</option>
+              </select>
+            </div>
+
+            <div>
+              <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', display: 'block', marginBottom: '4px' }}>
+                目標記憶留存率 (Retention)
+              </label>
+              <select
+                className="select-custom"
+                value={targetRetention}
+                onChange={e => setTargetRetention(Number(e.target.value))}
+                style={{ width: '100%' }}
+              >
+                <option value={0.85}>85% (較長複習間隔)</option>
+                <option value={0.90}>90% (黃金科學標準)</option>
+                <option value={0.95}>95% (高頻率超強固化)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style={{ textAlign: 'right' }}>
+            <button className="btn btn-secondary btn-sm" onClick={handleSaveStudySettings}>
+              {savedSuccess ? <Check size={14} /> : '套用學習設定'}
+            </button>
           </div>
         </div>
 

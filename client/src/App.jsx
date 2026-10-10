@@ -2,6 +2,8 @@ import { fetchAPI, getToken, removeToken } from './utils/api';
 import React, { useState, useEffect, useCallback } from 'react';
 import LoginScreen from './components/LoginScreen';
 import Navbar from './components/Navbar';
+import DailyAgendaCockpit from './components/DailyAgendaCockpit';
+import AdaptiveStudySession from './components/AdaptiveStudySession';
 import FlashcardReview from './components/FlashcardReview';
 import SpellingReview from './components/SpellingReview';
 import WordList from './components/WordList';
@@ -12,7 +14,9 @@ import WordModal from './components/WordModal';
 import SettingsModal from './components/SettingsModal';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('review'); // 'review' | 'spelling' | 'words' | 'stats'
+  const [activeTab, setActiveTab] = useState('agenda'); // 'agenda' | 'session' | 'review' | 'spelling' | 'words' | 'stats'
+  const [sessionPlan, setSessionPlan] = useState(null);
+  const [wordFilterPreset, setWordFilterPreset] = useState(null);
   const [cards, setCards] = useState([]);
   const [dueCards, setDueCards] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -94,17 +98,17 @@ export default function App() {
   }
 
   // Handle reviewing a card
-  const handleReview = async (id, rating, mode) => {
+  const handleReview = async (id, rating, mode = 'flashcard', stage) => {
     try {
       const res = await fetchAPI(`/api/cards/${id}/review`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ rating, review_mode: mode })
+        body: JSON.stringify({ rating, review_mode: mode, tested_stage: stage })
       });
 
       if (res.ok) {
-        // Refresh cards and stats silently
         fetchData();
+        return await res.json();
       }
     } catch (err) {
       console.error('Error reviewing card:', err);
@@ -163,22 +167,24 @@ export default function App() {
 
   return (
     <div className="app-container">
-      <Navbar
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-        dueCount={dueCards.length}
-        onOpenAiModal={() => setIsAiModalOpen(true)}
-        onOpenAddModal={() => {
-          setEditingCard(null);
-          setIsWordModalOpen(true);
-        }}
-        onOpenSettings={() => setIsSettingsOpen(true)}
-        user={user}
-        onLogout={() => {
-          removeToken();
-          setUser(null);
-        }}
-      />
+      {activeTab !== 'session' && (
+        <Navbar
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          dueCount={dueCards.length}
+          onOpenAiModal={() => setIsAiModalOpen(true)}
+          onOpenAddModal={() => {
+            setEditingCard(null);
+            setIsWordModalOpen(true);
+          }}
+          onOpenSettings={() => setIsSettingsOpen(true)}
+          user={user}
+          onLogout={() => {
+            removeToken();
+            setUser(null);
+          }}
+        />
+      )}
 
       <main className="main-content">
         {loading ? (
@@ -188,6 +194,33 @@ export default function App() {
           </div>
         ) : (
           <>
+            {activeTab === 'agenda' && (
+              <DailyAgendaCockpit
+                onStartStudy={(plan) => {
+                  setSessionPlan(plan);
+                  setActiveTab('session');
+                }}
+                onNavigateToWords={(preset) => {
+                  setWordFilterPreset(preset);
+                  setActiveTab('words');
+                }}
+                onOpenSettings={() => setIsSettingsOpen(true)}
+                onRefresh={fetchData}
+              />
+            )}
+
+            {activeTab === 'session' && sessionPlan && (
+              <AdaptiveStudySession
+                sessionPlan={sessionPlan}
+                onReviewCard={handleReview}
+                onExitSession={() => {
+                  setActiveTab('agenda');
+                  setSessionPlan(null);
+                  fetchData();
+                }}
+              />
+            )}
+
             {activeTab === 'review' && (
               <FlashcardReview
                 allCards={cards}
@@ -212,6 +245,7 @@ export default function App() {
               <WordList
                 cards={cards}
                 categories={categories}
+                initialFilterPreset={wordFilterPreset}
                 onEdit={handleEditClick}
                 onDelete={handleDeleteWord}
                 onOpenAddModal={() => {
@@ -219,6 +253,7 @@ export default function App() {
                   setIsWordModalOpen(true);
                 }}
                 onOpenAiModal={() => setIsAiModalOpen(true)}
+                onRefresh={fetchData}
               />
             )}
 

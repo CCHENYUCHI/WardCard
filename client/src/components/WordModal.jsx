@@ -12,12 +12,20 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
     example_zh: '',
     notes: '',
     category: '日常生活',
+    curriculum_unit: '',
+    lifecycle_status: 'ready',
+    is_starred: 0,
     dele_level: 'A2'
   });
 
   useEffect(() => {
     if (initialData) {
-      setFormData(initialData);
+      setFormData({
+        ...initialData,
+        curriculum_unit: initialData.curriculum_unit || initialData.category || '',
+        lifecycle_status: initialData.lifecycle_status || 'active',
+        is_starred: initialData.is_starred ? 1 : 0
+      });
     } else {
       setFormData({
         word: '',
@@ -29,6 +37,9 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
         example_zh: '',
         notes: '',
         category: '日常生活',
+        curriculum_unit: '',
+        lifecycle_status: 'ready',
+        is_starred: 0,
         dele_level: 'A2'
       });
     }
@@ -140,19 +151,56 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
               </datalist>
             </div>
             <div>
-              <label className="form-label">DELE 檢定等級</label>
+              <label className="form-label">課本單元 / 章節 (可選)</label>
+              <input
+                type="text"
+                className="form-input"
+                placeholder="例如: Capítulo 1 或 課堂筆記"
+                value={formData.curriculum_unit}
+                onChange={e => setFormData({ ...formData, curriculum_unit: e.target.value })}
+              />
+            </div>
+            <div>
+              <label className="form-label">DELE 等級</label>
               <select
                 className="form-input"
                 value={formData.dele_level}
                 onChange={e => setFormData({ ...formData, dele_level: e.target.value })}
               >
-                <option value="A1">A1 (入門)</option>
-                <option value="A2">A2 (初級)</option>
-                <option value="B1">B1 (中級)</option>
-                <option value="B2">B2 (中高級)</option>
-                <option value="C1">C1 (高級)</option>
-                <option value="C2">C2 (精通)</option>
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+                <option value="C1">C1</option>
+                <option value="C2">C2</option>
               </select>
+            </div>
+          </div>
+
+          {/* Lifecycle Status & Star */}
+          <div className="form-row" style={{ background: 'rgba(255,255,255,0.03)', padding: '12px 14px', borderRadius: '12px', marginBottom: '16px' }}>
+            <div style={{ flex: 2 }}>
+              <label className="form-label">排程狀態 (Status)</label>
+              <select
+                className="form-input"
+                value={formData.lifecycle_status}
+                onChange={e => setFormData({ ...formData, lifecycle_status: e.target.value })}
+              >
+                <option value="ready">🎯 待學核心 (Ready - 排隊等待推薦)</option>
+                <option value="active">⚡ 立即激活 (Active - 加入今日排程)</option>
+                <option value="inbox">📥 隨手暫存 (Inbox - 零壓力不排程)</option>
+              </select>
+            </div>
+            <div style={{ flex: 1, display: 'flex', alignItems: 'center', paddingTop: '22px' }}>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontSize: '0.9rem', color: '#facc15' }}>
+                <input
+                  type="checkbox"
+                  checked={Boolean(formData.is_starred)}
+                  onChange={e => setFormData({ ...formData, is_starred: e.target.checked ? 1 : 0 })}
+                  style={{ width: '16px', height: '16px', cursor: 'pointer' }}
+                />
+                <span>⭐️ 標記為核心詞</span>
+              </label>
             </div>
           </div>
 
