@@ -127,7 +127,7 @@ export default function DailyAgendaCockpit({
   return (
     <div className="agenda-cockpit-container" style={{ maxWidth: '960px', margin: '0 auto', padding: '16px' }}>
       {/* Top Welcome & Mission Header (Google Classroom Course Banner Style) */}
-      <div style={{ 
+      <div className="cockpit-banner-card" style={{ 
         background: '#ffffff',
         border: '1px solid var(--border-color)',
         borderRadius: 'var(--radius-xl)',
@@ -182,7 +182,7 @@ export default function DailyAgendaCockpit({
           </div>
 
           {/* Big Start Action Button */}
-          <div>
+          <div className="cockpit-cta-wrap">
             <button
               onClick={() => onStartStudy({ 
                 urgent: agenda?.urgent_reviews || [],
@@ -190,7 +190,7 @@ export default function DailyAgendaCockpit({
                 newCards: agenda?.candidate_new || []
               })}
               disabled={totalTodayTasks === 0}
-              className="btn btn-primary"
+              className="btn btn-primary cockpit-btn-start"
               style={{
                 padding: '12px 28px',
                 fontSize: '1rem',
@@ -214,14 +214,14 @@ export default function DailyAgendaCockpit({
         </div>
 
         {/* 3 Metric Pillars */}
-        <div style={{ 
+        <div className="cockpit-metrics-grid" style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
           gap: '14px', 
           marginTop: '20px' 
         }}>
           {/* Urgent / Lapse */}
-          <div style={{
+          <div className="cockpit-metric-item" style={{
             background: 'var(--google-red-light)',
             border: '1px solid #f6aea9',
             borderRadius: 'var(--radius-lg)',
@@ -236,13 +236,13 @@ export default function DailyAgendaCockpit({
               </span>
               <AlertCircle size={16} />
             </div>
-            <div style={{ fontSize: '2.2rem', fontWeight: 800, marginTop: '4px', color: 'var(--google-red)' }}>
+            <div className="cockpit-metric-num" style={{ fontSize: '2.2rem', fontWeight: 800, marginTop: '4px', color: 'var(--google-red)' }}>
               {urgentCount} <span style={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--text-secondary)' }}>字</span>
             </div>
           </div>
 
           {/* Regular Due */}
-          <div style={{
+          <div className="cockpit-metric-item" style={{
             background: 'var(--google-blue-light)',
             border: '1px solid #aecbfa',
             borderRadius: 'var(--radius-lg)',
@@ -257,13 +257,13 @@ export default function DailyAgendaCockpit({
               </span>
               <RotateCcw size={16} />
             </div>
-            <div style={{ fontSize: '2.2rem', fontWeight: 800, marginTop: '4px', color: 'var(--google-blue)' }}>
+            <div className="cockpit-metric-num" style={{ fontSize: '2.2rem', fontWeight: 800, marginTop: '4px', color: 'var(--google-blue)' }}>
               {regularCount} <span style={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--text-secondary)' }}>字</span>
             </div>
           </div>
 
           {/* Daily New Quota */}
-          <div style={{
+          <div className="cockpit-metric-item" style={{
             background: 'var(--google-green-light)',
             border: '1px solid #a8dab5',
             borderRadius: 'var(--radius-lg)',
@@ -278,7 +278,7 @@ export default function DailyAgendaCockpit({
               </span>
               <Sparkles size={16} />
             </div>
-            <div style={{ fontSize: '2.2rem', fontWeight: 800, marginTop: '4px', color: 'var(--google-green)' }}>
+            <div className="cockpit-metric-num" style={{ fontSize: '2.2rem', fontWeight: 800, marginTop: '4px', color: 'var(--google-green)' }}>
               {newCount} <span style={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--text-secondary)' }}>/ {agenda?.daily_new_quota || 15} 字</span>
             </div>
           </div>
