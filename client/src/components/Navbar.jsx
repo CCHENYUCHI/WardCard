@@ -94,7 +94,7 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
           </button>
 
           {user && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginLeft: '8px', paddingLeft: '8px', borderLeft: '1px solid rgba(255,255,255,0.1)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginLeft: '8px', paddingLeft: '8px', borderLeft: '1px solid var(--border-color)' }}>
               <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
                 Hi, <strong>{user.username}</strong>
               </span>

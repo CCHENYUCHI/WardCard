@@ -90,7 +90,7 @@ export default function App() {
   }, [user, fetchData]);
 
   if (authLoading) {
-    return <div style={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center' }}>載入中...</div>;
+    return <div style={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-primary)', color: 'var(--text-secondary)' }}>載入中...</div>;
   }
 
   if (!user) {

@@ -13,7 +13,7 @@ export default function StatsView({ stats }) {
       {/* 4 Stat Boxes */}
       <div className="stats-header">
         <div className="stat-box">
-          <div className="stat-icon" style={{ background: 'rgba(99, 102, 241, 0.15)', color: '#818cf8' }}>
+          <div className="stat-icon" style={{ background: 'var(--google-blue-light)', color: 'var(--google-blue)' }}>
             <BookOpen size={24} />
           </div>
           <div>
@@ -23,11 +23,11 @@ export default function StatsView({ stats }) {
         </div>
 
         <div className="stat-box">
-          <div className="stat-icon" style={{ background: 'rgba(239, 68, 68, 0.15)', color: '#f87171' }}>
+          <div className="stat-icon" style={{ background: 'var(--google-red-light)', color: 'var(--google-red)' }}>
             <Clock size={24} />
           </div>
           <div>
-            <div className="stat-val" style={{ color: stats.due > 0 ? '#f87171' : 'var(--text-primary)' }}>
+            <div className="stat-val" style={{ color: stats.due > 0 ? 'var(--google-red)' : 'var(--text-primary)' }}>
               {stats.due}
             </div>
             <div className="stat-label">今日待複習</div>
@@ -35,21 +35,21 @@ export default function StatsView({ stats }) {
         </div>
 
         <div className="stat-box">
-          <div className="stat-icon" style={{ background: 'rgba(16, 185, 129, 0.15)', color: '#34d399' }}>
+          <div className="stat-icon" style={{ background: 'var(--google-green-light)', color: 'var(--google-green)' }}>
             <Award size={24} />
           </div>
           <div>
-            <div className="stat-val" style={{ color: '#34d399' }}>{stats.mastered}</div>
+            <div className="stat-val" style={{ color: 'var(--google-green)' }}>{stats.mastered}</div>
             <div className="stat-label">已完全掌握 (熟記)</div>
           </div>
         </div>
 
         <div className="stat-box">
-          <div className="stat-icon" style={{ background: 'rgba(245, 158, 11, 0.15)', color: '#fbbf24' }}>
+          <div className="stat-icon" style={{ background: 'var(--google-yellow-light)', color: 'var(--google-yellow-dark)' }}>
             <Flame size={24} />
           </div>
           <div>
-            <div className="stat-val" style={{ color: '#fbbf24' }}>{stats.reviewedToday}</div>
+            <div className="stat-val" style={{ color: 'var(--google-yellow-dark)' }}>{stats.reviewedToday}</div>
             <div className="stat-label">今日已複習卡次</div>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function StatsView({ stats }) {
         {/* Memory Curve / Mastery Progress */}
         <div className="glass-card">
           <h3 style={{ fontSize: '1.15rem', marginBottom: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Layers size={20} style={{ color: 'var(--accent-primary)' }} />
+            <Layers size={20} style={{ color: 'var(--google-blue)' }} />
             <span>記憶週期掌握率</span>
           </h3>
 
@@ -68,8 +68,8 @@ export default function StatsView({ stats }) {
               <span>已開始背誦 (熟練度 &gt; 0)</span>
               <strong>{learnedPercent}% ({stats.learned} 字)</strong>
             </div>
-            <div style={{ height: '8px', background: 'rgba(255, 255, 255, 0.08)', borderRadius: '10px', overflow: 'hidden' }}>
-              <div style={{ width: `${learnedPercent}%`, height: '100%', background: '#60a5fa', borderRadius: '10px' }} />
+            <div style={{ height: '8px', background: '#e0e0e0', borderRadius: '10px', overflow: 'hidden' }}>
+              <div style={{ width: `${learnedPercent}%`, height: '100%', background: 'var(--google-blue)', borderRadius: '10px' }} />
             </div>
           </div>
 
@@ -78,20 +78,20 @@ export default function StatsView({ stats }) {
               <span>長期記憶掌握 (熟練度 ≥ 4)</span>
               <strong>{masteredPercent}% ({stats.mastered} 字)</strong>
             </div>
-            <div style={{ height: '8px', background: 'rgba(255, 255, 255, 0.08)', borderRadius: '10px', overflow: 'hidden' }}>
-              <div style={{ width: `${masteredPercent}%`, height: '100%', background: 'linear-gradient(90deg, #10b981, #34d399)', borderRadius: '10px' }} />
+            <div style={{ height: '8px', background: '#e0e0e0', borderRadius: '10px', overflow: 'hidden' }}>
+              <div style={{ width: `${masteredPercent}%`, height: '100%', background: 'var(--google-green)', borderRadius: '10px' }} />
             </div>
           </div>
 
-          <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.5, background: 'rgba(255, 255, 255, 0.03)', padding: '12px', borderRadius: '8px' }}>
-            💡 <strong>間隔重複提示：</strong>系統使用 SM-2 演算法，根據每次翻卡評分（忘記、困難、良好、容易）動態調整下一次複習天數，助你用最少的時間達到永久記憶。
+          <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.5, background: '#f8f9fa', border: '1px solid var(--border-color)', padding: '12px', borderRadius: '8px' }}>
+            💡 <strong>科學記憶提示：</strong>系統使用現代 FSRS 與間隔重複演算法，根據回想難度與穩定度動態調整下一次複習天數，助你以最高效率達成永久記憶。
           </div>
         </div>
 
         {/* Categories Breakdown */}
         <div className="glass-card">
           <h3 style={{ fontSize: '1.15rem', marginBottom: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <BookOpen size={20} style={{ color: '#ec4899' }} />
+            <BookOpen size={20} style={{ color: 'var(--google-blue)' }} />
             <span>分類統計 (日常 vs 考試)</span>
           </h3>
 
@@ -104,8 +104,8 @@ export default function StatsView({ stats }) {
                     <span style={{ fontWeight: 600 }}>{cat.category}</span>
                     <span style={{ color: 'var(--text-secondary)' }}>{cat.count} 字 ({pct}%)</span>
                   </div>
-                  <div style={{ height: '6px', background: 'rgba(255, 255, 255, 0.08)', borderRadius: '10px', overflow: 'hidden' }}>
-                    <div style={{ width: `${pct}%`, height: '100%', background: 'var(--accent-gradient)', borderRadius: '10px' }} />
+                  <div style={{ height: '6px', background: '#e0e0e0', borderRadius: '10px', overflow: 'hidden' }}>
+                    <div style={{ width: `${pct}%`, height: '100%', background: 'var(--google-blue)', borderRadius: '10px' }} />
                   </div>
                 </div>
               );
@@ -124,7 +124,7 @@ export default function StatsView({ stats }) {
                 <div
                   key={lvl}
                   style={{
-                    background: 'rgba(255, 255, 255, 0.03)',
+                    background: '#f8f9fa',
                     border: '1px solid var(--border-color)',
                     borderRadius: 'var(--radius-md)',
                     padding: '14px',
@@ -132,7 +132,7 @@ export default function StatsView({ stats }) {
                   }}
                 >
                   <div className="badge-dele" style={{ marginBottom: '6px' }}>{lvl}</div>
-                  <div style={{ fontSize: '1.4rem', fontWeight: 800 }}>{count}</div>
+                  <div style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-primary)' }}>{count}</div>
                   <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>單字</div>
                 </div>
               );

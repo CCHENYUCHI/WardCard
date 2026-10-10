@@ -33,42 +33,42 @@ const LoginScreen = ({ onLogin }) => {
   };
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-      <div className="card-face" style={{ maxWidth: '400px', width: '100%', padding: '32px' }}>
-        <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-          <span style={{ fontSize: '3rem', display: 'block', marginBottom: '16px' }}>🇪🇸</span>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>PalabraCard</h2>
-          <p style={{ color: 'var(--text-secondary)', marginTop: '8px' }}>
+    <div style={{ display: 'flex', minHeight: '100vh', alignItems: 'center', justifyContent: 'center', padding: '20px', background: 'var(--bg-primary)' }}>
+      <div className="glass-card" style={{ maxWidth: '400px', width: '100%', padding: '36px 32px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '28px' }}>
+          <span style={{ fontSize: '3rem', display: 'block', marginBottom: '12px' }}>🇪🇸</span>
+          <h2 style={{ fontSize: '1.6rem', fontWeight: 'bold', color: 'var(--text-primary)' }}>PalabraCard</h2>
+          <p style={{ color: 'var(--text-secondary)', marginTop: '6px', fontSize: '0.92rem' }}>
             {isLogin ? '登入繼續你的西語學習之旅' : '註冊帳號開始學習西語'}
           </p>
         </div>
 
         {error && (
-          <div style={{ background: 'rgba(239, 68, 68, 0.1)', color: '#ef4444', padding: '12px', borderRadius: '8px', marginBottom: '20px', fontSize: '0.9rem', textAlign: 'center' }}>
+          <div style={{ background: 'var(--google-red-light)', border: '1px solid #f6aea9', color: 'var(--google-red)', padding: '10px 14px', borderRadius: '8px', marginBottom: '20px', fontSize: '0.88rem', textAlign: 'center', fontWeight: 500 }}>
             {error}
           </div>
         )}
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <div>
-            <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>帳號</label>
+            <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-secondary)' }}>帳號</label>
             <input
               type="text"
               value={username}
               onChange={e => setUsername(e.target.value)}
               placeholder="輸入帳號..."
-              style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid var(--border-color)', background: 'rgba(255,255,255,0.05)', color: 'var(--text-primary)', fontSize: '1rem' }}
+              className="form-input"
               required
             />
           </div>
           <div>
-            <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>密碼</label>
+            <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-secondary)' }}>密碼</label>
             <input
               type="password"
               value={password}
               onChange={e => setPassword(e.target.value)}
               placeholder="輸入密碼..."
-              style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid var(--border-color)', background: 'rgba(255,255,255,0.05)', color: 'var(--text-primary)', fontSize: '1rem' }}
+              className="form-input"
               required
             />
           </div>

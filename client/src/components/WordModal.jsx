@@ -178,7 +178,7 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
           </div>
 
           {/* Lifecycle Status & Star */}
-          <div className="form-row" style={{ background: 'rgba(255,255,255,0.03)', padding: '12px 14px', borderRadius: '12px', marginBottom: '16px' }}>
+          <div className="form-row" style={{ background: '#f8f9fa', border: '1px solid var(--border-color)', padding: '12px 14px', borderRadius: 'var(--radius-md)', marginBottom: '16px' }}>
             <div style={{ flex: 2 }}>
               <label className="form-label">排程狀態 (Status)</label>
               <select
@@ -192,7 +192,7 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
               </select>
             </div>
             <div style={{ flex: 1, display: 'flex', alignItems: 'center', paddingTop: '22px' }}>
-              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontSize: '0.9rem', color: '#facc15' }}>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontSize: '0.9rem', color: 'var(--google-yellow-dark)', fontWeight: 600 }}>
                 <input
                   type="checkbox"
                   checked={Boolean(formData.is_starred)}

@@ -215,12 +215,12 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
       </div>
 
       {/* Progress Bar */}
-      <div style={{ height: '6px', background: 'rgba(255, 255, 255, 0.08)', borderRadius: '10px', marginBottom: '24px', overflow: 'hidden' }}>
+      <div style={{ height: '6px', background: '#e0e0e0', borderRadius: '10px', marginBottom: '24px', overflow: 'hidden' }}>
         <div
           style={{
             height: '100%',
             width: `${progressPercent}%`,
-            background: 'var(--accent-gradient)',
+            background: 'var(--google-blue)',
             transition: 'width 0.3s ease'
           }}
         />

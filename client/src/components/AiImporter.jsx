@@ -126,7 +126,7 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
       <div className="modal-content" style={{ maxWidth: '850px' }} onClick={e => e.stopPropagation()}>
         <div className="modal-header">
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <div style={{ width: '36px', height: '36px', borderRadius: '10px', background: 'var(--accent-gradient)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '36px', height: '36px', borderRadius: '10px', background: 'var(--google-blue)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Sparkles size={20} color="#fff" />
             </div>
             <div>
@@ -140,7 +140,7 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
         </div>
 
         {errorMsg && (
-          <div style={{ padding: '12px 16px', background: 'rgba(239, 68, 68, 0.15)', border: '1px solid rgba(239, 68, 68, 0.3)', borderRadius: 'var(--radius-md)', color: '#fca5a5', marginBottom: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <div style={{ padding: '12px 16px', background: 'var(--google-red-light)', border: '1px solid #f6aea9', borderRadius: 'var(--radius-md)', color: 'var(--google-red)', marginBottom: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
             <AlertCircle size={18} />
             <span style={{ fontSize: '0.88rem' }}>{errorMsg}</span>
           </div>
@@ -296,10 +296,10 @@ Hoy en clase aprendimos:
                     style={{
                       padding: '16px',
                       borderRadius: 'var(--radius-md)',
-                      background: isSelected ? 'rgba(255, 255, 255, 0.04)' : 'rgba(255, 255, 255, 0.01)',
-                      border: `1px solid ${isSelected ? 'rgba(99, 102, 241, 0.4)' : 'var(--border-color)'}`,
-                      opacity: isSelected ? 1 : 0.6,
-                      transition: 'all 0.2s ease'
+                      background: isSelected ? 'var(--google-blue-light)' : '#ffffff',
+                      border: `1px solid ${isSelected ? '#aecbfa' : 'var(--border-color)'}`,
+                      opacity: isSelected ? 1 : 0.7,
+                      transition: 'all 0.15s ease'
                     }}
                   >
                     <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
@@ -316,7 +316,7 @@ Hoy en clase aprendimos:
                           {card.article && (
                             <span style={{ color: 'var(--text-muted)', fontWeight: 600 }}>{card.article}</span>
                           )}
-                          <strong style={{ fontSize: '1.25rem', color: '#fff' }}>{card.word}</strong>
+                          <strong style={{ fontSize: '1.25rem', color: 'var(--text-primary)' }}>{card.word}</strong>
 
                           {card.gender && card.gender !== 'none' && (
                             <span className={`badge-gender ${card.gender}`}>
@@ -342,19 +342,19 @@ Hoy en clase aprendimos:
 
                         {/* Example sentence */}
                         {card.example_es && (
-                          <div style={{ fontSize: '0.85rem', color: '#cbd5e1', marginBottom: '4px' }}>
+                          <div style={{ fontSize: '0.85rem', color: 'var(--text-primary)', marginBottom: '4px', fontWeight: 500 }}>
                             🇪🇸 {card.example_es}
                           </div>
                         )}
                         {card.example_zh && (
-                          <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '6px' }}>
+                          <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '6px' }}>
                             🇹🇼 {card.example_zh}
                           </div>
                         )}
 
                         {/* Grammar notes */}
                         {card.notes && (
-                          <div style={{ fontSize: '0.8rem', color: '#fde68a', background: 'rgba(245, 158, 11, 0.1)', padding: '6px 10px', borderRadius: '6px' }}>
+                          <div style={{ fontSize: '0.8rem', color: 'var(--google-yellow-dark)', background: 'var(--google-yellow-light)', border: '1px solid #fce8b2', padding: '6px 10px', borderRadius: '6px' }}>
                             💡 {card.notes}
                           </div>
                         )}
@@ -368,7 +368,7 @@ Hoy en clase aprendimos:
             {/* Footer Actions */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px', paddingTop: '16px', borderTop: '1px solid var(--border-color)' }}>
               <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                將自動套用間隔重複 (SM-2) 記憶排程
+                將自動套用 FSRS 記憶曲線與待學推薦
               </span>
               <div style={{ display: 'flex', gap: '10px' }}>
                 <button className="btn btn-secondary" onClick={() => setExtractedCards([])}>

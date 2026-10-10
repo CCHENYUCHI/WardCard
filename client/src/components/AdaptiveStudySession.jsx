@@ -172,29 +172,29 @@ export default function AdaptiveStudySession({
 
   if (isFinished) {
     return (
-      <div style={{ maxWidth: '640px', margin: '40px auto', textAlign: 'center', padding: '32px' }}>
+      <div style={{ maxWidth: '600px', margin: '40px auto', textAlign: 'center', padding: '24px' }}>
         <div style={{
-          background: 'var(--surface-color)',
+          background: '#ffffff',
           border: '1px solid var(--border-color)',
-          borderRadius: '24px',
-          padding: '40px 24px',
-          backdropFilter: 'blur(16px)'
+          borderRadius: 'var(--radius-xl)',
+          padding: '40px 28px',
+          boxShadow: 'var(--shadow-card)'
         }}>
-          <div style={{ fontSize: '3.5rem', marginBottom: '16px' }}>🏆</div>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: 800, margin: '0 0 12px 0' }}>
+          <div style={{ fontSize: '3.2rem', marginBottom: '16px' }}>🏆</div>
+          <h2 style={{ fontSize: '1.7rem', fontWeight: 700, margin: '0 0 10px 0', color: 'var(--text-primary)' }}>
             今日學習任務達成！
           </h2>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', margin: '0 0 28px 0' }}>
-            恭喜！你完成了今日所有的自適應記憶排程，神經突觸已完成強化。
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', margin: '0 0 28px 0' }}>
+            太棒了！你完成了今日所有的記憶排程，神經突觸已完成強化固化。
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '32px' }}>
-            <div style={{ background: 'rgba(255,255,255,0.04)', padding: '16px', borderRadius: '16px' }}>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#34d399' }}>{completedCount}</div>
+            <div style={{ background: 'var(--google-green-light)', border: '1px solid #a8dab5', padding: '16px', borderRadius: 'var(--radius-lg)' }}>
+              <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--google-green)' }}>{completedCount}</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>完成單字數</div>
             </div>
-            <div style={{ background: 'rgba(255,255,255,0.04)', padding: '16px', borderRadius: '16px' }}>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#60a5fa' }}>{stagePromotions}</div>
+            <div style={{ background: 'var(--google-blue-light)', border: '1px solid #aecbfa', padding: '16px', borderRadius: 'var(--radius-lg)' }}>
+              <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--google-blue)' }}>{stagePromotions}</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>晉級高階詞彙</div>
             </div>
           </div>
@@ -202,7 +202,7 @@ export default function AdaptiveStudySession({
           <button 
             className="btn btn-primary"
             onClick={onExitSession}
-            style={{ padding: '14px 36px', fontSize: '1.05rem' }}
+            style={{ padding: '12px 32px', fontSize: '1rem' }}
           >
             返回學習駕駛艙
           </button>
@@ -279,19 +279,18 @@ export default function AdaptiveStudySession({
         }} />
       </div>
 
-      {/* Main Flashcard Container */}
+      {/* Main Flashcard Container (Google Clean White Study Card) */}
       <div style={{
-        background: 'var(--surface-color)',
+        background: '#ffffff',
         border: '1px solid var(--border-color)',
-        borderRadius: '24px',
+        borderRadius: 'var(--radius-xl)',
         padding: '36px 28px',
         minHeight: '340px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
         position: 'relative',
-        boxShadow: '0 20px 40px -15px rgba(0,0,0,0.5)',
-        backdropFilter: 'blur(20px)'
+        boxShadow: 'var(--shadow-card)'
       }}>
 
         {/* --- STAGE 1: Recognition (西語 -> 中文) --- */}
@@ -300,11 +299,11 @@ export default function AdaptiveStudySession({
             <div style={{ textAlign: 'center', margin: '20px 0 30px 0' }}>
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
                 {currentCard.article && (
-                  <span style={{ fontSize: '1.4rem', color: 'var(--text-secondary)', fontWeight: 600 }}>
+                  <span style={{ fontSize: '1.4rem', color: 'var(--text-muted)', fontWeight: 600 }}>
                     {currentCard.article}
                   </span>
                 )}
-                <span style={{ fontSize: '2.5rem', fontWeight: 800, color: 'var(--text-primary)', letterSpacing: '-0.5px' }}>
+                <span style={{ fontSize: '2.5rem', fontWeight: 700, color: 'var(--text-primary)', letterSpacing: '-0.5px' }}>
                   {currentCard.word}
                 </span>
                 <button
@@ -315,15 +314,15 @@ export default function AdaptiveStudySession({
                   className="btn-icon"
                   style={{ marginLeft: '6px' }}
                 >
-                  <Volume2 size={22} color="var(--primary-color)" />
+                  <Volume2 size={22} color="var(--google-blue)" />
                 </button>
               </div>
 
               <div style={{ display: 'flex', justifyContent: 'center', gap: '8px' }}>
-                <span className="badge badge-subtle">{currentCard.part_of_speech}</span>
-                <span className="badge badge-subtle">{currentCard.dele_level}</span>
+                <span className="badge-subtle">{currentCard.part_of_speech}</span>
+                <span className="badge-dele">{currentCard.dele_level}</span>
                 {currentCard.curriculum_unit && (
-                  <span className="badge badge-subtle">{currentCard.curriculum_unit}</span>
+                  <span className="badge-category">{currentCard.curriculum_unit}</span>
                 )}
               </div>
             </div>
@@ -331,19 +330,20 @@ export default function AdaptiveStudySession({
             {/* Flipped Content */}
             {isFlipped ? (
               <div style={{ 
-                borderTop: '1px solid rgba(255,255,255,0.08)', 
+                borderTop: '1px solid var(--border-color)', 
                 paddingTop: '20px', 
                 textAlign: 'center',
-                animation: 'fadeIn 0.25s ease'
+                animation: 'fadeIn 0.2s ease'
               }}>
-                <div style={{ fontSize: '1.6rem', fontWeight: 700, color: '#38bdf8', marginBottom: '12px' }}>
+                <div style={{ fontSize: '1.6rem', fontWeight: 700, color: 'var(--google-blue)', marginBottom: '12px' }}>
                   {currentCard.translation}
                 </div>
                 {currentCard.example_es && (
                   <div style={{ 
-                    background: 'rgba(0,0,0,0.25)', 
+                    background: '#f8f9fa', 
+                    border: '1px solid var(--border-color)',
                     padding: '12px 16px', 
-                    borderRadius: '12px', 
+                    borderRadius: 'var(--radius-md)', 
                     fontSize: '0.95rem',
                     color: 'var(--text-primary)',
                     fontStyle: 'italic',
@@ -353,13 +353,13 @@ export default function AdaptiveStudySession({
                   </div>
                 )}
                 {currentCard.example_zh && (
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                  <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
                     {currentCard.example_zh}
                   </div>
                 )}
               </div>
             ) : (
-              <div style={{ textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '20px' }}>
+              <div style={{ textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '20px' }}>
                 點擊卡片或按 <kbd className="shortcut-key">Space</kbd> 翻轉查看釋義
               </div>
             )}
@@ -370,21 +370,22 @@ export default function AdaptiveStudySession({
         {stage === 2 && (
           <div>
             <div style={{ textAlign: 'center', margin: '16px 0 24px 0' }}>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#38bdf8', marginBottom: '10px' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--google-blue)', marginBottom: '10px' }}>
                 {currentCard.translation}
               </div>
               <div style={{ display: 'flex', justifyContent: 'center', gap: '8px' }}>
-                <span className="badge badge-subtle">{currentCard.part_of_speech}</span>
-                <span className="badge badge-subtle">{currentCard.dele_level}</span>
+                <span className="badge-subtle">{currentCard.part_of_speech}</span>
+                <span className="badge-dele">{currentCard.dele_level}</span>
               </div>
             </div>
 
             {/* Example with cloze mask */}
             {currentCard.example_es && (
               <div style={{
-                background: 'rgba(0,0,0,0.25)',
+                background: '#f8f9fa',
+                border: '1px solid var(--border-color)',
                 padding: '16px',
-                borderRadius: '14px',
+                borderRadius: 'var(--radius-md)',
                 marginBottom: '16px',
                 textAlign: 'center'
               }}>
@@ -392,7 +393,7 @@ export default function AdaptiveStudySession({
                   "{isFlipped ? currentCard.example_es : maskWord(currentCard.example_es, currentCard.word)}"
                 </div>
                 {currentCard.example_zh && (
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                  <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
                     {currentCard.example_zh}
                   </div>
                 )}
@@ -404,8 +405,9 @@ export default function AdaptiveStudySession({
               <div style={{ textAlign: 'center', margin: '12px 0' }}>
                 {showHint ? (
                   <span style={{ 
-                    background: 'rgba(234, 179, 8, 0.15)', 
-                    color: '#facc15', 
+                    background: 'var(--google-yellow-light)', 
+                    color: 'var(--google-yellow-dark)', 
+                    border: '1px solid #fce8b2',
                     padding: '6px 14px', 
                     borderRadius: '12px',
                     fontSize: '0.9rem',
@@ -419,7 +421,7 @@ export default function AdaptiveStudySession({
                     className="btn btn-secondary btn-sm"
                     style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                   >
-                    <Lightbulb size={14} color="#facc15" />
+                    <Lightbulb size={14} color="var(--google-yellow-dark)" />
                     <span>查看字首線索</span>
                   </button>
                 )}
@@ -429,16 +431,16 @@ export default function AdaptiveStudySession({
             {/* Revealed Answer */}
             {isFlipped && (
               <div style={{ 
-                borderTop: '1px solid rgba(255,255,255,0.08)', 
+                borderTop: '1px solid var(--border-color)', 
                 paddingTop: '16px', 
                 textAlign: 'center',
-                animation: 'fadeIn 0.25s ease'
+                animation: 'fadeIn 0.2s ease'
               }}>
-                <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--text-primary)' }}>
+                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                   {currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}
                 </div>
                 {currentCard.notes && (
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '6px' }}>
+                  <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '6px' }}>
                     📝 {currentCard.notes}
                   </div>
                 )}
@@ -451,10 +453,10 @@ export default function AdaptiveStudySession({
         {stage === 3 && (
           <div>
             <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-              <div style={{ fontSize: '1.6rem', fontWeight: 800, color: '#38bdf8', marginBottom: '8px' }}>
+              <div style={{ fontSize: '1.6rem', fontWeight: 700, color: 'var(--google-blue)', marginBottom: '8px' }}>
                 {currentCard.translation}
               </div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+              <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
                 請完整拼出西語單字（注意重音符號）
               </div>
             </div>
@@ -471,15 +473,15 @@ export default function AdaptiveStudySession({
                   disabled={spellingStatus !== 'typing'}
                   style={{
                     flex: 1,
-                    background: 'rgba(0,0,0,0.3)',
+                    background: '#ffffff',
                     border: spellingStatus === 'correct' 
-                      ? '2px solid #34d399' 
+                      ? '2px solid var(--google-green)' 
                       : spellingStatus === 'incorrect' 
-                      ? '2px solid #ef4444' 
-                      : '1px solid rgba(255,255,255,0.15)',
-                    borderRadius: '12px',
+                      ? '2px solid var(--google-red)' 
+                      : '1px solid var(--border-color)',
+                    borderRadius: 'var(--radius-md)',
                     padding: '12px 16px',
-                    color: '#fff',
+                    color: 'var(--text-primary)',
                     fontSize: '1.2rem',
                     textAlign: 'center',
                     fontWeight: 600,
@@ -506,12 +508,13 @@ export default function AdaptiveStudySession({
                       onClick={() => handleInsertChar(char)}
                       type="button"
                       style={{
-                        background: 'rgba(255,255,255,0.06)',
-                        border: '1px solid rgba(255,255,255,0.12)',
+                        background: '#f1f3f4',
+                        border: '1px solid var(--border-color)',
                         color: 'var(--text-primary)',
-                        padding: '6px 10px',
-                        borderRadius: '8px',
+                        padding: '6px 12px',
+                        borderRadius: '6px',
                         fontSize: '0.95rem',
+                        fontWeight: 600,
                         cursor: 'pointer'
                       }}
                     >
@@ -525,18 +528,18 @@ export default function AdaptiveStudySession({
             {/* Incorrect Feedback */}
             {spellingStatus === 'incorrect' && (
               <div style={{ 
-                background: 'rgba(239, 68, 68, 0.1)', 
-                border: '1px solid rgba(239, 68, 68, 0.25)',
-                borderRadius: '14px',
+                background: 'var(--google-red-light)', 
+                border: '1px solid #f6aea9',
+                borderRadius: 'var(--radius-md)',
                 padding: '14px',
                 textAlign: 'center',
                 margin: '12px auto',
                 maxWidth: '440px'
               }}>
-                <div style={{ color: '#f87171', fontWeight: 600, fontSize: '0.9rem', marginBottom: '4px' }}>
+                <div style={{ color: 'var(--google-red)', fontWeight: 600, fontSize: '0.88rem', marginBottom: '4px' }}>
                   拼寫失誤，正確答案是：
                 </div>
-                <div style={{ fontSize: '1.4rem', fontWeight: 800, color: '#fff' }}>
+                <div style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                   {currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}
                 </div>
               </div>
@@ -548,36 +551,37 @@ export default function AdaptiveStudySession({
         {stage >= 4 && (
           <div>
             <div style={{ textAlign: 'center', marginBottom: '16px' }}>
-              <span className="badge badge-subtle">{currentCard.dele_level}</span>
-              <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#38bdf8', marginTop: '8px' }}>
+              <span className="badge-dele">{currentCard.dele_level}</span>
+              <div style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--google-blue)', marginTop: '8px' }}>
                 {currentCard.translation}
               </div>
             </div>
 
             <div style={{
-              background: 'rgba(0,0,0,0.3)',
+              background: '#f8f9fa',
+              border: '1px solid var(--border-color)',
               padding: '20px',
-              borderRadius: '16px',
+              borderRadius: 'var(--radius-lg)',
               textAlign: 'center',
               marginBottom: '20px'
             }}>
-              <div style={{ fontSize: '1.15rem', color: '#fff', fontStyle: 'italic', lineHeight: 1.6 }}>
+              <div style={{ fontSize: '1.15rem', color: 'var(--text-primary)', fontStyle: 'italic', lineHeight: 1.6 }}>
                 "{isFlipped ? currentCard.example_es : maskWord(currentCard.example_es, currentCard.word)}"
               </div>
               {currentCard.example_zh && (
-                <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '8px' }}>
+                <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '8px' }}>
                   {currentCard.example_zh}
                 </div>
               )}
             </div>
 
             {isFlipped ? (
-              <div style={{ textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '16px' }}>
-                <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--text-primary)' }}>
+              <div style={{ textAlign: 'center', borderTop: '1px solid var(--border-color)', paddingTop: '16px' }}>
+                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                   {currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}
                 </div>
                 {currentCard.notes && (
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '6px' }}>
+                  <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '6px' }}>
                     💡 {currentCard.notes}
                   </div>
                 )}
@@ -603,91 +607,86 @@ export default function AdaptiveStudySession({
             gridTemplateColumns: 'repeat(4, 1fr)',
             gap: '10px',
             marginTop: '24px',
-            borderTop: '1px solid rgba(255,255,255,0.08)',
+            borderTop: '1px solid var(--border-color)',
             paddingTop: '20px'
           }}>
             <button
               onClick={() => handleRate(1)}
               style={{
-                background: 'rgba(239, 68, 68, 0.15)',
-                border: '1px solid rgba(239, 68, 68, 0.35)',
-                color: '#f87171',
+                background: 'var(--google-red-light)',
+                border: '1px solid #f6aea9',
+                color: 'var(--google-red)',
                 padding: '12px 6px',
-                borderRadius: '12px',
+                borderRadius: 'var(--radius-md)',
                 cursor: 'pointer',
                 fontWeight: 700,
                 textAlign: 'center'
               }}
-              className="hover-scale"
             >
               <div style={{ fontSize: '0.95rem' }}>1. 忘記</div>
-              <div style={{ fontSize: '0.75rem', opacity: 0.8 }}>Again</div>
+              <div style={{ fontSize: '0.75rem', opacity: 0.85 }}>Again</div>
             </button>
 
             <button
               onClick={() => handleRate(2)}
               style={{
-                background: 'rgba(245, 158, 11, 0.15)',
-                border: '1px solid rgba(245, 158, 11, 0.35)',
-                color: '#fbbf24',
+                background: 'var(--google-yellow-light)',
+                border: '1px solid #fce8b2',
+                color: 'var(--google-yellow-dark)',
                 padding: '12px 6px',
-                borderRadius: '12px',
+                borderRadius: 'var(--radius-md)',
                 cursor: 'pointer',
                 fontWeight: 700,
                 textAlign: 'center'
               }}
-              className="hover-scale"
             >
               <div style={{ fontSize: '0.95rem' }}>2. 吃力</div>
-              <div style={{ fontSize: '0.75rem', opacity: 0.8 }}>Hard</div>
+              <div style={{ fontSize: '0.75rem', opacity: 0.85 }}>Hard</div>
             </button>
 
             <button
               onClick={() => handleRate(3)}
               style={{
-                background: 'rgba(59, 130, 246, 0.15)',
-                border: '1px solid rgba(59, 130, 246, 0.35)',
-                color: '#60a5fa',
+                background: 'var(--google-blue-light)',
+                border: '1px solid #aecbfa',
+                color: 'var(--google-blue)',
                 padding: '12px 6px',
-                borderRadius: '12px',
+                borderRadius: 'var(--radius-md)',
                 cursor: 'pointer',
                 fontWeight: 700,
                 textAlign: 'center'
               }}
-              className="hover-scale"
             >
               <div style={{ fontSize: '0.95rem' }}>3. 記得</div>
-              <div style={{ fontSize: '0.75rem', opacity: 0.8 }}>Good</div>
+              <div style={{ fontSize: '0.75rem', opacity: 0.85 }}>Good</div>
             </button>
 
             <button
               onClick={() => handleRate(4)}
               style={{
-                background: 'rgba(16, 185, 129, 0.15)',
-                border: '1px solid rgba(16, 185, 129, 0.35)',
-                color: '#34d399',
+                background: 'var(--google-green-light)',
+                border: '1px solid #a8dab5',
+                color: 'var(--google-green)',
                 padding: '12px 6px',
-                borderRadius: '12px',
+                borderRadius: 'var(--radius-md)',
                 cursor: 'pointer',
                 fontWeight: 700,
                 textAlign: 'center'
               }}
-              className="hover-scale"
             >
               <div style={{ fontSize: '0.95rem' }}>4. 熟練</div>
-              <div style={{ fontSize: '0.75rem', opacity: 0.8 }}>Easy</div>
+              <div style={{ fontSize: '0.75rem', opacity: 0.85 }}>Easy</div>
             </button>
           </div>
         ) : (
-          /* When not flipped, show flip action button for Stage 1 & 2 */
           (stage === 1 || stage === 2) && (
             <div style={{ textAlign: 'center', marginTop: '20px' }}>
               <button
                 onClick={handleFlip}
                 className="btn btn-secondary"
-                style={{ padding: '12px 32px', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+                style={{ padding: '10px 28px', fontSize: '0.95rem', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
               >
-                <RotateCw size={18} />
+                <RotateCw size={16} />
                 <span>翻轉卡片</span>
               </button>
             </div>

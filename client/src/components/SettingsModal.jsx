@@ -150,7 +150,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
               href="https://aistudio.google.com/app/apikey"
               target="_blank"
               rel="noreferrer"
-              style={{ color: '#818cf8', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '4px', textDecoration: 'none' }}
+              style={{ color: 'var(--google-blue)', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '4px', textDecoration: 'none', fontWeight: 500 }}
             >
               <span>前往 Google AI Studio 免費領取 Key</span>
               <ExternalLink size={12} />
@@ -162,8 +162,8 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
         </div>
 
         {/* FSRS Learning Preferences */}
-        <div style={{ marginBottom: '24px', padding: '16px', background: 'rgba(255, 255, 255, 0.03)', borderRadius: 'var(--radius-md)' }}>
-          <div style={{ fontWeight: 600, fontSize: '0.92rem', marginBottom: '8px' }}>
+        <div style={{ marginBottom: '24px', padding: '16px', background: '#f8f9fa', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)' }}>
+          <div style={{ fontWeight: 600, fontSize: '0.92rem', marginBottom: '8px', color: 'var(--text-primary)' }}>
             🧠 FSRS 記憶調度與每日配額
           </div>
           <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '12px' }}>
@@ -179,7 +179,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
                 className="select-custom"
                 value={dailyQuota}
                 onChange={e => setDailyQuota(Number(e.target.value))}
-                style={{ width: '100%' }}
+                style={{ width: '100%', background: '#ffffff', border: '1px solid var(--border-color)' }}
               >
                 <option value={10}>10 字 (輕鬆起步)</option>
                 <option value={15}>15 字 (標準推薦)</option>
@@ -197,7 +197,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
                 className="select-custom"
                 value={targetRetention}
                 onChange={e => setTargetRetention(Number(e.target.value))}
-                style={{ width: '100%' }}
+                style={{ width: '100%', background: '#ffffff', border: '1px solid var(--border-color)' }}
               >
                 <option value={0.85}>85% (較長複習間隔)</option>
                 <option value={0.90}>90% (黃金科學標準)</option>
@@ -214,10 +214,10 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
         </div>
 
         {/* Pronunciation Test & Engine Settings */}
-        <div style={{ marginBottom: '24px', padding: '16px', background: 'rgba(255, 255, 255, 0.03)', borderRadius: 'var(--radius-md)' }}>
+        <div style={{ marginBottom: '24px', padding: '16px', background: '#f8f9fa', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
             <div>
-              <div style={{ fontWeight: 600, fontSize: '0.92rem', marginBottom: '2px' }}>西班牙語真人發音測試</div>
+              <div style={{ fontWeight: 600, fontSize: '0.92rem', marginBottom: '2px', color: 'var(--text-primary)' }}>西班牙語真人發音測試</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>支援行動版 Safari、iOS、Android 與電腦瀏覽器</div>
             </div>
             <button
@@ -239,11 +239,11 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
             </button>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.82rem', borderTop: '1px solid rgba(255, 255, 255, 0.06)', paddingTop: '10px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.82rem', borderTop: '1px solid var(--border-color)', paddingTop: '10px' }}>
             <span style={{ color: 'var(--text-secondary)' }}>發音引擎：</span>
             <select
               className="select-custom"
-              style={{ padding: '4px 8px', fontSize: '0.8rem' }}
+              style={{ padding: '4px 8px', fontSize: '0.8rem', background: '#ffffff', border: '1px solid var(--border-color)' }}
               value={ttsMode}
               onChange={(e) => {
                 const newMode = e.target.value;

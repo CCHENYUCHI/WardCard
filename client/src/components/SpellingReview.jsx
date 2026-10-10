@@ -211,7 +211,7 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
           <div style={{ fontSize: '0.88rem', color: 'var(--text-muted)', marginBottom: '6px' }}>
             請輸入對應的西班牙語單字：
           </div>
-          <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.4rem', fontWeight: 800, color: '#f8fafc' }}>
+          <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.4rem', fontWeight: 800, color: 'var(--text-primary)' }}>
             {currentCard.translation}
           </div>
         </div>
@@ -275,8 +275,8 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
 
         {/* Feedback Area */}
         {status === 'correct' && (
-          <div style={{ marginTop: '16px', padding: '14px', background: 'rgba(16, 185, 129, 0.12)', border: '1px solid rgba(16, 185, 129, 0.3)', borderRadius: 'var(--radius-md)' }}>
-            <div style={{ color: 'var(--success)', fontWeight: 700, fontSize: '1.2rem', marginBottom: '6px' }}>
+          <div style={{ marginTop: '16px', padding: '14px', background: 'var(--google-green-light)', border: '1px solid #a8dab5', borderRadius: 'var(--radius-md)' }}>
+            <div style={{ color: 'var(--google-green)', fontWeight: 700, fontSize: '1.2rem', marginBottom: '6px' }}>
               ✓ 答對了！¡Excelente!
             </div>
             <button
@@ -290,12 +290,12 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
         )}
 
         {status === 'incorrect' && (
-          <div style={{ marginTop: '16px', padding: '14px', background: 'rgba(239, 68, 68, 0.12)', border: '1px solid rgba(239, 68, 68, 0.3)', borderRadius: 'var(--radius-md)' }}>
-            <div style={{ color: 'var(--danger)', fontWeight: 700, marginBottom: '6px' }}>
+          <div style={{ marginTop: '16px', padding: '14px', background: 'var(--google-red-light)', border: '1px solid #f6aea9', borderRadius: 'var(--radius-md)' }}>
+            <div style={{ color: 'var(--google-red)', fontWeight: 700, marginBottom: '6px' }}>
               拼法不太對喔，再試試看！
             </div>
-            <div style={{ fontSize: '0.95rem' }}>
-              正確拼法是：<strong style={{ color: '#38bdf8', fontSize: '1.2rem' }}>{currentCard.word}</strong>
+            <div style={{ fontSize: '0.95rem', color: 'var(--text-primary)' }}>
+              正確拼法是：<strong style={{ color: 'var(--google-blue)', fontSize: '1.2rem' }}>{currentCard.word}</strong>
             </div>
             <button
               className="btn btn-secondary btn-sm"
@@ -308,8 +308,8 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
         )}
 
         {showAnswer && status !== 'incorrect' && (
-          <div style={{ marginTop: '16px', padding: '12px', background: 'rgba(59, 130, 246, 0.12)', borderRadius: 'var(--radius-md)' }}>
-            答案是：<strong style={{ color: '#38bdf8', fontSize: '1.2rem' }}>{currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}</strong>
+          <div style={{ marginTop: '16px', padding: '12px', background: 'var(--google-blue-light)', border: '1px solid #aecbfa', borderRadius: 'var(--radius-md)', color: 'var(--text-primary)' }}>
+            答案是：<strong style={{ color: 'var(--google-blue)', fontSize: '1.2rem' }}>{currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}</strong>
           </div>
         )}
       </div>

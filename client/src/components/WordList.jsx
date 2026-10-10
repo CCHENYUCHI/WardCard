@@ -87,7 +87,7 @@ export default function WordList({
   return (
     <div>
       {/* Lifecycle Status Pill Tabs */}
-      <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '8px', marginBottom: '14px' }}>
+      <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '8px', marginBottom: '16px' }}>
         {[
           { key: 'all', label: '全部單字' },
           { key: 'active', label: '⚡ 活躍學習 (Active)' },
@@ -95,26 +95,30 @@ export default function WordList({
           { key: 'inbox', label: '📥 隨手暫存 (Inbox)' },
           { key: 'mastered', label: '🏆 已精通 (Mastered)' },
           { key: 'starred', label: '⭐️ 核心星號' }
-        ].map(tab => (
-          <button
-            key={tab.key}
-            onClick={() => setSelectedLifecycle(tab.key)}
-            style={{
-              background: selectedLifecycle === tab.key ? 'var(--primary-color)' : 'rgba(255,255,255,0.06)',
-              color: selectedLifecycle === tab.key ? '#fff' : 'var(--text-secondary)',
-              border: '1px solid rgba(255,255,255,0.1)',
-              padding: '6px 14px',
-              borderRadius: '20px',
-              fontSize: '0.85rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              whiteSpace: 'nowrap',
-              transition: 'all 0.2s ease'
-            }}
-          >
-            {tab.label}
-          </button>
-        ))}
+        ].map(tab => {
+          const isActive = selectedLifecycle === tab.key;
+          return (
+            <button
+              key={tab.key}
+              onClick={() => setSelectedLifecycle(tab.key)}
+              style={{
+                background: isActive ? 'var(--google-blue)' : '#ffffff',
+                color: isActive ? '#ffffff' : 'var(--text-secondary)',
+                border: isActive ? '1px solid var(--google-blue)' : '1px solid var(--border-color)',
+                padding: '6px 14px',
+                borderRadius: '20px',
+                fontSize: '0.85rem',
+                fontWeight: 600,
+                cursor: 'pointer',
+                whiteSpace: 'nowrap',
+                boxShadow: isActive ? '0 1px 3px rgba(60,64,67,0.2)' : 'none',
+                transition: 'all 0.15s ease'
+              }}
+            >
+              {tab.label}
+            </button>
+          );
+        })}
       </div>
 
       {/* Top Filter Bar */}
@@ -174,14 +178,14 @@ export default function WordList({
       {/* Counter summary */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', color: 'var(--text-secondary)', fontSize: '0.88rem' }}>
         <span>共找到 <strong>{filteredCards.length}</strong> 個西語單字</span>
-        <span style={{ fontSize: '0.8rem' }}>點擊星星可標記核心重點詞</span>
+        <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>點擊星星可標記核心重點詞</span>
       </div>
 
       {/* Cards Grid */}
       {filteredCards.length === 0 ? (
-        <div className="glass-card" style={{ textAlign: 'center', padding: '60px 20px' }}>
+        <div className="glass-card" style={{ textAlign: 'center', padding: '60px 20px', background: '#ffffff' }}>
           <BookOpen size={48} style={{ color: 'var(--text-muted)', marginBottom: '14px' }} />
-          <h3 style={{ fontSize: '1.2rem', marginBottom: '8px' }}>未找到符合條件的單字</h3>
+          <h3 style={{ fontSize: '1.2rem', marginBottom: '8px', color: 'var(--text-primary)' }}>未找到符合條件的單字</h3>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '20px' }}>
             您可以清除搜尋條件，或是使用 AI 快速拍照萃取課堂生詞！
           </p>
@@ -195,6 +199,30 @@ export default function WordList({
           {filteredCards.map((card) => {
             const st = card.lifecycle_status || 'active';
             const stage = Number(card.mastery_stage) || 1;
+            
+            // Badge style by lifecycle
+            let badgeBg = '#f1f3f4';
+            let badgeBorder = '#dadce0';
+            let badgeColor = '#5f6368';
+            let badgeText = 'Inbox 暫存';
+
+            if (st === 'ready') {
+              badgeBg = 'var(--google-blue-light)';
+              badgeBorder = '#aecbfa';
+              badgeColor = 'var(--google-blue)';
+              badgeText = 'Ready 待學';
+            } else if (st === 'mastered') {
+              badgeBg = 'var(--google-green-light)';
+              badgeBorder = '#a8dab5';
+              badgeColor = 'var(--google-green)';
+              badgeText = 'Mastered 精通';
+            } else if (st === 'active') {
+              badgeBg = 'var(--google-yellow-light)';
+              badgeBorder = '#fce8b2';
+              badgeColor = 'var(--google-yellow-dark)';
+              badgeText = `Stage ${stage}`;
+            }
+
             return (
               <div key={card.id} className="word-card-item">
                 <div>
@@ -203,10 +231,10 @@ export default function WordList({
                     <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
                       <button
                         onClick={(e) => handleToggleStar(card, e)}
-                        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+                        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center' }}
                         title={card.is_starred ? "取消核心標記" : "標記為核心詞"}
                       >
-                        <Star size={16} fill={card.is_starred ? "#facc15" : "none"} color={card.is_starred ? "#facc15" : "var(--text-muted)"} />
+                        <Star size={16} fill={card.is_starred ? "var(--google-yellow)" : "none"} color={card.is_starred ? "var(--google-yellow)" : "var(--text-muted)"} />
                       </button>
                       <span className="badge-dele">{card.dele_level || 'A2'}</span>
                       {card.curriculum_unit ? (
@@ -224,14 +252,15 @@ export default function WordList({
                     {/* Stage & Lifecycle badge */}
                     <div style={{ display: 'flex', gap: '4px' }}>
                       <span style={{
-                        background: st === 'inbox' ? 'rgba(148, 163, 184, 0.2)' : st === 'ready' ? 'rgba(59, 130, 246, 0.2)' : st === 'mastered' ? 'rgba(16, 185, 129, 0.2)' : 'rgba(239, 68, 68, 0.2)',
-                        color: st === 'inbox' ? '#94a3b8' : st === 'ready' ? '#60a5fa' : st === 'mastered' ? '#34d399' : '#f87171',
+                        background: badgeBg,
+                        border: `1px solid ${badgeBorder}`,
+                        color: badgeColor,
                         padding: '2px 8px',
                         borderRadius: '10px',
                         fontSize: '0.75rem',
                         fontWeight: 700
                       }}>
-                        {st === 'inbox' ? 'Inbox 暫存' : st === 'ready' ? 'Ready 待學' : st === 'mastered' ? 'Mastered 精通' : `Stage ${stage}`}
+                        {badgeText}
                       </span>
                     </div>
                   </div>
@@ -242,7 +271,7 @@ export default function WordList({
                       {card.article && (
                         <span style={{ color: 'var(--text-muted)', fontSize: '1.1rem', fontWeight: 600 }}>{card.article}</span>
                       )}
-                      <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 700, color: '#fff' }}>
+                      <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.45rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                         {card.word}
                       </span>
                     </div>
@@ -257,21 +286,21 @@ export default function WordList({
                   </div>
 
                   {/* Translation */}
-                  <div style={{ color: '#38bdf8', fontWeight: 600, fontSize: '1.05rem', marginBottom: '10px' }}>
+                  <div style={{ color: 'var(--google-blue)', fontWeight: 600, fontSize: '1.05rem', marginBottom: '10px' }}>
                     {card.translation}
                   </div>
 
                   {/* Example sentence */}
                   {card.example_es && (
-                    <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '8px 10px', borderRadius: '6px', fontSize: '0.85rem', marginBottom: '8px' }}>
-                      <div style={{ color: '#e2e8f0', marginBottom: '2px' }}>{card.example_es}</div>
-                      {card.example_zh && <div style={{ color: 'var(--text-muted)', fontSize: '0.78rem' }}>{card.example_zh}</div>}
+                    <div style={{ background: '#f8f9fa', border: '1px solid var(--border-color)', padding: '8px 12px', borderRadius: '6px', fontSize: '0.85rem', marginBottom: '8px' }}>
+                      <div style={{ color: 'var(--text-primary)', marginBottom: '2px', fontWeight: 500 }}>{card.example_es}</div>
+                      {card.example_zh && <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{card.example_zh}</div>}
                     </div>
                   )}
 
                   {/* Grammar Notes */}
                   {card.notes && (
-                    <div style={{ fontSize: '0.8rem', color: '#fde68a', background: 'rgba(245, 158, 11, 0.08)', padding: '6px 10px', borderRadius: '6px' }}>
+                    <div style={{ fontSize: '0.82rem', color: 'var(--google-yellow-dark)', background: 'var(--google-yellow-light)', border: '1px solid #fce8b2', padding: '6px 10px', borderRadius: '6px' }}>
                       💡 {card.notes}
                     </div>
                   )}
@@ -285,14 +314,14 @@ export default function WordList({
                     ) : st === 'inbox' ? (
                       <button
                         onClick={(e) => handleQuickStatusChange(card, 'ready', e)}
-                        style={{ background: 'none', border: 'none', color: '#60a5fa', cursor: 'pointer', padding: 0, fontWeight: 600 }}
+                        style={{ background: 'none', border: 'none', color: 'var(--google-blue)', cursor: 'pointer', padding: 0, fontWeight: 600 }}
                       >
                         👉 轉入待學 (Ready)
                       </button>
                     ) : (
                       <button
                         onClick={(e) => handleQuickStatusChange(card, 'active', e)}
-                        style={{ background: 'none', border: 'none', color: '#34d399', cursor: 'pointer', padding: 0, fontWeight: 600 }}
+                        style={{ background: 'none', border: 'none', color: 'var(--google-green)', cursor: 'pointer', padding: 0, fontWeight: 600 }}
                       >
                         🚀 立即激活 (Active)
                       </button>
@@ -309,7 +338,7 @@ export default function WordList({
                     </button>
                     <button
                       className="btn-icon"
-                      style={{ width: '28px', height: '28px', color: '#f87171' }}
+                      style={{ width: '28px', height: '28px', color: 'var(--google-red)' }}
                       onClick={() => onDelete(card.id)}
                       title="刪除單字"
                     >

@@ -32,6 +32,9 @@
 - **全自動智慧雙引擎西語發音系統 (免手動設定)**：前端 `speech.js` 自動判定裝置類型：電腦版（Mac Safari/Chrome 等）預設直走原生 Web Speech API（零網路延遲、離線即發聲、支援 Space 翻卡熱鍵無 Autoplay 限制）；手機版（iOS Safari/Android）自動走 HTML5 線上串流播放（解決 iOS 靜音鍵阻斷與缺乏語音包問題）。雙引擎具備雙向自動容錯備援，若任一方失敗自動秒切備援引擎，完全無需手動進入設定調整。
 
 ### Changed
+- **全面切換 Web UI 為 Google Classroom / Material Design 3 乾淨教育美學風格**：
+  - 徹底告別高視覺負擔之深色霓虹玻璃擬態（Dark Glassmorphism），全面導入 Google Classroom 清爽米灰背景（`#f8f9fa`）、純白卡片（`#ffffff`）、Google 經典藍（`#1a73e8`）與高對比深炭灰文字（`#202124`）。
+  - 全站 12 個核心組件（導航列、今日學習駕駛艙、自適應學習流、單字庫、AI 萃取對話框、盲測拼寫、統計圖表、登入畫面等）統一遵循 Material 3 設計語言，徹底解決文字對比度問題，營造零視覺疲勞的專注語言學習氛圍。
 - **拼字測驗介面簡化 (移除西語重音工具列)**：移除 `SpellingReview.jsx` 輸入框下方之 `SPANISH_SPECIAL_KEYS`（`á`, `é`, `í`, `ó`, `ú`, `ü`, `ñ`, `¿`, `¡`）工具列與未使用的點擊插入事件。大幅節省手機螢幕縱向高度，避免推擠「送出檢查」與「看答案」按鈕。
 - **Docker 建置流程優化**：調整 `Dockerfile` 與 `docker-compose.yml`，加入容器健康檢查與靜態檔載入流程。
 - **分類 API 過濾調整**：優化 `/api/categories` 取值機制。
