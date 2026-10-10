@@ -569,20 +569,41 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
 
     // 4. Progress in active curriculum track
     let curriculumProgress = null;
-    if (activeCurriculum) {
+    if (activeCurriculum && activeCurriculum !== 'ALL_ACTIVE') {
       const curRow = db.prepare(`
         SELECT 
           COUNT(*) as total,
           SUM(CASE WHEN mastery_stage >= 3 OR lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as proficient,
           SUM(CASE WHEN lifecycle_status = 'active' THEN 1 ELSE 0 END) as active,
           SUM(CASE WHEN lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as mastered
-        FROM cards WHERE user_id = ? AND curriculum_unit = ?
-      `).get(userId, activeCurriculum);
+        FROM cards 
+        WHERE user_id = ? AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?))
+      `).get(userId, activeCurriculum, activeCurriculum);
       
       const total = Number(curRow.total) || 0;
       const proficient = Number(curRow.proficient) || 0;
       curriculumProgress = {
         unit: activeCurriculum,
+        total,
+        proficient,
+        percentage: total > 0 ? Math.round((proficient / total) * 100) : 0
+      };
+    } else {
+      // Overall progress across all active units
+      const curRow = db.prepare(`
+        SELECT 
+          COUNT(*) as total,
+          SUM(CASE WHEN mastery_stage >= 3 OR lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as proficient,
+          SUM(CASE WHEN lifecycle_status = 'active' THEN 1 ELSE 0 END) as active,
+          SUM(CASE WHEN lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as mastered
+        FROM cards 
+        WHERE user_id = ? AND lifecycle_status IN ('active', 'mastered')
+      `).get(userId);
+      
+      const total = Number(curRow.total) || 0;
+      const proficient = Number(curRow.proficient) || 0;
+      curriculumProgress = {
+        unit: '所有主修單元',
         total,
         proficient,
         percentage: total > 0 ? Math.round((proficient / total) * 100) : 0
@@ -818,7 +839,7 @@ app.get('/api/user/settings', authenticateToken, (req, res) => {
   }
 });
 
-app.put('/api/user/settings', authenticateToken, (req, res) => {
+const handleUpdateSettings = (req, res) => {
   try {
     const userId = req.user.userId;
     const { daily_new_quota, target_retention, active_curriculum } = req.body;
@@ -834,12 +855,24 @@ app.put('/api/user/settings', authenticateToken, (req, res) => {
       WHERE id = ?
     `).run(newQuota, newRetention, newCurriculum, userId);
 
+    // Auto-activate all ready/inbox cards of this curriculum unit into active study
+    if (newCurriculum && newCurriculum !== 'ALL_ACTIVE') {
+      db.prepare(`
+        UPDATE cards
+        SET lifecycle_status = 'active', due_date = datetime('now', 'localtime'), updated_at = datetime('now', 'localtime')
+        WHERE user_id = ? AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?)) AND lifecycle_status IN ('ready', 'inbox')
+      `).run(userId, newCurriculum, newCurriculum);
+    }
+
     const updated = db.prepare('SELECT id, username, daily_new_quota, target_retention, active_curriculum FROM users WHERE id = ?').get(userId);
     res.json(updated);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
-});
+};
+
+app.put('/api/user/settings', authenticateToken, handleUpdateSettings);
+app.post('/api/user/settings', authenticateToken, handleUpdateSettings);
 
 // Learning stats
 app.get('/api/stats', authenticateToken, (req, res) => {
