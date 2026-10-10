@@ -72,7 +72,7 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
     const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
     const newQuizCards = allCards.filter(c => {
       const passCategory = selectedCategory === 'all' || c.category === selectedCategory;
-      const passDue = showOnlyDue ? (c.repetition === 0 || c.due_date <= nowStr) : true;
+      const passDue = showOnlyDue ? (!c.due_date || c.due_date <= nowStr) : true;
       return passCategory && passDue;
     });
     

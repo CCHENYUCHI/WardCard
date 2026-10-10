@@ -3,6 +3,7 @@ import { Volume2, RotateCw, CheckCircle2, ChevronRight, HelpCircle, Sparkles, Fi
 import confetti from 'canvas-confetti';
 import { playSpanishPronunciation } from '../utils/speech';
 import { shuffleArray } from '../utils/shuffle';
+import { getFsrsButtonIntervals } from '../utils/fsrsPreview';
 
 export default function FlashcardReview({ allCards, dueCards, onReview, categories, onRefresh }) {
   const [quizCards, setQuizCards] = useState([]);
@@ -25,7 +26,7 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
     const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
     const newQuizCards = allCards.filter(c => {
       const passCategory = selectedCategory === 'all' || c.category === selectedCategory;
-      const passDue = showOnlyDue ? (c.repetition === 0 || c.due_date <= nowStr) : true;
+      const passDue = showOnlyDue ? (!c.due_date || c.due_date <= nowStr) : true;
       return passCategory && passDue;
     });
     
@@ -351,27 +352,30 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
         </div>
       </div>
 
-      {/* SM-2 Spaced Repetition Rating Buttons */}
-      {isFlipped && (
-        <div className="rating-actions">
-          <button className="btn-rate again" onClick={() => handleRate(1)} id="btn-rate-again">
-            <span className="rate-title">忘記 [1]</span>
-            <span className="rate-sub">重置週期 (1天內)</span>
-          </button>
-          <button className="btn-rate hard" onClick={() => handleRate(2)} id="btn-rate-hard">
-            <span className="rate-title">困難 [2]</span>
-            <span className="rate-sub">稍難記憶 (1~2天)</span>
-          </button>
-          <button className="btn-rate good" onClick={() => handleRate(3)} id="btn-rate-good">
-            <span className="rate-title">良好 [3]</span>
-            <span className="rate-sub">正常複習 (3~6天)</span>
-          </button>
-          <button className="btn-rate easy" onClick={() => handleRate(4)} id="btn-rate-easy">
-            <span className="rate-title">容易 [4]</span>
-            <span className="rate-sub">完全熟記 (週期拉長)</span>
-          </button>
-        </div>
-      )}
+      {/* FSRS Spaced Repetition Rating Buttons */}
+      {isFlipped && (() => {
+        const intervals = getFsrsButtonIntervals(currentCard);
+        return (
+          <div className="rating-actions">
+            <button className="btn-rate again" onClick={() => handleRate(1)} id="btn-rate-again">
+              <span className="rate-title">忘記 [1]</span>
+              <span className="rate-sub">重置 ({intervals.again})</span>
+            </button>
+            <button className="btn-rate hard" onClick={() => handleRate(2)} id="btn-rate-hard">
+              <span className="rate-title">困難 [2]</span>
+              <span className="rate-sub">稍難 ({intervals.hard})</span>
+            </button>
+            <button className="btn-rate good" onClick={() => handleRate(3)} id="btn-rate-good">
+              <span className="rate-title">良好 [3]</span>
+              <span className="rate-sub">熟練 ({intervals.good})</span>
+            </button>
+            <button className="btn-rate easy" onClick={() => handleRate(4)} id="btn-rate-easy">
+              <span className="rate-title">容易 [4]</span>
+              <span className="rate-sub">精通 ({intervals.easy})</span>
+            </button>
+          </div>
+        );
+      })()}
     </div>
   );
 }

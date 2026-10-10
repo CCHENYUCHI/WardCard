@@ -942,6 +942,71 @@ app.get('/api/stats', authenticateToken, (req, res) => {
       proficiencyRate: Number(r.total) > 0 ? Math.round((Number(r.proficient_count) / Number(r.total)) * 100) : 0
     }));
 
+    // Calculate 7-day review forecast & daily new word intake
+    const user = db.prepare('SELECT * FROM users WHERE id = ?').get(userId) || {};
+    const quota = Number(user.daily_new_quota) || 15;
+
+    const readyReserveCount = db.prepare(`
+      SELECT count(*) as count FROM cards WHERE user_id = ? AND lifecycle_status = 'ready'
+    `).get(userId).count;
+
+    let remainingReserve = Number(readyReserveCount) || 0;
+    const weekdayNames = ['週日', '週一', '週二', '週三', '週四', '週五', '週六'];
+    const weeklyForecast = [];
+
+    for (let i = 0; i < 7; i++) {
+      let dueCount = 0;
+      let dateStr = '';
+      if (i === 0) {
+        // Today: Overdue or due cards
+        const row = db.prepare(`
+          SELECT 
+            date('now', 'localtime') as day,
+            COUNT(*) as count 
+          FROM cards 
+          WHERE user_id = ? AND lifecycle_status = 'active' AND date(due_date) <= date('now', 'localtime')
+        `).get(userId);
+        dateStr = row.day;
+        dueCount = Number(row.count) || 0;
+      } else {
+        // Days 1 ~ 6: cards due on this future date
+        const row = db.prepare(`
+          SELECT 
+            date('now', '+' || ? || ' day', 'localtime') as day,
+            COUNT(*) as count 
+          FROM cards 
+          WHERE user_id = ? AND lifecycle_status = 'active' AND date(due_date) = date('now', '+' || ? || ' day', 'localtime')
+        `).get(i, userId, i);
+        dateStr = row.day;
+        dueCount = Number(row.count) || 0;
+      }
+
+      // Daily new words from reserve pool
+      const newWords = Math.min(quota, remainingReserve);
+      remainingReserve = Math.max(0, remainingReserve - newWords);
+
+      const d = new Date(dateStr + 'T00:00:00');
+      const dayOfWeek = weekdayNames[d.getDay()];
+      const label = i === 0 ? `今天 (${dayOfWeek})` : i === 1 ? `明天 (${dayOfWeek})` : `${dateStr.substring(5)} (${dayOfWeek})`;
+
+      weeklyForecast.push({
+        dayIndex: i,
+        date: dateStr,
+        label,
+        dayOfWeek,
+        dueReviews: dueCount,
+        newWords: newWords,
+        totalWorkload: dueCount + newWords,
+        reviewedToday: i === 0 ? Number(reviewedToday) : 0
+      });
+    }
+
+    // Long-term scheduled cards (> 7 days out)
+    const longTermDueCount = db.prepare(`
+      SELECT count(*) as count FROM cards 
+      WHERE user_id = ? AND lifecycle_status = 'active' AND date(due_date) > date('now', '+6 day', 'localtime')
+    `).get(userId).count;
+
     res.json({
       total: Number(overview.total) || 0,
       active: Number(overview.active) || 0,
@@ -960,7 +1025,11 @@ app.get('/api/stats', authenticateToken, (req, res) => {
         5: Number(overview.mastered) || 0
       },
       levelCounts,
-      unitCounts
+      unitCounts,
+      weeklyForecast,
+      dailyQuota: quota,
+      readyReserveTotal: Number(readyReserveCount) || 0,
+      longTermDueCount: Number(longTermDueCount) || 0
     });
   } catch (err) {
     res.status(500).json({ error: err.message });
