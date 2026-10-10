@@ -22,7 +22,8 @@
   - **iOS Safe Area 深度適配**：`index.html` 補齊 `viewport-fit=cover`，頁面底部與彈窗全面支援 `env(safe-area-inset-bottom)` 與 `100dvh`，杜絕動態網址列與 Home Bar 遮擋。
   - **翻卡控制項擠壓修復**：修正 `FlashcardReview.jsx` 頂部過濾列為 `flexWrap: wrap`，消除文字被擠壓為垂直豎排的問題。
   - **Safari 3D 翻轉硬體加速**：為單字卡加入 `-webkit-transform-style: preserve-3d`、`-webkit-perspective: 1200px` 與 `transform: translateZ(0)`，徹底杜絕 iOS Safari 翻牌閃爍與背面白屏。
-  - **單字庫搜尋與批次列適配**：手機版搜尋列自動 100% 滿版，批次工具列與按鈕自動直向堆疊適配。
+  - **單字庫類別手風琴折疊展開 (`WordList.jsx`, `index.css`)**：徹底解除舊版行動端 `max-height: 150px` 導致課本單元被截斷喀掉的問題；改為手機端手風琴折疊選單（預設展示當前單元，點擊展開完整主修/待學單元清單，點選自動切換並收合）。
+  - **狀態篩選膠囊 3x2 格子排版**：精簡行動端標籤字樣（全部/活躍/待學/暫存/精通/星號），以 `flex: 1 1 calc(33.333% - 6px)` 雙排並列，100% 完整展示無截斷、告別滑動猜測。
 
 - **題目順序隨機洗牌機制 (Question Order Randomization)**：
   - 解決過去按資料庫 ID 或單元插入順序排序，導致複習時容易「靠順序死記」的序列位置效應。

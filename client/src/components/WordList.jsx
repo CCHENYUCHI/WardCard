@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Search, Filter, Volume2, Edit3, Trash2, Plus, Sparkles, BookOpen, 
   Star, CheckCircle, ArrowRight, CheckSquare, Square, HelpCircle, 
-  Layers, Folder, Check, MoreHorizontal, ChevronRight, X, Play, Pause, Flame
+  Layers, Folder, Check, MoreHorizontal, ChevronRight, ChevronDown, X, Play, Pause, Flame
 } from 'lucide-react';
 import { playSpanishPronunciation } from '../utils/speech';
 import { fetchAPI } from '../utils/api';
@@ -22,6 +22,7 @@ export default function WordList({
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedLifecycle, setSelectedLifecycle] = useState(initialFilterPreset || 'all');
+  const [isMobileCategoryOpen, setIsMobileCategoryOpen] = useState(false);
   
   // Selection state for batch operations
   const [selectedIds, setSelectedIds] = useState([]);
@@ -323,22 +324,28 @@ export default function WordList({
   return (
     <div className="wordlist-main-layout">
       {/* 📁 Left Sidebar: Categories & Units navigation */}
-      <aside className="wordlist-sidebar">
-        <div className="wordlist-sidebar-header">
+      <aside className={`wordlist-sidebar ${isMobileCategoryOpen ? 'mobile-open' : ''}`}>
+        <div 
+          className="wordlist-sidebar-header"
+          onClick={() => setIsMobileCategoryOpen(prev => !prev)}
+        >
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-primary)', fontWeight: 700, fontSize: '0.95rem' }}>
             <Folder size={18} color="var(--google-blue)" />
             <span>單字分類與單元</span>
           </div>
-          <span style={{ fontSize: '0.75rem', background: '#e8f0fe', color: 'var(--google-blue)', padding: '2px 8px', borderRadius: '10px', fontWeight: 700 }}>
-            {cards.length} 字
-          </span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ fontSize: '0.75rem', background: '#e8f0fe', color: 'var(--google-blue)', padding: '2px 8px', borderRadius: '10px', fontWeight: 700 }}>
+              {selectedCategory === 'all' ? `全部 (${cards.length})` : selectedCategory}
+            </span>
+            <ChevronDown size={16} className={`sidebar-chevron-icon ${isMobileCategoryOpen ? 'rotate' : ''}`} />
+          </div>
         </div>
 
         <nav className="wordlist-category-list">
           {/* All categories option */}
           <button
             className={`wordlist-category-item ${selectedCategory === 'all' ? 'active' : ''}`}
-            onClick={() => setSelectedCategory('all')}
+            onClick={() => { setSelectedCategory('all'); setIsMobileCategoryOpen(false); }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span style={{ fontSize: '1rem' }}>🌟</span>
@@ -375,7 +382,7 @@ export default function WordList({
                 <button
                   key={cat.name}
                   className={`wordlist-category-item active-unit ${selectedCategory === cat.name ? 'active' : ''}`}
-                  onClick={() => setSelectedCategory(cat.name)}
+                  onClick={() => { setSelectedCategory(cat.name); setIsMobileCategoryOpen(false); }}
                   title={`${cat.name} · 掌握率 ${cat.proficiencyRate}%`}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', overflow: 'hidden' }}>
@@ -409,7 +416,7 @@ export default function WordList({
               <button
                 key={cat.name}
                 className={`wordlist-category-item waiting-unit ${selectedCategory === cat.name ? 'active' : ''}`}
-                onClick={() => setSelectedCategory(cat.name)}
+                onClick={() => { setSelectedCategory(cat.name); setIsMobileCategoryOpen(false); }}
                 title={`${cat.name} · 待學儲備中`}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', overflow: 'hidden' }}>
@@ -514,35 +521,25 @@ export default function WordList({
         </div>
 
         {/* Lifecycle Status Pill Tabs */}
-        <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '8px', marginBottom: '14px' }}>
+        <div className="wordlist-status-tabs">
           {[
-            { key: 'all', label: '全部' },
-            { key: 'active', label: '⚡ 活躍學習 (Active)' },
-            { key: 'ready', label: '🎯 待學核心 (Ready)' },
-            { key: 'inbox', label: '📥 隨手暫存 (Inbox)' },
-            { key: 'mastered', label: '🏆 已精通 (Mastered)' },
-            { key: 'starred', label: '⭐️ 核心星號' }
+            { key: 'all', label: '全部', mobileLabel: '全部' },
+            { key: 'active', label: '⚡ 活躍學習 (Active)', mobileLabel: '⚡ 活躍' },
+            { key: 'ready', label: '🎯 待學核心 (Ready)', mobileLabel: '🎯 待學' },
+            { key: 'inbox', label: '📥 隨手暫存 (Inbox)', mobileLabel: '📥 暫存' },
+            { key: 'mastered', label: '🏆 已精通 (Mastered)', mobileLabel: '🏆 精通' },
+            { key: 'starred', label: '⭐️ 核心星號', mobileLabel: '⭐️ 星號' }
           ].map(tab => {
             const isActive = selectedLifecycle === tab.key;
             return (
               <button
                 key={tab.key}
                 onClick={() => setSelectedLifecycle(tab.key)}
-                style={{
-                  background: isActive ? 'var(--google-blue)' : '#ffffff',
-                  color: isActive ? '#ffffff' : 'var(--text-secondary)',
-                  border: isActive ? '1px solid var(--google-blue)' : '1px solid var(--border-color)',
-                  padding: '5px 14px',
-                  borderRadius: '18px',
-                  fontSize: '0.84rem',
-                  fontWeight: 600,
-                  cursor: 'pointer',
-                  whiteSpace: 'nowrap',
-                  boxShadow: isActive ? '0 1px 3px rgba(60,64,67,0.2)' : 'none',
-                  transition: 'all 0.15s ease'
-                }}
+                className={`status-pill-tab ${isActive ? 'active' : ''}`}
+                title={tab.label}
               >
-                {tab.label}
+                <span className="tab-label-desktop">{tab.label}</span>
+                <span className="tab-label-mobile">{tab.mobileLabel}</span>
               </button>
             );
           })}

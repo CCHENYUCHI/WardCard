@@ -853,6 +853,16 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
+.sidebar-chevron-icon {
+  display: none;
+  transition: transform 0.25s ease;
+  color: var(--text-muted);
+}
+
+.sidebar-chevron-icon.rotate {
+  transform: rotate(180deg);
+}
+
 .wordlist-category-list {
   display: flex;
   flex-direction: column;
@@ -907,6 +917,45 @@ body {
 .wordlist-category-item.active .cat-count {
   background: var(--google-blue);
   color: #ffffff;
+}
+
+/* WordList Status Tabs */
+.wordlist-status-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 14px;
+}
+
+.status-pill-tab {
+  background: #ffffff;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  padding: 6px 14px;
+  border-radius: 18px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: none;
+  transition: all 0.15s ease;
+}
+
+.status-pill-tab:hover {
+  border-color: var(--google-blue);
+  color: var(--google-blue);
+}
+
+.status-pill-tab.active {
+  background: var(--google-blue);
+  color: #ffffff;
+  border-color: var(--google-blue);
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.2);
+}
+
+.tab-label-mobile {
+  display: none;
 }
 
 .wordlist-content {
@@ -1061,15 +1110,48 @@ body {
 @media (max-width: 860px) {
   .wordlist-main-layout {
     flex-direction: column;
+    gap: 14px;
   }
+  
   .wordlist-sidebar {
     width: 100%;
     min-width: 100%;
     position: static;
-    max-height: 200px;
+    max-height: none;
+    padding: 12px 14px;
   }
+
+  .wordlist-sidebar-header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .sidebar-chevron-icon {
+    display: inline-block;
+  }
+
+  /* When closed on mobile: hide the list to save space */
   .wordlist-category-list {
-    max-height: 150px;
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+    max-height: 420px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* When opened on mobile: show list fully */
+  .wordlist-sidebar.mobile-open .wordlist-category-list {
+    display: flex;
+  }
+
+  .wordlist-sidebar.mobile-open .wordlist-sidebar-header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
   }
 }
 
@@ -1299,6 +1381,34 @@ body {
     align-items: flex-start;
     gap: 8px;
     padding: 10px 12px;
+  }
+
+  /* WordList Status Tabs on Mobile: 3x2 Grid, Zero Cut-off */
+  .wordlist-status-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    overflow-x: visible;
+    padding-bottom: 2px;
+    margin-bottom: 12px;
+  }
+
+  .status-pill-tab {
+    flex: 1 1 calc(33.333% - 6px);
+    text-align: center;
+    padding: 8px 4px;
+    font-size: 0.82rem;
+    border-radius: 12px;
+    min-width: 0;
+  }
+
+  .tab-label-desktop {
+    display: none;
+  }
+
+  .tab-label-mobile {
+    display: inline;
+    font-weight: 700;
   }
 
   /* Agenda Cockpit on Mobile (Spacious & Dashboard Aesthetics) */
