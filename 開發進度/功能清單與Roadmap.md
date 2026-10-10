@@ -61,6 +61,7 @@
 | **課本單元主修進度 (Active Curriculum Track)** | Web / Server | [x] | 追蹤課本章節掌握率 (Stage 3+)，達標主動提醒推進 |
 | **詞彙習得五階動態學習流 (Adaptive 5-Stage Session)** | Web | [x] | 依卡片階級自動派發題型：S1 辨認 ➔ S2 提示回想 ➔ S3 盲測拼寫 ➔ S4 語境克漏字 |
 | **3D 翻轉卡片模式 (自由翻卡)** | Web / Mobile | [x] | 雙面翻卡動畫，Web 支援鍵盤快捷鍵 (`Space`, `1~4`)、文字選取防誤翻與複製 |
+| **題目順序隨機洗牌機制** | Web | [x] | Fisher-Yates 隨機打亂題序，今日學習/翻卡/拼字皆預設亂序，附手動洗牌按鈕杜絕順序記憶 |
 | **真人發音朗讀 (TTS)** | Web | [x] | 支援雙引擎（線上音訊串流代理與原生 Web Speech API），完美相容行動版 Safari、iOS、Android 與電腦端 |
 | **行動端原生發音 (expo-speech)** | Mobile | [📅] | 待整合 `expo-speech` 實現手機端發音點擊播放 |
 | **拼字盲測模式 (Spelling Mode)** | Web / Mobile | [x] | 例句挖空提示、智慧防呆判定 (容許性別縮寫)，簡化輸入介面適配鍵盤直接輸入 |

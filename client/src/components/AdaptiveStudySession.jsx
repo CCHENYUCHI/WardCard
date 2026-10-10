@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { playSpanishPronunciation } from '../utils/speech';
+import { shuffleArray } from '../utils/shuffle';
 
 const SPANISH_SPECIAL_KEYS = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ', '¿', '¡'];
 
@@ -43,9 +44,11 @@ export default function AdaptiveStudySession({
       ...(sessionPlan.regular || []).map(c => ({ ...c, _sessionType: 'regular' })),
       ...(sessionPlan.newCards || []).map(c => ({ ...c, _sessionType: 'new' }))
     ];
-    setQueue(list);
+    // Randomize question sequence so user doesn't memorize order
+    const shuffledList = shuffleArray(list);
+    setQueue(shuffledList);
     setCurrentIndex(0);
-    setIsFinished(list.length === 0);
+    setIsFinished(shuffledList.length === 0);
   }, [sessionPlan]);
 
   const currentCard = queue[currentIndex];

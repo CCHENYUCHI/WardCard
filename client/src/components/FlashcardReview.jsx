@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Volume2, RotateCw, CheckCircle2, ChevronRight, HelpCircle, Sparkles, Filter } from 'lucide-react';
+import { Volume2, RotateCw, CheckCircle2, ChevronRight, HelpCircle, Sparkles, Filter, Shuffle } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { playSpanishPronunciation } from '../utils/speech';
+import { shuffleArray } from '../utils/shuffle';
 
 export default function FlashcardReview({ allCards, dueCards, onReview, categories, onRefresh }) {
   const [quizCards, setQuizCards] = useState([]);
@@ -28,7 +29,8 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
       return passCategory && passDue;
     });
     
-    setQuizCards(newQuizCards);
+    // Randomize card order
+    setQuizCards(shuffleArray(newQuizCards));
     setCurrentIndex(0);
     setIsFlipped(false);
     setIsCompleted(false);
@@ -205,6 +207,19 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
             />
             只顯示待複習
           </label>
+          <button
+            className="btn btn-secondary btn-sm"
+            style={{ display: 'flex', alignItems: 'center', gap: '4px', padding: '4px 10px', fontSize: '0.82rem' }}
+            onClick={() => {
+              setQuizCards(prev => shuffleArray(prev));
+              setCurrentIndex(0);
+              setIsFlipped(false);
+            }}
+            title="重新隨機打亂題目順序"
+          >
+            <Shuffle size={13} />
+            <span>隨機打亂</span>
+          </button>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-secondary)', fontSize: '0.88rem' }}>
