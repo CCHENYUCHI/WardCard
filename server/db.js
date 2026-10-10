@@ -104,10 +104,15 @@ function runMigrations() {
       fsrs_stability = CASE WHEN interval_days > 0 THEN interval_days ELSE 0 END,
       fsrs_reps = repetition,
       mastery_stage = CASE 
-        WHEN repetition >= 6 THEN 4
-        WHEN repetition >= 3 THEN 3
-        WHEN repetition >= 1 THEN 2
+        WHEN repetition >= 7 OR interval_days >= 45 THEN 5
+        WHEN repetition >= 5 OR interval_days >= 16 THEN 4
+        WHEN repetition >= 3 OR interval_days >= 6 THEN 3
+        WHEN repetition >= 1 OR interval_days >= 2.5 THEN 2
         ELSE 1 
+      END,
+      lifecycle_status = CASE
+        WHEN (repetition >= 7 OR interval_days >= 45) THEN 'mastered'
+        ELSE 'active'
       END,
       curriculum_unit = CASE WHEN curriculum_unit = '' THEN category ELSE curriculum_unit END
     WHERE fsrs_stability = 0.0 AND repetition > 0;
