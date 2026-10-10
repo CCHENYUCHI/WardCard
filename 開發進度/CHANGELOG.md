@@ -9,12 +9,16 @@
 ### Added
 - **專案開發進度管理系統**：在專案根目錄建立 `開發進度/` 資料夾，包含總覽文件、Git/GitHub 協作管理規範、Roadmap 與 CHANGELOG。
 - **AI 智慧字典入口 (Web)**：在 Web 端新增字典 Tab 入口與未完成佔位視圖 (`DictionaryView.jsx`)。
+- **輕量級西語語音代理 API (`/api/tts`)**：在 Express 後端新增極輕量音訊代理端點，利用 Node 22 原生 `fetch` 串流高品質西語語音（`audio/mpeg`），並加上 HTTP 24 小時快取 (`Cache-Control: public, max-age=86400`)，解決行動端相容性同時保持約 35MB RAM 超輕量後端架構。
+- **雙引擎西語發音播放器與設定切換 (Web)**：前端 `speech.js` 升級為雙引擎架構（線上高品質音訊 + 修復版原生 Web Speech API），於 `SettingsModal.jsx` 提供發音引擎切換與試聽播放狀態反饋。
 
 ### Changed
+- **拼字測驗介面簡化 (移除西語重音工具列)**：移除 `SpellingReview.jsx` 輸入框下方之 `SPANISH_SPECIAL_KEYS`（`á`, `é`, `í`, `ó`, `ú`, `ü`, `ñ`, `¿`, `¡`）工具列與未使用的點擊插入事件。大幅節省手機螢幕縱向高度，避免推擠「送出檢查」與「看答案」按鈕。
 - **Docker 建置流程優化**：調整 `Dockerfile` 與 `docker-compose.yml`，加入容器健康檢查與靜態檔載入流程。
 - **分類 API 過濾調整**：優化 `/api/categories` 取值機制。
 
 ### Fixed
+- **手機版 Safari 語音發音支援 (iOS Safari TTS)**：徹底解決 iOS Safari / iPhone 實體靜音開關 (Silent switch) 攔截 Web Speech Ambient 音訊、iOS 缺少離線西語語音包以及 WebKit `cancel()` 立即呼叫 `speak()` 導致語音佇列凍結之問題。在 iOS Safari 下預設走 HTML5 音訊串流，確保在任何手機瀏覽器均能 100% 穩定發聲。
 - **Web 3D 單字卡文字選取防誤翻 (Mac Safari/Web)**：修復在 Mac Safari 等瀏覽器中，選取單字卡文字（單字、例句、釋義或文法筆記）時會觸發卡片翻面並導致選取狀態中斷無法複製的問題。新增 Pointer 拖曳與長按手勢判定，以及 `window.getSelection()` 選取區段過濾機制，確保使用者長按或拖曳選取文字時不會誤觸翻面，並強化 WebKit 漸層文字反白選取樣式與文字游標提示。
 - **Docker 自動編譯前端 (Multi-stage Build)**：修復 `Dockerfile` 依賴主機手動建置 `client/dist` 導致伺服器 `git pull` 後未能重新編譯最新前端代碼的問題。改為 Docker 多階段構建 (Multi-stage build)，容器打包時自動在內部完成 Vite build。
 

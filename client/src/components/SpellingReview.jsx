@@ -3,8 +3,6 @@ import { Volume2, Check, X, ArrowRight, RotateCw, Filter, Eye } from 'lucide-rea
 import confetti from 'canvas-confetti';
 import { playSpanishPronunciation } from '../utils/speech';
 
-const SPANISH_SPECIAL_KEYS = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ', '¿', '¡'];
-
 const stripArticle = (str) => {
   const articles = ['el ', 'la ', 'los ', 'las ', 'un ', 'una ', 'unos ', 'unas '];
   for (let article of articles) {
@@ -94,19 +92,6 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
   }, [currentIndex, status]);
 
   const targetWord = currentCard ? currentCard.word.trim().toLowerCase() : '';
-
-  const handleInsertChar = (char) => {
-    if (!inputRef.current) return;
-    const start = inputRef.current.selectionStart || userInput.length;
-    const end = inputRef.current.selectionEnd || userInput.length;
-    const nextVal = userInput.substring(0, start) + char + userInput.substring(end);
-    setUserInput(nextVal);
-
-    setTimeout(() => {
-      inputRef.current.focus();
-      inputRef.current.setSelectionRange(start + 1, start + 1);
-    }, 10);
-  };
 
   const handleCheck = async (e) => {
     e?.preventDefault();
@@ -224,7 +209,7 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
         {/* Translation Question Prompt */}
         <div style={{ marginBottom: '20px' }}>
           <div style={{ fontSize: '0.88rem', color: 'var(--text-muted)', marginBottom: '6px' }}>
-            請輸入對應的西班牙語單字（注意重音）：
+            請輸入對應的西班牙語單字：
           </div>
           <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.4rem', fontWeight: 800, color: '#f8fafc' }}>
             {currentCard.translation}
@@ -270,21 +255,6 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
             spellCheck="false"
             id="spelling-text-input"
           />
-
-          {/* Spanish Special Characters Keyboard */}
-          <div className="accents-toolbar">
-            <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginRight: '4px' }}>西語重音點擊輸入:</span>
-            {SPANISH_SPECIAL_KEYS.map((char) => (
-              <button
-                key={char}
-                type="button"
-                className="accent-key"
-                onClick={() => handleInsertChar(char)}
-              >
-                {char}
-              </button>
-            ))}
-          </div>
 
           {/* Action buttons */}
           <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '16px' }}>

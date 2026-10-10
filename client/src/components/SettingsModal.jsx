@@ -1,15 +1,18 @@
 import { fetchAPI } from '../utils/api';
 import React, { useState, useEffect } from 'react';
 import { X, Key, Check, Volume2, Download, Upload, ExternalLink, ShieldCheck } from 'lucide-react';
-import { playSpanishPronunciation } from '../utils/speech';
+import { playSpanishPronunciation, getTtsMode, setTtsMode, TTS_MODES } from '../utils/speech';
 
 export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }) {
   const [apiKey, setApiKey] = useState('');
   const [savedSuccess, setSavedSuccess] = useState(false);
+  const [ttsMode, setTtsModeState] = useState(TTS_MODES.ONLINE);
+  const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
   useEffect(() => {
     const key = localStorage.getItem('gemini_api_key') || '';
     setApiKey(key);
+    setTtsModeState(getTtsMode());
   }, [isOpen]);
 
   if (!isOpen) return null;
@@ -126,20 +129,47 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
           </div>
         </div>
 
-        {/* Pronunciation Test */}
+        {/* Pronunciation Test & Engine Settings */}
         <div style={{ marginBottom: '24px', padding: '16px', background: 'rgba(255, 255, 255, 0.03)', borderRadius: 'var(--radius-md)' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
             <div>
               <div style={{ fontWeight: 600, fontSize: '0.92rem', marginBottom: '2px' }}>西班牙語真人發音測試</div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>使用瀏覽器原生 Web Speech API (es-ES / es-MX)</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>支援行動版 Safari、iOS、Android 與電腦瀏覽器</div>
             </div>
             <button
               className="btn btn-secondary btn-sm"
-              onClick={() => playSpanishPronunciation('¡Hola! Bienvenidos a PalabraCard. ¿Cómo estás hoy?')}
+              disabled={isPlayingAudio}
+              onClick={() => {
+                setIsPlayingAudio(true);
+                const audioObj = playSpanishPronunciation('¡Hola! Bienvenidos a PalabraCard. ¿Cómo estás hoy?');
+                if (audioObj && audioObj.addEventListener) {
+                  audioObj.addEventListener('ended', () => setIsPlayingAudio(false));
+                  audioObj.addEventListener('error', () => setIsPlayingAudio(false));
+                } else {
+                  setTimeout(() => setIsPlayingAudio(false), 2600);
+                }
+              }}
             >
               <Volume2 size={16} />
-              <span>試聽西語</span>
+              <span>{isPlayingAudio ? '播放中...' : '試聽西語'}</span>
             </button>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.82rem', borderTop: '1px solid rgba(255, 255, 255, 0.06)', paddingTop: '10px' }}>
+            <span style={{ color: 'var(--text-secondary)' }}>發音引擎：</span>
+            <select
+              className="select-custom"
+              style={{ padding: '4px 8px', fontSize: '0.8rem' }}
+              value={ttsMode}
+              onChange={(e) => {
+                const newMode = e.target.value;
+                setTtsModeState(newMode);
+                setTtsMode(newMode);
+              }}
+            >
+              <option value={TTS_MODES.ONLINE}>線上清晰發音 (推薦，完美支援 iOS Safari / 行動裝置)</option>
+              <option value={TTS_MODES.NATIVE}>瀏覽器原生語音 (Web Speech API)</option>
+            </select>
           </div>
         </div>
 

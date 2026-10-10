@@ -53,9 +53,9 @@
 | :--- | :---: | :---: | :--- |
 | **SM-2 間隔重複記憶演算法** | Server | [x] | 根據評分計算下次複習時間 (`interval_days`, `ease_factor`) |
 | **3D 翻轉卡片模式** | Web / Mobile | [x] | 雙面翻卡動畫，Web 支援鍵盤快捷鍵 (`Space`, `1~4`)、文字選取防誤翻與複製 |
-| **真人發音朗讀 (TTS)** | Web | [x] | 利用瀏覽器原生 Web Speech API 朗讀西語純正發音 |
+| **真人發音朗讀 (TTS)** | Web | [x] | 支援雙引擎（線上音訊串流代理與原生 Web Speech API），完美相容行動版 Safari、iOS、Android 與電腦端 |
 | **行動端原生發音 (expo-speech)** | Mobile | [📅] | 待整合 `expo-speech` 實現手機端發音點擊播放 |
-| **拼字盲測模式 (Spelling Mode)** | Web / Mobile | [x] | 例句挖空提示、重音符號軟鍵盤、智慧防呆判定 (容許性別縮寫) |
+| **拼字盲測模式 (Spelling Mode)** | Web / Mobile | [x] | 例句挖空提示、智慧防呆判定 (容許性別縮寫)，簡化輸入介面適配鍵盤直接輸入 |
 | **複習完成慶祝反饋** | Web | [x] | 彩帶紙屑動效 (`canvas-confetti`) 與學習激勵文案 |
 | **失誤單字加強複習 (Lapse Queue)** | 雙端 | [📅] | 當日連續複習評分為 1 或 2 之單字，於同一次練習末段再次出現 |
 

@@ -44,6 +44,37 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', time: new Date().toISOString() });
 });
 
+// Spanish TTS Audio Proxy (Ultra-lightweight, native Node 22 fetch, browser cached)
+app.get('/api/tts', async (req, res) => {
+  try {
+    const text = (req.query.text || '').toString().trim();
+    const lang = (req.query.lang || 'es').toString().trim();
+    if (!text) {
+      return res.status(400).json({ error: 'Text parameter is required' });
+    }
+
+    const ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=${encodeURIComponent(lang)}&q=${encodeURIComponent(text)}`;
+    const upstreamRes = await fetch(ttsUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+      }
+    });
+
+    if (!upstreamRes.ok) {
+      return res.status(502).json({ error: 'Failed to fetch audio stream' });
+    }
+
+    res.setHeader('Content-Type', 'audio/mpeg');
+    res.setHeader('Cache-Control', 'public, max-age=86400');
+    const arrayBuffer = await upstreamRes.arrayBuffer();
+    res.send(Buffer.from(arrayBuffer));
+  } catch (error) {
+    console.error('TTS proxy error:', error);
+    res.status(500).json({ error: 'TTS service error' });
+  }
+});
+
+
 // Auth endpoints
 app.post('/api/auth/register', (req, res) => {
   try {

@@ -598,43 +598,6 @@ body {
   background: rgba(16, 185, 129, 0.3);
 }
 
-/* Spanish Accents Toolbar */
-.accents-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin: 14px 0;
-}
-
-.accent-key {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: var(--text-primary);
-  font-size: 1.1rem;
-  font-family: var(--font-display);
-  font-weight: 600;
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-sm);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.accent-key:hover {
-  background: rgba(99, 102, 241, 0.3);
-  border-color: var(--accent-primary);
-  transform: translateY(-2px);
-}
-
-.accent-key:active {
-  transform: translateY(0);
-}
-
 /* Spelling Input */
 .spelling-box {
   max-width: 600px;
