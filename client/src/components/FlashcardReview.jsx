@@ -170,8 +170,8 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
   return (
     <div style={{ maxWidth: '720px', margin: '0 auto' }}>
       {/* Top Filter and Progress Header */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '18px', flexWrap: 'wrap', gap: '12px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', flexWrap: 'wrap', gap: '12px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Filter size={18} style={{ color: 'var(--text-muted)' }} />
             <select

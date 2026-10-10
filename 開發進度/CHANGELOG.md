@@ -16,9 +16,13 @@
   - 修正過去翻卡與拼字測驗因 `repetition === 0` 舊條件而忽視 `due_date` 間隔的邏輯，使評分後的單字能精準依排程進入休眠。
   - 翻卡評分按鈕（忘記、困難、良好、容易）即時顯示動態計算的下次複習天數（例如：`重置 (1天)`、`稍難 (1~3天)`、`熟練 (3~7天)`、`精通 (16天+)`），評分更有依據。
 
-- **行動版 Safari 全局響應式優化與底部導覽列 (`Navbar.jsx`, `index.css`)**：
-  - 專為手機端打造 iOS 風格之高雅毛玻璃底部導覽列（今日學習、自由翻卡、拼字測驗、單字庫、進度統計）。
-  - 修復行動端 SafeArea 安全邊距與卡片翻轉 3D 硬體加速層級，徹底杜絕畫面跑版。
+- **手機 Safari 網頁版 UI 跑版修復與行動底部導覽列升級 (`Navbar.jsx`, `FlashcardReview.jsx`, `index.css`, `index.html`)**：
+  - **解決全域橫向溢出**：徹底根除手機 Safari 頂部導覽列將整頁橫向撐爆（產生水平滑動條、字體縮小、版面截斷）的問題。
+  - **行動端雙軌導覽**：桌面端保留 Google Classroom 美學頂部完整導覽；手機版（< 768px）自動切換為高質感 iOS 毛玻璃**底部導覽列 (Bottom Navigation Bar)**（今日學習含 Badge、自由翻卡、拼字測驗、單字庫、進度統計），頂部僅保留精簡操作按鈕。
+  - **iOS Safe Area 深度適配**：`index.html` 補齊 `viewport-fit=cover`，頁面底部與彈窗全面支援 `env(safe-area-inset-bottom)` 與 `100dvh`，杜絕動態網址列與 Home Bar 遮擋。
+  - **翻卡控制項擠壓修復**：修正 `FlashcardReview.jsx` 頂部過濾列為 `flexWrap: wrap`，消除文字被擠壓為垂直豎排的問題。
+  - **Safari 3D 翻轉硬體加速**：為單字卡加入 `-webkit-transform-style: preserve-3d`、`-webkit-perspective: 1200px` 與 `transform: translateZ(0)`，徹底杜絕 iOS Safari 翻牌閃爍與背面白屏。
+  - **單字庫搜尋與批次列適配**：手機版搜尋列自動 100% 滿版，批次工具列與按鈕自動直向堆疊適配。
 
 - **題目順序隨機洗牌機制 (Question Order Randomization)**：
   - 解決過去按資料庫 ID 或單元插入順序排序，導致複習時容易「靠順序死記」的序列位置效應。
