@@ -155,25 +155,10 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
               <input
                 type="text"
                 className="form-input"
-                placeholder="例如: Capítulo 1 或 課堂筆記"
+                placeholder="例如: 第1課 或 課堂筆記"
                 value={formData.curriculum_unit}
                 onChange={e => setFormData({ ...formData, curriculum_unit: e.target.value })}
               />
-            </div>
-            <div>
-              <label className="form-label">DELE 等級</label>
-              <select
-                className="form-input"
-                value={formData.dele_level}
-                onChange={e => setFormData({ ...formData, dele_level: e.target.value })}
-              >
-                <option value="A1">A1</option>
-                <option value="A2">A2</option>
-                <option value="B1">B1</option>
-                <option value="B2">B2</option>
-                <option value="C1">C1</option>
-                <option value="C2">C2</option>
-              </select>
             </div>
           </div>
 

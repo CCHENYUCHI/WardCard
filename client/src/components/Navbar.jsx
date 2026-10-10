@@ -10,7 +10,7 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span className="brand-title">PalabraCard</span>
-              <span className="brand-badge">DELE SRS</span>
+              <span className="brand-badge">FSRS</span>
             </div>
           </div>
         </div>

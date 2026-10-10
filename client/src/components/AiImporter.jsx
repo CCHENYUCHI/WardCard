@@ -169,8 +169,8 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
               </button>
             </div>
 
-            {/* Target Category & DELE level defaults */}
-            <div className="form-row" style={{ marginBottom: '16px' }}>
+            {/* Target Category defaults */}
+            <div style={{ marginBottom: '16px' }}>
               <div>
                 <label className="form-label">預設匯入分類</label>
                 <select
@@ -179,27 +179,11 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
                   onChange={e => setTargetCategory(e.target.value)}
                 >
                   <option value="課堂筆記">課堂筆記</option>
-                  <option value="考試必背 (DELE)">考試必背 (DELE)</option>
                   <option value="日常生活">日常生活</option>
                   <option value="旅遊會話">旅遊會話</option>
                   {categories.filter(c => !['課堂筆記', '考試必背 (DELE)', '日常生活', '旅遊會話'].includes(c)).map(c => (
                     <option key={c} value={c}>{c}</option>
                   ))}
-                </select>
-              </div>
-              <div>
-                <label className="form-label">目標 DELE 等級</label>
-                <select
-                  className="form-input"
-                  value={targetDele}
-                  onChange={e => setTargetDele(e.target.value)}
-                >
-                  <option value="auto">✨ 智能自動評級 (CEFR 標準)</option>
-                  <option value="A1">A1 (入門)</option>
-                  <option value="A2">A2 (初級)</option>
-                  <option value="B1">B1 (中級)</option>
-                  <option value="B2">B2 (中高級)</option>
-                  <option value="C1">C1 (高級)</option>
                 </select>
               </div>
             </div>
@@ -326,7 +310,6 @@ Hoy en clase aprendimos:
                           )}
 
                           <span className="badge-pos">{card.part_of_speech}</span>
-                          <span className="badge-dele">{card.dele_level || 'A2'}</span>
                         </div>
 
                         {/* Translation input */}

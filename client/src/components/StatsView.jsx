@@ -273,49 +273,6 @@ export default function StatsView({ stats }) {
           </div>
         </div>
       </div>
-
-      {/* DELE Level Breakdown */}
-      <div style={{
-        background: '#ffffff',
-        border: '1px solid var(--border-color)',
-        borderRadius: 'var(--radius-xl)',
-        padding: '20px 24px',
-        boxShadow: 'var(--shadow-card)',
-        marginBottom: '20px'
-      }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
-          <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Award size={18} color="var(--google-blue)" />
-            <span>DELE 歐洲語言架構等級分佈</span>
-          </h3>
-          <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>A1 入門 ➔ C1 進階</span>
-        </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '10px' }}>
-          {['A1', 'A2', 'B1', 'B2', 'C1'].map(lvl => {
-            const item = stats.levelCounts?.find(l => l.dele_level === lvl);
-            const count = item ? item.count : 0;
-            const pct = total > 0 ? Math.round((count / total) * 100) : 0;
-
-            return (
-              <div
-                key={lvl}
-                style={{
-                  background: '#f8f9fa',
-                  border: '1px solid var(--border-color)',
-                  borderRadius: 'var(--radius-md)',
-                  padding: '12px 14px',
-                  textAlign: 'center'
-                }}
-              >
-                <div className="badge-dele" style={{ marginBottom: '6px', display: 'inline-block' }}>{lvl}</div>
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-primary)' }}>{count}</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{pct}% 佔比</div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
     </div>
   );
 }

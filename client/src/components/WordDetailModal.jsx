@@ -59,7 +59,6 @@ export default function WordDetailModal({
             }}>
               {badgeText}
             </span>
-            <span className="badge-dele">{card.dele_level || 'A2'}</span>
             {card.category && <span className="badge-category">{card.category}</span>}
             {card.curriculum_unit && card.curriculum_unit !== card.category && (
               <span className="badge-category">{card.curriculum_unit}</span>

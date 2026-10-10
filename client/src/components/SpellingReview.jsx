@@ -196,7 +196,6 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
       <div className="glass-card spelling-box">
         {/* Badges */}
         <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginBottom: '16px' }}>
-          <span className="badge-dele">{currentCard.dele_level || 'A2'}</span>
           <span className="badge-category">{currentCard.category}</span>
           {currentCard.gender && currentCard.gender !== 'none' && (
             <span className={`badge-gender ${currentCard.gender}`}>

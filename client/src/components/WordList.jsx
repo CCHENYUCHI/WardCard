@@ -21,7 +21,6 @@ export default function WordList({
 }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedDele, setSelectedDele] = useState('all');
   const [selectedLifecycle, setSelectedLifecycle] = useState(initialFilterPreset || 'all');
   
   // Selection state for batch operations
@@ -127,11 +126,6 @@ export default function WordList({
         }
       }
 
-      // DELE level
-      if (selectedDele !== 'all' && card.dele_level !== selectedDele) {
-        return false;
-      }
-
       // Lifecycle status pill
       if (selectedLifecycle === 'starred') {
         if (!card.is_starred) return false;
@@ -142,12 +136,12 @@ export default function WordList({
 
       return true;
     });
-  }, [cards, searchTerm, selectedCategory, selectedDele, selectedLifecycle]);
+  }, [cards, searchTerm, selectedCategory, selectedLifecycle]);
 
   // Clear selections when filter changes
   useEffect(() => {
     setSelectedIds([]);
-  }, [selectedCategory, selectedLifecycle, selectedDele]);
+  }, [selectedCategory, selectedLifecycle]);
 
   // Selection helpers
   const isAllSelected = filteredCards.length > 0 && selectedIds.length === filteredCards.length;
@@ -498,21 +492,6 @@ export default function WordList({
             />
           </div>
 
-          {/* DELE filter */}
-          <select
-            className="select-custom"
-            value={selectedDele}
-            onChange={e => setSelectedDele(e.target.value)}
-            style={{ width: '130px' }}
-          >
-            <option value="all">所有 DELE</option>
-            <option value="A1">A1</option>
-            <option value="A2">A2</option>
-            <option value="B1">B1</option>
-            <option value="B2">B2</option>
-            <option value="C1">C1</option>
-          </select>
-
           {/* Action Buttons */}
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
             <button 
@@ -786,9 +765,6 @@ export default function WordList({
 
                       {/* Badges */}
                       <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
-                        <span className="badge-dele" style={{ fontSize: '0.68rem', padding: '1px 5px' }}>
-                          {card.dele_level || 'A2'}
-                        </span>
                         {card.gender && card.gender !== 'none' && (
                           <span className={`badge-gender ${card.gender}`} style={{ fontSize: '0.68rem', padding: '1px 5px' }}>
                             {card.gender === 'masculino' ? '♂' : '♀'}

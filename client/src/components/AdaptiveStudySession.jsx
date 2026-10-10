@@ -320,7 +320,6 @@ export default function AdaptiveStudySession({
 
               <div style={{ display: 'flex', justifyContent: 'center', gap: '8px' }}>
                 <span className="badge-subtle">{currentCard.part_of_speech}</span>
-                <span className="badge-dele">{currentCard.dele_level}</span>
                 {currentCard.curriculum_unit && (
                   <span className="badge-category">{currentCard.curriculum_unit}</span>
                 )}
@@ -375,7 +374,6 @@ export default function AdaptiveStudySession({
               </div>
               <div style={{ display: 'flex', justifyContent: 'center', gap: '8px' }}>
                 <span className="badge-subtle">{currentCard.part_of_speech}</span>
-                <span className="badge-dele">{currentCard.dele_level}</span>
               </div>
             </div>
 
@@ -551,7 +549,6 @@ export default function AdaptiveStudySession({
         {stage >= 4 && (
           <div>
             <div style={{ textAlign: 'center', marginBottom: '16px' }}>
-              <span className="badge-dele">{currentCard.dele_level}</span>
               <div style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--google-blue)', marginTop: '8px' }}>
                 {currentCard.translation}
               </div>

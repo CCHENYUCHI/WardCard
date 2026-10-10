@@ -239,7 +239,6 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
           <div className="card-face card-front">
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                <span className="badge-dele">{currentCard.dele_level || 'A2'}</span>
                 <span className="badge-category">{currentCard.category}</span>
                 {currentCard.gender && currentCard.gender !== 'none' && (
                   <span className={`badge-gender ${currentCard.gender}`}>
@@ -289,7 +288,6 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
           <div className="card-face card-back">
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                <span className="badge-dele">{currentCard.dele_level || 'A2'}</span>
                 {currentCard.gender && currentCard.gender !== 'none' && (
                   <span className={`badge-gender ${currentCard.gender}`}>
                     {currentCard.gender === 'masculino' ? '♂ 陽性 (el)' : '♀ 陰性 (la)'}
