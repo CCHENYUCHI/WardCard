@@ -216,9 +216,16 @@ export default function AdaptiveStudySession({
   // Mask example sentence for Stage 2 & 4
   const maskWord = (sentence, word) => {
     if (!sentence || !word) return sentence;
-    const clean = stripArticle(word).trim();
-    const regex = new RegExp(`\\b${clean}\\w*`, 'gi');
-    return sentence.replace(regex, '【 ______ 】');
+    const parts = word.split(/[\/,]/).map(p => stripArticle(p).trim()).filter(Boolean);
+    let result = sentence;
+    for (const p of parts) {
+      if (p.length >= 2) {
+        const escaped = p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`\\b${escaped}\\w*`, 'gi');
+        result = result.replace(regex, '【 ______ 】');
+      }
+    }
+    return result;
   };
 
   const getStageHeader = () => {
@@ -230,8 +237,9 @@ export default function AdaptiveStudySession({
       case 3:
         return { label: 'Stage 3: 正字拼寫', desc: '盲測輸入正確拼寫與重音符號', color: '#8b5cf6' };
       case 4:
+        return { label: 'Stage 4: 語境克漏字', desc: '掌握完整句型語意與詞形變位', color: '#137333' };
       case 5:
-        return { label: 'Stage 4: 語境克漏字', desc: '掌握完整句型語意與詞形變位', color: '#ec4899' };
+        return { label: 'Stage 5: 長效精通', desc: '直覺極速反應，鞏固長期神經記憶', color: '#8430ce' };
       default:
         return { label: '自適應練習', desc: '', color: '#3b82f6' };
     }
@@ -546,7 +554,7 @@ export default function AdaptiveStudySession({
         )}
 
         {/* --- STAGE 4: Contextual Cloze (語境克漏字) --- */}
-        {stage >= 4 && (
+        {stage === 4 && (
           <div>
             <div style={{ textAlign: 'center', marginBottom: '16px' }}>
               <div style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--google-blue)', marginTop: '8px' }}>
@@ -591,6 +599,89 @@ export default function AdaptiveStudySession({
                   style={{ padding: '10px 24px' }}
                 >
                   查看克漏字答案
+                </button>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* --- STAGE 5: Fluent Mastery (長效精通極速驗證) --- */}
+        {stage >= 5 && (
+          <div>
+            <div style={{ textAlign: 'center', marginBottom: '16px' }}>
+              <div style={{ 
+                display: 'inline-flex', 
+                alignItems: 'center', 
+                gap: '6px', 
+                background: '#f6e8ff', 
+                color: '#8430ce', 
+                border: '1px solid #d7aefb', 
+                padding: '4px 14px', 
+                borderRadius: '16px',
+                fontSize: '0.82rem',
+                fontWeight: 700
+              }}>
+                <Trophy size={14} />
+                <span>Stage 5 · 長效精通極速驗證</span>
+              </div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '6px' }}>
+                ⚡ 此詞彙已固化於長期記憶區，請在 2 秒內直覺反應西語語意：
+              </div>
+            </div>
+
+            <div style={{ textAlign: 'center', margin: '16px 0 20px 0' }}>
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
+                <span style={{ fontSize: '2.5rem', fontWeight: 800, color: 'var(--text-primary)', letterSpacing: '-0.5px' }}>
+                  {currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}
+                </span>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    playSpanishPronunciation(currentCard.article ? `${currentCard.article} ${currentCard.word}` : currentCard.word);
+                  }}
+                  className="btn-icon"
+                  style={{ marginLeft: '4px' }}
+                >
+                  <Volume2 size={22} color="var(--google-blue)" />
+                </button>
+              </div>
+            </div>
+
+            {currentCard.example_es && (
+              <div style={{
+                background: '#f8f9fa',
+                border: '1px solid var(--border-color)',
+                padding: '14px 18px',
+                borderRadius: 'var(--radius-md)',
+                textAlign: 'center',
+                marginBottom: '16px',
+                fontSize: '0.98rem',
+                fontStyle: 'italic',
+                color: 'var(--text-primary)'
+              }}>
+                "{currentCard.example_es}"
+              </div>
+            )}
+
+            {isFlipped ? (
+              <div style={{ textAlign: 'center', borderTop: '1px solid var(--border-color)', paddingTop: '16px', animation: 'fadeIn 0.2s ease' }}>
+                <div style={{ fontSize: '1.6rem', fontWeight: 700, color: 'var(--google-blue)', marginBottom: '6px' }}>
+                  {currentCard.translation}
+                </div>
+                {currentCard.example_zh && (
+                  <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
+                    {currentCard.example_zh}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div style={{ textAlign: 'center', marginTop: '16px' }}>
+                <button
+                  onClick={handleFlip}
+                  className="btn btn-secondary"
+                  style={{ padding: '8px 24px' }}
+                >
+                  翻開驗證中文釋義
                 </button>
               </div>
             )}
