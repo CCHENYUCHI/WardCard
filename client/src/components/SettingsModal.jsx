@@ -6,7 +6,7 @@ import { playSpanishPronunciation, getTtsMode, setTtsMode, TTS_MODES } from '../
 export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }) {
   const [apiKey, setApiKey] = useState('');
   const [savedSuccess, setSavedSuccess] = useState(false);
-  const [ttsMode, setTtsModeState] = useState(TTS_MODES.ONLINE);
+  const [ttsMode, setTtsModeState] = useState(TTS_MODES.AUTO);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
   useEffect(() => {
@@ -167,7 +167,8 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
                 setTtsMode(newMode);
               }}
             >
-              <option value={TTS_MODES.ONLINE}>線上清晰發音 (推薦，完美支援 iOS Safari / 行動裝置)</option>
+              <option value={TTS_MODES.AUTO}>智慧自動 (推薦：電腦原生極速、手機高音質串流)</option>
+              <option value={TTS_MODES.ONLINE}>線上清晰發音 (相容所有裝置)</option>
               <option value={TTS_MODES.NATIVE}>瀏覽器原生語音 (Web Speech API)</option>
             </select>
           </div>

@@ -1,38 +1,48 @@
 /**
  * Spanish Pronunciation Audio Helper
- * Supports resilient dual-engine playback:
- * 1. Online High-Quality TTS Audio (/api/tts) - default, 100% reliable across iOS Safari and all mobile devices
- * 2. Native Web Speech API - fallback/optional with iOS Safari WebKit fixes
+ * Smart Dual-Engine System:
+ * - Desktop (Mac Safari, Chrome, Windows): Defaults to native Web Speech API (zero latency, offline, native macOS voices).
+ * - Mobile (iOS Safari, Android): Defaults to online audio stream (bypasses iOS silent switch & missing voice packs).
+ * - Bidirectional Fallback: If either engine encounters an error, automatically falls back to the other.
  */
 
 let currentAudio = null;
 
 export const TTS_MODES = {
+  AUTO: 'auto',
   ONLINE: 'online',
   NATIVE: 'native'
 };
 
+export function isMobileDevice() {
+  if (typeof navigator === 'undefined') return false;
+  const ua = navigator.userAgent || '';
+  const isTouchMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
+  const isIpadOS = navigator.maxTouchPoints && navigator.maxTouchPoints > 1 && /MacIntel/.test(navigator.platform);
+  return Boolean(isTouchMobile || isIpadOS);
+}
+
 export function getTtsMode() {
-  return localStorage.getItem('palabracard_tts_mode') || TTS_MODES.ONLINE;
+  return localStorage.getItem('palabracard_tts_mode') || TTS_MODES.AUTO;
 }
 
 export function setTtsMode(mode) {
-  if (mode === TTS_MODES.NATIVE || mode === TTS_MODES.ONLINE) {
+  if (mode === TTS_MODES.AUTO || mode === TTS_MODES.NATIVE || mode === TTS_MODES.ONLINE) {
     localStorage.setItem('palabracard_tts_mode', mode);
   }
 }
 
 /**
- * Play native browser SpeechSynthesis with iOS WebKit fixes
+ * Play native browser SpeechSynthesis with iOS/WebKit resilience
  */
-function playNativeSpeech(text) {
+function playNativeSpeech(text, allowFallback = true) {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-    console.warn('Web Speech synthesis not supported, falling back to online audio.');
-    return playOnlineAudio(text);
+    console.warn('Web Speech synthesis not supported.');
+    if (allowFallback) return playOnlineAudio(text, false);
+    return null;
   }
 
   try {
-    // If paused in WebKit, resume first
     if (window.speechSynthesis.paused) {
       window.speechSynthesis.resume();
     }
@@ -52,7 +62,7 @@ function playNativeSpeech(text) {
       utterance.voice = esVoice;
     }
 
-    // Retain global reference to avoid iOS Safari garbage collection bug
+    // Retain global reference to prevent WebKit garbage collection
     window.__palabraActiveUtterance = utterance;
 
     utterance.onend = () => {
@@ -60,25 +70,28 @@ function playNativeSpeech(text) {
     };
 
     utterance.onerror = (e) => {
-      console.warn('Native speech error, falling back to online audio:', e);
       window.__palabraActiveUtterance = null;
-      // Fallback to online audio if native synthesis failed
-      playOnlineAudio(text);
+      console.warn('Native speech error, falling back to online audio:', e);
+      if (allowFallback) {
+        playOnlineAudio(text, false);
+      }
     };
 
     window.speechSynthesis.speak(utterance);
     return true;
   } catch (err) {
-    console.warn('Native speech error caught, falling back:', err);
-    return playOnlineAudio(text);
+    console.warn('Native speech caught error, falling back:', err);
+    if (allowFallback) {
+      return playOnlineAudio(text, false);
+    }
+    return null;
   }
 }
 
 /**
  * Play audio via lightweight server proxy (/api/tts)
- * Works reliably on all iOS Safari, Android, and Desktop browsers.
  */
-function playOnlineAudio(text) {
+function playOnlineAudio(text, allowFallback = true) {
   try {
     if (currentAudio) {
       currentAudio.pause();
@@ -90,15 +103,31 @@ function playOnlineAudio(text) {
     const audio = new Audio(audioUrl);
     currentAudio = audio;
 
+    let hasFallenBack = false;
+    const triggerFallback = (reason) => {
+      if (!hasFallenBack && allowFallback) {
+        hasFallenBack = true;
+        console.warn('Online audio failed (' + reason + '), falling back to native speech.');
+        playNativeSpeech(text, false);
+      }
+    };
+
+    audio.onerror = () => {
+      triggerFallback('audio error event');
+    };
+
     const playPromise = audio.play();
     if (playPromise !== undefined) {
       playPromise.catch((err) => {
-        console.warn('Online audio play failed:', err);
+        triggerFallback(err?.message || 'play rejection');
       });
     }
     return audio;
   } catch (err) {
     console.error('Failed to create audio element:', err);
+    if (allowFallback) {
+      return playNativeSpeech(text, false);
+    }
     return null;
   }
 }
@@ -106,7 +135,7 @@ function playOnlineAudio(text) {
 /**
  * Main pronunciation playback function
  * @param {string} text - Spanish text to pronounce
- * @param {string} [modeOverride] - Optional override mode ('online' or 'native')
+ * @param {string} [modeOverride] - Optional override mode ('auto', 'online', 'native')
  */
 export function playSpanishPronunciation(text, modeOverride) {
   if (!text) return;
@@ -116,9 +145,17 @@ export function playSpanishPronunciation(text, modeOverride) {
   const mode = modeOverride || getTtsMode();
 
   if (mode === TTS_MODES.NATIVE) {
-    return playNativeSpeech(cleanText);
+    return playNativeSpeech(cleanText, true);
+  } else if (mode === TTS_MODES.ONLINE) {
+    return playOnlineAudio(cleanText, true);
   } else {
-    return playOnlineAudio(cleanText);
+    // AUTO mode: Desktop prefers native; Mobile prefers online audio
+    if (isMobileDevice()) {
+      return playOnlineAudio(cleanText, true);
+    } else {
+      return playNativeSpeech(cleanText, true);
+    }
   }
 }
+
 
