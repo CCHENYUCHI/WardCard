@@ -111,6 +111,11 @@ function runMigrations() {
       END,
       curriculum_unit = CASE WHEN curriculum_unit = '' THEN category ELSE curriculum_unit END
     WHERE fsrs_stability = 0.0 AND repetition > 0;
+
+    -- Backfill empty curriculum_unit from category for all cards
+    UPDATE cards
+    SET curriculum_unit = category
+    WHERE (curriculum_unit IS NULL OR curriculum_unit = '') AND category IS NOT NULL AND category != '';
   `);
 }
 

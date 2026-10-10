@@ -118,17 +118,21 @@ export default function App() {
   // Save new or edited card
   const handleSaveWord = async (wordData) => {
     try {
+      const payload = {
+        ...wordData,
+        curriculum_unit: (wordData.curriculum_unit && wordData.curriculum_unit.trim()) || wordData.category || ''
+      };
       if (editingCard) {
         await fetchAPI(`/api/cards/${editingCard.id}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(wordData)
+          body: JSON.stringify(payload)
         });
       } else {
         await fetchAPI('/api/cards', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(wordData)
+          body: JSON.stringify(payload)
         });
       }
       fetchData();

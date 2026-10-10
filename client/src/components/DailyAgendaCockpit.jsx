@@ -4,6 +4,7 @@ import {
   Inbox, Layers, Target, ChevronRight, Settings, RotateCcw, AlertCircle, HelpCircle
 } from 'lucide-react';
 import { fetchAPI } from '../utils/api';
+import Tooltip from './Tooltip';
 
 export default function DailyAgendaCockpit({ 
   onStartStudy, 
@@ -86,43 +87,50 @@ export default function DailyAgendaCockpit({
         padding: '24px 28px',
         marginBottom: '20px',
         boxShadow: 'var(--shadow-card)',
-        position: 'relative',
-        overflow: 'hidden'
+        position: 'relative'
       }}>
         {/* Subtle Google Top Color Accent Bar */}
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '6px', background: 'var(--google-blue)' }} />
+        <div style={{ 
+          position: 'absolute', 
+          top: 0, 
+          left: 0, 
+          right: 0, 
+          height: '6px', 
+          background: 'var(--google-blue)',
+          borderTopLeftRadius: 'var(--radius-xl)',
+          borderTopRightRadius: 'var(--radius-xl)'
+        }} />
 
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-              <span 
-                style={{ 
-                  background: 'var(--google-blue-light)', 
-                  color: 'var(--google-blue)', 
-                  padding: '3px 10px', 
-                  borderRadius: '12px', 
-                  fontSize: '0.75rem',
-                  fontWeight: 700,
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '4px',
-                  cursor: 'help'
-                }}
-                title="FSRS 記憶科學調度：抗遺忘最佳學習曲線"
-              >
-                <Flame size={12} /> FSRS 調度
-              </span>
+              <Tooltip text="FSRS 記憶科學調度：抗遺忘最佳學習曲線" position="bottom">
+                <span 
+                  style={{ 
+                    background: 'var(--google-blue-light)', 
+                    color: 'var(--google-blue)', 
+                    padding: '3px 10px', 
+                    borderRadius: '12px', 
+                    fontSize: '0.75rem',
+                    fontWeight: 700,
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '4px'
+                  }}
+                >
+                  <Flame size={12} /> FSRS 調度
+                </span>
+              </Tooltip>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <h1 style={{ fontSize: '1.75rem', fontWeight: 700, margin: 0, color: 'var(--text-primary)', letterSpacing: '-0.5px' }}>
                 今日學習
               </h1>
-              <span 
-                title="系統已自動編排今日最需鞏固與解鎖的詞彙，專注完成今日任務，杜絕單字雪崩"
-                style={{ cursor: 'help', color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center' }}
-              >
-                <HelpCircle size={16} />
-              </span>
+              <Tooltip text="系統已自動編排今日最需鞏固與解鎖的詞彙，專注完成今日任務，杜絕單字雪崩" position="bottom">
+                <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center' }}>
+                  <HelpCircle size={16} />
+                </span>
+              </Tooltip>
             </div>
           </div>
 
@@ -175,9 +183,9 @@ export default function DailyAgendaCockpit({
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', color: 'var(--google-red)', fontSize: '0.85rem', fontWeight: 700 }}>
               <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <span>🚨 緊急搶救</span>
-                <span title="近期失誤或處於 Stage 1 的單字 (Lapse)" style={{ cursor: 'help', display: 'inline-flex' }}>
+                <Tooltip text="近期失誤或處於 Stage 1 的單字 (Lapse)">
                   <HelpCircle size={14} style={{ opacity: 0.7 }} />
-                </span>
+                </Tooltip>
               </span>
               <AlertCircle size={16} />
             </div>
@@ -196,9 +204,9 @@ export default function DailyAgendaCockpit({
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', color: 'var(--google-blue)', fontSize: '0.85rem', fontWeight: 700 }}>
               <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <span>📚 例行穩固</span>
-                <span title="按 FSRS 曲線到期的高階熟詞" style={{ cursor: 'help', display: 'inline-flex' }}>
+                <Tooltip text="按 FSRS 曲線今日到期的高階熟詞">
                   <HelpCircle size={14} style={{ opacity: 0.7 }} />
-                </span>
+                </Tooltip>
               </span>
               <RotateCcw size={16} />
             </div>
@@ -217,9 +225,9 @@ export default function DailyAgendaCockpit({
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', color: 'var(--google-green)', fontSize: '0.85rem', fontWeight: 700 }}>
               <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <span>🌱 今日新詞</span>
-                <span title="從課本主修單元提拔的核心詞 (每日配額)" style={{ cursor: 'help', display: 'inline-flex' }}>
+                <Tooltip text="從課本主修單元提拔的核心詞 (每日配額)">
                   <HelpCircle size={14} style={{ opacity: 0.7 }} />
-                </span>
+                </Tooltip>
               </span>
               <Sparkles size={16} />
             </div>
@@ -243,12 +251,11 @@ export default function DailyAgendaCockpit({
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Target size={18} color="var(--google-blue)" />
             <h2 style={{ fontSize: '1.15rem', fontWeight: 700, margin: 0, color: 'var(--text-primary)' }}>主修進度</h2>
-            <span 
-              title="追蹤目前主修課本單元的掌握度，達成 80% 時建議推進至下一單元"
-              style={{ cursor: 'help', color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center' }}
-            >
-              <HelpCircle size={15} />
-            </span>
+            <Tooltip text="追蹤目前主修課本單元的掌握度，達成 80% 時建議推進至下一單元">
+              <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center' }}>
+                <HelpCircle size={15} />
+              </span>
+            </Tooltip>
           </div>
           <div>
             <button 
@@ -301,9 +308,9 @@ export default function DailyAgendaCockpit({
               </span>
               <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <span>掌握率 {curProgress.percentage}% ({curProgress.proficient} / {curProgress.total} 字)</span>
-                <span title="達 Stage 3+ 拼寫掌握視為精通，達到 80% 掌握率時建議進入下一單元" style={{ cursor: 'help', display: 'inline-flex' }}>
+                <Tooltip text="達 Stage 3+ 拼寫掌握視為精通，達到 80% 掌握率時建議進入下一單元">
                   <HelpCircle size={14} style={{ opacity: 0.7 }} />
-                </span>
+                </Tooltip>
               </span>
             </div>
             {/* Progress Bar */}
@@ -326,9 +333,9 @@ export default function DailyAgendaCockpit({
         ) : (
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
             <span>全局全庫模式</span>
-            <span title="系統會自動從所有標記為 Ready 或打星號 ⭐️ 的單字中推薦今日新詞" style={{ cursor: 'help', display: 'inline-flex' }}>
+            <Tooltip text="系統會自動從所有標記為 Ready 或打星號 ⭐️ 的單字中推薦今日新詞">
               <HelpCircle size={14} style={{ opacity: 0.7 }} />
-            </span>
+            </Tooltip>
           </div>
         )}
       </div>
@@ -347,12 +354,21 @@ export default function DailyAgendaCockpit({
           padding: '20px 24px',
           boxShadow: 'var(--shadow-card)'
         }}>
-          <h3 style={{ fontSize: '1.05rem', fontWeight: 700, margin: '0 0 14px 0', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <h3 style={{ fontSize: '1.05rem', fontWeight: 700, margin: '0 0 14px 0', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
             <Layers size={18} color="var(--google-blue)" />
             <span>五階熟練梯</span>
-            <span title="認知階梯：S1 辨認 ➔ S2 回想 ➔ S3 拼寫 ➔ S4 克漏字 ➔ S5 精通" style={{ cursor: 'help', display: 'inline-flex' }}>
+            {activeCurriculum ? (
+              <span style={{ fontSize: '0.78rem', background: '#e8f0fe', color: 'var(--google-blue)', padding: '2px 8px', borderRadius: '10px', fontWeight: 600 }}>
+                {activeCurriculum}
+              </span>
+            ) : (
+              <span style={{ fontSize: '0.78rem', background: '#f1f3f4', color: 'var(--text-secondary)', padding: '2px 8px', borderRadius: '10px', fontWeight: 600 }}>
+                全局全庫
+              </span>
+            )}
+            <Tooltip text="認知階梯：S1 辨認 ➔ S2 回想 ➔ S3 拼寫 ➔ S4 克漏字 ➔ S5 精通">
               <HelpCircle size={14} style={{ opacity: 0.7 }} />
-            </span>
+            </Tooltip>
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {[
@@ -362,28 +378,29 @@ export default function DailyAgendaCockpit({
               { stage: 4, label: 'S4 語境克漏字', tip: '例句克漏字與語境變位', count: stats?.stages?.[4] || 0, color: '#d93025' },
               { stage: 5, label: 'S5 自動化精通', tip: '高穩定度長效永久記憶', count: stats?.stages?.[5] || 0, color: '#1e8e3e' }
             ].map(item => (
-              <div 
-                key={item.stage} 
-                title={item.tip}
-                style={{ 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  justifyContent: 'space-between', 
-                  fontSize: '0.88rem', 
-                  padding: '6px 10px', 
-                  borderRadius: '6px', 
-                  background: '#f8f9fa',
-                  cursor: 'help'
-                }}
-              >
-                <span style={{ color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: item.color }} />
-                  {item.label}
-                </span>
-                <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>
-                  {item.count} 字
-                </span>
-              </div>
+              <Tooltip key={item.stage} text={item.tip}>
+                <div 
+                  style={{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'space-between', 
+                    fontSize: '0.88rem', 
+                    padding: '6px 10px', 
+                    borderRadius: '6px', 
+                    background: '#f8f9fa',
+                    width: '100%',
+                    boxSizing: 'border-box'
+                  }}
+                >
+                  <span style={{ color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: item.color }} />
+                    {item.label}
+                  </span>
+                  <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>
+                    {item.count} 字
+                  </span>
+                </div>
+              </Tooltip>
             ))}
           </div>
         </div>
@@ -404,16 +421,16 @@ export default function DailyAgendaCockpit({
               <h3 style={{ fontSize: '1.05rem', fontWeight: 700, margin: 0, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <Inbox size={18} color="#5f6368" />
                 <span>暫存箱 (Inbox)</span>
-                <span title="隨手記錄但尚未開始排程的單字，零壓力，需要時打星轉入待學庫" style={{ cursor: 'help', display: 'inline-flex' }}>
+                <Tooltip text="隨手記錄但尚未開始排程的單字，零壓力，需要時打星轉入待學庫">
                   <HelpCircle size={14} style={{ opacity: 0.7 }} />
-                </span>
+                </Tooltip>
               </h3>
               <span style={{ 
                 background: '#f1f3f4', 
                 color: 'var(--text-secondary)', 
                 padding: '2px 10px', 
-                borderRadius: '12px',
-                fontSize: '0.85rem',
+                borderRadius: '12px', 
+                fontSize: '0.85rem', 
                 fontWeight: 700
               }}>
                 {stats?.inbox || 0} 筆

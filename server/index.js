@@ -513,15 +513,21 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
     const quota = Number(user.daily_new_quota) || 15;
     const activeCurriculum = user.active_curriculum || '';
 
-    // 1. Due reviews (Active cards only)
+    // Unit filter clause for active curriculum
+    const unitFilterSql = activeCurriculum 
+      ? " AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?))" 
+      : "";
+    const unitParams = activeCurriculum ? [activeCurriculum, activeCurriculum] : [];
+
+    // 1. Due reviews (Active cards only, matching active curriculum if set)
     const dueCards = db.prepare(`
       SELECT * FROM cards 
-      WHERE user_id = ? AND lifecycle_status = 'active' AND due_date <= datetime('now', 'localtime')
+      WHERE user_id = ? AND lifecycle_status = 'active' AND due_date <= datetime('now', 'localtime') ${unitFilterSql}
       ORDER BY 
         CASE WHEN lapse_count > 0 THEN 0 ELSE 1 END,
         due_date ASC
       LIMIT 100
-    `).all(userId);
+    `).all(userId, ...unitParams);
 
     // Split into urgent (lapses / Stage 1) and regular
     const urgentReviews = dueCards.filter(c => c.lapse_count > 0 || c.mastery_stage === 1);
@@ -532,27 +538,21 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
     if (activeCurriculum) {
       candidateNew = db.prepare(`
         SELECT * FROM cards 
-        WHERE user_id = ? AND lifecycle_status = 'ready' AND curriculum_unit = ?
+        WHERE user_id = ? AND lifecycle_status = 'ready' AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?))
         ORDER BY is_starred DESC, id ASC
         LIMIT ?
-      `).all(userId, activeCurriculum, quota);
-    }
-    
-    // If not enough from active curriculum, take from global ready cards
-    if (candidateNew.length < quota) {
-      const remaining = quota - candidateNew.length;
-      const ids = candidateNew.map(c => c.id);
-      const notInSql = ids.length > 0 ? `AND id NOT IN (${ids.join(',')})` : '';
-      const extraNew = db.prepare(`
+      `).all(userId, activeCurriculum, activeCurriculum, quota);
+    } else {
+      // Global mode
+      candidateNew = db.prepare(`
         SELECT * FROM cards 
-        WHERE user_id = ? AND lifecycle_status = 'ready' ${notInSql}
+        WHERE user_id = ? AND lifecycle_status = 'ready'
         ORDER BY is_starred DESC, id ASC
         LIMIT ?
-      `).all(userId, remaining);
-      candidateNew = candidateNew.concat(extraNew);
+      `).all(userId, quota);
     }
 
-    // 3. Stats & Stage breakdown
+    // 3. Stats & Stage breakdown (scoped to active curriculum if active, otherwise all)
     const statsRow = db.prepare(`
       SELECT 
         COUNT(*) as total_cards,
@@ -564,8 +564,8 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
         SUM(CASE WHEN mastery_stage = 2 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage2_count,
         SUM(CASE WHEN mastery_stage = 3 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage3_count,
         SUM(CASE WHEN mastery_stage = 4 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage4_count
-      FROM cards WHERE user_id = ?
-    `).get(userId);
+      FROM cards WHERE user_id = ? ${unitFilterSql}
+    `).get(userId, ...unitParams);
 
     // 4. Progress in active curriculum track
     let curriculumProgress = null;
@@ -649,6 +649,89 @@ app.patch('/api/cards/:id/status', authenticateToken, (req, res) => {
     const updated = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
     res.json(updated);
   } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Batch update cards status / starred
+app.patch('/api/cards/batch-status', authenticateToken, (req, res) => {
+  try {
+    const userId = req.user.userId;
+    const { card_ids, lifecycle_status, is_starred } = req.body;
+
+    if (!Array.isArray(card_ids) || card_ids.length === 0) {
+      return res.status(400).json({ error: 'card_ids array is required' });
+    }
+
+    const ids = card_ids.map(Number).filter(n => !isNaN(n));
+    if (ids.length === 0) {
+      return res.status(400).json({ error: 'Valid card IDs required' });
+    }
+
+    const placeholders = ids.map(() => '?').join(',');
+    const updates = [];
+    const params = [];
+
+    if (lifecycle_status) {
+      updates.push('lifecycle_status = ?');
+      params.push(lifecycle_status);
+
+      if (lifecycle_status === 'active') {
+        updates.push("due_date = datetime('now', 'localtime')");
+      } else if (lifecycle_status === 'mastered') {
+        updates.push('mastery_stage = 5');
+      } else if (lifecycle_status === 'inbox' || lifecycle_status === 'ready') {
+        updates.push('due_date = NULL');
+      }
+    }
+
+    if (is_starred !== undefined) {
+      updates.push('is_starred = ?');
+      params.push(is_starred ? 1 : 0);
+    }
+
+    if (updates.length === 0) {
+      return res.status(400).json({ error: 'No fields to update' });
+    }
+
+    updates.push("updated_at = datetime('now', 'localtime')");
+    params.push(userId, ...ids);
+
+    db.prepare(`
+      UPDATE cards
+      SET ${updates.join(', ')}
+      WHERE user_id = ? AND id IN (${placeholders})
+    `).run(...params);
+
+    res.json({ success: true, count: ids.length, updated_ids: ids });
+  } catch (err) {
+    console.error('Batch status error:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Batch delete cards
+app.post('/api/cards/batch-delete', authenticateToken, (req, res) => {
+  try {
+    const userId = req.user.userId;
+    const { card_ids } = req.body;
+
+    if (!Array.isArray(card_ids) || card_ids.length === 0) {
+      return res.status(400).json({ error: 'card_ids array is required' });
+    }
+
+    const ids = card_ids.map(Number).filter(n => !isNaN(n));
+    if (ids.length === 0) {
+      return res.status(400).json({ error: 'Valid card IDs required' });
+    }
+
+    const placeholders = ids.map(() => '?').join(',');
+    db.prepare(`DELETE FROM review_logs WHERE user_id = ? AND card_id IN (${placeholders})`).run(userId, ...ids);
+    db.prepare(`DELETE FROM cards WHERE user_id = ? AND id IN (${placeholders})`).run(userId, ...ids);
+
+    res.json({ success: true, count: ids.length });
+  } catch (err) {
+    console.error('Batch delete error:', err);
     res.status(500).json({ error: err.message });
   }
 });
