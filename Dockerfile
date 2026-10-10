@@ -1,12 +1,23 @@
+# Stage 1: Build client frontend
+FROM node:22-alpine AS client-builder
+WORKDIR /app/client
+COPY client/package*.json ./
+RUN npm install
+COPY client/ ./
+RUN npm run build
+
+# Stage 2: Production server runtime
 FROM node:22-alpine
 WORKDIR /app
 COPY package*.json ./
-RUN npm install --production
+RUN npm install --omit=dev
 COPY server/ ./server/
 
-# Copy the pre-built client/dist directly
-COPY client/dist /app/client/dist
+# Copy built frontend from client-builder stage
+COPY --from=client-builder /app/client/dist /app/client/dist
 
-# Expose port and start
+ENV NODE_ENV=production
+ENV PORT=3000
+
 EXPOSE 3000
 CMD ["node", "server/index.js"]
