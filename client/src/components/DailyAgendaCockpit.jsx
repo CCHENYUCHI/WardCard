@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Flame, BookOpen, Sparkles, CheckCircle2, ArrowRight, 
-  Inbox, Layers, Target, ChevronRight, Settings, RotateCcw, AlertCircle
+  Inbox, Layers, Target, ChevronRight, Settings, RotateCcw, AlertCircle, HelpCircle
 } from 'lucide-react';
 import { fetchAPI } from '../utils/api';
 
