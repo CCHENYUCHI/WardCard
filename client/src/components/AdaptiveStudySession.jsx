@@ -62,7 +62,7 @@ export default function AdaptiveStudySession({
       // Auto play audio in Stage 1 only after flip
     }
 
-    if (stage === 3 && inputRef.current) {
+    if ((stage === 3 || stage === 4) && inputRef.current) {
       inputRef.current.focus();
     }
   }, [currentIndex, stage]);
@@ -106,14 +106,38 @@ export default function AdaptiveStudySession({
     }
   }, [currentCard, currentIndex, queue.length, onReviewCard, stage]);
 
-  // Handle spelling submission for Stage 3
+  // Handle spelling / cloze submission for Stage 3 & 4
   const handleCheckSpelling = () => {
     if (!currentCard) return;
     const cleanUser = userInput.trim().toLowerCase();
+    if (!cleanUser) return;
+
     const cleanWord = currentCard.word.trim().toLowerCase();
     const cleanNoArt = stripArticle(cleanWord).toLowerCase();
 
-    const isMatch = cleanUser === cleanWord || cleanUser === cleanNoArt;
+    // Check all sub-parts (e.g. from 'Alemania / alemán, alemana')
+    const parts = currentCard.word.split(/[\/,]/).map(p => stripArticle(p).trim().toLowerCase()).filter(Boolean);
+
+    // Also check what word in example_es was masked (if any)
+    let maskedMatches = [];
+    if (currentCard.example_es) {
+      for (const p of parts) {
+        if (p.length >= 2) {
+          const escaped = p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          const regex = new RegExp(`\\b${escaped}\\w*`, 'gi');
+          const found = currentCard.example_es.match(regex);
+          if (found) {
+            maskedMatches.push(...found.map(m => m.toLowerCase()));
+          }
+        }
+      }
+    }
+
+    const isMatch = 
+      cleanUser === cleanWord || 
+      cleanUser === cleanNoArt || 
+      parts.includes(cleanUser) || 
+      maskedMatches.includes(cleanUser);
 
     if (isMatch) {
       setSpellingStatus('correct');
@@ -148,7 +172,7 @@ export default function AdaptiveStudySession({
 
       // When typing in input field, don't trigger space / 1-4 shortcuts
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
-        if (e.key === 'Enter' && stage === 3 && spellingStatus === 'typing') {
+        if (e.key === 'Enter' && (stage === 3 || stage === 4) && spellingStatus === 'typing') {
           e.preventDefault();
           handleCheckSpelling();
         }
@@ -553,53 +577,157 @@ export default function AdaptiveStudySession({
           </div>
         )}
 
-        {/* --- STAGE 4: Contextual Cloze (語境克漏字) --- */}
+        {/* --- STAGE 4: Contextual Cloze (語境克漏字填空) --- */}
         {stage === 4 && (
           <div>
             <div style={{ textAlign: 'center', marginBottom: '16px' }}>
-              <div style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--google-blue)', marginTop: '8px' }}>
+              <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--google-blue)', marginTop: '8px' }}>
                 {currentCard.translation}
+              </div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                請根據語境例句，在下方輸入框填入挖空處單字：
               </div>
             </div>
 
+            {/* Context sentence with masked blank */}
             <div style={{
               background: '#f8f9fa',
-              border: '1px solid var(--border-color)',
-              padding: '20px',
+              border: spellingStatus === 'correct' 
+                ? '2px solid var(--google-green)' 
+                : spellingStatus === 'incorrect' 
+                ? '2px solid var(--google-red)' 
+                : '1px solid var(--border-color)',
+              padding: '20px 24px',
               borderRadius: 'var(--radius-lg)',
               textAlign: 'center',
-              marginBottom: '20px'
+              marginBottom: '20px',
+              transition: 'all 0.2s ease'
             }}>
-              <div style={{ fontSize: '1.15rem', color: 'var(--text-primary)', fontStyle: 'italic', lineHeight: 1.6 }}>
-                "{isFlipped ? currentCard.example_es : maskWord(currentCard.example_es, currentCard.word)}"
+              <div style={{ fontSize: '1.25rem', color: 'var(--text-primary)', fontStyle: 'italic', lineHeight: 1.6 }}>
+                "{spellingStatus === 'correct' || isFlipped
+                  ? currentCard.example_es 
+                  : maskWord(currentCard.example_es, currentCard.word)}"
               </div>
               {currentCard.example_zh && (
-                <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '8px' }}>
+                <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '10px' }}>
                   {currentCard.example_zh}
                 </div>
               )}
             </div>
 
-            {isFlipped ? (
-              <div style={{ textAlign: 'center', borderTop: '1px solid var(--border-color)', paddingTop: '16px' }}>
-                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--text-primary)' }}>
+            {/* Interactive Fill-in-the-Blank Input */}
+            {spellingStatus === 'typing' && (
+              <div style={{ maxWidth: '440px', margin: '0 auto 16px auto' }}>
+                <div style={{ display: 'flex', gap: '10px' }}>
+                  <input
+                    ref={inputRef}
+                    type="text"
+                    value={userInput}
+                    onChange={(e) => setUserInput(e.target.value)}
+                    placeholder="請在此輸入挖空處單字..."
+                    style={{
+                      flex: 1,
+                      background: '#ffffff',
+                      border: '1px solid var(--border-color)',
+                      borderRadius: 'var(--radius-md)',
+                      padding: '12px 16px',
+                      color: 'var(--text-primary)',
+                      fontSize: '1.15rem',
+                      textAlign: 'center',
+                      fontWeight: 600,
+                      outline: 'none'
+                    }}
+                  />
+                  <button
+                    onClick={handleCheckSpelling}
+                    className="btn btn-primary"
+                    style={{ padding: '0 20px', whiteSpace: 'nowrap' }}
+                  >
+                    送出填空
+                  </button>
+                </div>
+
+                {/* Special Characters Keyboard */}
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '6px', marginTop: '10px', flexWrap: 'wrap' }}>
+                  {SPANISH_SPECIAL_KEYS.map(char => (
+                    <button
+                      key={char}
+                      onClick={() => handleInsertChar(char)}
+                      type="button"
+                      style={{
+                        background: '#f1f3f4',
+                        border: '1px solid var(--border-color)',
+                        color: 'var(--text-primary)',
+                        padding: '6px 12px',
+                        borderRadius: '6px',
+                        fontSize: '0.95rem',
+                        fontWeight: 600,
+                        cursor: 'pointer'
+                      }}
+                    >
+                      {char}
+                    </button>
+                  ))}
+                </div>
+
+                {/* "I don't know, show answer" skip button */}
+                <div style={{ textAlign: 'center', marginTop: '14px' }}>
+                  <button
+                    onClick={() => {
+                      setSpellingStatus('incorrect');
+                      setIsFlipped(true);
+                      playSpanishPronunciation(currentCard.article ? `${currentCard.article} ${currentCard.word}` : currentCard.word);
+                    }}
+                    className="btn btn-link"
+                    style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}
+                  >
+                    💡 想不出來？直接查看解答
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Correct Feedback Banner */}
+            {spellingStatus === 'correct' && (
+              <div style={{ 
+                background: 'var(--google-green-light)', 
+                border: '1px solid #a8dab5',
+                borderRadius: 'var(--radius-md)',
+                padding: '12px',
+                textAlign: 'center',
+                margin: '12px auto',
+                maxWidth: '440px',
+                animation: 'fadeIn 0.2s ease'
+              }}>
+                <div style={{ color: 'var(--google-green)', fontWeight: 700, fontSize: '0.95rem' }}>
+                  🎉 填空完全正確！
+                </div>
+              </div>
+            )}
+
+            {/* Incorrect / Revealed Feedback */}
+            {spellingStatus === 'incorrect' && (
+              <div style={{ 
+                background: 'var(--google-red-light)', 
+                border: '1px solid #f6aea9',
+                borderRadius: 'var(--radius-md)',
+                padding: '14px',
+                textAlign: 'center',
+                margin: '12px auto',
+                maxWidth: '440px',
+                animation: 'fadeIn 0.2s ease'
+              }}>
+                <div style={{ color: 'var(--google-red)', fontWeight: 600, fontSize: '0.88rem', marginBottom: '4px' }}>
+                  填空失誤，正確單字是：
+                </div>
+                <div style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                   {currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}
                 </div>
                 {currentCard.notes && (
-                  <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '6px' }}>
+                  <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
                     💡 {currentCard.notes}
                   </div>
                 )}
-              </div>
-            ) : (
-              <div style={{ textAlign: 'center' }}>
-                <button
-                  onClick={handleFlip}
-                  className="btn btn-secondary"
-                  style={{ padding: '10px 24px' }}
-                >
-                  查看克漏字答案
-                </button>
               </div>
             )}
           </div>
