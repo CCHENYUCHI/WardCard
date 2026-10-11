@@ -6,7 +6,24 @@
 
 ## [Unreleased] (進行中 / 待發布)
 
+### Added
+- **Mobile 拍照 / 相簿萃取 (`mobile/src/app/ai.tsx`)**：整合 `expo-image-picker`，可直接拍攝講義、白板或從相簿選圖交給 AI 萃取；萃取結果可逐一勾選，只收錄勾選的單字。
+- **AI 萃取標示已存在單字**：`/api/ai/extract` 回傳 `exists` 欄位，Web / Mobile 預覽時標示「已在單字庫」並預設不勾選，避免誤覆蓋。
+- **AI 一鍵校準 DELE 級數入口 (`SettingsModal.jsx`)**：後端既有的 `/api/cards/calibrate-dele` 終於有前端按鈕，校準後自動重新載入單字庫。
+
+### Changed
+- **Gemini 呼叫層重構 (`server/ai.js`)**：抽出共用 `callGemini()`，改用 Node 內建 `fetch`、`responseSchema` 強制 JSON 結構；API Key 改放在 `x-goog-api-key` header（不再出現在網址與 log 中）。
+- **冠詞拆分邏輯共用 (`server/cardUtils.js`)**：新增 `splitArticle()`，手動新增、CSV 匯入與 AI 萃取共用同一份邏輯。
+- **Web `fetchAPI` 自動帶 Gemini Key**：localStorage 有 Key 時自動加上 `x-gemini-key` header；AI 照片上傳前先在瀏覽器壓縮至長邊 1600px。
+- **Mobile `API_URL` 統一 (`mobile/src/constants/api.ts`)**：取代 7 個畫面各自寫死的網址。
+
 ### Fixed
+- **AI 萃取功能修復 (`server/ai.js`, `/api/ai/extract`)**：
+  - **模型已下架導致萃取失敗**：`gemini-1.5-flash` / `gemini-1.5-flash-8b` 已被 Google 下架，改用 `gemini-3.6-flash`（主模型）+ `gemini-3.5-flash-lite`（備援，可用 `GEMINI_FALLBACK_MODEL` 設定）；遇到 404 / 429 / 5xx 自動切換備援。
+  - **未勾選的單字也被存入單字庫**：`/api/ai/extract` 原本在使用者預覽前就把所有結果寫入資料庫（且會覆蓋既有單字的釋義），改為只回傳預覽結果，使用者勾選後才透過 `POST /api/cards` 儲存。
+  - **非名詞仍帶冠詞**：AI 回傳結果統一正規化（拆出冠詞、非名詞清除冠詞與陰陽性、不合法的詞性 / DELE 級數改為預設值、同一單字去重）。
+  - **錯誤訊息不清楚**：區分「Key 無效」、「額度用完」、「模型不存在」、「逾時」等中文錯誤訊息；新增 60 秒逾時。
+  - **Mobile 沒帶使用者的 API Key**：Mobile 設定頁新增 Gemini Key 欄位，AI 萃取時帶上 `x-gemini-key`。
 - **手機 Safari 全站 UI 寬鬆化與瀏海 / 動態島 Safe Area 全面適配 (`index.css` 與全部頁面元件)**：
   - **四邊 Safe Area 統一化**：新增 `--safe-top/right/bottom/left` CSS 變數，Navbar、主內容、底部導覽列、彈窗、登入頁皆套用；橫向持握時左右瀏海不再切到內容。
   - **今日學習（自適應學習模式）瀏海遮擋修復**：學習模式隱藏 Navbar 時，`app-container.is-immersive` 會自動讓出頂部瀏海與底部 Home Bar 空間。

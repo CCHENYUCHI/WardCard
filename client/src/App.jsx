@@ -296,6 +296,7 @@ export default function App() {
         onClose={() => setIsSettingsOpen(false)}
         cards={cards}
         onImportBackup={handleImportBackup}
+        onCardsChanged={fetchData}
       />
     </div>
   );

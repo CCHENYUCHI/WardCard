@@ -32,6 +32,13 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "PalabraCard 需要使用相機來拍攝講義或白板，讓 AI 萃取西語單字。",
+          "photosPermission": "PalabraCard 需要存取相簿來選擇講義照片，讓 AI 萃取西語單字。"
+        }
       ]
     ],
     "experiments": {

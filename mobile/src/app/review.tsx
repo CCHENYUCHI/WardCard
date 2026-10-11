@@ -4,7 +4,7 @@ import { Picker } from '@react-native-picker/picker';
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const API_URL = 'https://wardcard.ycctw.xyz/api';
+import { API_URL } from '@/constants/api';
 const SPANISH_SPECIAL_KEYS = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ', '¿', '¡'];
 
 const stripArticle = (str) => {

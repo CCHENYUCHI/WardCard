@@ -1,19 +1,31 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Alert, ActivityIndicator, Platform } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, Alert, ActivityIndicator, Platform } from 'react-native';
 import * as DocumentPicker from 'expo-document-picker';
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const API_URL = 'https://wardcard.ycctw.xyz/api';
+import { API_URL, GEMINI_KEY_STORAGE } from '@/constants/api';
 
 export default function SettingsScreen() {
   const router = useRouter();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [geminiKey, setGeminiKey] = useState('');
 
   useEffect(() => {
     fetchProfile();
+    AsyncStorage.getItem(GEMINI_KEY_STORAGE).then(key => setGeminiKey(key || ''));
   }, []);
+
+  const handleSaveGeminiKey = async () => {
+    const key = geminiKey.trim();
+    if (key) {
+      await AsyncStorage.setItem(GEMINI_KEY_STORAGE, key);
+    } else {
+      await AsyncStorage.removeItem(GEMINI_KEY_STORAGE);
+    }
+    Alert.alert('已儲存', key ? 'AI 功能將使用你的 Gemini API Key。' : '已清除，AI 功能將使用伺服器的 Key。');
+  };
 
   const fetchProfile = async () => {
     try {
@@ -114,6 +126,26 @@ export default function SettingsScreen() {
               </View>
               <Text style={styles.username}>@{user?.username}</Text>
               <Text style={styles.role}>{user?.role === 'admin' ? '管理員' : '一般使用者'}</Text>
+            </View>
+
+            <View style={styles.keyBox}>
+              <Text style={styles.keyLabel}>🔑 Gemini API Key（選填）</Text>
+              <Text style={styles.keyHint}>用於 AI 萃取單字；未填寫時使用伺服器的 Key。</Text>
+              <View style={styles.keyRow}>
+                <TextInput
+                  style={styles.keyInput}
+                  value={geminiKey}
+                  onChangeText={setGeminiKey}
+                  placeholder="貼上 AIzaSy..."
+                  placeholderTextColor="#64748b"
+                  secureTextEntry
+                  autoCapitalize="none"
+                  autoCorrect={false}
+                />
+                <TouchableOpacity style={styles.keySaveBtn} onPress={handleSaveGeminiKey}>
+                  <Text style={styles.keySaveText}>儲存</Text>
+                </TouchableOpacity>
+              </View>
             </View>
 
             <TouchableOpacity style={styles.primaryBtn} onPress={handleCsvImport}>
@@ -219,5 +251,50 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
+  },
+  keyBox: {
+    backgroundColor: '#1e293b',
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 16,
+    borderWidth: 1,
+    borderColor: '#334155',
+  },
+  keyLabel: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#f8fafc',
+    marginBottom: 4,
+  },
+  keyHint: {
+    fontSize: 13,
+    color: '#94a3b8',
+    marginBottom: 12,
+  },
+  keyRow: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  keyInput: {
+    flex: 1,
+    backgroundColor: '#0f172a',
+    borderWidth: 1,
+    borderColor: '#334155',
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    color: '#f8fafc',
+    fontSize: 15,
+  },
+  keySaveBtn: {
+    backgroundColor: '#8b5cf6',
+    borderRadius: 10,
+    paddingHorizontal: 16,
+    justifyContent: 'center',
+  },
+  keySaveText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 15,
   }
 });

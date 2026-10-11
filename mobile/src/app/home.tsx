@@ -6,7 +6,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // In a real app we'd use Context or SecureStore for the token,
 // but for this prototype we'll keep it simple and just fetch directly.
-const API_URL = 'https://wardcard.ycctw.xyz/api';
+import { API_URL } from '@/constants/api';
 
 export default function HomeScreen() {
   const router = useRouter();

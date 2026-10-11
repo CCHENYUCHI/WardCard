@@ -2,6 +2,29 @@ import React, { useState } from 'react';
 import { fetchAPI } from '../utils/api';
 import { Sparkles, Upload, FileText, Image as ImageIcon, Check, AlertCircle, X, Trash2, Edit3, ArrowRight } from 'lucide-react';
 
+// Shrink photos before upload: phone pictures are often 5MB+, Gemini only needs ~1600px
+const MAX_IMAGE_EDGE = 1600;
+function compressImage(file) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      const scale = Math.min(1, MAX_IMAGE_EDGE / Math.max(img.width, img.height));
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.round(img.width * scale);
+      canvas.height = Math.round(img.height * scale);
+      canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+      canvas.toBlob(blob => resolve(blob || file), 'image/jpeg', 0.85);
+    };
+    img.onerror = () => {
+      URL.revokeObjectURL(url);
+      resolve(file);
+    };
+    img.src = url;
+  });
+}
+
 export default function AiImporter({ isOpen, onClose, onImportSuccess, categories }) {
   const [activeTab, setActiveTab] = useState('text'); // 'text' | 'image'
   const [inputText, setInputText] = useState('');
@@ -39,12 +62,10 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
     setIsLoading(true);
 
     try {
-      const apiKey = localStorage.getItem('gemini_api_key') || '';
       const formData = new FormData();
       formData.append('text', inputText);
-      formData.append('apiKey', apiKey);
       if (activeTab === 'image' && selectedFile) {
-        formData.append('image', selectedFile);
+        formData.append('image', await compressImage(selectedFile), 'photo.jpg');
       }
 
       const res = await fetchAPI('/api/ai/extract', {
@@ -65,7 +86,8 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
       }));
 
       setExtractedCards(cardsWithDefaults);
-      setSelectedIndices(new Set(cardsWithDefaults.map((_, i) => i)));
+      // Words already in the library start unchecked so they aren't overwritten by accident
+      setSelectedIndices(new Set(cardsWithDefaults.flatMap((c, i) => (c.exists ? [] : [i]))));
     } catch (err) {
       setErrorMsg(err.message);
     } finally {
@@ -310,6 +332,15 @@ Hoy en clase aprendimos:
                           )}
 
                           <span className="badge-pos">{card.part_of_speech}</span>
+
+                          {card.exists && (
+                            <span
+                              title="勾選匯入會以這次的內容覆蓋原本的單字卡"
+                              style={{ fontSize: '0.75rem', fontWeight: 600, padding: '2px 8px', borderRadius: '10px', background: '#fef7e0', color: '#b06000', border: '1px solid #fdd663' }}
+                            >
+                              已在單字庫
+                            </span>
+                          )}
                         </div>
 
                         {/* Translation input */}

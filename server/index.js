@@ -8,6 +8,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('./db');
 const { extractSpanishWords, calibrateDeleLevels } = require('./ai');
+const { splitArticle } = require('./cardUtils');
 const { reviewCardFSRS } = require('./fsrs');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'palabracard-super-secret-key-2026';
@@ -245,15 +246,7 @@ app.post('/api/cards', authenticateToken, (req, res) => {
     for (const card of cards) {
       if (!card.word || !card.translation) continue;
       
-      let w = card.word.trim();
-      let a = card.article ? card.article.trim() : '';
-      if (!a && w.includes(' ')) {
-        const parts = w.split(' ');
-        if (['el', 'la', 'los', 'las', 'un', 'una'].includes(parts[0].toLowerCase())) {
-          a = parts[0].toLowerCase();
-          w = parts.slice(1).join(' ');
-        }
-      }
+      const { word: w, article: a } = splitArticle(card.word, card.article);
 
       const cat = card.category || '日常生活';
       const unit = card.curriculum_unit || cat;
@@ -393,13 +386,7 @@ app.post('/api/cards/upload-csv', authenticateToken, upload.single('file'), (req
       let rawWord = record.Spanish || record.word || '';
       if (!rawWord) continue;
 
-      let a = '';
-      let w = rawWord;
-      const parts = w.split(' ');
-      if (['el', 'la', 'los', 'las', 'un', 'una'].includes(parts[0].toLowerCase())) {
-        a = parts[0].toLowerCase();
-        w = parts.slice(1).join(' ');
-      }
+      const { word: w, article: a } = splitArticle(rawWord);
 
       insertStmt.run(
         userId,
@@ -1048,32 +1035,24 @@ app.post('/api/ai/extract', authenticateToken, upload.single('image'), async (re
       });
     }
 
-    const cards = await extractSpanishWords({
+    const extracted = await extractSpanishWords({
       promptText,
       apiKey: userApiKey,
       imageFile: req.file || null
     });
-    
-    // Save extracted cards for the user directly
-    if (cards && cards.length > 0) {
-      const insertStmt = db.prepare(`
-        INSERT INTO cards (user_id, word, article, gender, part_of_speech, translation, english_translation, definition_es, example_es, example_zh, notes, category, dele_level, due_date)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
-        ON CONFLICT(user_id, word) DO UPDATE SET
-          translation=excluded.translation,
-          updated_at=datetime('now', 'localtime')
-      `);
-      
-      for (const card of cards) {
-        if (!card.word || !card.translation) continue;
-        insertStmt.run(req.user.userId, card.word, card.article||'', card.gender||'none', card.part_of_speech||'sustantivo', card.translation, card.english_translation||'', card.definition_es||'', card.example_es||'', card.example_zh||'', card.notes||'', card.category||'AI萃取', card.dele_level||'A1');
-      }
-    }
+
+    // Preview only: the client saves the cards the user keeps via POST /api/cards
+    const existingWords = new Set(
+      db.prepare('SELECT word FROM cards WHERE user_id = ?')
+        .all(req.user.userId)
+        .map(row => row.word.toLowerCase())
+    );
+    const cards = extracted.map(card => ({ ...card, exists: existingWords.has(card.word.toLowerCase()) }));
 
     res.json({ success: true, count: cards.length, cards });
   } catch (err) {
-    console.error('AI Extract Error:', err);
-    res.status(500).json({ error: err.message || 'AI 萃取失敗' });
+    console.error('AI Extract Error:', err.message);
+    res.status(err.status || 500).json({ error: err.message || 'AI 萃取失敗' });
   }
 });
 
@@ -1124,8 +1103,8 @@ app.post('/api/cards/calibrate-dele', authenticateToken, async (req, res) => {
       distribution
     });
   } catch (err) {
-    console.error('DELE Calibration Error:', err);
-    res.status(500).json({ error: err.message || 'DELE 自動校準失敗' });
+    console.error('DELE Calibration Error:', err.message);
+    res.status(err.status || 500).json({ error: err.message || 'DELE 自動校準失敗' });
   }
 });
 

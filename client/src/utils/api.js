@@ -12,6 +12,12 @@ export async function fetchAPI(endpoint, options = {}) {
     headers['Authorization'] = `Bearer ${token}`;
   }
 
+  // User-provided Gemini key; the server falls back to its own key when absent
+  const geminiKey = localStorage.getItem('gemini_api_key');
+  if (geminiKey && !headers['x-gemini-key']) {
+    headers['x-gemini-key'] = geminiKey;
+  }
+
   // If body is JSON and no Content-Type is set, set it
   if (options.body && typeof options.body === 'string' && !headers['Content-Type']) {
     headers['Content-Type'] = 'application/json';
