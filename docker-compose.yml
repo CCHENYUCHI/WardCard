@@ -10,6 +10,7 @@ services:
     environment:
       - PORT=3000
       - NODE_ENV=production
+      - TZ=${TZ:-Asia/Taipei}
       - GEMINI_API_KEY=${GEMINI_API_KEY}
       - GEMINI_MODEL=${GEMINI_MODEL:-gemini-1.5-flash}
     volumes:

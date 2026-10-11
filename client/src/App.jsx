@@ -21,6 +21,7 @@ export default function App() {
   const [dueCards, setDueCards] = useState([]);
   const [categories, setCategories] = useState([]);
   const [stats, setStats] = useState(null);
+  const [todayRemaining, setTodayRemaining] = useState(0);
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);
   const [authLoading, setAuthLoading] = useState(true);
@@ -34,17 +35,19 @@ export default function App() {
   // Fetch initial data
   const fetchData = useCallback(async () => {
     try {
-      const [cardsRes, dueRes, catRes, statsRes] = await Promise.all([
+      const [cardsRes, dueRes, catRes, statsRes, todayRes] = await Promise.all([
         fetchAPI('/api/cards'),
         fetchAPI('/api/cards/due'),
         fetchAPI('/api/categories'),
-        fetchAPI('/api/stats')
+        fetchAPI('/api/stats'),
+        fetchAPI('/api/study/today')
       ]);
 
       if (cardsRes.ok) setCards(await cardsRes.json());
       if (dueRes.ok) setDueCards(await dueRes.json());
       if (catRes.ok) setCategories(await catRes.json());
       if (statsRes.ok) setStats(await statsRes.json());
+      if (todayRes.ok) setTodayRemaining((await todayRes.json()).remaining || 0);
     } catch (err) {
       console.error('Failed to fetch data:', err);
     } finally {
@@ -175,7 +178,7 @@ export default function App() {
         <Navbar
           activeTab={activeTab}
           setActiveTab={setActiveTab}
-          dueCount={dueCards.length}
+          dueCount={todayRemaining}
           onOpenAiModal={() => setIsAiModalOpen(true)}
           onOpenAddModal={() => {
             setEditingCard(null);

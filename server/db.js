@@ -1,3 +1,4 @@
+require('./time'); // pin process TZ before SQLite evaluates 'localtime'
 const { DatabaseSync } = require('node:sqlite');
 const path = require('path');
 const fs = require('fs');
@@ -7,7 +8,7 @@ if (!fs.existsSync(dataDir)) {
   fs.mkdirSync(dataDir, { recursive: true });
 }
 
-const dbPath = path.join(dataDir, 'wordcard.db');
+const dbPath = process.env.DB_PATH || path.join(dataDir, 'wordcard.db');
 const db = new DatabaseSync(dbPath);
 
 // Enable WAL mode for high performance and low memory
@@ -95,6 +96,60 @@ function runMigrations() {
   }
   if (!userColumns.includes('active_curriculum')) {
     db.exec("ALTER TABLE users ADD COLUMN active_curriculum TEXT DEFAULT ''");
+  }
+
+  // Daily progress: classify each review as today's task or extra practice
+  const logColumns = db.prepare("PRAGMA table_info(review_logs)").all().map(c => c.name);
+  if (!logColumns.includes('task_type')) {
+    // 'due' (scheduled review) | 'new' (first time learned) | 'extra' (not due, extra practice); NULL = legacy, treated as 'due'
+    db.exec("ALTER TABLE review_logs ADD COLUMN task_type TEXT DEFAULT NULL");
+  }
+  db.exec(`
+    CREATE INDEX IF NOT EXISTS idx_review_logs_user_time ON review_logs(user_id, reviewed_at);
+
+    -- Snapshot of each day's goal so history can show whether it was met
+    CREATE TABLE IF NOT EXISTS daily_progress (
+      user_id INTEGER NOT NULL,
+      day TEXT NOT NULL,              -- 'YYYY-MM-DD' local date
+      goal INTEGER DEFAULT 0,         -- today's task size (done + remaining)
+      done INTEGER DEFAULT 0,         -- task cards completed (due + new)
+      extra INTEGER DEFAULT 0,        -- extra practice reviews
+      updated_at TEXT DEFAULT (datetime('now', 'localtime')),
+      PRIMARY KEY (user_id, day)
+    );
+  `);
+
+  // One-off repair: due dates used to be written in UTC while everything else is local time,
+  // making cards come due hours early. Recompute from last_reviewed + interval when the
+  // stored value is off by a whole-hour time zone offset.
+  const userVersion = Number(db.prepare('PRAGMA user_version').get().user_version) || 0;
+  if (userVersion < 1) {
+    const rows = db.prepare(`
+      SELECT id, due_date, datetime(last_reviewed, '+' || interval_days || ' days') AS expected
+      FROM cards
+      WHERE last_reviewed IS NOT NULL AND interval_days > 0 AND due_date IS NOT NULL
+        AND lifecycle_status IN ('active', 'mastered')
+    `).all();
+    const fix = db.prepare('UPDATE cards SET due_date = ? WHERE id = ?');
+    let fixed = 0;
+    for (const r of rows) {
+      const diffSec = Math.round((Date.parse(r.expected.replace(' ', 'T')) - Date.parse(String(r.due_date).replace(' ', 'T'))) / 1000);
+      const absDiff = Math.abs(diffSec);
+      const offHour = Math.abs(absDiff - Math.round(absDiff / 3600) * 3600);
+      if (absDiff >= 3600 - 5 && absDiff <= 14 * 3600 + 5 && offHour <= 5) {
+        fix.run(r.expected, r.id);
+        fixed++;
+      }
+    }
+    if (fixed > 0) console.log(`🛠️  Repaired ${fixed} card due dates shifted by time zone offset`);
+
+    // Backfill legacy review logs: a card's first-ever review = learning a new word, the rest = scheduled reviews
+    db.exec(`
+      UPDATE review_logs SET task_type = 'new'
+      WHERE task_type IS NULL AND id IN (SELECT MIN(id) FROM review_logs GROUP BY card_id);
+      UPDATE review_logs SET task_type = 'due' WHERE task_type IS NULL;
+    `);
+    db.exec('PRAGMA user_version = 1');
   }
 
   // Seed initial FSRS data for legacy cards if needed
