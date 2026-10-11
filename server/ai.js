@@ -8,6 +8,9 @@ const DEFAULT_TIMEOUT_MS = 60_000;
 const PARTS_OF_SPEECH = ['sustantivo', 'verbo', 'adjetivo', 'adverbio', 'frase', 'conjunción', 'preposición', 'pronombre', 'interjección'];
 const GENDERS = ['masculino', 'femenino', 'none'];
 const DELE_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+// Parts of speech that inflect for gender in Spanish
+const GENDERED_POS = ['sustantivo', 'adjetivo'];
+const FORM_KEYS = ['masc_sg', 'fem_sg', 'masc_pl', 'fem_pl'];
 
 const getPrimaryModel = () => process.env.GEMINI_MODEL || DEFAULT_MODEL;
 const getFallbackModel = () => process.env.GEMINI_FALLBACK_MODEL || DEFAULT_FALLBACK_MODEL;
@@ -142,29 +145,64 @@ const pick = (value, allowed, fallback) => {
   return match || fallback;
 };
 
+// Gender forms without articles: { masc_sg: 'alto', fem_sg: 'alta', masc_pl: 'altos', fem_pl: 'altas' }
+function normalizeForms(forms) {
+  if (!forms || typeof forms !== 'object') return null;
+  const out = {};
+  for (const key of FORM_KEYS) out[key] = splitArticle(str(forms[key])).word;
+  return FORM_KEYS.some(k => out[k]) ? out : null;
+}
+
+// "陽性：alto / altos；陰性：alta / altas" — kept in notes so every client shows it
+function formatForms(forms) {
+  if (!forms) return '';
+  const masc = [forms.masc_sg, forms.masc_pl].filter(Boolean).join(' / ');
+  const fem = [forms.fem_sg, forms.fem_pl].filter(Boolean).join(' / ');
+  const parts = [masc && `陽性：${masc}`, fem && `陰性：${fem}`].filter(Boolean);
+  return parts.length ? `陰陽性變化 → ${parts.join('；')}` : '';
+}
+
 // Clean one AI-produced card so it is safe to show and save
 function normalizeAiCard(card) {
   if (!card || typeof card !== 'object') return null;
-  const { word, article } = splitArticle(str(card.word), str(card.article));
+  const { word, article: rawArticle } = splitArticle(str(card.word), str(card.article));
   const translation = str(card.translation);
   if (!word || !translation) return null;
 
   const partOfSpeech = pick(card.part_of_speech, PARTS_OF_SPEECH, 'frase');
-  let gender = pick(card.gender, GENDERS, 'none');
   const isNoun = partOfSpeech === 'sustantivo';
-  if (!isNoun) gender = 'none';
+  const isGendered = GENDERED_POS.includes(partOfSpeech);
+  const forms = isGendered ? normalizeForms(card.forms) : null;
+
+  let article = isNoun && ['el', 'la', 'los', 'las'].includes(rawArticle) ? rawArticle : '';
+  let gender = isGendered ? pick(card.gender, GENDERS, 'none') : 'none';
+  if (isNoun && gender === 'none') {
+    if (article === 'el' || article === 'los') gender = 'masculino';
+    if (article === 'la' || article === 'las') gender = 'femenino';
+  }
+  if (partOfSpeech === 'adjetivo' && gender === 'none' && forms?.masc_sg && forms?.fem_sg && forms.masc_sg !== forms.fem_sg) {
+    // The dictionary form of a variable adjective is the masculine singular
+    gender = word === forms.fem_sg ? 'femenino' : 'masculino';
+  }
+  if (isNoun && !article && gender !== 'none') {
+    article = gender === 'masculino' ? 'el' : 'la';
+  }
+
+  const formsText = formatForms(forms);
+  const notes = str(card.notes);
 
   return {
     word,
-    article: isNoun && ['el', 'la', 'los', 'las'].includes(article) ? article : '',
+    article,
     gender,
     part_of_speech: partOfSpeech,
+    forms,
     translation,
     english_translation: str(card.english_translation),
     definition_es: str(card.definition_es),
     example_es: str(card.example_es),
     example_zh: str(card.example_zh),
-    notes: str(card.notes),
+    notes: formsText && !notes.includes('陰陽性變化') ? [formsText, notes].filter(Boolean).join('\n') : notes,
     category: str(card.category) || '課堂筆記',
     dele_level: pick(card.dele_level, DELE_LEVELS, 'A2')
   };
@@ -177,6 +215,16 @@ const CARD_SCHEMA = {
     article: { type: 'STRING' },
     gender: { type: 'STRING', enum: GENDERS },
     part_of_speech: { type: 'STRING', enum: PARTS_OF_SPEECH },
+    forms: {
+      type: 'OBJECT',
+      nullable: true,
+      properties: {
+        masc_sg: { type: 'STRING' },
+        fem_sg: { type: 'STRING' },
+        masc_pl: { type: 'STRING' },
+        fem_pl: { type: 'STRING' }
+      }
+    },
     translation: { type: 'STRING' },
     english_translation: { type: 'STRING' },
     definition_es: { type: 'STRING' },
@@ -194,9 +242,19 @@ const EXTRACT_INSTRUCTION = `
 你的任務是從使用者提供的課堂筆記、文章段落、生詞清單或講義照片中，萃取並結構化西班牙語生詞卡片，以 JSON 陣列回傳。
 
 欄位說明：
-- word：單字原形（動詞給不定式如 hablar；名詞不要加冠詞；保留正確重音）
-- article：陽性名詞填 "el"、陰性名詞填 "la"，非名詞填 ""
-- gender：名詞填 "masculino" 或 "femenino"，其他詞性填 "none"
+- word：單字原形（名詞不要加冠詞；保留正確重音）
+  - 動詞一律用原形不定式（hablar、comer、vivir、acostumbrarse），即使原文是變化形（例如 fui、hablamos）也要還原成原形，並在 notes 註明原文出現的形式。
+  - 形容詞用陽性單數（alto，不是 alta / altos）。
+- article：陽性名詞填 "el"、陰性名詞填 "la"（注意 el agua 這類陰性名詞仍填 "el"），非名詞填 ""
+- gender：**名詞與形容詞都必須填寫，不可留 none**
+  - 名詞：依該名詞的文法性別填 "masculino" 或 "femenino"
+  - 形容詞：word 是陽性形式就填 "masculino"；陰陽同形（feliz、grande、importante）才填 "none"
+  - 其他詞性填 "none"
+- forms：名詞與形容詞必填，列出陰陽性與單複數變化，不要加冠詞；不存在的形式填 ""
+  - 形容詞 alto → {"masc_sg":"alto","fem_sg":"alta","masc_pl":"altos","fem_pl":"altas"}
+  - 有陰陽兩種形式的名詞 profesor → {"masc_sg":"profesor","fem_sg":"profesora","masc_pl":"profesores","fem_pl":"profesoras"}
+  - 只有單一性別的名詞 problema → {"masc_sg":"problema","fem_sg":"","masc_pl":"problemas","fem_pl":""}
+  - 動詞、副詞等其他詞性填 null
 - part_of_speech：sustantivo / verbo / adjetivo / adverbio / frase / conjunción / preposición / pronombre / interjección
 - translation：精準道地的繁體中文釋義
 - english_translation：對應的英文翻譯
