@@ -43,6 +43,7 @@
   - **未勾選的單字也被存入單字庫**：`/api/ai/extract` 原本在使用者預覽前就把所有結果寫入資料庫（且會覆蓋既有單字的釋義），改為只回傳預覽結果，使用者勾選後才透過 `POST /api/cards` 儲存。
   - **非名詞仍帶冠詞**：AI 回傳結果統一正規化（拆出冠詞、非名詞清除冠詞與陰陽性、不合法的詞性 / DELE 級數改為預設值、同一單字去重）。
   - **錯誤訊息不清楚**：區分「Key 無效」、「額度用完」、「模型不存在」、「逾時」等中文錯誤訊息；新增 60 秒逾時。
+  - **Docker 部署仍預設舊模型**：`docker-compose.yml` 的 `GEMINI_MODEL` 預設值改為 `gemini-3.6-flash`，並傳入 `GEMINI_FALLBACK_MODEL`。
   - **Mobile 沒帶使用者的 API Key**：Mobile 設定頁新增 Gemini Key 欄位，AI 萃取時帶上 `x-gemini-key`。
 - **手機 Safari 全站 UI 寬鬆化與瀏海 / 動態島 Safe Area 全面適配 (`index.css` 與全部頁面元件)**：
   - **四邊 Safe Area 統一化**：新增 `--safe-top/right/bottom/left` CSS 變數，Navbar、主內容、底部導覽列、彈窗、登入頁皆套用；橫向持握時左右瀏海不再切到內容。
