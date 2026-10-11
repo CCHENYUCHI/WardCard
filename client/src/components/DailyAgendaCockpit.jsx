@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { 
-  Flame, BookOpen, Sparkles, CheckCircle2, ArrowRight, 
-  Inbox, Layers, Target, ChevronRight, Settings, RotateCcw, AlertCircle, HelpCircle,
-  Plus, Pause, Play
-} from 'lucide-react';
+import { Inbox, Layers, Target, ChevronRight, HelpCircle, Plus, Pause } from 'lucide-react';
 import { fetchAPI } from '../utils/api';
 import Tooltip from './Tooltip';
+import TodayProgressCard from './TodayProgressCard';
+import StudyHistory from './StudyHistory';
 
 export default function DailyAgendaCockpit({ 
   onStartStudy, 
@@ -15,6 +13,9 @@ export default function DailyAgendaCockpit({
 }) {
   const [agenda, setAgenda] = useState(null);
   const [stats, setStats] = useState(null);
+  const [today, setToday] = useState(null);
+  const [history, setHistory] = useState([]);
+  const [practiceLoading, setPracticeLoading] = useState(false);
   const [units, setUnits] = useState([]);
   const [loading, setLoading] = useState(true);
   const [isChangingUnit, setIsChangingUnit] = useState(false);
@@ -22,15 +23,20 @@ export default function DailyAgendaCockpit({
   const fetchAgendaData = async () => {
     try {
       setLoading(true);
-      const [agendaRes, unitsRes] = await Promise.all([
+      const [agendaRes, unitsRes, historyRes] = await Promise.all([
         fetchAPI('/api/study/agenda'),
-        fetchAPI('/api/study/units')
+        fetchAPI('/api/study/units'),
+        fetchAPI('/api/study/history?days=30')
       ]);
 
       if (agendaRes.ok) {
         const data = await agendaRes.json();
         setAgenda(data.agenda);
         setStats(data.stats);
+        setToday(data.today);
+      }
+      if (historyRes.ok) {
+        setHistory((await historyRes.json()).days || []);
       }
       if (unitsRes.ok) {
         setUnits(await unitsRes.json());
@@ -64,6 +70,24 @@ export default function DailyAgendaCockpit({
   const waitingUnits = useMemo(() => {
     return units.filter(u => u.active === 0).sort(lessonSort);
   }, [units]);
+
+  const handleStartPractice = async () => {
+    try {
+      setPracticeLoading(true);
+      const res = await fetchAPI('/api/study/practice?limit=20');
+      if (!res.ok) return;
+      const { cards } = await res.json();
+      if (!cards || cards.length === 0) {
+        window.alert('目前沒有可以加練的單字（還沒有複習過的單字）。');
+        return;
+      }
+      onStartStudy({ mode: 'practice', extra: cards });
+    } catch (err) {
+      console.error('Failed to load practice cards:', err);
+    } finally {
+      setPracticeLoading(false);
+    }
+  };
 
   const handleChangeCurriculum = async (unitName) => {
     try {
@@ -126,164 +150,19 @@ export default function DailyAgendaCockpit({
 
   return (
     <div className="agenda-cockpit-container" style={{ maxWidth: '960px', margin: '0 auto', padding: '16px' }}>
-      {/* Top Welcome & Mission Header (Google Classroom Course Banner Style) */}
-      <div className="cockpit-banner-card" style={{ 
-        background: '#ffffff',
-        border: '1px solid var(--border-color)',
-        borderRadius: 'var(--radius-xl)',
-        padding: '24px 28px',
-        marginBottom: '20px',
-        boxShadow: 'var(--shadow-card)',
-        position: 'relative'
-      }}>
-        {/* Subtle Google Top Color Accent Bar */}
-        <div style={{ 
-          position: 'absolute', 
-          top: 0, 
-          left: 0, 
-          right: 0, 
-          height: '6px', 
-          background: 'var(--google-blue)',
-          borderTopLeftRadius: 'var(--radius-xl)',
-          borderTopRightRadius: 'var(--radius-xl)'
-        }} />
-
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-              <Tooltip text="FSRS 記憶科學調度：抗遺忘最佳學習曲線" position="bottom">
-                <span 
-                  style={{ 
-                    background: 'var(--google-blue-light)', 
-                    color: 'var(--google-blue)', 
-                    padding: '3px 10px', 
-                    borderRadius: '12px', 
-                    fontSize: '0.75rem',
-                    fontWeight: 700,
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '4px'
-                  }}
-                >
-                  <Flame size={12} /> FSRS 調度
-                </span>
-              </Tooltip>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <h1 style={{ fontSize: '1.75rem', fontWeight: 700, margin: 0, color: 'var(--text-primary)', letterSpacing: '-0.5px' }}>
-                今日學習
-              </h1>
-              <Tooltip text="系統已自動編排今日最需鞏固與解鎖的詞彙，專注完成今日任務，杜絕單字雪崩" position="bottom">
-                <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center' }}>
-                  <HelpCircle size={16} />
-                </span>
-              </Tooltip>
-            </div>
-          </div>
-
-          {/* Big Start Action Button */}
-          <div className="cockpit-cta-wrap">
-            <button
-              onClick={() => onStartStudy({ 
-                urgent: agenda?.urgent_reviews || [],
-                regular: agenda?.regular_reviews || [],
-                newCards: agenda?.candidate_new || []
-              })}
-              disabled={totalTodayTasks === 0}
-              className="btn btn-primary cockpit-btn-start"
-              style={{
-                padding: '12px 28px',
-                fontSize: '1rem',
-                borderRadius: 'var(--radius-lg)',
-                boxShadow: totalTodayTasks > 0 ? '0 2px 6px rgba(26, 115, 232, 0.4)' : 'none',
-              }}
-            >
-              {totalTodayTasks > 0 ? (
-                <>
-                  <span>🚀 開始學習 ({totalTodayTasks})</span>
-                  <ArrowRight size={18} />
-                </>
-              ) : (
-                <>
-                  <CheckCircle2 size={18} color="#1e8e3e" />
-                  <span>今日目標全部達成！</span>
-                </>
-              )}
-            </button>
-          </div>
-        </div>
-
-        {/* 3 Metric Pillars */}
-        <div className="cockpit-metrics-grid" style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
-          gap: '14px', 
-          marginTop: '20px' 
-        }}>
-          {/* Urgent / Lapse */}
-          <div className="cockpit-metric-item" style={{
-            background: 'var(--google-red-light)',
-            border: '1px solid #f6aea9',
-            borderRadius: 'var(--radius-lg)',
-            padding: '16px 20px'
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', color: 'var(--google-red)', fontSize: '0.85rem', fontWeight: 700 }}>
-              <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span>🚨 緊急搶救</span>
-                <Tooltip text="近期失誤或處於 Stage 1 的單字 (Lapse)">
-                  <HelpCircle size={14} style={{ opacity: 0.7 }} />
-                </Tooltip>
-              </span>
-              <AlertCircle size={16} />
-            </div>
-            <div className="cockpit-metric-num" style={{ fontSize: '2.2rem', fontWeight: 800, marginTop: '4px', color: 'var(--google-red)' }}>
-              {urgentCount} <span style={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--text-secondary)' }}>字</span>
-            </div>
-          </div>
-
-          {/* Regular Due */}
-          <div className="cockpit-metric-item" style={{
-            background: 'var(--google-blue-light)',
-            border: '1px solid #aecbfa',
-            borderRadius: 'var(--radius-lg)',
-            padding: '16px 20px'
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', color: 'var(--google-blue)', fontSize: '0.85rem', fontWeight: 700 }}>
-              <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span>📚 例行穩固</span>
-                <Tooltip text="按 FSRS 曲線今日到期的高階熟詞">
-                  <HelpCircle size={14} style={{ opacity: 0.7 }} />
-                </Tooltip>
-              </span>
-              <RotateCcw size={16} />
-            </div>
-            <div className="cockpit-metric-num" style={{ fontSize: '2.2rem', fontWeight: 800, marginTop: '4px', color: 'var(--google-blue)' }}>
-              {regularCount} <span style={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--text-secondary)' }}>字</span>
-            </div>
-          </div>
-
-          {/* Daily New Quota */}
-          <div className="cockpit-metric-item" style={{
-            background: 'var(--google-green-light)',
-            border: '1px solid #a8dab5',
-            borderRadius: 'var(--radius-lg)',
-            padding: '16px 20px'
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', color: 'var(--google-green)', fontSize: '0.85rem', fontWeight: 700 }}>
-              <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span>🌱 今日新詞</span>
-                <Tooltip text="從課本主修單元提拔的核心詞 (每日配額)">
-                  <HelpCircle size={14} style={{ opacity: 0.7 }} />
-                </Tooltip>
-              </span>
-              <Sparkles size={16} />
-            </div>
-            <div className="cockpit-metric-num" style={{ fontSize: '2.2rem', fontWeight: 800, marginTop: '4px', color: 'var(--google-green)' }}>
-              {newCount} <span style={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--text-secondary)' }}>/ {agenda?.daily_new_quota || 15} 字</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <TodayProgressCard
+        today={today}
+        history={history}
+        startCount={totalTodayTasks}
+        urgentCount={urgentCount}
+        onStart={() => onStartStudy({
+          urgent: agenda?.urgent_reviews || [],
+          regular: agenda?.regular_reviews || [],
+          newCards: agenda?.candidate_new || []
+        })}
+        onPractice={handleStartPractice}
+        practiceLoading={practiceLoading}
+      />
 
       {/* Curriculum Track Section */}
       <div className="surface-card cockpit-section" style={{ marginBottom: '20px' }}>
@@ -433,6 +312,8 @@ export default function DailyAgendaCockpit({
           </div>
         )}
       </div>
+
+      <StudyHistory history={history} bestStreak={today?.streak?.best || 0} today={today?.date} />
 
       {/* 5-Stage Distribution & Inbox Quick Action */}
       <div className="cockpit-bottom-grid" style={{ 

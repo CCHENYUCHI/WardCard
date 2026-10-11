@@ -3,7 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, ActivityIndicator,
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const API_URL = 'https://wardcard.ycctw.xyz/api';
+import { API_URL } from '@/constants/api';
 
 export default function IndexScreen() {
   const router = useRouter();

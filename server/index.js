@@ -1,4 +1,5 @@
 require('dotenv').config();
+const { TODAY_END_SQL, timeZone } = require('./time'); // pins process TZ first
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
@@ -8,7 +9,9 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('./db');
 const { extractSpanishWords, calibrateDeleLevels } = require('./ai');
+const { splitArticle } = require('./cardUtils');
 const { reviewCardFSRS } = require('./fsrs');
+const { classifyReview, buildTodayPlan, getTodaySummary, getHistory, getPracticeCards } = require('./dailyProgress');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'palabracard-super-secret-key-2026';
 
@@ -171,7 +174,7 @@ app.get('/api/cards', authenticateToken, (req, res) => {
     }
 
     if (filter === 'due') {
-      sql += " AND lifecycle_status = 'active' AND due_date <= datetime('now', 'localtime')";
+      sql += ` AND lifecycle_status = 'active' AND due_date < ${TODAY_END_SQL}`;
     } else if (filter === 'learned') {
       sql += ' AND repetition > 0';
     } else if (filter === 'new') {
@@ -191,7 +194,7 @@ app.get('/api/cards', authenticateToken, (req, res) => {
 app.get('/api/cards/due', authenticateToken, (req, res) => {
   try {
     const { category, limit = 50 } = req.query;
-    let sql = "SELECT * FROM cards WHERE user_id = ? AND lifecycle_status = 'active' AND due_date <= datetime('now', 'localtime')";
+    let sql = `SELECT * FROM cards WHERE user_id = ? AND lifecycle_status = 'active' AND due_date < ${TODAY_END_SQL}`;
     const params = [req.user.userId];
 
     if (category && category !== 'all') {
@@ -245,15 +248,7 @@ app.post('/api/cards', authenticateToken, (req, res) => {
     for (const card of cards) {
       if (!card.word || !card.translation) continue;
       
-      let w = card.word.trim();
-      let a = card.article ? card.article.trim() : '';
-      if (!a && w.includes(' ')) {
-        const parts = w.split(' ');
-        if (['el', 'la', 'los', 'las', 'un', 'una'].includes(parts[0].toLowerCase())) {
-          a = parts[0].toLowerCase();
-          w = parts.slice(1).join(' ');
-        }
-      }
+      const { word: w, article: a } = splitArticle(card.word, card.article);
 
       const cat = card.category || '日常生活';
       const unit = card.curriculum_unit || cat;
@@ -393,13 +388,7 @@ app.post('/api/cards/upload-csv', authenticateToken, upload.single('file'), (req
       let rawWord = record.Spanish || record.word || '';
       if (!rawWord) continue;
 
-      let a = '';
-      let w = rawWord;
-      const parts = w.split(' ');
-      if (['el', 'la', 'los', 'las', 'un', 'una'].includes(parts[0].toLowerCase())) {
-        a = parts[0].toLowerCase();
-        w = parts.slice(1).join(' ');
-      }
+      const { word: w, article: a } = splitArticle(rawWord);
 
       insertStmt.run(
         userId,
@@ -439,6 +428,9 @@ app.post('/api/cards/:id/review', authenticateToken, (req, res) => {
 
     const user = db.prepare('SELECT * FROM users WHERE id = ?').get(userId);
     const targetRetention = user && user.target_retention ? Number(user.target_retention) : 0.9;
+
+    // Today's task or extra practice? (decided before the card is rescheduled)
+    const taskType = classifyReview(card);
 
     // 1. Run FSRS Engine
     const fsrsRes = reviewCardFSRS(card, score, { targetRetention });
@@ -487,15 +479,17 @@ app.post('/api/cards/:id/review', authenticateToken, (req, res) => {
 
     // 3. Log review
     db.prepare(`
-      INSERT INTO review_logs (user_id, card_id, rating, review_mode, reviewed_at)
-      VALUES (?, ?, ?, ?, datetime('now', 'localtime'))
-    `).run(userId, Number(id), score, `${review_mode}:${tested_stage || fsrsRes.stage}`);
+      INSERT INTO review_logs (user_id, card_id, rating, review_mode, task_type, reviewed_at)
+      VALUES (?, ?, ?, ?, ?, datetime('now', 'localtime'))
+    `).run(userId, Number(id), score, `${review_mode}:${tested_stage || fsrsRes.stage}`, taskType);
 
     const updated = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
     res.json({
       success: true,
       card: updated,
-      fsrs: fsrsRes
+      fsrs: fsrsRes,
+      task_type: taskType,
+      today: getTodaySummary(userId)
     });
   } catch (err) {
     console.error('Review Error:', err);
@@ -519,38 +513,14 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
       : "";
     const unitParams = activeCurriculum ? [activeCurriculum, activeCurriculum] : [];
 
-    // 1. Due reviews (Active cards only, matching active curriculum if set)
-    const dueCards = db.prepare(`
-      SELECT * FROM cards 
-      WHERE user_id = ? AND lifecycle_status = 'active' AND due_date <= datetime('now', 'localtime') ${unitFilterSql}
-      ORDER BY 
-        CASE WHEN lapse_count > 0 THEN 0 ELSE 1 END,
-        due_date ASC
-      LIMIT 100
-    `).all(userId, ...unitParams);
+    // 1~2. Today's plan: due reviews (any time today) + new words within today's remaining quota
+    const plan = buildTodayPlan(userId);
+    const dueCards = plan.dueCards;
+    const candidateNew = plan.newCards;
 
     // Split into urgent (lapses / Stage 1) and regular
     const urgentReviews = dueCards.filter(c => c.lapse_count > 0 || c.mastery_stage === 1);
     const regularReviews = dueCards.filter(c => c.lapse_count === 0 && c.mastery_stage > 1);
-
-    // 2. Candidate new cards to activate for today
-    let candidateNew = [];
-    if (activeCurriculum) {
-      candidateNew = db.prepare(`
-        SELECT * FROM cards 
-        WHERE user_id = ? AND lifecycle_status = 'ready' AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?))
-        ORDER BY is_starred DESC, id ASC
-        LIMIT ?
-      `).all(userId, activeCurriculum, activeCurriculum, quota);
-    } else {
-      // Global mode
-      candidateNew = db.prepare(`
-        SELECT * FROM cards 
-        WHERE user_id = ? AND lifecycle_status = 'ready'
-        ORDER BY is_starred DESC, id ASC
-        LIMIT ?
-      `).all(userId, quota);
-    }
 
     // 3. Stats & Stage breakdown (scoped to active curriculum if active, otherwise all)
     const statsRow = db.prepare(`
@@ -611,8 +581,9 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
     }
 
     res.json({
+      today: getTodaySummary(userId, plan),
       agenda: {
-        total_due: dueCards.length,
+        total_due: plan.dueTotal,
         urgent_reviews: urgentReviews,
         regular_reviews: regularReviews,
         candidate_new: candidateNew,
@@ -637,6 +608,35 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
     });
   } catch (err) {
     console.error('Study Agenda Error:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Today's progress summary (goal / done / remaining / streak)
+app.get('/api/study/today', authenticateToken, (req, res) => {
+  try {
+    res.json(getTodaySummary(req.user.userId));
+  } catch (err) {
+    console.error('Today Summary Error:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Per-day study history (newest first)
+app.get('/api/study/history', authenticateToken, (req, res) => {
+  try {
+    res.json({ days: getHistory(req.user.userId, req.query.days) });
+  } catch (err) {
+    console.error('Study History Error:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Extra practice: cards not due today, weakest first
+app.get('/api/study/practice', authenticateToken, (req, res) => {
+  try {
+    res.json({ cards: getPracticeCards(req.user.userId, req.query.limit) });
+  } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
@@ -897,7 +897,7 @@ app.get('/api/stats', authenticateToken, (req, res) => {
 
     const due = db.prepare(`
       SELECT count(*) as count FROM cards 
-      WHERE user_id = ? AND lifecycle_status = 'active' AND due_date <= datetime('now', 'localtime')
+      WHERE user_id = ? AND lifecycle_status = 'active' AND due_date < ${TODAY_END_SQL}
     `).get(userId).count;
 
     // Reviews today
@@ -1048,32 +1048,24 @@ app.post('/api/ai/extract', authenticateToken, upload.single('image'), async (re
       });
     }
 
-    const cards = await extractSpanishWords({
+    const extracted = await extractSpanishWords({
       promptText,
       apiKey: userApiKey,
       imageFile: req.file || null
     });
-    
-    // Save extracted cards for the user directly
-    if (cards && cards.length > 0) {
-      const insertStmt = db.prepare(`
-        INSERT INTO cards (user_id, word, article, gender, part_of_speech, translation, english_translation, definition_es, example_es, example_zh, notes, category, dele_level, due_date)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
-        ON CONFLICT(user_id, word) DO UPDATE SET
-          translation=excluded.translation,
-          updated_at=datetime('now', 'localtime')
-      `);
-      
-      for (const card of cards) {
-        if (!card.word || !card.translation) continue;
-        insertStmt.run(req.user.userId, card.word, card.article||'', card.gender||'none', card.part_of_speech||'sustantivo', card.translation, card.english_translation||'', card.definition_es||'', card.example_es||'', card.example_zh||'', card.notes||'', card.category||'AI萃取', card.dele_level||'A1');
-      }
-    }
+
+    // Preview only: the client saves the cards the user keeps via POST /api/cards
+    const existingWords = new Set(
+      db.prepare('SELECT word FROM cards WHERE user_id = ?')
+        .all(req.user.userId)
+        .map(row => row.word.toLowerCase())
+    );
+    const cards = extracted.map(card => ({ ...card, exists: existingWords.has(card.word.toLowerCase()) }));
 
     res.json({ success: true, count: cards.length, cards });
   } catch (err) {
-    console.error('AI Extract Error:', err);
-    res.status(500).json({ error: err.message || 'AI 萃取失敗' });
+    console.error('AI Extract Error:', err.message);
+    res.status(err.status || 500).json({ error: err.message || 'AI 萃取失敗' });
   }
 });
 
@@ -1124,8 +1116,8 @@ app.post('/api/cards/calibrate-dele', authenticateToken, async (req, res) => {
       distribution
     });
   } catch (err) {
-    console.error('DELE Calibration Error:', err);
-    res.status(500).json({ error: err.message || 'DELE 自動校準失敗' });
+    console.error('DELE Calibration Error:', err.message);
+    res.status(err.status || 500).json({ error: err.message || 'DELE 自動校準失敗' });
   }
 });
 
@@ -1143,4 +1135,6 @@ app.get('*', (req, res) => {
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`[PalabraCard] Server running on http://0.0.0.0:${PORT}`);
   console.log(`[PalabraCard] Database ready, memory footprint ~35MB`);
+  const clock = db.prepare("SELECT datetime('now', 'localtime') AS t").get().t;
+  console.log(`[PalabraCard] Time zone ${timeZone}, study day resets at 00:00 (now ${clock})`);
 });

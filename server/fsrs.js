@@ -14,6 +14,8 @@ const DEFAULT_WEIGHTS = [
   0.51655, 0.6621                    // Short-term parameters
 ];
 
+const { formatLocalDateTime } = require('./time');
+
 const FACTOR = 19.0 / 81.0; // Decay factor ensuring R(S, S) = 0.9 (90% target retention)
 const DECAY_POWER = 0.5;
 
@@ -181,7 +183,8 @@ function reviewCardFSRS(card, grade, options = {}) {
 
   // Calculate new due date
   const dueDate = new Date(now.getTime() + intervalDays * 24 * 60 * 60 * 1000);
-  const dueDateStr = dueDate.toISOString().replace('T', ' ').substring(0, 19);
+  // Store in local time like every other timestamp (toISOString() would be UTC)
+  const dueDateStr = formatLocalDateTime(dueDate);
 
   return {
     stability: Math.round(newStability * 100) / 100,

@@ -1,15 +1,17 @@
 import { fetchAPI } from '../utils/api';
 import React, { useState, useEffect } from 'react';
-import { X, Key, Check, Volume2, Download, Upload, ExternalLink, ShieldCheck } from 'lucide-react';
+import { X, Key, Check, Volume2, Download, Upload, ExternalLink, ShieldCheck, Sparkles } from 'lucide-react';
 import { playSpanishPronunciation, getTtsMode, setTtsMode, TTS_MODES } from '../utils/speech';
 
-export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }) {
+export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, onCardsChanged }) {
   const [apiKey, setApiKey] = useState('');
   const [savedSuccess, setSavedSuccess] = useState(false);
   const [ttsMode, setTtsModeState] = useState(TTS_MODES.AUTO);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [dailyQuota, setDailyQuota] = useState(15);
   const [targetRetention, setTargetRetention] = useState(0.9);
+  const [isCalibrating, setIsCalibrating] = useState(false);
+  const [calibrateResult, setCalibrateResult] = useState('');
 
   useEffect(() => {
     const key = localStorage.getItem('gemini_api_key') || '';
@@ -53,6 +55,27 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
     localStorage.setItem('gemini_api_key', apiKey.trim());
     setSavedSuccess(true);
     setTimeout(() => setSavedSuccess(false), 2000);
+  };
+
+  const handleCalibrateDele = async () => {
+    if (!window.confirm(`將由 AI 重新評估全部 ${cards?.length || 0} 個單字的 DELE 級數並覆蓋原本的級數，確定要執行嗎？`)) return;
+    setIsCalibrating(true);
+    setCalibrateResult('');
+    try {
+      const res = await fetchAPI('/api/cards/calibrate-dele', { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'DELE 校準失敗');
+      const dist = Object.entries(data.distribution || {})
+        .filter(([, n]) => n > 0)
+        .map(([lvl, n]) => `${lvl}: ${n}`)
+        .join('、');
+      setCalibrateResult(`✅ 已更新 ${data.updatedCount} / ${data.totalCards} 個單字${dist ? `（${dist}）` : ''}`);
+      onCardsChanged?.();
+    } catch (err) {
+      setCalibrateResult(`⚠️ ${err.message}`);
+    } finally {
+      setIsCalibrating(false);
+    }
   };
 
   const handleExportJson = () => {
@@ -128,7 +151,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
             </label>
           </div>
           <p style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginBottom: '10px' }}>
-            用於 AI 快速拍照及筆記西語萃取（免費版 Gemini 1.5 Flash 每天提供大量免費額度，無需綁卡即可申請）：
+            用於 AI 拍照及筆記西語萃取（Gemini Flash 模型有免費額度，無需綁卡即可申請）。未填寫時會使用伺服器設定的 Key：
           </p>
 
           <div style={{ display: 'flex', gap: '10px' }}>
@@ -158,6 +181,21 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
             <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
               也可直接設定於伺服端 .env
             </span>
+          </div>
+
+          <div style={{ marginTop: '14px', display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+            <button
+              className="btn btn-secondary"
+              onClick={handleCalibrateDele}
+              disabled={isCalibrating || !cards?.length}
+              id="btn-calibrate-dele"
+            >
+              <Sparkles size={16} />
+              <span>{isCalibrating ? 'AI 校準中…' : 'AI 一鍵校準 DELE 級數'}</span>
+            </button>
+            {calibrateResult && (
+              <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{calibrateResult}</span>
+            )}
           </div>
         </div>
 

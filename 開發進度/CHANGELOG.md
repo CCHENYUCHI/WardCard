@@ -6,7 +6,45 @@
 
 ## [Unreleased] (進行中 / 待發布)
 
+### Added
+- **每日任務與學習紀錄 (Daily Progress & Streak)**：讓使用者清楚知道「今天要做什麼、做了多少、哪些是多出來的練習」。
+  - **今日任務卡 (`TodayProgressCard.jsx`)**：取代駕駛艙舊的橫幅與三柱指標；顯示日期、進度圓環（已完成 / 今日目標）、狀態文案（還差 N 個 / 今日目標達成）、今天的練習時段，並註明「每天 00:00 重新計算」。
+  - **任務拆分**：到期複習、新單字（受每日上限限制）、加練三格分開統計，各有進度條。
+  - **連續天數 (Streak)**：🔥 連續 N 天（今天有練習才點亮；今天還沒練時提示「今天練習來延續」），附最長連續紀錄。
+  - **7 天週進度條**：綠色勾 = 達成當日目標、黃色 = 有練習（數字為完成字數）、空圈 = 沒練習。
+  - **學習紀錄 (`StudyHistory.jsx`)**：近 30 天每日紀錄（達成 / 進行中 / 未完成、任務完成數 / 目標、複習、新詞、加練、正確率、練習時段）與摘要（練習天數、達成天數、總練習次數、最長連續）。
+  - **加練一輪 (Extra Practice)**：`GET /api/study/practice`，挑「今天沒到期、穩定度最低」的單字（優先目前主修單元，不足時從其他單元補）；加練另外記錄，不會被算進今日任務。
+  - **學習中即時進度**：自適應學習頂部顯示「今日 x/y」；結束畫面依情況顯示「今日目標達成！/ 這一輪完成（還剩 N 字）/ 加練完成」，附進度圓環與連續天數。
+  - **後端 API**：`GET /api/study/today`、`GET /api/study/history?days=30`、`GET /api/study/practice`；`/api/study/agenda` 與 `/api/cards/:id/review` 回傳 `today` 摘要。
+  - **資料表**：`review_logs.task_type`（`due` / `new` / `extra`）、新增 `daily_progress`（每日目標快照，讓歷史紀錄能判斷是否達標）；舊紀錄自動回填（每張卡第一次複習 = 新詞，其餘 = 複習）。
+- **Mobile 拍照 / 相簿萃取 (`mobile/src/app/ai.tsx`)**：整合 `expo-image-picker`，可直接拍攝講義、白板或從相簿選圖交給 AI 萃取；萃取結果可逐一勾選，只收錄勾選的單字。
+- **AI 萃取標示已存在單字**：`/api/ai/extract` 回傳 `exists` 欄位，Web / Mobile 預覽時標示「已在單字庫」並預設不勾選，避免誤覆蓋。
+- **AI 萃取新增分類 (`AiImporter.jsx`)**：分類選單新增「＋ 新增分類」；切到上傳照片時預設為新增分類（一張講義 = 一個新分類），預覽頁顯示將匯入的分類。
+- **AI 萃取陰陽性補全與修正**：
+  - AI 必須為名詞與形容詞填寫陰陽性，並回傳陰 / 陽 × 單 / 複數變化（`forms`）；後端自動寫入文法筆記第一行（例如「陰陽性變化 → 陽性：alto / altos；陰性：alta / altas」），Web 與 Mobile 都看得到。
+  - 預覽頁可直接修改單字、冠詞與詞性；名詞 / 形容詞有 ♂ 陽性 / ♀ 陰性（形容詞另有「陰陽同形」）按鈕，切換時自動換成對應形式與冠詞（profesor ↔ profesora）。
+  - 動詞一律還原為原形不定式（原文變化形註明於筆記）；預覽頁偵測到非 -ar / -er / -ir 結尾時提示修改。
+- **AI 一鍵校準 DELE 級數入口 (`SettingsModal.jsx`)**：後端既有的 `/api/cards/calibrate-dele` 終於有前端按鈕，校準後自動重新載入單字庫。
+
+### Changed
+- **Gemini 呼叫層重構 (`server/ai.js`)**：抽出共用 `callGemini()`，改用 Node 內建 `fetch`、`responseSchema` 強制 JSON 結構；API Key 改放在 `x-goog-api-key` header（不再出現在網址與 log 中）。
+- **冠詞拆分邏輯共用 (`server/cardUtils.js`)**：新增 `splitArticle()`，手動新增、CSV 匯入與 AI 萃取共用同一份邏輯。
+- **Web `fetchAPI` 自動帶 Gemini Key**：localStorage 有 Key 時自動加上 `x-gemini-key` header；AI 照片上傳前先在瀏覽器壓縮至長邊 1600px。
+- **Mobile `API_URL` 統一 (`mobile/src/constants/api.ts`)**：取代 7 個畫面各自寫死的網址。
+
 ### Fixed
+- **複習過的單字當天又出現 / 不知道凌晨複習算哪一天 (`server/fsrs.js`, `server/time.js`)**：
+  - **到期時間時區錯誤**：FSRS 用 `toISOString()` 寫入 UTC 時間，但其他時間都是本地時間，導致在 UTC+8 時單字提早 8 小時到期（例如凌晨 1 點複習、間隔 1 天的單字，當天下午 5 點又出現）。改為寫入本地時間，並在啟動時一次性修復已偏移的到期日（`PRAGMA user_version = 1`）。
+  - **固定換日時間**：「今天」統一定義為本地 00:00～24:00（`TZ` 環境變數，預設 `Asia/Taipei`）；到期判斷改為「今天結束前到期」，任務數量不再隨時間一直變化。Docker 映像加裝 `tzdata`，啟動時印出目前時區與時間。
+  - **每日新詞上限沒有扣掉今天已學的**：舊版每次開啟都再給一整份新詞配額；且整個單元啟用後，從未複習過的單字全部塞進今日任務。現在「從沒複習過的單字」統一算新詞，受每日上限（扣除今天已學數量）限制。
+  - 導覽列徽章改為顯示今日任務剩餘數量。
+- **AI 萃取功能修復 (`server/ai.js`, `/api/ai/extract`)**：
+  - **模型已下架導致萃取失敗**：`gemini-1.5-flash` / `gemini-1.5-flash-8b` 已被 Google 下架，改用 `gemini-3.6-flash`（主模型）+ `gemini-3.5-flash-lite`（備援，可用 `GEMINI_FALLBACK_MODEL` 設定）；遇到 404 / 429 / 5xx 自動切換備援。
+  - **未勾選的單字也被存入單字庫**：`/api/ai/extract` 原本在使用者預覽前就把所有結果寫入資料庫（且會覆蓋既有單字的釋義），改為只回傳預覽結果，使用者勾選後才透過 `POST /api/cards` 儲存。
+  - **非名詞仍帶冠詞**：AI 回傳結果統一正規化（拆出冠詞、非名詞清除冠詞與陰陽性、不合法的詞性 / DELE 級數改為預設值、同一單字去重）。
+  - **錯誤訊息不清楚**：區分「Key 無效」、「額度用完」、「模型不存在」、「逾時」等中文錯誤訊息；新增 60 秒逾時。
+  - **Docker 部署仍預設舊模型**：`docker-compose.yml` 的 `GEMINI_MODEL` 預設值改為 `gemini-3.6-flash`，並傳入 `GEMINI_FALLBACK_MODEL`。
+  - **Mobile 沒帶使用者的 API Key**：Mobile 設定頁新增 Gemini Key 欄位，AI 萃取時帶上 `x-gemini-key`。
 - **手機 Safari 全站 UI 寬鬆化與瀏海 / 動態島 Safe Area 全面適配 (`index.css` 與全部頁面元件)**：
   - **四邊 Safe Area 統一化**：新增 `--safe-top/right/bottom/left` CSS 變數，Navbar、主內容、底部導覽列、彈窗、登入頁皆套用；橫向持握時左右瀏海不再切到內容。
   - **今日學習（自適應學習模式）瀏海遮擋修復**：學習模式隱藏 Navbar 時，`app-container.is-immersive` 會自動讓出頂部瀏海與底部 Home Bar 空間。

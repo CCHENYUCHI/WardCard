@@ -2132,3 +2132,554 @@ textarea {
     padding: 28px 20px;
   }
 }
+
+/* ==========================================================================
+   Daily Progress: 今日任務卡 / 連續天數 / 週進度 / 學習紀錄
+   ========================================================================== */
+.today-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 26px 28px 22px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.today-card-accent {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 6px;
+  background: var(--google-blue);
+  transition: background 0.3s ease;
+}
+
+.today-card.is-complete .today-card-accent {
+  background: var(--google-green);
+}
+
+.today-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.today-card-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.today-card-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 2px 0 0;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.streak-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  border: 1px solid var(--border-color);
+}
+
+.streak-pill strong {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.streak-pill .streak-flame {
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+
+.streak-pill.is-lit {
+  background: var(--google-yellow-light);
+  border-color: #fbd679;
+  color: var(--google-yellow-dark);
+}
+
+.streak-pill.is-lit .streak-flame {
+  filter: none;
+  opacity: 1;
+  animation: streak-flicker 2.4s ease-in-out infinite;
+}
+
+.streak-hint {
+  font-size: 0.8rem;
+}
+
+@keyframes streak-flicker {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.12) rotate(-4deg); }
+}
+
+.today-card-main {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 20px 0 18px;
+}
+
+.progress-ring {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.progress-ring-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.ring-value span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.ring-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.today-card-status {
+  min-width: 0;
+}
+
+.today-card-headline {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.today-card-subline {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.today-card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.today-breakdown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.breakdown-item {
+  background: #f8f9fa;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 12px 14px;
+  min-width: 0;
+}
+
+.breakdown-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.breakdown-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-top: 2px;
+}
+
+.breakdown-value span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.breakdown-bar {
+  height: 6px;
+  background: #e8eaed;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 6px 0;
+}
+
+.breakdown-bar > div {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.breakdown-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.week-strip {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.week-strip > .custom-tooltip-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.week-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: default;
+}
+
+.week-day-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.week-day.is-today .week-day-label {
+  color: var(--google-blue);
+  font-weight: 800;
+}
+
+.week-day-dot {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 800;
+  border: 2px solid #e8eaed;
+  background: #ffffff;
+  color: var(--text-muted);
+}
+
+.week-day-dot.is-met {
+  background: var(--google-green);
+  border-color: var(--google-green);
+  color: #ffffff;
+}
+
+.week-day-dot.is-practiced {
+  background: var(--google-yellow-light);
+  border-color: #fbd679;
+  color: var(--google-yellow-dark);
+}
+
+.week-day.is-today .week-day-dot {
+  box-shadow: 0 0 0 3px var(--google-blue-light);
+}
+
+.week-day.is-today .week-day-dot.is-empty {
+  border-color: var(--google-blue);
+  border-style: dashed;
+}
+
+.today-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.today-card-actions .cockpit-btn-start {
+  flex: 1 1 260px;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 6px rgba(26, 115, 232, 0.4);
+}
+
+.today-done-banner {
+  flex: 1 1 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: var(--radius-lg);
+  background: var(--google-green-light);
+  color: var(--google-green);
+  font-weight: 700;
+}
+
+.today-practice-btn {
+  flex: 0 1 auto;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: var(--radius-lg);
+}
+
+.session-today-pill {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: var(--google-blue-light);
+  color: var(--google-blue);
+  white-space: nowrap;
+}
+
+.session-today-pill.is-done {
+  background: var(--google-green-light);
+  color: var(--google-green);
+}
+
+.session-today-pill.is-practice {
+  background: var(--google-yellow-light);
+  color: var(--google-yellow-dark);
+}
+
+/* 學習紀錄 */
+.study-history-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: var(--text-primary);
+}
+
+.study-history-range {
+  font-size: 0.78rem;
+  background: #e8f0fe;
+  color: var(--google-blue);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.study-history-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.study-history-summary > div {
+  background: #f8f9fa;
+  border-radius: var(--radius-md);
+  padding: 10px 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.study-history-summary strong {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.study-history-summary span {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.study-history-empty {
+  text-align: center;
+  padding: 18px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  background: #f8f9fa;
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.study-history-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-row {
+  padding: 12px 2px;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.history-row:last-child {
+  border-bottom: none;
+}
+
+.history-row-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.history-date {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+}
+
+.history-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.history-badge.is-met {
+  background: var(--google-green-light);
+  color: var(--google-green);
+}
+
+.history-badge.is-missed {
+  background: var(--google-red-light);
+  color: var(--google-red);
+}
+
+.history-badge.is-progress {
+  background: var(--google-blue-light);
+  color: var(--google-blue);
+}
+
+.history-badge.is-unknown {
+  background: var(--google-yellow-light);
+  color: var(--google-yellow-dark);
+}
+
+.history-time {
+  margin-left: auto;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.history-bar {
+  height: 5px;
+  background: #e8eaed;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 8px 0 6px;
+}
+
+.history-bar > div {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.history-bar > .is-met { background: var(--google-green); }
+.history-bar > .is-missed { background: var(--google-red); }
+.history-bar > .is-unknown { background: var(--google-yellow); }
+.history-bar > .is-progress { background: var(--google-blue); }
+
+.history-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.study-history-toggle {
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .today-card {
+    padding: 20px 16px 16px;
+    margin-bottom: 14px;
+    border-radius: var(--radius-lg);
+  }
+
+  .today-card-title {
+    font-size: 1.5rem;
+  }
+
+  .today-card-main {
+    gap: 16px;
+    margin: 16px 0 14px;
+  }
+
+  .today-card-main .progress-ring {
+    width: 92px !important;
+    height: 92px !important;
+  }
+
+  .today-card-main .progress-ring svg {
+    width: 92px;
+    height: 92px;
+  }
+
+  .today-card-headline {
+    font-size: 1.1rem;
+  }
+
+  .today-card-subline {
+    font-size: 0.88rem;
+  }
+
+  .today-breakdown {
+    gap: 8px;
+  }
+
+  .breakdown-item {
+    padding: 10px 8px;
+  }
+
+  .breakdown-label {
+    font-size: 0.72rem;
+  }
+
+  .breakdown-value {
+    font-size: 1.2rem;
+  }
+
+  .breakdown-note {
+    font-size: 0.68rem;
+  }
+
+  .week-day-dot {
+    width: 30px;
+    height: 30px;
+  }
+
+  .today-card-actions .cockpit-btn-start,
+  .today-done-banner,
+  .today-practice-btn {
+    flex: 1 1 100%;
+  }
+
+  .study-history-summary strong {
+    font-size: 1.1rem;
+  }
+}

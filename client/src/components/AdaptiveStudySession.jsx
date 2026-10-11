@@ -6,6 +6,7 @@ import {
 import confetti from 'canvas-confetti';
 import { playSpanishPronunciation } from '../utils/speech';
 import { shuffleArray } from '../utils/shuffle';
+import ProgressRing from './ProgressRing';
 
 const SPANISH_SPECIAL_KEYS = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ', '¿', '¡'];
 
@@ -35,6 +36,8 @@ export default function AdaptiveStudySession({
   const [completedCount, setCompletedCount] = useState(0);
   const [stagePromotions, setStagePromotions] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
+  const [todayProgress, setTodayProgress] = useState(null); // latest /review response `today`
+  const isPractice = sessionPlan.mode === 'practice';
 
   const inputRef = useRef(null);
 
@@ -42,7 +45,8 @@ export default function AdaptiveStudySession({
     const list = [
       ...(sessionPlan.urgent || []).map(c => ({ ...c, _sessionType: 'urgent' })),
       ...(sessionPlan.regular || []).map(c => ({ ...c, _sessionType: 'regular' })),
-      ...(sessionPlan.newCards || []).map(c => ({ ...c, _sessionType: 'new' }))
+      ...(sessionPlan.newCards || []).map(c => ({ ...c, _sessionType: 'new' })),
+      ...(sessionPlan.extra || []).map(c => ({ ...c, _sessionType: 'extra' }))
     ];
     // Randomize question sequence so user doesn't memorize order
     const shuffledList = shuffleArray(list);
@@ -91,6 +95,7 @@ export default function AdaptiveStudySession({
           setStagePromotions(p => p + 1);
         }
       }
+      if (res && res.today) setTodayProgress(res.today);
     } catch (err) {
       console.error('Failed to submit review:', err);
     }
@@ -198,27 +203,60 @@ export default function AdaptiveStudySession({
   }, [isFlipped, spellingStatus, isFinished, stage, handleFlip, handleRate]);
 
   if (isFinished) {
+    const t = todayProgress;
+    const goalReached = t && t.completed;
+    const title = isPractice ? '加練完成！💪' : goalReached ? '今日目標達成！' : '這一輪完成！';
+    const message = isPractice
+      ? '額外練習不佔今日任務，但每一次回想都讓記憶更牢固。'
+      : goalReached
+        ? '今天排程的單字全部完成，明天再來保持連續紀錄！'
+        : t && t.remaining > 0
+          ? `今日任務還剩 ${t.remaining} 個單字，休息一下再繼續吧。`
+          : '做得好！回到今日任務查看進度。';
+
     return (
       <div style={{ maxWidth: '600px', margin: '40px auto', textAlign: 'center', padding: '24px' }}>
         <div style={{
           background: '#ffffff',
           border: '1px solid var(--border-color)',
           borderRadius: 'var(--radius-xl)',
-          padding: '40px 28px',
+          padding: '36px 28px',
           boxShadow: 'var(--shadow-card)'
         }}>
-          <div style={{ fontSize: '3.2rem', marginBottom: '16px' }}>🏆</div>
+          {t ? (
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+              <ProgressRing done={t.done} goal={t.goal} size={120}>
+                {goalReached ? (
+                  <Trophy size={40} color="var(--google-green)" />
+                ) : (
+                  <>
+                    <div className="ring-value">{t.done}<span>/{t.goal}</span></div>
+                    <div className="ring-label">今日任務</div>
+                  </>
+                )}
+              </ProgressRing>
+            </div>
+          ) : (
+            <div style={{ fontSize: '3.2rem', marginBottom: '16px' }}>🏆</div>
+          )}
           <h2 style={{ fontSize: '1.7rem', fontWeight: 700, margin: '0 0 10px 0', color: 'var(--text-primary)' }}>
-            今日學習任務達成！
+            {title}
           </h2>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', margin: '0 0 28px 0' }}>
-            太棒了！你完成了今日所有的記憶排程，神經突觸已完成強化固化。
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', margin: '0 0 20px 0' }}>
+            {message}
           </p>
+
+          {t && t.streak && t.streak.current > 0 && (
+            <div className="streak-pill is-lit" style={{ margin: '0 auto 24px', width: 'fit-content' }}>
+              <span className="streak-flame">🔥</span>
+              <span><strong>{t.streak.current}</strong> 天連續學習</span>
+            </div>
+          )}
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '32px' }}>
             <div style={{ background: 'var(--google-green-light)', border: '1px solid #a8dab5', padding: '16px', borderRadius: 'var(--radius-lg)' }}>
               <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--google-green)' }}>{completedCount}</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>完成單字數</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>這一輪完成單字</div>
             </div>
             <div style={{ background: 'var(--google-blue-light)', border: '1px solid #aecbfa', padding: '16px', borderRadius: 'var(--radius-lg)' }}>
               <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--google-blue)' }}>{stagePromotions}</div>
@@ -231,7 +269,7 @@ export default function AdaptiveStudySession({
             onClick={onExitSession}
             style={{ padding: '12px 32px', fontSize: '1rem' }}
           >
-            返回學習駕駛艙
+            返回今日任務
           </button>
         </div>
       </div>
@@ -301,6 +339,13 @@ export default function AdaptiveStudySession({
           <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
             {currentIndex + 1} / {queue.length}
           </span>
+          {isPractice ? (
+            <span className="session-today-pill is-practice">💪 加練</span>
+          ) : todayProgress && (
+            <span className={`session-today-pill ${todayProgress.completed ? 'is-done' : ''}`}>
+              今日 {todayProgress.done}/{todayProgress.goal}
+            </span>
+          )}
         </div>
       </div>
 
