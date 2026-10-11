@@ -6,6 +6,19 @@
 
 ## [Unreleased] (進行中 / 待發布)
 
+### Fixed
+- **手機 Safari 全站 UI 寬鬆化與瀏海 / 動態島 Safe Area 全面適配 (`index.css` 與全部頁面元件)**：
+  - **四邊 Safe Area 統一化**：新增 `--safe-top/right/bottom/left` CSS 變數，Navbar、主內容、底部導覽列、彈窗、登入頁皆套用；橫向持握時左右瀏海不再切到內容。
+  - **今日學習（自適應學習模式）瀏海遮擋修復**：學習模式隱藏 Navbar 時，`app-container.is-immersive` 會自動讓出頂部瀏海與底部 Home Bar 空間。
+  - **彈窗被底部導覽列遮住修復**：`.modal-overlay` z-index 提升至 1000（導覽列 900），手機版改為 iOS Bottom Sheet（圓角、把手、`100dvh` 高度、Home Bar 留白、滑入動畫）；表單欄位單欄堆疊、按鈕滿版。
+  - **翻卡背面內容被裁切修復**：卡片正反面改用 CSS Grid 疊放，卡片高度隨較長一面（例句 + 文法筆記）自動撐開，不再與評分按鈕重疊。
+  - **進度統計手機版溢出修復**：`minmax(380px)` 改為 `minmax(min(380px, 100%))`；6 指標卡改為 2 欄；7 日預報改為可橫向滑動；階梯說明在手機隱藏。
+  - **補回遺失樣式**：`.spelling-input`、`.spelling-box`、`.stat-box/.stat-icon/.stat-val/.stat-label`、`.btn-link` 於先前改版遺失，已以 Google Classroom 風格重建。
+  - **自適應學習進度條不可見修復**：原使用未定義的 `--primary-color` 與白色半透明底，改為 Google 藍與灰底。
+  - **觸控體驗**：輸入框手機字級 16px（防 iOS 自動放大）、`touch-action: manipulation`、移除點擊高亮、西語重音鍵改 5 欄大按鍵、單字卡操作鈕放大至 34px、hover 位移僅在支援 hover 的裝置啟用、隱藏手機上無用的鍵盤快捷鍵提示。
+  - **底部導覽列**：Material 3 指示膠囊、52px 觸控高度、徽章白色描邊。
+  - **桌面版**：Navbar「AI 萃取」按鈕與使用者名稱不再折行。
+
 - **本週學習與複習進度預報 (Weekly Review & Learning Forecast, `StatsView.jsx`)**：
   - 在進度數據看板新增「7 天每日學習量預報長條圖」，直觀掌握本週各天的記憶負擔。
   - **雙軌視覺化呈現**：藍色長條為「到期複習單字 (Due Reviews)」，綠色長條為「預定加入新單字 (New Intake)」。

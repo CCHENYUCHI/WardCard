@@ -441,7 +441,7 @@ export default function WordList({
                   {currentCategoryStats.active > 0 ? '🚀' : '⏳'}
                 </span>
                 <div>
-                  <h2 style={{ fontSize: '1.15rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)' }}>
+                  <h2 style={{ fontSize: '1.15rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)', overflowWrap: 'anywhere' }}>
                     {currentCategoryStats.name}
                   </h2>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '2px' }}>
@@ -500,7 +500,7 @@ export default function WordList({
           </div>
 
           {/* Action Buttons */}
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+          <div className="filter-bar-actions" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
             <button 
               className="btn btn-secondary btn-sm" 
               onClick={() => setShowGuideModal(true)}
@@ -736,7 +736,7 @@ export default function WordList({
                   {/* Middle: Word & Translation */}
                   <div className="card-compact-body">
                     <div className="card-compact-word-row">
-                      <div style={{ display: 'flex', alignItems: 'baseline', gap: '5px' }}>
+                      <div style={{ display: 'flex', alignItems: 'baseline', gap: '5px', minWidth: 0 }}>
                         {card.article && (
                           <span style={{ color: 'var(--text-muted)', fontSize: '0.88rem', fontWeight: 600 }}>
                             {card.article}

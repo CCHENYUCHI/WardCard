@@ -9,7 +9,7 @@ export default function MasteryGuideModal({ isOpen, onClose }) {
       <div 
         className="modal-content" 
         onClick={e => e.stopPropagation()}
-        style={{ maxWidth: '680px', maxHeight: '90vh', overflowY: 'auto', padding: '24px 28px' }}
+        style={{ maxWidth: '680px' }}
       >
         <div className="modal-header" style={{ marginBottom: '20px', borderBottom: '1px solid var(--border-color)', paddingBottom: '14px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -51,7 +51,7 @@ export default function MasteryGuideModal({ isOpen, onClose }) {
             <Layers size={18} color="var(--google-blue)" />
             <span>四大生命週期狀態 (Lifecycle Status)</span>
           </h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '10px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', gap: '10px' }}>
             <div style={{ background: '#f8f9fa', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)', padding: '12px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontWeight: 700, fontSize: '0.88rem', color: '#5f6368', marginBottom: '4px' }}>
                 <span>📥 隨手暫存 (Inbox)</span>

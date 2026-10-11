@@ -33,8 +33,8 @@ const LoginScreen = ({ onLogin }) => {
   };
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', alignItems: 'center', justifyContent: 'center', padding: '20px', background: 'var(--bg-primary)' }}>
-      <div className="glass-card" style={{ maxWidth: '400px', width: '100%', padding: '36px 32px' }}>
+    <div className="login-screen">
+      <div className="glass-card login-card">
         <div style={{ textAlign: 'center', marginBottom: '28px' }}>
           <span style={{ fontSize: '3rem', display: 'block', marginBottom: '12px' }}>🇪🇸</span>
           <h2 style={{ fontSize: '1.6rem', fontWeight: 'bold', color: 'var(--text-primary)' }}>PalabraCard</h2>

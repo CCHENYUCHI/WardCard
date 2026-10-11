@@ -163,8 +163,8 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
   return (
     <div style={{ maxWidth: '680px', margin: '0 auto' }}>
       {/* Filter and stats */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '18px', flexWrap: 'wrap', gap: '12px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      <div className="review-toolbar">
+        <div className="review-toolbar-controls">
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Filter size={18} style={{ color: 'var(--text-muted)' }} />
             <select
@@ -201,18 +201,18 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
             title="重新隨機打亂題目順序"
           >
             <Shuffle size={13} />
-            <span>隨機打亂</span>
+            <span className="btn-text-desktop">隨機打亂</span>
           </button>
         </div>
 
-        <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+        <div className="review-progress-text">
           進度: <strong>{currentIndex + 1}</strong> / {quizCards.length}
         </div>
       </div>
 
       <div className="glass-card spelling-box">
         {/* Badges */}
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginBottom: '16px' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginBottom: '16px', flexWrap: 'wrap' }}>
           <span className="badge-category">{currentCard.category}</span>
           {currentCard.gender && currentCard.gender !== 'none' && (
             <span className={`badge-gender ${currentCard.gender}`}>
@@ -227,7 +227,7 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
           <div style={{ fontSize: '0.88rem', color: 'var(--text-muted)', marginBottom: '6px' }}>
             請輸入對應的西班牙語單字：
           </div>
-          <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.4rem', fontWeight: 800, color: 'var(--text-primary)' }}>
+          <div className="spelling-prompt" style={{ fontFamily: 'var(--font-display)', fontSize: '2.4rem', fontWeight: 800, color: 'var(--text-primary)' }}>
             {currentCard.translation}
           </div>
         </div>
@@ -273,10 +273,10 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
           />
 
           {/* Action buttons */}
-          <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '16px' }}>
+          <div className="spelling-actions" style={{ display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '16px' }}>
             <button type="submit" className="btn btn-primary" id="btn-spelling-submit">
               <Check size={18} />
-              <span>送出檢查 (Enter)</span>
+              <span>送出檢查<span className="kbd-hint"> (Enter)</span></span>
             </button>
             <button
               type="button"

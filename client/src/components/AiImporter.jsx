@@ -150,7 +150,7 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
         {extractedCards.length === 0 ? (
           <div>
             {/* Input Type Tabs */}
-            <div style={{ display: 'flex', gap: '10px', marginBottom: '16px' }}>
+            <div style={{ display: 'flex', gap: '10px', marginBottom: '16px', flexWrap: 'wrap' }}>
               <button
                 className={`btn ${activeTab === 'text' ? 'btn-primary' : 'btn-secondary'} btn-sm`}
                 onClick={() => setActiveTab('text')}
@@ -260,7 +260,7 @@ Hoy en clase aprendimos:
         ) : (
           /* Step 2: Extracted Cards Review & Edit */
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', flexWrap: 'wrap', gap: '10px' }}>
               <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
                 AI 為您成功解析出 <strong>{extractedCards.length}</strong> 個西語單字，已勾選 <strong>{selectedIndices.size}</strong> 個：
               </span>
@@ -272,7 +272,7 @@ Hoy en clase aprendimos:
               </button>
             </div>
 
-            <div style={{ maxHeight: '420px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '12px', paddingRight: '4px' }}>
+            <div style={{ maxHeight: 'min(420px, 50dvh)', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '12px', paddingRight: '4px' }}>
               {extractedCards.map((card, idx) => {
                 const isSelected = selectedIndices.has(idx);
                 return (
@@ -350,7 +350,7 @@ Hoy en clase aprendimos:
             </div>
 
             {/* Footer Actions */}
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px', paddingTop: '16px', borderTop: '1px solid var(--border-color)' }}>
+            <div className="modal-footer modal-footer-split" style={{ justifyContent: 'space-between', marginTop: '20px', paddingTop: '16px', borderTop: '1px solid var(--border-color)' }}>
               <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
                 將自動套用 FSRS 記憶曲線與待學推薦
               </span>

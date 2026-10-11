@@ -170,8 +170,8 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
   return (
     <div style={{ maxWidth: '720px', margin: '0 auto' }}>
       {/* Top Filter and Progress Header */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', flexWrap: 'wrap', gap: '12px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+      <div className="review-toolbar">
+        <div className="review-toolbar-controls">
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Filter size={18} style={{ color: 'var(--text-muted)' }} />
             <select
@@ -187,7 +187,7 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
             </select>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>正面顯示:</span>
+            <span className="hide-mobile" style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>正面顯示:</span>
             <select
               className="select-custom"
               value={frontMode}
@@ -219,19 +219,19 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
             title="重新隨機打亂題目順序"
           >
             <Shuffle size={13} />
-            <span>隨機打亂</span>
+            <span className="btn-text-desktop">隨機打亂</span>
           </button>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-secondary)', fontSize: '0.88rem' }}>
+        <div className="review-progress-text">
           <span>進度: <strong>{currentIndex + 1}</strong> / {quizCards.length}</span>
-          <span style={{ color: 'var(--text-muted)' }}>|</span>
-          <span style={{ fontSize: '0.78rem' }}>按 [空白鍵] 翻面，[1~4] 評分</span>
+          <span className="kbd-hint" style={{ color: 'var(--text-muted)' }}>|</span>
+          <span className="kbd-hint" style={{ fontSize: '0.78rem' }}>按 [空白鍵] 翻面，[1~4] 評分</span>
         </div>
       </div>
 
       {/* Progress Bar */}
-      <div style={{ height: '6px', background: '#e0e0e0', borderRadius: '10px', marginBottom: '24px', overflow: 'hidden' }}>
+      <div style={{ height: '6px', background: '#e0e0e0', borderRadius: '10px', marginBottom: '20px', overflow: 'hidden' }}>
         <div
           style={{
             height: '100%',
@@ -254,7 +254,7 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
           {/* Card Front */}
           <div className="card-face card-front">
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+              <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap', minWidth: 0 }}>
                 <span className="badge-category">{currentCard.category}</span>
                 {currentCard.gender && currentCard.gender !== 'none' && (
                   <span className={`badge-gender ${currentCard.gender}`}>
@@ -279,7 +279,7 @@ export default function FlashcardReview({ allCards, dueCards, onReview, categori
                 )}
               </div>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '8px' }}>
-                點擊或按空白鍵翻面查看解答
+                點擊卡片翻面查看解答<span className="kbd-hint">（或按空白鍵）</span>
               </p>
             </div>
 

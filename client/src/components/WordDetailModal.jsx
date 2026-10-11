@@ -43,7 +43,7 @@ export default function WordDetailModal({
       <div 
         className="modal-content" 
         onClick={e => e.stopPropagation()}
-        style={{ maxWidth: '640px', maxHeight: '90vh', overflowY: 'auto', padding: '24px 28px' }}
+        style={{ maxWidth: '640px' }}
       >
         {/* Header: badges & close */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
@@ -78,14 +78,14 @@ export default function WordDetailModal({
         </div>
 
         {/* Word Title + Star + Sound */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
-          <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px', gap: '10px' }}>
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', minWidth: 0, flexWrap: 'wrap' }}>
             {card.article && (
               <span style={{ color: 'var(--text-muted)', fontSize: '1.4rem', fontWeight: 600 }}>
                 {card.article}
               </span>
             )}
-            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)' }}>
+            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.6rem, 7vw, 2rem)', fontWeight: 800, margin: 0, color: 'var(--text-primary)', overflowWrap: 'anywhere' }}>
               {card.word}
             </h1>
           </div>
@@ -249,7 +249,7 @@ export default function WordDetailModal({
         </div>
 
         {/* Modal Actions */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid var(--border-color)', paddingTop: '16px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid var(--border-color)', paddingTop: '16px', flexWrap: 'wrap', gap: '10px' }}>
           <button
             className="btn btn-secondary btn-sm"
             style={{ color: 'var(--google-red)' }}

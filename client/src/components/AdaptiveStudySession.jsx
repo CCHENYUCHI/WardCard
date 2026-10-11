@@ -275,9 +275,9 @@ export default function AdaptiveStudySession({
   const stageMeta = getStageHeader();
 
   return (
-    <div style={{ maxWidth: '720px', margin: '0 auto', padding: '16px' }}>
+    <div className="study-session">
       {/* Top Header Bar */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+      <div className="study-session-header">
         <button 
           onClick={onExitSession}
           className="btn btn-secondary btn-sm"
@@ -305,40 +305,29 @@ export default function AdaptiveStudySession({
       </div>
 
       {/* Progress Bar */}
-      <div style={{ width: '100%', height: '6px', background: 'rgba(255,255,255,0.08)', borderRadius: '4px', overflow: 'hidden', marginBottom: '20px' }}>
+      <div style={{ width: '100%', height: '6px', background: '#e8eaed', borderRadius: '4px', overflow: 'hidden', marginBottom: '20px' }}>
         <div style={{ 
           width: `${((currentIndex) / queue.length) * 100}%`, 
           height: '100%', 
-          background: 'var(--primary-color)',
+          background: 'var(--google-blue)',
           transition: 'width 0.3s ease'
         }} />
       </div>
 
       {/* Main Flashcard Container (Google Clean White Study Card) */}
-      <div style={{
-        background: '#ffffff',
-        border: '1px solid var(--border-color)',
-        borderRadius: 'var(--radius-xl)',
-        padding: '36px 28px',
-        minHeight: '340px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        position: 'relative',
-        boxShadow: 'var(--shadow-card)'
-      }}>
+      <div className="study-card">
 
         {/* --- STAGE 1: Recognition (西語 -> 中文) --- */}
         {stage === 1 && (
           <div>
             <div style={{ textAlign: 'center', margin: '20px 0 30px 0' }}>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', marginBottom: '12px', flexWrap: 'wrap' }}>
                 {currentCard.article && (
                   <span style={{ fontSize: '1.4rem', color: 'var(--text-muted)', fontWeight: 600 }}>
                     {currentCard.article}
                   </span>
                 )}
-                <span style={{ fontSize: '2.5rem', fontWeight: 700, color: 'var(--text-primary)', letterSpacing: '-0.5px' }}>
+                <span className="study-word" style={{ fontWeight: 700, color: 'var(--text-primary)' }}>
                   {currentCard.word}
                 </span>
                 <button
@@ -353,7 +342,7 @@ export default function AdaptiveStudySession({
                 </button>
               </div>
 
-              <div style={{ display: 'flex', justifyContent: 'center', gap: '8px' }}>
+              <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', flexWrap: 'wrap' }}>
                 <span className="badge-subtle">{currentCard.part_of_speech}</span>
                 {currentCard.curriculum_unit && (
                   <span className="badge-category">{currentCard.curriculum_unit}</span>
@@ -394,7 +383,7 @@ export default function AdaptiveStudySession({
               </div>
             ) : (
               <div style={{ textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '20px' }}>
-                點擊卡片或按 <kbd className="shortcut-key">Space</kbd> 翻轉查看釋義
+                <span className="kbd-hint">按 <kbd className="shortcut-key">Space</kbd> 或</span>點擊下方按鈕翻轉查看釋義
               </div>
             )}
           </div>
@@ -496,7 +485,7 @@ export default function AdaptiveStudySession({
 
             {/* Input Box */}
             <div style={{ maxWidth: '440px', margin: '0 auto 16px auto' }}>
-              <div style={{ display: 'flex', gap: '10px' }}>
+              <div className="study-input-row">
                 <input
                   ref={inputRef}
                   type="text"
@@ -505,7 +494,6 @@ export default function AdaptiveStudySession({
                   placeholder="輸入西語單字..."
                   disabled={spellingStatus !== 'typing'}
                   style={{
-                    flex: 1,
                     background: '#ffffff',
                     border: spellingStatus === 'correct' 
                       ? '2px solid var(--google-green)' 
@@ -525,7 +513,6 @@ export default function AdaptiveStudySession({
                   <button
                     onClick={handleCheckSpelling}
                     className="btn btn-primary"
-                    style={{ padding: '0 20px' }}
                   >
                     送出
                   </button>
@@ -534,22 +521,13 @@ export default function AdaptiveStudySession({
 
               {/* Special Characters Keyboard */}
               {spellingStatus === 'typing' && (
-                <div style={{ display: 'flex', justifyContent: 'center', gap: '6px', marginTop: '10px', flexWrap: 'wrap' }}>
+                <div className="spanish-keys">
                   {SPANISH_SPECIAL_KEYS.map(char => (
                     <button
                       key={char}
                       onClick={() => handleInsertChar(char)}
                       type="button"
-                      style={{
-                        background: '#f1f3f4',
-                        border: '1px solid var(--border-color)',
-                        color: 'var(--text-primary)',
-                        padding: '6px 12px',
-                        borderRadius: '6px',
-                        fontSize: '0.95rem',
-                        fontWeight: 600,
-                        cursor: 'pointer'
-                      }}
+                      className="spanish-key"
                     >
                       {char}
                     </button>
@@ -621,7 +599,7 @@ export default function AdaptiveStudySession({
             {/* Interactive Fill-in-the-Blank Input */}
             {spellingStatus === 'typing' && (
               <div style={{ maxWidth: '440px', margin: '0 auto 16px auto' }}>
-                <div style={{ display: 'flex', gap: '10px' }}>
+                <div className="study-input-row">
                   <input
                     ref={inputRef}
                     type="text"
@@ -629,7 +607,6 @@ export default function AdaptiveStudySession({
                     onChange={(e) => setUserInput(e.target.value)}
                     placeholder="請在此輸入挖空處單字..."
                     style={{
-                      flex: 1,
                       background: '#ffffff',
                       border: '1px solid var(--border-color)',
                       borderRadius: 'var(--radius-md)',
@@ -644,29 +621,19 @@ export default function AdaptiveStudySession({
                   <button
                     onClick={handleCheckSpelling}
                     className="btn btn-primary"
-                    style={{ padding: '0 20px', whiteSpace: 'nowrap' }}
                   >
                     送出填空
                   </button>
                 </div>
 
                 {/* Special Characters Keyboard */}
-                <div style={{ display: 'flex', justifyContent: 'center', gap: '6px', marginTop: '10px', flexWrap: 'wrap' }}>
+                <div className="spanish-keys">
                   {SPANISH_SPECIAL_KEYS.map(char => (
                     <button
                       key={char}
                       onClick={() => handleInsertChar(char)}
                       type="button"
-                      style={{
-                        background: '#f1f3f4',
-                        border: '1px solid var(--border-color)',
-                        color: 'var(--text-primary)',
-                        padding: '6px 12px',
-                        borderRadius: '6px',
-                        fontSize: '0.95rem',
-                        fontWeight: 600,
-                        cursor: 'pointer'
-                      }}
+                      className="spanish-key"
                     >
                       {char}
                     </button>
@@ -761,8 +728,8 @@ export default function AdaptiveStudySession({
             </div>
 
             <div style={{ textAlign: 'center', margin: '16px 0 20px 0' }}>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
-                <span style={{ fontSize: '2.5rem', fontWeight: 800, color: 'var(--text-primary)', letterSpacing: '-0.5px' }}>
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                <span className="study-word" style={{ fontWeight: 800, color: 'var(--text-primary)' }}>
                   {currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}
                 </span>
                 <button
@@ -821,25 +788,13 @@ export default function AdaptiveStudySession({
 
         {/* Bottom Rating Bar (Triggered when flipped or incorrect in Stage 3) */}
         {(isFlipped || spellingStatus === 'incorrect' || (stage === 1 && isFlipped)) ? (
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gap: '10px',
-            marginTop: '24px',
-            borderTop: '1px solid var(--border-color)',
-            paddingTop: '20px'
-          }}>
+          <div className="study-rating-grid">
             <button
               onClick={() => handleRate(1)}
               style={{
                 background: 'var(--google-red-light)',
                 border: '1px solid #f6aea9',
-                color: 'var(--google-red)',
-                padding: '12px 6px',
-                borderRadius: 'var(--radius-md)',
-                cursor: 'pointer',
-                fontWeight: 700,
-                textAlign: 'center'
+                color: 'var(--google-red)'
               }}
             >
               <div style={{ fontSize: '0.95rem' }}>1. 忘記</div>
@@ -851,12 +806,7 @@ export default function AdaptiveStudySession({
               style={{
                 background: 'var(--google-yellow-light)',
                 border: '1px solid #fce8b2',
-                color: 'var(--google-yellow-dark)',
-                padding: '12px 6px',
-                borderRadius: 'var(--radius-md)',
-                cursor: 'pointer',
-                fontWeight: 700,
-                textAlign: 'center'
+                color: 'var(--google-yellow-dark)'
               }}
             >
               <div style={{ fontSize: '0.95rem' }}>2. 吃力</div>
@@ -868,12 +818,7 @@ export default function AdaptiveStudySession({
               style={{
                 background: 'var(--google-blue-light)',
                 border: '1px solid #aecbfa',
-                color: 'var(--google-blue)',
-                padding: '12px 6px',
-                borderRadius: 'var(--radius-md)',
-                cursor: 'pointer',
-                fontWeight: 700,
-                textAlign: 'center'
+                color: 'var(--google-blue)'
               }}
             >
               <div style={{ fontSize: '0.95rem' }}>3. 記得</div>
@@ -885,12 +830,7 @@ export default function AdaptiveStudySession({
               style={{
                 background: 'var(--google-green-light)',
                 border: '1px solid #a8dab5',
-                color: 'var(--google-green)',
-                padding: '12px 6px',
-                borderRadius: 'var(--radius-md)',
-                cursor: 'pointer',
-                fontWeight: 700,
-                textAlign: 'center'
+                color: 'var(--google-green)'
               }}
             >
               <div style={{ fontSize: '0.95rem' }}>4. 熟練</div>

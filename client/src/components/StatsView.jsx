@@ -46,17 +46,9 @@ export default function StatsView({ stats }) {
   const longTermDueCount = stats.longTermDueCount || 0;
 
   return (
-    <div style={{ maxWidth: '960px', margin: '0 auto', padding: '0 8px' }}>
+    <div className="stats-page" style={{ maxWidth: '960px', margin: '0 auto', padding: '0 8px' }}>
       {/* Top Banner Header */}
-      <div style={{
-        background: '#ffffff',
-        border: '1px solid var(--border-color)',
-        borderRadius: 'var(--radius-xl)',
-        padding: '22px 28px',
-        marginBottom: '20px',
-        boxShadow: 'var(--shadow-card)',
-        position: 'relative'
-      }}>
+      <div className="surface-card stats-banner stats-section" style={{ marginBottom: '20px', position: 'relative' }}>
         <div style={{
           position: 'absolute',
           top: 0,
@@ -85,41 +77,36 @@ export default function StatsView({ stats }) {
       </div>
 
       {/* 6 Key Metrics Grid */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
-        gap: '12px',
-        marginBottom: '24px'
-      }}>
+      <div className="stats-metrics-grid">
         {/* Total Words */}
-        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
-          <div className="stat-icon" style={{ background: '#e8f0fe', color: 'var(--google-blue)', width: '42px', height: '42px' }}>
+        <div className="stat-box">
+          <div className="stat-icon" style={{ background: '#e8f0fe', color: 'var(--google-blue)' }}>
             <BookOpen size={20} />
           </div>
           <div>
-            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800 }}>{total}</div>
+            <div className="stat-val">{total}</div>
             <div className="stat-label">總西語詞庫量</div>
           </div>
         </div>
 
         {/* Active Study */}
-        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
-          <div className="stat-icon" style={{ background: '#e8f0fe', color: 'var(--google-blue)', width: '42px', height: '42px' }}>
+        <div className="stat-box">
+          <div className="stat-icon" style={{ background: '#e8f0fe', color: 'var(--google-blue)' }}>
             <Flame size={20} />
           </div>
           <div>
-            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--google-blue)' }}>{activeCount}</div>
+            <div className="stat-val" style={{ color: 'var(--google-blue)' }}>{activeCount}</div>
             <div className="stat-label">⚡ 活躍學習中</div>
           </div>
         </div>
 
         {/* Due Today */}
-        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
-          <div className="stat-icon" style={{ background: '#fce8e6', color: 'var(--google-red)', width: '42px', height: '42px' }}>
+        <div className="stat-box">
+          <div className="stat-icon" style={{ background: '#fce8e6', color: 'var(--google-red)' }}>
             <Clock size={20} />
           </div>
           <div>
-            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800, color: stats.due > 0 ? 'var(--google-red)' : 'var(--text-primary)' }}>
+            <div className="stat-val" style={{ color: stats.due > 0 ? 'var(--google-red)' : 'var(--text-primary)' }}>
               {stats.due}
             </div>
             <div className="stat-label">⏰ 今日到期複習</div>
@@ -127,51 +114,44 @@ export default function StatsView({ stats }) {
         </div>
 
         {/* Mastered */}
-        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
-          <div className="stat-icon" style={{ background: '#e6f4ea', color: 'var(--google-green)', width: '42px', height: '42px' }}>
+        <div className="stat-box">
+          <div className="stat-icon" style={{ background: '#e6f4ea', color: 'var(--google-green)' }}>
             <Award size={20} />
           </div>
           <div>
-            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--google-green)' }}>{masteredCount}</div>
+            <div className="stat-val" style={{ color: 'var(--google-green)' }}>{masteredCount}</div>
             <div className="stat-label">🏆 已長效精通</div>
           </div>
         </div>
 
         {/* Ready Reserve */}
-        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
-          <div className="stat-icon" style={{ background: '#f1f3f4', color: '#5f6368', width: '42px', height: '42px' }}>
+        <div className="stat-box">
+          <div className="stat-icon" style={{ background: '#f1f3f4', color: '#5f6368' }}>
             <Target size={20} />
           </div>
           <div>
-            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--text-secondary)' }}>{readyCount}</div>
+            <div className="stat-val" style={{ color: 'var(--text-secondary)' }}>{readyCount}</div>
             <div className="stat-label">🎯 待學儲備量</div>
           </div>
         </div>
 
         {/* Reviewed Today */}
-        <div className="stat-box" style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', padding: '16px' }}>
-          <div className="stat-icon" style={{ background: '#fef7e0', color: '#f29900', width: '42px', height: '42px' }}>
+        <div className="stat-box">
+          <div className="stat-icon" style={{ background: '#fef7e0', color: '#f29900' }}>
             <CheckCircle2 size={20} />
           </div>
           <div>
-            <div className="stat-val" style={{ fontSize: '1.6rem', fontWeight: 800, color: '#f29900' }}>{stats.reviewedToday}</div>
+            <div className="stat-val" style={{ color: '#f29900' }}>{stats.reviewedToday}</div>
             <div className="stat-label">🔥 今日複習卡次</div>
           </div>
         </div>
       </div>
 
       {/* Weekly Review & New Word Forecast */}
-      <div style={{
-        background: '#ffffff',
-        border: '1px solid var(--border-color)',
-        borderRadius: 'var(--radius-xl)',
-        padding: '22px 24px',
-        marginBottom: '24px',
-        boxShadow: 'var(--shadow-card)'
-      }}>
+      <div className="surface-card stats-section" style={{ marginBottom: '24px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', marginBottom: '20px' }}>
           <div>
-            <h3 style={{ fontSize: '1.15rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <h3 style={{ fontSize: '1.15rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
               <CalendarDays size={19} color="var(--google-blue)" />
               <span>本週複習排程與新詞進度預報 (Weekly Forecast)</span>
             </h3>
@@ -194,12 +174,7 @@ export default function StatsView({ stats }) {
         </div>
 
         {/* 7-Day Columns Grid */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(110px, 1fr))',
-          gap: '10px',
-          marginBottom: '20px'
-        }}>
+        <div className="forecast-grid">
           {weeklyForecast.map((day) => {
             const isToday = day.dayIndex === 0;
             const reviewHeight = maxDayWorkload > 0 ? (day.dueReviews / maxDayWorkload) * 105 : 0;
@@ -238,7 +213,7 @@ export default function StatsView({ stats }) {
 
                 {/* Day Label & Date */}
                 <div style={{ textAlign: 'center', marginBottom: '12px', marginTop: isToday ? '4px' : '0' }}>
-                  <div style={{ fontWeight: 800, fontSize: '0.85rem', color: isToday ? 'var(--google-blue)' : 'var(--text-primary)' }}>
+                  <div className="forecast-day-label" style={{ fontWeight: 800, fontSize: '0.85rem', color: isToday ? 'var(--google-blue)' : 'var(--text-primary)' }}>
                     {day.label}
                   </div>
                   <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
@@ -341,15 +316,9 @@ export default function StatsView({ stats }) {
       </div>
 
       {/* Main Grid: FSRS 5-Stage Mastery Ladder & Curriculum Units */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '20px', marginBottom: '24px' }}>
+      <div className="stats-section" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(380px, 100%), 1fr))', gap: '16px', marginBottom: '24px' }}>
         {/* FSRS 5-Stage Cognitive Mastery Ladder */}
-        <div style={{
-          background: '#ffffff',
-          border: '1px solid var(--border-color)',
-          borderRadius: 'var(--radius-xl)',
-          padding: '22px 24px',
-          boxShadow: 'var(--shadow-card)'
-        }}>
+        <div className="surface-card">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '18px' }}>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Layers size={18} color="var(--google-blue)" />
@@ -378,7 +347,7 @@ export default function StatsView({ stats }) {
                       <span style={{ fontWeight: 800, color: item.color, fontSize: '0.82rem', background: item.bg, padding: '1px 6px', borderRadius: '4px' }}>
                         {item.name}
                       </span>
-                      <span style={{ color: 'var(--text-muted)', fontSize: '0.78rem' }}>{item.desc}</span>
+                      <span className="stage-desc" style={{ color: 'var(--text-muted)', fontSize: '0.78rem' }}>{item.desc}</span>
                     </div>
                     <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>
                       {item.count} 字 <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontWeight: 500 }}>({pct}%)</span>
@@ -398,13 +367,7 @@ export default function StatsView({ stats }) {
         </div>
 
         {/* Curriculum Units Leaderboard */}
-        <div style={{
-          background: '#ffffff',
-          border: '1px solid var(--border-color)',
-          borderRadius: 'var(--radius-xl)',
-          padding: '22px 24px',
-          boxShadow: 'var(--shadow-card)'
-        }}>
+        <div className="surface-card">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Target size={18} color="var(--google-blue)" />
@@ -430,8 +393,8 @@ export default function StatsView({ stats }) {
 
                 return (
                   <div key={unit.unit} style={{ background: '#f8f9fa', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)', padding: '10px 14px' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px', flexWrap: 'wrap', gap: '4px 8px' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0 }}>
                         <span style={{ fontSize: '0.9rem' }}>{isActive ? '⚡' : '⏳'}</span>
                         <span style={{ fontWeight: 700, fontSize: '0.92rem', color: 'var(--text-primary)' }}>
                           {unit.unit}

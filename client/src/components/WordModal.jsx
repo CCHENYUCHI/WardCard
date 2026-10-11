@@ -176,7 +176,7 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
                 <option value="inbox">📥 隨手暫存 (Inbox - 零壓力不排程)</option>
               </select>
             </div>
-            <div style={{ flex: 1, display: 'flex', alignItems: 'center', paddingTop: '22px' }}>
+            <div className="form-row-checkbox" style={{ flex: 1, display: 'flex', alignItems: 'center', paddingTop: '22px' }}>
               <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontSize: '0.9rem', color: 'var(--google-yellow-dark)', fontWeight: 600 }}>
                 <input
                   type="checkbox"
@@ -223,7 +223,7 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
             />
           </div>
 
-          <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '10px', marginTop: '24px' }}>
+          <div className="modal-footer">
             <button type="button" className="btn btn-secondary" onClick={onClose}>
               取消
             </button>

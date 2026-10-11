@@ -170,7 +170,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup }
             控制每日從待學庫存中自動推薦的新單字上限，以及目標記憶保持率：
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '12px' }}>
+          <div className="settings-grid-2">
             <div>
               <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', display: 'block', marginBottom: '4px' }}>
                 每日新詞配額 (字/天)

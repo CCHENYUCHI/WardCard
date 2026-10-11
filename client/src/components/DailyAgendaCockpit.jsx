@@ -286,14 +286,7 @@ export default function DailyAgendaCockpit({
       </div>
 
       {/* Curriculum Track Section */}
-      <div style={{
-        background: '#ffffff',
-        border: '1px solid var(--border-color)',
-        borderRadius: 'var(--radius-xl)',
-        padding: '20px 24px',
-        marginBottom: '20px',
-        boxShadow: 'var(--shadow-card)'
-      }}>
+      <div className="surface-card cockpit-section" style={{ marginBottom: '20px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px', flexWrap: 'wrap', gap: '10px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Target size={18} color="var(--google-blue)" />
@@ -442,19 +435,13 @@ export default function DailyAgendaCockpit({
       </div>
 
       {/* 5-Stage Distribution & Inbox Quick Action */}
-      <div style={{ 
+      <div className="cockpit-bottom-grid" style={{ 
         display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+        gridTemplateColumns: 'repeat(auto-fit, minmax(min(300px, 100%), 1fr))', 
         gap: '20px' 
       }}>
         {/* Stage Mastery Ladder */}
-        <div style={{
-          background: '#ffffff',
-          border: '1px solid var(--border-color)',
-          borderRadius: 'var(--radius-xl)',
-          padding: '20px 24px',
-          boxShadow: 'var(--shadow-card)'
-        }}>
+        <div className="surface-card">
           <h3 style={{ fontSize: '1.05rem', fontWeight: 700, margin: '0 0 14px 0', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
             <Layers size={18} color="var(--google-blue)" />
             <span>五階熟練梯</span>
@@ -507,12 +494,7 @@ export default function DailyAgendaCockpit({
         </div>
 
         {/* Inbox Triage & Quick Access */}
-        <div style={{
-          background: '#ffffff',
-          border: '1px solid var(--border-color)',
-          borderRadius: 'var(--radius-xl)',
-          padding: '20px 24px',
-          boxShadow: 'var(--shadow-card)',
+        <div className="surface-card" style={{
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between'
