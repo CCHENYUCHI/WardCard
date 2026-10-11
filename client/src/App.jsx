@@ -220,6 +220,7 @@ export default function App() {
               <AdaptiveStudySession
                 sessionPlan={sessionPlan}
                 onReviewCard={handleReview}
+                cardPool={cards}
                 onExitSession={() => {
                   setActiveTab('agenda');
                   setSessionPlan(null);
