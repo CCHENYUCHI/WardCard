@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { 
   Volume2, RotateCw, CheckCircle2, ArrowRight, Lightbulb, 
   HelpCircle, Sparkles, Check, X, ArrowLeft, Trophy, Flame
@@ -7,24 +7,20 @@ import confetti from 'canvas-confetti';
 import { playSpanishPronunciation } from '../utils/speech';
 import { shuffleArray } from '../utils/shuffle';
 import ProgressRing from './ProgressRing';
+import {
+  stripArticle, normalizeAnswer, getAcceptableAnswers,
+  findInflectedForms, maskSentence, displayWord, pickDistractors
+} from '../utils/spanish';
 
 const SPANISH_SPECIAL_KEYS = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ', '¿', '¡'];
-
-const stripArticle = (str) => {
-  if (!str) return '';
-  const articles = ['el ', 'la ', 'los ', 'las ', 'un ', 'una ', 'unos ', 'unas '];
-  for (let article of articles) {
-    if (str.toLowerCase().startsWith(article)) {
-      return str.substring(article.length).trim();
-    }
-  }
-  return str.trim();
-};
+// Stage 5 multiple choice: a correct answer within this time counts as Easy
+const FAST_ANSWER_MS = 3000;
 
 export default function AdaptiveStudySession({ 
   sessionPlan, 
   onReviewCard, 
-  onExitSession 
+  onExitSession,
+  cardPool = []
 }) {
   // Flatten session queue: urgent first, then regular due, then new cards
   const [queue, setQueue] = useState([]);
@@ -40,6 +36,11 @@ export default function AdaptiveStudySession({
   const isPractice = sessionPlan.mode === 'practice';
 
   const inputRef = useRef(null);
+  const questionStartRef = useRef(Date.now());
+  // Read through a ref so refetching the library after each rating doesn't reshuffle the options
+  const cardPoolRef = useRef(cardPool);
+  cardPoolRef.current = cardPool;
+  const [chosenIndex, setChosenIndex] = useState(null);
 
   useEffect(() => {
     const list = [
@@ -58,21 +59,49 @@ export default function AdaptiveStudySession({
   const currentCard = queue[currentIndex];
   const stage = currentCard ? (Number(currentCard.mastery_stage) || 1) : 1;
 
-  // Auto-focus input when in Stage 3 or 4
+  // Forms of the word found in the example sentence; empty means Stage 4 has nothing to blank out
+  const clozeForms = useMemo(
+    () => (currentCard ? findInflectedForms(currentCard.example_es, currentCard) : []),
+    [currentCard]
+  );
+
+  // Stage 5 options: the card plus 3 distractors from the user's own library (no AI needed)
+  const choiceOptions = useMemo(() => {
+    if (!currentCard || stage < 5) return null;
+    const distractors = pickDistractors(currentCard, cardPoolRef.current, 3);
+    if (distractors.length < 3) return null;
+    const options = [currentCard, ...distractors].map(c => ({ id: c.id, label: displayWord(c), correct: c.id === currentCard.id }));
+    for (let i = options.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [options[i], options[j]] = [options[j], options[i]];
+    }
+    return options;
+  }, [currentCard, stage]);
+
+  // What the current card actually shows, with fallbacks when the data for a stage is missing
+  const mode = stage === 1 ? 'recognition'
+    : stage === 2 ? 'cued'
+    : stage === 3 ? 'spelling'
+    : stage === 4 ? (clozeForms.length > 0 ? 'cloze' : 'spelling')
+    : (choiceOptions ? 'choice' : 'fluent');
+  const isTypingMode = mode === 'spelling' || mode === 'cloze';
+
+  // Auto-focus input when typing an answer
   useEffect(() => {
     setIsFlipped(false);
     setShowHint(false);
     setUserInput('');
     setSpellingStatus('typing');
+    setChosenIndex(null);
+    questionStartRef.current = Date.now();
+  }, [currentIndex]);
 
-    if (currentCard && (stage === 1 || stage === 2)) {
-      // Auto play audio in Stage 1 only after flip
-    }
-
-    if ((stage === 3 || stage === 4) && inputRef.current) {
+  // Focus once the input is enabled again: during the card switch it is still disabled from the last answer
+  useEffect(() => {
+    if (isTypingMode && spellingStatus === 'typing' && inputRef.current) {
       inputRef.current.focus();
     }
-  }, [currentIndex, stage]);
+  }, [currentIndex, isTypingMode, spellingStatus]);
 
   const handleFlip = useCallback(() => {
     setIsFlipped(prev => {
@@ -115,50 +144,45 @@ export default function AdaptiveStudySession({
   }, [currentCard, currentIndex, queue.length, onReviewCard, stage]);
 
   // Handle spelling / cloze submission for Stage 3 & 4
-  const handleCheckSpelling = () => {
+  const handleCheckSpelling = useCallback(() => {
     if (!currentCard) return;
-    const cleanUser = userInput.trim().toLowerCase();
-    if (!cleanUser) return;
+    const typed = normalizeAnswer(userInput);
+    if (!typed) return;
 
-    const cleanWord = currentCard.word.trim().toLowerCase();
-    const cleanNoArt = stripArticle(cleanWord).toLowerCase();
+    const accepted = new Set(getAcceptableAnswers(currentCard.word));
+    // In the cloze, the form used in the sentence (e.g. "hablamos") is also correct
+    if (mode === 'cloze') clozeForms.forEach(f => accepted.add(normalizeAnswer(f)));
+    const isMatch = accepted.has(typed) || accepted.has(normalizeAnswer(stripArticle(typed)));
 
-    // Check all sub-parts (e.g. from 'Alemania / alemán, alemana')
-    const parts = currentCard.word.split(/[\/,]/).map(p => stripArticle(p).trim().toLowerCase()).filter(Boolean);
-
-    // Also check what word in example_es was masked (if any)
-    let maskedMatches = [];
-    if (currentCard.example_es) {
-      for (const p of parts) {
-        if (p.length >= 2) {
-          const escaped = p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-          const regex = new RegExp(`\\b${escaped}\\w*`, 'gi');
-          const found = currentCard.example_es.match(regex);
-          if (found) {
-            maskedMatches.push(...found.map(m => m.toLowerCase()));
-          }
-        }
-      }
-    }
-
-    const isMatch = 
-      cleanUser === cleanWord || 
-      cleanUser === cleanNoArt || 
-      parts.includes(cleanUser) || 
-      maskedMatches.includes(cleanUser);
-
+    playSpanishPronunciation(displayWord(currentCard));
     if (isMatch) {
       setSpellingStatus('correct');
-      playSpanishPronunciation(currentCard.article ? `${currentCard.article} ${currentCard.word}` : currentCard.word);
       setTimeout(() => {
         handleRate(3); // Grade Good
       }, 700);
     } else {
       setSpellingStatus('incorrect');
       setIsFlipped(true); // Reveal answer
-      playSpanishPronunciation(currentCard.article ? `${currentCard.article} ${currentCard.word}` : currentCard.word);
     }
-  };
+  }, [currentCard, userInput, mode, clozeForms, handleRate]);
+
+  // Stage 5 multiple choice: fast correct = Easy, slow correct = Good, wrong = reveal and self-rate
+  const handleChoose = useCallback((index) => {
+    if (!choiceOptions || spellingStatus !== 'typing' || !choiceOptions[index]) return;
+    setChosenIndex(index);
+    playSpanishPronunciation(displayWord(currentCard));
+    if (choiceOptions[index].correct) {
+      const elapsed = Date.now() - questionStartRef.current;
+      setSpellingStatus('correct');
+      setIsFlipped(true);
+      setTimeout(() => {
+        handleRate(elapsed <= FAST_ANSWER_MS ? 4 : 3);
+      }, 900);
+    } else {
+      setSpellingStatus('incorrect');
+      setIsFlipped(true);
+    }
+  }, [choiceOptions, spellingStatus, currentCard, handleRate]);
 
   const handleInsertChar = (char) => {
     if (!inputRef.current) return;
@@ -180,12 +204,21 @@ export default function AdaptiveStudySession({
 
       // When typing in input field, don't trigger space / 1-4 shortcuts
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
-        if (e.key === 'Enter' && (stage === 3 || stage === 4) && spellingStatus === 'typing') {
+        if (e.key === 'Enter' && isTypingMode && spellingStatus === 'typing') {
           e.preventDefault();
           handleCheckSpelling();
         }
         return;
       }
+
+      // Stage 5: before answering, 1-4 pick an option and Space must not reveal the answer
+      if (mode === 'choice' && spellingStatus === 'typing') {
+        if (['1', '2', '3', '4'].includes(e.key)) handleChoose(Number(e.key) - 1);
+        if (e.code === 'Space') e.preventDefault();
+        return;
+      }
+      // A correct choice rates itself automatically
+      if (mode === 'choice' && spellingStatus === 'correct') return;
 
       if (e.code === 'Space') {
         e.preventDefault();
@@ -200,7 +233,7 @@ export default function AdaptiveStudySession({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isFlipped, spellingStatus, isFinished, stage, handleFlip, handleRate]);
+  }, [isFlipped, spellingStatus, isFinished, mode, isTypingMode, handleFlip, handleRate, handleCheckSpelling, handleChoose]);
 
   if (isFinished) {
     const t = todayProgress;
@@ -278,23 +311,8 @@ export default function AdaptiveStudySession({
 
   if (!currentCard) return null;
 
-  // Mask example sentence for Stage 2 & 4
-  const maskWord = (sentence, word) => {
-    if (!sentence || !word) return sentence;
-    const parts = word.split(/[\/,]/).map(p => stripArticle(p).trim()).filter(Boolean);
-    let result = sentence;
-    for (const p of parts) {
-      if (p.length >= 2) {
-        const escaped = p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const regex = new RegExp(`\\b${escaped}\\w*`, 'gi');
-        result = result.replace(regex, '【 ______ 】');
-      }
-    }
-    return result;
-  };
-
   const getStageHeader = () => {
-    switch (stage) {
+    switch (Math.min(stage, 5)) {
       case 1:
         return { label: 'Stage 1: 被動辨認', desc: '看西語，在腦海中回想中文意義與發音', color: '#f59e0b' };
       case 2:
@@ -304,7 +322,7 @@ export default function AdaptiveStudySession({
       case 4:
         return { label: 'Stage 4: 語境克漏字', desc: '掌握完整句型語意與詞形變位', color: '#137333' };
       case 5:
-        return { label: 'Stage 5: 長效精通', desc: '直覺極速反應，鞏固長期神經記憶', color: '#8430ce' };
+        return { label: mode === 'choice' ? 'Stage 5: 語境四選一' : 'Stage 5: 長效精通', desc: '直覺極速反應，鞏固長期神經記憶', color: '#8430ce' };
       default:
         return { label: '自適應練習', desc: '', color: '#3b82f6' };
     }
@@ -363,7 +381,7 @@ export default function AdaptiveStudySession({
       <div className="study-card">
 
         {/* --- STAGE 1: Recognition (西語 -> 中文) --- */}
-        {stage === 1 && (
+        {mode === 'recognition' && (
           <div>
             <div style={{ textAlign: 'center', margin: '20px 0 30px 0' }}>
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', marginBottom: '12px', flexWrap: 'wrap' }}>
@@ -435,7 +453,7 @@ export default function AdaptiveStudySession({
         )}
 
         {/* --- STAGE 2: Cued Recall (中文 -> 主動回想西語) --- */}
-        {stage === 2 && (
+        {mode === 'cued' && (
           <div>
             <div style={{ textAlign: 'center', margin: '16px 0 24px 0' }}>
               <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--google-blue)', marginBottom: '10px' }}>
@@ -457,7 +475,7 @@ export default function AdaptiveStudySession({
                 textAlign: 'center'
               }}>
                 <div style={{ fontSize: '1.05rem', color: 'var(--text-primary)', fontStyle: 'italic', marginBottom: '6px' }}>
-                  "{isFlipped ? currentCard.example_es : maskWord(currentCard.example_es, currentCard.word)}"
+                  "{isFlipped ? currentCard.example_es : maskSentence(currentCard.example_es, currentCard)}"
                 </div>
                 {currentCard.example_zh && (
                   <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
@@ -517,8 +535,13 @@ export default function AdaptiveStudySession({
         )}
 
         {/* --- STAGE 3: Spelling (盲測精確拼寫) --- */}
-        {stage === 3 && (
+        {mode === 'spelling' && (
           <div>
+            {stage === 4 && (
+              <div style={{ textAlign: 'center', fontSize: '0.78rem', color: 'var(--text-muted)', marginBottom: '8px' }}>
+                此卡沒有可用的例句，改為拼字練習
+              </div>
+            )}
             <div style={{ textAlign: 'center', marginBottom: '20px' }}>
               <div style={{ fontSize: '1.6rem', fontWeight: 700, color: 'var(--google-blue)', marginBottom: '8px' }}>
                 {currentCard.translation}
@@ -604,7 +627,7 @@ export default function AdaptiveStudySession({
         )}
 
         {/* --- STAGE 4: Contextual Cloze (語境克漏字填空) --- */}
-        {stage === 4 && (
+        {mode === 'cloze' && (
           <div>
             <div style={{ textAlign: 'center', marginBottom: '16px' }}>
               <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--google-blue)', marginTop: '8px' }}>
@@ -632,7 +655,7 @@ export default function AdaptiveStudySession({
               <div style={{ fontSize: '1.25rem', color: 'var(--text-primary)', fontStyle: 'italic', lineHeight: 1.6 }}>
                 "{spellingStatus === 'correct' || isFlipped
                   ? currentCard.example_es 
-                  : maskWord(currentCard.example_es, currentCard.word)}"
+                  : maskSentence(currentCard.example_es, currentCard)}"
               </div>
               {currentCard.example_zh && (
                 <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '10px' }}>
@@ -748,8 +771,85 @@ export default function AdaptiveStudySession({
           </div>
         )}
 
-        {/* --- STAGE 5: Fluent Mastery (長效精通極速驗證) --- */}
-        {stage >= 5 && (
+        {/* --- STAGE 5: Contextual multiple choice (語境四選一, distractors from the user's own library) --- */}
+        {mode === 'choice' && (
+          <div>
+            <div style={{ textAlign: 'center', marginBottom: '16px' }}>
+              <div style={{
+                display: 'inline-flex', alignItems: 'center', gap: '6px',
+                background: '#f6e8ff', color: '#8430ce', border: '1px solid #d7aefb',
+                padding: '4px 14px', borderRadius: '16px', fontSize: '0.82rem', fontWeight: 700
+              }}>
+                <Trophy size={14} />
+                <span>Stage 5 · 語境四選一</span>
+              </div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '6px' }}>
+                {clozeForms.length > 0 ? '⚡ 選出填入空格的單字（可按 1–4）' : '⚡ 選出符合中文意思的西語單字（可按 1–4）'}
+              </div>
+            </div>
+
+            {clozeForms.length > 0 ? (
+              <div style={{
+                background: '#f8f9fa', border: '1px solid var(--border-color)', padding: '18px 22px',
+                borderRadius: 'var(--radius-lg)', textAlign: 'center', marginBottom: '18px'
+              }}>
+                <div style={{ fontSize: '1.2rem', color: 'var(--text-primary)', fontStyle: 'italic', lineHeight: 1.6 }}>
+                  "{spellingStatus === 'typing' ? maskSentence(currentCard.example_es, currentCard) : currentCard.example_es}"
+                </div>
+                {currentCard.example_zh && (
+                  <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '8px' }}>
+                    {currentCard.example_zh}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div style={{ textAlign: 'center', fontSize: '1.6rem', fontWeight: 700, color: 'var(--google-blue)', margin: '8px 0 20px' }}>
+                {currentCard.translation}
+              </div>
+            )}
+
+            <div className="study-choice-grid">
+              {choiceOptions.map((option, idx) => {
+                const answered = spellingStatus !== 'typing';
+                const state = !answered ? 'idle'
+                  : option.correct ? 'correct'
+                  : idx === chosenIndex ? 'wrong'
+                  : 'muted';
+                return (
+                  <button
+                    key={option.id}
+                    type="button"
+                    className={`study-choice is-${state}`}
+                    onClick={() => handleChoose(idx)}
+                    disabled={answered}
+                  >
+                    <span className="study-choice-key">{idx + 1}</span>
+                    <span>{option.label}</span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {spellingStatus !== 'typing' && (
+              <div style={{ textAlign: 'center', marginTop: '16px', animation: 'fadeIn 0.2s ease' }}>
+                <div style={{ fontSize: '0.88rem', fontWeight: 600, color: spellingStatus === 'correct' ? 'var(--google-green)' : 'var(--google-red)' }}>
+                  {spellingStatus === 'correct' ? '🎉 答對了！' : '答錯了，正確答案已標示為綠色'}
+                </div>
+                <div style={{ fontSize: '1.05rem', color: 'var(--text-primary)', marginTop: '6px' }}>
+                  {displayWord(currentCard)} · <span style={{ color: 'var(--google-blue)', fontWeight: 600 }}>{currentCard.translation}</span>
+                </div>
+                {spellingStatus === 'incorrect' && currentCard.notes && (
+                  <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginTop: '6px', whiteSpace: 'pre-line' }}>
+                    💡 {currentCard.notes}
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* --- STAGE 5 fallback: Fluent Mastery self-check (used when the library is too small for options) --- */}
+        {mode === 'fluent' && (
           <div>
             <div style={{ textAlign: 'center', marginBottom: '16px' }}>
               <div style={{ 
@@ -832,7 +932,7 @@ export default function AdaptiveStudySession({
         )}
 
         {/* Bottom Rating Bar (Triggered when flipped or incorrect in Stage 3) */}
-        {(isFlipped || spellingStatus === 'incorrect' || (stage === 1 && isFlipped)) ? (
+        {(isFlipped || spellingStatus === 'incorrect') && !(mode === 'choice' && spellingStatus === 'correct') ? (
           <div className="study-rating-grid">
             <button
               onClick={() => handleRate(1)}
@@ -883,7 +983,7 @@ export default function AdaptiveStudySession({
             </button>
           </div>
         ) : (
-          (stage === 1 || stage === 2) && (
+          (mode === 'recognition' || mode === 'cued') && (
             <div style={{ textAlign: 'center', marginTop: '20px' }}>
               <button
                 onClick={handleFlip}

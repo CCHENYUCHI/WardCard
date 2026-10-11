@@ -3,59 +3,7 @@ import { Volume2, Check, X, ArrowRight, RotateCw, Filter, Eye, Shuffle } from 'l
 import confetti from 'canvas-confetti';
 import { playSpanishPronunciation } from '../utils/speech';
 import { shuffleArray } from '../utils/shuffle';
-
-const stripArticle = (str) => {
-  const articles = ['el ', 'la ', 'los ', 'las ', 'un ', 'una ', 'unos ', 'unas '];
-  for (let article of articles) {
-    if (str.startsWith(article)) {
-      return str.substring(article.length).trim();
-    }
-  }
-  return str;
-};
-
-// Handle cases like "bonito/a", "profesor/a", "niño(a)", and "el profesor / la profesora"
-const getAcceptableAnswers = (word) => {
-  const lowercaseWord = word.toLowerCase().trim();
-  const answers = [lowercaseWord, stripArticle(lowercaseWord)];
-
-  // Case 1: Split by "/" if it looks like two full words e.g., "el profesor / la profesora" or "chico/chica"
-  // but NOT if it's just "bonito/a".
-  const slashParts = lowercaseWord.split('/');
-  if (slashParts.length > 1) {
-    if (slashParts[1].trim() === 'a') {
-      // It's the "bonito/a" or "trabajador/a" shorthand case
-      const base = stripArticle(slashParts[0].trim());
-      answers.push(base);
-      if (base.endsWith('o')) {
-        answers.push(base.slice(0, -1) + 'a'); // bonito -> bonita
-      } else {
-        answers.push(base + 'a'); // trabajador -> trabajadora
-      }
-    } else {
-      // It's the "el profesor / la profesora" case
-      for (let part of slashParts) {
-        const p = part.trim();
-        answers.push(p);
-        answers.push(stripArticle(p));
-      }
-    }
-  }
-
-  // Case 2: Parentheses e.g. "niño(a)" or "profesor(a)"
-  const parenMatch = lowercaseWord.match(/^(.*?)\(a\)$/);
-  if (parenMatch) {
-    const base = stripArticle(parenMatch[1].trim());
-    answers.push(base);
-    if (base.endsWith('o')) {
-      answers.push(base.slice(0, -1) + 'a');
-    } else {
-      answers.push(base + 'a');
-    }
-  }
-
-  return answers;
-};
+import { stripArticle, normalizeAnswer, getAcceptableAnswers } from '../utils/spanish';
 
 export default function SpellingReview({ allCards, dueCards, onReview, categories, onRefresh }) {
   const [quizCards, setQuizCards] = useState([]);
@@ -105,7 +53,7 @@ export default function SpellingReview({ allCards, dueCards, onReview, categorie
     }
 
     const rawInput = userInput.trim().toLowerCase();
-    const inputStripped = stripArticle(rawInput);
+    const inputStripped = normalizeAnswer(stripArticle(rawInput));
     
     // Get all valid variations for the target word
     const validAnswers = getAcceptableAnswers(targetWord);
