@@ -10,6 +10,7 @@
 - **延伸功能規劃改為省額度優先版 (`開發進度/AI功能延伸規劃.md`)**：C0–C5 改為 D0–D6；S5 四選一、答錯提示、字典等改以本機邏輯為主，AI 只在必要時按需使用；圖片改為上傳、不做 AI 生圖；只做 Web。
 
 ### Added
+- **S5 語境四選一 (`AdaptiveStudySession.jsx`)**：Stage 5 從「看單字自評」改為四選一。有例句時挖空例句選詞，沒有例句時看中文選西語；3 個干擾選項取自自己的單字庫（同詞性同分類優先），**不使用 AI**。3 秒內答對自動評「熟練」、超過 3 秒評「記得」、答錯標出正解後自行評分；作答前按 1–4 選答案。單字庫不足 3 個干擾選項時退回原本的自評畫面。
 - **每日任務與學習紀錄 (Daily Progress & Streak)**：讓使用者清楚知道「今天要做什麼、做了多少、哪些是多出來的練習」。
   - **今日任務卡 (`TodayProgressCard.jsx`)**：取代駕駛艙舊的橫幅與三柱指標；顯示日期、進度圓環（已完成 / 今日目標）、狀態文案（還差 N 個 / 今日目標達成）、今天的練習時段，並註明「每天 00:00 重新計算」。
   - **任務拆分**：到期複習、新單字（受每日上限限制）、加練三格分開統計，各有進度條。
@@ -30,12 +31,17 @@
 - **AI 一鍵校準 DELE 級數入口 (`SettingsModal.jsx`)**：後端既有的 `/api/cards/calibrate-dele` 終於有前端按鈕，校準後自動重新載入單字庫。
 
 ### Changed
+- **西語比對工具共用 (`client/src/utils/spanish.js`)**：`stripArticle`、`getAcceptableAnswers`、`maskSentence`、`findInflectedForms`、`pickDistractors` 等，供自適應學習與拼字測驗共用。
 - **Gemini 呼叫層重構 (`server/ai.js`)**：抽出共用 `callGemini()`，改用 Node 內建 `fetch`、`responseSchema` 強制 JSON 結構；API Key 改放在 `x-goog-api-key` header（不再出現在網址與 log 中）。
 - **冠詞拆分邏輯共用 (`server/cardUtils.js`)**：新增 `splitArticle()`，手動新增、CSV 匯入與 AI 萃取共用同一份邏輯。
 - **Web `fetchAPI` 自動帶 Gemini Key**：localStorage 有 Key 時自動加上 `x-gemini-key` header；AI 照片上傳前先在瀏覽器壓縮至長邊 1600px。
 - **Mobile `API_URL` 統一 (`mobile/src/constants/api.ts`)**：取代 7 個畫面各自寫死的網址。
 
 ### Fixed
+- **Stage 3/4 按 Enter 無法送出**：鍵盤事件讀到舊的空白輸入，改用 `useCallback` 並補上依賴。
+- **換下一張卡時輸入框沒有自動聚焦**：聚焦時輸入框仍是停用狀態，改為狀態重設後再聚焦，桌面可以全程只用鍵盤作答。
+- **帶重音 / ñ 的單字遮字與比對錯誤**：原本的 `\b...\w*` 只認 ASCII，`árbol` 遮不到、`ana` 會誤中 `mañana`；改用 Unicode 比對，並能找到變化形（hablamos、alta、problemas）。
+- **沒有例句的 S4 卡片沒有空格可填**：改為拼字練習並提示。
 - **複習過的單字當天又出現 / 不知道凌晨複習算哪一天 (`server/fsrs.js`, `server/time.js`)**：
   - **到期時間時區錯誤**：FSRS 用 `toISOString()` 寫入 UTC 時間，但其他時間都是本地時間，導致在 UTC+8 時單字提早 8 小時到期（例如凌晨 1 點複習、間隔 1 天的單字，當天下午 5 點又出現）。改為寫入本地時間，並在啟動時一次性修復已偏移的到期日（`PRAGMA user_version = 1`）。
   - **固定換日時間**：「今天」統一定義為本地 00:00～24:00（`TZ` 環境變數，預設 `Asia/Taipei`）；到期判斷改為「今天結束前到期」，任務數量不再隨時間一直變化。Docker 映像加裝 `tzdata`，啟動時印出目前時區與時間。
