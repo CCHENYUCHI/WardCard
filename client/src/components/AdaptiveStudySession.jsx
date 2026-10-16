@@ -7,6 +7,7 @@ import confetti from 'canvas-confetti';
 import { playSpanishPronunciation } from '../utils/speech';
 import { shuffleArray } from '../utils/shuffle';
 import ProgressRing from './ProgressRing';
+import TappableSentence from './TappableSentence';
 import {
   stripArticle, normalizeAnswer, getAcceptableAnswers,
   findInflectedForms, maskSentence, displayWord, pickDistractors
@@ -435,7 +436,7 @@ export default function AdaptiveStudySession({
                     fontStyle: 'italic',
                     marginBottom: '6px'
                   }}>
-                    "{currentCard.example_es}"
+                    "<TappableSentence sentence={currentCard.example_es} fullSentence={currentCard.example_es} exampleZh={currentCard.example_zh} />"
                   </div>
                 )}
                 {currentCard.example_zh && (
@@ -475,7 +476,7 @@ export default function AdaptiveStudySession({
                 textAlign: 'center'
               }}>
                 <div style={{ fontSize: '1.05rem', color: 'var(--text-primary)', fontStyle: 'italic', marginBottom: '6px' }}>
-                  "{isFlipped ? currentCard.example_es : maskSentence(currentCard.example_es, currentCard)}"
+                  "<TappableSentence sentence={isFlipped ? currentCard.example_es : maskSentence(currentCard.example_es, currentCard)} fullSentence={currentCard.example_es} exampleZh={currentCard.example_zh} />"
                 </div>
                 {currentCard.example_zh && (
                   <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
@@ -653,9 +654,13 @@ export default function AdaptiveStudySession({
               transition: 'all 0.2s ease'
             }}>
               <div style={{ fontSize: '1.25rem', color: 'var(--text-primary)', fontStyle: 'italic', lineHeight: 1.6 }}>
-                "{spellingStatus === 'correct' || isFlipped
-                  ? currentCard.example_es 
-                  : maskSentence(currentCard.example_es, currentCard)}"
+                "<TappableSentence
+                  sentence={spellingStatus === 'correct' || isFlipped
+                    ? currentCard.example_es
+                    : maskSentence(currentCard.example_es, currentCard)}
+                  fullSentence={currentCard.example_es}
+                  exampleZh={currentCard.example_zh}
+                />"
               </div>
               {currentCard.example_zh && (
                 <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '10px' }}>
@@ -794,7 +799,7 @@ export default function AdaptiveStudySession({
                 borderRadius: 'var(--radius-lg)', textAlign: 'center', marginBottom: '18px'
               }}>
                 <div style={{ fontSize: '1.2rem', color: 'var(--text-primary)', fontStyle: 'italic', lineHeight: 1.6 }}>
-                  "{spellingStatus === 'typing' ? maskSentence(currentCard.example_es, currentCard) : currentCard.example_es}"
+                  "<TappableSentence sentence={spellingStatus === 'typing' ? maskSentence(currentCard.example_es, currentCard) : currentCard.example_es} fullSentence={currentCard.example_es} exampleZh={currentCard.example_zh} />"
                 </div>
                 {currentCard.example_zh && (
                   <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '8px' }}>
@@ -902,7 +907,7 @@ export default function AdaptiveStudySession({
                 fontStyle: 'italic',
                 color: 'var(--text-primary)'
               }}>
-                "{currentCard.example_es}"
+                "<TappableSentence sentence={currentCard.example_es} fullSentence={currentCard.example_es} exampleZh={currentCard.example_zh} />"
               </div>
             )}
 

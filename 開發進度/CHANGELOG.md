@@ -10,6 +10,17 @@
 - **延伸功能規劃改為省額度優先版 (`開發進度/AI功能延伸規劃.md`)**：C0–C5 改為 D0–D6；S5 四選一、答錯提示、字典等改以本機邏輯為主，AI 只在必要時按需使用；圖片改為上傳、不做 AI 生圖；只做 Web。
 
 ### Added
+- **例句點字查詢 (Duolingo 式) + 字典查詞 (D3)**：兩者共用同一套查詞引擎，**本機優先、AI 只在按下時才用**。
+  - **點例句裡的單字 (`TappableSentence.jsx`)**：每日複習五個階段的例句都可以點字，跳出原形、中文、用法與英文釋義；桌面是錨定在字下方的小視窗，手機是底部 Bottom Sheet。挖空的答案不能點（不會洩漏答案）；點字不會翻卡；視窗開著時 Space / Enter / 1–4 不會評分，`Esc` 或點外面關閉。
+  - **離線西英字典 (`server/scripts/build-dictionary.js`, `server/dictionary.js`)**：由 kaikki.org（Wiktionary）資料建成約 90MB 的 SQLite，查詢時把變化形還原成原形（`fui` → ir / ser、`tuvieron` → tener、`bonitas` → bonito），忽略重音（`arbol` → árbol，但 `año` 優先於 `ano`）；文法標記自動翻成中文（「ir 的 第一人稱 單數 簡單過去式 陳述式」）。檔案不存在時自動略過。執行時只多約 1MB 記憶體。
+  - **我的單字庫比對**：透過原形比對自己的卡（`hablamos` → 我的 `hablar` 卡、`acostumbro` → `acostumbrarse`，支援 `bonito/a` 寫法）；輸入中文時搜尋卡片的中文釋義。
+  - **整句 AI 解析 (`POST /api/sentences/analyze`)**：查不到中文時按「✨ AI 解析這句」，用 flash-lite 一次解析整句每個字（原形、詞性、此句中的意思、時態人稱 / 搭配），**所有使用者共用永久快取**，之後點同句其他字都不再呼叫 AI。
+  - **AI 字典詞條 (`POST /api/dictionary/ai`)**：字典頁「用 AI 查中文」，沿用萃取的卡片格式與原形規則，同樣共用快取（變化形與原形共用一筆）。
+  - **加入單字庫（暫存箱）(`POST /api/dictionary/add`)**：一鍵加入 Inbox，優先用整句解析的結果（例句就是你遇到這個字的句子，不再多花 AI）；**已存在的卡完全不動**（不會把學習中的卡改回暫存箱）。
+  - **字典頁 (`DictionaryView.jsx`)**：取代原本的空殼；顯示我的單字、AI 詞條、Wiktionary 釋義與 WordReference / SpanishDict / RAE 連結。Navbar 桌面版新增「查詞」分頁，手機版在頂部列加查詞按鈕（底部列已滿）。
+  - **查詞 API (`GET /api/dictionary/lookup?q=&sentence=`)**：只查離線字典、單字庫與快取，**永遠不呼叫 AI**。
+  - **資料表**：`sentence_analyses`、`dictionary_cache`（不綁使用者與卡片，刪卡不需清理）。
+  - **測試**：新增 `npm test`（Node 內建 `node:test`，不裝套件），涵蓋字典建置、變化形還原、重音排序與單字庫比對。
 - **S5 語境四選一 (`AdaptiveStudySession.jsx`)**：Stage 5 從「看單字自評」改為四選一。有例句時挖空例句選詞，沒有例句時看中文選西語；3 個干擾選項取自自己的單字庫（同詞性同分類優先），**不使用 AI**。3 秒內答對自動評「熟練」、超過 3 秒評「記得」、答錯標出正解後自行評分；作答前按 1–4 選答案。單字庫不足 3 個干擾選項時退回原本的自評畫面。
 - **每日任務與學習紀錄 (Daily Progress & Streak)**：讓使用者清楚知道「今天要做什麼、做了多少、哪些是多出來的練習」。
   - **今日任務卡 (`TodayProgressCard.jsx`)**：取代駕駛艙舊的橫幅與三柱指標；顯示日期、進度圓環（已完成 / 今日目標）、狀態文案（還差 N 個 / 今日目標達成）、今天的練習時段，並註明「每天 00:00 重新計算」。

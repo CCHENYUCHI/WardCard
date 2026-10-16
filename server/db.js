@@ -177,6 +177,24 @@ function runMigrations() {
     SET curriculum_unit = category
     WHERE (curriculum_unit IS NULL OR curriculum_unit = '') AND category IS NOT NULL AND category != '';
   `);
+
+  // AI lookup caches, shared by all users and never tied to a card (nothing to clean up on delete)
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS sentence_analyses (
+      sentence_hash TEXT PRIMARY KEY,   -- sha1 of the whitespace-normalized sentence
+      sentence TEXT NOT NULL,
+      result TEXT NOT NULL,             -- JSON { translation_zh, tokens: [{ text, lemma, pos, zh, usage }] }
+      model TEXT,
+      created_at TEXT DEFAULT (datetime('now', 'localtime'))
+    );
+
+    CREATE TABLE IF NOT EXISTS dictionary_cache (
+      query_norm TEXT PRIMARY KEY,      -- normalizeWord(query)
+      result TEXT NOT NULL,             -- JSON card (normalizeAiCard shape)
+      model TEXT,
+      created_at TEXT DEFAULT (datetime('now', 'localtime'))
+    );
+  `);
 }
 
 runMigrations();

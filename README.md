@@ -49,6 +49,19 @@ npm start
 ```
 瀏覽器開啟：`http://localhost:3000`
 
+### 3. 建置離線字典（選用，查詞與例句點字用）
+字典頁與複習時「點例句裡的單字」會先查離線西英字典（Wiktionary），把變化形還原成原形（`fui` → ir / ser）並顯示英文釋義，**完全不花 AI 額度**。沒建置也能用，只是少了這一層。
+```bash
+# 下載 kaikki.org 的西語 Wiktionary 資料（約 1GB）
+curl -L -o /tmp/es.jsonl https://kaikki.org/dictionary/Spanish/kaikki.org-dictionary-Spanish.jsonl
+
+# 串流轉成精簡的 SQLite（約 90MB，輸出到 data/dict/es-en.sqlite，建置時記憶體約 130MB）
+npm run build:dict -- /tmp/es.jsonl
+rm /tmp/es.jsonl
+```
+- 檔案在 `data/` 底下（Docker 已掛載為 volume），不會進 Git；伺服器執行時只多約 1MB 記憶體。
+- 位置可用 `DICT_DB_PATH` 指定。資料授權：Wiktionary，CC BY-SA。
+
 ---
 
 ## ☁️ Oracle Cloud Free Tier 雲端部署教學

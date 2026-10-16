@@ -1522,6 +1522,15 @@ textarea {
     display: none !important;
   }
 
+  .navbar-btn-dictionary {
+    display: inline-flex !important;
+  }
+
+  .navbar-btn-dictionary.active {
+    color: var(--google-blue);
+    background: var(--google-blue-light);
+  }
+
   .navbar-actions {
     gap: 4px;
   }
@@ -2752,4 +2761,261 @@ textarea {
   .study-choice-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Mobile-only dictionary button in the top bar (desktop has the 查詞 tab) */
+.navbar-btn-dictionary {
+  display: none;
+}
+
+/* ==========================================================================
+   Tap-a-word popover & dictionary lookup (shared WordLookupPanel)
+   ========================================================================== */
+.tap-word {
+  cursor: pointer;
+  border-radius: 3px;
+  text-decoration: underline dotted transparent;
+  text-underline-offset: 4px;
+  transition: background 0.15s ease, text-decoration-color 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) {
+  .tap-word:hover {
+    text-decoration-color: var(--text-muted);
+  }
+}
+
+.tap-word.active {
+  background: var(--google-blue-light);
+  color: var(--google-blue);
+  text-decoration-color: transparent;
+}
+
+.word-popover {
+  position: fixed;
+  z-index: 1200;
+  width: min(320px, calc(100vw - 16px));
+  max-height: min(420px, 70vh);
+  overflow-y: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-modal);
+  padding: 14px 16px 12px;
+  font-style: normal;
+  text-align: left;
+  animation: fadeIn 0.15s ease;
+}
+
+.word-popover.is-sheet {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  max-height: 60vh;
+  border-radius: 16px 16px 0 0;
+  padding: 16px max(18px, var(--safe-right)) calc(16px + var(--safe-bottom)) max(18px, var(--safe-left));
+  animation: sheetUp 0.2s ease;
+}
+
+.word-popover-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.lookup-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.lookup-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-right: 28px;
+}
+
+.lookup-word {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.lookup-lemma {
+  color: var(--google-blue);
+  font-weight: 600;
+}
+
+.lookup-zh {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--google-blue);
+}
+
+.lookup-usage {
+  background: var(--google-yellow-light);
+  border-radius: var(--radius-md);
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.lookup-mycard,
+.lookup-ai-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--google-green-light);
+  border-radius: var(--radius-md);
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.lookup-mycard {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.lookup-ai-entry {
+  background: var(--google-blue-light);
+}
+
+.lookup-status {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  color: var(--google-green-hover);
+}
+
+.lookup-wikt {
+  border-top: 1px solid var(--border-color);
+  padding-top: 6px;
+}
+
+.lookup-pos {
+  margin-left: 6px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.lookup-via {
+  font-size: 0.8rem;
+  color: var(--google-yellow-dark);
+}
+
+.lookup-gloss,
+.lookup-sub {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.lookup-notes {
+  white-space: pre-line;
+}
+
+.lookup-example {
+  font-style: italic;
+}
+
+.lookup-error {
+  font-size: 0.82rem;
+  color: var(--google-red);
+}
+
+.lookup-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.lookup-actions:empty {
+  display: none;
+}
+
+.lookup-added {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.82rem;
+  color: var(--google-green);
+}
+
+.lookup-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 0.82rem;
+}
+
+.lookup-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--google-blue);
+  text-decoration: none;
+}
+
+.lookup-credit {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.lookup-spinner {
+  width: 20px;
+  height: 20px;
+}
+
+.dictionary-view {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.dictionary-search {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.dictionary-search input {
+  width: 100%;
+  padding: 12px 96px 12px 44px;
+  border-radius: 24px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-input);
+  font-size: 16px; /* avoids iOS zoom on focus */
+  color: var(--text-primary);
+}
+
+.dictionary-search input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+}
+
+.dictionary-search .search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.dictionary-search .btn {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 18px;
+}
+
+.dictionary-result {
+  padding: 18px 20px;
+}
+
+.dictionary-result .lookup-word {
+  font-size: 1.5rem;
 }

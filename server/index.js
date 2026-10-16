@@ -3,13 +3,15 @@ const { TODAY_END_SQL, timeZone } = require('./time'); // pins process TZ first
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const crypto = require('crypto');
 const multer = require('multer');
 const { parse } = require('csv-parse/sync');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('./db');
-const { extractSpanishWords, calibrateDeleLevels } = require('./ai');
-const { splitArticle } = require('./cardUtils');
+const { extractSpanishWords, calibrateDeleLevels, analyzeSentence, lookupWordAi } = require('./ai');
+const { splitArticle, normalizeWord } = require('./cardUtils');
+const { getDict, lookupForm, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
 const { reviewCardFSRS } = require('./fsrs');
 const { classifyReview, buildTodayPlan, getTodaySummary, getHistory, getPracticeCards } = require('./dailyProgress');
 
@@ -1118,6 +1120,148 @@ app.post('/api/cards/calibrate-dele', authenticateToken, async (req, res) => {
   } catch (err) {
     console.error('DELE Calibration Error:', err.message);
     res.status(err.status || 500).json({ error: err.message || 'DELE 自動校準失敗' });
+  }
+});
+
+// --- Dictionary & tap-a-word lookup ---
+
+const resolveApiKey = (req) => req.body?.apiKey || req.headers['x-gemini-key'] || process.env.GEMINI_API_KEY;
+const NO_KEY_ERROR = '未偵測到 Gemini API Key。請在頁面設定中填入您的 API Key，或在伺服端 .env 設定 GEMINI_API_KEY。';
+const sentenceHash = (s) => crypto.createHash('sha1').update(String(s).replace(/\s+/g, ' ').trim()).digest('hex');
+const getSentenceAnalysis = (sentence) => {
+  const row = db.prepare('SELECT result FROM sentence_analyses WHERE sentence_hash = ?').get(sentenceHash(sentence));
+  return row ? parseJson(row.result, null) : null;
+};
+const getCachedEntry = (query) => {
+  const row = db.prepare('SELECT result FROM dictionary_cache WHERE query_norm = ?').get(normalizeWord(query));
+  return row ? parseJson(row.result, null) : null;
+};
+
+// Lookup without AI: offline Wiktionary + the user's cards + AI caches
+app.get('/api/dictionary/lookup', authenticateToken, (req, res) => {
+  try {
+    const q = String(req.query.q || '').trim().slice(0, 80);
+    const sentence = String(req.query.sentence || '').trim().slice(0, 500);
+    if (!q) return res.status(400).json({ error: '請輸入要查的字' });
+
+    const wiktionary = hasLatin(q) ? lookupForm(q) : [];
+    const lemmas = wiktionary.map(i => i.lemma);
+    const myCards = findMyCards(db, req.user.userId, q, lemmas);
+
+    let context = null;
+    let translation_zh = '';
+    const analysis = sentence ? getSentenceAnalysis(sentence) : null;
+    if (analysis) {
+      const norm = normalizeWord(q);
+      context = analysis.tokens.find(t => normalizeWord(t.text) === norm) || null;
+      translation_zh = analysis.translation_zh || '';
+    }
+    const aiEntry = getCachedEntry(q) || (context?.lemma ? getCachedEntry(context.lemma) : null);
+
+    res.json({
+      query: q,
+      wiktionary,
+      myCards,
+      context,
+      translation_zh,
+      analyzed: Boolean(analysis),
+      aiEntry,
+      links: externalLinks(context?.lemma || lemmas[0] || q),
+      hasOfflineDictionary: Boolean(getDict())
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// AI word-by-word analysis of one sentence, cached forever and shared by all users
+app.post('/api/sentences/analyze', authenticateToken, async (req, res) => {
+  try {
+    const sentence = String(req.body.sentence || '').trim();
+    if (!sentence) return res.status(400).json({ error: '缺少句子' });
+    if (sentence.length > 500) return res.status(400).json({ error: '句子太長（上限 500 字）' });
+
+    const cached = getSentenceAnalysis(sentence);
+    if (cached) return res.json({ ...cached, cached: true });
+
+    const apiKey = resolveApiKey(req);
+    if (!apiKey) return res.status(400).json({ error: NO_KEY_ERROR });
+
+    const { result, model } = await analyzeSentence({ apiKey, sentence });
+    db.prepare('INSERT OR REPLACE INTO sentence_analyses (sentence_hash, sentence, result, model) VALUES (?, ?, ?, ?)')
+      .run(sentenceHash(sentence), sentence, JSON.stringify(result), model);
+    res.json({ ...result, cached: false });
+  } catch (err) {
+    console.error('Sentence Analyze Error:', err.message);
+    res.status(err.status || 500).json({ error: err.message || 'AI 解析失敗' });
+  }
+});
+
+// AI dictionary entry (Chinese meaning + full card fields), cached forever and shared
+app.post('/api/dictionary/ai', authenticateToken, async (req, res) => {
+  try {
+    const q = String(req.body.q || '').trim().slice(0, 80);
+    if (!q || !normalizeWord(q)) return res.status(400).json({ error: '請輸入要查的字' });
+
+    const cached = getCachedEntry(q);
+    if (cached) return res.json({ card: cached, cached: true });
+
+    const apiKey = resolveApiKey(req);
+    if (!apiKey) return res.status(400).json({ error: NO_KEY_ERROR });
+
+    const { card, model } = await lookupWordAi({ apiKey, word: q });
+    const save = db.prepare('INSERT OR REPLACE INTO dictionary_cache (query_norm, result, model) VALUES (?, ?, ?)');
+    save.run(normalizeWord(q), JSON.stringify(card), model);
+    // Also cache under the dictionary form, so "fui" and "ir" share one entry
+    if (normalizeWord(card.word) !== normalizeWord(q)) save.run(normalizeWord(card.word), JSON.stringify(card), model);
+    res.json({ card, cached: false });
+  } catch (err) {
+    console.error('Dictionary AI Error:', err.message);
+    res.status(err.status || 500).json({ error: err.message || 'AI 查詢失敗' });
+  }
+});
+
+// Quick add from the dictionary / popover into the Inbox. Never touches an existing card
+// (POST /api/cards would upsert and could demote an active card to inbox).
+app.post('/api/dictionary/add', authenticateToken, (req, res) => {
+  try {
+    const card = req.body || {};
+    const { word, article } = splitArticle(card.word, card.article);
+    const translation = String(card.translation || '').trim();
+    if (!word || !translation) return res.status(400).json({ error: '缺少單字或中文釋義' });
+
+    const userId = req.user.userId;
+    const category = card.category || '字典查詞';
+    const result = db.prepare(`
+      INSERT INTO cards (
+        user_id, word, article, gender, part_of_speech, translation, english_translation,
+        definition_es, example_es, example_zh, notes, category, dele_level,
+        lifecycle_status, curriculum_unit, due_date
+      )
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'inbox', ?, datetime('now', 'localtime'))
+      ON CONFLICT(user_id, word) DO NOTHING
+    `).run(
+      userId, word, article,
+      card.gender || 'none',
+      card.part_of_speech || 'sustantivo',
+      translation,
+      card.english_translation || '',
+      card.definition_es || '',
+      card.example_es || '',
+      card.example_zh || '',
+      card.notes || '',
+      category,
+      card.dele_level || 'A2',
+      category
+    );
+
+    if (result.changes > 0) {
+      return res.status(201).json({ created: true, id: Number(result.lastInsertRowid) });
+    }
+    const existing = db.prepare('SELECT id, lifecycle_status FROM cards WHERE user_id = ? AND word = ?').get(userId, word);
+    res.json({ created: false, id: existing?.id, lifecycle_status: existing?.lifecycle_status });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
   }
 });
 

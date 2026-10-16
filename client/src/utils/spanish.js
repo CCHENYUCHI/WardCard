@@ -115,6 +115,15 @@ export const maskSentence = (sentence, card) => {
   return sentence.replace(pattern, BLANK);
 };
 
+/**
+ * Split a sentence into tappable words and the text between them (spaces, punctuation, BLANK).
+ * "¿Vas al árbol?" -> [{text:'¿',isWord:false},{text:'Vas',isWord:true},{text:' ',isWord:false},...]
+ */
+export const tokenizeSentence = (sentence) => (sentence || '')
+  .split(/(\p{L}+)/u)
+  .filter(Boolean)
+  .map(text => ({ text, isWord: /^\p{L}+$/u.test(text) }));
+
 export const displayWord = (card) => (card?.article ? `${card.article} ${card.word}` : card?.word || '');
 
 /**

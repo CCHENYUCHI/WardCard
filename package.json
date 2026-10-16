@@ -9,7 +9,9 @@
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "build:client": "cd client && npm run build",
     "build": "npm run build:client",
-    "start": "NODE_ENV=production node server/index.js"
+    "start": "NODE_ENV=production node server/index.js",
+    "test": "node --test server/*.test.js",
+    "build:dict": "node server/scripts/build-dictionary.js"
   },
   "keywords": [
     "spanish",

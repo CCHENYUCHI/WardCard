@@ -319,6 +319,98 @@ async function extractSpanishWords({ promptText, apiKey, imageFile = null }) {
   return cards;
 }
 
+const SENTENCE_SCHEMA = {
+  type: 'OBJECT',
+  properties: {
+    translation_zh: { type: 'STRING' },
+    tokens: {
+      type: 'ARRAY',
+      items: {
+        type: 'OBJECT',
+        properties: {
+          text: { type: 'STRING' },
+          lemma: { type: 'STRING' },
+          pos: { type: 'STRING', enum: PARTS_OF_SPEECH },
+          zh: { type: 'STRING' },
+          usage: { type: 'STRING' }
+        },
+        required: ['text', 'lemma', 'pos', 'zh', 'usage']
+      }
+    }
+  },
+  required: ['translation_zh', 'tokens']
+};
+
+const SENTENCE_INSTRUCTION = `
+你是一位西班牙語老師，要幫台灣學生逐字解析一個西語句子，以 JSON 回傳。
+- tokens：依句中順序，每個西語單字一筆（略過標點）。
+  - text：必須和句中原文完全一致（含大小寫與重音）。
+  - lemma：原形（動詞用不定式、名詞用單數、形容詞用陽性單數）。
+  - pos：sustantivo / verbo / adjetivo / adverbio / frase / conjunción / preposición / pronombre / interjección（冠詞填 frase）。
+  - zh：這個字在本句中的繁體中文意思，簡短。
+  - usage：本句中的用法，40 字以內。動詞寫出時態與人稱（例如「ir 的簡單過去式，第一人稱單數」）；也可以寫固定搭配、片語或容易混淆的地方。屬於片語的字（例如 a pesar de）每個字各一筆，usage 註明是哪個片語。
+- translation_zh：整句自然的繁體中文翻譯。
+`;
+
+const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/**
+ * Word-by-word analysis of one sentence for the tap-a-word popover. Uses the cheaper model.
+ * Tokens whose text is not actually in the sentence are dropped.
+ */
+async function analyzeSentence({ apiKey, sentence }) {
+  const { data, usage, model } = await callGemini({
+    apiKey,
+    parts: [{ text: sentence }],
+    systemInstruction: SENTENCE_INSTRUCTION,
+    responseSchema: SENTENCE_SCHEMA,
+    model: getFallbackModel(),
+    fallbackModel: getPrimaryModel(),
+    timeoutMs: 30_000
+  });
+
+  const tokens = [];
+  for (const t of Array.isArray(data?.tokens) ? data.tokens : []) {
+    const text = str(t?.text);
+    if (!text || !new RegExp(`(?<!\\p{L})${escapeRegex(text)}(?!\\p{L})`, 'iu').test(sentence)) continue;
+    tokens.push({
+      text,
+      lemma: str(t.lemma) || text,
+      pos: pick(t.pos, PARTS_OF_SPEECH, 'frase'),
+      zh: str(t.zh),
+      usage: str(t.usage)
+    });
+  }
+  if (tokens.length === 0) {
+    throw new GeminiError('AI 解析結果不完整，請再試一次。', { status: 502 });
+  }
+  return { result: { translation_zh: str(data.translation_zh), tokens }, usage, model };
+}
+
+/**
+ * Dictionary entry for one word (or a Chinese meaning) as a ready-to-save card.
+ * Inflected input is reduced to its dictionary form by EXTRACT_INSTRUCTION's rules (fui -> ir).
+ */
+async function lookupWordAi({ apiKey, word }) {
+  const { data, usage, model } = await callGemini({
+    apiKey,
+    parts: [{
+      text: `請查字典，為這個詞輸出一張生詞卡（單一 JSON 物件）：「${word}」\n` +
+        '若是變化形，word 用原形，並在 notes 第一行註明「' + word + '」是哪個形式。若輸入是中文，給出最常用的對應西語詞。'
+    }],
+    systemInstruction: EXTRACT_INSTRUCTION,
+    responseSchema: CARD_SCHEMA,
+    model: getFallbackModel(),
+    fallbackModel: getPrimaryModel(),
+    timeoutMs: 30_000
+  });
+  const card = normalizeAiCard(Array.isArray(data) ? data[0] : data);
+  if (!card) {
+    throw new GeminiError(`AI 查不到「${word}」，請確認拼字。`, { status: 404 });
+  }
+  return { card, usage, model };
+}
+
 /**
  * Calibrate DELE/CEFR levels for a batch of Spanish words
  */
@@ -361,5 +453,7 @@ module.exports = {
   callGemini,
   normalizeAiCard,
   extractSpanishWords,
-  calibrateDeleLevels
+  calibrateDeleLevels,
+  analyzeSentence,
+  lookupWordAi
 };
