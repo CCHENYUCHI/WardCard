@@ -42,6 +42,7 @@
 - **AI 一鍵校準 DELE 級數入口 (`SettingsModal.jsx`)**：後端既有的 `/api/cards/calibrate-dele` 終於有前端按鈕，校準後自動重新載入單字庫。
 
 ### Changed
+- **`.dockerignore` 排除整個 `data/`**：資料庫與離線字典（約 90MB）由 volume 掛載，不再送進 Docker build context，避免每次重建都上傳。
 - **西語比對工具共用 (`client/src/utils/spanish.js`)**：`stripArticle`、`getAcceptableAnswers`、`maskSentence`、`findInflectedForms`、`pickDistractors` 等，供自適應學習與拼字測驗共用。
 - **Gemini 呼叫層重構 (`server/ai.js`)**：抽出共用 `callGemini()`，改用 Node 內建 `fetch`、`responseSchema` 強制 JSON 結構；API Key 改放在 `x-goog-api-key` header（不再出現在網址與 log 中）。
 - **冠詞拆分邏輯共用 (`server/cardUtils.js`)**：新增 `splitArticle()`，手動新增、CSV 匯入與 AI 萃取共用同一份邏輯。
