@@ -1,61 +1,46 @@
-import React from 'react';
-import { Search, Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { Search } from 'lucide-react';
+import WordLookupPanel from './WordLookupPanel';
 
 export default function DictionaryView() {
-  return (
-    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
-      <div className="glass-card" style={{ padding: '40px 32px', textAlign: 'center' }}>
-        <div style={{ marginBottom: '24px' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '64px', height: '64px', borderRadius: '50%', background: 'var(--google-blue-light)', color: 'var(--google-blue)', marginBottom: '16px' }}>
-            <Search size={32} />
-          </div>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--text-primary)' }}>AI 智慧字典 (開發中)</h2>
-          <p style={{ color: 'var(--text-secondary)', marginTop: '8px', maxWidth: '400px', margin: '8px auto', fontSize: '0.92rem' }}>
-            未來這裡將支援一鍵查詞。查不到的單字會自動呼叫 AI 翻譯並提供例句，還可以一鍵收錄到你的專屬字卡庫中！
-          </p>
-        </div>
+  const [input, setInput] = useState('');
+  const [query, setQuery] = useState('');
 
-        <div style={{ position: 'relative', maxWidth: '500px', margin: '0 auto' }}>
-          <input 
-            type="text" 
-            placeholder="Search a word... (即將推出)" 
-            disabled
-            style={{
-              width: '100%',
-              padding: '14px 24px',
-              paddingLeft: '48px',
-              borderRadius: '24px',
-              border: '1px solid var(--border-color)',
-              background: '#f1f3f4',
-              fontSize: '1rem',
-              color: 'var(--text-secondary)',
-              cursor: 'not-allowed'
-            }}
-          />
-          <Search size={20} style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
-          <button 
-            disabled
-            style={{
-              position: 'absolute',
-              right: '8px',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              background: 'var(--google-blue)',
-              color: 'white',
-              border: 'none',
-              padding: '8px 16px',
-              borderRadius: '16px',
-              cursor: 'not-allowed',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              opacity: 0.7
-            }}
-          >
-            <Sparkles size={16} /> 查詞
-          </button>
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const q = input.trim();
+    if (q) setQuery(q);
+  };
+
+  return (
+    <div className="dictionary-view">
+      <form className="dictionary-search" onSubmit={handleSubmit}>
+        <Search size={20} className="search-icon" />
+        <input
+          type="search"
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          placeholder="查西語單字或變化形（fui、hablamos），也可以輸入中文"
+          autoFocus
+          autoCapitalize="none"
+          autoCorrect="off"
+          spellCheck={false}
+          enterKeyHint="search"
+        />
+        <button type="submit" className="btn btn-primary btn-sm" disabled={!input.trim()}>查詞</button>
+      </form>
+
+      {query ? (
+        <div className="surface-card dictionary-result">
+          <WordLookupPanel key={query} word={query} />
         </div>
-      </div>
+      ) : (
+        <div style={{ textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.9rem', padding: '24px 12px', lineHeight: 1.7 }}>
+          先查你的單字庫與離線字典，不花 AI 額度。<br />
+          找不到中文時，再按「用 AI 查中文」，查過的字會快取起來。<br />
+          複習時也可以直接點例句裡的單字查詢。
+        </div>
+      )}
     </div>
   );
 }

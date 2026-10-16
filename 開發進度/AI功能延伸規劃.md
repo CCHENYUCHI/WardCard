@@ -39,7 +39,7 @@
 | **D0** | 學習流程前置修正 + **S5 四選一（本機出題）** | **0** |
 | **D1** | AI 用量紀錄與上限 | 0（只記錄） |
 | **D2** | S4 例句庫：萃取時順便生成；舊卡片手動批次補齊 | 萃取時幾乎不多花；補齊時約 25 張卡 1 次 |
-| **D3** | 字典：先查自己的單字庫和外部字典連結，AI 只在按下時才查 | 只有沒查到、又按了「用 AI 查」才花，查過的字會快取 |
+| **D3** ✅ | 字典 + 例句點字：離線 Wiktionary + 自己的單字庫，AI 只在按下時才查 | 只有按了「AI 解析這句 / 用 AI 查中文」才花，整句與單字都共用快取 |
 | **D4** | 答錯提示：本機判斷錯誤類型，AI 講解是選用 | 預設 0 |
 | **D5** | 每日短文（低優先） | 手動，一天最多 1 次 |
 | **D6** | 卡片圖片：**上傳自己的照片**，不做 AI 生圖 | 0 |
@@ -130,20 +130,24 @@ CREATE INDEX idx_card_examples_card ON card_examples(user_id, card_id);
 
 ---
 
-## D3. 字典查詞（分支 `feature/dictionary`）
+## D3. 字典查詞 + 例句點字查詢（分支 `feature/dictionary-word-lookup`，✅ 已完成 2026-10-16）
 
-1. **免費的部分先做**：
-   - Navbar 桌面版和手機版都加「查詞」入口（`Navbar.jsx` 已經 import `Search` 但沒用到）。手機底部列已經有 5 個，可能要改放到頂部按鈕區。
-   - `DictionaryView.jsx` 輸入後：
-     - 即時搜尋自己的單字庫（`word` / `translation` / `english_translation`，比對時忽略重音）；
-     - 結果下方固定顯示外部字典連結：WordReference、SpanishDict、RAE。**不用 AI 也查得到**。
-2. **AI 只在按下時才用**：自己的單字庫找不到時，顯示「✨ 用 AI 查並建卡」按鈕。
-   - `GET /api/dictionary/lookup?q=`：先查共用快取 `dictionary_cache(query_norm PRIMARY KEY, result, model, created_at)`，沒有才呼叫 flash-lite。
-   - 回傳格式沿用 `CARD_SCHEMA`（單一物件）並經過 `normalizeAiCard`，所以陰陽性、變化形式、原形動詞的規則都會一併套用；輸入是變化形（例如 `fui`）時還原成 `ir`。
-3. **收錄**：`WordModal.jsx` 加 `mode="create"`，讓帶入的資料不會被當成「編輯」（目前 `App.jsx:128` 只要 `editingCard` 有值就會 PUT）。使用者確認或修改後再 `POST /api/cards`。
-4. 驗證：查自己有的字（不呼叫 AI）、查沒有的字（點了才呼叫，第二次查走快取）、查 `fui`、查中文「蘋果」。
+> 和「複習時點例句裡的單字查詢（Duolingo 式）」合併成同一套查詞引擎。
 
----
+**查詞順序（越前面越便宜）**：
+1. **離線 Wiktionary 西英字典**（`data/dict/es-en.sqlite`，kaikki.org 資料，`npm run build:dict` 建置）：變化形 → 原形（`fui` → ir / ser）、英文釋義、陰陽性。0 額度。
+2. **我的單字庫**：用原形比對自己的卡（含 `bonito/a`、反身動詞 `-se`）；輸入中文時搜尋中文釋義。
+3. **共用快取**：`sentence_analyses`（整句逐字解析）、`dictionary_cache`（單字詞條）。
+4. **AI（只在按下按鈕時）**：
+   - 點字視窗：「✨ AI 解析這句」→ `POST /api/sentences/analyze`，一次解析整句，同句其他字不再呼叫。
+   - 字典頁：「用 AI 查中文」→ `POST /api/dictionary/ai`，沿用 `CARD_SCHEMA` + `normalizeAiCard`。
+   - 兩者都用 flash-lite（`GEMINI_FALLBACK_MODEL`），失敗才換主模型。
+
+**收錄**：「加入單字庫」→ `POST /api/dictionary/add`，進暫存箱（Inbox）；有整句解析時直接用它建卡（例句 = 遇到這個字的句子），否則先查一次 AI 詞條。**不使用 `POST /api/cards`**：它的 upsert 會把已存在的學習中卡片改回暫存箱。（原本規劃的 `WordModal mode="create"` 因此不需要。）
+
+**前端**：`TappableSentence.jsx`（點字 + 視窗，取代自適應學習 5 處例句）、`WordLookupPanel.jsx`（點字視窗與字典頁共用）、`DictionaryView.jsx`、Navbar「查詞」入口（手機在頂部列）。
+
+**尚未做**：AI 呼叫還沒有寫入用量紀錄（等 D1 的 `ai_usage` / `recordUsage`；`analyzeSentence`、`lookupWordAi` 已回傳 `usage`）。
 
 ## D4. 答錯提示（分支 `feature/mistake-hints`）
 

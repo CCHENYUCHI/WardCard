@@ -63,10 +63,29 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
               <BarChart2 size={18} />
               <span>進度統計</span>
             </button>
+
+            <button
+              className={`nav-tab ${activeTab === 'dictionary' ? 'active' : ''}`}
+              onClick={() => setActiveTab('dictionary')}
+              id="nav-dictionary"
+            >
+              <Search size={18} />
+              <span>查詞</span>
+            </button>
           </nav>
 
           {/* Top Actions */}
           <div className="navbar-actions">
+            {/* Mobile only: the bottom bar is already full */}
+            <button
+              className={`btn-icon navbar-btn-dictionary ${activeTab === 'dictionary' ? 'active' : ''}`}
+              onClick={() => setActiveTab('dictionary')}
+              title="查詞"
+              id="btn-dictionary-mobile"
+            >
+              <Search size={18} />
+            </button>
+
             <button
               className="btn btn-ai btn-sm navbar-btn-ai"
               onClick={onOpenAiModal}
