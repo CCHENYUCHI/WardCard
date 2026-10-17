@@ -19,8 +19,8 @@
 ```json
 {
   "source_lang": "es | zh",
-  "spanish": "西語句子（輸入是西語時 = 原句；輸入中文時 = 西語譯文）",
-  "correction": "原句有錯時的修正說明，沒錯就是空字串",
+  "spanish": "正確的西語句子（輸入正確 = 原句；輸入有錯 = 修正後的句子；輸入中文 = 西語譯文）",
+  "correction": "原句有錯時說明錯在哪（不重抄整句），沒錯就是空字串",
   "translation_zh": "自然的繁體中文翻譯",
   "translation_en": "natural English translation",
   "points": [
@@ -80,7 +80,7 @@ CREATE INDEX IF NOT EXISTS idx_translations_user_time ON translations(user_id, c
   - 輸入框（textarea，Enter 送出、Shift+Enter 換行，300 字上限與字數），西語重音鍵列（á é í ó ú ü ñ ¿ ¡），送出按鈕與 loading。
   - 送出後在上方顯示 `TranslationResult`；`cached` 時顯示小字「已有紀錄，未使用 AI 額度」。
   - 下方「翻譯紀錄」：搜尋框、清單（原句 + 中文 + 日期），點一下展開成 `TranslationResult`，可刪除（confirm），「載入更多」。
-- `TranslationResult.jsx`（新）：西語句子用 `TappableSentence` 可點字 + 🔊 `playSpanishPronunciation`；中文、英文翻譯；`correction` 用提示框；重點卡片依類型上色（文法藍、慣用語紫、用法綠、文化橘、易錯紅），附例句；「其他說法」。輸入是中文時，額外顯示原句。
+- `TranslationResult.jsx`（新）：有錯時先顯示劃掉的「你的句子」；西語句子用 `TappableSentence` 可點字 + 🔊 `playSpanishPronunciation`；中文、英文翻譯；`correction` 用提示框；重點卡片依類型上色（文法藍、慣用語紫、用法綠、文化橘、易錯紅），附例句；「其他說法」。輸入是中文時，額外顯示原句。
 - Navbar：桌面「今日學習 · 單字庫 · 進度統計 · 查詞 · 翻譯」；手機底部列「今日學習 · 單字庫 · 翻譯 · 查詞 · 統計」，頂部列的查詞按鈕移除。
 
 ## 移除自由翻卡 / 盲測拼寫

@@ -37,6 +37,12 @@ export default function TranslationResult({ record }) {
   return (
     <div className="tr-result">
       {source_lang === 'zh' && <div className="tr-source">{input_text}</div>}
+      {source_lang !== 'zh' && correction && (
+        <div className="tr-source is-wrong">
+          <span className="tr-source-label">你的句子</span>
+          <s>{input_text}</s>
+        </div>
+      )}
 
       <SpanishLine text={spanish} zh={translation_zh} className="tr-main" />
 

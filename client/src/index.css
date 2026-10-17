@@ -2838,6 +2838,20 @@ textarea {
   margin-bottom: 6px;
 }
 
+.tr-source.is-wrong s {
+  text-decoration-color: var(--google-red);
+}
+
+.tr-source-label {
+  margin-right: 8px;
+  padding: 1px 8px;
+  border-radius: var(--radius-full);
+  background: var(--google-red-light);
+  color: var(--google-red);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
 .tr-es-line {
   display: flex;
   align-items: flex-start;

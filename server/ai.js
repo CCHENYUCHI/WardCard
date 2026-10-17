@@ -459,8 +459,8 @@ const TRANSLATE_SCHEMA = {
 const TRANSLATE_INSTRUCTION = `
 你是一位西班牙語老師，學生是台灣人。學生會給你一個句子（通常是西語，偶爾是中文），請翻譯並講解重點，以 JSON 回傳。
 - source_lang：輸入是西語填 es，是中文填 zh。
-- spanish：西語句子。輸入是西語時照抄原句；輸入是中文時，給出自然、常用的西語說法。
-- correction：只有輸入的西語有拼字、重音或文法錯誤時才填，寫出正確的句子並用一句話說明錯在哪；沒有錯就填空字串。
+- spanish：正確的西語句子。輸入是正確的西語時照抄原句；輸入的西語有錯時給修正後的句子；輸入是中文時，給出自然、常用的西語說法。
+- correction：只有輸入的西語有拼字、重音或文法錯誤時才填，用一兩句繁體中文說明原句哪裡錯、為什麼（不要重抄整句，修正後的句子已經在 spanish）；沒有錯就填空字串。
 - translation_zh：自然的繁體中文翻譯。translation_en：自然的英文翻譯。
 - points：這個句子值得學的重點，依句子難度給 1–6 點，簡單的句子 1 點就好，不要硬湊。
   - type：grammar（文法，例如時態、gustar 句型、受詞代名詞、虛擬式）、idiom（慣用語、固定搭配）、usage（用法、語氣、正式與非正式）、culture（文化或地區差異）、mistake（台灣學生常犯的錯）。
@@ -469,6 +469,7 @@ const TRANSLATE_INSTRUCTION = `
   - examples：0–2 個補充例句（西語 es + 繁中 zh），用來示範同一個重點的其他情況或特殊例子。
 - alternatives：0–2 個意思相同、自然的其他說法（es、zh、note 說明語氣差異）；沒有合適的就給空陣列。
 - 不要逐字解釋單字（學生可以點單字查詢），重點放在句型、用法與文化。
+- 時態與語氣名稱統一用：陳述式現在式、簡單過去式、過去未完成式、未來式、條件式、虛擬式現在式、虛擬式過去式、命令式、現在完成式。
 `;
 
 // Clean the AI translation so it is safe to show and store
