@@ -7,6 +7,7 @@ import AdaptiveStudySession from './components/AdaptiveStudySession';
 import WordList from './components/WordList';
 import StatsView from './components/StatsView';
 import DictionaryView from './components/DictionaryView';
+import TranslatorView from './components/TranslatorView';
 import AiImporter from './components/AiImporter';
 import WordModal from './components/WordModal';
 import SettingsModal from './components/SettingsModal';
@@ -246,6 +247,10 @@ export default function App() {
 
             {activeTab === 'dictionary' && (
               <DictionaryView />
+            )}
+
+            {activeTab === 'translate' && (
+              <TranslatorView />
             )}
           </>
         )}

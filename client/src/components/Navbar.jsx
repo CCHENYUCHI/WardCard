@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, BarChart2, Sparkles, Settings, Plus, LogOut, Search } from 'lucide-react';
+import { BookOpen, BarChart2, Sparkles, Settings, Plus, LogOut, Search, Languages } from 'lucide-react';
 
 export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModal, onOpenAddModal, onOpenSettings, user, onLogout }) {
   return (
@@ -54,20 +54,19 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
               <Search size={18} />
               <span>查詞</span>
             </button>
+
+            <button
+              className={`nav-tab ${activeTab === 'translate' ? 'active' : ''}`}
+              onClick={() => setActiveTab('translate')}
+              id="nav-translate"
+            >
+              <Languages size={18} />
+              <span>翻譯</span>
+            </button>
           </nav>
 
           {/* Top Actions */}
           <div className="navbar-actions">
-            {/* Mobile only: the bottom bar is already full */}
-            <button
-              className={`btn-icon navbar-btn-dictionary ${activeTab === 'dictionary' ? 'active' : ''}`}
-              onClick={() => setActiveTab('dictionary')}
-              title="查詞"
-              id="btn-dictionary-mobile"
-            >
-              <Search size={18} />
-            </button>
-
             <button
               className="btn btn-ai btn-sm navbar-btn-ai"
               onClick={onOpenAiModal}
@@ -138,6 +137,28 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
             <BookOpen size={20} />
           </div>
           <span className="mobile-nav-label">單字庫</span>
+        </button>
+
+        <button
+          className={`mobile-nav-item ${activeTab === 'translate' ? 'active' : ''}`}
+          onClick={() => setActiveTab('translate')}
+          id="mobile-nav-translate"
+        >
+          <div className="mobile-nav-icon-wrap">
+            <Languages size={20} />
+          </div>
+          <span className="mobile-nav-label">翻譯</span>
+        </button>
+
+        <button
+          className={`mobile-nav-item ${activeTab === 'dictionary' ? 'active' : ''}`}
+          onClick={() => setActiveTab('dictionary')}
+          id="mobile-nav-dictionary"
+        >
+          <div className="mobile-nav-icon-wrap">
+            <Search size={20} />
+          </div>
+          <span className="mobile-nav-label">查詞</span>
         </button>
 
         <button

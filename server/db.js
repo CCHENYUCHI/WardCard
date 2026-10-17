@@ -2,6 +2,7 @@ require('./time'); // pin process TZ before SQLite evaluates 'localtime'
 const { DatabaseSync } = require('node:sqlite');
 const path = require('path');
 const fs = require('fs');
+const { TRANSLATIONS_SCHEMA } = require('./translations');
 
 const dataDir = path.join(__dirname, '../data');
 if (!fs.existsSync(dataDir)) {
@@ -195,6 +196,9 @@ function runMigrations() {
       created_at TEXT DEFAULT (datetime('now', 'localtime'))
     );
   `);
+
+  // Sentence translator history (per user)
+  db.exec(TRANSLATIONS_SCHEMA);
 }
 
 runMigrations();

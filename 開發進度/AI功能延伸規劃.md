@@ -149,6 +149,16 @@ CREATE INDEX idx_card_examples_card ON card_examples(user_id, card_id);
 
 **尚未做**：AI 呼叫還沒有寫入用量紀錄（等 D1 的 `ai_usage` / `recordUsage`；`analyzeSentence`、`lookupWordAi` 已回傳 `usage`）。
 
+## 句子翻譯與講解（分支 `feature/sentence-translator`，✅ 已完成 2026-10-17）
+
+> 規劃外新增，依使用者需求。設計見 `docs/superpowers/specs/2026-10-17-sentence-translator-design.md`。
+
+- 新分頁「翻譯」：輸入句子（主要西語，也接受中文）→ `POST /api/translations`。
+- **一次 AI 呼叫**（`translateSentence`，flash-lite，失敗才換主模型）回傳：中英翻譯、原句錯誤修正、1–6 個重點（grammar / idiom / usage / culture / mistake，各 0–2 例句）、0–2 個其他說法。不列單字清單：單字用 `TappableSentence` 點擊查詢（與 D3 共用查詞引擎與「加入單字庫」）。
+- **省額度**：`translations` 表以 `input_hash`（小寫 + 空白正規化）查詢；自己的紀錄 → 任何人查過的同一句 → 才呼叫 AI。
+- 同時移除 Web 的自由翻卡與盲測拼寫分頁（D6 原本要在 `FlashcardReview` 背面顯示圖片，改為只在 Stage 1/2 翻面後顯示）。
+- **尚未做**：用量紀錄（等 D1 `recordUsage`；`translateSentence` 已回傳 `usage`）。
+
 ## D4. 答錯提示（分支 `feature/mistake-hints`）
 
 1. **本機判斷（不用 AI）**，加在 `utils/spanish.js` 的 `diagnoseMistake(userAnswer, card)`，回傳一句中文提示：
@@ -179,7 +189,7 @@ CREATE INDEX idx_card_examples_card ON card_examples(user_id, card_id);
 - `cards.image_path` 欄位；`PUT /api/cards/:id/image`（multer）；上傳前在瀏覽器用 canvas 縮成 512px WebP。
 - 存在 `data/images/<userId>/<uuid>.webp`（`data/` 已經是 Docker volume）。`express.static('/media')` 要註冊在 `index.js:1126` 的 client static 之前。
 - `WordDetailModal.jsx`：圖片放在翻譯和例句之間（127–130 行），加上傳 / 移除按鈕；另外加一個「🔍 Google 圖片」連結，方便找圖。
-- 學習時在 Stage 1/2 翻面後、`FlashcardReview` 卡片背面顯示圖片。
+- 學習時在 Stage 1/2 翻面後顯示圖片（Web 的 `FlashcardReview` 已於 2026-10-17 移除）。
 - 備份限制：JSON 備份不包含圖片，要在設定頁註明。
 
 ---

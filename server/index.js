@@ -9,7 +9,10 @@ const { parse } = require('csv-parse/sync');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('./db');
-const { extractSpanishWords, calibrateDeleLevels, analyzeSentence, lookupWordAi } = require('./ai');
+const { extractSpanishWords, calibrateDeleLevels, analyzeSentence, lookupWordAi, translateSentence } = require('./ai');
+const {
+  translationHash, findOwnTranslation, findSharedTranslation, saveTranslation, listTranslations, deleteTranslation
+} = require('./translations');
 const { splitArticle, normalizeWord } = require('./cardUtils');
 const { getDict, lookupForm, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
 const { reviewCardFSRS } = require('./fsrs');
@@ -1260,6 +1263,63 @@ app.post('/api/dictionary/add', authenticateToken, (req, res) => {
     }
     const existing = db.prepare('SELECT id, lifecycle_status FROM cards WHERE user_id = ? AND word = ?').get(userId, word);
     res.json({ created: false, id: existing?.id, lifecycle_status: existing?.lifecycle_status });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// --- Sentence translator ---
+
+const TRANSLATE_MAX_LENGTH = 300;
+
+// Translate + explain one sentence and keep it in the user's history.
+// Order: own record -> anyone's record of the same sentence -> AI (one call)
+app.post('/api/translations', authenticateToken, async (req, res) => {
+  try {
+    const text = String(req.body.text || '').trim();
+    if (!text) return res.status(400).json({ error: '請輸入要翻譯的句子' });
+    if (text.length > TRANSLATE_MAX_LENGTH) {
+      return res.status(400).json({ error: `句子太長（上限 ${TRANSLATE_MAX_LENGTH} 字）` });
+    }
+
+    const userId = req.user.userId;
+    const hash = translationHash(text);
+    const own = findOwnTranslation(db, userId, hash);
+    if (own) return res.json({ record: own, cached: true });
+
+    const shared = findSharedTranslation(db, hash);
+    if (shared) {
+      const record = saveTranslation(db, { userId, inputText: text, hash, ...shared });
+      return res.status(201).json({ record, cached: true });
+    }
+
+    const apiKey = resolveApiKey(req);
+    if (!apiKey) return res.status(400).json({ error: NO_KEY_ERROR });
+
+    const { result, model } = await translateSentence({ apiKey, text });
+    const record = saveTranslation(db, { userId, inputText: text, hash, result, model });
+    res.status(201).json({ record, cached: false });
+  } catch (err) {
+    console.error('Translate Error:', err.message);
+    res.status(err.status || 500).json({ error: err.message || 'AI 翻譯失敗' });
+  }
+});
+
+app.get('/api/translations', authenticateToken, (req, res) => {
+  try {
+    const q = String(req.query.q || '').slice(0, 100);
+    const offset = Math.max(0, parseInt(req.query.offset, 10) || 0);
+    res.json(listTranslations(db, req.user.userId, { q, offset }));
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.delete('/api/translations/:id', authenticateToken, (req, res) => {
+  try {
+    const id = parseInt(req.params.id, 10);
+    if (!deleteTranslation(db, req.user.userId, id)) return res.status(404).json({ error: '找不到這筆翻譯紀錄' });
+    res.json({ success: true });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
