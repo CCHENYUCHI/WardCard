@@ -4,8 +4,6 @@ import LoginScreen from './components/LoginScreen';
 import Navbar from './components/Navbar';
 import DailyAgendaCockpit from './components/DailyAgendaCockpit';
 import AdaptiveStudySession from './components/AdaptiveStudySession';
-import FlashcardReview from './components/FlashcardReview';
-import SpellingReview from './components/SpellingReview';
 import WordList from './components/WordList';
 import StatsView from './components/StatsView';
 import DictionaryView from './components/DictionaryView';
@@ -14,11 +12,10 @@ import WordModal from './components/WordModal';
 import SettingsModal from './components/SettingsModal';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('agenda'); // 'agenda' | 'session' | 'review' | 'spelling' | 'words' | 'stats'
+  const [activeTab, setActiveTab] = useState('agenda'); // 'agenda' | 'session' | 'words' | 'stats' | 'dictionary' | 'translate'
   const [sessionPlan, setSessionPlan] = useState(null);
   const [wordFilterPreset, setWordFilterPreset] = useState(null);
   const [cards, setCards] = useState([]);
-  const [dueCards, setDueCards] = useState([]);
   const [categories, setCategories] = useState([]);
   const [stats, setStats] = useState(null);
   const [todayRemaining, setTodayRemaining] = useState(0);
@@ -35,16 +32,14 @@ export default function App() {
   // Fetch initial data
   const fetchData = useCallback(async () => {
     try {
-      const [cardsRes, dueRes, catRes, statsRes, todayRes] = await Promise.all([
+      const [cardsRes, catRes, statsRes, todayRes] = await Promise.all([
         fetchAPI('/api/cards'),
-        fetchAPI('/api/cards/due'),
         fetchAPI('/api/categories'),
         fetchAPI('/api/stats'),
         fetchAPI('/api/study/today')
       ]);
 
       if (cardsRes.ok) setCards(await cardsRes.json());
-      if (dueRes.ok) setDueCards(await dueRes.json());
       if (catRes.ok) setCategories(await catRes.json());
       if (statsRes.ok) setStats(await statsRes.json());
       if (todayRes.ok) setTodayRemaining((await todayRes.json()).remaining || 0);
@@ -226,26 +221,6 @@ export default function App() {
                   setSessionPlan(null);
                   fetchData();
                 }}
-              />
-            )}
-
-            {activeTab === 'review' && (
-              <FlashcardReview
-                allCards={cards}
-                dueCards={dueCards}
-                onReview={handleReview}
-                categories={categories}
-                onRefresh={fetchData}
-              />
-            )}
-
-            {activeTab === 'spelling' && (
-              <SpellingReview
-                allCards={cards}
-                dueCards={dueCards}
-                onReview={handleReview}
-                categories={categories}
-                onRefresh={fetchData}
               />
             )}
 

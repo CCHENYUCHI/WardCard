@@ -388,12 +388,6 @@ textarea {
   color: var(--text-secondary);
 }
 
-.badge-pos {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  font-style: italic;
-}
-
 .badge-subtle {
   background: #f1f3f4;
   color: var(--text-secondary);
@@ -465,67 +459,6 @@ textarea {
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: 10px;
   margin-bottom: 20px;
-}
-
-/* Review toolbars (Flashcard / Spelling) */
-.review-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.review-toolbar-controls {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.review-progress-text {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--text-secondary);
-  font-size: 0.88rem;
-}
-
-/* Spelling Test */
-.spelling-box {
-  text-align: center;
-}
-
-.spelling-input {
-  width: 100%;
-  padding: 14px 18px;
-  font-size: 1.5rem;
-  font-family: var(--font-display);
-  font-weight: 600;
-  background: #ffffff;
-  border: 2px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  color: var(--text-primary);
-  text-align: center;
-  letter-spacing: 0.03em;
-  outline: none;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-.spelling-input:focus {
-  border-color: var(--google-blue);
-  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.18);
-}
-
-.spelling-input.correct {
-  border-color: var(--google-green);
-  box-shadow: 0 0 0 3px rgba(30, 142, 62, 0.18);
-}
-
-.spelling-input.incorrect {
-  border-color: var(--google-red);
-  box-shadow: 0 0 0 3px rgba(217, 48, 37, 0.18);
 }
 
 .btn-link {
@@ -732,183 +665,9 @@ textarea {
   border-color: var(--google-blue);
 }
 
-/* ==========================================================================
-   Flashcards (Paper Card Physical Aesthetics)
-   ========================================================================== */
-.flashcard-container {
-  max-width: 680px;
-  margin: 0 auto;
-  perspective: 1200px;
-  -webkit-perspective: 1200px;
-}
-
-/* 兩面疊在同一個 grid cell：卡片高度會隨較長的一面（例句 + 筆記）自動撐開，不會被裁切 */
-.flashcard {
-  width: 100%;
-  min-height: 380px;
-  display: grid;
-  position: relative;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-  cursor: pointer;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-}
-
-.flashcard.flipped {
-  transform: rotateY(180deg) translateZ(0);
-  -webkit-transform: rotateY(180deg) translateZ(0);
-}
-
-.card-face {
-  grid-area: 1 / 1;
-  position: relative;
-  width: 100%;
-  min-height: 100%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  border-radius: var(--radius-xl);
-  padding: 36px 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid var(--border-color);
-  background: #ffffff;
-  box-shadow: var(--shadow-card);
-  user-select: none;
-  -webkit-user-select: none;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-}
-
-.card-face.card-back {
-  transform: rotateY(180deg) translateZ(0);
-  -webkit-transform: rotateY(180deg) translateZ(0);
-  background: #ffffff;
-}
-
 ::selection {
   background: #c2dbff;
   color: #1a73e8;
-}
-
-.word-display {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 12px;
-  margin: 20px 0 10px;
-  flex-wrap: wrap;
-}
-
-.article-prefix {
-  font-family: var(--font-display);
-  font-size: 2.2rem;
-  font-weight: 500;
-  color: var(--text-muted);
-}
-
-.main-word {
-  font-family: var(--font-display);
-  font-size: 3.2rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--text-primary);
-}
-
-.main-translation {
-  font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--google-blue);
-  text-align: center;
-  margin-bottom: 12px;
-}
-
-.example-box {
-  background: #f8f9fa;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 14px 16px;
-  margin-top: 14px;
-}
-
-.example-es {
-  font-size: 1.05rem;
-  color: var(--text-primary);
-  line-height: 1.5;
-  margin-bottom: 4px;
-}
-
-.example-zh {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-}
-
-.notes-box {
-  background: var(--google-yellow-light);
-  border: 1px solid #fce8b2;
-  border-radius: var(--radius-md);
-  padding: 12px 14px;
-  margin-top: 12px;
-  font-size: 0.88rem;
-  color: var(--google-yellow-dark);
-  line-height: 1.45;
-}
-
-/* Rating Bar */
-.rating-actions {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-top: 24px;
-}
-
-.btn-rate {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 12px 8px;
-  border-radius: var(--radius-md);
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  font-family: var(--font-main);
-}
-
-.rate-title {
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.rate-sub {
-  font-size: 0.75rem;
-  opacity: 0.85;
-}
-
-.btn-rate.again {
-  background: var(--google-red-light);
-  border-color: #f6aea9;
-  color: var(--google-red);
-}
-
-.btn-rate.hard {
-  background: var(--google-yellow-light);
-  border-color: #fce8b2;
-  color: var(--google-yellow-dark);
-}
-
-.btn-rate.good {
-  background: var(--google-blue-light);
-  border-color: #aecbfa;
-  color: var(--google-blue);
-}
-
-.btn-rate.easy {
-  background: var(--google-green-light);
-  border-color: #a8dab5;
-  color: var(--google-green);
 }
 
 /* ==========================================================================
@@ -1912,93 +1671,9 @@ textarea {
     padding: 12px 2px;
   }
 
-  /* ---------- Flashcard & Spelling ---------- */
-  .review-toolbar {
-    gap: 10px;
-    margin-bottom: 12px;
-  }
-
-  .review-toolbar-controls {
-    width: 100%;
-    gap: 8px;
-  }
-
-  .review-toolbar-controls > div:first-child {
-    flex: 1 1 100%;
-  }
-
-  .review-toolbar-controls > div:first-child .select-custom {
-    flex: 1;
-    min-width: 0;
-  }
-
   .kbd-hint,
   .hide-mobile {
     display: none !important;
-  }
-
-  .review-toolbar-controls .btn-sm {
-    width: 36px;
-    height: 34px;
-    padding: 0 !important;
-    justify-content: center;
-  }
-
-  .flashcard-container {
-    max-width: 100%;
-  }
-
-  .flashcard {
-    min-height: 320px;
-  }
-
-  .card-face {
-    padding: 22px 18px;
-  }
-
-  .main-word {
-    font-size: clamp(2rem, 9vw, 2.7rem) !important;
-    overflow-wrap: anywhere;
-    text-align: center;
-  }
-
-  .article-prefix {
-    font-size: 1.5rem;
-  }
-
-  .main-translation {
-    font-size: clamp(1.4rem, 6vw, 1.8rem);
-  }
-
-  .rating-actions {
-    gap: 8px;
-    margin-top: 16px;
-  }
-
-  .btn-rate {
-    padding: 12px 4px;
-  }
-
-  .rate-title {
-    font-size: 0.9rem;
-  }
-
-  .rate-sub {
-    font-size: 0.72rem;
-  }
-
-  .spelling-prompt {
-    font-size: clamp(1.7rem, 8vw, 2.4rem) !important;
-    overflow-wrap: anywhere;
-  }
-
-  .spelling-input {
-    font-size: 1.3rem !important;
-    padding: 12px 14px;
-  }
-
-  .spelling-actions .btn {
-    flex: 1;
   }
 
   /* ---------- WordList ---------- */
@@ -2154,12 +1829,6 @@ textarea {
 @keyframes sheetUp {
   from { transform: translateY(40px); opacity: 0.6; }
   to { transform: translateY(0); opacity: 1; }
-}
-
-@media (max-width: 480px) {
-  .rating-actions {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 360px) {

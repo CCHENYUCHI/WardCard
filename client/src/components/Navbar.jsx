@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layers, Keyboard, BookOpen, BarChart2, Sparkles, Settings, Plus, LogOut, Search } from 'lucide-react';
+import { BookOpen, BarChart2, Sparkles, Settings, Plus, LogOut, Search } from 'lucide-react';
 
 export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModal, onOpenAddModal, onOpenSettings, user, onLogout }) {
   return (
@@ -26,24 +26,6 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
               <Sparkles size={18} />
               <span>今日學習</span>
               {dueCount > 0 && <span className="tab-badge">{dueCount}</span>}
-            </button>
-
-            <button
-              className={`nav-tab ${activeTab === 'review' ? 'active' : ''}`}
-              onClick={() => setActiveTab('review')}
-              id="nav-review"
-            >
-              <Layers size={18} />
-              <span>自由翻卡</span>
-            </button>
-
-            <button
-              className={`nav-tab ${activeTab === 'spelling' ? 'active' : ''}`}
-              onClick={() => setActiveTab('spelling')}
-              id="nav-spelling"
-            >
-              <Keyboard size={18} />
-              <span>盲測拼寫</span>
             </button>
 
             <button
@@ -145,28 +127,6 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
             {dueCount > 0 && <span className="mobile-nav-badge">{dueCount > 99 ? '99+' : dueCount}</span>}
           </div>
           <span className="mobile-nav-label">今日學習</span>
-        </button>
-
-        <button
-          className={`mobile-nav-item ${activeTab === 'review' ? 'active' : ''}`}
-          onClick={() => setActiveTab('review')}
-          id="mobile-nav-review"
-        >
-          <div className="mobile-nav-icon-wrap">
-            <Layers size={20} />
-          </div>
-          <span className="mobile-nav-label">自由翻卡</span>
-        </button>
-
-        <button
-          className={`mobile-nav-item ${activeTab === 'spelling' ? 'active' : ''}`}
-          onClick={() => setActiveTab('spelling')}
-          id="mobile-nav-spelling"
-        >
-          <div className="mobile-nav-icon-wrap">
-            <Keyboard size={20} />
-          </div>
-          <span className="mobile-nav-label">拼字測驗</span>
         </button>
 
         <button
