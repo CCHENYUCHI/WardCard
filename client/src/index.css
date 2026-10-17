@@ -1103,8 +1103,8 @@ textarea {
 }
 
 .wordlist-sidebar {
-  width: 240px;
-  min-width: 240px;
+  width: 264px;
+  min-width: 264px;
   background: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
@@ -1273,6 +1273,63 @@ textarea {
 
 .unit-indicator-dot.waiting {
   background: #dadce0;
+}
+
+/* Unit rows: full name (wraps instead of truncating) + count on top line */
+.wordlist-category-item.active-unit,
+.wordlist-category-item.waiting-unit {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.unit-row-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.unit-row-top .cat-name {
+  flex: 1;
+  min-width: 0;
+  max-width: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+}
+
+.unit-row-top .cat-count {
+  flex-shrink: 0;
+}
+
+/* Active unit proficiency bar on the second line */
+.unit-row-progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 15px;
+}
+
+.unit-progress-track {
+  flex: 1;
+  height: 4px;
+  background: #f1f3f4;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.unit-progress-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.unit-progress-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  min-width: 32px;
+  text-align: right;
 }
 
 .category-active-banner {
