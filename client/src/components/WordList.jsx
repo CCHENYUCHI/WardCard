@@ -368,16 +368,15 @@ export default function WordList({
           ) : (
             activeUnits.map(cat => {
               // Color based on proficiency rate
-              let badgeBg = '#e8f0fe';
-              let badgeColor = 'var(--google-blue)';
+              let barColor = 'var(--google-blue)';
               if (cat.proficiencyRate >= 70) {
-                badgeBg = '#e6f4ea';
-                badgeColor = '#137333';
+                barColor = '#137333';
               } else if (cat.proficiencyRate < 30) {
-                badgeBg = '#fce8e6';
-                badgeColor = '#ea4335';
+                barColor = '#ea4335';
               }
 
+              // Two-line layout: full unit name on top, proficiency bar below,
+              // so long names are never squeezed out by the badges.
               return (
                 <button
                   key={cat.name}
@@ -385,15 +384,16 @@ export default function WordList({
                   onClick={() => { setSelectedCategory(cat.name); setIsMobileCategoryOpen(false); }}
                   title={`${cat.name} · 掌握率 ${cat.proficiencyRate}%`}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', overflow: 'hidden' }}>
+                  <div className="unit-row-top">
                     <span className="unit-indicator-dot active" />
                     <span className="cat-name">{cat.name}</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <span style={{ fontSize: '0.72rem', background: badgeBg, color: badgeColor, padding: '1px 6px', borderRadius: '8px', fontWeight: 700 }}>
-                      {cat.proficiencyRate}%
-                    </span>
                     <span className="cat-count">{cat.total}</span>
+                  </div>
+                  <div className="unit-row-progress">
+                    <div className="unit-progress-track">
+                      <div className="unit-progress-fill" style={{ width: `${cat.proficiencyRate}%`, background: barColor }} />
+                    </div>
+                    <span className="unit-progress-label" style={{ color: barColor }}>{cat.proficiencyRate}%</span>
                   </div>
                 </button>
               );
@@ -419,11 +419,11 @@ export default function WordList({
                 onClick={() => { setSelectedCategory(cat.name); setIsMobileCategoryOpen(false); }}
                 title={`${cat.name} · 待學儲備中`}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', overflow: 'hidden' }}>
+                <div className="unit-row-top">
                   <span className="unit-indicator-dot waiting" />
                   <span className="cat-name">{cat.name}</span>
+                  <span className="cat-count">{cat.total}</span>
                 </div>
-                <span className="cat-count">{cat.total}</span>
               </button>
             ))
           )}

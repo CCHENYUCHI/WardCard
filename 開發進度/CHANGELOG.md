@@ -43,6 +43,7 @@
 - **AI 一鍵校準 DELE 級數入口 (`SettingsModal.jsx`)**：後端既有的 `/api/cards/calibrate-dele` 終於有前端按鈕，校準後自動重新載入單字庫。
 
 ### Changed
+- **`.dockerignore` 排除整個 `data/`**：資料庫與離線字典（約 90MB）由 volume 掛載，不再送進 Docker build context，避免每次重建都上傳。
 - **西語比對工具共用 (`client/src/utils/spanish.js`)**：`stripArticle`、`getAcceptableAnswers`、`maskSentence`、`findInflectedForms`、`pickDistractors` 等，供自適應學習與拼字測驗共用。
 - **Gemini 呼叫層重構 (`server/ai.js`)**：抽出共用 `callGemini()`，改用 Node 內建 `fetch`、`responseSchema` 強制 JSON 結構；API Key 改放在 `x-goog-api-key` header（不再出現在網址與 log 中）。
 - **冠詞拆分邏輯共用 (`server/cardUtils.js`)**：新增 `splitArticle()`，手動新增、CSV 匯入與 AI 萃取共用同一份邏輯。
@@ -50,6 +51,7 @@
 - **Mobile `API_URL` 統一 (`mobile/src/constants/api.ts`)**：取代 7 個畫面各自寫死的網址。
 
 ### Fixed
+- **單字庫側欄單元名稱被截斷 (`WordList.jsx`, `index.css`)**：桌面版「單字分類與單元」中，主修練習中的單元因同一列塞入掌握率徽章與字數，名稱被擠成「課本單字 - 第…」。改為兩行排版：第一行顯示完整名稱（過長自動換行）與字數，第二行為依掌握率著色的進度條與百分比；待學儲備庫同樣改為可換行；側欄寬度 240px → 264px。
 - **Stage 3/4 按 Enter 無法送出**：鍵盤事件讀到舊的空白輸入，改用 `useCallback` 並補上依賴。
 - **換下一張卡時輸入框沒有自動聚焦**：聚焦時輸入框仍是停用狀態，改為狀態重設後再聚焦，桌面可以全程只用鍵盤作答。
 - **帶重音 / ñ 的單字遮字與比對錯誤**：原本的 `\b...\w*` 只認 ASCII，`árbol` 遮不到、`ana` 會誤中 `mañana`；改用 Unicode 比對，並能找到變化形（hablamos、alta、problemas）。

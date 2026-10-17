@@ -5,9 +5,7 @@ mobile
 client/dist
 .git
 .gitignore
-data/*.db
-data/*.db-wal
-data/*.db-shm
+data
 *.log
 *.tar.gz
 .DS_Store
