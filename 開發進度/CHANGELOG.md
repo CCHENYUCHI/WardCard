@@ -11,6 +11,13 @@
 - **延伸功能規劃改為省額度優先版 (`開發進度/AI功能延伸規劃.md`)**：C0–C5 改為 D0–D6；S5 四選一、答錯提示、字典等改以本機邏輯為主，AI 只在必要時按需使用；圖片改為上傳、不做 AI 生圖；只做 Web。
 
 ### Added
+- **句子翻譯與講解 (`TranslatorView.jsx`, `TranslationResult.jsx`, `POST /api/translations`)**：新分頁「翻譯」，輸入一個句子（主要是西語，也可以輸入中文），AI 給出**中文 + 英文翻譯**，並講解 **1–6 個重點**（文法 / 慣用語 / 用法 / 文化 / 易錯，依句子難度決定數量），每個重點可附 0–2 個補充例句，另外視情況給 0–2 個其他說法；原句有錯時顯示修正與原因。
+  - **可點字查詢**：西語句子、補充例句與其他說法都用 `TappableSentence`，點單字就能查原形與用法並加入單字庫（不另外列單字清單）；每句都有 🔊 朗讀。
+  - **翻譯紀錄**：每次翻譯自動存檔，可搜尋原句或中文、展開重看、刪除、載入更多。
+  - **省額度**：一句只呼叫一次 AI（flash-lite，失敗才換主模型）；同一句（不分大小寫與多餘空白）再查直接讀紀錄，**別的使用者查過的句子也直接沿用**，畫面標示「已有紀錄，沒有使用 AI 額度」。
+  - **資料表 `translations`**（每位使用者自己的紀錄，不綁卡片，刪卡不需清理）；API `POST /api/translations`、`GET /api/translations?q=&offset=`、`DELETE /api/translations/:id`。
+  - **導覽列**：桌面新增「翻譯」分頁；手機底部列改為 今日學習 · 單字庫 · 翻譯 · 查詞 · 統計（查詞從頂部列移到底部）。
+  - **測試**：`server/translations.test.js` 涵蓋 AI 結果正規化（截斷、預設值、不完整時報錯）與紀錄存取（快取、搜尋、分頁、只能刪自己的）。
 - **例句點字查詢 (Duolingo 式) + 字典查詞 (D3)**：兩者共用同一套查詞引擎，**本機優先、AI 只在按下時才用**。
   - **點例句裡的單字 (`TappableSentence.jsx`)**：每日複習五個階段的例句都可以點字，跳出原形、中文、用法與英文釋義；桌面是錨定在字下方的小視窗，手機是底部 Bottom Sheet。挖空的答案不能點（不會洩漏答案）；點字不會翻卡；視窗開著時 Space / Enter / 1–4 不會評分，`Esc` 或點外面關閉。
   - **離線西英字典 (`server/scripts/build-dictionary.js`, `server/dictionary.js`)**：由 kaikki.org（Wiktionary）資料建成約 90MB 的 SQLite，查詢時把變化形還原成原形（`fui` → ir / ser、`tuvieron` → tener、`bonitas` → bonito），忽略重音（`arbol` → árbol，但 `año` 優先於 `ano`）；文法標記自動翻成中文（「ir 的 第一人稱 單數 簡單過去式 陳述式」）。檔案不存在時自動略過。執行時只多約 1MB 記憶體。
@@ -41,6 +48,9 @@
   - 預覽頁可直接修改單字、冠詞與詞性；名詞 / 形容詞有 ♂ 陽性 / ♀ 陰性（形容詞另有「陰陽同形」）按鈕，切換時自動換成對應形式與冠詞（profesor ↔ profesora）。
   - 動詞一律還原為原形不定式（原文變化形註明於筆記）；預覽頁偵測到非 -ar / -er / -ir 結尾時提示修改。
 - **AI 一鍵校準 DELE 級數入口 (`SettingsModal.jsx`)**：後端既有的 `/api/cards/calibrate-dele` 終於有前端按鈕，校準後自動重新載入單字庫。
+
+### Removed
+- **自由翻卡、盲測拼寫分頁 (Web)**：今日學習（五階自適應學習）已涵蓋翻卡與拼字練習，移除 `FlashcardReview.jsx`、`SpellingReview.jsx`、只有翻卡使用的 `utils/fsrsPreview.js`、相關導覽與 CSS，以及只給它們用的 `/api/cards/due` 抓取。後端 API、`review_mode` 欄位與 `mobile/` 不受影響。
 
 ### Changed
 - **`.dockerignore` 排除整個 `data/`**：資料庫與離線字典（約 90MB）由 volume 掛載，不再送進 Docker build context，避免每次重建都上傳。
