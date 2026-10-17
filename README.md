@@ -1,144 +1,191 @@
-# 🇪🇸 PalabraCard - AI 驅動西語智慧單字卡 & SRS 複習系統
+# 🇪🇸 PalabraCard — 會排課表的西語單字卡
 
-專為西語學習者與 Oracle Cloud Free Tier 極輕量架設打造的單字卡 App。  
-結合 **Google Gemini AI 課堂筆記/照片一鍵萃取生詞**、**3D 翻轉單字卡**、**西語重音拼字盲測**、**陰陽性/冠詞/例句文法解析** 以及 **SM-2 間隔重複記憶曲線 (SRS)**。
+**拍下課堂講義，AI 幫你做成單字卡；每天打開，App 告訴你今天該背哪些字。**
 
----
+PalabraCard 是一款專為西班牙語學習者設計的單字卡 App。它結合 **Google Gemini AI 自動萃取生詞**、**FSRS 科學記憶排程**，以及**依熟練度自動升級的五階段練習**，讓你不必自己決定「今天要複習什麼」，只要每天把任務做完就好。
 
-## ✨ 核心特色
+Web 版可在電腦與手機瀏覽器使用，另有 iOS / Android App（Expo）開發中。整個後端只佔約 **35MB 記憶體**，一台免費的雲端小主機就能自己架。
 
-1. **🌟 AI 拍照 & 筆記一鍵萃取（免買昂貴訂閱）**：
-   - 拍照上傳課堂白板、講義照片，或直接貼上閱讀測驗、上課筆記。
-   - AI 自動辨識單字，精確補充：**冠詞 (el/la)、陰陽性 (♂/♀)、詞性、繁體中文釋義、道地西語例句與翻譯、常考文法規則與動詞變化說明、DELE 等級 (A1~C2)**。
-   - 結構化預覽表，勾選後 1 秒批次匯入單字庫。
-
-2. **🎯 雙重複習模式**：
-   - **3D 單字翻卡模式**：支援鍵盤快捷鍵（`Space` 翻轉、`1/2/3/4` 評分）、瀏覽器原生真人語音朗讀 (Web Speech API)。
-   - **西語拼字盲測模式**：提供虛擬西語重音鍵盤（`á`, `é`, `í`, `ó`, `ú`, `ü`, `ñ`, `¿`, `¡`），例句挖空提示，即時防呆糾錯。
-
-3. **🧠 經典 SM-2 間隔重複記憶演算法 (SRS)**：
-   - 依「忘記、困難、良好、容易」動態計算複習週期（1天 ➔ 3天 ➔ 6天 ➔ 15天...），科學化抗遺忘。
-
-4. **🗂️ 靈活分類與標籤管理**：
-   - 快速切換「日常生活」與「考試必背 (DELE)」。
-   - 支援搜尋單字、釋義、例句與文法筆記。
-
-5. **⚡ Oracle Cloud Free Tier 極輕量優化**：
-   - 採用 Node.js 內建原生 SQLite 資料庫，**記憶體佔用僅約 35MB RAM**！
-   - 無需安裝龐大的 MySQL 或 MongoDB，極適合 Oracle Cloud 免費小主機（1GB RAM 也能超順暢運行）。
+🌐 線上服務：<https://wardcard.ycctw.xyz>
 
 ---
 
-## 🚀 本地開發與快速啟動
+## ✨ 你可以用它做什麼
 
-### 1. 安裝與啟動
+### 📸 拍照或貼筆記，AI 自動做卡
+- 上傳白板、講義照片，或直接貼上課文、上課筆記。
+- AI 會整理出每個生詞的 **冠詞（el / la）、陰陽性、詞性、繁體中文釋義、例句與翻譯、文法筆記、DELE 等級（A1–C2）**。
+- 名詞與形容詞會附上陰陽性 / 單複數變化（alto / alta / altos / altas），動詞自動還原成原形。
+- 結果先以表格預覽，勾選後才存入；**已經在單字庫裡的字會標示出來並預設不勾**，不怕覆蓋到正在學的卡。
+
+### 📅 今日學習駕駛艙：打開就知道要做什麼
+- 每天自動排好三種任務：**🚨 快忘記的字優先搶救、📚 到期複習、🌱 課本新單字**。
+- 今日任務圓環顯示「已完成 / 今日目標」，到期複習、新單字、加練分開計算。
+- 🔥 連續學習天數、7 天週進度、近 30 天學習紀錄。
+- 今天的任務做完還想練？按「加練一輪」，系統挑出你記得最不牢的字，另外記錄、不影響今日任務。
+
+### 🪜 五階段自適應練習：越熟的字，題目越難
+每個單字都有自己的熟練階段，練習時自動換題型：
+
+| 階段 | 題型 | 練什麼 |
+| :---: | :--- | :--- |
+| **S1** | 看單字、翻卡辨認 | 認得 |
+| **S2** | 看中文回想（附首字母提示） | 想得起來 |
+| **S3** | 看中文完整拼寫 | 拼得出來（含重音） |
+| **S4** | 例句克漏字 | 在句子裡用得出來（含動詞變化） |
+| **S5** | 例句四選一 | 分辨相近的字（干擾選項取自你自己的單字庫） |
+
+- 拼字比對會自動忽略冠詞、接受 `bonito/a` 這類寫法，`á / é / í / ó / ú / ü / ñ / ¿ / ¡` 都能正確判斷。
+- 全程可只用鍵盤：`Enter` 送出、`Space` 翻卡、`1`–`4` 選答案或評分。
+
+### 🧠 FSRS 記憶排程
+- 採用現代的 **FSRS v4.5** 演算法（Anki 新版同款），依每個字的難度與記憶穩定度，算出最適合的下次複習時間。
+- 可自訂**目標記憶留存率（85%–95%）**與**每日新單字上限（10–50 字）**。
+- 評分按鈕會先告訴你「選這個，下次是幾天後」。
+
+### 🔍 點例句裡的字就能查（Duolingo 式）
+- 練習時看到例句裡不認識的字，直接點它：顯示**原形、中文、用法與英文釋義**。
+- 內建**離線西英字典**（Wiktionary），能把變化形還原成原形：`fui` → ir / ser、`tuvieron` → tener、`bonitas` → bonito。
+- 查不到中文時才按「✨ AI 解析這句」，一次解析整句，結果所有人共用快取，**同一句不會重複花 AI 額度**。
+- 獨立的「查詞」頁可查西語或中文，一鍵把新字加入暫存箱。
+
+### 🗂️ 單字庫管理
+- **暫存 → 待學 → 學習中 → 精通** 的分流設計，新字先放暫存箱，不會一次湧進每日任務。
+- 依課本單元分組（第 0 / 1 / 2 / 3 課自然排序），顯示每個單元的掌握率。
+- ⭐ 標記重點單字、多選批次操作、關鍵字搜尋、分類與 DELE 等級篩選。
+- 支援 CSV 匯入、JSON 完整備份與還原。
+
+### 🔊 其他貼心設計
+- 西語真人發音（線上語音 + 瀏覽器內建語音雙引擎，iPhone Safari 也能播）。
+- 學習統計：本週複習量預估、DELE 等級分佈、各分類掌握程度。
+- 乾淨明亮的 Material Design 風格；手機版有底部導覽列，完整支援瀏海與 Home Bar 安全區域。
+- 多使用者帳號，每個人的單字庫與進度各自獨立。
+
+---
+
+## 📱 支援平台
+
+| 平台 | 狀態 |
+| :--- | :--- |
+| **Web（電腦 / 手機瀏覽器）** | ✅ 功能完整，主力版本 |
+| **iOS / Android App（Expo）** | 🚧 開發中：已有登入、單字庫、翻卡、拼字測驗、AI 拍照萃取、CSV 匯入；今日任務與五階段練習尚未移植 |
+
+---
+
+## 🛠️ 技術架構
+
+| 層級 | 技術 |
+| :--- | :--- |
+| Web 前端 | React 18、Vite、Lucide Icons |
+| 行動端 | Expo SDK 57、React Native、React 19、Expo Router |
+| 後端 | Node.js 22+、Express、JWT 認證 |
+| 資料庫 | Node.js 內建 `node:sqlite`（WAL 模式），不需另外安裝資料庫 |
+| AI | Google Gemini（`gemini-3.6-flash`，失敗時自動改用 `gemini-3.5-flash-lite`） |
+| 字典 | 離線 Wiktionary 西英字典（SQLite，約 90MB） |
+| 部署 | Docker Compose 或 PM2，Oracle Cloud Free Tier（1GB RAM）即可運行 |
+
+---
+
+## 🚀 自己架一套
+
+### 需要準備
+- Node.js **22 以上**
+- 一組 Gemini API Key（[Google AI Studio](https://aistudio.google.com/app/apikey) 免費申請）。也可以不放在伺服器，由每位使用者在網頁的 ⚙️ 設定裡自行填入。
+
+### 本機開發
 ```bash
-# 1. 複製環境設定
+npm install
+cd client && npm install && cd ..
+cp .env.example .env      # 填入 GEMINI_API_KEY（選填）
+npm run dev               # 同時啟動前端與後端
+```
+開啟 <http://localhost:5173>，註冊一個帳號就能開始使用。
+
+### 正式環境（單一 Node.js 服務）
+```bash
+npm run build             # 建置前端
+npm start                 # 預設 Port 3000
+```
+
+### Docker Compose
+```bash
 cp .env.example .env
-
-# 2. 啟動開發伺服器（前後端同步）
-npm run dev
+docker compose up -d
 ```
-瀏覽器開啟：`http://localhost:5173`
+資料庫存在主機的 `./data/` 底下，重建容器不會遺失資料。
 
-### 2. 生產模式運行（單一進程）
+### 環境變數
+| 變數 | 說明 | 預設 |
+| :--- | :--- | :--- |
+| `PORT` | 伺服器連接埠 | `3000` |
+| `GEMINI_API_KEY` | 伺服器端的 Gemini Key（使用者沒填自己的 Key 時使用） | 空 |
+| `GEMINI_MODEL` / `GEMINI_FALLBACK_MODEL` | 主要與備援模型 | `gemini-3.6-flash` / `gemini-3.5-flash-lite` |
+| `TZ` | 「今天」的換日時區（每天 00:00 重新計算任務） | `Asia/Taipei` |
+| `DICT_DB_PATH` | 離線字典檔位置 | `./data/dict/es-en.sqlite` |
+
+### 建置離線字典（選用）
+沒有字典也能用，只是點字查詢時少了「變化形 → 原形」與英文釋義。
 ```bash
-# 建置前端並以單一 Node.js 服務啟動 (預設 Port: 3000)
-npm run build
-npm start
-```
-瀏覽器開啟：`http://localhost:3000`
-
-### 3. 建置離線字典（選用，查詞與例句點字用）
-字典頁與複習時「點例句裡的單字」會先查離線西英字典（Wiktionary），把變化形還原成原形（`fui` → ir / ser）並顯示英文釋義，**完全不花 AI 額度**。沒建置也能用，只是少了這一層。
-```bash
-# 下載 kaikki.org 的西語 Wiktionary 資料（約 1GB）
-curl -L -o /tmp/es.jsonl https://kaikki.org/dictionary/Spanish/kaikki.org-dictionary-Spanish.jsonl
-
-# 串流轉成精簡的 SQLite（約 90MB，輸出到 data/dict/es-en.sqlite，建置時記憶體約 130MB）
-npm run build:dict -- /tmp/es.jsonl
+curl -L -o /tmp/es.jsonl https://kaikki.org/dictionary/Spanish/kaikki.org-dictionary-Spanish.jsonl   # 約 1GB
+npm run build:dict -- /tmp/es.jsonl      # 產生 data/dict/es-en.sqlite（約 90MB）
 rm /tmp/es.jsonl
 ```
-- 檔案在 `data/` 底下（Docker 已掛載為 volume），不會進 Git；伺服器執行時只多約 1MB 記憶體。
-- 位置可用 `DICT_DB_PATH` 指定。資料授權：Wiktionary，CC BY-SA。
+字典資料來自 Wiktionary，授權為 CC BY-SA。
 
----
+### 行動端
+```bash
+cd mobile
+npm install
+npx expo start
+```
+App 預設連線到正式環境 API，可在 `mobile/src/constants/api.ts` 修改。
 
-## ☁️ Oracle Cloud Free Tier 雲端部署教學
+### 測試
+```bash
+npm test
+```
 
-### 方法 A：使用 Docker Compose（最推薦、一鍵啟動）
+<details>
+<summary><b>☁️ 部署到 Oracle Cloud Free Tier 的注意事項</b></summary>
 
-1. **在 Oracle Cloud 主機上安裝 Docker & Docker Compose**（若尚未安裝）：
+1. 安裝 Docker：
    ```bash
    sudo apt update && sudo apt install -y docker.io docker-compose-v2
    sudo usermod -aG docker $USER
    ```
-
-2. **將專案上傳至 Oracle Cloud 主機**，進入專案目錄：
+   不想用 Docker 的話，也可以用 PM2 直接常駐（實測約 32MB RAM）：
    ```bash
-   cd wordcard
-   cp .env.example .env
-   # 編輯 .env 填入你的 Gemini API Key (也可在網頁上的設定齒輪填寫)
-   nano .env
+   npm install && npm run build
+   sudo npm install -g pm2
+   pm2 start server/index.js --name palabracard
+   pm2 startup && pm2 save
    ```
-
-3. **啟動容器**：
-   ```bash
-   docker compose up -d
-   ```
-   > 容器內已自動做好 SQLite 資料持久化（資料庫存放在主機的 `./data/wordcard.db`）。
-
-4. **放行 Oracle Cloud 防火牆 Port 3000**：
-   - **主機防火牆 (iptables)**：
+2. 開放 Port 3000：
+   - 主機防火牆：
      ```bash
      sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 3000 -j ACCEPT
      sudo netfilter-persistent save
      ```
-   - **Oracle Cloud 控制台**：
-     - 進入「虛擬雲端網路 (VCN)」➔「安全清單 (Security Lists)」➔「Default Security List」
-     - 新增傳入規則 (Ingress Rule)：CIDR `0.0.0.0/0`，TCP 通訊協定，目的地連接埠 `3000`。
+   - Oracle Cloud 控制台：VCN ➔ Security Lists ➔ 新增 Ingress Rule（TCP、目的連接埠 `3000`）。
+3. 建議前面再加一層 Nginx 反向代理與 HTTPS 憑證。
 
-5. 現在即可透過你的 Oracle Cloud 公共 IP 瀏覽：  
-   `http://<YOUR_ORACLE_IP>:3000`
+</details>
 
 ---
 
-### 方法 B：使用 PM2 守護進程（超省資源、免 Docker）
+## 🗺️ 接下來
 
-1. **安裝 Node.js 22+ 與 PM2**：
-   ```bash
-   curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-   sudo apt install -y nodejs
-   sudo npm install -g pm2
-   ```
+- 答錯時的智慧提示（只差重音？陰陽性？字尾？）
+- 從萃取時順便產生的多句例句，讓克漏字題每次換一句
+- AI 用量紀錄與每日上限
+- 行動端補上今日任務、五階段練習與發音
+- 每日提醒推播
 
-2. **在專案目錄建置與啟動**：
-   ```bash
-   cd wordcard
-   npm install
-   cd client && npm install && npm run build && cd ..
-   
-   # 使用 PM2 背景開機自啟
-   pm2 start server/index.js --name "palabracard"
-   pm2 startup
-   pm2 save
-   ```
-   記憶體佔用實測：**僅 ~32MB RAM**！
+完整的功能清單、開發進度與更新紀錄都在 [開發進度/](./開發進度/README.md)：
+[功能清單與 Roadmap](./開發進度/功能清單與Roadmap.md) ・ [專案開發狀況總覽](./開發進度/專案開發狀況總覽.md) ・ [CHANGELOG](./開發進度/CHANGELOG.md) ・ [Git 協作規範](./開發進度/GIT與GITHUB管理規範.md)
 
 ---
 
-## 🔑 免費 Gemini API Key 取得方式
-前往 [Google AI Studio](https://aistudio.google.com/app/apikey) 點擊 **Create API Key**，即可免費獲得金鑰（Gemini 1.5 Flash 免費額度每日高達數千次請求，完全零成本）。
-可在網頁右上角的 ⚙️ **設定** 介面直接輸入，也可以寫入伺服端 `.env`。
+## 📄 授權
 
----
-
-## 📈 專案開發進度與 Git/GitHub 管理規範
-
-專案所有開發進度、各端實作完成度、Roadmap 與 Git 協作規範均集中記錄於 [開發進度/](./開發進度/README.md) 資料夾：
-
-- 📊 **[專案開發狀況總覽](./開發進度/專案開發狀況總覽.md)**：系統架構、Web/Mobile/Server 完成度盤點與技術債
-- 🐙 **[Git & GitHub 管理規範](./開發進度/GIT與GITHUB管理規範.md)**：分支策略、Commit 規範與**新功能同步更新進度 SOP**
-- 🗺️ **[功能清單與 Roadmap](./開發進度/功能清單與Roadmap.md)**：各模組完成度矩陣與待辦事項
-- 📝 **[更新日誌 CHANGELOG](./開發進度/CHANGELOG.md)**：版本演進歷史與變更記錄
-
+程式碼以 MIT License 釋出。離線字典資料來自 Wiktionary（CC BY-SA）。
