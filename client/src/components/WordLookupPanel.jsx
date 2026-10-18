@@ -2,8 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { Sparkles, Plus, Check, ExternalLink } from 'lucide-react';
 import { lookupWord, analyzeSentence, aiLookup, addToInbox, POS_LABELS, genderLabel, describeForm, STATUS_LABELS } from '../utils/dictionary';
 import { displayWord, normalizeAnswer, stripAccents } from '../utils/spanish';
+import SpeakButton from './SpeakButton';
 
 const sameWord = (a, b) => stripAccents(normalizeAnswer(a)) === stripAccents(normalizeAnswer(b));
+const ARTICLE_BY_GENDER = { masculino: 'el', femenino: 'la' };
+// Nouns are read with their article (la casa), like the rest of the app
+const wiktSpeech = (item) => (
+  item.part_of_speech === 'sustantivo' && ARTICLE_BY_GENDER[item.gender]
+    ? `${ARTICLE_BY_GENDER[item.gender]} ${item.lemma}`
+    : item.lemma
+);
 
 /**
  * Lookup result for one word: my cards, AI context / entry, offline Wiktionary meanings, actions.
@@ -38,7 +46,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
   if (!result) {
     return (
       <div className="lookup-panel">
-        <div className="lookup-head"><span className="lookup-word">{word}</span></div>
+        <div className="lookup-head"><span className="lookup-word">{word}</span><SpeakButton text={word} /></div>
         {error ? <div className="lookup-error">{error}</div> : <div className="spinner lookup-spinner" />}
       </div>
     );
@@ -113,7 +121,10 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
     <div className="lookup-panel">
       <div className="lookup-head">
         <span className="lookup-word">{word}</span>
-        {!sameWord(lemma, word) && <span className="lookup-lemma">→ {lemma}</span>}
+        <SpeakButton text={word} />
+        {!sameWord(lemma, word) && (
+          <span className="lookup-lemma">→ {lemma}<SpeakButton text={lemma} /></span>
+        )}
         {context?.pos && <span className="badge-subtle">{POS_LABELS[context.pos] || context.pos}</span>}
       </div>
 
@@ -122,7 +133,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
 
       {myCards.map(c => (
         <div key={c.id} className="lookup-mycard">
-          <span>📗 我的單字：<strong>{displayWord(c)}</strong> — {c.translation}</span>
+          <span>📗 我的單字：<strong>{displayWord(c)}</strong><SpeakButton text={displayWord(c)} /> — {c.translation}</span>
           <span className="lookup-status">
             {STATUS_LABELS[c.lifecycle_status] || c.lifecycle_status}
             {c.lifecycle_status === 'active' && c.mastery_stage ? ` · S${c.mastery_stage}` : ''}
@@ -133,13 +144,14 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
       {entry && myCards.length === 0 && (
         <div className="lookup-ai-entry">
           <div><strong>{entry.article ? `${entry.article} ` : ''}{entry.word}</strong>
+            <SpeakButton text={entry.article ? `${entry.article} ${entry.word}` : entry.word} />
             {' '}<span className="lookup-pos">{POS_LABELS[entry.part_of_speech] || ''}</span>
             {' — '}{entry.translation}
           </div>
           {!compact && entry.definition_es && <div className="lookup-sub">{entry.definition_es}</div>}
           {!compact && entry.example_es && (
             <div className="lookup-example">
-              <div>{entry.example_es}</div>
+              <div>{entry.example_es}<SpeakButton text={entry.example_es} /></div>
               {entry.example_zh && <div className="lookup-sub">{entry.example_zh}</div>}
             </div>
           )}
@@ -151,6 +163,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
         <div key={`${item.lemma}|${item.pos}`} className="lookup-wikt">
           <div>
             <strong>{item.lemma}</strong>
+            <SpeakButton text={wiktSpeech(item)} />
             <span className="lookup-pos">{POS_LABELS[item.part_of_speech] || item.pos}{genderLabel(item.gender) ? ` · ${genderLabel(item.gender)}` : ''}</span>
           </div>
           {item.via && <div className="lookup-via">{item.lemma} 的 {describeForm(item.via)}</div>}

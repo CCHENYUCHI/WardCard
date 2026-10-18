@@ -2563,6 +2563,32 @@ textarea {
   font-weight: 600;
 }
 
+.speak-btn {
+  width: 26px;
+  height: 26px;
+  margin-left: 3px;
+  vertical-align: middle;
+  color: var(--google-blue);
+  flex-shrink: 0;
+}
+
+.speak-btn:hover {
+  color: var(--google-blue-hover);
+  background: var(--google-blue-light);
+}
+
+.lookup-head > .speak-btn {
+  align-self: center;
+  margin-left: -4px; /* sits next to its word despite the head's gap */
+}
+
+@media (pointer: coarse) {
+  .speak-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .lookup-zh {
   font-size: 1.05rem;
   font-weight: 600;

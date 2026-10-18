@@ -18,6 +18,10 @@
   - **資料表 `translations`**（每位使用者自己的紀錄，不綁卡片，刪卡不需清理）；API `POST /api/translations`、`GET /api/translations?q=&offset=`、`DELETE /api/translations/:id`。
   - **導覽列**：桌面新增「翻譯」分頁；手機底部列改為 今日學習 · 單字庫 · 翻譯 · 查詞 · 統計（查詞從頂部列移到底部）。
   - **測試**：`server/translations.test.js` 涵蓋 AI 結果正規化（截斷、預設值、不完整時報錯）與紀錄存取（快取、搜尋、分頁、只能刪自己的）。
+- **字典與例句點字發音**：所有查詞介面都能聽西語發音，沿用既有的 `/api/tts` 代理與瀏覽器 Web Speech，不花 AI 額度、不動後端。
+  - **點字自動念**：點例句裡的字會立刻念出那個字（Duolingo 式，每日學習與翻譯頁的句子皆適用）；再點同一個字關閉時不念。在點擊當下同步播放，iOS Safari 也能出聲。
+  - **🔊 按鈕 (`SpeakButton.jsx`)**：查詞結果的標題字、原形、我的單字（名詞含冠詞）、AI 詞條單字與例句、Wiktionary 原形（名詞自動加 el / la）旁都有 🔊；按了不會關閉彈窗或翻卡。字典頁搜尋不自動念。
+  - **連點不排隊 (`utils/speech.js`)**：原生語音正在念或有排隊時先 `cancel()` 再念，快速連點只念最後一個字（翻卡自動念也一併受惠）。
 - **例句點字查詢 (Duolingo 式) + 字典查詞 (D3)**：兩者共用同一套查詞引擎，**本機優先、AI 只在按下時才用**。
   - **點例句裡的單字 (`TappableSentence.jsx`)**：每日複習五個階段的例句都可以點字，跳出原形、中文、用法與英文釋義；桌面是錨定在字下方的小視窗，手機是底部 Bottom Sheet。挖空的答案不能點（不會洩漏答案）；點字不會翻卡；視窗開著時 Space / Enter / 1–4 不會評分，`Esc` 或點外面關閉。
   - **離線西英字典 (`server/scripts/build-dictionary.js`, `server/dictionary.js`)**：由 kaikki.org（Wiktionary）資料建成約 90MB 的 SQLite，查詢時把變化形還原成原形（`fui` → ir / ser、`tuvieron` → tener、`bonitas` → bonito），忽略重音（`arbol` → árbol，但 `año` 優先於 `ano`）；文法標記自動翻成中文（「ir 的 第一人稱 單數 簡單過去式 陳述式」）。檔案不存在時自動略過。執行時只多約 1MB 記憶體。
