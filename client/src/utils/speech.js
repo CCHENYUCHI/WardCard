@@ -46,6 +46,11 @@ function playNativeSpeech(text, allowFallback = true) {
     if (window.speechSynthesis.paused) {
       window.speechSynthesis.resume();
     }
+    // Rapid taps: drop what's still playing / queued instead of reading everything in a row.
+    // Only when busy: some Chrome versions swallow a speak() that follows cancel() on an idle queue.
+    if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+      window.speechSynthesis.cancel();
+    }
 
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'es-ES';

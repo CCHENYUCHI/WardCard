@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from
 import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 import { tokenizeSentence } from '../utils/spanish';
+import { playSpanishPronunciation } from '../utils/speech';
 import WordLookupPanel from './WordLookupPanel';
 
 const MOBILE_QUERY = '(max-width: 768px)';
@@ -111,6 +112,7 @@ export default function TappableSentence({ sentence, fullSentence, exampleZh = '
           onClick={(e) => {
             e.stopPropagation(); // don't flip the card
             if (active?.index === i) return setActive(null);
+            playSpanishPronunciation(t.text); // synchronously, inside the tap: iOS only allows audio from a user gesture
             setActive({ index: i, word: t.text, rect: e.currentTarget.getBoundingClientRect() });
           }}
         >
