@@ -3352,3 +3352,78 @@ textarea {
 .study-story {
   margin-top: 12px;
 }
+
+/* Collapsed-by-default story (lookups); opens on tap */
+.story-fold {
+  padding: 0;
+  overflow: hidden;
+}
+
+.story-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  background: none;
+  color: var(--text-primary);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.story-toggle:hover {
+  background: var(--bg-card-hover);
+}
+
+.story-toggle:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: -2px;
+}
+
+.story-toggle-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.story-toggle-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--google-blue);
+}
+
+.story-toggle-preview {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.story-chevron {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+}
+
+.story-fold.is-open .story-chevron {
+  transform: rotate(180deg);
+}
+
+.story-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 12px 12px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story-chevron {
+    transition: none;
+  }
+}

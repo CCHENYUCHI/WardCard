@@ -10,7 +10,7 @@
 - **A1 字源圖鑑（1,038 字，Claude 編寫）(`server/data/lexicon/`, `server/lexicon.js`, `StoryCard.jsx`)**：西語 A1 常用字（13 個主題：功能詞、數字與時間、人與家庭、身體與健康、食物、居家、衣物、城市與交通、學校與工作、自然與動物、顏色與形容詞、常用動詞、生活），每個字有中文意思、IPA、字源鏈（例如 波斯語 → 阿拉伯語 → 古西語 azur → azul）、英文同源字、字源故事、記憶聯想、用法提醒、A1 例句與插圖。資料一次寫好存成 JSON，**完全離線、不花 AI 額度**。
   - **有根據的字源**：每個字先用 `server/scripts/lexicon/fetch-facts.js` 從 kaikki.org（Wiktionary，CC BY-SA）抓詞源事實，並沿詞源往上追拉丁文等祖先詞條；故事只根據這些事實寫，Wiktionary 標示「可能 / 推測」的照實標示；查不到字源的字只寫記憶聯想（`confidence: hook-only`），不編字源。
   - **插圖**：手寫的插圖規格（`server/data/lexicon/art/*.js`）由 `render-art.js` 渲染成 SVG（`client/public/lexicon/`，每張多半不到 1KB），可整批切換「扁平插畫」與「線條＋重點色」兩種畫風；682 張 SVG 共約 350KB，功能詞與太抽象的 356 個字改用 emoji。其中 1,008 個字有字源故事，30 個字查不到可靠字源、只寫記憶聯想。
-  - **查詞**：`GET /api/dictionary/lookup` 回應新增 `story` 欄位；字典頁顯示完整字源卡，例句點字視窗顯示圖片＋記憶聯想。字典有中文就不再顯示「用 AI 查中文」；「加入單字庫」直接用字源圖鑑的內容建卡，不呼叫 AI。
+  - **查詞**：`GET /api/dictionary/lookup` 回應新增 `story` 欄位；字典頁與例句點字視窗**預設只顯示一列收合的「字源與記憶法」（縮圖＋一行預覽），有興趣再點開**看完整字源鏈、故事、用法與例句；切換到下一個字時回到收合，可用鍵盤操作。字典有中文就不再顯示「用 AI 查中文」；「加入單字庫」直接用字源圖鑑的內容建卡，不呼叫 AI。
   - **複習**：翻卡 / 作答後才顯示圖片、字源與記憶聯想（作答前不會洩漏答案）；新增 `GET /api/lexicon?word=`。
   - **資料表 `lexicon` / `lexicon_meta`**：伺服器啟動時，JSON 有變更才重新匯入，不常駐記憶體。
   - **驗證與測試**：`server/scripts/lexicon/validate.js`（欄位、長度、來源、例句含該字、SVG 大小與安全性）；`server/lexicon.test.js`。撰寫規範見 `server/scripts/lexicon/WRITING.md`。

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 import { getLexiconEntry } from '../utils/dictionary';
 import SpeakButton from './SpeakButton';
 
@@ -10,30 +11,10 @@ function StoryPicture({ story, size }) {
   return null;
 }
 
-/**
- * Hand-written lexicon entry: picture, where the word comes from, a memory hook.
- * compact: picture + hook + one-line origin (popover and study cards); full: everything (dictionary page).
- */
-export default function StoryCard({ story, compact = false }) {
-  if (!story) return null;
+function StoryDetails({ story }) {
   const chain = story.origin_chain || [];
-
-  if (compact) {
-    return (
-      <div className="story-card story-compact">
-        <StoryPicture story={story} size={64} />
-        <div className="story-text">
-          {chain.length > 1 && (
-            <div className="story-chain-line">{chain[0].lang_zh} {chain[0].word} → {story.word}</div>
-          )}
-          <div className="story-hook">🧠 {story.hook_zh}</div>
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <div className="story-card">
+    <>
       <div className="story-top">
         <StoryPicture story={story} size={96} />
         <div className="story-text">
@@ -75,6 +56,54 @@ export default function StoryCard({ story, compact = false }) {
       <div className="lookup-credit">
         {story.confidence === 'sourced' ? '字源依據 Wiktionary（CC BY-SA）· ' : ''}PalabraCard 字源圖鑑
       </div>
+    </>
+  );
+}
+
+/**
+ * Hand-written lexicon entry: picture, where the word comes from, a memory hook.
+ * Lookups (dictionary page, tap-a-word popover) show a one-line fold that opens on tap, so the
+ * result stays short until the learner is curious. `collapsible={false}` with `compact` is the
+ * always-visible picture + hook shown on a study card after it is flipped.
+ */
+export default function StoryCard({ story, compact = false, collapsible = true }) {
+  const [open, setOpen] = useState(false);
+  if (!story) return null;
+  const chain = story.origin_chain || [];
+
+  if (collapsible) {
+    return (
+      <div className={`story-card story-fold${open ? ' is-open' : ''}`}>
+        <button type="button" className="story-toggle" aria-expanded={open} onClick={() => setOpen(o => !o)}>
+          <StoryPicture story={story} size={44} />
+          <span className="story-toggle-text">
+            <span className="story-toggle-title">字源與記憶法</span>
+            <span className="story-toggle-preview">{chain.length > 1 ? `${chain[0].lang_zh} ${chain[0].word} → ${story.word}` : story.hook_zh}</span>
+          </span>
+          <ChevronDown size={18} className="story-chevron" aria-hidden="true" />
+        </button>
+        {open && <div className="story-details"><StoryDetails story={story} /></div>}
+      </div>
+    );
+  }
+
+  if (compact) {
+    return (
+      <div className="story-card story-compact">
+        <StoryPicture story={story} size={64} />
+        <div className="story-text">
+          {chain.length > 1 && (
+            <div className="story-chain-line">{chain[0].lang_zh} {chain[0].word} → {story.word}</div>
+          )}
+          <div className="story-hook">🧠 {story.hook_zh}</div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="story-card">
+      <StoryDetails story={story} />
     </div>
   );
 }
@@ -88,5 +117,5 @@ export function CardStory({ word }) {
     getLexiconEntry(word).then(entry => { if (!cancelled) setStory(entry); }).catch(() => {});
     return () => { cancelled = true; };
   }, [word]);
-  return <StoryCard story={story} compact />;
+  return <StoryCard story={story} compact collapsible={false} />;
 }
