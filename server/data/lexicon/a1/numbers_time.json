@@ -1,0 +1,3447 @@
+{
+  "theme": "numbers_time",
+  "theme_zh": "數字與時間",
+  "entries": [
+    {
+      "word": "cero",
+      "article": "",
+      "pos": "numeral",
+      "zh": "零",
+      "en": "zero",
+      "ipa": "/ˈθeɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "ṣifr",
+          "zh": "零、空無"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "zephirum",
+          "zh": "零"
+        },
+        {
+          "lang_zh": "新拉丁語",
+          "word": "zerum",
+          "zh": "零"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cero",
+          "zh": "零"
+        }
+      ],
+      "cognates_en": [
+        "zero",
+        "cipher"
+      ],
+      "story_zh": "cero 來自阿拉伯語 ṣifr，意思是「空無、零」。1202 年義大利數學家費波那契（Fibonacci）首先用拉丁文 zephirum 寫下這個字，很可能就是借自 ṣifr；後來縮短成 zerum，再進入西班牙語。英文 zero 和 cipher（密碼、數字）都是 ṣifr 的後代。",
+      "hook_zh": "cero ≈ 英文 zero，但西班牙的 c 念 /θ/（像英文 th）：THE-ro，想像一個空空的甜甜圈。",
+      "usage_zh": "複數 ceros；「從零開始」說 empezar de cero。",
+      "example_es": "Hoy estamos a cero grados.",
+      "example_zh": "今天氣溫零度。",
+      "image": "emoji:0️⃣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cero",
+        "wiktionary:la:zerum",
+        "wiktionary:la:zephirum"
+      ]
+    },
+    {
+      "word": "uno",
+      "article": "",
+      "pos": "numeral",
+      "zh": "一；一個",
+      "en": "one",
+      "ipa": "/ˈuno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūnus",
+          "zh": "一"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "uno",
+          "zh": "一"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "uno",
+          "zh": "一"
+        }
+      ],
+      "cognates_en": [
+        "one",
+        "unit",
+        "union"
+      ],
+      "story_zh": "uno 來自拉丁文 ūnus（一），在遙遠的史前和英文的 one、an 是同一個字。西語的 único（唯一的）、unidad（單位）、unión（結合）都是 ūnus 家族的成員，英文 unit、union 也一樣。",
+      "hook_zh": "獨角獸 unicorn 只有「一」支角：uni- 就是 uno。",
+      "usage_zh": "陽性名詞前變 un（un libro），陰性用 una（una casa）；單獨使用才說 uno。",
+      "example_es": "Uno, dos, tres… ¡foto!",
+      "example_zh": "一、二、三……拍照！",
+      "image": "emoji:1️⃣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:uno",
+        "wiktionary:la:unus"
+      ]
+    },
+    {
+      "word": "dos",
+      "article": "",
+      "pos": "numeral",
+      "zh": "二",
+      "en": "two",
+      "ipa": "/ˈdos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "duo",
+          "zh": "二"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "duōs",
+          "zh": "二（受格）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "dos",
+          "zh": "二"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dos",
+          "zh": "二"
+        }
+      ],
+      "cognates_en": [
+        "two",
+        "dual",
+        "duo"
+      ],
+      "story_zh": "dos 來自拉丁文 duo（二）的受格形 duōs。英文 two 是它的遠親，而 dual（雙重的）、duo（二人組）則是直接從拉丁文 duo 來的。",
+      "hook_zh": "dos ≈ duo 二人組：兩個人一起唱歌。",
+      "usage_zh": "「兩個都」說 los dos／las dos：Los dos son altos.",
+      "example_es": "Tengo dos gatos.",
+      "example_zh": "我有兩隻貓。",
+      "image": "emoji:2️⃣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dos",
+        "wiktionary:la:duo"
+      ]
+    },
+    {
+      "word": "tres",
+      "article": "",
+      "pos": "numeral",
+      "zh": "三",
+      "en": "three",
+      "ipa": "/ˈtɾes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "trēs",
+          "zh": "三"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tres",
+          "zh": "三"
+        }
+      ],
+      "cognates_en": [
+        "three",
+        "triple",
+        "trio"
+      ],
+      "story_zh": "tres 直接來自拉丁文 trēs（三），和英文 three 是同源的遠親。英文的 triple（三倍）、trio（三人組）裡的 tri- 也是拉丁文「三」的形式。",
+      "hook_zh": "tres 和 three 只差一點：th 換成 t。三角形 triangle 也是 tri-。",
+      "usage_zh": "13 是 trece、30 是 treinta、300 是 trescientos，拼法都不一樣。",
+      "example_es": "Son las tres de la tarde.",
+      "example_zh": "現在是下午三點。",
+      "image": "emoji:3️⃣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tres",
+        "wiktionary:la:tres"
+      ]
+    },
+    {
+      "word": "cuatro",
+      "article": "",
+      "pos": "numeral",
+      "zh": "四",
+      "en": "four",
+      "ipa": "/ˈkwatɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quattuor",
+          "zh": "四"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "quatro",
+          "zh": "四"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuatro",
+          "zh": "四"
+        }
+      ],
+      "cognates_en": [
+        "four",
+        "quarter"
+      ],
+      "story_zh": "cuatro 來自拉丁文 quattuor（四），古西班牙語寫成 quatro，後來 qu 改寫成 cu。英文 four 是它的遠親。拉丁文的「第四」quartus 則是英文 quarter（四分之一）的來源。",
+      "hook_zh": "cua- 聽起來像 quarter：把蛋糕切成「四」份。",
+      "usage_zh": "14 是 catorce（ca- 開頭）、40 是 cuarenta、400 是 cuatrocientos。",
+      "example_es": "Hay cuatro sillas en la cocina.",
+      "example_zh": "廚房裡有四張椅子。",
+      "image": "emoji:4️⃣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuatro",
+        "wiktionary:la:quattuor"
+      ]
+    },
+    {
+      "word": "cinco",
+      "article": "",
+      "pos": "numeral",
+      "zh": "五",
+      "en": "five",
+      "ipa": "/ˈθinko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quīnque",
+          "zh": "五"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "cīnque",
+          "zh": "五（首音簡化）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "çinco",
+          "zh": "五"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cinco",
+          "zh": "五"
+        }
+      ],
+      "cognates_en": [
+        "five"
+      ],
+      "story_zh": "cinco 來自拉丁文 quīnque（五）。兩個 qu 連在一起太拗口，口語把第一個 qu 改成 c，變成 cīnque，再演變成 cinco。英文 five 是它的遠親。quince（十五）和 quinientos（五百）則還保留著拉丁文的 qu。",
+      "hook_zh": "伸出五根手指，咬著舌頭說 THIN-co：cinco！",
+      "usage_zh": "50 是 cincuenta（不是 cincoenta），500 是 quinientos（不是 cincocientos）。",
+      "example_es": "Mi hijo tiene cinco años.",
+      "example_zh": "我兒子五歲。",
+      "image": "emoji:5️⃣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cinco",
+        "wiktionary:la:quinque",
+        "wiktionary:la:cinque"
+      ]
+    },
+    {
+      "word": "seis",
+      "article": "",
+      "pos": "numeral",
+      "zh": "六",
+      "en": "six",
+      "ipa": "/ˈseis/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sex",
+          "zh": "六"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "seis",
+          "zh": "六"
+        }
+      ],
+      "cognates_en": [
+        "six"
+      ],
+      "story_zh": "seis 來自拉丁文 sex（六），和英文 six 是同源的親戚，長得幾乎一樣。60 的 sesenta 也來自同一家族：拉丁文 sexāgintā，意思是「六個十」。",
+      "hook_zh": "seis 念起來像英文 say + s：說（say）六次 s。",
+      "usage_zh": "16 寫成一個字並加重音：dieciséis；600 是 seiscientos。",
+      "example_es": "Me levanto a las seis.",
+      "example_zh": "我六點起床。",
+      "image": "emoji:6️⃣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:seis",
+        "wiktionary:la:sex"
+      ]
+    },
+    {
+      "word": "siete",
+      "article": "",
+      "pos": "numeral",
+      "zh": "七",
+      "en": "seven",
+      "ipa": "/ˈsjete/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "septem",
+          "zh": "七"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "siete",
+          "zh": "七"
+        }
+      ],
+      "cognates_en": [
+        "seven",
+        "September"
+      ],
+      "story_zh": "siete 來自拉丁文 septem（七），和英文 seven 同源。英文 September 也藏著 septem：羅馬舊曆一年從三月開始，九月原本是第七個月。",
+      "hook_zh": "September 的 sept＝7：記住 siete 就是那個「7」。",
+      "usage_zh": "70 是 setenta（沒有 i），700 是 setecientos。",
+      "example_es": "La semana tiene siete días.",
+      "example_zh": "一週有七天。",
+      "image": "emoji:7️⃣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:siete",
+        "wiktionary:la:septem",
+        "wiktionary:la:September"
+      ]
+    },
+    {
+      "word": "ocho",
+      "article": "",
+      "pos": "numeral",
+      "zh": "八",
+      "en": "eight",
+      "ipa": "/ˈot͡ʃo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "octō",
+          "zh": "八"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "*oito",
+          "zh": "八（推測的中間形）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ocho",
+          "zh": "八"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ocho",
+          "zh": "八"
+        }
+      ],
+      "cognates_en": [
+        "eight",
+        "October"
+      ],
+      "story_zh": "ocho 來自拉丁文 octō（八），中間經過 *oito 的階段，ct 才變成 ch。英文 eight 是同源遠親，October 也帶著 octo-。有學者推測 octō 原本是「兩個四」的雙數形：以四根指尖計數，兩隻手剛好是八。",
+      "hook_zh": "章魚 octopus 有八隻腳：octo → ocho。",
+      "usage_zh": "18 是 dieciocho、80 是 ochenta、800 是 ochocientos。",
+      "example_es": "El banco abre a las ocho.",
+      "example_zh": "銀行八點開門。",
+      "image": "emoji:8️⃣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ocho",
+        "wiktionary:la:octo"
+      ]
+    },
+    {
+      "word": "nueve",
+      "article": "",
+      "pos": "numeral",
+      "zh": "九",
+      "en": "nine",
+      "ipa": "/ˈnwebe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "novem",
+          "zh": "九"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nueve",
+          "zh": "九"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nueve",
+          "zh": "九"
+        }
+      ],
+      "cognates_en": [
+        "nine",
+        "November"
+      ],
+      "story_zh": "nueve 來自拉丁文 novem（九），和英文 nine 同源。英文 November 的 nov- 也是「九」：羅馬舊曆一年從三月開始，十一月原本排第九。",
+      "hook_zh": "nueve 和 nuevo（新的）只差一個字母：九件新衣服。",
+      "usage_zh": "90 是 noventa（ue 變回 o），900 是 novecientos。",
+      "example_es": "Mi hermana tiene nueve años.",
+      "example_zh": "我妹妹九歲。",
+      "image": "emoji:9️⃣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nueve",
+        "wiktionary:la:novem"
+      ]
+    },
+    {
+      "word": "diez",
+      "article": "",
+      "pos": "numeral",
+      "zh": "十",
+      "en": "ten",
+      "ipa": "/ˈdjeθ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "decem",
+          "zh": "十"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "diez",
+          "zh": "十"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "diez",
+          "zh": "十"
+        }
+      ],
+      "cognates_en": [
+        "ten",
+        "December",
+        "decimal"
+      ],
+      "story_zh": "diez 來自拉丁文 decem（十），和法文 dix 是兄弟，和英文 ten 是遠親。英文 decimal（十進位的）、December 都帶著 decem：十二月原本是羅馬舊曆的第十個月。",
+      "hook_zh": "dec- 就是十：decade 是十年，diez 是十。",
+      "usage_zh": "在西班牙學校，un diez 是滿分（十分制）：Saqué un diez.",
+      "example_es": "Tengo diez euros.",
+      "example_zh": "我有十歐元。",
+      "image": "emoji:🔟",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:diez",
+        "wiktionary:la:decem"
+      ]
+    },
+    {
+      "word": "once",
+      "article": "",
+      "pos": "numeral",
+      "zh": "十一",
+      "en": "eleven",
+      "ipa": "/ˈonθe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūndecim",
+          "zh": "十一（一＋十）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "onze",
+          "zh": "十一"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "once",
+          "zh": "十一"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "once 來自拉丁文 ūndecim，就是 ūnus（一）＋ decem（十）：「一和十」。古西班牙語寫成 onze。once 也可以指「點心時間」，因為以前常在上午十一點吃點心。",
+      "hook_zh": "once 不是英文的「一次」！把它想成兩根並排的蠟燭：11。",
+      "usage_zh": "假朋友：once ≠ 英文 once（一次＝una vez）。",
+      "example_es": "El tren sale a las once.",
+      "example_zh": "火車十一點開。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:once",
+        "wiktionary:la:undecim"
+      ]
+    },
+    {
+      "word": "doce",
+      "article": "",
+      "pos": "numeral",
+      "zh": "十二",
+      "en": "twelve",
+      "ipa": "/ˈdoθe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "duodecim",
+          "zh": "十二（二＋十）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "doze",
+          "zh": "十二"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "doce",
+          "zh": "十二"
+        }
+      ],
+      "cognates_en": [
+        "dozen"
+      ],
+      "story_zh": "doce 來自拉丁文 duodecim，就是 duo（二）＋ decem（十）。古西班牙語寫成 doze，和葡萄牙文 doze 一樣。英文 dozen（一打）也是從這個拉丁字來的。",
+      "hook_zh": "doce ≈ dozen：一打雞蛋剛好 12 顆。",
+      "usage_zh": "時間 las doce 是十二點；「一打」是 una docena。",
+      "example_es": "Compro doce huevos.",
+      "example_zh": "我買十二顆蛋。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:doce",
+        "wiktionary:la:duodecim"
+      ]
+    },
+    {
+      "word": "trece",
+      "article": "",
+      "pos": "numeral",
+      "zh": "十三",
+      "en": "thirteen",
+      "ipa": "/ˈtɾeθe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "trēdecim",
+          "zh": "十三（三＋十）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "treze",
+          "zh": "十三"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "trece",
+          "zh": "十三"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "trece 來自拉丁文 trēdecim，就是 trēs（三）＋ decem（十），古西班牙語寫成 treze。從 11 到 15，西語都保留這種拉丁式的「個位＋十」，要一個一個背。",
+      "hook_zh": "西語世界的倒楣日是「martes 13」（13 號星期二），不是星期五。",
+      "usage_zh": "11–15（once…quince）要個別背，16 以後才是 dieci- ＋個位數。",
+      "example_es": "Mi hermano tiene trece años.",
+      "example_zh": "我弟弟十三歲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:trece",
+        "wiktionary:la:tredecim"
+      ]
+    },
+    {
+      "word": "catorce",
+      "article": "",
+      "pos": "numeral",
+      "zh": "十四",
+      "en": "fourteen",
+      "ipa": "/kaˈtoɾθe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quattuordecim",
+          "zh": "十四（四＋十）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "catorze",
+          "zh": "十四"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "catorce",
+          "zh": "十四"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "catorce 來自拉丁文 quattuordecim，就是 quattuor（四）＋ decem（十）。這個長長的拉丁字，到古西班牙語被壓縮成 catorze，只剩三個音節。",
+      "hook_zh": "cat-orce：一隻貓（cat）有 4 條腿和 10 根鬍子，加起來 14。",
+      "usage_zh": "拼法是 ca- 開頭，不是 cua-（對照 cuatro）。",
+      "example_es": "Hoy es catorce de febrero.",
+      "example_zh": "今天是二月十四日。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:catorce",
+        "wiktionary:la:quattuordecim"
+      ]
+    },
+    {
+      "word": "quince",
+      "article": "",
+      "pos": "numeral",
+      "zh": "十五",
+      "en": "fifteen",
+      "ipa": "/ˈkinθe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quīndecim",
+          "zh": "十五（五＋十）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "quinze",
+          "zh": "十五"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "quince",
+          "zh": "十五"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "quince 來自拉丁文 quīndecim，就是 quīnque（五）＋ decem（十），古西班牙語寫成 quinze。它保留了拉丁文的 qu，所以和 cinco 長得不一樣。",
+      "hook_zh": "拉丁美洲女孩 15 歲的成年派對叫 quinceañera：quince ＋ años。",
+      "usage_zh": "口語 quince días（十五天）常指「兩週」。",
+      "example_es": "Tengo quince minutos libres.",
+      "example_zh": "我有十五分鐘空檔。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:quince",
+        "wiktionary:la:quindecim"
+      ]
+    },
+    {
+      "word": "dieciséis",
+      "article": "",
+      "pos": "numeral",
+      "zh": "十六",
+      "en": "sixteen",
+      "ipa": "/djeθiˈseis/",
+      "breakdown": [
+        {
+          "part": "dieci-",
+          "zh": "十和（diez y）"
+        },
+        {
+          "part": "séis",
+          "zh": "六"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "dizeseis",
+          "zh": "十和六"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dieciséis",
+          "zh": "十六"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "dieciséis 來自古西班牙語 dizeseis，字面就是「十和六」，是一種拼裝出來的說法。它取代了從拉丁文 sēdecim 來的舊字 seze——法文的 seize（十六）至今還保留那個老形式。",
+      "hook_zh": "dieci + séis：「十（diez）和（y）六（seis）」黏成一個字。",
+      "usage_zh": "要加重音：dieciséis；同樣有重音的還有 veintidós、veintitrés、veintiséis。",
+      "example_es": "Mi prima tiene dieciséis años.",
+      "example_zh": "我表妹十六歲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dieciséis"
+      ]
+    },
+    {
+      "word": "veinte",
+      "article": "",
+      "pos": "numeral",
+      "zh": "二十",
+      "en": "twenty",
+      "ipa": "/ˈbeinte/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vīgintī",
+          "zh": "二十"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "veynte",
+          "zh": "二十"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "veinte",
+          "zh": "二十"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "veinte 來自拉丁文 vīgintī（二十），可以追溯到原始印歐語的「兩個十」。古西班牙語寫作 veynte，重音位置後來還移動過。",
+      "hook_zh": "veinte：10 根手指加 10 根腳趾，剛好 20。",
+      "usage_zh": "21–29 寫成一個字：veintiuno、veintidós…，veinte 的 e 變成 i。",
+      "example_es": "En mi clase hay veinte estudiantes.",
+      "example_zh": "我們班有二十個學生。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:veinte",
+        "wiktionary:la:viginti"
+      ]
+    },
+    {
+      "word": "treinta",
+      "article": "",
+      "pos": "numeral",
+      "zh": "三十",
+      "en": "thirty",
+      "ipa": "/ˈtɾeinta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "trīgintā",
+          "zh": "三十"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "treyenta",
+          "zh": "三十"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "treinta",
+          "zh": "三十"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "treinta 來自拉丁文 trīgintā（三十），古西班牙語寫成 treyenta。拉丁文表示「幾十」的 -gintā，到西語都變成 -nta：cuarenta、cincuenta、sesenta 都是這樣來的。",
+      "hook_zh": "tre(s) ＋ -inta：看到 -nta 結尾，就是「幾十」。",
+      "usage_zh": "31 以後分開寫：treinta y uno（不能連成一個字）。",
+      "example_es": "Este mes tiene treinta días.",
+      "example_zh": "這個月有三十天。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:treinta",
+        "wiktionary:la:triginta"
+      ]
+    },
+    {
+      "word": "cuarenta",
+      "article": "",
+      "pos": "numeral",
+      "zh": "四十",
+      "en": "forty",
+      "ipa": "/kwaˈɾenta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quadrāgintā",
+          "zh": "四十（四個十）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "quaraenta",
+          "zh": "四十"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuarenta",
+          "zh": "四十"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cuarenta 來自拉丁文 quadrāgintā，最初的意思就是「四個十」。古西班牙語寫成 quaraenta，中間的 g 已經不見了。",
+      "hook_zh": "cuar- 像 cuatro：四個十＝40。",
+      "usage_zh": "拼法是 cuarenta，不是 cuatrenta。",
+      "example_es": "Mi padre tiene cuarenta años.",
+      "example_zh": "我爸爸四十歲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuarenta",
+        "wiktionary:la:quadraginta"
+      ]
+    },
+    {
+      "word": "cincuenta",
+      "article": "",
+      "pos": "numeral",
+      "zh": "五十",
+      "en": "fifty",
+      "ipa": "/θinˈkwenta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quīnquāgintā",
+          "zh": "五十（五個十）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cīnquāgintā",
+          "zh": "五十（口語形）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cinquaenta",
+          "zh": "五十"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cincuenta",
+          "zh": "五十"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cincuenta 來自拉丁文 cīnquāgintā，也就是 quīnquāgintā「五個十」把開頭的 qu 簡化成 c 的形式（和 cinco 一樣）。古西班牙語寫成 cinquaenta。",
+      "hook_zh": "cin(co) ＋ cuenta：數（cuenta）五個十。",
+      "usage_zh": "不是 cincoenta；「五十歲」cincuenta años。",
+      "example_es": "Este libro cuesta cincuenta euros.",
+      "example_zh": "這本書五十歐元。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cincuenta",
+        "wiktionary:la:quinquaginta"
+      ]
+    },
+    {
+      "word": "cien",
+      "article": "",
+      "pos": "numeral",
+      "zh": "一百",
+      "en": "one hundred",
+      "ipa": "/ˈθjen/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "centum",
+          "zh": "一百"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ciento",
+          "zh": "一百"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cien",
+          "zh": "一百（縮短形）"
+        }
+      ],
+      "cognates_en": [
+        "century",
+        "cent",
+        "percent"
+      ],
+      "story_zh": "cien 是 ciento 的縮短形，來自拉丁文 centum（一百）。英文 century（世紀＝一百年）、cent（一分錢＝百分之一元）、percent（百分比）都來自同一個字。",
+      "hook_zh": "cien → cent：一美元有一百 cents；「百分之百」是 cien por cien。",
+      "usage_zh": "單獨或名詞前用 cien（cien libros）；101 以上用 ciento：ciento uno。",
+      "example_es": "Hay cien personas en la fiesta.",
+      "example_zh": "派對上有一百個人。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cien",
+        "wiktionary:la:centum"
+      ]
+    },
+    {
+      "word": "mil",
+      "article": "",
+      "pos": "numeral",
+      "zh": "一千",
+      "en": "thousand",
+      "ipa": "/ˈmil/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mīlle",
+          "zh": "一千"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "mil",
+          "zh": "一千"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mil",
+          "zh": "一千"
+        }
+      ],
+      "cognates_en": [
+        "mile",
+        "million"
+      ],
+      "story_zh": "mil 來自拉丁文 mīlle（一千）。羅馬人的「一哩」叫 mīlle passūs，字面意思是「一千步」，後來簡稱 mīlle——英文的 mile（英里）就是這麼來的。",
+      "hook_zh": "mil → mile：走一千步，就是一哩路。",
+      "usage_zh": "不加 un：1000 是 mil；2000 是 dos mil（mil 不加 s）。",
+      "example_es": "Esta bici cuesta mil euros.",
+      "example_zh": "這台腳踏車一千歐元。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mil",
+        "wiktionary:la:mille"
+      ]
+    },
+    {
+      "word": "millón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "一百萬",
+      "en": "million",
+      "ipa": "/miˈʝon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "milione",
+          "zh": "百萬"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "millón",
+          "zh": "百萬"
+        }
+      ],
+      "cognates_en": [
+        "million"
+      ],
+      "story_zh": "millón 是從義大利語 milione 借來的。在這之前，西班牙語的「百萬」叫 cuento，來自拉丁文 computus（計算）——今天的 cuento 則是「故事」的意思。",
+      "hook_zh": "millón ≈ million，ll 念 /ʝ/：mi-YON。",
+      "usage_zh": "是名詞，後面加 de：un millón de personas；複數 millones 沒有重音。",
+      "example_es": "Madrid tiene más de tres millones de habitantes.",
+      "example_zh": "馬德里有三百多萬居民。",
+      "image": "emoji:💰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:millón"
+      ]
+    },
+    {
+      "word": "primero",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "第一的；首先",
+      "en": "first",
+      "ipa": "/pɾiˈmeɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prīmus",
+          "zh": "第一"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "prīmārius",
+          "zh": "第一等的、首要的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "primero",
+          "zh": "第一"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "primero",
+          "zh": "第一的"
+        }
+      ],
+      "cognates_en": [
+        "primary",
+        "prime"
+      ],
+      "story_zh": "primero 來自拉丁文 prīmārius「第一等的、首要的」，由 prīmus（第一）加上形容詞字尾 -ārius 組成。它和 primario（初級的）是同一來源的「雙胞胎字」，英文 primary 也來自 prīmārius。",
+      "hook_zh": "小學叫 primary school：人生「第一個」學校。",
+      "usage_zh": "陽性單數名詞前變 primer：el primer día；陰性 primera。",
+      "example_es": "Hoy es mi primer día de clase.",
+      "example_zh": "今天是我第一天上課。",
+      "image": "emoji:🥇",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:primero",
+        "wiktionary:la:primarius"
+      ]
+    },
+    {
+      "word": "segundo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "第二的；（名詞）秒",
+      "en": "second",
+      "ipa": "/seˈɡundo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sequor",
+          "zh": "跟隨"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "secundus",
+          "zh": "跟在後面的；第二"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "segundo",
+          "zh": "第二的"
+        }
+      ],
+      "cognates_en": [
+        "second"
+      ],
+      "story_zh": "segundo 來自拉丁文 secundus，字面意思是「跟在後面的」，和動詞 sequor（跟隨）同根，所以西語 seguir（跟隨）也是它的親戚。第二名，就是緊跟著第一名的那一個。",
+      "hook_zh": "和英文 second 一樣：既是「第二」又是「秒」。",
+      "usage_zh": "名詞 un segundo＝一秒；Espera un segundo（等一下）。",
+      "example_es": "Vivo en el segundo piso.",
+      "example_zh": "我住在二樓。",
+      "image": "emoji:🥈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:segundo",
+        "wiktionary:la:secundus",
+        "wiktionary:la:sequor"
+      ]
+    },
+    {
+      "word": "tercero",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "第三的",
+      "en": "third",
+      "ipa": "/teɾˈθeɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tertius",
+          "zh": "第三"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "tertiārius",
+          "zh": "第三部分的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tercero",
+          "zh": "第三的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "tercero 來自拉丁文 tertiārius，是 tertius（第三）加上字尾 -ārius。terciario（第三級的）是同一個拉丁字後來再借進來的「雙胞胎字」。名詞 tercero 還可以指「第三方、調解人」。",
+      "hook_zh": "ter- 像 tres：頒獎台上站第三階的人。",
+      "usage_zh": "陽性單數名詞前變 tercer：el tercer piso；陰性 tercera。",
+      "example_es": "Mi oficina está en el tercer piso.",
+      "example_zh": "我的辦公室在三樓。",
+      "image": "emoji:🥉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tercero",
+        "wiktionary:la:tertiarius"
+      ]
+    },
+    {
+      "word": "último",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "最後的；最近的",
+      "en": "last; latest",
+      "ipa": "/ˈultimo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ultimus",
+          "zh": "最後的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "último",
+          "zh": "最後的"
+        }
+      ],
+      "cognates_en": [
+        "ultimate"
+      ],
+      "story_zh": "último 是直接從拉丁文 ultimus（最後的）借來的「書面字」，所以幾乎保留了拉丁文的原樣。英文 ultimate（終極的）也來自同一個拉丁字。",
+      "hook_zh": "último ≈ ultimate：遊戲的最後一關、終極大魔王。",
+      "usage_zh": "重音在 ú；常放名詞前：el último tren（末班車）；也指「最近的」。",
+      "example_es": "Es el último tren de la noche.",
+      "example_zh": "這是今晚的末班車。",
+      "image": "emoji:🔚",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:último"
+      ]
+    },
+    {
+      "word": "mitad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "一半",
+      "en": "half",
+      "ipa": "/miˈtad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "medius",
+          "zh": "中間的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "medietās",
+          "zh": "中間部分；一半"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "meitad",
+          "zh": "一半"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mitad",
+          "zh": "一半"
+        }
+      ],
+      "cognates_en": [
+        "medium"
+      ],
+      "story_zh": "mitad 來自晚期拉丁文 medietās（中間部分、一半），由 medius（中間的）加名詞字尾 -tās 組成。古西班牙語寫成 meitad，後來縮成 mitad。法文 moitié、義大利文 metà 都是它的兄弟。",
+      "hook_zh": "mitad 像 middle：從正中間切一刀，剛好一半。",
+      "usage_zh": "la mitad de…＝…的一半；當形容詞「半」用 medio：media hora。",
+      "example_es": "Quiero la mitad de la pizza.",
+      "example_zh": "我要一半的披薩。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mitad",
+        "wiktionary:la:medietas",
+        "wiktionary:la:medius"
+      ]
+    },
+    {
+      "word": "número",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "數字；號碼",
+      "en": "number",
+      "ipa": "/ˈnumeɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "numerus",
+          "zh": "數目"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "número",
+          "zh": "數字"
+        }
+      ],
+      "cognates_en": [
+        "number"
+      ],
+      "story_zh": "número 是從拉丁文 numerus（數目）借來的，再往上可追溯到一個意思是「分配、拿取」的古老字根。英文 number 也是從 numerus 來的。",
+      "hook_zh": "número ≈ number，重音在 nú：NU-me-ro。",
+      "usage_zh": "電話號碼是 número de teléfono；縮寫 n.º。",
+      "example_es": "¿Cuál es tu número de teléfono?",
+      "example_zh": "你的電話號碼是多少？",
+      "image": "emoji:🔢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:número",
+        "wiktionary:la:numerus"
+      ]
+    },
+    {
+      "word": "hora",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "小時；時刻、鐘點",
+      "en": "hour; time",
+      "ipa": "/ˈoɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "hōra",
+          "zh": "小時"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hora",
+          "zh": "小時"
+        }
+      ],
+      "cognates_en": [
+        "hour"
+      ],
+      "story_zh": "hora 直接繼承自拉丁文 hōra（小時），一個字母都沒變。英文 hour 也來自同一個拉丁字，而且兩者開頭的 h 都不發音。",
+      "hook_zh": "hora ≈ hour，h 都不發音：念 O-ra。",
+      "usage_zh": "問時間：¿Qué hora es?（現在幾點？）；「一小時」una hora。",
+      "example_es": "¿Qué hora es?",
+      "example_zh": "現在幾點？",
+      "image": "emoji:🕐",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hora"
+      ]
+    },
+    {
+      "word": "minuto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "分鐘",
+      "en": "minute",
+      "ipa": "/miˈnuto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "minuō",
+          "zh": "減少"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "minūtus",
+          "zh": "很小的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "minuto",
+          "zh": "分鐘"
+        }
+      ],
+      "cognates_en": [
+        "minute"
+      ],
+      "story_zh": "minuto 借自拉丁文 minūtus「很小的」，是動詞 minuō（減少）的過去分詞。可以想成：一小時被切出來的「小份」。英文 minute 也同時有「分鐘」和「微小的」兩個意思；西語固有的 menudo（細小的）則是同一個拉丁字的另一條演變路線。",
+      "hook_zh": "mini 小小的：minuto 就是一小段時間。",
+      "usage_zh": "「一分鐘」un minuto；口語「等一下」也常說 un momento。",
+      "example_es": "Espera cinco minutos, por favor.",
+      "example_zh": "請等五分鐘。",
+      "image": "emoji:⏱️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:minuto",
+        "wiktionary:la:minutus"
+      ]
+    },
+    {
+      "word": "día",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "天、日；白天",
+      "en": "day",
+      "ipa": "/ˈdia/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "diēs",
+          "zh": "日、天"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*dia",
+          "zh": "日"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "dia",
+          "zh": "日"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "día",
+          "zh": "天"
+        }
+      ],
+      "cognates_en": [
+        "diary"
+      ],
+      "story_zh": "día 來自拉丁文 diēs，再往上可追溯到意思是「天空」的古字根。雖然長得很像，它和英文 day 其實沒有親戚關係，純屬巧合！英文 diary（日記）才是真正從 diēs 來的親戚。",
+      "hook_zh": "día 結尾是 -a 卻是陽性：Buenos días，不是 buenas días。",
+      "usage_zh": "陽性：el día、buenos días；「每天」todos los días。",
+      "example_es": "Hoy es un día muy bonito.",
+      "example_zh": "今天天氣真好。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:día",
+        "wiktionary:la:dies"
+      ]
+    },
+    {
+      "word": "semana",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "週、星期",
+      "en": "week",
+      "ipa": "/seˈmana/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "septimus",
+          "zh": "第七"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "septimānus",
+          "zh": "第七個的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "septimāna",
+          "zh": "週"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "setmana",
+          "zh": "週"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "semana",
+          "zh": "週"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "semana 來自晚期拉丁文 septimāna（週），原本是形容詞 septimānus「和第七個有關的」，源自 septimus（第七）。七天一輪就是一週。古西班牙語還有 setmana 的寫法，看得出 sept-（七）的痕跡。",
+      "hook_zh": "se(pti)mana：一排七格的日曆，數到第七格就是一週。",
+      "usage_zh": "「這週」esta semana；「下週」la semana que viene／la próxima semana。",
+      "example_es": "Voy al gimnasio tres veces por semana.",
+      "example_zh": "我每週去健身房三次。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:semana",
+        "wiktionary:la:septimana",
+        "wiktionary:la:septimanus"
+      ]
+    },
+    {
+      "word": "mes",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "月、月份",
+      "en": "month",
+      "ipa": "/ˈmes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mēnsis",
+          "zh": "月份"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mes",
+          "zh": "月"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "mes 直接來自拉丁文 mēnsis（月份），義大利文 mese、葡萄牙文 mês 都是它的兄弟。有一說認為 September 這個拉丁字也藏著「月」：septem（七）＋「月」，不過這點還不確定。",
+      "hook_zh": "mes 和「月」一樣短短一個音節：一個 mes 大約三十天。",
+      "usage_zh": "複數 meses；「每個月」cada mes；「下個月」el mes que viene。",
+      "example_es": "Mi cumpleaños es el mes que viene.",
+      "example_zh": "我的生日在下個月。",
+      "image": "emoji:🗓️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mes",
+        "wiktionary:la:September"
+      ]
+    },
+    {
+      "word": "año",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "年；歲",
+      "en": "year",
+      "ipa": "/ˈaɲo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "annus",
+          "zh": "年"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "anno",
+          "zh": "年"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "año",
+          "zh": "年"
+        }
+      ],
+      "cognates_en": [
+        "annual",
+        "anniversary"
+      ],
+      "story_zh": "año 來自拉丁文 annus（年），古西班牙語寫成 anno，兩個 n 後來合成了 ñ。英文 annual（每年的）、anniversary（週年紀念）都是從 annus 來的。",
+      "hook_zh": "地球繞太陽一圈＝un año；ñ 就像兩個 n 疊在一起。",
+      "usage_zh": "問年齡用 tener：Tengo 20 años；ñ 不能省略，ano 是完全不同的字。",
+      "example_es": "Tengo veinte años.",
+      "example_zh": "我二十歲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:año",
+        "wiktionary:la:annus"
+      ]
+    },
+    {
+      "word": "siglo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "世紀；時代",
+      "en": "century",
+      "ipa": "/ˈsiɡlo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "saeculum",
+          "zh": "一代人、一生"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sieglo",
+          "zh": "世紀"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "siglo",
+          "zh": "世紀"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "siglo 來自拉丁文 saeculum，原本是「一代人、一生」的意思，後來才指一段很長的時代。它走的是半學術路線；如果照一般口語演變，應該會變成 *sejo 這類形狀。",
+      "hook_zh": "想成「一生」：一個人活到一百歲，剛好走完一個 siglo。",
+      "usage_zh": "世紀用羅馬數字：el siglo XXI（念 veintiuno）。",
+      "example_es": "Vivimos en el siglo XXI.",
+      "example_zh": "我們生活在二十一世紀。",
+      "image": "emoji:⏳",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:siglo",
+        "wiktionary:la:saeculum"
+      ]
+    },
+    {
+      "word": "momento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "片刻、時刻",
+      "en": "moment",
+      "ipa": "/moˈmento/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mōmentum",
+          "zh": "片刻；動量"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "momento",
+          "zh": "片刻"
+        }
+      ],
+      "cognates_en": [
+        "moment",
+        "momentum"
+      ],
+      "story_zh": "momento 是從拉丁文 mōmentum 借來的。英文 moment（片刻）和 momentum（動量）都是同一個字的後代，西語 momento 也同時有「片刻」和「動量」的意思。",
+      "hook_zh": "momento ≈ moment：Un momento, por favor（請稍等）。",
+      "usage_zh": "「此刻、現在」en este momento；「目前」por el momento。",
+      "example_es": "Un momento, por favor.",
+      "example_zh": "請稍等一下。",
+      "image": "emoji:📸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:momento"
+      ]
+    },
+    {
+      "word": "tiempo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "時間；天氣",
+      "en": "time; weather",
+      "ipa": "/ˈtjempo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tempus",
+          "zh": "一段時間"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "tiempo",
+          "zh": "時間"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tiempo",
+          "zh": "時間；天氣"
+        }
+      ],
+      "cognates_en": [
+        "tempo",
+        "temporary"
+      ],
+      "story_zh": "tiempo 來自拉丁文 tempus（一段時間）。一說它源自「拉長、伸展」的字根——時間就是被拉長的一段；也有學者認為來自「切割」，是切出來的一段。音樂的 tempo（速度）是它的雙胞胎字。",
+      "hook_zh": "tiempo ≈ tempo：時鐘滴答的節奏就是時間在走。",
+      "usage_zh": "也指天氣：¿Qué tiempo hace hoy?；「很多時間」mucho tiempo（不可數）。",
+      "example_es": "Hoy no tengo tiempo.",
+      "example_zh": "我今天沒時間。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tiempo",
+        "wiktionary:la:tempus"
+      ]
+    },
+    {
+      "word": "fecha",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "日期",
+      "en": "date",
+      "ipa": "/ˈfet͡ʃa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "facta",
+          "zh": "做成的、完成的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fecha",
+          "zh": "日期"
+        }
+      ],
+      "cognates_en": [
+        "fact"
+      ],
+      "story_zh": "fecha 來自拉丁文 facta（做成的、完成的）。字典對 fecha 的解釋正是「標明某件事何時做成的那個日期」——文件上寫下的，就是事情完成的那一天。",
+      "hook_zh": "fecha ≈ fact：寫在文件上、已成「事實」的那一天。",
+      "usage_zh": "問日期：¿Qué fecha es hoy?；出生日期 fecha de nacimiento。",
+      "example_es": "¿Cuál es la fecha de hoy?",
+      "example_zh": "今天是幾月幾號？",
+      "image": "emoji:📅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fecha"
+      ]
+    },
+    {
+      "word": "tarde",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "下午、傍晚；（副詞）晚、遲",
+      "en": "afternoon; evening; late",
+      "ipa": "/ˈtaɾde/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tardus",
+          "zh": "慢的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "tardē",
+          "zh": "慢慢地、遲遲地"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "tarde",
+          "zh": "晚"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tarde",
+          "zh": "下午；晚"
+        }
+      ],
+      "cognates_en": [
+        "tardy"
+      ],
+      "story_zh": "tarde 來自拉丁文副詞 tardē「慢慢地、遲遲地」。它同時是「遲到」和「下午、傍晚」——一天中比較「晚」的時段。中文的「晚」也一樣，既是「遲」又是「傍晚」，兩種語言想到一塊去了！",
+      "hook_zh": "中文「晚」＝遲＋傍晚，西語 tarde 也一樣：Buenas tardes。",
+      "usage_zh": "名詞 la tarde：Buenas tardes、por la tarde；副詞「遲到」：Llego tarde。",
+      "example_es": "Por la tarde estudio español.",
+      "example_zh": "我下午學西班牙文。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tarde",
+        "wiktionary:la:tarde"
+      ]
+    },
+    {
+      "word": "noche",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "夜晚、晚上",
+      "en": "night",
+      "ipa": "/ˈnot͡ʃe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nox",
+          "zh": "夜晚"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "noche",
+          "zh": "夜晚"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "noche",
+          "zh": "夜晚"
+        }
+      ],
+      "cognates_en": [
+        "nocturnal"
+      ],
+      "story_zh": "noche 來自拉丁文 nox（夜晚），古西班牙語就已經寫成 noche。英文 nocturnal（夜間的、夜行性的）也是從 nox 來的。",
+      "hook_zh": "Buenas noches＝晚安：夜貓子（nocturnal）出動的時間 🌙。",
+      "usage_zh": "「今晚」esta noche；「晚上」por la noche；晚上道別也說 Buenas noches。",
+      "example_es": "Esta noche vamos al cine.",
+      "example_zh": "今晚我們去看電影。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:noche"
+      ]
+    },
+    {
+      "word": "mediodía",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "中午、正午；午餐時間",
+      "en": "noon, midday",
+      "ipa": "/medjoˈdia/",
+      "breakdown": [
+        {
+          "part": "medio",
+          "zh": "一半、中間"
+        },
+        {
+          "part": "día",
+          "zh": "天"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "medio + día",
+          "zh": "中間 + 天"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mediodía",
+          "zh": "中午"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "mediodía 就是 medio（一半、中間）＋ día（天）：「一天的中間」。法文 midi、義大利文 mezzodì、葡萄牙文 meio-dia 也都是同樣的組合。",
+      "hook_zh": "太陽爬到天空正中間（medio），就是 mediodía。",
+      "usage_zh": "「中午時」a mediodía；在西班牙也常指午餐時段（約兩點）。",
+      "example_es": "Comemos a mediodía.",
+      "example_zh": "我們中午吃飯。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mediodía"
+      ]
+    },
+    {
+      "word": "medianoche",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "午夜、半夜十二點",
+      "en": "midnight",
+      "ipa": "/medjaˈnot͡ʃe/",
+      "breakdown": [
+        {
+          "part": "media",
+          "zh": "中間（陰性）"
+        },
+        {
+          "part": "noche",
+          "zh": "夜晚"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "media + noche",
+          "zh": "中間 + 夜晚"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "medianoche",
+          "zh": "午夜"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "medianoche 就是 media（medio 的陰性，因為 noche 是陰性）＋ noche：「夜晚的中間」。法文 minuit、義大利文 mezzanotte 也是同樣的組合。在西班牙，medianoche 還指一種小圓麵包做的三明治。",
+      "hook_zh": "灰姑娘的魔法在 medianoche（午夜十二點）消失。",
+      "usage_zh": "「午夜時」a medianoche；注意 media 是陰性，對照 mediodía 的 medio。",
+      "example_es": "Me acuesto a medianoche.",
+      "example_zh": "我半夜十二點睡覺。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:medianoche"
+      ]
+    },
+    {
+      "word": "fin de semana",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "週末",
+      "en": "weekend",
+      "ipa": "/ˌfin de seˈmana/",
+      "breakdown": [
+        {
+          "part": "fin",
+          "zh": "結束"
+        },
+        {
+          "part": "de",
+          "zh": "的"
+        },
+        {
+          "part": "semana",
+          "zh": "週"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "fin（結束）＋ de semana（一週的）：一週的尾巴就是週末。電影最後出現的 FIN＝劇終。",
+      "usage_zh": "「週末愉快」¡Buen fin de semana!；「這個週末」este fin de semana。",
+      "example_es": "¿Qué haces el fin de semana?",
+      "example_zh": "你週末做什麼？",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:fin de semana"
+      ]
+    },
+    {
+      "word": "calendario",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "日曆、月曆；行事曆",
+      "en": "calendar",
+      "ipa": "/kalenˈdaɾjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "calendārium",
+          "zh": "曆"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "calendario",
+          "zh": "日曆"
+        }
+      ],
+      "cognates_en": [
+        "calendar"
+      ],
+      "story_zh": "calendario 是從拉丁文 calendārium 借來的，英文 calendar 也是同一個字。西語只是多了 -io 的結尾。",
+      "hook_zh": "calendario ≈ calendar ＋ io：牆上那本翻頁的日曆。",
+      "usage_zh": "陽性：el calendario；「學年行事曆」calendario escolar。",
+      "example_es": "Hay un calendario en la pared.",
+      "example_zh": "牆上有一本日曆。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:calendario"
+      ]
+    },
+    {
+      "word": "reloj",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "時鐘；手錶",
+      "en": "clock; watch",
+      "ipa": "/reˈlox/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "hōrológion",
+          "zh": "計時器"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "hōrologium",
+          "zh": "日晷、水鐘"
+        },
+        {
+          "lang_zh": "古加泰隆尼亞語",
+          "word": "relotge",
+          "zh": "時鐘"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reloj",
+          "zh": "時鐘"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "reloj 經由古加泰隆尼亞語 relotge 借來，源頭是拉丁文 hōrologium（日晷、水鐘），而它又來自希臘文 hōrológion。西語少見的結尾 j，可能是從舊複數 relojes 倒推回來的。法文 horloge、義大利文 orologio 都是它的親戚。",
+      "hook_zh": "把法文 horloge 的 h、o 拿掉，尾巴換成 j：reloj。",
+      "usage_zh": "時鐘、手錶都叫 reloj；複數 relojes；結尾 j 很輕。",
+      "example_es": "Mi reloj es nuevo.",
+      "example_zh": "我的手錶是新的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reloj",
+        "wiktionary:la:horologium"
+      ]
+    },
+    {
+      "word": "cumpleaños",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "生日",
+      "en": "birthday",
+      "ipa": "/kumpleˈaɲos/",
+      "breakdown": [
+        {
+          "part": "cumple",
+          "zh": "完成、滿（cumplir）"
+        },
+        {
+          "part": "años",
+          "zh": "年、歲"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cumple + años",
+          "zh": "完成 + 年"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cumpleaños",
+          "zh": "生日"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cumpleaños 是「動詞＋受詞」組成的字：cumple（完成）＋ años（年），字面意思是「滿了幾年」——慶祝又活滿一歲的日子。",
+      "hook_zh": "每過一次 cumpleaños，就又「完成」（cumple）一年。¡Feliz cumpleaños!",
+      "usage_zh": "單複數同形：el／los cumpleaños；口語簡稱 el cumple。",
+      "example_es": "Mañana es mi cumpleaños.",
+      "example_zh": "明天是我的生日。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cumpleaños"
+      ]
+    },
+    {
+      "word": "fiesta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "派對；節日、假日",
+      "en": "party; holiday",
+      "ipa": "/ˈfjesta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fēstum",
+          "zh": "節日"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "fēsta",
+          "zh": "節慶、宴會"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "fiesta",
+          "zh": "節日"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fiesta",
+          "zh": "派對"
+        }
+      ],
+      "cognates_en": [
+        "feast",
+        "festival"
+      ],
+      "story_zh": "fiesta 來自拉丁文 fēsta，原本是 fēstum（節日）的複數。照一般演變，開頭的 f 應該會變成 h，但 fiesta 卻保留了 f——原因不明，可能受到書面語影響。英文 feast（盛宴）和 festival 都是它的親戚。",
+      "hook_zh": "fiesta ≈ festival：有音樂、有食物、有朋友就是 fiesta 🎉。",
+      "usage_zh": "「辦派對」hacer una fiesta；「國定假日」día de fiesta。",
+      "example_es": "El sábado hay una fiesta en mi casa.",
+      "example_zh": "星期六我家有派對。",
+      "image": "emoji:🎉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fiesta",
+        "wiktionary:la:festa"
+      ]
+    },
+    {
+      "word": "vacaciones",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "假期、休假（常用複數）",
+      "en": "vacation, holidays",
+      "ipa": "/bakaˈθjones/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vacātiō",
+          "zh": "空出"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vacación",
+          "zh": "休假；空出"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vacaciones",
+          "zh": "假期"
+        }
+      ],
+      "cognates_en": [
+        "vacation"
+      ],
+      "story_zh": "vacaciones 是 vacación 的複數，借自拉丁文 vacātiō（受格 vacātiōnem）。單數 vacación 除了「休假」，也有「空出（職位）」的意思——放假，就是把行程清空的日子。英文 vacation 是同一個字。",
+      "hook_zh": "把行事曆清空，去度假：vacaciones ≈ vacation 🏖️。",
+      "usage_zh": "通常用複數：las vacaciones；「去度假」ir de vacaciones。",
+      "example_es": "En agosto vamos de vacaciones.",
+      "example_zh": "八月我們去度假。",
+      "image": "emoji:🏖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vacación"
+      ]
+    },
+    {
+      "word": "lunes",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "星期一",
+      "en": "Monday",
+      "ipa": "/ˈlunes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "Lūnae diēs",
+          "zh": "月亮的日子"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "lunes",
+          "zh": "星期一"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lunes",
+          "zh": "星期一"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "lunes 來自拉丁文 Lūnae diēs「月亮（Luna）的日子」。後來「日子」（diēs）被省略，只留下月亮。英文 Monday（Moon-day）和日文「月曜日」也都是「月亮日」。",
+      "hook_zh": "luna（月亮）＋ s：星期一是月亮日 🌙。",
+      "usage_zh": "星期名小寫、陽性：el lunes（這週一）、los lunes（每週一）。",
+      "example_es": "El lunes tengo clase de español.",
+      "example_zh": "星期一我有西班牙文課。",
+      "image": "emoji:🌙",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lunes"
+      ]
+    },
+    {
+      "word": "martes",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "星期二",
+      "en": "Tuesday",
+      "ipa": "/ˈmaɾtes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "Mārtis diēs",
+          "zh": "戰神瑪爾斯的日子"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "martes",
+          "zh": "星期二"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "martes",
+          "zh": "星期二"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "martes 來自拉丁文 Mārtis diēs「戰神瑪爾斯（Mars）的日子」。把一週七天對應到七顆古典行星的做法，最早在西元二世紀就有記載，而火星正是以 Mars 命名。",
+      "hook_zh": "Mars＝火星：星期二是「火曜日」，日文也這樣叫！",
+      "usage_zh": "西語世界的倒楣日是 martes 13（13 號星期二）；單複數同形。",
+      "example_es": "El martes voy al médico.",
+      "example_zh": "星期二我要去看醫生。",
+      "image": "emoji:🔴",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:martes"
+      ]
+    },
+    {
+      "word": "miércoles",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "星期三",
+      "en": "Wednesday",
+      "ipa": "/ˈmjeɾkoles/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "hēméra Hermoû",
+          "zh": "赫密士之日"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "diēs Mercurī",
+          "zh": "墨丘利的日子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "miércoles",
+          "zh": "星期三"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "miércoles 來自拉丁文 diēs Mercurī「墨丘利（Mercury，也是水星）的日子」，這是仿照希臘文「赫密士之日」造的詞。後來「日子」被省略，r 和 l 的音也變了，字尾則跟著其他星期名改成 -es。",
+      "hook_zh": "Mercury＝水星：星期三是「水曜日」💧。",
+      "usage_zh": "重音在 mié；口語 ¡Miércoles! 是委婉的「可惡！」。",
+      "example_es": "Los miércoles juego al fútbol.",
+      "example_zh": "我每週三踢足球。",
+      "image": "emoji:💧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:miércoles",
+        "wiktionary:la:dies Mercurii"
+      ]
+    },
+    {
+      "word": "jueves",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "星期四",
+      "en": "Thursday",
+      "ipa": "/ˈxwebes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "Iovis diēs",
+          "zh": "朱庇特的日子"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "jueves",
+          "zh": "星期四"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "jueves",
+          "zh": "星期四"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "jueves 來自拉丁文 Iovis diēs「朱庇特（Jupiter）的日子」，Iovis 是朱庇特名字的變格。朱庇特是羅馬的主神，也是木星的名字。古西班牙語還有 iueves、yueves 等寫法。",
+      "hook_zh": "Jupiter＝木星：星期四是「木曜日」，雷神打雷 ⚡。",
+      "usage_zh": "j 念喉音 /x/：JUE-bes；單複數同形 el／los jueves。",
+      "example_es": "El jueves comemos juntos.",
+      "example_zh": "星期四我們一起吃飯。",
+      "image": "emoji:⚡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:jueves"
+      ]
+    },
+    {
+      "word": "viernes",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "星期五",
+      "en": "Friday",
+      "ipa": "/ˈbjeɾnes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "(diēs) Veneris",
+          "zh": "維納斯的日子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "viernes",
+          "zh": "星期五"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "viernes 來自拉丁文 (diēs) Veneris「維納斯（Venus）的日子」。維納斯是愛與美的女神，也是金星的名字。",
+      "hook_zh": "Venus＝金星：星期五是「金曜日」，週五晚上最適合約會 💖。",
+      "usage_zh": "「週五晚上」el viernes por la noche；單複數同形。",
+      "example_es": "El viernes por la noche salgo con amigos.",
+      "example_zh": "星期五晚上我和朋友出去。",
+      "image": "emoji:💖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:viernes"
+      ]
+    },
+    {
+      "word": "sábado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "星期六",
+      "en": "Saturday",
+      "ipa": "/ˈsabado/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "希伯來語",
+          "word": "shabát",
+          "zh": "安息日"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "sábbaton",
+          "zh": "安息日"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "sabbatum",
+          "zh": "安息日"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sábado",
+          "zh": "星期六"
+        }
+      ],
+      "cognates_en": [
+        "Sabbath"
+      ],
+      "story_zh": "sábado 從希伯來文 shabát（安息日）出發，經過希臘文 sábbaton、拉丁文 sabbatum 傳到西語。它不是以行星命名，而是猶太教的休息日。英文 Sabbath 也是同一個字。",
+      "hook_zh": "Sabbath 安息日 → sábado：星期六，休息！",
+      "usage_zh": "重音在 sá；el sábado（這週六）、los sábados（每週六）。",
+      "example_es": "El sábado no trabajo.",
+      "example_zh": "星期六我不上班。",
+      "image": "emoji:😴",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sábado"
+      ]
+    },
+    {
+      "word": "domingo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "星期日",
+      "en": "Sunday",
+      "ipa": "/doˈminɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dominus",
+          "zh": "主人、主"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "diēs Dominicus",
+          "zh": "主的日子"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "domingo",
+          "zh": "星期日"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "domingo",
+          "zh": "星期日"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "domingo 來自晚期拉丁文 diēs Dominicus「主的日子」，dominicus 源自 dominus（主人、主）。約從西元 200 年起，基督徒用它取代異教的 diēs Sōlis（太陽日）——英文 Sunday 則還保留著太陽。",
+      "hook_zh": "dominus（主）的日子：星期天上教堂 ⛪。",
+      "usage_zh": "el domingo（這週日）、los domingos（每週日）；Domingo 也是男生名字。",
+      "example_es": "El domingo como con mi familia.",
+      "example_zh": "星期天我和家人吃飯。",
+      "image": "emoji:⛪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:domingo",
+        "wiktionary:la:dies Dominicus",
+        "wiktionary:la:dominicus"
+      ]
+    },
+    {
+      "word": "enero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "一月",
+      "en": "January",
+      "ipa": "/eˈneɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "Iānus",
+          "zh": "雅努斯（門神）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "Iānuārius",
+          "zh": "雅努斯的（月）"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "ienuārius",
+          "zh": "一月"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "janero",
+          "zh": "一月"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "enero",
+          "zh": "一月"
+        }
+      ],
+      "cognates_en": [
+        "January"
+      ],
+      "story_zh": "enero 來自拉丁文 Iānuārius「雅努斯（Janus）的月份」。Janus 是羅馬掌管門口和通道的神——一月剛好是走進新年的那扇門。從 janero 到 enero，開頭的 j 音後來也消失了。",
+      "hook_zh": "Jan-uary 的 Jan 被吃掉了：en-ero。新年從門 🚪 走進來。",
+      "usage_zh": "月份小寫；「1月1日」el 1 de enero。",
+      "example_es": "Mi cumpleaños es en enero.",
+      "example_zh": "我的生日在一月。",
+      "image": "emoji:🚪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:enero",
+        "wiktionary:la:Ianuarius",
+        "wiktionary:la:ienuarius"
+      ]
+    },
+    {
+      "word": "febrero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "二月",
+      "en": "February",
+      "ipa": "/feˈbɾeɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "Februa",
+          "zh": "淨化祭"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "Februārius",
+          "zh": "二月"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "Febrārius",
+          "zh": "二月"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "hebrero",
+          "zh": "二月"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "febrero",
+          "zh": "二月"
+        }
+      ],
+      "cognates_en": [
+        "February"
+      ],
+      "story_zh": "febrero 來自拉丁文 Februārius，得名自羅馬舊曆 2 月 15 日的淨化祭 Februa（februum＝淨化用的祭品）。古西班牙語一度說成 hebrero，後來才半學術地改回 f 開頭。",
+      "hook_zh": "二月是羅馬人的「大掃除月」🧹：Februa 淨化祭。",
+      "usage_zh": "情人節是 el 14 de febrero（San Valentín）。",
+      "example_es": "En febrero hace frío.",
+      "example_zh": "二月很冷。",
+      "image": "emoji:🧹",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:febrero",
+        "wiktionary:la:Februarius",
+        "wiktionary:la:Februa"
+      ]
+    },
+    {
+      "word": "marzo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "三月",
+      "en": "March",
+      "ipa": "/ˈmaɾθo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "(mēnsis) Mārtius",
+          "zh": "瑪爾斯的月份"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "marzo",
+          "zh": "三月"
+        }
+      ],
+      "cognates_en": [
+        "March"
+      ],
+      "story_zh": "marzo 來自拉丁文 (mēnsis) Mārtius，和 martes（星期二）一樣跟戰神 Mars 有關。在羅馬舊曆裡，一年就從 Mārtius 開始，所以九月（September）原本才是「第七個月」。",
+      "hook_zh": "marzo 和 martes 是兄弟：都屬於戰神 Mars；三月春天開始 🌱。",
+      "usage_zh": "z 在西班牙念 /θ/：MAR-θo；拉丁美洲念 MAR-so。",
+      "example_es": "La primavera empieza en marzo.",
+      "example_zh": "春天在三月開始。",
+      "image": "emoji:🌱",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:marzo"
+      ]
+    },
+    {
+      "word": "abril",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "四月",
+      "en": "April",
+      "ipa": "/aˈbɾil/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "Aprīlis",
+          "zh": "四月"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "abril",
+          "zh": "四月"
+        }
+      ],
+      "cognates_en": [
+        "April"
+      ],
+      "story_zh": "abril 直接繼承自拉丁文 Aprīlis，英文 April 也是同一個字。拉丁文的 p 在西語裡變成了 b。",
+      "hook_zh": "April → abril：把 p 換成 b；四月花開 🌸。",
+      "usage_zh": "詩意用法 abriles＝歲數：tener quince abriles（芳齡十五）。",
+      "example_es": "En abril llueve mucho.",
+      "example_zh": "四月常下雨。",
+      "image": "emoji:🌸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:abril"
+      ]
+    },
+    {
+      "word": "mayo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "五月",
+      "en": "May",
+      "ipa": "/ˈmaʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "Maius",
+          "zh": "五月（女神 Maia 的）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "mayo",
+          "zh": "五月"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mayo",
+          "zh": "五月"
+        }
+      ],
+      "cognates_en": [
+        "May"
+      ],
+      "story_zh": "mayo 來自拉丁文 Maius，名稱源於女神 Maia。她的名字可能源自意思是「偉大」的古字根，後來又和希臘神話裡赫密士的母親 Maia 混為一談。",
+      "hook_zh": "mayo ≈ May，y 念 /ʝ/：MA-yo；可別和美乃滋 mayonesa 搞混 🌷。",
+      "usage_zh": "墨西哥的 Cinco de Mayo 就是「五月五日」。",
+      "example_es": "Mi madre nació en mayo.",
+      "example_zh": "我媽媽五月出生。",
+      "image": "emoji:🌷",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mayo",
+        "wiktionary:la:Maius"
+      ]
+    },
+    {
+      "word": "junio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "六月",
+      "en": "June",
+      "ipa": "/ˈxunjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "Iūnō",
+          "zh": "朱諾（女神）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "Iūnius",
+          "zh": "六月"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "junio",
+          "zh": "六月"
+        }
+      ],
+      "cognates_en": [
+        "June"
+      ],
+      "story_zh": "junio 來自拉丁文 Iūnius，由女神朱諾（Iūnō）的名字加上字尾 -ius 組成；Iūnius 也是羅馬一個家族的姓氏。西語的 junio 可能是半學術地從拉丁文借來的。",
+      "hook_zh": "Juno 女神 → June → junio 👸；j 念喉音：JU-nio。",
+      "usage_zh": "別和 julio 搞混：junio 有 n，是 6 月；julio 有 l，是 7 月。",
+      "example_es": "Las clases terminan en junio.",
+      "example_zh": "課程在六月結束。",
+      "image": "emoji:👸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:junio",
+        "wiktionary:la:Iunius"
+      ]
+    },
+    {
+      "word": "julio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "七月",
+      "en": "July",
+      "ipa": "/ˈxuljo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "Iūlius",
+          "zh": "七月"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "julio",
+          "zh": "七月"
+        }
+      ],
+      "cognates_en": [
+        "July"
+      ],
+      "story_zh": "julio 來自拉丁文 Iūlius，可能是半學術的演變。西語 julio 還有另一個意思：物理單位「焦耳」，那是從英文 joule 借來的，和七月無關。",
+      "hook_zh": "julio 是七月，也是男生名字 Julio（胡立歐）🍉。",
+      "usage_zh": "別和 junio 搞混：julio 有 l，是 7 月。",
+      "example_es": "En julio hace mucho calor.",
+      "example_zh": "七月很熱。",
+      "image": "emoji:🍉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:julio",
+        "wiktionary:la:iulius"
+      ]
+    },
+    {
+      "word": "agosto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "八月",
+      "en": "August",
+      "ipa": "/aˈɡosto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "agustus",
+          "zh": "八月"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "agosto",
+          "zh": "八月"
+        }
+      ],
+      "cognates_en": [
+        "August"
+      ],
+      "story_zh": "agosto 來自通俗拉丁文 agustus，和英文 August 同一個來源。可以看到口語拉丁文已經把開頭的 au- 念成 a-，後來 u 又變成了 o。",
+      "hook_zh": "August → agosto：八月向日葵開得最盛 🌻。",
+      "usage_zh": "西班牙很多人 en agosto 放長假；月份小寫。",
+      "example_es": "En agosto vamos a la playa.",
+      "example_zh": "八月我們去海邊。",
+      "image": "emoji:🌻",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:agosto"
+      ]
+    },
+    {
+      "word": "septiembre",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "九月",
+      "en": "September",
+      "ipa": "/sebˈtjembɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "septem",
+          "zh": "七"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "September",
+          "zh": "第七個月"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "setiembre",
+          "zh": "九月"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "septiembre",
+          "zh": "九月"
+        }
+      ],
+      "cognates_en": [
+        "September"
+      ],
+      "story_zh": "septiembre 來自拉丁文 September，開頭就是 septem（七）；字尾可能和「月」有關，但還不確定。羅馬舊曆一年從三月開始，所以九月原本是第七個月。西語舊作 setiembre，後來才照拉丁文補回 p。",
+      "hook_zh": "sept＝7，卻是九月：因為羅馬年從三月起算 🍇。",
+      "usage_zh": "也可以寫成 setiembre；p 常常不發音。",
+      "example_es": "Las clases empiezan en septiembre.",
+      "example_zh": "課程九月開始。",
+      "image": "emoji:🍇",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:septiembre",
+        "wiktionary:la:September"
+      ]
+    },
+    {
+      "word": "octubre",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "十月",
+      "en": "October",
+      "ipa": "/oɡˈtubɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "octō",
+          "zh": "八"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "October",
+          "zh": "第八個月"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "octubre",
+          "zh": "十月"
+        }
+      ],
+      "cognates_en": [
+        "October"
+      ],
+      "story_zh": "octubre 來自拉丁文 October，是仿照 September 造出來的，好像 octō（八）加上字尾 -ber。羅馬舊曆一年從三月開始，所以十月原本是第八個月。西語形式半學術，部分也受古西班牙語 ochubre 影響。",
+      "hook_zh": "octo＝8（八爪章魚 octopus），卻是十月：羅馬年從三月起算 🎃。",
+      "usage_zh": "西班牙國慶日是 el 12 de octubre。",
+      "example_es": "Mi hermano nació en octubre.",
+      "example_zh": "我哥哥十月出生。",
+      "image": "emoji:🎃",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:octubre",
+        "wiktionary:la:October"
+      ]
+    },
+    {
+      "word": "noviembre",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "十一月",
+      "en": "November",
+      "ipa": "/noˈbjembɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "November",
+          "zh": "十一月"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "noviembre",
+          "zh": "十一月"
+        }
+      ],
+      "cognates_en": [
+        "November"
+      ],
+      "story_zh": "noviembre 繼承自拉丁文 November（受格 novembrem），開頭和 novem（九）一模一樣。照羅馬舊曆從三月起算的方式，它原本是第九個月。",
+      "hook_zh": "nov＝9（nueve），卻是十一月：羅馬年從三月起算 🍂。",
+      "usage_zh": "拼法有 ie：noviembre，不是 novembre。",
+      "example_es": "En noviembre hace fresco.",
+      "example_zh": "十一月天氣涼爽。",
+      "image": "emoji:🍂",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:noviembre"
+      ]
+    },
+    {
+      "word": "diciembre",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "十二月",
+      "en": "December",
+      "ipa": "/diˈθjembɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "decem",
+          "zh": "十"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "December",
+          "zh": "第十個月"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "deziembre",
+          "zh": "十二月"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "diciembre",
+          "zh": "十二月"
+        }
+      ],
+      "cognates_en": [
+        "December"
+      ],
+      "story_zh": "diciembre 來自拉丁文 December，取自 decem（十）。照羅馬舊曆從三月起算，它原本是第十個月，所以和 diez（十）長得很像。",
+      "hook_zh": "dic- 像 diez：十二月原本是「第十個月」🎄。",
+      "usage_zh": "聖誕節是 el 25 de diciembre；月份小寫。",
+      "example_es": "En diciembre celebramos la Navidad.",
+      "example_zh": "我們在十二月慶祝聖誕節。",
+      "image": "emoji:🎄",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:diciembre",
+        "wiktionary:la:december"
+      ]
+    },
+    {
+      "word": "primavera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "春天",
+      "en": "spring",
+      "ipa": "/pɾimaˈbeɾa/",
+      "breakdown": [
+        {
+          "part": "prima",
+          "zh": "第一的"
+        },
+        {
+          "part": "vera",
+          "zh": "春天"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prīmus + vēr",
+          "zh": "第一 + 春天"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "prīma vēra",
+          "zh": "早春"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "primavera",
+          "zh": "春天"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "primavera",
+          "zh": "春天"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "primavera 來自晚期拉丁文 prīma vēra，由 prīmus（第一）和 vēr（春天）組成。它原本只指「早春、春天的頭一段」，後來才擴大成整個春天，還把原本表示春天的 verano 擠去當「夏天」。",
+      "hook_zh": "prima（第一）＋ vera（春）：一年中最先來的季節 🌸。",
+      "usage_zh": "陰性：la primavera；「在春天」en primavera。",
+      "example_es": "En primavera hay muchas flores.",
+      "example_zh": "春天有很多花。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:primavera",
+        "wiktionary:la:prima vera",
+        "wiktionary:la:primus"
+      ]
+    },
+    {
+      "word": "verano",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "夏天",
+      "en": "summer",
+      "ipa": "/beˈɾano/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vēr",
+          "zh": "春天"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*(tempus) vērānum",
+          "zh": "春季"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "verano",
+          "zh": "春天"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "verano",
+          "zh": "夏天"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "verano 來自通俗拉丁文 *(tempus) vērānum，源自 vēr（春天）。有趣的是，古西班牙語的 verano 原本是「春天」！後來 primavera 搶走了「春天」的意思，verano 只好往後挪，成了「夏天」。",
+      "hook_zh": "ver- 一路從春天走到夏天：verano 是陽光、海灘的季節 ☀️。",
+      "usage_zh": "陽性 el verano；「暑假」las vacaciones de verano。",
+      "example_es": "En verano voy a la playa.",
+      "example_zh": "夏天我去海邊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:verano",
+        "wiktionary:la:ver",
+        "wiktionary:la:prima vera"
+      ]
+    },
+    {
+      "word": "otoño",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "秋天",
+      "en": "autumn, fall",
+      "ipa": "/oˈtoɲo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "autumnus",
+          "zh": "秋天"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "otoño",
+          "zh": "秋天"
+        }
+      ],
+      "cognates_en": [
+        "autumn"
+      ],
+      "story_zh": "otoño 來自拉丁文 autumnus（秋天），英文 autumn 也是同一個字。拉丁文本身的來源不明：可能來自「寒冷」或「乾燥」的古字根，也可能借自伊特拉斯坎語。",
+      "hook_zh": "autumn → otoño：au 變 o、mn 變 ñ，葉子掉滿地 🍂。",
+      "usage_zh": "陽性 el otoño；別漏掉 ñ。「在秋天」en otoño。",
+      "example_es": "En otoño caen las hojas.",
+      "example_zh": "秋天葉子會掉落。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:otoño",
+        "wiktionary:la:autumnus"
+      ]
+    },
+    {
+      "word": "invierno",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "冬天",
+      "en": "winter",
+      "ipa": "/imˈbjeɾno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "hībernum (tempus)",
+          "zh": "冬天的時間"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "invierno",
+          "zh": "冬天"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "invierno",
+          "zh": "冬天"
+        }
+      ],
+      "cognates_en": [
+        "hibernate"
+      ],
+      "story_zh": "invierno 來自晚期拉丁文 hībernum，是 hībernum tempus（冬天的時間）的省略，後來取代了舊字 hiems。之後第一個音節多了 n，被人重新理解成 in- ＋ verno。英文 hibernate（冬眠）是它的親戚。",
+      "hook_zh": "動物在冬天 hibernate（冬眠）：hibern- → invierno ⛄。",
+      "usage_zh": "陽性 el invierno；「在冬天」en invierno。",
+      "example_es": "En invierno nieva en la montaña.",
+      "example_zh": "冬天山上會下雪。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:invierno",
+        "wiktionary:la:hibernum"
+      ]
+    },
+    {
+      "word": "diecisiete",
+      "article": "",
+      "pos": "numeral",
+      "zh": "十七",
+      "en": "seventeen",
+      "ipa": "/djeθiˈsjete/",
+      "breakdown": [
+        {
+          "part": "dieci-",
+          "zh": "十和（diez y）"
+        },
+        {
+          "part": "siete",
+          "zh": "七"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "diez y siete",
+          "zh": "十和七"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "diecisiete",
+          "zh": "十七"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "diecisiete 就是 diez（十）＋ y（和）＋ siete（七）合成的一個字：「十和七」。從 16 到 19，西語都用這種一看就懂的組合。",
+      "hook_zh": "dieci-siete：十和七，寫成一個字。",
+      "usage_zh": "z 變 c：diez → dieci-；siete 這裡不加重音。",
+      "example_es": "Tengo diecisiete años.",
+      "example_zh": "我十七歲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:diecisiete"
+      ]
+    },
+    {
+      "word": "dieciocho",
+      "article": "",
+      "pos": "numeral",
+      "zh": "十八",
+      "en": "eighteen",
+      "ipa": "/djeˈθjot͡ʃo/",
+      "breakdown": [
+        {
+          "part": "dieci-",
+          "zh": "十和（diez y）"
+        },
+        {
+          "part": "ocho",
+          "zh": "八"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "diez y ocho",
+          "zh": "十和八"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dieciocho",
+          "zh": "十八"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "dieciocho 就是 diez（十）＋ y（和）＋ ocho（八）合成的一個字：「十和八」。在智利，el Dieciocho 指的是 9 月 18 日前後的國慶節慶。",
+      "hook_zh": "dieci-ocho：十和八；在很多國家 18 歲就成年了。",
+      "usage_zh": "z 變 c：dieci-；和 ochenta（80）別搞混。",
+      "example_es": "Mi hermano tiene dieciocho años.",
+      "example_zh": "我哥哥十八歲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dieciocho"
+      ]
+    },
+    {
+      "word": "diecinueve",
+      "article": "",
+      "pos": "numeral",
+      "zh": "十九",
+      "en": "nineteen",
+      "ipa": "/djeθiˈnwebe/",
+      "breakdown": [
+        {
+          "part": "dieci-",
+          "zh": "十和（diez y）"
+        },
+        {
+          "part": "nueve",
+          "zh": "九"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "dizenuef",
+          "zh": "十九（十＋九）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "diecinueve",
+          "zh": "十九"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "diecinueve 繼承自古西班牙語 dizenuef，也就是「十＋九」的組合。現代寫法 dieci-nueve 更好懂：十和九。",
+      "hook_zh": "dieci-nueve：十和九，再一個就到 veinte 了！",
+      "usage_zh": "z 變 c：dieci-；和 noventa（90）別搞混。",
+      "example_es": "Mi novia tiene diecinueve años.",
+      "example_zh": "我女朋友十九歲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:diecinueve"
+      ]
+    },
+    {
+      "word": "veintiuno",
+      "article": "",
+      "pos": "numeral",
+      "zh": "二十一",
+      "en": "twenty-one",
+      "ipa": "/beinˈtjuno/",
+      "breakdown": [
+        {
+          "part": "veinti-",
+          "zh": "二十和（veinte y）"
+        },
+        {
+          "part": "uno",
+          "zh": "一"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "veinte y uno",
+          "zh": "二十和一"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "veintiuno",
+          "zh": "二十一"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "veintiuno 就是 veinte（二十）＋ y（和）＋ uno（一）合成一個字，veinte 的 e 和 y 融成了 i。",
+      "hook_zh": "veinti-uno：二十和一。撲克牌「21 點」在西語就叫 veintiuno。",
+      "usage_zh": "陽性名詞前變 veintiún（veintiún años），陰性 veintiuna。",
+      "example_es": "Mi hermana tiene veintiún años.",
+      "example_zh": "我姊姊二十一歲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:veintiuno"
+      ]
+    },
+    {
+      "word": "sesenta",
+      "article": "",
+      "pos": "numeral",
+      "zh": "六十",
+      "en": "sixty",
+      "ipa": "/seˈsenta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sexāgintā",
+          "zh": "六十（六個十）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sessaenta",
+          "zh": "六十"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sesenta",
+          "zh": "六十"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "sesenta 來自拉丁文 sexāgintā，原意是「六個十」，古西班牙語寫成 sessaenta。拉丁文的 x 在這裡變成了 s。",
+      "hook_zh": "ses(is) ＋ -enta：六個十；一小時有 sesenta 分鐘。",
+      "usage_zh": "sesenta（60）是 s，setenta（70）是 t，只差一個字母！",
+      "example_es": "Una hora tiene sesenta minutos.",
+      "example_zh": "一小時有六十分鐘。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sesenta",
+        "wiktionary:la:sexaginta"
+      ]
+    },
+    {
+      "word": "setenta",
+      "article": "",
+      "pos": "numeral",
+      "zh": "七十",
+      "en": "seventy",
+      "ipa": "/seˈtenta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "septuāgintā",
+          "zh": "七十（七個十）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "setaenta",
+          "zh": "七十"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "setenta",
+          "zh": "七十"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "setenta 來自拉丁文 septuāgintā，原意是「七個十」，古西班牙語寫成 setaenta。這個拉丁字也留在 Septuaginta 這個名稱裡，指古代的希臘文舊約譯本「七十士譯本」。",
+      "hook_zh": "se-t-enta：t 來自 siete（sept-）的 t；七個十。",
+      "usage_zh": "不是 sietenta！ie 不見了；700 是 setecientos。",
+      "example_es": "Mi abuela tiene setenta años.",
+      "example_zh": "我奶奶七十歲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:setenta",
+        "wiktionary:la:septuaginta"
+      ]
+    },
+    {
+      "word": "ochenta",
+      "article": "",
+      "pos": "numeral",
+      "zh": "八十",
+      "en": "eighty",
+      "ipa": "/oˈt͡ʃenta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "octāgintā",
+          "zh": "八十（八個十）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ochaenta",
+          "zh": "八十"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ochenta",
+          "zh": "八十"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ochenta 來自拉丁文 octāgintā（octōgintā 的變體），原意是「八個十」，古西班牙語寫成 ochaenta。拉丁文的 ct 在這裡變成 ch，就和 octō → ocho 一樣。",
+      "hook_zh": "och(o) ＋ -enta：八個十；八〇年代＝los años ochenta。",
+      "usage_zh": "「八〇年代」los años ochenta；800 是 ochocientos。",
+      "example_es": "Mi abuelo tiene ochenta años.",
+      "example_zh": "我爺爺八十歲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ochenta",
+        "wiktionary:la:octaginta"
+      ]
+    },
+    {
+      "word": "noventa",
+      "article": "",
+      "pos": "numeral",
+      "zh": "九十",
+      "en": "ninety",
+      "ipa": "/noˈbenta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nōnāgintā",
+          "zh": "九十"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*nōvāgintā",
+          "zh": "九十（受 novem 影響）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "novaenta",
+          "zh": "九十"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "noventa",
+          "zh": "九十"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "noventa 來自通俗拉丁文 *nōvāgintā。古典拉丁文的「九十」原本是 nōnāgintā，後來受 novem（九）影響才多了 v。古西班牙語寫成 novaenta。",
+      "hook_zh": "nov(em) ＋ -enta：九個十；nueve 的 ue 在這裡變回 o。",
+      "usage_zh": "不是 nuevanta；900 是 novecientos（不是 nuevecientos）。",
+      "example_es": "Este libro tiene noventa páginas.",
+      "example_zh": "這本書有九十頁。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:noventa",
+        "wiktionary:la:nonaginta"
+      ]
+    },
+    {
+      "word": "doscientos",
+      "article": "",
+      "pos": "numeral",
+      "zh": "兩百",
+      "en": "two hundred",
+      "ipa": "/dosˈθjentos/",
+      "breakdown": [
+        {
+          "part": "dos",
+          "zh": "二"
+        },
+        {
+          "part": "cientos",
+          "zh": "百（複數）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ducentōs",
+          "zh": "兩百"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "dozientos",
+          "zh": "兩百"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "doscientos",
+          "zh": "兩百"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "古西班牙語原本說 dozientos，直接來自拉丁文 ducentōs（duo 二 ＋ centum 百）。後來大家把它「規則化」，改成一看就懂的 dos ＋ cientos。葡萄牙文到現在還說 duzentos。",
+      "hook_zh": "dos ＋ cientos：兩個「一百」。",
+      "usage_zh": "有陰陽性：doscientos libros、doscientas personas。",
+      "example_es": "El billete cuesta doscientos euros.",
+      "example_zh": "這張票兩百歐元。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:doscientos",
+        "wiktionary:la:duo",
+        "wiktionary:la:centum"
+      ]
+    },
+    {
+      "word": "quinientos",
+      "article": "",
+      "pos": "numeral",
+      "zh": "五百",
+      "en": "five hundred",
+      "ipa": "/kiˈnjentos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quīngentī",
+          "zh": "五百"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "quinientos",
+          "zh": "五百"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "quinientos 來自拉丁文 quīngentōs，由 quīnque（五）＋ centum（百）組成。所以它不是 cinco ＋ cientos，而是保留了拉丁文的 qu，是要特別記的不規則形。",
+      "hook_zh": "quin- 和 quince（15）一樣是 qu 開頭：五百。",
+      "usage_zh": "不是 cincocientos！陰性 quinientas。",
+      "example_es": "Hay quinientas personas en el concierto.",
+      "example_zh": "演唱會有五百個人。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:quinientos",
+        "wiktionary:la:quingenti"
+      ]
+    },
+    {
+      "word": "cuarto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "四分之一；一刻鐘；房間（形容詞：第四）",
+      "en": "quarter; room; fourth",
+      "ipa": "/ˈkwaɾto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quartus",
+          "zh": "第四"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuarto",
+          "zh": "第四；四分之一"
+        }
+      ],
+      "cognates_en": [
+        "quarter"
+      ],
+      "story_zh": "cuarto 來自拉丁文 quartus（第四），也就是「四分之一」——一小時的四分之一就是一刻鐘。「房間」的意思則來自古時房子常被分成四、五個部分。英文 quarter 也是它的親戚。",
+      "hook_zh": "quarter＝cuarto：las tres y cuarto＝三點一刻（15 分）。",
+      "usage_zh": "報時：y cuarto（過 15 分）、menos cuarto（差 15 分）；cuarto 也是「房間」。",
+      "example_es": "Son las tres y cuarto.",
+      "example_zh": "現在三點十五分。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuarto",
+        "wiktionary:la:quartus"
+      ]
+    },
+    {
+      "word": "madrugada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "凌晨（午夜到天亮前）；黎明",
+      "en": "early morning; dawn",
+      "ipa": "/madɾuˈɡada/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "madrugar",
+          "zh": "早起"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "madrugada",
+          "zh": "凌晨"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "madrugada 由動詞 madrugar（早起）的過去分詞變成名詞，指午夜過後到日出之前的這段時間。",
+      "hook_zh": "天還沒亮就早起（madrugar）的時段：凌晨 3 點是 las tres de la madrugada。",
+      "usage_zh": "凌晨的鐘點用 de la madrugada，不說 de la noche；「早起」madrugar。",
+      "example_es": "Llegué a casa a las dos de la madrugada.",
+      "example_zh": "我凌晨兩點才到家。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:madrugada"
+      ]
+    },
+    {
+      "word": "Navidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "聖誕節",
+      "en": "Christmas",
+      "ipa": "/nabiˈdad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nātus",
+          "zh": "出生的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "nātīvitās",
+          "zh": "誕生"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nauidat",
+          "zh": "聖誕"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "Navidad",
+          "zh": "聖誕節"
+        }
+      ],
+      "cognates_en": [
+        "nativity",
+        "native"
+      ],
+      "story_zh": "Navidad 來自拉丁文 nātīvitātem（誕生），源自 nātus（出生的）。它特指耶穌的誕生，所以成了「聖誕節」。英文 nativity（耶穌誕生）、native（本地出生的）都是它的親戚；natividad 則是同源的雙胞胎字。",
+      "hook_zh": "Navidad ≈ nativity（誕生）：¡Feliz Navidad! 🎄",
+      "usage_zh": "首字母大寫、陰性：la Navidad；「聖誕快樂」¡Feliz Navidad!",
+      "example_es": "¡Feliz Navidad a todos!",
+      "example_zh": "祝大家聖誕快樂！",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:Navidad",
+        "wiktionary:la:nativitas",
+        "wiktionary:la:nativus"
+      ]
+    }
+  ]
+}
