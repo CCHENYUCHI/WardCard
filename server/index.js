@@ -14,7 +14,8 @@ const {
   translationHash, findOwnTranslation, findSharedTranslation, saveTranslation, listTranslations, deleteTranslation
 } = require('./translations');
 const { splitArticle, normalizeWord } = require('./cardUtils');
-const { getDict, dictionaryHasEntries, lookupForm, getEntryExtras, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
+const { getDict, dictionaryHasEntries, lookupForm, getEntryExtras, getDictionaryInfo, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
+const { getBuildInfo } = require('./buildInfo');
 const { linkCard, linkPendingCards, enrichCards } = require('./cardDict');
 const { findLexiconEntry } = require('./lexicon');
 const { reviewCardFSRS } = require('./fsrs');
@@ -1132,6 +1133,20 @@ app.get('/api/lexicon', authenticateToken, (req, res) => {
   }
 });
 
+// Which server code, dictionary and card links are in use (settings screen)
+app.get('/api/version', authenticateToken, (req, res) => {
+  try {
+    const cards = db.prepare("SELECT COUNT(*) AS total, SUM(CASE WHEN dict_lemma IS NOT NULL AND dict_lemma != '' THEN 1 ELSE 0 END) AS linked FROM cards WHERE user_id = ?").get(req.user.userId);
+    res.json({
+      server: getBuildInfo(),
+      dictionary: getDictionaryInfo(),
+      cards: { total: Number(cards.total) || 0, linked: Number(cards.linked) || 0 }
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Everything the dictionary knows about one entry (IPA, forms, examples, etymology) plus the hand-written lexicon entry.
 // Loaded on demand (card detail, dictionary page) so card lists stay small.
 function dictionaryEntry(lemma, pos) {
@@ -1337,6 +1352,8 @@ try {
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`[PalabraCard] Server running on http://0.0.0.0:${PORT}`);
+  const build = getBuildInfo();
+  console.log(`[PalabraCard] Code ${build.branch} @ ${build.commit} (${build.cwd})`);
   console.log(`[PalabraCard] Database ready, memory footprint ~35MB`);
   const clock = db.prepare("SELECT datetime('now', 'localtime') AS t").get().t;
   console.log(`[PalabraCard] Time zone ${timeZone}, study day resets at 00:00 (now ${clock})`);

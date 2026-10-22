@@ -7,6 +7,7 @@
 ## [Unreleased] (進行中 / 待發布)
 
 ### Added
+- **設定畫面的版本資訊 (`VersionInfo.jsx`, `GET /api/version`, `server/buildInfo.js`)**：顯示畫面（前端）與伺服器各是哪個分支 / commit、前端 build 時間、伺服器啟動時間；字典版本（v1 / v2、詞條數、建置時間、是否含變位 / 字源 / 例句 / 發音、A1 圖鑑字數）；已連結字典的單字數。畫面和伺服器版本不同、沒有字典或字典是舊版時顯示提示與該執行的指令；「複製版本資訊」方便回報問題。前端版本在 `vite build` 時寫入；Docker 沒有 `.git`，用 build args `APP_COMMIT` / `APP_BRANCH`。
 - **離線字典 v2 (`server/scripts/build-dictionary.js`, `server/dictionaryExtras.js`, `server/forms.js`)**：除了英文釋義，再存每個字的**發音 IPA、變形、例句、字源**（只增不減，舊版字典檔照常運作、缺的區塊不顯示）。
   - **變形（`forms` 表）**：動詞完整變位（直陳式 / 虛擬式 / 命令式 × 各時態 × yo / tú / vos / él / nosotros / vosotros / ellos；去掉 `hablarme` 這類代名詞合併形與 `-se` 虛擬式），名詞與形容詞的陰陽性、單複數、指小詞。
   - **例句（`examples` 表）**：每字最多 2 句，只留有英文翻譯的完整句子（不收引文與雙字詞組）；**只有約 3% 的字有例句**，沒有中文翻譯，只當參考。

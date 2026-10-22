@@ -8,7 +8,7 @@ const { DatabaseSync } = require('node:sqlite');
 const { build } = require('./scripts/build-dictionary');
 const { cleanForms, pickExamples, pickIpa, cleanEtymologyText, etymologyChain, extractExtras } = require('./dictionaryExtras');
 const { groupForms } = require('./forms');
-const { setDictionary, getEntryExtras } = require('./dictionary');
+const { setDictionary, getEntryExtras, getDictionaryInfo } = require('./dictionary');
 
 // Trimmed copies of real kaikki.org entries
 const f = (form, tags, source = 'conjugation') => ({ form, tags: tags.split(' '), source });
@@ -162,6 +162,16 @@ test('getEntryExtras reads ipa, grouped forms, examples and etymology from a v2 
   assert.match(adj.etymology.text, /^Inherited from Old Spanish azur/);
 });
 
+test('getDictionaryInfo reports a v2 dictionary with its extras and lexicon', () => {
+  const info = getDictionaryInfo();
+  assert.equal(info.exists, true);
+  assert.equal(info.schemaVersion, 2);
+  assert.equal(info.entries, 5);
+  assert.deepEqual(info.extras, { forms: true, examples: true, etymology: true, ipa: true });
+  assert.ok(info.lexiconEntries > 1000);
+  assert.ok(info.builtAt);
+});
+
 test('inflected-form rows (no meanings of their own) get no extras', () => {
   const form = getEntryExtras('hablamos', 'verb');
   assert.equal(form.forms, null);
@@ -173,6 +183,11 @@ test('getEntryExtras treats a v1 dictionary (no extra tables, no ipa column) as 
   v1.exec("CREATE TABLE entries (word TEXT, word_norm TEXT, pos TEXT, gender TEXT, glosses TEXT, form_of TEXT); INSERT INTO entries VALUES ('hablar','hablar','verb','','[\"to talk\"]',NULL)");
   setDictionary(v1);
   assert.deepEqual(getEntryExtras('hablar', 'verb'), { ipa: '', forms: null, examples: null, etymology: null });
+  const v1Info = getDictionaryInfo();
+  assert.equal(v1Info.schemaVersion, 1);
+  assert.deepEqual(v1Info.extras, { forms: false, examples: false, etymology: false, ipa: false });
+  assert.equal(v1Info.lexiconEntries, 0);
   setDictionary(null);
   assert.deepEqual(getEntryExtras('hablar', 'verb'), { ipa: '', forms: null, examples: null, etymology: null });
+  assert.equal(getDictionaryInfo().exists, false);
 });

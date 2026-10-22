@@ -3555,3 +3555,83 @@ textarea {
   font-size: 0.88rem;
   font-style: italic;
 }
+
+/* ===== Settings → 版本資訊 (VersionInfo.jsx) ===== */
+.version-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.version-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.version-title {
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.version-warning {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  background: var(--google-yellow-light);
+  color: var(--google-yellow-dark);
+  border-radius: var(--radius-md);
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.version-warning svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.version-warning code {
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 0 4px;
+  overflow-wrap: anywhere;
+}
+
+.version-rows {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.version-row {
+  display: grid;
+  grid-template-columns: 6.5em minmax(0, 1fr);
+  gap: 8px;
+}
+
+.version-row dt {
+  color: var(--text-muted);
+}
+
+.version-row dd {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.version-value {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+
+.version-note {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}

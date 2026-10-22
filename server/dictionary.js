@@ -131,6 +131,25 @@ function getEntryExtras(lemma, pos) {
   };
 }
 
+/** What the dictionary file holds, for the settings screen ("is my dictionary the new one?") */
+function getDictionaryInfo() {
+  const db = getDict();
+  const info = { path: DICT_PATH, exists: Boolean(db), schemaVersion: null, entries: 0, builtAt: '', extras: { forms: false, examples: false, etymology: false, ipa: false }, lexiconEntries: 0 };
+  if (!db) return info;
+  const meta = {};
+  try {
+    for (const { key, value } of db.prepare('SELECT key, value FROM meta').all()) meta[key] = value;
+  } catch (_) { /* no meta table */ }
+  const tables = new Set(db.prepare("SELECT name FROM sqlite_master WHERE type = 'table'").all().map(r => r.name));
+  const columns = tables.has('entries') ? db.prepare('PRAGMA table_info(entries)').all().map(c => c.name) : [];
+  info.schemaVersion = Number(meta.schema_version) || 1;
+  info.entries = Number(meta.entries) || 0;
+  info.builtAt = meta.built_at || '';
+  info.extras = { forms: tables.has('forms'), examples: tables.has('examples'), etymology: tables.has('etymology'), ipa: columns.includes('ipa') };
+  if (tables.has('lexicon')) info.lexiconEntries = db.prepare('SELECT COUNT(*) AS n FROM lexicon').get().n;
+  return info;
+}
+
 const hasLatin = (s) => /[a-zñáéíóúü]/i.test(s);
 
 /**
@@ -178,6 +197,7 @@ module.exports = {
   setDictionary,
   lookupForm,
   getEntryExtras,
+  getDictionaryInfo,
   findMyCards,
   externalLinks,
   parseJson,
