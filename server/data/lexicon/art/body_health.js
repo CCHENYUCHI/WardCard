@@ -223,7 +223,7 @@ module.exports = {
     s('path', { d: 'M74 80h12v10h10v12H86v10H74v-10H64V90h10z' }, 'red')
   ],
   pastilla: [
-    s('rect', { x: 14, y: 44, width: 84, height: 40, rx: 20, transform: 'rotate(-30 56 64)' }, 'white'),
+    s('rect', { x: 14, y: 44, width: 84, height: 40, rx: 20, transform: 'rotate(-30 56 64)' }, 'sky'),
     s('rect', { x: 14, y: 44, width: 44, height: 40, rx: 20, transform: 'rotate(-30 56 64)' }, 'red', { accent: true }),
     s('circle', { cx: 106, cy: 112, r: 28 }, 'cream'),
     stroke('M86 112h40', 'gray', 5),
