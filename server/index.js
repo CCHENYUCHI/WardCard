@@ -17,6 +17,7 @@ const { splitArticle, normalizeWord } = require('./cardUtils');
 const { getDict, dictionaryHasEntries, lookupForm, getEntryExtras, getDictionaryInfo, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
 const { getBuildInfo } = require('./buildInfo');
 const { linkCard, linkPendingCards, enrichCards } = require('./cardDict');
+const { auditCards, applyFixes, dismissIssues, undoBatch } = require('./cardAudit');
 const { findLexiconEntry } = require('./lexicon');
 const { reviewCardFSRS } = require('./fsrs');
 const { classifyReview, buildTodayPlan, getTodaySummary, getHistory, getWeeklyForecast, getPracticeCards } = require('./dailyProgress');
@@ -252,6 +253,7 @@ app.post('/api/cards', authenticateToken, (req, res) => {
         updated_at=datetime('now', 'localtime')
     `);
 
+    const selectId = db.prepare('SELECT id FROM cards WHERE user_id = ? AND word = ?');
     const insertedIds = [];
     for (const card of cards) {
       if (!card.word || !card.translation) continue;
@@ -283,9 +285,9 @@ app.post('/api/cards', authenticateToken, (req, res) => {
         stage,
         unit
       );
-      const cardId = Number(result.lastInsertRowid);
+      // On an upsert that hits an existing word, lastInsertRowid still holds the previous insert: look the card up
+      const cardId = Number(selectId.get(userId, w)?.id ?? result.lastInsertRowid);
       insertedIds.push(cardId);
-      // On an upsert the card's word may be unchanged, but a fresh lookup is cheap and keeps the link right
       linkCard(db, { id: cardId, word: w, part_of_speech: card.part_of_speech || 'sustantivo' });
     }
 
@@ -1128,6 +1130,39 @@ app.get('/api/lexicon', authenticateToken, (req, res) => {
     const word = String(req.query.word || '').trim().slice(0, 80);
     if (!word) return res.status(400).json({ error: '缺少單字' });
     res.json({ entry: findLexiconEntry(getDict(), [word]) });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 單字庫健檢: cards whose part of speech / gender / article / spelling disagree with the dictionary
+app.get('/api/cards/audit', authenticateToken, (req, res) => {
+  try {
+    res.json(auditCards(db, req.user.userId));
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/cards/audit/apply', authenticateToken, (req, res) => {
+  try {
+    res.json(applyFixes(db, req.user.userId, req.body.items));
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+
+app.post('/api/cards/audit/dismiss', authenticateToken, (req, res) => {
+  try {
+    res.json({ dismissed: dismissIssues(db, req.user.userId, req.body.ids) });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/cards/audit/undo', authenticateToken, (req, res) => {
+  try {
+    res.json({ restored: undoBatch(db, req.user.userId, req.body.batchId) });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

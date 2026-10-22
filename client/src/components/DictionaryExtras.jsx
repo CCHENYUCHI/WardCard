@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import { Table2 } from 'lucide-react';
 import { getEntryDetails, getCardDictionary } from '../utils/dictionary';
 import SpeakButton from './SpeakButton';
+import FormsModal from './FormsModal';
 
 function VerbForms({ forms }) {
   const moods = [];
@@ -39,7 +41,7 @@ function VerbForms({ forms }) {
   );
 }
 
-function DetailSections({ data, showStory }) {
+function DetailSections({ data, showStory, onOpenForms }) {
   const { forms, examples, etymology } = data;
   const hasAnything = data.ipa || forms || examples?.length || etymology;
   if (!hasAnything && !(showStory && data.story)) return null;
@@ -47,9 +49,14 @@ function DetailSections({ data, showStory }) {
     <>
       {data.ipa && <div className="dx-ipa">發音 <span lang="es">{data.ipa}</span></div>}
 
+      {forms && (
+        <button type="button" className="btn btn-secondary btn-sm dx-open-forms" onClick={onOpenForms}>
+          <Table2 size={14} /> {forms.kind === 'verb' ? '動詞變位表' : '變化表（陰陽性、單複數）'}
+        </button>
+      )}
       {forms && forms.kind === 'verb' && (
         <details className="dx-fold dx-section">
-          <summary>動詞變位</summary>
+          <summary>動詞變位（摘要）</summary>
           <VerbForms forms={forms} />
         </details>
       )}
@@ -114,6 +121,7 @@ export default function DictionaryExtras({ cardId, lemma, pos = '', lazy = false
   const [data, setData] = useState(null);
   const [error, setError] = useState('');
   const [wanted, setWanted] = useState(!lazy);
+  const [formsOpen, setFormsOpen] = useState(false);
 
   const load = useCallback(() => {
     setError('');
@@ -133,7 +141,8 @@ export default function DictionaryExtras({ cardId, lemma, pos = '', lazy = false
       {data && (
         <>
           {renderStory && data.story ? renderStory(data.story) : null}
-          <DetailSections data={data} showStory={Boolean(renderStory)} />
+          <DetailSections data={data} showStory={Boolean(renderStory)} onOpenForms={() => setFormsOpen(true)} />
+          {formsOpen && <FormsModal lemma={data.lemma || lemma} pos={data.pos || pos} onClose={() => setFormsOpen(false)} />}
           {data && data.linked === false && !data.story && !data.ipa && (
             <div className="lookup-sub">字典裡沒有這個字的額外資料。</div>
           )}

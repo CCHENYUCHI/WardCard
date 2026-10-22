@@ -7,6 +7,10 @@
 ## [Unreleased] (進行中 / 待發布)
 
 ### Added
+- **變化表視窗 (`FormsModal.jsx`)**：在字典頁每個動詞 / 名詞 / 形容詞條目旁按「變位表 / 變化表」，或在單字卡詳情的字典資料區按按鈕，開出獨立視窗：動詞依語氣（直陳式、虛擬式、命令式）各一張表，人稱 × 時態；名詞與形容詞是陰陽性 × 單複數表，另列指小詞等。點任一個形態可以聽發音；手機上表格可橫向捲動、人稱欄固定；`Esc` 關閉。
+- **單字庫健檢 (`CardAuditModal.jsx`, `server/cardAudit.js`)**：單字庫頁「單字庫健檢」按鈕。比對每張卡和離線字典，分類列出：詞性不同、陰陽性不同、冠詞不同、可能是變化形（`fui` → ir / ser，可勾選改成原形）、字典有多個詞性無法判斷、字典查不到、和其他卡是同一個字。每筆顯示「目前 → 字典」的差異，可改選對應的字典條目（例如 comer 名詞 / 動詞）；勾選或全選後「依字典修正」把詞性 / 陰陽性 / 冠詞**寫回卡片**（中文、例句、筆記、學習進度不動），每批可「復原」；「保留現狀」後同一個問題不再提醒。
+  - API：`GET /api/cards/audit`、`POST /api/cards/audit/apply`、`POST /api/cards/audit/dismiss`、`POST /api/cards/audit/undo`。
+  - 資料表：`card_audit_log`（每批修正前後的值，供復原）、`card_audit_dismissed`（保留現狀的問題）。
 - **設定畫面的版本資訊 (`VersionInfo.jsx`, `GET /api/version`, `server/buildInfo.js`)**：顯示畫面（前端）與伺服器各是哪個分支 / commit、前端 build 時間、伺服器啟動時間；字典版本（v1 / v2、詞條數、建置時間、是否含變位 / 字源 / 例句 / 發音、A1 圖鑑字數）；已連結字典的單字數。畫面和伺服器版本不同、沒有字典或字典是舊版時顯示提示與該執行的指令；「複製版本資訊」方便回報問題。前端版本在 `vite build` 時寫入；Docker 沒有 `.git`，用 build args `APP_COMMIT` / `APP_BRANCH`。
 - **離線字典 v2 (`server/scripts/build-dictionary.js`, `server/dictionaryExtras.js`, `server/forms.js`)**：除了英文釋義，再存每個字的**發音 IPA、變形、例句、字源**（只增不減，舊版字典檔照常運作、缺的區塊不顯示）。
   - **變形（`forms` 表）**：動詞完整變位（直陳式 / 虛擬式 / 命令式 × 各時態 × yo / tú / vos / él / nosotros / vosotros / ellos；去掉 `hablarme` 這類代名詞合併形與 `-se` 虛擬式），名詞與形容詞的陰陽性、單複數、指小詞。
@@ -29,6 +33,7 @@
   - **驗證與測試**：`server/scripts/lexicon/validate.js`（欄位、長度、來源、例句含該字、SVG 大小與安全性）；`server/lexicon.test.js`。撰寫規範見 `server/scripts/lexicon/WRITING.md`。
 
 ### Fixed
+- **`POST /api/cards` 更新既有單字時回傳錯誤的 id**：upsert 撞到已存在的單字時，SQLite 的 `lastInsertRowid` 仍是上一筆，回傳的 id（以及新的字典連結）會指到別張卡；改為依單字查回正確的 id。
 - **字典建置：`artista m or f` 這類詞條被讀成只有陽性**（比對順序讓 `m` 搶先於 `m or f`），現在正確標成陰陽同形（`mf`）。
 
 ### Documentation

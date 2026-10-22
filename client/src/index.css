@@ -3635,3 +3635,370 @@ textarea {
   font-size: 0.75rem;
   color: var(--text-secondary);
 }
+
+/* ===== Forms window: conjugation / gender-number table (FormsModal.jsx) ===== */
+.fm-overlay {
+  z-index: 1100; /* opens on top of the word detail modal */
+}
+
+.fm-content {
+  max-width: 920px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fm-content .modal-header {
+  margin-bottom: 0;
+}
+
+.fm-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fm-ipa {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.fm-nonfinite {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+.fm-nf {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.fm-nf-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.fm-nf-forms {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2px 6px;
+}
+
+.fm-mood h3 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--google-blue);
+}
+
+.fm-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.fm-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.88rem;
+}
+
+.fm-table th,
+.fm-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.fm-table tbody tr:last-child th,
+.fm-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.fm-table thead th {
+  background: var(--bg-subtle);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.fm-table tbody th {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  position: sticky;
+  left: 0;
+  background: var(--bg-card);
+}
+
+.fm-person-head {
+  position: sticky;
+  left: 0;
+}
+
+.fm-form {
+  border: 0;
+  background: none;
+  padding: 2px 4px;
+  margin: -2px -4px;
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.fm-form:hover {
+  background: var(--google-blue-light);
+  color: var(--google-blue);
+}
+
+.fm-form:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 1px;
+}
+
+.fm-empty {
+  color: var(--text-muted);
+}
+
+.fm-others {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dx-open-forms {
+  align-self: flex-start;
+}
+
+.lookup-forms-btn {
+  margin-left: 8px;
+  padding: 2px 10px;
+  font-size: 0.78rem;
+  vertical-align: middle;
+}
+
+/* ===== 單字庫健檢 (CardAuditModal.jsx) ===== */
+.audit-content {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.audit-content .modal-header {
+  margin-bottom: 0;
+}
+
+.audit-content .modal-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.audit-intro {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.audit-message {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: var(--google-green-light);
+  color: var(--google-green-hover);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
+.audit-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.audit-filter {
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.audit-filter[aria-pressed="true"] {
+  background: var(--google-blue);
+  border-color: var(--google-blue);
+  color: #fff;
+}
+
+.audit-filter:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+.audit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  position: sticky;
+  top: -28px; /* stays visible while the list scrolls inside the modal */
+  background: var(--bg-card);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+  z-index: 1;
+}
+
+.audit-select-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+.audit-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.audit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.audit-row {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+.audit-row.is-selected {
+  border-color: var(--google-blue);
+  background: var(--google-blue-light);
+}
+
+.audit-row-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.audit-word {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.audit-zh {
+  color: var(--text-secondary);
+}
+
+.audit-problems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.audit-chip {
+  font-size: 0.72rem;
+  padding: 1px 8px;
+  border-radius: var(--radius-full);
+  background: var(--google-yellow-light);
+  color: var(--google-yellow-dark);
+}
+
+.audit-missing,
+.audit-duplicate {
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+}
+
+.audit-choose {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.audit-choose select {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 4px 6px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  max-width: 100%;
+  color: var(--text-primary);
+  background: var(--bg-input);
+}
+
+.audit-entry,
+.audit-note {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+
+.audit-diff {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+.audit-diff li {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.audit-diff s {
+  color: var(--text-muted);
+}
+
+.audit-diff b {
+  color: var(--google-green-hover);
+}
+
+.audit-field {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.audit-rename {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.audit-empty {
+  text-align: center;
+  padding: 24px 0;
+  color: var(--text-secondary);
+}

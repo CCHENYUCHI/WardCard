@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { Sparkles, Plus, Check, ExternalLink } from 'lucide-react';
+import { Sparkles, Plus, Check, ExternalLink, Table2 } from 'lucide-react';
 import { lookupWord, analyzeSentence, aiLookup, addToInbox, POS_LABELS, genderLabel, describeForm, STATUS_LABELS } from '../utils/dictionary';
 import { displayWord, normalizeAnswer, stripAccents } from '../utils/spanish';
 import SpeakButton from './SpeakButton';
 import StoryCard from './StoryCard';
 import DictionaryExtras from './DictionaryExtras';
+import FormsModal from './FormsModal';
 
 const sameWord = (a, b) => stripAccents(normalizeAnswer(a)) === stripAccents(normalizeAnswer(b));
 const ARTICLE_BY_GENDER = { masculino: 'el', femenino: 'la' };
 const GENDER_BY_ARTICLE = { el: 'masculino', la: 'femenino' };
 const CARD_POS = new Set(Object.keys(POS_LABELS));
+// Parts of speech the dictionary has conjugation / gender-number tables for
+const HAS_FORMS = new Set(['verb', 'noun', 'adj']);
 // Nouns are read with their article (la casa), like the rest of the app
 const wiktSpeech = (item) => (
   item.part_of_speech === 'sustantivo' && ARTICLE_BY_GENDER[item.gender]
@@ -34,6 +37,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
   const [aiBusy, setAiBusy] = useState(false);
   const [aiCard, setAiCard] = useState(null);
   const [addState, setAddState] = useState('idle'); // idle | busy | added | exists
+  const [formsFor, setFormsFor] = useState(null); // { lemma, pos } shown in the forms window
 
   useEffect(() => {
     let cancelled = false;
@@ -187,6 +191,11 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
             <strong>{item.lemma}</strong>
             <SpeakButton text={wiktSpeech(item)} />
             <span className="lookup-pos">{POS_LABELS[item.part_of_speech] || item.pos}{genderLabel(item.gender) ? ` · ${genderLabel(item.gender)}` : ''}</span>
+            {!compact && item.glosses.length > 0 && HAS_FORMS.has(item.pos) && (
+              <button type="button" className="btn btn-secondary btn-sm lookup-forms-btn" onClick={() => setFormsFor({ lemma: item.lemma, pos: item.pos })}>
+                <Table2 size={13} /> {item.pos === 'verb' ? '變位表' : '變化表'}
+              </button>
+            )}
           </div>
           {item.via && <div className="lookup-via">{item.lemma} 的 {describeForm(item.via)}</div>}
           {item.glosses.length > 0 && (
@@ -233,6 +242,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
       )}
 
       {wiktionary.length > 0 && <div className="lookup-credit">英文釋義：Wiktionary · CC BY-SA</div>}
+      {formsFor && <FormsModal lemma={formsFor.lemma} pos={formsFor.pos} onClose={() => setFormsFor(null)} />}
     </div>
   );
 }

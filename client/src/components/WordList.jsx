@@ -2,8 +2,8 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Search, Filter, Volume2, Edit3, Trash2, Plus, Sparkles, BookOpen, 
   Star, CheckCircle, ArrowRight, CheckSquare, Square, HelpCircle, 
-  Layers, Folder, Check, MoreHorizontal, ChevronRight, ChevronDown, X, Play, Pause, Flame
-} from 'lucide-react';
+  Layers, Folder, Check, MoreHorizontal, ChevronRight, ChevronDown, X, Play, Pause, Flame, Stethoscope } from 'lucide-react';
+import CardAuditModal from './CardAuditModal';
 import { playSpanishPronunciation } from '../utils/speech';
 import { fetchAPI } from '../utils/api';
 import WordDetailModal from './WordDetailModal';
@@ -27,6 +27,7 @@ export default function WordList({
   // Selection state for batch operations
   const [selectedIds, setSelectedIds] = useState([]);
   const [isBatchOperating, setIsBatchOperating] = useState(false);
+  const [showAudit, setShowAudit] = useState(false);
 
   // Modals state
   const [detailCard, setDetailCard] = useState(null);
@@ -517,6 +518,10 @@ export default function WordList({
               <Sparkles size={16} />
               <span>AI 萃取</span>
             </button>
+            <button className="btn btn-secondary btn-sm" onClick={() => setShowAudit(true)} title="和字典比對，找出詞性、陰陽性錯誤的單字卡">
+              <Stethoscope size={15} color="var(--google-blue)" />
+              <span>單字庫健檢</span>
+            </button>
           </div>
         </div>
 
@@ -835,6 +840,9 @@ export default function WordList({
         isOpen={showGuideModal}
         onClose={() => setShowGuideModal(false)}
       />
+
+      {/* 🩺 Compare cards with the offline dictionary and fix them */}
+      {showAudit && <CardAuditModal onClose={() => setShowAudit(false)} onChanged={onRefresh} />}
     </div>
   );
 }
