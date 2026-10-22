@@ -1,0 +1,2131 @@
+{
+  "theme": "life",
+  "theme_zh": "生活與抽象概念",
+  "entries": [
+    {
+      "word": "deporte",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "運動",
+      "en": "sport",
+      "ipa": "/deˈpoɾte/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēportāre",
+          "zh": "（英文 sport 的遠源）"
+        },
+        {
+          "lang_zh": "英語",
+          "word": "sport",
+          "zh": "運動"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "deporte",
+          "zh": "運動（仿譯自英文）"
+        }
+      ],
+      "cognates_en": [
+        "sport"
+      ],
+      "story_zh": "deporte 是英文 sport 的「仿譯」，而 sport 的遠祖是拉丁文 dēportāre。西語不是原封不動借 sport，而是做出一個自己的新字 deporte。",
+      "hook_zh": "deporte 比 sport 多了前後兩節 de- 和 -te，念出來像 de-POR-te。",
+      "usage_zh": "hacer deporte（做運動）；注意是 el deporte，陽性。",
+      "example_es": "Me gusta hacer deporte los domingos.",
+      "example_zh": "我喜歡星期天運動。",
+      "image": "emoji:🏅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:deporte"
+      ]
+    },
+    {
+      "word": "fútbol",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "足球",
+      "en": "football, soccer",
+      "ipa": "/ˈfudbol/",
+      "breakdown": [
+        {
+          "part": "fút-",
+          "zh": "腳（foot）"
+        },
+        {
+          "part": "-bol",
+          "zh": "球（ball）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "football",
+          "zh": "腳 + 球"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fútbol",
+          "zh": "足球"
+        }
+      ],
+      "cognates_en": [
+        "football"
+      ],
+      "story_zh": "fútbol 借自英文 football，只是照西語的拼音習慣改寫：foot 變成 fút，ball 變成 bol。",
+      "hook_zh": "fút（foot）+ bol（ball）＝ 用腳踢的球。",
+      "usage_zh": "不可數名詞，常說 jugar al fútbol（踢足球）。",
+      "example_es": "Mis amigos juegan al fútbol los sábados.",
+      "example_zh": "我朋友們星期六踢足球。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fútbol"
+      ]
+    },
+    {
+      "word": "baloncesto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "籃球",
+      "en": "basketball",
+      "ipa": "/balonˈθesto/",
+      "breakdown": [
+        {
+          "part": "balón",
+          "zh": "大球"
+        },
+        {
+          "part": "cesto",
+          "zh": "籃子"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "balón + cesto",
+          "zh": "球 + 籃子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "baloncesto",
+          "zh": "籃球"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "baloncesto 是英文 basketball 的意思翻譯（仿譯）：balón（球）＋ cesto（籃子），一個字一個字對著翻。",
+      "hook_zh": "balón 球 + cesto 籃子，把球投進籃子裡。",
+      "usage_zh": "jugar al baloncesto；口語也說 básquet、básquetbol。",
+      "example_es": "Mi hermano juega al baloncesto muy bien.",
+      "example_zh": "我哥哥籃球打得很好。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:baloncesto"
+      ]
+    },
+    {
+      "word": "tenis",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "網球",
+      "en": "tennis",
+      "ipa": "/ˈtenis/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "tennis",
+          "zh": "網球"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tenis",
+          "zh": "網球"
+        }
+      ],
+      "cognates_en": [
+        "tennis"
+      ],
+      "story_zh": "tenis 借自英文 tennis，只是拼成一個 n。有趣的是，西語還用 tenis 指「球鞋」——這是從英文 tennis shoe 學來的用法。",
+      "hook_zh": "網球 tenis 和球鞋 tenis 長一樣：穿 tenis 去打 tenis。",
+      "usage_zh": "單複數同形：el tenis（網球）、unos tenis（一雙球鞋，拉美常用）。",
+      "example_es": "Los domingos juego al tenis con mi padre.",
+      "example_zh": "星期天我和爸爸打網球。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tenis"
+      ]
+    },
+    {
+      "word": "partido",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "比賽；政黨",
+      "en": "match, game; party",
+      "ipa": "/paɾˈtido/",
+      "breakdown": [
+        {
+          "part": "part(ir)",
+          "zh": "分開、分成"
+        },
+        {
+          "part": "-ido",
+          "zh": "過去分詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "partir",
+          "zh": "分開、劃分"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "partido",
+          "zh": "比賽；政黨"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "partido 來自動詞 partir（分開、劃分）。原本的意思是「被分開的」，所以雙方各據一邊的「比賽」是 partido，各有立場的「政黨」也是 partido。",
+      "hook_zh": "兩隊被一條線分成兩邊——這就是 partido。",
+      "usage_zh": "ver un partido（看比賽）、un partido de fútbol。政黨也叫 partido político。",
+      "example_es": "Hoy hay un partido de fútbol en la tele.",
+      "example_zh": "今天電視上有一場足球賽。",
+      "image": "emoji:🏟️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:partido"
+      ]
+    },
+    {
+      "word": "equipo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "隊伍；設備",
+      "en": "team; equipment",
+      "ipa": "/eˈkipo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "équipe",
+          "zh": "隊伍"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "equipo",
+          "zh": "隊伍；設備"
+        }
+      ],
+      "cognates_en": [
+        "equip"
+      ],
+      "story_zh": "equipo 借自法文 équipe（隊伍）。法文是陰性，西語卻變成陽性 el equipo，性別跟著變了。英文 equip（配備）也是同一家族。",
+      "hook_zh": "一隊人要 equip（裝備）好才能出賽：equipo 既是隊，也是裝備。",
+      "usage_zh": "陽性！el equipo（不是 la equipo）。也可指電腦、設備。",
+      "example_es": "Mi equipo favorito es el Barcelona.",
+      "example_zh": "我最喜歡的球隊是巴塞隆納。",
+      "image": "emoji:👥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:equipo"
+      ]
+    },
+    {
+      "word": "juego",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "遊戲；比賽",
+      "en": "game; play",
+      "ipa": "/ˈxweɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "iocus / jocus",
+          "zh": "玩笑、遊戲"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "juego",
+          "zh": "遊戲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "juego",
+          "zh": "遊戲"
+        }
+      ],
+      "cognates_en": [
+        "joke"
+      ],
+      "story_zh": "juego 繼承自拉丁文 iocus（玩笑、遊戲），英文 joke 也是它的親戚。所以「玩遊戲」和「開玩笑」本來就是同一件事。",
+      "hook_zh": "juego ≈ joke：玩遊戲就是在開玩笑、鬧著玩。",
+      "usage_zh": "動詞 jugar 變化成 juego（我玩）；名詞 el juego（遊戲）。",
+      "example_es": "Este juego es muy divertido.",
+      "example_zh": "這個遊戲很好玩。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:juego",
+        "wiktionary:la:jocus"
+      ]
+    },
+    {
+      "word": "música",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "音樂",
+      "en": "music",
+      "ipa": "/ˈmusika/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "μουσική (τέχνη)",
+          "zh": "繆斯的（藝術）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "mūsica",
+          "zh": "音樂"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "música",
+          "zh": "音樂"
+        }
+      ],
+      "cognates_en": [
+        "music",
+        "muse"
+      ],
+      "story_zh": "música 的源頭是希臘文 μουσική (τέχνη)，意思是「繆斯女神的（藝術）」。希臘神話裡的 Muse（繆斯）掌管藝術與靈感，所以英文 music 和 museum（博物館）也都和她有關。",
+      "hook_zh": "música = music；聽音樂就是在聆聽繆斯女神唱歌。",
+      "usage_zh": "不可數：escuchar música（聽音樂）。重音在 MÚ。",
+      "example_es": "Escucho música todos los días.",
+      "example_zh": "我每天都聽音樂。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:música",
+        "wiktionary:la:musica"
+      ]
+    },
+    {
+      "word": "canción",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "歌曲",
+      "en": "song",
+      "ipa": "/kanˈθjon/",
+      "breakdown": [
+        {
+          "part": "can-",
+          "zh": "唱（拉丁文 canō）"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "canō + -tiō",
+          "zh": "唱 + 名詞字尾"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cantiō",
+          "zh": "歌唱、歌曲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "canción",
+          "zh": "歌曲"
+        }
+      ],
+      "cognates_en": [
+        "cantor"
+      ],
+      "story_zh": "canción 來自拉丁文 cantiō（歌唱），由 canō（唱）＋ -tiō 組成。古西班牙語本來寫作 cançón，後來照 -ción 的拼法修正成今天的樣子。法文 chanson 是它的雙胞胎。",
+      "hook_zh": "canción ← cantar：唱出來的東西就是歌。",
+      "usage_zh": "陰性 la canción；複數 canciones（去掉重音）。",
+      "example_es": "Esta canción me encanta.",
+      "example_zh": "我超愛這首歌。",
+      "image": "emoji:🎶",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:canción",
+        "wiktionary:la:cantio"
+      ]
+    },
+    {
+      "word": "película",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "電影；薄膜",
+      "en": "movie, film",
+      "ipa": "/peˈlikula/",
+      "breakdown": [
+        {
+          "part": "pell-",
+          "zh": "皮膚、獸皮"
+        },
+        {
+          "part": "-ícula",
+          "zh": "縮小詞尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pellis + -cula",
+          "zh": "皮 + 縮小詞尾"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "pellicula",
+          "zh": "小皮、薄膜"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "película",
+          "zh": "薄膜；電影"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "película 借自拉丁文 pellicula，由 pellis（皮膚、獸皮）＋ 縮小詞尾 -cula 組成，字面是「小小一層皮」。西語先指「薄薄一層膜」，後來指感光的底片，最後就成了「電影」。",
+      "hook_zh": "電影底片就是一層薄薄的「皮」：pell + ícula。",
+      "usage_zh": "重音在 PE：pe-LÍ-cu-la（第三音節），ver una película（看電影）。",
+      "example_es": "Vemos una película esta noche.",
+      "example_zh": "我們今晚看一部電影。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:película",
+        "wiktionary:la:pellicula",
+        "wiktionary:la:pellis"
+      ]
+    },
+    {
+      "word": "foto",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "照片",
+      "en": "photo",
+      "ipa": "/ˈfoto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "fotografía",
+          "zh": "攝影、照片"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "foto",
+          "zh": "照片（縮短）"
+        }
+      ],
+      "cognates_en": [
+        "photo"
+      ],
+      "story_zh": "foto 是 fotografía 的縮短形，就像英文 photo 是 photograph 的縮寫。",
+      "hook_zh": "foto 是陰性：la foto——雖然結尾是 -o，卻是 fotografía 縮短來的。",
+      "usage_zh": "陰性例外！la foto（不是 el foto）。sacar una foto＝拍照。",
+      "example_es": "Saco una foto de la playa.",
+      "example_zh": "我拍一張海灘的照片。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:foto"
+      ]
+    },
+    {
+      "word": "revista",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "雜誌",
+      "en": "magazine",
+      "ipa": "/reˈbista/",
+      "breakdown": [
+        {
+          "part": "re-",
+          "zh": "再、重新"
+        },
+        {
+          "part": "vista",
+          "zh": "看、視野"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "re- + vista",
+          "zh": "再 + 看"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "revista",
+          "zh": "雜誌"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "revista 是 re-（再、重新）加上 vista（看）組成：把事情「再看一遍」，也就是回顧、評論。後來就指定期出版、回顧時事的「雜誌」。",
+      "hook_zh": "re-vista ≈ re-view：每期再看一遍世界的新聞。",
+      "usage_zh": "雜誌是 revista，不是 revisar（檢查）。",
+      "example_es": "Compro una revista de moda cada mes.",
+      "example_zh": "我每個月買一本時尚雜誌。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:revista"
+      ]
+    },
+    {
+      "word": "periódico",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "報紙",
+      "en": "newspaper",
+      "ipa": "/peˈɾjodiko/",
+      "breakdown": [
+        {
+          "part": "peri-",
+          "zh": "周圍、繞著"
+        },
+        {
+          "part": "hodós",
+          "zh": "路、道（希臘文）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "περιοδικός (periodikós)",
+          "zh": "週期的（繞著走）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "periodicus",
+          "zh": "定期的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "periódico",
+          "zh": "報紙"
+        }
+      ],
+      "cognates_en": [
+        "periodic",
+        "period"
+      ],
+      "story_zh": "periódico 經拉丁文 periodicus 來自希臘文 περιοδικός，由 περί（周圍）＋ ὁδός（路）組成，意思是「繞圈、週期性的」。報紙每天定期出刊，所以叫 periódico。",
+      "hook_zh": "報紙像繞圈跑道：每天固定回來一次，就是 periodic（定期）。",
+      "usage_zh": "el periódico 是報紙；形容詞「定期的」同形。記者是 periodista。",
+      "example_es": "Mi abuelo lee el periódico por la mañana.",
+      "example_zh": "我爺爺早上看報紙。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:periódico",
+        "wiktionary:la:periodicus"
+      ]
+    },
+    {
+      "word": "noticia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "新聞；消息",
+      "en": "news; piece of news",
+      "ipa": "/noˈtiθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nōtitia",
+          "zh": "認識、知道"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "noticia",
+          "zh": "新聞、消息"
+        }
+      ],
+      "cognates_en": [
+        "notice"
+      ],
+      "story_zh": "noticia 借自拉丁文 nōtitia，英文 notice（注意到）也是同源。新聞就是讓你「留意到、得知」的消息。",
+      "hook_zh": "noticia ≈ notice：一則讓你注意到的消息。",
+      "usage_zh": "一則新聞是 una noticia，「新聞節目」多用複數 las noticias。",
+      "example_es": "Tengo una buena noticia para ti.",
+      "example_zh": "我有個好消息要告訴你。",
+      "image": "emoji:📰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:noticia"
+      ]
+    },
+    {
+      "word": "arte",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "藝術；技藝",
+      "en": "art; skill",
+      "ipa": "/ˈaɾte/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "artem (ars)",
+          "zh": "實用技藝"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "arte",
+          "zh": "藝術"
+        }
+      ],
+      "cognates_en": [
+        "art"
+      ],
+      "story_zh": "arte 借自拉丁文 artem，原本的意思是「實用的技能」。可見古時候的「藝術」和「手藝」本來就是一家。英文 art 同源。",
+      "hook_zh": "arte = art；古羅馬人說的 ars 就是「手藝」。",
+      "usage_zh": "單數常用 el arte，複數用 las artes（las bellas artes 美術）。",
+      "example_es": "Me gusta el arte moderno.",
+      "example_zh": "我喜歡現代藝術。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:arte"
+      ]
+    },
+    {
+      "word": "baile",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "舞蹈；舞會",
+      "en": "dance",
+      "ipa": "/ˈbaile/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "bailar",
+          "zh": "跳舞"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "baile",
+          "zh": "舞蹈"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "baile 是從動詞 bailar（跳舞）直接變出來的名詞：把「跳舞」這個動作，變成「舞蹈」這件事。也可指舞會。",
+      "hook_zh": "bailar 去掉 -ar、加上 -e，就是 baile——跳 flamenco 時的舞。",
+      "usage_zh": "ir a un baile（去舞會）；舞蹈課是 clase de baile。",
+      "example_es": "Mañana hay un baile en la escuela.",
+      "example_zh": "明天學校有舞會。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:baile"
+      ]
+    },
+    {
+      "word": "regalo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "禮物",
+      "en": "gift, present",
+      "ipa": "/reˈɡalo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古法語",
+          "word": "galer",
+          "zh": "享樂、玩得開心"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "régal",
+          "zh": "款待、盛宴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "regalo",
+          "zh": "禮物"
+        }
+      ],
+      "cognates_en": [
+        "gala"
+      ],
+      "story_zh": "regalo 很可能來自法文 régal（款待、美味招待），而 régal 又來自古法語 galer（享樂）。英文 gala（盛會）也出自 galer。所以送禮物本來是想讓人「開心享受」。",
+      "hook_zh": "regalo ≈ re-gala：給人一場小小的 gala 慶典。",
+      "usage_zh": "dar un regalo / hacer un regalo；動詞 regalar（送禮）。",
+      "example_es": "Te traigo un regalo de cumpleaños.",
+      "example_zh": "我帶了生日禮物給你。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:regalo"
+      ]
+    },
+    {
+      "word": "carta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "信；菜單；撲克牌",
+      "en": "letter; menu; playing card",
+      "ipa": "/ˈkaɾta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "χάρτης (khártēs)",
+          "zh": "紙莎草紙"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "charta",
+          "zh": "紙、文書、信件"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "carta",
+          "zh": "信；菜單"
+        }
+      ],
+      "cognates_en": [
+        "card",
+        "chart"
+      ],
+      "story_zh": "carta 來自希臘文 χάρτης（紙莎草紙），經拉丁文 charta（紙、寫好的文書、信件）傳進西語。英文 card（卡片）和 chart（圖表）都是它的親戚。",
+      "hook_zh": "carta = 一張紙：信、菜單、撲克牌都是一張一張的紙。",
+      "usage_zh": "餐廳點餐說 ¿Me trae la carta?（請給我菜單）。letra 是「字母」，不是信。",
+      "example_es": "Escribo una carta a mi abuela.",
+      "example_zh": "我寫一封信給奶奶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:carta",
+        "wiktionary:la:charta"
+      ]
+    },
+    {
+      "word": "conversación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "對話、交談",
+      "en": "conversation",
+      "ipa": "/kombeɾsaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "conversātiōnem",
+          "zh": "往來、交談"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "conversación",
+          "zh": "對話"
+        }
+      ],
+      "cognates_en": [
+        "conversation"
+      ],
+      "story_zh": "conversación 借自拉丁文 conversātiōnem，和英文 conversation 同源，只是詞尾從 -tion 換成 -ción。",
+      "hook_zh": "-tion 換成 -ción：conversation → conversación，大量英文字都能這樣轉換。",
+      "usage_zh": "tener una conversación（進行對話）；n 在 v 前念 /m/：kom-ber-sa-CIÓN。",
+      "example_es": "Tengo una conversación con mi profesor.",
+      "example_zh": "我正和老師談話。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:conversación"
+      ]
+    },
+    {
+      "word": "problema",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "問題；麻煩",
+      "en": "problem",
+      "ipa": "/pɾoˈblema/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "πρόβλημα (próblēma)",
+          "zh": "障礙"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "problēma",
+          "zh": "難題、謎題"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "problema",
+          "zh": "問題"
+        }
+      ],
+      "cognates_en": [
+        "problem"
+      ],
+      "story_zh": "problema 來自希臘文 πρόβλημα，意思是擋在前面的「障礙」，經拉丁文 problēma（難題）進入西語。英文 problem 是同源字。",
+      "hook_zh": "問題就是擋在路上的一塊大石頭。注意：problema 雖然結尾是 -a，卻是陽性！",
+      "usage_zh": "陽性：el problema、los problemas。¡No hay problema!＝沒問題！",
+      "example_es": "No hay problema, yo te ayudo.",
+      "example_zh": "沒問題，我幫你。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:problema",
+        "wiktionary:la:problema"
+      ]
+    },
+    {
+      "word": "idea",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "點子、想法",
+      "en": "idea",
+      "ipa": "/iˈdea/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "εἴδω (eídō)",
+          "zh": "看見"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἰδέα (idéa)",
+          "zh": "概念、模樣"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "idea",
+          "zh": "概念"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "idea",
+          "zh": "點子、想法"
+        }
+      ],
+      "cognates_en": [
+        "idea"
+      ],
+      "story_zh": "idea 來自希臘文 ἰδέα（概念、樣式），而它又來自動詞 εἴδω（看見）。想法，就是你心裡「看見」的畫面。英文 idea 是同源字。",
+      "hook_zh": "靈光一閃，頭上亮起燈泡：¡Tengo una idea!",
+      "usage_zh": "idea 是陰性：la idea、una buena idea；和 el problema（結尾是 -a 卻是陽性）剛好相反。",
+      "example_es": "¡Qué buena idea!",
+      "example_zh": "好主意！",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:idea",
+        "wiktionary:la:idea"
+      ]
+    },
+    {
+      "word": "verdad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "真相、事實；對吧？",
+      "en": "truth; right?",
+      "ipa": "/beɾˈda/",
+      "breakdown": [
+        {
+          "part": "ver-",
+          "zh": "真的（拉丁文 vērus）"
+        },
+        {
+          "part": "-dad",
+          "zh": "名詞字尾（≈ -ty）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vērus + -tās",
+          "zh": "真的 + 名詞字尾"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "vēritās (vēritātem)",
+          "zh": "真理"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "verdad",
+          "zh": "真相"
+        }
+      ],
+      "cognates_en": [
+        "verify",
+        "verity"
+      ],
+      "story_zh": "verdad 繼承自拉丁文 vēritātem，由 vērus（真的）加上抽象名詞字尾 -tās 組成。英文 verity（真理）是同源字，verify（查證）也是同一家族。",
+      "hook_zh": "ver-dad 像 ver-ity：-dad 就是英文 -ty（如 ciudad = city）。",
+      "usage_zh": "句尾加 ¿verdad? 相當於「對吧？」：Es difícil, ¿verdad?",
+      "example_es": "Es verdad, tienes razón.",
+      "example_zh": "沒錯，你說得對。",
+      "image": "emoji:✅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:verdad",
+        "wiktionary:la:veritas"
+      ]
+    },
+    {
+      "word": "mentira",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "謊言",
+      "en": "lie",
+      "ipa": "/menˈtiɾa/",
+      "breakdown": [
+        {
+          "part": "ment(ir)",
+          "zh": "說謊"
+        },
+        {
+          "part": "-ira",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "mentir",
+          "zh": "說謊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mentira",
+          "zh": "謊言"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "mentira 是從動詞 mentir（說謊）變出來的名詞，把「說謊」這個動作變成「謊言」這個東西。",
+      "hook_zh": "想像小木偶說謊鼻子變長——說 mentira 的人叫 mentiroso。",
+      "usage_zh": "動詞是 mentir（e→ie：miento）；真話則是 la verdad。",
+      "example_es": "Eso es mentira, no es verdad.",
+      "example_zh": "那是謊話，不是真的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mentira"
+      ]
+    },
+    {
+      "word": "amor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "愛、愛情",
+      "en": "love",
+      "ipa": "/aˈmoɾ/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "心（corazón）裡滿滿的就是 amor；英文 amorous（多情的）長得很像。",
+      "usage_zh": "陽性 el amor；mi amor（親愛的），「我愛你」是 Te quiero／Te amo。",
+      "example_es": "El amor es lo más importante.",
+      "example_zh": "愛是最重要的。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:amor"
+      ]
+    },
+    {
+      "word": "amistad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "友誼",
+      "en": "friendship",
+      "ipa": "/amisˈtad/",
+      "breakdown": [
+        {
+          "part": "amig(o)",
+          "zh": "朋友"
+        },
+        {
+          "part": "-dad",
+          "zh": "名詞字尾（≈ -ty）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*amīcitās",
+          "zh": "友誼（朋友 + -tās）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "amiztad",
+          "zh": "友誼"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "amistad",
+          "zh": "友誼"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "amistad 來自通俗拉丁文 *amīcitās，由 amīc-（朋友）加上抽象名詞字尾 -tās 組成，就是「朋友的狀態」。古西班牙語寫作 amiztad。",
+      "hook_zh": "amig-o（朋友）＋ -tad ＝ amistad：好朋友之間的那份情。",
+      "usage_zh": "陰性 la amistad；hacer amistad con alguien（和某人交朋友）。",
+      "example_es": "La amistad es muy importante para mí.",
+      "example_zh": "友誼對我來說很重要。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:amistad"
+      ]
+    },
+    {
+      "word": "vida",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "生命；生活",
+      "en": "life",
+      "ipa": "/ˈbida/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vīta",
+          "zh": "生命、生活"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vida",
+          "zh": "生命、生活"
+        }
+      ],
+      "cognates_en": [
+        "vital",
+        "vitamin"
+      ],
+      "story_zh": "vida 繼承自拉丁文 vīta。拉丁文裡 t 在兩個母音之間，到西語就軟化成 d，所以 vīta 變成 vida。英文 vital 和 vitamin 也是同一家。",
+      "hook_zh": "vitamin（維他命）＝維持 vida（生命）的東西。",
+      "usage_zh": "¡Es la vida!（這就是人生）；¿Qué tal la vida?（生活如何？）",
+      "example_es": "La vida en la ciudad es muy rápida.",
+      "example_zh": "城市的生活節奏很快。",
+      "image": "emoji:🌱",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vida",
+        "wiktionary:la:vita"
+      ]
+    },
+    {
+      "word": "muerte",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "死亡",
+      "en": "death",
+      "ipa": "/ˈmweɾte/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mors (mortem)",
+          "zh": "死亡"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "muerte",
+          "zh": "死亡"
+        }
+      ],
+      "cognates_en": [
+        "mortal",
+        "mortify"
+      ],
+      "story_zh": "muerte 繼承自拉丁文 mortem（死亡），英文 mortal（會死的）和 mortify（使羞愧得要死）都是同源字。西語把 o 變成 ue，是常見的語音演變。",
+      "hook_zh": "muerte ≈ mortal：凡人（mortal）都會面對的 muerte。",
+      "usage_zh": "陰性 la muerte；形容詞是 muerto（死的）。",
+      "example_es": "La muerte del perro nos pone tristes.",
+      "example_zh": "狗狗的死讓我們很難過。",
+      "image": "emoji:🥀",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:muerte",
+        "wiktionary:la:mors"
+      ]
+    },
+    {
+      "word": "paz",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "和平；平靜",
+      "en": "peace",
+      "ipa": "/ˈpaθ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pāx (pācem)",
+          "zh": "和平、安寧"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "paz",
+          "zh": "和平"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paz",
+          "zh": "和平"
+        }
+      ],
+      "cognates_en": [
+        "peace",
+        "pacify"
+      ],
+      "story_zh": "paz 繼承自拉丁文 pāx（受格 pācem），拉丁文的 pax 也有「安靜、閉嘴」的意思。英文 peace 與 pacify（使平靜）都來自它。",
+      "hook_zh": "和平鴿叼著橄欖枝：paz = peace，z 念 /θ/。",
+      "usage_zh": "複數 paces（z 變 c）。常說 en paz、la paz mundial（世界和平）。",
+      "example_es": "Quiero vivir en paz.",
+      "example_zh": "我想過平靜的生活。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paz",
+        "wiktionary:la:pax"
+      ]
+    },
+    {
+      "word": "suerte",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "運氣；好運",
+      "en": "luck",
+      "ipa": "/ˈsweɾte/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sors (sortem)",
+          "zh": "抽籤、命運"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "suerte",
+          "zh": "運氣"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "suerte",
+          "zh": "運氣"
+        }
+      ],
+      "cognates_en": [
+        "sort"
+      ],
+      "story_zh": "suerte 來自拉丁文 sors（受格 sortem），指任何用來決定機運的東西，例如抽籤。抽到什麼，就是你的「運氣」。英文 sort（種類）也是這個家族。",
+      "hook_zh": "四葉幸運草！抽籤抽中好籤，就是 buena suerte。",
+      "usage_zh": "祝福說 ¡Buena suerte! 或 ¡Suerte!；有運氣 tener suerte。",
+      "example_es": "¡Buena suerte en el examen!",
+      "example_zh": "考試加油（祝好運）！",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:suerte",
+        "wiktionary:la:sors"
+      ]
+    },
+    {
+      "word": "manera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "方式、方法",
+      "en": "way, manner",
+      "ipa": "/maˈneɾa/",
+      "breakdown": [
+        {
+          "part": "man(u)",
+          "zh": "手（拉丁文 manus）"
+        },
+        {
+          "part": "-aria",
+          "zh": "和…有關的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "manus + -ārius",
+          "zh": "手 + 有關的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "manuārius",
+          "zh": "和手有關的"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*man(u)āria",
+          "zh": "手的（陰性）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "manera",
+          "zh": "方式"
+        }
+      ],
+      "cognates_en": [
+        "manner",
+        "manual"
+      ],
+      "story_zh": "manera 來自通俗拉丁文 *man(u)āria，源頭是 manus（手）加上 -ārius，意思是「和手有關的」。做事的「手法」就是 manera。英文 manner 同源。",
+      "hook_zh": "manera ← mano（手）：做事的「手法」就是方式。",
+      "usage_zh": "de esta manera（這樣）、de todas maneras（無論如何）。",
+      "example_es": "Hay muchas maneras de aprender español.",
+      "example_zh": "學西班牙文有很多方法。",
+      "image": "emoji:🛤️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:manera",
+        "wiktionary:la:manuarius"
+      ]
+    },
+    {
+      "word": "parte",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "部分；一份",
+      "en": "part",
+      "ipa": "/ˈpaɾte/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pars (partem)",
+          "zh": "部分、份、一方"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "parte",
+          "zh": "部分"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "parte",
+          "zh": "部分"
+        }
+      ],
+      "cognates_en": [
+        "part"
+      ],
+      "story_zh": "parte 繼承自拉丁文 pars（受格 partem），意思是部分、一份。英文 part 同源，partir（分開）和 partido（比賽）也都是這個家族。",
+      "hook_zh": "一個派切成幾塊，每塊就是一個 parte。",
+      "usage_zh": "la parte 是「部分」，el parte 是「通報、罰單」；en todas partes（到處）。",
+      "example_es": "¿De qué parte de España eres?",
+      "example_zh": "你是西班牙哪個地方的人？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:parte",
+        "wiktionary:la:pars"
+      ]
+    },
+    {
+      "word": "lugar",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "地方；地點",
+      "en": "place",
+      "ipa": "/luˈɡaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "locus",
+          "zh": "地點"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "locālem",
+          "zh": "地方的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "logar",
+          "zh": "地方"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lugar",
+          "zh": "地方"
+        }
+      ],
+      "cognates_en": [
+        "local",
+        "location"
+      ],
+      "story_zh": "lugar 來自晚期拉丁文 locālem（地方的），源頭是 locus（地點）。古西班牙語寫作 logar，後來 o 變成 u。英文 local 是它的「雙胞胎」。",
+      "hook_zh": "lugar ≈ local：local 是地方的，lugar 就是那個地方。",
+      "usage_zh": "en primer lugar（首先）、tener lugar（舉行）。",
+      "example_es": "Este es mi lugar favorito.",
+      "example_zh": "這是我最愛的地方。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lugar",
+        "wiktionary:la:locus"
+      ]
+    },
+    {
+      "word": "sitio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "地方；位子；網站",
+      "en": "place, spot; site",
+      "ipa": "/ˈsitjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "situs",
+          "zh": "位置、地點"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sitio",
+          "zh": "地方"
+        }
+      ],
+      "cognates_en": [
+        "site",
+        "situation"
+      ],
+      "story_zh": "sitio 是從拉丁文 situs（位置、地點）半學術地借來的，英文 site 和 situation 是同一家。另一個同形的 sitio 意為「圍城」，來自動詞 sitiar，兩個字無關。",
+      "hook_zh": "sitio ≈ site：找 sitio（位子）、上 sitio web（網站）。",
+      "usage_zh": "¿Hay sitio?（有位子嗎？）；sitio web＝網站。",
+      "example_es": "¿Hay un sitio libre aquí?",
+      "example_zh": "這裡有空位嗎？",
+      "image": "emoji:📍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sitio",
+        "wiktionary:la:situs"
+      ]
+    },
+    {
+      "word": "forma",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "形狀；方式",
+      "en": "shape, form; way",
+      "ipa": "/ˈfoɾma/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fōrma",
+          "zh": "形狀、外形"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "forma",
+          "zh": "形狀；方式"
+        }
+      ],
+      "cognates_en": [
+        "form",
+        "format"
+      ],
+      "story_zh": "forma 借自拉丁文 fōrma（形狀）。拉丁文本身的來源不確定，有人推測是經伊特拉斯坎語借自希臘文 μορφή（形狀），但只是一種說法。英文 form 同源。",
+      "hook_zh": "forma = form：事物的樣子，也是做事的「方式」。",
+      "usage_zh": "de esta forma（這樣）、estar en forma（保持好身材）。",
+      "example_es": "Tiene forma de corazón.",
+      "example_zh": "它是心形的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:forma",
+        "wiktionary:la:forma"
+      ]
+    },
+    {
+      "word": "tipo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "種類；（口語）傢伙",
+      "en": "type, kind; guy",
+      "ipa": "/ˈtipo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "τύπτω (túptō)",
+          "zh": "敲打"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "τύπος (túpos)",
+          "zh": "印記"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "typus",
+          "zh": "形象、類型"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tipo",
+          "zh": "種類；傢伙"
+        }
+      ],
+      "cognates_en": [
+        "type",
+        "typical"
+      ],
+      "story_zh": "tipo 來自希臘文 τύπος（印記），而它又來自 τύπτω（敲打）：敲出來的印子就是「型」。經拉丁文 typus 進入西語。英文 type 是同源字。",
+      "hook_zh": "tipo = type：打字機（typewriter）敲出的字模，就是一種 tipo。",
+      "usage_zh": "un tipo de…（一種…）；口語 un tipo 還有「傢伙」的意思。",
+      "example_es": "¿Qué tipo de música te gusta?",
+      "example_zh": "你喜歡哪一種音樂？",
+      "image": "emoji:🏷️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tipo",
+        "wiktionary:la:typus"
+      ]
+    },
+    {
+      "word": "vez",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "次；回；輪到",
+      "en": "time, occasion; turn",
+      "ipa": "/ˈbeθ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vicis",
+          "zh": "更替、輪替"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vez",
+          "zh": "次；輪到"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "vez 來自拉丁文 vicis（更替、輪流、一次）。「輪流」一次又一次，就成了「第幾次」，也成了「輪到誰」。",
+      "hook_zh": "一次又一次輪流來：una vez（一次）、dos veces（兩次）。",
+      "usage_zh": "複數 veces（z 變 c）：a veces（有時）、otra vez（再一次）、me toca a mí（輪到我）。",
+      "example_es": "Voy al gimnasio tres veces por semana.",
+      "example_zh": "我每週去健身房三次。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vez",
+        "wiktionary:la:vicis"
+      ]
+    },
+    {
+      "word": "historia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "歷史；故事",
+      "en": "history; story",
+      "ipa": "/isˈtoɾja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἱστορία (historía)",
+          "zh": "探究所得的知識"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "historia",
+          "zh": "記述、故事"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "historia",
+          "zh": "歷史；故事"
+        }
+      ],
+      "cognates_en": [
+        "history",
+        "story"
+      ],
+      "story_zh": "historia 來自希臘文 ἱστορία，意思是「透過探究而得到的知識」，經拉丁文 historia（記述、故事）進入西語。所以 history（歷史）和 story（故事）本來是同一個字。",
+      "hook_zh": "history 去掉 hi 就是 story——西語一個 historia 兩個意思全包。",
+      "usage_zh": "h 不發音：is-TO-ria。la historia de España＝西班牙史，也可是「一個故事」。",
+      "example_es": "Me gusta la historia de España.",
+      "example_zh": "我喜歡西班牙歷史。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:historia",
+        "wiktionary:la:historia"
+      ]
+    },
+    {
+      "word": "cultura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "文化",
+      "en": "culture",
+      "ipa": "/kulˈtuɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "colō",
+          "zh": "耕種、培養"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cultus",
+          "zh": "被耕種的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cultūra",
+          "zh": "耕作、培育"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cultura",
+          "zh": "文化"
+        }
+      ],
+      "cognates_en": [
+        "culture",
+        "cultivate"
+      ],
+      "story_zh": "cultura 來自拉丁文 cultūra，源頭是動詞 colō（耕種、培養）。西語的 cultura 也指「知識、教養」，甚至「作物的栽培」。「文化」就是人用心耕耘出來的成果。",
+      "hook_zh": "文化像農田：要像 cultivate 一樣細心耕耘，才長得出來。",
+      "usage_zh": "la cultura española（西班牙文化）；注意 cult- 的 l 要念出來。",
+      "example_es": "Me interesa la cultura de otros países.",
+      "example_zh": "我對其他國家的文化有興趣。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cultura"
+      ]
+    },
+    {
+      "word": "tradición",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "傳統",
+      "en": "tradition",
+      "ipa": "/tɾadiˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "trāditiō",
+          "zh": "傳遞、交付"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tradición",
+          "zh": "傳統"
+        }
+      ],
+      "cognates_en": [
+        "tradition"
+      ],
+      "story_zh": "tradición 借自拉丁文 trāditiō，和英文 tradition 同源。西語辭典還提到它和 traición（背叛）是同一個拉丁字分出來的親戚。",
+      "hook_zh": "tradición 是一代傳一代的事，傳下來的東西叫 tradición。",
+      "usage_zh": "-ción 結尾陰性：la tradición；複數 tradiciones。",
+      "example_es": "Es una tradición de mi familia.",
+      "example_zh": "這是我家的傳統。",
+      "image": "emoji:💃",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tradición"
+      ]
+    },
+    {
+      "word": "razón",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "理由；道理",
+      "en": "reason",
+      "ipa": "/raˈθon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "reor",
+          "zh": "計算、認為"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ratiō (ratiōnem)",
+          "zh": "理性、計算、理由"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "raçon",
+          "zh": "理由"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "razón",
+          "zh": "理由；道理"
+        }
+      ],
+      "cognates_en": [
+        "reason",
+        "ratio"
+      ],
+      "story_zh": "razón 繼承自拉丁文 ratiōnem（理性、理由），源頭是動詞 reor（計算、認為）。道理就是「算得通」的事。英文 reason 與 ratio（比例）都是同源。",
+      "hook_zh": "tener razón（有道理）＝你的算式算對了。",
+      "usage_zh": "tener razón（說得對）、no tener razón（說錯了）；不用 ser。",
+      "example_es": "Tienes razón, es verdad.",
+      "example_zh": "你說得對。",
+      "image": "emoji:💡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:razón",
+        "wiktionary:la:ratio",
+        "wiktionary:la:reor"
+      ]
+    },
+    {
+      "word": "opinión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "意見、看法",
+      "en": "opinion",
+      "ipa": "/opiˈnjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "opīnor + -iō",
+          "zh": "猜想 + 名詞字尾"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "opīniō (opīniōnem)",
+          "zh": "意見、猜想"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "opinión",
+          "zh": "意見"
+        }
+      ],
+      "cognates_en": [
+        "opinion"
+      ],
+      "story_zh": "opinión 來自拉丁文 opīniōnem，源頭是動詞 opīnor（猜想、認為）。意見本來就只是「我猜、我覺得」，不是定論。英文 opinion 同源。",
+      "hook_zh": "-ion 結尾陰性：en mi opinión（依我看）。",
+      "usage_zh": "en mi opinión（依我看）、cambiar de opinión（改變主意）。",
+      "example_es": "En mi opinión, es una buena idea.",
+      "example_zh": "依我看，這是個好主意。",
+      "image": "emoji:🗨️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:opinión",
+        "wiktionary:la:opinio"
+      ]
+    },
+    {
+      "word": "ayuda",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "幫助；協助",
+      "en": "help",
+      "ipa": "/aˈʝuda/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "ayudar",
+          "zh": "幫助"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ayuda",
+          "zh": "幫助"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ayuda 是從動詞 ayudar（幫助）直接變來的名詞：去掉動詞字尾 -r，換成 -a，就成了「幫助」這件事。",
+      "hook_zh": "喊 ¡Ayuda! 就是「救命！」，伸出一隻手的畫面。",
+      "usage_zh": "pedir ayuda（求助）、¿Necesitas ayuda?；喊救命用 ¡Socorro! 或 ¡Ayuda!",
+      "example_es": "Necesito ayuda con mi tarea.",
+      "example_zh": "我的作業需要幫忙。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ayuda"
+      ]
+    },
+    {
+      "word": "favor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "幫忙、恩惠",
+      "en": "favor",
+      "ipa": "/faˈboɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "favōrem",
+          "zh": "好感、偏愛、支持"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "favor",
+          "zh": "幫忙"
+        }
+      ],
+      "cognates_en": [
+        "favor",
+        "favorite"
+      ],
+      "story_zh": "favor 借自拉丁文 favōrem，和英文 favor 拼法幾乎一樣，意思也相同：一份善意的幫忙。",
+      "hook_zh": "por favor 是「請」，字面是「出於好意」。",
+      "usage_zh": "por favor（請）、hacer un favor（幫個忙）：¿Me haces un favor?",
+      "example_es": "¿Me haces un favor, por favor?",
+      "example_zh": "可以請你幫我個忙嗎？",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:favor"
+      ]
+    },
+    {
+      "word": "videojuego",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "電子遊戲",
+      "en": "video game",
+      "ipa": "/ˌbideoˈxweɡo/",
+      "breakdown": [
+        {
+          "part": "video",
+          "zh": "影像"
+        },
+        {
+          "part": "juego",
+          "zh": "遊戲"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "video game",
+          "zh": "電子遊戲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vídeo + juego",
+          "zh": "影像 + 遊戲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "videojuego",
+          "zh": "電子遊戲"
+        }
+      ],
+      "cognates_en": [
+        "video"
+      ],
+      "story_zh": "videojuego 是英文 video game 的仿譯：vídeo（影像）＋ juego（遊戲）合成一個字，所以認得 juego 就認得它。",
+      "hook_zh": "video（影像）＋ juego（遊戲）＝ 手裡握著手把的遊戲。",
+      "usage_zh": "複數 videojuegos；jugar a los videojuegos（玩電動）。",
+      "example_es": "Mi hermano juega a los videojuegos.",
+      "example_zh": "我弟弟打電動。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:videojuego"
+      ]
+    },
+    {
+      "word": "concierto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "演唱會；音樂會",
+      "en": "concert",
+      "ipa": "/konˈθjeɾto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "concertar",
+          "zh": "協調、安排"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "concierto",
+          "zh": "音樂會"
+        }
+      ],
+      "cognates_en": [
+        "concert"
+      ],
+      "story_zh": "concierto 是從動詞 concertar（協調、約定）變出來的名詞。許多樂器配合協調，就是「音樂會」。",
+      "hook_zh": "concierto ≈ concert：很多樂器合奏，大家一起唱的現場。",
+      "usage_zh": "ir a un concierto（去聽演唱會）；也指「協奏曲」。",
+      "example_es": "Vamos a un concierto el sábado.",
+      "example_zh": "星期六我們要去聽演唱會。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:concierto"
+      ]
+    },
+    {
+      "word": "excursión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "遠足；出遊",
+      "en": "excursion, trip",
+      "ipa": "/eɡskuɾˈsjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "excursiō (excursiōnem)",
+          "zh": "出遊、遠征"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "excursión",
+          "zh": "遠足"
+        }
+      ],
+      "cognates_en": [
+        "excursion"
+      ],
+      "story_zh": "excursión 借自拉丁文 excursiōnem，和英文 excursion 同源。西語指的是一段出門遠足、郊遊的路程。",
+      "hook_zh": "excursión ≈ excursion：背起背包，往山裡走。",
+      "usage_zh": "ir de excursión（去郊遊）；hacer una excursión。-ión 陰性。",
+      "example_es": "Hacemos una excursión a la montaña.",
+      "example_zh": "我們去山上遠足。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:excursión"
+      ]
+    },
+    {
+      "word": "paseo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "散步；兜風",
+      "en": "walk, stroll",
+      "ipa": "/paˈseo/",
+      "breakdown": [
+        {
+          "part": "pase(ar)",
+          "zh": "散步"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pasear",
+          "zh": "散步"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paseo",
+          "zh": "散步；林蔭大道"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "paseo 是從動詞 pasear（散步）直接變出來的名詞。除了「散步」，也指散步用的林蔭道（如 Paseo de la Reforma）。",
+      "hook_zh": "pasear → paseo：悠閒走走的一段路。",
+      "usage_zh": "dar un paseo（散個步）、ir de paseo（出去逛逛）。",
+      "example_es": "Doy un paseo por el parque.",
+      "example_zh": "我在公園散步。",
+      "image": "emoji:🚶",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paseo"
+      ]
+    },
+    {
+      "word": "turista",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "觀光客",
+      "en": "tourist",
+      "ipa": "/tuˈɾista/",
+      "breakdown": [
+        {
+          "part": "tur-",
+          "zh": "旅行（tour）"
+        },
+        {
+          "part": "-ista",
+          "zh": "從事…的人"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "tourist",
+          "zh": "觀光客"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "turista",
+          "zh": "觀光客"
+        }
+      ],
+      "cognates_en": [
+        "tourist"
+      ],
+      "story_zh": "turista 借自英文 tourist，西語把拼法改成自己的樣子，並符合 -ista 結尾的習慣。",
+      "hook_zh": "脖子掛相機、手拿地圖的人：tourist 去掉 o 加 a 就是 turista。",
+      "usage_zh": "陰陽同形：el turista / la turista。",
+      "example_es": "Hay muchos turistas en Madrid.",
+      "example_zh": "馬德里有很多觀光客。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:turista"
+      ]
+    },
+    {
+      "word": "pasaporte",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "護照",
+      "en": "passport",
+      "ipa": "/pasaˈpoɾte/",
+      "breakdown": [
+        {
+          "part": "pasa(r)",
+          "zh": "通過"
+        },
+        {
+          "part": "puerto/porte",
+          "zh": "港口、門"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "passeport",
+          "zh": "護照"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pasaporte",
+          "zh": "護照"
+        }
+      ],
+      "cognates_en": [
+        "passport"
+      ],
+      "story_zh": "pasaporte 借自法文 passeport，和英文 passport 是同一個來源。西語把前半改成自己熟悉的 pasa-（pasar，通過）。",
+      "hook_zh": "pasa（通過）＋ porte：讓你「通過」關口的小本子。",
+      "usage_zh": "mostrar el pasaporte（出示護照）；不要說 el pasaport。",
+      "example_es": "Necesito mi pasaporte para viajar.",
+      "example_zh": "旅行需要我的護照。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pasaporte"
+      ]
+    },
+    {
+      "word": "miedo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "恐懼；害怕",
+      "en": "fear",
+      "ipa": "/ˈmjedo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "metus",
+          "zh": "恐懼、敬畏"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "miedo",
+          "zh": "恐懼"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "miedo",
+          "zh": "恐懼"
+        }
+      ],
+      "cognates_en": [
+        "meticulous"
+      ],
+      "story_zh": "miedo 繼承自拉丁文 metus（恐懼），拉丁文 metus 的更早來源不明。辭典指出它與英文 meticulous（一絲不苟）有關：太怕出錯，所以事事小心。",
+      "hook_zh": "tengo miedo ＝ 我害怕：想像自己躲在被子裡，meticulous 地一直檢查門鎖。",
+      "usage_zh": "tener miedo (de)＝怕（某事）：Tengo miedo de los perros.",
+      "example_es": "Tengo miedo de la oscuridad.",
+      "example_zh": "我怕黑。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:miedo",
+        "wiktionary:la:metus"
+      ]
+    },
+    {
+      "word": "alegría",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "喜悅、快樂",
+      "en": "joy, happiness",
+      "ipa": "/aleˈɡɾia/",
+      "breakdown": [
+        {
+          "part": "alegre",
+          "zh": "開心的"
+        },
+        {
+          "part": "-ía",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "alegre + -ía",
+          "zh": "開心的 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alegría",
+          "zh": "喜悅"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "alegría 由形容詞 alegre（開心的）加上名詞字尾 -ía 組成，意思是「開心的狀態」。",
+      "hook_zh": "alegre（開心）＋ -ía ＝ 滿滿的 alegría，像煙火炸開。",
+      "usage_zh": "重音在 -ría 的 í：a-le-GRÍ-a；con alegría（開心地）。",
+      "example_es": "Siento mucha alegría hoy.",
+      "example_zh": "我今天很開心。",
+      "image": "emoji:🥳",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alegría"
+      ]
+    },
+    {
+      "word": "sorpresa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "驚喜；意外",
+      "en": "surprise",
+      "ipa": "/soɾˈpɾesa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "surprise",
+          "zh": "驚喜"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sorpresa",
+          "zh": "驚喜"
+        }
+      ],
+      "cognates_en": [
+        "surprise"
+      ],
+      "story_zh": "sorpresa 借自法文 surprise，與英文 surprise 是同一個來源，只是西語把 sur- 換成 sor-。",
+      "hook_zh": "生日派對燈一開：¡Sorpresa! 大家一起大喊。",
+      "usage_zh": "陰性 la sorpresa；¡Qué sorpresa!（好驚喜！）、una fiesta sorpresa。",
+      "example_es": "¡Qué sorpresa verte aquí!",
+      "example_zh": "在這裡見到你真驚喜！",
+      "image": "emoji:🎉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sorpresa"
+      ]
+    },
+    {
+      "word": "prisa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "匆忙；急",
+      "en": "hurry, rush",
+      "ipa": "/ˈpɾisa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pressa",
+          "zh": "壓、擠"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "priesa",
+          "zh": "匆忙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "prisa",
+          "zh": "匆忙"
+        }
+      ],
+      "cognates_en": [
+        "press"
+      ],
+      "story_zh": "prisa 來自古西班牙語 priesa，源頭是拉丁文 pressa。被擠壓、被推著走，當然就是「急」。英文 press（壓）和 pressure（壓力）也是這家人。",
+      "hook_zh": "被時間 press（擠壓）著，所以你 tengo prisa（趕時間）。",
+      "usage_zh": "tener prisa（趕時間）、¡Date prisa!（快點！）。",
+      "example_es": "No tengo prisa, tranquilo.",
+      "example_zh": "我不趕時間，別緊張。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:prisa"
+      ]
+    },
+    {
+      "word": "ganas",
+      "article": "",
+      "pos": "sustantivo",
+      "zh": "想要的心情、欲望",
+      "en": "desire, wish, urge",
+      "ipa": "/ˈɡanas/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "ganas 是複數形 gana：想吃就說 tengo ganas de comer，肚子咕嚕叫的慾望。",
+      "usage_zh": "多用複數 las ganas（陰性）：tener ganas de + 原形（想要…）。",
+      "example_es": "Tengo ganas de comer pizza.",
+      "example_zh": "我好想吃披薩。",
+      "image": "emoji:🤩",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:ganas"
+      ]
+    }
+  ]
+}
