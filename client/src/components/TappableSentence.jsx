@@ -129,6 +129,7 @@ export default function TappableSentence({ sentence, fullSentence, exampleZh = '
             exampleZh={exampleZh}
             analysis={analysis}
             onAnalyzed={setAnalysis}
+            origin="tap"
             compact
           />
         </WordPopover>

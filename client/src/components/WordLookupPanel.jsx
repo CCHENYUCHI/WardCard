@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Sparkles, Plus, Check, ExternalLink } from 'lucide-react';
 import { lookupWord, analyzeSentence, aiLookup, addToInbox, POS_LABELS, genderLabel, describeForm, STATUS_LABELS } from '../utils/dictionary';
 import { displayWord, normalizeAnswer, stripAccents } from '../utils/spanish';
@@ -22,14 +22,19 @@ const wiktSpeech = (item) => (
  * @param {string} [exampleZh] - Chinese translation of that sentence, if the card has one
  * @param {object} [analysis] - Sentence analysis already fetched by the parent
  * @param {(analysis) => void} [onAnalyzed] - Lets the parent reuse one analysis for every word
+ * @param {'dictionary'|'tap'} [origin] - Where the lookup came from, for the lookup history
+ * @param {() => void} [onUpdate] - Called after the lookup, an AI lookup or adding a card (history may have changed)
  * @param {boolean} [compact] - Popover mode: fewer meanings, no external links
  */
-export default function WordLookupPanel({ word, sentence = '', exampleZh = '', analysis = null, onAnalyzed, compact = false }) {
+export default function WordLookupPanel({ word, sentence = '', exampleZh = '', analysis = null, onAnalyzed, origin = 'dictionary', onUpdate, compact = false }) {
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
   const [aiBusy, setAiBusy] = useState(false);
   const [aiCard, setAiCard] = useState(null);
   const [addState, setAddState] = useState('idle'); // idle | busy | added | exists
+  const onUpdateRef = useRef(onUpdate);
+  onUpdateRef.current = onUpdate;
+  const notifyUpdate = () => onUpdateRef.current?.();
 
   useEffect(() => {
     let cancelled = false;
@@ -37,11 +42,11 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
     setError('');
     setAiCard(null);
     setAddState('idle');
-    lookupWord(word, sentence)
-      .then(data => { if (!cancelled) setResult(data); })
+    lookupWord(word, sentence, { origin })
+      .then(data => { if (!cancelled) { setResult(data); notifyUpdate(); } })
       .catch(err => { if (!cancelled) setError(err.message); });
     return () => { cancelled = true; };
-  }, [word, sentence]);
+  }, [word, sentence, origin]);
 
   if (!result) {
     return (
@@ -78,6 +83,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
     setError('');
     try {
       setAiCard(await aiLookup(wiktionary[0]?.lemma || word));
+      notifyUpdate();
     } catch (err) {
       setError(err.message);
     } finally {
@@ -109,6 +115,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
       if (!card) card = await aiLookup(wiktionary[0]?.lemma || word); // translation is required
       const res = await addToInbox(card);
       setAddState(res.created ? 'added' : 'exists');
+      notifyUpdate();
     } catch (err) {
       setError(err.message);
       setAddState('idle');
