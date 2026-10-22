@@ -8,7 +8,8 @@
  * Every review is tagged in review_logs.task_type as 'due' / 'new' / 'extra'.
  */
 const db = require('./db');
-const { TODAY_START_SQL, TODAY_END_SQL } = require('./time');
+const { TODAY_START_SQL, TODAY_END_SQL, formatLocalDateTime } = require('./time');
+const { reviewCardFSRS } = require('./fsrs');
 
 const DUE_BATCH_LIMIT = 100;
 
@@ -84,7 +85,8 @@ function buildTodayPlan(userId, withCards = true) {
   const readyTotal = Number(db.prepare(
     `SELECT COUNT(*) AS c FROM cards WHERE user_id = ? AND lifecycle_status = 'ready' ${scope.sql}`
   ).get(userId, ...scope.params).c) || 0;
-  const newRemaining = Math.min(newAllowance, activeFreshTotal + readyTotal);
+  const newPool = activeFreshTotal + readyTotal;
+  const newRemaining = Math.min(newAllowance, newPool);
 
   let dueCards = [];
   let newCards = [];
@@ -110,7 +112,7 @@ function buildTodayPlan(userId, withCards = true) {
     }
   }
 
-  return { user, quota, done, dueTotal, newRemaining, dueCards, newCards };
+  return { user, quota, scope, done, dueTotal, newPool, newRemaining, dueCards, newCards };
 }
 
 function currentDay() {
@@ -243,6 +245,98 @@ function getHistory(userId, days = 30) {
   return result;
 }
 
+const FORECAST_DAYS = 7;
+const WEEKDAYS = ['週日', '週一', '週二', '週三', '週四', '週五', '週六'];
+
+/**
+ * 7-day workload forecast using the same rules and unit scope as today's task.
+ *   dueReviews       : cards already scheduled for that day (today = today's remaining due)
+ *   projectedReviews : estimated returns of words reviewed / learned earlier in the window,
+ *                      assuming every review is rated Good (3)
+ *   newWords         : today's remaining new words, then daily_new_quota per day until the pool runs out
+ */
+function getWeeklyForecast(userId, plan = null) {
+  const p = plan || buildTodayPlan(userId, false);
+  const targetRetention = Number(p.user.target_retention) || 0.9;
+  const today = currentDay();
+  const todayMs = new Date(`${today}T00:00:00`).getTime();
+  const dayIndex = (ts) => Math.max(0, Math.round((new Date(`${String(ts).slice(0, 10)}T00:00:00`) - todayMs) / 86400000));
+  const dayAt = (i) => (i === 0 ? new Date() : new Date(todayMs + i * 86400000 + 12 * 3600000));
+
+  const days = Array.from({ length: FORECAST_DAYS }, (_, i) => {
+    const date = formatLocalDateTime(new Date(todayMs + i * 86400000 + 12 * 3600000)).slice(0, 10);
+    const dayOfWeek = WEEKDAYS[new Date(`${date}T12:00:00`).getDay()];
+    return {
+      dayIndex: i,
+      date,
+      dayOfWeek,
+      label: i === 0 ? `今天 (${dayOfWeek})` : i === 1 ? `明天 (${dayOfWeek})` : `${date.slice(5)} (${dayOfWeek})`,
+      dueReviews: 0,
+      projectedReviews: 0,
+      newWords: 0,
+      totalWorkload: 0
+    };
+  });
+
+  // Review `card` on day i (rated Good) and keep following it while it returns inside the window
+  const simulate = (card, i) => {
+    let state = card;
+    let day = i;
+    for (;;) {
+      const now = dayAt(day);
+      const next = reviewCardFSRS(state, 3, { targetRetention, now });
+      const nextDay = dayIndex(next.dueDate);
+      if (nextDay <= day || nextDay >= FORECAST_DAYS) return;
+      days[nextDay].projectedReviews++;
+      state = {
+        ...state,
+        fsrs_stability: next.stability,
+        fsrs_difficulty: next.difficulty,
+        fsrs_reps: next.reps,
+        lapse_count: next.lapseCount,
+        mastery_stage: next.stage,
+        last_reviewed: formatLocalDateTime(now)
+      };
+      day = nextDay;
+    }
+  };
+
+  const windowEnd = `datetime('now', 'localtime', 'start of day', '+${FORECAST_DAYS} days')`;
+  const reviewedWhere = `
+    WHERE user_id = ? AND lifecycle_status = 'active'
+      AND (last_reviewed IS NOT NULL OR review_count > 0) ${p.scope.sql}`;
+  const scheduled = db.prepare(`
+    SELECT due_date, last_reviewed, fsrs_stability, fsrs_difficulty, fsrs_reps, lapse_count, mastery_stage
+    FROM cards ${reviewedWhere} AND due_date < ${windowEnd}
+  `).all(userId, ...p.scope.params);
+  for (const card of scheduled) {
+    const i = dayIndex(card.due_date);
+    days[i].dueReviews++;
+    simulate(card, i);
+  }
+
+  let pool = p.newPool;
+  for (const day of days) {
+    day.newWords = day.dayIndex === 0 ? p.newRemaining : Math.min(p.quota, pool);
+    pool -= day.newWords;
+    for (let n = 0; n < day.newWords; n++) {
+      simulate({ fsrs_stability: 0, fsrs_difficulty: 5, fsrs_reps: 0, lapse_count: 0, mastery_stage: 1 }, day.dayIndex);
+    }
+  }
+  for (const day of days) day.totalWorkload = day.dueReviews + day.projectedReviews + day.newWords;
+
+  const beyondWindow = Number(db.prepare(`
+    SELECT COUNT(*) AS c FROM cards ${reviewedWhere} AND due_date >= ${windowEnd}
+  `).get(userId, ...p.scope.params).c) || 0;
+
+  return {
+    unit: p.user.active_curriculum && p.user.active_curriculum !== 'ALL_ACTIVE' ? p.user.active_curriculum : '',
+    newPool: p.newPool,
+    beyondWindow,
+    days
+  };
+}
+
 /**
  * Extra practice: previously reviewed cards that are NOT due today, weakest first.
  */
@@ -269,5 +363,6 @@ module.exports = {
   buildTodayPlan,
   getTodaySummary,
   getHistory,
+  getWeeklyForecast,
   getPracticeCards
 };

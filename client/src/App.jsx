@@ -51,6 +51,15 @@ export default function App() {
     }
   }, []);
 
+  // Stats depend on today's progress, so refresh them whenever the tab is opened
+  useEffect(() => {
+    if (activeTab !== 'stats') return;
+    fetchAPI('/api/stats')
+      .then(res => (res.ok ? res.json() : null))
+      .then(data => data && setStats(data))
+      .catch(err => console.error('Failed to fetch stats:', err));
+  }, [activeTab]);
+
   useEffect(() => {
     const checkAuth = async () => {
       const token = getToken();
