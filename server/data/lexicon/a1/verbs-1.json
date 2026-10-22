@@ -1,0 +1,1307 @@
+{
+  "theme": "verbs",
+  "theme_zh": "常用動詞",
+  "entries": [
+    {
+      "word": "ser", "article": "", "pos": "verbo", "zh": "是（本質、身分、特徵）", "en": "to be (identity, nature)", "ipa": "/ˈseɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "esse", "zh": "是、存在" },
+        { "lang_zh": "中世紀早期拉丁語", "word": "essere", "zh": "是" },
+        { "lang_zh": "西班牙語", "word": "ser", "zh": "是" }
+      ],
+      "cognates_en": ["essence"],
+      "story_zh": "ser 來自拉丁文 esse（是），中世紀早期說成 essere。它在途中還吞併了古西班牙語的 seer（坐，來自拉丁文 sedēre），所以虛擬式 sea 可能就來自「坐」。英文 essence（本質）也出自 esse。",
+      "hook_zh": "ser 講「本質」（essence）：你是誰、是什麼人——Soy taiwanés。",
+      "usage_zh": "soy, eres, es。ser 說本質、身分、職業、國籍；位置和暫時狀態用 estar。",
+      "example_es": "Quiero ser profesor de español.", "example_zh": "我想當西班牙文老師。",
+      "image": "emoji:🧑", "confidence": "sourced", "sources": ["wiktionary:es:ser", "wiktionary:la:sum"]
+    },
+    {
+      "word": "estar", "article": "", "pos": "verbo", "zh": "在（某處）；處於（某種狀態）", "en": "to be (location, temporary state)", "ipa": "/esˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "stāre", "zh": "站著" },
+        { "lang_zh": "古西班牙語", "word": "estar", "zh": "在" },
+        { "lang_zh": "西班牙語", "word": "estar", "zh": "在；處於" }
+      ],
+      "cognates_en": ["state", "stand"],
+      "story_zh": "estar 來自拉丁文 stāre（站著）。「站在某處」引申成「在某處、處於某種狀態」。過去式 estuve 的來源不確定，最可能是仿照 haber 的過去式 hub- 而來。英文 state、stand 和它有關。",
+      "hook_zh": "estar 就是「站」在那裡：站在哪（位置）、站成什麼樣（狀態）——Estoy cansado。",
+      "usage_zh": "estoy, estás, está。位置和暫時狀態用 estar：Estoy en casa / Estoy cansado。",
+      "example_es": "Tengo que estar en casa a las ocho.", "example_zh": "我八點得在家。",
+      "image": "emoji:📍", "confidence": "sourced", "sources": ["wiktionary:es:estar", "wiktionary:la:sto"]
+    },
+    {
+      "word": "tener", "article": "", "pos": "verbo", "zh": "有；拿著", "en": "to have; to hold", "ipa": "/teˈneɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "tenēre", "zh": "握住、保有、擁有" },
+        { "lang_zh": "古西班牙語", "word": "tener", "zh": "握住" },
+        { "lang_zh": "西班牙語", "word": "tener", "zh": "有" }
+      ],
+      "cognates_en": ["tenant", "contain"],
+      "story_zh": "tener 來自拉丁文 tenēre（握住、保有），在古西班牙語還是「握住」，後來才變成「擁有」。過去式 tuve 是被意思相近的 haber（hube）帶偏的。英文 tenant（租戶，「持有」房子的人）、contain 都是同一家族。",
+      "hook_zh": "抓在手裡的就是你的：tener 先「握住」，再「擁有」。",
+      "usage_zh": "tengo, tienes, tiene。說年齡用 tener：Tengo 20 años；tener que + 原形＝必須。",
+      "example_es": "Tengo dos hermanos y un perro.", "example_zh": "我有兩個兄弟和一隻狗。",
+      "image": "emoji:🤲", "confidence": "sourced", "sources": ["wiktionary:es:tener", "wiktionary:la:teneo"]
+    },
+    {
+      "word": "haber", "article": "", "pos": "verbo", "zh": "有、存在（hay）；完成式助動詞", "en": "there is/are (hay); to have (auxiliary)", "ipa": "/aˈbeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "habēre", "zh": "有、握住" },
+        { "lang_zh": "古西班牙語", "word": "aver", "zh": "有" },
+        { "lang_zh": "西班牙語", "word": "haber", "zh": "有；（助動詞）" }
+      ],
+      "cognates_en": ["habit"],
+      "story_zh": "haber 來自拉丁文 habēre（有、握住），古西班牙語寫成 aver，後來才照拉丁文拼法補回 h。雖然長得很像，habēre 和英文 have 其實不同源；英文 habit（習慣）倒是出自 habēre。",
+      "hook_zh": "hay 就是中文的「有」：Hay un gato＝有一隻貓。看到 🈶 就想到 hay！",
+      "usage_zh": "「有（存在）」用 hay，單複數都一樣：Hay un libro / Hay dos libros。h 不發音。",
+      "example_es": "Mañana va a haber una fiesta en mi casa.", "example_zh": "明天我家會有派對。",
+      "image": "emoji:🈶", "confidence": "sourced", "sources": ["wiktionary:es:haber", "wiktionary:la:habeo"]
+    },
+    {
+      "word": "hacer", "article": "", "pos": "verbo", "zh": "做；製作", "en": "to do; to make", "ipa": "/aˈθeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "facere", "zh": "做" },
+        { "lang_zh": "古西班牙語", "word": "fazer", "zh": "做" },
+        { "lang_zh": "西班牙語", "word": "hacer", "zh": "做" }
+      ],
+      "cognates_en": ["fact", "factory"],
+      "story_zh": "hacer 來自拉丁文 facere（做），古西班牙語是 fazer，後來字首的 f 變成不發音的 h（和 hablar 一樣）。第一人稱 hago 的 g，比較可能是 faciō 的 /k/ 濁化而來。英文 fact、factory（做東西的地方）都源自 facere。",
+      "hook_zh": "把 h 換回 f：hacer ≈ fac-，工廠（factory）就是在 hacer 東西。",
+      "usage_zh": "第一人稱不規則：hago。天氣也用它：Hace calor（天氣很熱）。",
+      "example_es": "¿Qué haces este fin de semana?", "example_zh": "你這個週末要做什麼？",
+      "image": "emoji:🛠️", "confidence": "sourced", "sources": ["wiktionary:es:hacer", "wiktionary:la:facio"]
+    },
+    {
+      "word": "venir", "article": "", "pos": "verbo", "zh": "來", "en": "to come", "ipa": "/beˈniɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "venīre", "zh": "來" },
+        { "lang_zh": "古西班牙語", "word": "venir", "zh": "來" },
+        { "lang_zh": "西班牙語", "word": "venir", "zh": "來" }
+      ],
+      "cognates_en": ["venue", "event"],
+      "story_zh": "venir 繼承自古西班牙語 venir，再往上是拉丁文 veniō（來），一路幾乎沒變。英文的 venue（場地，大家「來」的地方）和 event 都源自這個拉丁字。",
+      "hook_zh": "大家都 venir 到 venue（會場）來！v 在西語唸起來像 b：/beˈniɾ/。",
+      "usage_zh": "vengo, vienes, viene。venir 是「來」（朝說話者）；離開說話者用 ir。",
+      "example_es": "Quiero venir a tu fiesta el sábado.", "example_zh": "我星期六想去你的派對。",
+      "image": "emoji:👋", "confidence": "sourced", "sources": ["wiktionary:es:venir"]
+    },
+    {
+      "word": "poder", "article": "", "pos": "verbo", "zh": "能夠、可以", "en": "can; to be able to", "ipa": "/poˈdeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "potis + sum", "zh": "能掌控的 + 是" },
+        { "lang_zh": "拉丁語", "word": "posse", "zh": "能夠" },
+        { "lang_zh": "通俗拉丁語", "word": "potēre", "zh": "能夠（規則化）" },
+        { "lang_zh": "西班牙語", "word": "poder", "zh": "能夠" }
+      ],
+      "cognates_en": ["possible", "potential"],
+      "story_zh": "古典拉丁文的「能夠」是 posse，由 potis（能掌控的）+ sum（是）組成，變化非常不規則。通俗拉丁語把它規則化成 potēre，就成了 poder。英文 possible、potential 也是這一家的。",
+      "hook_zh": "poder 聽起來有 power 的感覺：有能力、做得到。",
+      "usage_zh": "o → ue：puedo, puedes, puede；後面直接接原形：¿Puedo pasar?",
+      "example_es": "Hoy no puedo, ¿podemos ir mañana?", "example_zh": "我今天不行，我們明天去好嗎？",
+      "image": "emoji:💪", "confidence": "sourced", "sources": ["wiktionary:es:poder", "wiktionary:la:possum", "wiktionary:la:posso"]
+    },
+    {
+      "word": "querer", "article": "", "pos": "verbo", "zh": "想要；愛（人）", "en": "to want; to love", "ipa": "/keˈɾeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "quaerere", "zh": "尋找、追問、渴望" },
+        { "lang_zh": "西班牙語", "word": "querer", "zh": "想要；愛" }
+      ],
+      "cognates_en": ["query", "question"],
+      "story_zh": "querer 來自拉丁文 quaerō（尋找、追問、渴望）。你一直在「找」的東西，就是你「想要」的；用在人身上，更變成了「愛」。英文 query（查詢）、question 都是 quaerere 的後代。",
+      "hook_zh": "querer ≈ query：一直在搜尋的，就是你想要的。Te quiero＝我愛你。",
+      "usage_zh": "e → ie：quiero, quieres, quiere。Te quiero（我愛你）比 te amo 更日常。",
+      "example_es": "Voy a querer un café con leche.", "example_zh": "我要一杯拿鐵。",
+      "image": "emoji:💖", "confidence": "sourced", "sources": ["wiktionary:es:querer", "wiktionary:la:quaero"]
+    },
+    {
+      "word": "deber", "article": "", "pos": "verbo", "zh": "應該、必須；欠（錢）", "en": "must, should; to owe", "ipa": "/deˈbeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "dē- + habēre", "zh": "離開 + 持有" },
+        { "lang_zh": "拉丁語", "word": "dēbēre", "zh": "欠" },
+        { "lang_zh": "古西班牙語", "word": "dever", "zh": "欠；應該" },
+        { "lang_zh": "西班牙語", "word": "deber", "zh": "應該；欠" }
+      ],
+      "cognates_en": ["debt", "due"],
+      "story_zh": "deber 來自拉丁文 dēbēre（欠），是 dē-（離開）+ habēre（持有）的縮合，意思是「持有屬於別人的東西」。欠了別人的，就「應該」還。英文 debt（債）、due（到期的）同源。",
+      "hook_zh": "欠了債（debt）就應該（deber）還！",
+      "usage_zh": "deber + 原形＝應該：Debes estudiar。名詞 los deberes 是「回家作業」。",
+      "example_es": "Debes descansar más.", "example_zh": "你應該多休息。",
+      "image": "emoji:🧾", "confidence": "sourced", "sources": ["wiktionary:es:deber", "wiktionary:la:debeo", "wiktionary:la:habeo"]
+    },
+    {
+      "word": "saber", "article": "", "pos": "verbo", "zh": "知道（事實）；會（技能）", "en": "to know (facts); to know how to", "ipa": "/saˈbeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "sapere", "zh": "有味道；有見識、懂" },
+        { "lang_zh": "西班牙語", "word": "saber", "zh": "知道；會" }
+      ],
+      "cognates_en": ["savvy", "savor"],
+      "story_zh": "saber 來自拉丁文 sapere，本來是「有味道、嚐得出」，引申成「有見識、懂」——嚐得出好壞的人就是懂的人。所以 saber 至今還有「有…味道」的意思（sabe a chocolate）。英文 savvy（精明）、savor（品嚐）都跟它有關。",
+      "hook_zh": "很 savvy 的人什麼都 saber。Sé＝我知道（注意重音）。",
+      "usage_zh": "第一人稱 sé。saber 知道事實、會技能（Sé nadar）；認識人或地方用 conocer。",
+      "example_es": "¿Sabes nadar? —Sí, sé nadar.", "example_zh": "你會游泳嗎？——會，我會游泳。",
+      "image": "emoji:🧠", "confidence": "sourced", "sources": ["wiktionary:es:saber", "wiktionary:la:sapio"]
+    },
+    {
+      "word": "conocer", "article": "", "pos": "verbo", "zh": "認識（人、地方）；初次見面", "en": "to know (people, places); to meet", "ipa": "/konoˈθeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "cognōscere", "zh": "得知、認識" },
+        { "lang_zh": "晚期拉丁語", "word": "conōscere", "zh": "認識（變體）" },
+        { "lang_zh": "西班牙語", "word": "conocer", "zh": "認識" }
+      ],
+      "cognates_en": ["recognize"],
+      "story_zh": "conocer 來自晚期拉丁文 conōscere，是 cognōscere 的變體：con-（完全）+ gnōscō（知道），意思是「徹底了解、認得」。古西班牙語原本有傳承形 coñocer，後來被 conocer 取代。英文 recognize（認出）是同一家。",
+      "hook_zh": "握手認識新朋友就是 conocer：Encantado de conocerte（很高興認識你）。",
+      "usage_zh": "第一人稱 conozco。認識「人」要加 a：Conozco a María。",
+      "example_es": "¿Conoces a mi hermana Ana?", "example_zh": "你認識我妹妹安娜嗎？",
+      "image": "emoji:🤝", "confidence": "sourced", "sources": ["wiktionary:es:conocer", "wiktionary:la:cognosco", "wiktionary:la:conosco"]
+    },
+    {
+      "word": "decir", "article": "", "pos": "verbo", "zh": "說；告訴", "en": "to say; to tell", "ipa": "/deˈθiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "dīcere", "zh": "說" },
+        { "lang_zh": "古西班牙語", "word": "dezir", "zh": "說" },
+        { "lang_zh": "西班牙語", "word": "decir", "zh": "說" }
+      ],
+      "cognates_en": ["dictionary", "dictate", "predict"],
+      "story_zh": "decir 來自拉丁文 dīcere（說），再往上的原始印歐語詞根意思是「指出、展示」——說話就是把事情指出來。英文 dictionary、dictate（口述）、predict（預言，事先說）都出自 dīcere。",
+      "hook_zh": "dictionary 裡全是人們 decir 過的字。Digo que sí＝我說好。",
+      "usage_zh": "第一人稱 digo；e → i：dices, dice。¿Cómo se dice…?＝…怎麼說？",
+      "example_es": "Quiero decir «gracias» en chino.", "example_zh": "我想用中文說「gracias」。",
+      "image": "emoji:🗣️", "confidence": "sourced", "sources": ["wiktionary:es:decir", "wiktionary:la:dico"]
+    },
+    {
+      "word": "dar", "article": "", "pos": "verbo", "zh": "給", "en": "to give", "ipa": "/ˈdaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "dare", "zh": "給" },
+        { "lang_zh": "古西班牙語", "word": "dar", "zh": "給" },
+        { "lang_zh": "西班牙語", "word": "dar", "zh": "給" }
+      ],
+      "cognates_en": ["data"],
+      "story_zh": "dar 來自拉丁文 dare（給），兩千年來幾乎沒變。英文 data（資料）就是 dare 的過去分詞複數，字面意思是「被給出來的東西」。",
+      "hook_zh": "給（dar）出去的東西就是 data。Te doy＝我給你。",
+      "usage_zh": "第一人稱 doy（像 soy、estoy、voy）。dar las gracias＝道謝。",
+      "example_es": "¿Me das tu número de teléfono?", "example_zh": "你可以給我你的電話號碼嗎？",
+      "image": "emoji:🎁", "confidence": "sourced", "sources": ["wiktionary:es:dar", "wiktionary:la:do"]
+    },
+    {
+      "word": "ver", "article": "", "pos": "verbo", "zh": "看見；看（電視、電影）", "en": "to see; to watch", "ipa": "/ˈbeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "vidēre", "zh": "看見" },
+        { "lang_zh": "古西班牙語", "word": "veer", "zh": "看見" },
+        { "lang_zh": "西班牙語", "word": "ver", "zh": "看見" }
+      ],
+      "cognates_en": ["video", "view", "vision"],
+      "story_zh": "ver 來自拉丁文 vidēre（看見），古西班牙語寫成 veer，兩個 e 後來縮成一個。英文 video 就是借自 vidēre（拉丁文 video＝「我看見」），view、vision 也是同一家。",
+      "hook_zh": "ver＝video 的 v-：眼睛一張開就「看見」了。",
+      "usage_zh": "第一人稱 veo。ver 是「看見、看（電視）」；刻意去「注視」用 mirar。",
+      "example_es": "¿Vemos una película esta noche?", "example_zh": "我們今晚看電影好嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:ver", "wiktionary:la:video"]
+    },
+    {
+      "word": "mirar", "article": "", "pos": "verbo", "zh": "看、注視", "en": "to look at; to watch", "ipa": "/miˈɾaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "mīrus", "zh": "奇妙的" },
+        { "lang_zh": "拉丁語", "word": "mīrārī", "zh": "驚嘆、讚嘆" },
+        { "lang_zh": "古西班牙語", "word": "mirar", "zh": "看" },
+        { "lang_zh": "西班牙語", "word": "mirar", "zh": "看、注視" }
+      ],
+      "cognates_en": ["mirror", "admire", "miracle"],
+      "story_zh": "mirar 來自拉丁文 mīrārī（驚嘆、讚嘆），字根 mīrus 是「奇妙的」。看到驚奇的東西，人會忍不住盯著看，「驚嘆」就變成了「注視」。英文 admire（欣賞）、miracle（奇蹟）、mirror（鏡子）都源自這一家。",
+      "hook_zh": "照鏡子（mirror）時，你一直在 mirar 自己。¡Mira!＝你看！",
+      "usage_zh": "mirar 是刻意去看：Mira la pizarra（看黑板）。¡Mira!＝你看！",
+      "example_es": "Mira el cielo: ¡qué bonito!", "example_zh": "你看天空，好美！",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:mirar", "wiktionary:la:miror", "wiktionary:la:mirus"]
+    },
+    {
+      "word": "oír", "article": "", "pos": "verbo", "zh": "聽見", "en": "to hear", "ipa": "/oˈiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "audīre", "zh": "聽" },
+        { "lang_zh": "古西班牙語", "word": "oir", "zh": "聽見" },
+        { "lang_zh": "西班牙語", "word": "oír", "zh": "聽見" }
+      ],
+      "cognates_en": ["audio", "audience"],
+      "story_zh": "oír 來自拉丁文 audīre（聽），一路被磨損成短短的 oír。法文 ouïr、義大利文 udire、葡萄牙文 ouvir 都是它的兄弟。英文 audio（音訊）、audience（聽眾）就是從 audīre 來的。",
+      "hook_zh": "audio 被磨成 oír：耳朵「聽見」了。¡Oye!＝喂！（叫人注意）",
+      "usage_zh": "oigo, oyes, oye。被動「聽見」用 oír，主動「聽」用 escuchar。",
+      "example_es": "Habla más alto, no te oigo bien.", "example_zh": "說大聲一點，我聽不太清楚。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:oír", "wiktionary:la:audio"]
+    },
+    {
+      "word": "escuchar", "article": "", "pos": "verbo", "zh": "聽、傾聽", "en": "to listen (to)", "ipa": "/eskuˈt͡ʃaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "auscultāre", "zh": "傾聽" },
+        { "lang_zh": "拉丁語", "word": "ascultāre", "zh": "傾聽（變體）" },
+        { "lang_zh": "古西班牙語", "word": "escuchar", "zh": "聽" },
+        { "lang_zh": "西班牙語", "word": "escuchar", "zh": "聽" }
+      ],
+      "cognates_en": [],
+      "story_zh": "escuchar 來自拉丁文 ascultāre，是 auscultāre（傾聽）的變體。醫學上用聽診器聽心跳叫 auscultar，就是後來從拉丁文直接借進來的「雙生詞」，兩個字其實是同一個源頭。",
+      "hook_zh": "像醫生拿聽診器專心聽：escuchar 是用心聽，不只是聽見。",
+      "usage_zh": "聽東西直接接：escuchar música；聽某人要加 a：Escucho a mi madre。",
+      "example_es": "Me gusta escuchar música en el tren.", "example_zh": "我喜歡在火車上聽音樂。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:escuchar", "wiktionary:la:asculto"]
+    },
+    {
+      "word": "leer", "article": "", "pos": "verbo", "zh": "讀、閱讀", "en": "to read", "ipa": "/leˈeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "legere", "zh": "收集、挑選；閱讀" },
+        { "lang_zh": "古西班牙語", "word": "leer", "zh": "讀" },
+        { "lang_zh": "西班牙語", "word": "leer", "zh": "讀" }
+      ],
+      "cognates_en": ["legend", "legible", "lesson"],
+      "story_zh": "leer 來自拉丁文 legere，最早是「收集、挑選」，後來也指「閱讀」——讀書就是把一個個字「撿」起來。英文 legend（傳說）、legible（可讀的）、lesson（課）都同源。",
+      "hook_zh": "讀書像撿豆子：把字一個個「撿」起來（legere）。",
+      "usage_zh": "過去式 leí, leyó（i 變成 y）。leer un libro / leer el periódico。",
+      "example_es": "Leo un libro antes de dormir.", "example_zh": "我睡前會看書。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:leer", "wiktionary:la:lego"]
+    },
+    {
+      "word": "escribir", "article": "", "pos": "verbo", "zh": "寫", "en": "to write", "ipa": "/eskɾiˈbiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "scrībere", "zh": "寫" },
+        { "lang_zh": "通俗拉丁語", "word": "*scrībīre", "zh": "寫" },
+        { "lang_zh": "古西班牙語", "word": "escrivir", "zh": "寫" },
+        { "lang_zh": "西班牙語", "word": "escribir", "zh": "寫" }
+      ],
+      "cognates_en": ["scribe", "script", "describe"],
+      "story_zh": "escribir 來自拉丁文 scrībere（寫），再往上追是「刮、劃」——最早的書寫，就是在東西表面刻劃。通俗拉丁語改成 *scrībīre，古西班牙語寫作 escrivir。英文 scribe、script、describe 都同源。",
+      "hook_zh": "script 前面加個 e-：escribir。西語不愛 s+子音開頭，常補一個 e。",
+      "usage_zh": "過去分詞不規則：escrito（He escrito una carta＝我寫了一封信）。",
+      "example_es": "Escribo un correo a mi profesor.", "example_zh": "我寫一封電子郵件給老師。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:escribir", "wiktionary:la:scribo"]
+    },
+    {
+      "word": "estudiar", "article": "", "pos": "verbo", "zh": "讀書、學習；研究", "en": "to study", "ipa": "/estuˈdjaɾ/",
+      "breakdown": [{ "part": "estudio", "zh": "學習、研究" }, { "part": "-ar", "zh": "動詞字尾" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "studium", "zh": "熱忱、努力；學習" },
+        { "lang_zh": "西班牙語", "word": "estudio", "zh": "學習" },
+        { "lang_zh": "西班牙語", "word": "estudiar", "zh": "讀書" }
+      ],
+      "cognates_en": ["study", "student"],
+      "story_zh": "estudiar 是 estudio（學習）+ -ar，源頭是拉丁文 studium，意思是「熱忱、努力」，來自 studeō（全心投入）。所以讀書的本意是「熱心投入」。英文 study、student 同源。",
+      "hook_zh": "study 前面加 e-，就是 estudiar。Estudio español＝我在學西語。",
+      "usage_zh": "estudiar 指讀書、上學；學會技能多用 aprender。¿Qué estudias?＝你讀什麼科系？",
+      "example_es": "Estudio español todos los días.", "example_zh": "我每天都學西班牙文。",
+      "image": "emoji:📚", "confidence": "sourced", "sources": ["wiktionary:es:estudiar", "wiktionary:la:studium"]
+    },
+    {
+      "word": "aprender", "article": "", "pos": "verbo", "zh": "學、學會", "en": "to learn", "ipa": "/apɾenˈdeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "apprehendere", "zh": "抓住、領會" },
+        { "lang_zh": "拉丁語", "word": "apprēndere", "zh": "（縮短形）" },
+        { "lang_zh": "古西班牙語", "word": "aprender", "zh": "學" },
+        { "lang_zh": "西班牙語", "word": "aprender", "zh": "學" }
+      ],
+      "cognates_en": ["apprehend"],
+      "story_zh": "aprender 來自拉丁文 apprēndere，是 apprehendere 的縮短形。英文 apprehend（理解；逮捕）就是同一個拉丁字，西班牙語後來又直接借了一次，成了 aprehender。學會東西，就是把知識「抓」進腦袋。",
+      "hook_zh": "學習就是把知識「抓住」（apprehend）：抓到了就是你的。",
+      "usage_zh": "aprender a + 原形＝學做某事：Aprendo a cocinar（我在學做菜）。",
+      "example_es": "Quiero aprender a cocinar.", "example_zh": "我想學做菜。",
+      "image": "emoji:🎓", "confidence": "sourced", "sources": ["wiktionary:es:aprender", "wiktionary:la:apprendo"]
+    },
+    {
+      "word": "enseñar", "article": "", "pos": "verbo", "zh": "教；給…看", "en": "to teach; to show", "ipa": "/enseˈɲaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "signum", "zh": "記號" },
+        { "lang_zh": "拉丁語", "word": "signāre", "zh": "做記號" },
+        { "lang_zh": "通俗拉丁語", "word": "īnsignāre", "zh": "標示、指出" },
+        { "lang_zh": "西班牙語", "word": "enseñar", "zh": "教；給…看" }
+      ],
+      "cognates_en": ["sign", "signal"],
+      "story_zh": "enseñar 來自通俗拉丁語 īnsignāre（標示、指出），由 in- + signāre（做記號）組成，字根是 signum（記號）。在東西上做記號「指給你看」，就是教學。所以 enseñar 到今天還同時有「教」和「給…看」兩個意思。英文 sign 同源。",
+      "hook_zh": "老師在黑板上畫記號（sign）教你：enseñar。",
+      "usage_zh": "enseñar a + 原形：Te enseño a nadar。也指「給人看」：Enséñame la foto。",
+      "example_es": "Mi madre enseña inglés en un colegio.", "example_zh": "我媽媽在一所學校教英文。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:enseñar", "wiktionary:la:insigno", "wiktionary:la:signo"]
+    },
+    {
+      "word": "trabajar", "article": "", "pos": "verbo", "zh": "工作", "en": "to work", "ipa": "/tɾabaˈxaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "晚期拉丁語", "word": "tripālium", "zh": "三根木樁的刑具（推測）" },
+        { "lang_zh": "通俗拉丁語", "word": "*tripāliāre", "zh": "折磨" },
+        { "lang_zh": "古西班牙語", "word": "trabajar", "zh": "工作" },
+        { "lang_zh": "西班牙語", "word": "trabajar", "zh": "工作" }
+      ],
+      "cognates_en": ["travel"],
+      "story_zh": "trabajar 來自通俗拉丁語 *tripāliāre（折磨），源於晚期拉丁文 tripālium——推測是一種用三根木樁做成的刑具（tri-＝三）。從「受折磨」變成「辛苦工作」，難怪上班這麼累！不過 tripālium 到底是什麼，學者也還只是推測。",
+      "hook_zh": "三（tri-）根木樁的刑具 → 上班好累。Trabajo en una oficina。",
+      "usage_zh": "trabajar en + 地方或行業：Trabajo en un hospital。名詞 el trabajo＝工作。",
+      "example_es": "Trabajo en una oficina en Taipéi.", "example_zh": "我在台北的一間辦公室上班。",
+      "image": "emoji:💼", "confidence": "sourced", "sources": ["wiktionary:es:trabajar", "wiktionary:la:tripalium"]
+    },
+    {
+      "word": "vivir", "article": "", "pos": "verbo", "zh": "住；生活；活著", "en": "to live", "ipa": "/biˈbiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "vīvere", "zh": "活著" },
+        { "lang_zh": "古西班牙語", "word": "bevir / bivir", "zh": "活著" },
+        { "lang_zh": "西班牙語", "word": "vivir", "zh": "住；生活" }
+      ],
+      "cognates_en": ["vivid", "survive"],
+      "story_zh": "vivir 來自拉丁文 vīvere（活著）。古西班牙語的拼法很亂，有 bevir、bivir、vevir、viver 好幾種，後來才統一成 vivir。英文 vivid（生動的）、survive（活下來）都源自 vīvere。",
+      "hook_zh": "活得 vivid 精彩＝vivir。Vivo en Taipéi＝我住在台北。",
+      "usage_zh": "vivir en + 地點＝住在…：¿Dónde vives?（你住哪裡？）",
+      "example_es": "Vivo en Taipéi con mi familia.", "example_zh": "我和家人住在台北。",
+      "image": "emoji:🏡", "confidence": "sourced", "sources": ["wiktionary:es:vivir", "wiktionary:la:vivo"]
+    },
+    {
+      "word": "beber", "article": "", "pos": "verbo", "zh": "喝；喝酒", "en": "to drink", "ipa": "/beˈbeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "bibere", "zh": "喝" },
+        { "lang_zh": "古西班牙語", "word": "bever", "zh": "喝" },
+        { "lang_zh": "西班牙語", "word": "beber", "zh": "喝" }
+      ],
+      "cognates_en": ["beverage"],
+      "story_zh": "beber 來自拉丁文 bibere（喝）。古西班牙語寫成 bever，現代改用 b 是受拉丁文拼法影響。法文 boire、義大利文 bere 都是它的兄弟，英文 beverage（飲料）也來自同一個源頭。",
+      "hook_zh": "beber 的 b-b 像喝東西時嘴唇「啵啵」碰在一起；beverage＝飲料。",
+      "usage_zh": "beber 規則變化；在西班牙點飲料常用 tomar：¿Qué quieres tomar?",
+      "example_es": "Bebo mucha agua en verano.", "example_zh": "夏天我會喝很多水。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:beber", "wiktionary:la:bibo"]
+    },
+    {
+      "word": "tomar", "article": "", "pos": "verbo", "zh": "拿；喝、吃；搭（車）", "en": "to take; to have (a drink); to catch", "ipa": "/toˈmaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古西班牙語", "word": "tomar", "zh": "拿" },
+        { "lang_zh": "西班牙語", "word": "tomar", "zh": "拿；喝；搭" }
+      ],
+      "cognates_en": [],
+      "story_zh": "tomar 在古西班牙語裡就已經是 tomar，再往前的來源不明——語言學家到現在還找不到它的祖先。",
+      "hook_zh": "tomar＝take：拿東西、喝咖啡、搭車都用它。",
+      "usage_zh": "很萬用：tomar un café（喝咖啡）、tomar el metro（搭捷運）、tomar el sol（曬太陽）。",
+      "example_es": "¿Qué vas a tomar? —Un café, por favor.", "example_zh": "你要喝什麼？——一杯咖啡，謝謝。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:tomar"]
+    },
+    {
+      "word": "cocinar", "article": "", "pos": "verbo", "zh": "做菜、烹飪", "en": "to cook", "ipa": "/koθiˈnaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "coquīnāre", "zh": "（以烹飪為業）做菜" },
+        { "lang_zh": "晚期拉丁語", "word": "cocīnāre", "zh": "做菜" },
+        { "lang_zh": "西班牙語", "word": "cocinar", "zh": "做菜" }
+      ],
+      "cognates_en": ["cook", "kitchen"],
+      "story_zh": "cocinar 來自晚期拉丁文 cocīnāre，是古典拉丁文 coquīnāre（當廚師、做菜）的變形。英文 cook、kitchen 也是從拉丁文這一家烹飪詞彙來的。",
+      "hook_zh": "在 cocina（廚房）裡 cocinar：co-co 像鍋子咕嘟咕嘟冒泡。",
+      "usage_zh": "la cocina＝廚房；也指料理：la cocina taiwanesa（台灣料理）。",
+      "example_es": "Mi padre cocina muy bien.", "example_zh": "我爸爸很會做菜。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cocinar", "wiktionary:la:cocino", "wiktionary:la:coquino"]
+    },
+    {
+      "word": "comprar", "article": "", "pos": "verbo", "zh": "買", "en": "to buy", "ipa": "/komˈpɾaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "con- + parāre", "zh": "一起 + 準備" },
+        { "lang_zh": "拉丁語", "word": "comparāre", "zh": "準備、取得、購買" },
+        { "lang_zh": "通俗拉丁語", "word": "*comperāre", "zh": "買" },
+        { "lang_zh": "西班牙語", "word": "comprar", "zh": "買" }
+      ],
+      "cognates_en": [],
+      "story_zh": "comprar 來自拉丁文 comparāre，由 con- + parāre（準備）組成，意思是「準備好、取得、買到」。小心：英文 compare（比較）來自另一個拼法一模一樣的拉丁字 comparāre（源自 compār「相等的」），兩者並不相同。",
+      "hook_zh": "com-PRAR：先準備（prepare）好錢，再去買。",
+      "usage_zh": "ir de compras＝去購物；comprar en + 地方：comprar en el supermercado。",
+      "example_es": "Compro pan en la panadería.", "example_zh": "我在麵包店買麵包。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:comprar", "wiktionary:la:comparo"]
+    },
+    {
+      "word": "vender", "article": "", "pos": "verbo", "zh": "賣", "en": "to sell", "ipa": "/benˈdeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "vēndere", "zh": "賣" },
+        { "lang_zh": "西班牙語", "word": "vender", "zh": "賣" }
+      ],
+      "cognates_en": ["vendor"],
+      "story_zh": "vender 直接繼承拉丁文 vēndere（賣），從羅馬時代到現在，意思和樣子幾乎都沒變。英文 vendor（小販）、vending machine（自動販賣機）就是從這個字來的。",
+      "hook_zh": "vending machine＝自動 vender 機。",
+      "usage_zh": "招牌上的 Se vende＝出售。vender 規則變化：vendo, vendes, vende。",
+      "example_es": "En esta tienda venden fruta fresca.", "example_zh": "這家店賣新鮮水果。",
+      "image": "emoji:🏪", "confidence": "sourced", "sources": ["wiktionary:es:vender"]
+    },
+    {
+      "word": "pagar", "article": "", "pos": "verbo", "zh": "付錢、支付", "en": "to pay", "ipa": "/paˈɡaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "pāx", "zh": "和平" },
+        { "lang_zh": "拉丁語", "word": "pācāre", "zh": "使平靜、安撫" },
+        { "lang_zh": "古西班牙語", "word": "pagar", "zh": "付錢" },
+        { "lang_zh": "西班牙語", "word": "pagar", "zh": "付錢" }
+      ],
+      "cognates_en": ["pay", "peace"],
+      "story_zh": "pagar 來自拉丁文 pācāre（使平靜、安撫），字根是 pāx（和平，西語 paz）。把錢付清，債主就被「安撫」了，雙方相安無事。英文 pay 同出一源，peace 則來自 pāx。",
+      "hook_zh": "付了錢才有和平（paz）：pagar → pay。",
+      "usage_zh": "過去式 pagué（加 u 保留 g 的音）。pagar con tarjeta＝刷卡付款。",
+      "example_es": "¿Puedo pagar con tarjeta?", "example_zh": "我可以刷卡嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:pagar", "wiktionary:la:paco"]
+    },
+    {
+      "word": "costar", "article": "", "pos": "verbo", "zh": "花費、值（多少錢）；費力", "en": "to cost", "ipa": "/kosˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "con- + stāre", "zh": "一起 + 站" },
+        { "lang_zh": "拉丁語", "word": "cōnstāre", "zh": "站在一起、立定" },
+        { "lang_zh": "古西班牙語", "word": "costar", "zh": "花費" },
+        { "lang_zh": "西班牙語", "word": "costar", "zh": "花費" }
+      ],
+      "cognates_en": ["cost"],
+      "story_zh": "costar 來自拉丁文 cōnstāre，由 con-（一起）+ stāre（站）組成，原意是「站在一起、立定」。cuesta 這種 o→ue 的變化，可能還受了毫不相干的名詞 cuesta（山坡）影響。英文 cost 同源。",
+      "hook_zh": "¿Cuánto cuesta?＝cost 多少錢？買東西必問的一句。",
+      "usage_zh": "o → ue：cuesta, cuestan；主詞是東西：¿Cuánto cuestan los zapatos?",
+      "example_es": "¿Cuánto va a costar el viaje?", "example_zh": "這趟旅行要花多少錢？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:costar", "wiktionary:la:consto", "wiktionary:la:sto"]
+    },
+    {
+      "word": "abrir", "article": "", "pos": "verbo", "zh": "打開；開門（營業）", "en": "to open", "ipa": "/aˈbɾiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "aperīre", "zh": "揭開、打開" },
+        { "lang_zh": "古西班牙語", "word": "abrir", "zh": "打開" },
+        { "lang_zh": "西班牙語", "word": "abrir", "zh": "打開" }
+      ],
+      "cognates_en": ["aperture"],
+      "story_zh": "abrir 來自拉丁文 aperīre（揭開、打開），再往上推，是「把覆蓋物拿開」的意思。英文 aperture（開口，相機的光圈）也來自 aperīre。",
+      "hook_zh": "相機光圈（aperture）一 abrir，光就照進來了。",
+      "usage_zh": "過去分詞不規則：abierto（La tienda está abierta＝店有開）。",
+      "example_es": "La tienda abre a las nueve.", "example_zh": "這家店九點開門。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:abrir", "wiktionary:la:aperio"]
+    },
+    {
+      "word": "cerrar", "article": "", "pos": "verbo", "zh": "關、關閉", "en": "to close; to shut", "ipa": "/θeˈraɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "sera", "zh": "門閂" },
+        { "lang_zh": "晚期拉丁語", "word": "serāre", "zh": "上閂" },
+        { "lang_zh": "通俗拉丁語", "word": "serrāre", "zh": "關上" },
+        { "lang_zh": "西班牙語", "word": "cerrar", "zh": "關" }
+      ],
+      "cognates_en": [],
+      "story_zh": "cerrar 的源頭是拉丁文 sera——門上那根橫木「門閂」。晚期拉丁文 serāre 是「上閂」，通俗拉丁文變成 serrāre（關上），最後成了 cerrar。關門最重要的動作，就是把門閂插上！",
+      "hook_zh": "想像門上插著一根門閂（sera）：cerrar＝關門。",
+      "usage_zh": "e → ie：cierro, cierras, cierra。反義詞 abrir。",
+      "example_es": "¿Puedes cerrar la ventana, por favor?", "example_zh": "可以請你關窗嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cerrar", "wiktionary:la:sero", "wiktionary:la:sera"]
+    },
+    {
+      "word": "entrar", "article": "", "pos": "verbo", "zh": "進入、進去", "en": "to enter; to go in", "ipa": "/enˈtɾaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "intrā", "zh": "在裡面" },
+        { "lang_zh": "拉丁語", "word": "intrāre", "zh": "進入" },
+        { "lang_zh": "古西班牙語", "word": "entrar", "zh": "進入" },
+        { "lang_zh": "西班牙語", "word": "entrar", "zh": "進入" }
+      ],
+      "cognates_en": ["enter", "entrance"],
+      "story_zh": "entrar 來自拉丁文 intrāre（進入），由 intrā（在裡面）加上動詞字尾而成。英文 enter 是同一個字，entrance（入口）也是。",
+      "hook_zh": "entrar＝enter：按下 Enter 鍵就「進入」了。",
+      "usage_zh": "entrar en（西班牙）或 entrar a（拉美）+ 地方：Entro en la clase。",
+      "example_es": "¿Puedo entrar? —Sí, pasa.", "example_zh": "我可以進來嗎？——可以，請進。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:entrar", "wiktionary:la:intro"]
+    },
+    {
+      "word": "salir", "article": "", "pos": "verbo", "zh": "出去、離開；出門", "en": "to go out; to leave", "ipa": "/saˈliɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "salīre", "zh": "跳、湧出" },
+        { "lang_zh": "古西班牙語", "word": "salir", "zh": "出去" },
+        { "lang_zh": "西班牙語", "word": "salir", "zh": "出去" }
+      ],
+      "cognates_en": [],
+      "story_zh": "salir 來自拉丁文 salīre，原意是「跳、湧出」。從屋裡一躍而出，就成了「出去」。原本「跳」的意思，後來交給了同源的 saltar（跳）。",
+      "hook_zh": "salida＝出口：從門口「跳」出去就是 salir。",
+      "usage_zh": "第一人稱 salgo。salir de＝從…出來：Salgo de casa a las ocho。",
+      "example_es": "Salgo de casa a las ocho.", "example_zh": "我八點出門。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:salir", "wiktionary:la:salio"]
+    },
+    {
+      "word": "llegar", "article": "", "pos": "verbo", "zh": "到達、抵達", "en": "to arrive", "ipa": "/ʝeˈɡaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "ad- + plicāre", "zh": "朝向 + 摺；抵達" },
+        { "lang_zh": "拉丁語", "word": "applicāre", "zh": "（船）靠岸" },
+        { "lang_zh": "西班牙語", "word": "llegar", "zh": "到達" }
+      ],
+      "cognates_en": ["apply"],
+      "story_zh": "llegar 來自拉丁文 applicāre，在這裡是「（船）靠岸、抵達海岸」。伊比利半島的航海傳統很強，「靠岸」就成了一般的「到達」。英文 apply 也來自 applicāre。",
+      "hook_zh": "船一靠岸大家就喊：¡Llegamos!（我們到了！）",
+      "usage_zh": "llegar a + 地方（不用 en）：Llego a casa a las seis。過去式 llegué。",
+      "example_es": "Llego a casa a las seis.", "example_zh": "我六點到家。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:llegar", "wiktionary:la:applico"]
+    },
+    {
+      "word": "volver", "article": "", "pos": "verbo", "zh": "回來、返回；再（volver a）", "en": "to return; to come back", "ipa": "/bolˈbeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "volvere", "zh": "滾動、翻轉" },
+        { "lang_zh": "西班牙語", "word": "volver", "zh": "回來" }
+      ],
+      "cognates_en": ["revolve", "volume"],
+      "story_zh": "volver 來自拉丁文 volvere（滾動、翻轉）。「轉一圈回到原地」就是「回來」。英文 revolve（旋轉）來自 volvere，volume 也是——古時的書是一卷一卷「捲」起來的。",
+      "hook_zh": "轉一圈（revolve）又回到原點：volver。",
+      "usage_zh": "o → ue：vuelvo。volver a + 原形＝再做一次：Vuelvo a leer el libro。",
+      "example_es": "¿A qué hora vas a volver a casa?", "example_zh": "你幾點要回家？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:volver", "wiktionary:la:volvo"]
+    },
+    {
+      "word": "subir", "article": "", "pos": "verbo", "zh": "上去、爬上；上（車）；提高", "en": "to go up; to get on; to raise", "ipa": "/suˈbiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "sub- + īre", "zh": "下 + 走" },
+        { "lang_zh": "拉丁語", "word": "subīre", "zh": "走到下面；走近、上前" },
+        { "lang_zh": "古西班牙語", "word": "subir", "zh": "上去" },
+        { "lang_zh": "西班牙語", "word": "subir", "zh": "上去" }
+      ],
+      "cognates_en": [],
+      "story_zh": "subir 來自拉丁文 subīre，由 sub-（下）+ īre（走，就是 ir 的祖先）組成，本來是「走到下面」，也有「走近、上前」的意思。有趣的是，到了西語反而變成「往上」。古西班牙語的傳承形是 sobir，subir 是照拉丁文借回的形。",
+      "hook_zh": "sub- 明明是「下」，subir 卻是「上」——反著記最難忘！",
+      "usage_zh": "subir al autobús＝上公車；subir las escaleras＝上樓梯。",
+      "example_es": "Subo al autobús en esta parada.", "example_zh": "我在這一站上公車。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:subir", "wiktionary:la:subeo"]
+    },
+    {
+      "word": "bajar", "article": "", "pos": "verbo", "zh": "下去、下來；下（車）；降低", "en": "to go down; to get off; to lower", "ipa": "/baˈxaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "晚期拉丁語", "word": "bassus", "zh": "矮胖的、低的" },
+        { "lang_zh": "通俗拉丁語", "word": "*bassiāre", "zh": "降低" },
+        { "lang_zh": "古西班牙語", "word": "baxar", "zh": "下去" },
+        { "lang_zh": "西班牙語", "word": "bajar", "zh": "下去" }
+      ],
+      "cognates_en": ["bass"],
+      "story_zh": "bajar 來自通俗拉丁文 *bassiāre，字根是晚期拉丁文 bassus（矮胖、低的）。bassus 本身可能借自希臘文、奧斯坎語或塞爾特語，來源不確定。英文 bass（低音）也出自 bassus。",
+      "hook_zh": "低音（bass）往下沉：bajar＝往下。bajo＝矮、低。",
+      "usage_zh": "bajar del autobús＝下公車（用 de）；反義詞 subir。",
+      "example_es": "Bajo del autobús en la próxima parada.", "example_zh": "我下一站下公車。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:bajar", "wiktionary:la:bassus"]
+    },
+    {
+      "word": "caminar", "article": "", "pos": "verbo", "zh": "走路、步行", "en": "to walk", "ipa": "/kamiˈnaɾ/",
+      "breakdown": [{ "part": "camino", "zh": "路" }, { "part": "-ar", "zh": "動詞字尾" }],
+      "origin_chain": [
+        { "lang_zh": "通俗拉丁語", "word": "*cammīnāre", "zh": "走路" },
+        { "lang_zh": "西班牙語", "word": "caminar", "zh": "走路" }
+      ],
+      "cognates_en": [],
+      "story_zh": "caminar 繼承自通俗拉丁文 *cammīnāre。用今天的西語來看，就是 camino（路）+ -ar：「上路」就是走路。",
+      "hook_zh": "走在 camino（路）上就是 caminar。El Camino de Santiago 是有名的朝聖之路。",
+      "usage_zh": "caminar 規則變化；「走路去」可說 ir a pie 或 ir caminando。",
+      "example_es": "Camino al trabajo todos los días.", "example_zh": "我每天走路去上班。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:caminar"]
+    },
+    {
+      "word": "andar", "article": "", "pos": "verbo", "zh": "走、行走；（機器）運轉", "en": "to walk; to go; to work (machine)", "ipa": "/anˈdaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "中世紀早期拉丁語", "word": "andāre", "zh": "走" },
+        { "lang_zh": "西班牙語", "word": "andar", "zh": "走" }
+      ],
+      "cognates_en": [],
+      "story_zh": "andar 來自中世紀早期拉丁文 andāre。它的過去式 anduve 很特別，來源也不清楚，最可能是仿照 haber 的過去式 hube 而來——和 estuve、tuve 是同一個模式。",
+      "hook_zh": "一步 and 一步 and 一步地走：andar。錶不走了＝El reloj no anda。",
+      "usage_zh": "過去式不規則：anduve。口語 ¿Cómo andas?＝你最近好嗎？",
+      "example_es": "Me gusta andar por el parque.", "example_zh": "我喜歡在公園裡散步。",
+      "image": "emoji:🚶", "confidence": "sourced", "sources": ["wiktionary:es:andar"]
+    },
+    {
+      "word": "correr", "article": "", "pos": "verbo", "zh": "跑", "en": "to run", "ipa": "/koˈreɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "currere", "zh": "跑" },
+        { "lang_zh": "古西班牙語", "word": "correr", "zh": "跑" },
+        { "lang_zh": "西班牙語", "word": "correr", "zh": "跑" }
+      ],
+      "cognates_en": ["current", "course"],
+      "story_zh": "correr 來自拉丁文 currere（跑）。英文 current（水流、電流，一直「跑」的東西）、course（跑道、課程）都來自 currere。再往上追，它和英文 horse（馬）竟是原始印歐語的遠親——都跟「跑」有關。",
+      "hook_zh": "像水流（current）一樣一直跑：correr。¡Corre!＝快跑！",
+      "usage_zh": "correr 規則變化：corro, corres, corre。",
+      "example_es": "Corro en el parque por la mañana.", "example_zh": "我早上在公園跑步。",
+      "image": "emoji:🏃", "confidence": "sourced", "sources": ["wiktionary:es:correr", "wiktionary:la:curro"]
+    },
+    {
+      "word": "nadar", "article": "", "pos": "verbo", "zh": "游泳", "en": "to swim", "ipa": "/naˈdaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "nō", "zh": "游" },
+        { "lang_zh": "拉丁語", "word": "natāre", "zh": "游泳、漂浮" },
+        { "lang_zh": "古西班牙語", "word": "nadar", "zh": "游泳" },
+        { "lang_zh": "西班牙語", "word": "nadar", "zh": "游泳" }
+      ],
+      "cognates_en": [],
+      "story_zh": "nadar 來自拉丁文 natāre（游泳、漂浮），是 nō（游）加上表示反覆動作的 -tō。手腳一次又一次地划水，就是游泳。",
+      "hook_zh": "nadar 和 nada（什麼都沒有）只差一個 r：在水裡放空，什麼都不想地游。",
+      "usage_zh": "nadar 規則變化；¿Sabes nadar?＝你會游泳嗎？",
+      "example_es": "Nado en la piscina los sábados.", "example_zh": "我每週六在游泳池游泳。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:nadar", "wiktionary:la:nato"]
+    },
+    {
+      "word": "bailar", "article": "", "pos": "verbo", "zh": "跳舞", "en": "to dance", "ipa": "/baiˈlaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "晚期拉丁語", "word": "ballāre", "zh": "跳舞" },
+        { "lang_zh": "古奧克語", "word": "balar", "zh": "跳舞" },
+        { "lang_zh": "西班牙語", "word": "bailar", "zh": "跳舞" }
+      ],
+      "cognates_en": ["ballet"],
+      "story_zh": "bailar 不是直接繼承來的，而是借自古奧克語（法國南部的語言）balar，源頭是晚期拉丁文 ballāre（跳舞），可能和希臘文 bállō（拋、丟）有關。英文 ballet（芭蕾）是同一家。",
+      "hook_zh": "芭蕾（ballet）舞者都在 bailar。",
+      "usage_zh": "bailar 規則變化；el baile＝舞蹈；跳舞的人＝bailarín / bailarina。",
+      "example_es": "¿Quieres bailar conmigo?", "example_zh": "你想和我跳舞嗎？",
+      "image": "emoji:💃", "confidence": "sourced", "sources": ["wiktionary:es:bailar"]
+    },
+    {
+      "word": "cantar", "article": "", "pos": "verbo", "zh": "唱歌", "en": "to sing", "ipa": "/kanˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "canere", "zh": "唱" },
+        { "lang_zh": "拉丁語", "word": "cantāre", "zh": "一直唱、吟唱" },
+        { "lang_zh": "西班牙語", "word": "cantar", "zh": "唱歌" }
+      ],
+      "cognates_en": ["chant"],
+      "story_zh": "cantar 來自拉丁文 cantāre，是 canere（唱）的反覆形，意思是一直唱、吟唱。拉丁文 cantāre 也有「用咒語迷惑」的意思——後來的 encantar（迷住）就和它有關。英文 chant（吟誦）同源。",
+      "hook_zh": "唱歌時拉長音 can-tar～，就像在 chant 吟唱。",
+      "usage_zh": "cantar 規則變化；la canción＝歌；el / la cantante＝歌手。",
+      "example_es": "Mi hermana canta muy bien.", "example_zh": "我姊姊很會唱歌。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cantar", "wiktionary:la:canto", "wiktionary:la:cano"]
+    },
+    {
+      "word": "jugar", "article": "", "pos": "verbo", "zh": "玩；打（球）、玩（遊戲）", "en": "to play (games, sports)", "ipa": "/xuˈɡaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "iocus", "zh": "玩笑" },
+        { "lang_zh": "拉丁語", "word": "iocor", "zh": "開玩笑" },
+        { "lang_zh": "古西班牙語", "word": "jogar", "zh": "玩" },
+        { "lang_zh": "西班牙語", "word": "jugar", "zh": "玩" }
+      ],
+      "cognates_en": ["joke"],
+      "story_zh": "jugar 來自拉丁文 iocor（開玩笑），字根是 iocus（玩笑）。從開玩笑變成「玩耍」。古西班牙語是 jogar，o 不規則地變成 u，所以 jugar 成了西語唯一 u→ue 變化的動詞（juego）。英文 joke 是它的遠親。",
+      "hook_zh": "玩遊戲（juego）時大家總愛開玩笑（joke）。",
+      "usage_zh": "u → ue：juego, juegas。玩運動加 a + 冠詞：jugar al fútbol。",
+      "example_es": "Juego al fútbol con mis amigos.", "example_zh": "我和朋友踢足球。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:jugar"]
+    },
+    {
+      "word": "tocar", "article": "", "pos": "verbo", "zh": "碰、摸；演奏（樂器）；輪到", "en": "to touch; to play (an instrument)", "ipa": "/toˈkaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "通俗拉丁語", "word": "*toccāre", "zh": "敲、碰" },
+        { "lang_zh": "西班牙語", "word": "tocar", "zh": "碰；演奏" }
+      ],
+      "cognates_en": ["touch"],
+      "story_zh": "tocar 來自通俗拉丁文 *toccāre，可能源自日耳曼語，也可能只是模仿敲擊聲的擬聲詞。敲一敲、碰一碰，就是「觸碰」；去碰樂器，就成了「演奏」。",
+      "hook_zh": "toc toc 敲門聲＝tocar；碰琴弦就是演奏：tocar la guitarra。",
+      "usage_zh": "演奏樂器用 tocar，不用 jugar：tocar el piano。Te toca＝輪到你了。",
+      "example_es": "Toco la guitarra los fines de semana.", "example_zh": "我週末會彈吉他。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:tocar"]
+    },
+    {
+      "word": "viajar", "article": "", "pos": "verbo", "zh": "旅行", "en": "to travel", "ipa": "/bjaˈxaɾ/",
+      "breakdown": [{ "part": "viaje", "zh": "旅行" }, { "part": "-ar", "zh": "動詞字尾" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "via", "zh": "路" },
+        { "lang_zh": "拉丁語", "word": "viāticum", "zh": "旅途所需" },
+        { "lang_zh": "古加泰隆語", "word": "viatge", "zh": "旅行" },
+        { "lang_zh": "西班牙語", "word": "viaje → viajar", "zh": "旅行" }
+      ],
+      "cognates_en": ["voyage", "via"],
+      "story_zh": "viajar 是 viaje（旅行）+ -ar，也可能直接借自加泰隆語 viatjar。viaje 借自古加泰隆語 viatge，源頭是拉丁文 viāticum，再往上就是 via（路）。英文 voyage（航行）也來自 viāticum。",
+      "hook_zh": "上路（vía）去旅行：viajar。英文 via＝經由。",
+      "usage_zh": "viajar a + 地方：Quiero viajar a España。名詞 el viaje：¡Buen viaje!",
+      "example_es": "Me gusta viajar con mis amigos.", "example_zh": "我喜歡和朋友去旅行。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:viajar"]
+    },
+    {
+      "word": "conducir", "article": "", "pos": "verbo", "zh": "開車、駕駛；引導", "en": "to drive; to lead", "ipa": "/konduˈθiɾ/",
+      "breakdown": [{ "part": "con-", "zh": "一起" }, { "part": "-ducir", "zh": "引導" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "con- + dūcere", "zh": "一起 + 引導" },
+        { "lang_zh": "拉丁語", "word": "condūcere", "zh": "帶領、聚在一起" },
+        { "lang_zh": "西班牙語", "word": "conducir", "zh": "開車" }
+      ],
+      "cognates_en": ["conduct", "conductor"],
+      "story_zh": "conducir 來自拉丁文 condūcere，由 con-（一起）+ dūcō（引導）組成，原意是「帶領、聚在一起」。在西班牙，「引導」車子就是開車。英文 conduct（指揮）、conductor 同源。",
+      "hook_zh": "樂團指揮（conductor）引導音樂，司機 conducir 引導車子。",
+      "usage_zh": "第一人稱 conduzco。拉美常說 manejar；駕照＝el carné de conducir。",
+      "example_es": "Conduzco con cuidado por la ciudad.", "example_zh": "我在市區開車很小心。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:conducir", "wiktionary:la:conduco"]
+    },
+    {
+      "word": "llevar", "article": "", "pos": "verbo", "zh": "帶去、拿走；穿戴", "en": "to take, to carry; to wear", "ipa": "/ʝeˈbaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "levis", "zh": "輕的" },
+        { "lang_zh": "拉丁語", "word": "levāre", "zh": "舉起" },
+        { "lang_zh": "古西班牙語", "word": "levar", "zh": "帶走" },
+        { "lang_zh": "西班牙語", "word": "llevar", "zh": "帶去" }
+      ],
+      "cognates_en": ["elevator", "lever"],
+      "story_zh": "llevar 來自拉丁文 levāre（舉起），字根是 levis（輕的）——把東西變「輕」、舉起來帶走。古西班牙語是 levar，開頭的 ll 是從 lieva 這類形慢慢擴散到整個動詞的。英文 elevator（電梯）、lever（槓桿）也來自 levāre。",
+      "hook_zh": "像電梯（elevator）一樣，把東西「舉起來帶走」：llevar。",
+      "usage_zh": "llevar 帶「離開」說話處，帶「過來」用 traer。也指穿戴：Lleva gafas。",
+      "example_es": "Llevo a mi hermano a la escuela.", "example_zh": "我帶弟弟去學校。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:llevar", "wiktionary:la:levo"]
+    },
+    {
+      "word": "traer", "article": "", "pos": "verbo", "zh": "帶來、拿來", "en": "to bring", "ipa": "/tɾaˈeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "trahere", "zh": "拖、拉" },
+        { "lang_zh": "古西班牙語", "word": "traer", "zh": "帶來" },
+        { "lang_zh": "西班牙語", "word": "traer", "zh": "帶來" }
+      ],
+      "cognates_en": ["tractor", "attract"],
+      "story_zh": "traer 來自拉丁文 trahere，原意是「拖、拉」。把東西「拉」到身邊，就是帶來。英文 tractor（牽引機）、attract（吸引）都源自 trahere。",
+      "hook_zh": "像 tractor（牽引機）一樣把東西拉過來：traer。",
+      "usage_zh": "第一人稱 traigo。traer 是帶「來」說話處；帶「去」別處用 llevar。",
+      "example_es": "¿Me traes un vaso de agua?", "example_zh": "你可以拿一杯水給我嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:traer"]
+    },
+    {
+      "word": "poner", "article": "", "pos": "verbo", "zh": "放、擺；打開（電器）", "en": "to put, to place", "ipa": "/poˈneɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "po- + sinō", "zh": "離開 + 放下" },
+        { "lang_zh": "拉丁語", "word": "pōnere", "zh": "放置" },
+        { "lang_zh": "西班牙語", "word": "poner", "zh": "放" }
+      ],
+      "cognates_en": ["position", "post"],
+      "story_zh": "poner 來自拉丁文 pōnere（放置），由 po-（離開）+ sinō（放下）組成。英文 position（位置，「放」東西的地方）、post 都是從 pōnere 來的。",
+      "hook_zh": "把東西放到正確的 position：poner。",
+      "usage_zh": "第一人稱 pongo。poner la tele＝開電視；poner la mesa＝擺餐具。",
+      "example_es": "Pongo las llaves en la mesa.", "example_zh": "我把鑰匙放在桌上。",
+      "image": "emoji:🍽️", "confidence": "sourced", "sources": ["wiktionary:es:poner", "wiktionary:la:pono"]
+    },
+    {
+      "word": "dejar", "article": "", "pos": "verbo", "zh": "留下、放著；讓；不再（dejar de）", "en": "to leave; to let; to stop (doing)", "ipa": "/deˈxaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "laxus", "zh": "鬆的" },
+        { "lang_zh": "拉丁語", "word": "laxāre", "zh": "放鬆、張開" },
+        { "lang_zh": "早期古西班牙語", "word": "lexar", "zh": "放開" },
+        { "lang_zh": "古西班牙語", "word": "dexar", "zh": "留下" },
+        { "lang_zh": "西班牙語", "word": "dejar", "zh": "留下；讓" }
+      ],
+      "cognates_en": ["relax", "lax"],
+      "story_zh": "dejar 來自拉丁文 laxāre（放鬆），字根 laxus 是「鬆的」。手一鬆，東西就「留下」了。早期古西班牙語還是 l- 開頭的 lexar，大約 1200 年前後才出現 d- 開頭的形。英文 relax（放鬆）是同一家。",
+      "hook_zh": "手 relax 一鬆，東西就 dejar 在那裡了。",
+      "usage_zh": "dejar de + 原形＝不再做：Dejo de fumar。也指「讓」：Déjame pasar。",
+      "example_es": "Dejo mi bolso en la silla.", "example_zh": "我把包包放在椅子上。",
+      "image": "emoji:🫳", "confidence": "sourced", "sources": ["wiktionary:es:dejar", "wiktionary:la:laxo"]
+    },
+    {
+      "word": "buscar", "article": "", "pos": "verbo", "zh": "尋找；查（資料）；去接（人）", "en": "to look for; to search", "ipa": "/busˈkaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古西班牙語", "word": "buscar", "zh": "尋找" },
+        { "lang_zh": "西班牙語", "word": "buscar", "zh": "尋找" }
+      ],
+      "cognates_en": [],
+      "story_zh": "buscar 在古西班牙語就是 buscar，再往前的來源不明。有人推測它和 bosque（森林）有關——到森林裡找東西；也有人認為來自塞爾特語裡「收穫、利益」的字。兩種說法都只是推測。",
+      "hook_zh": "拿著放大鏡在森林（bosque）裡 buscar 東西。",
+      "usage_zh": "buscar 直接接東西，不加 para：Busco mis llaves。過去式 busqué。",
+      "example_es": "Busco un hotel barato en el centro.", "example_zh": "我在找市中心的便宜旅館。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:buscar"]
+    },
+    {
+      "word": "encontrar", "article": "", "pos": "verbo", "zh": "找到；遇見", "en": "to find; to meet", "ipa": "/enkonˈtɾaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "in contrā", "zh": "迎面、對著" },
+        { "lang_zh": "西班牙語", "word": "encontrar", "zh": "找到；遇見" }
+      ],
+      "cognates_en": ["encounter"],
+      "story_zh": "encontrar 來自拉丁文 in contrā（迎面、對著）。和人「迎面相對」就是遇見，迎面碰上要找的東西就是找到。英文 encounter（偶遇）是同一個來源。",
+      "hook_zh": "迎面撞上（encounter）＝encontrar：找到了！",
+      "usage_zh": "o → ue：encuentro。buscar 是「找」，encontrar 是「找到」。",
+      "example_es": "No puedo encontrar mis llaves.", "example_zh": "我找不到我的鑰匙。",
+      "image": "emoji:🔑", "confidence": "sourced", "sources": ["wiktionary:es:encontrar"]
+    },
+    {
+      "word": "perder", "article": "", "pos": "verbo", "zh": "弄丟、失去；錯過；輸", "en": "to lose; to miss", "ipa": "/peɾˈdeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "per- + -dō", "zh": "穿過、徹底 + 放" },
+        { "lang_zh": "拉丁語", "word": "perdere", "zh": "毀掉、浪費" },
+        { "lang_zh": "古西班牙語", "word": "perder", "zh": "失去" },
+        { "lang_zh": "西班牙語", "word": "perder", "zh": "失去" }
+      ],
+      "cognates_en": [],
+      "story_zh": "perder 來自拉丁文 perdere（毀掉、浪費），由 per-（穿過、徹底）+ -dō（放）組成，像是把東西徹底「放掉」了。英文 perdition（毀滅）同源。",
+      "hook_zh": "皮夾丟了、火車錯過了、比賽輸了——全都叫 perder。",
+      "usage_zh": "e → ie：pierdo。perder el tren＝錯過火車；perder un partido＝輸球。",
+      "example_es": "No quiero perder el tren.", "example_zh": "我不想錯過火車。",
+      "image": "emoji:🚆", "confidence": "sourced", "sources": ["wiktionary:es:perder", "wiktionary:la:perdo"]
+    },
+    {
+      "word": "ganar", "article": "", "pos": "verbo", "zh": "贏；賺（錢）", "en": "to win; to earn", "ipa": "/ɡaˈnaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "中世紀早期拉丁語", "word": "ganāre", "zh": "獲得" },
+        { "lang_zh": "古西班牙語", "word": "ganar", "zh": "獲得" },
+        { "lang_zh": "西班牙語", "word": "ganar", "zh": "贏；賺" }
+      ],
+      "cognates_en": [],
+      "story_zh": "ganar 繼承自古西班牙語 ganar，更早是中世紀早期拉丁文 ganāre，再往前的來歷這份資料沒有交代。",
+      "hook_zh": "ganar 聽起來像 gain（獲得）：贏比賽、賺薪水，都是有所收穫。",
+      "usage_zh": "ganar un partido＝贏比賽；ganar dinero＝賺錢；反義詞 perder。",
+      "example_es": "Mi equipo siempre gana.", "example_zh": "我的隊伍總是贏。",
+      "image": "emoji:🏆", "confidence": "sourced", "sources": ["wiktionary:es:ganar"]
+    },
+    {
+      "word": "empezar", "article": "", "pos": "verbo", "zh": "開始", "en": "to begin; to start", "ipa": "/empeˈθaɾ/",
+      "breakdown": [{ "part": "en-", "zh": "使、進入" }, { "part": "pieza", "zh": "一塊" }, { "part": "-ar", "zh": "動詞字尾" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "en- + pieza + -ar", "zh": "取下一塊" },
+        { "lang_zh": "西班牙語", "word": "empezar", "zh": "開始" }
+      ],
+      "cognates_en": [],
+      "story_zh": "empezar 是 en- + pieza（一塊）+ -ar 組成的。原本的畫面是「從東西上取下第一塊、把它打開」——要吃一個蛋糕，總得先切下第一塊，這就是開始！",
+      "hook_zh": "切下第一 pieza（塊）蛋糕＝empezar。",
+      "usage_zh": "e → ie：empiezo。empezar a + 原形：Empiezo a trabajar a las nueve。",
+      "example_es": "Vamos a empezar la clase.", "example_zh": "我們要開始上課了。",
+      "image": "emoji:🍰", "confidence": "sourced", "sources": ["wiktionary:es:empezar"]
+    },
+    {
+      "word": "terminar", "article": "", "pos": "verbo", "zh": "結束、完成", "en": "to finish; to end", "ipa": "/teɾmiˈnaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "termināre", "zh": "劃定界限、結束" },
+        { "lang_zh": "西班牙語", "word": "terminar", "zh": "結束" }
+      ],
+      "cognates_en": ["terminate", "terminal"],
+      "story_zh": "terminar 是直接從拉丁文 termināre 借來的字。英文 terminate（終止）也來自這個拉丁字，terminal（終點站）則是它的近親。",
+      "hook_zh": "公車開到 terminal（終點站），旅程就 terminar 了。",
+      "usage_zh": "terminar de + 原形＝做完：Termino de comer（我吃完了）。",
+      "example_es": "Termino de trabajar a las seis.", "example_zh": "我六點下班。",
+      "image": "emoji:🏁", "confidence": "sourced", "sources": ["wiktionary:es:terminar"]
+    },
+    {
+      "word": "acabar", "article": "", "pos": "verbo", "zh": "完成、結束；剛剛（acabar de）", "en": "to finish; to have just (done)", "ipa": "/akaˈbaɾ/",
+      "breakdown": [{ "part": "a-", "zh": "朝向" }, { "part": "cabo", "zh": "盡頭、末端" }, { "part": "-ar", "zh": "動詞字尾" }],
+      "origin_chain": [
+        { "lang_zh": "通俗拉丁語", "word": "*accapāre", "zh": "做完" },
+        { "lang_zh": "西班牙語", "word": "acabar", "zh": "完成" }
+      ],
+      "cognates_en": [],
+      "story_zh": "acabar 繼承自通俗拉丁文 *accapāre。用今天的西語來看，就是 a- + cabo（盡頭、末端）+ -ar：走到盡頭，事情就做完了。",
+      "hook_zh": "走到 cabo（盡頭）就 acabar。Acabo de llegar＝我剛到。",
+      "usage_zh": "acabar de + 原形＝剛剛做完：Acabo de comer（我剛吃完）。",
+      "example_es": "Acabo de llegar a casa.", "example_zh": "我剛到家。",
+      "image": "emoji:✅", "confidence": "sourced", "sources": ["wiktionary:es:acabar"]
+    },
+    {
+      "word": "seguir", "article": "", "pos": "verbo", "zh": "跟隨；繼續", "en": "to follow; to continue", "ipa": "/seˈɡiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "sequī", "zh": "跟隨" },
+        { "lang_zh": "通俗拉丁語", "word": "*sequīre", "zh": "跟隨" },
+        { "lang_zh": "西班牙語", "word": "seguir", "zh": "跟隨；繼續" }
+      ],
+      "cognates_en": ["sequel", "sequence", "suit"],
+      "story_zh": "seguir 來自通俗拉丁文 *sequīre，源頭是拉丁文 sequor（跟隨）。英文一大串字都是它的後代：sequel（續集）、sequence（順序）、segue（轉場），甚至 suit、sue。",
+      "hook_zh": "續集（sequel）就是故事 seguir 下去。",
+      "usage_zh": "e → i：sigo, sigues。seguir + 現在分詞＝繼續：Sigo estudiando。",
+      "example_es": "Quiero seguir estudiando español.", "example_zh": "我想繼續學西班牙文。",
+      "image": "emoji:➡️", "confidence": "sourced", "sources": ["wiktionary:es:seguir", "wiktionary:la:sequor"]
+    },
+    {
+      "word": "esperar", "article": "", "pos": "verbo", "zh": "等待；希望；期待", "en": "to wait; to hope; to expect", "ipa": "/espeˈɾaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "spērāre", "zh": "希望、等待" },
+        { "lang_zh": "古西班牙語", "word": "esperar", "zh": "等待；希望" },
+        { "lang_zh": "西班牙語", "word": "esperar", "zh": "等待；希望" }
+      ],
+      "cognates_en": ["desperate"],
+      "story_zh": "esperar 來自拉丁文 spērō（希望、等待）。在西語裡「等待」和「希望」是同一個字——等待的時候，心裡總懷著希望。英文 desperate（絕望的，失去希望）也來自這個字根。",
+      "hook_zh": "等公車時，心裡一直 esperar（希望）它快點來。",
+      "usage_zh": "esperar 直接接受詞，不加 por：Espero el autobús。Espero que…＝希望…",
+      "example_es": "Espero el autobús todas las mañanas.", "example_zh": "我每天早上等公車。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:esperar"]
+    },
+    {
+      "word": "necesitar", "article": "", "pos": "verbo", "zh": "需要", "en": "to need", "ipa": "/neθesiˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "necessitās", "zh": "必要、強制" },
+        { "lang_zh": "中世紀拉丁語", "word": "necessitāre", "zh": "迫使" },
+        { "lang_zh": "西班牙語", "word": "necesitar", "zh": "需要" }
+      ],
+      "cognates_en": ["necessity", "necessary"],
+      "story_zh": "necesitar 借自中世紀拉丁文 necessitō（迫使、強迫），字根是 necessitās（必要、強制）。在西語裡大約到 17 世紀才有紀錄，算是年輕的字。英文 necessity（必需品）同源。",
+      "hook_zh": "necessity（必需品）就是你 necesitar 的東西。",
+      "usage_zh": "necesitar + 名詞或原形：Necesito un café / Necesito dormir。",
+      "example_es": "Necesito un café, por favor.", "example_zh": "我需要一杯咖啡，拜託。",
+      "image": "emoji:🆘", "confidence": "sourced", "sources": ["wiktionary:es:necesitar"]
+    },
+    {
+      "word": "gustar", "article": "", "pos": "verbo", "zh": "（某物）讓人喜歡；喜歡", "en": "to like (lit. to please)", "ipa": "/ɡusˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "gustāre", "zh": "品嚐" },
+        { "lang_zh": "西班牙語", "word": "gustar", "zh": "讓人喜歡" }
+      ],
+      "cognates_en": ["disgust"],
+      "story_zh": "gustar 借自拉丁文 gustāre（品嚐），取代了古西班牙語的傳承形 gostar。用「嚐起來合口味」來表示「喜歡」，是西班牙語和葡萄牙語獨有的發展。英文 disgust（噁心，「不合口味」）同源。",
+      "hook_zh": "Me gusta＝「它很合我的口味」：喜歡的東西就像一道好菜。",
+      "usage_zh": "主詞是被喜歡的東西：Me gusta el té；複數用 gustan：Me gustan los perros。",
+      "example_es": "Me gusta mucho el té con leche.", "example_zh": "我很喜歡奶茶。",
+      "image": "emoji:😋", "confidence": "sourced", "sources": ["wiktionary:es:gustar", "wiktionary:la:gusto"]
+    },
+    {
+      "word": "encantar", "article": "", "pos": "verbo", "zh": "非常喜歡；使著迷", "en": "to love (a thing); to enchant", "ipa": "/enkanˈtaɾ/",
+      "breakdown": [{ "part": "en-", "zh": "進入、使" }, { "part": "cantar", "zh": "唱" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "cantāre", "zh": "唱；用咒語迷惑" },
+        { "lang_zh": "拉丁語", "word": "incantāre", "zh": "對…唸咒" },
+        { "lang_zh": "西班牙語", "word": "encantar", "zh": "迷住；非常喜歡" }
+      ],
+      "cognates_en": ["enchant"],
+      "story_zh": "encantar 可能是半借自拉丁文 incantāre（對…唸咒），從構詞看就是 en- + cantar（唱）。對著人「唱」咒語，對方就著迷了。英文 enchant（施魔法、使著迷）是同一個來源。",
+      "hook_zh": "被咒語「唱」進心裡：Me encanta＝我超愛！",
+      "usage_zh": "用法同 gustar 但更強烈：Me encanta bailar。Encantado/a＝很高興認識你。",
+      "example_es": "Me encanta la comida taiwanesa.", "example_zh": "我超愛台灣菜。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:encantar", "wiktionary:la:canto"]
+    },
+    {
+      "word": "preferir", "article": "", "pos": "verbo", "zh": "比較喜歡、寧願", "en": "to prefer", "ipa": "/pɾefeˈɾiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "prae- + ferō", "zh": "在前 + 帶、拿" },
+        { "lang_zh": "拉丁語", "word": "praeferre", "zh": "拿到前面、擺在前頭" },
+        { "lang_zh": "西班牙語", "word": "preferir", "zh": "比較喜歡" }
+      ],
+      "cognates_en": ["prefer"],
+      "story_zh": "preferir 借自拉丁文 praeferre，由 prae-（在前）+ ferō（帶、拿）組成，原意是「拿到前面、擺在前頭」。把喜歡的東西擺到最前面，就是偏好。英文 prefer 是同一個字。",
+      "hook_zh": "prefer 加個 -ir：把最愛的擺在最前面。",
+      "usage_zh": "e → ie：prefiero, prefieres。preferir A a B＝喜歡 A 勝過 B。",
+      "example_es": "Mi color preferido es el azul.", "example_zh": "我最喜歡的顏色是藍色。",
+      "image": "emoji:🥇", "confidence": "sourced", "sources": ["wiktionary:es:preferir", "wiktionary:la:praefero", "wiktionary:la:prae", "wiktionary:la:fero"]
+    },
+    {
+      "word": "pensar", "article": "", "pos": "verbo", "zh": "想、思考；打算", "en": "to think; to plan to", "ipa": "/penˈsaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "pēnsāre", "zh": "衡量、秤重" },
+        { "lang_zh": "古西班牙語", "word": "pensar", "zh": "思考" },
+        { "lang_zh": "西班牙語", "word": "pensar", "zh": "思考" }
+      ],
+      "cognates_en": ["pensive"],
+      "story_zh": "pensar 來自拉丁文 pēnsāre（衡量、秤重），是 pendō 的反覆形。想事情，就是在心裡「秤一秤」。同一個拉丁字也變成了 pesar（秤重），兩者是雙生詞。英文 pensive（沉思的）同源。",
+      "hook_zh": "思考就是在腦中拿秤（pesar）秤一秤：pensar。",
+      "usage_zh": "e → ie：pienso。pensar en＝想著…；pensar + 原形＝打算。",
+      "example_es": "Tengo que pensar un poco.", "example_zh": "我得想一下。",
+      "image": "emoji:⚖️", "confidence": "sourced", "sources": ["wiktionary:es:pensar", "wiktionary:la:penso"]
+    },
+    {
+      "word": "creer", "article": "", "pos": "verbo", "zh": "相信；認為", "en": "to believe; to think", "ipa": "/kɾeˈeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "crēdere", "zh": "相信、信任" },
+        { "lang_zh": "古西班牙語", "word": "creer", "zh": "相信" },
+        { "lang_zh": "西班牙語", "word": "creer", "zh": "相信；認為" }
+      ],
+      "cognates_en": ["credit", "credible"],
+      "story_zh": "creer 來自拉丁文 crēdere（相信）。再往上追，它的意思是「把心放在…上」，其中的「心」和拉丁文 cor 同源。相信一個人，就是把心交給他。英文 credit（信用）、credible（可信的）同源。",
+      "hook_zh": "相信就是把心交出去：Creo que sí＝我想是吧。",
+      "usage_zh": "Creo que…＝我認為…；過去式 creyó（i 變成 y）。",
+      "example_es": "Creo que va a llover.", "example_zh": "我覺得要下雨了。",
+      "image": "emoji:🫶", "confidence": "sourced", "sources": ["wiktionary:es:creer", "wiktionary:la:credo"]
+    },
+    {
+      "word": "entender", "article": "", "pos": "verbo", "zh": "懂、理解", "en": "to understand", "ipa": "/entenˈdeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "in- + tendō", "zh": "向內 + 伸展" },
+        { "lang_zh": "拉丁語", "word": "intendere", "zh": "伸向、專注" },
+        { "lang_zh": "古西班牙語", "word": "entender", "zh": "理解" },
+        { "lang_zh": "西班牙語", "word": "entender", "zh": "懂" }
+      ],
+      "cognates_en": ["intend"],
+      "story_zh": "entender 來自古西班牙語 entender（理解），源頭是拉丁文 intendere，由 in- + tendō（伸展）組成，意思是把心思「伸向」某處、專注。英文 intend（打算）也來自 intendere。",
+      "hook_zh": "把注意力伸進去，就懂了。No entiendo＝我不懂。",
+      "usage_zh": "e → ie：entiendo。No entiendo＝我聽不懂——課堂必備句！",
+      "example_es": "¿Puedes repetir? Quiero entender bien.", "example_zh": "可以再說一次嗎？我想聽懂。",
+      "image": "emoji:💡", "confidence": "sourced", "sources": ["wiktionary:es:entender"]
+    },
+    {
+      "word": "preguntar", "article": "", "pos": "verbo", "zh": "問", "en": "to ask (a question)", "ipa": "/pɾeɡunˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "percontārī", "zh": "詢問、盤問" },
+        { "lang_zh": "通俗拉丁語", "word": "*praecūnctāre", "zh": "詢問" },
+        { "lang_zh": "古西班牙語", "word": "preguntar", "zh": "問" },
+        { "lang_zh": "西班牙語", "word": "preguntar", "zh": "問" }
+      ],
+      "cognates_en": [],
+      "story_zh": "preguntar 來自拉丁文 percontārī（詢問、盤問），在通俗拉丁語變形成 *praecūnctāre。percontārī 的由來不確定，有一說是來自 contus（長竿）：像拿竿子探水深一樣「探問」。",
+      "hook_zh": "拿長竿探水深，一點一點探問：pregunta＝問題。",
+      "usage_zh": "preguntar 是「問問題」；「要求、點菜」要用 pedir。",
+      "example_es": "¿Puedo preguntar algo?", "example_zh": "我可以問個問題嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:preguntar", "wiktionary:la:percontor"]
+    },
+    {
+      "word": "responder", "article": "", "pos": "verbo", "zh": "回答、回應", "en": "to answer; to respond", "ipa": "/responˈdeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "re- + spondeō", "zh": "回 + 承諾" },
+        { "lang_zh": "拉丁語", "word": "respondēre", "zh": "回答" },
+        { "lang_zh": "古西班牙語", "word": "responder", "zh": "回答" },
+        { "lang_zh": "西班牙語", "word": "responder", "zh": "回答" }
+      ],
+      "cognates_en": ["respond", "response"],
+      "story_zh": "responder 來自拉丁文 respondēre，由 re-（回）+ spondeō（承諾）組成，原本有「回一個承諾」的味道。英文 respond、response 同源。",
+      "hook_zh": "respond 加 -er：問題來了就 responder。",
+      "usage_zh": "responder a + 人或問題：Responde a la pregunta。答案＝la respuesta。",
+      "example_es": "El profesor responde a todas las preguntas.", "example_zh": "老師回答所有的問題。",
+      "image": "emoji:↩️", "confidence": "sourced", "sources": ["wiktionary:es:responder", "wiktionary:la:respondeo"]
+    },
+    {
+      "word": "contestar", "article": "", "pos": "verbo", "zh": "回答；接（電話）", "en": "to answer; to reply", "ipa": "/kontesˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "con- + testor", "zh": "一起 + 作證" },
+        { "lang_zh": "拉丁語", "word": "contestārī", "zh": "請人作證" },
+        { "lang_zh": "西班牙語", "word": "contestar", "zh": "回答" }
+      ],
+      "cognates_en": [],
+      "story_zh": "contestar 借自拉丁文 contestārī，由 con- + testor（作證）組成，意思是「請人作證」。到了西語裡，卻變成了「回答」。",
+      "hook_zh": "小心假朋友：contestar 是「回答、接電話」，不是英文 contest（比賽）！",
+      "usage_zh": "contestar al teléfono＝接電話；contestar a una pregunta＝回答問題。",
+      "example_es": "Mi madre no contesta el teléfono.", "example_zh": "我媽媽不接電話。",
+      "image": "emoji:🗨️", "confidence": "sourced", "sources": ["wiktionary:es:contestar", "wiktionary:la:contestor"]
+    },
+    {
+      "word": "llamar", "article": "", "pos": "verbo", "zh": "叫、呼喚；打電話", "en": "to call; to phone", "ipa": "/ʝaˈmaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "clāmāre", "zh": "大喊" },
+        { "lang_zh": "古西班牙語", "word": "clamar", "zh": "呼喊" },
+        { "lang_zh": "西班牙語", "word": "llamar", "zh": "叫；打電話" }
+      ],
+      "cognates_en": ["claim", "clamor"],
+      "story_zh": "llamar 來自拉丁文 clāmāre（大喊），古西班牙語還寫作 clamar，字首 cl- 後來變成了 ll-。英文 claim（聲稱、索取）、clamor（喧鬧聲）都來自 clāmāre。",
+      "hook_zh": "cl → ll：clamor 大聲喊 → llamar 呼喚、打電話。",
+      "usage_zh": "llamar a + 人＝打給某人：Llamo a mi madre。",
+      "example_es": "Te llamo esta noche.", "example_zh": "我今晚打給你。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:llamar", "wiktionary:la:clamo"]
+    },
+    {
+      "word": "llamarse", "article": "", "pos": "verbo", "zh": "名叫…", "en": "to be called (named)", "ipa": "/ʝaˈmaɾse/",
+      "breakdown": [{ "part": "llamar", "zh": "叫" }, { "part": "-se", "zh": "自己（反身）" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "clāmāre", "zh": "大喊" },
+        { "lang_zh": "古西班牙語", "word": "clamar", "zh": "呼喊" },
+        { "lang_zh": "西班牙語", "word": "llamar → llamarse", "zh": "叫 → 名叫" }
+      ],
+      "cognates_en": ["claim"],
+      "story_zh": "llamarse 就是 llamar（叫）加上反身的 -se：「我把自己叫做…」。llamar 來自拉丁文 clāmāre（大喊），古西班牙語寫作 clamar。英文 claim 也來自 clāmāre。",
+      "hook_zh": "Me llamo Ana＝「我叫自己 Ana」——自我介紹第一句！",
+      "usage_zh": "me llamo, te llamas, se llama。¿Cómo te llamas?＝你叫什麼名字？",
+      "example_es": "¿Cómo te llamas? —Me llamo Ana.", "example_zh": "你叫什麼名字？——我叫安娜。",
+      "image": "emoji:📛", "confidence": "sourced", "sources": ["wiktionary:es:llamar", "wiktionary:la:clamo"]
+    },
+    {
+      "word": "levantarse", "article": "", "pos": "verbo", "zh": "起床；站起來", "en": "to get up; to stand up", "ipa": "/lebanˈtaɾse/",
+      "breakdown": [{ "part": "levantar", "zh": "舉起" }, { "part": "-se", "zh": "自己（反身）" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "levāre", "zh": "舉起" },
+        { "lang_zh": "拉丁語", "word": "levāns", "zh": "舉起的（現在分詞）" },
+        { "lang_zh": "古西班牙語", "word": "levantar", "zh": "舉起" },
+        { "lang_zh": "西班牙語", "word": "levantar → levantarse", "zh": "舉起 → 起床" }
+      ],
+      "cognates_en": ["elevator"],
+      "story_zh": "levantarse＝levantar（舉起）+ -se（自己）：把自己舉起來，就是起床、站起來。levantar 源自拉丁文 levāre（舉起）的現在分詞 levāns；古西班牙語的 levar 正是 llevar 的古形，所以 levantar 和 llevar 是親戚。",
+      "hook_zh": "像電梯（elevator）一樣把自己從床上升起來：levantarse。",
+      "usage_zh": "me levanto, te levantas。不加 se＝舉起東西：levantar la mano（舉手）。",
+      "example_es": "Es difícil levantarme a las seis.", "example_zh": "六點起床很困難。",
+      "image": "emoji:🌅", "confidence": "sourced", "sources": ["wiktionary:es:levantar"]
+    },
+    {
+      "word": "acostarse", "article": "", "pos": "verbo", "zh": "上床睡覺；躺下", "en": "to go to bed; to lie down", "ipa": "/akosˈtaɾse/",
+      "breakdown": [{ "part": "a-", "zh": "朝向" }, { "part": "costa", "zh": "海岸" }, { "part": "-ar", "zh": "動詞字尾" }, { "part": "-se", "zh": "自己（反身）" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "a- + costa + -ar", "zh": "朝向 + 海岸" },
+        { "lang_zh": "西班牙語", "word": "acostar", "zh": "使躺下；（船）靠岸" },
+        { "lang_zh": "西班牙語", "word": "acostarse", "zh": "上床睡覺" }
+      ],
+      "cognates_en": [],
+      "story_zh": "acostarse 的基本形 acostar，由 a- + costa（海岸）+ -ar 組成，到今天還有「（船）靠岸、停泊」的意思，也指「讓人躺下、哄上床」。加上 -se，就是讓自己躺下——上床睡覺。",
+      "hook_zh": "船靠岸（costa）停泊，人靠上床躺平：acostarse。和 levantarse 是一對。",
+      "usage_zh": "o → ue：me acuesto, te acuestas。¿A qué hora te acuestas?",
+      "example_es": "Quiero acostarme temprano hoy.", "example_zh": "我今天想早點睡。",
+      "image": "emoji:🛏️", "confidence": "sourced", "sources": ["wiktionary:es:acostar"]
+    },
+    {
+      "word": "despertarse", "article": "", "pos": "verbo", "zh": "醒來", "en": "to wake up", "ipa": "/despeɾˈtaɾse/",
+      "breakdown": [{ "part": "despertar", "zh": "叫醒" }, { "part": "-se", "zh": "自己（反身）" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "despierto", "zh": "醒著的" },
+        { "lang_zh": "西班牙語", "word": "despertar", "zh": "叫醒" },
+        { "lang_zh": "西班牙語", "word": "despertarse", "zh": "醒來" }
+      ],
+      "cognates_en": [],
+      "story_zh": "despertarse 的基本形 despertar，可能來自形容詞 despierto（醒著的）+ -ar；也可能來自通俗拉丁語 *expertāre，源頭是拉丁文 experrēctus（醒來的）。兩種說法都有。加上 -se，就是「讓自己醒來」。",
+      "hook_zh": "鬧鐘（despertador）一響 → despertarse 醒來 → levantarse 起床。",
+      "usage_zh": "e → ie：me despierto。不加 se＝叫醒別人：Despierta a tu hermano。",
+      "example_es": "Tengo que despertarme a las seis.", "example_zh": "我得六點起來。",
+      "image": "emoji:⏰", "confidence": "sourced", "sources": ["wiktionary:es:despertar"]
+    },
+    {
+      "word": "ducharse", "article": "", "pos": "verbo", "zh": "淋浴、沖澡", "en": "to take a shower", "ipa": "/duˈt͡ʃaɾse/",
+      "breakdown": [{ "part": "duchar", "zh": "淋浴" }, { "part": "-se", "zh": "自己（反身）" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "ducha", "zh": "淋浴" },
+        { "lang_zh": "西班牙語", "word": "duchar", "zh": "淋浴" },
+        { "lang_zh": "西班牙語", "word": "ducharse", "zh": "沖澡" }
+      ],
+      "cognates_en": [],
+      "story_zh": "ducharse 的基本形 duchar，是從名詞 ducha（淋浴）變出來的動詞，可以比較法文 doucher。加上 -se，就是「幫自己淋浴」。",
+      "hook_zh": "la ducha＝蓮蓬頭：水嘩啦嘩啦，「嘟恰」一下就洗好了。",
+      "usage_zh": "me ducho, te duchas；規則變化。泡澡是 bañarse。",
+      "example_es": "Prefiero ducharme por la mañana.", "example_zh": "我比較喜歡早上沖澡。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:duchar"]
+    },
+    {
+      "word": "lavar", "article": "", "pos": "verbo", "zh": "洗", "en": "to wash", "ipa": "/laˈbaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "lavāre", "zh": "洗、沐浴" },
+        { "lang_zh": "古西班牙語", "word": "lavar", "zh": "洗" },
+        { "lang_zh": "西班牙語", "word": "lavar", "zh": "洗" }
+      ],
+      "cognates_en": ["lavatory"],
+      "story_zh": "lavar 來自古西班牙語 lavar，再往上是拉丁文 lavāre（洗、沐浴），兩千年來幾乎一個字母都沒變。英文 lavatory（盥洗室）就出自 lavāre。",
+      "hook_zh": "lavatory（盥洗室）就是 lavar 的地方。",
+      "usage_zh": "洗東西用 lavar；洗自己的身體用 lavarse：Me lavo las manos。",
+      "example_es": "Lavo los platos después de cenar.", "example_zh": "我晚餐後洗碗。",
+      "image": "emoji:🧼", "confidence": "sourced", "sources": ["wiktionary:es:lavar", "wiktionary:la:lavo"]
+    },
+    {
+      "word": "vestirse", "article": "", "pos": "verbo", "zh": "穿衣服", "en": "to get dressed", "ipa": "/besˈtiɾse/",
+      "breakdown": [{ "part": "vestir", "zh": "給…穿衣" }, { "part": "-se", "zh": "自己（反身）" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "vestis", "zh": "衣服" },
+        { "lang_zh": "拉丁語", "word": "vestīre", "zh": "給…穿衣" },
+        { "lang_zh": "西班牙語", "word": "vestir → vestirse", "zh": "給…穿衣 → 穿衣服" }
+      ],
+      "cognates_en": ["vest"],
+      "story_zh": "vestirse＝vestir（給…穿衣）+ -se（自己）。vestir 來自拉丁文 vestīre，字根 vestis 就是「衣服」。英文 vest（背心）同源。",
+      "hook_zh": "穿上 vest（背心），就是在 vestirse。el vestido＝洋裝。",
+      "usage_zh": "e → i：me visto, te vistes。el vestido＝洋裝。",
+      "example_es": "Mi hermano tarda mucho en vestirse.", "example_zh": "我弟弟穿衣服很慢。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:vestir", "wiktionary:la:vestio"]
+    },
+    {
+      "word": "dormir", "article": "", "pos": "verbo", "zh": "睡覺", "en": "to sleep", "ipa": "/doɾˈmiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "dormīre", "zh": "睡" },
+        { "lang_zh": "古西班牙語", "word": "dormir", "zh": "睡" },
+        { "lang_zh": "西班牙語", "word": "dormir", "zh": "睡" }
+      ],
+      "cognates_en": ["dormitory"],
+      "story_zh": "dormir 直接繼承古西班牙語 dormir，再往上是拉丁文 dormīre（睡），一路都沒變。英文 dormitory（宿舍，睡覺的地方）就來自 dormīre。",
+      "hook_zh": "dormitory（宿舍）就是 dormir 的地方。",
+      "usage_zh": "o → ue：duermo, duermes。dormirse＝睡著。",
+      "example_es": "Necesito dormir ocho horas.", "example_zh": "我需要睡八個小時。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:dormir"]
+    },
+    {
+      "word": "descansar", "article": "", "pos": "verbo", "zh": "休息", "en": "to rest", "ipa": "/deskanˈsaɾ/",
+      "breakdown": [{ "part": "des-", "zh": "去除" }, { "part": "cansar", "zh": "使疲累" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "des- + cansar", "zh": "去除 + 使疲累" },
+        { "lang_zh": "西班牙語", "word": "descansar", "zh": "休息" }
+      ],
+      "cognates_en": [],
+      "story_zh": "descansar 是 des-（去除）+ cansar（使疲累），字面意思就是「去掉疲勞」。形容詞 cansado（累的）就是從 cansar 來的。",
+      "hook_zh": "累了（cansado）就要 des-cansar：把累拿掉！",
+      "usage_zh": "descansar 規則變化；¡Que descanses!＝好好休息！",
+      "example_es": "Los domingos descanso en casa.", "example_zh": "我星期天在家休息。",
+      "image": "emoji:🛋️", "confidence": "sourced", "sources": ["wiktionary:es:descansar"]
+    },
+    {
+      "word": "sentarse", "article": "", "pos": "verbo", "zh": "坐下", "en": "to sit down", "ipa": "/senˈtaɾse/",
+      "breakdown": [{ "part": "sentar", "zh": "使坐下" }, { "part": "-se", "zh": "自己（反身）" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "sedēns", "zh": "坐著的（sedeō 的現在分詞）" },
+        { "lang_zh": "通俗拉丁語", "word": "*sedentāre", "zh": "使坐下" },
+        { "lang_zh": "西班牙語", "word": "sentar → sentarse", "zh": "使坐下 → 坐下" }
+      ],
+      "cognates_en": [],
+      "story_zh": "sentarse＝sentar（使坐下）+ -se（自己）。sentar 來自通俗拉丁語 *sedentāre，源頭是拉丁文 sedeō（坐）的現在分詞 sedēns。讓自己坐下，就是 sentarse。",
+      "hook_zh": "sen-TAR-se：一屁股坐到椅子上。Siéntate＝請坐。",
+      "usage_zh": "e → ie：me siento（我坐下），和 sentir 的 me siento（我覺得）同形！",
+      "example_es": "¿Puedo sentarme aquí?", "example_zh": "我可以坐這裡嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:sentar"]
+    },
+    {
+      "word": "ayudar", "article": "", "pos": "verbo", "zh": "幫助、幫忙", "en": "to help", "ipa": "/aʝuˈdaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "adiuvāre", "zh": "幫助" },
+        { "lang_zh": "拉丁語", "word": "adiūtāre", "zh": "幫助、協助" },
+        { "lang_zh": "古西班牙語", "word": "ayudar", "zh": "幫助" },
+        { "lang_zh": "西班牙語", "word": "ayudar", "zh": "幫助" }
+      ],
+      "cognates_en": ["aid"],
+      "story_zh": "ayudar 來自拉丁文 adiūtāre，是 adiuvō（幫助）的反覆形——一次又一次地伸出援手。加泰隆語 ajudar、葡萄牙語 ajudar 都是它的兄弟。英文 aid（援助）也出自同一個拉丁字。",
+      "hook_zh": "First aid（急救）就是 ayudar。¡Ayuda!＝救命！",
+      "usage_zh": "ayudar a + 人 / a + 原形：¿Me ayudas a cocinar?",
+      "example_es": "¿Me ayudas con la maleta?", "example_zh": "你可以幫我拿行李箱嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:ayudar", "wiktionary:la:adiuto"]
+    },
+    {
+      "word": "usar", "article": "", "pos": "verbo", "zh": "使用；穿戴", "en": "to use; to wear", "ipa": "/uˈsaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "中世紀早期拉丁語", "word": "ūsāre", "zh": "使用" },
+        { "lang_zh": "西班牙語", "word": "usar", "zh": "使用" }
+      ],
+      "cognates_en": ["use"],
+      "story_zh": "usar 繼承自中世紀早期拉丁文 ūsāre（使用），從羅馬人一路用到今天。英文 use 和它是同一家。",
+      "hook_zh": "usar＝use，幾乎一模一樣！",
+      "usage_zh": "usar 也能指穿戴：Uso gafas＝我戴眼鏡。",
+      "example_es": "Uso el móvil para estudiar.", "example_zh": "我用手機讀書。",
+      "image": "emoji:📱", "confidence": "sourced", "sources": ["wiktionary:es:usar"]
+    },
+    {
+      "word": "cambiar", "article": "", "pos": "verbo", "zh": "改變；換；兌換（錢）", "en": "to change; to exchange", "ipa": "/kamˈbjaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "晚期拉丁語", "word": "cambīre → cambiāre", "zh": "交換" },
+        { "lang_zh": "古西班牙語", "word": "cambiar", "zh": "交換" },
+        { "lang_zh": "西班牙語", "word": "cambiar", "zh": "改變；換" }
+      ],
+      "cognates_en": ["change"],
+      "story_zh": "cambiar 來自晚期拉丁文 cambiāre（交換），由 cambīre 改變動詞類別而來，而 cambīre 最早源自古代高盧語（一種塞爾特語）。英文 change 也來自這個字。",
+      "hook_zh": "change＝cambiar：機場的 cambio 招牌就是換錢處。",
+      "usage_zh": "cambiar de + 名詞＝換…：cambiar de casa（搬家）；cambiar dinero＝換錢。",
+      "example_es": "Quiero cambiar dinero en el banco.", "example_zh": "我想在銀行換錢。",
+      "image": "emoji:🔄", "confidence": "sourced", "sources": ["wiktionary:es:cambiar"]
+    }
+  ]
+}
