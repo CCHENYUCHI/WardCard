@@ -4,6 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const { DatabaseSync } = require('node:sqlite');
 const { splitArticle, normalizeWord, cardWordVariants } = require('./cardUtils');
+const { groupForms } = require('./forms');
+const { langName } = require('./langNames');
 
 const DICT_PATH = process.env.DICT_DB_PATH || path.join(__dirname, '../data/dict/es-en.sqlite');
 const MAX_RESULTS = 6;
@@ -99,6 +101,36 @@ function lookupForm(query) {
   return items.slice(0, MAX_RESULTS);
 }
 
+// A table missing from an older dictionary file reads as "no data", never as an error
+function optionalRow(sql, ...params) {
+  try {
+    return getDict()?.prepare(sql).get(...params) || null;
+  } catch (_) {
+    return null;
+  }
+}
+
+/**
+ * IPA, inflected forms (grouped for display), example sentences and etymology of one lemma + part of speech.
+ * Every part is null when the dictionary file is missing or was built before that part existed.
+ */
+function getEntryExtras(lemma, pos) {
+  if (!lemma) return { ipa: '', forms: null, examples: null, etymology: null };
+  const ipa = optionalRow('SELECT ipa FROM entries WHERE word_norm = ? AND word = ? AND pos = ? AND ipa IS NOT NULL LIMIT 1', normalizeWord(lemma), lemma, pos)?.ipa
+    || optionalRow('SELECT ipa FROM entries WHERE word_norm = ? AND word = ? AND ipa IS NOT NULL LIMIT 1', normalizeWord(lemma), lemma)?.ipa
+    || '';
+  const forms = parseJson(optionalRow('SELECT data FROM forms WHERE lemma = ? AND pos = ?', lemma, pos)?.data, null);
+  const examples = parseJson(optionalRow('SELECT data FROM examples WHERE lemma = ? AND pos = ?', lemma, pos)?.data, null);
+  const ety = optionalRow('SELECT text, chain FROM etymology WHERE lemma = ? AND pos = ?', lemma, pos);
+  const chain = parseJson(ety?.chain, []).map(([lang, word, kind]) => ({ lang, lang_zh: langName(lang), word, kind }));
+  return {
+    ipa,
+    forms: groupForms(pos, forms),
+    examples: examples ? examples.map(([es, en]) => ({ es, en })) : null,
+    etymology: ety ? { text: ety.text || '', chain } : null
+  };
+}
+
 const hasLatin = (s) => /[a-zñáéíóúü]/i.test(s);
 
 /**
@@ -145,6 +177,7 @@ module.exports = {
   dictionaryHasEntries,
   setDictionary,
   lookupForm,
+  getEntryExtras,
   findMyCards,
   externalLinks,
   parseJson,
