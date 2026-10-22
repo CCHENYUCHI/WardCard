@@ -1,0 +1,2874 @@
+{
+  "theme": "nature",
+  "theme_zh": "自然、天氣與動物",
+  "entries": [
+    {
+      "word": "naturaleza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "自然、大自然；本性",
+      "en": "nature",
+      "ipa": "/natuɾaˈleθa/",
+      "breakdown": [
+        {
+          "part": "natural",
+          "zh": "自然的"
+        },
+        {
+          "part": "-eza",
+          "zh": "名詞字尾（…的性質）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "natural",
+          "zh": "自然的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "natural + -eza",
+          "zh": "加上名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "naturaleza",
+          "zh": "大自然"
+        }
+      ],
+      "cognates_en": [
+        "nature",
+        "natural"
+      ],
+      "story_zh": "naturaleza 是西語自己組出來的字：形容詞 natural（自然的）加上名詞字尾 -eza，意思是「自然的狀態」。鄰居葡萄牙語和加利西亞語則說 natureza，少了中間的 -al-。",
+      "hook_zh": "-eza 把形容詞變名詞：bello → belleza（美），natural → naturaleza（大自然）。",
+      "usage_zh": "常加冠詞：la naturaleza；也指「本性」：la naturaleza humana（人性）。",
+      "example_es": "Me gusta mucho la naturaleza.",
+      "example_zh": "我很喜歡大自然。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:naturaleza"
+      ]
+    },
+    {
+      "word": "sol",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "太陽；陽光",
+      "en": "sun; sunlight",
+      "ipa": "/ˈsol/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sōl",
+          "zh": "太陽"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sol",
+          "zh": "太陽"
+        }
+      ],
+      "cognates_en": [
+        "solar"
+      ],
+      "story_zh": "sol 直接繼承自拉丁文 sōl（太陽），兩千年幾乎沒變。秘魯的貨幣也叫 sol，名字呼應「太陽」，但其實是拉丁文 solidus（一種金幣）的縮短。音階 do re mi 的 sol 則另有來源：來自一首聖詩裡的 solve 一字。",
+      "hook_zh": "sol ≈ solar：太陽能板 solar panel 吸的就是 sol 的光。",
+      "usage_zh": "天氣說 hace sol（出太陽）；tomar el sol 是曬太陽。",
+      "example_es": "Hoy hace sol y calor.",
+      "example_zh": "今天出太陽又很熱。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sol",
+        "wiktionary:la:sol",
+        "wiktionary:la:solidus"
+      ]
+    },
+    {
+      "word": "luna",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "月亮",
+      "en": "moon",
+      "ipa": "/ˈluna/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "lūna",
+          "zh": "月亮"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "luna",
+          "zh": "月亮"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "luna",
+          "zh": "月亮"
+        }
+      ],
+      "cognates_en": [
+        "lunar"
+      ],
+      "story_zh": "luna 從拉丁文 lūna 一路傳下來，古西班牙語就已經是 luna，幾乎沒變。法語 lune、義大利語 luna、葡萄牙語 lua 都是它的兄弟。在西語裡 luna 還能指汽車的「擋風玻璃」。",
+      "hook_zh": "英文 lunar（月亮的）：Lunar New Year 農曆新年，就是看 luna 過的年。",
+      "usage_zh": "luna llena 滿月；luna de miel 蜜月。",
+      "example_es": "Esta noche hay luna llena.",
+      "example_zh": "今晚是滿月。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:luna"
+      ]
+    },
+    {
+      "word": "estrella",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "星星；明星",
+      "en": "star",
+      "ipa": "/esˈtɾeʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "stēlla",
+          "zh": "星星"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "*strēlla",
+          "zh": "（推測的地方形）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "estrella",
+          "zh": "星星"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estrella",
+          "zh": "星星"
+        }
+      ],
+      "cognates_en": [
+        "stellar"
+      ],
+      "story_zh": "estrella 來自拉丁文 stēlla（星星），而且可能經過一個沒有文獻紀錄的地方形 *strēlla，所以多了一個 r。stēlla 本身原是「星」的縮小形。除了天上的星，estrella 也指電影明星和星形。",
+      "hook_zh": "西語不愛 st- 開頭，會先加 e-：stella → estrella，就像 student → estudiante。",
+      "usage_zh": "estrella fugaz 流星；estrella de cine 電影明星。",
+      "example_es": "En el campo se ven muchas estrellas.",
+      "example_zh": "在鄉下看得到很多星星。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estrella",
+        "wiktionary:la:stella"
+      ]
+    },
+    {
+      "word": "cielo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "天空；天堂",
+      "en": "sky; heaven",
+      "ipa": "/ˈθjelo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "caelum",
+          "zh": "天、天界"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cielo",
+          "zh": "天空"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cielo",
+          "zh": "天空；天堂"
+        }
+      ],
+      "cognates_en": [
+        "celestial"
+      ],
+      "story_zh": "cielo 來自拉丁文 caelum，指星星和銀河所在的「天」。所以西語一個字同時是「天空」和「天堂」。caelum 再往前的來源不確定，有學者推測和「整體」的意思有關。",
+      "hook_zh": "情侶會叫對方 mi cielo（我的天空＝寶貝）——把對方當成整片天。",
+      "usage_zh": "天氣好：el cielo está despejado（天空晴朗）；cielito 常當暱稱。",
+      "example_es": "Hoy el cielo está gris.",
+      "example_zh": "今天天空灰灰的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cielo",
+        "wiktionary:la:caelum"
+      ]
+    },
+    {
+      "word": "nube",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "雲",
+      "en": "cloud",
+      "ipa": "/ˈnube/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nūbēs",
+          "zh": "雲"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nuve",
+          "zh": "雲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nube",
+          "zh": "雲"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "nube 來自拉丁文 nūbēs（雲），古西班牙語寫作 nuve。注意它和 niebla（霧）雖然長得像、意思也接近，字源卻沒有關係：niebla 來自另一個拉丁字 nebula。",
+      "hook_zh": "在部分拉美國家 nube 也指棉花糖——白白軟軟，像一朵雲。",
+      "usage_zh": "字尾 -e 卻是陰性：la nube、las nubes blancas。",
+      "example_es": "Hay muchas nubes en el cielo.",
+      "example_zh": "天上有很多雲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nube",
+        "wiktionary:la:nebula"
+      ]
+    },
+    {
+      "word": "lluvia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "雨",
+      "en": "rain",
+      "ipa": "/ˈʝubja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pluvius",
+          "zh": "下雨的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "pluvia",
+          "zh": "雨"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "lluvia",
+          "zh": "雨"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lluvia",
+          "zh": "雨"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "拉丁文本來說 tempestās pluvia（下雨的天氣），後來省略前面，只剩 pluvia 當「雨」。傳進西語時字首 pl- 變成 ll-，就成了 lluvia。",
+      "hook_zh": "pl 變 ll：pluvia → lluvia。下雨了就說 llueve。",
+      "usage_zh": "動詞是 llover（只用第三人稱）：llueve mucho；說「下雨」不用 hace。",
+      "example_es": "No me gusta la lluvia.",
+      "example_zh": "我不喜歡下雨。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lluvia",
+        "wiktionary:la:pluvia"
+      ]
+    },
+    {
+      "word": "nieve",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "雪",
+      "en": "snow",
+      "ipa": "/ˈnjebe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nix（受格 nivem）",
+          "zh": "雪"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*nĕvem",
+          "zh": "雪"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nieve",
+          "zh": "雪"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nieve",
+          "zh": "雪"
+        }
+      ],
+      "cognates_en": [
+        "snow"
+      ],
+      "story_zh": "拉丁文的「雪」是 nix，受格 nivem；口語把它改成 *nĕvem，再變成西語 nieve。往上追，它和英文 snow 是遠房親戚，只是拉丁文在更早的時候掉了開頭的 s。",
+      "hook_zh": "把 snow 的 s 拿掉，n…w 對上 nie-ve：nieve 就是雪。",
+      "usage_zh": "陰性 la nieve；下雪說 nieva（nevar），不用 hace。",
+      "example_es": "En invierno hay nieve en la montaña.",
+      "example_zh": "冬天山上有雪。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nieve",
+        "wiktionary:la:nix"
+      ]
+    },
+    {
+      "word": "viento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "風",
+      "en": "wind",
+      "ipa": "/ˈbjento/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ventus",
+          "zh": "風"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "viento",
+          "zh": "風"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "viento",
+          "zh": "風"
+        }
+      ],
+      "cognates_en": [
+        "vent",
+        "ventilation"
+      ],
+      "story_zh": "viento 來自拉丁文 ventus（風），再往上可追到一個表示「吹」的古字根。拉丁文的 e 到了西語變成 ie，所以 ventus → viento。英文 vent（通風口）也可以拿來比較。",
+      "hook_zh": "通風 ventilation 就是讓 viento 吹進來。",
+      "usage_zh": "天氣說 hace viento（颳風）：Hace mucho viento.",
+      "example_es": "Hoy hace mucho viento.",
+      "example_zh": "今天風很大。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:viento",
+        "wiktionary:la:ventus"
+      ]
+    },
+    {
+      "word": "calor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "熱；炎熱",
+      "en": "heat",
+      "ipa": "/kaˈloɾ/",
+      "breakdown": [
+        {
+          "part": "cal- (calēre)",
+          "zh": "熱"
+        },
+        {
+          "part": "-or",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "caleō",
+          "zh": "是熱的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "calor",
+          "zh": "熱"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "calor",
+          "zh": "熱"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "calor",
+          "zh": "熱"
+        }
+      ],
+      "cognates_en": [
+        "calorie"
+      ],
+      "story_zh": "拉丁文 caleō 是「是熱的」，加上名詞字尾 -or 就成了 calor（熱）。這個字從拉丁文、古西語到今天都沒變。英文 calorie（卡路里，熱量單位）也可以拿來比較。",
+      "hook_zh": "吃太多 calorie，身體就冒 calor！",
+      "usage_zh": "陽性 el calor；hace calor（天氣熱）、tengo calor（我覺得熱）。",
+      "example_es": "En agosto hace mucho calor.",
+      "example_zh": "八月很熱。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:calor",
+        "wiktionary:la:-or"
+      ]
+    },
+    {
+      "word": "frío",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "冷的；寒冷（名詞）",
+      "en": "cold",
+      "ipa": "/ˈfɾio/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "frīgus",
+          "zh": "冷"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "frīgeō",
+          "zh": "覺得冷"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "frīgidus",
+          "zh": "冷的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "frio",
+          "zh": "冷的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "frío",
+          "zh": "冷的；寒冷"
+        }
+      ],
+      "cognates_en": [
+        "fridge",
+        "refrigerator",
+        "frigid"
+      ],
+      "story_zh": "frío 來自拉丁文 frīgidus（冷的），中間的 g 和 d 在流傳中慢慢磨掉了。英文 frigid、fridge 和 refrigerator（冰箱）都是它的同源字，難怪冰箱裡的東西都 frío。",
+      "hook_zh": "打開 fridge，冷氣撲面：¡Qué frío!",
+      "usage_zh": "名詞：hace frío（天氣冷）、tengo frío（我覺得冷）；形容詞 agua fría。",
+      "example_es": "En invierno hace mucho frío.",
+      "example_zh": "冬天很冷。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:frío",
+        "wiktionary:la:frigidus"
+      ]
+    },
+    {
+      "word": "temperatura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "溫度；體溫",
+      "en": "temperature",
+      "ipa": "/tempeɾaˈtuɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "temperātūra",
+          "zh": "（直接借入的拉丁字）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "temperatura",
+          "zh": "溫度"
+        }
+      ],
+      "cognates_en": [
+        "temperature"
+      ],
+      "story_zh": "temperatura 是從拉丁文 temperātūra 直接借進來的「學術詞」，不是口耳相傳演變來的，所以拼法幾乎原封不動，跟英文 temperature 長得很像。",
+      "hook_zh": "temperature 多一個 a；西語每個母音都唸清楚：tem-pe-ra-tu-ra。",
+      "usage_zh": "問溫度：¿Qué temperatura hace?；量體溫 tomar la temperatura。",
+      "example_es": "¿Qué temperatura hace hoy?",
+      "example_zh": "今天幾度？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:temperatura"
+      ]
+    },
+    {
+      "word": "grado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "度（溫度、角度）；等級",
+      "en": "degree; grade",
+      "ipa": "/ˈɡɾado/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "gradus",
+          "zh": "一步、台階、等級"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "grado",
+          "zh": "階梯、位階"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "grado",
+          "zh": "度；等級"
+        }
+      ],
+      "cognates_en": [
+        "grade",
+        "degree"
+      ],
+      "story_zh": "grado 來自拉丁文 gradus，原意是「一步、樓梯的一階」，也指「等級」。古西語的 grado 還是「階梯、位階」，今天則常用在溫度計上一格一格的「度」。英文 grade、degree 都是它的親戚。",
+      "hook_zh": "溫度計像一座小樓梯，每爬一階就多一 grado。",
+      "usage_zh": "溫度說 estamos a 30 grados 或 hace 30 grados；複數 grados。",
+      "example_es": "Hoy estamos a treinta grados.",
+      "example_zh": "今天三十度。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:grado",
+        "wiktionary:la:gradus"
+      ]
+    },
+    {
+      "word": "tormenta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "暴風雨；雷雨",
+      "en": "storm",
+      "ipa": "/toɾˈmenta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tormentum",
+          "zh": "（複數 tormenta）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "tormenta",
+          "zh": "（複數形）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tormenta",
+          "zh": "暴風雨"
+        }
+      ],
+      "cognates_en": [
+        "torment"
+      ],
+      "story_zh": "tormenta 來自拉丁文 tormenta，原是 tormentum 的複數形，後來當成陰性單數用。它沒有變出 ie 雙母音，可能是受學術借詞 tormento 影響，也可能是從葡萄牙語等語言借來的航海用語。",
+      "hook_zh": "tormenta 和 tormento（折磨）只差一個字母——暴風雨真的很折磨人。",
+      "usage_zh": "hay tormenta（有暴風雨）；tormenta de nieve 暴風雪。",
+      "example_es": "Esta noche hay tormenta.",
+      "example_zh": "今晚有暴風雨。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tormenta"
+      ]
+    },
+    {
+      "word": "mar",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "海",
+      "en": "sea",
+      "ipa": "/ˈmaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mare",
+          "zh": "海"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "mar",
+          "zh": "海"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mar",
+          "zh": "海"
+        }
+      ],
+      "cognates_en": [
+        "marine"
+      ],
+      "story_zh": "mar 來自拉丁文 mare（海），法語 mer、義大利語 mare、葡萄牙語 mar 都是同一個字。西語的 mar 很特別：陽性、陰性都可以用，意思一樣。",
+      "hook_zh": "marine（海洋的）：海洋生物 marine life＝vida marina，都住在 mar 裡。",
+      "usage_zh": "一般說 el mar；漁夫、詩人常說 la mar。alta mar 公海。",
+      "example_es": "Vamos al mar este verano.",
+      "example_zh": "今年夏天我們去海邊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mar",
+        "wiktionary:la:mare"
+      ]
+    },
+    {
+      "word": "río",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "河",
+      "en": "river",
+      "ipa": "/ˈrio/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rīvus",
+          "zh": "小溪"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "rīus",
+          "zh": "河"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "rio",
+          "zh": "河"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "río",
+          "zh": "河"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "río 的祖先是拉丁文 rīvus，原本只是「小溪」。到了晚期拉丁語，中間的 v 掉了，寫成 rīus，意思也從小溪長大成「河」，再傳成古西語 rio。",
+      "hook_zh": "Río de Janeiro（里約）的 Río 就是「河」——想像一條大河流過里約。",
+      "usage_zh": "í 有重音，唸 RÍ-o 兩個音節；el río Amazonas 亞馬遜河。",
+      "example_es": "Nadamos en el río.",
+      "example_zh": "我們在河裡游泳。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:río",
+        "wiktionary:la:rius"
+      ]
+    },
+    {
+      "word": "lago",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "湖",
+      "en": "lake",
+      "ipa": "/ˈlaɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "lacus",
+          "zh": "湖"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "lago",
+          "zh": "湖"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lago",
+          "zh": "湖"
+        }
+      ],
+      "cognates_en": [
+        "lake"
+      ],
+      "story_zh": "lago 繼承自拉丁文 lacus（湖），古西班牙語就已經是 lago，一路沿用到今天。和英文 lake 長得很像。",
+      "hook_zh": "lago ≈ lake：把 k 換成 g，湖面上漂著一個 o。",
+      "usage_zh": "陽性 el lago；別和 largo（長的）搞混。",
+      "example_es": "Hay un lago cerca de mi casa.",
+      "example_zh": "我家附近有座湖。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lago"
+      ]
+    },
+    {
+      "word": "montaña",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "山",
+      "en": "mountain",
+      "ipa": "/monˈtaɲa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mōns（受格 montem）",
+          "zh": "山"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "montānia",
+          "zh": "（中世紀早期）山地"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "montanna",
+          "zh": "山"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "montaña",
+          "zh": "山"
+        }
+      ],
+      "cognates_en": [
+        "mountain",
+        "mount"
+      ],
+      "story_zh": "拉丁文的「山」是 mōns（受格 montem）。中世紀早期的拉丁語用它做出集合名詞 montānia，指「一片山地」，古西班牙語寫成 montanna，今天的 ñ 就對應那兩個 n。",
+      "hook_zh": "ñ 頭上的波浪就像一座小山：monta-ña。",
+      "usage_zh": "ir a la montaña 去山上；una montaña de… 是「一大堆…」。",
+      "example_es": "Este fin de semana vamos a la montaña.",
+      "example_zh": "這個週末我們去山上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:montaña",
+        "wiktionary:la:mons"
+      ]
+    },
+    {
+      "word": "bosque",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "森林、樹林",
+      "en": "forest; woods",
+      "ipa": "/ˈboske/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法蘭克語",
+          "word": "*busk",
+          "zh": "灌木林"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "boscus",
+          "zh": "樹林"
+        },
+        {
+          "lang_zh": "加泰隆語／奧克語",
+          "word": "bosc",
+          "zh": "樹林"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bosque",
+          "zh": "森林"
+        }
+      ],
+      "cognates_en": [
+        "bush"
+      ],
+      "story_zh": "bosque 的根是日耳曼語：法蘭克人的 *busk 進入晚期拉丁語成為 boscus（樹林），再從加泰隆語或奧克語借進西語，1490 年才首次出現。英文 bush（灌木叢）是它的同源字。",
+      "hook_zh": "bush 長成一大片，就是 bosque——從灌木叢長成森林。",
+      "usage_zh": "bosque 指一般森林；熱帶雨林多用 selva。",
+      "example_es": "Caminamos por el bosque.",
+      "example_zh": "我們在森林裡散步。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bosque",
+        "wiktionary:la:boscus"
+      ]
+    },
+    {
+      "word": "árbol",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "樹",
+      "en": "tree",
+      "ipa": "/ˈaɾbol/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古拉丁語",
+          "word": "arbōs",
+          "zh": "樹"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "arbor（受格 arborem）",
+          "zh": "樹"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "arbol / arbor",
+          "zh": "樹"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "árbol",
+          "zh": "樹"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "árbol 來自拉丁文 arbor（受格 arborem）。更早的古拉丁語其實是 arbōs，後來 s 變成 r。到了古西語，arbor 和 arbol 兩種寫法並存，最後 l 結尾的 árbol 留了下來。",
+      "hook_zh": "美國植樹節叫 Arbor Day——那天大家都去種 árbol。",
+      "usage_zh": "陽性 el árbol；複數 árboles。árbol de Navidad 聖誕樹。",
+      "example_es": "Hay un árbol grande en el parque.",
+      "example_zh": "公園裡有一棵大樹。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:árbol",
+        "wiktionary:la:arbor"
+      ]
+    },
+    {
+      "word": "flor",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "花",
+      "en": "flower",
+      "ipa": "/ˈfloɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "flōs（受格 flōrem）",
+          "zh": "花；精華"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "flor",
+          "zh": "花"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "flor",
+          "zh": "花"
+        }
+      ],
+      "cognates_en": [
+        "flower",
+        "flora"
+      ],
+      "story_zh": "flor 來自拉丁文 flōs（受格 flōrem），也指「最好的部分」，所以 flor de harina 是「上等麵粉」。特別的是它的 fl- 沒有像 lluvia 那樣變成 ll-，被認為是比較保守的發展。",
+      "hook_zh": "flor 是 flower 的縮短版；記得它是陰性：la flor。",
+      "usage_zh": "陰性 la flor；複數 flores。un ramo de flores 一束花。",
+      "example_es": "Te compro unas flores.",
+      "example_zh": "我買些花給你。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:flor",
+        "wiktionary:la:flos"
+      ]
+    },
+    {
+      "word": "planta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "植物；樓層；腳底",
+      "en": "plant; floor; sole",
+      "ipa": "/ˈplanta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "planta",
+          "zh": "嫩枝、幼苗"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "planta",
+          "zh": "植物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "planta",
+          "zh": "植物；樓層"
+        }
+      ],
+      "cognates_en": [
+        "plant"
+      ],
+      "story_zh": "planta 是從拉丁文 planta（可用來繁殖的嫩枝、幼苗）借來的，所以保留了 pl-；自然演變出來的形式 llanta 已經過時不用。今天 planta 除了植物，還指建築的「樓層」和「腳底」。",
+      "hook_zh": "plant ≈ planta；在西班牙 planta baja 是一樓——植物長在地面那層。",
+      "usage_zh": "在西班牙指樓層：planta baja 地面層，primera planta 再上一層。",
+      "example_es": "Riego las plantas cada día.",
+      "example_zh": "我每天幫植物澆水。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:planta",
+        "wiktionary:la:planta"
+      ]
+    },
+    {
+      "word": "hoja",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "葉子；（紙）一張",
+      "en": "leaf; sheet of paper",
+      "ipa": "/ˈoxa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "folium",
+          "zh": "葉子"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "folia",
+          "zh": "（複數被當成陰性單數）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "foja",
+          "zh": "葉子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hoja",
+          "zh": "葉子；紙張"
+        }
+      ],
+      "cognates_en": [
+        "foil",
+        "folio"
+      ],
+      "story_zh": "hoja 的祖先是拉丁文 folium（葉子）。它的複數 folia 被當成陰性單數，古西語寫成 foja，後來字首 f 變成不發音的 h。英文 foil（箔）是同源字；紙一張一張也叫 hoja。",
+      "hook_zh": "把 h 換回 f：hoja → foja ≈ foil，薄薄一片的葉子。",
+      "usage_zh": "h 不發音；una hoja de papel 一張紙。",
+      "example_es": "En otoño las hojas son amarillas.",
+      "example_zh": "秋天葉子是黃色的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hoja",
+        "wiktionary:la:folia"
+      ]
+    },
+    {
+      "word": "campo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "鄉下；田野；球場",
+      "en": "countryside; field",
+      "ipa": "/ˈkampo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "campus",
+          "zh": "平原、田野"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "campo",
+          "zh": "田野"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "campo",
+          "zh": "鄉下；田野"
+        }
+      ],
+      "cognates_en": [
+        "campus",
+        "camp"
+      ],
+      "story_zh": "campo 繼承自拉丁文 campus，指「平坦開闊的地、田野」。西語用它指鄉下、田地，也指足球場。英文 campus（校園）直接借用了這個拉丁字。",
+      "hook_zh": "大學 campus 是一大片草地，就像 campo。",
+      "usage_zh": "en el campo（在鄉下）↔ en la ciudad；campo de fútbol 足球場。",
+      "example_es": "Mis abuelos viven en el campo.",
+      "example_zh": "我爺爺奶奶住在鄉下。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:campo",
+        "wiktionary:la:campus"
+      ]
+    },
+    {
+      "word": "isla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "島",
+      "en": "island",
+      "ipa": "/ˈisla/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnsula",
+          "zh": "島"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*īsula",
+          "zh": "島"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "isla",
+          "zh": "島"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "isla",
+          "zh": "島"
+        }
+      ],
+      "cognates_en": [
+        "isle"
+      ],
+      "story_zh": "isla 來自拉丁文 īnsula（島）：口語先把 n 去掉成 *īsula，再縮成 isla。英文 isle 是它的同源字；長得很像的 island 反而不是，只是碰巧相似。",
+      "hook_zh": "isla ≈ isle：台灣是 la isla hermosa（美麗之島）。",
+      "usage_zh": "陰性 la isla；las Islas Canarias 加那利群島。",
+      "example_es": "Taiwán es una isla.",
+      "example_zh": "台灣是一座島。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:isla",
+        "wiktionary:la:insula"
+      ]
+    },
+    {
+      "word": "tierra",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "土地；泥土；地球",
+      "en": "earth; land; soil",
+      "ipa": "/ˈtjera/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*ters-",
+          "zh": "乾"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "terra",
+          "zh": "乾的陸地"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "tierra",
+          "zh": "土地"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tierra",
+          "zh": "土地；地球"
+        }
+      ],
+      "cognates_en": [
+        "terrain",
+        "territory",
+        "thirst"
+      ],
+      "story_zh": "tierra 來自拉丁文 terra，原指和海相對的「乾的陸地」。再往上追，它來自一個意思是「乾」的古老字根，所以和英文 thirst（口渴）是遠親——乾巴巴的土地和乾巴巴的喉嚨。",
+      "hook_zh": "terrain、territory 都踩在 tierra 上；大寫 la Tierra 是地球。",
+      "usage_zh": "la Tierra 大寫指地球；也指故鄉：mi tierra。",
+      "example_es": "La Tierra gira alrededor del sol.",
+      "example_zh": "地球繞著太陽轉。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tierra",
+        "wiktionary:la:terra"
+      ]
+    },
+    {
+      "word": "piedra",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "石頭",
+      "en": "stone",
+      "ipa": "/ˈpjedɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "pétrā",
+          "zh": "岩石"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "petra",
+          "zh": "石頭"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "piedra",
+          "zh": "石頭"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "piedra",
+          "zh": "石頭"
+        }
+      ],
+      "cognates_en": [
+        "petroleum"
+      ],
+      "story_zh": "piedra 來自拉丁文 petra，而 petra 是從古希臘語 pétrā 借來的。傳進西語後，e 變成 ie、t 變成 d，petra 就成了 piedra。",
+      "hook_zh": "猜拳喊：piedra, papel o tijera（石頭、布、剪刀）！",
+      "usage_zh": "陰性 la piedra；una piedra en el zapato＝鞋裡的石子（小麻煩）。",
+      "example_es": "El niño tira una piedra al río.",
+      "example_zh": "小孩把石頭丟進河裡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:piedra"
+      ]
+    },
+    {
+      "word": "fuego",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "火",
+      "en": "fire",
+      "ipa": "/ˈfweɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "focus",
+          "zh": "爐灶"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "focus",
+          "zh": "火"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "fuego",
+          "zh": "火"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fuego",
+          "zh": "火"
+        }
+      ],
+      "cognates_en": [
+        "focus",
+        "fuel"
+      ],
+      "story_zh": "fuego 的拉丁祖先 focus 原本指家裡的「爐灶」，到晚期拉丁語才變成「火」。約 1500 年曾流行 huego 的寫法，但最後 f 開頭的 fuego 勝出。英文 fuel、focus 都和它同源。",
+      "hook_zh": "fuel（燃料）丟進 fuego；爐火 focus 是全家人的焦點。",
+      "usage_zh": "¡Fuego! 也是下令開火；煙火叫 fuegos artificiales。",
+      "example_es": "Hacemos un fuego en la playa.",
+      "example_zh": "我們在海灘生火。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fuego",
+        "wiktionary:la:focus"
+      ]
+    },
+    {
+      "word": "aire",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "空氣",
+      "en": "air",
+      "ipa": "/ˈaiɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "aḗr",
+          "zh": "空氣"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "āēr",
+          "zh": "空氣"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "aire / ayre",
+          "zh": "空氣"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aire",
+          "zh": "空氣"
+        }
+      ],
+      "cognates_en": [
+        "air"
+      ],
+      "story_zh": "aire 一路從希臘語傳來：古希臘語 aḗr 被拉丁語借成 āēr，再傳進古西語變成 aire 或 ayre。英文 air 也是同一個來源。",
+      "hook_zh": "aire ≈ air + e；冷氣就是 aire acondicionado（air conditioner）。",
+      "usage_zh": "al aire libre 在戶外；aire acondicionado 冷氣。",
+      "example_es": "Me gusta el aire del campo.",
+      "example_zh": "我喜歡鄉下的空氣。",
+      "image": "emoji:🌬️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aire",
+        "wiktionary:la:aer"
+      ]
+    },
+    {
+      "word": "animal",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "動物",
+      "en": "animal",
+      "ipa": "/aniˈmal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "animal",
+          "zh": "動物"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "animal",
+          "zh": "（學術借詞）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "animal",
+          "zh": "動物"
+        }
+      ],
+      "cognates_en": [
+        "animal"
+      ],
+      "story_zh": "animal 是古西語從拉丁文借來的「學術詞」，所以和拉丁文一模一樣。同一個拉丁字經過口耳相傳，還演變出一個長相完全不同的雙生詞 alimaña。",
+      "hook_zh": "英文、西語同一個字，只是重音在最後：a-ni-MAL。",
+      "usage_zh": "複數 animales；animal doméstico 家養動物、寵物。",
+      "example_es": "¿Cuál es tu animal favorito?",
+      "example_zh": "你最喜歡什麼動物？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:animal"
+      ]
+    },
+    {
+      "word": "gato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "貓",
+      "en": "cat",
+      "ipa": "/ˈɡato/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "cattus",
+          "zh": "貓"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gato",
+          "zh": "貓"
+        }
+      ],
+      "cognates_en": [
+        "cat"
+      ],
+      "story_zh": "gato 繼承自晚期拉丁語 cattus。cattus 本身來源不明，可能借自非洲一帶的語言（可比較努比亞語 kadīs、阿拉伯語 qiṭṭ），也可能是四處流傳的「流浪詞」。法語 chat、義大利語 gatto 都是同一家。",
+      "hook_zh": "cat 的 c 換成 g、再加個 o：gato。",
+      "usage_zh": "母貓 gata；小貓 gatito。",
+      "example_es": "Mi gato duerme todo el día.",
+      "example_zh": "我的貓整天都在睡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gato",
+        "wiktionary:la:cattus"
+      ]
+    },
+    {
+      "word": "pájaro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "鳥",
+      "en": "bird",
+      "ipa": "/ˈpaxaɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "passer",
+          "zh": "麻雀"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*passarum",
+          "zh": "麻雀"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "páxaro",
+          "zh": "鳥"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pájaro",
+          "zh": "鳥"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "pájaro 原本只是「麻雀」：拉丁文 passer 指麻雀，口語改成 *passarum，古西語寫作 páxaro，x 後來寫成今天的 j。意思也從麻雀擴大成各種停在枝頭的小鳥。",
+      "hook_zh": "j 唸ㄏ：PA-ha-ro，像小鳥「啪哈」拍翅飛走。",
+      "usage_zh": "pájaro 多指小型鳥；鳥類總稱也可用 ave。",
+      "example_es": "Hay un pájaro en el árbol.",
+      "example_zh": "樹上有一隻鳥。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pájaro",
+        "wiktionary:la:passer"
+      ]
+    },
+    {
+      "word": "pez",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "魚（活的）",
+      "en": "fish (alive)",
+      "ipa": "/ˈpeθ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "piscis（受格 piscem）",
+          "zh": "魚"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "pez",
+          "zh": "魚"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pez",
+          "zh": "魚"
+        }
+      ],
+      "cognates_en": [
+        "fish"
+      ],
+      "story_zh": "pez 來自拉丁文 piscis（受格 piscem）。拉丁文 piscis 和古英語 fisċ（今天的 fish）是同源字，一個 p 開頭、一個 f 開頭。另有一個同形的陰性 pez 是「瀝青」，來自拉丁文 pix。",
+      "hook_zh": "pez 是水裡游的活魚；端上桌就變成 pescado。",
+      "usage_zh": "複數 peces（z 變 c）；活魚 pez，食用的魚 pescado。",
+      "example_es": "Hay muchos peces en el mar.",
+      "example_zh": "海裡有很多魚。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pez",
+        "wiktionary:la:piscis",
+        "wiktionary:la:pix"
+      ]
+    },
+    {
+      "word": "caballo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "馬",
+      "en": "horse",
+      "ipa": "/kaˈbaʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "caballus",
+          "zh": "馱貨的馬、劣馬"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "caballus",
+          "zh": "馬"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caballo",
+          "zh": "馬"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "caballo 的拉丁祖先 caballus 原本是貶義的「馱貨的馬、老馬」，常被認為借自高盧語 *kaballos，但來源仍有爭議。到了晚期拉丁語，這個俗稱變成了「馬」的一般說法。",
+      "hook_zh": "caballero（騎士）就是騎 caballo 的人。",
+      "usage_zh": "母馬是 yegua；montar a caballo 騎馬。",
+      "example_es": "Me gusta montar a caballo.",
+      "example_zh": "我喜歡騎馬。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caballo",
+        "wiktionary:la:caballus"
+      ]
+    },
+    {
+      "word": "vaca",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "母牛",
+      "en": "cow",
+      "ipa": "/ˈbaka/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vacca",
+          "zh": "母牛"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vaca",
+          "zh": "母牛"
+        }
+      ],
+      "cognates_en": [
+        "vaccine"
+      ],
+      "story_zh": "vaca 直接繼承自拉丁文 vacca（母牛），只少了一個 c。vacca 再往上的來源還不確定，有學者拿它和梵語的字比較，但說法有爭議。",
+      "hook_zh": "英文 vaccine（疫苗）的名字和牛痘有關——打疫苗時想到 vaca。",
+      "usage_zh": "vaca 是母牛，公牛是 toro；carne de vaca 牛肉。",
+      "example_es": "La vaca come hierba.",
+      "example_zh": "母牛在吃草。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vaca",
+        "wiktionary:la:vacca"
+      ]
+    },
+    {
+      "word": "cerdo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "豬；豬肉",
+      "en": "pig; pork",
+      "ipa": "/ˈθeɾdo/",
+      "breakdown": [
+        {
+          "part": "cerda",
+          "zh": "母豬；豬鬃"
+        },
+        {
+          "part": "-o",
+          "zh": "陽性字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cerda",
+          "zh": "（陰性形）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cerda + -o",
+          "zh": "加上陽性字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cerdo",
+          "zh": "豬"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cerdo 是西語內部造出來的字：由 cerda 加上陽性字尾 -o 而來。所以今天 cerdo 是豬（公豬或統稱），cerda 是母豬。",
+      "hook_zh": "cerda 也是豬背上的硬鬃毛——摸到刺刺的鬃毛，就知道是 cerdo。",
+      "usage_zh": "也指豬肉：carne de cerdo；拉美也說 chancho、puerco。",
+      "example_es": "No como carne de cerdo.",
+      "example_zh": "我不吃豬肉。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cerdo"
+      ]
+    },
+    {
+      "word": "oveja",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "綿羊",
+      "en": "sheep",
+      "ipa": "/oˈbexa/",
+      "breakdown": [
+        {
+          "part": "ov- (ovis)",
+          "zh": "羊"
+        },
+        {
+          "part": "-icula → -eja",
+          "zh": "縮小字尾「小…」"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ovis",
+          "zh": "羊"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ovicula",
+          "zh": "小羊"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "oueja",
+          "zh": "綿羊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "oveja",
+          "zh": "綿羊"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "oveja 來自拉丁文 ovicula，是 ovis（羊）的縮小形，意思是「小羊」。字尾 -icula 在西語變成 -eja，古西語寫作 oueja。俄語 ovca 也出自同一個古老字根。",
+      "hook_zh": "睡不著就數羊：una oveja, dos ovejas, tres ovejas…",
+      "usage_zh": "oveja negra＝害群之馬；小羊是 cordero。",
+      "example_es": "En el campo hay muchas ovejas.",
+      "example_zh": "鄉下有很多綿羊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:oveja"
+      ]
+    },
+    {
+      "word": "gallina",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "母雞",
+      "en": "hen",
+      "ipa": "/ɡaˈʝina/",
+      "breakdown": [
+        {
+          "part": "gall- (gallus)",
+          "zh": "公雞"
+        },
+        {
+          "part": "-ina",
+          "zh": "陰性字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "gallus",
+          "zh": "公雞"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "gallīna",
+          "zh": "母雞"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gallina",
+          "zh": "母雞"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "拉丁文 gallus 是「公雞」，加上字尾 -īna 就成了 gallīna（母雞），西語原封不動保留下來。所以今天公雞是 gallo，母雞是 gallina。",
+      "hook_zh": "gallina 也是「膽小鬼」：被嚇到的母雞咯咯亂跑。",
+      "usage_zh": "雞肉一般說 pollo，不說 gallina；huevo de gallina 雞蛋。",
+      "example_es": "La gallina pone un huevo.",
+      "example_zh": "母雞下了一顆蛋。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gallina",
+        "wiktionary:la:gallina"
+      ]
+    },
+    {
+      "word": "ratón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "老鼠；滑鼠",
+      "en": "mouse",
+      "ipa": "/raˈton/",
+      "breakdown": [
+        {
+          "part": "rata",
+          "zh": "大老鼠"
+        },
+        {
+          "part": "-ón",
+          "zh": "字尾（這裡表示「小」）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "rata",
+          "zh": "大老鼠"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rata + -ón",
+          "zh": "加上縮小字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ratón",
+          "zh": "老鼠"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ratón 是 rata（大老鼠）加上字尾 -ón 組成的，這裡的 -ón 表示「小」。它取代了古西語原本的 mur。電腦的「滑鼠」也叫 ratón，是照英文 mouse 的意思借過來的。",
+      "hook_zh": "rata 是大老鼠，ratón 是小老鼠，還能握在手上點電腦。",
+      "usage_zh": "rata（大老鼠）≠ ratón（小老鼠、滑鼠）；複數 ratones。",
+      "example_es": "Mi gato mira al ratón.",
+      "example_zh": "我的貓盯著老鼠。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ratón"
+      ]
+    },
+    {
+      "word": "conejo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "兔子",
+      "en": "rabbit",
+      "ipa": "/koˈnexo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cunīculus",
+          "zh": "兔子；兔子洞"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "conejo",
+          "zh": "兔子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "conejo",
+          "zh": "兔子"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "conejo 來自拉丁文 cunīculus（兔子，也指兔子洞）。cunīculus 本身來源不明，可能是伊比利半島當地的字加上拉丁縮小字尾，可以比較巴斯克語 untxi（兔子）。",
+      "hook_zh": "j 唸ㄏ：co-NE-ho，像兔子抽動鼻子哼哼聞。",
+      "usage_zh": "母兔 coneja；小兔子 conejito。",
+      "example_es": "Mi hermana tiene un conejo blanco.",
+      "example_zh": "我妹妹養了一隻白兔。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:conejo",
+        "wiktionary:la:cuniculus"
+      ]
+    },
+    {
+      "word": "león",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "獅子",
+      "en": "lion",
+      "ipa": "/leˈon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "leō（受格 leōnem）",
+          "zh": "獅子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "león",
+          "zh": "獅子"
+        }
+      ],
+      "cognates_en": [
+        "lion",
+        "Leo"
+      ],
+      "story_zh": "león 直接繼承自拉丁文 leōnem，也就是 leō（獅子）的受格形，所以西語字尾多了 -n。英文 lion、獅子座 Leo 都是它的親戚。",
+      "hook_zh": "獅子座 Leo 吼一聲：león！",
+      "usage_zh": "母獅 leona；複數 leones（去掉重音符號）。",
+      "example_es": "El león es el rey de la selva.",
+      "example_zh": "獅子是叢林之王。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:león"
+      ]
+    },
+    {
+      "word": "tigre",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "老虎",
+      "en": "tiger",
+      "ipa": "/ˈtiɡɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "tígris",
+          "zh": "老虎"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "tīgris",
+          "zh": "老虎"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tigre",
+          "zh": "老虎"
+        }
+      ],
+      "cognates_en": [
+        "tiger"
+      ],
+      "story_zh": "tigre 來自拉丁文 tīgris，拉丁文又是從古希臘語 tígris 借來的，而希臘語的這個字很可能源自印度－伊朗語族。",
+      "hook_zh": "tiger 的字尾 -er 對調成 -re，就是 tigre。",
+      "usage_zh": "母老虎 tigresa；在部分拉美國家 tigre 也指美洲豹。",
+      "example_es": "El tigre tiene rayas negras.",
+      "example_zh": "老虎有黑色條紋。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tigre",
+        "wiktionary:la:tigris"
+      ]
+    },
+    {
+      "word": "elefante",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "大象",
+      "en": "elephant",
+      "ipa": "/eleˈfante/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古埃及語",
+          "word": "ꜣbw",
+          "zh": "（可能的來源）"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "eléphās",
+          "zh": "大象"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "elephantis",
+          "zh": "大象"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "elifant / alefant",
+          "zh": "大象"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "elefante",
+          "zh": "大象"
+        }
+      ],
+      "cognates_en": [
+        "elephant"
+      ],
+      "story_zh": "elefante 來自拉丁文，拉丁文借自古希臘語 eléphās，而希臘語可能又是從古埃及語借來的。古西班牙語的寫法五花八門：elifant、alefant、eleofant，最後才定成 elefante。",
+      "hook_zh": "elephant 把 ph 換成 f、再加個 e：elefante。西語不用 ph。",
+      "usage_zh": "陽性 el elefante；母象 elefanta。",
+      "example_es": "El elefante tiene orejas grandes.",
+      "example_zh": "大象有大耳朵。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:elefante",
+        "wiktionary:la:elephas"
+      ]
+    },
+    {
+      "word": "mono",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "猴子；（形容詞）可愛的",
+      "en": "monkey; cute",
+      "ipa": "/ˈmono/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "maymūn",
+          "zh": "狒狒、山魈"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "maimón",
+          "zh": "猴子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mono",
+          "zh": "猴子"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "mono 來自較早的 maimón（猴子），寫法中重複的部分脫落，縮成了 mono；maimón 則來自阿拉伯語 maymūn（狒狒）。當形容詞時 mono 還是「可愛」，所以 ¡Qué mono! 是「好可愛！」",
+      "hook_zh": "猴子好 mono（可愛）——同一個字，既是猴子也是可愛。",
+      "usage_zh": "形容詞 mono/mona＝可愛（西班牙常用）：¡Qué mona!",
+      "example_es": "El mono come un plátano.",
+      "example_zh": "猴子在吃香蕉。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mono"
+      ]
+    },
+    {
+      "word": "oso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "熊",
+      "en": "bear",
+      "ipa": "/ˈoso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ursus",
+          "zh": "熊"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*ussus",
+          "zh": "熊"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "osso",
+          "zh": "熊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "oso",
+          "zh": "熊"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "oso 來自拉丁文 ursus（熊）：口語先把 r 吞掉變成 *ussus，古西語寫作 osso，最後成了 oso。隔壁的葡萄牙語 urso 則保留了 r。",
+      "hook_zh": "大熊座叫 Ursa Major：ursus 拿掉 r → oso。",
+      "usage_zh": "母熊 osa；泰迪熊 osito de peluche；熊貓 oso panda。",
+      "example_es": "El oso come miel.",
+      "example_zh": "熊吃蜂蜜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:oso",
+        "wiktionary:la:ursus"
+      ]
+    },
+    {
+      "word": "serpiente",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "蛇",
+      "en": "snake",
+      "ipa": "/seɾˈpjente/",
+      "breakdown": [
+        {
+          "part": "serp- (serpō)",
+          "zh": "爬行"
+        },
+        {
+          "part": "-iente (-ēns)",
+          "zh": "正在…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "serpō",
+          "zh": "爬行"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "serpēns（受格 serpentem）",
+          "zh": "正在爬的；蛇"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "serpiente",
+          "zh": "蛇"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "serpiente",
+          "zh": "蛇"
+        }
+      ],
+      "cognates_en": [
+        "serpent"
+      ],
+      "story_zh": "serpiente 來自拉丁文 serpentem，是動詞 serpō（爬行）的現在分詞，字面意思就是「正在爬的東西」。英文 serpent 也是同一個字。西語還有一個雙生詞 sierpe。",
+      "hook_zh": "蛇在地上 serp、serp 地爬，就是 serpiente。",
+      "usage_zh": "陰性 la serpiente（公蛇也一樣）；也可說 culebra。",
+      "example_es": "En el desierto hay serpientes.",
+      "example_zh": "沙漠裡有蛇。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:serpiente",
+        "wiktionary:la:serpens"
+      ]
+    },
+    {
+      "word": "insecto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "昆蟲",
+      "en": "insect",
+      "ipa": "/inˈseɡto/",
+      "breakdown": [
+        {
+          "part": "in-",
+          "zh": "進入"
+        },
+        {
+          "part": "sect- (secō)",
+          "zh": "切"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "éntoma",
+          "zh": "昆蟲（字面「被切開的」）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnsecta",
+          "zh": "昆蟲（仿譯）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "insecto",
+          "zh": "昆蟲"
+        }
+      ],
+      "cognates_en": [
+        "insect"
+      ],
+      "story_zh": "insecto 借自拉丁文 īnsecta，這是照希臘語 éntoma 逐字翻譯的「仿譯詞」，字面是「被切開的」，因為昆蟲的身體分成一節一節。拉丁文用的是 īnsecō（切入）的分詞。",
+      "hook_zh": "昆蟲的身體像被刀切成三段：in + sect（切）。",
+      "usage_zh": "陽性 el insecto；複數 insectos。",
+      "example_es": "Hay muchos insectos en el bosque.",
+      "example_zh": "森林裡有很多昆蟲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:insecto"
+      ]
+    },
+    {
+      "word": "mariposa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "蝴蝶",
+      "en": "butterfly",
+      "ipa": "/maɾiˈposa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "māreposā（推測）",
+          "zh": "拍動＋停下"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mariposa",
+          "zh": "蝴蝶"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "mariposa 的來源有好幾種說法：可能來自通俗拉丁語 māreposā，由「拍動」和「停下」組成；另一說來自 María, pósate（瑪利亞，停下吧！），因為過去有人相信蝴蝶是亡者的靈魂，而聖母常和靈魂連在一起。",
+      "hook_zh": "蝴蝶飛一飛，又 posa（停）一下：mari-posa。",
+      "usage_zh": "陰性 la mariposa；游泳的「蝶式」也叫 mariposa。",
+      "example_es": "Hay una mariposa en la flor.",
+      "example_zh": "花上有一隻蝴蝶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mariposa"
+      ]
+    },
+    {
+      "word": "lobo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "狼",
+      "en": "wolf",
+      "ipa": "/ˈlobo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "lupus",
+          "zh": "狼"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "lobo",
+          "zh": "狼"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lobo",
+          "zh": "狼"
+        }
+      ],
+      "cognates_en": [
+        "wolf"
+      ],
+      "story_zh": "lobo 來自拉丁文 lupus（狼），p 變成 b、u 變成 o。lupus 的來歷不確定，一個說法是它和英文 wolf 出自同一個古老的「狼」字，只是經過音的對調和變化，才變成這個樣子。",
+      "hook_zh": "小紅帽的大野狼是 el lobo feroz。",
+      "usage_zh": "母狼 loba；hombre lobo 狼人。",
+      "example_es": "El lobo vive en el bosque.",
+      "example_zh": "狼住在森林裡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lobo",
+        "wiktionary:la:lupus"
+      ]
+    },
+    {
+      "word": "pato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "鴨子",
+      "en": "duck",
+      "ipa": "/ˈpato/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "波斯語",
+          "word": "bat",
+          "zh": "鴨子"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "baṭṭ",
+          "zh": "鴨子"
+        },
+        {
+          "lang_zh": "安達魯斯阿拉伯語",
+          "word": "paṭṭ",
+          "zh": "鴨子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pato",
+          "zh": "鴨子"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "pato 是從東方游過來的字：波斯語 bat（鴨子）傳進阿拉伯語成為 baṭṭ，再經過伊比利半島的安達魯斯阿拉伯語 paṭṭ，借進西語變成 pato。",
+      "hook_zh": "鴨子的腳掌啪嗒啪嗒：pa-to、pa-to。",
+      "usage_zh": "母鴨 pata；但 pata 也是動物的「腳」，別搞混。",
+      "example_es": "Hay patos en el lago.",
+      "example_zh": "湖上有鴨子。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pato"
+      ]
+    },
+    {
+      "word": "desierto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "沙漠",
+      "en": "desert",
+      "ipa": "/deˈsjeɾto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēsertus",
+          "zh": "（形容詞）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēsertum",
+          "zh": "沙漠、荒地"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "desierto",
+          "zh": "沙漠"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "desierto",
+          "zh": "沙漠"
+        }
+      ],
+      "cognates_en": [
+        "desert"
+      ],
+      "story_zh": "desierto 來自拉丁文 dēsertum（沙漠、荒地），而它又來自形容詞 dēsertus。所以西語 desierto 也能當形容詞，意思是「空無一人的」。",
+      "hook_zh": "desierto ≈ desert；別和 dessert（甜點）搞混——沙漠只有一個 s！",
+      "usage_zh": "也是形容詞：una isla desierta 無人島、una calle desierta 空蕩蕩的街。",
+      "example_es": "El Sahara es un desierto muy grande.",
+      "example_zh": "撒哈拉是很大的沙漠。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:desierto",
+        "wiktionary:la:desertum"
+      ]
+    },
+    {
+      "word": "selva",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "叢林；熱帶雨林",
+      "en": "jungle; rainforest",
+      "ipa": "/ˈselba/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "silva",
+          "zh": "樹林、森林"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "selva",
+          "zh": "森林"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "selva",
+          "zh": "叢林"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "selva 來自拉丁文 silva（樹林、森林），i 在西語變成了 e。silva 再往前的來源有爭議：傳統說法連到一個表示「木材、木樑」的古字根，但也有學者存疑。",
+      "hook_zh": "selva 比 bosque 更濕更密：叢林之王 león 住在 la selva。",
+      "usage_zh": "selva tropical 熱帶雨林；la selva amazónica 亞馬遜雨林。",
+      "example_es": "En la selva llueve mucho.",
+      "example_zh": "叢林裡常下雨。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:selva",
+        "wiktionary:la:silva"
+      ]
+    },
+    {
+      "word": "costa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "海岸",
+      "en": "coast",
+      "ipa": "/ˈkosta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "costa",
+          "zh": "肋骨；側邊"
+        },
+        {
+          "lang_zh": "加利西亞語／加泰隆語",
+          "word": "costa",
+          "zh": "海岸"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "costa",
+          "zh": "海岸"
+        }
+      ],
+      "cognates_en": [
+        "coast"
+      ],
+      "story_zh": "costa 的拉丁祖先 costa 原本是「肋骨、側邊」。西語的 costa 是從加利西亞語或加泰隆語借來的；西語自己從同一個拉丁字演變出的雙生詞是 cuesta。",
+      "hook_zh": "Costa Rica 字面是「富饒的海岸」；costa ≈ coast。",
+      "usage_zh": "en la costa 在海邊；另一個 costa 是「花費」：a costa de…。",
+      "example_es": "Vivimos en la costa.",
+      "example_zh": "我們住在海邊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:costa",
+        "wiktionary:la:costa"
+      ]
+    },
+    {
+      "word": "ola",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "浪",
+      "en": "wave",
+      "ipa": "/ˈola/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "unda",
+          "zh": "浪"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "undula",
+          "zh": "小浪（可能的來源）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ola",
+          "zh": "浪"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ola 的來源不確定：可能來自拉丁文 undula（小浪，unda「浪」的縮小形），也可能來自阿拉伯語 hawl（海浪湧起、驚嚇）。兩種說法都還沒有定論。",
+      "hook_zh": "看到大浪就喊 ¡Hola, ola!——只差一個不發音的 h。",
+      "usage_zh": "ola de calor 熱浪；體育場的人浪也叫 la ola。",
+      "example_es": "Las olas son muy altas hoy.",
+      "example_zh": "今天浪很高。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ola",
+        "wiktionary:la:undula"
+      ]
+    },
+    {
+      "word": "arena",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "沙",
+      "en": "sand",
+      "ipa": "/aˈɾena/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "*hasēna",
+          "zh": "（較早的形式）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "(h)arēna",
+          "zh": "沙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "arena",
+          "zh": "沙；競技場"
+        }
+      ],
+      "cognates_en": [
+        "arena"
+      ],
+      "story_zh": "arena 繼承自拉丁文 (h)arēna（沙），更早可能是 *hasēna，也可能源自伊特拉斯坎語。英文 arena（競技場）是同一個字；西語 arena 除了沙，也能指鬥牛場、拳擊場。",
+      "hook_zh": "競技場 arena 的地上鋪著 arena（沙）——一字兩用。",
+      "usage_zh": "陰性 la arena；castillo de arena 沙堡。",
+      "example_es": "Los niños juegan en la arena.",
+      "example_zh": "孩子們在沙灘上玩。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:arena",
+        "wiktionary:la:arena"
+      ]
+    },
+    {
+      "word": "hielo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "冰",
+      "en": "ice",
+      "ipa": "/ˈʝelo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "gelū",
+          "zh": "霜、寒冷"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "yelo",
+          "zh": "（較早寫法）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hielo",
+          "zh": "冰"
+        }
+      ],
+      "cognates_en": [
+        "gel"
+      ],
+      "story_zh": "hielo 來自拉丁文 gelū（霜、寒冷），早期西語寫作 yelo，後來才拼成 hielo。往上追，gelū 和英文 cold 有關，英文 gel 也可以拿來比較。",
+      "hook_zh": "h 不發音，hie 唸起來像 ye：冰咖啡 café con hielo。",
+      "usage_zh": "名詞 hielo；「結冰」是 helar。con hielo 加冰。",
+      "example_es": "Un agua con hielo, por favor.",
+      "example_zh": "請給我一杯冰水。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hielo",
+        "wiktionary:la:gelu"
+      ]
+    },
+    {
+      "word": "niebla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "霧",
+      "en": "fog",
+      "ipa": "/ˈnjebla/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nebula",
+          "zh": "霧、雲"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*nebla（可能）",
+          "zh": "霧"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nevla",
+          "zh": "霧"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "niebla",
+          "zh": "霧"
+        }
+      ],
+      "cognates_en": [
+        "nebula"
+      ],
+      "story_zh": "niebla 來自拉丁文 nebula（霧、雲），可能先縮成 *nebla。往上追，它源自一個表示「雲」的古字。有趣的是，nebula 和 nūbēs（nube 的祖先）雖然音近義近，字源卻沒有關係。",
+      "hook_zh": "天文的 nebula（星雲）就是太空裡的一團 niebla。",
+      "usage_zh": "天氣說 hay niebla（起霧），不說 hace niebla。",
+      "example_es": "Hay niebla en la montaña.",
+      "example_zh": "山上起霧了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:niebla",
+        "wiktionary:la:nebula"
+      ]
+    },
+    {
+      "word": "arcoíris",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "彩虹",
+      "en": "rainbow",
+      "ipa": "/aɾkoˈiɾis/",
+      "breakdown": [
+        {
+          "part": "arco",
+          "zh": "弓、拱形"
+        },
+        {
+          "part": "iris",
+          "zh": "虹；虹膜"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "arco + iris",
+          "zh": "拱形 + 虹"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "arcoíris",
+          "zh": "彩虹"
+        }
+      ],
+      "cognates_en": [
+        "arc",
+        "iris"
+      ],
+      "story_zh": "arcoíris 是兩個字黏成的：arco（弓、拱形）加上 iris，字面上就是「拱形的虹」。",
+      "hook_zh": "天上拉開一把 arco（弓），射出七彩的 iris。眼睛的虹膜也叫 iris。",
+      "usage_zh": "陽性 el arcoíris；複數不變：los arcoíris；也可寫 arco iris。",
+      "example_es": "Después de la lluvia hay un arcoíris.",
+      "example_zh": "雨後出現了彩虹。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:arcoíris"
+      ]
+    },
+    {
+      "word": "ballena",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "鯨魚",
+      "en": "whale",
+      "ipa": "/baˈʝena/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "phállaina",
+          "zh": "鯨魚"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ballaena / bālaena",
+          "zh": "鯨魚"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ballena",
+          "zh": "鯨魚"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ballena",
+          "zh": "鯨魚"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ballena 來自拉丁文 ballaena（bālaena 的另一種寫法），拉丁文又借自古希臘語 phállaina。法語 baleine、義大利語 balena 都是它的兄弟。這個字也指鯨鬚。",
+      "hook_zh": "ll 唸「ㄧ」：ba-YE-na，鯨魚噴水「耶～」。",
+      "usage_zh": "陰性 la ballena，公鯨也一樣。",
+      "example_es": "En el mar vemos una ballena.",
+      "example_zh": "我們在海上看到一隻鯨魚。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ballena",
+        "wiktionary:la:ballaena"
+      ]
+    },
+    {
+      "word": "tortuga",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "烏龜；海龜",
+      "en": "turtle; tortoise",
+      "ipa": "/toɾˈtuɡa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "Tártaros",
+          "zh": "冥府塔耳塔羅斯"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "tartarūchus",
+          "zh": "冥府的精靈"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "tartuga",
+          "zh": "烏龜"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tortuga",
+          "zh": "烏龜"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "tortuga 的來源出人意料：古西語 tartuga 很可能來自晚期拉丁語 tartarūchus，一種源自希臘的神話精靈，名字來自冥府 Tártaros（塔耳塔羅斯）。中世紀拉丁語也有 tortūca 的寫法。",
+      "hook_zh": "烏龜慢慢爬：tor-tu-ga；西語也用 tortuga 笑人慢吞吞。",
+      "usage_zh": "陰性 la tortuga；海龜 tortuga marina。",
+      "example_es": "La tortuga camina muy despacio.",
+      "example_zh": "烏龜走得很慢。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tortuga"
+      ]
+    },
+    {
+      "word": "rana",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "青蛙",
+      "en": "frog",
+      "ipa": "/ˈrana/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rāna",
+          "zh": "青蛙（擬聲）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rana",
+          "zh": "青蛙"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "rana 直接來自拉丁文 rāna（青蛙），而這個拉丁字被認為是模仿青蛙呱呱叫的擬聲詞。",
+      "hook_zh": "rrrana——用力捲舌，就像青蛙在池塘邊咕嚕叫。",
+      "usage_zh": "陰性 la rana，公青蛙也一樣。",
+      "example_es": "La rana salta al agua.",
+      "example_zh": "青蛙跳進水裡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:rana",
+        "wiktionary:la:rana"
+      ]
+    },
+    {
+      "word": "abeja",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "蜜蜂",
+      "en": "bee",
+      "ipa": "/aˈbexa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "apicula",
+          "zh": "蜜蜂"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "abeja",
+          "zh": "蜜蜂"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "abeja",
+          "zh": "蜜蜂"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "abeja 來自拉丁文 apicula，古西語就已經寫成 abeja。它和 oveja 走了同樣的路：拉丁文的 -icula 在西語變成 -eja（ovicula → oveja）。",
+      "hook_zh": "abeja 和 oveja 押韻：一隻蜜蜂停在綿羊背上。",
+      "usage_zh": "陰性 la abeja；蜂蜜是 miel。",
+      "example_es": "La abeja hace miel.",
+      "example_zh": "蜜蜂製造蜂蜜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:abeja"
+      ]
+    },
+    {
+      "word": "hormiga",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "螞蟻",
+      "en": "ant",
+      "ipa": "/oɾˈmiɡa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "formīca",
+          "zh": "螞蟻"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "formiga",
+          "zh": "螞蟻"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hormiga",
+          "zh": "螞蟻"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "hormiga 來自拉丁文 formīca，古西語寫作 formiga，後來字首 f 變成不發音的 h，和 hoja、hablar 一樣。傳統說法認為更早是 m 開頭，因為 m…m 太拗口，第一個 m 才變成 f。",
+      "hook_zh": "h 換回 f：formiga——螞蟻排成（form）一列行軍。",
+      "usage_zh": "h 不發音：or-MI-ga；陰性 la hormiga。",
+      "example_es": "Hay hormigas en la cocina.",
+      "example_zh": "廚房有螞蟻。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hormiga",
+        "wiktionary:la:formica"
+      ]
+    },
+    {
+      "word": "delfín",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "海豚",
+      "en": "dolphin",
+      "ipa": "/delˈfin/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "delphús",
+          "zh": "子宮"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "delphís / delphín",
+          "zh": "海豚"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "delphīnus",
+          "zh": "海豚"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "delfín",
+          "zh": "海豚"
+        }
+      ],
+      "cognates_en": [
+        "dolphin"
+      ],
+      "story_zh": "delfín 借自拉丁文，追到古希臘語 delphís（海豚），而它又來自 delphús「子宮」。法語的海豚 dauphin 也是法國王儲的稱號，所以西語 delfín 也借來了「接班人」的意思。",
+      "hook_zh": "dolphin 的 ph 換成 f：delfín，重音在最後 del-FÍN。",
+      "usage_zh": "陽性 el delfín；複數 delfines（去掉重音符號）。",
+      "example_es": "Vemos delfines en el mar.",
+      "example_zh": "我們在海上看到海豚。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:delfín",
+        "wiktionary:la:delphin"
+      ]
+    },
+    {
+      "word": "toro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "公牛",
+      "en": "bull",
+      "ipa": "/ˈtoɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "taurus",
+          "zh": "公牛；金牛座"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "toro",
+          "zh": "公牛"
+        }
+      ],
+      "cognates_en": [
+        "Taurus"
+      ],
+      "story_zh": "toro 繼承自拉丁文 taurus（公牛），au 在西語變成 o。taurus 也是金牛座的名字，所以 toro 和 Tauro（金牛座）是一對雙生詞。taurus 更早可能來自非印歐語的底層語言。",
+      "hook_zh": "金牛座 Taurus 就是一頭 toro；鬥牛士叫 torero。",
+      "usage_zh": "公牛 toro、母牛 vaca；los toros 也指鬥牛。",
+      "example_es": "El toro es muy fuerte.",
+      "example_zh": "公牛很強壯。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:toro",
+        "wiktionary:la:taurus"
+      ]
+    },
+    {
+      "word": "burro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "驢子；（罵人）笨蛋",
+      "en": "donkey",
+      "ipa": "/ˈburo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "pûr",
+          "zh": "火"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "purrhós",
+          "zh": "火紅色的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "burrus",
+          "zh": "紅褐色的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "burricus",
+          "zh": "小馬"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "borrico",
+          "zh": "驢子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "burro",
+          "zh": "驢子"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "burro 的源頭竟然是「火」！古希臘語 pûr（火）衍生出 purrhós（火紅色的），拉丁文借成 burrus（紅褐色），再變出 burricus（小馬）。西語先有 borrico（驢子），burro 又是從 borrico 來的。",
+      "hook_zh": "想像一頭紅褐色、毛色像火的小驢子：burro。",
+      "usage_zh": "也當形容詞罵人笨：¡No seas burro!（別那麼笨！）",
+      "example_es": "El burro come zanahorias.",
+      "example_zh": "驢子在吃紅蘿蔔。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:burro",
+        "wiktionary:la:burricus",
+        "wiktionary:la:burrus"
+      ]
+    },
+    {
+      "word": "jirafa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "長頸鹿",
+      "en": "giraffe",
+      "ipa": "/xiˈɾafa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "zurāfa",
+          "zh": "長頸鹿"
+        },
+        {
+          "lang_zh": "義大利語",
+          "word": "giraffa",
+          "zh": "長頸鹿"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "jirafa",
+          "zh": "長頸鹿"
+        }
+      ],
+      "cognates_en": [
+        "giraffe"
+      ],
+      "story_zh": "jirafa 是從義大利語 giraffa 借來的，而義大利語又借自阿拉伯語 zurāfa（長頸鹿）。古西語也曾直接從阿拉伯語借成 azorafa，不過今天用的是經義大利語來的 jirafa。",
+      "hook_zh": "j 唸ㄏ：hi-RA-fa，長頸鹿的脖子像 j 一樣長長的。",
+      "usage_zh": "陰性 la jirafa（公的也是）；也指錄音用的吊桿麥克風。",
+      "example_es": "La jirafa tiene el cuello muy largo.",
+      "example_zh": "長頸鹿的脖子很長。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:jirafa"
+      ]
+    },
+    {
+      "word": "planeta",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "行星；星球",
+      "en": "planet",
+      "ipa": "/plaˈneta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "planáō",
+          "zh": "漫遊"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "planḗtēs",
+          "zh": "漫遊者；行星"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "planēta",
+          "zh": "行星"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "planeta",
+          "zh": "行星"
+        }
+      ],
+      "cognates_en": [
+        "planet"
+      ],
+      "story_zh": "planeta 來自古希臘語 planḗtēs，意思是「漫遊者」，源自動詞 planáō（漫遊）。拉丁文借過來，指「會漫遊的星」——行星就是天上的流浪者。",
+      "hook_zh": "行星＝流浪星：planeta 在夜空裡到處晃。",
+      "usage_zh": "字尾 -a 卻是陽性：el planeta、un planeta pequeño。",
+      "example_es": "La Tierra es nuestro planeta.",
+      "example_zh": "地球是我們的星球。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:planeta",
+        "wiktionary:la:planeta"
+      ]
+    }
+  ]
+}
