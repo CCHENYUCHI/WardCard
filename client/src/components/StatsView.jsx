@@ -38,12 +38,15 @@ export default function StatsView({ stats }) {
 
   // Weekly Review Forecast
   const weeklyForecast = stats.weeklyForecast || [];
-  const totalWeeklyDue = weeklyForecast.reduce((acc, d) => acc + (d.dueReviews || 0), 0);
+  const reviewsOf = (d) => (d.dueReviews || 0) + (d.projectedReviews || 0);
+  const totalWeeklyDue = weeklyForecast.reduce((acc, d) => acc + reviewsOf(d), 0);
   const totalWeeklyNew = weeklyForecast.reduce((acc, d) => acc + (d.newWords || 0), 0);
   const maxDayWorkload = Math.max(...weeklyForecast.map(d => d.totalWorkload || 0), 10);
   const dailyQuota = stats.dailyQuota || 15;
-  const readyReserveTotal = stats.readyReserveTotal || readyCount;
+  const newPool = stats.newPool || 0;
   const longTermDueCount = stats.longTermDueCount || 0;
+  const today = stats.today || { done: 0, goal: 0, extra: 0 };
+  const scopeLabel = stats.forecastUnit ? `主修：${stats.forecastUnit}` : '全部單元';
 
   return (
     <div className="stats-page" style={{ maxWidth: '960px', margin: '0 auto', padding: '0 8px' }}>
@@ -135,14 +138,16 @@ export default function StatsView({ stats }) {
           </div>
         </div>
 
-        {/* Reviewed Today */}
+        {/* Today's task (same numbers as the daily task card) */}
         <div className="stat-box">
           <div className="stat-icon" style={{ background: '#fef7e0', color: '#f29900' }}>
             <CheckCircle2 size={20} />
           </div>
           <div>
-            <div className="stat-val" style={{ color: '#f29900' }}>{stats.reviewedToday}</div>
-            <div className="stat-label">🔥 今日複習卡次</div>
+            <div className="stat-val" style={{ color: '#f29900' }}>
+              {today.done}<span style={{ fontSize: '0.9rem', color: 'var(--text-muted)', fontWeight: 600 }}> / {today.goal}</span>
+            </div>
+            <div className="stat-label">✅ 今日任務完成{today.extra > 0 ? `（加練 ${today.extra}）` : ''}</div>
           </div>
         </div>
       </div>
@@ -156,7 +161,7 @@ export default function StatsView({ stats }) {
               <span>本週複習排程與新詞進度預報 (Weekly Forecast)</span>
             </h3>
             <p style={{ margin: '4px 0 0 0', fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-              依據 FSRS 遺忘曲線間隔動態排程，結合每日新詞配額規劃
+              與今日複習同一套規則（{scopeLabel}），今天顯示剩下的量
             </p>
           </div>
 
@@ -178,6 +183,7 @@ export default function StatsView({ stats }) {
           {weeklyForecast.map((day) => {
             const isToday = day.dayIndex === 0;
             const reviewHeight = maxDayWorkload > 0 ? (day.dueReviews / maxDayWorkload) * 105 : 0;
+            const projectedHeight = maxDayWorkload > 0 ? ((day.projectedReviews || 0) / maxDayWorkload) * 105 : 0;
             const newHeight = maxDayWorkload > 0 ? (day.newWords / maxDayWorkload) * 105 : 0;
 
             return (
@@ -246,6 +252,18 @@ export default function StatsView({ stats }) {
                       title={`預計加入新單字: ${day.newWords} 個`}
                     />
                   )}
+                  {/* Projected Reviews Bar (Middle, Light Blue) */}
+                  {projectedHeight > 0 && (
+                    <div
+                      style={{
+                        height: `${projectedHeight}px`,
+                        background: '#aecbfa',
+                        width: '100%',
+                        transition: 'height 0.4s ease'
+                      }}
+                      title={`預估回來複習: ${day.projectedReviews} 張`}
+                    />
+                  )}
                   {/* Due Reviews Bar (Bottom, Blue) */}
                   {reviewHeight > 0 && (
                     <div 
@@ -266,14 +284,19 @@ export default function StatsView({ stats }) {
                     {day.totalWorkload}
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '4px', fontSize: '0.72rem', marginTop: '2px' }}>
-                    <span style={{ color: '#1a73e8', fontWeight: 600 }}>複 {day.dueReviews}</span>
+                    <span style={{ color: '#1a73e8', fontWeight: 600 }}>複 {reviewsOf(day)}</span>
                     <span style={{ color: '#137333', fontWeight: 600 }}>新 +{day.newWords}</span>
                   </div>
+                  {day.projectedReviews > 0 && (
+                    <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+                      含預估 {day.projectedReviews}
+                    </div>
+                  )}
                 </div>
 
-                {isToday && day.reviewedToday > 0 && (
+                {isToday && today.done > 0 && (
                   <div style={{ marginTop: '8px', fontSize: '0.7rem', color: '#f29900', fontWeight: 700, background: '#fef7e0', padding: '2px 6px', borderRadius: '4px' }}>
-                    已做 {day.reviewedToday} 次
+                    已完成 {today.done}
                   </div>
                 )}
               </div>
@@ -297,7 +320,11 @@ export default function StatsView({ stats }) {
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', fontWeight: 600 }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
               <span style={{ width: '12px', height: '12px', background: 'var(--google-blue)', borderRadius: '3px' }} />
-              藍色：到期複習 (依 FSRS 間隔動態到期)
+              藍色：已排定的到期複習
+            </span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+              <span style={{ width: '12px', height: '12px', background: '#aecbfa', borderRadius: '3px' }} />
+              淺藍：預估（這週學的新字、複習過的字依 FSRS 預計回來的量）
             </span>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
               <span style={{ width: '12px', height: '12px', background: '#34a853', borderRadius: '3px' }} />
@@ -309,8 +336,12 @@ export default function StatsView({ stats }) {
             系統根據 FSRS 記憶穩定度演算法動態計算複習間隔（例如：1天 ➔ 3天 ➔ 7天 ➔ 16天 ➔ 45天+），在每個單字即將遺忘的臨界點發送複習，而非每天重複已熟記的單字。
           </div>
           <div>
+            🔮 <strong>預估怎麼算：</strong>
+            假設每次都答「記得」，用 FSRS 算出下次複習的日子；答錯的字會更早回來，所以實際量可能更多。
+          </div>
+          <div>
             🎯 <strong>新單字加入狀況：</strong>
-            目前待學儲備庫共有 <strong>{readyReserveTotal}</strong> 個單字，按照您每日 <strong>{dailyQuota}</strong> 個新詞的配額，預計可持續穩定供應約 <strong>{readyReserveTotal > 0 ? Math.ceil(readyReserveTotal / dailyQuota) : 0}</strong> 天的學習量，有效避免複習雪崩。
+            {scopeLabel}還有 <strong>{newPool}</strong> 個還沒學過的單字（含待學儲備），按照您每日 <strong>{dailyQuota}</strong> 個新詞的配額，約可供應 <strong>{newPool > 0 ? Math.ceil(newPool / dailyQuota) : 0}</strong> 天；學完後可在今日學習的「主修進度」加入下一個單元。
           </div>
         </div>
       </div>

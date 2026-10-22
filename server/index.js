@@ -16,7 +16,7 @@ const {
 const { splitArticle, normalizeWord } = require('./cardUtils');
 const { getDict, lookupForm, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
 const { reviewCardFSRS } = require('./fsrs');
-const { classifyReview, buildTodayPlan, getTodaySummary, getHistory, getPracticeCards } = require('./dailyProgress');
+const { classifyReview, buildTodayPlan, getTodaySummary, getHistory, getWeeklyForecast, getPracticeCards } = require('./dailyProgress');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'palabracard-super-secret-key-2026';
 
@@ -900,16 +900,10 @@ app.get('/api/stats', authenticateToken, (req, res) => {
       FROM cards WHERE user_id = ?
     `).get(userId);
 
-    const due = db.prepare(`
-      SELECT count(*) as count FROM cards 
-      WHERE user_id = ? AND lifecycle_status = 'active' AND due_date < ${TODAY_END_SQL}
-    `).get(userId).count;
-
-    // Reviews today
-    const reviewedToday = db.prepare(`
-      SELECT count(*) as count FROM review_logs
-      WHERE user_id = ? AND date(reviewed_at) = date('now', 'localtime')
-    `).get(userId).count;
+    // Today's numbers and the forecast use the same rules and unit scope as the daily task
+    const plan = buildTodayPlan(userId, false);
+    const today = getTodaySummary(userId, plan);
+    const forecast = getWeeklyForecast(userId, plan);
 
     // Total review logs
     const totalReviews = db.prepare(`
@@ -947,69 +941,8 @@ app.get('/api/stats', authenticateToken, (req, res) => {
       proficiencyRate: Number(r.total) > 0 ? Math.round((Number(r.proficient_count) / Number(r.total)) * 100) : 0
     }));
 
-    // Calculate 7-day review forecast & daily new word intake
-    const user = db.prepare('SELECT * FROM users WHERE id = ?').get(userId) || {};
-    const quota = Number(user.daily_new_quota) || 15;
-
     const readyReserveCount = db.prepare(`
       SELECT count(*) as count FROM cards WHERE user_id = ? AND lifecycle_status = 'ready'
-    `).get(userId).count;
-
-    let remainingReserve = Number(readyReserveCount) || 0;
-    const weekdayNames = ['週日', '週一', '週二', '週三', '週四', '週五', '週六'];
-    const weeklyForecast = [];
-
-    for (let i = 0; i < 7; i++) {
-      let dueCount = 0;
-      let dateStr = '';
-      if (i === 0) {
-        // Today: Overdue or due cards
-        const row = db.prepare(`
-          SELECT 
-            date('now', 'localtime') as day,
-            COUNT(*) as count 
-          FROM cards 
-          WHERE user_id = ? AND lifecycle_status = 'active' AND date(due_date) <= date('now', 'localtime')
-        `).get(userId);
-        dateStr = row.day;
-        dueCount = Number(row.count) || 0;
-      } else {
-        // Days 1 ~ 6: cards due on this future date
-        const row = db.prepare(`
-          SELECT 
-            date('now', '+' || ? || ' day', 'localtime') as day,
-            COUNT(*) as count 
-          FROM cards 
-          WHERE user_id = ? AND lifecycle_status = 'active' AND date(due_date) = date('now', '+' || ? || ' day', 'localtime')
-        `).get(i, userId, i);
-        dateStr = row.day;
-        dueCount = Number(row.count) || 0;
-      }
-
-      // Daily new words from reserve pool
-      const newWords = Math.min(quota, remainingReserve);
-      remainingReserve = Math.max(0, remainingReserve - newWords);
-
-      const d = new Date(dateStr + 'T00:00:00');
-      const dayOfWeek = weekdayNames[d.getDay()];
-      const label = i === 0 ? `今天 (${dayOfWeek})` : i === 1 ? `明天 (${dayOfWeek})` : `${dateStr.substring(5)} (${dayOfWeek})`;
-
-      weeklyForecast.push({
-        dayIndex: i,
-        date: dateStr,
-        label,
-        dayOfWeek,
-        dueReviews: dueCount,
-        newWords: newWords,
-        totalWorkload: dueCount + newWords,
-        reviewedToday: i === 0 ? Number(reviewedToday) : 0
-      });
-    }
-
-    // Long-term scheduled cards (> 7 days out)
-    const longTermDueCount = db.prepare(`
-      SELECT count(*) as count FROM cards 
-      WHERE user_id = ? AND lifecycle_status = 'active' AND date(due_date) > date('now', '+6 day', 'localtime')
     `).get(userId).count;
 
     res.json({
@@ -1019,8 +952,9 @@ app.get('/api/stats', authenticateToken, (req, res) => {
       inbox: Number(overview.inbox) || 0,
       mastered: Number(overview.mastered) || 0,
       starred: Number(overview.starred) || 0,
-      due: Number(due),
-      reviewedToday: Number(reviewedToday),
+      due: today.remainingDue,
+      reviewedToday: today.reviews,
+      today,
       totalReviews: Number(totalReviews),
       stages: {
         1: Number(overview.stage1) || 0,
@@ -1031,10 +965,12 @@ app.get('/api/stats', authenticateToken, (req, res) => {
       },
       levelCounts,
       unitCounts,
-      weeklyForecast,
-      dailyQuota: quota,
+      weeklyForecast: forecast.days,
+      forecastUnit: forecast.unit,
+      newPool: forecast.newPool,
+      dailyQuota: plan.quota,
       readyReserveTotal: Number(readyReserveCount) || 0,
-      longTermDueCount: Number(longTermDueCount) || 0
+      longTermDueCount: forecast.beyondWindow
     });
   } catch (err) {
     res.status(500).json({ error: err.message });
