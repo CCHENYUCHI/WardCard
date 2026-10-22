@@ -15,7 +15,7 @@ const bumps = (cx, cy, R, n, r) => {
 const eyes = (x1, x2, y, r = 5) => [s('circle', { cx: x1, cy: y, r }, 'dark'), s('circle', { cx: x2, cy: y, r }, 'dark')];
 const line = (d, color, w = 4, extra = {}) => s('path', { d, fill: 'none', 'stroke-width': w, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, color, { stroke: true, ...extra });
 const thermo = (fill, level) => [
-  s('rect', { x: 66, y: 18, width: 28, height: 100, rx: 14 }, 'white'),
+  s('rect', { x: 66, y: 18, width: 28, height: 100, rx: 14 }, 'gray'),
   s('circle', { cx: 80, cy: 120, r: 22 }, fill, { accent: true }),
   s('rect', { x: 73, y: level, width: 14, height: 112 - level, rx: 5 }, fill, { accent: true })
 ];
@@ -235,7 +235,7 @@ module.exports = {
     s('path', { d: 'M46 44c-10-4-16-14-14-24 8 6 14 10 24 12zM114 44c10-4 16-14 14-24-8 6-14 10-24 12z', 'stroke-linejoin': 'round' }, 'cream'),
     s('ellipse', { cx: 30, cy: 64, rx: 18, ry: 10, transform: 'rotate(20 30 64)' }, 'white'),
     s('ellipse', { cx: 130, cy: 64, rx: 18, ry: 10, transform: 'rotate(-20 130 64)' }, 'white'),
-    s('path', { d: 'M80 32c30 0 40 22 38 52-2 28-14 40-38 40s-36-12-38-40c-2-30 8-52 38-52z' }, 'white', { accent: true }),
+    s('path', { d: 'M80 32c30 0 40 22 38 52-2 28-14 40-38 40s-36-12-38-40c-2-30 8-52 38-52z' }, 'cream', { accent: true }),
     s('path', { d: 'M48 50c10-6 22 0 18 12-4 10-16 8-20 0zM104 84c8-4 14 4 10 12-6 2-12-4-10-12z' }, 'dark'),
     s('ellipse', { cx: 80, cy: 112, rx: 30, ry: 20 }, 'pink'),
     ...eyes(64, 96, 76, 5),
@@ -250,16 +250,16 @@ module.exports = {
     ...eyes(62, 98, 70, 5)
   ],
   oveja: [
-    s('path', { d: bumps(80, 84, 46, 12, 14), 'stroke-linejoin': 'round' }, 'white', { accent: true, lineColor: 'dark' }),
+    s('path', { d: bumps(80, 84, 46, 12, 14), 'stroke-linejoin': 'round' }, 'gray', { accent: true }),
     s('ellipse', { cx: 44, cy: 72, rx: 14, ry: 7, transform: 'rotate(30 44 72)' }, 'dark'),
     s('ellipse', { cx: 116, cy: 72, rx: 14, ry: 7, transform: 'rotate(-30 116 72)' }, 'dark'),
     s('ellipse', { cx: 80, cy: 92, rx: 24, ry: 30 }, 'dark'),
     s('circle', { cx: 70, cy: 86, r: 5 }, 'white'), s('circle', { cx: 90, cy: 86, r: 5 }, 'white'),
-    s('path', { d: bumps(80, 54, 16, 7, 7) }, 'white')
+    s('path', { d: bumps(80, 54, 16, 7, 7) }, 'cream')
   ],
   gallina: [
     line('M72 124v16M90 124v16M66 140h12M84 140h12', 'orange', 4),
-    s('path', { d: 'M100 48c-24 0-30 26-46 36-14-8-30-6-36-2 2 30 24 44 54 44 32 0 50-20 50-46 0-18-8-32-22-32z' }, 'white', { accent: true, lineColor: 'dark' }),
+    s('path', { d: 'M100 48c-24 0-30 26-46 36-14-8-30-6-36-2 2 30 24 44 54 44 32 0 50-20 50-46 0-18-8-32-22-32z' }, 'cream', { accent: true }),
     s('path', { d: 'M90 46c-2-10 6-16 10-10 2-8 12-8 12 0 6-4 12 4 6 10z' }, 'red'),
     s('path', { d: 'M120 60l16 6-16 6z', 'stroke-linejoin': 'round' }, 'yellow'),
     s('path', { d: 'M118 74q4 12-4 12-4-6 4-12z' }, 'red'),
@@ -275,14 +275,14 @@ module.exports = {
     line('M70 116l-36-6M70 122l-34 6M90 116l36-6M90 122l34 6', 'dark', 2.5)
   ],
   conejo: [
-    s('ellipse', { cx: 62, cy: 44, rx: 13, ry: 34, transform: 'rotate(-10 62 44)' }, 'white', { lineColor: 'dark' }),
-    s('ellipse', { cx: 98, cy: 44, rx: 13, ry: 34, transform: 'rotate(10 98 44)' }, 'white'),
+    s('ellipse', { cx: 62, cy: 44, rx: 13, ry: 34, transform: 'rotate(-10 62 44)' }, 'gray'),
+    s('ellipse', { cx: 98, cy: 44, rx: 13, ry: 34, transform: 'rotate(10 98 44)' }, 'gray'),
     s('ellipse', { cx: 62, cy: 44, rx: 6, ry: 24, transform: 'rotate(-10 62 44)' }, 'pink'),
     s('ellipse', { cx: 98, cy: 44, rx: 6, ry: 24, transform: 'rotate(10 98 44)' }, 'pink'),
-    s('circle', { cx: 80, cy: 104, r: 38 }, 'white', { accent: true, lineColor: 'dark' }),
+    s('circle', { cx: 80, cy: 104, r: 38 }, 'gray', { accent: true }),
     ...eyes(66, 94, 98, 5),
     s('path', { d: 'M74 110h12l-6 6z' }, 'pink'),
-    s('rect', { x: 74, y: 118, width: 12, height: 10, rx: 2 }, 'white', { lineColor: 'dark' })
+    s('rect', { x: 74, y: 118, width: 12, height: 10, rx: 2 }, 'cream')
   ],
   'león': [
     s('path', { d: bumps(80, 82, 52, 12, 16), 'stroke-linejoin': 'round' }, 'orange', { accent: true }),
