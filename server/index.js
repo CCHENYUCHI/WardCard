@@ -13,6 +13,7 @@ const { extractSpanishWords, calibrateDeleLevels, analyzeSentence, lookupWordAi,
 const {
   translationHash, findOwnTranslation, findSharedTranslation, saveTranslation, listTranslations, deleteTranslation
 } = require('./translations');
+const { recordLookup, setLookupTranslation, listLookups, deleteLookup, clearLookups } = require('./lookupHistory');
 const { splitArticle, normalizeWord } = require('./cardUtils');
 const { getDict, lookupForm, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
 const { reviewCardFSRS } = require('./fsrs');
@@ -1097,6 +1098,19 @@ app.get('/api/dictionary/lookup', authenticateToken, (req, res) => {
     }
     const aiEntry = getCachedEntry(q) || (context?.lemma ? getCachedEntry(context.lemma) : null);
 
+    // Same lemma / meaning priority as WordLookupPanel; a failed write must not fail the lookup
+    try {
+      recordLookup(db, {
+        userId: req.user.userId,
+        query: q,
+        lemma: context?.lemma || myCards[0]?.word || aiEntry?.word || lemmas[0] || '',
+        translation: context?.zh || myCards[0]?.translation || aiEntry?.translation || '',
+        source: req.query.source === 'tap' ? 'tap' : 'dictionary'
+      });
+    } catch (err) {
+      console.error('Lookup History Error:', err.message);
+    }
+
     res.json({
       query: q,
       wiktionary,
@@ -1143,7 +1157,10 @@ app.post('/api/dictionary/ai', authenticateToken, async (req, res) => {
     if (!q || !normalizeWord(q)) return res.status(400).json({ error: '請輸入要查的字' });
 
     const cached = getCachedEntry(q);
-    if (cached) return res.json({ card: cached, cached: true });
+    if (cached) {
+      setLookupTranslation(db, req.user.userId, q, cached.translation);
+      return res.json({ card: cached, cached: true });
+    }
 
     const apiKey = resolveApiKey(req);
     if (!apiKey) return res.status(400).json({ error: NO_KEY_ERROR });
@@ -1153,10 +1170,41 @@ app.post('/api/dictionary/ai', authenticateToken, async (req, res) => {
     save.run(normalizeWord(q), JSON.stringify(card), model);
     // Also cache under the dictionary form, so "fui" and "ir" share one entry
     if (normalizeWord(card.word) !== normalizeWord(q)) save.run(normalizeWord(card.word), JSON.stringify(card), model);
+    setLookupTranslation(db, req.user.userId, q, card.translation);
     res.json({ card, cached: false });
   } catch (err) {
     console.error('Dictionary AI Error:', err.message);
     res.status(err.status || 500).json({ error: err.message || 'AI 查詢失敗' });
+  }
+});
+
+// The user's lookup history, one row per word
+app.get('/api/dictionary/history', authenticateToken, (req, res) => {
+  try {
+    const q = String(req.query.q || '').slice(0, 80);
+    const sort = req.query.sort === 'count' ? 'count' : 'recent';
+    const offset = Math.max(0, parseInt(req.query.offset, 10) || 0);
+    res.json(listLookups(db, req.user.userId, { q, sort, offset }));
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.delete('/api/dictionary/history/:id', authenticateToken, (req, res) => {
+  try {
+    const id = parseInt(req.params.id, 10);
+    if (!deleteLookup(db, req.user.userId, id)) return res.status(404).json({ error: '找不到這筆查詢紀錄' });
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.delete('/api/dictionary/history', authenticateToken, (req, res) => {
+  try {
+    res.json({ success: true, deleted: clearLookups(db, req.user.userId) });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
   }
 });
 

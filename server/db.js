@@ -3,6 +3,7 @@ const { DatabaseSync } = require('node:sqlite');
 const path = require('path');
 const fs = require('fs');
 const { TRANSLATIONS_SCHEMA } = require('./translations');
+const { LOOKUP_HISTORY_SCHEMA } = require('./lookupHistory');
 
 const dataDir = path.join(__dirname, '../data');
 if (!fs.existsSync(dataDir)) {
@@ -199,6 +200,9 @@ function runMigrations() {
 
   // Sentence translator history (per user)
   db.exec(TRANSLATIONS_SCHEMA);
+
+  // Word lookup history (per user)
+  db.exec(LOOKUP_HISTORY_SCHEMA);
 }
 
 runMigrations();
