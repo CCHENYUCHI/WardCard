@@ -3,11 +3,12 @@
  * Check the hand-written lexicon: every entry follows the schema, stays short enough for a phone
  * screen and cites its sources; every illustration is a small, self-contained SVG.
  *
- * Usage: node server/scripts/lexicon/validate.js [lexiconDir] [svgDir]
+ * Usage: node server/scripts/lexicon/validate.js [lexiconDir] [svgDir] [--only <theme>]
  */
 const fs = require('fs');
 const path = require('path');
 const { normalizeWord } = require('../../cardUtils');
+const { lexiconKey, svgFileName } = require('../../lexicon');
 
 const DEFAULT_LEXICON_DIR = path.join(__dirname, '../../data/lexicon/a1');
 const DEFAULT_SVG_DIR = path.join(__dirname, '../../../client/public/lexicon');
@@ -53,20 +54,21 @@ function validateSvg(text) {
   return errors;
 }
 
-function validateAll(lexiconDir = DEFAULT_LEXICON_DIR, svgDir = DEFAULT_SVG_DIR) {
+function validateAll(lexiconDir = DEFAULT_LEXICON_DIR, svgDir = DEFAULT_SVG_DIR, only = null) {
   const problems = [];
   const seen = new Map();
   let count = 0;
-  for (const file of fs.readdirSync(lexiconDir).filter(f => f.endsWith('.json')).sort()) {
+  const files = only ? [`${only}.json`] : fs.readdirSync(lexiconDir).filter(f => f.endsWith('.json')).sort();
+  for (const file of files) {
     const data = JSON.parse(fs.readFileSync(path.join(lexiconDir, file), 'utf8'));
     for (const e of data.entries || []) {
       count++;
-      const key = normalizeWord(e.word);
+      const key = lexiconKey(e.word);
       if (seen.has(key)) problems.push(`${file}: ${e.word} duplicates ${seen.get(key)}`);
       seen.set(key, file);
       for (const err of validateEntry(e)) problems.push(`${file}: ${e.word}: ${err}`);
       if (e.image === 'svg') {
-        const svgPath = path.join(svgDir, `${key}.svg`);
+        const svgPath = path.join(svgDir, svgFileName(e.word));
         if (!fs.existsSync(svgPath)) problems.push(`${file}: ${e.word}: missing ${path.relative(process.cwd(), svgPath)}`);
         else for (const err of validateSvg(fs.readFileSync(svgPath, 'utf8'))) problems.push(`${file}: ${e.word}: ${err}`);
       }
@@ -78,8 +80,11 @@ function validateAll(lexiconDir = DEFAULT_LEXICON_DIR, svgDir = DEFAULT_SVG_DIR)
 module.exports = { validateEntry, validateSvg, validateAll };
 
 if (require.main === module) {
-  const [lexiconDir, svgDir] = process.argv.slice(2);
-  const { count, problems } = validateAll(lexiconDir || DEFAULT_LEXICON_DIR, svgDir || DEFAULT_SVG_DIR);
+  const args = process.argv.slice(2);
+  const onlyAt = args.indexOf('--only');
+  const only = onlyAt >= 0 ? args.splice(onlyAt, 2)[1] : null;
+  const [lexiconDir, svgDir] = args;
+  const { count, problems } = validateAll(lexiconDir || DEFAULT_LEXICON_DIR, svgDir || DEFAULT_SVG_DIR, only);
   for (const p of problems) console.error(`✗ ${p}`);
   console.log(`${count} entries, ${problems.length} problem(s)`);
   process.exit(problems.length ? 1 : 0);

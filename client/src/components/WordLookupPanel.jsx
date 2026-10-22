@@ -3,9 +3,12 @@ import { Sparkles, Plus, Check, ExternalLink } from 'lucide-react';
 import { lookupWord, analyzeSentence, aiLookup, addToInbox, POS_LABELS, genderLabel, describeForm, STATUS_LABELS } from '../utils/dictionary';
 import { displayWord, normalizeAnswer, stripAccents } from '../utils/spanish';
 import SpeakButton from './SpeakButton';
+import StoryCard from './StoryCard';
 
 const sameWord = (a, b) => stripAccents(normalizeAnswer(a)) === stripAccents(normalizeAnswer(b));
 const ARTICLE_BY_GENDER = { masculino: 'el', femenino: 'la' };
+const GENDER_BY_ARTICLE = { el: 'masculino', la: 'femenino' };
+const CARD_POS = new Set(Object.keys(POS_LABELS));
 // Nouns are read with their article (la casa), like the rest of the app
 const wiktSpeech = (item) => (
   item.part_of_speech === 'sustantivo' && ARTICLE_BY_GENDER[item.gender]
@@ -57,8 +60,9 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
   const myCards = result.myCards || [];
   const entry = aiCard || result.aiEntry;
   const wiktionary = result.wiktionary || [];
-  const lemma = context?.lemma || myCards[0]?.word || entry?.word || wiktionary[0]?.lemma || word;
-  const zh = context?.zh || myCards[0]?.translation || entry?.translation || '';
+  const story = result.story || null;
+  const lemma = context?.lemma || myCards[0]?.word || entry?.word || wiktionary[0]?.lemma || story?.word || word;
+  const zh = context?.zh || myCards[0]?.translation || entry?.translation || story?.zh || '';
   const meaningsShown = compact ? 2 : 6;
 
   const handleAnalyze = async () => {
@@ -106,6 +110,21 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
           notes: context.usage
         };
       }
+      if (!card && story) {
+        // The hand-written lexicon already has everything a card needs: no AI call
+        const wikt = wiktionary.find(w => w.lemma === story.word);
+        card = {
+          word: story.word,
+          article: story.article,
+          gender: wikt?.gender && wikt.gender !== 'none' ? wikt.gender : (GENDER_BY_ARTICLE[story.article] || 'none'),
+          part_of_speech: CARD_POS.has(story.pos) ? story.pos : 'frase',
+          translation: story.zh,
+          english_translation: story.en,
+          example_es: story.example_es,
+          example_zh: story.example_zh,
+          notes: story.usage_zh
+        };
+      }
       if (!card) card = await aiLookup(wiktionary[0]?.lemma || word); // translation is required
       const res = await addToInbox(card);
       setAddState(res.created ? 'added' : 'exists');
@@ -115,7 +134,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
     }
   };
 
-  const nothingFound = !zh && wiktionary.length === 0 && myCards.length === 0;
+  const nothingFound = !zh && wiktionary.length === 0 && myCards.length === 0 && !story;
 
   return (
     <div className="lookup-panel">
@@ -158,6 +177,8 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
           {!compact && entry.notes && <div className="lookup-sub lookup-notes">{entry.notes}</div>}
         </div>
       )}
+
+      <StoryCard story={story} compact={compact} />
 
       {wiktionary.slice(0, meaningsShown).map(item => (
         <div key={`${item.lemma}|${item.pos}`} className="lookup-wikt">

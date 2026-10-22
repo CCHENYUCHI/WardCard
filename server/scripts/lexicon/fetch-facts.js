@@ -99,13 +99,24 @@ async function ancestors(origins, depth, seen) {
 
 async function collect(word) {
   const entries = (await fetchEntries('Spanish', word)).filter(e => e.word === word);
-  const lemmas = entries.filter(e => !(e.senses || []).every(s => s.form_of)).map(summarize);
+  let lemmas = entries.filter(e => !(e.senses || []).every(s => s.form_of)).map(summarize);
+  let base = null;
+  if (lemmas.length === 0) {
+    // levantarse, vacaciones, peor are filed as forms of levantar, vacación, malo: tell the base word's story
+    const target = entries.flatMap(e => (e.senses || []).flatMap(s => s.form_of || [])).map(f => f.word).find(Boolean)
+      || (/[^s]se$/.test(word) ? word.slice(0, -2) : null);
+    if (target && target !== word) {
+      base = target;
+      lemmas = (await fetchEntries('Spanish', target)).filter(e => e.word === target && !(e.senses || []).every(s => s.form_of)).map(summarize);
+    }
+  }
   const origins = lemmas.flatMap(l => l.etymology.origins);
   const parts = lemmas.flatMap(l => l.etymology.parts.flatMap(p => p.items.map(item => ({ kind: 'part', lang: p.lang, word: item }))));
   return {
     word,
     source: 'Wiktionary via kaikki.org (CC BY-SA)',
     fetched_at: new Date().toISOString(),
+    base, // the lemma these facts belong to when the word itself is only an inflected form
     entries: lemmas,
     ancestors: await ancestors([...origins, ...parts.filter(p => p.lang !== 'es')], 1, new Set())
   };

@@ -8,6 +8,7 @@ import { playSpanishPronunciation } from '../utils/speech';
 import { shuffleArray } from '../utils/shuffle';
 import ProgressRing from './ProgressRing';
 import TappableSentence from './TappableSentence';
+import { CardStory } from './StoryCard';
 import {
   stripArticle, normalizeAnswer, getAcceptableAnswers,
   findInflectedForms, maskSentence, displayWord, pickDistractors
@@ -934,6 +935,11 @@ export default function AdaptiveStudySession({
               </div>
             )}
           </div>
+        )}
+
+        {/* Word story from the lexicon, only once the answer is shown (never before answering) */}
+        {(isFlipped || spellingStatus !== 'typing') && (
+          <div className="study-story"><CardStory word={currentCard.word} /></div>
         )}
 
         {/* Bottom Rating Bar (Triggered when flipped or incorrect in Stage 3) */}

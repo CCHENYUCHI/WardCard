@@ -23,6 +23,21 @@ export async function lookupWord(q, sentence = '') {
 // Results change after an AI call or after adding a card
 export const clearLookupCache = () => lookupCache.clear();
 
+const lexiconCache = new Map(); // word -> lexicon entry or null, per page load
+
+/** Hand-written lexicon entry (story, memory hook, picture) for a card's word, or null. */
+export async function getLexiconEntry(word) {
+  const key = String(word || '').trim().toLowerCase();
+  if (!key) return null;
+  if (!lexiconCache.has(key)) {
+    lexiconCache.set(key, fetchAPI(`/api/lexicon?${new URLSearchParams({ word: key })}`)
+      .then(res => readJson(res, '查詢失敗'))
+      .then(data => data.entry)
+      .catch(err => { lexiconCache.delete(key); throw err; }));
+  }
+  return lexiconCache.get(key);
+}
+
 /** AI word-by-word analysis of a whole sentence (cached on the server, shared). */
 export async function analyzeSentence(sentence) {
   const data = await readJson(await fetchAPI('/api/sentences/analyze', {
