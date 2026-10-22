@@ -3427,3 +3427,131 @@ textarea {
     transition: none;
   }
 }
+
+/* ===== Dictionary extras: IPA, forms, etymology, examples (DictionaryExtras.jsx) ===== */
+.dx-root,
+.dx-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dx-ipa {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.dx-fold > summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--google-blue);
+  padding: 6px 0;
+  list-style-position: inside;
+}
+
+.dx-fold > summary:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.dx-section {
+  border-top: 1px solid var(--border-color);
+}
+
+.dx-lazy {
+  border-top: 1px solid var(--border-color);
+  margin-top: 4px;
+}
+
+.dx-nonfinite,
+.dx-inflection,
+.dx-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  font-size: 0.85rem;
+  padding-bottom: 6px;
+}
+
+.dx-nf-label,
+.dx-chip-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.dx-chip,
+.dx-chain-item {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  padding: 1px 10px;
+  overflow-wrap: anywhere;
+}
+
+.dx-arrow {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.dx-tenses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 10px;
+  padding-bottom: 8px;
+}
+
+.dx-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.dx-table caption {
+  caption-side: top;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 4px 2px;
+}
+
+.dx-table th,
+.dx-table td {
+  padding: 3px 8px;
+  text-align: left;
+  border-top: 1px solid var(--border-color);
+}
+
+.dx-table th {
+  font-weight: 400;
+  color: var(--text-muted);
+  width: 48%;
+}
+
+.dx-table td {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.dx-text {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.dx-examples {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-style: italic;
+}

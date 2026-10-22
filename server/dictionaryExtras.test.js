@@ -17,7 +17,8 @@ const HABLAR = {
   senses: [{ glosses: ['to talk'], examples: [
     { text: 'No me gusta hablar con mis amigos sobre política.', english: "I don't like talking about politics with my friends.", translation: "I don't like talking about politics with my friends." },
     { text: 'Una cita sin traducción.' },
-    { text: 'hablar tonteras', english: 'talk nonsense', type: 'quotation' },
+    { text: 'hablar tonteras', english: 'talk nonsense', type: 'example' },
+    { text: 'Una frase antigua y larga.', english: 'An old quotation.', type: 'quotation' },
     { text: '¿¡Qué hablas!?', english: 'What the hell are you talking about!?' },
     { text: 'Tercer ejemplo.', english: 'Third example.' }
   ] }],

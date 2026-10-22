@@ -4,6 +4,7 @@ import { lookupWord, analyzeSentence, aiLookup, addToInbox, POS_LABELS, genderLa
 import { displayWord, normalizeAnswer, stripAccents } from '../utils/spanish';
 import SpeakButton from './SpeakButton';
 import StoryCard from './StoryCard';
+import DictionaryExtras from './DictionaryExtras';
 
 const sameWord = (a, b) => stripAccents(normalizeAnswer(a)) === stripAccents(normalizeAnswer(b));
 const ARTICLE_BY_GENDER = { masculino: 'el', femenino: 'la' };
@@ -191,6 +192,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
           {item.glosses.length > 0 && (
             <div className="lookup-gloss">{item.glosses.slice(0, compact ? 2 : 4).join('；')}</div>
           )}
+          {!compact && item.glosses.length > 0 && <DictionaryExtras lazy lemma={item.lemma} pos={item.pos} />}
         </div>
       ))}
 

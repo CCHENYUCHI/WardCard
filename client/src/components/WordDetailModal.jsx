@@ -1,6 +1,8 @@
 import React from 'react';
 import { X, Volume2, Edit3, Trash2, Star, Flame, Calendar, Award, BookOpen, Clock, CheckCircle } from 'lucide-react';
 import { playSpanishPronunciation } from '../utils/speech';
+import DictionaryExtras from './DictionaryExtras';
+import StoryCard from './StoryCard';
 
 export default function WordDetailModal({ 
   card, 
@@ -174,6 +176,11 @@ export default function WordDetailModal({
             </div>
           </div>
         )}
+
+        {/* Offline dictionary: pronunciation, forms, etymology, examples, A1 story */}
+        <div style={{ marginBottom: '16px' }}>
+          <DictionaryExtras cardId={card.id} renderStory={story => <StoryCard story={story} />} />
+        </div>
 
         {/* FSRS Learning Metrics Grid */}
         <div style={{ 

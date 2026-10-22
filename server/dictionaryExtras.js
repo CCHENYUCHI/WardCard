@@ -37,14 +37,17 @@ function cleanForms(rawForms) {
   return out;
 }
 
-/** Up to two example sentences that carry an English translation: [[es, en]] */
+const looksLikeSentence = (text) => /[.!?]/.test(text) || text.split(/\s+/).length >= 4;
+
+/** Up to two example sentences (not phrases or quotations) that carry an English translation: [[es, en]] */
 function pickExamples(senses) {
   const out = [];
   for (const sense of senses || []) {
     for (const ex of sense.examples || []) {
       const es = String(ex.text || '').trim();
       const en = String(ex.english || ex.translation || '').trim();
-      if (!es || !en || es.length > MAX_EXAMPLE_CHARS || ex.type === 'quotation') continue;
+      // Quotations are long and archaic; collocations ("hablar tonteras") are phrases, not sentences
+      if (!es || !en || es.length > MAX_EXAMPLE_CHARS || ex.type === 'quotation' || !looksLikeSentence(es)) continue;
       if (out.some(([seen]) => seen === es)) continue;
       out.push([es, en]);
       if (out.length >= MAX_EXAMPLES) return out;
