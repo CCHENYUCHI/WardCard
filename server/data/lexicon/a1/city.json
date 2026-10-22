@@ -1,0 +1,2921 @@
+{
+  "theme": "city",
+  "theme_zh": "城市與交通",
+  "entries": [
+    {
+      "word": "ciudad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "城市",
+      "en": "city",
+      "ipa": "/θjuˈdad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cīvitātem",
+          "zh": "城邦、城市（cīvitās 的受格）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cibdat",
+          "zh": "城市"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ciudad",
+          "zh": "城市"
+        }
+      ],
+      "cognates_en": [
+        "city",
+        "civil"
+      ],
+      "story_zh": "ciudad 一路繼承自拉丁文 cīvitātem。在古西班牙語裡它寫成 cibdat，中間的 b 後來消失，就成了今天的 ciudad。英文的 city 和它來自同一個拉丁字。",
+      "hook_zh": "ciu-dad 開頭和 city 一樣：想像 city 裡每個街角都有一位 dad（爸爸）在散步。",
+      "usage_zh": "-dad 結尾的名詞都是陰性：la ciudad、la universidad。",
+      "example_es": "Vivo en una ciudad grande.",
+      "example_zh": "我住在一個大城市。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ciudad"
+      ]
+    },
+    {
+      "word": "pueblo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "城鎮、村莊；人民、民族",
+      "en": "town, village; people",
+      "ipa": "/ˈpweblo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*poplos",
+          "zh": "軍隊"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "populus",
+          "zh": "人民、民族"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "pueblo",
+          "zh": "人民；村鎮"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pueblo",
+          "zh": "城鎮；人民"
+        }
+      ],
+      "cognates_en": [
+        "people",
+        "popular",
+        "population"
+      ],
+      "story_zh": "pueblo 來自拉丁文 populus「人民、民族」，更早的形式 poplos 可能源自原始義大利語的「軍隊」，再往前就不清楚了。拉丁文的「一群人」到了西班牙語，也指一群人住的「小鎮、村子」。英文的 people、popular 都是它的親戚。",
+      "hook_zh": "pueblo ≈ people：一群 people 住在一起，就是一個 pueblo（小鎮）。",
+      "usage_zh": "pueblo 比 ciudad 小；也可指「民族、人民」：el pueblo taiwanés。",
+      "example_es": "Mis abuelos viven en un pueblo pequeño.",
+      "example_zh": "我的祖父母住在一個小村莊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pueblo",
+        "wiktionary:la:populus"
+      ]
+    },
+    {
+      "word": "calle",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "街道、馬路",
+      "en": "street",
+      "ipa": "/ˈkaʝe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "callis",
+          "zh": "小路、崎嶇的石子路"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cal, calle",
+          "zh": "街道"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "calle",
+          "zh": "街道"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "calle 來自拉丁文 callis（受格 callem），原意是「小路、步道」，也指崎嶇的石子路。羅馬人腳下的山間小徑，到了西班牙語成了城市裡的「街道」。",
+      "hook_zh": "ll 多數地方唸 /ʝ/：calle 聽起來像「卡耶」——「車卡在街上耶！」",
+      "usage_zh": "地址寫法：Calle Mayor, 5（Mayor 街 5 號）；「在街上」說 en la calle。",
+      "example_es": "Mi casa está en esta calle.",
+      "example_zh": "我家在這條街上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:calle",
+        "wiktionary:la:callis"
+      ]
+    },
+    {
+      "word": "plaza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "廣場；座位、名額",
+      "en": "town square, plaza",
+      "ipa": "/ˈplaθa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "πλατεῖα ὁδός (plateîa hodós)",
+          "zh": "寬闊的路"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "πλατεῖα (plateîa)",
+          "zh": "（省略成一個字）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "platea",
+          "zh": "寬街、廣場"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "plaza",
+          "zh": "廣場"
+        }
+      ],
+      "cognates_en": [
+        "place",
+        "plaza"
+      ],
+      "story_zh": "plaza 源自希臘文 plateîa hodós「寬闊的路」，後來只留下 plateîa，進入拉丁文成為 platea，西語再半學術地借來。一條寬路，變成城裡最寬敞的廣場。法文 place、葡萄牙文 praça 都是同一個字。",
+      "hook_zh": "英文 place 也是同源：城裡最重要的 place，就是中央的 plaza。",
+      "usage_zh": "Plaza Mayor 是西班牙城市的主廣場；也指名額、座位：No hay plazas.",
+      "example_es": "Nos vemos en la plaza a las cinco.",
+      "example_zh": "我們五點在廣場見。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:plaza"
+      ]
+    },
+    {
+      "word": "barrio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "街區、社區",
+      "en": "neighborhood",
+      "ipa": "/ˈbarjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "barriyy",
+          "zh": "野外的"
+        },
+        {
+          "lang_zh": "安達魯斯阿拉伯語",
+          "word": "barriyy",
+          "zh": "外面的（城外地區）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "barrio",
+          "zh": "街區、社區"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "barrio 借自安達魯斯阿拉伯語 barriyy「外面的」，指城市外圍、比較沒那麼都市化的地區；再往前是古典阿拉伯語的「野外的」。原本是「城外」，現在泛指城裡的各個社區。",
+      "hook_zh": "barrio 原本是「城外」，現在是「我家附近那一區」：想像下樓就能買菜、聊天的小社區。",
+      "usage_zh": "mi barrio = 我住的這一區；在拉美有時特指貧民區。",
+      "example_es": "Mi barrio es muy tranquilo.",
+      "example_zh": "我住的社區很安靜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:barrio"
+      ]
+    },
+    {
+      "word": "centro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "中心；市中心",
+      "en": "center; downtown",
+      "ipa": "/ˈθentɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "κεντέω (kentéō)",
+          "zh": "刺"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "κέντρον (kéntron)",
+          "zh": "尖點"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "centrum",
+          "zh": "中心"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "centro",
+          "zh": "中心；市中心"
+        }
+      ],
+      "cognates_en": [
+        "center",
+        "central"
+      ],
+      "story_zh": "centro 借自拉丁文 centrum，源頭是希臘文 kéntron「尖點」，來自動詞 kentéō「刺」。從「刺下去的那一點」，變成了拉丁文的「中心」。",
+      "hook_zh": "想像圓規的尖腳「刺」在紙上——那一點就是 centro。",
+      "usage_zh": "ir al centro = 去市中心；en el centro de… = 在…的中間。",
+      "example_es": "Vamos al centro en autobús.",
+      "example_zh": "我們搭公車去市中心。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:centro",
+        "wiktionary:la:centrum"
+      ]
+    },
+    {
+      "word": "parque",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "公園",
+      "en": "park",
+      "ipa": "/ˈpaɾke/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "parc",
+          "zh": "公園"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "parque",
+          "zh": "公園"
+        }
+      ],
+      "cognates_en": [
+        "park"
+      ],
+      "story_zh": "parque 借自法文 parc，最早在 1607 年的西語文獻中出現。英文的 park 和它長得幾乎一樣。",
+      "hook_zh": "parque 就是 park 加上 -que：週末去 parque 野餐。",
+      "usage_zh": "parque de atracciones = 遊樂園；parque infantil = 兒童遊戲區。",
+      "example_es": "Los niños juegan en el parque.",
+      "example_zh": "孩子們在公園玩。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:parque"
+      ]
+    },
+    {
+      "word": "edificio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "建築物、大樓",
+      "en": "building",
+      "ipa": "/ediˈfiθjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "aedificō",
+          "zh": "建造"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "aedificium",
+          "zh": "建築物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "edificio",
+          "zh": "建築物、大樓"
+        }
+      ],
+      "cognates_en": [
+        "edifice"
+      ],
+      "story_zh": "edificio 借自拉丁文 aedificium「建築物」，由動詞 aedificō「建造」加上名詞字尾 -ium 而成。英文比較正式的 edifice（大型建築）是同一個字。",
+      "hook_zh": "edificio ≈ edifice：想像一棟高高的大樓，每一層窗戶都亮著燈。",
+      "usage_zh": "edificio 指整棟建築；裡面的一戶公寓叫 piso（西）/ departamento（拉美）。",
+      "example_es": "Vivo en un edificio de diez pisos.",
+      "example_zh": "我住在一棟十層樓的大樓裡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:edificio",
+        "wiktionary:la:aedificium"
+      ]
+    },
+    {
+      "word": "tienda",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "商店；帳篷",
+      "en": "shop, store; tent",
+      "ipa": "/ˈtjenda/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tendō",
+          "zh": "拉開、伸展"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*tendita",
+          "zh": "拉開的（布）"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "tenda",
+          "zh": "布篷、帳篷"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tienda",
+          "zh": "帳篷；商店"
+        }
+      ],
+      "cognates_en": [
+        "tent"
+      ],
+      "story_zh": "tienda 原本是「帳篷」！它來自晚期拉丁文 tenda「用布遮蓋的地方」，源頭是動詞 tendō「拉開、伸展」——把布拉開撐起來，就是帳篷。英文的 tent 是同一個字；西語今天最常用它指「商店」。",
+      "hook_zh": "想像市集攤販都在 tent 下做生意：tent → tienda，帳篷變商店。",
+      "usage_zh": "tienda de campaña = 露營帳篷；ir de tiendas = 逛街購物。",
+      "example_es": "La tienda abre a las nueve.",
+      "example_zh": "這家店九點開門。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tienda",
+        "wiktionary:la:tenda",
+        "wiktionary:la:tendo"
+      ]
+    },
+    {
+      "word": "mercado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "市場",
+      "en": "market",
+      "ipa": "/meɾˈkado/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mercātus",
+          "zh": "市場、交易"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mercado",
+          "zh": "市場"
+        }
+      ],
+      "cognates_en": [
+        "market"
+      ],
+      "story_zh": "mercado 是從拉丁文 mercātus 一路傳下來的字，意思幾乎沒變：買賣交易的地方。英文的 market 也是它的親戚。",
+      "hook_zh": "mercado ≈ market：早上去 mercado 買新鮮水果和魚。",
+      "usage_zh": "mercado 多指傳統市場；超市是 supermercado。",
+      "example_es": "Compro fruta en el mercado.",
+      "example_zh": "我在市場買水果。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mercado"
+      ]
+    },
+    {
+      "word": "supermercado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "超級市場",
+      "en": "supermarket",
+      "ipa": "/ˌsupeɾmeɾˈkado/",
+      "breakdown": [
+        {
+          "part": "super-",
+          "zh": "超級"
+        },
+        {
+          "part": "mercado",
+          "zh": "市場"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "supermarket",
+          "zh": "超級市場"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "super- + mercado",
+          "zh": "（逐字仿譯）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "supermercado",
+          "zh": "超級市場"
+        }
+      ],
+      "cognates_en": [
+        "supermarket"
+      ],
+      "story_zh": "supermercado 是英文 supermarket 的「仿譯詞」：把 super- 加到西語原本的 mercado（市場）上，一個零件一個零件翻譯過來。",
+      "hook_zh": "super + mercado = 超級＋市場，跟中文「超市」的組法一模一樣！",
+      "usage_zh": "口語常縮成 el súper：Voy al súper.",
+      "example_es": "Voy al supermercado los sábados.",
+      "example_zh": "我每週六去超市。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:supermercado"
+      ]
+    },
+    {
+      "word": "banco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "銀行；長椅",
+      "en": "bank; bench",
+      "ipa": "/ˈbanko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始日耳曼語",
+          "word": "*bankiz",
+          "zh": "長凳"
+        },
+        {
+          "lang_zh": "古法語",
+          "word": "bank",
+          "zh": "長凳"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "banco",
+          "zh": "長椅；銀行"
+        }
+      ],
+      "cognates_en": [
+        "bank",
+        "bench"
+      ],
+      "story_zh": "banco 借自古法文 bank，源頭是原始日耳曼語 *bankiz。西語的 banco 一個字同時是「長椅」和「銀行」；英文則把它分成了 bench（長椅）和 bank（銀行）兩個字，兩個都是它的親戚。",
+      "hook_zh": "想像有人坐在公園長椅上數鈔票——banco 既是長椅，也是銀行。",
+      "usage_zh": "公園長椅也叫 banco：sentarse en un banco；銀行業是 la banca。",
+      "example_es": "Necesito ir al banco.",
+      "example_zh": "我需要去銀行一趟。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:banco"
+      ]
+    },
+    {
+      "word": "farmacia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "藥局",
+      "en": "pharmacy, drugstore",
+      "ipa": "/faɾˈmaθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "φάρμακον (phármakon)",
+          "zh": "藥；符咒、魔法"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "φαρμακεία (pharmakeía)",
+          "zh": "用藥"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "pharmacia",
+          "zh": "藥學"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "farmacia",
+          "zh": "藥局"
+        }
+      ],
+      "cognates_en": [
+        "pharmacy"
+      ],
+      "story_zh": "farmacia 是從中世紀拉丁文 pharmacia 借來的學術詞，源自希臘文 pharmakeía「用藥」。再往前的 phármakon 既是「藥」，也是「符咒、魔法」——藥和魔咒，在希臘文裡是同一個字。",
+      "hook_zh": "西語把 ph 都寫成 f：pharmacy → farmacia，photo → foto。",
+      "usage_zh": "farmacia de guardia = 夜間或假日值班的藥局；藥局門口常有綠十字。",
+      "example_es": "La farmacia está al lado del banco.",
+      "example_zh": "藥局在銀行旁邊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:farmacia",
+        "wiktionary:la:pharmacia"
+      ]
+    },
+    {
+      "word": "hospital",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "醫院",
+      "en": "hospital",
+      "ipa": "/ospiˈtal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "hospes",
+          "zh": "主人；客人"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "hospitālis",
+          "zh": "好客的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "hospitāle",
+          "zh": "客房、旅舍、收容所"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hospital",
+          "zh": "醫院"
+        }
+      ],
+      "cognates_en": [
+        "hospital",
+        "hospitality",
+        "hotel"
+      ],
+      "story_zh": "hospital 來自晚期拉丁文 hospitāle「客房、旅舍」，也指修道院裡收留窮人、旅人和病人的地方。它源自 hospitālis「好客的」，再往前是 hospes「主人；客人」。西語的 hotel 和 hostal 都是它的雙式詞。",
+      "hook_zh": "hospital 和 hotel 是兄弟——都是收留客人的地方，只是一個治病、一個睡覺。",
+      "usage_zh": "h 不發音，重音在最後：os-pi-TAL；複數 hospitales。",
+      "example_es": "Mi madre trabaja en un hospital.",
+      "example_zh": "我媽媽在一家醫院工作。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hospital",
+        "wiktionary:la:hospitale",
+        "wiktionary:la:hospitalis"
+      ]
+    },
+    {
+      "word": "iglesia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "教堂；教會",
+      "en": "church",
+      "ipa": "/iˈɡlesja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἐκκλησία (ekklēsía)",
+          "zh": "集會"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ecclēsia",
+          "zh": "教會；教堂"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "eclesia",
+          "zh": "教會"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "eglesia",
+          "zh": "教堂"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "iglesia",
+          "zh": "教堂"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "iglesia 來自希臘文 ekklēsía，原本指古希臘城邦公民的「集會」。拉丁文借成 ecclēsia，意思變成教會和教堂；9 世紀的古西班牙語寫作 eglesia，最後演變成 iglesia。",
+      "hook_zh": "i-GLES-ia ≈ ec-CLES-ia：鐘聲一響，全村的人都來教堂「集會」。",
+      "usage_zh": "大寫 la Iglesia 指教會組織；小寫 iglesia 是教堂建築。",
+      "example_es": "La iglesia está en la plaza.",
+      "example_zh": "教堂就在廣場上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:iglesia",
+        "wiktionary:la:ecclesia"
+      ]
+    },
+    {
+      "word": "museo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "博物館、美術館",
+      "en": "museum",
+      "ipa": "/muˈseo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "Μοῦσα (Moûsa)",
+          "zh": "繆思女神"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "Μουσεῖον (Mouseîon)",
+          "zh": "繆思的殿堂"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "museum",
+          "zh": "繆思的神殿；收藏品"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "museo",
+          "zh": "博物館"
+        }
+      ],
+      "cognates_en": [
+        "museum"
+      ],
+      "story_zh": "museo 源自希臘文 Mouseîon「繆思女神的殿堂」，繆思（Moûsa）是掌管藝術與學問的女神。拉丁文 museum 後來也指收藏品、圖書館，於是成了今天的「博物館」。",
+      "hook_zh": "museo ≈ museum：館裡住著靈感女神 Muse（繆思）。",
+      "usage_zh": "重音在 se：mu-SE-o；馬德里的 Museo del Prado 是著名美術館。",
+      "example_es": "El domingo vamos al museo.",
+      "example_zh": "星期天我們去博物館。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:museo",
+        "wiktionary:la:museum"
+      ]
+    },
+    {
+      "word": "biblioteca",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "圖書館；書櫃",
+      "en": "library; bookcase",
+      "ipa": "/bibljoˈteka/",
+      "breakdown": [
+        {
+          "part": "biblio-",
+          "zh": "書"
+        },
+        {
+          "part": "-teca",
+          "zh": "存放處、櫃子"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "βιβλίον + θήκη (biblíon + thḗkē)",
+          "zh": "書 + 箱子、存放處"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "βιβλιοθήκη (bibliothḗkē)",
+          "zh": "圖書館"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "bibliothēca",
+          "zh": "圖書館、藏書"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "biblioteca",
+          "zh": "圖書館"
+        }
+      ],
+      "cognates_en": [
+        "Bible"
+      ],
+      "story_zh": "biblioteca 來自希臘文 bibliothḗkē，由 biblíon（書）和 thḗkē（箱子、存放處）組成，字面上就是「放書的地方」。西語至今也用它指家裡的「書櫃」。",
+      "hook_zh": "biblio = 書（Bible 就是「那本書」），-teca = 存放處：放書的地方。",
+      "usage_zh": "假朋友！biblioteca 是圖書館；librería 是書店，不是 library。",
+      "example_es": "Estudio en la biblioteca.",
+      "example_zh": "我在圖書館讀書。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:biblioteca",
+        "wiktionary:la:bibliotheca"
+      ]
+    },
+    {
+      "word": "cine",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "電影院；電影（藝術）",
+      "en": "cinema, movie theater",
+      "ipa": "/ˈθine/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "κίνημα (kínēma)",
+          "zh": "運動、動作"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cinema",
+          "zh": "電影"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cine",
+          "zh": "電影院（縮短）"
+        }
+      ],
+      "cognates_en": [
+        "cinema"
+      ],
+      "story_zh": "cine 是 cinema 的縮短，源頭是希臘文 kínēma「運動、動作」。電影就是「會動的畫面」，名字裡就藏著「動」。",
+      "hook_zh": "螢幕上的畫面在「動」＝cine。抱著爆米花走進 cine 吧！",
+      "usage_zh": "ir al cine = 去看電影；el cine 也指電影藝術：el cine español。",
+      "example_es": "¿Vamos al cine esta noche?",
+      "example_zh": "我們今晚去看電影好嗎？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cine"
+      ]
+    },
+    {
+      "word": "teatro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "劇院；戲劇",
+      "en": "theater",
+      "ipa": "/teˈatɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "θεάομαι (theáomai)",
+          "zh": "看、觀察"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "θέατρον (théatron)",
+          "zh": "觀看的地方"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "theātrum",
+          "zh": "劇場、舞台"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "teatro",
+          "zh": "劇院；戲劇"
+        }
+      ],
+      "cognates_en": [
+        "theater"
+      ],
+      "story_zh": "teatro 來自拉丁文 theātrum，再往前是希臘文 théatron「觀看的地方」，由動詞 theáomai「看、觀察」而來。劇場這個字，重點就是「讓人看」。",
+      "hook_zh": "teatro ≈ theater：西語沒有 th 拼法，直接寫成 t。",
+      "usage_zh": "obra de teatro = 舞台劇；ir al teatro = 去看戲。",
+      "example_es": "Esta noche vamos al teatro.",
+      "example_zh": "我們今晚去劇院。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:teatro",
+        "wiktionary:la:theatrum"
+      ]
+    },
+    {
+      "word": "restaurante",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "餐廳",
+      "en": "restaurant",
+      "ipa": "/restauˈɾante/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "restaurant",
+          "zh": "餐廳"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "restaurante",
+          "zh": "餐廳"
+        }
+      ],
+      "cognates_en": [
+        "restaurant"
+      ],
+      "story_zh": "restaurante 借自法文 restaurant，西語借用時在字尾多加了一個 -e。英文的 restaurant 也來自同一個法文字。",
+      "hook_zh": "restaurante = restaurant + e。進門說：Una mesa para dos, por favor.",
+      "usage_zh": "結帳時說 La cuenta, por favor（請給我帳單）。",
+      "example_es": "Comemos en un restaurante chino.",
+      "example_zh": "我們在一家中國餐廳吃飯。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:restaurante"
+      ]
+    },
+    {
+      "word": "bar",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "酒吧、小酒館（也賣咖啡小吃）",
+      "en": "bar, café",
+      "ipa": "/ˈbaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "bar",
+          "zh": "酒吧"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bar",
+          "zh": "酒吧、小酒館"
+        }
+      ],
+      "cognates_en": [
+        "bar"
+      ],
+      "story_zh": "bar 直接借自英文 bar。它和西語本來就有的 barra（吧台、棒子）是雙式詞——同一個來源，分成了兩個字。",
+      "hook_zh": "西班牙的 bar 從早開到晚：早上喝咖啡、中午吃 tapas、晚上喝一杯。",
+      "usage_zh": "複數 bares；西班牙的 bar 是日常小館，不一定是夜店。",
+      "example_es": "Tomamos un café en el bar.",
+      "example_zh": "我們在小酒館喝杯咖啡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bar"
+      ]
+    },
+    {
+      "word": "cafetería",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "咖啡館；自助餐館",
+      "en": "café, coffee shop",
+      "ipa": "/kafeteˈɾia/",
+      "breakdown": [
+        {
+          "part": "cafet(era)",
+          "zh": "咖啡壺"
+        },
+        {
+          "part": "-ería",
+          "zh": "店"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cafetera",
+          "zh": "咖啡壺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cafetería",
+          "zh": "咖啡館"
+        }
+      ],
+      "cognates_en": [
+        "cafeteria"
+      ],
+      "story_zh": "cafetería 由 cafetera（咖啡壺）的前半 cafet- 加上表示店鋪的字尾 -ería 組成：有咖啡壺的店，就是咖啡館。",
+      "hook_zh": "-ería = 店：cafetería 咖啡店、panadería 麵包店、peluquería 美髮店。",
+      "usage_zh": "重音在 í：ca-fe-te-RÍ-a；-ería 結尾都是陰性。",
+      "example_es": "Desayuno en una cafetería.",
+      "example_zh": "我在一家咖啡館吃早餐。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cafetería"
+      ]
+    },
+    {
+      "word": "hotel",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "飯店、旅館",
+      "en": "hotel",
+      "ipa": "/oˈtel/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "hôtel",
+          "zh": "旅館；公館"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hotel",
+          "zh": "飯店"
+        }
+      ],
+      "cognates_en": [
+        "hotel",
+        "hospital"
+      ],
+      "story_zh": "hotel 借自法文 hôtel。它和 hospital（醫院）、hostal（小旅館）是「雙式詞」——來自同一個源頭，各自走出不同的路。",
+      "hook_zh": "h 不發音：唸「歐-TEL」。hotel、hostal、hospital 三兄弟都在招待客人。",
+      "usage_zh": "h 不發音，重音在後：o-TEL；hostal 是較便宜的小旅館。",
+      "example_es": "El hotel está cerca de la playa.",
+      "example_zh": "飯店在海灘附近。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hotel"
+      ]
+    },
+    {
+      "word": "estación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "車站；季節",
+      "en": "station; season",
+      "ipa": "/estaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "statiō",
+          "zh": "站立、停留的地方"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "estacion",
+          "zh": "停留處"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estación",
+          "zh": "車站；季節"
+        }
+      ],
+      "cognates_en": [
+        "station"
+      ],
+      "story_zh": "estación 是古西班牙語從拉丁文 statiō 借來的學術詞，和英文 station 同源。西語在 st- 開頭前習慣加上 e-（像 student → estudiante）。它也有「季節」的意思。",
+      "hook_zh": "四季（las estaciones）就像火車一年停靠的四個站：春、夏、秋、冬。",
+      "usage_zh": "estación de tren / de metro；las cuatro estaciones = 四季。",
+      "example_es": "La estación de tren está lejos.",
+      "example_zh": "火車站很遠。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estación"
+      ]
+    },
+    {
+      "word": "aeropuerto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "機場",
+      "en": "airport",
+      "ipa": "/ˌaeɾoˈpweɾto/",
+      "breakdown": [
+        {
+          "part": "aero-",
+          "zh": "空氣、航空"
+        },
+        {
+          "part": "puerto",
+          "zh": "港口"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "aero- + puerto",
+          "zh": "航空 + 港口"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aeropuerto",
+          "zh": "機場"
+        }
+      ],
+      "cognates_en": [
+        "airport",
+        "port"
+      ],
+      "story_zh": "aeropuerto 由 aero-（空氣、航空）和 puerto（港口）組成：飛機的「港口」，和英文 airport 的構造一模一樣。",
+      "hook_zh": "aero（空中）+ puerto（港口）＝空中的港口，飛機在這裡「靠岸」。",
+      "usage_zh": "ir al aeropuerto 去機場；llegar al aeropuerto 抵達機場。",
+      "example_es": "Vamos al aeropuerto en taxi.",
+      "example_zh": "我們搭計程車去機場。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aeropuerto"
+      ]
+    },
+    {
+      "word": "playa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "海灘、海邊",
+      "en": "beach",
+      "ipa": "/ˈplaʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "plaga",
+          "zh": "地帶、區域"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "plagia",
+          "zh": "斜坡；海灘"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "playa",
+          "zh": "海灘"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "playa 來自晚期拉丁文 plagia「斜坡；海灘」。它可能是拉丁文 plaga「地帶、區域」和希臘文 plágia「側面、山坡」混在一起的結果。法文 plage、葡萄牙文 praia 都是它的親戚。",
+      "hook_zh": "playa 像 play：夏天去 playa 玩（play）水、堆沙堡！",
+      "usage_zh": "ir a la playa = 去海邊；拉美有些地方 playa 也指停車場。",
+      "example_es": "En verano vamos a la playa.",
+      "example_zh": "夏天我們去海邊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:playa",
+        "wiktionary:la:plagia",
+        "wiktionary:la:plaga"
+      ]
+    },
+    {
+      "word": "oficina",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "辦公室",
+      "en": "office",
+      "ipa": "/ofiˈθina/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "officīna",
+          "zh": "工坊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "oficina",
+          "zh": "辦公室"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "oficina 是借自拉丁文 officīna 的學術詞，原意是「工作坊」。西語至今還留著「工坊」和藥局「調配室」的舊意思，但日常就是「辦公室」。",
+      "hook_zh": "oficina 長得像 office 拉長版：o-fi-ci-na，坐在電腦前上班的地方。",
+      "usage_zh": "trabajar en una oficina 在辦公室工作；郵局也叫 oficina de correos。",
+      "example_es": "Trabajo en una oficina en el centro.",
+      "example_zh": "我在市中心的一間辦公室工作。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:oficina"
+      ]
+    },
+    {
+      "word": "universidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "大學",
+      "en": "university",
+      "ipa": "/unibeɾsiˈdad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūnus + versus",
+          "zh": "一 + 轉"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūniversus",
+          "zh": "合為一體的、全體的"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "universitātem",
+          "zh": "整體；團體"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "universidat",
+          "zh": "大學"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "universidad",
+          "zh": "大學"
+        }
+      ],
+      "cognates_en": [
+        "university",
+        "universe"
+      ],
+      "story_zh": "universidad 來自拉丁文 universitās「整體」，源自 ūniversus：ūnus（一）+ versus（轉），字面是「轉成一體」。這個字也指「一群人組成的團體」，後來成了「大學」。",
+      "hook_zh": "universidad 和 universe 是親戚：大學什麼都學，像一個小宇宙。",
+      "usage_zh": "-dad 結尾是陰性：la universidad；上大學 ir a la universidad。",
+      "example_es": "Mi hermana estudia en la universidad.",
+      "example_zh": "我姊姊在讀大學。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:universidad",
+        "wiktionary:la:universitas",
+        "wiktionary:la:universus"
+      ]
+    },
+    {
+      "word": "policía",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "警方、警察局；警察（人）",
+      "en": "police; police officer",
+      "ipa": "/poliˈθia/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "πολιτεία (politeía)",
+          "zh": "城邦治理"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "politīa",
+          "zh": "國家、政府、行政"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "policía",
+          "zh": "秩序；警察"
+        }
+      ],
+      "cognates_en": [
+        "police",
+        "politics"
+      ],
+      "story_zh": "policía 來自拉丁文 politīa「國家、行政」，再往前是希臘文 politeía。西語的 policía 也有「公共秩序、文明、整潔」這些老意思——維持秩序的人，就是警察。英文的 police 也是同一個字。",
+      "hook_zh": "重音在 í：po-li-CÍ-a，想像警察吹哨「嗶——」拉長那個 í。",
+      "usage_zh": "la policía = 警方；el / la policía = 一位男 / 女警察。",
+      "example_es": "Llama a la policía, por favor.",
+      "example_zh": "請打電話報警。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:policía",
+        "wiktionary:la:politia"
+      ]
+    },
+    {
+      "word": "semáforo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "紅綠燈",
+      "en": "traffic light",
+      "ipa": "/seˈmafoɾo/",
+      "breakdown": [
+        {
+          "part": "sema-",
+          "zh": "信號"
+        },
+        {
+          "part": "-foro",
+          "zh": "攜帶者"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "σῆμα + -φορος (sêma + -phoros)",
+          "zh": "信號 + 攜帶的"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "sémaphore",
+          "zh": "信號機"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "semáforo",
+          "zh": "紅綠燈"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "semáforo 借自法文 sémaphore，由希臘文 sêma「信號」和 -phoros「攜帶者」組成，字面是「帶著信號的東西」。它原本也指旗語、信號機，現在西語用來說路口的紅綠燈。",
+      "hook_zh": "sema（信號）+ foro（帶著）：紅綠燈就是「舉著信號的柱子」。",
+      "usage_zh": "重音在 má：se-MÁ-fo-ro；紅燈 el semáforo está en rojo。",
+      "example_es": "Gira a la derecha en el semáforo.",
+      "example_zh": "在紅綠燈那裡右轉。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:semáforo"
+      ]
+    },
+    {
+      "word": "esquina",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "（街）角、轉角",
+      "en": "corner",
+      "ipa": "/esˈkina/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始日耳曼語",
+          "word": "*skinō",
+          "zh": "邊緣、薄片"
+        },
+        {
+          "lang_zh": "哥德語",
+          "word": "*skina",
+          "zh": "（構擬形）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esquina",
+          "zh": "轉角"
+        }
+      ],
+      "cognates_en": [
+        "shin"
+      ],
+      "story_zh": "esquina 來自哥德語 *skina，再往前是原始日耳曼語 *skinō「邊緣、薄片」。它和英文 shin（小腿前側的脛骨）、法文 échine（動物的脊骨）同源。",
+      "hook_zh": "esquina ≈ shin：走路不看路，小腿（shin）就撞上桌子的角（esquina）！",
+      "usage_zh": "en la esquina = 在街角；房間的內角常用 rincón。",
+      "example_es": "El banco está en la esquina.",
+      "example_zh": "銀行在轉角。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esquina"
+      ]
+    },
+    {
+      "word": "puente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "橋；連假",
+      "en": "bridge; long weekend",
+      "ipa": "/ˈpwente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pontem（pōns）",
+          "zh": "橋"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "puente",
+          "zh": "橋"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "puente",
+          "zh": "橋；連假"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "puente 來自拉丁文 pontem（pōns 的受格），意思就是「橋」。法文 pont、義大利文 ponte 都是親戚。西語還用 puente 指「連假」：夾在兩個假日中間的那天也休息，像一座橋把假期接起來。",
+      "hook_zh": "hacer puente = 搭一座橋，把週末和國定假日連成連假！",
+      "usage_zh": "陽性：el puente（法文 le pont 也是陽性）；Este puente vamos a la playa.",
+      "example_es": "Cruzamos el puente a pie.",
+      "example_zh": "我們走路過橋。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:puente",
+        "wiktionary:la:pons"
+      ]
+    },
+    {
+      "word": "coche",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "汽車；（火車）車廂",
+      "en": "car",
+      "ipa": "/ˈkot͡ʃe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "匈牙利語",
+          "word": "kocsi",
+          "zh": "Kocs 村的（馬車）"
+        },
+        {
+          "lang_zh": "德語",
+          "word": "Kutsche",
+          "zh": "馬車"
+        },
+        {
+          "lang_zh": "中古法語",
+          "word": "coche",
+          "zh": "馬車"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "coche",
+          "zh": "汽車"
+        }
+      ],
+      "cognates_en": [
+        "coach"
+      ],
+      "story_zh": "coche 的源頭是匈牙利小村 Kocs！15 世紀那裡造出有新式懸吊系統的馬車，叫 kocsi（Kocs 的）。這個字經德文 Kutsche、法文 coche 傳進西語，從馬車變成汽車；英文的 coach 也是同一個字。",
+      "hook_zh": "從匈牙利 Kocs 村的馬車到你家的汽車，coche 一路「叩叩叩」跑來。",
+      "usage_zh": "西班牙說 coche，拉美多說 carro 或 auto；開車去 = ir en coche。",
+      "example_es": "Voy al trabajo en coche.",
+      "example_zh": "我開車去上班。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:coche"
+      ]
+    },
+    {
+      "word": "autobús",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "公車、巴士",
+      "en": "bus",
+      "ipa": "/autoˈbus/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "autobus",
+          "zh": "公車"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "autobús",
+          "zh": "公車"
+        }
+      ],
+      "cognates_en": [
+        "bus"
+      ],
+      "story_zh": "autobús 借自法文 autobus。西語的重音落在最後的 -bús，所以要加上重音符號；日常也常縮短成 bus。",
+      "hook_zh": "記法：auto（汽車）+ bus（巴士）＝ autobús，一台大大的公車。",
+      "usage_zh": "搭公車 en autobús；複數 autobuses。墨西哥說 camión，阿根廷說 colectivo。",
+      "example_es": "Tomo el autobús a las ocho.",
+      "example_zh": "我八點搭公車。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:autobús"
+      ]
+    },
+    {
+      "word": "metro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "地鐵、捷運；公尺",
+      "en": "subway, metro; meter",
+      "ipa": "/ˈmetɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "métropolitain",
+          "zh": "大都會的（鐵路）"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "métro",
+          "zh": "地鐵（縮短）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "metro",
+          "zh": "地鐵"
+        }
+      ],
+      "cognates_en": [
+        "metro",
+        "meter"
+      ],
+      "story_zh": "「地鐵」的 metro 借自法文 métro，是 métropolitain「大都會的（鐵路）」的縮短。另一個同形字 metro「公尺」則來自法文 mètre、希臘文 métron「測量」——兩個字只是剛好長得一樣。",
+      "hook_zh": "坐一站 metro（捷運），大約要跑一千 metros（公尺）。",
+      "usage_zh": "搭地鐵 ir en metro；metro 也是長度單位：cien metros。",
+      "example_es": "Voy a la universidad en metro.",
+      "example_zh": "我搭地鐵去大學。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:metro"
+      ]
+    },
+    {
+      "word": "tren",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "火車",
+      "en": "train",
+      "ipa": "/ˈtɾen/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "train",
+          "zh": "列車"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tren",
+          "zh": "火車"
+        }
+      ],
+      "cognates_en": [
+        "train"
+      ],
+      "story_zh": "tren 借自法文 train，和英文的 train 是同一個字，西語照自己的發音拼成 tren。",
+      "hook_zh": "tren ≈ train：少了一個 a，車廂也少一節，照樣「嘟嘟」開走。",
+      "usage_zh": "搭火車 ir en tren；上車 subir al tren；下車 bajar del tren。",
+      "example_es": "El tren sale a las diez.",
+      "example_zh": "火車十點出發。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tren"
+      ]
+    },
+    {
+      "word": "avión",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "飛機",
+      "en": "airplane, plane",
+      "ipa": "/aˈbjon/",
+      "breakdown": [
+        {
+          "part": "ave",
+          "zh": "鳥"
+        },
+        {
+          "part": "-ón",
+          "zh": "大"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "avis",
+          "zh": "鳥"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "avion",
+          "zh": "飛機"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "avión",
+          "zh": "飛機"
+        }
+      ],
+      "cognates_en": [
+        "aviation"
+      ],
+      "story_zh": "avión 借自法文 avion，源頭是拉丁文 avis「鳥」，相當於西語的 ave（鳥）加上表示「大」的字尾 -ón：一隻「大鳥」。",
+      "hook_zh": "飛機就是 ave（鳥）+ -ón（大）＝一隻會載人的大鳥！",
+      "usage_zh": "搭飛機 en avión；複數 aviones（重音符號消失）。",
+      "example_es": "Viajamos a Madrid en avión.",
+      "example_zh": "我們搭飛機去馬德里。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:avión",
+        "wiktionary:la:avis"
+      ]
+    },
+    {
+      "word": "barco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "船",
+      "en": "boat, ship",
+      "ipa": "/ˈbaɾko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "barca",
+          "zh": "小船"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "barco",
+          "zh": "船"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "barco 是 barca（小船）改成陽性形式的字：同一個字換了性別，就多了一個新詞。",
+      "hook_zh": "想像船上的狗對著海鷗一直 bark（叫）——barco 出航了！",
+      "usage_zh": "坐船 en barco；barca 是小划船，barco 是一般的船。",
+      "example_es": "Vamos a la isla en barco.",
+      "example_zh": "我們坐船去島上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:barco"
+      ]
+    },
+    {
+      "word": "bicicleta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "腳踏車",
+      "en": "bicycle, bike",
+      "ipa": "/biθiˈkleta/",
+      "breakdown": [
+        {
+          "part": "bi-",
+          "zh": "二"
+        },
+        {
+          "part": "cicl-",
+          "zh": "圓圈、輪子"
+        },
+        {
+          "part": "-eta",
+          "zh": "小"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語＋古希臘語",
+          "word": "bi- + κύκλος (kúklos)",
+          "zh": "二 + 圓圈、輪子"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "bicyclette",
+          "zh": "腳踏車"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bicicleta",
+          "zh": "腳踏車"
+        }
+      ],
+      "cognates_en": [
+        "bicycle",
+        "cycle"
+      ],
+      "story_zh": "bicicleta 借自法文 bicyclette，由拉丁文 bi-（二）和希臘文 kúklos（圓圈、輪子）組成：「兩個輪子」的車。也可以看成 biciclo（兩輪車）加上表示「小」的字尾 -eta。",
+      "hook_zh": "bi（二）+ cicl（輪）＝兩輪車；口語縮成 bici。",
+      "usage_zh": "騎腳踏車 andar / montar en bicicleta；口語 la bici。",
+      "example_es": "Voy al parque en bicicleta.",
+      "example_zh": "我騎腳踏車去公園。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bicicleta",
+        "wiktionary:la:bi-"
+      ]
+    },
+    {
+      "word": "moto",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "機車、摩托車",
+      "en": "motorbike, motorcycle",
+      "ipa": "/ˈmoto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "motocicleta",
+          "zh": "摩托車"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "moto",
+          "zh": "機車（縮短）"
+        }
+      ],
+      "cognates_en": [
+        "motorcycle"
+      ],
+      "story_zh": "moto 是 motocicleta（摩托車）的縮短。雖然結尾是 -o，它仍保留 motocicleta 的陰性：la moto。",
+      "hook_zh": "台灣滿街都是 moto——但別忘了它是「女生」：la moto！",
+      "usage_zh": "陰性 la moto，因為是 la motocicleta 的縮短；同理 la foto。",
+      "example_es": "Mi hermano tiene una moto roja.",
+      "example_zh": "我哥哥有一台紅色機車。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:moto"
+      ]
+    },
+    {
+      "word": "taxi",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "計程車",
+      "en": "taxi, cab",
+      "ipa": "/ˈtaɡsi/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "taxímetro",
+          "zh": "計程表（跳錶）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "taxi",
+          "zh": "計程車（縮短）"
+        }
+      ],
+      "cognates_en": [
+        "taxi"
+      ],
+      "story_zh": "taxi 是 taxímetro（計程表）的縮短：一台裝著跳錶的車，就叫 taxi。",
+      "hook_zh": "taxi 唸 /ˈtaɡsi/，像「塔個悉」；黃色小車頂上亮著燈。",
+      "usage_zh": "搭計程車 tomar un taxi；西班牙也說 coger un taxi（拉美別用 coger）。",
+      "example_es": "Tomamos un taxi al hotel.",
+      "example_zh": "我們搭計程車去飯店。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:taxi"
+      ]
+    },
+    {
+      "word": "billete",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "票（車票、機票）；紙鈔",
+      "en": "ticket; banknote",
+      "ipa": "/biˈʝete/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "billet",
+          "zh": "票；字條"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "billete",
+          "zh": "票；紙鈔"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "billete 借自法文 billet。在西語裡它同時是「車票、機票」和「紙鈔」，兩者都是一張印好的小紙片。",
+      "hook_zh": "想成英文 bill（紙鈔）：付一張 bill，換一張 billete（車票）。",
+      "usage_zh": "西班牙說 billete（車票），拉美多說 boleto；電影、演唱會票是 entrada。",
+      "example_es": "Compro un billete de tren.",
+      "example_zh": "我買一張火車票。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:billete"
+      ]
+    },
+    {
+      "word": "viaje",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "旅行、旅程",
+      "en": "trip, journey",
+      "ipa": "/biˈaxe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "via",
+          "zh": "道路"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "viāticum",
+          "zh": "（與路途有關的）"
+        },
+        {
+          "lang_zh": "加泰隆尼亞語",
+          "word": "viatge",
+          "zh": "旅行"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "viaje",
+          "zh": "旅行"
+        }
+      ],
+      "cognates_en": [
+        "voyage",
+        "via"
+      ],
+      "story_zh": "viaje 借自加泰隆尼亞語 viatge，源頭是拉丁文 viāticum，由 via（道路）加上形容詞字尾 -āticus 組成，意思是「和路途有關的」。英文的 voyage 也是它的親戚。",
+      "hook_zh": "via 是路：上路前大家會對你說 ¡Buen viaje!（一路順風）",
+      "usage_zh": "-aje 結尾的名詞是陽性：el viaje；去旅行 hacer un viaje / irse de viaje。",
+      "example_es": "Hacemos un viaje a Japón en julio.",
+      "example_zh": "我們七月要去日本旅行。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:viaje"
+      ]
+    },
+    {
+      "word": "maleta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "行李箱",
+      "en": "suitcase",
+      "ipa": "/maˈleta/",
+      "breakdown": [
+        {
+          "part": "mala",
+          "zh": "旅行箱（較大的箱子）"
+        },
+        {
+          "part": "-eta",
+          "zh": "小"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "mala",
+          "zh": "大箱子、旅行箱"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "maleta",
+          "zh": "行李箱"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "maleta 是 mala（旅行箱）加上表示「小」的字尾 -eta。mala 原本指比較大的箱子、行李櫃，加上 -eta，就成了手拉的行李箱。",
+      "hook_zh": "別和 malo（壞）搞混：maleta 是出國前塞得滿滿的行李箱。",
+      "usage_zh": "hacer la maleta = 收拾行李；阿根廷等地也說 valija。",
+      "example_es": "Mi maleta es muy pesada.",
+      "example_zh": "我的行李箱很重。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:maleta"
+      ]
+    },
+    {
+      "word": "mapa",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "地圖",
+      "en": "map",
+      "ipa": "/ˈmapa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mappa",
+          "zh": "餐巾；起跑信號布；地圖"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mapa",
+          "zh": "地圖"
+        }
+      ],
+      "cognates_en": [
+        "map"
+      ],
+      "story_zh": "mapa 來自拉丁文 mappa，原本是「餐巾」，也指賽跑起跑時揮動的那塊布。羅馬作家昆體良說它源自布匿語（迦太基人的語言），後來這塊「布」才有了「地圖」的意思。",
+      "hook_zh": "想像羅馬人在一塊餐巾上畫出回家的路——mappa 就是那塊布。",
+      "usage_zh": "陽性陷阱：el mapa（不是 la）；同類還有 el día、el problema。",
+      "example_es": "¿Tienes un mapa de la ciudad?",
+      "example_zh": "你有這個城市的地圖嗎？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mapa",
+        "wiktionary:la:mappa"
+      ]
+    },
+    {
+      "word": "camino",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "路、小路；路線",
+      "en": "way, path, road",
+      "ipa": "/kaˈmino/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "高盧語",
+          "word": "*kamman",
+          "zh": "路、步伐"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "cammīnus",
+          "zh": "路、小徑"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "camino",
+          "zh": "路"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "camino",
+          "zh": "路、路線"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "camino 來自中世紀拉丁文 cammīnus，但它不是道地的拉丁字，而是借自高盧語——羅馬時代住在今天法國一帶的凱爾特語言。它最早在 7 世紀末西班牙的文獻中出現；法文 chemin 是它的親戚。",
+      "hook_zh": "caminar（走路）走出來的就是 camino；El Camino de Santiago 是有名的朝聖之路。",
+      "usage_zh": "en el camino = 在路上；問路：¿Cuál es el camino a la estación?",
+      "example_es": "Este camino va al pueblo.",
+      "example_zh": "這條路通往村莊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:camino",
+        "wiktionary:la:camminus"
+      ]
+    },
+    {
+      "word": "carretera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "公路",
+      "en": "road, highway",
+      "ipa": "/kareˈteɾa/",
+      "breakdown": [
+        {
+          "part": "carreta",
+          "zh": "馬車、貨車"
+        },
+        {
+          "part": "-era",
+          "zh": "與…有關的地方"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "carreta",
+          "zh": "馬車、貨車"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "carretera",
+          "zh": "公路"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "carretera 由 carreta（馬車、貨車）加上字尾 -era 組成，可以理解成「讓車走的路」。",
+      "hook_zh": "carreta 是馬車，carretera 是給車跑的路——字尾多出的 -era 就像一段長長的路。",
+      "usage_zh": "carretera 是城市之間的公路；城市裡的街道用 calle。",
+      "example_es": "La carretera está cerrada por la nieve.",
+      "example_zh": "公路因為下雪封閉了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:carretera"
+      ]
+    },
+    {
+      "word": "derecha",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "右邊；右派",
+      "en": "right (side, direction)",
+      "ipa": "/deˈɾet͡ʃa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dīrēctus",
+          "zh": "直的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "derecho",
+          "zh": "直的；右的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "derecha",
+          "zh": "右邊"
+        }
+      ],
+      "cognates_en": [
+        "direct"
+      ],
+      "story_zh": "derecha 是 derecho 的陰性形，源自拉丁文 directus「直的」。葡萄牙文 direita、法文 droite、義大利文 dritta 也都是同一個字：「右」和「直、正」是同一個詞。",
+      "hook_zh": "derecha ≈ direct；英文 right 也同時是「右」和「對」。",
+      "usage_zh": "a la derecha = 在右邊；別混淆 todo derecho（一直直走）。",
+      "example_es": "El hotel está a la derecha.",
+      "example_zh": "飯店在右邊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:derecha"
+      ]
+    },
+    {
+      "word": "izquierda",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "左邊；左派",
+      "en": "left (side, direction)",
+      "ipa": "/iθˈkjeɾda/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "巴斯克語",
+          "word": "ezkerra（ezker）",
+          "zh": "左"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "izquierda",
+          "zh": "左邊"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "izquierda 不是拉丁字，而是借自巴斯克語 ezker「左」的 ezkerra 形。它取代了拉丁系的舊字 siniestra；加泰隆尼亞語 esquerra、葡萄牙語 esquerda 也一樣來自巴斯克語。",
+      "hook_zh": "伸出左手比個 L（Left）——iz-QUIER-da，左邊的字也最拗口。",
+      "usage_zh": "a la izquierda = 在左邊；問路常聽 Gire a la izquierda（請左轉）。",
+      "example_es": "Gira a la izquierda en la esquina.",
+      "example_zh": "在轉角左轉。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:izquierda"
+      ]
+    },
+    {
+      "word": "recto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "直的；（todo recto）一直直走",
+      "en": "straight",
+      "ipa": "/ˈreɡto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "regō",
+          "zh": "使直、引導"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "rēctus",
+          "zh": "直的；正確的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "recto",
+          "zh": "直的"
+        }
+      ],
+      "cognates_en": [
+        "rectangle",
+        "correct"
+      ],
+      "story_zh": "recto 借自拉丁文 rēctus「直的、正確的」，它是動詞 regō「使直、引導」的過去分詞。英文的 rectangle（長方形）、correct 都和它有關。",
+      "hook_zh": "rectangle 的四個邊都很 recto；問路聽到 todo recto，就一直往前走。",
+      "usage_zh": "問路常聽 Siga todo recto（一直直走）；陰性 recta：una línea recta。",
+      "example_es": "Sigue todo recto y luego a la derecha.",
+      "example_zh": "一直直走，然後右轉。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:recto",
+        "wiktionary:la:rectus"
+      ]
+    },
+    {
+      "word": "norte",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "北方、北",
+      "en": "north",
+      "ipa": "/ˈnoɾte/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古英語",
+          "word": "norþ",
+          "zh": "北"
+        },
+        {
+          "lang_zh": "古法語",
+          "word": "nort",
+          "zh": "北"
+        },
+        {
+          "lang_zh": "中古法語",
+          "word": "nord",
+          "zh": "北"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "norte",
+          "zh": "北"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "norte",
+          "zh": "北方"
+        }
+      ],
+      "cognates_en": [
+        "north"
+      ],
+      "story_zh": "norte 竟然來自英語！古英語 norþ 被古法語借成 nort，再經中古法語 nord 傳進西班牙語。sur（南）和 oeste（西）也一樣，是從古英語經法語借來的。",
+      "hook_zh": "norte ≈ north：指南針的紅色指針永遠指向 norte。",
+      "usage_zh": "al norte de… = 在…以北；el norte de España = 西班牙北部。",
+      "example_es": "Vivo en el norte de Taiwán.",
+      "example_zh": "我住在台灣北部。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:norte"
+      ]
+    },
+    {
+      "word": "sur",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "南方、南",
+      "en": "south",
+      "ipa": "/ˈsuɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古英語",
+          "word": "suþ",
+          "zh": "南"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "sud",
+          "zh": "南"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sur",
+          "zh": "南方"
+        }
+      ],
+      "cognates_en": [
+        "south"
+      ],
+      "story_zh": "sur 借自法文 sud，而法文又借自古英語 suþ。所以西語的「南」和英文 south 是同一個字，只是先繞了法國一圈。",
+      "hook_zh": "sur ≈ south 去掉尾巴；Sudamérica 就是南美洲。",
+      "usage_zh": "al sur de… = 在…以南；América del Sur = 南美洲。",
+      "example_es": "Kaohsiung está en el sur de Taiwán.",
+      "example_zh": "高雄在台灣南部。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sur"
+      ]
+    },
+    {
+      "word": "oeste",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "西方、西",
+      "en": "west",
+      "ipa": "/oˈeste/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古英語",
+          "word": "west",
+          "zh": "西"
+        },
+        {
+          "lang_zh": "古法語",
+          "word": "ouest",
+          "zh": "西"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "ouest",
+          "zh": "西"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "oeste",
+          "zh": "西方"
+        }
+      ],
+      "cognates_en": [
+        "west"
+      ],
+      "story_zh": "oeste 借自法文 ouest，而法文的 ouest 又來自古英語 west。和 norte、sur 一樣，這個方位詞是從英語經法語繞進西班牙語的。",
+      "hook_zh": "oeste ≈ west：夕陽往 oeste 落下；西部牛仔片叫 película del Oeste。",
+      "usage_zh": "al oeste de… = 在…以西；東方是 este，別和 este（這個）搞混。",
+      "example_es": "El sol se pone por el oeste.",
+      "example_zh": "太陽從西邊落下。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:oeste"
+      ]
+    },
+    {
+      "word": "kilómetro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "公里",
+      "en": "kilometer",
+      "ipa": "/kiˈlometɾo/",
+      "breakdown": [
+        {
+          "part": "kilo-",
+          "zh": "千"
+        },
+        {
+          "part": "metro",
+          "zh": "公尺"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "kilo- + metro",
+          "zh": "千 + 公尺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "kilómetro",
+          "zh": "公里"
+        }
+      ],
+      "cognates_en": [
+        "kilometer"
+      ],
+      "story_zh": "kilómetro 由 kilo-（千）和 metro（公尺）組成：一千公尺，就是一公里。",
+      "hook_zh": "公路旁的里程牌寫著 km：每過一塊牌子，就跑了一千個 metros。",
+      "usage_zh": "重音在 ló：ki-LÓ-me-tro；縮寫 km；a dos kilómetros = 在兩公里外。",
+      "example_es": "El hotel está a dos kilómetros.",
+      "example_zh": "飯店在兩公里外。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:kilómetro"
+      ]
+    },
+    {
+      "word": "precio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "價格、價錢",
+      "en": "price",
+      "ipa": "/ˈpɾeθjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pretium",
+          "zh": "價值、價格；報酬"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "precio",
+          "zh": "價格"
+        }
+      ],
+      "cognates_en": [
+        "price",
+        "precious"
+      ],
+      "story_zh": "precio 是從拉丁文 pretium「價值、價格、報酬」借來的半學術詞。英文的 price 和 precious（珍貴的）都和它同源——值錢的東西，就很 precious。",
+      "hook_zh": "precio ≈ price：看到標價牌就問 ¿Qué precio tiene?",
+      "usage_zh": "問價錢更常說 ¿Cuánto cuesta?；precio alto / bajo = 貴 / 便宜。",
+      "example_es": "¿Cuál es el precio de este libro?",
+      "example_zh": "這本書的價格是多少？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:precio",
+        "wiktionary:la:pretium"
+      ]
+    },
+    {
+      "word": "dinero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "錢",
+      "en": "money",
+      "ipa": "/diˈneɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēnus",
+          "zh": "每次十個"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēnārius",
+          "zh": "第納流斯銀幣"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*dīnārius",
+          "zh": "銀幣"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "dinero",
+          "zh": "錢幣"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dinero",
+          "zh": "錢"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "dinero 來自羅馬銀幣 dēnārius，名字源自 dēnus「每次十個」，因為一枚銀幣值 10 個 as（銅幣）。從一種硬幣的名字，變成了所有的「錢」。",
+      "hook_zh": "dinero 裡藏著「十」：一枚羅馬銀幣值十個銅幣，叮叮噹噹全是 dinero。",
+      "usage_zh": "dinero 是不可數名詞：mucho dinero（很多錢），不用複數。",
+      "example_es": "No tengo mucho dinero.",
+      "example_zh": "我沒有很多錢。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dinero",
+        "wiktionary:la:denarius"
+      ]
+    },
+    {
+      "word": "euro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "歐元",
+      "en": "euro",
+      "ipa": "/ˈeuɾo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "euro"
+      ],
+      "story_zh": "",
+      "hook_zh": "euro 西語唸「欸-烏-囉」，不是英文的「尤囉」；€ 的兩條橫線像一個大大的 E。",
+      "usage_zh": "複數 euros：Cuesta diez euros；一分錢叫 céntimo。",
+      "example_es": "Son cinco euros, por favor.",
+      "example_zh": "總共五歐元，謝謝。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:euro"
+      ]
+    },
+    {
+      "word": "tarjeta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "卡片（信用卡、名片等）",
+      "en": "card",
+      "ipa": "/taɾˈxeta/",
+      "breakdown": [
+        {
+          "part": "tarja",
+          "zh": "牌子、盾牌"
+        },
+        {
+          "part": "-eta",
+          "zh": "小"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "tarja",
+          "zh": "牌子、盾牌"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tarjeta",
+          "zh": "卡片"
+        }
+      ],
+      "cognates_en": [
+        "target"
+      ],
+      "story_zh": "tarjeta 是 tarja（牌子、盾牌）加上表示「小」的字尾 -eta：一塊「小牌子」，也就是卡片。英文的 target（靶子）是它的親戚。",
+      "hook_zh": "結帳時說 Con tarjeta, por favor——把小牌子往機器上一刷！",
+      "usage_zh": "tarjeta de crédito = 信用卡；明信片 tarjeta postal；別和 carta（信）搞混。",
+      "example_es": "¿Puedo pagar con tarjeta?",
+      "example_zh": "我可以刷卡嗎？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tarjeta"
+      ]
+    },
+    {
+      "word": "compra",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "購買；買的東西",
+      "en": "purchase, shopping",
+      "ipa": "/ˈkompɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "comprar",
+          "zh": "買"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "compra",
+          "zh": "購買"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "compra 是從動詞 comprar（買）直接變來的名詞：「買」這個動作，以及買回來的東西。",
+      "hook_zh": "comprar 買 → compra 買的東西：提著大包小包回家。",
+      "usage_zh": "hacer la compra = 買菜、採購日用品；ir de compras = 逛街購物。",
+      "example_es": "Hago la compra los sábados.",
+      "example_zh": "我每週六去採購。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:compra"
+      ]
+    },
+    {
+      "word": "parada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "（公車等的）站、停靠站",
+      "en": "stop (bus stop)",
+      "ipa": "/paˈɾada/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "parar",
+          "zh": "停下"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "parada",
+          "zh": "停靠站"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "parada 是動詞 parar（停下）的陰性過去分詞，當名詞用：「停下來」這個動作，以及停下來的地方，例如公車站。",
+      "hook_zh": "parar 停 → parada：公車在 parada「啪」一聲停下來。",
+      "usage_zh": "parada de autobús = 公車站；大型車站用 estación。",
+      "example_es": "La parada de autobús está aquí.",
+      "example_zh": "公車站在這裡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:parada"
+      ]
+    },
+    {
+      "word": "cajero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "提款機；收銀員",
+      "en": "ATM; cashier",
+      "ipa": "/kaˈxeɾo/",
+      "breakdown": [
+        {
+          "part": "caja",
+          "zh": "箱子、錢箱、收銀台"
+        },
+        {
+          "part": "-ero",
+          "zh": "做…的人／物"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "caja",
+          "zh": "箱子、錢箱"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cajero",
+          "zh": "收銀員；提款機"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cajero 由 caja（箱子、錢箱、收銀台）加上字尾 -ero 組成：管錢箱的人就是收銀員；cajero automático 則是會自己吐錢的「自動錢箱」。",
+      "hook_zh": "caja 是錢箱：cajero 就是守著錢箱的人，或會吐鈔票的機器。",
+      "usage_zh": "提款機全稱 cajero automático；女性收銀員 la cajera。",
+      "example_es": "Hay un cajero en la esquina.",
+      "example_zh": "轉角有一台提款機。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cajero"
+      ]
+    },
+    {
+      "word": "correos",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "郵局",
+      "en": "post office",
+      "ipa": "/koˈreos/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "西班牙的 Correos 郵筒是黃色的，上面畫著號角：寄信就去 Correos。",
+      "usage_zh": "常用複數 Correos（郵局）；單數 correo = 郵件，correo electrónico = 電子郵件。",
+      "example_es": "Voy a Correos a enviar una carta.",
+      "example_zh": "我去郵局寄一封信。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:correos"
+      ]
+    },
+    {
+      "word": "gasolinera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "加油站",
+      "en": "gas station",
+      "ipa": "/ɡasoliˈneɾa/",
+      "breakdown": [
+        {
+          "part": "gasolina",
+          "zh": "汽油"
+        },
+        {
+          "part": "-era",
+          "zh": "地方"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "gasolina",
+          "zh": "汽油"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gasolinera",
+          "zh": "加油站"
+        }
+      ],
+      "cognates_en": [
+        "gasoline"
+      ],
+      "story_zh": "gasolinera 由 gasolina（汽油）加上字尾 -era 組成，就是「賣汽油的地方」。",
+      "hook_zh": "gasolina（汽油）+ -era（地方）＝加油站；機車沒油了就找 gasolinera。",
+      "usage_zh": "也說 estación de servicio；拉美部分地區說 bomba 或 grifo。",
+      "example_es": "Hay una gasolinera en la carretera.",
+      "example_zh": "公路上有一家加油站。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gasolinera"
+      ]
+    },
+    {
+      "word": "aparcamiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "停車場；停車",
+      "en": "parking lot; parking",
+      "ipa": "/apaɾkaˈmjento/",
+      "breakdown": [
+        {
+          "part": "aparcar",
+          "zh": "停車"
+        },
+        {
+          "part": "-miento",
+          "zh": "動作、地方"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "aparcar",
+          "zh": "停車"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aparcamiento",
+          "zh": "停車場；停車"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "aparcamiento 由動詞 aparcar（停車）加上名詞字尾 -miento 組成，可以指「停車」這個動作，也可以指停車的地方。",
+      "hook_zh": "記法：a-PARC-ar 裡藏著 park——把車 park 好，就在 aparcamiento。",
+      "usage_zh": "西班牙說 aparcamiento / parking；拉美說 estacionamiento（動詞 estacionar）。",
+      "example_es": "No hay aparcamiento cerca del centro.",
+      "example_zh": "市中心附近沒有停車位。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aparcamiento"
+      ]
+    },
+    {
+      "word": "zoo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "動物園",
+      "en": "zoo",
+      "ipa": "/ˈθoː/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "zoológico",
+          "zh": "動物園"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "zoo",
+          "zh": "動物園（縮短）"
+        }
+      ],
+      "cognates_en": [
+        "zoo"
+      ],
+      "story_zh": "zoo 是 zoológico（動物園）的縮短，和英文 zoo 的來歷一樣。",
+      "hook_zh": "西班牙的 z 要咬舌：zoo 唸起來像咬著舌頭說「搜」，獅子聽了都想笑。",
+      "usage_zh": "也說 el zoológico 或 parque zoológico。",
+      "example_es": "Los niños quieren ir al zoo.",
+      "example_zh": "孩子們想去動物園。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:zoo"
+      ]
+    },
+    {
+      "word": "castillo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "城堡",
+      "en": "castle",
+      "ipa": "/kasˈtiʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "castrum",
+          "zh": "堡壘、營寨"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "castellum",
+          "zh": "小堡壘、城堡"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "castiello",
+          "zh": "要塞、城堡"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "castillo",
+          "zh": "城堡"
+        }
+      ],
+      "cognates_en": [
+        "castle"
+      ],
+      "story_zh": "castillo 來自拉丁文 castellum，是 castrum「堡壘」加上表示「小」的字尾，字面上是「小堡壘」。古西班牙語寫作 castiello，後來變成 castillo。英文的 castle 也是同一個字。",
+      "hook_zh": "castillo ≈ castle，ll 唸 /ʝ/：「卡斯堤喲」——公主住在 castillo 裡。",
+      "usage_zh": "castillo de arena = 沙堡。",
+      "example_es": "Visitamos un castillo antiguo.",
+      "example_zh": "我們參觀了一座古老的城堡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:castillo",
+        "wiktionary:la:castellum"
+      ]
+    },
+    {
+      "word": "catedral",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "大教堂、主教座堂",
+      "en": "cathedral",
+      "ipa": "/kateˈdɾal/",
+      "breakdown": [
+        {
+          "part": "cátedra",
+          "zh": "（主教的）座位、講座"
+        },
+        {
+          "part": "-al",
+          "zh": "…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "καθέδρα (kathédrā)",
+          "zh": "座位"
+        },
+        {
+          "lang_zh": "教會拉丁語",
+          "word": "cathedrālis",
+          "zh": "主教座位的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "catedral",
+          "zh": "大教堂"
+        }
+      ],
+      "cognates_en": [
+        "cathedral"
+      ],
+      "story_zh": "catedral 來自教會拉丁文 cathedrālis，源頭是希臘文 kathédrā「座位」。大教堂就是主教「座位」所在的教堂；西語的 cátedra（講座、教授席位）也是同一個字。",
+      "hook_zh": "cathedral 去掉 h 就是 catedral：裡面放著主教的那把大椅子。",
+      "usage_zh": "陰性：la catedral（字尾 -al 不一定是陽性）。",
+      "example_es": "La catedral de Sevilla es enorme.",
+      "example_zh": "塞維亞大教堂非常大。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:catedral"
+      ]
+    },
+    {
+      "word": "ayuntamiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "市政府、市政廳；市議會",
+      "en": "city hall; town council",
+      "ipa": "/aʝuntaˈmjento/",
+      "breakdown": [
+        {
+          "part": "ayuntar",
+          "zh": "結合、聚集（古字）"
+        },
+        {
+          "part": "-miento",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ad- + iūnctus",
+          "zh": "向 + 連接的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "adiūnctus",
+          "zh": "連接的、相鄰的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ayuntar",
+          "zh": "結合、聚集"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ayuntamiento",
+          "zh": "市政府"
+        }
+      ],
+      "cognates_en": [
+        "join",
+        "junction"
+      ],
+      "story_zh": "ayuntamiento 由舊動詞 ayuntar「結合、聚集」加上 -miento 組成，源頭是拉丁文 adiūnctus（ad- + iūnctus「連接」）。它和 junto（一起）同源，只是 ayuntar 保留了拉丁文的 y 音。",
+      "hook_zh": "ayuntamiento 和 junto（一起）是親戚：全鎮代表聚在一起開會的地方。",
+      "usage_zh": "西班牙用 ayuntamiento；拉美多說 municipalidad 或 alcaldía。",
+      "example_es": "El ayuntamiento está en la plaza.",
+      "example_zh": "市政府在廣場上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ayuntamiento",
+        "wiktionary:la:adiunctus"
+      ]
+    },
+    {
+      "word": "tráfico",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "交通、車流；非法買賣",
+      "en": "traffic",
+      "ipa": "/ˈtɾafiko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "traffico",
+          "zh": "交易；往來"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tráfico",
+          "zh": "交通"
+        }
+      ],
+      "cognates_en": [
+        "traffic"
+      ],
+      "story_zh": "tráfico 借自義大利文 traffico，和英文 traffic 長得幾乎一樣。除了「車流」，它也有「非法買賣、走私」的意思，例如 tráfico de drogas（販毒）。",
+      "hook_zh": "tráfico ≈ traffic：塞在車陣裡嘆氣說 Hay mucho tráfico…",
+      "usage_zh": "Hay mucho tráfico = 車很多、塞車；重音在 trá：TRÁ-fi-co。",
+      "example_es": "Hay mucho tráfico en el centro.",
+      "example_zh": "市中心車很多。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tráfico"
+      ]
+    },
+    {
+      "word": "ruido",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "噪音、聲響",
+      "en": "noise",
+      "ipa": "/ˈrwido/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rūgiō",
+          "zh": "吼叫、驢叫"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "rugītus",
+          "zh": "驢叫聲、吼聲"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "roýdo",
+          "zh": "噪音"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ruido",
+          "zh": "噪音"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ruido 來自拉丁文 rugītus，指驢子的叫聲或野獸的吼聲，源自動詞 rūgiō「吼叫」。從動物的吼聲，變成了所有吵人的聲音。西語的 rugido（吼聲）是它的雙式詞。",
+      "hook_zh": "ruido 開頭的 r 要彈舌，像獅子低吼：rrr-uido！",
+      "usage_zh": "hacer ruido = 發出噪音；Hay mucho ruido = 很吵。",
+      "example_es": "Hay mucho ruido en esta calle.",
+      "example_zh": "這條街很吵。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ruido",
+        "wiktionary:la:rugitus"
+      ]
+    },
+    {
+      "word": "peluquería",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "美髮院、理髮店",
+      "en": "hair salon, hairdresser's",
+      "ipa": "/pelukeˈɾia/",
+      "breakdown": [
+        {
+          "part": "peluca",
+          "zh": "假髮"
+        },
+        {
+          "part": "-ería",
+          "zh": "店"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "peluca",
+          "zh": "假髮"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "peluquería",
+          "zh": "美髮院"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "peluquería 由 peluca（假髮）加上表示店鋪的字尾 -ería 組成——字面上是「假髮店」，現在指幫人剪髮、做造型的美髮院。",
+      "hook_zh": "pelo 是頭髮、peluca 是假髮：頭髮亂了，就去 peluquería。",
+      "usage_zh": "c 變 qu 保留 /k/ 音：peluca → peluquería；理髮師 peluquero/a。",
+      "example_es": "Voy a la peluquería mañana.",
+      "example_zh": "我明天要去美髮院。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:peluquería"
+      ]
+    },
+    {
+      "word": "panadería",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "麵包店",
+      "en": "bakery",
+      "ipa": "/panadeˈɾia/",
+      "breakdown": [
+        {
+          "part": "panadero",
+          "zh": "麵包師傅"
+        },
+        {
+          "part": "-ería",
+          "zh": "店"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "panadero",
+          "zh": "麵包師傅"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "panadería",
+          "zh": "麵包店"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "panadería 由 panadero（麵包師傅）加上表示店鋪的字尾 -ería 組成：麵包師傅的店，就是麵包店。",
+      "hook_zh": "pan（麵包）→ panadero（麵包師）→ panadería（麵包店），一家三口。",
+      "usage_zh": "-ería 結尾都是陰性：la panadería、la cafetería。",
+      "example_es": "Compro pan en la panadería.",
+      "example_zh": "我在麵包店買麵包。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:panadería"
+      ]
+    }
+  ]
+}
