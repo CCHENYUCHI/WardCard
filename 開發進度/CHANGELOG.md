@@ -6,6 +6,15 @@
 
 ## [Unreleased] (進行中 / 待發布)
 
+### Added
+- **A1 字源圖鑑（約 1,000 字，Claude 編寫）(`server/data/lexicon/`, `server/lexicon.js`, `StoryCard.jsx`)**：西語 A1 常用字，每個字有中文意思、IPA、字源鏈（例如 波斯語 → 阿拉伯語 → 古西語 azur → azul）、英文同源字、字源故事、記憶聯想、用法提醒、A1 例句與插圖。資料一次寫好存成 JSON，**完全離線、不花 AI 額度**。
+  - **有根據的字源**：每個字先用 `server/scripts/lexicon/fetch-facts.js` 從 kaikki.org（Wiktionary，CC BY-SA）抓詞源事實，並沿詞源往上追拉丁文等祖先詞條；故事只根據這些事實寫，Wiktionary 標示「可能 / 推測」的照實標示；查不到字源的字只寫記憶聯想（`confidence: hook-only`），不編字源。
+  - **插圖**：手寫的插圖規格（`server/data/lexicon/art/*.js`）由 `render-art.js` 渲染成 SVG（`client/public/lexicon/`，每張多半不到 1KB），可整批切換「扁平插畫」與「線條＋重點色」兩種畫風；功能詞與太抽象的字改用 emoji。
+  - **查詞**：`GET /api/dictionary/lookup` 回應新增 `story` 欄位；字典頁顯示完整字源卡，例句點字視窗顯示圖片＋記憶聯想。字典有中文就不再顯示「用 AI 查中文」；「加入單字庫」直接用字源圖鑑的內容建卡，不呼叫 AI。
+  - **複習**：翻卡 / 作答後才顯示圖片、字源與記憶聯想（作答前不會洩漏答案）；新增 `GET /api/lexicon?word=`。
+  - **資料表 `lexicon` / `lexicon_meta`**：伺服器啟動時，JSON 有變更才重新匯入，不常駐記憶體。
+  - **驗證與測試**：`server/scripts/lexicon/validate.js`（欄位、長度、來源、例句含該字、SVG 大小與安全性）；`server/lexicon.test.js`。撰寫規範見 `server/scripts/lexicon/WRITING.md`。
+
 ### Documentation
 - **重寫 `README.md`**：改為給一般使用者看的應用程式介紹，反映目前功能（今日學習駕駛艙、五階段自適應練習、FSRS v4.5、例句點字查詢 / 離線字典、Mobile App 現況），移除過時的 SM-2 與 Gemini 1.5 說明，部署步驟精簡並收合。
 - **延伸功能規劃改為省額度優先版 (`開發進度/AI功能延伸規劃.md`)**：C0–C5 改為 D0–D6；S5 四選一、答錯提示、字典等改以本機邏輯為主，AI 只在必要時按需使用；圖片改為上傳、不做 AI 生圖；只做 Web。
