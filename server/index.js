@@ -14,7 +14,8 @@ const {
   translationHash, findOwnTranslation, findSharedTranslation, saveTranslation, listTranslations, deleteTranslation
 } = require('./translations');
 const { splitArticle, normalizeWord } = require('./cardUtils');
-const { getDict, dictionaryHasEntries, lookupForm, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
+const { getDict, dictionaryHasEntries, lookupForm, getEntryExtras, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
+const { linkCard, linkPendingCards, enrichCards } = require('./cardDict');
 const { findLexiconEntry } = require('./lexicon');
 const { reviewCardFSRS } = require('./fsrs');
 const { classifyReview, buildTodayPlan, getTodaySummary, getHistory, getWeeklyForecast, getPracticeCards } = require('./dailyProgress');
@@ -190,7 +191,7 @@ app.get('/api/cards', authenticateToken, (req, res) => {
     sql += ' ORDER BY id DESC';
 
     const cards = db.prepare(sql).all(...params);
-    res.json(cards);
+    res.json(enrichCards(cards));
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -212,7 +213,7 @@ app.get('/api/cards/due', authenticateToken, (req, res) => {
     params.push(Number(limit));
 
     const cards = db.prepare(sql).all(...params);
-    res.json(cards);
+    res.json(enrichCards(cards));
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -281,7 +282,10 @@ app.post('/api/cards', authenticateToken, (req, res) => {
         stage,
         unit
       );
-      insertedIds.push(Number(result.lastInsertRowid));
+      const cardId = Number(result.lastInsertRowid);
+      insertedIds.push(cardId);
+      // On an upsert the card's word may be unchanged, but a fresh lookup is cheap and keeps the link right
+      linkCard(db, { id: cardId, word: w, part_of_speech: card.part_of_speech || 'sustantivo' });
     }
 
     res.status(201).json({ success: true, count: insertedIds.length, ids: insertedIds });
@@ -341,8 +345,9 @@ app.put('/api/cards/:id', authenticateToken, (req, res) => {
       userId
     );
 
+    linkCard(db, { id: Number(id), word: word.trim(), part_of_speech: part_of_speech || 'sustantivo' });
     const updated = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
-    res.json(updated);
+    res.json(enrichCards([updated])[0]);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -412,6 +417,7 @@ app.post('/api/cards/upload-csv', authenticateToken, upload.single('file'), (req
       processed++;
     }
 
+    linkPendingCards(db); // new rows start unlinked
     res.json({ success: true, count: processed });
   } catch (err) {
     console.error('CSV Upload Error:', err);
@@ -492,7 +498,7 @@ app.post('/api/cards/:id/review', authenticateToken, (req, res) => {
     const updated = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
     res.json({
       success: true,
-      card: updated,
+      card: enrichCards([updated])[0],
       fsrs: fsrsRes,
       task_type: taskType,
       today: getTodaySummary(userId)
@@ -521,8 +527,8 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
 
     // 1~2. Today's plan: due reviews (any time today) + new words within today's remaining quota
     const plan = buildTodayPlan(userId);
-    const dueCards = plan.dueCards;
-    const candidateNew = plan.newCards;
+    const dueCards = enrichCards(plan.dueCards);
+    const candidateNew = enrichCards(plan.newCards);
 
     // Split into urgent (lapses / Stage 1) and regular
     const urgentReviews = dueCards.filter(c => c.lapse_count > 0 || c.mastery_stage === 1);
@@ -641,7 +647,7 @@ app.get('/api/study/history', authenticateToken, (req, res) => {
 // Extra practice: cards not due today, weakest first
 app.get('/api/study/practice', authenticateToken, (req, res) => {
   try {
-    res.json({ cards: getPracticeCards(req.user.userId, req.query.limit) });
+    res.json({ cards: enrichCards(getPracticeCards(req.user.userId, req.query.limit)) });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1126,6 +1132,40 @@ app.get('/api/lexicon', authenticateToken, (req, res) => {
   }
 });
 
+// Everything the dictionary knows about one entry (IPA, forms, examples, etymology) plus the hand-written lexicon entry.
+// Loaded on demand (card detail, dictionary page) so card lists stay small.
+function dictionaryEntry(lemma, pos) {
+  let entryPos = pos;
+  if (!entryPos) {
+    // A lemma without a part of speech (dictionary page): use the first entry that has meanings of its own
+    entryPos = getDict()?.prepare("SELECT pos FROM entries WHERE word_norm = ? AND word = ? AND glosses != '[]' LIMIT 1")
+      .get(normalizeWord(lemma), lemma)?.pos || '';
+  }
+  return { lemma, pos: entryPos, ...getEntryExtras(lemma, entryPos), story: findLexiconEntry(getDict(), [lemma]) };
+}
+
+app.get('/api/dictionary/entry', authenticateToken, (req, res) => {
+  try {
+    const lemma = String(req.query.lemma || '').trim().slice(0, 80);
+    if (!lemma) return res.status(400).json({ error: '缺少單字' });
+    res.json(dictionaryEntry(lemma, String(req.query.pos || '').trim().slice(0, 20)));
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.get('/api/cards/:id/dictionary', authenticateToken, (req, res) => {
+  try {
+    const card = db.prepare('SELECT id, word, part_of_speech, dict_lemma, dict_pos FROM cards WHERE id = ? AND user_id = ?').get(Number(req.params.id), req.user.userId);
+    if (!card) return res.status(404).json({ error: 'Card not found' });
+    if (card.dict_lemma) return res.json({ linked: true, ...dictionaryEntry(card.dict_lemma, card.dict_pos) });
+    // Not linked (phrase, made-up word, no dictionary): the lexicon can still know the card's word
+    res.json({ linked: false, lemma: '', pos: '', ipa: '', forms: null, examples: null, etymology: null, story: findLexiconEntry(getDict(), [card.word]) });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // AI word-by-word analysis of one sentence, cached forever and shared by all users
 app.post('/api/sentences/analyze', authenticateToken, async (req, res) => {
   try {
@@ -1208,7 +1248,9 @@ app.post('/api/dictionary/add', authenticateToken, (req, res) => {
     );
 
     if (result.changes > 0) {
-      return res.status(201).json({ created: true, id: Number(result.lastInsertRowid) });
+      const id = Number(result.lastInsertRowid);
+      linkCard(db, { id, word, part_of_speech: card.part_of_speech || 'sustantivo' });
+      return res.status(201).json({ created: true, id });
     }
     const existing = db.prepare('SELECT id, lifecycle_status FROM cards WHERE user_id = ? AND word = ?').get(userId, word);
     res.json({ created: false, id: existing?.id, lifecycle_status: existing?.lifecycle_status });
@@ -1284,6 +1326,14 @@ app.get('*', (req, res) => {
   }
   res.sendFile(path.join(distPath, 'index.html'));
 });
+
+try {
+  // Cards created before the dictionary existed (or while it was missing) get their link now
+  const { checked, linked } = linkPendingCards(db);
+  if (checked > 0) console.log(`[PalabraCard] Linked ${linked} of ${checked} cards to the dictionary`);
+} catch (err) {
+  console.error('[PalabraCard] Card linking skipped:', err.message);
+}
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`[PalabraCard] Server running on http://0.0.0.0:${PORT}`);

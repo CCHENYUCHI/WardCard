@@ -86,6 +86,13 @@ function runMigrations() {
   if (!cardColumns.includes('curriculum_unit')) {
     db.exec("ALTER TABLE cards ADD COLUMN curriculum_unit TEXT DEFAULT ''");
   }
+  // Link to the offline dictionary (server/cardDict.js): NULL = not looked up yet, '' = no matching entry
+  if (!cardColumns.includes('dict_lemma')) {
+    db.exec("ALTER TABLE cards ADD COLUMN dict_lemma TEXT DEFAULT NULL");
+  }
+  if (!cardColumns.includes('dict_pos')) {
+    db.exec("ALTER TABLE cards ADD COLUMN dict_pos TEXT DEFAULT NULL");
+  }
 
   // Migrate users table
   const userColumns = db.prepare("PRAGMA table_info(users)").all().map(c => c.name);

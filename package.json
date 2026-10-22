@@ -12,7 +12,8 @@
     "start": "NODE_ENV=production node server/index.js",
     "test": "node --test server/*.test.js",
     "build:dict": "node server/scripts/build-dictionary.js",
-    "build:lexicon": "node server/scripts/build-lexicon.js"
+    "build:lexicon": "node server/scripts/build-lexicon.js",
+    "link:cards": "node server/scripts/link-cards.js"
   },
   "keywords": [
     "spanish",

@@ -38,7 +38,8 @@ function detectGender(entry) {
   if (!m && !f) {
     // Head line such as "casa f (plural casas)" or "artista m or f"
     const head = entry.head_templates?.[0]?.expansion || '';
-    const match = head.match(/\s(m|f|mf|m or f|m pl|f pl)(?=\s|$|\()/);
+    // Longest alternatives first: "m or f" must not stop at "m"
+    const match = head.match(/\s(m or f|f or m|mf|m pl|f pl|m|f)(?=\s|$|\()/);
     if (match) {
       m = match[1].startsWith('m');
       f = match[1].includes('f');
