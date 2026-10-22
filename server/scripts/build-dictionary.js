@@ -14,6 +14,7 @@ const path = require('path');
 const readline = require('readline');
 const { DatabaseSync } = require('node:sqlite');
 const { normalizeWord } = require('../cardUtils');
+const { writeLexicon } = require('../lexicon');
 
 const DEFAULT_OUT = path.join(__dirname, '../../data/dict/es-en.sqlite');
 const SKIP_POS = new Set(['name', 'character', 'symbol', 'punct', 'romanization', 'suffix', 'prefix', 'infix', 'interfix', 'affix', 'circumfix']);
@@ -147,14 +148,16 @@ async function build(input, output = DEFAULT_OUT) {
   meta.run('source', 'Wiktionary via kaikki.org (CC BY-SA)');
   meta.run('built_at', new Date().toISOString());
   meta.run('entries', String(rows));
+  // The file is replaced as a whole, so the hand-written lexicon has to be written before the rename
+  const lexiconEntries = writeLexicon(db);
   db.exec('VACUUM');
   db.close();
   fs.renameSync(tmp, output);
 
-  return { lines, rows, bytes: fs.statSync(output).size, output };
+  return { lines, rows, lexiconEntries, bytes: fs.statSync(output).size, output };
 }
 
-module.exports = { build, toRow };
+module.exports = { build, toRow, createSchema, DEFAULT_OUT };
 
 if (require.main === module) {
   const [input, output] = process.argv.slice(2);
@@ -164,8 +167,8 @@ if (require.main === module) {
   }
   console.log(`Building dictionary from ${input}`);
   build(input, output || DEFAULT_OUT)
-    .then(({ lines, rows, bytes, output: out }) => {
-      console.log(`\n✅ ${rows.toLocaleString()} entries (from ${lines.toLocaleString()} lines) → ${out} (${(bytes / 1024 / 1024).toFixed(1)} MB)`);
+    .then(({ lines, rows, lexiconEntries, bytes, output: out }) => {
+      console.log(`\n✅ ${rows.toLocaleString()} entries (from ${lines.toLocaleString()} lines) + ${lexiconEntries} lexicon entries → ${out} (${(bytes / 1024 / 1024).toFixed(1)} MB)`);
     })
     .catch((err) => {
       console.error('\n❌ Build failed:', err);

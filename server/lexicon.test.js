@@ -4,7 +4,8 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 const { DatabaseSync } = require('node:sqlite');
-const { syncLexicon, findLexiconEntry, lexiconKey, svgFileName } = require('./lexicon');
+const { writeLexicon, findLexiconEntry, lexiconKey, svgFileName } = require('./lexicon');
+const { buildLexicon } = require('./scripts/build-lexicon');
 const { validateEntry, validateSvg, validateAll } = require('./scripts/lexicon/validate');
 const { render, s } = require('./scripts/lexicon/art');
 
@@ -20,18 +21,42 @@ function fixtureDir(files) {
   return dir;
 }
 
-test('syncLexicon loads entries once and reloads only when the files change', () => {
+test('writeLexicon replaces the lexicon tables with the JSON files', () => {
   const db = new DatabaseSync(':memory:');
   const dir = fixtureDir({ 'a.json': { theme: 'grammar', entries: [entry('sí'), entry('si', { zh: '如果' })] } });
-  assert.strictEqual(syncLexicon(db, dir), 2);
-  assert.strictEqual(syncLexicon(db, dir), null);
+  assert.strictEqual(writeLexicon(db, dir), 2);
   fs.writeFileSync(path.join(dir, 'b.json'), JSON.stringify({ theme: 'nature', entries: [entry('árbol', { image: 'svg' })] }));
-  assert.strictEqual(syncLexicon(db, dir), 3);
+  assert.strictEqual(writeLexicon(db, dir), 3);
+  fs.rmSync(path.join(dir, 'a.json'));
+  assert.strictEqual(writeLexicon(db, dir), 1); // removed entries disappear
+  assert.strictEqual(db.prepare('SELECT count(*) AS n FROM lexicon').get().n, 1);
+});
+
+test('findLexiconEntry returns null without a dictionary or without a lexicon table', () => {
+  assert.strictEqual(findLexiconEntry(null, ['sí']), null);
+  const oldDictionary = new DatabaseSync(':memory:');
+  oldDictionary.exec('CREATE TABLE entries (word TEXT, word_norm TEXT)');
+  assert.strictEqual(findLexiconEntry(oldDictionary, ['sí']), null);
+});
+
+test('buildLexicon creates a lexicon-only dictionary file and refreshes an existing one', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'lexicon-build-'));
+  const file = path.join(dir, 'nested', 'es-en.sqlite');
+  const first = buildLexicon(file);
+  assert.strictEqual(first.isNew, true);
+  assert.ok(first.count > 1000);
+  const db = new DatabaseSync(file, { readOnly: true });
+  assert.strictEqual(db.prepare('SELECT count(*) AS n FROM entries').get().n, 0);
+  assert.strictEqual(findLexiconEntry(db, ['manzana']).word, 'manzana');
+  db.close();
+  const again = buildLexicon(file);
+  assert.strictEqual(again.isNew, false);
+  assert.strictEqual(again.count, first.count);
 });
 
 test('findLexiconEntry keeps accented homographs apart and falls back to an unambiguous loose match', () => {
   const db = new DatabaseSync(':memory:');
-  syncLexicon(db, fixtureDir({ 'a.json': { theme: 't', entries: [entry('sí'), entry('si', { zh: '如果' }), entry('árbol', { image: 'svg' })] } }));
+  writeLexicon(db, fixtureDir({ 'a.json': { theme: 't', entries: [entry('sí'), entry('si', { zh: '如果' }), entry('árbol', { image: 'svg' })] } }));
   assert.strictEqual(findLexiconEntry(db, ['sí']).zh, '是');
   assert.strictEqual(findLexiconEntry(db, ['si']).zh, '如果');
   // "SI" from a card still finds the exact (case-insensitive) entry; "arbol" has a single accented match

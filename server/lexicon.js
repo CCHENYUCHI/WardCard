@@ -1,5 +1,6 @@
 // Hand-written A1 lexicon (server/data/lexicon/a1/*.json): etymology story, memory hook and picture per word.
-// The JSON files are copied into the `lexicon` table at startup when they change, so nothing stays in memory.
+// It lives in the read-only offline dictionary file (es-en.sqlite) next to the Wiktionary entries, written by
+// `npm run build:lexicon` (or at the end of `npm run build:dict`); the app database never holds it.
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
@@ -35,13 +36,10 @@ function readLexiconFiles(dir = LEXICON_DIR) {
   return { version: hash.digest('hex'), files };
 }
 
-/** Reload the lexicon table when the JSON files changed. Returns the number of entries loaded, or null if unchanged. */
-function syncLexicon(db, dir = LEXICON_DIR) {
+/** Replace the lexicon tables in a writable dictionary database. Returns the number of entries written. */
+function writeLexicon(db, dir = LEXICON_DIR) {
   db.exec(SCHEMA);
   const { version, files } = readLexiconFiles(dir);
-  const current = db.prepare("SELECT value FROM lexicon_meta WHERE key = 'version'").get();
-  if (current?.value === version) return null;
-
   const insert = db.prepare('INSERT OR REPLACE INTO lexicon (word_key, word_norm, theme, data) VALUES (?, ?, ?, ?)');
   let count = 0;
   db.exec('BEGIN');
@@ -73,12 +71,19 @@ const withImage = (entry) => {
 };
 
 /**
- * First lexicon entry for any of the candidate words (query, lemmas, card words), in order.
+ * First lexicon entry (from the dictionary database) for any of the candidate words (query, lemmas, card words), in order.
  * Exact spelling wins; an accent-insensitive match is used only when it is unambiguous ("arbol" -> árbol).
  */
-function findLexiconEntry(db, candidates = []) {
-  const exact = db.prepare('SELECT data FROM lexicon WHERE word_key = ?');
-  const loose = db.prepare('SELECT data FROM lexicon WHERE word_norm = ? LIMIT 2');
+function findLexiconEntry(dict, candidates = []) {
+  if (!dict) return null;
+  let exact;
+  let loose;
+  try {
+    exact = dict.prepare('SELECT data FROM lexicon WHERE word_key = ?');
+    loose = dict.prepare('SELECT data FROM lexicon WHERE word_norm = ? LIMIT 2');
+  } catch (_) {
+    return null; // dictionary built before the lexicon existed: no such table
+  }
   const words = candidates.map(c => splitArticle(String(c || '')).word).filter(Boolean);
   for (const w of words) {
     const row = exact.get(lexiconKey(w));
@@ -91,4 +96,4 @@ function findLexiconEntry(db, candidates = []) {
   return null;
 }
 
-module.exports = { LEXICON_DIR, lexiconKey, svgFileName, syncLexicon, findLexiconEntry };
+module.exports = { LEXICON_DIR, lexiconKey, svgFileName, writeLexicon, findLexiconEntry };

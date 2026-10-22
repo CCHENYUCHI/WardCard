@@ -14,8 +14,8 @@ const {
   translationHash, findOwnTranslation, findSharedTranslation, saveTranslation, listTranslations, deleteTranslation
 } = require('./translations');
 const { splitArticle, normalizeWord } = require('./cardUtils');
-const { getDict, lookupForm, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
-const { syncLexicon, findLexiconEntry } = require('./lexicon');
+const { getDict, dictionaryHasEntries, lookupForm, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
+const { findLexiconEntry } = require('./lexicon');
 const { reviewCardFSRS } = require('./fsrs');
 const { classifyReview, buildTodayPlan, getTodaySummary, getHistory, getWeeklyForecast, getPracticeCards } = require('./dailyProgress');
 
@@ -1107,8 +1107,8 @@ app.get('/api/dictionary/lookup', authenticateToken, (req, res) => {
       analyzed: Boolean(analysis),
       aiEntry,
       links: externalLinks(context?.lemma || lemmas[0] || q),
-      hasOfflineDictionary: Boolean(getDict()),
-      story: findLexiconEntry(db, [q, context?.lemma, ...lemmas, ...myCards.map(c => c.word)])
+      hasOfflineDictionary: dictionaryHasEntries(),
+      story: findLexiconEntry(getDict(), [q, context?.lemma, ...lemmas, ...myCards.map(c => c.word)])
     });
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -1120,7 +1120,7 @@ app.get('/api/lexicon', authenticateToken, (req, res) => {
   try {
     const word = String(req.query.word || '').trim().slice(0, 80);
     if (!word) return res.status(400).json({ error: '缺少單字' });
-    res.json({ entry: findLexiconEntry(db, [word]) });
+    res.json({ entry: findLexiconEntry(getDict(), [word]) });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1284,13 +1284,6 @@ app.get('*', (req, res) => {
   }
   res.sendFile(path.join(distPath, 'index.html'));
 });
-
-try {
-  const loaded = syncLexicon(db);
-  if (loaded !== null) console.log(`[PalabraCard] Lexicon updated: ${loaded} entries`);
-} catch (err) {
-  console.error('[PalabraCard] Lexicon not loaded:', err.message);
-}
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`[PalabraCard] Server running on http://0.0.0.0:${PORT}`);

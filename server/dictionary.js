@@ -32,6 +32,16 @@ function getDict() {
 // Only for tests
 function setDictionary(db) {
   dict = db;
+  hasEntriesCache = undefined;
+}
+
+// A dictionary file may hold only the lexicon (`npm run build:lexicon` without a kaikki build)
+let hasEntriesCache;
+function dictionaryHasEntries() {
+  if (hasEntriesCache !== undefined) return hasEntriesCache;
+  const db = getDict();
+  hasEntriesCache = Boolean(db) && Boolean(db.prepare('SELECT 1 FROM entries LIMIT 1').get());
+  return hasEntriesCache;
 }
 
 const parseJson = (s, fallback) => {
@@ -130,7 +140,9 @@ const externalLinks = (word) => {
 
 module.exports = {
   POS_MAP,
+  DICT_PATH,
   getDict,
+  dictionaryHasEntries,
   setDictionary,
   lookupForm,
   findMyCards,

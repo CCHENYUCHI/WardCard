@@ -11,7 +11,8 @@
     "build": "npm run build:client",
     "start": "NODE_ENV=production node server/index.js",
     "test": "node --test server/*.test.js",
-    "build:dict": "node server/scripts/build-dictionary.js"
+    "build:dict": "node server/scripts/build-dictionary.js",
+    "build:lexicon": "node server/scripts/build-lexicon.js"
   },
   "keywords": [
     "spanish",
