@@ -329,7 +329,7 @@
       "usage_zh": "傳統上指示代名詞標重音（ése）以區分形容詞（ese），但西語皇家學院現規定若無歧義可不加重音。",
       "example_es": "No quiero este libro, prefiero ése.",
       "example_zh": "我不要這本書，我比較想要那個。",
-      "image": "emoji:👉",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:ése",
@@ -352,7 +352,7 @@
       "usage_zh": "表「…之前」時必須放在時間長度前面（如 hace dos días），與英文置於時間後的 ago 相反。",
       "example_es": "Él nos visitó hace tres años.",
       "example_zh": "他三年前來拜訪過我們。",
-      "image": "emoji:⏳",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:hace"
@@ -399,7 +399,7 @@
       "usage_zh": "作為疑問副詞時必須標上重音（dónde，如 ¿Dónde estás?），作為關係副詞引導子句時則不帶重音。",
       "example_es": "Deja los libros donde quieras.",
       "example_zh": "把書放在你想放的地方。",
-      "image": "emoji:📍",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:donde",
@@ -433,7 +433,7 @@
       "usage_zh": "用來修飾形容詞或副詞，常見句型 tan... como... 表示「和…一樣…」；修飾名詞時則需用 tanto。",
       "example_es": "Eres tan rico como te sientes.",
       "example_zh": "你感覺自己有多富足，你就有多富足。",
-      "image": "emoji:✨",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:tan"
@@ -466,10 +466,336 @@
       "usage_zh": "當後面的單字是以 i- 或 hi- 開頭時，連接詞 y 必須變為 e；但若接在雙母音 hie- 前則維持 y（如 cobre y hierro）。",
       "example_es": "Hablo francés e inglés.",
       "example_zh": "我會說法語和英語。",
-      "image": "emoji:➕",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:e"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "esa",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "那個（陰性指示代名詞）",
+      "en": "that (feminine)",
+      "ipa": "/ˈesa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipse",
+          "zh": "自己"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipsa",
+          "zh": "她自己"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esa",
+          "zh": "那個"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語的 ipsa（由 ipse 衍生，原指「自己、親自」）。在通俗拉丁語中，這個詞逐漸轉變為指示代名詞，最終演化成西班牙語中用來指稱「離對方較近」的陰性指示詞 esa。",
+      "hook_zh": "指著對方身邊的東西說：「欸，撒（esa）點胡椒在那個上面！」",
+      "usage_zh": "指稱中距離或對方身邊的陰性事物；陽性形為 ese，中性代名詞為 eso。",
+      "example_es": "Esa chaqueta es muy elegante.",
+      "example_zh": "那件外套非常優雅。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "狀態、情況；國家、州",
+      "en": "state, status, condition, country",
+      "ipa": "/esˈtado/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "status",
+          "zh": "站立、姿態、狀態"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estado",
+          "zh": "狀態、國家"
+        }
+      ],
+      "cognates_en": [
+        "state"
+      ],
+      "story_zh": "源自拉丁語 status（站立、立足的姿態或情況）。原指人或事物立足當下的「狀況」，後來延伸指具備統治權力與社會秩序的政治實體「國家、州」，與英文的 state 同源。",
+      "hook_zh": "英文 state 開頭加上西語常見的前置 e-，就成了 estado。",
+      "usage_zh": "首字母大寫 Estado 指「國家」；常見搭配如 estado civil（婚姻狀況）。",
+      "example_es": "El edificio está en buen estado.",
+      "example_zh": "這棟建築物保存狀態良好。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estado",
+        "wiktionary:la:status"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "les",
+      "article": "",
+      "pos": "artículo",
+      "zh": "這些、那些（性別中立複數冠詞）",
+      "en": "the (gender-neutral plural)",
+      "ipa": "/les/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "將陽性 los 與陰性 las 的母音替換為中立的 -e，合體成為 les。",
+      "usage_zh": "西語性別包容語言（lenguaje inclusivo）的新興用法，非學院正式規範。",
+      "example_es": "Les estudiantes están en clase.",
+      "example_zh": "學生們正在上課。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:les"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mas",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "但、然而",
+      "en": "but, however",
+      "ipa": "/mas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "magis",
+          "zh": "更多"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "mas",
+          "zh": "但"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mas",
+          "zh": "但、然而"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自古西班牙語 mas，源自拉丁語 magis（更多）。原指「更進一步」，在語意轉折演變中弱化為表示轉折的「但是」，與表示「更多」的副詞 más 是同源雙胞詞。",
+      "hook_zh": "沒戴重音帽子的 mas 是轉折詞「但是」；頭上戴帽的 más 才是「更多」。",
+      "usage_zh": "主要用於書面語或文學作品，等同 pero；注意不帶重音符號。",
+      "example_es": "Quiso responder, mas no supo qué decir.",
+      "example_zh": "他想回答，卻不知該說什麼。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gran",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "偉大的；重大的（grande 的截尾形）",
+      "en": "great, grand",
+      "ipa": "/ˈɡɾan/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "grand",
+          "zh": "偉大的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gran",
+          "zh": "偉大的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自古西班牙語 grant 與 grand，是 grande（偉大的）置於名詞前時的截尾形（apócope）。隨著發音簡化，末尾的子音弱化脫落，演變為現代西語的 gran。類似繼承自古西語的截尾現象還有 primer 和 san 等。",
+      "hook_zh": "站在壯麗的「大（gran）」峽谷前，聯想英文 grand 的偉大與壯觀。",
+      "usage_zh": "置於單數名詞前使用（陰陽性皆可），如 un gran hombre（偉人）；放在名詞後則用 grande。",
+      "example_es": "Es una gran oportunidad para nosotros.",
+      "example_zh": "這對我們來說是一個絕佳的機會。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gran"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "crear",
+      "article": "",
+      "pos": "verbo",
+      "zh": "創造、建立",
+      "en": "to create",
+      "ipa": "/kɾeˈaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "creāre",
+          "zh": "創造、生產"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "crear",
+          "zh": "創造"
+        }
+      ],
+      "cognates_en": [
+        "create"
+      ],
+      "story_zh": "源自拉丁語 creāre（創造、使產生），西語以學者借詞的形式保留了原始字形與意義。相對於此，同一個拉丁字在民間口語演變為雙胞詞 criar（養育）。",
+      "hook_zh": "英文的 create 是同源字，把字尾換成西語動詞字尾 -ar 就是 crear。",
+      "usage_zh": "現在式第一人稱是 creo，注意不要和動詞 creer（相信）的現在式 creo 混淆。",
+      "example_es": "Ella quiere crear una nueva empresa.",
+      "example_zh": "她想要創立一家新公司。",
+      "image": "emoji:🎨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:crear"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sólo",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "只、僅僅",
+      "en": "only, just",
+      "ipa": "/ˈsolo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "一個人 solo 站在台上孤單表演，sólo 就是「只有、僅僅」。",
+      "usage_zh": "西班牙皇家語言學院（RAE）現在建議寫作 solo 即可，僅在產生語意歧義時才需加重音。",
+      "example_es": "Sólo quiero un vaso de agua.",
+      "example_zh": "我只要一杯水。",
+      "image": "emoji:☝️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:sólo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gobierno",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "政府、統治",
+      "en": "government",
+      "ipa": "/ɡoˈbjeɾno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "gouierno",
+          "zh": "統治、掌舵"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gobierno",
+          "zh": "政府"
+        }
+      ],
+      "cognates_en": [
+        "govern",
+        "government"
+      ],
+      "story_zh": "源自古西班牙語 gouierno，名詞衍生自動詞 gobernar（統治、管理）。原意與指引方向、掌舵相關，後來演變為指掌管國家體制的「政府」。",
+      "hook_zh": "長得很像英文 govern，站在政府（gobierno）大樓前引導國家前進。",
+      "usage_zh": "陽性名詞，代指中央或地方統治體系，指特定政府組織時首字母常大寫。",
+      "example_es": "El gobierno anunció nuevas medidas.",
+      "example_zh": "政府公布了新的措施。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gobierno"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estos",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "這些",
+      "en": "these, these ones",
+      "ipa": "/ˈestos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "istōs",
+          "zh": "這些（賓格複數）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estos",
+          "zh": "這些"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 iste 的陽性賓格複數 istōs。在拉丁語中用來指稱靠近對方的那些事物，演變為西語後成為指稱靠近說話者的「這些」。",
+      "hook_zh": "esto（這個）加上複數尾巴 -s，指著眼前的物品說「這些」（estos）。",
+      "usage_zh": "指示形容詞或代名詞，修飾或指代陽性複數名詞；過去代名詞寫法為 éstos。",
+      "example_es": "Estos zapatos son muy cómodos.",
+      "example_zh": "這些鞋子非常舒服。",
+      "image": "emoji:👉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estos"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estas",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "這些（陰性）",
+      "en": "these, these ones (feminine)",
+      "ipa": "/ˈestas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "istās",
+          "zh": "這些（陰性賓格複數）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estas",
+          "zh": "這些"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ista 的陰性賓格複數 istās。在演變為西語的過程中，保留為指稱靠近說話者或提及的「這些」陰性人事物。",
+      "hook_zh": "esta（這個陰性）加上複數 -s，就是眼前的「這些」（estas）。",
+      "usage_zh": "指示形容詞或代名詞，修飾或指代陰性複數名詞；過去代名詞寫法為 éstas。",
+      "example_es": "Estas flores huelen muy bien.",
+      "example_zh": "這些花聞起來好香。",
+      "image": "emoji:👉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estas"
       ],
       "writer": "gemini"
     }
