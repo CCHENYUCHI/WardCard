@@ -8,8 +8,9 @@
  *
  * Writes <outDir>/<word>.json. Already fetched words are skipped, so the script can be re-run.
  *
- *        node server/scripts/lexicon/fetch-facts.js <outDir> --refresh-forms
- *   adds `form_of` (every lemma the word is an inflected form of) to facts files written before it existed.
+ *        node server/scripts/lexicon/fetch-facts.js <outDir> --refresh-forms [words.txt]
+ *   adds `form_of` (every lemma the word is an inflected form of) to facts files written before it existed,
+ *   in the order of words.txt when given (most frequent first), then the rest.
  */
 const fs = require('fs');
 const path = require('path');
@@ -141,7 +142,9 @@ async function main() {
     : rest;
   fs.mkdirSync(outDir, { recursive: true });
   if (rest[0] === '--refresh-forms') {
-    for (const name of fs.readdirSync(outDir).filter(n => n.endsWith('.json')).sort()) {
+    const order = rest[1] ? fs.readFileSync(rest[1], 'utf8').split(/\r?\n/).map(w => `${w.trim()}.json`) : [];
+    const names = new Set(fs.readdirSync(outDir).filter(n => n.endsWith('.json')));
+    for (const name of [...new Set([...order.filter(n => names.has(n)), ...[...names].sort()])]) {
       const file = path.join(outDir, name);
       const facts = JSON.parse(fs.readFileSync(file, 'utf8'));
       if (Array.isArray(facts.form_of)) continue;
