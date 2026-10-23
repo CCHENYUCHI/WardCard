@@ -548,28 +548,6 @@
       "writer": "gemini"
     },
     {
-      "word": "les",
-      "article": "",
-      "pos": "artículo",
-      "zh": "這些、那些（性別中立複數冠詞）",
-      "en": "the (gender-neutral plural)",
-      "ipa": "/les/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "將陽性 los 與陰性 las 的母音替換為中立的 -e，合體成為 les。",
-      "usage_zh": "西語性別包容語言（lenguaje inclusivo）的新興用法，非學院正式規範。",
-      "example_es": "Les estudiantes están en clase.",
-      "example_zh": "學生們正在上課。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:les"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "mas",
       "article": "",
       "pos": "conjunción",
@@ -604,39 +582,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:mas"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "gran",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "偉大的；重大的（grande 的截尾形）",
-      "en": "great, grand",
-      "ipa": "/ˈɡɾan/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古西班牙語",
-          "word": "grand",
-          "zh": "偉大的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "gran",
-          "zh": "偉大的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自古西班牙語 grant 與 grand，是 grande（偉大的）置於名詞前時的截尾形（apócope）。隨著發音簡化，末尾的子音弱化脫落，演變為現代西語的 gran。類似繼承自古西語的截尾現象還有 primer 和 san 等。",
-      "hook_zh": "站在壯麗的「大（gran）」峽谷前，聯想英文 grand 的偉大與壯觀。",
-      "usage_zh": "置於單數名詞前使用（陰陽性皆可），如 un gran hombre（偉人）；放在名詞後則用 grande。",
-      "example_es": "Es una gran oportunidad para nosotros.",
-      "example_zh": "這對我們來說是一個絕佳的機會。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:gran"
       ],
       "writer": "gemini"
     },
@@ -930,96 +875,6 @@
       "writer": "gemini"
     },
     {
-      "word": "nueva",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "消息、新事物",
-      "en": "news, novelty",
-      "ipa": "/ˈnweba/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "長得就像形容詞 nuevo（新的）的陰性形，有「新事物」自然就帶來了「新消息」。",
-      "usage_zh": "日常生活中常以複數 buenas nuevas 表示「好消息、佳音」；本身亦為 nuevo 的陰性形容詞。",
-      "example_es": "Te traigo una buena nueva sobre el proyecto.",
-      "example_zh": "我為你帶來了一個關於專案的好消息。",
-      "image": "emoji:📰",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:nueva"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "primera",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "一檔（汽車最低檔）；頭等艙",
-      "en": "first gear, first class",
-      "ipa": "/pɾiˈmeɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "prīmus",
-          "zh": "第一的"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "prīmārius",
-          "zh": "第一等的、主要的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "primero",
-          "zh": "第一"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "primera",
-          "zh": "一檔、頭等艙"
-        }
-      ],
-      "cognates_en": [
-        "primary"
-      ],
-      "story_zh": "primera 源自西語序數詞 primero（第一），更早源於拉丁語 prīmārius（首要的、第一等的），後者由 prīmus（第一）加上後綴 -ārius 派生。名詞化後，在西班牙語中特指機動車輛的最低前進檔「一檔」，或交通工具的「頭等艙」。",
-      "hook_zh": "與英文 primary（首要的、初級的）同源；開車上路起步，第一步就要打入「一檔」。",
-      "usage_zh": "常用片語為 meter primera（排入一檔）；它也是陽性序數詞 primero 的陰性形容詞形。",
-      "example_es": "Mete primera y arranca despacio.",
-      "example_zh": "打進一檔，然後慢慢起步。",
-      "image": "emoji:🚗",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:primera",
-        "wiktionary:la:primarius"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "veces",
-      "article": "",
-      "pos": "preposición",
-      "zh": "乘以、倍（乘法運算）",
-      "en": "times, multiplied by",
-      "ipa": "/ˈbeθes/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "想像算式中一次又一次（veces）地累加：二「乘以」三等於六。",
-      "usage_zh": "在數學乘法算式中作介系詞使用，例如 dos veces tres son seis（2 乘 3 等於 6）。",
-      "example_es": "Dos veces tres son seis.",
-      "example_zh": "二乘以三等於六。",
-      "image": "emoji:✖️",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:veces"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "cual",
       "article": "",
       "pos": "pronombre",
@@ -1126,24 +981,228 @@
       "writer": "gemini"
     },
     {
-      "word": "primer",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "第一的、最初的（primero 截尾形）",
-      "en": "first (apocopic form of primero)",
-      "ipa": "/pɾiˈmeɾ/",
+      "word": "acuerdo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "協議、協定、共識",
+      "en": "agreement, compromise",
+      "ipa": "/aˈkweɾdo/",
       "breakdown": [],
-      "origin_chain": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "acordar",
+          "zh": "達成協議、想起"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "acuerdo",
+          "zh": "協議"
+        }
+      ],
       "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "聯想英文 prime（首要的、最初的），primer 就是放在陽性單數名詞前的「第一」。",
-      "usage_zh": "為 primero 在陽性單數名詞前的短尾形（apócope），例如 el primer día（第一天）。",
-      "example_es": "Hoy es el primer día de clase.",
-      "example_zh": "今天是開學的第一天。",
-      "image": "svg",
-      "confidence": "hook-only",
+      "story_zh": "源自西班牙語動詞 acordar（達成協議、想起），由動詞去尾去後綴衍生為名詞（deverbal），指雙方取得一致意見、做出的共同決議或協定。",
+      "hook_zh": "雙方握手微笑達成共識：Llegamos a un acuerdo！（我們達成了協議！）",
+      "usage_zh": "常用搭配為 llegar a un acuerdo（達成協議）與 estar de acuerdo（同意）。",
+      "example_es": "Llegaron a un acuerdo después de una larga reunión.",
+      "example_zh": "在一場漫長的會議後，他們達成了協議。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
       "sources": [
-        "wiktionary:es:primer"
+        "wiktionary:es:acuerdo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cualquier",
+      "article": "",
+      "pos": "determinante",
+      "zh": "任何的、任一的",
+      "en": "any, whatever, whichever",
+      "ipa": "/kwalˈkjeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cualquiera",
+          "zh": "任何一個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cualquier",
+          "zh": "任何的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西班牙語代名詞 cualquiera。在單數名詞前發生斷尾縮略（apócope），省略詞尾 -a 形成修飾名詞的限定詞，表示「任何一個、無論哪一個」。",
+      "hook_zh": "在名詞前要斷尾變短：cualquiera 砍掉尾巴 a，變成修飾名詞的 cualquier。",
+      "usage_zh": "置於單數名詞前（無論陽性或陰性）一律用縮略形 cualquier；單獨使用時用 cualquiera。",
+      "example_es": "Puedes llamarme a cualquier hora del día.",
+      "example_zh": "你一天當中的任何時間都可以打電話給我。",
+      "image": "emoji:🎲",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cualquier"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dios",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "神、神明；上帝、天主",
+      "en": "god",
+      "ipa": "/ˈdjos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*dyew-",
+          "zh": "天空、天界"
+        },
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*deywós",
+          "zh": "神明"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*deiwos",
+          "zh": "神明"
+        },
+        {
+          "lang_zh": "古拉丁語",
+          "word": "deivos",
+          "zh": "神明"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "deus",
+          "zh": "神、神祇"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "dios",
+          "zh": "神"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dios",
+          "zh": "神"
+        }
+      ],
+      "cognates_en": [
+        "deity",
+        "divine"
+      ],
+      "story_zh": "源自原始印歐語根 *dyew-（天空、白晝），演變出代表神明的 *deywós，經拉丁語 deus 與古西班牙語傳承為 dios。古人仰望天空與光明，將天界存在視為神。西語保留了拉丁語主格結尾 -os，推測受教會拉丁語影響。",
+      "hook_zh": "英文 deity（神祇）與 divine（神聖的）與 dios 同源；日常感嘆常說 ¡Dios mío!（天啊！）。",
+      "usage_zh": "專指基督教的唯一真神「上帝」時字首須大寫（Dios）；複數為 dioses，陰性為 diosa。",
+      "example_es": "¡Dios mío, no puedo creer lo que pasó!",
+      "example_zh": "我的天啊，我不敢相信發生了什麼事！",
+      "image": "emoji:🙏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dios",
+        "wiktionary:la:deus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "unos",
+      "article": "",
+      "pos": "determinante",
+      "zh": "大約、大概；一些",
+      "en": "about, approximately, some",
+      "ipa": "/ˈunos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūnus",
+          "zh": "一"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūnōs",
+          "zh": "一些（陽性賓格複數）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "unos",
+          "zh": "大約、大概"
+        }
+      ],
+      "cognates_en": [
+        "one",
+        "unit"
+      ],
+      "story_zh": "源自拉丁語 ūnus（一）的陽性賓格複數形 ūnōs。從單數「一個」發展為複數「一些、若干」，在數詞或量詞前進一步虛化，表示概數「大約、大概」。",
+      "hook_zh": "uno 是一，加複數 s 變成 unos，放在數字前就表示「大概幾…個」。",
+      "usage_zh": "置於數詞前表示估計、概數（大約）；作不定冠詞時表示「一些」（陰性為 unas）。",
+      "example_es": "Tardamos unos diez minutos en llegar a la estación.",
+      "example_zh": "我們大約花了十分鐘才到達車站。",
+      "image": "emoji:🔢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:unos"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ley",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "法律、法規；定律",
+      "en": "law",
+      "ipa": "/ˈlei/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*leǵ-",
+          "zh": "收集、聚集"
+        },
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*leǵ-s",
+          "zh": "法律規範"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*lēg-",
+          "zh": "法律"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "lēgem",
+          "zh": "法律（賓格）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ley",
+          "zh": "法律"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ley",
+          "zh": "法律"
+        }
+      ],
+      "cognates_en": [
+        "legal",
+        "legitimate"
+      ],
+      "story_zh": "源自原始印歐語根 *leǵ-（收集、聚集），經原始義大利語演變為拉丁語 lēgem（法律，主格 lex），再由古西班牙語繼承。法律原意是「整理收集成冊的條規」。英文 legal 與 legitimate 亦同源。",
+      "hook_zh": "英文 legal（合法的）去掉後綴就接近西語 ley；遵守法律（ley）行事才合法（legal）。",
+      "usage_zh": "陰性名詞，複數為 leyes（字尾加 -es，字母 y 由半元音變為輔音 [ʝ]）。",
+      "example_es": "Todos los ciudadanos deben respetar la ley.",
+      "example_zh": "所有公民都必須遵守法律。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ley",
+        "wiktionary:la:lex"
       ],
       "writer": "gemini"
     }

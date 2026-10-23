@@ -131,3 +131,14 @@ test('writeLexicon reads several sets and keeps the first entry of a word', () =
   assert.strictEqual(findLexiconEntry(db, ['hablar']).zh, 'A1');
   assert.strictEqual(findLexiconEntry(db, ['transportar']).emoji, '🚚');
 });
+
+test('buildQueue folds an inflected form listed in its base word\'s head line', () => {
+  const facts = {
+    nuevo: { word: 'nuevo', base: null, entries: [{ pos: 'adj', head: 'nuevo (feminine nueva, masculine plural nuevos)' }] },
+    nueva: { word: 'nueva', base: null, entries: [{ pos: 'noun', head: 'nueva f (plural nuevas)' }] },
+    cuento: { word: 'cuento', base: null, entries: [{ pos: 'noun', head: 'cuento m (plural cuentos)' }] },
+    cuenta: { word: 'cuenta', base: null, entries: [{ pos: 'noun', head: 'cuenta f (plural cuentas)' }] }
+  };
+  const queue = buildQueue(['cuento', 'nueva', 'cuenta'], w => facts[w], new Set(['nuevo']));
+  assert.deepStrictEqual(queue.map(q => q.lemma), ['cuento', 'cuenta']); // nueva is nuevo (known), cuenta is its own word
+});

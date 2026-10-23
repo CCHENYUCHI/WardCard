@@ -132,28 +132,12 @@ module.exports = {
     s('path', { d: 'M76 112V56', ...SW(4) }, 'dark', { stroke: true }),
     s('path', { d: 'M76 56h34l-8 10 8 10H76z' }, 'red', { accent: true })
   ],
-  les: [
-    ground(),
-    ...person(30, 136, 'green', { accent: true }),
-    s('rect', { x: 52, y: 84, width: 22, height: 18, rx: 3 }, 'red'),
-    s('path', { d: 'M52 90h22M63 84v18', ...SW(2) }, 'yellow', { stroke: true }),
-    arrow('M80 94h16m-8-8 8 8-8 8', 'orange', 4),
-    ...person(112, 136, 'blue'),
-    ...person(140, 136, 'pink', { w: 22, r: 10 })
-  ],
   mas: [
     s('path', { d: 'M20 80h52', ...SW(10) }, 'green', { stroke: true, accent: true }),
     s('path', { d: 'M72 80q14 0 22-18', ...SW(10) }, 'green', { stroke: true }),
     s('path', { d: 'M86 58l14-4-2 14', ...SW(6) }, 'green', { stroke: true }),
     s('circle', { cx: 122, cy: 88, r: 24 }, 'red'),
     s('rect', { x: 106, y: 83, width: 32, height: 10, rx: 2 }, 'white')
-  ],
-  gran: [
-    ground(),
-    s('path', { d: 'M40 136V64l40-34 40 34v72z' }, 'cream'),
-    s('path', { d: 'M30 66l50-44 50 44', ...SW(6) }, 'red', { stroke: true, accent: true }),
-    s('rect', { x: 50, y: 74, width: 10, height: 50 }, 'gray'), s('rect', { x: 75, y: 74, width: 10, height: 50 }, 'gray'), s('rect', { x: 100, y: 74, width: 10, height: 50 }, 'gray'),
-    ...person(140, 136, 'blue', { h: 20, w: 12, r: 6 })
   ],
   crear: [
     s('rect', { x: 30, y: 98, width: 100, height: 38, rx: 6 }, 'tan'),
@@ -224,12 +208,5 @@ module.exports = {
     s('rect', { x: 90, y: 50, width: 52, height: 60, rx: 8 }, 'blue'),
     s('circle', { cx: 44, cy: 80, r: 12 }, 'yellow'), s('circle', { cx: 116, cy: 80, r: 12 }, 'yellow'),
     s('path', { d: 'M74 74h12M74 86h12', ...SW(4) }, 'dark', { stroke: true })
-  ],
-  primer: [
-    s('rect', { x: 56, y: 70, width: 48, height: 66 }, 'yellow', { accent: true }),
-    s('rect', { x: 14, y: 98, width: 42, height: 38 }, 'gray'),
-    s('rect', { x: 104, y: 110, width: 42, height: 26 }, 'tan'),
-    ...person(80, 70, 'red', { h: 26, w: 20, r: 9 }),
-    s('path', { d: 'M74 20l6-8 6 8', ...SW(3) }, 'orange', { stroke: true })
   ]
 };

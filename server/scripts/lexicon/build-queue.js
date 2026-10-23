@@ -15,6 +15,9 @@ const { lexiconKey, LEXICON_ROOT } = require('../../lexicon');
 const { factsLemma } = require('./geminiEntries');
 
 const BATCH_SIZE = 100;
+const FUNCTION_POS = new Set(['article', 'det', 'pron', 'prep', 'conj', 'contraction', 'intj', 'particle']);
+// Words that look like a form of another word but are learned on their own
+const NO_FOLD = new Set(['política']);
 // Kinds of Wiktionary entries that are not words to learn
 const SKIP_POS = new Set(['name', 'prefix', 'suffix', 'infix', 'symbol', 'character', 'letter', 'punct', 'abbrev', 'romanization']);
 
@@ -26,8 +29,38 @@ const FOLD = {
   va: 'ir', vas: 'ir', van: 'ir', vamos: 'ir', voy: 'ir', ve: 'ir', fue: 'ir',
   da: 'dar', dé: 'dar', di: 'decir', dice: 'decir', digo: 'decir', dicho: 'decir',
   sé: 'saber', sabe: 'saber', vino: 'venir', vengo: 'venir', ven: 'venir', hecho: 'hacer', haz: 'hacer',
-  puede: 'poder', puedo: 'poder', quiero: 'querer', tengo: 'tener', tiene: 'tener', está: 'estar', estaba: 'estar'
+  les: 'le', veces: 'vez', nueva: 'nuevo', primera: 'primero', puede: 'poder', puedo: 'poder', quiero: 'querer', tengo: 'tener', tiene: 'tener', está: 'estar', estaba: 'estar'
 };
+
+// Possible base words of an inflected adjective / noun form: nueva -> nuevo, veces -> vez, cuentos -> cuento
+function baseCandidates(word) {
+  const out = [];
+  const add = (re, rep) => { if (re.test(word)) out.push(word.replace(re, rep)); };
+  add(/as$/, 'o'); add(/a$/, 'o'); add(/os$/, 'o'); add(/ces$/, 'z'); add(/es$/, ''); add(/s$/, '');
+  add(/^(primer|tercer|buen|mal|gran|algún|ningún)$/, (m) => ({ primer: 'primero', tercer: 'tercero', buen: 'bueno', mal: 'malo', gran: 'grande', 'algún': 'alguno', 'ningún': 'ninguno' })[m]);
+  return out.filter(c => c && c !== word);
+}
+
+
+/**
+ * The base word whose Wiktionary head line lists `word` as one of its forms ("nuevo (feminine nueva, ...)").
+ * Function words (las, sus, mas) never fold, and a noun with a meaning of its own (política "politics")
+ * does not fold into an adjective (político).
+ */
+function foldTarget(word, readFacts) {
+  if (NO_FOLD.has(word)) return null;
+  const own = readFacts(word);
+  const ownPos = new Set((own?.entries || []).map(e => e.pos));
+  if ([...ownPos].some(p => FUNCTION_POS.has(p))) return null;
+  const listed = new RegExp(`(^|[\\s(,])${word}([\\s),]|$)`, 'u');
+  for (const base of baseCandidates(word)) {
+    const entries = (readFacts(base)?.entries || []).filter(e => listed.test(e.head || ''));
+    if (entries.length === 0) continue;
+    if (ownPos.has('noun') && !entries.some(e => e.pos === 'noun')) continue;
+    return base;
+  }
+  return null;
+}
 
 const factsFile = (factsDir, word) => path.join(factsDir, `${word}.json`);
 
@@ -44,7 +77,11 @@ function a1Keys(dir = path.join(LEXICON_ROOT, 'a1')) {
 /** Whether a facts file describes a Spanish word worth an entry */
 function isLearnable(facts) {
   const entries = facts.entries || [];
-  return entries.length > 0 && entries.some(e => !SKIP_POS.has(e.pos)) && /^[a-záéíóúüñ ]+$/i.test(factsLemma(facts));
+  const lemma = factsLemma(facts);
+  if (!/^[a-záéíóúüñ ]+$/i.test(lemma)) return false;
+  // Single letters are words only as function words (y, o, e, u, a), not as letter names or abbreviations
+  if (lemma.length === 1 && !entries.some(e => FUNCTION_POS.has(e.pos))) return false;
+  return entries.some(e => !SKIP_POS.has(e.pos));
 }
 
 /**
@@ -57,15 +94,16 @@ function buildQueue(words, readFacts, skipKeys = new Set()) {
   let rank = 0;
   for (const word of words) {
     rank++;
-    if (FOLD[word] && skipKeys.has(lexiconKey(FOLD[word]))) continue;
-    const facts = readFacts(FOLD[word] || word);
+    const target = FOLD[word] || foldTarget(word, readFacts);
+    if (target && skipKeys.has(lexiconKey(target))) continue;
+    const facts = readFacts(target || word);
     if (facts === undefined) break;
     if (!facts || !isLearnable(facts)) continue;
     const lemma = factsLemma(facts);
     const key = lexiconKey(lemma);
     if (seen.has(key)) continue;
     seen.add(key);
-    queue.push({ rank, word: FOLD[word] || word, lemma });
+    queue.push({ rank, word: target || word, lemma });
   }
   return queue;
 }
@@ -82,7 +120,7 @@ function toBatches(queue, size = BATCH_SIZE, { partial = false } = {}) {
   return batches;
 }
 
-module.exports = { FOLD, isLearnable, buildQueue, toBatches, a1Keys, BATCH_SIZE };
+module.exports = { FOLD, baseCandidates, foldTarget, isLearnable, buildQueue, toBatches, a1Keys, BATCH_SIZE };
 
 if (require.main === module) {
   const args = process.argv.slice(2);
