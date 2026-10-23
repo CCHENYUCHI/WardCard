@@ -47,6 +47,35 @@
 cd <repo>
 node server/scripts/lexicon/render-art.js flat --only <OUT>
 node server/scripts/lexicon/validate.js --only <OUT>
-node <contact-sheet script> <OUT>     # 產生插圖總覽 PNG，用 Read 看一次，修掉看不出是什麼、跑出邊界、顏色錯亂的圖
+node server/scripts/lexicon/contact-sheet.js <OUT> <sheet.png>   # 產生插圖總覽 PNG，用 Read 看一次，修掉看不出是什麼、跑出邊界、顏色錯亂的圖
 ```
 不要 git commit。完成後回報：條目數、sourced / hook-only / emoji 數量、驗證結果、你沒把握的字（最多 10 個，附原因）。
+
+---
+
+# 常用字（`freq/`）：Gemini 撰寫 + Claude 畫圖
+
+A1 以外的字依使用頻率往下做，每 100 個原形一批（`freq/0001.json`、`0002.json`…）。文字交給 Gemini，**回答直接寫進檔案、不給 Claude 看**，由程式檢查把關；Claude 只畫圖。
+
+```bash
+W=<工作資料夾，不進 Git>
+# 1. 頻率字表（wordfreq 只是工具，不是專案依賴）
+pip install wordfreq
+python3 -I -c "from wordfreq import top_n_list; import re; print('\n'.join(w for w in top_n_list('es', 40000) if re.fullmatch(r'[a-záéíóúüñ]+', w)))" > $W/freq.txt
+# 2. Wiktionary 事實（kaikki.org；可中斷，已抓的會跳過）
+NODE_USE_ENV_PROXY=1 node server/scripts/lexicon/fetch-facts.js $W/facts --list $W/freq.txt
+# 3. 批次字表：變化形併入原形、跳過 A1 已有的字和專有名詞；停在第一個還沒抓到事實的字，所以批次編號固定
+node server/scripts/lexicon/build-queue.js $W/freq.txt $W/facts $W/queue.json
+# 4. Gemini 撰寫（只印每批的數量；不合格的字在 $W/failed.json，重跑會再試）
+NODE_USE_ENV_PROXY=1 node server/scripts/lexicon/gemini-write.js $W/queue.json --batches 0001-0005
+# 5. 畫圖：只讀這份清單，寫 server/data/lexicon/art/freq-<批次>.js
+node server/scripts/lexicon/draw-list.js 0001
+node server/scripts/lexicon/render-art.js flat --only freq-0001
+node server/scripts/lexicon/mark-drawn.js 0001
+node server/scripts/lexicon/validate.js --only freq/0001
+node server/scripts/lexicon/contact-sheet.js freq-0001 $W/sheet-0001.png   # 用 Read 看一次，修掉看不懂 / 出界 / 白底白圖
+```
+
+- `NODE_USE_ENV_PROXY=1` 只在要經過 HTTPS proxy 時需要（雲端環境）。
+- 機器檢查（`geminiEntries.js`）：schema 與長度、繁體中文、字源鏈每個祖先字都要在事實裡、`sources` 只能是抓過的頁面；事實沒有詞源 → hook-only。
+- 插圖規則同上面的「插圖規格」，但**每個字都畫**：抽象字、功能詞畫記憶聯想裡的畫面或用法情境。

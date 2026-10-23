@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Write the hand-written A1 lexicon (server/data/lexicon/a1/*.json) into the offline dictionary file.
+ * Write the lexicon (server/data/lexicon/a1/ and freq/ *.json) into the offline dictionary file.
  * Takes seconds and needs no kaikki download; `build-dictionary.js` does the same at the end of a full build.
  * If the dictionary file does not exist yet, a small one holding only the lexicon is created, so the app
  * works (stories and pictures, no Wiktionary entries) until the full dictionary is built.

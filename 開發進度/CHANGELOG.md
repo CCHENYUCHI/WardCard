@@ -7,6 +7,10 @@
 ## [Unreleased] (進行中 / 待發布)
 
 ### Added
+- **常用字字源圖鑑（`server/data/lexicon/freq/`）**：把字源圖鑑從 A1 的 1,038 字往整本字典擴充，依西語使用頻率（wordfreq）從最常用的字做起，變化形併入原形、A1 已有的字跳過，每 100 個原形一批。
+  - **文字由 Gemini 撰寫、直接寫入資料檔**：`gemini-write.js` 把每個字的 Wiktionary 事實（`fetch-facts.js`）送給 agy MCP 的 `ask_gemini`，產出中文的字根拆解、字源鏈、字源故事、英文同源字、記憶聯想、用法與例句。回答不經 Claude 審閱，改由 `geminiEntries.js` 機器檢查：schema 與長度（沿用 `validate.js`）、繁體中文（簡體字偵測）、字源鏈的每個祖先字都必須出現在事實裡、`sources` 只能是實際抓過的頁面、事實沒有詞源就改成只有記憶聯想（hook-only）；不合格的字帶著錯誤重問一次，仍不合格記進 `failed.json` 之後重跑。條目帶 `writer: "gemini"`，字源卡顯示「Gemini 撰寫、程式檢查」。
+  - **每個字都有 SVG 插圖**：Claude 依 `draw-list.js` 只讀到的「字、詞性、中文、記憶聯想」畫插圖規格（`art/freq-<批次>.js`），`mark-drawn.js` 把畫好的字從 emoji 換成 SVG。
+  - 其他：`server/scripts/lexicon/agy.js`（agy MCP 的 JSON-RPC 用戶端）、`build-queue.js`（頻率字表 → 原形批次，批次編號固定）；`lexicon.js` / `validate.js` 改成讀 `a1/` 與 `freq/` 兩個資料夾（同一個字以 A1 為準）；設定頁的「A1 圖鑑」字數改稱「字源圖鑑」。
 - **開發工具：AI agent 可以問 Gemini (`.mcp.json`)**：專案層級的 MCP 設定，連到另外部署的 [antigravity-mcp](https://github.com/CCHENYUCHI/antigravity-mcp)（Oracle 上的 Docker 容器，透過 Antigravity CLI 使用免費的 Gemini 額度），提供 `ask_gemini` 工具，給雲端 Claude Code 用來請 Gemini 給第二意見或做大量撰寫 / 檢查工作（例如字根字首表）。不影響 PalabraCard 本身；token 不在 repo 裡，雲端環境用 network secret 帶上，本機用 user scope 的 MCP 設定。
 - **變化表視窗 (`FormsModal.jsx`)**：在字典頁每個動詞 / 名詞 / 形容詞條目旁按「變位表 / 變化表」，或在單字卡詳情的字典資料區按按鈕，開出獨立視窗：動詞依語氣（直陳式、虛擬式、命令式）各一張表，人稱 × 時態；名詞與形容詞是陰陽性 × 單複數表，另列指小詞等。點任一個形態可以聽發音；手機上表格可橫向捲動、人稱欄固定；`Esc` 關閉。
 - **單字庫健檢 (`CardAuditModal.jsx`, `server/cardAudit.js`)**：單字庫頁「單字庫健檢」按鈕。比對每張卡和離線字典，分類列出：詞性不同、陰陽性不同、冠詞不同、可能是變化形（`fui` → ir / ser，可勾選改成原形）、字典有多個詞性無法判斷、字典查不到、和其他卡是同一個字。每筆顯示「目前 → 字典」的差異，可改選對應的字典條目（例如 comer 名詞 / 動詞）；勾選或全選後「依字典修正」把詞性 / 陰陽性 / 冠詞**寫回卡片**（中文、例句、筆記、學習進度不動），每批可「復原」；「保留現狀」後同一個問題不再提醒。
