@@ -50,7 +50,10 @@ function readBatch(id) {
 function writeBatch(id, items, entriesByKey) {
   const first = items[0].rank;
   const last = items[items.length - 1].rank;
-  const entries = items.map(it => entriesByKey.get(lexiconKey(it.lemma))).filter(Boolean);
+  // mark-drawn.js may have switched pictures on in the file meanwhile: keep them
+  const onDisk = new Map((readBatch(id)?.entries || []).map(e => [lexiconKey(e.word), e.image]));
+  const entries = items.map(it => entriesByKey.get(lexiconKey(it.lemma))).filter(Boolean)
+    .map(e => (onDisk.get(lexiconKey(e.word)) === 'svg' ? { ...e, image: 'svg' } : e));
   fs.mkdirSync(FREQ_DIR, { recursive: true });
   fs.writeFileSync(batchFile(id), `${JSON.stringify({ theme: `freq-${id}`, theme_zh: `常用字（頻率第 ${first}–${last} 名）`, entries }, null, 2)}\n`);
 }

@@ -38,7 +38,7 @@
       "usage_zh": "若後方的陰性單數名詞以重音 a- 或 ha- 開頭（如 agua、hacha），單數冠詞須改用 el 以免連音拗口。",
       "example_es": "La casa de María es muy bonita.",
       "example_zh": "瑪麗亞的房子非常漂亮。",
-      "image": "emoji:👩",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:la"
@@ -81,7 +81,7 @@
       "usage_zh": "修飾陽性複數名詞；若團體中有男有女，西語語法習慣以陽性複數 los 代表全體。",
       "example_es": "Los niños juegan en el parque.",
       "example_zh": "孩子們在公園裡玩耍。",
-      "image": "emoji:👥",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:los"
@@ -103,7 +103,7 @@
       "usage_zh": "介系詞 de 遇到陽性單數定冠詞 el 時必須強制縮合為 del，不能寫成 de el。",
       "example_es": "El libro es del profesor.",
       "example_zh": "這本書是老師的。",
-      "image": "emoji:🔗",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:del"
@@ -141,7 +141,7 @@
       "usage_zh": "修飾陰性複數名詞；即使單數用 el 的詞（如 el agua），複數仍規則恢復為 las aguas。",
       "example_es": "Las flores de este jardín son hermosas.",
       "example_zh": "這座花園裡的花朵很美麗。",
-      "image": "emoji:👭",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:las"
@@ -198,10 +198,171 @@
       "usage_zh": "修飾陰性單數名詞；但若陰性名詞以重音 a- 或 ha- 開頭（如 águila），通常改用 un（un águila）。",
       "example_es": "Compré una manzana roja en el mercado.",
       "example_zh": "我在市場買了一顆紅蘋果。",
-      "image": "emoji:☝️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:una"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "al",
+      "article": "",
+      "pos": "preposición",
+      "zh": "到…、在…（a 與 el 的縮合形）",
+      "en": "to the, at the (contraction of a + el)",
+      "ipa": "/al/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "介詞 a 遇到陽性單數定冠詞 el 時會合體縮成 al，就像 a + el 黏在一起。",
+      "usage_zh": "介詞 a 接陽性單數定冠詞 el 時必須縮合為 al；但若 el 為專有名詞的一部分則不縮合。",
+      "example_es": "Vamos al cine esta tarde.",
+      "example_zh": "我們今天下午去電影院。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:al"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sus",
+      "article": "",
+      "pos": "determinante",
+      "zh": "您的、他們的、他的（修飾複數名詞）",
+      "en": "your, their, his, her (plural possessee)",
+      "ipa": "/sus/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "suso",
+          "zh": "suso"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sus",
+          "zh": "sus（截短形）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sus",
+          "zh": "所有格限定詞（複數）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "根據記載，此字源自古西班牙語 sus，是 suso 的截短形式（apocope）。在現代西語中演變為所有格限定詞，專門用來修飾複數名詞，表示「您的、他們的或他的」。",
+      "hook_zh": "su 是單數所有格，後面加上複數標記 -s 成為 sus，用來修飾複數名詞。",
+      "usage_zh": "修飾複數名詞，可指他的、她的、您的、他們的或您們的，需根據上下文判斷所有者。",
+      "example_es": "Ellos leen sus libros en la biblioteca.",
+      "example_zh": "他們在圖書館讀他們的書。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "esta",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "這個、這位（陰性單數指示詞）",
+      "en": "this, this one (feminine singular)",
+      "ipa": "/ˈesta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "iste",
+          "zh": "這個（陽性）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ista",
+          "zh": "這個（陰性）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esta",
+          "zh": "這個、這位（陰性）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ista，為 iste 的陰性單數形式。在拉丁語中指靠近對方的「這個」，傳入西班牙語後首音 i 脫落轉為 esta，專門指稱陰性單數的人事物。",
+      "hook_zh": "結尾 -a 讓人一眼認出是陰性單數，用來指眼前「這個」；陽性則是 este。",
+      "usage_zh": "可作為限定詞或代名詞。依皇家西班牙語言學院現行規範，作為代名詞時不再加重音符號。",
+      "example_es": "Esta casa es muy grande y bonita.",
+      "example_zh": "這間房子很大也很漂亮。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esta"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "son",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "聲音、悅耳音調；古巴頌樂",
+      "en": "tone, pleasant sound; Afro-Cuban son",
+      "ipa": "/ˈson/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sonus",
+          "zh": "聲音、聲響"
+        },
+        {
+          "lang_zh": "古奧克語",
+          "word": "son",
+          "zh": "聲音、旋律"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "son",
+          "zh": "音調、古巴頌樂"
+        }
+      ],
+      "cognates_en": [
+        "sound"
+      ],
+      "story_zh": "源自拉丁語 sonus（聲音、聲響），推測經由古奧克語 son 的中介傳入西語，原指悅耳的聲調。在美洲則發展為著名的古巴非裔傳統音樂「頌樂（son）」。英文的 sound 亦為同源字。",
+      "hook_zh": "son 和英文 sound 同源，閉上雙眼聆聽古巴 son（頌樂）動人的節奏。",
+      "usage_zh": "陽性名詞。常見成語如 en son de paz（帶著和平之意）、bailar al son que le tocan（見風轉舵）。",
+      "example_es": "Nos gusta bailar al son de la música cubana.",
+      "example_zh": "我們喜歡隨著古巴音樂的節奏跳舞。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:son",
+        "wiktionary:la:sonus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hay",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "在那裡（ahí 的口語同音異體字）",
+      "en": "there (alternative form of ahí)",
+      "ipa": "/ˈai/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "發音和 ahí 相同，在口語或非正式書寫中常被誤拼，記住標準方位詞是 ahí。",
+      "usage_zh": "為 aí / ahí 的非標準口語拼法，正規西班牙語表示「在那裡」請一律使用 ahí。",
+      "example_es": "Por hay dicen que mañana no habrá clases.",
+      "example_zh": "那裡有人說明天不用上課。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:hay"
       ],
       "writer": "gemini"
     }
