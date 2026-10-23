@@ -155,3 +155,13 @@ test('buildQueue folds verb forms into the known or most frequent lemma, unless 
   const queue = buildQueue(['podemos', 'pasar', 'pasa', 'estado', 'sino', 'd'], w => facts[w], new Set(['poder', 'estar']));
   assert.deepStrictEqual(queue.map(q => q.lemma), ['pasar', 'estado', 'sino']);
 });
+
+test('buildQueue keeps a noun whose verb is rarer, and infinitives', () => {
+  const facts = {
+    gobierno: { word: 'gobierno', base: null, form_of: ['gobernar'], entries: [{ pos: 'noun', glosses: ['government'] }] },
+    crear: { word: 'crear', base: null, form_of: ['creer'], entries: [{ pos: 'verb', glosses: ['to create'] }] },
+    gobernar: { word: 'gobernar', base: null, entries: [{ pos: 'verb', glosses: ['to govern'] }] }
+  };
+  const queue = buildQueue(['gobierno', 'crear', 'gobernar'], w => facts[w], new Set(['creer']));
+  assert.deepStrictEqual(queue.map(q => q.lemma), ['gobierno', 'crear', 'gobernar']);
+});

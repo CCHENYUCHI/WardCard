@@ -1,0 +1,41 @@
+{
+  "theme": "freq-0003",
+  "theme_zh": "常用字（頻率第 695–899 名）",
+  "entries": [
+    {
+      "word": "crear",
+      "article": "",
+      "pos": "verbo",
+      "zh": "創造、建立",
+      "en": "to create",
+      "ipa": "/kɾeˈaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "creāre",
+          "zh": "創造、生產"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "crear",
+          "zh": "創造"
+        }
+      ],
+      "cognates_en": [
+        "create"
+      ],
+      "story_zh": "源自拉丁語 creāre（創造、使產生），西語以學者借詞的形式保留了原始字形與意義。相對於此，同一個拉丁字在民間口語演變為雙胞詞 criar（養育）。",
+      "hook_zh": "英文的 create 是同源字，把字尾換成西語動詞字尾 -ar 就是 crear。",
+      "usage_zh": "現在式第一人稱是 creo，注意不要和動詞 creer（相信）的現在式 creo 混淆。",
+      "example_es": "Ella quiere crear una nueva empresa.",
+      "example_zh": "她想要創立一家新公司。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:crear"
+      ],
+      "writer": "gemini"
+    }
+  ]
+}

@@ -97,9 +97,13 @@ function formOfTarget(word, facts, known, rankOf) {
   if (!targets.length || NO_FOLD.has(word)) return null;
   const own = facts.base ? [] : facts.entries || [];
   if (own.some(e => FUNCTION_POS.has(e.pos))) return null;
+  if (own.some(e => e.pos === 'verb') && /(ar|er|ir|ír)(se)?$/.test(word)) return null; // an infinitive is a lemma
   if (own.reduce((n, e) => n + (e.glosses || []).length, 0) > OWN_SENSES_TO_STAY) return null;
   const score = (t) => (known.has(lexiconKey(t)) ? -1 : rankOf.get(t) ?? Infinity);
-  return [...targets].sort((a, b) => score(a) - score(b))[0];
+  const target = [...targets].sort((a, b) => score(a) - score(b))[0];
+  // A word with senses of its own folds only into a more frequent lemma: pasa -> pasar, but gobierno stays (gobernar is rarer)
+  if (own.length && !((rankOf.get(target) ?? Infinity) < (rankOf.get(word) ?? Infinity))) return null;
+  return target;
 }
 
 /**
