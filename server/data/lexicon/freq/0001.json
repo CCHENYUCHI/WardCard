@@ -798,6 +798,204 @@
         "wiktionary:es:estas"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "quien",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "誰；…的人（關係代名詞）",
+      "en": "who, whom, the one who",
+      "ipa": "/ˈkjen/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*kʷís, *kʷos",
+          "zh": "誰"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*kʷoi",
+          "zh": "誰"
+        },
+        {
+          "lang_zh": "古拉丁語",
+          "word": "quei",
+          "zh": "誰"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "quem",
+          "zh": "誰（受格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "quien",
+          "zh": "誰、…的人"
+        }
+      ],
+      "cognates_en": [
+        "who",
+        "whom"
+      ],
+      "story_zh": "quien 繼承自拉丁語 quī（誰）的單數受格 quĕm，更早可追溯至古拉丁語 quei、原始義大利語 *kʷoi 與原始印歐語 *kʷís、*kʷos。拉丁語受格 quem 在演變為西語時，擴展為主格與受格通用的關係代名詞與疑問詞。",
+      "hook_zh": "發音像「客言」，想像客人發問：「到底是『誰』（quien）在說話？」",
+      "usage_zh": "作為疑問代名詞時必須標重音符號 quién；作為關係代名詞時，複數形式為 quienes。",
+      "example_es": "Ella es la profesora con quien estudio español.",
+      "example_zh": "她就是和我一起學西語的老師。",
+      "image": "emoji:👤",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:quien"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "caso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "情況、案例；事件",
+      "en": "case, situation",
+      "ipa": "/ˈkaso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cāsus",
+          "zh": "情況、事件"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caso",
+          "zh": "情況、案例"
+        }
+      ],
+      "cognates_en": [
+        "case"
+      ],
+      "story_zh": "caso 是源自拉丁語 cāsus（情況、事件）的學術借詞。在拉丁語中指發生之事或落入某種境遇，進入西班牙語後完整保留了原詞形式與核心含義，用來表示各種情境、事態或具體案例。",
+      "hook_zh": "與英文 case（情況、案例）完全同源且拼法極為相似，僅字尾變為西語常見的 -o。",
+      "usage_zh": "常見固定搭配有 en caso de（萬一、在…情況下）以及 hacer caso a（理會、聽從）。",
+      "example_es": "En este caso, es mejor no decir nada.",
+      "example_zh": "在這種情況下，最好什麼都別說。",
+      "image": "emoji:📁",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nacional",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "國家的、全國性的",
+      "en": "national, nationwide",
+      "ipa": "/naθjoˈnal/",
+      "breakdown": [
+        {
+          "part": "nación",
+          "zh": "國家"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾，表示…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "新拉丁語",
+          "word": "nātiōnālis",
+          "zh": "國家的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nacional",
+          "zh": "國家的、全國性的"
+        }
+      ],
+      "cognates_en": [
+        "national"
+      ],
+      "story_zh": "nacional 是由名詞 nación（國家）加上形容詞字尾 -al 構詞而成，對照新拉丁語詞彙 nātiōnālis。字面含義為「屬於國家的」，用來修飾涉及全國範疇或具有國家性質的人事物。",
+      "hook_zh": "拼寫與英文 national（國家的）非常相近，只需注意西語重音落在最後音節 -al。",
+      "usage_zh": "陰陽同形形容詞，不論修飾陽性或陰性名詞形狀皆為 nacional，複數加 -es 變 nacionales。",
+      "example_es": "El museo nacional abre todos los días.",
+      "example_zh": "國立博物館每天都開放。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nacional"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nueva",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "消息、新事物",
+      "en": "news, novelty",
+      "ipa": "/ˈnweba/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "長得就像形容詞 nuevo（新的）的陰性形，有「新事物」自然就帶來了「新消息」。",
+      "usage_zh": "日常生活中常以複數 buenas nuevas 表示「好消息、佳音」；本身亦為 nuevo 的陰性形容詞。",
+      "example_es": "Te traigo una buena nueva sobre el proyecto.",
+      "example_zh": "我為你帶來了一個關於專案的好消息。",
+      "image": "emoji:📰",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:nueva"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "primera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "一檔（汽車最低檔）；頭等艙",
+      "en": "first gear, first class",
+      "ipa": "/pɾiˈmeɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prīmus",
+          "zh": "第一的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "prīmārius",
+          "zh": "第一等的、主要的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "primero",
+          "zh": "第一"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "primera",
+          "zh": "一檔、頭等艙"
+        }
+      ],
+      "cognates_en": [
+        "primary"
+      ],
+      "story_zh": "primera 源自西語序數詞 primero（第一），更早源於拉丁語 prīmārius（首要的、第一等的），後者由 prīmus（第一）加上後綴 -ārius 派生。名詞化後，在西班牙語中特指機動車輛的最低前進檔「一檔」，或交通工具的「頭等艙」。",
+      "hook_zh": "與英文 primary（首要的、初級的）同源；開車上路起步，第一步就要打入「一檔」。",
+      "usage_zh": "常用片語為 meter primera（排入一檔）；它也是陽性序數詞 primero 的陰性形容詞形。",
+      "example_es": "Mete primera y arranca despacio.",
+      "example_zh": "打進一檔，然後慢慢起步。",
+      "image": "emoji:🚗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:primera",
+        "wiktionary:la:primarius"
+      ],
+      "writer": "gemini"
     }
   ]
 }
