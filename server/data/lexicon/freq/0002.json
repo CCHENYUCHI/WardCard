@@ -3196,6 +3196,597 @@
         "wiktionary:es:civil"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "local",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "當地的、地方的；場所、店面",
+      "en": "local; premises",
+      "ipa": "/loˈkal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "locus",
+          "zh": "地方、位置"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "locālis",
+          "zh": "屬於地方的、當地的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "local",
+          "zh": "當地的；場所、店面"
+        }
+      ],
+      "cognates_en": [
+        "local",
+        "locate",
+        "location"
+      ],
+      "story_zh": "源自拉丁語 locus（地方），在晚期拉丁語衍生為形容詞 locālis（地方的），後作為學者借詞進入西語。它保留了形容詞「當地的」之意，亦衍生為名詞指空間或店面。拉丁語 locus 經民間語音演變的雙生詞則是 lugar（地方）。",
+      "hook_zh": "英文同源字就是 local，重音移到後面；可以想像在當地的特色小店（local）打卡。",
+      "usage_zh": "可作形容詞「當地的」（陰陽同形，複數 locales），亦可作陽性名詞指「店面、營業場所」（el local）。",
+      "example_es": "Compré estas frutas frescas en el mercado local.",
+      "example_zh": "我在當地的市場買了這些新鮮水果。",
+      "image": "emoji:🏪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:local",
+        "wiktionary:la:localis",
+        "wiktionary:la:locus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "acerca",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "關於、有關（與 de 連用）",
+      "en": "about, concerning",
+      "ipa": "/aˈθeɾka/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ad circa",
+          "zh": "朝向 + 大約、在周圍"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "acerca",
+          "zh": "關於"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語片語 ad circa，由 ad（朝向）與 circa（在…周圍、大約）組合而成。從空間上「朝著某處靠近、在周圍打轉」的意象，引申為思緒或話題圍繞著某事，演變為現代西語表示「關於、有關」的介系詞片語。",
+      "hook_zh": "看到 cerca 就想到靠近，話題靠近、圍繞著某件事轉，就是「關於」（acerca de）。",
+      "usage_zh": "幾乎只用於片語 acerca de（關於…），用法相當於 sobre，後面接名詞或代名詞。",
+      "example_es": "Hablamos acerca de los planes para el viaje.",
+      "example_zh": "我們聊了關於旅行的計畫。",
+      "image": "emoji:💭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:acerca"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "acá",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "這裡、往這裡",
+      "en": "here",
+      "ipa": "/aˈka/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*eccum hāc",
+          "zh": "看這裡、在此處"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "acá",
+          "zh": "這裡、往這裡"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自通俗拉丁語 *eccum hāc，由感嘆詞 eccum（看哪！）與指示詞 hāc（在此、朝這邊）結合而成。最初帶有「看這兒、朝這邊」的呼喚語氣，後來融合為單一副詞，表示說話者所在位置的「這裡」。",
+      "hook_zh": "「啊！卡（acá）在『這裡』動彈不得了！」想像自己被卡在原地大喊。",
+      "usage_zh": "拉美常用 acá，西班牙多用 aquí。acá 常用於移動動詞（如 ven acá 到這裡來），指向範圍較廣。",
+      "example_es": "Ven acá y mira esta foto divertida.",
+      "example_zh": "來這裡看看這張有趣的照片。",
+      "image": "emoji:📍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:acá"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "alrededor",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "在周圍、在四周；大約",
+      "en": "around, surrounding, about",
+      "ipa": "/alredeˈdoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "al + rededor",
+          "zh": "在… + 周圍"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alrededor",
+          "zh": "在周圍、四周"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西語介系詞與冠詞縮合形 al（在…、朝向）加上 rededor（周圍）合寫（univerbation）而成。原本是兩個獨立的詞，經長期連用後凝固為單一單字，字面意思就是「在周圍」，用來表示周圍環境或四周位置。",
+      "hook_zh": "諧音想像「在（al）紅色的門（red door）周圍（alrededor）」走來走去散步。",
+      "usage_zh": "常接 de 形成 alrededor de（在…周圍；大約）。也可作陽性名詞 el alrededor（常用複數 los alrededores 指周邊地區）。",
+      "example_es": "Hay muchos árboles alrededor del parque.",
+      "example_zh": "公園周圍有許多樹木。",
+      "image": "emoji:🔄",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alrededor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "campaña",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "活動、競選；戰役；平原",
+      "en": "campaign, countryside",
+      "ipa": "/kamˈpaɲa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "campus",
+          "zh": "開闊平地、田野"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "campāneus",
+          "zh": "田野的、平原的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "campānia",
+          "zh": "平原、城郊開闊地"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "campaña",
+          "zh": "戰役、宣傳活動；田野"
+        }
+      ],
+      "cognates_en": [
+        "campaign",
+        "campus",
+        "camp",
+        "champagne"
+      ],
+      "story_zh": "源自拉丁語 campus（開闊平地、田野），在晚期拉丁語延伸出 campānia（平原、開闊地）。古代軍隊在開闊平原上紮營出征，因此演變出「戰役、軍事行動」之意；現代更進一步引申至政治競選或各類宣傳活動。法語同源字香檳（champagne）也源於此。",
+      "hook_zh": "英文 campaign（活動）同源；想像候選人在開闊的平原（camp-）上紮營展開競選宣傳。",
+      "usage_zh": "陰性名詞（la campaña）。常見搭配有 campaña electoral（競選活動）與 campaña publicitaria（廣告宣傳）。",
+      "example_es": "La empresa lanzó una nueva campaña publicitaria.",
+      "example_zh": "這家公司推出了一場新的廣告宣傳活動。",
+      "image": "emoji:📢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:campaña",
+        "wiktionary:la:campania",
+        "wiktionary:la:campaneus",
+        "wiktionary:la:campus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "carrera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "賽跑、奔馳；大學學位、專業",
+      "en": "race; run; university degree, career",
+      "ipa": "/kaˈreɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "carrus",
+          "zh": "雙輪運貨馬車"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "carrāria",
+          "zh": "車道、馬車路"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "carrera",
+          "zh": "賽跑；大學專業、職業生涯"
+        }
+      ],
+      "cognates_en": [
+        "career"
+      ],
+      "story_zh": "源自拉丁語 carrus（雙輪運貨馬車），在晚期拉丁語中演變出 carrāria（車道）。後來引申為在跑道上奔馳的「賽跑」，並進一步延伸為求學過程或人生歷程中的「大學學業」與「職業生涯」。英文的 career 亦為同源字。",
+      "hook_zh": "在人生的道路（career）上全力奔馳，衝向終點就是 carrera。",
+      "usage_zh": "常用片語有 carrera contra el tiempo（與時間賽跑），指大學主修時常搭配 estudiar una carrera。",
+      "example_es": "Es una carrera contra el tiempo.",
+      "example_zh": "這是一場與時間的賽跑。",
+      "image": "emoji:🏃",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:carrera",
+        "wiktionary:la:carrus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ejército",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "軍隊、陸軍",
+      "en": "army",
+      "ipa": "/eˈxeɾθito/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "exercitus",
+          "zh": "受過操練的團體、軍隊"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "exército",
+          "zh": "軍隊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ejército",
+          "zh": "軍隊"
+        }
+      ],
+      "cognates_en": [
+        "exercise"
+      ],
+      "story_zh": "借自拉丁語 exercitus，本義為「受過操練、有紀律的團體」，專指「軍隊」。古西班牙語寫作 exército，當時的字母 x 讀作 /ʃ/，後來音變成為現代西語的 j（讀作 /x/）。英文的 exercise（鍛鍊）亦源於同一個拉丁字根。",
+      "hook_zh": "軍隊每天都要進行嚴格的「體能操練」（exercise），受訓部隊就是 ejército。",
+      "usage_zh": "陽性名詞。指國家軍種時通常首字母大寫，例如 Ejército de Tierra（陸軍）。",
+      "example_es": "El ejército defiende las fronteras del país.",
+      "example_zh": "軍隊保衛國家的邊境。",
+      "image": "emoji:🪖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ejército",
+        "wiktionary:la:exercitus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "interés",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "興趣、關注；利益；利息",
+      "en": "interest; stake; hobby",
+      "ipa": "/inteˈɾes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "interesse",
+          "zh": "在其中、有關係、重要"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "interés",
+          "zh": "興趣；利益；利息"
+        }
+      ],
+      "cognates_en": [
+        "interest"
+      ],
+      "story_zh": "源自拉丁語動詞 interesse，字面含義為「處於其中、有關係、重要」。詞義從與自身切身相關的「利益」及金融「利息」，進一步延伸至對某人某事物投入注意力的「興趣與關注」。",
+      "hook_zh": "與英文 interest 幾乎同形，注意重音落在最後一個音節 interés。",
+      "usage_zh": "複數為 intereses。表示「對…感興趣」常搭配 tener interés en 或 mostrar interés por。",
+      "example_es": "Tengo mucho interés en aprender español.",
+      "example_zh": "我對學習西班牙語非常感興趣。",
+      "image": "emoji:💡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:interés"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "objetivo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "目標、宗旨；客觀的",
+      "en": "objective, goal, target",
+      "ipa": "/obxeˈtibo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "objectīvus",
+          "zh": "客觀存在的、作為對象的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "objetivo",
+          "zh": "目標；客觀的"
+        }
+      ],
+      "cognates_en": [
+        "objective"
+      ],
+      "story_zh": "源自拉丁語 objectīvus。原本指「客觀存在、作為對象的」，後來詞義具體化，指人們目光所投向、努力想要達成的具體標的，因而衍生出「目標、宗旨」之意。",
+      "hook_zh": "英文 objective 的雙胞胎：當名詞是追求的「目標」，當形容詞是「客觀的」。",
+      "usage_zh": "作陽性名詞表示「目標」，作形容詞時有陰陽性變化（objetivo / objetiva，客觀的）。",
+      "example_es": "Nuestro objetivo es terminar el proyecto hoy.",
+      "example_zh": "我們的目標是今天完成這項專案。",
+      "image": "emoji:🎯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:objetivo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "principio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "開始、起點；原則、原理",
+      "en": "beginning, start; principle",
+      "ipa": "/pɾinˈθipjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "principium",
+          "zh": "開端、起源、基礎"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "principio",
+          "zh": "開始、起點；原則"
+        }
+      ],
+      "cognates_en": [
+        "principle"
+      ],
+      "story_zh": "借自拉丁語 principium，本義為「開端、起源、基礎」。詞義一方面保留時間與過程上的「開始、起初」，另一方面延伸為思想與道德規範上作為根基的「原則、原理」。",
+      "hook_zh": "英文 principle 是原則，西語 principio 不僅是「原則」，也是「一開始（al principio）」。",
+      "usage_zh": "常見片語有 al principio（起初、一開始）、en principio（原則上）。",
+      "example_es": "Al principio todo era difícil, pero ahora es fácil.",
+      "example_zh": "起初一切都很困難，但現在很容易了。",
+      "image": "emoji:🏁",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:principio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "provincia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "省；行省",
+      "en": "province",
+      "ipa": "/pɾoˈbinθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prōvincia",
+          "zh": "行省、管轄區"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "provincia",
+          "zh": "省、省份"
+        }
+      ],
+      "cognates_en": [
+        "province"
+      ],
+      "story_zh": "借自拉丁語 prōvincia（行省、管轄區），原指古羅馬指派給長官統治的行政領地。後來詞義演變為現代國家的行政區劃「省份」，英文的 province 也是同源借詞。",
+      "hook_zh": "長得很像英文的 province，意思也是「省份」，尾音換成西語的 -cia 即可。",
+      "usage_zh": "陰性名詞，複數為 provincias。在西班牙是自治區（comunidad autónoma）之下的二級行政區劃。",
+      "example_es": "Toledo es una provincia de España.",
+      "example_zh": "托雷多是西班牙的一個省。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:provincia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "recurso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "資源；手段；上訴",
+      "en": "resource, means, appeal",
+      "ipa": "/reˈkuɾso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "recursus",
+          "zh": "回頭跑、退路、求助"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "recurso",
+          "zh": "資源、手段、上訴"
+        }
+      ],
+      "cognates_en": [
+        "recourse"
+      ],
+      "story_zh": "學術借詞自拉丁語 recursus，原意為「回頭跑、求助的路徑或退路」。引申指遇到困難時可運用的「手段或法律上訴」，現代進一步延伸為物質或經濟上的「資源」。",
+      "hook_zh": "re-（再次、往回）加上 curso（流向、路線），遇到問題回頭找解決之道就是「資源」。",
+      "usage_zh": "常用複數 recursos 指「自然資源（recursos naturales）」或「人力資源（recursos humanos）」。",
+      "example_es": "No tenemos suficientes recursos para el viaje.",
+      "example_zh": "我們沒有足夠的資源來進行這趟旅行。",
+      "image": "emoji:💡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:recurso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "red",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "網；網絡；網路",
+      "en": "net, network, web",
+      "ipa": "/ˈred/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*rēti-",
+          "zh": "網"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "rēte",
+          "zh": "網、羅網"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "red",
+          "zh": "網"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "red",
+          "zh": "網、網路"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 rēte（網、羅網），經古西班牙語繼承而來。原本指捕魚或捕捉獵物的繩網，現代西語廣泛延伸指各種網狀結構，例如交通網、人際網以及網際網路。",
+      "hook_zh": "發音像紅色（red），想像用紅色的大網子捕魚，或是連接大家的紅色網路線。",
+      "usage_zh": "陰性名詞，複數為 redes。社群網路稱為 redes sociales，上網則是 navegar por la red。",
+      "example_es": "Pescamos varios peces con la red.",
+      "example_zh": "我們用漁網捕到了好幾條魚。",
+      "image": "emoji:🕸️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:red",
+        "wiktionary:la:rete"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ah",
+      "article": "",
+      "pos": "interjección",
+      "zh": "啊、哎（表示領悟、感嘆或悲痛）",
+      "en": "ah, oh",
+      "ipa": "/ˈa/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "ah"
+      ],
+      "story_zh": "",
+      "hook_zh": "和中文與英文的「啊！」發音及用法完全相同，用來表達恍然大悟或由衷讚嘆。",
+      "usage_zh": "感嘆詞，書寫時前後需加上倒驚嘆號與驚嘆號：¡Ah!。",
+      "example_es": "¡Ah, ahora entiendo todo!",
+      "example_zh": "啊，我現在全懂了！",
+      "image": "emoji:😮",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:ah"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aquellos",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "那些（遠處的人或物）",
+      "en": "those, those ones",
+      "ipa": "/aˈkeʝos/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "aquí（這裡）離自己很近，aquellos（那些）則遠在另一頭。",
+      "usage_zh": "陽性複數指示詞，表示空間或時間上距離說話雙方都較遠的人或事物。陰性複數為 aquellas。",
+      "example_es": "Aquellos días fueron inolvidables.",
+      "example_zh": "那些日子令人難忘。",
+      "image": "emoji:👉",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:aquellos"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "compañía",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "公司；陪伴、同伴",
+      "en": "company, companionship",
+      "ipa": "/kompaˈɲia/",
+      "breakdown": [
+        {
+          "part": "compaña",
+          "zh": "同伴、陪伴"
+        },
+        {
+          "part": "-ía",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "*compānia",
+          "zh": "同伴團體"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "compaña",
+          "zh": "同伴、陪伴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "compañía",
+          "zh": "公司；陪伴"
+        }
+      ],
+      "cognates_en": [
+        "company",
+        "companion"
+      ],
+      "story_zh": "源自晚期拉丁語 *compānia，經由古西班牙語 compaña 演變而來。詞義最初指一起生活、同甘共苦的「同伴」，後來延伸出人與人之間的「陪伴」，近代則進一步轉化為一群人共同合夥經營的商業「公司」。",
+      "hook_zh": "與英文 company 同源！好朋友合開公司彼此作伴，這就是最好的 compañía。",
+      "usage_zh": "陰性名詞。常用片語為 hacer compañía a alguien（陪伴某人）或 en compañía de（在…陪伴下）。",
+      "example_es": "Gracias por hacerme compañía esta tarde.",
+      "example_zh": "謝謝你今天下午陪我。",
+      "image": "emoji:🏢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:compañía"
+      ],
+      "writer": "gemini"
     }
   ]
 }
