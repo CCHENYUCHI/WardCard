@@ -18,6 +18,17 @@ const BATCH_SIZE = 100;
 // Kinds of Wiktionary entries that are not words to learn
 const SKIP_POS = new Set(['name', 'prefix', 'suffix', 'infix', 'symbol', 'character', 'letter', 'punct', 'abbrev', 'romanization']);
 
+// Very common verb forms that Wiktionary also lists as a rare word of their own (son "sound", hay as a spelling
+// of ahí): learners meet them as the verb form, so they fold into the verb like any other form
+const FOLD = {
+  son: 'ser', hay: 'haber', era: 'ser', eras: 'ser', fui: 'ser', sea: 'ser', sean: 'ser', siendo: 'ser',
+  ha: 'haber', han: 'haber', he: 'haber', has: 'haber', haya: 'haber', había: 'haber', hubo: 'haber',
+  va: 'ir', vas: 'ir', van: 'ir', vamos: 'ir', voy: 'ir', ve: 'ir', fue: 'ir',
+  da: 'dar', dé: 'dar', di: 'decir', dice: 'decir', digo: 'decir', dicho: 'decir',
+  sé: 'saber', sabe: 'saber', vino: 'venir', vengo: 'venir', ven: 'venir', hecho: 'hacer', haz: 'hacer',
+  puede: 'poder', puedo: 'poder', quiero: 'querer', tengo: 'tener', tiene: 'tener', está: 'estar', estaba: 'estar'
+};
+
 const factsFile = (factsDir, word) => path.join(factsDir, `${word}.json`);
 
 /** Lemma keys of the A1 lexicon (the hand-written set wins over the frequency set) */
@@ -46,14 +57,15 @@ function buildQueue(words, readFacts, skipKeys = new Set()) {
   let rank = 0;
   for (const word of words) {
     rank++;
-    const facts = readFacts(word);
+    if (FOLD[word] && skipKeys.has(lexiconKey(FOLD[word]))) continue;
+    const facts = readFacts(FOLD[word] || word);
     if (facts === undefined) break;
     if (!facts || !isLearnable(facts)) continue;
     const lemma = factsLemma(facts);
     const key = lexiconKey(lemma);
     if (seen.has(key)) continue;
     seen.add(key);
-    queue.push({ rank, word, lemma });
+    queue.push({ rank, word: FOLD[word] || word, lemma });
   }
   return queue;
 }
@@ -70,7 +82,7 @@ function toBatches(queue, size = BATCH_SIZE, { partial = false } = {}) {
   return batches;
 }
 
-module.exports = { isLearnable, buildQueue, toBatches, a1Keys, BATCH_SIZE };
+module.exports = { FOLD, isLearnable, buildQueue, toBatches, a1Keys, BATCH_SIZE };
 
 if (require.main === module) {
   const args = process.argv.slice(2);

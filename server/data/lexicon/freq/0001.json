@@ -302,69 +302,6 @@
         "wiktionary:es:esta"
       ],
       "writer": "gemini"
-    },
-    {
-      "word": "son",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "聲音、悅耳音調；古巴頌樂",
-      "en": "tone, pleasant sound; Afro-Cuban son",
-      "ipa": "/ˈson/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "sonus",
-          "zh": "聲音、聲響"
-        },
-        {
-          "lang_zh": "古奧克語",
-          "word": "son",
-          "zh": "聲音、旋律"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "son",
-          "zh": "音調、古巴頌樂"
-        }
-      ],
-      "cognates_en": [
-        "sound"
-      ],
-      "story_zh": "源自拉丁語 sonus（聲音、聲響），推測經由古奧克語 son 的中介傳入西語，原指悅耳的聲調。在美洲則發展為著名的古巴非裔傳統音樂「頌樂（son）」。英文的 sound 亦為同源字。",
-      "hook_zh": "son 和英文 sound 同源，閉上雙眼聆聽古巴 son（頌樂）動人的節奏。",
-      "usage_zh": "陽性名詞。常見成語如 en son de paz（帶著和平之意）、bailar al son que le tocan（見風轉舵）。",
-      "example_es": "Nos gusta bailar al son de la música cubana.",
-      "example_zh": "我們喜歡隨著古巴音樂的節奏跳舞。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:son",
-        "wiktionary:la:sonus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "hay",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "在那裡（ahí 的口語同音異體字）",
-      "en": "there (alternative form of ahí)",
-      "ipa": "/ˈai/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "發音和 ahí 相同，在口語或非正式書寫中常被誤拼，記住標準方位詞是 ahí。",
-      "usage_zh": "為 aí / ahí 的非標準口語拼法，正規西班牙語表示「在那裡」請一律使用 ahí。",
-      "example_es": "Por hay dicen que mañana no habrá clases.",
-      "example_zh": "那裡有人說明天不用上課。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:hay"
-      ],
-      "writer": "gemini"
     }
   ]
 }

@@ -84,20 +84,5 @@ module.exports = {
     s('circle', { cx: 36, cy: 88, r: 14 }, 'skin'),
     s('path', { d: 'M50 84h26', ...SW(8) }, 'skin', { stroke: true }),
     s('rect', { x: 22, y: 102, width: 28, height: 34, rx: 6 }, 'blue')
-  ],
-  son: [
-    s('ellipse', { cx: 58, cy: 104, rx: 30, ry: 26 }, 'brown', { accent: true }),
-    s('circle', { cx: 58, cy: 104, r: 9 }, 'dark'),
-    s('rect', { x: 82, y: 98, width: 56, height: 10, rx: 3 }, 'tan'),
-    ...note(96, 56, 'purple'),
-    ...note(126, 44, 'blue'),
-    s('path', { d: 'M18 52q6-8 12 0M14 40q10-16 20 0', ...SW(3) }, 'gray', { stroke: true })
-  ],
-  hay: [
-    ground(),
-    s('path', { d: 'M110 132c-14-22-26-36-26-54a26 26 0 0 1 52 0c0 18-12 32-26 54z' }, 'red', { accent: true }),
-    s('circle', { cx: 110, cy: 78, r: 10 }, 'white'),
-    ...person(34, 136, 'blue'),
-    s('path', { d: 'M48 104l22-12', ...SW(7) }, 'skin', { stroke: true })
   ]
 };
