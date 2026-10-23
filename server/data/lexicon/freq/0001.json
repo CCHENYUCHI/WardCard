@@ -2518,6 +2518,382 @@
         "wiktionary:es:desarrollo"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "sociedad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "社會、社群、公司",
+      "en": "society, community, company",
+      "ipa": "/soθjeˈdad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "socius",
+          "zh": "夥伴、同盟"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "societas",
+          "zh": "社群、夥伴關係"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sociedad",
+          "zh": "社會、公司"
+        }
+      ],
+      "cognates_en": [
+        "society",
+        "social"
+      ],
+      "story_zh": "源自拉丁語 socius（同伴、盟友），衍生出名詞 societas，原意是「夥伴關係」或「共同體」。隨著語意拓展，從小團體的結盟擴大為整個群體構成的「社會」，後來也引申出商業上的「公司」或「協會」之意。",
+      "hook_zh": "聯想英文 society，字根 socio- 代表社交與同伴，同伴聚在一起就是 sociedad（社會）。",
+      "usage_zh": "陰性名詞。以 -dad 結尾的名詞均為陰性。商業上 sociedad anónima（S.A.）代表股份有限公司。",
+      "example_es": "Vivimos en una sociedad diversa y abierta.",
+      "example_zh": "我們生活在一個多元且開放的社會中。",
+      "image": "emoji:👥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sociedad",
+        "wiktionary:la:societas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tema",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "主題、題目、話題",
+      "en": "theme, topic, subject",
+      "ipa": "/ˈtema/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "θέμα",
+          "zh": "放置之物、命題"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "thema",
+          "zh": "主題、題目"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tema",
+          "zh": "主題、話題"
+        }
+      ],
+      "cognates_en": [
+        "theme"
+      ],
+      "story_zh": "源自古希臘語 θέμα（théma），原意為「被放置下來的事物」或「擺出來討論的命題」，後經拉丁語 thema 借入西語。擺在桌面上供大家探討的事情，就演變成如今演講或文章的「主題」與「話題」。",
+      "hook_zh": "英文同源字 theme。發音類似「鐵馬」：今天我們報告的「主題」是環島鐵馬行。",
+      "usage_zh": "陰陽性陷阱！雖以 -a 結尾，但源自希臘語，因此是陽性名詞（el tema，複數 los temas）。",
+      "example_es": "Es un tema muy interesante para debatir.",
+      "example_zh": "這是一個非常適合辯論的主題。",
+      "image": "emoji:💬",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tema"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "esas",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "那些（陰性複數）",
+      "en": "those, those ones (feminine)",
+      "ipa": "/ˈesas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipse",
+          "zh": "本人、自身"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipsas",
+          "zh": "那些（陰性複數）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esas",
+          "zh": "那些"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ipse（本人、自己）的陰性複數形式 ipsās。在通俗拉丁語演變為西語的過程中，原本用來加強語氣的「她們自己」逐漸轉變為指示詞，用來指稱距離聽話者較近或中等距離的「那些事物」。",
+      "hook_zh": "ese（那個）的陰性複數。想像手指著不遠處的「那些」（esas）東西。",
+      "usage_zh": "指中等距離或聽話者附近的陰性複數人事物。作指示代名詞時，現代正書法已不強制加上重音符號 ésas。",
+      "example_es": "Esas son las flores que más me gustan.",
+      "example_zh": "那些是我最喜歡的花。",
+      "image": "emoji:👉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mí",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "我（介系詞受詞）",
+      "en": "me (object of preposition)",
+      "ipa": "/ˈmi/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ego",
+          "zh": "我"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "mihi",
+          "zh": "對我、給我"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mí",
+          "zh": "我（介系詞受詞）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "承襲自古典拉丁語第一人稱單數代名詞 ego（我）的與格形式 mihi（對我、給我）。在語音簡化演變中，mihi 縮短為單音節的 mí，並在西語中專門用於介系詞（如 para、de）之後作為受格代名詞。",
+      "hook_zh": "發音就像英文的 me，專門跟在介系詞後面當「我」（如 para mí 為我）。",
+      "usage_zh": "受詞代名詞，必須帶重音符號 mí 以區分所有格形容詞 mi（我的）；與介系詞 con 連用時需變為 conmigo。",
+      "example_es": "Este regalo es muy especial para mí.",
+      "example_zh": "這份禮物對我來說非常特別。",
+      "image": "emoji:🙋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mí"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nivel",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "水準、程度、等級、水平儀",
+      "en": "level, standard, tier",
+      "ipa": "/niˈbel/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "libra",
+          "zh": "天平、磅"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "libella",
+          "zh": "水準儀、小天平"
+        },
+        {
+          "lang_zh": "古法語",
+          "word": "nivel",
+          "zh": "水準儀、水平"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nivel",
+          "zh": "水準、程度、等級"
+        }
+      ],
+      "cognates_en": [
+        "level"
+      ],
+      "story_zh": "源自拉丁語 lībra（天平），加上指小詞後形成 libella，原指工匠測量平面的「水準儀」。經由古法語 nivel（字首音變由 l- 轉為 n-）或加泰隆尼亞語傳入西語，從具體的測量工具引申為高度、程度與「水準」。",
+      "hook_zh": "英文同源字 level，拼法與發音都極為接近，意思同樣是「水準」或「等級」。",
+      "usage_zh": "陽性名詞 el nivel。常搭配片語 a nivel de（在…水準/層面上），複數形為 niveles。",
+      "example_es": "Su nivel de español es excelente.",
+      "example_zh": "他的西班牙語程度非常優秀。",
+      "image": "emoji:📏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nivel",
+        "wiktionary:la:libella"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "argentino",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "阿根廷的；銀色的",
+      "en": "Argentine, Argentinian; silvery",
+      "ipa": "/aɾxenˈtino/",
+      "breakdown": [
+        {
+          "part": "argent-",
+          "zh": "銀"
+        },
+        {
+          "part": "-ino",
+          "zh": "形容詞字尾，表…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "argentum",
+          "zh": "銀"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "argentinus",
+          "zh": "銀製的、銀色的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "argentino",
+          "zh": "阿根廷的、銀色的"
+        }
+      ],
+      "cognates_en": [
+        "Argentine"
+      ],
+      "story_zh": "源自拉丁語 argentīnus（銀色的），而該詞來自 argentum（銀）。16 世紀探險家在拉普拉塔河尋找白銀，使該地區得名「阿根廷」，字面即「銀之國」。因此 argentino 原指「銀色的」，後來演變為「阿根廷的」。",
+      "hook_zh": "阿根廷（Argentina）是白銀之國，結尾換成 -ino 就是阿根廷的或阿根廷人。",
+      "usage_zh": "首字母小寫，陰性為 argentina。作名詞時表示阿根廷人（el / la argentino/a）。",
+      "example_es": "El asado argentino es famoso en todo el mundo.",
+      "example_zh": "阿根廷烤肉聞名全世界。",
+      "image": "emoji:🇦🇷",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:argentino",
+        "wiktionary:la:argentinus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hemo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "血基質、血紅素分子",
+      "en": "heme",
+      "ipa": "/ˈemo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "發音像「黑膜」，聯想到血液中包覆鐵質的深色血基質結構；也可聯想英文 hemoglobin。",
+      "usage_zh": "陽性名詞。屬於生化醫學專業名詞。注意動詞 haber 的第一人稱複數現在式也是 hemos。",
+      "example_es": "El grupo hemo contiene un átomo de hierro.",
+      "example_zh": "血基質含有一個鐵原子。",
+      "image": "emoji:🩸",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:hemo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "paso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "步伐、腳步；步驟",
+      "en": "step, pace",
+      "ipa": "/ˈpaso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "passus",
+          "zh": "跨步、腳步"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "passo",
+          "zh": "步伐"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paso",
+          "zh": "腳步、步驟"
+        }
+      ],
+      "cognates_en": [
+        "pace",
+        "pass"
+      ],
+      "story_zh": "承襲自古西班牙語 passo，最終源自拉丁語 passus（邁步、步幅）。原義是走路時雙腳邁開的距離，引申指行走的「腳步」或前進的節奏，後來也用來比喻依順序進行的「步驟」。英文的 pace（步調）與 pass（通過）皆為同源字。",
+      "hook_zh": "聯想英文 pace（步調）和 pass（通過），一步一步走過去就是一個 paso。",
+      "usage_zh": "常用片語有 paso a paso（一步步地、按部就班）和 dar un paso（邁出一步）。",
+      "example_es": "Vamos a resolver este problema paso a paso.",
+      "example_zh": "我們來按部就班解決這個問題。",
+      "image": "emoji:👣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paso",
+        "wiktionary:la:passus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "unido",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "團結的、聯合的；相連的",
+      "en": "united, joined, linked",
+      "ipa": "/uˈnido/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "看到 unido 就想到 Estados Unidos（美國），象徵大家手牽手「團結、聯合」在一起。",
+      "usage_zh": "陰性為 unida。是動詞 unir（結合、團結）的過去分詞轉形容詞。",
+      "example_es": "Ellos son una familia muy unida.",
+      "example_zh": "他們是一個感情非常緊密的家庭。",
+      "image": "emoji:🤝",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:unido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "uso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "使用、用途；習俗、慣例",
+      "en": "use, usage; custom",
+      "ipa": "/ˈuso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "usus",
+          "zh": "使用、習慣"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "uso",
+          "zh": "使用、習慣"
+        }
+      ],
+      "cognates_en": [
+        "use",
+        "usage"
+      ],
+      "story_zh": "承襲自拉丁語 ūsus（使用、習慣）。拉丁文原義指透過反覆操作物品的「使用」，以及經由長期重複實踐而形成的「慣例」或「風俗」。西班牙語完整保留了這兩層含意，既指實質的用途，也指文化上的習俗。",
+      "hook_zh": "長相和英文 use 極為相似，只要把字尾 e 換成西語陽性結尾 o 就是 uso。",
+      "usage_zh": "陽性名詞。常見片語有 fuera de uso（故障中、停止使用）、hacer uso de（使用…）。",
+      "example_es": "Este diccionario está diseñado para el uso diario.",
+      "example_zh": "這本字典是設計給日常使用。",
+      "image": "emoji:🔧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:uso"
+      ],
+      "writer": "gemini"
     }
   ]
 }
