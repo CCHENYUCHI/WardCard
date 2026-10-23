@@ -4,17 +4,19 @@
  * screen and cites its sources; every illustration is a small, self-contained SVG.
  *
  * Usage: node server/scripts/lexicon/validate.js [lexiconDir] [svgDir] [--only <theme>]
+ *   Without lexiconDir every set (a1/, freq/) is checked; --only takes a file name inside a set
+ *   ("food", "freq/0001" or "a1/food").
  */
 const fs = require('fs');
 const path = require('path');
 const { normalizeWord } = require('../../cardUtils');
-const { lexiconKey, svgFileName } = require('../../lexicon');
+const { LEXICON_DIRS, lexiconKey, svgFileName } = require('../../lexicon');
 
-const DEFAULT_LEXICON_DIR = path.join(__dirname, '../../data/lexicon/a1');
 const DEFAULT_SVG_DIR = path.join(__dirname, '../../../client/public/lexicon');
 const POS = ['sustantivo', 'verbo', 'adjetivo', 'adverbio', 'frase', 'conjunción', 'preposición', 'pronombre', 'interjección', 'artículo', 'determinante', 'numeral'];
 const ARTICLES = ['', 'el', 'la'];
 const CONFIDENCE = ['sourced', 'hook-only'];
+const WRITERS = ['gemini']; // absent = written by Claude
 const MAX = { zh: 40, en: 60, story_zh: 220, hook_zh: 80, usage_zh: 90, example_es: 90, example_zh: 60 };
 const MAX_SVG_BYTES = 4096;
 
@@ -37,6 +39,7 @@ function validateEntry(e) {
     need(e.story_zh.length > 0 && e.origin_chain.length > 0, 'sourced entry needs story_zh and origin_chain');
     need(Array.isArray(e.sources) && e.sources.length > 0 && e.sources.every(s => /^wiktionary:[a-z-]+:.+/.test(s)), 'sources');
   }
+  need(e.writer === undefined || WRITERS.includes(e.writer), `writer "${e.writer}"`);
   need(e.image === 'svg' || /^emoji:\S+$/u.test(e.image || ''), `image "${e.image}"`);
   if (isStr(e.example_es) && isStr(e.word)) {
     // The example should show the word (or one of its forms); a loose stem check catches copy-paste slips
@@ -54,13 +57,29 @@ function validateSvg(text) {
   return errors;
 }
 
-function validateAll(lexiconDir = DEFAULT_LEXICON_DIR, svgDir = DEFAULT_SVG_DIR, only = null) {
+/** Lexicon files to check: [{ file: 'a1/food.json', full }] for one folder or several, optionally only one theme */
+function lexiconFiles(dirs, only) {
+  const out = [];
+  for (const dir of [].concat(dirs)) {
+    if (!fs.existsSync(dir)) continue;
+    const set = path.basename(dir);
+    for (const name of fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort()) {
+      const theme = name.replace(/\.json$/, '');
+      if (only && only !== theme && only !== `${set}/${theme}`) continue;
+      out.push({ file: `${set}/${name}`, full: path.join(dir, name) });
+    }
+  }
+  return out;
+}
+
+function validateAll(lexiconDirs = LEXICON_DIRS, svgDir = DEFAULT_SVG_DIR, only = null) {
   const problems = [];
   const seen = new Map();
   let count = 0;
-  const files = only ? [`${only}.json`] : fs.readdirSync(lexiconDir).filter(f => f.endsWith('.json')).sort();
-  for (const file of files) {
-    const data = JSON.parse(fs.readFileSync(path.join(lexiconDir, file), 'utf8'));
+  const files = lexiconFiles(lexiconDirs, only);
+  if (only && files.length === 0) problems.push(`no lexicon file "${only}"`);
+  for (const { file, full } of files) {
+    const data = JSON.parse(fs.readFileSync(full, 'utf8'));
     for (const e of data.entries || []) {
       count++;
       const key = lexiconKey(e.word);
@@ -77,14 +96,14 @@ function validateAll(lexiconDir = DEFAULT_LEXICON_DIR, svgDir = DEFAULT_SVG_DIR,
   return { count, problems };
 }
 
-module.exports = { validateEntry, validateSvg, validateAll };
+module.exports = { validateEntry, validateSvg, validateAll, lexiconFiles };
 
 if (require.main === module) {
   const args = process.argv.slice(2);
   const onlyAt = args.indexOf('--only');
   const only = onlyAt >= 0 ? args.splice(onlyAt, 2)[1] : null;
   const [lexiconDir, svgDir] = args;
-  const { count, problems } = validateAll(lexiconDir || DEFAULT_LEXICON_DIR, svgDir || DEFAULT_SVG_DIR, only);
+  const { count, problems } = validateAll(lexiconDir || LEXICON_DIRS, svgDir || DEFAULT_SVG_DIR, only);
   for (const p of problems) console.error(`✗ ${p}`);
   console.log(`${count} entries, ${problems.length} problem(s)`);
   process.exit(problems.length ? 1 : 0);

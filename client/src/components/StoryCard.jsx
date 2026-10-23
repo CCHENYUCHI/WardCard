@@ -54,7 +54,7 @@ function StoryDetails({ story }) {
         <div className="lookup-sub">{story.example_zh}</div>
       </div>
       <div className="lookup-credit">
-        {story.confidence === 'sourced' ? '字源依據 Wiktionary（CC BY-SA）· ' : ''}PalabraCard 字源圖鑑
+        {story.confidence === 'sourced' ? '字源依據 Wiktionary（CC BY-SA）· ' : ''}{story.writer === 'gemini' ? 'Gemini 撰寫、程式檢查 · ' : ''}PalabraCard 字源圖鑑
       </div>
     </>
   );

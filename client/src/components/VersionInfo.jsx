@@ -14,9 +14,9 @@ const formatTime = (iso) => {
 function describeDictionary(dict) {
   if (!dict) return '';
   if (!dict.exists) return '沒有字典檔';
-  if (dict.entries === 0) return `只有 A1 圖鑑（${dict.lexiconEntries} 字），沒有 Wiktionary 詞條`;
+  if (dict.entries === 0) return `只有字源圖鑑（${dict.lexiconEntries} 字），沒有 Wiktionary 詞條`;
   const extras = [dict.extras.forms && '變位', dict.extras.etymology && '字源', dict.extras.examples && '例句', dict.extras.ipa && '發音'].filter(Boolean);
-  return `v${dict.schemaVersion} · ${dict.entries.toLocaleString()} 筆${extras.length ? ` · 含${extras.join('、')}` : ''}${dict.lexiconEntries ? ` · A1 圖鑑 ${dict.lexiconEntries} 字` : ''}`;
+  return `v${dict.schemaVersion} · ${dict.entries.toLocaleString()} 筆${extras.length ? ` · 含${extras.join('、')}` : ''}${dict.lexiconEntries ? ` · 字源圖鑑 ${dict.lexiconEntries} 字` : ''}`;
 }
 
 /** Settings → 版本資訊: which build of the page, the server and the dictionary are in use. */
