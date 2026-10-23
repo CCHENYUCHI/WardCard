@@ -47,7 +47,7 @@
 cd <repo>
 node server/scripts/lexicon/render-art.js flat --only <OUT>
 node server/scripts/lexicon/validate.js --only <OUT>
-node <contact-sheet script> <OUT>     # 產生插圖總覽 PNG，用 Read 看一次，修掉看不出是什麼、跑出邊界、顏色錯亂的圖
+node server/scripts/lexicon/contact-sheet.js <OUT> <sheet.png>   # 產生插圖總覽 PNG，用 Read 看一次，修掉看不出是什麼、跑出邊界、顏色錯亂的圖
 ```
 不要 git commit。完成後回報：條目數、sourced / hook-only / emoji 數量、驗證結果、你沒把握的字（最多 10 個，附原因）。
 
@@ -73,6 +73,7 @@ node server/scripts/lexicon/draw-list.js 0001
 node server/scripts/lexicon/render-art.js flat --only freq-0001
 node server/scripts/lexicon/mark-drawn.js 0001
 node server/scripts/lexicon/validate.js --only freq/0001
+node server/scripts/lexicon/contact-sheet.js freq-0001 $W/sheet-0001.png   # 用 Read 看一次，修掉看不懂 / 出界 / 白底白圖
 ```
 
 - `NODE_USE_ENV_PROXY=1` 只在要經過 HTTPS proxy 時需要（雲端環境）。
