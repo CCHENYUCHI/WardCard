@@ -7,6 +7,9 @@
  *        node server/scripts/lexicon/fetch-facts.js <outDir> --list words.txt
  *
  * Writes <outDir>/<word>.json. Already fetched words are skipped, so the script can be re-run.
+ *
+ *        node server/scripts/lexicon/fetch-facts.js <outDir> --refresh-forms
+ *   adds `form_of` (every lemma the word is an inflected form of) to facts files written before it existed.
  */
 const fs = require('fs');
 const path = require('path');
@@ -97,8 +100,12 @@ async function ancestors(origins, depth, seen) {
   return out;
 }
 
+/** Every lemma a Spanish word is an inflected form of, in Wiktionary's order (podemos -> podar, poder) */
+const formTargets = (entries) => [...new Set(entries.flatMap(e => (e.senses || []).flatMap(s => s.form_of || [])).map(f => f.word).filter(Boolean))];
+
 async function collect(word) {
   const entries = (await fetchEntries('Spanish', word)).filter(e => e.word === word);
+  const formOf = formTargets(entries).filter(t => t !== word);
   let lemmas = entries.filter(e => !(e.senses || []).every(s => s.form_of)).map(summarize);
   let base = null;
   if (lemmas.length === 0) {
@@ -117,6 +124,7 @@ async function collect(word) {
     source: 'Wiktionary via kaikki.org (CC BY-SA)',
     fetched_at: new Date().toISOString(),
     base, // the lemma these facts belong to when the word itself is only an inflected form
+    form_of: formOf, // lemmas the word is also (or only) an inflected form of
     entries: lemmas,
     ancestors: await ancestors([...origins, ...parts.filter(p => p.lang !== 'es')], 1, new Set())
   };
@@ -128,10 +136,25 @@ async function main() {
     console.error('Usage: fetch-facts.js <outDir> word1 word2 ... | --list words.txt');
     process.exit(1);
   }
-  const words = rest[0] === '--list'
+  const words = rest[0] === '--refresh-forms' ? [] : rest[0] === '--list'
     ? fs.readFileSync(rest[1], 'utf8').split(/\r?\n/).map(s => s.trim()).filter(s => s && !s.startsWith('#'))
     : rest;
   fs.mkdirSync(outDir, { recursive: true });
+  if (rest[0] === '--refresh-forms') {
+    for (const name of fs.readdirSync(outDir).filter(n => n.endsWith('.json')).sort()) {
+      const file = path.join(outDir, name);
+      const facts = JSON.parse(fs.readFileSync(file, 'utf8'));
+      if (Array.isArray(facts.form_of)) continue;
+      try {
+        facts.form_of = formTargets((await fetchEntries('Spanish', facts.word)).filter(e => e.word === facts.word)).filter(t => t !== facts.word);
+        fs.writeFileSync(file, JSON.stringify(facts, null, 2));
+        console.log(`${facts.word}: form of ${facts.form_of.join(', ') || '-'}`);
+      } catch (err) {
+        console.error(`${facts.word}: ${err.message}`);
+      }
+    }
+    return;
+  }
   for (const word of words) {
     const file = path.join(outDir, `${word}.json`);
     if (fs.existsSync(file)) continue;

@@ -79,9 +79,27 @@ function isLearnable(facts) {
   const entries = facts.entries || [];
   const lemma = factsLemma(facts);
   if (!/^[a-záéíóúüñ ]+$/i.test(lemma)) return false;
-  // Single letters are words only as function words (y, o, e, u, a), not as letter names or abbreviations
-  if (lemma.length === 1 && !entries.some(e => FUNCTION_POS.has(e.pos))) return false;
+  // Single letters are words only as y, o, e, u, a; otherwise letter names or abbreviations
+  if (lemma.length === 1 && !'yoeua'.includes(lemma.toLowerCase())) return false;
   return entries.some(e => !SKIP_POS.has(e.pos));
+}
+
+// A word that is also a verb / noun form keeps its own entry only with more than this many senses of its own:
+// estado, parte, cuenta stay; pasa ("raisin"), buena ("inheritance") fold into pasar, bueno
+const OWN_SENSES_TO_STAY = 2;
+
+/**
+ * The lemma an inflected form folds into, from the facts' form_of list (fetch-facts.js): podemos -> poder,
+ * not podar. A known lemma (A1 or queued earlier) wins, then the most frequent one.
+ */
+function formOfTarget(word, facts, known, rankOf) {
+  const targets = facts?.form_of || (facts?.base ? [facts.base] : []);
+  if (!targets.length || NO_FOLD.has(word)) return null;
+  const own = facts.base ? [] : facts.entries || [];
+  if (own.some(e => FUNCTION_POS.has(e.pos))) return null;
+  if (own.reduce((n, e) => n + (e.glosses || []).length, 0) > OWN_SENSES_TO_STAY) return null;
+  const score = (t) => (known.has(lexiconKey(t)) ? -1 : rankOf.get(t) ?? Infinity);
+  return [...targets].sort((a, b) => score(a) - score(b))[0];
 }
 
 /**
@@ -91,13 +109,17 @@ function isLearnable(facts) {
 function buildQueue(words, readFacts, skipKeys = new Set()) {
   const queue = [];
   const seen = new Set(skipKeys);
+  const rankOf = new Map(words.map((w, i) => [w, i + 1]));
   let rank = 0;
   for (const word of words) {
     rank++;
-    const target = FOLD[word] || foldTarget(word, readFacts);
-    if (target && skipKeys.has(lexiconKey(target))) continue;
-    const facts = readFacts(target || word);
-    if (facts === undefined) break;
+    const own = readFacts(word);
+    if (own === undefined) break;
+    let target = FOLD[word] || formOfTarget(word, own, seen, rankOf) || foldTarget(word, readFacts);
+    if (target && seen.has(lexiconKey(target))) continue;
+    // A rarer lemma that has not been fetched: keep the facts the word itself came with
+    if (target && !readFacts(target)) target = null;
+    const facts = target ? readFacts(target) : own;
     if (!facts || !isLearnable(facts)) continue;
     const lemma = factsLemma(facts);
     const key = lexiconKey(lemma);
@@ -120,7 +142,7 @@ function toBatches(queue, size = BATCH_SIZE, { partial = false } = {}) {
   return batches;
 }
 
-module.exports = { FOLD, baseCandidates, foldTarget, isLearnable, buildQueue, toBatches, a1Keys, BATCH_SIZE };
+module.exports = { FOLD, baseCandidates, foldTarget, formOfTarget, isLearnable, buildQueue, toBatches, a1Keys, BATCH_SIZE };
 
 if (require.main === module) {
   const args = process.argv.slice(2);
