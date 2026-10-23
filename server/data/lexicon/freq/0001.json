@@ -1,6 +1,6 @@
 {
   "theme": "freq-0001",
-  "theme_zh": "常用字（頻率第 2–359 名）",
+  "theme_zh": "常用字（頻率第 2–399 名）",
   "entries": [
     {
       "word": "la",
@@ -300,6 +300,176 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:esta"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ése",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "那個（指示代名詞）",
+      "en": "that one",
+      "ipa": "/ˈese/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipse",
+          "zh": "本人、正是那個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ése",
+          "zh": "那個"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語代名詞 ipse，本義為「本人、自己、正是那一個」。在通俗拉丁語演變為西語的過程中，語意弱化並轉為指示代名詞，用來指稱離聽話者較近或剛提及的人事物。",
+      "hook_zh": "手指著對方身旁的東西問：「那是（ése）你的嗎？」畫面感十足。",
+      "usage_zh": "傳統上指示代名詞標重音（ése）以區分形容詞（ese），但西語皇家學院現規定若無歧義可不加重音。",
+      "example_es": "No quiero este libro, prefiero ése.",
+      "example_zh": "我不要這本書，我比較想要那個。",
+      "image": "emoji:👉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ése",
+        "wiktionary:la:ipse"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hace",
+      "article": "",
+      "pos": "preposición",
+      "zh": "前（表示時間前）；距今",
+      "en": "ago",
+      "ipa": "/ˈaθe/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "動詞 hacer（做）的第三人稱，想像時間「做」了三年，就成了「三年前」。",
+      "usage_zh": "表「…之前」時必須放在時間長度前面（如 hace dos días），與英文置於時間後的 ago 相反。",
+      "example_es": "Él nos visitó hace tres años.",
+      "example_zh": "他三年前來拜訪過我們。",
+      "image": "emoji:⏳",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:hace"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "donde",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "在…的地方、何處（關係副詞）",
+      "en": "where, in what place",
+      "ipa": "/ˈdonde/",
+      "breakdown": [
+        {
+          "part": "de",
+          "zh": "從"
+        },
+        {
+          "part": "onde",
+          "zh": "何處（源自 unde）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "unde",
+          "zh": "從何處"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "onde",
+          "zh": "從何處、何處"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "donde",
+          "zh": "在哪裡、在…的地方"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由介詞 de（從）與古西語 onde（從何處）結合而成，而 onde 繼承自拉丁語 unde（從何處）。原本帶有「從哪裡來」之意，後來在西語中取代了源自 ubi 的古詞，轉為泛指「在…的地方」。",
+      "hook_zh": "走在陌生街頭迷路，四處張望心想「到底在哪裡（donde）」。",
+      "usage_zh": "作為疑問副詞時必須標上重音（dónde，如 ¿Dónde estás?），作為關係副詞引導子句時則不帶重音。",
+      "example_es": "Deja los libros donde quieras.",
+      "example_zh": "把書放在你想放的地方。",
+      "image": "emoji:📍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:donde",
+        "wiktionary:la:unde"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tan",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "那麼、如此（程度副詞）",
+      "en": "so, as",
+      "ipa": "/tan/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tam",
+          "zh": "那麼、如此"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tan",
+          "zh": "那麼、如此"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自拉丁語副詞 tam，意思是「那麼、如此、到這種程度」。在演變為西班牙語時，字尾的 m 音轉化為 n 音，保留了修飾形容詞與副詞時表示強烈程度的用法。",
+      "hook_zh": "讀音像「嘆」，令人嘆氣地說：「事情怎麼會『那麼（tan）』複雜！」",
+      "usage_zh": "用來修飾形容詞或副詞，常見句型 tan... como... 表示「和…一樣…」；修飾名詞時則需用 tanto。",
+      "example_es": "Eres tan rico como te sientes.",
+      "example_zh": "你感覺自己有多富足，你就有多富足。",
+      "image": "emoji:✨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tan"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "e",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "和、與（替代 y）",
+      "en": "and",
+      "ipa": "/e/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "et",
+          "zh": "和、與"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "e",
+          "zh": "和、與"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自拉丁語連接詞 et（和、與）。在語音演變中字尾 t 脫落成為 e，多數場合進一步演變為 y，但在以 [i] 音開頭的單字前，為了避免連音混淆而保留了古老的 e。",
+      "hook_zh": "英文常見縮寫 etc.（et cetera）開頭的拉丁文 et 就是「和」，在西語中化身為 e。",
+      "usage_zh": "當後面的單字是以 i- 或 hi- 開頭時，連接詞 y 必須變為 e；但若接在雙母音 hie- 前則維持 y（如 cobre y hierro）。",
+      "example_es": "Hablo francés e inglés.",
+      "example_zh": "我會說法語和英語。",
+      "image": "emoji:➕",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:e"
       ],
       "writer": "gemini"
     }
