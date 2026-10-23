@@ -1,6 +1,6 @@
 {
   "theme": "freq-0001",
-  "theme_zh": "常用字（頻率第 2–399 名）",
+  "theme_zh": "常用字（頻率第 2–410 名）",
   "entries": [
     {
       "word": "la",
@@ -85,6 +85,39 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:los"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "e",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "和、與（替代 y）",
+      "en": "and",
+      "ipa": "/e/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "et",
+          "zh": "和、與"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "e",
+          "zh": "和、與"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自拉丁語連接詞 et（和、與）。在語音演變中字尾 t 脫落成為 e，多數場合進一步演變為 y，但在以 [i] 音開頭的單字前，為了避免連音混淆而保留了古老的 e。",
+      "hook_zh": "英文常見縮寫 etc.（et cetera）開頭的拉丁文 et 就是「和」，在西語中化身為 e。",
+      "usage_zh": "當後面的單字是以 i- 或 hi- 開頭時，連接詞 y 必須變為 e；但若接在雙母音 hie- 前則維持 y（如 cobre y hierro）。",
+      "example_es": "Hablo francés e inglés.",
+      "example_zh": "我會說法語和英語。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:e"
       ],
       "writer": "gemini"
     },
@@ -338,6 +371,39 @@
       "writer": "gemini"
     },
     {
+      "word": "do",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "唱名 do；C 音",
+      "en": "do (musical note); C",
+      "ipa": "/ˈdo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "do",
+          "zh": "唱名 do"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "do",
+          "zh": "唱名 do"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自義大利語的 do，作為唱名系統（do-re-mi）的第一個音，對應現代樂理的 C 音。西班牙語直接借用了這個義大利音樂術語。",
+      "hook_zh": "唱出「Do-Re-Mi」的第一個音，就是樂譜上的 do！",
+      "usage_zh": "陽性名詞（el do），複數形為 dos。注意不要和數字 dos（二）混淆。",
+      "example_es": "La melodía empieza con la nota do.",
+      "example_zh": "這段旋律以 do 音開頭。",
+      "image": "emoji:🎵",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:do"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "hace",
       "article": "",
       "pos": "preposición",
@@ -437,39 +503,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:tan"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "e",
-      "article": "",
-      "pos": "conjunción",
-      "zh": "和、與（替代 y）",
-      "en": "and",
-      "ipa": "/e/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "et",
-          "zh": "和、與"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "e",
-          "zh": "和、與"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "繼承自拉丁語連接詞 et（和、與）。在語音演變中字尾 t 脫落成為 e，多數場合進一步演變為 y，但在以 [i] 音開頭的單字前，為了避免連音混淆而保留了古老的 e。",
-      "hook_zh": "英文常見縮寫 etc.（et cetera）開頭的拉丁文 et 就是「和」，在西語中化身為 e。",
-      "usage_zh": "當後面的單字是以 i- 或 hi- 開頭時，連接詞 y 必須變為 e；但若接在雙母音 hie- 前則維持 y（如 cobre y hierro）。",
-      "example_es": "Hablo francés e inglés.",
-      "example_zh": "我會說法語和英語。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:e"
       ],
       "writer": "gemini"
     },
@@ -1203,6 +1236,161 @@
       "sources": [
         "wiktionary:es:ley",
         "wiktionary:la:lex"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "medio",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "一半的；中間的；平均的",
+      "en": "half; middle; average",
+      "ipa": "/ˈmedjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*médʰyos",
+          "zh": "在…之間"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*meðjos",
+          "zh": "中間的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "medius",
+          "zh": "中間的、一半的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "medio",
+          "zh": "一半的、中間的"
+        }
+      ],
+      "cognates_en": [
+        "medium"
+      ],
+      "story_zh": "源自拉丁語 medius（中間的、一半的），追溯至原始印歐語 *médʰyos（在…之間）。西語未經一般語音演變（否則會像 *meo 那樣近似 mear「尿尿」），而是直接借自拉丁語。英文的 medium（媒介、中等）亦同源。",
+      "hook_zh": "英文 medium 是中等尺寸，西語的 medio 就是「中間、一半」。",
+      "usage_zh": "作形容詞時隨名詞性數變化（如 media hora）；作副詞表示「有點、半…」時不隨名詞變化（如 medio abierta）。",
+      "example_es": "Nos vemos dentro de media hora.",
+      "example_zh": "我們半小時後見。",
+      "image": "emoji:🌗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:medio",
+        "wiktionary:la:medius"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sino",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "命運；定數",
+      "en": "destiny; fate; lot",
+      "ipa": "/ˈsino/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*sek-",
+          "zh": "切、割"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*segnom",
+          "zh": "標記"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "signum",
+          "zh": "標記、徵兆、信號"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sino",
+          "zh": "命運、注定"
+        }
+      ],
+      "cognates_en": [
+        "sign"
+      ],
+      "story_zh": "源自拉丁語 signum（標記、徵兆），追溯至原始印歐語 *sek-（切、刻劃）。古人觀察天象或神明示現的徵兆來預測吉凶，因而引申為人生的「命運、注定」。英文的 sign（記號、徵兆）與西語的 signo 為同源詞。",
+      "hook_zh": "上天刻劃下的 sign（徵兆、印記），就是每個人注定的命運（sino）。",
+      "usage_zh": "陽性名詞（el sino），指命運；需注意別和極常見的連接詞 sino（而是）混淆。",
+      "example_es": "Aceptó su sino con serenidad y valentía.",
+      "example_zh": "他平靜且勇敢地面對自己的命運。",
+      "image": "emoji:🔮",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sino",
+        "wiktionary:la:signum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "buena",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "遺產；家產",
+      "en": "inheritance",
+      "ipa": "/ˈbwena/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "前人留下來的「好（buena）」東西，就是代代相傳的遺產家業。",
+      "usage_zh": "作名詞時為陰性名詞（la buena），意思是遺產或家產；複數為 buenas。",
+      "example_es": "Dejó toda su buena a sus hijos.",
+      "example_zh": "他把所有的遺產都留給了自己的孩子。",
+      "image": "emoji:📜",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:buena"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sistema",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "系統、體系、制度",
+      "en": "system",
+      "ipa": "/sisˈtema/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "σύστημα",
+          "zh": "組成的整體"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "systēma",
+          "zh": "系統"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sistema",
+          "zh": "系統"
+        }
+      ],
+      "cognates_en": [
+        "system"
+      ],
+      "story_zh": "源自古希臘語 σύστημα，由 σύν（共同、一起）與 ἵστημι（站立）組成，原指「結合在一起的整體」。後來經由拉丁語 systēma 借入西班牙語，演變為由相互關聯的部分構成的「系統」或「體系」。英文的 system 也是同源字。",
+      "hook_zh": "長得跟英文 system 幾乎一樣，但請特別注意它是陽性名詞 el sistema！",
+      "usage_zh": "陽性名詞陷阱：源自希臘語、以 -ma 結尾的字常為陽性，請搭配 el sistema，不是 la。",
+      "example_es": "El sistema de metro funciona muy bien.",
+      "example_zh": "捷運系統運作得非常好。",
+      "image": "emoji:⚙️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sistema",
+        "wiktionary:la:systema"
       ],
       "writer": "gemini"
     }
