@@ -2894,6 +2894,205 @@
         "wiktionary:es:uso"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "artículo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "文章；物品；（語法）冠詞",
+      "en": "article, item",
+      "ipa": "/aɾˈtikulo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "artus",
+          "zh": "關節、肢體"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "articulus",
+          "zh": "小關節；條款、冠詞"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "artículo",
+          "zh": "文章、物品、冠詞"
+        }
+      ],
+      "cognates_en": [
+        "article"
+      ],
+      "story_zh": "拉丁語 articulus 是 artus（關節）的指小詞，原指「小關節」或肢體相連的小分節。古羅馬人將此概念延伸到文字上，指切分出的小段落或法條；在文法上則指連接名詞的「冠詞」。後來又進一步泛指報章雜誌上的「文章」或清單上的單件「物品」。",
+      "hook_zh": "就像關節把身體骨骼串連起來，報紙上的文章也是由一段段字句串連而成的 article。",
+      "usage_zh": "陽性名詞。文法上的「定冠詞」為 artículo definido（如 el、la），「不定冠詞」為 artículo indefinido（如 un、una）。",
+      "example_es": "Leí un artículo muy interesante en el periódico de hoy.",
+      "example_zh": "我在今天的報紙上讀到一篇非常有趣的文章。",
+      "image": "emoji:📰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:artículo",
+        "wiktionary:la:articulus",
+        "wiktionary:la:artus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cierto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "某個；真實的、確定的",
+      "en": "certain, true",
+      "ipa": "/ˈθjeɾto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "certus",
+          "zh": "確定的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cierto",
+          "zh": "確定的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cierto",
+          "zh": "真實的、某個"
+        }
+      ],
+      "cognates_en": [
+        "certain"
+      ],
+      "story_zh": "源自拉丁語 certus（確定、明確），經由古西班牙語 cierto 演變而來。在西語中除了保留「真實、確定」的本義，也延伸出指稱不具體指名但確有其事的「某個」之意。英文的 certain 也是同源字。",
+      "hook_zh": "音義皆近英文 certain。放在名詞前是指「某個」，放在名詞後或搭配 ser 則指「真實的」。",
+      "usage_zh": "放在名詞前表「某個」（如 cierta persona 某個人）；放在名詞後或搭配 ser 表「真實的」（如 Es cierto 這是真的）。",
+      "example_es": "Es cierto que aprender español requiere práctica diaria.",
+      "example_zh": "學西班牙語確實需要每天練習。",
+      "image": "emoji:✔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cierto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mayoría",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "大多數、大部分",
+      "en": "majority",
+      "ipa": "/maʝoˈɾia/",
+      "breakdown": [
+        {
+          "part": "mayor",
+          "zh": "較大的、主要的"
+        },
+        {
+          "part": "-ía",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "源自 mayor（較大的、主要的）加上名詞字尾 -ía。字面意思為「較大的部分」，引申指群體中的「多數」或「大部分」。",
+      "hook_zh": "開會投票時，舉手的人佔了「絕大多數」（mayoría），多數決順利通過。",
+      "usage_zh": "常見搭配為 la mayoría de…（大多數的…），後接複數名詞時動詞可用單數或複數。",
+      "example_es": "La mayoría de los estudiantes habla español.",
+      "example_zh": "大多數的學生都會說西班牙語。",
+      "image": "emoji:👥",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:mayoría"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "seguridad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "安全；安全感、自信",
+      "en": "safety, security",
+      "ipa": "/seɡuɾiˈdad/",
+      "breakdown": [
+        {
+          "part": "seguro",
+          "zh": "安全的"
+        },
+        {
+          "part": "-idad",
+          "zh": "狀態或性質（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "securitas",
+          "zh": "安全、平安"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "seguridad",
+          "zh": "安全、自信"
+        }
+      ],
+      "cognates_en": [
+        "security"
+      ],
+      "story_zh": "源自拉丁語 securitas（由形容詞 sēcūrus 加上抽象名詞字尾 -tās 組成，意為免除危險、安全無虞）。進入西班牙語後演變為 seguro 加上 -idad 字尾，既指客觀外在的「安全與防護」，也指內在心理的「安全感與自信」。英文的 security 是同源字。",
+      "hook_zh": "長得很像英文 security。生活環境很 seguro（安全），心裡就會充滿 seguridad（安全感）。",
+      "usage_zh": "陰性名詞。常見搭配如 cinturón de seguridad（安全帶）與 cámara de seguridad（監視器）。",
+      "example_es": "Por razones de seguridad, es obligatorio llevar el cinturón puesto.",
+      "example_zh": "基於安全考量，必須繫好安全帶。",
+      "image": "emoji:🔒",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:seguridad",
+        "wiktionary:la:securitas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "visto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "看過的；顯而易見的",
+      "en": "seen, obvious",
+      "ipa": "/ˈbisto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vīsus",
+          "zh": "看見（過去分詞）"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*vīsitus",
+          "zh": "被看見的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "visto",
+          "zh": "看過的、顯而易見的"
+        }
+      ],
+      "cognates_en": [
+        "visible",
+        "vision"
+      ],
+      "story_zh": "源自通俗拉丁語 *vīsitus，由古典拉丁語分詞 vīsus（看見）加上過去分詞字尾 -itus 規則化而來。它原本是動詞 ver（看）的過去分詞，後來引申為形容詞，表示「被眾人看見的」，進一步衍生為「顯而易見、清楚明白的」。",
+      "hook_zh": "通訊軟體傳訊息被已讀就是 visto；事情都被大家「看」在眼裡，自然是「顯而易見的」。",
+      "usage_zh": "為動詞 ver 的不規則過去分詞。常用片語有 por lo visto（顯然、看來）以及 dar el visto bueno（批准、認可）。",
+      "example_es": "Por lo visto, va a llover esta tarde en la ciudad.",
+      "example_zh": "看來今天下午城裡會下雨。",
+      "image": "emoji:👀",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:visto"
+      ],
+      "writer": "gemini"
     }
   ]
 }
