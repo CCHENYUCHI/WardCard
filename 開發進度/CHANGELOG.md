@@ -7,6 +7,7 @@
 ## [Unreleased] (進行中 / 待發布)
 
 ### Added
+- **開發工具：AI agent 可以問 Gemini (`.mcp.json`)**：專案層級的 MCP 設定，連到另外部署的 [antigravity-mcp](https://github.com/CCHENYUCHI/antigravity-mcp)（Oracle 上的 Docker 容器，透過 Antigravity CLI 使用免費的 Gemini 額度），提供 `ask_gemini` 工具，給雲端 Claude Code 用來請 Gemini 給第二意見或做大量撰寫 / 檢查工作（例如字根字首表）。不影響 PalabraCard 本身；token 不在 repo 裡，雲端環境用 network secret 帶上，本機用 user scope 的 MCP 設定。
 - **變化表視窗 (`FormsModal.jsx`)**：在字典頁每個動詞 / 名詞 / 形容詞條目旁按「變位表 / 變化表」，或在單字卡詳情的字典資料區按按鈕，開出獨立視窗：動詞依語氣（直陳式、虛擬式、命令式）各一張表，人稱 × 時態；名詞與形容詞是陰陽性 × 單複數表，另列指小詞等。點任一個形態可以聽發音；手機上表格可橫向捲動、人稱欄固定；`Esc` 關閉。
 - **單字庫健檢 (`CardAuditModal.jsx`, `server/cardAudit.js`)**：單字庫頁「單字庫健檢」按鈕。比對每張卡和離線字典，分類列出：詞性不同、陰陽性不同、冠詞不同、可能是變化形（`fui` → ir / ser，可勾選改成原形）、字典有多個詞性無法判斷、字典查不到、和其他卡是同一個字。每筆顯示「目前 → 字典」的差異，可改選對應的字典條目（例如 comer 名詞 / 動詞）；勾選或全選後「依字典修正」把詞性 / 陰陽性 / 冠詞**寫回卡片**（中文、例句、筆記、學習進度不動），每批可「復原」；「保留現狀」後同一個問題不再提醒。
   - API：`GET /api/cards/audit`、`POST /api/cards/audit/apply`、`POST /api/cards/audit/dismiss`、`POST /api/cards/audit/undo`。
