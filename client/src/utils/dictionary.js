@@ -1,7 +1,7 @@
 // Client side of the shared word lookup (dictionary page + tap-a-word popover).
 import { fetchAPI } from './api';
 
-const lookupCache = new Map(); // `${q}|${sentence}` -> lookup result, per page load
+const lookupCache = new Map(); // `${q}|${sentence}` -> lookup promise, per page load
 
 async function readJson(res, fallbackError) {
   const data = await res.json().catch(() => ({}));
@@ -9,15 +9,27 @@ async function readJson(res, fallbackError) {
   return data;
 }
 
-/** Offline layers only (Wiktionary, my cards, AI caches); never spends AI quota. */
-export async function lookupWord(q, sentence = '') {
-  const key = `${q.toLowerCase()}|${sentence}`;
+const cacheKey = (q, sentence = '') => `${q.toLowerCase()}|${sentence}`;
+
+/**
+ * Offline layers only (Wiktionary, my cards, AI caches); never spends AI quota.
+ * The server records each request in the lookup history; cache hits are not recorded,
+ * so tapping the same word again on one page doesn't inflate the count.
+ */
+export async function lookupWord(q, sentence = '', { origin = 'dictionary' } = {}) {
+  const key = cacheKey(q, sentence);
   if (lookupCache.has(key)) return lookupCache.get(key);
-  const params = new URLSearchParams({ q });
+  const params = new URLSearchParams({ q, source: origin });
   if (sentence) params.set('sentence', sentence);
-  const data = await readJson(await fetchAPI(`/api/dictionary/lookup?${params}`), '查詢失敗');
-  lookupCache.set(key, data);
-  return data;
+  // Cache the request itself, so overlapping calls (StrictMode, double taps) send it once
+  const request = fetchAPI(`/api/dictionary/lookup?${params}`)
+    .then(res => readJson(res, '查詢失敗'))
+    .catch(err => {
+      if (lookupCache.get(key) === request) lookupCache.delete(key);
+      throw err;
+    });
+  lookupCache.set(key, request);
+  return request;
 }
 
 // Results change after an AI call or after adding a card
@@ -62,6 +74,9 @@ export async function getCardDictionary(cardId) {
   return detailCache.get(key);
 }
 
+// A search on the dictionary page should always reach the server, so it is counted
+export const forgetLookup = (q) => lookupCache.delete(cacheKey(q));
+
 /** AI word-by-word analysis of a whole sentence (cached on the server, shared). */
 export async function analyzeSentence(sentence) {
   const data = await readJson(await fetchAPI('/api/sentences/analyze', {
@@ -90,6 +105,21 @@ export async function addToInbox(card) {
   }), '加入失敗');
   clearLookupCache();
   return data;
+}
+
+/** My lookup history, one row per word: { items, hasMore, total }. */
+export async function fetchLookupHistory({ q = '', sort = 'recent', offset = 0 } = {}) {
+  const params = new URLSearchParams({ q, sort, offset: String(offset) });
+  return readJson(await fetchAPI(`/api/dictionary/history?${params}`), '無法載入查詢紀錄');
+}
+
+export async function deleteLookup(id) {
+  const res = await fetchAPI(`/api/dictionary/history/${id}`, { method: 'DELETE' });
+  if (res.status !== 404) await readJson(res, '刪除失敗');
+}
+
+export async function clearLookupHistory() {
+  return readJson(await fetchAPI('/api/dictionary/history', { method: 'DELETE' }), '清除失敗');
 }
 
 export const POS_LABELS = {

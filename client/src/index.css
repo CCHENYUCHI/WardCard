@@ -2758,6 +2758,173 @@ textarea {
   font-size: 1.5rem;
 }
 
+/* Lookup history (LookupHistory, below the dictionary search) */
+.lookup-history {
+  margin-top: 24px;
+}
+
+.lookup-history-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.lookup-history-head h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.lookup-history-head h3 svg {
+  color: var(--google-blue);
+}
+
+.lookup-history-total {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.lookup-history-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.translator-search.lookup-history-search {
+  flex: 0 1 200px;
+}
+
+.lookup-history-sort {
+  display: flex;
+  gap: 6px;
+}
+
+.lookup-history-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lookup-history-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 8px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.lookup-history-item:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-card);
+}
+
+.lookup-history-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 14px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--font-main);
+}
+
+.lookup-history-word {
+  font-weight: 600;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lookup-history-lemma {
+  margin-left: 6px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.lookup-history-zh {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lookup-history-meta {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.lookup-history-count {
+  flex-shrink: 0;
+  min-width: 34px;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.lookup-history-count.is-hot {
+  background: var(--google-yellow-light);
+  color: var(--google-yellow-dark);
+}
+
+.lookup-history-status,
+.lookup-history-add {
+  flex-shrink: 0;
+}
+
+.lookup-history-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (max-width: 768px) {
+  .lookup-history-controls {
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+  }
+
+  .translator-search.lookup-history-search {
+    flex: 1 1 100%;
+  }
+
+  .lookup-history-item {
+    gap: 4px;
+    padding-right: 4px;
+  }
+
+  .lookup-history-main {
+    padding: 10px 12px;
+  }
+
+  .lookup-history-item .btn-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 /* ==========================================================================
    Sentence translator (TranslatorView / TranslationResult)
    ========================================================================== */
