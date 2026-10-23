@@ -3093,6 +3093,240 @@
         "wiktionary:es:visto"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "programa",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "節目；計畫、方案；電腦程式",
+      "en": "program, show, schedule",
+      "ipa": "/pɾoˈɡɾama/",
+      "breakdown": [
+        {
+          "part": "pro-",
+          "zh": "在前、公開"
+        },
+        {
+          "part": "-grama",
+          "zh": "書寫、文字"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "πρόγραμμα",
+          "zh": "公告、告示"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "programma",
+          "zh": "告示、節目"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "programa",
+          "zh": "節目、計畫"
+        }
+      ],
+      "cognates_en": [
+        "program",
+        "programme"
+      ],
+      "story_zh": "源自古希臘語 πρόγραμμα（prógramma），本指「公開寫出的告示或布告」。在晚期拉丁語中沿用，演變為預先安排好的活動時程或綱要，現代進一步引申為電視「節目」與電腦「程式」。",
+      "hook_zh": "英文就是 program，發音也非常相近；記住希臘字源的 -ma 結尾通常是陽性名詞！",
+      "usage_zh": "注意性別陷阱：源自希臘語 -ma 結尾，為陽性名詞（el programa），複數 los programas。",
+      "example_es": "¿Cuál es tu programa de televisión favorito?",
+      "example_zh": "你最喜歡的電視節目是什麼？",
+      "image": "emoji:📺",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:programa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "internacional",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "國際的",
+      "en": "international",
+      "ipa": "/inteɾnaθjoˈnal/",
+      "breakdown": [
+        {
+          "part": "inter-",
+          "zh": "在…之間"
+        },
+        {
+          "part": "nacional",
+          "zh": "國家的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "inter- + nacional",
+          "zh": "在…之間 + 國家的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "internacional",
+          "zh": "國際的"
+        }
+      ],
+      "cognates_en": [
+        "international"
+      ],
+      "story_zh": "由前綴 inter-（在…之間）與形容詞 nacional（國家的）複合而成，字面意思就是「各國之間的」，指跨越單一國家疆界、涉及多國的事務或關係。",
+      "hook_zh": "英文的 international 完全對應，inter-（之間）加上 nacional（國家）。",
+      "usage_zh": "陰陽同形（un vuelo internacional / una llamada internacional），複數為 internacionales。",
+      "example_es": "El aeropuerto internacional está lejos del centro.",
+      "example_zh": "國際機場離市中心很遠。",
+      "image": "emoji:🌐",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:internacional"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "servicio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "服務；公共廁所；餐具組",
+      "en": "service, public toilet, amenity",
+      "ipa": "/seɾˈbiθjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "servitium",
+          "zh": "奴役、服侍"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "servicio",
+          "zh": "服務"
+        }
+      ],
+      "cognates_en": [
+        "service",
+        "servitude"
+      ],
+      "story_zh": "借自拉丁語 servitium（原指奴僕的身分或侍奉）。隨時代演變，詞義從侍候轉化為現代社會中為他人提供的「服務」，在西語中複數 servicios 還常用來委婉指「洗手間」。",
+      "hook_zh": "英文 service 同源！在西語餐廳常問服務費或借用洗手間（los servicios）。",
+      "usage_zh": "在西語中經常以複數 los servicios 指稱公共場所的「洗手間／化妝室」。",
+      "example_es": "El servicio en este restaurante es excelente.",
+      "example_zh": "這家餐廳的服務非常棒。",
+      "image": "emoji:🛎️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:servicio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "situación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "情況、處境；位置、情勢",
+      "en": "situation, condition, location",
+      "ipa": "/sitwaˈθjon/",
+      "breakdown": [
+        {
+          "part": "situar",
+          "zh": "放置、定位"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾（狀態、動作）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "situar + -ción",
+          "zh": "定位 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "situación",
+          "zh": "情況、位置"
+        }
+      ],
+      "cognates_en": [
+        "situation"
+      ],
+      "story_zh": "由動詞 situar（放置、置於某處）加上表示動作或狀態的字尾 -ción 衍生而來。原指具體事物的「所在位置」，後來抽象化為人或事物所面臨的「處境、情勢、狀況」。",
+      "hook_zh": "英文的 situation 完全對應，-ción 結尾的名詞在西語都是陰性。",
+      "usage_zh": "-ción 結尾均為陰性名詞（la situación）。複數去掉重音符號：situaciones。",
+      "example_es": "Es una situación difícil para todos.",
+      "example_zh": "這對大家來說都是個艱難的情況。",
+      "image": "emoji:🧭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:situación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "siguiente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "下一個的、接下來的",
+      "en": "following, next",
+      "ipa": "/siˈɡjente/",
+      "breakdown": [
+        {
+          "part": "seguir",
+          "zh": "跟隨"
+        },
+        {
+          "part": "-ente",
+          "zh": "現在分詞／形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*sekʷ-",
+          "zh": "跟隨"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*sekʷōr",
+          "zh": "跟隨"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "sequentem",
+          "zh": "跟隨的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "syguiente",
+          "zh": "接下來的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "siguiente",
+          "zh": "接下來的、下一個的"
+        }
+      ],
+      "cognates_en": [
+        "sequence",
+        "sequential"
+      ],
+      "story_zh": "源自原始印歐語 *sekʷ-（跟隨），經拉丁語動詞 sequor 之現在分詞 sequentem 演變。在古西語中為動詞 seguir 的舊現在分詞 syguiente，字面意思為「緊跟在後的」，引申為「接下來的」。",
+      "hook_zh": "想成「跟著（seguir）」前面的東西，緊跟在後的就是「下一個（siguiente）」。",
+      "usage_zh": "常置於名詞之前或後，如 el siguiente día 或 el día siguiente。陰陽同形，複數 siguientes。",
+      "example_es": "Nos vemos la semana siguiente.",
+      "example_zh": "我們下週見。",
+      "image": "emoji:⏭️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:siguiente"
+      ],
+      "writer": "gemini"
     }
   ]
 }
