@@ -1,0 +1,879 @@
+{
+  "theme": "school_work",
+  "theme_zh": "學校與工作",
+  "entries": [
+    {
+      "word": "escuela", "article": "la", "pos": "sustantivo", "zh": "學校", "en": "school", "ipa": "/esˈkwela/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古希臘語", "word": "σχολή (skholḗ)", "zh": "空閒時間；閒暇時的討論" },
+        { "lang_zh": "拉丁語", "word": "schola", "zh": "學習的時間；學校" },
+        { "lang_zh": "古西班牙語", "word": "escuela", "zh": "學校" },
+        { "lang_zh": "西班牙語", "word": "escuela", "zh": "學校" }
+      ],
+      "cognates_en": ["school", "scholar"],
+      "story_zh": "escuela 的老祖宗是希臘文 σχολή（skholḗ），原意竟然是「空閒時間」！後來指人們在空閒時的交談和從中得到的知識，再指交談的地點。經拉丁文 schola 傳進西班牙語，就成了「學校」。英文 school 也是同一個字。",
+      "hook_zh": "上學原本是「有空」才做的事：skholḗ → school → escuela。",
+      "usage_zh": "ir a la escuela（去上學）；escuela de idiomas（語言學校）。在西班牙，中小學口語常說 colegio。",
+      "example_es": "Mi hermano va a la escuela en autobús.", "example_zh": "我弟弟搭公車去上學。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:escuela", "wiktionary:la:schola"]
+    },
+    {
+      "word": "colegio", "article": "el", "pos": "sustantivo", "zh": "學校（多指中小學）", "en": "school (primary/secondary)", "ipa": "/koˈlexjo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "collēgium", "zh": "團體、協會" },
+        { "lang_zh": "西班牙語", "word": "colegio", "zh": "學校" }
+      ],
+      "cognates_en": ["college"],
+      "story_zh": "colegio 是直接從拉丁文 collēgium 借來的字，英文 college 也來自同一個拉丁字。不過兩者走向不同：在西班牙，colegio 通常指中小學，而不是大學。",
+      "hook_zh": "假朋友！colegio 長得像 college，卻是中小學；大學要說 universidad。",
+      "usage_zh": "a + el = al：Los niños van al colegio（孩子們去上學）。",
+      "example_es": "Mis hijos van al colegio a las nueve.", "example_zh": "我的孩子九點去學校。",
+      "image": "emoji:🏫", "confidence": "sourced", "sources": ["wiktionary:es:colegio"]
+    },
+    {
+      "word": "clase", "article": "la", "pos": "sustantivo", "zh": "課；班級；種類", "en": "class; lesson", "ipa": "/ˈklase/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "classis", "zh": "等級、類別" },
+        { "lang_zh": "西班牙語", "word": "clase", "zh": "課；班級；類別" }
+      ],
+      "cognates_en": ["class"],
+      "story_zh": "clase 直接借自拉丁文 classis，和英文 class 同源。西語的 clase 和英文一樣用途很廣：可以是一堂課、一個班級，也可以是社會階級或「種類」。",
+      "hook_zh": "clase ≈ class：上課、班級、等級，一個字全包。",
+      "usage_zh": "tener clase（有課）、dar clase（教課）；ir a clase 不加冠詞。",
+      "example_es": "Hoy tengo clase de español.", "example_zh": "我今天有西班牙文課。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:clase"]
+    },
+    {
+      "word": "profesor", "article": "el", "pos": "sustantivo", "zh": "老師；教授", "en": "teacher; professor", "ipa": "/pɾofeˈsoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "professor", "zh": "公開授課的教師" },
+        { "lang_zh": "西班牙語", "word": "profesor", "zh": "老師、教授" }
+      ],
+      "cognates_en": ["professor"],
+      "story_zh": "profesor 是直接從拉丁文 professor 借來的學者字，和英文 professor 同源。但西語用得比英文廣：從小學老師到大學教授，通通都叫 profesor。",
+      "hook_zh": "英文 professor 只是教授；西語 profesor 連教你 ABC 的小學老師都算。",
+      "usage_zh": "陰性 profesora：la profesora de inglés（英文女老師）。口語簡稱 profe。",
+      "example_es": "Mi profesora de español es muy simpática.", "example_zh": "我的西班牙文老師人很好。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:profesor"]
+    },
+    {
+      "word": "estudiante", "article": "el", "pos": "sustantivo", "zh": "學生", "en": "student", "ipa": "/estuˈdjante/",
+      "breakdown": [{ "part": "estudi(ar)", "zh": "讀書、學習" }, { "part": "-ante", "zh": "做…的人" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "estudiar + -ante", "zh": "讀書 + 做…的人" },
+        { "lang_zh": "西班牙語", "word": "estudiante", "zh": "學生" }
+      ],
+      "cognates_en": ["student"],
+      "story_zh": "estudiante 是西語自己組出來的字：動詞 estudiar（讀書）加上 -ante（做…的人），就是「讀書的人」。cantante（唱歌的人）也是同一種做法。",
+      "hook_zh": "estudi-ante → student：天天抱著書讀的人。",
+      "usage_zh": "陰陽同形：el estudiante / la estudiante；複數 los estudiantes。",
+      "example_es": "Soy estudiante de español.", "example_zh": "我是學西班牙文的學生。",
+      "image": "emoji:🧑‍🎓", "confidence": "sourced", "sources": ["wiktionary:es:estudiante"]
+    },
+    {
+      "word": "alumno", "article": "el", "pos": "sustantivo", "zh": "學生（某校或某老師的）", "en": "pupil, student", "ipa": "/aˈlumno/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "alumnus", "zh": "被養育的人；學生" },
+        { "lang_zh": "西班牙語", "word": "alumno", "zh": "學生" }
+      ],
+      "cognates_en": ["alumnus"],
+      "story_zh": "alumno 是從拉丁文 alumnus 借來的學者字。英文的 alumnus／alumni 也是同一個字，不過英文指「校友」，西語指的是正在上課的學生。",
+      "hook_zh": "alumno 不是英文的 alumni（校友），而是現在坐在教室裡舉手的學生。",
+      "usage_zh": "陰性 alumna；複數 los alumnos 可指全班男女學生。",
+      "example_es": "La clase tiene veinte alumnos.", "example_zh": "這個班有二十個學生。",
+      "image": "emoji:🙋", "confidence": "sourced", "sources": ["wiktionary:es:alumno"]
+    },
+    {
+      "word": "examen", "article": "el", "pos": "sustantivo", "zh": "考試", "en": "exam, test", "ipa": "/eɡˈsamen/",
+      "breakdown": [{ "part": "ex-", "zh": "向外" }, { "part": "ag-", "zh": "驅趕（拉丁文 agō）" }, { "part": "-men", "zh": "名詞字尾" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "ex- + agō + -men", "zh": "向外 + 驅趕 + 名詞字尾" },
+        { "lang_zh": "拉丁語", "word": "exāmen", "zh": "蜂群；天秤指針；檢驗" },
+        { "lang_zh": "西班牙語", "word": "examen", "zh": "考試" }
+      ],
+      "cognates_en": ["exam", "examine"],
+      "story_zh": "拉丁文 exāmen 由 ex-（向外）+ agō（驅趕）組成，意思很多：一窩「蜂群」、天秤的「指針」，也指「檢驗」。西語借來當「考試」；蜂群那一支則演變成另一個字 enjambre（蜂群）。",
+      "hook_zh": "考試就像把你放上天秤，看指針（exāmen）往哪邊偏。",
+      "usage_zh": "複數要加重音：exámenes。hacer un examen（考試）、aprobar（通過）／suspender（不及格）。",
+      "example_es": "Mañana tengo un examen de matemáticas.", "example_zh": "我明天有數學考試。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:examen", "wiktionary:la:examen", "wiktionary:la:ago"]
+    },
+    {
+      "word": "pregunta", "article": "la", "pos": "sustantivo", "zh": "問題（提問）", "en": "question", "ipa": "/pɾeˈɡunta/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "preguntar", "zh": "問" },
+        { "lang_zh": "西班牙語", "word": "pregunta", "zh": "問題" }
+      ],
+      "cognates_en": [],
+      "story_zh": "pregunta 是從動詞 preguntar（問）直接變來的名詞：把問的「動作」變成問出來的「東西」。",
+      "hook_zh": "西語問句前後都有問號：¿…? 開頭倒放的 ¿ 是在提醒你：問題來了！",
+      "usage_zh": "hacer una pregunta（提問），不說 *preguntar una pregunta。「麻煩」的問題是 problema。",
+      "example_es": "¿Puedo hacer una pregunta?", "example_zh": "我可以問一個問題嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:pregunta"]
+    },
+    {
+      "word": "respuesta", "article": "la", "pos": "sustantivo", "zh": "回答、答案", "en": "answer, reply", "ipa": "/resˈpwesta/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "responder", "zh": "回答" },
+        { "lang_zh": "西班牙語", "word": "respuesta", "zh": "回答（受 puesta 影響）" }
+      ],
+      "cognates_en": ["response"],
+      "story_zh": "respuesta 來自動詞 responder（回答），但字形被 puesta（poner 的陰性過去分詞）帶歪了，才變成 -puesta 結尾。義大利文 risposta、葡萄牙文 resposta 也長得很像。",
+      "hook_zh": "respuesta ≈ response：老師一問，你就給出回應。",
+      "usage_zh": "la respuesta correcta（正確答案）；動詞用 responder 或 contestar。",
+      "example_es": "No sé la respuesta.", "example_zh": "我不知道答案。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:respuesta"]
+    },
+    {
+      "word": "lección", "article": "la", "pos": "sustantivo", "zh": "（一）課；教訓", "en": "lesson", "ipa": "/leɡˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "lēctiō (lēctiōnem)", "zh": "閱讀、朗讀" },
+        { "lang_zh": "西班牙語", "word": "lección", "zh": "課、教訓" }
+      ],
+      "cognates_en": ["lesson", "lecture"],
+      "story_zh": "lección 借自拉丁文 lēctiō（受格 lēctiōnem）。英文 lesson 和 lecture 也來自同一家族。除了課本裡的「第幾課」，lección 也是人生學到的「教訓」。",
+      "hook_zh": "-cción 對英文 -sson／-ction：lección = lesson。",
+      "usage_zh": "字尾 -ción 的字幾乎都是陰性：la lección；複數去掉重音 lecciones。",
+      "example_es": "Hoy estudiamos la lección cinco.", "example_zh": "今天我們學第五課。",
+      "image": "emoji:📖", "confidence": "sourced", "sources": ["wiktionary:es:lección"]
+    },
+    {
+      "word": "ejercicio", "article": "el", "pos": "sustantivo", "zh": "練習；運動", "en": "exercise", "ipa": "/exeɾˈθiθjo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "exerceō", "zh": "使忙碌、操練" },
+        { "lang_zh": "拉丁語", "word": "exercitium", "zh": "練習" },
+        { "lang_zh": "西班牙語", "word": "ejercicio", "zh": "練習、運動" }
+      ],
+      "cognates_en": ["exercise"],
+      "story_zh": "ejercicio 借自拉丁文 exercitium（練習），來自動詞 exerceō（讓…不停忙著、操練）。英文 exercise 是同源字，所以課本的練習題和健身運動都叫它。",
+      "hook_zh": "ejercicio = exercise：寫練習題和舉啞鈴，都是在「操練」。",
+      "usage_zh": "hacer ejercicio（運動）；los ejercicios del libro（課本練習題）。",
+      "example_es": "Hago ejercicio todas las mañanas.", "example_zh": "我每天早上運動。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:ejercicio", "wiktionary:la:exercitium"]
+    },
+    {
+      "word": "deberes", "article": "el", "pos": "sustantivo", "zh": "回家作業", "en": "homework", "ipa": "/deˈbeɾes/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "deber 是「必須」，deberes 就是你「必須」做完的事——回家作業！",
+      "usage_zh": "西班牙用複數 los deberes：hacer los deberes；拉美多說 la tarea。",
+      "example_es": "Tengo muchos deberes hoy.", "example_zh": "我今天有很多作業。",
+      "image": "emoji:📝", "confidence": "hook-only", "sources": ["wiktionary:es:deberes"]
+    },
+    {
+      "word": "cuaderno", "article": "el", "pos": "sustantivo", "zh": "筆記本", "en": "notebook", "ipa": "/kwaˈdeɾno/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "quater + -nus", "zh": "四次 + 字尾" },
+        { "lang_zh": "拉丁語", "word": "quaternī", "zh": "每次四個" },
+        { "lang_zh": "中世紀拉丁語", "word": "quaternus", "zh": "四開的紙疊" },
+        { "lang_zh": "西班牙語", "word": "cuaderno", "zh": "筆記本" }
+      ],
+      "cognates_en": [],
+      "story_zh": "cuaderno 來自中世紀拉丁文 quaternus，源頭是拉丁文 quaternī（每次四個），指把紙張摺成四開（quarto）裝訂成冊。所以筆記本的名字裡，藏著數字「四」。",
+      "hook_zh": "cua- 就像 cuatro（四）：把紙摺四折，就是一本 cuaderno。",
+      "usage_zh": "cuaderno de ejercicios（練習簿）；注意 ua 念 /kwa/。",
+      "example_es": "Escribo las palabras nuevas en mi cuaderno.", "example_zh": "我把新單字寫在筆記本裡。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cuaderno", "wiktionary:la:quaternus"]
+    },
+    {
+      "word": "lápiz", "article": "el", "pos": "sustantivo", "zh": "鉛筆", "en": "pencil", "ipa": "/ˈlapiθ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "lapis", "zh": "石頭" },
+        { "lang_zh": "義大利語（可能經由）", "word": "lapis", "zh": "石筆" },
+        { "lang_zh": "西班牙語", "word": "lápiz", "zh": "鉛筆" }
+      ],
+      "cognates_en": ["lapis lazuli"],
+      "story_zh": "lápiz 借自拉丁文 lapis（石頭），也可能是經義大利文 lapis 傳進來的。英文 lapis lazuli（青金石）裡的 lapis 就是這個字，而西語 lápida（墓碑）則是它的雙胞胎字。",
+      "hook_zh": "鉛筆芯是一條會寫字的黑「石頭」（lapis）。",
+      "usage_zh": "複數 lápices（z 變 c）。lápiz de labios＝口紅。",
+      "example_es": "¿Me dejas tu lápiz?", "example_zh": "可以借我你的鉛筆嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:lápiz", "wiktionary:la:lapis"]
+    },
+    {
+      "word": "bolígrafo", "article": "el", "pos": "sustantivo", "zh": "原子筆", "en": "ballpoint pen", "ipa": "/boˈliɡɾafo/",
+      "breakdown": [{ "part": "bol(a)", "zh": "球" }, { "part": "-grafo", "zh": "寫、記錄（≈ -graph）" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "bola + -grafo", "zh": "球 + 書寫" },
+        { "lang_zh": "西班牙語", "word": "bolígrafo", "zh": "原子筆（1947 年首見）" }
+      ],
+      "cognates_en": [],
+      "story_zh": "bolígrafo 是很新的字，1947 年才首次出現：bola（球）＋ -grafo（寫，像英文 -graph）。原子筆筆尖那顆小鋼珠，就是名字裡的「球」。",
+      "hook_zh": "bola（球）＋ grafo（寫）＝用小球寫字的筆。",
+      "usage_zh": "口語簡稱 el boli；拉美常說 pluma 或 lapicera。",
+      "example_es": "Escribe con bolígrafo azul, por favor.", "example_zh": "請用藍色原子筆寫。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:bolígrafo"]
+    },
+    {
+      "word": "goma", "article": "la", "pos": "sustantivo", "zh": "橡皮擦；橡膠；橡皮筋", "en": "eraser; rubber; rubber band", "ipa": "/ˈɡoma/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古希臘語", "word": "κόμμι (kómmi)", "zh": "樹膠" },
+        { "lang_zh": "拉丁語", "word": "cummi", "zh": "樹膠" },
+        { "lang_zh": "晚期拉丁語", "word": "gumma", "zh": "樹膠" },
+        { "lang_zh": "西班牙語", "word": "goma", "zh": "橡膠；橡皮擦" }
+      ],
+      "cognates_en": ["gum"],
+      "story_zh": "goma 來自希臘文 κόμμι（樹膠），經拉丁文 cummi、晚期拉丁文 gumma 傳進西語。從樹膠到橡膠，goma 可以是橡皮擦（goma de borrar）、橡皮筋，甚至綁頭髮的髮圈。",
+      "hook_zh": "goma ≈ gum：軟軟、有彈性的膠，擦掉寫錯的字。",
+      "usage_zh": "橡皮擦完整說法 goma de borrar；口香糖不是 goma，是 chicle。",
+      "example_es": "Necesito una goma de borrar.", "example_zh": "我需要一個橡皮擦。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:goma", "wiktionary:la:cummi"]
+    },
+    {
+      "word": "mochila", "article": "la", "pos": "sustantivo", "zh": "背包、書包", "en": "backpack, schoolbag", "ipa": "/moˈt͡ʃila/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "巴斯克語", "word": "motil, mutil", "zh": "男孩" },
+        { "lang_zh": "巴斯克語", "word": "motxil", "zh": "小男孩（縮小形）" },
+        { "lang_zh": "西班牙語", "word": "mochil", "zh": "跑腿小弟" },
+        { "lang_zh": "西班牙語", "word": "mochila", "zh": "背包" }
+      ],
+      "cognates_en": [],
+      "story_zh": "mochila 來自巴斯克語！motil／mutil 是「男孩」，縮小形 motxil 被西語借去，成了 mochil（跑腿的小弟），再由 mochil 衍生出 mochila。",
+      "hook_zh": "想像跑腿小弟（mochil）背著大包包滿街跑——那個包就是 mochila。",
+      "usage_zh": "陰性 la mochila；ch 念「七」的 /t͡ʃ/。",
+      "example_es": "Mi mochila es muy pesada.", "example_zh": "我的背包很重。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:mochila"]
+    },
+    {
+      "word": "pizarra", "article": "la", "pos": "sustantivo", "zh": "黑板；白板；板岩", "en": "blackboard; whiteboard; slate", "ipa": "/piˈθara/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "巴斯克語（推測）", "word": "*lapitz-arri", "zh": "板岩 + 石頭" },
+        { "lang_zh": "古西班牙語", "word": "piçarra", "zh": "板岩" },
+        { "lang_zh": "西班牙語", "word": "pizarra", "zh": "板岩；黑板" }
+      ],
+      "cognates_en": [],
+      "story_zh": "pizarra 在 1475 年就有紀錄，來自巴斯克語，但細節不確定。一種推測是巴斯克語 *lapitz-arri（板岩＋石頭），開頭的 la- 被誤當成冠詞 la 而脫落。所以這個字同時指「板岩」和「黑板」。",
+      "hook_zh": "la-pitz-arri 的「la」被當成冠詞剪掉，剩下 pizarra——連字也會被誤會！",
+      "usage_zh": "pizarra blanca（白板）；拉美常說 pizarrón。escribir en la pizarra（寫在黑板上）。",
+      "example_es": "El profesor escribe en la pizarra.", "example_zh": "老師在黑板上寫字。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:pizarra"]
+    },
+    {
+      "word": "diccionario", "article": "el", "pos": "sustantivo", "zh": "字典、辭典", "en": "dictionary", "ipa": "/ˌdiɡθjoˈnaɾjo/",
+      "breakdown": [{ "part": "dicción", "zh": "用詞、說法" }, { "part": "-ario", "zh": "收集…的東西" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "dictiō + -ārium", "zh": "用詞 + 收藏處" },
+        { "lang_zh": "中世紀拉丁語", "word": "dictiōnārium", "zh": "字典" },
+        { "lang_zh": "西班牙語", "word": "diccionario", "zh": "字典" }
+      ],
+      "cognates_en": ["dictionary"],
+      "story_zh": "diccionario 借自中世紀拉丁文 dictiōnārium，由 dictiō（說話、用詞）加上 -ārium 組成，字面上就是「收集詞語的地方」。英文 dictionary 是同一個字。",
+      "hook_zh": "雙 c 陷阱：diccionario 比 dictionary 多一個 c、少一個 t。",
+      "usage_zh": "buscar una palabra en el diccionario（查字典）。",
+      "example_es": "Busco la palabra en el diccionario.", "example_zh": "我在字典裡查這個字。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:diccionario"]
+    },
+    {
+      "word": "palabra", "article": "la", "pos": "sustantivo", "zh": "字、詞；諾言", "en": "word", "ipa": "/paˈlabɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古希臘語", "word": "παραβολή (parabolḗ)", "zh": "比較；寓言" },
+        { "lang_zh": "拉丁語", "word": "parabola", "zh": "比喻；後來指說話" },
+        { "lang_zh": "古西班牙語", "word": "parabla", "zh": "話語" },
+        { "lang_zh": "西班牙語", "word": "palabra", "zh": "字、詞" }
+      ],
+      "cognates_en": ["parable"],
+      "story_zh": "palabra 的祖先是希臘文 παραβολή（比較、寓言），經拉丁文 parabola，意思從「比喻」慢慢變成「說的話」。古西班牙語是 parabla，後來 r 和 l 互換位置，就成了 palabra。英文 parable（寓言）是同源字。",
+      "hook_zh": "palabra ≈ parable：每個字都是一個小寓言，只是 r 和 l 換了位置。",
+      "usage_zh": "palabra 是單字、frase 是句子；te doy mi palabra（我向你保證）。",
+      "example_es": "¿Qué significa esta palabra?", "example_zh": "這個字是什麼意思？",
+      "image": "emoji:💬", "confidence": "sourced", "sources": ["wiktionary:es:palabra", "wiktionary:la:parabola"]
+    },
+    {
+      "word": "frase", "article": "la", "pos": "sustantivo", "zh": "句子；片語", "en": "sentence; phrase", "ipa": "/ˈfɾase/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古希臘語", "word": "φράσις (phrásis)", "zh": "表達方式" },
+        { "lang_zh": "晚期拉丁語", "word": "phrasis", "zh": "措辭" },
+        { "lang_zh": "西班牙語", "word": "frase", "zh": "句子、片語" }
+      ],
+      "cognates_en": ["phrase"],
+      "story_zh": "frase 借自晚期拉丁文 phrasis（措辭），源自希臘文 φράσις（表達方式）。英文 phrase 是同源字，西語把 ph 簡化成 f。",
+      "hook_zh": "frase ≈ phrase，但小心：西語的 frase 常常就是一整個「句子」。",
+      "usage_zh": "陰性 la frase；文法上的「句子」也說 oración。",
+      "example_es": "Lee la frase en voz alta.", "example_zh": "大聲唸出這個句子。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:frase", "wiktionary:la:phrasis"]
+    },
+    {
+      "word": "letra", "article": "la", "pos": "sustantivo", "zh": "字母；字跡；歌詞", "en": "letter (of alphabet); handwriting; lyrics", "ipa": "/ˈletɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "littera", "zh": "字母；字跡；書信" },
+        { "lang_zh": "西班牙語", "word": "letra", "zh": "字母；字跡" }
+      ],
+      "cognates_en": ["letter", "literature"],
+      "story_zh": "letra 繼承自拉丁文 littera（字母）。西語辭典說它可能經伊特拉斯坎語，來自希臘文 διφθέρα（書寫板）；但拉丁文本身的來源其實不明，學者有好幾種說法。英文 letter 也來自 littera。",
+      "hook_zh": "假朋友！寄出去的「信」是 carta；letra 是字母、字跡，還有歌詞。",
+      "usage_zh": "la letra de la canción（歌詞）；tener buena letra（字寫得漂亮）。",
+      "example_es": "La palabra «casa» tiene cuatro letras.", "example_zh": "casa 這個字有四個字母。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:letra", "wiktionary:la:littera"]
+    },
+    {
+      "word": "página", "article": "la", "pos": "sustantivo", "zh": "頁", "en": "page", "ipa": "/ˈpaxina/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "pāgina", "zh": "頁" },
+        { "lang_zh": "西班牙語", "word": "página", "zh": "頁" }
+      ],
+      "cognates_en": ["page"],
+      "story_zh": "página 直接借自拉丁文 pāgina（書頁），英文 page 也來自同一個字。西語保留了完整的三個音節，重音落在第一個：PÁ-gi-na。",
+      "hook_zh": "página = page；g 念喉音 /x/：PA-hi-na。",
+      "usage_zh": "en la página diez（在第十頁）；página web（網頁）。",
+      "example_es": "Abre el libro en la página veinte.", "example_zh": "把書翻到第二十頁。",
+      "image": "emoji:📄", "confidence": "sourced", "sources": ["wiktionary:es:página"]
+    },
+    {
+      "word": "ejemplo", "article": "el", "pos": "sustantivo", "zh": "例子", "en": "example", "ipa": "/eˈxemplo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "ex + emō", "zh": "出 + 拿取" },
+        { "lang_zh": "拉丁語", "word": "exemplum", "zh": "樣本、範例；警惕" },
+        { "lang_zh": "古西班牙語", "word": "exemplo, enxemplo", "zh": "例子" },
+        { "lang_zh": "西班牙語", "word": "ejemplo", "zh": "例子" }
+      ],
+      "cognates_en": ["example"],
+      "story_zh": "ejemplo 來自拉丁文 exemplum（樣本），源頭是 eximō（取出），也就是從一堆裡「拿出一個」來看。古西班牙語寫作 exemplo，13 世紀初的《熙德之歌》就出現了；當時 x 念 /ʃ/，不是 /ks/。",
+      "hook_zh": "por ejemplo = for example：從一堆東西裡「拿出來」給你看的那一個。",
+      "usage_zh": "por ejemplo（例如），書面常縮寫 p. ej.。",
+      "example_es": "Dame un ejemplo, por favor.", "example_zh": "請給我一個例子。",
+      "image": "emoji:👉", "confidence": "sourced", "sources": ["wiktionary:es:ejemplo", "wiktionary:la:exemplum", "wiktionary:la:emo"]
+    },
+    {
+      "word": "error", "article": "el", "pos": "sustantivo", "zh": "錯誤", "en": "error, mistake", "ipa": "/eˈroɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "error (errōrem)", "zh": "錯誤；迷途" },
+        { "lang_zh": "西班牙語", "word": "error", "zh": "錯誤" }
+      ],
+      "cognates_en": ["error"],
+      "story_zh": "error 借自拉丁文 error（受格 errōrem），和英文 error 拼法一模一樣，意思也相同。",
+      "hook_zh": "拼法跟英文一樣，但要念 e-RROR，rr 用力捲舌，像犯錯時的「呃——」。",
+      "usage_zh": "cometer un error（犯錯）；口語也常說 equivocarse（弄錯）。",
+      "example_es": "Es un error muy común.", "example_zh": "這是很常見的錯誤。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:error"]
+    },
+    {
+      "word": "nota", "article": "la", "pos": "sustantivo", "zh": "成績、分數；筆記；音符", "en": "grade, mark; note", "ipa": "/ˈnota/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "nota", "zh": "記號" },
+        { "lang_zh": "西班牙語", "word": "nota", "zh": "筆記；成績" }
+      ],
+      "cognates_en": ["note"],
+      "story_zh": "nota 直接借自拉丁文 nota（記號），英文 note 同源。做個記號可以是筆記、音符，在學校則是老師打在考卷上的「分數」。",
+      "hook_zh": "假朋友提醒：sacar buena nota 不是寫好筆記，而是「考到好成績」。",
+      "usage_zh": "sacar una buena nota（拿高分）；tomar notas（做筆記）。",
+      "example_es": "Saqué una buena nota en el examen.", "example_zh": "我考試拿到好成績。",
+      "image": "emoji:💯", "confidence": "sourced", "sources": ["wiktionary:es:nota"]
+    },
+    {
+      "word": "curso", "article": "el", "pos": "sustantivo", "zh": "課程；學年、年級", "en": "course; school year", "ipa": "/ˈkuɾso/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "currō + -sus", "zh": "跑 + 名詞字尾" },
+        { "lang_zh": "拉丁語", "word": "cursus", "zh": "奔跑；路線；歷程" },
+        { "lang_zh": "西班牙語", "word": "curso", "zh": "課程；學年" }
+      ],
+      "cognates_en": ["course", "current"],
+      "story_zh": "curso 借自拉丁文 cursus（奔跑、路線、歷程），來自動詞 currō（跑）。英文 course 同源。西語另有一個從同一字「自然演變」的雙胞胎 coso。",
+      "hook_zh": "curso 的字根是「跑」：一門課就是從頭跑到終點旗的一段路。",
+      "usage_zh": "也指學年、年級：¿En qué curso estás?（你幾年級？）",
+      "example_es": "Hago un curso de español en verano.", "example_zh": "我夏天上西班牙文課程。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:curso", "wiktionary:la:cursus"]
+    },
+    {
+      "word": "idioma", "article": "el", "pos": "sustantivo", "zh": "語言", "en": "language", "ipa": "/iˈdjoma/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古希臘語", "word": "ἰδίωμα (idíōma)", "zh": "特色；慣用語" },
+        { "lang_zh": "晚期拉丁語", "word": "idioma", "zh": "語言風格" },
+        { "lang_zh": "西班牙語", "word": "idioma", "zh": "語言" }
+      ],
+      "cognates_en": ["idiom"],
+      "story_zh": "idioma 借自晚期拉丁文 idioma，源自希臘文 ἰδίωμα（特色、慣用語）。英文 idiom（慣用語）是同源字，但西語的 idioma 指的是一整個「語言」。",
+      "hook_zh": "idioma 是陽性！el idioma——希臘來的 -ma 字（el problema、el tema）多半是陽性。",
+      "usage_zh": "el idioma = la lengua（語言）。小心：英文 idiom 西語是 modismo。",
+      "example_es": "¿Cuántos idiomas hablas?", "example_zh": "你會說幾種語言？",
+      "image": "emoji:🗣️", "confidence": "sourced", "sources": ["wiktionary:es:idioma", "wiktionary:la:idioma"]
+    },
+    {
+      "word": "empresa", "article": "la", "pos": "sustantivo", "zh": "公司、企業；事業", "en": "company, enterprise", "ipa": "/emˈpɾesa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "義大利語", "word": "impresa", "zh": "事業、壯舉" },
+        { "lang_zh": "西班牙語", "word": "empresa", "zh": "公司；事業" }
+      ],
+      "cognates_en": [],
+      "story_zh": "empresa 借自義大利文 impresa。除了「公司」，西語 empresa 也保留了「事業、任務、大膽的計畫」這層意思。",
+      "hook_zh": "em-presa 和英文 enter-prise 長得很像：都是一家企業。",
+      "usage_zh": "trabajar en una empresa（在公司上班）；也可說 compañía。",
+      "example_es": "Trabajo en una empresa pequeña.", "example_zh": "我在一家小公司上班。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:empresa"]
+    },
+    {
+      "word": "jefe", "article": "el", "pos": "sustantivo", "zh": "老闆、上司；首領", "en": "boss, chief", "ipa": "/ˈxefe/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "caput", "zh": "頭" },
+        { "lang_zh": "古法語", "word": "chief", "zh": "頭；首領" },
+        { "lang_zh": "古西班牙語", "word": "xefe", "zh": "首領" },
+        { "lang_zh": "西班牙語", "word": "jefe", "zh": "老闆、上司" }
+      ],
+      "cognates_en": ["chief", "chef"],
+      "story_zh": "jefe 的祖先是拉丁文 caput（頭），經古法語 chief 傳入，古西班牙語寫作 xefe。「頭」引申成「頭頭」：老闆、首領。法文 chef 和英文 chief 都是它的親戚。",
+      "hook_zh": "jefe = chief = chef：連廚房裡的老大也叫 chef！",
+      "usage_zh": "陰性 jefa（也可說 la jefe）。",
+      "example_es": "Mi jefe trabaja mucho.", "example_zh": "我的老闆很拚。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:jefe", "wiktionary:la:caput"]
+    },
+    {
+      "word": "médico", "article": "el", "pos": "sustantivo", "zh": "醫生；（形）醫療的", "en": "doctor, physician; medical", "ipa": "/ˈmediko/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "medicus", "zh": "醫生；醫療的" },
+        { "lang_zh": "西班牙語", "word": "médico", "zh": "醫生" }
+      ],
+      "cognates_en": ["medical", "medicine"],
+      "story_zh": "médico 借自拉丁文 medicus。它同時是名詞「醫生」和形容詞「醫療的」，英文 medical、medicine 都是同一家族。",
+      "hook_zh": "médico ≈ medical：脖子上掛聽診器的人。",
+      "usage_zh": "陰性 la médica（也常說 la médico）；ir al médico（去看醫生）。",
+      "example_es": "Tengo que ir al médico.", "example_zh": "我得去看醫生。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:médico"]
+    },
+    {
+      "word": "enfermero", "article": "el", "pos": "sustantivo", "zh": "護理師、護士", "en": "nurse", "ipa": "/enfeɾˈmeɾo/",
+      "breakdown": [{ "part": "enferm(o)", "zh": "生病的、病人" }, { "part": "-ero", "zh": "從事…的人" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "enfermo + -ero", "zh": "病人 + 職業字尾" },
+        { "lang_zh": "西班牙語", "word": "enfermero", "zh": "護理師" }
+      ],
+      "cognates_en": [],
+      "story_zh": "enfermero 是 enfermo（生病的、病人）加上職業字尾 -ero：照顧病人的人。法文 infirmier、義大利文 infermiere 也是同樣的組法。",
+      "hook_zh": "enferm-ero：守在 enfermo（病人）床邊的人。",
+      "usage_zh": "陰性 la enfermera。-ero／-era 是常見職業字尾：cocinero、camarero。",
+      "example_es": "Mi madre es enfermera.", "example_zh": "我媽媽是護理師。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:enfermero"]
+    },
+    {
+      "word": "ingeniero", "article": "el", "pos": "sustantivo", "zh": "工程師", "en": "engineer", "ipa": "/inxeˈnjeɾo/",
+      "breakdown": [{ "part": "ingeni(o)", "zh": "巧思、創意" }, { "part": "-ero", "zh": "從事…的人" }],
+      "origin_chain": [
+        { "lang_zh": "法語", "word": "ingénieur", "zh": "工程師" },
+        { "lang_zh": "西班牙語", "word": "ingeniero", "zh": "工程師（換上 -ero）" }
+      ],
+      "cognates_en": ["engineer"],
+      "story_zh": "ingeniero 借自法文 ingénieur，再套上西語的職業字尾 -ero。從西語本身來看，剛好是 ingenio（巧思、創意）＋ -ero：靠聰明巧思做事的人。",
+      "hook_zh": "ingeniero 藏著 ingenio（巧思）：戴黃色安全帽、點子很多的人。",
+      "usage_zh": "陰性 ingeniera；ge 念 /xe/：in-he-NIE-ro。",
+      "example_es": "Mi hermana es ingeniera.", "example_zh": "我姊姊是工程師。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:ingeniero"]
+    },
+    {
+      "word": "camarero", "article": "el", "pos": "sustantivo", "zh": "（餐廳）服務生", "en": "waiter", "ipa": "/kamaˈɾeɾo/",
+      "breakdown": [{ "part": "cámar(a)", "zh": "房間" }, { "part": "-ero", "zh": "從事…的人" }],
+      "origin_chain": [
+        { "lang_zh": "晚期拉丁語", "word": "camerārius", "zh": "宮廷內侍" },
+        { "lang_zh": "中世紀拉丁語", "word": "camarārius", "zh": "內侍" },
+        { "lang_zh": "西班牙語", "word": "camarero", "zh": "服務生" }
+      ],
+      "cognates_en": [],
+      "story_zh": "camarero 借自中世紀拉丁文 camarārius，前身是晚期拉丁文 camerārius（宮廷內侍），和 cámara（房間）有關。從前服侍王公的內侍，如今成了餐廳裡端盤子的服務生。",
+      "hook_zh": "cámara（房間）＋ -ero：在房間裡服侍客人的人，打著領結、端著托盤。",
+      "usage_zh": "陰性 camarera；拉美多說 mesero。叫服務生可說 ¡Perdone!",
+      "example_es": "El camarero trae la cuenta.", "example_zh": "服務生把帳單拿來。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:camarero"]
+    },
+    {
+      "word": "cocinero", "article": "el", "pos": "sustantivo", "zh": "廚師", "en": "cook, chef", "ipa": "/koθiˈneɾo/",
+      "breakdown": [{ "part": "cocin(a)", "zh": "廚房" }, { "part": "-ero", "zh": "從事…的人" }],
+      "origin_chain": [
+        { "lang_zh": "通俗拉丁語", "word": "*coquīnārium", "zh": "廚房相關的人" },
+        { "lang_zh": "西班牙語", "word": "cocinero", "zh": "廚師" }
+      ],
+      "cognates_en": [],
+      "story_zh": "cocinero 可能直接來自通俗拉丁文 *coquīnārium，也可能是後來用 cocina（廚房）加上 -ero 組成的。不論哪一種，都是「在廚房工作的人」。",
+      "hook_zh": "cocina（廚房）＋ -ero ＝ 戴著高高白帽的廚師。",
+      "usage_zh": "陰性 cocinera；動詞 cocinar（煮菜）。",
+      "example_es": "Mi padre es un buen cocinero.", "example_zh": "我爸爸是個好廚師。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cocinero"]
+    },
+    {
+      "word": "dependiente", "article": "el", "pos": "sustantivo", "zh": "店員", "en": "shop assistant, clerk", "ipa": "/depenˈdjente/",
+      "breakdown": [{ "part": "depend(er)", "zh": "依靠" }, { "part": "-iente", "zh": "…的人" }],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "站在收銀台後的店員：你要買什麼，全都 depende de él（靠他幫忙）。",
+      "usage_zh": "陰性 dependienta（也可說 la dependiente）。當形容詞是「依賴的」。",
+      "example_es": "La dependienta es muy amable.", "example_zh": "那位女店員很親切。",
+      "image": "svg", "confidence": "hook-only", "sources": ["wiktionary:es:dependiente"]
+    },
+    {
+      "word": "secretario", "article": "el", "pos": "sustantivo", "zh": "秘書；（部會）首長", "en": "secretary", "ipa": "/sekɾeˈtaɾjo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "中世紀拉丁語", "word": "sēcrētārius", "zh": "秘書" },
+        { "lang_zh": "西班牙語", "word": "secretario", "zh": "秘書" }
+      ],
+      "cognates_en": ["secretary"],
+      "story_zh": "secretario 借自中世紀拉丁文 sēcrētārius，英文 secretary 也來自同一個字。除了辦公室的秘書，它也能指政府部門的首長。",
+      "hook_zh": "secret-ario：老闆所有的 secreto（秘密）秘書都知道！",
+      "usage_zh": "陰性 secretaria：la secretaria del director（主任的秘書）。",
+      "example_es": "La secretaria contesta el teléfono.", "example_zh": "秘書接電話。",
+      "image": "emoji:🧑‍💼", "confidence": "sourced", "sources": ["wiktionary:es:secretario"]
+    },
+    {
+      "word": "taxista", "article": "el", "pos": "sustantivo", "zh": "計程車司機", "en": "taxi driver", "ipa": "/taɡˈsista/",
+      "breakdown": [{ "part": "taxi", "zh": "計程車" }, { "part": "-ista", "zh": "從事…的人" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "taxi + -ista", "zh": "計程車 + 職業字尾" },
+        { "lang_zh": "西班牙語", "word": "taxista", "zh": "計程車司機" }
+      ],
+      "cognates_en": [],
+      "story_zh": "taxista 是 taxi（計程車）加上職業字尾 -ista，就是「開計程車的人」。西語很多職業都這樣做：dentista、artista、periodista。",
+      "hook_zh": "黃色計程車 + -ista ＝ 握方向盤的 taxista。",
+      "usage_zh": "-ista 結尾的職業陰陽同形：el taxista / la taxista。",
+      "example_es": "El taxista conoce bien la ciudad.", "example_zh": "計程車司機很熟這座城市。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:taxista"]
+    },
+    {
+      "word": "conductor", "article": "el", "pos": "sustantivo", "zh": "駕駛、司機；節目主持人", "en": "driver; TV host", "ipa": "/konduɡˈtoɾ/",
+      "breakdown": [{ "part": "conduc-", "zh": "帶領、駕駛" }, { "part": "-tor", "zh": "做…的人" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "condūcō + -tor", "zh": "帶領 + 做…的人" },
+        { "lang_zh": "拉丁語", "word": "conductor", "zh": "承包人、雇主" },
+        { "lang_zh": "西班牙語", "word": "conductor", "zh": "司機" }
+      ],
+      "cognates_en": ["conductor"],
+      "story_zh": "conductor 借自拉丁文 conductor（承包人、雇主），來自 condūcō（帶領）。在西語裡最常見的意思是「開車的人」，也指電視節目主持人和物理上的導體。",
+      "hook_zh": "握方向盤「帶」著車走的人。小心：樂團指揮是 director，不是 conductor。",
+      "usage_zh": "陰性 conductora；動詞 conducir（開車，西班牙用法）。",
+      "example_es": "El conductor del autobús es muy simpático.", "example_zh": "公車司機人很好。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:conductor", "wiktionary:la:conductor"]
+    },
+    {
+      "word": "artista", "article": "el", "pos": "sustantivo", "zh": "藝術家；藝人", "en": "artist; performer", "ipa": "/aɾˈtista/",
+      "breakdown": [{ "part": "arte", "zh": "藝術" }, { "part": "-ista", "zh": "從事…的人" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "arte + -ista", "zh": "藝術 + 職業字尾" },
+        { "lang_zh": "西班牙語", "word": "artista", "zh": "藝術家" }
+      ],
+      "cognates_en": ["artist"],
+      "story_zh": "artista 是 arte（藝術）加上 -ista，「從事藝術的人」。除了畫家、雕刻家，也可以指表演者、藝人。",
+      "hook_zh": "arte + -ista = artist；手上拿著調色盤和畫筆。",
+      "usage_zh": "陰陽同形：el artista / la artista（不說 *artisto）。",
+      "example_es": "Picasso es un artista muy famoso.", "example_zh": "畢卡索是很有名的藝術家。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:artista"]
+    },
+    {
+      "word": "cantante", "article": "el", "pos": "sustantivo", "zh": "歌手", "en": "singer", "ipa": "/kanˈtante/",
+      "breakdown": [{ "part": "cant(ar)", "zh": "唱" }, { "part": "-ante", "zh": "做…的人" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "cantantem", "zh": "正在唱歌的" },
+        { "lang_zh": "西班牙語", "word": "cantante", "zh": "歌手" }
+      ],
+      "cognates_en": [],
+      "story_zh": "cantante 繼承自拉丁文 cantantem（正在唱歌的）。從西語來看，剛好就是 cantar（唱）＋ -ante（做…的人）＝「唱歌的人」。",
+      "hook_zh": "cant- 就是唱：cantar 唱、canción 歌、cantante 歌手，一家人。",
+      "usage_zh": "陰陽同形：el cantante / la cantante。",
+      "example_es": "Shakira es una cantante colombiana.", "example_zh": "夏奇拉是哥倫比亞女歌手。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cantante"]
+    },
+    {
+      "word": "actor", "article": "el", "pos": "sustantivo", "zh": "演員（男）", "en": "actor", "ipa": "/aɡˈtoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "āctor", "zh": "行動者、表演者" },
+        { "lang_zh": "西班牙語", "word": "actor", "zh": "演員" }
+      ],
+      "cognates_en": ["actor"],
+      "story_zh": "actor 借自拉丁文 āctor，和英文 actor 拼法一模一樣，都是「做事、表演的人」。",
+      "hook_zh": "戲劇面具一哭一笑：actor 演男角，actriz 演女角。",
+      "usage_zh": "陰性是 actriz（複數 actrices），不是 *actora。",
+      "example_es": "Mi actor favorito es español.", "example_zh": "我最喜歡的演員是西班牙人。",
+      "image": "emoji:🎭", "confidence": "sourced", "sources": ["wiktionary:es:actor"]
+    },
+    {
+      "word": "periodista", "article": "el", "pos": "sustantivo", "zh": "記者", "en": "journalist", "ipa": "/peɾjoˈdista/",
+      "breakdown": [{ "part": "periód(ico)", "zh": "報紙" }, { "part": "-ista", "zh": "從事…的人" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "periódico + -ista", "zh": "報紙 + 職業字尾" },
+        { "lang_zh": "西班牙語", "word": "periodista", "zh": "記者" }
+      ],
+      "cognates_en": [],
+      "story_zh": "periodista 由 periódico（報紙）加上 -ista 組成：替報紙寫新聞的人。現在電視和網路記者也都叫 periodista。",
+      "hook_zh": "拿著麥克風和筆記本、為 periódico 跑新聞的人。",
+      "usage_zh": "陰陽同形：el periodista / la periodista。",
+      "example_es": "La periodista hace muchas preguntas.", "example_zh": "那位女記者問了很多問題。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:periodista"]
+    },
+    {
+      "word": "reunión", "article": "la", "pos": "sustantivo", "zh": "會議；聚會", "en": "meeting; get-together", "ipa": "/reuˈnjon/",
+      "breakdown": [{ "part": "re-", "zh": "再、重新" }, { "part": "unión", "zh": "結合" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "re- + unión", "zh": "再 + 結合" },
+        { "lang_zh": "西班牙語", "word": "reunión", "zh": "會議、聚會" }
+      ],
+      "cognates_en": ["reunion", "union"],
+      "story_zh": "reunión 是 re-（再、重新）加上 unión（結合）：大家「再次聚在一起」。英文 reunion 同形，但西語最常用來說公司裡的「開會」。",
+      "hook_zh": "不只是同學會：在公司說 Tengo una reunión，意思是「我要開會」。",
+      "usage_zh": "tener una reunión（有會要開）；-ión 結尾陰性。",
+      "example_es": "Tengo una reunión a las diez.", "example_zh": "我十點要開會。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:reunión"]
+    },
+    {
+      "word": "proyecto", "article": "el", "pos": "sustantivo", "zh": "計畫、專案", "en": "project, plan", "ipa": "/pɾoˈʝeɡto/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "prōiectus", "zh": "向前伸出的" },
+        { "lang_zh": "西班牙語", "word": "proyecto", "zh": "計畫" }
+      ],
+      "cognates_en": ["project"],
+      "story_zh": "proyecto 借自拉丁文 prōiectus（向前伸出的），英文 project 同源。",
+      "hook_zh": "把點子「往前丟」到未來，就是一個 proyecto。",
+      "usage_zh": "y 念 /ʝ/：pro-YEC-to。un proyecto nuevo（新專案）。",
+      "example_es": "Tenemos un proyecto nuevo en el trabajo.", "example_zh": "我們工作上有個新專案。",
+      "image": "emoji:📋", "confidence": "sourced", "sources": ["wiktionary:es:proyecto"]
+    },
+    {
+      "word": "correo", "article": "el", "pos": "sustantivo", "zh": "郵件；郵局；電子郵件", "en": "mail; post office; email", "ipa": "/koˈreo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "加泰隆尼亞語", "word": "correu", "zh": "信差；郵件" },
+        { "lang_zh": "西班牙語", "word": "correo", "zh": "郵件" }
+      ],
+      "cognates_en": [],
+      "story_zh": "correo 借自加泰隆尼亞語 correu。如今它指郵件、郵政，也指電子郵件（correo electrónico）。",
+      "hook_zh": "西班牙的郵筒是黃色的，上面寫著 Correos——寄信、寄 email 都是 correo。",
+      "usage_zh": "correo electrónico（email）；Correos（大寫）是西班牙郵局。",
+      "example_es": "Te mando un correo esta tarde.", "example_zh": "我今天下午寄 email 給你。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:correo"]
+    },
+    {
+      "word": "mensaje", "article": "el", "pos": "sustantivo", "zh": "訊息、簡訊", "en": "message", "ipa": "/menˈsaxe/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "mittō", "zh": "送出" },
+        { "lang_zh": "中世紀拉丁語", "word": "missāticum", "zh": "訊息" },
+        { "lang_zh": "古法語／古奧克語", "word": "message, messatge", "zh": "訊息" },
+        { "lang_zh": "古西班牙語", "word": "mensage", "zh": "訊息" },
+        { "lang_zh": "西班牙語", "word": "mensaje", "zh": "訊息" }
+      ],
+      "cognates_en": ["message", "mission"],
+      "story_zh": "mensaje 的源頭是拉丁文 mittō（送出）。中世紀拉丁文 missāticum 就是「訊息」，經古法語或古奧克語 message 進入古西班牙語 mensage。訊息，本質上就是「送出去的話」。",
+      "hook_zh": "mensaje ≈ message：按下傳送（mittō），訊息就飛出去了。",
+      "usage_zh": "-aje 結尾的名詞多為陽性：el mensaje、el viaje。mandar un mensaje（傳訊息）。",
+      "example_es": "Te envío un mensaje luego.", "example_zh": "我等一下傳訊息給你。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:mensaje", "wiktionary:la:missaticum", "wiktionary:la:mitto"]
+    },
+    {
+      "word": "internet", "article": "el", "pos": "sustantivo", "zh": "網路、網際網路", "en": "internet", "ipa": "/inteɾˈnet/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "英語", "word": "Internet", "zh": "網際網路" },
+        { "lang_zh": "西班牙語", "word": "internet", "zh": "網路" }
+      ],
+      "cognates_en": ["internet"],
+      "story_zh": "internet 直接借自英文 Internet。西語可以說 el internet 或 la internet，但最常見的是乾脆不加冠詞：en internet。",
+      "hook_zh": "西語念 in-ter-NET，重音在最後一個音節。",
+      "usage_zh": "通常不加冠詞：buscar en internet（上網查）。",
+      "example_es": "Busco la información en internet.", "example_zh": "我上網查資料。",
+      "image": "emoji:🌐", "confidence": "sourced", "sources": ["wiktionary:es:internet"]
+    },
+    {
+      "word": "dentista", "article": "el", "pos": "sustantivo", "zh": "牙醫", "en": "dentist", "ipa": "/denˈtista/",
+      "breakdown": [{ "part": "dent- (diente)", "zh": "牙齒" }, { "part": "-ista", "zh": "從事…的人" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "diente + -ista", "zh": "牙齒 + 職業字尾" },
+        { "lang_zh": "西班牙語", "word": "dentista", "zh": "牙醫" }
+      ],
+      "cognates_en": ["dentist"],
+      "story_zh": "dentista 由 diente（牙齒）加上職業字尾 -ista 組成，字根用的是 dent-，就像英文 dentist。",
+      "hook_zh": "diente 牙齒 → dentista 牙醫，和英文 dentist 只差一個 a。",
+      "usage_zh": "陰陽同形：el/la dentista；ir al dentista（去看牙醫）。",
+      "example_es": "Mañana voy al dentista.", "example_zh": "我明天要去看牙醫。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:dentista"]
+    },
+    {
+      "word": "peluquero", "article": "el", "pos": "sustantivo", "zh": "理髮師、美髮師", "en": "hairdresser, barber", "ipa": "/peluˈkeɾo/",
+      "breakdown": [{ "part": "peluc(a)", "zh": "假髮" }, { "part": "-ero", "zh": "從事…的人" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "peluca + -ero", "zh": "假髮 + 職業字尾" },
+        { "lang_zh": "西班牙語", "word": "peluquero", "zh": "理髮師" }
+      ],
+      "cognates_en": [],
+      "story_zh": "peluquero 由 peluca（假髮）加上職業字尾 -ero 組成，現在指理髮師或美髮師。注意 c 在 e 前要寫成 qu，才能保持 /k/ 的音。",
+      "hook_zh": "peluca 是假髮！想像美髮師手裡捧著一頂捲捲的假髮。",
+      "usage_zh": "陰性 peluquera；理髮店是 la peluquería。",
+      "example_es": "Mi peluquera corta muy bien el pelo.", "example_zh": "我的美髮師剪頭髮剪得很好。",
+      "image": "emoji:💇", "confidence": "sourced", "sources": ["wiktionary:es:peluquero"]
+    },
+    {
+      "word": "abogado", "article": "el", "pos": "sustantivo", "zh": "律師", "en": "lawyer", "ipa": "/aboˈɡado/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "abogado 長得像英文 advocate（辯護者）：站在天秤旁替你說話的人。",
+      "usage_zh": "陰性 abogada。別和 aguacate（酪梨）搞混！",
+      "example_es": "Mi tía es abogada.", "example_zh": "我阿姨是律師。",
+      "image": "emoji:⚖️", "confidence": "hook-only", "sources": ["wiktionary:es:abogado"]
+    },
+    {
+      "word": "bombero", "article": "el", "pos": "sustantivo", "zh": "消防員", "en": "firefighter", "ipa": "/bomˈbeɾo/",
+      "breakdown": [{ "part": "bomb(a)", "zh": "幫浦、抽水機" }, { "part": "-ero", "zh": "從事…的人" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "bomba + -ero", "zh": "幫浦 + 職業字尾" },
+        { "lang_zh": "西班牙語", "word": "bombero", "zh": "消防員" }
+      ],
+      "cognates_en": [],
+      "story_zh": "bombero 由 bomba（幫浦、抽水機）加上 -ero 組成：操作水泵噴水的人，也就是消防員。這裡的 bomba 不是炸彈，而是抽水機。",
+      "hook_zh": "bomba（水泵）一開，水柱噴向火焰——那就是 bombero。",
+      "usage_zh": "陰性 bombera；llamar a los bomberos（叫消防隊）。",
+      "example_es": "Los bomberos llegan muy rápido.", "example_zh": "消防員來得很快。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:bombero"]
+    },
+    {
+      "word": "piloto", "article": "el", "pos": "sustantivo", "zh": "飛行員；賽車手", "en": "pilot; racing driver", "ipa": "/piˈloto/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "義大利語", "word": "pilota", "zh": "領航員" },
+        { "lang_zh": "西班牙語", "word": "piloto", "zh": "飛行員" }
+      ],
+      "cognates_en": ["pilot"],
+      "story_zh": "piloto 借自義大利文 pilota。除了開飛機的飛行員，也指賽車手，甚至車上的指示燈。",
+      "hook_zh": "piloto ≈ pilot：駕駛飛機的人。",
+      "usage_zh": "結尾 -o 但陰陽可同形：el piloto / la piloto（也有 pilota）。",
+      "example_es": "Mi primo es piloto de avión.", "example_zh": "我表哥是飛機駕駛員。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:piloto"]
+    },
+    {
+      "word": "carpeta", "article": "la", "pos": "sustantivo", "zh": "資料夾、文件夾", "en": "folder", "ipa": "/kaɾˈpeta/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "法語", "word": "carpette", "zh": "（小毯子）" },
+        { "lang_zh": "西班牙語", "word": "carpeta", "zh": "資料夾" }
+      ],
+      "cognates_en": ["carpet"],
+      "story_zh": "carpeta 借自法文 carpette，也有人認為是 carpa（帳篷、篷布）的縮小形。它和英文 carpet 同源，意思卻完全不同：西語 carpeta 是「資料夾」，電腦上的檔案夾也叫它。",
+      "hook_zh": "假朋友！carpeta 不是地毯（地毯是 alfombra），而是裝講義的資料夾。",
+      "usage_zh": "電腦資料夾也叫 carpeta：Guarda el archivo en esta carpeta。",
+      "example_es": "Pon los papeles en la carpeta.", "example_zh": "把文件放進資料夾。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:carpeta"]
+    },
+    {
+      "word": "regla", "article": "la", "pos": "sustantivo", "zh": "尺；規則", "en": "ruler; rule", "ipa": "/ˈreɡla/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "regula", "zh": "直尺；規則" },
+        { "lang_zh": "西班牙語", "word": "regla", "zh": "尺；規則" }
+      ],
+      "cognates_en": ["rule", "regular"],
+      "story_zh": "regla 是從拉丁文 regula 半學術地借來的，英文 rule 同源。一把直尺畫出直線，也成了做事的「規則」。從同一個字自然演變的雙胞胎是 reja（鐵欄杆）。",
+      "hook_zh": "regla = rule = ruler：尺和規則是同一個字。",
+      "usage_zh": "las reglas del juego（遊戲規則）；口語也指「月經」。",
+      "example_es": "Necesito una regla para dibujar la línea.", "example_zh": "我需要一把尺來畫線。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:regla"]
+    },
+    {
+      "word": "tijeras", "article": "la", "pos": "sustantivo", "zh": "剪刀", "en": "scissors", "ipa": "/tiˈxeɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "tōnsus", "zh": "被剪的" },
+        { "lang_zh": "拉丁語", "word": "(ferramenta) tōnsōria", "zh": "剪髮用的（工具）" },
+        { "lang_zh": "古西班牙語", "word": "tixera, tisera", "zh": "剪刀" },
+        { "lang_zh": "西班牙語", "word": "tijera(s)", "zh": "剪刀" }
+      ],
+      "cognates_en": [],
+      "story_zh": "tijeras 是 tijera 的複數。tijera 來自古西班牙語 tixera，源頭是拉丁文 (ferramenta) tōnsōria「剪髮用的（工具）」，來自 tōnsus（被剪的）。中間的 -i- 可能受古法語 cisoires（剪刀）影響。",
+      "hook_zh": "剪刀有兩片刀刃，所以西語總是用複數：unas tijeras。",
+      "usage_zh": "通常用複數：las tijeras（那把剪刀）、unas tijeras（一把剪刀）。",
+      "example_es": "¿Dónde están las tijeras?", "example_zh": "剪刀在哪裡？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:tijera"]
+    },
+    {
+      "word": "horario", "article": "el", "pos": "sustantivo", "zh": "時刻表、課表；營業時間", "en": "timetable, schedule; opening hours", "ipa": "/oˈɾaɾjo/",
+      "breakdown": [{ "part": "hora", "zh": "小時" }, { "part": "-ario", "zh": "和…有關的" }],
+      "origin_chain": [
+        { "lang_zh": "中世紀拉丁語", "word": "horārius", "zh": "和小時有關的" },
+        { "lang_zh": "西班牙語", "word": "horario", "zh": "時刻表" }
+      ],
+      "cognates_en": ["hour"],
+      "story_zh": "horario 借自中世紀拉丁文 horārius（和小時有關的），字根就是 hora（小時）。所以時刻表、課表、營業時間，都是 horario。",
+      "hook_zh": "hora（小時）＋ -ario：把每個小時排好的表。",
+      "usage_zh": "horario de clases（課表）；假朋友提醒：「圖書館」是 biblioteca，librería 是書店。",
+      "example_es": "¿Cuál es el horario de la biblioteca?", "example_zh": "圖書館的開放時間是幾點？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:horario"]
+    },
+    {
+      "word": "asignatura", "article": "la", "pos": "sustantivo", "zh": "（學校的）科目", "en": "school subject", "ipa": "/asiɡnaˈtuɾa/",
+      "breakdown": [{ "part": "asigna(r)", "zh": "指派、分配" }, { "part": "-tura", "zh": "名詞字尾" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "asignar + -tura", "zh": "分配 + 名詞字尾" },
+        { "lang_zh": "西班牙語", "word": "asignatura", "zh": "科目" }
+      ],
+      "cognates_en": [],
+      "story_zh": "asignatura 由動詞 asignar（指派、分配）加上名詞字尾 -tura 組成，字面上是「被分派的東西」——學校排給你修的科目。",
+      "hook_zh": "假朋友！asignatura 不是 signature（簽名），也不是 assignment（作業），是「科目」。",
+      "usage_zh": "¿Cuál es tu asignatura favorita?；拉美常說 materia。",
+      "example_es": "Mi asignatura favorita es la historia.", "example_zh": "我最喜歡的科目是歷史。",
+      "image": "emoji:📚", "confidence": "sourced", "sources": ["wiktionary:es:asignatura"]
+    },
+    {
+      "word": "matemáticas", "article": "la", "pos": "sustantivo", "zh": "數學", "en": "mathematics", "ipa": "/mateˈmatikas/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "matemáticas ≈ mathematics；加減乘除四個符號，西班牙學生簡稱 mates。",
+      "usage_zh": "通常用複數 las matemáticas；重音在第二個 MÁ：ma-te-MÁ-ti-cas。",
+      "example_es": "Las matemáticas son difíciles para mí.", "example_zh": "數學對我來說很難。",
+      "image": "svg", "confidence": "hook-only", "sources": ["wiktionary:es:matemáticas"]
+    },
+    {
+      "word": "ciencia", "article": "la", "pos": "sustantivo", "zh": "科學；知識", "en": "science; knowledge", "ipa": "/ˈθjenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "sciēns + -ia", "zh": "知道的 + 名詞字尾" },
+        { "lang_zh": "拉丁語", "word": "scientia", "zh": "知識" },
+        { "lang_zh": "古西班牙語", "word": "çiençia", "zh": "知識、學問" },
+        { "lang_zh": "西班牙語", "word": "ciencia", "zh": "科學" }
+      ],
+      "cognates_en": ["science"],
+      "story_zh": "ciencia 來自古西班牙語 çiençia，是從拉丁文 scientia 借來的學者字，由 sciēns（知道的）＋ -ia 組成。所以「科學」的本意就是「知識」。英文 science 同源。",
+      "hook_zh": "ciencia = science：西語把開頭的 sc 簡化成 c，燒瓶冒泡就是科學。",
+      "usage_zh": "las ciencias（理科）；ciencia ficción（科幻）。",
+      "example_es": "Me gusta mucho la ciencia.", "example_zh": "我很喜歡科學。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:ciencia"]
+    },
+    {
+      "word": "profesión", "article": "la", "pos": "sustantivo", "zh": "職業", "en": "profession", "ipa": "/pɾofeˈsjon/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "professiō (professiōnem)", "zh": "公開宣告；職業" },
+        { "lang_zh": "西班牙語", "word": "profesión", "zh": "職業" }
+      ],
+      "cognates_en": ["profession"],
+      "story_zh": "profesión 借自拉丁文 professiō（受格 professiōnem），英文 profession 同源。它和 profesor（老師）是一家人。",
+      "hook_zh": "profesión ≈ profession：¿Cuál es tu profesión? 就是在問你做哪一行。",
+      "usage_zh": "-sión 結尾陰性：la profesión；口語問職業：¿A qué te dedicas?",
+      "example_es": "¿Cuál es tu profesión?", "example_zh": "你的職業是什麼？",
+      "image": "emoji:💼", "confidence": "sourced", "sources": ["wiktionary:es:profesión"]
+    }
+  ]
+}

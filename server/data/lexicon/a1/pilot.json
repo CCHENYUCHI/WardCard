@@ -1,0 +1,311 @@
+{
+  "theme": "pilot",
+  "theme_zh": "試作",
+  "entries": [
+    {
+      "word": "preocupar", "article": "", "pos": "verbo", "zh": "使擔心；擔心（preocuparse）", "en": "to worry", "ipa": "/pɾeokuˈpaɾ/",
+      "breakdown": [{ "part": "pre-", "zh": "事先、在前" }, { "part": "ocupar", "zh": "佔據" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "prae + occupāre", "zh": "在前 + 佔據" },
+        { "lang_zh": "拉丁語", "word": "praeoccupāre", "zh": "事先佔據、搶先" },
+        { "lang_zh": "西班牙語", "word": "preocupar", "zh": "擔心" }
+      ],
+      "cognates_en": ["preoccupy", "occupy"],
+      "story_zh": "拉丁文 praeoccupāre 由 prae-（在前、事先）和 occupāre（佔據）組成，原意是「搶先佔領」。一件事還沒發生，就先佔據了你的心思——這就是「擔心」。英文的 preoccupy（心事重重）是同一個字。",
+      "hook_zh": "煩惱在你的腦袋裡「預先佔位」（pre + ocupar），你就 preocupado 了。",
+      "usage_zh": "常用 Me preocupa…（…讓我擔心）或 preocuparse por…（為…擔心）。",
+      "example_es": "Me preocupa el examen.", "example_zh": "考試讓我很擔心。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:preocupar", "wiktionary:la:praeoccupo"]
+    },
+    {
+      "word": "azul", "article": "", "pos": "adjetivo", "zh": "藍色的；藍色", "en": "blue", "ipa": "/aˈθul/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "波斯語", "word": "lājvard", "zh": "青金石" },
+        { "lang_zh": "阿拉伯語", "word": "lāzuward", "zh": "青金石" },
+        { "lang_zh": "安達魯斯阿拉伯語", "word": "*lāzūrd", "zh": "（縮短形）" },
+        { "lang_zh": "古西班牙語", "word": "azur", "zh": "藍色" },
+        { "lang_zh": "西班牙語", "word": "azul", "zh": "藍色" }
+      ],
+      "cognates_en": ["azure"],
+      "story_zh": "azul 不是拉丁字，而是一顆寶石的名字：波斯語的 lājvard 指深藍色的「青金石」，經阿拉伯語 lāzuward 傳進伊比利半島。在流傳中開頭的 l- 掉了，寶石名也變成了顏色名。英文的 azure（蔚藍）是同一個來源。",
+      "hook_zh": "azul ≈ 英文 azure，想像一顆閃著天藍光的青金石。",
+      "usage_zh": "陰陽同形：el cielo azul、la camisa azul；複數 azules。",
+      "example_es": "El cielo está muy azul hoy.", "example_zh": "今天天空很藍。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:azul"]
+    },
+    {
+      "word": "ojalá", "article": "", "pos": "interjección", "zh": "但願、希望", "en": "I hope; if only", "ipa": "/oxaˈla/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "阿拉伯語", "word": "law šāʔa llāh", "zh": "如果神（阿拉）願意" },
+        { "lang_zh": "古西班牙語", "word": "oxala", "zh": "但願" },
+        { "lang_zh": "西班牙語", "word": "ojalá", "zh": "但願" }
+      ],
+      "cognates_en": [],
+      "story_zh": "ojalá 來自阿拉伯語 law šāʔa llāh 或 wa-šāʔa llāh，意思是「如果神願意」，和穆斯林常說的 inshallah（ʔin šāʔa llāh）是同一句話的親戚。字尾的 -alá 就是 Allah（阿拉）。",
+      "hook_zh": "說 ojalá 就是在說「阿拉保佑」——許願的時候喊一聲 ¡Ojalá!",
+      "usage_zh": "後面接虛擬式：Ojalá (que) + subjuntivo。",
+      "example_es": "¡Ojalá que haga sol mañana!", "example_zh": "但願明天出太陽！",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:ojalá"]
+    },
+    {
+      "word": "manzana", "article": "la", "pos": "sustantivo", "zh": "蘋果；街區", "en": "apple; city block", "ipa": "/manˈθana/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "mālum mattiānum", "zh": "Matius 的蘋果" },
+        { "lang_zh": "通俗拉丁語", "word": "*mattiāna", "zh": "（省略成一個字）" },
+        { "lang_zh": "古西班牙語", "word": "mazana", "zh": "蘋果" },
+        { "lang_zh": "西班牙語", "word": "manzana", "zh": "蘋果" }
+      ],
+      "cognates_en": [],
+      "story_zh": "manzana 來自一個人名！拉丁文 mālum mattiānum 意思是「Matius 的蘋果」，指一種蘋果品種。Gaius Matius 是凱撒與西塞羅的朋友，羅馬的園藝家，還寫過食譜。後來大家省略「蘋果」，只說「Matius 的」，就變成了 manzana。",
+      "hook_zh": "想像羅馬園丁 Matius 舉著他的招牌蘋果喊：「Mattiana！」",
+      "usage_zh": "在西班牙也指城市的「街區」：dar la vuelta a la manzana（繞街區一圈）。",
+      "example_es": "Como una manzana cada día.", "example_zh": "我每天吃一顆蘋果。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:manzana"]
+    },
+    {
+      "word": "perro", "article": "el", "pos": "sustantivo", "zh": "狗", "en": "dog", "ipa": "/ˈpero/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古西班牙語", "word": "perro", "zh": "雜種狗（貶義）" },
+        { "lang_zh": "西班牙語", "word": "perro", "zh": "狗" }
+      ],
+      "cognates_en": [],
+      "story_zh": "perro 的來源至今是個謎。約 1200 年的古西班牙語就有這個字，原本帶貶義，類似「野狗、雜種狗」，後來卻取代了拉丁文的 can，成為「狗」的正式說法。有一說它來自叫狗的吆喝聲，也有人認為來自古伊比利語。",
+      "hook_zh": "perro 的 rr 要捲舌，就像狗在低吼「rrr」。",
+      "usage_zh": "陰性 perra（母狗）；小狗 perrito。",
+      "example_es": "Mi perro se llama Toby.", "example_zh": "我的狗叫 Toby。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:perro"]
+    },
+    {
+      "word": "casa", "article": "la", "pos": "sustantivo", "zh": "房子；家", "en": "house; home", "ipa": "/ˈkasa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "casa", "zh": "小屋、茅屋" },
+        { "lang_zh": "古西班牙語", "word": "casa", "zh": "房子" },
+        { "lang_zh": "西班牙語", "word": "casa", "zh": "房子、家" }
+      ],
+      "cognates_en": [],
+      "story_zh": "在拉丁語裡，casa 只是簡陋的「小屋、茅屋」。兩千年過去，這個樸素的字一路升級，在西班牙語裡成了每個人的「家」。",
+      "hook_zh": "英文 casino 原本是義大利文的「小房子」——casa 加上縮小詞尾。",
+      "usage_zh": "en casa（在家）、a casa（回家）。",
+      "example_es": "Mi casa es tu casa.", "example_zh": "我家就是你家。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:casa"]
+    },
+    {
+      "word": "comer", "article": "", "pos": "verbo", "zh": "吃；吃午餐", "en": "to eat", "ipa": "/koˈmeɾ/",
+      "breakdown": [{ "part": "com- (con-)", "zh": "一起、完全" }, { "part": "edere", "zh": "吃（拉丁文）" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "con- + edere", "zh": "完全 + 吃" },
+        { "lang_zh": "拉丁語", "word": "comedere", "zh": "吃光、吞下" },
+        { "lang_zh": "通俗拉丁語", "word": "*comēre", "zh": "吃" },
+        { "lang_zh": "西班牙語", "word": "comer", "zh": "吃" }
+      ],
+      "cognates_en": ["comestible", "edible"],
+      "story_zh": "拉丁文本來的「吃」是 edere，加上 con- 變成 comedere，意思是「吃光、吞下」。口語把它縮短成 *comēre，就成了今天的 comer。英文 edible（可食用的）保留了 edere 那一半。",
+      "hook_zh": "com- 是「一起」：大家一起吃飯就是 comer。",
+      "usage_zh": "在西班牙 comer 常指「吃午餐」，晚餐是 cenar。",
+      "example_es": "¿Qué quieres comer?", "example_zh": "你想吃什麼？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:comer", "wiktionary:la:comedo"]
+    },
+    {
+      "word": "ir", "article": "", "pos": "verbo", "zh": "去", "en": "to go", "ipa": "/ˈiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "īre", "zh": "去 → ir" },
+        { "lang_zh": "拉丁語", "word": "vādere", "zh": "走 → voy, vas, va" },
+        { "lang_zh": "拉丁語", "word": "esse", "zh": "是 → fui, fue" },
+        { "lang_zh": "西班牙語", "word": "ir", "zh": "去" }
+      ],
+      "cognates_en": ["wade"],
+      "story_zh": "ir 是三個拉丁字拼起來的「拼裝動詞」：原形 ir 來自 īre（去）；voy、vas、va 來自 vādere（走，和英文 wade 涉水同源）；過去式 fui、fue 則借自 esse（是），所以和 ser 的過去式長得一模一樣。",
+      "hook_zh": "voy 像在涉水前進（wade），fui 跟 ser 共用一套過去式。",
+      "usage_zh": "ir a + 地點（去某處）；ir a + 原形動詞（將要…）。",
+      "example_es": "Mañana voy a ir a la playa.", "example_zh": "明天我要去海灘。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:ir", "wiktionary:la:eo", "wiktionary:la:vado", "wiktionary:la:sum"]
+    },
+    {
+      "word": "hablar", "article": "", "pos": "verbo", "zh": "說話；說（某種語言）", "en": "to speak; to talk", "ipa": "/aˈblaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "fābula", "zh": "故事、談話" },
+        { "lang_zh": "拉丁語", "word": "fābulārī", "zh": "聊天、談話" },
+        { "lang_zh": "古西班牙語", "word": "fablar", "zh": "說話" },
+        { "lang_zh": "西班牙語", "word": "hablar", "zh": "說話" }
+      ],
+      "cognates_en": ["fable", "fabulous"],
+      "story_zh": "hablar 的祖先是拉丁文 fābula（故事），而 fābula 又來自 fā-（說）。古西班牙語寫作 fablar，後來字首的 f 變成不發音的 h——所以 hablar 本來就是「講故事」。",
+      "hook_zh": "把 h 換回 f：hablar → fablar ≈ fable（寓言），說話就是在講故事。",
+      "usage_zh": "hablar + 語言不加冠詞：hablo español。h 不發音。",
+      "example_es": "Hablo un poco de español.", "example_zh": "我會說一點西班牙文。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:hablar", "wiktionary:la:fabulor", "wiktionary:la:fabula"]
+    },
+    {
+      "word": "feliz", "article": "", "pos": "adjetivo", "zh": "快樂的、幸福的", "en": "happy", "ipa": "/feˈliθ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "fēlīx", "zh": "幸運的、豐收的、多產的" },
+        { "lang_zh": "西班牙語", "word": "feliz", "zh": "快樂的" }
+      ],
+      "cognates_en": ["felicity"],
+      "story_zh": "拉丁文 fēlīx 最早的意思是「多產的、豐收的」，再往上追，跟「哺乳」有關。豐收帶來好運，好運帶來幸福，於是 fēlīx 成了「幸運、幸福」。",
+      "hook_zh": "名字 Felix 就是「幸運兒」；Feliz Navidad＝聖誕快樂。",
+      "usage_zh": "陰陽同形；複數 z 變 c：felices。",
+      "example_es": "¡Feliz cumpleaños!", "example_zh": "生日快樂！",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:feliz", "wiktionary:la:felix"]
+    },
+    {
+      "word": "agua", "article": "el", "pos": "sustantivo", "zh": "水", "en": "water", "ipa": "/ˈaɡwa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "aqua", "zh": "水" },
+        { "lang_zh": "古西班牙語", "word": "agua", "zh": "水" },
+        { "lang_zh": "西班牙語", "word": "agua", "zh": "水" }
+      ],
+      "cognates_en": ["aquarium", "aquatic"],
+      "story_zh": "agua 直接來自拉丁文 aqua，只是 qu 變軟成了 gu。同一個 aqua 在法文變成 eau、義大利文 acqua、葡萄牙文 água，是一整個「水」家族。",
+      "hook_zh": "aquarium（水族館）裡裝滿了 agua。",
+      "usage_zh": "陰性名詞，但單數用 el：el agua fría；複數 las aguas。",
+      "example_es": "Un vaso de agua, por favor.", "example_zh": "請給我一杯水。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:agua", "wiktionary:la:aqua"]
+    },
+    {
+      "word": "libro", "article": "el", "pos": "sustantivo", "zh": "書", "en": "book", "ipa": "/ˈlibɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "liber", "zh": "樹皮內層；書" },
+        { "lang_zh": "西班牙語", "word": "libro", "zh": "書" }
+      ],
+      "cognates_en": ["library"],
+      "story_zh": "拉丁文 liber 原本指「樹皮的內層」。古人在樹皮上寫字，這個字就成了「書」。英文的 library（圖書館）也來自 liber。",
+      "hook_zh": "小心假朋友：librería 是「書店」，不是圖書館（圖書館是 biblioteca）。",
+      "usage_zh": "",
+      "example_es": "Leo un libro antes de dormir.", "example_zh": "我睡前看一本書。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:libro", "wiktionary:la:liber"]
+    },
+    {
+      "word": "ventana", "article": "la", "pos": "sustantivo", "zh": "窗戶", "en": "window", "ipa": "/benˈtana/",
+      "breakdown": [{ "part": "vent-", "zh": "風" }, { "part": "-ana", "zh": "…的地方" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "ventus + -āna", "zh": "風 + …的" },
+        { "lang_zh": "通俗拉丁語", "word": "*ventāna", "zh": "窗" },
+        { "lang_zh": "西班牙語", "word": "ventana", "zh": "窗戶" }
+      ],
+      "cognates_en": ["vent", "wind"],
+      "story_zh": "ventana 來自拉丁文 ventus（風）加上字尾 -āna，字面上就是「風的入口」——讓風吹進來的地方。拉丁文 ventus 和英文的 wind 是遠親。",
+      "hook_zh": "vent-ana：通風（vent）的地方就是窗戶。",
+      "usage_zh": "",
+      "example_es": "Abre la ventana, por favor.", "example_zh": "請打開窗戶。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:ventana", "wiktionary:la:ventus"]
+    },
+    {
+      "word": "mañana", "article": "", "pos": "adverbio", "zh": "明天；（la mañana）早上", "en": "tomorrow; morning", "ipa": "/maˈɲana/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "māne", "zh": "在早上" },
+        { "lang_zh": "通俗拉丁語", "word": "*māneāna", "zh": "早上的" },
+        { "lang_zh": "古西班牙語", "word": "mannana", "zh": "明天早上" },
+        { "lang_zh": "西班牙語", "word": "mañana", "zh": "明天；早上" }
+      ],
+      "cognates_en": ["matins"],
+      "story_zh": "拉丁文 māne 是「在早上」。古西班牙語的 mannana 字面意思是「明天早上」，後來一個字就同時有了「明天」和「早上」兩個意思。ñ 這個字母本來就是 nn 的縮寫——上面那條波浪線就是第二個 n。",
+      "hook_zh": "mañana por la mañana＝明天早上，一句話用到兩個意思。",
+      "usage_zh": "la mañana（早上，陰性名詞）；mañana（明天，副詞）。",
+      "example_es": "Hasta mañana.", "example_zh": "明天見。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:mañana", "wiktionary:la:mane"]
+    },
+    {
+      "word": "hermano", "article": "el", "pos": "sustantivo", "zh": "兄弟；（複數）兄弟姊妹", "en": "brother; sibling", "ipa": "/eɾˈmano/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "germen", "zh": "芽、幼苗" },
+        { "lang_zh": "拉丁語", "word": "germānus", "zh": "同父母所生的、親生的" },
+        { "lang_zh": "古西班牙語", "word": "ermano", "zh": "兄弟" },
+        { "lang_zh": "西班牙語", "word": "hermano", "zh": "兄弟" }
+      ],
+      "cognates_en": ["germane", "germ"],
+      "story_zh": "拉丁文 germānus 意思是「同父母的、親生的」，來自 germen（芽）——從同一株芽長出來的。原本的拉丁文「兄弟」是 frāter，古西班牙語還有 fradre，但最後被 hermano 取代了。",
+      "hook_zh": "hermano 和 germ（胚芽）同源：同一顆芽長出來的兄弟。",
+      "usage_zh": "hermana（姊妹）；hermanos 可指兄弟姊妹全體。h 不發音。",
+      "example_es": "Tengo dos hermanos.", "example_zh": "我有兩個兄弟姊妹。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:hermano", "wiktionary:la:germanus"]
+    },
+    {
+      "word": "trabajo", "article": "el", "pos": "sustantivo", "zh": "工作", "en": "work; job", "ipa": "/tɾaˈbaxo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "晚期拉丁語", "word": "tripālium", "zh": "三根木樁做的刑具（推測）" },
+        { "lang_zh": "通俗拉丁語", "word": "*tripāliāre", "zh": "折磨" },
+        { "lang_zh": "西班牙語", "word": "trabajar → trabajo", "zh": "工作" }
+      ],
+      "cognates_en": [],
+      "story_zh": "trabajo 由動詞 trabajar 而來。trabajar 可追溯到通俗拉丁文 *tripāliāre「折磨」，源自 tripālium——一種推測由三根木樁（tri + pālus）組成的刑具。工作原來是一種「折磨」？這個說法在詞典中標註為推測。",
+      "hook_zh": "tri-palo：三根木棍綁住你，就是上班的感覺。",
+      "usage_zh": "動詞 trabajar（工作）；ir al trabajo（去上班）。",
+      "example_es": "Voy al trabajo en autobús.", "example_zh": "我搭公車去上班。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:trabajo", "wiktionary:es:trabajar", "wiktionary:la:tripalium"]
+    },
+    {
+      "word": "grande", "article": "", "pos": "adjetivo", "zh": "大的；偉大的", "en": "big; great", "ipa": "/ˈɡɾande/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "grandis", "zh": "長大的、巨大的" },
+        { "lang_zh": "西班牙語", "word": "grande", "zh": "大的" }
+      ],
+      "cognates_en": ["grand"],
+      "story_zh": "拉丁文 grandis 原本指「長大成人的」，引申為「巨大、宏偉」。它的更早來源至今不明。英文的 grand 是同一個字。",
+      "hook_zh": "grande ≈ grand；星巴克的 Grande（大杯）也是它。",
+      "usage_zh": "放在單數名詞前縮成 gran：un gran amigo（一位好朋友）。",
+      "example_es": "Madrid es una ciudad grande.", "example_zh": "馬德里是一座大城市。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:grande", "wiktionary:la:grandis"]
+    },
+    {
+      "word": "azúcar", "article": "el", "pos": "sustantivo", "zh": "糖", "en": "sugar", "ipa": "/aˈθukaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "梵語", "word": "śárkarā", "zh": "砂礫" },
+        { "lang_zh": "中古波斯語", "word": "šakar", "zh": "糖" },
+        { "lang_zh": "阿拉伯語", "word": "sukkar", "zh": "糖" },
+        { "lang_zh": "古西班牙語", "word": "açúcar", "zh": "糖" },
+        { "lang_zh": "西班牙語", "word": "azúcar", "zh": "糖" }
+      ],
+      "cognates_en": ["sugar"],
+      "story_zh": "azúcar 走了半個地球：梵語 śárkarā 原意是「砂礫」——糖的結晶看起來就像小石粒。它經中古波斯語 šakar、阿拉伯語 sukkar，再經安達魯斯阿拉伯語進入西班牙。",
+      "hook_zh": "看著糖粒想到「砂礫」：azúcar ≈ sugar。",
+      "usage_zh": "陰陽兩可，一般說 el azúcar；接形容詞時常用陰性：azúcar morena（紅糖）。",
+      "example_es": "¿Quieres café con azúcar?", "example_zh": "你的咖啡要加糖嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:azúcar"]
+    },
+    {
+      "word": "de", "article": "", "pos": "preposición", "zh": "…的；從…", "en": "of; from", "ipa": "/de/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "dē", "zh": "從…離開；關於" },
+        { "lang_zh": "西班牙語", "word": "de", "zh": "的；從" }
+      ],
+      "cognates_en": [],
+      "story_zh": "de 來自拉丁文 dē（從…離開、關於），兩千年幾乎沒變。",
+      "hook_zh": "順序和中文相反：el libro de María＝瑪麗亞「的」書。",
+      "usage_zh": "de + el 合併成 del：la cola del perro（狗的尾巴）。",
+      "example_es": "Soy de Taiwán.", "example_zh": "我來自台灣。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:de"]
+    },
+    {
+      "word": "muy", "article": "", "pos": "adverbio", "zh": "很、非常", "en": "very", "ipa": "/ˈmwi/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "multum", "zh": "很多、非常" },
+        { "lang_zh": "古西班牙語", "word": "muito", "zh": "很" },
+        { "lang_zh": "西班牙語", "word": "muy", "zh": "很" }
+      ],
+      "cognates_en": [],
+      "story_zh": "muy 是 mucho 的縮短形，兩者都來自拉丁文 multum（很多）。",
+      "hook_zh": "multi-（多）→ mucho → muy。",
+      "usage_zh": "muy 修飾形容詞、副詞（muy bien）；修飾名詞要用 mucho（mucho trabajo）。",
+      "example_es": "Estoy muy bien, gracias.", "example_zh": "我很好，謝謝。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:muy"]
+    }
+  ]
+}

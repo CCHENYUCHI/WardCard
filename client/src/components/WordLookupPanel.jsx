@@ -1,11 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Sparkles, Plus, Check, ExternalLink } from 'lucide-react';
+import { Sparkles, Plus, Check, ExternalLink, Table2 } from 'lucide-react';
 import { lookupWord, analyzeSentence, aiLookup, addToInbox, POS_LABELS, genderLabel, describeForm, STATUS_LABELS } from '../utils/dictionary';
 import { displayWord, normalizeAnswer, stripAccents } from '../utils/spanish';
 import SpeakButton from './SpeakButton';
+import StoryCard from './StoryCard';
+import DictionaryExtras from './DictionaryExtras';
+import FormsModal from './FormsModal';
 
 const sameWord = (a, b) => stripAccents(normalizeAnswer(a)) === stripAccents(normalizeAnswer(b));
 const ARTICLE_BY_GENDER = { masculino: 'el', femenino: 'la' };
+const GENDER_BY_ARTICLE = { el: 'masculino', la: 'femenino' };
+const CARD_POS = new Set(Object.keys(POS_LABELS));
+// Parts of speech the dictionary has conjugation / gender-number tables for
+const HAS_FORMS = new Set(['verb', 'noun', 'adj']);
 // Nouns are read with their article (la casa), like the rest of the app
 const wiktSpeech = (item) => (
   item.part_of_speech === 'sustantivo' && ARTICLE_BY_GENDER[item.gender]
@@ -32,6 +39,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
   const [aiBusy, setAiBusy] = useState(false);
   const [aiCard, setAiCard] = useState(null);
   const [addState, setAddState] = useState('idle'); // idle | busy | added | exists
+  const [formsFor, setFormsFor] = useState(null); // { lemma, pos } shown in the forms window
   const onUpdateRef = useRef(onUpdate);
   onUpdateRef.current = onUpdate;
   const notifyUpdate = () => onUpdateRef.current?.();
@@ -62,8 +70,9 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
   const myCards = result.myCards || [];
   const entry = aiCard || result.aiEntry;
   const wiktionary = result.wiktionary || [];
-  const lemma = context?.lemma || myCards[0]?.word || entry?.word || wiktionary[0]?.lemma || word;
-  const zh = context?.zh || myCards[0]?.translation || entry?.translation || '';
+  const story = result.story || null;
+  const lemma = context?.lemma || myCards[0]?.word || entry?.word || wiktionary[0]?.lemma || story?.word || word;
+  const zh = context?.zh || myCards[0]?.translation || entry?.translation || story?.zh || '';
   const meaningsShown = compact ? 2 : 6;
 
   const handleAnalyze = async () => {
@@ -112,6 +121,21 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
           notes: context.usage
         };
       }
+      if (!card && story) {
+        // The hand-written lexicon already has everything a card needs: no AI call
+        const wikt = wiktionary.find(w => w.lemma === story.word);
+        card = {
+          word: story.word,
+          article: story.article,
+          gender: wikt?.gender && wikt.gender !== 'none' ? wikt.gender : (GENDER_BY_ARTICLE[story.article] || 'none'),
+          part_of_speech: CARD_POS.has(story.pos) ? story.pos : 'frase',
+          translation: story.zh,
+          english_translation: story.en,
+          example_es: story.example_es,
+          example_zh: story.example_zh,
+          notes: story.usage_zh
+        };
+      }
       if (!card) card = await aiLookup(wiktionary[0]?.lemma || word); // translation is required
       const res = await addToInbox(card);
       setAddState(res.created ? 'added' : 'exists');
@@ -122,7 +146,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
     }
   };
 
-  const nothingFound = !zh && wiktionary.length === 0 && myCards.length === 0;
+  const nothingFound = !zh && wiktionary.length === 0 && myCards.length === 0 && !story;
 
   return (
     <div className="lookup-panel">
@@ -166,17 +190,25 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
         </div>
       )}
 
+      <StoryCard story={story} compact={compact} />
+
       {wiktionary.slice(0, meaningsShown).map(item => (
         <div key={`${item.lemma}|${item.pos}`} className="lookup-wikt">
           <div>
             <strong>{item.lemma}</strong>
             <SpeakButton text={wiktSpeech(item)} />
             <span className="lookup-pos">{POS_LABELS[item.part_of_speech] || item.pos}{genderLabel(item.gender) ? ` · ${genderLabel(item.gender)}` : ''}</span>
+            {!compact && item.glosses.length > 0 && HAS_FORMS.has(item.pos) && (
+              <button type="button" className="btn btn-secondary btn-sm lookup-forms-btn" onClick={() => setFormsFor({ lemma: item.lemma, pos: item.pos })}>
+                <Table2 size={13} /> {item.pos === 'verb' ? '變位表' : '變化表'}
+              </button>
+            )}
           </div>
           {item.via && <div className="lookup-via">{item.lemma} 的 {describeForm(item.via)}</div>}
           {item.glosses.length > 0 && (
             <div className="lookup-gloss">{item.glosses.slice(0, compact ? 2 : 4).join('；')}</div>
           )}
+          {!compact && item.glosses.length > 0 && <DictionaryExtras lazy lemma={item.lemma} pos={item.pos} />}
         </div>
       ))}
 
@@ -217,6 +249,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
       )}
 
       {wiktionary.length > 0 && <div className="lookup-credit">英文釋義：Wiktionary · CC BY-SA</div>}
+      {formsFor && <FormsModal lemma={formsFor.lemma} pos={formsFor.pos} onClose={() => setFormsFor(null)} />}
     </div>
   );
 }

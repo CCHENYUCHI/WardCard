@@ -110,9 +110,11 @@ npm start                 # 預設 Port 3000
 ### Docker Compose
 ```bash
 cp .env.example .env
-docker compose up -d
+APP_COMMIT=$(git rev-parse --short HEAD) APP_BRANCH=$(git rev-parse --abbrev-ref HEAD) docker compose up -d --build
 ```
-資料庫存在主機的 `./data/` 底下，重建容器不會遺失資料。
+資料庫存在主機的 `./data/` 底下，重建容器不會遺失資料。帶上 `APP_COMMIT` / `APP_BRANCH` 時，設定畫面的「版本資訊」才會顯示正確版本（映像檔裡沒有 `.git`）。
+
+更新後想確認跑的是哪個版本：打開「設定」最下方的**版本資訊**，可以看到畫面（前端）、伺服器、字典各是哪個 commit / 版本；畫面和伺服器版本不同時會提示要重新 `npm run build`。
 
 ### 環境變數
 | 變數 | 說明 | 預設 |
@@ -124,12 +126,15 @@ docker compose up -d
 | `DICT_DB_PATH` | 離線字典檔位置 | `./data/dict/es-en.sqlite` |
 
 ### 建置離線字典（選用）
-沒有字典也能用，只是點字查詢時少了「變化形 → 原形」與英文釋義。
+沒有字典也能用，只是查詞時少了「變化形 → 原形」、英文釋義、動詞變位、字源與例句，單字卡也不會連結字典。
 ```bash
 curl -L -o /tmp/es.jsonl https://kaikki.org/dictionary/Spanish/kaikki.org-dictionary-Spanish.jsonl   # 約 1GB
-npm run build:dict -- /tmp/es.jsonl      # 產生 data/dict/es-en.sqlite（約 90MB）
+npm run build:dict -- /tmp/es.jsonl      # 產生 data/dict/es-en.sqlite（約 143MB，約半分鐘）
 rm /tmp/es.jsonl
+npm run link:cards -- --relink           # 字典重建後，讓既有單字卡重新連結字典（伺服器啟動時也會補連結沒比對過的卡）
 ```
+- 字典檔同時包含 A1 字源圖鑑（約 1,000 字的字源故事與插圖）。只更新圖鑑時用 `npm run build:lexicon`（幾秒，不必重新下載）。
+- 舊版（v1）字典檔仍可使用，只是少了上述額外資料；重建一次即升級。
 字典資料來自 Wiktionary，授權為 CC BY-SA。
 
 ### 行動端

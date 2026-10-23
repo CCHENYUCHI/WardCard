@@ -33,7 +33,46 @@ export async function lookupWord(q, sentence = '', { origin = 'dictionary' } = {
 }
 
 // Results change after an AI call or after adding a card
-export const clearLookupCache = () => lookupCache.clear();
+export const clearLookupCache = () => { lookupCache.clear(); detailCache.clear(); };
+
+const lexiconCache = new Map(); // word -> lexicon entry or null, per page load
+
+/** Hand-written lexicon entry (story, memory hook, picture) for a card's word, or null. */
+export async function getLexiconEntry(word) {
+  const key = String(word || '').trim().toLowerCase();
+  if (!key) return null;
+  if (!lexiconCache.has(key)) {
+    lexiconCache.set(key, fetchAPI(`/api/lexicon?${new URLSearchParams({ word: key })}`)
+      .then(res => readJson(res, '查詢失敗'))
+      .then(data => data.entry)
+      .catch(err => { lexiconCache.delete(key); throw err; }));
+  }
+  return lexiconCache.get(key);
+}
+
+const detailCache = new Map(); // `${lemma}|${pos}` or `card:${id}` -> dictionary details, per page load
+
+/** IPA, forms, examples, etymology and lexicon story of a dictionary entry (read on demand, no AI). */
+export async function getEntryDetails(lemma, pos = '') {
+  const key = `${lemma}|${pos}`;
+  if (!detailCache.has(key)) {
+    detailCache.set(key, fetchAPI(`/api/dictionary/entry?${new URLSearchParams({ lemma, pos })}`)
+      .then(res => readJson(res, '查詢失敗'))
+      .catch(err => { detailCache.delete(key); throw err; }));
+  }
+  return detailCache.get(key);
+}
+
+/** The dictionary details of the entry a card is linked to ({ linked: false, … } when it has no link). */
+export async function getCardDictionary(cardId) {
+  const key = `card:${cardId}`;
+  if (!detailCache.has(key)) {
+    detailCache.set(key, fetchAPI(`/api/cards/${cardId}/dictionary`)
+      .then(res => readJson(res, '查詢失敗'))
+      .catch(err => { detailCache.delete(key); throw err; }));
+  }
+  return detailCache.get(key);
+}
 
 // A search on the dictionary page should always reach the server, so it is counted
 export const forgetLookup = (q) => lookupCache.delete(cacheKey(q));

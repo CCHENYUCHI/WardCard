@@ -1,0 +1,855 @@
+{
+  "theme": "home",
+  "theme_zh": "居家",
+  "entries": [
+    {
+      "word": "piso", "article": "el", "pos": "sustantivo", "zh": "地板；樓層；（西班牙）公寓", "en": "floor; storey; flat", "ipa": "/ˈpiso/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "pisar", "zh": "踩、踏" },
+        { "lang_zh": "西班牙語", "word": "piso", "zh": "地板、樓層、公寓" }
+      ],
+      "cognates_en": [],
+      "story_zh": "piso 是從動詞 pisar（踩、踏）直接變出來的名詞：腳「踩」的地方就是地板。一層一層踩上去的是樓層，在西班牙更進一步指整層的「公寓」。",
+      "hook_zh": "pisar 是踩，piso 就是被你一直踩在腳下的地方——想像地板上一排腳印。",
+      "usage_zh": "西班牙：piso＝公寓、樓層；拉美 piso 多指地板或樓層，公寓說 departamento。",
+      "example_es": "Vivo en un piso pequeño en el centro.", "example_zh": "我住在市中心的一間小公寓。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:piso"]
+    },
+    {
+      "word": "apartamento", "article": "el", "pos": "sustantivo", "zh": "公寓", "en": "apartment; flat", "ipa": "/apaɾtaˈmento/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "apartamiento", "zh": "（舊字）" },
+        { "lang_zh": "義大利語", "word": "appartamento", "zh": "公寓、套房" },
+        { "lang_zh": "西班牙語", "word": "apartamento", "zh": "公寓" }
+      ],
+      "cognates_en": ["apartment"],
+      "story_zh": "這個字繞了一圈才回家：西班牙語的 apartamiento 先被義大利語借走，變成 appartamento，之後西班牙語再把義大利語的版本借回來，就成了今天的 apartamento。",
+      "hook_zh": "apartamento 幾乎就是英文 apartment 加上 -o，一看就懂。",
+      "usage_zh": "西班牙口語多說 piso；墨西哥、阿根廷常說 departamento。",
+      "example_es": "El apartamento tiene dos habitaciones.", "example_zh": "這間公寓有兩個房間。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:apartamento"]
+    },
+    {
+      "word": "habitación", "article": "la", "pos": "sustantivo", "zh": "房間；臥室", "en": "room; bedroom", "ipa": "/abitaˈθjon/",
+      "breakdown": [{ "part": "habitar", "zh": "居住" }, { "part": "-ción", "zh": "名詞字尾" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "habitāre", "zh": "居住" },
+        { "lang_zh": "拉丁語", "word": "habitātiō", "zh": "居住、住所" },
+        { "lang_zh": "西班牙語", "word": "habitación", "zh": "房間" }
+      ],
+      "cognates_en": ["habitation", "habitat", "inhabit"],
+      "story_zh": "拉丁文 habitātiō 由 habitāre（居住）加上名詞字尾 -tiō 組成，原意是「居住、住處」。到了西班牙語，「住的地方」縮小成家裡的一個個「房間」。英文 habitation（住所）是同一個字。",
+      "hook_zh": "英文 habitat 是動物的棲息地；habitación 就是你在家裡的「棲息地」。",
+      "usage_zh": "h 不發音。旅館的「房間」也用它：habitación doble（雙人房）。",
+      "example_es": "Mi habitación es pequeña pero bonita.", "example_zh": "我的房間很小但很漂亮。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:habitación", "wiktionary:la:habitatio"]
+    },
+    {
+      "word": "dormitorio", "article": "el", "pos": "sustantivo", "zh": "臥室；宿舍", "en": "bedroom; dormitory", "ipa": "/doɾmiˈtoɾjo/",
+      "breakdown": [{ "part": "dormi-", "zh": "睡（dormir）" }, { "part": "-torio", "zh": "…的地方" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "dormīre", "zh": "睡覺" },
+        { "lang_zh": "拉丁語", "word": "dormītōrium", "zh": "睡覺的房間" },
+        { "lang_zh": "古西班牙語", "word": "dormitorio", "zh": "臥室" },
+        { "lang_zh": "西班牙語", "word": "dormitorio", "zh": "臥室" }
+      ],
+      "cognates_en": ["dormitory", "dorm"],
+      "story_zh": "拉丁文 dormītōrium 來自 dormītōrius（睡覺用的），再往上是動詞 dormīre（睡覺）。所以 dormitorio 字面就是「睡覺用的房間」。英文的 dormitory（宿舍，簡稱 dorm）是同一個字。",
+      "hook_zh": "dormir（睡）＋ -torio（地方）＝睡覺的地方。學生宿舍 dorm 也是同一個字。",
+      "usage_zh": "日常也常說 habitación 或 cuarto 指臥室。",
+      "example_es": "El dormitorio tiene una cama grande.", "example_zh": "臥室裡有一張大床。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:dormitorio", "wiktionary:la:dormitorium"]
+    },
+    {
+      "word": "salón", "article": "el", "pos": "sustantivo", "zh": "客廳；大廳", "en": "living room; hall", "ipa": "/saˈlon/",
+      "breakdown": [{ "part": "sala", "zh": "廳、室" }, { "part": "-ón", "zh": "大（擴大字尾）" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "sala", "zh": "廳、室" },
+        { "lang_zh": "西班牙語", "word": "salón", "zh": "客廳、大廳" }
+      ],
+      "cognates_en": ["salon", "saloon"],
+      "story_zh": "salón 是 sala（廳）加上表示「大」的字尾 -ón，就是「大廳」，家裡最大的那間廳就是客廳。英文的 saloon（西部片裡的酒館）和它是同源的雙生字。",
+      "hook_zh": "sala＋-ón（大）＝大廳。美髮「沙龍」salon 也是同一個字。",
+      "usage_zh": "西班牙常說 salón，拉美多說 sala。salón de clases＝教室（拉美）。",
+      "example_es": "Vemos la tele en el salón.", "example_zh": "我們在客廳看電視。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:salón"]
+    },
+    {
+      "word": "cocina", "article": "la", "pos": "sustantivo", "zh": "廚房；爐子；料理", "en": "kitchen; stove; cuisine", "ipa": "/koˈθina/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "coquere", "zh": "煮" },
+        { "lang_zh": "拉丁語", "word": "coquīna", "zh": "烹飪；廚房" },
+        { "lang_zh": "晚期拉丁語", "word": "cocīna", "zh": "廚房" },
+        { "lang_zh": "西班牙語", "word": "cocina", "zh": "廚房" }
+      ],
+      "cognates_en": ["kitchen", "cuisine", "cook"],
+      "story_zh": "拉丁文 coquīna（烹飪、廚房）來自動詞 coquere（煮），口語裡簡化成 cocīna，就是西語的 cocina。英文 kitchen（廚房）和 cuisine（料理）都和它同源——一個字同時是「煮飯的地方」和「煮出來的菜」。",
+      "hook_zh": "cocina 和 kitchen、cuisine 是一家人：在 cocina 裡做出 la cocina española。",
+      "usage_zh": "也指爐子和某地的料理：la cocina mexicana。動詞「煮」是 cocinar。",
+      "example_es": "Mi madre está en la cocina.", "example_zh": "我媽媽在廚房。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cocina", "wiktionary:la:cocina", "wiktionary:la:coquina"]
+    },
+    {
+      "word": "baño", "article": "el", "pos": "sustantivo", "zh": "浴室；廁所；洗澡", "en": "bathroom; toilet; bath", "ipa": "/ˈbaɲo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古希臘語", "word": "balaneîon", "zh": "浴場" },
+        { "lang_zh": "拉丁語", "word": "balneum / baneum", "zh": "浴、浴場" },
+        { "lang_zh": "古西班牙語", "word": "banno", "zh": "洗澡" },
+        { "lang_zh": "西班牙語", "word": "baño", "zh": "浴室、洗澡" }
+      ],
+      "cognates_en": [],
+      "story_zh": "baño 的祖先是古希臘語的 balaneîon（浴場），羅馬人借成拉丁文 balneum，口語又簡化成 baneum。古西班牙語寫作 banno，兩個 n 後來合成了 ñ，就是 baño。",
+      "hook_zh": "古西語 banno 的兩個 n 疊在一起，上面那個縮成小波浪，就成了 ñ。",
+      "usage_zh": "問廁所最常用：¿Dónde está el baño?；西班牙也說 el servicio、el aseo。",
+      "example_es": "Perdón, ¿dónde está el baño?", "example_zh": "不好意思，廁所在哪裡？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:baño"]
+    },
+    {
+      "word": "comedor", "article": "el", "pos": "sustantivo", "zh": "飯廳；餐廳、食堂", "en": "dining room; canteen", "ipa": "/komeˈdoɾ/",
+      "breakdown": [{ "part": "comer", "zh": "吃" }, { "part": "-dor", "zh": "做…的人／地方" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "comedere", "zh": "吃光" },
+        { "lang_zh": "西班牙語", "word": "comer", "zh": "吃" },
+        { "lang_zh": "西班牙語", "word": "comedor", "zh": "飯廳" }
+      ],
+      "cognates_en": [],
+      "story_zh": "comedor 就是 comer（吃）加上 -dor：可以指「吃東西的人」，也可以指「吃東西的地方」。家裡的飯廳、學校和公司的員工餐廳都叫 comedor。",
+      "hook_zh": "comer＋-dor＝吃飯的地方。學校食堂也叫 comedor。",
+      "usage_zh": "comedor 是飯廳，不是對外營業的餐廳（那是 restaurante）。",
+      "example_es": "Cenamos en el comedor.", "example_zh": "我們在飯廳吃晚餐。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:comedor", "wiktionary:es:comer"]
+    },
+    {
+      "word": "jardín", "article": "el", "pos": "sustantivo", "zh": "花園；庭院", "en": "garden; yard", "ipa": "/xaɾˈdin/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "法蘭克語", "word": "*gardō", "zh": "圍起來的地、院子" },
+        { "lang_zh": "中世紀拉丁語", "word": "jardinus", "zh": "花園" },
+        { "lang_zh": "法語", "word": "jardin", "zh": "花園" },
+        { "lang_zh": "西班牙語", "word": "jardín", "zh": "花園" }
+      ],
+      "cognates_en": ["garden", "yard"],
+      "story_zh": "jardín 來自日耳曼人：法蘭克語 *gardō 指「圍起來的地、院子」，進了中世紀拉丁語和法語成為 jardin，西班牙語再向法語借來。英文 garden、德文 Garten 都是它的親戚——花園原本就是「用籬笆圍起來的地」。",
+      "hook_zh": "jardín ≈ garden，想像一圈白色籬笆圍住的花園。j 要發喉音 /x/。",
+      "usage_zh": "jardín de infancia＝幼兒園（西班牙）。",
+      "example_es": "Hay muchas flores en el jardín.", "example_zh": "花園裡有很多花。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:jardín", "wiktionary:la:jardinus"]
+    },
+    {
+      "word": "terraza", "article": "la", "pos": "sustantivo", "zh": "露臺、陽台；（咖啡館）戶外座位", "en": "terrace; sidewalk café", "ipa": "/teˈraθa/",
+      "breakdown": [{ "part": "tierra", "zh": "土地" }, { "part": "-aza", "zh": "大（擴大字尾）" }],
+      "origin_chain": [
+        { "lang_zh": "古奧克語", "word": "terrassa", "zh": "露臺" },
+        { "lang_zh": "法語", "word": "terrasse", "zh": "露臺" },
+        { "lang_zh": "西班牙語", "word": "terraza", "zh": "露臺" }
+      ],
+      "cognates_en": ["terrace"],
+      "story_zh": "terraza 比較可能是從法語 terrasse 借來的（再往上是古奧克語 terrassa），也有人認為來自西語的 terrazo。從字面看，它相當於 tierra（土地）加上表示「大」的字尾 -aza。英文 terrace 是同一個字。",
+      "hook_zh": "terraza ≈ terrace：夏天坐在 terraza 喝咖啡曬太陽。",
+      "usage_zh": "在西班牙常指咖啡館、酒吧的戶外座位：tomar algo en una terraza。",
+      "example_es": "Desayunamos en la terraza.", "example_zh": "我們在露臺吃早餐。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:terraza"]
+    },
+    {
+      "word": "garaje", "article": "el", "pos": "sustantivo", "zh": "車庫；修車廠", "en": "garage", "ipa": "/ɡaˈɾaxe/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "法語", "word": "garage", "zh": "車庫" },
+        { "lang_zh": "西班牙語", "word": "garaje", "zh": "車庫" }
+      ],
+      "cognates_en": ["garage"],
+      "story_zh": "garaje 是從法語 garage 借來的，西班牙語把拼法改成自己的樣子：-age 寫成 -aje，讀音也變成喉音 /x/。英文 garage 也是向法語借的。",
+      "hook_zh": "英文 garage 換上西語的 -aje 結尾就是 garaje，j 發「喝」的喉音。",
+      "usage_zh": "陽性：el garaje。拼字是 -aje，不是 -age。",
+      "example_es": "El coche está en el garaje.", "example_zh": "車子在車庫裡。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:garaje"]
+    },
+    {
+      "word": "escalera", "article": "la", "pos": "sustantivo", "zh": "樓梯；梯子", "en": "stairs; ladder", "ipa": "/eskaˈleɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "scālae", "zh": "階梯、樓梯" },
+        { "lang_zh": "晚期拉丁語", "word": "scālāria", "zh": "樓梯" },
+        { "lang_zh": "古西班牙語", "word": "escalera", "zh": "樓梯" },
+        { "lang_zh": "西班牙語", "word": "escalera", "zh": "樓梯" }
+      ],
+      "cognates_en": ["escalator"],
+      "story_zh": "拉丁文 scālae 是「階梯、樓梯」（本身是複數形），晚期拉丁語延伸成 scālāria，進入古西班牙語就是 escalera。英文 escalator（電扶梯）和它同源。",
+      "hook_zh": "escalera ≈ escalator 去掉機器：自己爬的樓梯。西語在 sc- 前加 e-，像 escuela。",
+      "usage_zh": "escalera mecánica＝電扶梯；subir / bajar la escalera＝上／下樓梯。",
+      "example_es": "Subo por la escalera todos los días.", "example_zh": "我每天都走樓梯上去。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:escalera", "wiktionary:la:scalae"]
+    },
+    {
+      "word": "ascensor", "article": "el", "pos": "sustantivo", "zh": "電梯", "en": "elevator; lift", "ipa": "/asθenˈsoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "ascēnsor", "zh": "往上爬的人" },
+        { "lang_zh": "西班牙語", "word": "ascensor", "zh": "電梯" }
+      ],
+      "cognates_en": ["ascend"],
+      "story_zh": "ascensor 是直接從拉丁文 ascēnsor 借來的書面字，和動詞 ascender（上升）、英文 ascend 是同一家族：會帶你「往上升」的東西，就是電梯。",
+      "hook_zh": "ascend 是上升：按下按鈕，ascensor 帶你 ascend。",
+      "usage_zh": "西班牙說 ascensor；拉美很多地方說 elevador。",
+      "example_es": "El ascensor no funciona hoy.", "example_zh": "電梯今天故障了。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:ascensor"]
+    },
+    {
+      "word": "puerta", "article": "la", "pos": "sustantivo", "zh": "門；（機場）登機門", "en": "door; gate", "ipa": "/ˈpweɾta/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "porta", "zh": "門、城門" },
+        { "lang_zh": "古西班牙語", "word": "puerta", "zh": "門" },
+        { "lang_zh": "西班牙語", "word": "puerta", "zh": "門" }
+      ],
+      "cognates_en": ["portal", "porch"],
+      "story_zh": "puerta 來自拉丁文 porta（門、城門）。重音的 o 到了西班牙語變成 ue，porta 就成了 puerta。英文 portal（入口）、porch（門廊）都是從 porta 來的。",
+      "hook_zh": "portal 是「入口」：o 變 ue，porta 長成 puerta。",
+      "usage_zh": "abrir / cerrar la puerta＝開／關門；機場的登機門也是 puerta。",
+      "example_es": "¿Puedes cerrar la puerta, por favor?", "example_zh": "可以請你關門嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:puerta"]
+    },
+    {
+      "word": "pared", "article": "la", "pos": "sustantivo", "zh": "牆壁（室內、房屋的）", "en": "wall", "ipa": "/paˈɾed/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "pariēs", "zh": "牆" },
+        { "lang_zh": "晚期拉丁語", "word": "parēs", "zh": "牆" },
+        { "lang_zh": "古西班牙語", "word": "pared", "zh": "牆" },
+        { "lang_zh": "西班牙語", "word": "pared", "zh": "牆壁" }
+      ],
+      "cognates_en": [],
+      "story_zh": "pared 來自拉丁文 pariēs（受格 parietem），晚期拉丁語簡化成 parēs、parētem，字尾留下的 -d 就是西語的 pared。葡萄牙語的 parede 也是同一個字。",
+      "hook_zh": "牆上掛滿「派對」（party）照片的 pared——注意它是陰性 la pared。",
+      "usage_zh": "陰性：la pared，複數 paredes。房屋、房間的牆用 pared；城牆、圍牆多用 muro。",
+      "example_es": "Hay un cuadro en la pared.", "example_zh": "牆上有一幅畫。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:pared"]
+    },
+    {
+      "word": "suelo", "article": "el", "pos": "sustantivo", "zh": "地板；地面；土壤", "en": "floor; ground; soil", "ipa": "/ˈswelo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "solum", "zh": "底部、地面、地板、土壤" },
+        { "lang_zh": "古西班牙語", "word": "suelo", "zh": "地面" },
+        { "lang_zh": "西班牙語", "word": "suelo", "zh": "地板、地面" }
+      ],
+      "cognates_en": [],
+      "story_zh": "suelo 來自拉丁文 solum，意思是「底部、地基、地板、土壤」——凡是在最底下的都算。重音的 o 變成 ue，solum 就成了 suelo。它和拉丁文的 sōlum（只有）長得像，但只是同形的不同字。",
+      "hook_zh": "suelo 和 solo（只）只差一個 e：東西掉了，只能在 suelo 上找。",
+      "usage_zh": "西班牙說 el suelo 指地板；拉美常用 el piso。en el suelo＝在地上。",
+      "example_es": "El gato duerme en el suelo.", "example_zh": "貓睡在地板上。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:suelo", "wiktionary:la:solum"]
+    },
+    {
+      "word": "techo", "article": "el", "pos": "sustantivo", "zh": "天花板；屋頂", "en": "ceiling; roof", "ipa": "/ˈtet͡ʃo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "tēctum", "zh": "屋頂" },
+        { "lang_zh": "西班牙語", "word": "techo", "zh": "天花板、屋頂" }
+      ],
+      "cognates_en": [],
+      "story_zh": "techo 來自拉丁文 tēctum（屋頂），拉丁文的 -ct- 在西語變成 -ch-，就成了 techo。法語的 toit、義大利語的 tetto 都是同一個字的兄弟。",
+      "hook_zh": "抬頭看 techo：天花板上的燈正「切（che）」過來一道光。",
+      "usage_zh": "室內的天花板和屋頂都可用 techo；西班牙的瓦屋頂也說 tejado。sin techo＝無家可歸。",
+      "example_es": "El techo de la cocina es blanco.", "example_zh": "廚房的天花板是白色的。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:techo"]
+    },
+    {
+      "word": "llave", "article": "la", "pos": "sustantivo", "zh": "鑰匙；扳手", "en": "key; wrench", "ipa": "/ˈʝabe/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "clāvis", "zh": "鑰匙" },
+        { "lang_zh": "西班牙語", "word": "llave", "zh": "鑰匙" }
+      ],
+      "cognates_en": ["clef"],
+      "story_zh": "llave 來自拉丁文 clāvis（鑰匙），開頭的 cl- 在西語變成 ll-。clāvis 和 clāvus（釘子）同源——古時候鎖門、開門用的正是釘子、勾子一類的工具。西語另有照書借來的雙生字 clave（密碼、關鍵），音樂的「譜號」英文叫 clef。",
+      "hook_zh": "llave 和 clave（密碼）是雙胞胎：一個開門，一個開帳號。",
+      "usage_zh": "cerrar con llave＝上鎖。陰性：la llave，複數 las llaves。",
+      "example_es": "No encuentro las llaves de casa.", "example_zh": "我找不到家裡的鑰匙。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:llave", "wiktionary:la:clavis"]
+    },
+    {
+      "word": "mueble", "article": "el", "pos": "sustantivo", "zh": "（一件）家具", "en": "piece of furniture", "ipa": "/ˈmweble/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "movēre", "zh": "移動" },
+        { "lang_zh": "拉丁語", "word": "mōbilis", "zh": "可移動的" },
+        { "lang_zh": "西班牙語", "word": "mueble", "zh": "家具" }
+      ],
+      "cognates_en": ["mobile", "move"],
+      "story_zh": "mueble 來自拉丁文 mōbilis（可移動的），也就是 movēre（移動）＋ -bilis（可以…的）。家具就是家裡「搬得動的東西」。照規則它不該長出 ue，是受了動詞 mover 的 muevo 影響。móvil（手機）是照書借來的雙生字。",
+      "hook_zh": "mueble ≈ mobile：家具是可以搬動的東西；房子搬不動，叫 inmueble（不動產）。",
+      "usage_zh": "可數名詞：un mueble（一件家具）、los muebles（家具們）；不像英文 furniture 不可數。",
+      "example_es": "Compramos muebles nuevos para el salón.", "example_zh": "我們幫客廳買了新家具。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:mueble", "wiktionary:la:mobilis", "wiktionary:la:moveo"]
+    },
+    {
+      "word": "mesa", "article": "la", "pos": "sustantivo", "zh": "桌子；餐桌", "en": "table; desk", "ipa": "/ˈmesa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "mēnsa", "zh": "桌子" },
+        { "lang_zh": "晚期拉丁語", "word": "mēsa", "zh": "桌子" },
+        { "lang_zh": "古西班牙語", "word": "mesa", "zh": "桌子" },
+        { "lang_zh": "西班牙語", "word": "mesa", "zh": "桌子" }
+      ],
+      "cognates_en": [],
+      "story_zh": "古典拉丁文的「桌子」是 mēnsa，但口語裡 n 不太發音，晚期拉丁文就直接寫成 mēsa。西班牙語一路沿用，兩千年來幾乎沒變。",
+      "hook_zh": "mesa 和 casa 押韻：casa 裡最重要的家具就是 mesa。",
+      "usage_zh": "poner la mesa＝擺餐具；a la mesa＝（叫人）來吃飯。",
+      "example_es": "Los libros están en la mesa.", "example_zh": "書在桌子上。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:mesa", "wiktionary:la:mesa"]
+    },
+    {
+      "word": "silla", "article": "la", "pos": "sustantivo", "zh": "椅子；馬鞍", "en": "chair; saddle", "ipa": "/ˈsiʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "sella", "zh": "椅子、座位" },
+        { "lang_zh": "古西班牙語", "word": "siella", "zh": "椅子、馬鞍" },
+        { "lang_zh": "西班牙語", "word": "silla", "zh": "椅子" }
+      ],
+      "cognates_en": ["saddle"],
+      "story_zh": "silla 來自拉丁文 sella，古西班牙語寫作 siella，同時指「椅子」和「馬鞍」。在法語、義大利語、葡萄牙語裡，這個字大多只剩「馬鞍」的意思；英文的 saddle 則是遠親。",
+      "hook_zh": "馬鞍就是馬背上的 silla——騎馬也算是「坐椅子」。",
+      "usage_zh": "silla de ruedas＝輪椅；有扶手的大椅子是 sillón。",
+      "example_es": "Siéntate en esta silla.", "example_zh": "坐這張椅子吧。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:silla"]
+    },
+    {
+      "word": "sofá", "article": "el", "pos": "sustantivo", "zh": "沙發", "en": "sofa; couch", "ipa": "/soˈfa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "阿拉伯語", "word": "ṣuffa", "zh": "（阿拉伯語原字）" },
+        { "lang_zh": "法語", "word": "sofa", "zh": "沙發" },
+        { "lang_zh": "西班牙語", "word": "sofá", "zh": "沙發" }
+      ],
+      "cognates_en": ["sofa"],
+      "story_zh": "sofá 的源頭是阿拉伯語 ṣuffa，先進入法語成為 sofa，西班牙語再從法語借來，把重音放在最後。英文 sofa 也是同一條路來的。",
+      "hook_zh": "sofá ≈ sofa，重音在最後：so-FÁ，像整個人「啪」地倒進沙發。",
+      "usage_zh": "雖然以 -a 結尾，卻是陽性：el sofá；複數 sofás。",
+      "example_es": "El perro duerme en el sofá.", "example_zh": "狗睡在沙發上。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:sofá"]
+    },
+    {
+      "word": "cama", "article": "la", "pos": "sustantivo", "zh": "床", "en": "bed", "ipa": "/ˈkama/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "晚期拉丁語", "word": "cama", "zh": "床、睡鋪" },
+        { "lang_zh": "古西班牙語", "word": "cama", "zh": "床" },
+        { "lang_zh": "西班牙語", "word": "cama", "zh": "床" }
+      ],
+      "cognates_en": [],
+      "story_zh": "cama 在晚期拉丁語就已經出現，但它可能不是羅馬人自己的字，而是借自羅馬人來之前、伊比利半島上古老民族的語言（推測）。",
+      "hook_zh": "cama 和 casa 只差一個字母：回到 casa，第一件事就是撲向 cama。",
+      "usage_zh": "hacer la cama＝鋪床；irse a la cama＝上床睡覺。",
+      "example_es": "Me voy a la cama a las once.", "example_zh": "我十一點上床睡覺。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cama"]
+    },
+    {
+      "word": "armario", "article": "el", "pos": "sustantivo", "zh": "衣櫃；櫥櫃", "en": "wardrobe; cupboard; closet", "ipa": "/aɾˈmaɾjo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "armārium", "zh": "櫥櫃" },
+        { "lang_zh": "西班牙語", "word": "armario", "zh": "衣櫃、櫥櫃" }
+      ],
+      "cognates_en": [],
+      "story_zh": "armario 是直接從拉丁文 armārium（櫥櫃）借來的字。西班牙語裡另一個從同一來源一路傳下來的雙生字是 armero。",
+      "hook_zh": "出櫃就是 salir del armario——從衣櫃裡走出來。",
+      "usage_zh": "西班牙 armario 常指衣櫃；拉美也常說 clóset。",
+      "example_es": "La ropa está en el armario.", "example_zh": "衣服在衣櫃裡。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:armario"]
+    },
+    {
+      "word": "estantería", "article": "la", "pos": "sustantivo", "zh": "層架；書架", "en": "shelving; bookcase", "ipa": "/estanteˈɾia/",
+      "breakdown": [{ "part": "estante", "zh": "架子（一層）" }, { "part": "-ería", "zh": "集合、一整組" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "estante", "zh": "架子" },
+        { "lang_zh": "西班牙語", "word": "estantería", "zh": "層架、書架" }
+      ],
+      "cognates_en": [],
+      "story_zh": "estantería 是 estante（一層架子）加上字尾 -ería：好幾層 estante 組在一起，就是一整座層架或書架。",
+      "hook_zh": "一層是 estante，疊成一整座就是 estantería——字越長，架子越高。",
+      "usage_zh": "重音在 -rí-：es-tan-te-RÍ-a。書架也可說 librería 的「書櫃」意思，但那個字更常指書店。",
+      "example_es": "Pongo los libros en la estantería.", "example_zh": "我把書放在書架上。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:estantería"]
+    },
+    {
+      "word": "lámpara", "article": "la", "pos": "sustantivo", "zh": "燈；檯燈", "en": "lamp", "ipa": "/ˈlampaɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古希臘語", "word": "lampás", "zh": "燈、火把" },
+        { "lang_zh": "拉丁語", "word": "lampas", "zh": "燈、火把" },
+        { "lang_zh": "晚期拉丁語", "word": "lampada", "zh": "燈" },
+        { "lang_zh": "西班牙語", "word": "lámpada → lámpara", "zh": "燈" }
+      ],
+      "cognates_en": ["lamp"],
+      "story_zh": "古希臘語 lampás 是「燈、火把」，來自 lámpō（發光）。拉丁文借成 lampas，晚期又借了拜占庭希臘語的 lampáda，變成 lampada。西語先說 lámpada，後來 d 換成 r，就是 lámpara。英文 lamp 是同一家。",
+      "hook_zh": "lámpara ≈ lamp＋ara：檯燈的光「啪啦」一聲亮起來。",
+      "usage_zh": "重音在第一音節：LÁM-pa-ra。天花板的燈也可以直接說 la luz。",
+      "example_es": "Enciende la lámpara, por favor.", "example_zh": "請把燈打開。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:lámpara", "wiktionary:la:lampas", "wiktionary:la:lampada"]
+    },
+    {
+      "word": "luz", "article": "la", "pos": "sustantivo", "zh": "光；燈；電", "en": "light; electricity", "ipa": "/ˈluθ/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "lūx", "zh": "光" },
+        { "lang_zh": "古西班牙語", "word": "luz", "zh": "光" },
+        { "lang_zh": "西班牙語", "word": "luz", "zh": "光" }
+      ],
+      "cognates_en": ["lucid"],
+      "story_zh": "luz 直接來自拉丁文 lūx（光），從古西班牙語到今天都長這樣。英文 lucid（清晰的、透亮的）也是從 lūx 這個家族來的。",
+      "hook_zh": "luz ≈ lux（照度單位）：開燈，滿屋子都是 luz。",
+      "usage_zh": "複數 z 變 c：luces。encender / apagar la luz＝開／關燈；dar a luz＝生小孩。",
+      "example_es": "¿Puedes apagar la luz?", "example_zh": "你可以關燈嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:luz"]
+    },
+    {
+      "word": "espejo", "article": "el", "pos": "sustantivo", "zh": "鏡子", "en": "mirror", "ipa": "/esˈpexo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "specere + -ulum", "zh": "看 + 工具" },
+        { "lang_zh": "拉丁語", "word": "speculum", "zh": "鏡子" },
+        { "lang_zh": "通俗拉丁語", "word": "speclum", "zh": "鏡子" },
+        { "lang_zh": "古西班牙語", "word": "espeio", "zh": "鏡子" },
+        { "lang_zh": "西班牙語", "word": "espejo", "zh": "鏡子" }
+      ],
+      "cognates_en": [],
+      "story_zh": "拉丁文 speculum 可以拆成 speciō（看）＋ -ulum（工具），字面就是「用來看的工具」。口語把它縮成 speclum，古西班牙語寫 espeio，最後成了 espejo。德文的 Spiegel 也是同一個字。",
+      "hook_zh": "espejo 裡有個「看」：照鏡子就是 spec（看）自己。",
+      "usage_zh": "mirarse en el espejo＝照鏡子。",
+      "example_es": "Me miro en el espejo antes de salir.", "example_zh": "我出門前照一下鏡子。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:espejo", "wiktionary:la:speculum", "wiktionary:la:speclum"]
+    },
+    {
+      "word": "cuadro", "article": "el", "pos": "sustantivo", "zh": "畫（裱框的）；方格", "en": "painting; picture; square", "ipa": "/ˈkwadɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "quadrum", "zh": "方形" },
+        { "lang_zh": "西班牙語", "word": "cuadro", "zh": "畫、方格" }
+      ],
+      "cognates_en": [],
+      "story_zh": "cuadro 來自拉丁文 quadrum（方形）。方方正正的框裡裝著一幅畫，於是「方形」也成了牆上的「畫」。",
+      "hook_zh": "quad- 是「四」：四個邊框起來的就是 cuadro。",
+      "usage_zh": "也指格子花紋：una camisa de cuadros（格子襯衫）。",
+      "example_es": "Me gusta mucho ese cuadro.", "example_zh": "我很喜歡那幅畫。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cuadro"]
+    },
+    {
+      "word": "alfombra", "article": "la", "pos": "sustantivo", "zh": "地毯", "en": "carpet; rug", "ipa": "/alˈfombɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "安達魯斯阿拉伯語", "word": "al-ḥánbal", "zh": "（al- 是冠詞）" },
+        { "lang_zh": "西班牙語", "word": "alfombra", "zh": "地毯" }
+      ],
+      "cognates_en": [],
+      "story_zh": "alfombra 來自伊比利半島上的安達魯斯阿拉伯語 al-ḥánbal。開頭的 al- 是阿拉伯語的冠詞，像英文的 the，被一起借進了西班牙語。",
+      "hook_zh": "看到 al- 開頭的字（alfombra、almohada），先想到阿拉伯飛毯！",
+      "usage_zh": "alfombra roja＝紅毯；alfombra mágica＝魔毯。",
+      "example_es": "Hay una alfombra roja en el salón.", "example_zh": "客廳裡有一張紅色地毯。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:alfombra"]
+    },
+    {
+      "word": "cortina", "article": "la", "pos": "sustantivo", "zh": "窗簾；簾子", "en": "curtain", "ipa": "/koɾˈtina/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "cōrs (cōrt-)", "zh": "庭院" },
+        { "lang_zh": "晚期拉丁語", "word": "cōrtīna", "zh": "簾子" },
+        { "lang_zh": "古西班牙語", "word": "cortina", "zh": "簾子" },
+        { "lang_zh": "西班牙語", "word": "cortina", "zh": "窗簾" }
+      ],
+      "cognates_en": ["curtain", "court"],
+      "story_zh": "cōrtīna 在西元四世紀才出現，由 cōrt-（庭院）加上 -īna 組成。它是照著希臘語造的：希臘語 aulaía（簾子）來自 aulḗ（庭院），拉丁語就用自己的「庭院」一字仿造出「簾子」。英文 curtain 是同一個字。",
+      "hook_zh": "cortina ≈ curtain：拉開窗簾，看見外面的庭院（court）。",
+      "usage_zh": "abrir / cerrar las cortinas＝拉開／拉上窗簾。",
+      "example_es": "Cierra las cortinas, por favor.", "example_zh": "請把窗簾拉上。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cortina", "wiktionary:la:cortina"]
+    },
+    {
+      "word": "televisión", "article": "la", "pos": "sustantivo", "zh": "電視", "en": "television; TV", "ipa": "/telebiˈsjon/",
+      "breakdown": [{ "part": "tele-", "zh": "遠" }, { "part": "visión", "zh": "視覺、看" }],
+      "origin_chain": [
+        { "lang_zh": "法語", "word": "télévision", "zh": "電視" },
+        { "lang_zh": "西班牙語", "word": "televisión", "zh": "電視" }
+      ],
+      "cognates_en": ["television", "vision"],
+      "story_zh": "televisión 由 tele-（遠）＋ visión（看）組成，是照著法語 télévision 一個零件一個零件翻過來的字：「看到遠方的東西」。",
+      "hook_zh": "tele＝遠，visión＝看：電視讓你坐在家裡看遍遠方。",
+      "usage_zh": "口語說 la tele：ver la tele（看電視）。電視機本身也可叫 el televisor。",
+      "example_es": "Por la noche veo la televisión.", "example_zh": "晚上我看電視。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:televisión"]
+    },
+    {
+      "word": "ordenador", "article": "el", "pos": "sustantivo", "zh": "電腦（西班牙用法）", "en": "computer (Spain)", "ipa": "/oɾdenaˈdoɾ/",
+      "breakdown": [{ "part": "ordenar", "zh": "整理、排序" }, { "part": "-dor", "zh": "做…的東西" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "ōrdināre", "zh": "排列、整理" },
+        { "lang_zh": "拉丁語", "word": "ōrdinātor", "zh": "整理者、安排者" },
+        { "lang_zh": "法語", "word": "ordinateur", "zh": "電腦" },
+        { "lang_zh": "西班牙語", "word": "ordenador", "zh": "電腦" }
+      ],
+      "cognates_en": ["order"],
+      "story_zh": "拉丁文 ōrdinātor 是「整理者、安排者」，來自 ōrdināre（排列）。法國人用 ordinateur 稱呼電腦，西班牙跟著法語造出 ordenador——電腦就是「把資料排好序的機器」。拉美則照英文說 computadora。",
+      "hook_zh": "ordenar（整理）＋ -dor：電腦就是幫你把一切排好 order 的機器。",
+      "usage_zh": "西班牙說 ordenador；拉美說 computadora 或 computador。筆電：ordenador portátil。",
+      "example_es": "Trabajo con el ordenador todo el día.", "example_zh": "我整天用電腦工作。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:ordenador", "wiktionary:la:ordinator"]
+    },
+    {
+      "word": "teléfono", "article": "el", "pos": "sustantivo", "zh": "電話；電話號碼", "en": "telephone; phone number", "ipa": "/teˈlefono/",
+      "breakdown": [{ "part": "tele-", "zh": "遠" }, { "part": "-fono", "zh": "聲音" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "tele- + -fono", "zh": "遠 + 聲音" },
+        { "lang_zh": "西班牙語", "word": "teléfono", "zh": "電話" }
+      ],
+      "cognates_en": ["telephone", "phone"],
+      "story_zh": "teléfono 由 tele-（遠）和 -fono（聲音）兩個零件組成：「把聲音送到遠方」。和 televisión 是同一套造字法，一個傳畫面、一個傳聲音。",
+      "hook_zh": "tele＝遠，fono＝聲音（英文 phone）：遠方傳來的聲音。",
+      "usage_zh": "也指電話號碼：¿Cuál es tu teléfono?；hablar por teléfono＝講電話。",
+      "example_es": "Hablo por teléfono con mi madre.", "example_zh": "我在和媽媽講電話。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:teléfono"]
+    },
+    {
+      "word": "móvil", "article": "el", "pos": "sustantivo", "zh": "手機（西班牙）；可移動的", "en": "mobile phone; mobile", "ipa": "/ˈmobil/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "movēre", "zh": "移動" },
+        { "lang_zh": "拉丁語", "word": "mōbilis", "zh": "可移動的" },
+        { "lang_zh": "西班牙語", "word": "móvil", "zh": "可移動的；手機" }
+      ],
+      "cognates_en": ["mobile", "move"],
+      "story_zh": "móvil 是照書直接借自拉丁文 mōbilis（可移動的）的字，形容詞意思是「行動的」，名詞就是 teléfono móvil 的簡稱「手機」。同一個拉丁字口耳相傳下來，則變成了 mueble（家具）。",
+      "hook_zh": "móvil ≈ mobile：能跟著你到處移動的電話。",
+      "usage_zh": "西班牙說 el móvil；拉美說 el celular。",
+      "example_es": "¿Me das tu número de móvil?", "example_zh": "可以給我你的手機號碼嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:móvil", "wiktionary:la:mobilis", "wiktionary:la:moveo"]
+    },
+    {
+      "word": "radio", "article": "la", "pos": "sustantivo", "zh": "收音機；廣播", "en": "radio", "ipa": "/ˈradjo/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "radiorreceptor / radiotransmisión", "zh": "無線電接收器／無線電廣播" },
+        { "lang_zh": "西班牙語", "word": "radio", "zh": "收音機、廣播" }
+      ],
+      "cognates_en": ["radio"],
+      "story_zh": "radio 是長字剪短的結果：收音機原本叫 radiorreceptor（無線電接收器），廣播叫 radiotransmisión，大家嫌太長，只留下開頭的 radio。另外還有一個同形字 radio「半徑」，來自拉丁文 radius。",
+      "hook_zh": "radiorreceptor 太長了，剪掉尾巴只剩 radio。",
+      "usage_zh": "廣播是 la radio；指收音機時，拉美部分地區說 el radio。escuchar la radio＝聽廣播。",
+      "example_es": "Escucho la radio en el coche.", "example_zh": "我在車上聽廣播。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:radio"]
+    },
+    {
+      "word": "nevera", "article": "la", "pos": "sustantivo", "zh": "冰箱", "en": "fridge; refrigerator", "ipa": "/neˈbeɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "nevero", "zh": "（與 nieve 雪 同字根）" },
+        { "lang_zh": "西班牙語", "word": "nevera", "zh": "冰箱" }
+      ],
+      "cognates_en": [],
+      "story_zh": "nevera 來自 nevero 這個字，字根和 nevar（下雪）、nieve（雪）相同。冰箱的名字裡就藏著「雪」。",
+      "hook_zh": "nieve 是雪：打開 nevera，一陣冷氣像雪一樣撲面而來。",
+      "usage_zh": "西班牙也說 frigorífico；拉美常說 refrigerador，墨西哥口語 refri。",
+      "example_es": "La leche está en la nevera.", "example_zh": "牛奶在冰箱裡。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:nevera", "wiktionary:es:nieve"]
+    },
+    {
+      "word": "horno", "article": "el", "pos": "sustantivo", "zh": "烤箱；爐", "en": "oven; furnace", "ipa": "/ˈoɾno/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "furnus", "zh": "爐、烤爐" },
+        { "lang_zh": "古西班牙語", "word": "forno", "zh": "爐" },
+        { "lang_zh": "西班牙語", "word": "horno", "zh": "烤箱" }
+      ],
+      "cognates_en": [],
+      "story_zh": "horno 來自拉丁文 furnus（爐），古西班牙語寫作 forno。後來字首的 f 變成不發音的 h，就成了 horno——和 hablar 原本是 fablar 一樣。",
+      "hook_zh": "把 h 換回 f：horno → forno，像英文 furnace（熔爐），熱烘烘的。",
+      "usage_zh": "h 不發音。microondas＝微波爐；al horno＝烤的（pollo al horno 烤雞）。",
+      "example_es": "El pan está en el horno.", "example_zh": "麵包在烤箱裡。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:horno"]
+    },
+    {
+      "word": "lavadora", "article": "la", "pos": "sustantivo", "zh": "洗衣機", "en": "washing machine", "ipa": "/labaˈdoɾa/",
+      "breakdown": [{ "part": "lavar", "zh": "洗" }, { "part": "-dora", "zh": "做…的機器" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "lavāre", "zh": "洗" },
+        { "lang_zh": "西班牙語", "word": "lavar", "zh": "洗" },
+        { "lang_zh": "西班牙語", "word": "lavadora", "zh": "洗衣機" }
+      ],
+      "cognates_en": ["lavatory"],
+      "story_zh": "lavadora 是 lavar（洗）加上 -dora（做…的人或機器）。lavar 來自拉丁文 lavāre（洗），英文 lavatory（盥洗室）也是同一個字根。",
+      "hook_zh": "lavar（洗）＋-dora＝洗東西的機器。同樣的造法：secadora＝烘衣機。",
+      "usage_zh": "poner la lavadora＝開洗衣機洗衣服。洗碗機是 lavavajillas。",
+      "example_es": "Pongo la lavadora los domingos.", "example_zh": "我每個星期天洗衣服。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:lavadora", "wiktionary:es:lavar", "wiktionary:la:lavo"]
+    },
+    {
+      "word": "microondas", "article": "el", "pos": "sustantivo", "zh": "微波爐", "en": "microwave (oven)", "ipa": "/mikɾoˈondas/",
+      "breakdown": [{ "part": "micro-", "zh": "微小" }, { "part": "ondas", "zh": "波（複數）" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "microonda", "zh": "微波" },
+        { "lang_zh": "西班牙語", "word": "microondas", "zh": "微波爐" }
+      ],
+      "cognates_en": ["microwave"],
+      "story_zh": "microondas 原本只是 microonda（微波）的複數「好多微波」，後來直接拿來叫用微波加熱的爐子，成了一個獨立的陽性名詞 el microondas。",
+      "hook_zh": "micro（微）＋ondas（波浪）：一堆小波浪在盒子裡把飯熱好。",
+      "usage_zh": "陽性，單複數同形：el microondas、los microondas。",
+      "example_es": "Calienta la sopa en el microondas.", "example_zh": "把湯放進微波爐加熱。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:microondas"]
+    },
+    {
+      "word": "ducha", "article": "la", "pos": "sustantivo", "zh": "淋浴；淋浴間", "en": "shower", "ipa": "/ˈdut͡ʃa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "義大利語", "word": "doccia", "zh": "淋浴" },
+        { "lang_zh": "法語", "word": "douche", "zh": "淋浴" },
+        { "lang_zh": "西班牙語", "word": "ducha", "zh": "淋浴" }
+      ],
+      "cognates_en": [],
+      "story_zh": "ducha 先從義大利語 doccia 傳到法語變成 douche，西班牙語再從法語借來，拼成 ducha。",
+      "hook_zh": "ducha 唸起來像「嘟恰」：蓮蓬頭的水「嘟嘟恰恰」打在身上。",
+      "usage_zh": "ducharse＝沖澡；darse una ducha＝沖個澡。泡澡則是 bañarse。",
+      "example_es": "Me doy una ducha cada mañana.", "example_zh": "我每天早上沖個澡。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:ducha"]
+    },
+    {
+      "word": "bañera", "article": "la", "pos": "sustantivo", "zh": "浴缸", "en": "bathtub", "ipa": "/baˈɲeɾa/",
+      "breakdown": [{ "part": "baño", "zh": "洗澡" }, { "part": "-era", "zh": "容器" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "balneum", "zh": "浴" },
+        { "lang_zh": "西班牙語", "word": "baño", "zh": "洗澡" },
+        { "lang_zh": "西班牙語", "word": "bañera", "zh": "浴缸" }
+      ],
+      "cognates_en": [],
+      "story_zh": "bañera 是 baño（洗澡）加上字尾 -era，就是「洗澡用的容器」。baño 再往上可以追到拉丁文 balneum 和古希臘語的「浴場」。",
+      "hook_zh": "baño＋-era＝裝洗澡水的大盆。就像 nevera 裝冰涼的東西。",
+      "usage_zh": "拉美有些地方說 tina（墨西哥）或 bañadera（阿根廷）。",
+      "example_es": "El niño juega en la bañera.", "example_zh": "孩子在浴缸裡玩。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:bañera", "wiktionary:es:baño"]
+    },
+    {
+      "word": "toalla", "article": "la", "pos": "sustantivo", "zh": "毛巾；浴巾", "en": "towel", "ipa": "/toˈaʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "法蘭克語", "word": "*þwahilu", "zh": "（擦洗用的布）" },
+        { "lang_zh": "西班牙語", "word": "toalla", "zh": "毛巾" }
+      ],
+      "cognates_en": ["towel"],
+      "story_zh": "toalla 的源頭是日耳曼人的法蘭克語 *þwahilu，經由其他羅曼語傳進西班牙語，還擠掉了原本的舊字 tobaja。英文 towel 也來自同一個日耳曼字。",
+      "hook_zh": "toalla ≈ towel：沖完澡，伸手拿 toalla。",
+      "usage_zh": "toalla de baño＝浴巾；toalla de playa＝海灘巾。",
+      "example_es": "¿Dónde está mi toalla?", "example_zh": "我的毛巾在哪裡？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:toalla"]
+    },
+    {
+      "word": "jabón", "article": "el", "pos": "sustantivo", "zh": "肥皂", "en": "soap", "ipa": "/xaˈbon/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "原始日耳曼語", "word": "*saipǭ", "zh": "肥皂" },
+        { "lang_zh": "拉丁語", "word": "sāpō", "zh": "肥皂" },
+        { "lang_zh": "古西班牙語", "word": "xabon", "zh": "肥皂" },
+        { "lang_zh": "西班牙語", "word": "jabón", "zh": "肥皂" }
+      ],
+      "cognates_en": ["soap"],
+      "story_zh": "羅馬人的「肥皂」sāpō 竟然是向日耳曼人借來的字（原始日耳曼語 *saipǭ）。這個字傳到古西班牙語寫成 xabon，後來變成 jabón。英文 soap 也是從同一個日耳曼字來的。",
+      "hook_zh": "jabón 和 soap 是表兄弟：s 變成 j，p 變成 b。",
+      "usage_zh": "陽性：el jabón，複數 jabones（去掉重音）。洗手乳是 jabón líquido。",
+      "example_es": "Lávate las manos con jabón.", "example_zh": "用肥皂洗手。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:jabón"]
+    },
+    {
+      "word": "cepillo", "article": "el", "pos": "sustantivo", "zh": "刷子；牙刷；梳子", "en": "brush", "ipa": "/θeˈpiʝo/",
+      "breakdown": [{ "part": "cepo", "zh": "樹枝" }, { "part": "-illo", "zh": "小（縮小字尾）" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "cepo", "zh": "樹枝" },
+        { "lang_zh": "西班牙語", "word": "cepillo", "zh": "刷子" }
+      ],
+      "cognates_en": [],
+      "story_zh": "cepillo 是 cepo（樹枝）加上縮小字尾 -illo，字面意思是「小樹枝」。後來成了刷子，連木工用的刨刀也叫 cepillo。",
+      "hook_zh": "小樹枝（cepo＋-illo）一端毛毛的，就成了每天早上用的 cepillo。",
+      "usage_zh": "cepillo de dientes＝牙刷；cepillarse los dientes＝刷牙。",
+      "example_es": "Necesito un cepillo de dientes nuevo.", "example_zh": "我需要一支新牙刷。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cepillo"]
+    },
+    {
+      "word": "basura", "article": "la", "pos": "sustantivo", "zh": "垃圾", "en": "trash; garbage; rubbish", "ipa": "/baˈsuɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "verrere", "zh": "掃" },
+        { "lang_zh": "通俗拉丁語", "word": "*versūra", "zh": "掃出來的東西" },
+        { "lang_zh": "古西班牙語", "word": "vassura", "zh": "垃圾" },
+        { "lang_zh": "西班牙語", "word": "basura", "zh": "垃圾" }
+      ],
+      "cognates_en": [],
+      "story_zh": "basura 的祖先是拉丁文動詞 verrere（掃）。通俗拉丁語的 *versūra 就是「掃出來的東西」，古西班牙語寫 vassura，最後成了 basura。垃圾，原來就是「掃起來的那堆」。",
+      "hook_zh": "拿掃把「巴沙巴沙」掃地，掃出來的就是 basura。",
+      "usage_zh": "不可數：la basura。sacar la basura＝倒垃圾；垃圾桶是 cubo de basura 或 basurero。",
+      "example_es": "¿Puedes sacar la basura?", "example_zh": "你可以去倒垃圾嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:basura", "wiktionary:la:verro"]
+    },
+    {
+      "word": "almohada", "article": "la", "pos": "sustantivo", "zh": "枕頭", "en": "pillow", "ipa": "/almoˈada/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "阿拉伯語", "word": "miḵadda", "zh": "枕頭" },
+        { "lang_zh": "安達魯斯阿拉伯語", "word": "muḵadda", "zh": "枕頭" },
+        { "lang_zh": "西班牙語", "word": "almohada", "zh": "枕頭" }
+      ],
+      "cognates_en": [],
+      "story_zh": "almohada 來自阿拉伯語 miḵadda（枕頭），在伊比利半島的安達魯斯阿拉伯語裡說成 muḵadda，再借進西班牙語。開頭的 al- 是阿拉伯語的冠詞，和 alfombra（地毯）一樣。葡萄牙語的 almofada 也是同一個字。",
+      "hook_zh": "al- 開頭的家當多半來自阿拉伯：躺在 alfombra 上，頭枕 almohada。",
+      "usage_zh": "h 不發音：al-mo-A-da。consultar con la almohada＝睡一覺再決定。",
+      "example_es": "Me gusta dormir con dos almohadas.", "example_zh": "我喜歡睡兩個枕頭。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:almohada"]
+    },
+    {
+      "word": "manta", "article": "la", "pos": "sustantivo", "zh": "毯子；毛毯", "en": "blanket", "ipa": "/ˈmanta/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "manto", "zh": "斗篷、披風" },
+        { "lang_zh": "西班牙語", "word": "manta", "zh": "毯子" }
+      ],
+      "cognates_en": [],
+      "story_zh": "manta 是從 manto（斗篷、披風）變出來的陰性形。披在肩上的是 manto，蓋在身上取暖的就是 manta。",
+      "hook_zh": "冷的時候把 manta 披在身上，就像穿了一件斗篷（manto）。",
+      "usage_zh": "也指魔鬼魟（manta raya）。拉美也常說 cobija、frazada。",
+      "example_es": "Tengo frío, ¿me das una manta?", "example_zh": "我好冷，可以給我一條毯子嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:manta"]
+    },
+    {
+      "word": "caja", "article": "la", "pos": "sustantivo", "zh": "盒子、箱子；收銀台", "en": "box; cash register", "ipa": "/ˈkaxa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "capsa", "zh": "盒子、書箱" },
+        { "lang_zh": "加泰隆尼亞語／奧克語", "word": "caixa / caissa", "zh": "盒子" },
+        { "lang_zh": "西班牙語", "word": "caja", "zh": "盒子" }
+      ],
+      "cognates_en": ["case", "cash"],
+      "story_zh": "caja 來自拉丁文 capsa（盒子，特別是裝書卷的圓筒盒），很可能是經由加泰隆尼亞語 caixa 或奧克語 caissa 借進西語的。英文的 case（箱、盒）和 cash（現金，原本是放錢的盒子）都是它的親戚。",
+      "hook_zh": "caja ≈ case＋cash：超市的收銀台也叫 caja，因為錢放在盒子裡。",
+      "usage_zh": "pagar en caja＝到收銀台付款；caja fuerte＝保險箱。",
+      "example_es": "Pon los libros en esa caja.", "example_zh": "把書放進那個箱子。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:caja", "wiktionary:la:capsa"]
+    },
+    {
+      "word": "bolsa", "article": "la", "pos": "sustantivo", "zh": "袋子；（la Bolsa）證券交易所", "en": "bag; stock exchange", "ipa": "/ˈbolsa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古希臘語", "word": "búrsa", "zh": "獸皮、酒囊" },
+        { "lang_zh": "晚期拉丁語", "word": "bursa", "zh": "皮囊、錢包" },
+        { "lang_zh": "西班牙語", "word": "bolsa", "zh": "袋子" }
+      ],
+      "cognates_en": ["purse"],
+      "story_zh": "bolsa 的祖先是古希臘語 búrsa（獸皮、皮做的酒囊）。拉丁文借成 bursa，意思變成「皮做的錢包」，再引申為「資金」。所以西語 bolsa 既是袋子，也是錢流動的「證券交易所」。英文 purse 也是同一個字。",
+      "hook_zh": "bolsa ≈ purse：袋子裝錢，裝到最後變成股市（la Bolsa）。",
+      "usage_zh": "bolsa de plástico＝塑膠袋。陽性的 bolso 是手提包。",
+      "example_es": "¿Quiere una bolsa?", "example_zh": "您需要袋子嗎？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:bolsa", "wiktionary:la:bursa"]
+    },
+    {
+      "word": "papel", "article": "el", "pos": "sustantivo", "zh": "紙；角色", "en": "paper; role", "ipa": "/paˈpel/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "古加泰隆尼亞語", "word": "paper", "zh": "紙" },
+        { "lang_zh": "古西班牙語", "word": "papel", "zh": "紙" },
+        { "lang_zh": "西班牙語", "word": "papel", "zh": "紙；角色" }
+      ],
+      "cognates_en": ["paper"],
+      "story_zh": "papel 是從古加泰隆尼亞語的 paper 借來的，最後的 r 在西語變成了 l。英文 paper 和它是同一個字的雙胞胎。演員拿到寫著台詞的紙，所以 papel 也是戲裡的「角色」。",
+      "hook_zh": "papel ≈ paper，把 r 換成 l。拿到劇本那張紙，就拿到了角色。",
+      "usage_zh": "陽性：el papel。papel higiénico＝衛生紙；hacer el papel de…＝扮演…的角色。",
+      "example_es": "Necesito papel y un bolígrafo.", "example_zh": "我需要紙和一支原子筆。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:papel"]
+    },
+    {
+      "word": "cosa", "article": "la", "pos": "sustantivo", "zh": "東西；事情", "en": "thing", "ipa": "/ˈkosa/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "causa", "zh": "原因、理由；案件" },
+        { "lang_zh": "古西班牙語", "word": "cosa", "zh": "東西" },
+        { "lang_zh": "西班牙語", "word": "cosa", "zh": "東西、事情" }
+      ],
+      "cognates_en": ["cause"],
+      "story_zh": "cosa 來自拉丁文 causa，原本是「原因、理由」，也指法庭上的「案件」。大家在談「那件事」，談著談著就成了任何「東西、事情」。西語後來又照書借了一次 causa（原因），兩個字成了雙胞胎。",
+      "hook_zh": "cosa 和 cause 是同一個字：每件「事情」背後都有個「原因」。",
+      "usage_zh": "常用：otra cosa（別的事）、alguna cosa（某樣東西）、cualquier cosa（隨便什麼）。",
+      "example_es": "Tengo muchas cosas en mi habitación.", "example_zh": "我房間裡有很多東西。",
+      "image": "emoji:🧩", "confidence": "sourced", "sources": ["wiktionary:es:cosa", "wiktionary:la:causa"]
+    },
+    {
+      "word": "dirección", "article": "la", "pos": "sustantivo", "zh": "地址；方向；管理", "en": "address; direction", "ipa": "/diɾeɡˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "dīrēctiō", "zh": "引導、方向" },
+        { "lang_zh": "西班牙語", "word": "dirección", "zh": "地址、方向" }
+      ],
+      "cognates_en": ["direction", "direct"],
+      "story_zh": "dirección 是直接從拉丁文 dīrēctiō（受格 dīrēctiōnem）借來的書面字，和英文 direction 同源。告訴別人「往哪個方向走」才找得到你，所以它也成了「地址」。",
+      "hook_zh": "dirección ≈ direction：地址就是寫給郵差的「方向」。",
+      "usage_zh": "假朋友注意：「地址」英文是 address，西語卻是 dirección。¿Cuál es tu dirección?",
+      "example_es": "¿Cuál es tu dirección?", "example_zh": "你的地址是什麼？",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:dirección"]
+    },
+    {
+      "word": "balcón", "article": "el", "pos": "sustantivo", "zh": "陽台", "en": "balcony", "ipa": "/balˈkon/",
+      "breakdown": [],
+      "origin_chain": [
+        { "lang_zh": "日耳曼語", "word": "（源頭）", "zh": "（日耳曼語來源）" },
+        { "lang_zh": "義大利語", "word": "balcone", "zh": "陽台" },
+        { "lang_zh": "西班牙語", "word": "balcón", "zh": "陽台" }
+      ],
+      "cognates_en": ["balcony"],
+      "story_zh": "balcón 是從義大利語 balcone 借來的，而這個義大利字的源頭最後可以追到日耳曼語。英文 balcony 也是向義大利語借的。",
+      "hook_zh": "balcón ≈ balcony：站在 balcón 上看街景。",
+      "usage_zh": "陽性：el balcón，複數 balcones（去掉重音）。比較：terraza 通常比 balcón 大。",
+      "example_es": "Mi piso tiene un balcón pequeño.", "example_zh": "我的公寓有一個小陽台。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:balcón"]
+    },
+    {
+      "word": "piscina", "article": "la", "pos": "sustantivo", "zh": "游泳池", "en": "swimming pool", "ipa": "/pisˈθina/",
+      "breakdown": [{ "part": "pisc-", "zh": "魚（拉丁 piscis）" }, { "part": "-ina", "zh": "…的（地方）" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "piscis", "zh": "魚" },
+        { "lang_zh": "拉丁語", "word": "piscīna", "zh": "魚池；游泳池" },
+        { "lang_zh": "西班牙語", "word": "piscina", "zh": "游泳池" }
+      ],
+      "cognates_en": ["Pisces"],
+      "story_zh": "拉丁文 piscīna 由 piscis（魚）加 -īna 組成，字面是「有魚的地方」，原本是養魚池，後來也指游泳池。西語照書借了這個字——你游泳的地方，祖先是魚住的池子。",
+      "hook_zh": "雙魚座 Pisces 的 pisc- 就是魚：piscina 原本是魚的游泳池。",
+      "usage_zh": "nadar en la piscina＝在泳池游泳。墨西哥說 alberca，阿根廷說 pileta。",
+      "example_es": "Los niños nadan en la piscina.", "example_zh": "孩子們在游泳池裡游泳。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:piscina", "wiktionary:la:piscina"]
+    },
+    {
+      "word": "pasillo", "article": "el", "pos": "sustantivo", "zh": "走廊；（飛機、超市的）走道", "en": "hallway; corridor; aisle", "ipa": "/paˈsiʝo/",
+      "breakdown": [{ "part": "paso", "zh": "步、通道" }, { "part": "-illo", "zh": "小（縮小字尾）" }],
+      "origin_chain": [
+        { "lang_zh": "西班牙語", "word": "paso", "zh": "步、通道" },
+        { "lang_zh": "西班牙語", "word": "pasillo", "zh": "走廊" }
+      ],
+      "cognates_en": [],
+      "story_zh": "pasillo 是 paso（步、通道）加上縮小字尾 -illo，字面是「小通道」。家裡連接各個房間的那條窄窄的路，就是 pasillo。",
+      "hook_zh": "pasar（經過）的「小通道」：每天從 pasillo 走過（pass）。",
+      "usage_zh": "飛機上的走道座位是 asiento de pasillo，靠窗是 de ventanilla。",
+      "example_es": "El baño está al final del pasillo.", "example_zh": "廁所在走廊盡頭。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:pasillo"]
+    },
+    {
+      "word": "cajón", "article": "el", "pos": "sustantivo", "zh": "抽屜；大箱子", "en": "drawer; large box", "ipa": "/kaˈxon/",
+      "breakdown": [{ "part": "caja", "zh": "箱子" }, { "part": "-ón", "zh": "大（擴大字尾）" }],
+      "origin_chain": [
+        { "lang_zh": "拉丁語", "word": "capsa", "zh": "盒子" },
+        { "lang_zh": "西班牙語", "word": "caja", "zh": "箱子" },
+        { "lang_zh": "西班牙語", "word": "cajón", "zh": "抽屜、大箱子" }
+      ],
+      "cognates_en": [],
+      "story_zh": "cajón 是 caja（箱子）加上表示「大」的字尾 -ón，原本是「大箱子」，後來指可以拉出來的抽屜。祕魯的打擊樂器 cajón（木箱鼓）也是這個字。",
+      "hook_zh": "caja 加 -ón 變大：抽屜就是嵌在櫃子裡的大盒子。",
+      "usage_zh": "陽性：el cajón（雖然 caja 是陰性）。abrir el cajón＝打開抽屜。",
+      "example_es": "Las tijeras están en el cajón.", "example_zh": "剪刀在抽屜裡。",
+      "image": "svg", "confidence": "sourced", "sources": ["wiktionary:es:cajón", "wiktionary:es:caja"]
+    }
+  ]
+}

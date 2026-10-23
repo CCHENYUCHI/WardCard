@@ -6,6 +6,36 @@
 
 ## [Unreleased] (進行中 / 待發布)
 
+### Added
+- **變化表視窗 (`FormsModal.jsx`)**：在字典頁每個動詞 / 名詞 / 形容詞條目旁按「變位表 / 變化表」，或在單字卡詳情的字典資料區按按鈕，開出獨立視窗：動詞依語氣（直陳式、虛擬式、命令式）各一張表，人稱 × 時態；名詞與形容詞是陰陽性 × 單複數表，另列指小詞等。點任一個形態可以聽發音；手機上表格可橫向捲動、人稱欄固定；`Esc` 關閉。
+- **單字庫健檢 (`CardAuditModal.jsx`, `server/cardAudit.js`)**：單字庫頁「單字庫健檢」按鈕。比對每張卡和離線字典，分類列出：詞性不同、陰陽性不同、冠詞不同、可能是變化形（`fui` → ir / ser，可勾選改成原形）、字典有多個詞性無法判斷、字典查不到、和其他卡是同一個字。每筆顯示「目前 → 字典」的差異，可改選對應的字典條目（例如 comer 名詞 / 動詞）；勾選或全選後「依字典修正」把詞性 / 陰陽性 / 冠詞**寫回卡片**（中文、例句、筆記、學習進度不動），每批可「復原」；「保留現狀」後同一個問題不再提醒。
+  - API：`GET /api/cards/audit`、`POST /api/cards/audit/apply`、`POST /api/cards/audit/dismiss`、`POST /api/cards/audit/undo`。
+  - 資料表：`card_audit_log`（每批修正前後的值，供復原）、`card_audit_dismissed`（保留現狀的問題）。
+- **設定畫面的版本資訊 (`VersionInfo.jsx`, `GET /api/version`, `server/buildInfo.js`)**：顯示畫面（前端）與伺服器各是哪個分支 / commit、前端 build 時間、伺服器啟動時間；字典版本（v1 / v2、詞條數、建置時間、是否含變位 / 字源 / 例句 / 發音、A1 圖鑑字數）；已連結字典的單字數。畫面和伺服器版本不同、沒有字典或字典是舊版時顯示提示與該執行的指令；「複製版本資訊」方便回報問題。前端版本在 `vite build` 時寫入；Docker 沒有 `.git`，用 build args `APP_COMMIT` / `APP_BRANCH`。
+- **離線字典 v2 (`server/scripts/build-dictionary.js`, `server/dictionaryExtras.js`, `server/forms.js`)**：除了英文釋義，再存每個字的**發音 IPA、變形、例句、字源**（只增不減，舊版字典檔照常運作、缺的區塊不顯示）。
+  - **變形（`forms` 表）**：動詞完整變位（直陳式 / 虛擬式 / 命令式 × 各時態 × yo / tú / vos / él / nosotros / vosotros / ellos；去掉 `hablarme` 這類代名詞合併形與 `-se` 虛擬式），名詞與形容詞的陰陽性、單複數、指小詞。
+  - **例句（`examples` 表）**：每字最多 2 句，只留有英文翻譯的完整句子（不收引文與雙字詞組）；**只有約 3% 的字有例句**，沒有中文翻譯，只當參考。
+  - **字源（`etymology` 表）**：英文字源文字（去掉家族樹雜訊、截 600 字）＋由詞源模板整理的精簡祖先鏈（古西班牙語 → 拉丁語 → …，語言名稱翻成中文，`server/langNames.js`）。
+  - **IPA**：`entries.ipa`。
+  - 實測（kaikki 完整檔，約 1GB / 811,049 行）：797,592 筆、**143MB、建置約 26 秒、建置時尖峰約 120MB 記憶體**；A1 的 1,038 字中 1,014 有字典條目、885 有變形、994 有字源、416 有例句。`meta.schema_version = 2`。
+- **單字庫連結字典 (`server/cardDict.js`, `cards.dict_lemma` / `dict_pos`)**：卡片存「字典原形＋詞性」（不存 rowid，字典重建後仍有效），NULL＝還沒比對、空字串＝比對過但字典沒有。
+  - 新增 / 編輯 / CSV 匯入 / 從字典加入時自動連結；伺服器啟動時補連結尚未比對的卡；`npm run link:cards`（加 `--relink` 重新比對全部，字典重建後使用）。
+  - 連結後，卡片讀回時的**陰陽性、詞性、英文意思**改用字典值（網頁與手機 App 都不必改）；卡片自己的欄位保留為備援（片語、自己造的字、沒有字典檔時）。已有的冠詞（`el agua`）與英文意思不會被覆蓋，`m or f` 的字保留卡片原值。**不刪任何卡片資料**。
+  - 新增 `GET /api/cards/:id/dictionary`、`GET /api/dictionary/entry?lemma=&pos=`：按需回傳 IPA、變位表、例句、字源與圖鑑（約 8ms）。
+- **字典資料區塊 (`DictionaryExtras.jsx`)**：單字卡詳情直接載入連結的字典資料；字典頁每個詞條有「字典資料：變位、字源、例句」，點開才載入。動詞變位依語氣收合，名詞 / 形容詞顯示陰陽單複數。
+
+- **A1 字源圖鑑（1,038 字，Claude 編寫）(`server/data/lexicon/`, `server/lexicon.js`, `StoryCard.jsx`)**：西語 A1 常用字（13 個主題：功能詞、數字與時間、人與家庭、身體與健康、食物、居家、衣物、城市與交通、學校與工作、自然與動物、顏色與形容詞、常用動詞、生活），每個字有中文意思、IPA、字源鏈（例如 波斯語 → 阿拉伯語 → 古西語 azur → azul）、英文同源字、字源故事、記憶聯想、用法提醒、A1 例句與插圖。資料一次寫好存成 JSON，**完全離線、不花 AI 額度**。
+  - **有根據的字源**：每個字先用 `server/scripts/lexicon/fetch-facts.js` 從 kaikki.org（Wiktionary，CC BY-SA）抓詞源事實，並沿詞源往上追拉丁文等祖先詞條；故事只根據這些事實寫，Wiktionary 標示「可能 / 推測」的照實標示；查不到字源的字只寫記憶聯想（`confidence: hook-only`），不編字源。
+  - **插圖**：手寫的插圖規格（`server/data/lexicon/art/*.js`）由 `render-art.js` 渲染成 SVG（`client/public/lexicon/`，每張多半不到 1KB），可整批切換「扁平插畫」與「線條＋重點色」兩種畫風；682 張 SVG 共約 350KB，功能詞與太抽象的 356 個字改用 emoji。其中 1,008 個字有字源故事，30 個字查不到可靠字源、只寫記憶聯想。
+  - **查詞**：`GET /api/dictionary/lookup` 回應新增 `story` 欄位；字典頁與例句點字視窗**預設只顯示一列收合的「字源與記憶法」（縮圖＋一行預覽），有興趣再點開**看完整字源鏈、故事、用法與例句；切換到下一個字時回到收合，可用鍵盤操作。字典有中文就不再顯示「用 AI 查中文」；「加入單字庫」直接用字源圖鑑的內容建卡，不呼叫 AI。
+  - **複習**：翻卡 / 作答後才顯示圖片、字源與記憶聯想（作答前不會洩漏答案）；新增 `GET /api/lexicon?word=`。
+  - **存放位置**：圖鑑寫進**離線字典檔 `es-en.sqlite` 的 `lexicon` 表**（唯讀開啟，不常駐記憶體），不放在 App 的使用者資料庫；`npm run build:lexicon` 幾秒內寫入既有字典檔（不必重新下載 kaikki），檔案不存在時會建立只含圖鑑的小字典檔；`npm run build:dict` 重建時也會在換檔前一併寫入。
+  - **驗證與測試**：`server/scripts/lexicon/validate.js`（欄位、長度、來源、例句含該字、SVG 大小與安全性）；`server/lexicon.test.js`。撰寫規範見 `server/scripts/lexicon/WRITING.md`。
+
+### Fixed
+- **`POST /api/cards` 更新既有單字時回傳錯誤的 id**：upsert 撞到已存在的單字時，SQLite 的 `lastInsertRowid` 仍是上一筆，回傳的 id（以及新的字典連結）會指到別張卡；改為依單字查回正確的 id。
+- **字典建置：`artista m or f` 這類詞條被讀成只有陽性**（比對順序讓 `m` 搶先於 `m or f`），現在正確標成陰陽同形（`mf`）。
+
 ### Documentation
 - **重寫 `README.md`**：改為給一般使用者看的應用程式介紹，反映目前功能（今日學習駕駛艙、五階段自適應練習、FSRS v4.5、例句點字查詢 / 離線字典、Mobile App 現況），移除過時的 SM-2 與 Gemini 1.5 說明，部署步驟精簡並收合。
 - **延伸功能規劃改為省額度優先版 (`開發進度/AI功能延伸規劃.md`)**：C0–C5 改為 D0–D6；S5 四選一、答錯提示、字典等改以本機邏輯為主，AI 只在必要時按需使用；圖片改為上傳、不做 AI 生圖；只做 Web。

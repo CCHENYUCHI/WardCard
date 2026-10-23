@@ -1,0 +1,1190 @@
+{
+  "theme": "clothes",
+  "theme_zh": "衣物",
+  "entries": [
+    {
+      "word": "ropa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "衣服（總稱）",
+      "en": "clothes; clothing",
+      "ipa": "/ˈropa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始日耳曼語",
+          "word": "*raupijaną",
+          "zh": "（扯、剝）"
+        },
+        {
+          "lang_zh": "哥德語",
+          "word": "*raupa",
+          "zh": "衣物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ropa",
+          "zh": "衣服"
+        }
+      ],
+      "cognates_en": [
+        "robe"
+      ],
+      "story_zh": "ropa 不是拉丁字，而是日耳曼人的字：哥德語的 *raupa 經由原始日耳曼語 *raupijaną 一路傳下來。葡萄牙語 roupa、義大利語 roba、法語 robe，連英文的 robe（長袍）都是同一家。",
+      "hook_zh": "ropa ≈ robe：一整櫃的長袍、襯衫、裙子，全都叫 ropa。",
+      "usage_zh": "不可數：la ropa（衣服），不能說 una ropa。一件衣服要說 una prenda。",
+      "example_es": "Tengo mucha ropa en el armario.",
+      "example_zh": "我衣櫃裡有很多衣服。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ropa"
+      ]
+    },
+    {
+      "word": "camisa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "襯衫",
+      "en": "shirt",
+      "ipa": "/kaˈmisa/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "camisa 加上縮小字尾 -eta 就是 camiseta：小襯衫＝T 恤。",
+      "usage_zh": "有領子、有釦子的襯衫是 camisa；T 恤是 camiseta。",
+      "example_es": "Llevo una camisa blanca hoy.",
+      "example_zh": "我今天穿白襯衫。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:camisa"
+      ]
+    },
+    {
+      "word": "camiseta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "T 恤；運動衫、球衣",
+      "en": "T-shirt; jersey (sports)",
+      "ipa": "/kamiˈseta/",
+      "breakdown": [
+        {
+          "part": "camisa",
+          "zh": "襯衫"
+        },
+        {
+          "part": "-eta",
+          "zh": "小（縮小字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "camisa",
+          "zh": "襯衫"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "camiseta",
+          "zh": "T 恤"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "camiseta 是 camisa（襯衫）加上縮小字尾 -eta，字面就是「小襯衫」。又短、又沒領子的那一種，就是 T 恤。",
+      "hook_zh": "小襯衫＝T 恤，球迷穿的球衣也叫 camiseta。",
+      "usage_zh": "足球球衣也叫 camiseta：la camiseta del Barça。",
+      "example_es": "Me pongo una camiseta roja.",
+      "example_zh": "我穿上一件紅色 T 恤。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:camiseta",
+        "wiktionary:es:camisa"
+      ]
+    },
+    {
+      "word": "pantalón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "褲子",
+      "en": "trousers; pants",
+      "ipa": "/pantaˈlon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "pantalon",
+          "zh": "長褲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pantalón",
+          "zh": "褲子"
+        }
+      ],
+      "cognates_en": [
+        "pantaloons"
+      ],
+      "story_zh": "pantalón 是從法語 pantalon 借來的字。英文的 pantaloons（舊式長褲）和 pants 也是同一條線上的親戚。",
+      "hook_zh": "pantalón ≈ pants：褲子（pants）加 -alón，很好猜。",
+      "usage_zh": "常用複數：los pantalones（一條褲子也這樣說）。短褲是 pantalones cortos。",
+      "example_es": "Estos pantalones son muy cómodos.",
+      "example_zh": "這條褲子很舒服。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pantalón"
+      ]
+    },
+    {
+      "word": "falda",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "裙子",
+      "en": "skirt",
+      "ipa": "/ˈfalda/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法蘭克語",
+          "word": "*falda",
+          "zh": "折、摺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "falda",
+          "zh": "裙子"
+        }
+      ],
+      "cognates_en": [
+        "fold"
+      ],
+      "story_zh": "falda 來自日耳曼人的法蘭克語 *falda，意思是「折、摺」，和德文 falten、英文 fold 同源。裙子是一大片摺來摺去的布，名字就是這麼來的。",
+      "hook_zh": "falda ≈ fold（摺）：想像百褶裙一層層摺起來。",
+      "usage_zh": "也指山腳、山坡（la falda de la montaña）。",
+      "example_es": "Ella lleva una falda larga.",
+      "example_zh": "她穿著一件長裙。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:falda"
+      ]
+    },
+    {
+      "word": "vestido",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "洋裝；（形容詞）穿著衣服的",
+      "en": "dress; dressed",
+      "ipa": "/besˈtido/",
+      "breakdown": [
+        {
+          "part": "vest(ir)",
+          "zh": "穿衣"
+        },
+        {
+          "part": "-ido",
+          "zh": "過去分詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vestītus",
+          "zh": "穿上的；衣著"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vestido",
+          "zh": "洋裝；穿著衣服的"
+        }
+      ],
+      "cognates_en": [
+        "vest",
+        "invest"
+      ],
+      "story_zh": "vestido 來自拉丁文 vestītus（穿上衣服的；衣著）。西語的 vestido 既當形容詞「穿好衣服的」，也當名詞「洋裝」，英文 vest（背心）和它同一個家族。",
+      "hook_zh": "vestir（穿衣）的過去分詞 vestido：「穿好的東西」就是洋裝。",
+      "usage_zh": "名詞是 el vestido（洋裝）；形容詞要變化：está vestida de rojo。",
+      "example_es": "Ese vestido azul es muy bonito.",
+      "example_zh": "那件藍色洋裝很漂亮。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vestido"
+      ]
+    },
+    {
+      "word": "chaqueta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "外套；夾克",
+      "en": "jacket",
+      "ipa": "/t͡ʃaˈketa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "jaquette",
+          "zh": "短外套"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "chaqueta",
+          "zh": "外套"
+        }
+      ],
+      "cognates_en": [
+        "jacket"
+      ],
+      "story_zh": "chaqueta 借自法語 jaquette。法語開頭的 j 唸 /ʒ/，西語改用 ch 的音來唸，就成了 chaqueta。英文 jacket 也是同一個法語字。",
+      "hook_zh": "chaqueta ≈ jacket：把 j 換成 ch，就是西語夾克。",
+      "usage_zh": "西班牙說 chaqueta；墨西哥常說 chamarra，拉美部分地區說 campera。",
+      "example_es": "Hace frío, ponte la chaqueta.",
+      "example_zh": "天氣很冷，穿上外套。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:chaqueta"
+      ]
+    },
+    {
+      "word": "abrigo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "大衣；避風處",
+      "en": "overcoat; shelter",
+      "ipa": "/aˈbɾiɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "abrigar",
+          "zh": "保暖、遮蔽"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "abrigo",
+          "zh": "大衣；庇護"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "abrigo 是從動詞 abrigar（保暖、遮蔽）變出來的名詞。「讓你不冷的東西」就是大衣，也可以指能躲風雨的「庇護處」。",
+      "hook_zh": "abrigar 是保暖，abrigo 就是 abrigar 的成果——把你包得暖暖的大衣。",
+      "usage_zh": "abrigarse＝穿暖和點。¡Abrígate bien!＝穿暖一點！",
+      "example_es": "En invierno uso un abrigo largo.",
+      "example_zh": "冬天我穿一件長大衣。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:abrigo"
+      ]
+    },
+    {
+      "word": "jersey",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "毛衣；針織套頭衫",
+      "en": "sweater; pullover",
+      "ipa": "/xeɾˈsei/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "jersey",
+          "zh": "針織衫"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "jersey",
+          "zh": "毛衣"
+        }
+      ],
+      "cognates_en": [
+        "jersey"
+      ],
+      "story_zh": "jersey 是直接從英語 jersey 借來的字，只是用西語的方式發音：j 唸喉音 /x/，結尾唸 /sei/。",
+      "hook_zh": "照英文拼：jersey，但 j 要唸成「呵」的喉音：he-RSEI。",
+      "usage_zh": "複數 jerséis。拉美常說 suéter；套頭毛衣也可說 jersey de lana。",
+      "example_es": "Este jersey es de lana.",
+      "example_zh": "這件毛衣是羊毛的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:jersey"
+      ]
+    },
+    {
+      "word": "zapato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "鞋子",
+      "en": "shoe",
+      "ipa": "/θaˈpato/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "çapato",
+          "zh": "鞋子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "zapato",
+          "zh": "鞋子"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "zapato 的來源是個謎。它在古西班牙語叫 çapato，法語的 sabot、義大利語的 ciabatta、葡萄牙語的 sapato 長得都像，可能有共同來源，有人猜來自土耳其或波斯一帶的語言，但沒有定論。",
+      "hook_zh": "zapato 聽起來像「沙趴頭」：想像鞋子踩在地上「啪」的一聲。",
+      "usage_zh": "常用複數 los zapatos（一雙）。zapatos de cuero＝皮鞋。",
+      "example_es": "Mis zapatos nuevos son negros.",
+      "example_zh": "我的新鞋是黑色的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:zapato"
+      ]
+    },
+    {
+      "word": "zapatilla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "拖鞋；運動鞋",
+      "en": "slipper; sneaker",
+      "ipa": "/θapaˈtiʝa/",
+      "breakdown": [
+        {
+          "part": "zapato",
+          "zh": "鞋"
+        },
+        {
+          "part": "-illa",
+          "zh": "小（縮小字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "zapato",
+          "zh": "鞋"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "zapatilla",
+          "zh": "拖鞋；運動鞋"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "zapatilla 是 zapato（鞋）加上縮小字尾 -illa，字面是「小鞋」，本來指居家穿的輕便拖鞋，後來也用來稱運動鞋。",
+      "hook_zh": "小鞋（zapato＋-illa）：在家穿的是拖鞋。",
+      "usage_zh": "西班牙：zapatillas（de deporte）＝運動鞋；拉美運動鞋多說 tenis。",
+      "example_es": "En casa llevo zapatillas.",
+      "example_zh": "我在家穿拖鞋。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:zapatilla",
+        "wiktionary:es:zapato"
+      ]
+    },
+    {
+      "word": "bota",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "靴子",
+      "en": "boot",
+      "ipa": "/ˈbota/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "botte",
+          "zh": "靴子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bota",
+          "zh": "靴子"
+        }
+      ],
+      "cognates_en": [
+        "boot"
+      ],
+      "story_zh": "bota（靴子）借自法語 botte，英文的 boot 也和它同一條線。另有同形的 bota，是裝酒的皮囊，那一個字則來自拉丁文 buttis（桶）。",
+      "hook_zh": "bota ≈ boot：踩進雨天水坑的 botas。",
+      "usage_zh": "常成雙用複數：un par de botas。",
+      "example_es": "Necesito botas para la lluvia.",
+      "example_zh": "我需要雨天穿的靴子。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bota"
+      ]
+    },
+    {
+      "word": "calcetín",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "襪子",
+      "en": "sock",
+      "ipa": "/kalθeˈtin/",
+      "breakdown": [
+        {
+          "part": "calceta",
+          "zh": "長筒襪、針織襪"
+        },
+        {
+          "part": "-ín",
+          "zh": "小（縮小字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "calceta",
+          "zh": "長筒襪"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "calcetín",
+          "zh": "襪子"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "calcetín 是 calceta（長筒襪、緊身褲襪）加上縮小字尾 -ín，字面是「小長襪」。短短的襪子，就是這樣得名的。",
+      "hook_zh": "calceta 是長襪，calcetín 是它的迷你版——短襪。",
+      "usage_zh": "一隻是 un calcetín，一雙是 un par de calcetines（複數去掉重音）。",
+      "example_es": "No encuentro mi otro calcetín.",
+      "example_zh": "我找不到另一隻襪子。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:calcetín"
+      ]
+    },
+    {
+      "word": "sombrero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "帽子（有帽簷的）",
+      "en": "hat",
+      "ipa": "/somˈbɾeɾo/",
+      "breakdown": [
+        {
+          "part": "sombra",
+          "zh": "陰影"
+        },
+        {
+          "part": "-ero",
+          "zh": "做…的東西"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "sombra",
+          "zh": "陰影"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sombrero",
+          "zh": "帽子"
+        }
+      ],
+      "cognates_en": [
+        "sombrero"
+      ],
+      "story_zh": "sombrero 是 sombra（陰影）加上 -ero，字面是「製造陰影的東西」。有寬寬帽簷的帽子，能在你的臉上投下一片陰影。",
+      "hook_zh": "sombra（影子）＋-ero：頭上自帶一片陰涼的帽子。",
+      "usage_zh": "有帽簷的帽子用 sombrero；棒球帽等用 gorra。",
+      "example_es": "Hace sol, ponte un sombrero.",
+      "example_zh": "太陽很大，戴頂帽子吧。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sombrero"
+      ]
+    },
+    {
+      "word": "gorra",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "鴨舌帽、棒球帽",
+      "en": "cap",
+      "ipa": "/ˈɡora/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "gorra 的 rr 要捲舌，像戴上棒球帽後說「Grrr，去打球！」",
+      "usage_zh": "gorra 沒有寬帽簷，和 sombrero 不同；口語也指棒球帽。",
+      "example_es": "Mi hermano siempre lleva gorra.",
+      "example_zh": "我弟弟總是戴著棒球帽。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:gorra"
+      ]
+    },
+    {
+      "word": "bufanda",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "圍巾",
+      "en": "scarf",
+      "ipa": "/buˈfanda/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古法語",
+          "word": "bouffante",
+          "zh": "鼓起來的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bufanda",
+          "zh": "圍巾"
+        }
+      ],
+      "cognates_en": [
+        "puff"
+      ],
+      "story_zh": "bufanda 很可能來自古法語 bouffante，是動詞 bouffer（鼓起來）的現在分詞，原意是「蓬蓬的」。英文 puff 和這個擬聲字根有關。圍著脖子鼓鼓軟軟的樣子，就是圍巾。",
+      "hook_zh": "bufanda 像「呼——」吹出的暖氣（buf），把脖子包得鼓鼓的。",
+      "usage_zh": "陰性：la bufanda。冬天：ponerse la bufanda。",
+      "example_es": "Llevo una bufanda de lana.",
+      "example_zh": "我圍著一條羊毛圍巾。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bufanda"
+      ]
+    },
+    {
+      "word": "guante",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "手套",
+      "en": "glove",
+      "ipa": "/ˈɡwante/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始日耳曼語",
+          "word": "*wantuz",
+          "zh": "手套"
+        },
+        {
+          "lang_zh": "法蘭克語",
+          "word": "*want",
+          "zh": "手套"
+        },
+        {
+          "lang_zh": "古奧克語",
+          "word": "guant",
+          "zh": "手套"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "guante",
+          "zh": "手套"
+        }
+      ],
+      "cognates_en": [
+        "gauntlet"
+      ],
+      "story_zh": "guante 又是個日耳曼來的字：原始日耳曼語 *wantuz 傳到法蘭克語 *want，再經古奧克語 guant 進入西班牙語。日耳曼語開頭的 w- 在羅曼語裡變成 gu-，所以 want 變成了 guant。英文 gauntlet（鎧甲手套）是親戚。",
+      "hook_zh": "guante ≈ want 加 gu：冬天誰不 want（想要）一雙手套？",
+      "usage_zh": "手套成雙，常用複數：los guantes。u 在 gu 中要發音：「瓜」。",
+      "example_es": "Hace frío, necesito guantes.",
+      "example_zh": "好冷，我需要手套。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:guante"
+      ]
+    },
+    {
+      "word": "cinturón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "腰帶；安全帶",
+      "en": "belt; seat belt",
+      "ipa": "/θintuˈɾon/",
+      "breakdown": [
+        {
+          "part": "cintura",
+          "zh": "腰"
+        },
+        {
+          "part": "-ón",
+          "zh": "大（擴大字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cintura",
+          "zh": "腰"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cinturón",
+          "zh": "腰帶"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cinturón 是 cintura（腰）加上 -ón，字面是「大腰」，指圍在腰上的帶子。汽車上的安全帶（cinturón de seguridad）也是它。",
+      "hook_zh": "cintura 是腰，繫在腰上的就是 cinturón，空手道的黑帶是 cinturón negro。",
+      "usage_zh": "cinturón de seguridad＝安全帶；abrocharse el cinturón＝繫好安全帶。",
+      "example_es": "Abróchate el cinturón en el coche.",
+      "example_zh": "在車上要繫好安全帶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cinturón"
+      ]
+    },
+    {
+      "word": "bolso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "手提包；包包",
+      "en": "handbag; purse",
+      "ipa": "/ˈbolso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "bolsa",
+          "zh": "袋子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bolso",
+          "zh": "手提包"
+        }
+      ],
+      "cognates_en": [
+        "purse"
+      ],
+      "story_zh": "bolso 是從 bolsa（袋子）變出來的陽性形，意思是手提包、小包。英文 purse 也是同一個字的親戚。",
+      "hook_zh": "bolsa（袋）變成陽性 bolso：把袋子縮成隨身的小包。",
+      "usage_zh": "bolso＝手提包，bolsa＝一般的袋子；拉美常說 la bolsa 或 la cartera。",
+      "example_es": "Mi bolso es de cuero marrón.",
+      "example_zh": "我的包包是棕色皮的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bolso"
+      ]
+    },
+    {
+      "word": "gafas",
+      "article": "",
+      "pos": "sustantivo",
+      "zh": "眼鏡",
+      "en": "glasses; eyeglasses",
+      "ipa": "/ˈɡafas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "加泰隆尼亞語",
+          "word": "gafa",
+          "zh": "鉤子（推測）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gafas",
+          "zh": "眼鏡"
+        }
+      ],
+      "cognates_en": [
+        "gaff"
+      ],
+      "story_zh": "gafas 的來源不明。比較被接受的說法是來自加泰隆尼亞語 gafa（鉤子），指把眼鏡固定在耳朵上的「鉤」。也有人說來自 12 世紀一位安達魯斯眼科醫生的名字，但這只是傳說。",
+      "hook_zh": "想像一個小鉤子（gafa）勾住耳朵：鉤住鼻樑的就是 gafas。",
+      "usage_zh": "只用複數：unas gafas；太陽眼鏡是 gafas de sol。拉美常說 lentes。",
+      "example_es": "No veo bien sin mis gafas.",
+      "example_zh": "沒有眼鏡我看不清楚。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gafas"
+      ]
+    },
+    {
+      "word": "anillo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "戒指；環",
+      "en": "ring",
+      "ipa": "/aˈniʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ānus",
+          "zh": "環"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ānellus",
+          "zh": "小環"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "aniello",
+          "zh": "戒指"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "anillo",
+          "zh": "戒指"
+        }
+      ],
+      "cognates_en": [
+        "annulus"
+      ],
+      "story_zh": "anillo 來自拉丁文 ānellus，是 ānus（環）加上縮小字尾 -ellus，字面是「小環」。古西班牙語寫 aniello，後來成為 anillo。法語的 anneau、義大利語的 anello 都是同一個字。",
+      "hook_zh": "小環（ānus＋-ellus）：套在手指上的 anillo。anillo 的 ll 唸得像 y。",
+      "usage_zh": "訂婚戒是 anillo de compromiso；結婚戒指常說 alianza。",
+      "example_es": "Ella lleva un anillo de oro.",
+      "example_zh": "她戴著一只金戒指。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:anillo"
+      ]
+    },
+    {
+      "word": "pijama",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "睡衣",
+      "en": "pyjamas; pajamas",
+      "ipa": "/piˈʝama/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "pyjamas",
+          "zh": "睡衣"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pijama",
+          "zh": "睡衣"
+        }
+      ],
+      "cognates_en": [
+        "pajamas"
+      ],
+      "story_zh": "pijama 是從英語 pyjamas 借來的字，西語把拼法改得好唸。性別有點特別：本來是陽性（像希臘語借詞），現在陰性也常見。",
+      "hook_zh": "pijama ≈ pajama：穿上睡衣，ZZZ。",
+      "usage_zh": "性別不固定：el pijama 與 la pijama 都有人用；單數就指一整套。",
+      "example_es": "Los niños ya están en pijama.",
+      "example_zh": "孩子們已經穿上睡衣了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pijama"
+      ]
+    },
+    {
+      "word": "bañador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "泳衣、泳褲",
+      "en": "swimsuit; swimming trunks",
+      "ipa": "/baɲaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "bañar",
+          "zh": "洗澡、浸泡"
+        },
+        {
+          "part": "-dor",
+          "zh": "做…的人／東西"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "balneātor",
+          "zh": "洗澡的人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bañador",
+          "zh": "泳衣"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "bañador 來自拉丁文 balneātor（洗澡的人），和 baño（洗澡）同一個家族。字面是「去洗澡、泡水的人」，後來改指泳衣本身。",
+      "hook_zh": "baño＝洗澡，bañar＋-dor＝去泡水時穿的東西。",
+      "usage_zh": "西班牙說 bañador；拉美說 traje de baño 或 malla（阿根廷）。",
+      "example_es": "No olvides el bañador para la playa.",
+      "example_zh": "去海邊別忘了帶泳衣。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bañador"
+      ]
+    },
+    {
+      "word": "traje",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "西裝；服裝",
+      "en": "suit; outfit",
+      "ipa": "/ˈtɾaxe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "葡萄牙語",
+          "word": "traje",
+          "zh": "服裝"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "traje",
+          "zh": "西裝；服裝"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "traje 是從葡萄牙語 traje 借來的字。可以對照英文 train（禮服長長拖在地上的後襬），兩者可能有關。",
+      "hook_zh": "traje ≈ 穿戴整套行頭：西裝、禮服、民族服飾都叫 traje。",
+      "usage_zh": "traje de baño＝泳衣（拉美）；traje de chaqueta＝女用套裝。",
+      "example_es": "Mi padre lleva traje al trabajo.",
+      "example_zh": "我爸爸穿西裝去上班。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:traje"
+      ]
+    },
+    {
+      "word": "corbata",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "領帶",
+      "en": "necktie; tie",
+      "ipa": "/koɾˈbata/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "corvatta / crovatta",
+          "zh": "領巾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "corbata",
+          "zh": "領帶"
+        }
+      ],
+      "cognates_en": [
+        "cravat",
+        "Croat"
+      ],
+      "story_zh": "corbata 的名字來自克羅埃西亞人！義大利語的 corvatta 是照克羅埃西亞騎兵脖子上繫的布巾取的名字。英文 cravat（領巾）、Croat（克羅埃西亞人）和它同源，法語的 cravate、德語的 Krawatte 也是。",
+      "hook_zh": "corbata ≈ Croat：領帶竟然是以克羅埃西亞人命名的！",
+      "usage_zh": "陰性：la corbata。ponerse la corbata＝繫上領帶。",
+      "example_es": "Mi jefe siempre lleva corbata.",
+      "example_zh": "我老闆總是打領帶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:corbata"
+      ]
+    },
+    {
+      "word": "talla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "尺寸、尺碼；身高",
+      "en": "size; height",
+      "ipa": "/ˈtaʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "taille",
+          "zh": "尺寸"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "talla",
+          "zh": "尺寸；雕刻"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "talla 主要借自法語 taille，部分意思也受加泰隆尼亞語 talla 和義大利語 taglia 影響。除了衣服尺寸，它還能指身高和雕刻。",
+      "hook_zh": "買衣服時店員問：¿Qué talla? 就是在問你「尺寸多大」。",
+      "usage_zh": "衣服尺碼用 talla；鞋子尺碼用 número（¿Qué número calzas?）。",
+      "example_es": "¿Qué talla usas?",
+      "example_zh": "你穿什麼尺寸？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:talla"
+      ]
+    },
+    {
+      "word": "moda",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "流行、時尚",
+      "en": "fashion; trend",
+      "ipa": "/ˈmoda/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "mode",
+          "zh": "時尚"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "moda",
+          "zh": "流行"
+        }
+      ],
+      "cognates_en": [
+        "mode"
+      ],
+      "story_zh": "moda 借自法語 mode（時尚）。西語另有同源的雙生字 modo（方式、模式）。",
+      "hook_zh": "moda ≈ mode：「à la mode」的意思就是跟上潮流。",
+      "usage_zh": "de moda＝流行；pasado de moda＝過時；una tienda de moda＝時尚店。",
+      "example_es": "Esa falda está de moda.",
+      "example_zh": "那條裙子很流行。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:moda"
+      ]
+    },
+    {
+      "word": "bolsillo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "口袋",
+      "en": "pocket",
+      "ipa": "/bolˈsiʝo/",
+      "breakdown": [
+        {
+          "part": "bolso",
+          "zh": "袋"
+        },
+        {
+          "part": "-illo",
+          "zh": "小（縮小字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "bolso",
+          "zh": "袋"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bolsillo",
+          "zh": "口袋"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "bolsillo 是 bolso（袋）加上縮小字尾 -illo，字面就是「小袋子」，縫在衣服上，就成了口袋。",
+      "hook_zh": "bolsa（袋）→ bolso（包）→ bolsillo（小袋子）：越變越小。",
+      "usage_zh": "libro de bolsillo＝口袋書；de mi bolsillo＝自掏腰包。",
+      "example_es": "Tengo las llaves en el bolsillo.",
+      "example_zh": "我把鑰匙放在口袋裡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bolsillo"
+      ]
+    },
+    {
+      "word": "paraguas",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "雨傘",
+      "en": "umbrella",
+      "ipa": "/paˈɾaɡwas/",
+      "breakdown": [
+        {
+          "part": "para",
+          "zh": "擋住（parar）"
+        },
+        {
+          "part": "aguas",
+          "zh": "水（複數）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "para + aguas",
+          "zh": "擋 + 水"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paraguas",
+          "zh": "雨傘"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "paraguas 是「動詞＋受詞」組成的合成字：para（擋住，來自 parar）＋ aguas（水）。字面意思就是「擋水的東西」，一看就懂。",
+      "hook_zh": "para（擋）＋aguas（水）：擋雨水的傘。",
+      "usage_zh": "雖然以 -s 結尾，單複數同形：el paraguas、los paraguas。",
+      "example_es": "Llevo el paraguas porque llueve.",
+      "example_zh": "下雨了，我帶著雨傘。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paraguas"
+      ]
+    },
+    {
+      "word": "cartera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "皮夾；公事包；書包",
+      "en": "wallet; briefcase",
+      "ipa": "/kaɾˈteɾa/",
+      "breakdown": [
+        {
+          "part": "carta",
+          "zh": "紙、信、卡"
+        },
+        {
+          "part": "-era",
+          "zh": "容器"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "khártēs",
+          "zh": "莎草紙"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "charta",
+          "zh": "紙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "carta",
+          "zh": "信、紙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cartera",
+          "zh": "皮夾"
+        }
+      ],
+      "cognates_en": [
+        "card",
+        "chart"
+      ],
+      "story_zh": "cartera 是 carta（信、紙）加上 -era（裝…的容器），本來是裝紙張文件的皮夾。carta 追到拉丁文 charta 和古希臘語 khártēs（莎草紙），英文 card 和 chart 都是同源字。",
+      "hook_zh": "carta＋-era：原本裝紙、卡片的夾子，現在多半裝你的錢。",
+      "usage_zh": "西班牙 cartera＝皮夾；拉美也指女用手提包。公事包也叫 cartera。",
+      "example_es": "Mi cartera está en el bolso.",
+      "example_zh": "我的皮夾在包包裡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cartera",
+        "wiktionary:es:carta"
+      ]
+    },
+    {
+      "word": "vaqueros",
+      "article": "",
+      "pos": "sustantivo",
+      "zh": "牛仔褲",
+      "en": "jeans",
+      "ipa": "/baˈkeɾos/",
+      "breakdown": [
+        {
+          "part": "vaca",
+          "zh": "牛"
+        },
+        {
+          "part": "-ero",
+          "zh": "做…的人"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vacca",
+          "zh": "母牛"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "vaccārius",
+          "zh": "牧牛人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vaquero",
+          "zh": "牛仔；牛仔褲"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "vaquero 繼承自中世紀拉丁語 vaccārius（牧牛人），源頭是 vacca（母牛）。西語的 vaquero 是「牛仔」，牛仔穿的褲子就叫 los vaqueros——牛仔褲。",
+      "hook_zh": "vaca 是牛，vaquero 是牛仔，穿牛仔褲的就是 vaqueros。",
+      "usage_zh": "常用複數 los vaqueros；拉美多說 jeans 或 pantalones de mezclilla。",
+      "example_es": "Siempre llevo vaqueros y zapatillas.",
+      "example_zh": "我總是穿牛仔褲和運動鞋。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vaqueros",
+        "wiktionary:es:vaca"
+      ]
+    },
+    {
+      "word": "blusa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "女用襯衫、上衣",
+      "en": "blouse",
+      "ipa": "/ˈblusa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "blouse",
+          "zh": "罩衫"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "blusa",
+          "zh": "女用上衣"
+        }
+      ],
+      "cognates_en": [
+        "blouse"
+      ],
+      "story_zh": "blusa 借自法語 blouse，英文 blouse 也是同樣來源。西班牙語把結尾改成 -a，方便配上陰性冠詞 la。",
+      "hook_zh": "blusa ≈ blouse：把結尾的 e 換成 a。",
+      "usage_zh": "陰性：la blusa，主要指女裝；男用襯衫是 camisa。",
+      "example_es": "Me gusta tu blusa blanca.",
+      "example_zh": "我喜歡你的白色上衣。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:blusa"
+      ]
+    }
+  ]
+}

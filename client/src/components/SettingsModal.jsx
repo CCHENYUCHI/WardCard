@@ -1,6 +1,7 @@
 import { fetchAPI } from '../utils/api';
 import React, { useState, useEffect } from 'react';
 import { X, Key, Check, Volume2, Download, Upload, ExternalLink, ShieldCheck, Sparkles } from 'lucide-react';
+import VersionInfo from './VersionInfo';
 import { playSpanishPronunciation, getTtsMode, setTtsMode, TTS_MODES } from '../utils/speech';
 
 export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, onCardsChanged }) {
@@ -327,6 +328,11 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
               />
             </label>
           </div>
+        </div>
+
+        {/* Which build of the page, the server and the dictionary are running */}
+        <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '18px', marginTop: '18px' }}>
+          <VersionInfo />
         </div>
       </div>
     </div>

@@ -1,0 +1,3263 @@
+{
+  "theme": "food",
+  "theme_zh": "食物與飲料",
+  "entries": [
+    {
+      "word": "comida",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "食物；一餐、正餐",
+      "en": "food; meal",
+      "ipa": "/koˈmida/",
+      "breakdown": [
+        {
+          "part": "com(er)",
+          "zh": "吃"
+        },
+        {
+          "part": "-ida",
+          "zh": "…的東西（過去分詞）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "comedere",
+          "zh": "吃光"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*comēre",
+          "zh": "吃"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "comer",
+          "zh": "吃"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "comida",
+          "zh": "食物"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "comida 是動詞 comer（吃）的過去分詞變成的名詞，字面就是「被吃的東西」。comer 來自通俗拉丁語 *comēre，是拉丁文 comedere 的改造形。",
+      "hook_zh": "comer 吃 → comida 吃的東西；同樣 beber 喝 → bebida 喝的東西，一次記兩個。",
+      "usage_zh": "也可指「一餐」；在西班牙 la comida 常指午餐。",
+      "example_es": "Me gusta mucho la comida mexicana.",
+      "example_zh": "我很喜歡墨西哥菜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:comida",
+        "wiktionary:es:comer"
+      ]
+    },
+    {
+      "word": "desayuno",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "早餐",
+      "en": "breakfast",
+      "ipa": "/desaˈʝuno/",
+      "breakdown": [
+        {
+          "part": "des-",
+          "zh": "解除"
+        },
+        {
+          "part": "ayuno",
+          "zh": "禁食"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "desayunar",
+          "zh": "吃早餐"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "desayuno",
+          "zh": "早餐"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "desayuno 是從動詞 desayunar（吃早餐）變來的名詞。法語 déjeuner、葡萄牙語 desjejum 是同一類構詞的字。",
+      "hook_zh": "像英文 break-fast：des（解除）+ ayuno（禁食），睡了一整晚，早上第一口飯就「破戒」！",
+      "usage_zh": "動詞是 desayunar：Desayuno a las ocho.（我八點吃早餐）",
+      "example_es": "Para mi desayuno, tomo pan y leche.",
+      "example_zh": "早餐我吃麵包配牛奶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:desayuno"
+      ]
+    },
+    {
+      "word": "almuerzo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "午餐",
+      "en": "lunch",
+      "ipa": "/alˈmweɾθo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "admordere",
+          "zh": "咬一口"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*admordium",
+          "zh": "（名詞形）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "almuerzo",
+          "zh": "午餐"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "almuerzo",
+          "zh": "午餐"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "almuerzo 來自通俗拉丁語 *admordium，源自拉丁文 admordere。這個字裡藏著 mordere（咬），和西語 morder（咬）同根——吃午餐就是中午「咬一口」。葡萄牙語 almoço 是它的兄弟。",
+      "hook_zh": "almuerzo 裡有 muerzo ≈ morder（咬）：中午大口「咬」下去。",
+      "usage_zh": "拉美多用 almuerzo 指午餐；西班牙常說 la comida，almuerzo 也可指上午點心。",
+      "example_es": "El almuerzo es a la una.",
+      "example_zh": "午餐在一點。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:almuerzo"
+      ]
+    },
+    {
+      "word": "cena",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "晚餐",
+      "en": "dinner, supper",
+      "ipa": "/ˈθena/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cēna",
+          "zh": "正餐"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cena",
+          "zh": "晚餐"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "拉丁文 cēna 是羅馬人一天中的「正餐」，最早在中午吃，後來越吃越晚，就成了晚餐。學者推測它的字根是「切」，原意可能是「切下來的一份」。",
+      "hook_zh": "月亮出來了，羅馬人的正餐 cena 越吃越晚，變成了晚餐。",
+      "usage_zh": "動詞 cenar（吃晚餐）。西班牙人晚餐常在九點以後。",
+      "example_es": "La cena está lista.",
+      "example_zh": "晚餐準備好了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cena",
+        "wiktionary:la:cena"
+      ]
+    },
+    {
+      "word": "pan",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "麵包",
+      "en": "bread",
+      "ipa": "/ˈpan/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pānis（受格 pānem）",
+          "zh": "麵包；食物"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "pan",
+          "zh": "麵包"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pan",
+          "zh": "麵包"
+        }
+      ],
+      "cognates_en": [
+        "company",
+        "pantry"
+      ],
+      "story_zh": "拉丁文 pānis 指麵包，也泛指食物；來源不太確定，常被解釋為源自「放牧、餵養」的字根。法語 pain、義大利語 pane 都是它的後代，英文的 company 和 pantry（食物儲藏室）也同源。",
+      "hook_zh": "日文的麵包也叫パン（pan）！company 就是一起吃 pan 的夥伴。",
+      "usage_zh": "陽性 el pan；複數 panes。pan tostado＝吐司。",
+      "example_es": "Compro pan todos los días.",
+      "example_zh": "我每天都買麵包。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pan",
+        "wiktionary:la:panis"
+      ]
+    },
+    {
+      "word": "arroz",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "米；米飯",
+      "en": "rice",
+      "ipa": "/aˈroθ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "óruza",
+          "zh": "稻米"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "ruzz",
+          "zh": "米"
+        },
+        {
+          "lang_zh": "安達魯斯阿拉伯語",
+          "word": "rawz",
+          "zh": "米"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "arroz",
+          "zh": "米"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "arroz",
+          "zh": "米"
+        }
+      ],
+      "cognates_en": [
+        "rice"
+      ],
+      "story_zh": "arroz 走了很遠的路：古希臘語 óruza（這個字再往上可追到伊朗語）傳進阿拉伯語成了 ruzz，再經安達魯斯阿拉伯語 rawz 進入西班牙。英文 rice 也來自同一個希臘字。",
+      "hook_zh": "arroz 的 rr 捲舌，想像米粒在鍋裡「嚕嚕嚕」滾動。",
+      "usage_zh": "複數 arroces（z 變 c）。arroz con pollo＝雞肉飯。",
+      "example_es": "Comemos arroz con pollo.",
+      "example_zh": "我們吃雞肉飯。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:arroz"
+      ]
+    },
+    {
+      "word": "pasta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "義大利麵；麵團；（口語）錢",
+      "en": "pasta; dough; (colloq.) money",
+      "ipa": "/ˈpasta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "pássō",
+          "zh": "撒"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "pastá",
+          "zh": "（撒上東西的食物）"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "pasta",
+          "zh": "糊、麵團"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pasta",
+          "zh": "麵、麵團"
+        }
+      ],
+      "cognates_en": [
+        "pasta",
+        "paste"
+      ],
+      "story_zh": "pasta 來自後期拉丁語 pasta（糊、麵團），再往上是古希臘語 pastá，源自 πάσσω（撒）。英文 paste（糊、膏）是同一個字。",
+      "hook_zh": "揉成「糊」的麵團 = paste = pasta。",
+      "usage_zh": "西班牙口語 pasta 也是「錢」：tener mucha pasta（很有錢）。",
+      "example_es": "La pasta con tomate es fácil.",
+      "example_zh": "番茄義大利麵很簡單。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pasta",
+        "wiktionary:la:pasta"
+      ]
+    },
+    {
+      "word": "carne",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "肉",
+      "en": "meat; flesh",
+      "ipa": "/ˈkaɾne/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "carō（受格 carnem）",
+          "zh": "肉、肉體"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "carne",
+          "zh": "肉"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "carne",
+          "zh": "肉"
+        }
+      ],
+      "cognates_en": [
+        "carnivore"
+      ],
+      "story_zh": "carne 直接來自拉丁文 carō（受格 carnem），意思是肉、肉體。法語 chair、義大利語 carne 都是同一家人；英文 carnivore（肉食動物）裡也有它。",
+      "hook_zh": "肉食動物 carnivore = 吃 carne 的傢伙。",
+      "usage_zh": "常指紅肉：carne de cerdo（豬肉）、carne de res（牛肉）；雞肉魚肉另外說。",
+      "example_es": "No como carne los lunes.",
+      "example_zh": "我星期一不吃肉。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:carne"
+      ]
+    },
+    {
+      "word": "pollo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "雞肉；小雞",
+      "en": "chicken (meat); chick",
+      "ipa": "/ˈpoʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pullus",
+          "zh": "幼小動物、小雞"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pollo",
+          "zh": "雞肉"
+        }
+      ],
+      "cognates_en": [
+        "poultry"
+      ],
+      "story_zh": "拉丁文 pullus 指任何幼小的動物，尤其是小雞。西語 pollo 保留了「小雞」的意思，也成了餐桌上的「雞肉」。英文 poultry（家禽）同源。",
+      "hook_zh": "pollo 唸「波優」——炸雞店的招牌 pollo frito 你一定看過。",
+      "usage_zh": "活的母雞是 gallina；pollo 多指雞肉或小雞。",
+      "example_es": "Quiero arroz con pollo, por favor.",
+      "example_zh": "請給我雞肉飯。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pollo",
+        "wiktionary:la:pullus"
+      ]
+    },
+    {
+      "word": "pescado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "（食用的）魚",
+      "en": "fish (as food)",
+      "ipa": "/pesˈkado/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "piscor",
+          "zh": "捕魚"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "piscātus",
+          "zh": "捕魚；漁獲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pescado",
+          "zh": "食用魚"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "pescado 來自拉丁文 piscātus，是 piscor（捕魚）的過去分詞，也當名詞用，指「捕魚」和「當天的漁獲」。所以 pescado 是「被捕上來的魚」。",
+      "hook_zh": "雙魚座 Pisces 也有 pisc-。被「捕」上岸、躺在盤子上的才叫 pescado。",
+      "usage_zh": "陷阱：水裡游的活魚叫 el pez；當食物的魚叫 el pescado。",
+      "example_es": "Hoy comemos pescado.",
+      "example_zh": "今天我們吃魚。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pescado",
+        "wiktionary:la:piscatus"
+      ]
+    },
+    {
+      "word": "jamón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "火腿",
+      "en": "ham",
+      "ipa": "/xaˈmon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "jambe",
+          "zh": "腿"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "jambon",
+          "zh": "火腿（大腿）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "jamón",
+          "zh": "火腿"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "jamón 借自法語 jambon，是 jambe（腿）的放大形，字面就是「大腿」。它取代了西語原本的 pernil。",
+      "hook_zh": "火腿就是「腿」：想像西班牙酒吧裡吊著一整隻豬腿。",
+      "usage_zh": "jamón serrano（生火腿）、jamón York（熟火腿片）；複數 jamones。",
+      "example_es": "Quiero un bocadillo de jamón.",
+      "example_zh": "我要一份火腿潛艇堡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:jamón"
+      ]
+    },
+    {
+      "word": "huevo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "蛋",
+      "en": "egg",
+      "ipa": "/ˈw̝ebo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ōvum",
+          "zh": "蛋"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*ŏvum",
+          "zh": "蛋"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "hueuo",
+          "zh": "蛋"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "huevo",
+          "zh": "蛋"
+        }
+      ],
+      "cognates_en": [
+        "oval"
+      ],
+      "story_zh": "huevo 來自拉丁文 ōvum。通俗拉丁語唸成短音 *ŏvum，這個短 o 在西語裡變成 ue（就像 nuevo、bueno），前面再加上不發音的 h。",
+      "hook_zh": "oval（橢圓形）就是蛋的形狀；把 ovo 唸成 huevo。",
+      "usage_zh": "h 不發音，唸 /ˈwebo/。huevo frito＝荷包蛋。",
+      "example_es": "Como un huevo cada mañana.",
+      "example_zh": "我每天早上吃一顆蛋。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:huevo"
+      ]
+    },
+    {
+      "word": "queso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "起司、乳酪",
+      "en": "cheese",
+      "ipa": "/ˈkeso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cāseus",
+          "zh": "起司"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "queso",
+          "zh": "起司"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "queso",
+          "zh": "起司"
+        }
+      ],
+      "cognates_en": [
+        "cheese"
+      ],
+      "story_zh": "queso 來自拉丁文 cāseus（起司）。cāseus 再往上的來源，學者至今說不清。英文 cheese 是它的遠親。",
+      "hook_zh": "cāseus → queso，cheese 也長得有點像。拍照時說 cheese，吃的時候說 queso。",
+      "usage_zh": "qu 唸 /k/，u 不發音：que-so。",
+      "example_es": "Me gusta el pan con queso.",
+      "example_zh": "我喜歡麵包配起司。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:queso",
+        "wiktionary:la:caseus"
+      ]
+    },
+    {
+      "word": "leche",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "牛奶、乳",
+      "en": "milk",
+      "ipa": "/ˈlet͡ʃe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "lac",
+          "zh": "奶"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "lactem",
+          "zh": "奶"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "leche",
+          "zh": "奶"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "leche",
+          "zh": "牛奶"
+        }
+      ],
+      "cognates_en": [
+        "lactose"
+      ],
+      "story_zh": "拉丁文 lac（奶），後期拉丁語說 lactem。它的 -ct- 先變成 *laite、*leite（葡萄牙語至今是 leite），最後成了西語的 leche。英文 lactose（乳糖）同源。",
+      "hook_zh": "乳糖不耐 lactose intolerance：lact- = leche。",
+      "usage_zh": "陰性 la leche。café con leche＝拿鐵咖啡牛奶。",
+      "example_es": "Prefiero el café con leche.",
+      "example_zh": "我比較喜歡咖啡加牛奶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:leche",
+        "wiktionary:la:lac",
+        "wiktionary:la:lactis"
+      ]
+    },
+    {
+      "word": "mantequilla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "奶油（塗麵包的）",
+      "en": "butter",
+      "ipa": "/manteˈkiʝa/",
+      "breakdown": [
+        {
+          "part": "manteca",
+          "zh": "油脂"
+        },
+        {
+          "part": "-illa",
+          "zh": "小"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "manteca",
+          "zh": "油脂"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mantequilla",
+          "zh": "奶油"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "mantequilla 是 manteca（油脂）加上小稱字尾 -illa，字面是「小塊的油脂」。",
+      "hook_zh": "早餐桌上那一小塊 manteca，就叫 mantequilla。",
+      "usage_zh": "阿根廷、烏拉圭直接說 manteca 指奶油。",
+      "example_es": "Pon mantequilla en el pan.",
+      "example_zh": "在麵包上塗奶油。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mantequilla"
+      ]
+    },
+    {
+      "word": "aceite",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "油；橄欖油",
+      "en": "oil; olive oil",
+      "ipa": "/aˈθeite/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "az-zayt",
+          "zh": "油"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "azeyte",
+          "zh": "油"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aceite",
+          "zh": "油"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "aceite 來自阿拉伯語 az-zayt（油），開頭的 az- 是阿拉伯語的定冠詞，和字黏在一起進了西語。它和希伯來語 záyit（橄欖）同源，也和西語 aceituna（橄欖）是親戚。",
+      "hook_zh": "aceituna（橄欖）榨出來的就是 aceite（油）。",
+      "usage_zh": "陽性 el aceite。aceite de oliva＝橄欖油。",
+      "example_es": "Cocino con aceite de oliva.",
+      "example_zh": "我用橄欖油做菜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aceite"
+      ]
+    },
+    {
+      "word": "sal",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "鹽",
+      "en": "salt",
+      "ipa": "/ˈsal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sāl（受格 salem）",
+          "zh": "鹽"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sal",
+          "zh": "鹽"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sal",
+          "zh": "鹽"
+        }
+      ],
+      "cognates_en": [
+        "salt",
+        "salad"
+      ],
+      "story_zh": "拉丁文 sāl 就是鹽，和英文 salt 同源。奇怪的是，法語 sel、義大利語 sale 都是陽性，西語的 sal 卻是陰性，沒人知道為什麼。",
+      "hook_zh": "sal ≈ salt 少了 t；salad（沙拉）就是撒了 sal 的菜。",
+      "usage_zh": "陰性！la sal。¿Me pasas la sal?（可以把鹽遞給我嗎？）",
+      "example_es": "¿Me pasas la sal, por favor?",
+      "example_zh": "可以把鹽遞給我嗎？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sal",
+        "wiktionary:la:sal"
+      ]
+    },
+    {
+      "word": "pimienta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "胡椒",
+      "en": "pepper (spice)",
+      "ipa": "/piˈmjenta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pingō",
+          "zh": "畫、上色"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "pigmentum",
+          "zh": "顏料、色彩"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "pimiento",
+          "zh": "胡椒植物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pimienta",
+          "zh": "胡椒"
+        }
+      ],
+      "cognates_en": [
+        "pigment"
+      ],
+      "story_zh": "pimienta 來自 pimiento（胡椒植物），再往上是拉丁文 pigmentum，意思是「顏料、色彩」，源自 pingō（畫、上色）。英文 pigment（色素）是同一個字。",
+      "hook_zh": "胡椒粒是給菜「上色」的 pigment：黑黑的小點撒滿盤子。",
+      "usage_zh": "別搞混：la pimienta＝胡椒；el pimiento＝甜椒、青椒。",
+      "example_es": "La sopa necesita sal y pimienta.",
+      "example_zh": "這湯需要鹽和胡椒。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pimienta",
+        "wiktionary:la:pigmentum",
+        "wiktionary:la:pingo"
+      ]
+    },
+    {
+      "word": "sopa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "湯",
+      "en": "soup",
+      "ipa": "/ˈsopa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始日耳曼語",
+          "word": "*supô",
+          "zh": "（泡湯的食物）"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "suppa",
+          "zh": "泡湯的麵包"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sopa",
+          "zh": "湯"
+        }
+      ],
+      "cognates_en": [
+        "soup"
+      ],
+      "story_zh": "sopa 來自後期拉丁語 suppa，指「泡在湯裡的麵包」，而 suppa 是從日耳曼語借來的。英文 soup 也是同一個字。",
+      "hook_zh": "sopa ≈ soup，把麵包「泡」進湯裡。",
+      "usage_zh": "sopa de verduras（蔬菜湯）。拉美口語 sopa 也可指麵條湯。",
+      "example_es": "La sopa está muy caliente.",
+      "example_zh": "湯很燙。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sopa",
+        "wiktionary:la:suppa"
+      ]
+    },
+    {
+      "word": "ensalada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "沙拉",
+      "en": "salad",
+      "ipa": "/ensaˈlada/",
+      "breakdown": [
+        {
+          "part": "en-",
+          "zh": "加入"
+        },
+        {
+          "part": "sal",
+          "zh": "鹽"
+        },
+        {
+          "part": "-ada",
+          "zh": "…過的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sāl",
+          "zh": "鹽"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "saliō",
+          "zh": "加鹽"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*salāta",
+          "zh": "加了鹽的"
+        },
+        {
+          "lang_zh": "義大利語",
+          "word": "salada / insalata",
+          "zh": "沙拉"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ensalada",
+          "zh": "沙拉"
+        }
+      ],
+      "cognates_en": [
+        "salad",
+        "salt"
+      ],
+      "story_zh": "ensalada 來自北義大利語 salada（比較 insalata），源自通俗拉丁語 *salāta「加了鹽的」，再往上是拉丁文 sāl（鹽）。最早的沙拉，就是撒了鹽的生菜。",
+      "hook_zh": "ensalada 裡藏著 sal（鹽）：撒鹽的菜 = salad。",
+      "usage_zh": "ensalada mixta（綜合沙拉）。",
+      "example_es": "Quiero una ensalada de tomate.",
+      "example_zh": "我要一份番茄沙拉。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ensalada",
+        "wiktionary:la:salio"
+      ]
+    },
+    {
+      "word": "bocadillo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "（西班牙）長棍三明治；點心",
+      "en": "sandwich (on a baguette); snack",
+      "ipa": "/bokaˈdiʝo/",
+      "breakdown": [
+        {
+          "part": "bocado",
+          "zh": "一口"
+        },
+        {
+          "part": "-illo",
+          "zh": "小"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "bocado",
+          "zh": "一口"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bocadillo",
+          "zh": "三明治"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "bocadillo 是 bocado（一口）加上小稱字尾 -illo，字面是「小小的一口」。漫畫裡的對話框也叫 bocadillo。",
+      "hook_zh": "boca（嘴）→ bocado（一口）→ bocadillo（一份夾餡麵包）。",
+      "usage_zh": "西班牙說 bocadillo（長棍麵包夾餡）；拉美多說 sándwich。",
+      "example_es": "Tengo un bocadillo de queso.",
+      "example_zh": "我有一個起司三明治。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bocadillo"
+      ]
+    },
+    {
+      "word": "tortilla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "西班牙蛋餅；（墨西哥）玉米餅",
+      "en": "Spanish omelette; tortilla (flatbread)",
+      "ipa": "/toɾˈtiʝa/",
+      "breakdown": [
+        {
+          "part": "torta",
+          "zh": "圓餅"
+        },
+        {
+          "part": "-illa",
+          "zh": "小"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "tortiella",
+          "zh": "小圓餅"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tortilla",
+          "zh": "蛋餅；薄餅"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "tortilla 來自古西班牙語 tortiella，是 torta（圓形扁麵包）的小稱，字面是「小圓餅」。",
+      "hook_zh": "圓圓的 torta 縮小 → tortilla：在西班牙是蛋，在墨西哥是玉米。",
+      "usage_zh": "西班牙 tortilla＝馬鈴薯烘蛋；墨西哥 tortilla＝包塔可的玉米餅。",
+      "example_es": "Mi madre hace una tortilla de patatas.",
+      "example_zh": "我媽媽做馬鈴薯烘蛋。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tortilla"
+      ]
+    },
+    {
+      "word": "paella",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "西班牙海鮮飯",
+      "en": "paella",
+      "ipa": "/paˈeʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "patella",
+          "zh": "小淺鍋、淺盤"
+        },
+        {
+          "lang_zh": "加泰隆尼亞語",
+          "word": "paella",
+          "zh": "平底鍋"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paella",
+          "zh": "西班牙燉飯"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "paella 借自加泰隆尼亞語 paella，來自拉丁文 patella（小淺鍋、淺盤）。原本是「鍋子」的名字，後來那口大平底鍋煮出來的飯，也叫 paella。拉丁文 patella 也指膝蓋骨。",
+      "hook_zh": "鍋子名變菜名，就像台灣的「火鍋」。",
+      "usage_zh": "ll 唸 /ʝ/：pa-e-ya。瓦倫西亞是它的故鄉。",
+      "example_es": "Los domingos comemos paella.",
+      "example_zh": "我們星期天吃西班牙海鮮飯。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paella",
+        "wiktionary:la:patella"
+      ]
+    },
+    {
+      "word": "fruta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "水果",
+      "en": "fruit",
+      "ipa": "/ˈfɾuta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fruor",
+          "zh": "享受"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "frūctus",
+          "zh": "享受；收成、果實"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "frūcta",
+          "zh": "果實"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fruta",
+          "zh": "水果"
+        }
+      ],
+      "cognates_en": [
+        "fruit"
+      ],
+      "story_zh": "fruta 來自拉丁文 frūctus，源自 fruor（享受）。所以 frūctus 最早的意思是「享受、樂趣」，後來指土地的收成和果實。英文 fruit 同源。",
+      "hook_zh": "fruit ≈ fruta：水果就是大地給的「享受」。",
+      "usage_zh": "fruta 是吃的水果；fruto 是植物學的果實或「成果」。",
+      "example_es": "Como fruta después de comer.",
+      "example_zh": "我飯後吃水果。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fruta",
+        "wiktionary:la:fructus"
+      ]
+    },
+    {
+      "word": "naranja",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "柳橙；橘色",
+      "en": "orange (fruit; color)",
+      "ipa": "/naˈɾanxa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "梵語",
+          "word": "nāraṅga",
+          "zh": "柳橙樹"
+        },
+        {
+          "lang_zh": "波斯語",
+          "word": "nârang",
+          "zh": "柳橙"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "nāranj",
+          "zh": "柳橙"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "naranja",
+          "zh": "柳橙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "naranja",
+          "zh": "柳橙"
+        }
+      ],
+      "cognates_en": [
+        "orange"
+      ],
+      "story_zh": "naranja 從印度出發：梵語 nāraṅga（柳橙樹）→ 波斯語 nârang → 阿拉伯語 nāranj → 西班牙。葡萄牙語 laranja 同源；加泰隆尼亞語的 taronja 則來自別的字。",
+      "hook_zh": "n-aranja ≈ orange 前面多了 n。柳橙從印度一路滾到西班牙！",
+      "usage_zh": "當顏色時常不變化：dos camisetas naranja。",
+      "example_es": "Quiero un zumo de naranja.",
+      "example_zh": "我要一杯柳橙汁。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:naranja"
+      ]
+    },
+    {
+      "word": "plátano",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "香蕉；大蕉",
+      "en": "banana; plantain",
+      "ipa": "/ˈplatano/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "plátanos",
+          "zh": "梧桐樹"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "platanus",
+          "zh": "梧桐樹"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "plátano",
+          "zh": "香蕉；梧桐"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "plátano 借自拉丁文 platanus，再往上是古希臘語 plátanos，原本是「梧桐樹」。直到今天，plátano 在西語裡還同時指香蕉和梧桐樹。",
+      "hook_zh": "梧桐樹的名字跑到香蕉身上：把香蕉想成一棵小樹。",
+      "usage_zh": "西班牙說 plátano；拉美多說 banana/banano，plátano 常指煮來吃的大蕉。",
+      "example_es": "Como un plátano por la mañana.",
+      "example_zh": "我早上吃一根香蕉。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:plátano",
+        "wiktionary:la:platanus"
+      ]
+    },
+    {
+      "word": "fresa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "草莓",
+      "en": "strawberry",
+      "ipa": "/ˈfɾesa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "fraise",
+          "zh": "草莓"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fresa",
+          "zh": "草莓"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "fresa 借自法語 fraise（草莓）。",
+      "hook_zh": "fresa 唸起來像 fresh：想像一顆新鮮的紅草莓。",
+      "usage_zh": "阿根廷、智利說 frutilla；墨西哥口語 fresa 也指「愛裝的有錢小孩」。",
+      "example_es": "Me gusta el helado de fresa.",
+      "example_zh": "我喜歡草莓冰淇淋。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fresa"
+      ]
+    },
+    {
+      "word": "uva",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "葡萄",
+      "en": "grape",
+      "ipa": "/ˈuba/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūva",
+          "zh": "葡萄"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "uva",
+          "zh": "葡萄"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "uva 直接來自拉丁文 ūva（葡萄），兩千年來幾乎一個字母都沒變。",
+      "hook_zh": "西班牙跨年夜要跟著鐘聲吃 12 顆 uvas，許 12 個願望！",
+      "usage_zh": "一串葡萄＝un racimo de uvas；葡萄乾是 pasa。",
+      "example_es": "Las uvas son verdes.",
+      "example_zh": "這些葡萄是綠色的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:uva"
+      ]
+    },
+    {
+      "word": "limón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "檸檬；（拉美）萊姆",
+      "en": "lemon; lime",
+      "ipa": "/liˈmon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "梵語",
+          "word": "nimbū",
+          "zh": "檸檬"
+        },
+        {
+          "lang_zh": "波斯語",
+          "word": "limu / limun",
+          "zh": "檸檬"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "laymūn",
+          "zh": "檸檬"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "limón",
+          "zh": "檸檬"
+        }
+      ],
+      "cognates_en": [
+        "lemon"
+      ],
+      "story_zh": "limón 從梵語 nimbū 出發，經波斯語 limu、limun 傳進阿拉伯語 laymūn，再經安達魯斯阿拉伯語來到西班牙。英文 lemon 也是同一趟旅程的終點之一。",
+      "hook_zh": "limón ≈ lemon，酸到臉皺成一團。",
+      "usage_zh": "陽性 el limón；複數 limones（去掉重音）。在拉美常指綠色萊姆。",
+      "example_es": "Quiero agua con limón.",
+      "example_zh": "我要檸檬水。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:limón"
+      ]
+    },
+    {
+      "word": "pera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "西洋梨",
+      "en": "pear",
+      "ipa": "/ˈpeɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pirum（複數 pira）",
+          "zh": "梨"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*pira",
+          "zh": "梨（被當成陰性單數）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "pera",
+          "zh": "梨"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pera",
+          "zh": "梨"
+        }
+      ],
+      "cognates_en": [
+        "pear"
+      ],
+      "story_zh": "拉丁文 pirum（梨）是中性名詞，複數是 pira。後來大家把 pira 誤當成陰性單數，於是有了 la pera。pirum 本身可能借自地中海的某個古老語言。",
+      "hook_zh": "pera ≈ pear，連形狀都像葫蘆。",
+      "usage_zh": "陰性 la pera；梨樹是 el peral。",
+      "example_es": "Esta pera está muy dulce.",
+      "example_zh": "這顆梨子很甜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pera",
+        "wiktionary:la:pirum"
+      ]
+    },
+    {
+      "word": "melón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "甜瓜、哈密瓜",
+      "en": "melon",
+      "ipa": "/meˈlon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "mēlopépōn",
+          "zh": "甜瓜"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "mēlopepō",
+          "zh": "一種金黃色甜瓜"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "mēlōnem",
+          "zh": "甜瓜"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "melón",
+          "zh": "甜瓜"
+        }
+      ],
+      "cognates_en": [
+        "melon"
+      ],
+      "story_zh": "melón 來自後期拉丁語 mēlōnem，是拉丁文 mēlopepō 的縮短形，借自希臘語 mēlopépōn。古羅馬的 mēlopepō 是一種金黃色、外形像榲桲、很香的甜瓜。",
+      "hook_zh": "melón ≈ melon；abrir el melón 是「打開瓜」＝掀開一堆麻煩事。",
+      "usage_zh": "陽性 el melón；複數 melones。",
+      "example_es": "El melón está muy dulce.",
+      "example_zh": "這顆哈密瓜很甜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:melón",
+        "wiktionary:la:melo",
+        "wiktionary:la:melopepo"
+      ]
+    },
+    {
+      "word": "sandía",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "西瓜",
+      "en": "watermelon",
+      "ipa": "/sanˈdia/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "梵語",
+          "word": "sindhu",
+          "zh": "信德（地名）"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "sindiyya",
+          "zh": "信德的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sandía",
+          "zh": "西瓜"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "sandía 借自阿拉伯語 sindiyya，意思是「信德的」，源自梵語 sindhu，指今天巴基斯坦的信德地區。西瓜的名字，就是「從信德來的瓜」。",
+      "hook_zh": "中文叫「西」瓜，西語叫「信德」瓜——都是用產地命名！",
+      "usage_zh": "重音在 í：san-DÍ-a。委內瑞拉、哥倫比亞常說 patilla。",
+      "example_es": "En verano como mucha sandía.",
+      "example_zh": "夏天我吃很多西瓜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sandía"
+      ]
+    },
+    {
+      "word": "piña",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "鳳梨；松果",
+      "en": "pineapple; pinecone",
+      "ipa": "/ˈpiɲa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nux pīnea",
+          "zh": "松子"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "pīnea",
+          "zh": "松果；松子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "piña",
+          "zh": "松果；鳳梨"
+        }
+      ],
+      "cognates_en": [
+        "pineapple",
+        "pine"
+      ],
+      "story_zh": "piña 來自拉丁文 pīnea（松果），是 nux pīnea「松樹的堅果」省略而來。鳳梨長得像一顆大松果，所以也叫 piña——英文 pineapple 也是同樣的聯想。",
+      "hook_zh": "pineapple = pine（松）+ apple；piña 也是「松果」。",
+      "usage_zh": "阿根廷說 ananá。ser una piña＝團結得像一顆松果。",
+      "example_es": "Me gusta la pizza con piña.",
+      "example_zh": "我喜歡鳳梨披薩。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:piña",
+        "wiktionary:la:pinea"
+      ]
+    },
+    {
+      "word": "tomate",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "番茄",
+      "en": "tomato",
+      "ipa": "/toˈmate/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古典納瓦特爾語",
+          "word": "tomatl",
+          "zh": "黏果酸漿"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tomate",
+          "zh": "番茄"
+        }
+      ],
+      "cognates_en": [
+        "tomato"
+      ],
+      "story_zh": "tomate 來自阿茲特克人的納瓦特爾語 tomatl。有趣的是，tomatl 原本指一種綠色的「黏果酸漿」，真正的紅番茄在納瓦特爾語叫 xītomatl。",
+      "hook_zh": "阿茲特克的 tomatl → tomate → tomato，三個字長得幾乎一樣。",
+      "usage_zh": "墨西哥紅番茄常說 jitomate（來自 xītomatl）；陽性 el tomate。",
+      "example_es": "Compro tomates en el mercado.",
+      "example_zh": "我在市場買番茄。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tomate"
+      ]
+    },
+    {
+      "word": "patata",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "馬鈴薯",
+      "en": "potato",
+      "ipa": "/paˈtata/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "泰諾語",
+          "word": "batata",
+          "zh": "番薯"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "patata",
+          "zh": "馬鈴薯"
+        }
+      ],
+      "cognates_en": [
+        "potato"
+      ],
+      "story_zh": "patata 借自加勒比海泰諾語 batata（番薯）。西班牙皇家學院則認為它是 papa（馬鈴薯）和 batata 兩字的混合。英文 potato 也從這裡來。",
+      "hook_zh": "在西班牙拍照時不說 cheese，而是喊 ¡patata!",
+      "usage_zh": "西班牙說 patata；拉美說 papa。patatas fritas＝薯條。",
+      "example_es": "Quiero patatas fritas.",
+      "example_zh": "我要薯條。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:patata"
+      ]
+    },
+    {
+      "word": "cebolla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "洋蔥",
+      "en": "onion",
+      "ipa": "/θeˈboʝa/",
+      "breakdown": [
+        {
+          "part": "cēpa",
+          "zh": "洋蔥"
+        },
+        {
+          "part": "-ulla",
+          "zh": "小"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cēpa",
+          "zh": "洋蔥"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "cēpulla",
+          "zh": "小洋蔥"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cebolla",
+          "zh": "洋蔥"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cebolla",
+          "zh": "洋蔥"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cebolla 來自後期拉丁語 cēpulla，是 cēpa（洋蔥）的小稱。cēpa 可能借自不明的外來語，或許來自安納托利亞。英文 chive（細香蔥）經法語也來自 cēpa。",
+      "hook_zh": "一層一層剝開 cebolla，剝到你眼淚直流。",
+      "usage_zh": "c 在 e 前：西班牙唸 /θ/，拉美唸 /s/。",
+      "example_es": "No me gusta la cebolla.",
+      "example_zh": "我不喜歡洋蔥。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cebolla",
+        "wiktionary:la:cepulla",
+        "wiktionary:la:cepa"
+      ]
+    },
+    {
+      "word": "ajo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "大蒜",
+      "en": "garlic",
+      "ipa": "/ˈaxo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "allium",
+          "zh": "大蒜"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ajo",
+          "zh": "大蒜"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ajo 直接繼承自拉丁文 allium（大蒜）。植物學上蔥蒜類叫 Allium，就是這個拉丁字。",
+      "hook_zh": "ajo 唸「阿厚」：大蒜的味道真的很「厚」！",
+      "usage_zh": "一瓣蒜＝un diente de ajo，字面是「一顆蒜牙」。",
+      "example_es": "La sopa de ajo es típica de España.",
+      "example_zh": "大蒜湯是西班牙的傳統菜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ajo"
+      ]
+    },
+    {
+      "word": "zanahoria",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "紅蘿蔔",
+      "en": "carrot",
+      "ipa": "/θanaˈoɾja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "staphulínē agría",
+          "zh": "野生胡蘿蔔"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "ʔisfanāriyya",
+          "zh": "胡蘿蔔"
+        },
+        {
+          "lang_zh": "安達魯斯阿拉伯語",
+          "word": "*safunnārya",
+          "zh": "胡蘿蔔"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "çanahoria",
+          "zh": "胡蘿蔔"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "zanahoria",
+          "zh": "紅蘿蔔"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "zanahoria 的源頭是古希臘語 staphulínē agría（野生胡蘿蔔），進入阿拉伯語成了 ʔisfanāriyya，再經安達魯斯阿拉伯語 *safunnārya 傳到西班牙。加泰隆尼亞語 safanòria 還保留著 s-f 的影子。",
+      "hook_zh": "za-na-ho-ria 四個音節像一根長長的紅蘿蔔；h 不發音。",
+      "usage_zh": "h 不發音：θa-na-O-ria（拉美 sa-）。",
+      "example_es": "El conejo come una zanahoria.",
+      "example_zh": "兔子在吃紅蘿蔔。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:zanahoria"
+      ]
+    },
+    {
+      "word": "lechuga",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "萵苣、生菜",
+      "en": "lettuce",
+      "ipa": "/leˈt͡ʃuɡa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "lactūca",
+          "zh": "萵苣"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lechuga",
+          "zh": "萵苣"
+        }
+      ],
+      "cognates_en": [
+        "lettuce"
+      ],
+      "story_zh": "lechuga 繼承自拉丁文 lactūca（萵苣）。葡萄牙語 leituga、義大利語 lattuga 和英文 lettuce 都是同一個字的後代。",
+      "hook_zh": "lechuga 開頭和 leche（牛奶）一樣是 lech-；lettuce 和它是親戚。",
+      "usage_zh": "una lechuga＝一顆生菜。",
+      "example_es": "Compro una lechuga para la ensalada.",
+      "example_zh": "我買一顆生菜做沙拉。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lechuga"
+      ]
+    },
+    {
+      "word": "verdura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "蔬菜；青菜",
+      "en": "vegetable(s); greens",
+      "ipa": "/beɾˈduɾa/",
+      "breakdown": [
+        {
+          "part": "verde",
+          "zh": "綠色"
+        },
+        {
+          "part": "-ura",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "virdis",
+          "zh": "綠色的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "verde",
+          "zh": "綠色"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "verdura",
+          "zh": "蔬菜"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "verdura 是 verde（綠色）加上名詞字尾 -ura，字面就是「綠色的東西」。verde 則來自後期拉丁語 virdis。",
+      "hook_zh": "verde 綠 + -ura → verdura：盤子裡綠油油的就是它。",
+      "usage_zh": "常用複數：Como muchas verduras.",
+      "example_es": "Como verduras todos los días.",
+      "example_zh": "我每天吃蔬菜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:verdura",
+        "wiktionary:es:verde"
+      ]
+    },
+    {
+      "word": "bebida",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "飲料",
+      "en": "drink, beverage",
+      "ipa": "/beˈbida/",
+      "breakdown": [
+        {
+          "part": "beb(er)",
+          "zh": "喝"
+        },
+        {
+          "part": "-ida",
+          "zh": "…的東西"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "bibere",
+          "zh": "喝"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "beber",
+          "zh": "喝"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bebida",
+          "zh": "飲料"
+        }
+      ],
+      "cognates_en": [
+        "beverage"
+      ],
+      "story_zh": "bebida 是 beber（喝）的過去分詞變成的名詞，字面是「被喝的東西」。beber 來自拉丁文 bibere。英文 beverage（飲料）也是同一家族。",
+      "hook_zh": "beber 喝 → bebida 喝的東西；就像 comer → comida。",
+      "usage_zh": "在餐廳：¿Qué quiere de bebida?（您要喝什麼？）",
+      "example_es": "¿Quieres una bebida?",
+      "example_zh": "你要喝點什麼嗎？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bebida",
+        "wiktionary:es:beber"
+      ]
+    },
+    {
+      "word": "café",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "咖啡；咖啡館",
+      "en": "coffee; café",
+      "ipa": "/kaˈfe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "café",
+          "zh": "咖啡"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "café",
+          "zh": "咖啡"
+        }
+      ],
+      "cognates_en": [
+        "coffee",
+        "café"
+      ],
+      "story_zh": "café 借自法語 café，也有較小的可能直接來自義大利語 caffè。這個字同時指咖啡和喝咖啡的地方。",
+      "hook_zh": "café 重音在最後：ca-FÉ。café con leche 是西班牙人的早晨。",
+      "usage_zh": "墨西哥等地 café 也是「咖啡色」。cortado＝加一點奶的濃縮咖啡。",
+      "example_es": "Tomo un café con leche.",
+      "example_zh": "我喝一杯咖啡牛奶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:café"
+      ]
+    },
+    {
+      "word": "té",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "茶",
+      "en": "tea",
+      "ipa": "/ˈte/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "閩南語",
+          "word": "茶（tê）",
+          "zh": "茶"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "té",
+          "zh": "茶"
+        }
+      ],
+      "cognates_en": [
+        "tea"
+      ],
+      "story_zh": "té 來自閩南語「茶」（tê）！和台語唸法一模一樣。西語另有一個 cha，兩者是雙生詞。荷蘭語 thee、英文 tea 也是同一個來源。",
+      "hook_zh": "用台語說「茶」就是 té！",
+      "usage_zh": "要寫重音：té（茶）≠ te（你，受詞）。",
+      "example_es": "Me gusta el té verde.",
+      "example_zh": "我喜歡綠茶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:té"
+      ]
+    },
+    {
+      "word": "zumo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "果汁",
+      "en": "juice",
+      "ipa": "/ˈθumo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "zōmós",
+          "zh": "湯汁"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "zūm",
+          "zh": "汁液"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "çumo",
+          "zh": "汁"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "zumo",
+          "zh": "果汁"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "zumo 來自古西班牙語 çumo，經安達魯斯阿拉伯語，源自阿拉伯語 zūm（汁、樹液），再往上是古希臘語 zōmós。",
+      "hook_zh": "西班牙早餐必備 zumo de naranja：一杯現榨柳橙汁。",
+      "usage_zh": "西班牙說 zumo；拉美說 jugo。zumo de naranja＝柳橙汁。",
+      "example_es": "Bebo zumo de naranja.",
+      "example_zh": "我喝柳橙汁。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:zumo"
+      ]
+    },
+    {
+      "word": "cerveza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "啤酒",
+      "en": "beer",
+      "ipa": "/θeɾˈbeθa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始凱爾特語",
+          "word": "*kurmi",
+          "zh": "啤酒"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cervēsa",
+          "zh": "凱爾特小麥啤酒"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cervesa",
+          "zh": "啤酒"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cerveza",
+          "zh": "啤酒"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cerveza 來自拉丁文 cervēsa，指凱爾特人的小麥啤酒。它源自原始凱爾特語。這個字最早見於老普林尼的《博物志》（約公元 77–79 年）。",
+      "hook_zh": "想像 cerveza 的泡沫「嘶—」一聲冒出來。",
+      "usage_zh": "一杯生啤在西班牙叫 una caña。",
+      "example_es": "Una cerveza, por favor.",
+      "example_zh": "請給我一杯啤酒。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cerveza",
+        "wiktionary:la:cervesa"
+      ]
+    },
+    {
+      "word": "vino",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "葡萄酒",
+      "en": "wine",
+      "ipa": "/ˈbino/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vīnum",
+          "zh": "葡萄酒"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "vino",
+          "zh": "酒"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vino",
+          "zh": "葡萄酒"
+        }
+      ],
+      "cognates_en": [
+        "wine",
+        "vinegar"
+      ],
+      "story_zh": "vino 繼承自拉丁文 vīnum。法語 vin、義大利語 vino、英文 wine 都是同源字。",
+      "hook_zh": "vino ≈ wine：v 和 w 互換就對了。",
+      "usage_zh": "紅酒是 vino tinto（不是 rojo）；白酒 vino blanco。",
+      "example_es": "Una copa de vino tinto, por favor.",
+      "example_zh": "請給我一杯紅酒。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vino",
+        "wiktionary:la:vinum"
+      ]
+    },
+    {
+      "word": "refresco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "汽水、清涼飲料",
+      "en": "soft drink, soda",
+      "ipa": "/reˈfɾesko/",
+      "breakdown": [
+        {
+          "part": "re-",
+          "zh": "再"
+        },
+        {
+          "part": "fresco",
+          "zh": "涼爽、新鮮"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "refrescar",
+          "zh": "使涼爽"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "refresco",
+          "zh": "清涼飲料"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "refresco 是從動詞 refrescar（使涼爽、提神）變來的名詞，原意是「讓人涼快的東西」，後來指汽水等冷飲。",
+      "hook_zh": "像英文 refresh：喝一口冰汽水，整個人 refresco 了。",
+      "usage_zh": "可樂等汽水的統稱；阿根廷常說 gaseosa。",
+      "example_es": "Quiero un refresco de limón.",
+      "example_zh": "我要一杯檸檬汽水。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:refresco"
+      ]
+    },
+    {
+      "word": "chocolate",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "巧克力；熱可可",
+      "en": "chocolate; hot chocolate",
+      "ipa": "/t͡ʃokoˈlate/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古典納瓦特爾語",
+          "word": "chocolātl",
+          "zh": "阿茲特克可可飲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "chocolate",
+          "zh": "巧克力"
+        }
+      ],
+      "cognates_en": [
+        "chocolate"
+      ],
+      "story_zh": "chocolate 借自阿茲特克人的納瓦特爾語 chocolātl，指一種用烘焙可可豆做的飲料。這個字再往上的來源不確定。西語最早的紀錄在 1590 年代。",
+      "hook_zh": "阿茲特克人的「可可飲」chocolātl，就是你手上的熱巧克力。",
+      "usage_zh": "陽性 el chocolate。chocolate caliente＝熱可可。",
+      "example_es": "Tomo chocolate caliente con churros.",
+      "example_zh": "我喝熱巧克力配吉拿棒。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:chocolate"
+      ]
+    },
+    {
+      "word": "galleta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "餅乾；（口語）巴掌",
+      "en": "cookie, biscuit; slap",
+      "ipa": "/ɡaˈʝeta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "galette",
+          "zh": "扁圓餅"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "galleta",
+          "zh": "餅乾"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "galleta 借自法語 galette（扁平的圓餅），據說最終來自古法語 gal（石頭）的小稱，不過 gal 本身來源不明。",
+      "hook_zh": "圓圓扁扁像小石頭的 galleta。口語也指「一巴掌」——別吃到那種！",
+      "usage_zh": "ll 唸 /ʝ/：ga-ye-ta。",
+      "example_es": "Mi hijo come galletas con leche.",
+      "example_zh": "我兒子吃餅乾配牛奶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:galleta"
+      ]
+    },
+    {
+      "word": "pastel",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "蛋糕；糕點、派",
+      "en": "cake; pastry; pie",
+      "ipa": "/pasˈtel/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古法語",
+          "word": "pastel",
+          "zh": "糕點"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pastel",
+          "zh": "蛋糕"
+        }
+      ],
+      "cognates_en": [
+        "pastel"
+      ],
+      "story_zh": "pastel 來自古法語 pastel。英文的 pastel（粉彩）和它同源。",
+      "hook_zh": "粉彩色（pastel）的蛋糕：粉紅、奶油、淡藍。",
+      "usage_zh": "生日蛋糕：西班牙多說 tarta，墨西哥說 pastel。複數 pasteles。",
+      "example_es": "Hay un pastel de cumpleaños.",
+      "example_zh": "有一個生日蛋糕。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pastel"
+      ]
+    },
+    {
+      "word": "helado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "冰淇淋",
+      "en": "ice cream",
+      "ipa": "/eˈlado/",
+      "breakdown": [
+        {
+          "part": "hel(ar)",
+          "zh": "結冰"
+        },
+        {
+          "part": "-ado",
+          "zh": "…的（過去分詞）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "gelū",
+          "zh": "霜、寒冷"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "gelō",
+          "zh": "使結冰"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "gelātus",
+          "zh": "結冰的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "helado",
+          "zh": "冰淇淋"
+        }
+      ],
+      "cognates_en": [
+        "gelato",
+        "jelly"
+      ],
+      "story_zh": "helado 繼承自拉丁文 gelātus（結冰的），源自 gelō（使結冰）和 gelū（霜）。拉丁文的 g- 在西語變成 h-，所以義大利語是 gelato，西語是 helado。gelū 和英文 cold 也有關係。",
+      "hook_zh": "gelato → helado：把 g 換成不發音的 h。",
+      "usage_zh": "當形容詞是「冰凍的」：agua helada。h 不發音。",
+      "example_es": "Quiero un helado de chocolate.",
+      "example_zh": "我要一支巧克力冰淇淋。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:helado",
+        "wiktionary:la:gelatus",
+        "wiktionary:la:gelo",
+        "wiktionary:la:gelu"
+      ]
+    },
+    {
+      "word": "postre",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "甜點（飯後）",
+      "en": "dessert",
+      "ipa": "/ˈpostɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "posterus",
+          "zh": "後面的、接著來的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "postre",
+          "zh": "甜點"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "postre 是從拉丁文 posterus（接著來的、後面的）半學術借來的字。甜點就是一餐裡「最後才上」的那一道。",
+      "hook_zh": "post-（之後）：吃完正餐「之後」才上 postre。",
+      "usage_zh": "de postre＝當甜點：De postre, quiero flan.",
+      "example_es": "¿Qué hay de postre?",
+      "example_zh": "甜點有什麼？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:postre",
+        "wiktionary:la:posterus"
+      ]
+    },
+    {
+      "word": "caramelo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "糖果；焦糖",
+      "en": "candy, sweet; caramel",
+      "ipa": "/kaɾaˈmelo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "calamellus",
+          "zh": "（小管子）"
+        },
+        {
+          "lang_zh": "葡萄牙語",
+          "word": "caramelo",
+          "zh": "焦糖"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caramelo",
+          "zh": "糖果"
+        }
+      ],
+      "cognates_en": [
+        "caramel"
+      ],
+      "story_zh": "caramelo 借自葡萄牙語 caramelo，往上可追到後期拉丁語 calamellus。西語另有一個從同字直接繼承的 caramillo（蘆笛），兩者是雙生詞。",
+      "hook_zh": "caramelo ≈ caramel：一顆用彩色紙扭起兩端的糖果。",
+      "usage_zh": "在西班牙 caramelo＝糖果；拉美多說 dulce。",
+      "example_es": "El niño quiere un caramelo.",
+      "example_zh": "小孩想要一顆糖。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caramelo"
+      ]
+    },
+    {
+      "word": "miel",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "蜂蜜",
+      "en": "honey",
+      "ipa": "/ˈmjel/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mel",
+          "zh": "蜂蜜"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*melem",
+          "zh": "蜂蜜"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "miel",
+          "zh": "蜂蜜"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "miel",
+          "zh": "蜂蜜"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "miel 來自拉丁文 mel（蜂蜜），和古希臘語 méli 同源。它的古老字尾 *-it 專門用在可以吃的東西上。拉丁文是中性，到了西語變成陰性。",
+      "hook_zh": "蜜月是 luna de miel：「蜂蜜的月亮」。",
+      "usage_zh": "陰性 la miel。té con miel＝蜂蜜茶。",
+      "example_es": "Pongo miel en el té.",
+      "example_zh": "我在茶裡加蜂蜜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:miel",
+        "wiktionary:la:mel"
+      ]
+    },
+    {
+      "word": "yogur",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "優格",
+      "en": "yogurt",
+      "ipa": "/ʝoˈɡuɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "鄂圖曼土耳其語",
+          "word": "yoğurt",
+          "zh": "優格"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "yogourt",
+          "zh": "優格"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "yogur",
+          "zh": "優格"
+        }
+      ],
+      "cognates_en": [
+        "yogurt"
+      ],
+      "story_zh": "yogur 借自法語 yogourt，再往上是鄂圖曼土耳其語 yoğurt。西語把字尾的 t 去掉了。",
+      "hook_zh": "yogurt 少了 t → yogur。",
+      "usage_zh": "複數 yogures；也可寫 yogurt。",
+      "example_es": "Desayuno un yogur con fruta.",
+      "example_zh": "早餐我吃優格配水果。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:yogur"
+      ]
+    },
+    {
+      "word": "plato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "盤子；一道菜",
+      "en": "plate, dish; course",
+      "ipa": "/ˈplato/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "platús",
+          "zh": "扁平的、寬的"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*plattus",
+          "zh": "扁平的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "plato",
+          "zh": "盤子"
+        }
+      ],
+      "cognates_en": [
+        "plate",
+        "plateau"
+      ],
+      "story_zh": "plato 來自通俗拉丁語 *plattus，源自古希臘語 platús（扁平）。它可能是半學術詞，或中世紀主要由用盤子吃飯的上層階級使用，所以保留了接近拉丁文的形式。英文 plate、plateau（高原）同源。",
+      "hook_zh": "扁平的 plateau（高原）、扁平的 plate（盤子）＝ plato。",
+      "usage_zh": "也指「一道菜」：primer plato（第一道）、segundo plato（主菜）。",
+      "example_es": "El plato está en la mesa.",
+      "example_zh": "盤子在桌上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:plato"
+      ]
+    },
+    {
+      "word": "vaso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "玻璃杯、水杯",
+      "en": "drinking glass",
+      "ipa": "/ˈbaso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vās / vāsum",
+          "zh": "器皿、容器"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "vaso",
+          "zh": "杯"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vaso",
+          "zh": "杯子"
+        }
+      ],
+      "cognates_en": [
+        "vase"
+      ],
+      "story_zh": "vaso 來自拉丁文 vāsum（vās），意思是器皿、容器。英文 vase（花瓶）也是同一個字。西語還用它指身體裡的「血管」（vaso sanguíneo）。",
+      "hook_zh": "vase 裝花，vaso 裝水。",
+      "usage_zh": "假朋友：花瓶是 florero，不是 vaso。un vaso de agua＝一杯水。",
+      "example_es": "Un vaso de agua, por favor.",
+      "example_zh": "請給我一杯水。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vaso",
+        "wiktionary:la:vasum"
+      ]
+    },
+    {
+      "word": "taza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "（有把手的）杯子；馬桶座",
+      "en": "cup, mug",
+      "ipa": "/ˈtaθa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "中古波斯語",
+          "word": "tašt",
+          "zh": "盆、碗"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "ṭās",
+          "zh": "碗、杯"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "taça",
+          "zh": "杯"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "taza",
+          "zh": "杯子"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "taza 來自古西班牙語 taça，經安達魯斯阿拉伯語，源自阿拉伯語 ṭās，再往上是中古波斯語 tašt（盆、碗）。",
+      "hook_zh": "taza 有把手，用來喝熱的；vaso 沒把手，用來喝冷的。",
+      "usage_zh": "una taza de café＝一杯咖啡。也指馬桶的坐槽。",
+      "example_es": "Quiero una taza de té.",
+      "example_zh": "我要一杯茶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:taza"
+      ]
+    },
+    {
+      "word": "botella",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "瓶子",
+      "en": "bottle",
+      "ipa": "/boˈteʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "buttis",
+          "zh": "木桶"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "butticula",
+          "zh": "小瓶"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "bouteille",
+          "zh": "瓶子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "botella",
+          "zh": "瓶子"
+        }
+      ],
+      "cognates_en": [
+        "bottle"
+      ],
+      "story_zh": "botella 借自法語 bouteille，來自後期拉丁語 butticula，是 buttis（木桶）的小稱，字面是「小木桶」。西語最早的紀錄在 1721 年，後來取代了 frasco 成為一般說法。英文 bottle 同源。",
+      "hook_zh": "bottle ≈ botella；想像大木桶縮小成一支酒瓶。",
+      "usage_zh": "una botella de agua＝一瓶水。ll 唸 /ʝ/。",
+      "example_es": "Compro una botella de agua.",
+      "example_zh": "我買一瓶水。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:botella",
+        "wiktionary:la:butticula",
+        "wiktionary:la:buttis"
+      ]
+    },
+    {
+      "word": "cuchara",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "湯匙",
+      "en": "spoon",
+      "ipa": "/kuˈt͡ʃaɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cochlea",
+          "zh": "蝸牛；蝸牛殼"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cochleāre",
+          "zh": "湯匙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuchar",
+          "zh": "湯匙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuchara",
+          "zh": "湯匙"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cuchara 來自 cuchar，源自拉丁文 cochleāre（湯匙），再往上是 cochlea（蝸牛、蝸牛殼）。湯匙的凹面就像一個小蝸牛殼。",
+      "hook_zh": "湯匙的弧形像蝸牛殼——耳朵裡捲捲的「耳蝸」英文也叫 cochlea。",
+      "usage_zh": "小湯匙是 cucharita 或 cucharilla。",
+      "example_es": "Como la sopa con una cuchara.",
+      "example_zh": "我用湯匙喝湯。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuchara",
+        "wiktionary:la:cochlear"
+      ]
+    },
+    {
+      "word": "tenedor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "叉子",
+      "en": "fork",
+      "ipa": "/teneˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "tene(r)",
+          "zh": "拿著、有"
+        },
+        {
+          "part": "-dor",
+          "zh": "…的東西"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tenēre",
+          "zh": "握住、持有"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tener",
+          "zh": "有、拿著"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tenedor",
+          "zh": "叉子"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "tenedor 字面意思是「拿著的東西」，由 tener（有、拿著）加上 -dor（…者、…器）組成。tener 來自拉丁文 tenēre（握住）。",
+      "hook_zh": "叉子把肉牢牢「拿住」（tener）：tenedor = 拿住器。",
+      "usage_zh": "也可指「持有人」。叉子、刀子、湯匙合稱 cubiertos。",
+      "example_es": "Necesito un tenedor, por favor.",
+      "example_zh": "麻煩給我一支叉子。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tenedor",
+        "wiktionary:es:tener"
+      ]
+    },
+    {
+      "word": "cuchillo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "刀子（餐刀）",
+      "en": "knife",
+      "ipa": "/kuˈt͡ʃiʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "culter",
+          "zh": "刀"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cultellus",
+          "zh": "小刀"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cuchiello",
+          "zh": "刀"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuchillo",
+          "zh": "刀子"
+        }
+      ],
+      "cognates_en": [
+        "cutlery"
+      ],
+      "story_zh": "cuchillo 來自古西班牙語 cuchiello，源自拉丁文 cultellus（小刀），是 culter（刀）的小稱。英文 cutlery（刀叉餐具）是同源字。",
+      "hook_zh": "cutlery（餐具）裡的 cu-t-l ≈ cuchillo。",
+      "usage_zh": "別混淆：cuchillo（刀）、cuchara（湯匙）。",
+      "example_es": "El cuchillo está en la mesa.",
+      "example_zh": "刀子在桌上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuchillo",
+        "wiktionary:la:cultellus",
+        "wiktionary:la:culter"
+      ]
+    },
+    {
+      "word": "servilleta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "餐巾、餐巾紙",
+      "en": "napkin",
+      "ipa": "/seɾbiˈʝeta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "serviette",
+          "zh": "餐巾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "servilleta",
+          "zh": "餐巾"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "servilleta 借自法語 serviette（餐巾）。進了西語後，被人們重新理解成 servir（服務）加上兩個小稱字尾 -illa 和 -eta。",
+      "hook_zh": "餐巾在桌上「服務」你：servir → servilleta。",
+      "usage_zh": "ll 唸 /ʝ/：ser-vi-ye-ta。",
+      "example_es": "¿Me das una servilleta?",
+      "example_zh": "可以給我一張餐巾紙嗎？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:servilleta"
+      ]
+    },
+    {
+      "word": "menú",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "菜單；套餐",
+      "en": "menu",
+      "ipa": "/meˈnu/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "minuō",
+          "zh": "使變小"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "minūtus",
+          "zh": "很小的"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "menu",
+          "zh": "細目、菜單"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "menú",
+          "zh": "菜單"
+        }
+      ],
+      "cognates_en": [
+        "menu",
+        "minute"
+      ],
+      "story_zh": "menú 借自法語 menu（詳細的清單），原本是形容詞「細小、詳細的」，源自拉丁文 minūtus（很小的）。西語的 minuto（分鐘）和 menudo（細小的）是它的雙生詞。",
+      "hook_zh": "菜單把菜色列得「細細的」——menu 和 minute 是兄弟。",
+      "usage_zh": "西班牙的 menú del día＝今日套餐。複數 menús。",
+      "example_es": "¿Nos trae el menú, por favor?",
+      "example_zh": "可以把菜單拿給我們嗎？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:menú",
+        "wiktionary:la:minutus"
+      ]
+    },
+    {
+      "word": "cuenta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "帳單；帳戶；計算",
+      "en": "bill, check; account",
+      "ipa": "/ˈkwenta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "computāre",
+          "zh": "計算"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "contar",
+          "zh": "數、計算"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuenta",
+          "zh": "帳單"
+        }
+      ],
+      "cognates_en": [
+        "count",
+        "compute"
+      ],
+      "story_zh": "cuenta 是從動詞 contar（數、計算）變來的名詞。contar 繼承自拉丁文 computāre，和英文 count、compute 同源。帳單就是「算出來的東西」。",
+      "hook_zh": "count 算一算 → la cuenta，結帳！",
+      "usage_zh": "結帳時說 La cuenta, por favor。也指銀行帳戶。",
+      "example_es": "La cuenta, por favor.",
+      "example_zh": "請給我帳單。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuenta",
+        "wiktionary:es:contar"
+      ]
+    },
+    {
+      "word": "propina",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "小費",
+      "en": "tip, gratuity",
+      "ipa": "/pɾoˈpina/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "propī́nō",
+          "zh": "先喝（敬酒）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "propinō",
+          "zh": "敬酒、請人喝"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "propīna",
+          "zh": "小費"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "propina",
+          "zh": "小費"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "propina 來自中世紀拉丁語 propīna，源自拉丁文 propinō（敬酒、請人喝一杯），再往上是希臘語 propī́nō：pro-（在前）+ pī́nō（喝）。小費原本的意思，就像是「請你喝一杯」。",
+      "hook_zh": "給服務生 propina＝「這杯我請你」。",
+      "usage_zh": "dejar propina＝留小費。",
+      "example_es": "Dejamos una propina en la mesa.",
+      "example_zh": "我們在桌上留了小費。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:propina",
+        "wiktionary:la:propino"
+      ]
+    },
+    {
+      "word": "receta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "食譜；處方",
+      "en": "recipe; prescription",
+      "ipa": "/reˈθeta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "recepta",
+          "zh": "（收到的東西）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "receta",
+          "zh": "食譜；處方"
+        }
+      ],
+      "cognates_en": [
+        "recipe",
+        "receipt"
+      ],
+      "story_zh": "receta 是從拉丁文 recepta 半學術借來的字。西語用它同時指醫生的「處方」和做菜的「食譜」。英文 receipt、recipe 也屬於同一家族。",
+      "hook_zh": "醫生的 receta 治病，媽媽的 receta 治餓。",
+      "usage_zh": "也指藥方：Necesito una receta del médico.",
+      "example_es": "Esta receta es de mi abuela.",
+      "example_zh": "這份食譜是我奶奶的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:receta"
+      ]
+    },
+    {
+      "word": "hamburguesa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "漢堡",
+      "en": "hamburger",
+      "ipa": "/ambuɾˈɡesa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "hamburger",
+          "zh": "漢堡"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hamburguesa",
+          "zh": "漢堡"
+        }
+      ],
+      "cognates_en": [
+        "hamburger"
+      ],
+      "story_zh": "hamburguesa 是英文 hamburger 的西語化說法，用的是 hamburgués（漢堡市的）的陰性形——字面是「漢堡市風味的（肉餅）」。",
+      "hook_zh": "Hamburgo 漢堡市 → hamburgués 漢堡市的 → hamburguesa。",
+      "usage_zh": "h 不發音：am-bur-GUE-sa。陰性 la hamburguesa。",
+      "example_es": "Quiero una hamburguesa con queso.",
+      "example_zh": "我要一個起司漢堡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hamburguesa"
+      ]
+    },
+    {
+      "word": "pizza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "披薩",
+      "en": "pizza",
+      "ipa": "/ˈpitsa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拜占庭希臘語",
+          "word": "píta",
+          "zh": "餅"
+        },
+        {
+          "lang_zh": "拿坡里語",
+          "word": "pizza",
+          "zh": "披薩"
+        },
+        {
+          "lang_zh": "義大利語",
+          "word": "pizza",
+          "zh": "披薩"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pizza",
+          "zh": "披薩"
+        }
+      ],
+      "cognates_en": [
+        "pizza"
+      ],
+      "story_zh": "pizza 是原封不動從義大利語借來的字，出自拿坡里語。詞典的詞源樹把它往上連到拜占庭希臘語 píta，不過這一段的關係並不完全確定。",
+      "hook_zh": "pizza 的 zz 照義大利音唸 /ts/：PI-tsa。",
+      "usage_zh": "例外拼字：西語很少 zz，這是外來字。",
+      "example_es": "Pedimos una pizza grande.",
+      "example_zh": "我們點了一個大披薩。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pizza"
+      ]
+    },
+    {
+      "word": "salchicha",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "香腸；熱狗腸",
+      "en": "sausage",
+      "ipa": "/salˈt͡ʃit͡ʃa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "salsus",
+          "zh": "鹹的"
+        },
+        {
+          "lang_zh": "義大利語",
+          "word": "salsiccia / salciccia",
+          "zh": "香腸"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "salchicha",
+          "zh": "香腸"
+        }
+      ],
+      "cognates_en": [
+        "sausage",
+        "salsa"
+      ],
+      "story_zh": "salchicha 借自義大利語 salciccia（salsiccia 的變體），源自拉丁文 salsus（鹹的、醃過的）。英文 sausage 也來自同一個拉丁字。香腸就是「醃鹹的肉」。",
+      "hook_zh": "sal（鹽）＋chicha：鹹鹹的 salchicha，和 sausage 是親戚。",
+      "usage_zh": "perrito caliente＝熱狗（西班牙）。",
+      "example_es": "Los niños comen salchichas.",
+      "example_zh": "孩子們在吃香腸。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:salchicha",
+        "wiktionary:la:salsus"
+      ]
+    },
+    {
+      "word": "gamba",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "蝦子（西班牙）",
+      "en": "prawn, shrimp",
+      "ipa": "/ˈɡamba/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "kámmaros",
+          "zh": "龍蝦"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "gammarus / cammarus",
+          "zh": "龍蝦"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "*gambarus",
+          "zh": "蝦"
+        },
+        {
+          "lang_zh": "加泰隆尼亞語",
+          "word": "gamba",
+          "zh": "蝦"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gamba",
+          "zh": "蝦"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "gamba 借自加泰隆尼亞語 gamba，往上是後期拉丁語 *gambarus、拉丁文 gammarus（龍蝦），最早來自古希臘語 kámmaros。",
+      "hook_zh": "gamba 唸「甘巴」：一盤蒜蝦 gambas al ajillo 讓你「甘」願吃光。",
+      "usage_zh": "西班牙說 gamba；拉美多說 camarón。gambas al ajillo＝蒜味蝦。",
+      "example_es": "Me encantan las gambas al ajillo.",
+      "example_zh": "我超愛蒜味蝦。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gamba",
+        "wiktionary:la:gammarus"
+      ]
+    },
+    {
+      "word": "marisco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "海鮮（貝類、蝦蟹）",
+      "en": "seafood, shellfish",
+      "ipa": "/maˈɾisko/",
+      "breakdown": [
+        {
+          "part": "mar",
+          "zh": "海"
+        },
+        {
+          "part": "-isco",
+          "zh": "…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mare",
+          "zh": "海"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mar",
+          "zh": "海"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "marisco",
+          "zh": "海鮮"
+        }
+      ],
+      "cognates_en": [
+        "marine"
+      ],
+      "story_zh": "marisco 由 mar（海）加上字尾 -isco 組成，字面是「海裡的東西」。mar 繼承自拉丁文 mare，英文 marine（海洋的）同源。",
+      "hook_zh": "mar（海）+ isco → marisco：從海裡撈上來的蝦貝。",
+      "usage_zh": "常用複數 mariscos；魚類另外叫 pescado。",
+      "example_es": "Me gustan los mariscos.",
+      "example_zh": "我喜歡海鮮。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:marisco",
+        "wiktionary:es:mar"
+      ]
+    },
+    {
+      "word": "atún",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "鮪魚",
+      "en": "tuna",
+      "ipa": "/aˈtun/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "thúnnos",
+          "zh": "鮪魚"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "thunnus",
+          "zh": "鮪魚"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "at-tunn",
+          "zh": "鮪魚"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "atun",
+          "zh": "鮪魚"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "atún",
+          "zh": "鮪魚"
+        }
+      ],
+      "cognates_en": [
+        "tuna"
+      ],
+      "story_zh": "atún 經安達魯斯阿拉伯語來自阿拉伯語 at-tunn，開頭的 at- 就是阿拉伯定冠詞。再往上是拉丁文 thunnus、希臘語 thúnnos，而希臘語又借自腓尼基語。",
+      "hook_zh": "a + tún ≈ the tuna：阿拉伯冠詞 a(t) 黏在 tuna 前面。",
+      "usage_zh": "陽性 el atún；複數 atunes。atún en lata＝鮪魚罐頭。",
+      "example_es": "Quiero un bocadillo de atún.",
+      "example_zh": "我要一份鮪魚三明治。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:atún",
+        "wiktionary:la:thunnus"
+      ]
+    },
+    {
+      "word": "melocotón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "桃子（西班牙）",
+      "en": "peach",
+      "ipa": "/melokoˈton/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "mēlokudṓnion",
+          "zh": "基多尼亞的蘋果"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "mālum cotōnium",
+          "zh": "榲桲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "melocotón",
+          "zh": "桃子"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "melocotón 是從拉丁文 mālum cotōnium（榲桲，字面「基多尼亞的蘋果」）學術借來的，也受到 melón 的影響。桃子和榲桲一樣，果皮上都有一層棉絨般的細毛。",
+      "hook_zh": "摸摸桃子皮，毛毛的像 cotton（棉花）：melo-coton！",
+      "usage_zh": "西班牙說 melocotón；拉美說 durazno。",
+      "example_es": "El melocotón es mi fruta favorita.",
+      "example_zh": "桃子是我最喜歡的水果。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:melocotón",
+        "wiktionary:la:malum cotonium"
+      ]
+    },
+    {
+      "word": "cereza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "櫻桃",
+      "en": "cherry",
+      "ipa": "/θeˈɾeθa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "kerásion",
+          "zh": "櫻桃"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cerasium",
+          "zh": "櫻桃"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "ceresia",
+          "zh": "櫻桃"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ceresa",
+          "zh": "櫻桃"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cereza",
+          "zh": "櫻桃"
+        }
+      ],
+      "cognates_en": [
+        "cherry"
+      ],
+      "story_zh": "cereza 來自後期拉丁語 ceresia，源自拉丁文 cerasium，借自古希臘語 kerásion（櫻桃）。英文 cherry、法語 cerise、義大利語 ciliegia 全都是同一家族。",
+      "hook_zh": "ce-re-za ≈ cherry，兩顆櫻桃手牽手。",
+      "usage_zh": "樹是 el cerezo；cereza 也可當顏色「櫻桃紅」。",
+      "example_es": "Las cerezas son rojas.",
+      "example_zh": "櫻桃是紅色的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cereza"
+      ]
+    },
+    {
+      "word": "kilo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "公斤",
+      "en": "kilo (kilogram)",
+      "ipa": "/ˈkilo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "kilogramo",
+          "zh": "公斤"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "kilo",
+          "zh": "公斤"
+        }
+      ],
+      "cognates_en": [
+        "kilo",
+        "kilogram"
+      ],
+      "story_zh": "kilo 是 kilogramo（公斤）的縮寫。日常生活裡幾乎沒人說完整的 kilogramo，買東西都說 kilo。",
+      "hook_zh": "市場買菜就說 un kilo de…，台灣也常說「一公斤」。",
+      "usage_zh": "常見搭配：un kilo de tomates；medio kilo＝半公斤。",
+      "example_es": "Un kilo de naranjas, por favor.",
+      "example_zh": "請給我一公斤柳橙。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:kilo"
+      ]
+    },
+    {
+      "word": "litro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "公升",
+      "en": "liter",
+      "ipa": "/ˈlitɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "lítra",
+          "zh": "西西里錢幣；重量單位"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "litra",
+          "zh": "量的單位"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "litre",
+          "zh": "公升"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "litro",
+          "zh": "公升"
+        }
+      ],
+      "cognates_en": [
+        "liter"
+      ],
+      "story_zh": "litro 借自法語 litre，來自中世紀拉丁語 litra，源自古希臘語 lítra——原本是一種西西里錢幣，也是重量單位。",
+      "hook_zh": "liter ≈ litro：一大瓶 1 litro 的牛奶。",
+      "usage_zh": "medio litro＝半公升；un litro de leche＝一公升牛奶。",
+      "example_es": "Compro un litro de leche.",
+      "example_zh": "我買一公升牛奶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:litro"
+      ]
+    },
+    {
+      "word": "aceituna",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "橄欖（果實）",
+      "en": "olive",
+      "ipa": "/aθeiˈtuna/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "zaytūna",
+          "zh": "橄欖"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aceituna",
+          "zh": "橄欖"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "aceituna 經安達魯斯阿拉伯語，借自阿拉伯語 zaytūna（橄欖），和 aceite（油）同一個字根。詞典也指出它和英文 satin（緞子）有關聯。",
+      "hook_zh": "aceituna 榨出 aceite：兩個字都以 aceit- 開頭。",
+      "usage_zh": "橄欖果實是 aceituna；橄欖樹是 olivo。",
+      "example_es": "Me gustan las aceitunas verdes.",
+      "example_zh": "我喜歡綠橄欖。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aceituna"
+      ]
+    },
+    {
+      "word": "mermelada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "果醬",
+      "en": "jam, marmalade",
+      "ipa": "/meɾmeˈlada/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "葡萄牙語",
+          "word": "marmelada",
+          "zh": "果醬"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mermelada",
+          "zh": "果醬"
+        }
+      ],
+      "cognates_en": [
+        "marmalade"
+      ],
+      "story_zh": "mermelada 借自葡萄牙語 marmelada。英文的 marmalade（柑橘果醬）也是同一個字。",
+      "hook_zh": "marmalade ≈ mermelada：把 a 換成 e。",
+      "usage_zh": "mermelada de fresa＝草莓果醬。",
+      "example_es": "Como pan con mermelada.",
+      "example_zh": "我吃麵包配果醬。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mermelada"
+      ]
+    }
+  ]
+}

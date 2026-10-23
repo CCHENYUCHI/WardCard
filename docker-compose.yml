@@ -2,7 +2,12 @@ version: '3.8'
 
 services:
   wordcard-server:
-    build: .
+    build:
+      context: .
+      args:
+        # Version shown in Settings → 版本資訊 (the image has no .git)
+        APP_COMMIT: ${APP_COMMIT:-unknown}
+        APP_BRANCH: ${APP_BRANCH:-unknown}
     container_name: wordcard-app
     restart: unless-stopped
     ports:

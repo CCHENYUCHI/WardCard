@@ -1,0 +1,4955 @@
+{
+  "theme": "grammar",
+  "theme_zh": "功能詞",
+  "entries": [
+    {
+      "word": "el",
+      "article": "",
+      "pos": "artículo",
+      "zh": "（陽性單數定冠詞）這個、那個",
+      "en": "the (masculine singular)",
+      "ipa": "/el/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ille",
+          "zh": "那個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "el",
+          "zh": "定冠詞"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "el 來自拉丁文 ille（那個、他）：指示詞「那個」用久了，弱化成了定冠詞。它和阿拉伯語冠詞 al- 長得像，其實毫無關係。",
+      "hook_zh": "el 是「那個」縮水而來：el libro＝那本書。戴帽子的 él 才是「他」。",
+      "usage_zh": "a + el → al、de + el → del；重讀 a 開頭的陰性名詞也用 el：el agua。",
+      "example_es": "El libro está en la mesa.",
+      "example_zh": "書在桌上。",
+      "image": "emoji:📘",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:el",
+        "wiktionary:la:ille"
+      ]
+    },
+    {
+      "word": "un",
+      "article": "",
+      "pos": "artículo",
+      "zh": "一個（陽性不定冠詞）",
+      "en": "a, an (masculine)",
+      "ipa": "/un/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūnus",
+          "zh": "一"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "uno → un",
+          "zh": "一"
+        }
+      ],
+      "cognates_en": [
+        "unit",
+        "unique",
+        "union"
+      ],
+      "story_zh": "un 就是數字 uno（一）的縮短形，來自拉丁文 ūnus「一」。所以西語的「一本書」和「某本書」用的是同一個字。",
+      "hook_zh": "un ＝ uno 剪掉尾巴；英文 unit、unique 裡也都藏著「一」。",
+      "usage_zh": "陽性 un、陰性 una：un libro, una casa；複數 unos/unas＝一些。",
+      "example_es": "Tengo un perro.",
+      "example_zh": "我有一隻狗。",
+      "image": "emoji:☝️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:un",
+        "wiktionary:la:unus"
+      ]
+    },
+    {
+      "word": "este",
+      "article": "",
+      "pos": "determinante",
+      "zh": "這個（近處）",
+      "en": "this",
+      "ipa": "/ˈeste/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "iste",
+          "zh": "這、那（指示詞）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "este",
+          "zh": "這個"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "este 來自拉丁指示詞 iste。有趣的是，同形的 este（東方）是另一個字：從法文 est 借來，和英文 east 同源。",
+      "hook_zh": "este → ese → aquel 由近到遠：este 就在我手邊。",
+      "usage_zh": "陰陽數變化：este, esta, estos, estas；不指特定名詞的「這個東西」用中性 esto。",
+      "example_es": "Este café está muy rico.",
+      "example_zh": "這杯咖啡很好喝。",
+      "image": "emoji:👇",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:este"
+      ]
+    },
+    {
+      "word": "ese",
+      "article": "",
+      "pos": "determinante",
+      "zh": "那個（靠近對方）",
+      "en": "that (near you)",
+      "ipa": "/ˈese/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipse",
+          "zh": "本身、正是那個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ese",
+          "zh": "那個"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ese 來自拉丁文 ipse，原本是強調用的「本身、正是那個」。",
+      "hook_zh": "ese＝你那邊的「那個」：離你近、離我稍遠。",
+      "usage_zh": "陰陽數變化：ese, esa, esos, esas；指一件事用中性 eso。",
+      "example_es": "¿Cuánto cuesta ese bolso?",
+      "example_zh": "那個包包多少錢？",
+      "image": "emoji:👉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ese"
+      ]
+    },
+    {
+      "word": "aquel",
+      "article": "",
+      "pos": "determinante",
+      "zh": "那個（遠處）",
+      "en": "that (over there)",
+      "ipa": "/aˈkel/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "eccum + ille",
+          "zh": "你看＋那個"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*eccum ille",
+          "zh": "你看那個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aquel",
+          "zh": "那個（遠）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "aquel 來自通俗拉丁文 *eccum ille：eccum 是「你看，在這兒！」，ille 是「那個」。就像指著遠方喊「你看那個！」",
+      "hook_zh": "aqu- 像在喊「啊—看！」，手指向遠處那座山。",
+      "usage_zh": "指離說話雙方都遠的東西：aquel, aquella, aquellos, aquellas。",
+      "example_es": "Aquel edificio es muy alto.",
+      "example_zh": "那棟大樓很高。",
+      "image": "emoji:🏔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aquel",
+        "wiktionary:la:eccum"
+      ]
+    },
+    {
+      "word": "mi",
+      "article": "",
+      "pos": "determinante",
+      "zh": "我的",
+      "en": "my",
+      "ipa": "/mi/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "meus",
+          "zh": "我的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mi",
+          "zh": "我的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "mi 來自拉丁文 meus（我的）。它在口語中碰到母音開頭的字時被縮短，才成了短短的 mi。",
+      "hook_zh": "mi ≈ 英文 my，連發音都像。戴帽子的 mí 是「我」：para mí（給我）。",
+      "usage_zh": "放名詞前，不分陰陽：mi padre, mi madre；複數 mis amigos。",
+      "example_es": "Mi madre es profesora.",
+      "example_zh": "我媽媽是老師。",
+      "image": "emoji:❤️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mi",
+        "wiktionary:la:meus"
+      ]
+    },
+    {
+      "word": "tu",
+      "article": "",
+      "pos": "determinante",
+      "zh": "你的",
+      "en": "your (informal)",
+      "ipa": "/tu/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tuus",
+          "zh": "你的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tu",
+          "zh": "你的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "tu 來自拉丁文 tuus（你的），是 tuyo 放在名詞前的縮短形。",
+      "hook_zh": "沒帽子 tu＝你的（tu casa）；戴帽子 tú＝你（tú eres）。帽子戴在「人」頭上。",
+      "usage_zh": "放名詞前，不分陰陽：tu libro, tu casa；複數 tus。",
+      "example_es": "¿Cómo se llama tu hermano?",
+      "example_zh": "你哥哥叫什麼名字？",
+      "image": "emoji:🎒",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tu",
+        "wiktionary:la:tuus"
+      ]
+    },
+    {
+      "word": "su",
+      "article": "",
+      "pos": "determinante",
+      "zh": "他的；她的；您的；他們的",
+      "en": "his; her; its; your (formal); their",
+      "ipa": "/su/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "suus",
+          "zh": "自己的、他的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "su",
+          "zh": "他的、她的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "su 來自拉丁文 suus，意思是「（他、她、他們）自己的」。",
+      "hook_zh": "su 一字包辦他的、她的、您的、他們的——看上下文猜主人。",
+      "usage_zh": "su casa 可能是他/她/您/他們的家；要講清楚就說 la casa de él。複數 sus。",
+      "example_es": "Ana vive con su familia.",
+      "example_zh": "Ana 和她的家人住在一起。",
+      "image": "emoji:👪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:su",
+        "wiktionary:la:suus"
+      ]
+    },
+    {
+      "word": "nuestro",
+      "article": "",
+      "pos": "determinante",
+      "zh": "我們的",
+      "en": "our, ours",
+      "ipa": "/ˈnwestɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "noster",
+          "zh": "我們的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nuestro",
+          "zh": "我們的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nuestro",
+          "zh": "我們的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "nuestro 來自拉丁文 noster（我們的），經古西班牙語一路傳下來。",
+      "hook_zh": "先記 nos（我們），再記 nuestro（我們的）：開頭都是 n。",
+      "usage_zh": "要和名詞陰陽數一致：nuestro padre, nuestra casa, nuestros amigos。",
+      "example_es": "Nuestra casa es pequeña.",
+      "example_zh": "我們的家很小。",
+      "image": "emoji:🏡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nuestro",
+        "wiktionary:la:noster"
+      ]
+    },
+    {
+      "word": "vuestro",
+      "article": "",
+      "pos": "determinante",
+      "zh": "你們的",
+      "en": "your, yours (plural, Spain)",
+      "ipa": "/ˈbwestɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vester / voster",
+          "zh": "你們的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vuestro",
+          "zh": "你們的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "vuestro 來自拉丁文 vostrum，也就是 vester（你們的）的另一種形式 voster。",
+      "hook_zh": "vos（你們）→ vuestro（你們的），和 vosotros 一起記。",
+      "usage_zh": "主要在西班牙用；拉丁美洲說 su 或 de ustedes。vuestra, vuestros, vuestras。",
+      "example_es": "¿Es vuestro coche?",
+      "example_zh": "這是你們的車嗎？",
+      "image": "emoji:🚗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vuestro",
+        "wiktionary:la:voster"
+      ]
+    },
+    {
+      "word": "otro",
+      "article": "",
+      "pos": "determinante",
+      "zh": "另一個；其他的",
+      "en": "other, another",
+      "ipa": "/ˈotɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "alter",
+          "zh": "（兩者中的）另一個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "otro",
+          "zh": "另一個"
+        }
+      ],
+      "cognates_en": [
+        "alternative",
+        "alter"
+      ],
+      "story_zh": "otro 來自拉丁文 alter，原指「兩個之中的另一個」。英文 alter、alternative（另一個選擇）也來自這個拉丁字。",
+      "hook_zh": "otro ≈ alter-native：換另一個選項。",
+      "usage_zh": "前面不能加 un：說 otro café（再一杯咖啡），不說 *un otro café。",
+      "example_es": "¿Quieres otro café?",
+      "example_zh": "你要再來一杯咖啡嗎？",
+      "image": "emoji:🔄",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:otro",
+        "wiktionary:la:alter"
+      ]
+    },
+    {
+      "word": "todo",
+      "article": "",
+      "pos": "determinante",
+      "zh": "全部；所有；每",
+      "en": "all, every; everything",
+      "ipa": "/ˈtodo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tōtus",
+          "zh": "整個、全部"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "todo",
+          "zh": "全部"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "todo",
+          "zh": "全部"
+        }
+      ],
+      "cognates_en": [
+        "total"
+      ],
+      "story_zh": "todo 來自拉丁文 tōtus（整個、全部）；total 這個字也是從同一個拉丁字借來的。tōtus 本身的來源則不確定。",
+      "hook_zh": "todo ≈ total：全部加總起來。",
+      "usage_zh": "後面常接冠詞：todo el día（一整天）、todos los días（每天）。",
+      "example_es": "Trabajo todos los días.",
+      "example_zh": "我每天都工作。",
+      "image": "emoji:💯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:todo",
+        "wiktionary:la:totus"
+      ]
+    },
+    {
+      "word": "mucho",
+      "article": "",
+      "pos": "determinante",
+      "zh": "很多；很",
+      "en": "much, many, a lot",
+      "ipa": "/ˈmut͡ʃo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "multus",
+          "zh": "很多"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "mucho, muito",
+          "zh": "很多"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mucho",
+          "zh": "很多"
+        }
+      ],
+      "cognates_en": [
+        "multiple",
+        "multiply"
+      ],
+      "story_zh": "mucho 來自拉丁文 multus（很多），和英文 multiple 同一家族。有趣的是，它和英文 much 雖然長得像、意思也像，卻沒有親戚關係！",
+      "hook_zh": "把 mucho 當成英文 much 來記就對了——只是它們其實不是親戚。",
+      "usage_zh": "當形容詞要配合名詞：mucha agua, muchos libros；當副詞不變：Me gusta mucho。",
+      "example_es": "Muchas gracias por tu ayuda.",
+      "example_zh": "非常感謝你的幫忙。",
+      "image": "emoji:📈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mucho",
+        "wiktionary:la:multus"
+      ]
+    },
+    {
+      "word": "poco",
+      "article": "",
+      "pos": "determinante",
+      "zh": "少的；一點",
+      "en": "little, few",
+      "ipa": "/ˈpoko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "paucus",
+          "zh": "少的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "poco",
+          "zh": "少"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "poco",
+          "zh": "少"
+        }
+      ],
+      "cognates_en": [
+        "few"
+      ],
+      "story_zh": "poco 來自拉丁文 paucus（少的），和英文 few 是遠房親戚。",
+      "hook_zh": "poco ≈ few；音樂術語 poco a poco＝漸漸地、一點一點。",
+      "usage_zh": "un poco＝一點（正面）；poco＝很少、不太（負面）：Hablo un poco de español。",
+      "example_es": "Hablo un poco de español.",
+      "example_zh": "我會說一點西班牙語。",
+      "image": "emoji:🤏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:poco"
+      ]
+    },
+    {
+      "word": "alguno",
+      "article": "",
+      "pos": "determinante",
+      "zh": "某個；一些；任何",
+      "en": "some, any; someone",
+      "ipa": "/alˈɡuno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "aliquis + ūnus",
+          "zh": "某人＋一"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*alicunus",
+          "zh": "某一個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alguno",
+          "zh": "某個"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "alguno 來自通俗拉丁文 *alicunus，由拉丁文 aliquis（某人）加上 ūnus（一）組成，也就是「某一個」。",
+      "hook_zh": "algún día＝某一天：alguno 就是「某一個」。",
+      "usage_zh": "陽性單數名詞前變 algún：algún día；問句裡是「任何」：¿Tienes alguna pregunta?",
+      "example_es": "¿Tienes alguna pregunta?",
+      "example_zh": "你有任何問題嗎？",
+      "image": "emoji:🎲",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alguno",
+        "wiktionary:la:aliquis",
+        "wiktionary:la:unus"
+      ]
+    },
+    {
+      "word": "ninguno",
+      "article": "",
+      "pos": "determinante",
+      "zh": "沒有一個；任何…都不",
+      "en": "no, none; nobody",
+      "ipa": "/ninˈɡuno/",
+      "breakdown": [
+        {
+          "part": "ni",
+          "zh": "也不、連…都不"
+        },
+        {
+          "part": "uno",
+          "zh": "一"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "nec ūnus",
+          "zh": "連一個都沒有"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ninguno",
+          "zh": "沒有一個"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ninguno 來自晚期拉丁文 nec ūnus，字面是「連一個都沒有」。用現代西語拆開看，正好是 ni（也不）＋ uno（一）。",
+      "hook_zh": "ni uno＝連一個都沒有 → ninguno。",
+      "usage_zh": "陽性單數名詞前變 ningún：ningún problema；放動詞後要加 no：No tengo ningún libro。",
+      "example_es": "No tengo ningún problema.",
+      "example_zh": "我沒有任何問題。",
+      "image": "emoji:0️⃣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ninguno",
+        "wiktionary:la:nec unus"
+      ]
+    },
+    {
+      "word": "cada",
+      "article": "",
+      "pos": "determinante",
+      "zh": "每；每個",
+      "en": "each, every",
+      "ipa": "/ˈkada/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "katá",
+          "zh": "（介系詞）按照、往下"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cata",
+          "zh": "每"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cada",
+          "zh": "每"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cada",
+          "zh": "每"
+        }
+      ],
+      "cognates_en": [
+        "catalogue"
+      ],
+      "story_zh": "cada 的祖先不是拉丁字，而是希臘介系詞 katá，借進拉丁文成了 cata。英文 catalogue（目錄）的 cata- 也是同一個希臘字。",
+      "hook_zh": "像翻目錄（catalogue）一樣一項一項數：cada día、cada semana。",
+      "usage_zh": "沒有陰陽、單複數變化，後面接單數名詞：cada día, cada persona。",
+      "example_es": "Como fruta cada día.",
+      "example_zh": "我每天吃水果。",
+      "image": "emoji:📅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cada"
+      ]
+    },
+    {
+      "word": "mismo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "相同的；本身",
+      "en": "same; -self",
+      "ipa": "/ˈmismo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "-met + ipsimus",
+          "zh": "（強調）＋正是那個"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*metipsimus",
+          "zh": "正是同一個"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "mesmo",
+          "zh": "相同的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mismo",
+          "zh": "相同的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "mismo 來自通俗拉丁文 *metipsimus：強調字尾 -met 加上 ipsimus（正是那個）。古西班牙語寫作 mesmo，法文的 même 也是它的兄弟。",
+      "hook_zh": "雙胞胎異口同聲：¡Lo mismo!（一樣的！）",
+      "usage_zh": "要配合名詞：la misma clase；放代名詞後是強調「自己」：yo mismo（我自己）。",
+      "example_es": "Vivimos en la misma calle.",
+      "example_zh": "我們住在同一條街。",
+      "image": "emoji:👯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mismo",
+        "wiktionary:la:-met"
+      ]
+    },
+    {
+      "word": "tanto",
+      "article": "",
+      "pos": "determinante",
+      "zh": "那麼多；如此多",
+      "en": "so much, so many",
+      "ipa": "/ˈtanto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tam + -tus",
+          "zh": "如此＋（字尾）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "tantus",
+          "zh": "那麼大、那麼多"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "tanto",
+          "zh": "那麼多"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tanto",
+          "zh": "那麼多"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "tanto 來自拉丁文 tantus（那麼大、那麼多），由 tam（如此）加上形容詞字尾組成；拉丁文裡和它成對的是 quantus（多少）。",
+      "hook_zh": "¿Cuánto?（多少？）—¡Tanto!（這麼多！）一問一答是一對。",
+      "usage_zh": "名詞前要變化：tanto dinero, tanta gente；tanto como＝和…一樣多。",
+      "example_es": "No tengo tanto tiempo.",
+      "example_zh": "我沒有那麼多時間。",
+      "image": "emoji:😮",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tanto",
+        "wiktionary:la:tantus",
+        "wiktionary:la:tam"
+      ]
+    },
+    {
+      "word": "demasiado",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "太；過多",
+      "en": "too, too much",
+      "ipa": "/demaˈsjado/",
+      "breakdown": [
+        {
+          "part": "demasía",
+          "zh": "過量"
+        },
+        {
+          "part": "-ado",
+          "zh": "（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "demasía",
+          "zh": "過量"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "demasiado",
+          "zh": "太多"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "demasiado 由名詞 demasía（過量）加上字尾 -ado 組成，意思就是「過量了」。",
+      "hook_zh": "demasiado 這個字本身就很長，長得「太多」了！",
+      "usage_zh": "當副詞不變：Es demasiado caro；名詞前要變化：demasiada gente。",
+      "example_es": "Este café está demasiado caliente.",
+      "example_zh": "這杯咖啡太燙了。",
+      "image": "emoji:🤯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:demasiado"
+      ]
+    },
+    {
+      "word": "bastante",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "相當；足夠",
+      "en": "quite, rather; enough",
+      "ipa": "/basˈtante/",
+      "breakdown": [
+        {
+          "part": "bastar",
+          "zh": "足夠"
+        },
+        {
+          "part": "-ante",
+          "zh": "（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "bastar",
+          "zh": "足夠"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bastante",
+          "zh": "夠的、相當"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "bastante 由動詞 bastar（足夠）加上字尾 -ante 組成，字面就是「夠的」。",
+      "hook_zh": "¡Basta!＝夠了！→ bastante＝夠多、相當。",
+      "usage_zh": "最常用「相當」：Es bastante difícil；名詞前複數要加 s：bastantes amigos。",
+      "example_es": "El examen es bastante difícil.",
+      "example_zh": "考試相當難。",
+      "image": "emoji:👌",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bastante"
+      ]
+    },
+    {
+      "word": "varios",
+      "article": "",
+      "pos": "determinante",
+      "zh": "幾個；好幾個",
+      "en": "several, various",
+      "ipa": "/ˈbaɾjos/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "various"
+      ],
+      "story_zh": "",
+      "hook_zh": "varios ≈ 英文 various：好幾個不一樣的東西。",
+      "usage_zh": "只用複數，放名詞前：varios días, varias veces。",
+      "example_es": "Tengo varios amigos en Madrid.",
+      "example_zh": "我在馬德里有好幾個朋友。",
+      "image": "emoji:🔢",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:varios"
+      ]
+    },
+    {
+      "word": "yo",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "我",
+      "en": "I",
+      "ipa": "/ˈʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "egō",
+          "zh": "我"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "eo",
+          "zh": "我"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "yo",
+          "zh": "我"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "yo",
+          "zh": "我"
+        }
+      ],
+      "cognates_en": [
+        "ego"
+      ],
+      "story_zh": "yo 來自拉丁文 egō（我），在晚期拉丁文縮成 eo，再變成 yo。英文的 ego（自我）就是這個拉丁字。",
+      "hook_zh": "yo ≈ ego：自我中心的人整天都在說 yo, yo, yo。",
+      "usage_zh": "動詞變化已表示「我」，常省略：(Yo) hablo español；強調或對比時才說 yo。",
+      "example_es": "Yo soy de Taiwán.",
+      "example_zh": "我來自台灣。",
+      "image": "emoji:🙋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:yo"
+      ]
+    },
+    {
+      "word": "tú",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "你",
+      "en": "you (informal)",
+      "ipa": "/ˈtu/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tū",
+          "zh": "你"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tú",
+          "zh": "你"
+        }
+      ],
+      "cognates_en": [
+        "thou"
+      ],
+      "story_zh": "tú 直接來自拉丁文 tū（你），和英文古語 thou、法文 tu 是同源字。",
+      "hook_zh": "tú 頭上戴帽子 ´＝人（你）；沒帽子的 tu＝你的。",
+      "usage_zh": "對朋友、家人、同輩用 tú；對長輩或陌生人用 usted。",
+      "example_es": "¿Tú hablas inglés?",
+      "example_zh": "你會說英文嗎？",
+      "image": "emoji:🫵",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tú",
+        "wiktionary:la:tu"
+      ]
+    },
+    {
+      "word": "usted",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "您",
+      "en": "you (formal)",
+      "ipa": "/usˈted/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "vuestra merced",
+          "zh": "閣下（您的恩典）"
+        },
+        {
+          "lang_zh": "近代西班牙語",
+          "word": "vuesasted, vusted",
+          "zh": "（縮短中的形式）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "usted",
+          "zh": "您"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "usted 是 vuestra merced（字面「您的恩典」，即「閣下」）被說太多次而縮短的結果。17 世紀還有 vuesasted、vusted 等中間形。",
+      "hook_zh": "usted 原本是「閣下」，所以動詞用第三人稱：像在說「閣下要喝咖啡嗎？」",
+      "usage_zh": "動詞用第三人稱：¿Cómo está usted?；書寫常縮寫成 Ud.。",
+      "example_es": "¿Cómo está usted?",
+      "example_zh": "您好嗎？",
+      "image": "emoji:🎩",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:usted"
+      ]
+    },
+    {
+      "word": "él",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "他",
+      "en": "he, him",
+      "ipa": "/ˈel/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ille",
+          "zh": "那個（人）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "él",
+          "zh": "他"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "él 來自拉丁文 ille（那個、那個人），和冠詞 el 是同一個來源：一個變成了「他」，一個變成了 the。",
+      "hook_zh": "戴帽子的 él 是「他」（人）；沒帽子的 el 是冠詞 the。",
+      "usage_zh": "和介系詞不縮寫：de él（他的）；但冠詞會縮：del libro（de + el）。",
+      "example_es": "Él es mi hermano.",
+      "example_zh": "他是我哥哥。",
+      "image": "emoji:👨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:él",
+        "wiktionary:la:ille"
+      ]
+    },
+    {
+      "word": "ella",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "她",
+      "en": "she, her",
+      "ipa": "/ˈeʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "illa",
+          "zh": "那個（陰性）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ella",
+          "zh": "她"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ella 來自拉丁文 illa，也就是 ille（那個）的陰性形；和 él 正好是一對。",
+      "hook_zh": "ella 的 ll 唸 /ʝ/，聽起來像「欸壓」。",
+      "usage_zh": "複數 ellas（她們）；只要有一個男生，就用 ellos。",
+      "example_es": "Ella trabaja en un hospital.",
+      "example_zh": "她在醫院工作。",
+      "image": "emoji:👩",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ella"
+      ]
+    },
+    {
+      "word": "nosotros",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "我們",
+      "en": "we, us",
+      "ipa": "/noˈsotɾos/",
+      "breakdown": [
+        {
+          "part": "nos",
+          "zh": "我們"
+        },
+        {
+          "part": "otros",
+          "zh": "其他人"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nōs + alter",
+          "zh": "我們＋另一個"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nos + otros",
+          "zh": "我們＋其他人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nosotros",
+          "zh": "我們"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "nosotros 是古西班牙語 nos（我們）＋ otros（其他人）黏在一起，原本像「我們這些人」。法文口語 nous autres 也是一樣的組法。",
+      "hook_zh": "nos + otros：我（nos）和其他人（otros）＝我們大家。",
+      "usage_zh": "全是女生用 nosotras；動詞用 -mos 結尾：nosotros hablamos。",
+      "example_es": "Nosotros vivimos en Taipéi.",
+      "example_zh": "我們住在台北。",
+      "image": "emoji:🧑‍🤝‍🧑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nosotros",
+        "wiktionary:la:alter"
+      ]
+    },
+    {
+      "word": "vosotros",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "你們（西班牙用）",
+      "en": "you (plural, Spain)",
+      "ipa": "/boˈsotɾos/",
+      "breakdown": [
+        {
+          "part": "vos",
+          "zh": "你們"
+        },
+        {
+          "part": "otros",
+          "zh": "其他人"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vōs + alter",
+          "zh": "你們＋另一個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vos + otros",
+          "zh": "你們＋其他人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vosotros",
+          "zh": "你們"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "vosotros 是 vos（你們，來自拉丁文 vōs）＋ otros（其他人）組成的，和 nosotros 是同一個做法。",
+      "hook_zh": "vos + otros＝你們這群人；只有西班牙人常說。",
+      "usage_zh": "只在西班牙用；拉丁美洲一律說 ustedes。全是女生用 vosotras。",
+      "example_es": "¿Vosotros sois estudiantes?",
+      "example_zh": "你們是學生嗎？",
+      "image": "emoji:👥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vosotros",
+        "wiktionary:la:vos"
+      ]
+    },
+    {
+      "word": "ellos",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "他們",
+      "en": "they, them (masculine)",
+      "ipa": "/ˈeʝos/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "él → ellos、ella → ellas：單數「他」只有一個 l，複數卻是雙 ll。",
+      "usage_zh": "男女混在一起也用 ellos；全是女生才用 ellas。",
+      "example_es": "Ellos son mis amigos.",
+      "example_zh": "他們是我的朋友。",
+      "image": "emoji:👬",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:ellos"
+      ]
+    },
+    {
+      "word": "ustedes",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "您們；你們",
+      "en": "you (plural)",
+      "ipa": "/usˈtedes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "vuestra merced",
+          "zh": "閣下"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "usted",
+          "zh": "您"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ustedes",
+          "zh": "您們"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ustedes 就是 usted 的複數，而 usted 本身是 vuestra merced（閣下）縮短來的。",
+      "hook_zh": "usted＋es＝ustedes：「各位閣下」。",
+      "usage_zh": "拉丁美洲對朋友也用 ustedes（不用 vosotros）；動詞用第三人稱複數。",
+      "example_es": "¿Ustedes son de México?",
+      "example_zh": "你們是墨西哥人嗎？",
+      "image": "emoji:👨‍👩‍👧‍👦",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ustedes",
+        "wiktionary:es:usted"
+      ]
+    },
+    {
+      "word": "me",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "我（受詞）；我自己",
+      "en": "me; myself",
+      "ipa": "/me/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mē",
+          "zh": "我（受格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "me",
+          "zh": "我（受詞）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "me 直接來自拉丁文 mē，也就是 ego（我）的受格；當間接受詞時，可能也有一部分來自 mihi（給我）。",
+      "hook_zh": "me＝英文 me：Me llamo Ana＝我把「我」叫做 Ana。",
+      "usage_zh": "放在變位動詞前：Me gusta el café；原形動詞可接在後面：llamarme。",
+      "example_es": "Me llamo Ana.",
+      "example_zh": "我叫 Ana。",
+      "image": "emoji:🙋‍♂️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:me",
+        "wiktionary:la:me"
+      ]
+    },
+    {
+      "word": "te",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "你（受詞）；你自己",
+      "en": "you (object); yourself",
+      "ipa": "/te/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tē",
+          "zh": "你（受格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "te",
+          "zh": "你（受詞）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "te 來自拉丁文 tē，也就是 tū（你）的受格。",
+      "hook_zh": "Te quiero＝我愛你，te 就是被愛的「你」。戴帽子的 té 卻是「茶」！",
+      "usage_zh": "放在變位動詞前：Te llamo mañana；té（茶）有重音，別寫錯。",
+      "example_es": "Te quiero mucho.",
+      "example_zh": "我很愛你。",
+      "image": "emoji:💌",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:te",
+        "wiktionary:la:te"
+      ]
+    },
+    {
+      "word": "se",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "自己（反身）；給他（代替 le）",
+      "en": "himself, herself, itself; oneself",
+      "ipa": "/se/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sē",
+          "zh": "自己"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "se",
+          "zh": "自己（反身）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "反身的 se 來自拉丁文 sē（自己）。另一個代替 le 的 se 則是古西班牙語 ge（源自拉丁文 illī），發音改變後才和 se 撞在一起。",
+      "hook_zh": "se 就是「自己」：Se llama Juan＝他把自己叫做 Juan。",
+      "usage_zh": "le/les 遇到 lo/la 變成 se：Se lo doy。戴帽子的 sé 是「我知道」。",
+      "example_es": "Ella se llama María.",
+      "example_zh": "她叫 María。",
+      "image": "emoji:🪞",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:se",
+        "wiktionary:la:illi"
+      ]
+    },
+    {
+      "word": "lo",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "它；他（受詞）；（中性冠詞）",
+      "en": "it, him (object); the (neuter)",
+      "ipa": "/lo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "illum / illud",
+          "zh": "那個（受格／中性）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "lo",
+          "zh": "他、它"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lo",
+          "zh": "它、他"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "lo 來自古西班牙語 lo。當代名詞「他、它」時，源自拉丁文 illum（ille 的受格）；當中性冠詞時，則源自 illud（ille 的中性形）。",
+      "hook_zh": "¿El libro? Lo tengo.＝那本書？我有（它）。lo 就是「它」。",
+      "usage_zh": "陽性受詞代名詞：Lo veo；中性冠詞 lo + 形容詞：lo bueno（好的部分）。",
+      "example_es": "No lo sé.",
+      "example_zh": "我不知道。",
+      "image": "emoji:📦",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lo"
+      ]
+    },
+    {
+      "word": "le",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "給他；給她；給您",
+      "en": "to him, to her, to you (formal)",
+      "ipa": "/le/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "illī",
+          "zh": "給那個人（ille 的與格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "le",
+          "zh": "給他、給她"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "le 來自拉丁文 illī，是 ille（那個）的與格，意思是「給那個人」。",
+      "hook_zh": "le＝「給他／給她／給您」：Le doy un regalo（我送他一份禮物）。",
+      "usage_zh": "間接受詞，複數 les；遇到 lo/la 要變成 se：Se lo doy。",
+      "example_es": "Le doy un regalo a mi madre.",
+      "example_zh": "我送媽媽一份禮物。",
+      "image": "emoji:🎁",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:le"
+      ]
+    },
+    {
+      "word": "nos",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "我們（受詞）；我們自己",
+      "en": "us; ourselves",
+      "ipa": "/nos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nōs / nōbīs",
+          "zh": "我們（受格／與格）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nos",
+          "zh": "我們"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nos",
+          "zh": "我們（受詞）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "nos 來自古西班牙語 nos，源自拉丁文的受格 nōs 和與格 nōbīs（我們）。",
+      "hook_zh": "nos 是 nosotros 的頭：¡Nos vemos!＝我們（彼此）見！",
+      "usage_zh": "受詞或反身的「我們」，放在變位動詞前：Nos vemos mañana。",
+      "example_es": "Nos vemos mañana.",
+      "example_zh": "明天見。",
+      "image": "emoji:🫂",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nos"
+      ]
+    },
+    {
+      "word": "algo",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "某物；有點",
+      "en": "something, anything; somewhat",
+      "ipa": "/ˈalɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "aliquod",
+          "zh": "某個東西"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "algo",
+          "zh": "某物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "algo",
+          "zh": "某物"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "algo 來自拉丁文 aliquod（某個東西），經古西班牙語傳下來。",
+      "hook_zh": "alg- 開頭都是「某」：algo 某物、alguien 某人、alguno 某個。",
+      "usage_zh": "問句裡是「任何東西」：¿Quieres algo?；否定句改用 nada。",
+      "example_es": "¿Quieres algo de beber?",
+      "example_zh": "你想喝點什麼嗎？",
+      "image": "emoji:❔",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:algo"
+      ]
+    },
+    {
+      "word": "nada",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "什麼都沒有；完全不",
+      "en": "nothing, not anything",
+      "ipa": "/ˈnada/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "(nūlla rēs) nāta",
+          "zh": "沒有一件生出來的東西"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nada",
+          "zh": "沒有東西"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nada",
+          "zh": "什麼都沒有"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "nada 來自拉丁片語 (nūlla rēs) nāta，字面是「沒有一件生出來的東西」。後來只留下 nāta（生出來的），卻反而代表「什麼都沒有」。",
+      "hook_zh": "nada 和 nadie 是姊妹：一個「沒東西」、一個「沒人」。De nada＝沒什麼（不客氣）。",
+      "usage_zh": "放動詞後要加 no：No quiero nada（雙重否定在西語是正確的）。",
+      "example_es": "No tengo nada en la nevera.",
+      "example_zh": "我冰箱裡什麼都沒有。",
+      "image": "emoji:🕳️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nada"
+      ]
+    },
+    {
+      "word": "alguien",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "某人；任何人",
+      "en": "someone, anyone",
+      "ipa": "/ˈalɡjen/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "alguno + quien",
+          "zh": "某個＋誰"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "alguién, alguien",
+          "zh": "某人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alguien",
+          "zh": "某人"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "alguien 在 1247 年的文件就出現了。最被接受的說法是：它是 alguno（某個）受 quien（誰）影響變來的；也有人推測來自拉丁文 aliquem，但有爭議。",
+      "hook_zh": "alg-（某）＋ quien（誰）→ alguien：「某個誰」＝某人。",
+      "usage_zh": "否定用 nadie：¿Hay alguien? —No, no hay nadie。不變形、不加冠詞。",
+      "example_es": "¿Hay alguien en casa?",
+      "example_zh": "家裡有人嗎？",
+      "image": "emoji:👤",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alguien"
+      ]
+    },
+    {
+      "word": "nadie",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "沒有人",
+      "en": "nobody, no one",
+      "ipa": "/ˈnadje/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nātī",
+          "zh": "出生的人們"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nadi, nade",
+          "zh": "沒有人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nadie",
+          "zh": "沒有人"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "nadie 竟然來自拉丁文 nātī「出生的人們」！它常和否定動詞連用（像「出生的人都沒做」），久了 nadi 單獨就變成「沒有人」。nada 也來自同一個字根。",
+      "hook_zh": "nadie＝nada 的「人」版：沒東西 nada、沒人 nadie。",
+      "usage_zh": "放動詞後要加 no：No hay nadie；放句首就不用：Nadie sabe。",
+      "example_es": "No hay nadie en la oficina.",
+      "example_zh": "辦公室裡沒有人。",
+      "image": "emoji:🫥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nadie"
+      ]
+    },
+    {
+      "word": "esto",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "這個（東西、事情）",
+      "en": "this (thing)",
+      "ipa": "/ˈesto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "istud",
+          "zh": "這個（iste 的中性）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esto",
+          "zh": "這個東西"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "esto 來自拉丁文 istud，是 iste 的中性形，所以只拿來指「這件事、這個東西」。",
+      "hook_zh": "-o 結尾的 esto、eso 指「不知道叫什麼」的東西：¿Qué es esto?",
+      "usage_zh": "中性，沒有複數，不接名詞：¿Qué es esto?；指具體名詞用 este/esta。",
+      "example_es": "¿Qué es esto?",
+      "example_zh": "這是什麼？",
+      "image": "emoji:🧐",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esto"
+      ]
+    },
+    {
+      "word": "eso",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "那個（東西、事情）",
+      "en": "that (thing)",
+      "ipa": "/ˈeso/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "¡Eso es!＝就是那樣！對對對！——把它當成附和的口頭禪來記。",
+      "usage_zh": "中性，不接名詞，指一件事：Eso es verdad；指具體東西用 ese/esa。",
+      "example_es": "Eso es muy interesante.",
+      "example_zh": "那件事很有趣。",
+      "image": "emoji:💬",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:eso"
+      ]
+    },
+    {
+      "word": "qué",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "什麼；多麼",
+      "en": "what; how (exclamation)",
+      "ipa": "/ˈke/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quid",
+          "zh": "什麼"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "qué",
+          "zh": "什麼"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "qué 直接來自拉丁文 quid（什麼）。沒有重音的 que（that）也來自同一個字。",
+      "hook_zh": "問問題就戴帽子：¿Qué?（什麼？）；不問就脫帽：que（that）。",
+      "usage_zh": "疑問、感嘆都要加重音：¿Qué es?、¡Qué bonito!（好漂亮！）",
+      "example_es": "¿Qué quieres comer?",
+      "example_zh": "你想吃什麼？",
+      "image": "emoji:❓",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:qué",
+        "wiktionary:es:que",
+        "wiktionary:la:quid"
+      ]
+    },
+    {
+      "word": "quién",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "誰",
+      "en": "who",
+      "ipa": "/ˈkjen/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quem",
+          "zh": "誰（受格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "quién",
+          "zh": "誰"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "quién 來自拉丁文 quem，也就是「誰」的受格形。",
+      "hook_zh": "敲門聲響起：¿Quién es?（誰啊？）——qu 唸 k。",
+      "usage_zh": "問複數用 quiénes：¿Quiénes son?；「誰的」說 ¿De quién es?",
+      "example_es": "¿Quién es tu profesor?",
+      "example_zh": "你的老師是誰？",
+      "image": "emoji:🕵️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:quién"
+      ]
+    },
+    {
+      "word": "cuál",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "哪一個；什麼",
+      "en": "which, what",
+      "ipa": "/ˈkwal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quālis",
+          "zh": "什麼樣的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "qual",
+          "zh": "哪個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuál",
+          "zh": "哪一個"
+        }
+      ],
+      "cognates_en": [
+        "quality"
+      ],
+      "story_zh": "cuál 來自拉丁文 quālis（什麼樣的），古西班牙語寫作 qual。英文 quality（品質）也是從這個拉丁字衍生的。",
+      "hook_zh": "cuál＝which：從幾個選項裡挑一個。",
+      "usage_zh": "複數 cuáles；問名字、電話用 cuál：¿Cuál es tu nombre?（不說 ¿Qué es…?）",
+      "example_es": "¿Cuál es tu número de teléfono?",
+      "example_zh": "你的電話號碼是多少？",
+      "image": "emoji:🔀",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuál",
+        "wiktionary:la:qualis"
+      ]
+    },
+    {
+      "word": "cuándo",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "什麼時候",
+      "en": "when?",
+      "ipa": "/ˈkwando/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quandō",
+          "zh": "什麼時候"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuándo",
+          "zh": "什麼時候"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cuándo 來自拉丁文 quandō（什麼時候）。",
+      "hook_zh": "問「什麼時候？」要戴重音帽 cuándo；回答「當…時」的 cuando 不戴。",
+      "usage_zh": "疑問句要有重音：¿Cuándo vienes?；「當…的時候」用 cuando。",
+      "example_es": "¿Cuándo es tu cumpleaños?",
+      "example_zh": "你的生日是什麼時候？",
+      "image": "emoji:⏰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuándo"
+      ]
+    },
+    {
+      "word": "dónde",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "哪裡",
+      "en": "where?",
+      "ipa": "/ˈdonde/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "¿De dónde eres?＝你從哪裡來？自我介紹必考題。",
+      "usage_zh": "疑問要有重音；方向用 adónde：¿Adónde vas?；來源用 de dónde。",
+      "example_es": "¿Dónde está el baño?",
+      "example_zh": "廁所在哪裡？",
+      "image": "emoji:🗺️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:dónde"
+      ]
+    },
+    {
+      "word": "cómo",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "怎麼；如何",
+      "en": "how?",
+      "ipa": "/ˈkomo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quōmodo",
+          "zh": "用什麼方式"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cōmō",
+          "zh": "（口語形）如何"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cómo",
+          "zh": "怎麼"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cómo 來自拉丁文 cōmō，是 quōmodo（用什麼方式、如何）的非書面口語形。",
+      "hook_zh": "¿Cómo estás?＝你好嗎？戴帽子 cómo 是「怎麼」，沒帽子 como 是「像」或「我吃」。",
+      "usage_zh": "疑問要有重音：¿Cómo te llamas?；沒聽清楚也可以只說 ¿Cómo?（什麼？）",
+      "example_es": "¿Cómo te llamas?",
+      "example_zh": "你叫什麼名字？",
+      "image": "emoji:🙂",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cómo"
+      ]
+    },
+    {
+      "word": "cuánto",
+      "article": "",
+      "pos": "determinante",
+      "zh": "多少",
+      "en": "how much, how many",
+      "ipa": "/ˈkwanto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quantus",
+          "zh": "多大、多少"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "quánto",
+          "zh": "多少"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuánto",
+          "zh": "多少"
+        }
+      ],
+      "cognates_en": [
+        "quantity"
+      ],
+      "story_zh": "cuánto 來自拉丁文 quantus（多大、多少），早期寫作 quánto。英文 quantity（數量）也是從這個拉丁字衍生的。",
+      "hook_zh": "cuánto ≈ quantity：問數量、問價錢都靠它。",
+      "usage_zh": "要配合名詞：¿Cuántos años tienes?；問價錢：¿Cuánto cuesta?",
+      "example_es": "¿Cuánto cuesta este libro?",
+      "example_zh": "這本書多少錢？",
+      "image": "emoji:💰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuánto",
+        "wiktionary:la:quantus"
+      ]
+    },
+    {
+      "word": "a",
+      "article": "",
+      "pos": "preposición",
+      "zh": "到；向；在（時間）",
+      "en": "to; at",
+      "ipa": "/a/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ad",
+          "zh": "向、到"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "a",
+          "zh": "到、向"
+        }
+      ],
+      "cognates_en": [
+        "at"
+      ],
+      "story_zh": "a 來自拉丁文 ad（向、到）。英文 at 是它的遠親。",
+      "hook_zh": "一個字母就是一個方向箭頭 →：Voy a Taipéi（我去台北）。",
+      "usage_zh": "a + el 要縮寫成 al：Voy al cine；人當受詞前要加 a：Veo a María。",
+      "example_es": "Voy a la playa mañana.",
+      "example_zh": "我明天要去海邊。",
+      "image": "emoji:➡️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:a",
+        "wiktionary:la:ad"
+      ]
+    },
+    {
+      "word": "en",
+      "article": "",
+      "pos": "preposición",
+      "zh": "在…裡；在…上；在",
+      "en": "in, on, at",
+      "ipa": "/en/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "in",
+          "zh": "在…裡"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "en",
+          "zh": "在"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "en",
+          "zh": "在"
+        }
+      ],
+      "cognates_en": [
+        "in"
+      ],
+      "story_zh": "en 來自拉丁文 in（在…裡面），和英文 in 是同源字，意思也幾乎一樣。",
+      "hook_zh": "en＝in/on/at 三合一：en casa、en la mesa、en Taiwán。",
+      "usage_zh": "交通工具用 en：en tren, en autobús（但走路是 a pie）。",
+      "example_es": "Vivo en Taipéi.",
+      "example_zh": "我住在台北。",
+      "image": "emoji:📥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:en"
+      ]
+    },
+    {
+      "word": "con",
+      "article": "",
+      "pos": "preposición",
+      "zh": "和；跟；用",
+      "en": "with",
+      "ipa": "/kon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cum",
+          "zh": "和、一起"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "con",
+          "zh": "和"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "con 來自拉丁文 cum（和、一起）。義大利文 con、葡萄牙文 com 都是它的兄弟。",
+      "hook_zh": "con＝with：café con leche（咖啡加牛奶＝拿鐵）。",
+      "usage_zh": "con + mí/ti 要變成 conmigo（跟我）、contigo（跟你）。",
+      "example_es": "Vivo con mis padres.",
+      "example_zh": "我和爸媽住。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:con",
+        "wiktionary:la:cum"
+      ]
+    },
+    {
+      "word": "sin",
+      "article": "",
+      "pos": "preposición",
+      "zh": "沒有；不帶",
+      "en": "without",
+      "ipa": "/ˈsin/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sine",
+          "zh": "沒有"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sin",
+          "zh": "沒有"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sin",
+          "zh": "沒有"
+        }
+      ],
+      "cognates_en": [
+        "sans"
+      ],
+      "story_zh": "sin 來自拉丁文 sine（沒有），和英文 sans（無；字型 sans-serif＝無襯線）、法文 sans 是同源字。",
+      "hook_zh": "sin＝without：café sin azúcar（咖啡不加糖）。和 con 是一對。",
+      "usage_zh": "後面名詞常不加冠詞：sin azúcar；也可接原形動詞：sin comer。",
+      "example_es": "Un café sin azúcar, por favor.",
+      "example_zh": "一杯不加糖的咖啡，謝謝。",
+      "image": "emoji:🚫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sin"
+      ]
+    },
+    {
+      "word": "para",
+      "article": "",
+      "pos": "preposición",
+      "zh": "為了；給；前往",
+      "en": "for; in order to; to",
+      "ipa": "/paɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prō ad",
+          "zh": "為了＋向"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "pora",
+          "zh": "為了"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "para",
+          "zh": "為了"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "para 原本是古字 pora，可能是 por + a 的組合，也可能來自拉丁文 prō ad；後來又受古介系詞 par 影響，變成 para。",
+      "hook_zh": "para 看「目的地」🎯：para ti（給你）、para aprender（為了學）。",
+      "usage_zh": "para＝給、為了、前往、期限；por＝因為、經過、交換。謝謝要說 gracias por。",
+      "example_es": "Este regalo es para ti.",
+      "example_zh": "這份禮物是給你的。",
+      "image": "emoji:🎯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:para",
+        "wiktionary:la:pro"
+      ]
+    },
+    {
+      "word": "por",
+      "article": "",
+      "pos": "preposición",
+      "zh": "因為；經過；透過；每",
+      "en": "for; by; through; because of",
+      "ipa": "/poɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prō",
+          "zh": "為了、代替"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "pōr",
+          "zh": "為了"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "por",
+          "zh": "為了"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "por",
+          "zh": "因為、經過"
+        }
+      ],
+      "cognates_en": [
+        "pro"
+      ],
+      "story_zh": "por 來自拉丁文 prō（為了、代替），晚期拉丁文已唸成 pōr。para 可能也是從 por + a 變來的，難怪兩個字常讓人搞混。",
+      "hook_zh": "por 看「原因、路徑」：por la lluvia（因為雨）、por el parque（穿過公園）。",
+      "usage_zh": "por＝因為、經過、透過、交換、每：Gracias por todo；dos veces por semana。",
+      "example_es": "Gracias por tu ayuda.",
+      "example_zh": "謝謝你的幫忙。",
+      "image": "emoji:🔁",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:por",
+        "wiktionary:la:por",
+        "wiktionary:la:pro"
+      ]
+    },
+    {
+      "word": "sobre",
+      "article": "",
+      "pos": "preposición",
+      "zh": "在…上面；關於",
+      "en": "on, over, above; about",
+      "ipa": "/ˈsobɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "super",
+          "zh": "在上方"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sobre",
+          "zh": "在上面"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sobre",
+          "zh": "在上面、關於"
+        }
+      ],
+      "cognates_en": [
+        "super"
+      ],
+      "story_zh": "sobre 來自拉丁文 super（在上方），和英文 super 是同一個字。西語後來又直接借了 super，兩者成了「雙胞胎字」。",
+      "hook_zh": "sobre ≈ super：在上面。另一個意思是「關於」：un libro sobre Taiwán。",
+      "usage_zh": "可指「在…上」或「關於」；當名詞 el sobre 是「信封」。",
+      "example_es": "Es un libro sobre la historia de Taiwán.",
+      "example_zh": "這是一本關於台灣歷史的書。",
+      "image": "emoji:🔝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sobre",
+        "wiktionary:la:super"
+      ]
+    },
+    {
+      "word": "entre",
+      "article": "",
+      "pos": "preposición",
+      "zh": "在…之間；在…之中",
+      "en": "between, among",
+      "ipa": "/ˈentɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "inter",
+          "zh": "在…之間"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "entre",
+          "zh": "在…之間"
+        }
+      ],
+      "cognates_en": [
+        "international",
+        "internet"
+      ],
+      "story_zh": "entre 來自拉丁文 inter（在…之間），就是英文 international、internet 開頭的 inter-。",
+      "hook_zh": "entre ≈ inter-：internacional＝國與國之間。",
+      "usage_zh": "entre A y B（在 A 和 B 之間）；接代名詞用 tú/yo：entre tú y yo。",
+      "example_es": "El banco está entre la farmacia y el café.",
+      "example_zh": "銀行在藥局和咖啡店之間。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:entre",
+        "wiktionary:la:inter"
+      ]
+    },
+    {
+      "word": "hasta",
+      "article": "",
+      "pos": "preposición",
+      "zh": "直到；甚至",
+      "en": "until, up to; even",
+      "ipa": "/ˈasta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "ḥattā",
+          "zh": "直到（推測）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "fata, fasta",
+          "zh": "直到"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hasta",
+          "zh": "直到"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "hasta 的來源不確定。常見說法是來自阿拉伯語 ḥattā（直到），也有人主張是拉丁文 ad ista（到這裡）。古西班牙語寫作 fata、fasta。",
+      "hook_zh": "¡Hasta mañana!＝直到明天（明天見）；hasta 就是 until。",
+      "usage_zh": "h 不發音；「直到」：hasta las cinco；也可表示「甚至」：Hasta mi abuela lo sabe。",
+      "example_es": "Trabajo hasta las seis.",
+      "example_zh": "我工作到六點。",
+      "image": "emoji:🏁",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hasta"
+      ]
+    },
+    {
+      "word": "desde",
+      "article": "",
+      "pos": "preposición",
+      "zh": "從；自從",
+      "en": "from; since",
+      "ipa": "/ˈdesde/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "dē ex",
+          "zh": "從…出來"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "des + de",
+          "zh": "從"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "desde",
+          "zh": "從、自從"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "desde 由較早的 des + de 組成，而 des 來自晚期拉丁文 dē ex。幾個「從」疊在一起，強調「從…開始」。",
+      "hook_zh": "desde A hasta B＝從 A 到 B：desde 是起點，hasta 是終點。",
+      "usage_zh": "desde…hasta…；時間「自從」：Vivo aquí desde 2020。",
+      "example_es": "Estudio español desde enero.",
+      "example_zh": "我從一月開始學西班牙語。",
+      "image": "emoji:🚩",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:desde",
+        "wiktionary:la:de ex"
+      ]
+    },
+    {
+      "word": "hacia",
+      "article": "",
+      "pos": "preposición",
+      "zh": "朝向；大約（時間）",
+      "en": "toward; around (time)",
+      "ipa": "/ˈaθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "faciem ad",
+          "zh": "臉朝向…"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "fazia, faza",
+          "zh": "朝向"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hacia",
+          "zh": "朝向"
+        }
+      ],
+      "cognates_en": [
+        "face"
+      ],
+      "story_zh": "hacia 來自拉丁文 faciem ad，字面是「把臉朝向…」。古西班牙語寫作 fazia 或 faza。",
+      "hook_zh": "hacia＝把臉（face）朝向那裡：camino hacia el mar（往海邊走）。",
+      "usage_zh": "只表示方向「朝著」，不一定到達；也可指大約時間：hacia las tres。",
+      "example_es": "Caminamos hacia la playa.",
+      "example_zh": "我們朝海灘走去。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hacia"
+      ]
+    },
+    {
+      "word": "contra",
+      "article": "",
+      "pos": "preposición",
+      "zh": "對著；反對；對抗",
+      "en": "against, versus",
+      "ipa": "/kontɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "contrā",
+          "zh": "對面、反對"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "contra, cuentra",
+          "zh": "對抗"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "contra",
+          "zh": "反對"
+        }
+      ],
+      "cognates_en": [
+        "contrary",
+        "contrast"
+      ],
+      "story_zh": "contra 來自拉丁文 contrā（對面、反對）。古西班牙語也有 cuentra，但這個字通常不重讀，最後 contra 勝出。",
+      "hook_zh": "contra ≈ contrary：站在對面唱反調。",
+      "usage_zh": "比賽「對」：España contra Francia；en contra de＝反對。",
+      "example_es": "Mañana jugamos contra el equipo de Juan.",
+      "example_zh": "明天我們和 Juan 的隊比賽。",
+      "image": "emoji:⚔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:contra",
+        "wiktionary:la:contra"
+      ]
+    },
+    {
+      "word": "durante",
+      "article": "",
+      "pos": "preposición",
+      "zh": "在…期間",
+      "en": "during; for (a time)",
+      "ipa": "/duˈɾante/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dūrantem",
+          "zh": "持續著的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "durante",
+          "zh": "在…期間"
+        }
+      ],
+      "cognates_en": [
+        "during"
+      ],
+      "story_zh": "durante 來自拉丁文 dūrantem，原本是「持續著的」。英文 during 也是同一個家族。",
+      "hook_zh": "durante ≈ during，再配上 durar（持續）一起記。",
+      "usage_zh": "接名詞：durante la clase（上課時）；接時間長度：durante dos horas。",
+      "example_es": "No hablo durante la clase.",
+      "example_zh": "上課時我不講話。",
+      "image": "emoji:⏳",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:durante"
+      ]
+    },
+    {
+      "word": "según",
+      "article": "",
+      "pos": "preposición",
+      "zh": "根據；按照",
+      "en": "according to",
+      "ipa": "/seˈɡun/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "secundus",
+          "zh": "第二、跟隨的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "segund, segunt",
+          "zh": "根據"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "según",
+          "zh": "根據"
+        }
+      ],
+      "cognates_en": [
+        "second"
+      ],
+      "story_zh": "según 來自拉丁文 secundus（第二、跟在後面的），和 segundo（第二）是雙胞胎字，也和 seguir（跟隨）有關。",
+      "hook_zh": "según ≈ second：跟在某人後面（follow）走＝照他說的。",
+      "usage_zh": "後面接主格代名詞：según tú, según yo（不說 según ti）。",
+      "example_es": "Según el profesor, el examen es fácil.",
+      "example_zh": "根據老師的說法，考試很簡單。",
+      "image": "emoji:📰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:según",
+        "wiktionary:la:secundus",
+        "wiktionary:la:sequor"
+      ]
+    },
+    {
+      "word": "y",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "和；而且",
+      "en": "and",
+      "ipa": "/i/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "et",
+          "zh": "和"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "é, e",
+          "zh": "和"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "y",
+          "zh": "和"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "y 來自拉丁文 et（和），古西班牙語寫作 é 或 e。",
+      "hook_zh": "y 唸「一」：té y café＝茶「一」咖啡＝茶和咖啡。拉丁文 et 就是 etc. 的 et。",
+      "usage_zh": "後面的字以 i-/hi- 音開頭時改成 e：padre e hijo。",
+      "example_es": "Tengo un hermano y una hermana.",
+      "example_zh": "我有一個哥哥和一個妹妹。",
+      "image": "emoji:➕",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:y",
+        "wiktionary:la:et"
+      ]
+    },
+    {
+      "word": "o",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "或；還是",
+      "en": "or",
+      "ipa": "/o/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "aut",
+          "zh": "或"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "o",
+          "zh": "或"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "o",
+          "zh": "或"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "o 來自拉丁文 aut（或者），經古西班牙語 o 一路沒變。",
+      "hook_zh": "o 長得像一個圈圈：二選一，圈一個。",
+      "usage_zh": "下一個字以 o-/ho- 開頭時改成 u：siete u ocho。",
+      "example_es": "¿Té o café?",
+      "example_zh": "茶還是咖啡？",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:o",
+        "wiktionary:la:aut"
+      ]
+    },
+    {
+      "word": "pero",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "但是",
+      "en": "but",
+      "ipa": "/ˈpeɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "per hoc",
+          "zh": "因為這樣"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "pero",
+          "zh": "但是"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pero",
+          "zh": "但是"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "pero 來自晚期拉丁文 per hoc，字面是「透過這個」，意思是「因為這樣」；到了古西班牙語已經是「但是」。",
+      "hook_zh": "小心！pero（但是）和 perro（狗）只差一個 r。",
+      "usage_zh": "「但是」；前面否定、後面更正時用 sino：No es rojo, sino azul。",
+      "example_es": "Es caro, pero muy bueno.",
+      "example_zh": "很貴，但是很好。",
+      "image": "emoji:↩️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pero",
+        "wiktionary:la:per hoc"
+      ]
+    },
+    {
+      "word": "porque",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "因為",
+      "en": "because",
+      "ipa": "/ˈpoɾke/",
+      "breakdown": [
+        {
+          "part": "por",
+          "zh": "因為、為了"
+        },
+        {
+          "part": "que",
+          "zh": "那（件事）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "por + que",
+          "zh": "因為＋那"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "porque",
+          "zh": "因為"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "porque 就是 por（因為）＋ que（那件事）黏成一個字。",
+      "hook_zh": "問 ¿Por qué?（兩個字、有重音），答 Porque…（一個字、沒重音）。",
+      "usage_zh": "分清楚：por qué＝為什麼、porque＝因為、el porqué＝原因。",
+      "example_es": "Estudio español porque me gusta.",
+      "example_zh": "我學西班牙語，因為我喜歡。",
+      "image": "emoji:💡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:porque"
+      ]
+    },
+    {
+      "word": "que",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "（連接子句）那、的；比",
+      "en": "that; which, who; than",
+      "ipa": "/ke/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quid",
+          "zh": "什麼"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "que",
+          "zh": "那、的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "que 來自拉丁文 quid（什麼），卻接收了拉丁文 quod（那、因為）的所有功能，成為連接子句的萬用字。",
+      "hook_zh": "沒帽子 que＝that：el libro que leo（我讀的書）；戴帽子 qué 才是「什麼？」",
+      "usage_zh": "比較級用 que：más alto que yo；tener que＋原形＝必須。",
+      "example_es": "Creo que va a llover.",
+      "example_zh": "我覺得要下雨了。",
+      "image": "emoji:🔗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:que",
+        "wiktionary:la:quid"
+      ]
+    },
+    {
+      "word": "si",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "如果；是否",
+      "en": "if, whether",
+      "ipa": "/si/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "si",
+          "zh": "如果"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "si",
+          "zh": "如果"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "si 直接來自拉丁文 si（如果），兩千年來一個字母都沒變。",
+      "hook_zh": "沒帽子 si＝如果（if）；戴帽子 sí＝是（yes）。",
+      "usage_zh": "Si + 現在式，主句用現在式或未來式：Si llueve, no salgo。",
+      "example_es": "Si llueve, no voy a la playa.",
+      "example_zh": "如果下雨，我就不去海邊。",
+      "image": "emoji:🔀",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:si"
+      ]
+    },
+    {
+      "word": "cuando",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "當…的時候",
+      "en": "when",
+      "ipa": "/ˈkwando/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quandō",
+          "zh": "什麼時候、當…時"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuando",
+          "zh": "當…時"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "cuando 來自拉丁文 quandō（什麼時候、當…時）。",
+      "hook_zh": "cuando 沒帽子，後面接一件事：Cuando llueve, leo（下雨時我看書）。",
+      "usage_zh": "陳述句的「當…時」用 cuando；疑問句「什麼時候？」用 cuándo。",
+      "example_es": "Cuando llueve, me quedo en casa.",
+      "example_zh": "下雨的時候，我待在家。",
+      "image": "emoji:⌛",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuando"
+      ]
+    },
+    {
+      "word": "como",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "像；如同；因為",
+      "en": "like, as; since",
+      "ipa": "/komo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quōmodo",
+          "zh": "如何"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cōmō",
+          "zh": "（口語形）如何"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "commo",
+          "zh": "如、像"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "como",
+          "zh": "像"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "como 來自古西班牙語 commo，源自拉丁文 cōmō，也就是 quōmodo（如何）的口語形；法文 comme、義大利文 come 都是它的兄弟。",
+      "hook_zh": "como 一字三用：像（como tú）、因為（Como llueve…）、我吃（comer 的 yo 形）。",
+      "usage_zh": "「和…一樣」：tan alto como yo；戴帽子的 cómo 才是「怎麼」。",
+      "example_es": "Hablas español como un nativo.",
+      "example_zh": "你西班牙語說得像母語人士一樣。",
+      "image": "emoji:🟰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:como"
+      ]
+    },
+    {
+      "word": "aunque",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "雖然；即使",
+      "en": "although, even though",
+      "ipa": "/ˈaunke/",
+      "breakdown": [
+        {
+          "part": "aun",
+          "zh": "甚至、即使"
+        },
+        {
+          "part": "que",
+          "zh": "那（件事）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "aun + que",
+          "zh": "即使＋那"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aunque",
+          "zh": "雖然"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "aunque 由 aun（甚至、即使）＋ que 組成：「即使那樣」就是「雖然」。",
+      "hook_zh": "aunque＝although：Aunque llueve, salgo（雖然下雨，我還是出門）。",
+      "usage_zh": "不和 pero 連用（中文「雖然…但是」，西語只要一個 aunque）。",
+      "example_es": "Aunque estoy cansado, voy al gimnasio.",
+      "example_zh": "雖然我很累，我還是去健身房。",
+      "image": "emoji:☔",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aunque"
+      ]
+    },
+    {
+      "word": "pues",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "那麼；嗯；因為",
+      "en": "well; so, then; since",
+      "ipa": "/ˈpwes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "post",
+          "zh": "在…之後"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*pos",
+          "zh": "之後"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pues",
+          "zh": "那麼"
+        }
+      ],
+      "cognates_en": [
+        "postpone"
+      ],
+      "story_zh": "pues 來自通俗拉丁文 *pos，也就是拉丁文 post（在…之後）；英文的字首 post-（之後）就是同一個字。",
+      "hook_zh": "Pues…＝「嗯…那個…」，說話卡住時的口頭禪。",
+      "usage_zh": "口語開頭詞「嗯、那麼」：Pues, no sé；也表示「因為」（較書面）。",
+      "example_es": "Pues, no sé qué decir.",
+      "example_zh": "嗯，我不知道該說什麼。",
+      "image": "emoji:🤔",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pues",
+        "wiktionary:la:post"
+      ]
+    },
+    {
+      "word": "no",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "不；不是",
+      "en": "no; not",
+      "ipa": "/ˈno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nōn",
+          "zh": "不"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "no, non",
+          "zh": "不"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "no",
+          "zh": "不"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "no 來自拉丁文 nōn（不），經古西班牙語 no、non 而來；法文 non、義大利文 no 都是它的兄弟。",
+      "hook_zh": "no 和英文一樣，只是要放在動詞前：No hablo chino。",
+      "usage_zh": "否定放動詞前：No sé；和 nada、nadie、nunca 連用是正確的雙重否定。",
+      "example_es": "No me gusta el café.",
+      "example_zh": "我不喜歡咖啡。",
+      "image": "emoji:🙅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:no",
+        "wiktionary:la:non"
+      ]
+    },
+    {
+      "word": "sí",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "是；對",
+      "en": "yes",
+      "ipa": "/ˈsi/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sīc (est)",
+          "zh": "（正是）如此"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sy",
+          "zh": "是"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sí",
+          "zh": "是"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "「是」的 sí 來自拉丁文 sīc (est)，字面是「正是如此」。另一個 sí（他自己）則來自拉丁文 sibi。",
+      "hook_zh": "sí 戴上帽子 ´ 點頭說「是」；沒帽子的 si 是「如果」。",
+      "usage_zh": "回答「是」：Sí, claro；也可強調動詞：Yo sí quiero（我是真的想要）。",
+      "example_es": "Sí, me gusta mucho.",
+      "example_zh": "對，我很喜歡。",
+      "image": "emoji:✅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sí",
+        "wiktionary:la:sic"
+      ]
+    },
+    {
+      "word": "más",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "更；更多；最",
+      "en": "more; most; plus",
+      "ipa": "/ˈmas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "magis",
+          "zh": "更、更多"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "más",
+          "zh": "更多"
+        }
+      ],
+      "cognates_en": [
+        "master"
+      ],
+      "story_zh": "más 來自拉丁文 magis（更、更多）。拉丁文的 magister 也是從它衍生的，就是英文 master 的來源。",
+      "hook_zh": "más 戴帽子＝more；數學「加」也說 más：dos más dos son cuatro。",
+      "usage_zh": "比較級：más alto que…；最高級：el más alto；más o menos＝差不多。",
+      "example_es": "Quiero más agua, por favor.",
+      "example_zh": "請再給我一些水。",
+      "image": "emoji:⬆️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:más",
+        "wiktionary:la:magis"
+      ]
+    },
+    {
+      "word": "menos",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "較少；更不；減",
+      "en": "less; least; minus",
+      "ipa": "/ˈmenos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "minus",
+          "zh": "較少"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "menos",
+          "zh": "較少"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "menos",
+          "zh": "較少"
+        }
+      ],
+      "cognates_en": [
+        "minus"
+      ],
+      "story_zh": "menos 來自拉丁文 minus（較少），也就是英文和數學裡的 minus（減號）。",
+      "hook_zh": "menos＝minus：Son las tres menos cuarto（差一刻三點）。",
+      "usage_zh": "「較不」：menos caro que…；報時「差…分」：las dos menos diez。",
+      "example_es": "Ahora como menos azúcar.",
+      "example_zh": "我現在少吃糖了。",
+      "image": "emoji:➖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:menos"
+      ]
+    },
+    {
+      "word": "bien",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "好；很好地",
+      "en": "well, fine",
+      "ipa": "/ˈbjen/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "bene",
+          "zh": "好好地"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "bien",
+          "zh": "好"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bien",
+          "zh": "好"
+        }
+      ],
+      "cognates_en": [
+        "benefit"
+      ],
+      "story_zh": "bien 來自拉丁文 bene（好好地），而 bene 又來自古拉丁文 duenos（好的）——它也是 bueno 的祖先 bonus 的前身。",
+      "hook_zh": "bien ≈ bene-fit：帶來「好」處。¿Estás bien?＝你還好嗎？",
+      "usage_zh": "bien 是副詞（Hablas bien）；bueno 是形容詞（un buen libro），別搞混。",
+      "example_es": "Estoy bien, gracias.",
+      "example_zh": "我很好，謝謝。",
+      "image": "emoji:👍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bien",
+        "wiktionary:la:bene"
+      ]
+    },
+    {
+      "word": "mal",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "不好；差勁地",
+      "en": "badly, poorly",
+      "ipa": "/ˈmal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "male",
+          "zh": "壞地、不好地"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mal",
+          "zh": "不好"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "mal 來自拉丁文 male（壞地、不好地）；當形容詞用時，則是 malo（壞的，來自拉丁文 malus）的縮短形。",
+      "hook_zh": "想到英文 malware 的 mal-（壞）：Estoy mal＝我不太好。",
+      "usage_zh": "mal 是副詞（Duermo mal）；malo 是形容詞，陽性單數名詞前縮成 mal：un mal día。",
+      "example_es": "Hoy me siento mal.",
+      "example_zh": "我今天覺得不舒服。",
+      "image": "emoji:👎",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mal"
+      ]
+    },
+    {
+      "word": "también",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "也；也是",
+      "en": "also, too",
+      "ipa": "/tamˈbjen/",
+      "breakdown": [
+        {
+          "part": "tan",
+          "zh": "如此"
+        },
+        {
+          "part": "bien",
+          "zh": "好"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "tan + bien",
+          "zh": "如此＋好"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "también",
+          "zh": "也"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "también 由 tan（如此）＋ bien（好）組成，和英文 as well（也）的組法很像。",
+      "hook_zh": "tan + bien → también：Yo también＝我也是！",
+      "usage_zh": "肯定句的「也」；否定句的「也不」要用 tampoco。",
+      "example_es": "Yo también quiero ir.",
+      "example_zh": "我也想去。",
+      "image": "emoji:🙌",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:también"
+      ]
+    },
+    {
+      "word": "tampoco",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "也不",
+      "en": "neither, not either",
+      "ipa": "/tamˈpoko/",
+      "breakdown": [
+        {
+          "part": "tan",
+          "zh": "如此"
+        },
+        {
+          "part": "poco",
+          "zh": "少"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "tan + poco",
+          "zh": "如此＋少"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tampoco",
+          "zh": "也不"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "tampoco 是 tan（如此）＋ poco（少）合成的一個字，是 también 的否定版。",
+      "hook_zh": "A：No me gusta. B：¡A mí tampoco!（我也不喜歡！）",
+      "usage_zh": "回應否定句用 tampoco，不說 *también no：Yo tampoco。",
+      "example_es": "Yo tampoco hablo francés.",
+      "example_zh": "我也不會說法文。",
+      "image": "emoji:🙅‍♂️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tampoco"
+      ]
+    },
+    {
+      "word": "ya",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "已經；現在；（不）再",
+      "en": "already; now; (no) longer",
+      "ipa": "/ˈʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "iam",
+          "zh": "已經、現在"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ya",
+          "zh": "已經、現在"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ya",
+          "zh": "已經"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ya 來自拉丁文 iam（已經、現在），和法文 déjà（已經）可以拿來比較。",
+      "hook_zh": "ya＝already：¡Ya está!（好了、搞定！）",
+      "usage_zh": "ya＝已經；ya no＝不再：Ya no fumo；口語 ¡Ya!＝知道了、好啦。",
+      "example_es": "Ya tengo los billetes.",
+      "example_zh": "我已經有票了。",
+      "image": "emoji:✔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ya",
+        "wiktionary:la:iam"
+      ]
+    },
+    {
+      "word": "todavía",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "還；仍然",
+      "en": "still, yet",
+      "ipa": "/todaˈbia/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tōta via",
+          "zh": "（字面）整條路；一直"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "todavía",
+          "zh": "仍然"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "todavía 來自拉丁文 tōta via，字面是「整條路」，在拉丁文裡已有「一直、總是」的意思，後來成了「仍然」。",
+      "hook_zh": "toda vía＝整條路都還在走——「還、仍然」。",
+      "usage_zh": "todavía＝還、仍然；todavía no＝還沒：Todavía no sé。",
+      "example_es": "Todavía vivo con mis padres.",
+      "example_zh": "我還跟爸媽住。",
+      "image": "emoji:🛣️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:todavía"
+      ]
+    },
+    {
+      "word": "siempre",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "總是；永遠",
+      "en": "always",
+      "ipa": "/ˈsjempɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "semper",
+          "zh": "總是、永遠"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "siempre, sienpre",
+          "zh": "總是"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "siempre",
+          "zh": "總是"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "siempre 來自拉丁文 semper（總是、永遠），古西班牙語也寫作 sienpre。",
+      "hook_zh": "siempre ≈ semper：美國海軍陸戰隊口號 Semper Fi＝永遠忠誠。",
+      "usage_zh": "常放動詞前：Siempre desayuno a las ocho；反義詞是 nunca。",
+      "example_es": "Siempre desayuno a las ocho.",
+      "example_zh": "我總是八點吃早餐。",
+      "image": "emoji:♾️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:siempre",
+        "wiktionary:la:semper"
+      ]
+    },
+    {
+      "word": "nunca",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "從不；永遠不",
+      "en": "never",
+      "ipa": "/ˈnunka/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "numquam (ne + umquam)",
+          "zh": "從不（不＋曾經）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nunqua",
+          "zh": "從不"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nunca",
+          "zh": "從不"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "nunca 來自拉丁文 numquam，由 ne（不）＋ umquam（曾經）組成：「從來沒有過」。",
+      "hook_zh": "n 開頭的否定一家人：no（不）、nada（沒東西）、nadie（沒人）、nunca（從不）。",
+      "usage_zh": "放動詞前：Nunca bebo café；放動詞後要加 no：No bebo café nunca。",
+      "example_es": "Nunca como carne.",
+      "example_zh": "我從不吃肉。",
+      "image": "emoji:⛔",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nunca",
+        "wiktionary:la:numquam"
+      ]
+    },
+    {
+      "word": "aquí",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "這裡",
+      "en": "here",
+      "ipa": "/aˈki/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "eccum + hīc",
+          "zh": "你看＋這裡"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*eccum hīc",
+          "zh": "看，就在這"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aquí",
+          "zh": "這裡"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "aquí 來自通俗拉丁文 *eccum hīc：eccum（你看）＋ hīc（這裡），像在說「看，就在這兒！」",
+      "hook_zh": "aquí → ahí → allí：這裡、那裡（你旁邊）、那裡（遠處），一個比一個遠。",
+      "usage_zh": "指說話者所在；遞東西時說 Aquí tienes＝給你。",
+      "example_es": "Aquí tienes tu café.",
+      "example_zh": "這是你的咖啡。",
+      "image": "emoji:📍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aquí",
+        "wiktionary:la:eccum"
+      ]
+    },
+    {
+      "word": "allí",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "那裡（遠處）",
+      "en": "there (over there)",
+      "ipa": "/aˈʝi/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ad + illīc",
+          "zh": "向＋那邊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "allí",
+          "zh": "那裡"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "allí 來自拉丁文 ad（向）＋ illīc（那邊）；illīc 又是 ille（那個）加上 -ce 組成的。",
+      "hook_zh": "allí 的 ll 像遠方的兩根電線桿——在很遠的「那裡」。",
+      "usage_zh": "指離你我都遠的地方；拉美口語常說 allá。",
+      "example_es": "Mi casa está allí.",
+      "example_zh": "我家在那裡。",
+      "image": "emoji:🔭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:allí",
+        "wiktionary:la:ad",
+        "wiktionary:la:illic"
+      ]
+    },
+    {
+      "word": "ahí",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "那裡（不遠）",
+      "en": "there (near you)",
+      "ipa": "/aˈi/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "a- + y",
+          "zh": "（字首）＋那裡"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ahi",
+          "zh": "那裡"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ahí",
+          "zh": "那裡"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ahí 來自古西班牙語 ahi，由 a- 加上古字 y（那裡）組成。",
+      "hook_zh": "¡Ahí está!＝就在那裡！指向你旁邊、不遠的地方。",
+      "usage_zh": "別和 hay（有）、¡ay!（唉）搞混：發音相近，拼法不同。",
+      "example_es": "Tu móvil está ahí, en la mesa.",
+      "example_zh": "你的手機在那裡，桌上。",
+      "image": "emoji:👈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ahí"
+      ]
+    },
+    {
+      "word": "cerca",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "近；在附近",
+      "en": "near, close",
+      "ipa": "/ˈθeɾka/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "circum",
+          "zh": "圍繞"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "circā",
+          "zh": "在周圍"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cerca",
+          "zh": "近"
+        }
+      ],
+      "cognates_en": [
+        "circa"
+      ],
+      "story_zh": "cerca 來自拉丁文 circā（在周圍），英文 circa（大約）也是這個字。在「周圍」，也就是很「近」。",
+      "hook_zh": "cerca de＝在…附近：繞著你轉一圈的距離就是近。",
+      "usage_zh": "接地點要加 de：cerca de la estación；反義詞 lejos de。",
+      "example_es": "Vivo cerca de la estación.",
+      "example_zh": "我住在車站附近。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cerca",
+        "wiktionary:la:circa"
+      ]
+    },
+    {
+      "word": "lejos",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "遠",
+      "en": "far, far away",
+      "ipa": "/ˈlexos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "laxus",
+          "zh": "寬的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "laxius",
+          "zh": "更寬地"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "lexos",
+          "zh": "遠"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lejos",
+          "zh": "遠"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "lejos 來自拉丁文 laxius（更寬地），是 laxus（寬的）的比較級。古西班牙語寫作 lexos。",
+      "hook_zh": "lejos 的 j 唸喉音 /x/：「勒—厚斯」，聲音拉得又長又遠。",
+      "usage_zh": "接地點要加 de：lejos de aquí；反義詞 cerca。",
+      "example_es": "Mi trabajo está lejos de mi casa.",
+      "example_zh": "我的公司離我家很遠。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lejos"
+      ]
+    },
+    {
+      "word": "ahora",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "現在",
+      "en": "now",
+      "ipa": "/aˈoɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "hāc hōrā",
+          "zh": "在這個鐘頭"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "agora",
+          "zh": "現在"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ahora",
+          "zh": "現在"
+        }
+      ],
+      "cognates_en": [
+        "hour"
+      ],
+      "story_zh": "ahora 來自拉丁文 hāc hōrā（在這個鐘頭）。古西班牙語原本說 agora，17 世紀作家 Quevedo 還嘲笑它是「鄉下粗話」，最後 ahora 勝出。",
+      "hook_zh": "a-hora＝在這個 hora（小時）＝現在。",
+      "usage_zh": "ahora mismo＝馬上、就是現在；h 不發音。",
+      "example_es": "Ahora estoy en casa.",
+      "example_zh": "我現在在家。",
+      "image": "emoji:⏱️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ahora",
+        "wiktionary:la:hac hora"
+      ]
+    },
+    {
+      "word": "hoy",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "今天",
+      "en": "today",
+      "ipa": "/ˈoi/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "hōc diē",
+          "zh": "在這一天"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "hodiē",
+          "zh": "今天"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "oy",
+          "zh": "今天"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hoy",
+          "zh": "今天"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "hoy 來自拉丁文 hodiē（今天），而 hodiē 本身是 hōc diē「在這一天」縮起來的。古西班牙語寫作 oy。",
+      "hook_zh": "hoy＝ho(c) di(ē)＝這一天；h 不發音，唸「歐伊」。",
+      "usage_zh": "Hoy es lunes（今天星期一）；hoy en día＝現今。",
+      "example_es": "Hoy es lunes.",
+      "example_zh": "今天是星期一。",
+      "image": "emoji:📆",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hoy",
+        "wiktionary:la:hodie",
+        "wiktionary:la:dies"
+      ]
+    },
+    {
+      "word": "ayer",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "昨天",
+      "en": "yesterday",
+      "ipa": "/aˈʝeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "herī",
+          "zh": "昨天"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "yer, eri",
+          "zh": "昨天"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ayer",
+          "zh": "昨天"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ayer 來自拉丁文 herī（昨天），古西班牙語寫作 yer、eri，再加上字首 a-。也有人認為它來自 ab herī（從昨天起）。",
+      "hook_zh": "ayer 唸起來像「阿耶」：哎呀，那是昨天的事了！",
+      "usage_zh": "anteayer＝前天；ayer por la noche＝昨晚。",
+      "example_es": "Ayer fui al cine.",
+      "example_zh": "我昨天去看電影。",
+      "image": "emoji:⏪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ayer",
+        "wiktionary:la:heri"
+      ]
+    },
+    {
+      "word": "luego",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "然後；等一下",
+      "en": "then, later",
+      "ipa": "/ˈlweɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "locus → locō",
+          "zh": "地方 →（在…的位置）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "luego",
+          "zh": "然後"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "luego",
+          "zh": "然後、待會"
+        }
+      ],
+      "cognates_en": [
+        "local",
+        "location"
+      ],
+      "story_zh": "luego 來自拉丁文 locō（在…的位置、代替），是 locus（地方）的變化形；英文 local、location 都是同一家族。",
+      "hook_zh": "¡Hasta luego!＝待會見；luego 就是「等一下、然後」。",
+      "usage_zh": "luego＝之後、然後；desde luego＝當然。",
+      "example_es": "Primero como y luego estudio.",
+      "example_zh": "我先吃飯，然後念書。",
+      "image": "emoji:🕑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:luego"
+      ]
+    },
+    {
+      "word": "después",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "之後；後來",
+      "en": "after, afterwards, later",
+      "ipa": "/desˈpwes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "dē post",
+          "zh": "從…之後"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "depues",
+          "zh": "之後"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "después",
+          "zh": "之後"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "después 來自通俗拉丁文 dē post（dē「從」＋ post「之後」）。古西班牙語是 depues，後來受 des 影響多了 s。",
+      "hook_zh": "después ≈ post-：después de clase＝下課後（after class）。",
+      "usage_zh": "接名詞或原形動詞要加 de：después de comer；反義詞 antes de。",
+      "example_es": "Después de clase, voy a casa.",
+      "example_zh": "下課後我回家。",
+      "image": "emoji:⏩",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:después",
+        "wiktionary:la:de post"
+      ]
+    },
+    {
+      "word": "antes",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "以前；之前",
+      "en": "before, earlier",
+      "ipa": "/ˈantes/",
+      "breakdown": [
+        {
+          "part": "ante",
+          "zh": "在…之前"
+        },
+        {
+          "part": "-s",
+          "zh": "（副詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ante",
+          "zh": "在…之前"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ante + -s",
+          "zh": "加上副詞字尾 -s"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "antes",
+          "zh": "之前"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "antes 由 ante（在…之前）加上副詞常見的字尾 -s 組成；entonces、quizás、mientras 的 -s 也是這樣來的。",
+      "hook_zh": "antes ≈ a.m.（ante meridiem＝中午之前）：前面的時間。",
+      "usage_zh": "接名詞或原形動詞要加 de：antes de comer；反義詞 después。",
+      "example_es": "Me lavo las manos antes de comer.",
+      "example_zh": "我吃飯前洗手。",
+      "image": "emoji:⏮️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:antes",
+        "wiktionary:es:mientras"
+      ]
+    },
+    {
+      "word": "pronto",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "很快；不久",
+      "en": "soon",
+      "ipa": "/ˈpɾonto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prōmptus",
+          "zh": "準備好、拿出來"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pronto",
+          "zh": "很快"
+        }
+      ],
+      "cognates_en": [
+        "prompt"
+      ],
+      "story_zh": "pronto 來自拉丁文 prōmptus（拿出來、準備好），和英文 prompt（迅速、及時）同源。",
+      "hook_zh": "pronto ≈ prompt：快、很快。¡Hasta pronto!＝很快再見！",
+      "usage_zh": "pronto＝很快、不久；de pronto＝突然。",
+      "example_es": "¡Hasta pronto!",
+      "example_zh": "很快再見！",
+      "image": "emoji:⚡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pronto",
+        "wiktionary:la:promptus"
+      ]
+    },
+    {
+      "word": "temprano",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "早；提早",
+      "en": "early",
+      "ipa": "/temˈpɾano/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "temporāneus",
+          "zh": "及時的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "temporānus",
+          "zh": "及時的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "temprano",
+          "zh": "早"
+        }
+      ],
+      "cognates_en": [
+        "temporary"
+      ],
+      "story_zh": "temprano 來自晚期拉丁文 temporānus（及時的），字根 tempor- 就是「時間」；英文 temporary 也帶著這個字根。",
+      "hook_zh": "tempra-no 裡有 tempo（時間）：時間還早，早起的鳥兒有蟲吃。",
+      "usage_zh": "temprano＝時間早：Me levanto temprano；pronto＝很快，別混用。",
+      "example_es": "Me levanto temprano.",
+      "example_zh": "我很早起床。",
+      "image": "emoji:🐓",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:temprano",
+        "wiktionary:la:temporanus",
+        "wiktionary:la:temporaneus"
+      ]
+    },
+    {
+      "word": "solo",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "只；僅僅；單獨的",
+      "en": "only, just; alone",
+      "ipa": "/ˈsolo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sōlus / sōlum",
+          "zh": "單獨的／僅僅"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "solo",
+          "zh": "單獨"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "solo",
+          "zh": "只、單獨"
+        }
+      ],
+      "cognates_en": [
+        "solo",
+        "sole"
+      ],
+      "story_zh": "形容詞 solo（單獨的）來自拉丁文 sōlus（獨自、唯一）；副詞 solo（只）則來自 sōlum。音樂的 solo（獨奏）也是同一家族。",
+      "hook_zh": "solo＝獨奏 solo：一個人、只有我。",
+      "usage_zh": "形容詞要變化：Ella está sola；副詞「只」不變：Solo tengo diez euros。",
+      "example_es": "Solo tengo diez euros.",
+      "example_zh": "我只有十歐元。",
+      "image": "emoji:🧍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:solo",
+        "wiktionary:la:solus"
+      ]
+    },
+    {
+      "word": "casi",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "幾乎；差不多",
+      "en": "almost, nearly",
+      "ipa": "/ˈkasi/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quasi",
+          "zh": "彷彿、幾乎像"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "casi",
+          "zh": "幾乎"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "casi 是半學術地從拉丁文 quasi（彷彿、幾乎像）借來的，和 cuasi 是雙胞胎字。",
+      "hook_zh": "casi＝almost：差一點點，像「卡」在終點線前。",
+      "usage_zh": "casi siempre＝幾乎總是；casi nunca＝幾乎從不。",
+      "example_es": "Son casi las diez.",
+      "example_zh": "快十點了。",
+      "image": "emoji:🏃",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:casi",
+        "wiktionary:la:quasi"
+      ]
+    },
+    {
+      "word": "quizás",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "也許；或許",
+      "en": "maybe, perhaps",
+      "ipa": "/kiˈθas/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "quizás＝maybe：說的時候聳聳肩——也許吧。",
+      "usage_zh": "和 quizá、tal vez 同義；後面可接直述式或虛擬式。",
+      "example_es": "Quizás voy mañana.",
+      "example_zh": "也許我明天去。",
+      "image": "emoji:🤷",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:quizás"
+      ]
+    },
+    {
+      "word": "entonces",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "那麼；所以；那時",
+      "en": "then; so",
+      "ipa": "/enˈtonθes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "in + *tunce",
+          "zh": "在＋那時"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "entonce, entonces",
+          "zh": "那時"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "entonces",
+          "zh": "那麼、那時"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "entonces 來自拉丁文 in（在）＋ *tunce（tunc「那時」的古形），意思就是「在那個時候」。",
+      "hook_zh": "Entonces…＝那麼…／所以…，講故事時一直用。",
+      "usage_zh": "時間「那時」或結果「所以」：Entonces, ¿vienes o no?",
+      "example_es": "Entonces, ¿vienes o no?",
+      "example_zh": "所以，你到底來不來？",
+      "image": "emoji:🔜",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:entonces",
+        "wiktionary:la:in"
+      ]
+    },
+    {
+      "word": "así",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "這樣；那樣",
+      "en": "like this, like that; so",
+      "ipa": "/aˈsi/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "ac sīc",
+          "zh": "就這樣"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "assí",
+          "zh": "這樣"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "así",
+          "zh": "這樣"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "así 來自晚期拉丁文 ac sīc（就這樣）。其中的 sīc（如此）也是 sí（是）的祖先。",
+      "hook_zh": "así así＝馬馬虎虎：邊說邊把手掌左右搖一搖。",
+      "usage_zh": "así＝這樣、那樣：Se hace así；así que＝所以。",
+      "example_es": "Se escribe así.",
+      "example_zh": "是這樣寫的。",
+      "image": "emoji:👐",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:así",
+        "wiktionary:la:ac sic",
+        "wiktionary:la:sic"
+      ]
+    },
+    {
+      "word": "despacio",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "慢慢地",
+      "en": "slowly",
+      "ipa": "/desˈpaθjo/",
+      "breakdown": [
+        {
+          "part": "de",
+          "zh": "（介系詞）"
+        },
+        {
+          "part": "espacio",
+          "zh": "空間"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "de + espacio",
+          "zh": "（介系詞）＋空間"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "despacio",
+          "zh": "慢慢地"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "despacio 由 de ＋ espacio（空間）組成。",
+      "hook_zh": "despacio 裡藏著 espacio（space）：給彼此一點空間，慢慢來。",
+      "usage_zh": "Más despacio, por favor＝請說慢一點（聽不懂時超好用）。",
+      "example_es": "Habla más despacio, por favor.",
+      "example_zh": "請說慢一點。",
+      "image": "emoji:🐢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:despacio"
+      ]
+    },
+    {
+      "word": "juntos",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "一起；在一起的",
+      "en": "together",
+      "ipa": "/ˈxuntos/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "juntos＝together；j 唸喉音：「hun-tos」。",
+      "usage_zh": "要配合陰陽數：Ellos viven juntos／Ellas viven juntas；todos juntos＝大家一起。",
+      "example_es": "Vamos juntos al cine.",
+      "example_zh": "我們一起去看電影。",
+      "image": "emoji:👫",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:juntos"
+      ]
+    },
+    {
+      "word": "arriba",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "上面；往上；樓上",
+      "en": "up, above; upstairs",
+      "ipa": "/aˈriba/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ad + rīpam",
+          "zh": "到＋河岸"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "arriba",
+          "zh": "上面"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "arriba 來自拉丁文 ad rīpam，字面是「到河岸上」。想像從河裡爬上岸，就是往「上」。",
+      "hook_zh": "¡Arriba!＝往上、加油！arriba 也是「樓上」。",
+      "usage_zh": "副詞不直接接名詞；「在…上面」用 encima de 或 sobre。",
+      "example_es": "Mi habitación está arriba.",
+      "example_zh": "我的房間在樓上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:arriba",
+        "wiktionary:la:ad"
+      ]
+    },
+    {
+      "word": "abajo",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "下面；往下；樓下",
+      "en": "down, below; downstairs",
+      "ipa": "/aˈbaxo/",
+      "breakdown": [
+        {
+          "part": "a",
+          "zh": "到"
+        },
+        {
+          "part": "bajo",
+          "zh": "低、下面"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "a + bajo",
+          "zh": "到＋下面"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "abajo",
+          "zh": "往下"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "abajo 由 a（到）＋ bajo（低、下面）組成，就是「往下」。法文 à bas 也是一樣的組法。",
+      "hook_zh": "bajo＝矮、下面；a-bajo＝到下面去、樓下。",
+      "usage_zh": "副詞不直接接名詞；「在…下面」用 debajo de。",
+      "example_es": "El baño está abajo.",
+      "example_zh": "廁所在樓下。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:abajo"
+      ]
+    },
+    {
+      "word": "dentro",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "在裡面",
+      "en": "inside",
+      "ipa": "/ˈdentɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "dē intrō",
+          "zh": "從裡面"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dentro",
+          "zh": "在裡面"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "dentro 來自晚期拉丁文 dē intrō，字面是「從裡面」。",
+      "hook_zh": "dentro 和 entrar（進入）長得像：走進去，就在裡面了。",
+      "usage_zh": "接名詞要加 de：dentro de la caja；dentro de dos días＝兩天後。",
+      "example_es": "Las llaves están dentro de la caja.",
+      "example_zh": "鑰匙在盒子裡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dentro"
+      ]
+    },
+    {
+      "word": "fuera",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "在外面",
+      "en": "outside, out",
+      "ipa": "/ˈfweɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "forās",
+          "zh": "到外面"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "fuera, fueras",
+          "zh": "外面"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fuera",
+          "zh": "外面"
+        }
+      ],
+      "cognates_en": [
+        "foreign"
+      ],
+      "story_zh": "fuera 來自拉丁文 forās（到門外），和英文 foreign（外國的）同源，更遠還和 door（門）有親戚關係。",
+      "hook_zh": "fuera ≈ foreign：門外的世界。¡Fuera!＝出去！",
+      "usage_zh": "接名詞要加 de：fuera de casa；拉美也常說 afuera。",
+      "example_es": "Los niños juegan fuera.",
+      "example_zh": "孩子們在外面玩。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fuera",
+        "wiktionary:la:foras"
+      ]
+    },
+    {
+      "word": "delante",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "在前面",
+      "en": "in front, ahead",
+      "ipa": "/deˈlante/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "in ante",
+          "zh": "在前"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "de + enante → denante",
+          "zh": "從＋在前面"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "delante",
+          "zh": "在前面"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "delante",
+          "zh": "在前面"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "delante 來自古西班牙語 denante：de（從）＋ enante（在前面），而 enante 又來自晚期拉丁文 in ante。",
+      "hook_zh": "delante 裡藏著 ante（前）：站在大家前面。",
+      "usage_zh": "接名詞要加 de：delante de la casa；反義詞 detrás de。",
+      "example_es": "Te espero delante del cine.",
+      "example_zh": "我在電影院前面等你。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:delante",
+        "wiktionary:la:in ante"
+      ]
+    },
+    {
+      "word": "detrás",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "在後面",
+      "en": "behind",
+      "ipa": "/deˈtɾas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "dē trāns",
+          "zh": "從另一邊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "detrás",
+          "zh": "在後面"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "detrás 來自晚期拉丁文 dē trāns；trāns 就是「越過、在另一邊」——東西的另一邊，就是後面。",
+      "hook_zh": "detrás ≈ trans-（越過）：越過箱子，躲在後面。",
+      "usage_zh": "接名詞要加 de：detrás de la puerta；反義詞 delante de。",
+      "example_es": "El gato está detrás de la puerta.",
+      "example_zh": "貓在門後面。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:detrás"
+      ]
+    },
+    {
+      "word": "encima",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "在上面",
+      "en": "on top, above",
+      "ipa": "/enˈθima/",
+      "breakdown": [
+        {
+          "part": "en",
+          "zh": "在"
+        },
+        {
+          "part": "cima",
+          "zh": "頂端"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "en + cima",
+          "zh": "在＋頂端"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "encima",
+          "zh": "在上面"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "encima 是 en（在）＋ cima（頂端、山頂）黏成的一個字，就是「在頂上」。",
+      "hook_zh": "cima＝山頂：en cima＝站在山頂上 → 在上面。",
+      "usage_zh": "接名詞要加 de：encima de la mesa；反義詞 debajo de。",
+      "example_es": "El libro está encima de la mesa.",
+      "example_zh": "書在桌上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:encima"
+      ]
+    },
+    {
+      "word": "debajo",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "在下面",
+      "en": "under, underneath",
+      "ipa": "/deˈbaxo/",
+      "breakdown": [
+        {
+          "part": "de",
+          "zh": "（介系詞）"
+        },
+        {
+          "part": "bajo",
+          "zh": "低、下面"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "de + bajo",
+          "zh": "（介系詞）＋下面"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "debajo",
+          "zh": "在下面"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "debajo 由 de ＋ bajo（低、下面）組成；英文 debase（貶低）可以拿來比較。",
+      "hook_zh": "bajo＝下面：debajo de la mesa＝在桌子底下。",
+      "usage_zh": "接名詞要加 de：debajo de la cama；反義詞 encima de。",
+      "example_es": "El perro duerme debajo de la mesa.",
+      "example_zh": "狗睡在桌子底下。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:debajo"
+      ]
+    },
+    {
+      "word": "hola",
+      "article": "",
+      "pos": "interjección",
+      "zh": "你好；嗨",
+      "en": "hello, hi",
+      "ipa": "/ˈola/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "holà",
+          "zh": "嘿！停！（可能的來源）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hola",
+          "zh": "你好"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "hola 可能來自法文 holà（嘿！停下！），和古高地德語 holā 這類招呼擺渡人的喊聲有關。英文 hello、德文 hallo 常被拿來比較。",
+      "hook_zh": "hola 的 h 不發音，唸「歐拉」：揮手大喊 ¡Hola!",
+      "usage_zh": "任何時段都能用；後面常接 ¿Qué tal?（還好嗎？）",
+      "example_es": "¡Hola! ¿Qué tal?",
+      "example_zh": "嗨！你好嗎？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hola"
+      ]
+    },
+    {
+      "word": "adiós",
+      "article": "",
+      "pos": "interjección",
+      "zh": "再見",
+      "en": "goodbye",
+      "ipa": "/aˈdjos/",
+      "breakdown": [
+        {
+          "part": "a",
+          "zh": "到、給"
+        },
+        {
+          "part": "Dios",
+          "zh": "神"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "ad Deum",
+          "zh": "到神那裡"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "adiós",
+          "zh": "再見"
+        }
+      ],
+      "cognates_en": [
+        "adieu"
+      ],
+      "story_zh": "adiós 是 a ＋ Dios，字面是「（交）給神」，來自中世紀拉丁文 ad Deum。英文 adieu、義大利文 addio 都是一樣的說法。",
+      "hook_zh": "a + Dios：揮手道別時，把對方交給神保佑。",
+      "usage_zh": "道別用，語氣較正式或較久不見；日常再見常說 hasta luego、chao。",
+      "example_es": "¡Adiós, hasta mañana!",
+      "example_zh": "再見，明天見！",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:adiós",
+        "wiktionary:la:ad Deum"
+      ]
+    },
+    {
+      "word": "gracias",
+      "article": "",
+      "pos": "interjección",
+      "zh": "謝謝",
+      "en": "thank you, thanks",
+      "ipa": "/ˈɡɾaθjas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "grātus",
+          "zh": "令人愉快的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "grātia",
+          "zh": "恩惠、感謝"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gracias",
+          "zh": "謝謝"
+        }
+      ],
+      "cognates_en": [
+        "grace",
+        "grateful"
+      ],
+      "story_zh": "gracias 來自拉丁文 grātia（恩惠、感謝），源自 gratias agere（表達感謝）這句話。英文 grace、grateful 都是同一家族。",
+      "hook_zh": "gracias ≈ grateful：心懷感激說 ¡Gracias!",
+      "usage_zh": "Muchas gracias＝非常感謝；回答 De nada；謝謝某事用 gracias por…。",
+      "example_es": "Muchas gracias por la cena.",
+      "example_zh": "非常感謝這頓晚餐。",
+      "image": "emoji:🙏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gracias",
+        "wiktionary:la:gratia",
+        "wiktionary:la:gratus"
+      ]
+    },
+    {
+      "word": "perdón",
+      "article": "",
+      "pos": "interjección",
+      "zh": "對不起；不好意思",
+      "en": "sorry; pardon",
+      "ipa": "/peɾˈdon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "perdonar",
+          "zh": "原諒"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "perdón",
+          "zh": "原諒；對不起"
+        }
+      ],
+      "cognates_en": [
+        "pardon"
+      ],
+      "story_zh": "perdón 是從動詞 perdonar（原諒）變來的名詞。",
+      "hook_zh": "perdón ≈ pardon：撞到人時說 ¡Perdón!",
+      "usage_zh": "撞到人、沒聽清楚都可說 ¡Perdón!；請人讓路或叫人時也常說 perdone、disculpe。",
+      "example_es": "¡Perdón! No te vi.",
+      "example_zh": "對不起！我沒看到你。",
+      "image": "emoji:🙇",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:perdón"
+      ]
+    },
+    {
+      "word": "vale",
+      "article": "",
+      "pos": "interjección",
+      "zh": "好；OK（西班牙口語）",
+      "en": "OK, all right",
+      "ipa": "/ˈbale/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "valer",
+          "zh": "有價值、行得通"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vale",
+          "zh": "好、OK"
+        }
+      ],
+      "cognates_en": [
+        "value"
+      ],
+      "story_zh": "表示「好、OK」的 vale 來自動詞 valer（有價值）；古典的道別語 vale（保重）則是直接借自拉丁文 valē。",
+      "hook_zh": "西班牙人一天說一百次 ¡Vale, vale!＝OK、好啦。",
+      "usage_zh": "西班牙口語「好、OK」；拉美較常說 está bien、dale、ok。",
+      "example_es": "—¿Nos vemos a las cinco? —Vale.",
+      "example_zh": "「我們五點見？」「好。」",
+      "image": "emoji:🆗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vale",
+        "wiktionary:es:valer"
+      ]
+    },
+    {
+      "word": "claro",
+      "article": "",
+      "pos": "interjección",
+      "zh": "當然；清楚的",
+      "en": "of course; clear",
+      "ipa": "/ˈklaɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "clārus",
+          "zh": "清楚、明亮"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "claro",
+          "zh": "清楚"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "claro",
+          "zh": "清楚；當然"
+        }
+      ],
+      "cognates_en": [
+        "clear"
+      ],
+      "story_zh": "claro 來自拉丁文 clārus（清楚、明亮），和英文 clear 同源。照規則它本該變成 *llaro，卻少見地保留了 cl-。",
+      "hook_zh": "claro＝clear：事情再清楚不過，所以 ¡Claro!＝當然！",
+      "usage_zh": "¡Claro!、¡Claro que sí!＝當然；形容顏色是「淺」：azul claro。",
+      "example_es": "¡Claro que sí!",
+      "example_zh": "當然好！",
+      "image": "emoji:✨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:claro",
+        "wiktionary:la:clarus"
+      ]
+    },
+    {
+      "word": "bienvenido",
+      "article": "",
+      "pos": "interjección",
+      "zh": "歡迎",
+      "en": "welcome",
+      "ipa": "/bjembeˈnido/",
+      "breakdown": [
+        {
+          "part": "bien",
+          "zh": "好"
+        },
+        {
+          "part": "venido",
+          "zh": "來了（venir 的過去分詞）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*bene venītus",
+          "zh": "來得好"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "bien venido",
+          "zh": "歡迎"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bienvenido",
+          "zh": "歡迎"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "bienvenido 是 bien（好）＋ venido（來了），來自通俗拉丁文 *bene venītus。推測它是仿照法蘭克語的說法，英文 welcome 也出自同一個日耳曼字。",
+      "hook_zh": "bien＋venido＝你來得正好：張開雙手說 ¡Bienvenido!",
+      "usage_zh": "要配合對象：bienvenido（男）、bienvenida（女）、bienvenidos（大家）。",
+      "example_es": "¡Bienvenidos a Taiwán!",
+      "example_zh": "歡迎來到台灣！",
+      "image": "emoji:🤗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bienvenido"
+      ]
+    },
+    {
+      "word": "por favor",
+      "article": "",
+      "pos": "frase",
+      "zh": "請；拜託",
+      "en": "please",
+      "ipa": "/poɾ faˈboɾ/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "por favor＝for (a) favor：請幫我一個忙。",
+      "usage_zh": "放句尾最自然：Un café, por favor；要更客氣可加 ¿Me puede…?",
+      "example_es": "Un café, por favor.",
+      "example_zh": "一杯咖啡，謝謝。",
+      "image": "emoji:🥺",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:por favor"
+      ]
+    },
+    {
+      "word": "buenos días",
+      "article": "",
+      "pos": "frase",
+      "zh": "早安",
+      "en": "good morning",
+      "ipa": "/ˌbwenos ˈdias/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "buenos días＝good days（複數！）：早上到中午都可以用。",
+      "usage_zh": "西語問候用複數：buenos días、buenas tardes、buenas noches。",
+      "example_es": "Buenos días, ¿cómo está usted?",
+      "example_zh": "早安，您好嗎？",
+      "image": "emoji:🌅",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:buenos días"
+      ]
+    },
+    {
+      "word": "buenas noches",
+      "article": "",
+      "pos": "frase",
+      "zh": "晚安；晚上好",
+      "en": "good evening; good night",
+      "ipa": "/ˌbwenas ˈnot͡ʃes/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "noche＝night：晚上見面打招呼、睡前道別都說 buenas noches。",
+      "usage_zh": "天黑後打招呼和道別都可用；下午到天黑前用 buenas tardes。",
+      "example_es": "Buenas noches, hasta mañana.",
+      "example_zh": "晚安，明天見。",
+      "image": "emoji:🌙",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:buenas noches"
+      ]
+    },
+    {
+      "word": "de nada",
+      "article": "",
+      "pos": "frase",
+      "zh": "不客氣",
+      "en": "you're welcome",
+      "ipa": "/de ˈnada/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "de nada＝「沒什麼」：別人說 gracias，你就回 de nada。",
+      "usage_zh": "回應 gracias 用；更正式可說 No hay de qué。",
+      "example_es": "—Gracias. —De nada.",
+      "example_zh": "「謝謝。」「不客氣。」",
+      "image": "emoji:😊",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:de nada"
+      ]
+    },
+    {
+      "word": "hasta luego",
+      "article": "",
+      "pos": "frase",
+      "zh": "待會見；再見",
+      "en": "see you later",
+      "ipa": "/ˌasta ˈlweɡo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "hasta（直到）＋ luego（等一下）＝待會見。",
+      "usage_zh": "不一定真的待會見，日常道別都能用；hasta mañana＝明天見。",
+      "example_es": "Hasta luego, Marta.",
+      "example_zh": "Marta，待會見。",
+      "image": "emoji:👋",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:hasta luego"
+      ]
+    },
+    {
+      "word": "lo siento",
+      "article": "",
+      "pos": "frase",
+      "zh": "對不起；我很抱歉",
+      "en": "I'm sorry",
+      "ipa": "/lo ˈsjento/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "sentir",
+          "zh": "感覺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lo siento",
+          "zh": "我很抱歉"
+        }
+      ],
+      "cognates_en": [
+        "sentiment"
+      ],
+      "story_zh": "lo siento 字面是「我感覺到它」，siento 來自動詞 sentir（感覺）：我感受到了你的難過。",
+      "hook_zh": "siento ≈ 英文 sentiment（感情）：我真心感到抱歉。",
+      "usage_zh": "道歉、表示遺憾都用；小碰撞說 perdón 就好。Lo siento mucho＝非常抱歉。",
+      "example_es": "Lo siento, llego tarde.",
+      "example_zh": "對不起，我遲到了。",
+      "image": "emoji:😔",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lo siento"
+      ]
+    },
+    {
+      "word": "por qué",
+      "article": "",
+      "pos": "frase",
+      "zh": "為什麼",
+      "en": "why",
+      "ipa": "/poɾ ˈke/",
+      "breakdown": [
+        {
+          "part": "por",
+          "zh": "為了、因為"
+        },
+        {
+          "part": "qué",
+          "zh": "什麼"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "por + qué",
+          "zh": "為了＋什麼"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "por qué",
+          "zh": "為什麼"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "por qué 就是 por（為了）＋ qué（什麼）：「為了什麼？」",
+      "hook_zh": "問 ¿Por qué?（分開、有重音），答 Porque…（連在一起、沒重音）。",
+      "usage_zh": "問句要寫成兩個字並加重音；名詞 el porqué＝原因。",
+      "example_es": "¿Por qué estudias español?",
+      "example_zh": "你為什麼學西班牙語？",
+      "image": "emoji:🧐",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:por qué"
+      ]
+    },
+    {
+      "word": "mío",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "我的（放名詞後）",
+      "en": "mine; of mine",
+      "ipa": "/ˈmio/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "meus",
+          "zh": "我的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "myo",
+          "zh": "我的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mío",
+          "zh": "我的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "mío 來自古西班牙語 myo，源自拉丁文 meus（我的）——和 mi 是同一個拉丁字。",
+      "hook_zh": "mi 放名詞前、mío 放名詞後：mi amigo＝un amigo mío。",
+      "usage_zh": "要配合名詞：mía、míos、mías；常放 ser 後：Es mío（是我的）。",
+      "example_es": "Este libro es mío.",
+      "example_zh": "這本書是我的。",
+      "image": "emoji:🫴",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mío",
+        "wiktionary:la:meus"
+      ]
+    },
+    {
+      "word": "tuyo",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "你的（放名詞後）",
+      "en": "yours; of yours",
+      "ipa": "/ˈtuʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tuum",
+          "zh": "你的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tuyo",
+          "zh": "你的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "tuyo 來自拉丁文 tuum（你的），受 cuyo（誰的）的類推影響，多了 -yo。",
+      "hook_zh": "tu 是短版、tuyo 是長版：¿Es tuyo?＝是你的嗎？",
+      "usage_zh": "放名詞後或 ser 後：un amigo tuyo、Es tuya；要配合陰陽數。",
+      "example_es": "¿Este paraguas es tuyo?",
+      "example_zh": "這把傘是你的嗎？",
+      "image": "emoji:☂️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tuyo"
+      ]
+    },
+    {
+      "word": "suyo",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "他的；她的；您的；他們的（放名詞後）",
+      "en": "his, hers, yours (formal), theirs",
+      "ipa": "/ˈsuʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "su",
+          "zh": "他的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "suyo",
+          "zh": "他的（長形）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "suyo 是從 su 變來的，仿照 mío 的形式加長。",
+      "hook_zh": "suyo 一字多主：他的、她的、您的、他們的。",
+      "usage_zh": "意思可能不清楚，可改說 de él、de ella、de usted：Es de ella。",
+      "example_es": "Ese coche es suyo.",
+      "example_zh": "那輛車是他的。",
+      "image": "emoji:🔑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:suyo"
+      ]
+    },
+    {
+      "word": "ni",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "也不；連…都不",
+      "en": "nor, neither; not even",
+      "ipa": "/ˈni/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nec",
+          "zh": "也不"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nin",
+          "zh": "也不"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ni",
+          "zh": "也不"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "ni 來自古西班牙語 nin，源自拉丁文 nec（也不），而 nec 是 neque 的縮短形。",
+      "hook_zh": "ni…ni…＝neither…nor：No bebo ni té ni café。",
+      "usage_zh": "ni siquiera＝連…都不；動詞前有 no 時，後面用 ni 連接。",
+      "example_es": "No bebo ni té ni café.",
+      "example_zh": "我茶和咖啡都不喝。",
+      "image": "emoji:🙅‍♀️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ni",
+        "wiktionary:la:nec"
+      ]
+    },
+    {
+      "word": "mientras",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "當…的時候；一邊…一邊",
+      "en": "while",
+      "ipa": "/ˈmjentɾas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "dum interim",
+          "zh": "在這段時間裡"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "demientre, mientra",
+          "zh": "當…時"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mientras",
+          "zh": "當…時"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "mientras 來自晚期拉丁文 dum interim（在這段時間裡）。古西班牙語說 demientre，後來縮短並加上副詞字尾 -s，13 世紀已經出現 mientras。",
+      "hook_zh": "mientras＝while：Mientras como, veo la tele（邊吃邊看電視）。",
+      "usage_zh": "mientras tanto＝同時、在此期間；兩件事同時進行時用。",
+      "example_es": "Escucho música mientras estudio.",
+      "example_zh": "我邊念書邊聽音樂。",
+      "image": "emoji:🎧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mientras",
+        "wiktionary:la:dum interim"
+      ]
+    },
+    {
+      "word": "además",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "此外；而且",
+      "en": "besides, moreover, also",
+      "ipa": "/adeˈmas/",
+      "breakdown": [
+        {
+          "part": "a",
+          "zh": "到"
+        },
+        {
+          "part": "demás",
+          "zh": "其餘的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "a + demás",
+          "zh": "到＋其餘"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "además",
+          "zh": "此外"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "además 由 a ＋ demás（其餘的、其他的）組成：「在其他之外」，也就是「此外、而且」。",
+      "hook_zh": "además＝moreover：說完一個理由，再加碼一個。",
+      "usage_zh": "además de＝除了…之外還：Además de inglés, hablo español。",
+      "example_es": "Es barato y, además, muy bueno.",
+      "example_zh": "很便宜，而且很好。",
+      "image": "emoji:📎",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:además"
+      ]
+    },
+    {
+      "word": "a veces",
+      "article": "",
+      "pos": "frase",
+      "zh": "有時候",
+      "en": "sometimes",
+      "ipa": "/a ˈbeθes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "ad vicēs",
+          "zh": "在某些時候"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "a veces",
+          "zh": "有時候"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "a veces 來自通俗拉丁文 ad vicēs（在某些時候）；veces 就是 vez（次）的複數。",
+      "hook_zh": "vez＝次，a veces＝在某幾次＝有時候。",
+      "usage_zh": "z 遇到 e 要改 c：vez → veces；可放句首或句尾。",
+      "example_es": "A veces como en un restaurante.",
+      "example_zh": "我有時候在餐廳吃飯。",
+      "image": "emoji:🌗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:a veces"
+      ]
+    },
+    {
+      "word": "otra vez",
+      "article": "",
+      "pos": "frase",
+      "zh": "再一次",
+      "en": "again, once more",
+      "ipa": "/ˌotɾa ˈbeθ/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "otra（另一）＋ vez（次）＝再一次！",
+      "usage_zh": "同義：de nuevo；¡Otra vez!＝又來了！",
+      "example_es": "¿Puedes repetir otra vez?",
+      "example_zh": "你可以再說一次嗎？",
+      "image": "emoji:🔂",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:otra vez"
+      ]
+    },
+    {
+      "word": "tal vez",
+      "article": "",
+      "pos": "frase",
+      "zh": "也許；或許",
+      "en": "maybe, perhaps",
+      "ipa": "/ˌtal ˈbeθ/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "tal（這樣的）＋ vez（次）：說不定就這一次——也許吧。",
+      "usage_zh": "和 quizás 同義；表示不確定。",
+      "example_es": "Tal vez voy mañana.",
+      "example_zh": "也許我明天去。",
+      "image": "emoji:🤔",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:tal vez"
+      ]
+    }
+  ]
+}
