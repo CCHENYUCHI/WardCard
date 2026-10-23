@@ -3696,6 +3696,47 @@
       "writer": "gemini"
     },
     {
+      "word": "tratar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "對待；處理；試圖（tratar de）",
+      "en": "to treat, to handle, to try",
+      "ipa": "/tɾaˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "trahō",
+          "zh": "拉、拖"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "tractāre",
+          "zh": "反覆拉、處理"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tratar",
+          "zh": "對待、處理"
+        }
+      ],
+      "cognates_en": [
+        "treat"
+      ],
+      "story_zh": "源自拉丁語 tractāre，是 trahō（拉、拖曳）的反覆動詞形，原義是「反覆拉扯、翻動」，後來引申為「動手處理、照管」，再進一步延伸出「對待」某人與「治療」疾病之意。英文的 treat 也是同源字。",
+      "hook_zh": "直接聯想英文 treat（對待、治療）：tratar 就是用心去「對待」人或「處理」事情。",
+      "usage_zh": "常接 de 加原形動詞表示「試圖做…」（tratar de）；片語 se trata de 則表示「這是關於…」。",
+      "example_es": "Trato de practicar español todos los días.",
+      "example_zh": "我試著每天練習西班牙文。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tratar",
+        "wiktionary:la:tracto"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "video",
       "article": "el",
       "pos": "sustantivo",
