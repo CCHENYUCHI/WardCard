@@ -29,7 +29,7 @@ const FOLD = {
   va: 'ir', vas: 'ir', van: 'ir', vamos: 'ir', voy: 'ir', ve: 'ir', fue: 'ir',
   da: 'dar', dé: 'dar', di: 'decir', dice: 'decir', digo: 'decir', dicho: 'decir',
   sé: 'saber', sabe: 'saber', vino: 'venir', vengo: 'venir', ven: 'venir', hecho: 'hacer', haz: 'hacer',
-  les: 'le', veces: 'vez', pasa: 'pasar', nueva: 'nuevo', primera: 'primero', puede: 'poder', puedo: 'poder', quiero: 'querer', tengo: 'tener', tiene: 'tener', está: 'estar', estaba: 'estar'
+  les: 'le', veces: 'vez', pasa: 'pasar', trata: 'tratar', nueva: 'nuevo', primera: 'primero', puede: 'poder', puedo: 'poder', quiero: 'querer', tengo: 'tener', tiene: 'tener', está: 'estar', estaba: 'estar'
 };
 
 // Possible base words of an inflected adjective / noun form: nueva -> nuevo, veces -> vez, cuentos -> cuento
