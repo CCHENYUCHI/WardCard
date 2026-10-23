@@ -601,16 +601,6 @@ module.exports = {
     s('circle', { cx: 90, cy: 38, r: 12 }, 'red'),
     s('path', { d: 'M38 70l-6-14M122 70l6-14', ...SW(4) }, 'brown', { stroke: true })
   ],
-  pasa: [
-    s('path', { d: 'M80 24v26M80 50l-14 6M80 50l14 6', ...SW(4) }, 'brown', { stroke: true }),
-    s('ellipse', { cx: 62, cy: 62, rx: 16, ry: 13 }, 'purple'),
-    s('ellipse', { cx: 98, cy: 62, rx: 16, ry: 13 }, 'purple', { accent: true }),
-    s('ellipse', { cx: 80, cy: 88, rx: 16, ry: 13 }, 'purple'),
-    s('ellipse', { cx: 54, cy: 98, rx: 15, ry: 12 }, 'purple'),
-    s('ellipse', { cx: 106, cy: 98, rx: 15, ry: 12 }, 'purple'),
-    s('ellipse', { cx: 80, cy: 120, rx: 15, ry: 12 }, 'purple'),
-    s('path', { d: 'M56 60q6 4 12 0M92 60q6 4 12 0M74 86q6 4 12 0M48 96q6 4 12 0M100 96q6 4 12 0M74 118q6 4 12 0', ...SW(3) }, 'navy', { stroke: true })
-  ],
   ello: [
     ground(),
     ...person(34, 136, 'blue'),
@@ -687,14 +677,6 @@ module.exports = {
     s('rect', { x: 50, y: 108, width: 38, height: 14, rx: 3 }, 'gray'),
     s('rect', { x: 94, y: 64, width: 16, height: 58, rx: 3 }, 'orange', { accent: true }),
     s('path', { d: 'M97 89h10M97 97h10', ...SW(3) }, 'white', { stroke: true })
-  ],
-  trata: [
-    ground(),
-    ...person(80, 136, 'gray', { accent: true }),
-    s('rect', { x: 36, y: 40, width: 88, height: 96, rx: 4, ...SW(5) }, 'dark', { stroke: true }),
-    s('path', { d: 'M58 40v96M80 40v14M80 92v44M102 40v96', ...SW(5) }, 'dark', { stroke: true }),
-    s('path', { d: 'M124 60l14 10-8 10-14-10z' }, 'yellow'),
-    s('circle', { cx: 126, cy: 68, r: 3 }, 'dark')
   ],
   video: [
     s('rect', { x: 18, y: 52, width: 90, height: 64, rx: 10 }, 'dark'),

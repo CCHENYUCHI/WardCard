@@ -1,6 +1,6 @@
 {
   "theme": "freq-0001",
-  "theme_zh": "常用字（頻率第 2–419 名）",
+  "theme_zh": "常用字（頻率第 2–428 名）",
   "entries": [
     {
       "word": "la",
@@ -1805,39 +1805,6 @@
       "sources": [
         "wiktionary:es:información",
         "wiktionary:la:informatio"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "pasa",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "葡萄乾",
-      "en": "raisin",
-      "ipa": "/ˈpasa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "ūva passa",
-          "zh": "攤開晾曬的葡萄"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "pasa",
-          "zh": "葡萄乾"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "繼承自拉丁語片語 ūva passa，字面意思是「攤開攤平曬乾的葡萄」。古代將新鮮葡萄平鋪在陽光下曝曬脫水，日後名詞 ūva（葡萄）被省略，形容詞 passa 獨立成為名詞，專指「葡萄乾」。",
-      "hook_zh": "葡萄攤平曬過（pass）脫水，就變成了好吃的 pasa（葡萄乾）。",
-      "usage_zh": "陰性名詞。生活中常以複數 las pasas 出現，例如加在燕麥、沙拉或糕點裡。",
-      "example_es": "Me gusta comer avena con pasas.",
-      "example_zh": "我喜歡吃燕麥配葡萄乾。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:pasa"
       ],
       "writer": "gemini"
     },
@@ -3729,39 +3696,6 @@
       "writer": "gemini"
     },
     {
-      "word": "trata",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "人口販賣、非法交易",
-      "en": "human trafficking, illicit trade",
-      "ipa": "/ˈtɾata/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "tratar",
-          "zh": "處理、交易"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "trata",
-          "zh": "人口販賣、非法交易"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自動詞 tratar（處理、交易）。trata 是去除動詞字尾衍生出的名詞，字面原指交易，但在現代西語中特指「非法販運」或「人口販賣」，例如奴隸貿易（trata de esclavos）與人口買賣。",
-      "hook_zh": "把人當作貨物來「對待」（tratar）與買賣，就是殘酷的人口販運（trata）。",
-      "usage_zh": "常出現在固定片語中，例如 la trata de personas（人口販運）與 la trata de esclavos（奴隸貿易）。",
-      "example_es": "La policía investiga una red de trata de personas.",
-      "example_zh": "警方正在調查一個人口販賣網絡。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:trata"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "video",
       "article": "el",
       "pos": "sustantivo",
@@ -3869,6 +3803,39 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:base"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "queda",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "宵禁、熄燈號",
+      "en": "curfew",
+      "ipa": "/ˈkeda/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "quedar",
+          "zh": "留下、停留"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "queda",
+          "zh": "宵禁、熄燈號"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西語動詞 quedar（留下、停留）的去動詞派生詞。原指夜晚鐘聲響起後，居民必須留在家中的訊號，後來演變為「宵禁」與「熄燈號」的意思。",
+      "hook_zh": "晚上鐘聲一響就必須「留在」（quedar）家裡，這就是 queda（宵禁）。",
+      "usage_zh": "常與 toque（敲擊、鐘聲）連用成 toque de queda，指「宵禁令」或「宵禁鐘聲」。",
+      "example_es": "El gobierno declaró el toque de queda.",
+      "example_zh": "政府宣布實施宵禁。",
+      "image": "emoji:🔔",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:queda"
       ],
       "writer": "gemini"
     }
