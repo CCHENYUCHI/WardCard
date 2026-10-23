@@ -668,7 +668,7 @@
       "usage_zh": "現在式第一人稱是 creo，注意不要和動詞 creer（相信）的現在式 creo 混淆。",
       "example_es": "Ella quiere crear una nueva empresa.",
       "example_zh": "她想要創立一家新公司。",
-      "image": "emoji:🎨",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:crear"
@@ -690,7 +690,7 @@
       "usage_zh": "西班牙皇家語言學院（RAE）現在建議寫作 solo 即可，僅在產生語意歧義時才需加重音。",
       "example_es": "Sólo quiero un vaso de agua.",
       "example_zh": "我只要一杯水。",
-      "image": "emoji:☝️",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:sólo"
@@ -726,7 +726,7 @@
       "usage_zh": "陽性名詞，代指中央或地方統治體系，指特定政府組織時首字母常大寫。",
       "example_es": "El gobierno anunció nuevas medidas.",
       "example_zh": "政府公布了新的措施。",
-      "image": "emoji:🏛️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:gobierno"
@@ -759,7 +759,7 @@
       "usage_zh": "指示形容詞或代名詞，修飾或指代陽性複數名詞；過去代名詞寫法為 éstos。",
       "example_es": "Estos zapatos son muy cómodos.",
       "example_zh": "這些鞋子非常舒服。",
-      "image": "emoji:👉",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:estos"
@@ -792,7 +792,7 @@
       "usage_zh": "指示形容詞或代名詞，修飾或指代陰性複數名詞；過去代名詞寫法為 éstas。",
       "example_es": "Estas flores huelen muy bien.",
       "example_zh": "這些花聞起來好香。",
-      "image": "emoji:👉",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:estas"
@@ -843,7 +843,7 @@
       "usage_zh": "作為疑問代名詞時必須標重音符號 quién；作為關係代名詞時，複數形式為 quienes。",
       "example_es": "Ella es la profesora con quien estudio español.",
       "example_zh": "她就是和我一起學西語的老師。",
-      "image": "emoji:👤",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:quien"
@@ -878,7 +878,7 @@
       "usage_zh": "常見固定搭配有 en caso de（萬一、在…情況下）以及 hacer caso a（理會、聽從）。",
       "example_es": "En este caso, es mejor no decir nada.",
       "example_zh": "在這種情況下，最好什麼都別說。",
-      "image": "emoji:📁",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:caso"
@@ -922,7 +922,7 @@
       "usage_zh": "陰陽同形形容詞，不論修飾陽性或陰性名詞形狀皆為 nacional，複數加 -es 變 nacionales。",
       "example_es": "El museo nacional abre todos los días.",
       "example_zh": "國立博物館每天都開放。",
-      "image": "emoji:🏛️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:nacional"
@@ -994,6 +994,156 @@
       "sources": [
         "wiktionary:es:primera",
         "wiktionary:la:primarius"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "veces",
+      "article": "",
+      "pos": "preposición",
+      "zh": "乘以、倍（乘法運算）",
+      "en": "times, multiplied by",
+      "ipa": "/ˈbeθes/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "想像算式中一次又一次（veces）地累加：二「乘以」三等於六。",
+      "usage_zh": "在數學乘法算式中作介系詞使用，例如 dos veces tres son seis（2 乘 3 等於 6）。",
+      "example_es": "Dos veces tres son seis.",
+      "example_zh": "二乘以三等於六。",
+      "image": "emoji:✖️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:veces"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cual",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "如同、像；哪一個（關係詞）",
+      "en": "which, like, as",
+      "ipa": "/ˈkwal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quālis",
+          "zh": "怎樣的、何種的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cual",
+          "zh": "如同、哪一個"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 quālis（怎樣的、何種的）。在西語中演化為關係代名詞與副詞，用來引導子句表示「如同、像…一樣」或指稱特定事物。",
+      "hook_zh": "發音像「跨喔」，像在問人「到底跨過了哪一個（cual）」。",
+      "usage_zh": "不帶重音符號時為關係代名詞（常搭配定冠詞 el cual / la cual）或副詞；疑問詞必須加重音寫作 cuál。",
+      "example_es": "Tal vez podrías probar de otra manera, cual es simplemente ignorarlo.",
+      "example_zh": "也許你可以試試另一種方法，像是直接忽略它。",
+      "image": "emoji:🔍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cual"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "general",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "一般的、普遍的、整體的",
+      "en": "general, overall",
+      "ipa": "/xeneˈɾal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "generālis",
+          "zh": "普遍的、全體的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "general",
+          "zh": "一般的、整體的"
+        }
+      ],
+      "cognates_en": [
+        "general"
+      ],
+      "story_zh": "源自拉丁語 generālis（普遍的、整體的）。演變為西語後保留了涵蓋全面、整體的意涵，用作形容詞表示「一般的、整體的」，亦可引申作名詞指統帥全軍的「將軍」。",
+      "hook_zh": "與英文 general 拼法與意義完全相同，指「普遍的」或軍隊裡的「將軍」。",
+      "usage_zh": "形容詞陰陽同形（una idea general）。常見片語 en general 表示「一般來說、大體上」。",
+      "example_es": "En general, el clima aquí es muy agradable.",
+      "example_zh": "一般來說，這裡的氣候非常宜人。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:general"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tal",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "如此的、這樣的",
+      "en": "such",
+      "ipa": "/ˈtal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tālis",
+          "zh": "這樣的、如此的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "tal",
+          "zh": "這樣的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tal",
+          "zh": "如此的、這樣的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 tālis（這樣的、如此的），經古西班牙語 tal 演變而來。用作形容詞或代名詞，用來指稱某種性質或前面提過的事物，表達「如此、這般」。",
+      "hook_zh": "「踏（tal）入這樣的世界」；日常問候常用 ¿Qué tal?（你好嗎、如何？）。",
+      "usage_zh": "陰陽同形，複數形為 tales。常見固定搭配包括 tal vez（也許）、¿Qué tal?（如何？）。",
+      "example_es": "No hay tal cosa como los monstruos.",
+      "example_zh": "根本沒有怪物這種東西。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tal"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "primer",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "第一的、最初的（primero 截尾形）",
+      "en": "first (apocopic form of primero)",
+      "ipa": "/pɾiˈmeɾ/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "聯想英文 prime（首要的、最初的），primer 就是放在陽性單數名詞前的「第一」。",
+      "usage_zh": "為 primero 在陽性單數名詞前的短尾形（apócope），例如 el primer día（第一天）。",
+      "example_es": "Hoy es el primer día de clase.",
+      "example_zh": "今天是開學的第一天。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:primer"
       ],
       "writer": "gemini"
     }
