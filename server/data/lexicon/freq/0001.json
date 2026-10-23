@@ -1,0 +1,209 @@
+{
+  "theme": "freq-0001",
+  "theme_zh": "常用字（頻率第 2–359 名）",
+  "entries": [
+    {
+      "word": "la",
+      "article": "",
+      "pos": "artículo",
+      "zh": "陰性單數定冠詞（這、那）；女性或陰性受詞代名詞（她、它）",
+      "en": "the (feminine singular); her, it",
+      "ipa": "/la/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ille",
+          "zh": "那個"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "illa(m)",
+          "zh": "那個（陰性單數）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ela",
+          "zh": "定冠詞"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "la",
+          "zh": "定冠詞（陰性單數）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ille 的陰性單數形 illa(m)，本義為「那個」。進入古西班牙語後弱化為 ela，隨後詞首母音脫落，演變成現代西語的定冠詞與受詞代名詞 la。它從原本用來明確指稱遠處特定對象，逐步轉化為標示已知陰性人或事物的冠詞。",
+      "hook_zh": "想像手指著眼前一位優雅的女士（la señora），讚嘆說：「la」就是那位女孩！",
+      "usage_zh": "若後方的陰性單數名詞以重音 a- 或 ha- 開頭（如 agua、hacha），單數冠詞須改用 el 以免連音拗口。",
+      "example_es": "La casa de María es muy bonita.",
+      "example_zh": "瑪麗亞的房子非常漂亮。",
+      "image": "emoji:👩",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:la"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "los",
+      "article": "",
+      "pos": "artículo",
+      "zh": "陽性複數定冠詞（這些、那些）；男性或陽性受詞代名詞（他們、它們）",
+      "en": "the (masculine plural); them",
+      "ipa": "/los/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ille",
+          "zh": "那個"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "illōs",
+          "zh": "那些（陽性複數受格）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "los",
+          "zh": "那些、他們"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "los",
+          "zh": "定冠詞（陽性複數）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ille 的陽性複數受格 illōs，意思是「那些」。古西班牙語承襲其形式寫作 los，並保留了「他們」的代名詞用法。隨著語言發展，它同時承擔起陽性複數定冠詞的功能，用來指稱一群特定的男性或陽性名詞。",
+      "hook_zh": "想像操場上一群熱血踢球的男孩（los chicos），大聲為「los」這群夥伴加油！",
+      "usage_zh": "修飾陽性複數名詞；若團體中有男有女，西語語法習慣以陽性複數 los 代表全體。",
+      "example_es": "Los niños juegan en el parque.",
+      "example_zh": "孩子們在公園裡玩耍。",
+      "image": "emoji:👥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:los"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "del",
+      "article": "",
+      "pos": "artículo",
+      "zh": "…的、從…（de 與陽性定冠詞 el 的縮合形）",
+      "en": "of the, from the",
+      "ipa": "/del/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "del 是由介系詞 de 與陽性單數定冠詞 el 縮合而成。同屬羅曼語族的葡萄牙語（do）與法語（du）也有完全對應的縮合形式。",
+      "hook_zh": "看到 del 就拆成「de + el」：de 是「的」，el 是「陽性的這個」，合起來就是「這個的」。",
+      "usage_zh": "介系詞 de 遇到陽性單數定冠詞 el 時必須強制縮合為 del，不能寫成 de el。",
+      "example_es": "El libro es del profesor.",
+      "example_zh": "這本書是老師的。",
+      "image": "emoji:🔗",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:del"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "las",
+      "article": "",
+      "pos": "artículo",
+      "zh": "陰性複數定冠詞（這些、那些）；女性或陰性受詞代名詞（她們、它們）",
+      "en": "the (feminine plural); them",
+      "ipa": "/las/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ille",
+          "zh": "那個"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "illās",
+          "zh": "那些（陰性複數受格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "las",
+          "zh": "定冠詞（陰性複數）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ille 的陰性複數受格 illās，本義為「那些」。在演變為西班牙語的過程中，詞首的音節脫落弱化，轉變為 las。它既可用作陰性複數定冠詞「這些、那些」，也可以作為直接受格代名詞，指稱「她們」或複數陰性事物。",
+      "hook_zh": "花園裡盛開著一整片繽紛美麗的花朵（las flores），這群美麗的花仙子就是 las。",
+      "usage_zh": "修飾陰性複數名詞；即使單數用 el 的詞（如 el agua），複數仍規則恢復為 las aguas。",
+      "example_es": "Las flores de este jardín son hermosas.",
+      "example_zh": "這座花園裡的花朵很美麗。",
+      "image": "emoji:👭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:las"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "una",
+      "article": "",
+      "pos": "artículo",
+      "zh": "陰性單數不定冠詞（一個、某個）；一個（數詞）",
+      "en": "a, an (feminine singular); one",
+      "ipa": "/ˈuna/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*óynos",
+          "zh": "單一、一個"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*oinos",
+          "zh": "一個"
+        },
+        {
+          "lang_zh": "古拉丁語",
+          "word": "oinos",
+          "zh": "一個"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūna",
+          "zh": "一個（陰性）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "una",
+          "zh": "一個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "una",
+          "zh": "一個（陰性單數）"
+        }
+      ],
+      "cognates_en": [
+        "one",
+        "unit",
+        "unique"
+      ],
+      "story_zh": "源自原始印歐語 *óynos（單一），經由古拉丁語 oinos 與拉丁語數詞 ūnus 的陰性形式 ūna，再經古西班牙語傳承為現代西語 una。它原先單純表示數目「一」，在通俗語演變中逐漸弱化為不定冠詞，用來泛指某個首次提及的女性或陰性事物。英文的 one、unit 與 unique 均與其同源。",
+      "hook_zh": "聯想英文 unit（單一元件）或 unique（唯一）：手上拿著「一個（una）」蘋果。",
+      "usage_zh": "修飾陰性單數名詞；但若陰性名詞以重音 a- 或 ha- 開頭（如 águila），通常改用 un（un águila）。",
+      "example_es": "Compré una manzana roja en el mercado.",
+      "example_zh": "我在市場買了一顆紅蘋果。",
+      "image": "emoji:☝️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:una"
+      ],
+      "writer": "gemini"
+    }
+  ]
+}
