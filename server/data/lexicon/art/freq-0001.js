@@ -358,5 +358,247 @@ module.exports = {
     s('circle', { cx: 80, cy: 80, r: 56 }, 'blue', { accent: true }),
     s('circle', { cx: 80, cy: 46, r: 9 }, 'white'),
     s('rect', { x: 71, y: 64, width: 18, height: 52, rx: 5 }, 'white')
+  ],
+  san: [
+    ...person(80, 136, 'purple', { accent: true }),
+    s('circle', { cx: 80, cy: 64, r: 22, ...SW(4) }, 'yellow', { stroke: true }),
+    s('path', { d: 'M14 136h132', ...SW(4) }, 'gray', { stroke: true })
+  ],
+  social: [
+    s('path', { d: 'M40 50 80 100 120 50M40 50h80', ...SW(4) }, 'gray', { stroke: true }),
+    ...person(40, 66, 'blue', { h: 22, w: 20, r: 9 }),
+    ...person(120, 66, 'red', { h: 22, w: 20, r: 9 }),
+    ...person(80, 136, 'green', { h: 26, w: 22, r: 10, accent: true })
+  ],
+  derecho: [
+    s('rect', { x: 40, y: 22, width: 80, height: 112, rx: 6 }, 'cream'),
+    s('path', { d: 'M54 44h52M54 60h52M54 76h40', ...SW(4) }, 'gray', { stroke: true }),
+    s('circle', { cx: 100, cy: 108, r: 16 }, 'red', { accent: true }),
+    s('path', { d: 'M92 108l6 6 10-12', ...SW(4) }, 'white', { stroke: true })
+  ],
+  falta: [
+    s('rect', { x: 20, y: 40, width: 120, height: 84, rx: 8 }, 'cream'),
+    s('rect', { x: 32, y: 54, width: 26, height: 26, rx: 4 }, 'green'), s('rect', { x: 67, y: 54, width: 26, height: 26, rx: 4 }, 'green'),
+    s('rect', { x: 102, y: 54, width: 26, height: 26, rx: 4, ...SW(3, { 'stroke-dasharray': '5 4' }) }, 'red', { stroke: true, accent: true }),
+    s('rect', { x: 32, y: 88, width: 26, height: 26, rx: 4 }, 'green'), s('rect', { x: 67, y: 88, width: 26, height: 26, rx: 4 }, 'green')
+  ],
+  cambio: [
+    s('path', { d: 'M40 64a44 44 0 0 1 80 0', ...SW(7) }, 'blue', { stroke: true, accent: true }),
+    s('path', { d: 'M112 46l10 20-22 2', ...SW(7) }, 'blue', { stroke: true }),
+    s('path', { d: 'M120 96a44 44 0 0 1-80 0', ...SW(7) }, 'orange', { stroke: true }),
+    s('path', { d: 'M48 114l-10-20 22-2', ...SW(7) }, 'orange', { stroke: true }),
+    s('circle', { cx: 80, cy: 80, r: 12 }, 'yellow')
+  ],
+  mierda: [
+    s('ellipse', { cx: 80, cy: 118, rx: 46, ry: 16 }, 'brown', { accent: true }),
+    s('ellipse', { cx: 80, cy: 96, rx: 34, ry: 14 }, 'brown'),
+    s('ellipse', { cx: 80, cy: 76, rx: 22, ry: 12 }, 'brown'),
+    s('path', { d: 'M80 64q-4-12 8-18', ...SW(6) }, 'brown', { stroke: true }),
+    s('path', { d: 'M36 50q6-10 0-20M124 50q6-10 0-20', ...SW(3) }, 'green', { stroke: true })
+  ],
+  tras: [
+    s('rect', { x: 24, y: 40, width: 60, height: 96, rx: 4 }, 'brown'),
+    s('circle', { cx: 100, cy: 64, r: 14 }, 'skin'),
+    s('rect', { x: 84, y: 80, width: 32, height: 56, rx: 10 }, 'blue', { accent: true }),
+    s('path', { d: 'M14 136h132', ...SW(4) }, 'gray', { stroke: true }),
+    s('circle', { cx: 106, cy: 60, r: 2.5 }, 'dark')
+  ],
+  'través': [
+    s('rect', { x: 14, y: 66, width: 132, height: 70, rx: 4 }, 'gray'),
+    s('path', { d: 'M14 66a66 66 0 0 1 132 0', ...SW(0) }, 'gray'),
+    s('path', { d: 'M40 136V86a40 40 0 0 1 80 0v50z' }, 'dark'),
+    s('path', { d: 'M20 110h120', ...SW(6) }, 'yellow', { stroke: true, accent: true }),
+    s('path', { d: 'M128 98l14 12-14 12', ...SW(6) }, 'yellow', { stroke: true })
+  ],
+  realidad: [
+    s('rect', { x: 16, y: 44, width: 64, height: 76, rx: 6 }, 'sky'),
+    s('circle', { cx: 48, cy: 72, r: 12, opacity: 0.5 }, 'white'),
+    s('path', { d: 'M16 44h64v76H16z', ...SW(3, { 'stroke-dasharray': '6 5' }) }, 'gray', { stroke: true }),
+    s('path', { d: 'M108 30c-10 0-22 8-22 30s14 40 22 40 22-18 22-40-12-30-22-30z' }, 'red', { accent: true }),
+    s('path', { d: 'M108 30v-10', ...SW(4) }, 'brown', { stroke: true }),
+    s('path', { d: 'M86 136h44', ...SW(4) }, 'gray', { stroke: true })
+  ],
+  'algún': [
+    s('rect', { x: 18, y: 40, width: 124, height: 96, rx: 8 }, 'cream'),
+    s('circle', { cx: 48, cy: 68, r: 12 }, 'gray'), s('circle', { cx: 80, cy: 68, r: 12 }, 'gray'), s('circle', { cx: 112, cy: 68, r: 12 }, 'gray'),
+    s('circle', { cx: 48, cy: 104, r: 12 }, 'gray'), s('circle', { cx: 80, cy: 104, r: 12 }, 'orange', { accent: true }), s('circle', { cx: 112, cy: 104, r: 12 }, 'gray'),
+    s('path', { d: 'M80 22v8', ...SW(4) }, 'orange', { stroke: true })
+  ],
+  frente: [
+    s('circle', { cx: 80, cy: 86, r: 48 }, 'skin'),
+    s('path', { d: 'M32 76q48-56 96 0', ...SW(0) }, 'skin'),
+    s('path', { d: 'M40 62q40-30 80 0v-14q-40-36-80 0z' }, 'brown'),
+    s('path', { d: 'M48 70q32-18 64 0', ...SW(6) }, 'yellow', { stroke: true, accent: true }),
+    s('circle', { cx: 64, cy: 96, r: 5 }, 'dark'), s('circle', { cx: 96, cy: 96, r: 5 }, 'dark'),
+    s('path', { d: 'M68 116q12 8 24 0', ...SW(4) }, 'dark', { stroke: true })
+  ],
+  incluso: [
+    s('rect', { x: 18, y: 104, width: 124, height: 10, rx: 3 }, 'brown'),
+    s('circle', { cx: 40, cy: 86, r: 16 }, 'red'), s('circle', { cx: 74, cy: 86, r: 16 }, 'red'),
+    s('circle', { cx: 112, cy: 82, r: 20 }, 'yellow', { accent: true }),
+    s('path', { d: 'M112 54l4-12', ...SW(4) }, 'orange', { stroke: true }),
+    s('path', { d: 'M100 30l8 4M126 28l-6 6', ...SW(3) }, 'orange', { stroke: true })
+  ],
+  real: [
+    s('path', { d: 'M30 112 22 52l30 26 28-42 28 42 30-26-8 60z' }, 'yellow', { accent: true }),
+    s('rect', { x: 30, y: 112, width: 100, height: 16, rx: 3 }, 'orange'),
+    s('circle', { cx: 80, cy: 88, r: 8 }, 'red'), s('circle', { cx: 50, cy: 96, r: 6 }, 'blue'), s('circle', { cx: 110, cy: 96, r: 6 }, 'green')
+  ],
+  desarrollo: [
+    s('path', { d: 'M14 136h132', ...SW(4) }, 'brown', { stroke: true }),
+    s('path', { d: 'M30 136v-10', ...SW(4) }, 'green', { stroke: true }),
+    s('path', { d: 'M30 126q-8-6-8-12 8 0 8 12z' }, 'green'),
+    s('path', { d: 'M80 136v-36', ...SW(5) }, 'green', { stroke: true }),
+    s('path', { d: 'M80 108q-18-4-20-20 18 2 20 20zM80 104q18-4 20-20-18 2-20 20z' }, 'green'),
+    s('path', { d: 'M130 136V56', ...SW(6) }, 'brown', { stroke: true }),
+    s('circle', { cx: 130, cy: 50, r: 22 }, 'green', { accent: true }),
+    s('path', { d: 'M44 56l20-16 14 10', ...SW(4) }, 'orange', { stroke: true })
+  ],
+  sociedad: [
+    ...person(30, 100, 'blue', { h: 26, w: 18, r: 8 }), ...person(58, 100, 'red', { h: 26, w: 18, r: 8 }),
+    ...person(86, 100, 'green', { h: 26, w: 18, r: 8 }), ...person(114, 100, 'yellow', { h: 26, w: 18, r: 8 }),
+    ...person(44, 140, 'purple', { h: 26, w: 18, r: 8, accent: true }), ...person(72, 140, 'orange', { h: 26, w: 18, r: 8 }),
+    ...person(100, 140, 'pink', { h: 26, w: 18, r: 8 }), ...person(128, 140, 'blue', { h: 26, w: 18, r: 8 })
+  ],
+  tema: [
+    s('rect', { x: 26, y: 28, width: 108, height: 108, rx: 6 }, 'cream'),
+    s('rect', { x: 38, y: 40, width: 84, height: 18, rx: 4 }, 'red', { accent: true }),
+    s('path', { d: 'M40 76h80M40 92h80M40 108h56', ...SW(4) }, 'gray', { stroke: true })
+  ],
+  esas: [
+    ground(),
+    ...person(26, 136, 'blue'),
+    s('path', { d: 'M40 100h18', ...SW(7) }, 'skin', { stroke: true }),
+    s('path', { d: 'M62 92l8 8-8 8', ...SW(4) }, 'gray', { stroke: true }),
+    s('path', { d: 'M86 136l-6-26h22l-6 26z' }, 'pink', { accent: true }), s('circle', { cx: 91, cy: 104, r: 8 }, 'red'),
+    s('path', { d: 'M120 136l-6-30h22l-6 30z' }, 'purple'), s('circle', { cx: 125, cy: 100, r: 8 }, 'pink')
+  ],
+  'mí': [
+    s('circle', { cx: 80, cy: 52, r: 20 }, 'skin'),
+    s('rect', { x: 52, y: 76, width: 56, height: 60, rx: 20 }, 'orange', { accent: true }),
+    s('path', { d: 'M110 40l-12 16M98 56l2-12M98 56l12-2', ...SW(4) }, 'blue', { stroke: true }),
+    s('path', { d: 'M76 102l4 6 4-6a4 4 0 0 0-8 0z' }, 'red')
+  ],
+  nivel: [
+    s('rect', { x: 14, y: 70, width: 132, height: 26, rx: 6 }, 'yellow', { accent: true }),
+    s('rect', { x: 62, y: 76, width: 36, height: 14, rx: 7 }, 'mint'),
+    s('circle', { cx: 80, cy: 83, r: 5 }, 'white'),
+    s('path', { d: 'M70 76v14M90 76v14', ...SW(2) }, 'dark', { stroke: true }),
+    s('path', { d: 'M14 110h132', ...SW(4) }, 'gray', { stroke: true })
+  ],
+  argentino: [
+    s('rect', { x: 20, y: 40, width: 120, height: 26 }, 'sky'),
+    s('rect', { x: 20, y: 66, width: 120, height: 26 }, 'white'),
+    s('rect', { x: 20, y: 92, width: 120, height: 26 }, 'sky'),
+    s('circle', { cx: 80, cy: 79, r: 9 }, 'yellow', { accent: true }),
+    s('path', { d: 'M20 40h120v78H20z', ...SW(2) }, 'gray', { stroke: true })
+  ],
+  paso: [
+    s('path', { d: 'M38 118c-8 0-12-10-10-22 2-10 10-14 16-10 6 4 4 14 2 22-2 6-4 10-8 10z' }, 'brown'),
+    s('path', { d: 'M78 88c-8 0-12-10-10-22 2-10 10-14 16-10 6 4 4 14 2 22-2 6-4 10-8 10z' }, 'brown', { accent: true }),
+    s('path', { d: 'M118 58c-8 0-12-10-10-22 2-10 10-14 16-10 6 4 4 14 2 22-2 6-4 10-8 10z' }, 'brown'),
+    s('circle', { cx: 32, cy: 126, r: 4 }, 'brown'), s('circle', { cx: 72, cy: 96, r: 4 }, 'brown'), s('circle', { cx: 112, cy: 66, r: 4 }, 'brown')
+  ],
+  unido: [
+    s('circle', { cx: 60, cy: 80, r: 34 }, 'blue'),
+    s('circle', { cx: 100, cy: 80, r: 34 }, 'yellow'),
+    s('path', { d: 'M80 52a34 34 0 0 1 0 56 34 34 0 0 1 0-56z' }, 'green', { accent: true })
+  ],
+  uso: [
+    s('path', { d: 'M54 54l52 52', ...SW(12) }, 'gray', { stroke: true }),
+    s('path', { d: 'M100 100l22 22', ...SW(14) }, 'red', { stroke: true, accent: true }),
+    s('path', { d: 'M38 30a22 22 0 1 0 30 30l-12-12 4-14-14 4z' }, 'gray'),
+    s('path', { d: 'M110 30l12 12M24 120l8 8', ...SW(3) }, 'orange', { stroke: true })
+  ],
+  'artículo': [
+    s('rect', { x: 30, y: 22, width: 100, height: 116, rx: 4 }, 'white'),
+    s('path', { d: 'M30 22h100v116H30z', ...SW(3) }, 'gray', { stroke: true }),
+    s('rect', { x: 42, y: 34, width: 76, height: 12, rx: 2 }, 'dark'),
+    s('rect', { x: 42, y: 54, width: 34, height: 30, rx: 2 }, 'sky', { accent: true }),
+    s('path', { d: 'M84 58h34M84 70h34M84 82h34M42 96h76M42 108h76M42 120h50', ...SW(3) }, 'gray', { stroke: true })
+  ],
+  cierto: [
+    s('circle', { cx: 80, cy: 80, r: 54 }, 'green', { accent: true }),
+    s('path', { d: 'M52 82l20 20 38-42', ...SW(12) }, 'white', { stroke: true })
+  ],
+  'mayoría': [
+    s('circle', { cx: 80, cy: 80, r: 54 }, 'gray'),
+    s('path', { d: 'M80 80V26a54 54 0 1 1-46 82z' }, 'blue', { accent: true })
+  ],
+  seguridad: [
+    s('path', { d: 'M80 20l50 18v34c0 34-24 56-50 66-26-10-50-32-50-66V38z' }, 'blue', { accent: true }),
+    s('rect', { x: 60, y: 74, width: 40, height: 32, rx: 4 }, 'yellow'),
+    s('path', { d: 'M66 74v-10a14 14 0 0 1 28 0v10', ...SW(6) }, 'yellow', { stroke: true }),
+    s('circle', { cx: 80, cy: 88, r: 5 }, 'dark')
+  ],
+  visto: [
+    s('path', { d: 'M14 80q66-62 132 0-66 62-132 0z' }, 'white'),
+    s('path', { d: 'M14 80q66-62 132 0-66 62-132 0z', ...SW(4) }, 'dark', { stroke: true }),
+    s('circle', { cx: 80, cy: 80, r: 24 }, 'blue', { accent: true }),
+    s('circle', { cx: 80, cy: 80, r: 10 }, 'dark'),
+    s('path', { d: 'M110 120l10 10 20-22', ...SW(6) }, 'green', { stroke: true })
+  ],
+  programa: [
+    s('rect', { x: 18, y: 34, width: 124, height: 84, rx: 8 }, 'dark'),
+    s('rect', { x: 28, y: 44, width: 104, height: 64, rx: 4 }, 'sky'),
+    s('path', { d: 'M70 60v32l26-16z' }, 'red', { accent: true }),
+    s('path', { d: 'M60 136l20-18 20 18', ...SW(5) }, 'gray', { stroke: true })
+  ],
+  internacional: [
+    s('circle', { cx: 80, cy: 80, r: 54 }, 'sky'),
+    s('path', { d: 'M48 46q14 8 10 22t10 24q-4 16-20 20M100 36q-10 14 4 24t20 4M110 104q8 10 2 22', ...SW(0) }, 'green'),
+    s('path', { d: 'M46 48c10 4 14 14 8 24s6 20 14 22-6 20-20 24c-16-10-24-28-22-46 2-10 8-18 20-24zM102 34c14 4 28 18 30 34-10 6-24 2-30-8s-4-20 0-26zM104 104c10-4 20 4 18 16-6 8-16 12-22 12 0-10 0-24 4-28z' }, 'green', { accent: true }),
+    s('path', { d: 'M26 80h108M80 26v108', ...SW(2) }, 'white', { stroke: true })
+  ],
+  servicio: [
+    s('path', { d: 'M28 108a52 52 0 0 1 104 0z' }, 'gray', { accent: true }),
+    s('circle', { cx: 80, cy: 52, r: 7 }, 'gray'),
+    s('rect', { x: 18, y: 108, width: 124, height: 10, rx: 4 }, 'dark'),
+    s('ellipse', { cx: 60, cy: 76, rx: 6, ry: 12, opacity: 0.6 }, 'white', { flatOnly: true })
+  ],
+  'situación': [
+    s('rect', { x: 14, y: 30, width: 132, height: 100, rx: 8 }, 'mint'),
+    s('path', { d: 'M14 100h132M60 30v100', ...SW(4) }, 'white', { stroke: true }),
+    s('rect', { x: 84, y: 46, width: 30, height: 30, rx: 3 }, 'tan'),
+    s('circle', { cx: 60, cy: 100, r: 14 }, 'red', { accent: true }),
+    s('circle', { cx: 60, cy: 100, r: 5 }, 'white')
+  ],
+  siguiente: [
+    ...person(30, 136, 'gray', { h: 36, w: 22, r: 10 }),
+    ...person(66, 136, 'gray', { h: 36, w: 22, r: 10 }),
+    ...person(104, 136, 'red', { h: 36, w: 22, r: 10, accent: true }),
+    s('path', { d: 'M96 40l8 10 8-10', ...SW(5) }, 'orange', { stroke: true }),
+    s('path', { d: 'M14 136h132', ...SW(4) }, 'gray', { stroke: true })
+  ],
+  dato: [
+    s('rect', { x: 22, y: 92, width: 22, height: 44, rx: 3 }, 'blue'),
+    s('rect', { x: 52, y: 64, width: 22, height: 72, rx: 3 }, 'blue'),
+    s('rect', { x: 82, y: 78, width: 22, height: 58, rx: 3 }, 'blue'),
+    s('rect', { x: 112, y: 40, width: 22, height: 96, rx: 3 }, 'orange', { accent: true }),
+    s('path', { d: 'M18 136h124', ...SW(4) }, 'dark', { stroke: true })
+  ],
+  'educación': [
+    s('path', { d: 'M80 34 14 64l66 30 66-30z' }, 'dark', { accent: true }),
+    s('path', { d: 'M38 76v28q42 24 84 0V76L80 94z' }, 'navy'),
+    s('path', { d: 'M138 66v40', ...SW(4) }, 'yellow', { stroke: true }),
+    s('circle', { cx: 138, cy: 110, r: 6 }, 'yellow')
+  ],
+  proceso: [
+    s('circle', { cx: 28, cy: 80, r: 14 }, 'blue'), s('circle', { cx: 80, cy: 80, r: 14 }, 'yellow'),
+    s('circle', { cx: 132, cy: 80, r: 14 }, 'green', { accent: true }),
+    s('path', { d: 'M44 80h16m-6-6 6 6-6 6M96 80h16m-6-6 6 6-6 6', ...SW(4) }, 'gray', { stroke: true })
+  ],
+  sentido: [
+    s('path', { d: 'M80 20l14 50H66z' }, 'red', { accent: true }),
+    s('path', { d: 'M80 140l-14-50h28z' }, 'gray'),
+    s('circle', { cx: 80, cy: 80, r: 60, ...SW(5) }, 'dark', { stroke: true }),
+    s('circle', { cx: 80, cy: 80, r: 8 }, 'dark')
+  ],
+  cuanto: [
+    s('path', { d: 'M28 70h104l-10 62H38z' }, 'tan'),
+    s('circle', { cx: 52, cy: 62, r: 12 }, 'red'), s('circle', { cx: 76, cy: 56, r: 12 }, 'orange'),
+    s('circle', { cx: 100, cy: 62, r: 12 }, 'yellow'), s('circle', { cx: 64, cy: 42, r: 12 }, 'green', { accent: true }),
+    s('circle', { cx: 90, cy: 38, r: 12 }, 'red'),
+    s('path', { d: 'M38 70l-6-14M122 70l6-14', ...SW(4) }, 'brown', { stroke: true })
   ]
 };
