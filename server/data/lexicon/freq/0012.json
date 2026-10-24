@@ -3682,6 +3682,110 @@
         "wiktionary:la:idiota"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "meter",
+      "article": "",
+      "pos": "verbo",
+      "zh": "放進、塞入；進球",
+      "en": "to put in, insert",
+      "ipa": "/meˈteɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mittere",
+          "zh": "送出、放行"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "meter",
+          "zh": "放進、置入"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "meter",
+          "zh": "放進、塞入"
+        }
+      ],
+      "cognates_en": [
+        "message",
+        "mission"
+      ],
+      "story_zh": "源自拉丁語動詞 mittere（送出、派出，也是英文 mission 與 message 的詞源）。字義推測在通俗拉丁語時期從「送去某處」轉變為「放進、塞入某處」，隨後承襲至古西班牙語與現代西語。",
+      "hook_zh": "把卡片「送」進讀卡機就是放進去；像傳送訊息（message）一樣推進去。",
+      "usage_zh": "常見搭配 meter en（放進…）。反身動詞 meterse en 常用來表示「進入」或「插手、介入某事」。",
+      "example_es": "Meto los libros en la mochila antes de salir.",
+      "example_zh": "出門前我把書放進背包裡。",
+      "image": "emoji:📥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:meter",
+        "wiktionary:la:mitto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mio",
+      "article": "",
+      "pos": "interjección",
+      "zh": "喵（貓叫聲）",
+      "en": "meow (sound of a cat)",
+      "ipa": "/ˈmjo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "貓咪的叫聲「mio」，發音和中文的「喵」幾乎一樣生動！",
+      "usage_zh": "為貓叫的擬聲感嘆詞；注意若要表示所有格代名詞「我的」，正書法必須加上重音符號寫作 mío。",
+      "example_es": "El gato hace mio cuando tiene hambre.",
+      "example_zh": "貓咪肚子餓時會發出喵喵叫聲。",
+      "image": "emoji:🐱",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:mio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "obispo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "主教",
+      "en": "bishop",
+      "ipa": "/oˈbispo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἐπίσκοπος",
+          "zh": "監督者、視察者"
+        },
+        {
+          "lang_zh": "教會拉丁語",
+          "word": "episcopus",
+          "zh": "主教、監督者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "obispo",
+          "zh": "主教"
+        }
+      ],
+      "cognates_en": [
+        "bishop"
+      ],
+      "story_zh": "源自古希臘語 ἐπίσκοπος（監督者），由字根 epí-（在…之上）與 skopós（觀察者）構成，原指「居高看管的人」。進入教會拉丁語後專指統理教區的神職人員「主教」，英文的 bishop 也是同源字。",
+      "hook_zh": "在上位（epi）照看（scope 視野）全體信眾的人，就是教會的「主教」。",
+      "usage_zh": "陽性名詞 el obispo（主教），陰性形式為 la obispa。教宗在宗教頭銜上亦被稱為羅馬主教（Obispo de Roma）。",
+      "example_es": "El obispo visitó la catedral de la ciudad.",
+      "example_zh": "主教造訪了這座城市的大教堂。",
+      "image": "emoji:⛪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:obispo"
+      ],
+      "writer": "gemini"
     }
   ]
 }
