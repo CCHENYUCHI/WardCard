@@ -1,7 +1,40 @@
 {
   "theme": "freq-0012",
-  "theme_zh": "常用字（頻率第 2892–3121 名）",
+  "theme_zh": "常用字（頻率第 2891–3139 名）",
   "entries": [
+    {
+      "word": "repente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "突然的舉動、衝動；陣發",
+      "en": "fit, sudden movement, sudden impulse",
+      "ipa": "/reˈpente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rēpentem",
+          "zh": "突然的、未預料到的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "repente",
+          "zh": "突然發作、衝動"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語形容詞賓格 rēpentem，原本意思是「突然的、出乎意料的」。在西語中演變成名詞，指毫無預警突然爆發的動作、情緒或衝動。",
+      "hook_zh": "最常出現在片語 de repente，表示事情「突然」發生了！",
+      "usage_zh": "日常中最常以副詞片語 de repente（突然地）出現。單獨作名詞指突發舉動。",
+      "example_es": "Le dio un repente y salió corriendo.",
+      "example_zh": "他一時衝動就跑出去了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:repente"
+      ],
+      "writer": "gemini"
+    },
     {
       "word": "rosario",
       "article": "el",
@@ -178,28 +211,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:índice"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "am",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "上午、午前",
-      "en": "a.m. (before noon)",
-      "ipa": "/a ˈeme/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "西語發音唸作 a-eme，就是國際通用的 a.m.，代表早上的時間。",
-      "usage_zh": "作為時間副詞，置於具體鐘點後面，例如 a las 9 am。亦常寫作 a. m.。",
-      "example_es": "La reunión empieza a las 9 am.",
-      "example_zh": "會議早上九點開始。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:am"
       ],
       "writer": "gemini"
     },
@@ -511,39 +522,6 @@
       "sources": [
         "wiktionary:es:iniciar",
         "wiktionary:la:initio"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "luca",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "一千披索（拉美口語）；錢",
-      "en": "a thousand pesos, money",
-      "ipa": "/ˈluka/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "卡洛語",
-          "word": "luca",
-          "zh": "錢"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "luca",
-          "zh": "一千披索"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "借自西班牙吉普賽人使用的卡洛語（Caló）luca，原意即為「錢」。這個俚語後來傳播到拉丁美洲多個國家（如智利、阿根廷、哥倫比亞等），專門用來俗稱面額「一千披索」。",
-      "hook_zh": "想像名叫 Luca 的人皮夾裡塞滿了一張張一千披索的大鈔。",
-      "usage_zh": "拉美極為常見的貨幣俚語，常以複數搭配數字使用，例如 diez lucas 代表一萬披索。",
-      "example_es": "El almuerzo me costó cinco lucas.",
-      "example_zh": "午餐花了我五千披索。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:luca"
       ],
       "writer": "gemini"
     },
@@ -1505,39 +1483,6 @@
       "writer": "gemini"
     },
     {
-      "word": "manda",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "（向神明許下的）還願誓約；遺贈",
-      "en": "vow, religious offering",
-      "ipa": "/ˈmanda/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "mandar",
-          "zh": "命令、託付"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "manda",
-          "zh": "誓約、還願"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由西語動詞 mandar（命令、託付）派生而來的去動詞名詞（deverbal）。原指交付或吩咐的託付，在西語天主教文化中，引申為信徒向神明或聖人承諾的「還願誓約」。",
-      "hook_zh": "向神明祈求時給自己下達一條命令（mandar），發誓一定要做到：manda！",
-      "usage_zh": "多用於宗教與民間信仰，常見搭配為 cumplir una manda（履行還願誓約、還願）。",
-      "example_es": "Hizo una manda a la virgen para pedir por su familia.",
-      "example_zh": "她向聖母許下還願誓約，祈求家人平安。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:manda"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "mandar",
       "article": "",
       "pos": "verbo",
@@ -1656,39 +1601,6 @@
       "sources": [
         "wiktionary:es:metal",
         "wiktionary:la:metallum"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "paraguay",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "巴拉圭鸚鵡",
-      "en": "Paraguayan parrot",
-      "ipa": "/paɾaˈɡwai/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "Paraguay",
-          "zh": "巴拉圭（國名）"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "paraguay",
-          "zh": "巴拉圭鸚鵡"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "詞源直接來自南美國家巴拉圭（Paraguay）的國名。因為該品種的特有鸚鵡產於巴拉圭地區，西班牙語便直接借用國名來為這種鳥類命名。",
-      "hook_zh": "直接來自國名 Paraguay，想像一隻披著巴拉圭雨林色彩的鮮豔鸚鵡。",
-      "usage_zh": "陽性名詞 el paraguay，複數為 paraguayes。首字母大寫指國家巴拉圭，首字母小寫指該種鸚鵡。",
-      "example_es": "Vimos un hermoso paraguay posado en la rama.",
-      "example_zh": "我們看見一隻美麗的巴拉圭鸚鵡停在樹枝上。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:paraguay"
       ],
       "writer": "gemini"
     },
@@ -1829,53 +1741,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:reducción"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "rivera",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "小河、溪流",
-      "en": "stream, brook",
-      "ipa": "/riˈbeɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "原始印歐語",
-          "word": "*h₃reyh₂-",
-          "zh": "流動、奔流"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "rivus",
-          "zh": "小溪、溪流"
-        },
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "*rīvāria",
-          "zh": "小溪"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "rivera",
-          "zh": "小河、溪流"
-        }
-      ],
-      "cognates_en": [
-        "rival",
-        "rivulet"
-      ],
-      "story_zh": "源自拉丁語 rīvus（小溪），更早源自原始印歐語中表示「流動」的字根。通俗拉丁語演變為 *rīvāria，指天然流動的小河。注意與同音字 ribera（河岸、海岸）不同，rivera 專指溪流本體。",
-      "hook_zh": "水流在山間「日夜流」（ri-ve-ra），就是清澈歡騰的小溪（rivera）。",
-      "usage_zh": "注意拼字陷阱：rivera（小溪，含 v）與 ribera（岸邊、水畔，含 b）同音異義。",
-      "example_es": "El agua clara corre por la rivera.",
-      "example_zh": "清澈的溪水在小河中奔流。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:rivera",
-        "wiktionary:la:rivus"
       ],
       "writer": "gemini"
     },
@@ -2201,41 +2066,6 @@
       "writer": "gemini"
     },
     {
-      "word": "top",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "頂端；排行榜榜首；短上衣",
-      "en": "top, ranking top, crop top",
-      "ipa": "/ˈtop/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "top",
-          "zh": "頂部、頂尖"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "top",
-          "zh": "頂尖、上衣"
-        }
-      ],
-      "cognates_en": [
-        "top"
-      ],
-      "story_zh": "借自英語 top，原本指最高處或頂尖。在西班牙語中用來指排行榜前幾名，也引申為女性穿的無袖短上衣或背心。",
-      "hook_zh": "就像流行榜名列前茅的 top，或是夏日女孩常穿的削肩 top 短上衣。",
-      "usage_zh": "陽性名詞 el top，複數為 tops。亦可作無屈折形容詞表示「頂尖的」。",
-      "example_es": "Su nueva canción alcanzó el top 10.",
-      "example_zh": "他的新歌進入了前十名。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:top"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "armada",
       "article": "la",
       "pos": "sustantivo",
@@ -2409,61 +2239,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:comprender"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "cuarta",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "短馬鞭；四分之一",
-      "en": "short whip; fourth part",
-      "ipa": "/ˈkwaɾta/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "cuerda",
-          "zh": "繩索"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "cuarta",
-          "zh": "短馬鞭"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "指短馬鞭時源自西語 cuerda（繩索），原指麻繩編成的短鞭；若指四分之一或特定度量單位時，則源自 cuarto（第四、四分之一）。",
-      "hook_zh": "騎士手握第四根（cuarta）「短馬鞭」，輕抽馬身向前奔馳。",
-      "usage_zh": "在拉美常用於指短馬鞭；日常亦指一手張開的長度單位（一拃）。",
-      "example_es": "El jinete arreó al caballo con la cuarta.",
-      "example_zh": "騎士用短馬鞭催促馬匹前進。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:cuarta"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "eléctrica",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "電力公司",
-      "en": "electric company",
-      "ipa": "/eˈleɡtɾika/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "電力（eléctrico）的陰性名詞化，聯想負責全城供電的「電力公司」。",
-      "usage_zh": "為陰性名詞，指供電企業；亦可作為形容詞 eléctrico 的陰性形式。",
-      "example_es": "La eléctrica restableció el suministro por la tarde.",
-      "example_zh": "電力公司在下午恢復了供電。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:eléctrica"
       ],
       "writer": "gemini"
     },
@@ -2866,63 +2641,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:petición"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "plena",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "平原；波多黎各普萊納民謠節奏",
-      "en": "plain; plena (Puerto Rican music style)",
-      "ipa": "/ˈplena/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "法語",
-          "word": "plaine",
-          "zh": "平原"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "plena",
-          "zh": "平原"
-        }
-      ],
-      "cognates_en": [
-        "plain"
-      ],
-      "story_zh": "指平原時借自法文 plaine。若指波多黎各著名的傳統打擊樂節奏，詞源尚不確定，民間傳說推測源於一位叫 Anna 的女性熱情擊鼓時眾人高喊「Play Anna!」的加油聲。",
-      "hook_zh": "想像在開闊的平原（plena）上，聽著熱情的波多黎各民謠節奏。",
-      "usage_zh": "陰性名詞。指音樂風格時常伴隨手鼓（pandereta）演奏，是波多黎各代表性傳統樂風。",
-      "example_es": "La plena es un ritmo tradicional de Puerto Rico.",
-      "example_zh": "普萊納是波多黎各的一種傳統節奏音樂。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:plena"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "previa",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "前戲；派對前的暖身聚會",
-      "en": "foreplay; pre-party",
-      "ipa": "/ˈpɾebja/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "聯想英文 previous（先前的），在去派對「之前」先來個暖身聚會。",
-      "usage_zh": "陰性名詞。在西語口語中常指去夜店或派對前的「會前小聚、暖身趴」。",
-      "example_es": "Hicimos una previa en mi casa antes de la fiesta.",
-      "example_zh": "派對前我們在我家辦了一場暖身小聚。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:previa"
       ],
       "writer": "gemini"
     },
@@ -3543,26 +3261,38 @@
       "writer": "gemini"
     },
     {
-      "word": "financiera",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "財務公司、融資機構",
-      "en": "finance company",
-      "ipa": "/finanˈθjeɾa/",
+      "word": "financiero",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "金融的、財務的、財政的",
+      "en": "financial",
+      "ipa": "/finanˈθjeɾo/",
       "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "finance"
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "financier",
+          "zh": "金融的、財政的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "financiero",
+          "zh": "金融的、財務的"
+        }
       ],
-      "story_zh": "",
-      "hook_zh": "看到 finance 就想到金融，字尾加上 -era 變成金融機構。",
-      "usage_zh": "此處為陰性名詞指金融公司；亦可作形容詞 financiero（財務的）的陰性形。",
-      "example_es": "Pidió un préstamo a una financiera local.",
-      "example_zh": "他向當地一家財務公司申請了貸款。",
-      "image": "svg",
-      "confidence": "hook-only",
+      "cognates_en": [
+        "financial",
+        "financier"
+      ],
+      "story_zh": "借自法語的 financier（金融的、財政的），進入西語後加上形容詞字尾 -o。用來描述所有與資金運作、貨幣管理、銀行業或國家財政相關的事物，與英文的 financial 同源。",
+      "hook_zh": "看到 finance（金融）就知道，financiero 就是跟錢與財務有關的！",
+      "usage_zh": "陰性為 financiera。常見搭配如 crisis financiera（金融危機）、sector financiero（金融業）。",
+      "example_es": "El banco ofrece asesoramiento financiero a sus clientes.",
+      "example_zh": "這家銀行為客戶提供財務諮詢服務。",
+      "image": "emoji:💼",
+      "confidence": "sourced",
       "sources": [
-        "wiktionary:es:financiera"
+        "wiktionary:es:financiero"
       ],
       "writer": "gemini"
     },
@@ -3726,28 +3456,6 @@
       "writer": "gemini"
     },
     {
-      "word": "mio",
-      "article": "",
-      "pos": "interjección",
-      "zh": "喵（貓叫聲）",
-      "en": "meow (sound of a cat)",
-      "ipa": "/ˈmjo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "貓咪的叫聲「mio」，發音和中文的「喵」幾乎一樣生動！",
-      "usage_zh": "為貓叫的擬聲感嘆詞；注意若要表示所有格代名詞「我的」，正書法必須加上重音符號寫作 mío。",
-      "example_es": "El gato hace mio cuando tiene hambre.",
-      "example_zh": "貓咪肚子餓時會發出喵喵叫聲。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:mio"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "obispo",
       "article": "el",
       "pos": "sustantivo",
@@ -3784,6 +3492,328 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:obispo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "obligado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "被迫的、有義務的、必須的",
+      "en": "obliged, obligated, forced",
+      "ipa": "/obliˈɡado/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "obligātus",
+          "zh": "受約束的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "obligado",
+          "zh": "被迫的、有義務的"
+        }
+      ],
+      "cognates_en": [
+        "obligated",
+        "obliged"
+      ],
+      "story_zh": "源自拉丁語 obligātus（受約束的），本義指在法律或道德上受到綑綁與約束，演變至現代西語表示「有責任的」或「不得不為的」。英文的 obligated 為同源字。",
+      "hook_zh": "看到 ob-lig-ado 就聯想到英文 obligated，被義務或規則「綁」住必須去做。",
+      "usage_zh": "常用搭配為 estar obligado a + 原形動詞（有義務做…、被迫做…）。",
+      "example_es": "No estás obligado a responder ahora.",
+      "example_zh": "你現在沒有義務立刻回答。",
+      "image": "emoji:⛓️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:obligado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "periodismo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "新聞業、新聞學",
+      "en": "journalism",
+      "ipa": "/peɾjoˈdismo/",
+      "breakdown": [
+        {
+          "part": "periódico",
+          "zh": "期刊、報紙"
+        },
+        {
+          "part": "-ismo",
+          "zh": "行業、主義"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "periódico + -ismo",
+          "zh": "報紙 + 業"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "periodismo",
+          "zh": "新聞業"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 periódico（報紙、定期刊物）加上表示行業或學問的後綴 -ismo 構成，字面意思就是與定期出版品相關的工作，引申為現代的「新聞業」或「新聞學」。",
+      "hook_zh": "periódico（報紙）+ -ismo（行業），專門報導與產出報刊的行業就是新聞業。",
+      "usage_zh": "陽性不可數名詞。指從業者時使用 periodista（記者），男女同形。",
+      "example_es": "Ella decidió estudiar periodismo en la universidad.",
+      "example_zh": "她決定在大學攻讀新聞學。",
+      "image": "emoji:📰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:periodismo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "portal",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "大門、玄關、門廳；入口網站",
+      "en": "portal, porch, doorway",
+      "ipa": "/poɾˈtal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "puerta",
+          "zh": "門"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "portal",
+          "zh": "大門、入口"
+        }
+      ],
+      "cognates_en": [
+        "portal"
+      ],
+      "story_zh": "源自西語的 puerta（門）。原指建築物正面較為宏大寬敞的入口門廳或玄關，現代資訊科技中也引申為通往網路各處的「入口網站」。英文 portal 亦為同源詞。",
+      "hook_zh": "英文就是 portal！走進門（puerta），就是大樓底層的公共門廳（portal）。",
+      "usage_zh": "在西班牙常用於指公寓大樓一樓的入口大門與走廊；網路領域指入口網站。",
+      "example_es": "Esperé a mi amigo en el portal de su casa.",
+      "example_zh": "我在朋友家的大門口等他。",
+      "image": "emoji:🚪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:portal"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "postura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "姿勢；立場、態度",
+      "en": "posture, stance, position",
+      "ipa": "/posˈtuɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "positūra",
+          "zh": "擺放、位置"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "postura",
+          "zh": "姿勢、約定"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "postura",
+          "zh": "姿勢、立場"
+        }
+      ],
+      "cognates_en": [
+        "posture"
+      ],
+      "story_zh": "繼承自古西班牙語 postura，最終源於拉丁語 positūra（擺放的方式）。最初指身體擺放的姿勢，後來引申為對某件事所抱持的「立場」或「態度」。英文 posture 為同源詞。",
+      "hook_zh": "英文 posture 結尾換成西語 -a，既指身體的「姿勢」，也指做事的「立場」。",
+      "usage_zh": "陰性名詞。常用搭配為 adoptar una postura（採取某種立場或態度）。",
+      "example_es": "El gobierno adoptó una postura firme.",
+      "example_zh": "政府採取了堅定的立場。",
+      "image": "emoji:🧘",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:postura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "preocupación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "擔憂、顧慮、焦慮",
+      "en": "worry, anxiety, concern",
+      "ipa": "/pɾeokupaˈθjon/",
+      "breakdown": [
+        {
+          "part": "pre-",
+          "zh": "事先"
+        },
+        {
+          "part": "ocupar",
+          "zh": "佔據"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "praeoccupātiōnem",
+          "zh": "預先佔據"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "preocupación",
+          "zh": "擔憂、焦慮"
+        }
+      ],
+      "cognates_en": [
+        "preoccupation"
+      ],
+      "story_zh": "文人借詞自拉丁語 praeoccupātiōnem（預先佔據）。事情尚未發生，心神卻已被預先佔據得滿滿的，這種心神不寧的狀態便演變成現代的「擔憂」與「焦慮」。",
+      "hook_zh": "腦袋被未發生的事情「預先佔滿」（pre + ocupación），就成了滿心擔憂。",
+      "usage_zh": "陰性名詞。複數為 preocupaciones，在加上 -es 後重音符號隨之取消。",
+      "example_es": "Su salud es mi mayor preocupación.",
+      "example_zh": "他的健康是我最大的擔憂。",
+      "image": "emoji:😟",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:preocupación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "preparación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "準備、預備",
+      "en": "preparation",
+      "ipa": "/pɾepaɾaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "praeparātiōnem",
+          "zh": "準備"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "preparación",
+          "zh": "準備"
+        }
+      ],
+      "cognates_en": [
+        "preparation"
+      ],
+      "story_zh": "源自拉丁語名詞 praeparātiōnem，表示「事先安排、打點好」的動作與狀態。進入西班牙語後成為學術與日常中表達「準備」的標準字。英文的 preparation 也是同一個字根來源。",
+      "hook_zh": "看到 -ción 就想到英文 -tion，preparación 就是 preparation（準備）。",
+      "usage_zh": "陰性名詞，複數為 preparaciones。常搭配動詞 hacer（做準備）或 en preparación（籌備中）。",
+      "example_es": "La preparación de la cena nos tomó dos horas.",
+      "example_zh": "準備這頓晚餐花了我們兩個小時。",
+      "image": "emoji:📋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:preparación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "productor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "生產者；製片人、製作人",
+      "en": "producer",
+      "ipa": "/pɾoduɡˈtoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prōdūcō",
+          "zh": "向前引導、產出"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "productor",
+          "zh": "引導者、生產者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "productor",
+          "zh": "生產者、製作人"
+        }
+      ],
+      "cognates_en": [
+        "producer",
+        "product"
+      ],
+      "story_zh": "借自拉丁語 productor，源於動詞 prōdūcō（向前引出、產出）加上表示行為者的後綴 -tor。原指引領或引導者，後來語意擴展為「產出商品的人」以及現代影視中的「製作人」。英文的 producer 為同源概念。",
+      "hook_zh": "英文 producer 換成西語字尾 -tor，專門產出好作品的「製作人」。",
+      "usage_zh": "陽性 productor，陰性為 productora；亦可作形容詞，如 país productor（生產國）。",
+      "example_es": "El productor presentó su nueva película en el festival.",
+      "example_zh": "製作人在影展上介紹了他的新電影。",
+      "image": "emoji:🎬",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:productor",
+        "wiktionary:la:productor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "so",
+      "article": "",
+      "pos": "preposición",
+      "zh": "在…之下",
+      "en": "under",
+      "ipa": "/ˈso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*upo",
+          "zh": "在…之下"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*supo",
+          "zh": "在…之下"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "sub",
+          "zh": "在…之下"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "so",
+          "zh": "在…之下"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "直接承襲自拉丁語介系詞 sub（在…之下），源頭可追溯至原始印歐語 *upo。現代西班牙語日常中大多已被 bajo 取代，目前僅保留在少數書面語與固定慣用語中。",
+      "hook_zh": "短促的 so 像悄悄躲在最底下（under），平時難得一見。",
+      "usage_zh": "屬於古雅書面語，常見固定搭配如 so pretexto de（藉口…）或 so pena de（在…懲處威脅下）。",
+      "example_es": "Está prohibido aparcar aquí so pena de multa.",
+      "example_zh": "此處禁止停車，違者罰款。",
+      "image": "emoji:⬇️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:so",
+        "wiktionary:la:sub"
       ],
       "writer": "gemini"
     }

@@ -1,329 +1,7 @@
 {
   "theme": "freq-0013",
-  "theme_zh": "常用字（頻率第 3122–3369 名）",
+  "theme_zh": "常用字（頻率第 3140–3382 名）",
   "entries": [
-    {
-      "word": "obligado",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "被迫的、有義務的、必須的",
-      "en": "obliged, obligated, forced",
-      "ipa": "/obliˈɡado/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "obligātus",
-          "zh": "受約束的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "obligado",
-          "zh": "被迫的、有義務的"
-        }
-      ],
-      "cognates_en": [
-        "obligated",
-        "obliged"
-      ],
-      "story_zh": "源自拉丁語 obligātus（受約束的），本義指在法律或道德上受到綑綁與約束，演變至現代西語表示「有責任的」或「不得不為的」。英文的 obligated 為同源字。",
-      "hook_zh": "看到 ob-lig-ado 就聯想到英文 obligated，被義務或規則「綁」住必須去做。",
-      "usage_zh": "常用搭配為 estar obligado a + 原形動詞（有義務做…、被迫做…）。",
-      "example_es": "No estás obligado a responder ahora.",
-      "example_zh": "你現在沒有義務立刻回答。",
-      "image": "emoji:⛓️",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:obligado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "periodismo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "新聞業、新聞學",
-      "en": "journalism",
-      "ipa": "/peɾjoˈdismo/",
-      "breakdown": [
-        {
-          "part": "periódico",
-          "zh": "期刊、報紙"
-        },
-        {
-          "part": "-ismo",
-          "zh": "行業、主義"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "periódico + -ismo",
-          "zh": "報紙 + 業"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "periodismo",
-          "zh": "新聞業"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由 periódico（報紙、定期刊物）加上表示行業或學問的後綴 -ismo 構成，字面意思就是與定期出版品相關的工作，引申為現代的「新聞業」或「新聞學」。",
-      "hook_zh": "periódico（報紙）+ -ismo（行業），專門報導與產出報刊的行業就是新聞業。",
-      "usage_zh": "陽性不可數名詞。指從業者時使用 periodista（記者），男女同形。",
-      "example_es": "Ella decidió estudiar periodismo en la universidad.",
-      "example_zh": "她決定在大學攻讀新聞學。",
-      "image": "emoji:📰",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:periodismo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "portal",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "大門、玄關、門廳；入口網站",
-      "en": "portal, porch, doorway",
-      "ipa": "/poɾˈtal/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "puerta",
-          "zh": "門"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "portal",
-          "zh": "大門、入口"
-        }
-      ],
-      "cognates_en": [
-        "portal"
-      ],
-      "story_zh": "源自西語的 puerta（門）。原指建築物正面較為宏大寬敞的入口門廳或玄關，現代資訊科技中也引申為通往網路各處的「入口網站」。英文 portal 亦為同源詞。",
-      "hook_zh": "英文就是 portal！走進門（puerta），就是大樓底層的公共門廳（portal）。",
-      "usage_zh": "在西班牙常用於指公寓大樓一樓的入口大門與走廊；網路領域指入口網站。",
-      "example_es": "Esperé a mi amigo en el portal de su casa.",
-      "example_zh": "我在朋友家的大門口等他。",
-      "image": "emoji:🚪",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:portal"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "postura",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "姿勢；立場、態度",
-      "en": "posture, stance, position",
-      "ipa": "/posˈtuɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "positūra",
-          "zh": "擺放、位置"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "postura",
-          "zh": "姿勢、約定"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "postura",
-          "zh": "姿勢、立場"
-        }
-      ],
-      "cognates_en": [
-        "posture"
-      ],
-      "story_zh": "繼承自古西班牙語 postura，最終源於拉丁語 positūra（擺放的方式）。最初指身體擺放的姿勢，後來引申為對某件事所抱持的「立場」或「態度」。英文 posture 為同源詞。",
-      "hook_zh": "英文 posture 結尾換成西語 -a，既指身體的「姿勢」，也指做事的「立場」。",
-      "usage_zh": "陰性名詞。常用搭配為 adoptar una postura（採取某種立場或態度）。",
-      "example_es": "El gobierno adoptó una postura firme.",
-      "example_zh": "政府採取了堅定的立場。",
-      "image": "emoji:🧘",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:postura"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "preocupación",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "擔憂、顧慮、焦慮",
-      "en": "worry, anxiety, concern",
-      "ipa": "/pɾeokupaˈθjon/",
-      "breakdown": [
-        {
-          "part": "pre-",
-          "zh": "事先"
-        },
-        {
-          "part": "ocupar",
-          "zh": "佔據"
-        },
-        {
-          "part": "-ción",
-          "zh": "名詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "praeoccupātiōnem",
-          "zh": "預先佔據"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "preocupación",
-          "zh": "擔憂、焦慮"
-        }
-      ],
-      "cognates_en": [
-        "preoccupation"
-      ],
-      "story_zh": "文人借詞自拉丁語 praeoccupātiōnem（預先佔據）。事情尚未發生，心神卻已被預先佔據得滿滿的，這種心神不寧的狀態便演變成現代的「擔憂」與「焦慮」。",
-      "hook_zh": "腦袋被未發生的事情「預先佔滿」（pre + ocupación），就成了滿心擔憂。",
-      "usage_zh": "陰性名詞。複數為 preocupaciones，在加上 -es 後重音符號隨之取消。",
-      "example_es": "Su salud es mi mayor preocupación.",
-      "example_zh": "他的健康是我最大的擔憂。",
-      "image": "emoji:😟",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:preocupación"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "preparación",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "準備、預備",
-      "en": "preparation",
-      "ipa": "/pɾepaɾaˈθjon/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "praeparātiōnem",
-          "zh": "準備"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "preparación",
-          "zh": "準備"
-        }
-      ],
-      "cognates_en": [
-        "preparation"
-      ],
-      "story_zh": "源自拉丁語名詞 praeparātiōnem，表示「事先安排、打點好」的動作與狀態。進入西班牙語後成為學術與日常中表達「準備」的標準字。英文的 preparation 也是同一個字根來源。",
-      "hook_zh": "看到 -ción 就想到英文 -tion，preparación 就是 preparation（準備）。",
-      "usage_zh": "陰性名詞，複數為 preparaciones。常搭配動詞 hacer（做準備）或 en preparación（籌備中）。",
-      "example_es": "La preparación de la cena nos tomó dos horas.",
-      "example_zh": "準備這頓晚餐花了我們兩個小時。",
-      "image": "emoji:📋",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:preparación"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "productor",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "生產者；製片人、製作人",
-      "en": "producer",
-      "ipa": "/pɾoduɡˈtoɾ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "prōdūcō",
-          "zh": "向前引導、產出"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "productor",
-          "zh": "引導者、生產者"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "productor",
-          "zh": "生產者、製作人"
-        }
-      ],
-      "cognates_en": [
-        "producer",
-        "product"
-      ],
-      "story_zh": "借自拉丁語 productor，源於動詞 prōdūcō（向前引出、產出）加上表示行為者的後綴 -tor。原指引領或引導者，後來語意擴展為「產出商品的人」以及現代影視中的「製作人」。英文的 producer 為同源概念。",
-      "hook_zh": "英文 producer 換成西語字尾 -tor，專門產出好作品的「製作人」。",
-      "usage_zh": "陽性 productor，陰性為 productora；亦可作形容詞，如 país productor（生產國）。",
-      "example_es": "El productor presentó su nueva película en el festival.",
-      "example_zh": "製作人在影展上介紹了他的新電影。",
-      "image": "emoji:🎬",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:productor",
-        "wiktionary:la:productor"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "so",
-      "article": "",
-      "pos": "preposición",
-      "zh": "在…之下",
-      "en": "under",
-      "ipa": "/ˈso/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "原始印歐語",
-          "word": "*upo",
-          "zh": "在…之下"
-        },
-        {
-          "lang_zh": "原始義大利語",
-          "word": "*supo",
-          "zh": "在…之下"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "sub",
-          "zh": "在…之下"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "so",
-          "zh": "在…之下"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "直接承襲自拉丁語介系詞 sub（在…之下），源頭可追溯至原始印歐語 *upo。現代西班牙語日常中大多已被 bajo 取代，目前僅保留在少數書面語與固定慣用語中。",
-      "hook_zh": "短促的 so 像悄悄躲在最底下（under），平時難得一見。",
-      "usage_zh": "屬於古雅書面語，常見固定搭配如 so pretexto de（藉口…）或 so pena de（在…懲處威脅下）。",
-      "example_es": "Está prohibido aparcar aquí so pena de multa.",
-      "example_zh": "此處禁止停車，違者罰款。",
-      "image": "emoji:⬇️",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:so",
-        "wiktionary:la:sub"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "sueldo",
       "article": "el",
@@ -3100,38 +2778,773 @@
       "writer": "gemini"
     },
     {
-      "word": "financiero",
+      "word": "habitual",
       "article": "",
       "pos": "adjetivo",
-      "zh": "金融的、財務的、財政的",
-      "en": "financial",
-      "ipa": "/finanˈθjeɾo/",
+      "zh": "習慣性的、慣常的、經常的",
+      "en": "habitual, customary, usual",
+      "ipa": "/abiˈtwal/",
       "breakdown": [],
       "origin_chain": [
         {
-          "lang_zh": "法語",
-          "word": "financier",
-          "zh": "金融的、財政的"
+          "lang_zh": "拉丁語",
+          "word": "habituālis",
+          "zh": "習慣的"
         },
         {
           "lang_zh": "西班牙語",
-          "word": "financiero",
-          "zh": "金融的、財務的"
+          "word": "habitual",
+          "zh": "習慣性的、慣常的"
         }
       ],
       "cognates_en": [
-        "financial",
-        "financier"
+        "habitual"
       ],
-      "story_zh": "借自法語的 financier（金融的、財政的），進入西語後加上形容詞字尾 -o。用來描述所有與資金運作、貨幣管理、銀行業或國家財政相關的事物，與英文的 financial 同源。",
-      "hook_zh": "看到 finance（金融）就知道，financiero 就是跟錢與財務有關的！",
-      "usage_zh": "陰性為 financiera。常見搭配如 crisis financiera（金融危機）、sector financiero（金融業）。",
-      "example_es": "El banco ofrece asesoramiento financiero a sus clientes.",
-      "example_zh": "這家銀行為客戶提供財務諮詢服務。",
-      "image": "emoji:💼",
+      "story_zh": "源自拉丁語 habituālis（習慣的）。用來形容某種行為或狀態反覆發生，已成為習慣或日常生活的一環。英文的 habitual 亦完全同源且意思相同。",
+      "hook_zh": "拼法與英文 habitual 完全一致，記得開頭的 h 在西語中不發音！",
+      "usage_zh": "男女同形形容詞，修飾陰陽性皆同形（un hábito habitual / una hora habitual）。",
+      "example_es": "Tomar café por la mañana es su costumbre habitual.",
+      "example_zh": "早上喝咖啡是他平時的習慣。",
+      "image": "emoji:🔄",
       "confidence": "sourced",
       "sources": [
-        "wiktionary:es:financiero"
+        "wiktionary:es:habitual"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "identificación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "身分證明、識別、認出",
+      "en": "identification, ID",
+      "ipa": "/identifikaˈθjon/",
+      "breakdown": [
+        {
+          "part": "identificar",
+          "zh": "識別、認出"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "identificar + -ción",
+          "zh": "識別 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "identificación",
+          "zh": "身分證明、識別"
+        }
+      ],
+      "cognates_en": [
+        "identification"
+      ],
+      "story_zh": "由動詞 identificar（識別、確認身分）加上表示動作或結果的名詞字尾 -ción 衍生而來。原指確認人或事物身分的過程，在日常生活中也常指身分證件。",
+      "hook_zh": "看作英文 identification 的西語版，結尾 -tion 變成西語常見的 -ción。",
+      "usage_zh": "陰性名詞。日常口語常指「證件」，複數為 identificaciones（去重音符號）。",
+      "example_es": "Por favor, muestre su documento de identificación.",
+      "example_zh": "請出示您的身分證明文件。",
+      "image": "emoji:🪪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:identificación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "incremento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "增加、增長、增幅",
+      "en": "increment, increase, growth",
+      "ipa": "/inkɾeˈmento/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "incrēmentum",
+          "zh": "增加、增長"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "incremento",
+          "zh": "增加、增長"
+        }
+      ],
+      "cognates_en": [
+        "increment"
+      ],
+      "story_zh": "為拉丁語 incrēmentum（增加、生長）的學者借詞（cultismo）。保留了古代拉丁文的形式與原意，指數量、程度或規模上的擴大與增加。",
+      "hook_zh": "長得跟英文 increment 幾乎一樣，結尾多個 -o 就是西語陽性名詞。",
+      "usage_zh": "陽性名詞。常用搭配為 un incremento de/en…（…的增長）。",
+      "example_es": "Hubo un incremento en las ventas este mes.",
+      "example_zh": "這個月的銷售額有所增長。",
+      "image": "emoji:📈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:incremento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "limpieza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "清潔、打掃、整潔",
+      "en": "cleaning, cleanliness",
+      "ipa": "/limˈpjeθa/",
+      "breakdown": [
+        {
+          "part": "limpio",
+          "zh": "乾淨的"
+        },
+        {
+          "part": "-eza",
+          "zh": "名詞字尾，表特質或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "limpio + -eza",
+          "zh": "乾淨的 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "limpieza",
+          "zh": "清潔、打掃"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自形容詞 limpio（乾淨的）加上名詞字尾 -eza（表示特質或狀態）。原指「乾淨純潔的狀態」，進一步引申為維持乾淨的動作，也就是「打掃、清潔」。",
+      "hook_zh": "形容詞 limpio 加上名詞字尾 -eza，就是「把家裡變乾淨（limpio）的打掃工作」。",
+      "usage_zh": "陰性名詞。做大掃除常說 hacer la limpieza general。",
+      "example_es": "Hacemos la limpieza de la casa los sábados.",
+      "example_zh": "我們每週六打掃家裡。",
+      "image": "emoji:🧹",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:limpieza"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mencionar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "提及、提到、說起",
+      "en": "to mention",
+      "ipa": "/menθjoˈnaɾ/",
+      "breakdown": [
+        {
+          "part": "mención",
+          "zh": "提及"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "mención + -ar",
+          "zh": "提及 + 動詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mencionar",
+          "zh": "提及、提到"
+        }
+      ],
+      "cognates_en": [
+        "mention"
+      ],
+      "story_zh": "由名詞 mención（提及、表彰）加上動詞後綴 -ar 衍生而來。意思是在談話或文章中順帶提起某人或某件事，與英文的 mention 完全同源。",
+      "hook_zh": "英文 mention 加上西語動詞尾巴 -ar 就成了 mencionar，發音與意思都超直覺！",
+      "usage_zh": "第一類規則動詞（-ar）。常見片語如 no hay que mencionar（何足掛齒、不客氣）。",
+      "example_es": "Ella se olvidó de mencionar la reunión de mañana.",
+      "example_zh": "她忘了提到明天的會議。",
+      "image": "emoji:🗣️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mencionar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "na",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "沒什麼、無（nada 的口語縮寫）",
+      "en": "nothing (colloquial spelling of nada)",
+      "ipa": "/ˈna/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "口語中常把 nada（沒什麼）尾音吞掉縮成 na，就像台語常把詞簡化一樣俐落。",
+      "usage_zh": "常見於口語或流行俚語，如 no pasa na（沒事啦），在正式書面語中應寫作 nada。",
+      "example_es": "No pasa na, todo está bien.",
+      "example_zh": "沒事啦，一切都很好。",
+      "image": "emoji:🗣️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:na"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nave",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "船隻、大船；太空船；教堂中殿",
+      "en": "ship, vessel; spacecraft",
+      "ipa": "/ˈnabe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*néh₂us",
+          "zh": "船"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "nāvis",
+          "zh": "船隻、艦隊"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "naue",
+          "zh": "船"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nave",
+          "zh": "船隻、太空船"
+        }
+      ],
+      "cognates_en": [
+        "nave",
+        "navy",
+        "navigate"
+      ],
+      "story_zh": "源自原始印歐語 *néh₂us（船），進入拉丁語演變為 nāvis（船隻、艦隊），再經由古西班牙語 naue 演化為現代西語 nave。該字原本專指船體呈凹弧形的大船，到了現代太空時代，進一步引申借指「太空船」（nave espacial）。英文的 navy（海軍）、navigate（航行）與建築學中教堂的 nave（中殿）皆為同源字。",
+      "hook_zh": "聯想海軍 navy 和導航 navigate，看著一艘巨大的太空船 nave 航向宇宙。",
+      "usage_zh": "陰性名詞。nave espacial 是太空船；在建築學中也指教堂的「中殿」。",
+      "example_es": "La nave espacial despegó rumbo a Marte.",
+      "example_zh": "太空船朝著火星升空出發。",
+      "image": "emoji:🚀",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nave",
+        "wiktionary:la:navis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "obligación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "義務、責任；債券",
+      "en": "obligation, duty, bond",
+      "ipa": "/obliɡaˈθjon/",
+      "breakdown": [
+        {
+          "part": "obligar",
+          "zh": "使承擔義務、強制"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示行為或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "obligātiōnem",
+          "zh": "義務、拘束"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "obligación",
+          "zh": "義務、責任"
+        }
+      ],
+      "cognates_en": [
+        "obligation"
+      ],
+      "story_zh": "源自拉丁語名詞 obligātiōnem，為文人學者引進的借詞。字根帶有捆綁、拘束之意，引申為在法律、道德或人情約束下所必須履行的「義務與責任」；在金融商業中也可指具有償還約束力的「債券」。英文同源字為 obligation。",
+      "hook_zh": "外型幾乎同於英文 obligation，只要把字尾 -tion 換成西語名詞字尾 -ción。",
+      "usage_zh": "陰性名詞。常見搭配為 tener la obligación de + 原形動詞（有做…的義務）。",
+      "example_es": "Tenemos la obligación de ayudar a los demás.",
+      "example_zh": "我們有義務幫助他人。",
+      "image": "emoji:📋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:obligación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "observar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "觀察、注視；遵守",
+      "en": "to observe, to watch, to obey",
+      "ipa": "/obseɾˈbaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "observāre",
+          "zh": "注視、遵守"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "observar",
+          "zh": "觀察、遵守"
+        }
+      ],
+      "cognates_en": [
+        "observe"
+      ],
+      "story_zh": "源自拉丁語動詞 observāre，屬於學者借詞。在拉丁文原意中包含細心看守、守候與遵行，因此在西班牙語中不僅有「以目光觀察、注視」的意思，還保留了「遵守法令或規矩」的用法。英文同源字為 observe。",
+      "hook_zh": "長得與英文 observe 幾乎一樣，想像拿望遠鏡細心觀察（observar）星空。",
+      "usage_zh": "規則第一類動詞（-ar）。除了「觀察」，也常接法律名詞表示「遵守」，如 observar la ley。",
+      "example_es": "El científico observó las estrellas con el telescopio.",
+      "example_zh": "科學家透過望遠鏡觀察星空。",
+      "image": "emoji:🔭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:observar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pacto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "協定、公約、契約",
+      "en": "pact, agreement, contract",
+      "ipa": "/ˈpaɡto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pactum",
+          "zh": "協議、合約"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pacto",
+          "zh": "協定、公約"
+        }
+      ],
+      "cognates_en": [
+        "pact"
+      ],
+      "story_zh": "源自拉丁語名詞 pactum（協議、條約），屬於學者借詞。其核心概念為各方平息歧見、達成合意的約定。在現代西班牙語中，可用於指稱國家間的正式公約，或是人與人之間私下立下的協議與盟約。英文同源字為 pact。",
+      "hook_zh": "長得就像英文 pact（條約、協定）加上西語陽性結尾 -o，想像雙方握手簽訂 pacto。",
+      "usage_zh": "陽性名詞。常用動詞搭配包括 firmar un pacto（簽訂條約）與 romper un pacto（毀約）。",
+      "example_es": "Los dos países firmaron un pacto de paz.",
+      "example_zh": "兩國簽署了一項和平協議。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pacto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "preso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "囚犯、犯人；被監禁的",
+      "en": "prisoner; imprisoned",
+      "ipa": "/ˈpɾeso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prehēnsus",
+          "zh": "被抓住的、被捕獲的"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "prēnsus",
+          "zh": "被抓的、被捕的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "preso",
+          "zh": "囚犯、被監禁的"
+        }
+      ],
+      "cognates_en": [
+        "prison"
+      ],
+      "story_zh": "源自拉丁語 prehēnsus（被抓住、捕獲），在通俗拉丁語中縮合為 prēnsus。原指「被逮到、被捕獲的人」，後來在西班牙語中演變為名詞「囚犯」與形容詞「被監禁的」。英文的 prison（監獄）也出自同源。",
+      "hook_zh": "犯人被關在牢裡，自由被緊緊「壓制」（press），動彈不得。",
+      "usage_zh": "作名詞指囚犯（陰性為 la presa）；作形容詞表示被監禁的，常與 estar 搭配。",
+      "example_es": "El preso logró escapar de la cárcel anoche.",
+      "example_zh": "那名囚犯昨晚成功逃出了監獄。",
+      "image": "emoji:⛓️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:preso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "profundidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "深度、深處；深奧",
+      "en": "depth",
+      "ipa": "/pɾofundiˈdad/",
+      "breakdown": [
+        {
+          "part": "profundo",
+          "zh": "深的"
+        },
+        {
+          "part": "-idad",
+          "zh": "名詞字尾，表性質或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "profunditātem",
+          "zh": "深度、深處"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "profundidad",
+          "zh": "深度"
+        }
+      ],
+      "cognates_en": [
+        "profound"
+      ],
+      "story_zh": "借自拉丁語 profunditātem（深度），源於形容詞 profundus（深的）加上抽象名詞後綴 -tas。在西班牙語中亦可視為 profundo 加上名詞字尾 -idad，既可指物理上的深度，也指思想或感情的深奧。",
+      "hook_zh": "profundo（深的）加上名詞字尾 -idad，就是測量水有多深的「深度」。",
+      "usage_zh": "常見片語 en profundidad（深入地、透徹地），例如 analizar en profundidad。",
+      "example_es": "La piscina tiene dos metros de profundidad.",
+      "example_zh": "這座游泳池有兩公尺深。",
+      "image": "emoji:🌊",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:profundidad",
+        "wiktionary:la:profunditas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "prohibido",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "被禁止的、不准的",
+      "en": "forbidden, prohibited",
+      "ipa": "/pɾoiˈbido/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "prohibit"
+      ],
+      "story_zh": "",
+      "hook_zh": "路上看到紅圈斜線的 Prohibido 標誌，就是英文 prohibit（禁止）的過去分詞。",
+      "usage_zh": "常置於句首作告示語 Prohibido + 原形動詞（如 Prohibido fumar）；形容詞須性數變化。",
+      "example_es": "Está prohibido usar el teléfono móvil aquí.",
+      "example_zh": "這裡禁止使用手機。",
+      "image": "emoji:🚫",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:prohibido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "realización",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "實現、落實；執行、完成",
+      "en": "realization, fulfillment, execution",
+      "ipa": "/realiθaˈθjon/",
+      "breakdown": [
+        {
+          "part": "realizar",
+          "zh": "實現、執行"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "realization"
+      ],
+      "story_zh": "源自動詞 realizar（實現、完成）加上名詞字尾 -ción。字面指將構想或目標轉化為真實存在的具體過程，因此引申出「實現、落實」與「執行、完成」等意。",
+      "hook_zh": "動詞 realizar（實現）加上名詞尾巴 -ción，就是美夢成真的「實現」！",
+      "usage_zh": "陰性名詞。注意常指「實行、達成」，而不像英文 realization 常用於「領悟、意識到」。",
+      "example_es": "La realización del proyecto tardó tres meses.",
+      "example_zh": "這個專案的執行花了三個月。",
+      "image": "emoji:🎯",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:realización"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "renuncia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "辭職、辭職信；放棄",
+      "en": "resignation, renunciation",
+      "ipa": "/reˈnunθja/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "renounce",
+        "renunciation"
+      ],
+      "story_zh": "由動詞 renunciar（放棄、辭任）衍生出的名詞（deverbal）。原指宣告放棄權利或主張的行為，現代最常用於表示辭去職務的「辭職」或正式遞交的「辭職信」。",
+      "hook_zh": "受夠了老闆，把離職信丟在桌上說「我不幹了」：這就是 la renuncia！",
+      "usage_zh": "常見搭配 presentar la renuncia（提出辭呈）。動詞為 renunciar（a...）。",
+      "example_es": "El ministro presentó su renuncia esta mañana.",
+      "example_zh": "部長今天早上遞交了辭呈。",
+      "image": "emoji:📝",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:renuncia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "revisión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "檢查、複查；修訂",
+      "en": "review, revision, check",
+      "ipa": "/rebiˈsjon/",
+      "breakdown": [
+        {
+          "part": "re-",
+          "zh": "再、重新"
+        },
+        {
+          "part": "visión",
+          "zh": "觀看、視覺"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "revīsiōnem",
+          "zh": "重新檢視"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "revisión",
+          "zh": "檢查、修訂"
+        }
+      ],
+      "cognates_en": [
+        "revision"
+      ],
+      "story_zh": "源自拉丁語 revīsiōnem，由 re-（重新）與 visio（看）衍生而來，核心概念是「重新再看一次」。當你把完成的事物或文件重新檢查一遍，就是「複查」或「修訂」，確保沒有疏漏。",
+      "hook_zh": "英文的 revision 就是它！把做好的東西「re（再）看（visión）一次」，就是複查。",
+      "usage_zh": "陰性名詞。常見搭配如 revisión médica（健康檢查）或 pasar revisión（接受檢查）。",
+      "example_es": "Mañana tengo una revisión médica general.",
+      "example_zh": "我明天有全身健康檢查。",
+      "image": "emoji:🔍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:revisión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "transición",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "過渡、轉變",
+      "en": "transition, shift",
+      "ipa": "/tɾansiˈθjon/",
+      "breakdown": [
+        {
+          "part": "trans-",
+          "zh": "跨越、穿越"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾（動作或過程）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "trāns + itiō",
+          "zh": "跨越 + 行走"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "transitio",
+          "zh": "過渡、轉變"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "transición",
+          "zh": "過渡、轉變"
+        }
+      ],
+      "cognates_en": [
+        "transition"
+      ],
+      "story_zh": "來自拉丁語 transitio（受格 trānsitiōnem），由 trāns（跨越）與 itiō（行走）組成，原意為「走過去、跨越到另一邊」。引申指從一種狀態跨越到另一種狀態的中間過程，也就是「過渡」或「轉變」。",
+      "hook_zh": "和英文 transition 長得幾乎一樣，字首 trans- 像一座橋，帶你跨越「過渡」到另一端。",
+      "usage_zh": "陰性名詞。常用搭配如 periodo de transición（過渡期）或 gobierno de transición（過渡政府）。",
+      "example_es": "La empresa está en un período de transición digital.",
+      "example_zh": "這家公司正處於數位轉型的過渡期。",
+      "image": "emoji:🔄",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:transición",
+        "wiktionary:la:transitio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "alerta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "警報；警戒",
+      "en": "alarm, alert",
+      "ipa": "/aˈleɾta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "alla + erta",
+          "zh": "往 + 高處"
+        },
+        {
+          "lang_zh": "義大利語",
+          "word": "all'erta",
+          "zh": "向高處、處於警戒"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alerta",
+          "zh": "警報、警戒"
+        }
+      ],
+      "cognates_en": [
+        "alert"
+      ],
+      "story_zh": "借自義大利語 all'erta，由 alla（向）與 erta（高處）融合而成，原是軍事用語，指「站上高處哨所戒備」。哨兵居高臨下警戒敵情，後來演變成警告危險的「警報」，以及保持提防的「警戒」。",
+      "hook_zh": "英文 alert 的親戚！想像古代哨兵站上高處（all'erta）警戒，一看到敵軍立刻拉響警報。",
+      "usage_zh": "作名詞時是陰性（la alerta，警報）；也常作為形容詞與 estar 連用（estar alerta，保持警覺）。",
+      "example_es": "Las autoridades emitieron una alerta por la tormenta.",
+      "example_zh": "當局針對這場暴風雨發布了警報。",
+      "image": "emoji:🚨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alerta"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aprendizaje",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "學習、習得；學徒期",
+      "en": "learning, apprenticeship",
+      "ipa": "/apɾendiˈθaxe/",
+      "breakdown": [
+        {
+          "part": "aprendiz",
+          "zh": "學徒、學員"
+        },
+        {
+          "part": "-aje",
+          "zh": "名詞字尾（過程、狀態）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "aprendiz + -aje",
+          "zh": "學徒 + 過程後綴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aprendizaje",
+          "zh": "學習、學徒期"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西班牙語 aprendiz（學徒、新手）加上名詞字尾 -aje，最初專指工匠學徒在師傅身邊實習的「學徒期」。隨著時代演變，詞義從特定職業的手藝傳承，廣泛延伸指任何知識或技能的「學習」與「習得」過程。",
+      "hook_zh": "學徒（aprendiz）在師傅身邊經歷的過程（-aje），就是一場漫長的「學習」（aprendizaje）。",
+      "usage_zh": "陽性名詞（以 -aje 結尾的名詞多為陽性，如 el viaje）。常用 el proceso de aprendizaje（學習過程）。",
+      "example_es": "El aprendizaje de un nuevo idioma requiere paciencia.",
+      "example_zh": "學習一門新語言需要耐心。",
+      "image": "emoji:📚",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aprendizaje"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "básicamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "基本上、大體上",
+      "en": "basically",
+      "ipa": "/ˌbasikaˈmente/",
+      "breakdown": [
+        {
+          "part": "básico",
+          "zh": "基本的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "básico + -mente",
+          "zh": "基本 + 副詞後綴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "básicamente",
+          "zh": "基本上"
+        }
+      ],
+      "cognates_en": [
+        "basically"
+      ],
+      "story_zh": "由形容詞 básico（基本的）加上副詞字尾 -mente 組成。西語由形容詞構成副詞時，會先轉為陰性形 básica 再接字尾，字面意思為「以最基本的方式」，常用在言談中直指核心重點，即「基本上」。",
+      "hook_zh": "英文 basically 的雙胞胎！形容詞 básica 加上副詞結尾 -mente，直接等於「基本上」。",
+      "usage_zh": "複合副詞保留原形容詞的重音符號（básica → básicamente），發音時會有兩個重音。",
+      "example_es": "Básicamente, tenemos que empezar el proyecto de nuevo.",
+      "example_zh": "基本上，我們必須重新開始這個專案。",
+      "image": "emoji:📌",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:básicamente"
       ],
       "writer": "gemini"
     }
