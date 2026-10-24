@@ -3213,6 +3213,649 @@
         "wiktionary:es:corredor"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "desfile",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "遊行；閱兵；走秀",
+      "en": "parade, fashion show",
+      "ipa": "/desˈfile/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "desfilar",
+          "zh": "列隊前進"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "desfile",
+          "zh": "遊行、閱兵"
+        }
+      ],
+      "cognates_en": [
+        "defile"
+      ],
+      "story_zh": "由動詞 desfilar（列隊走過）名詞化而來。原指軍隊或隊伍成列排開、依序通過隘道或檢閱台，後來延伸為慶祝節慶的街頭遊行、盛大的軍事閱兵，或伸展台上的時裝走秀。",
+      "hook_zh": "遊行隊伍排成一列（fila）走過街道，熱鬧的 desfile 正在上演。",
+      "usage_zh": "陽性名詞。常見搭配有 desfile de moda（時裝秀）或 desfile militar（閱兵）。",
+      "example_es": "Fuimos al centro a ver el desfile de Navidad.",
+      "example_zh": "我們去市中心看聖誕遊行。",
+      "image": "emoji:🎉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:desfile"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ejecutar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "執行、實施；處決；演奏",
+      "en": "to execute, to carry out, to perform",
+      "ipa": "/exekuˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "exsequor",
+          "zh": "跟隨到底、執行"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "exsecūtus",
+          "zh": "已執行的"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "executāre",
+          "zh": "執行、處決"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ejecutar",
+          "zh": "執行、實施"
+        }
+      ],
+      "cognates_en": [
+        "execute"
+      ],
+      "story_zh": "源自拉丁語 exsequor，由 ex-（向外、徹底）與 sequor（跟隨）組成，原意為「一路跟隨到底」，引申出貫徹、執行的含義。進入中世紀拉丁語演變為 executāre，後在西班牙語中將 ex- 轉寫為 ej-，發展出今日的執行與演奏等用法。",
+      "hook_zh": "英文 execute（執行、處決）將 ex- 變成西語常見的 ej-，就是 ejecutar。",
+      "usage_zh": "規則 -ar 動詞。常接計畫、任務或程式，如 ejecutar un programa（執行程式）。",
+      "example_es": "El ordenador no puede ejecutar este programa.",
+      "example_zh": "這台電腦無法執行這個程式。",
+      "image": "emoji:⚙️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ejecutar",
+        "wiktionary:la:executo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "esfera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "球體；領域、範圍；鐘表面",
+      "en": "sphere, realm, clock face",
+      "ipa": "/esˈfeɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "σφαῖρα",
+          "zh": "球、球體"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "sphaera",
+          "zh": "球體"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "sphēra",
+          "zh": "球體"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esfera",
+          "zh": "球體、領域"
+        }
+      ],
+      "cognates_en": [
+        "sphere"
+      ],
+      "story_zh": "源自古希臘語 σφαῖρα（球體、天體），經拉丁語借入西語。因為西語語音習慣在字首子音群 s 前加上母音 e-，因而演變為 esfera。它不僅指幾何學上的三維球體，在現代也廣泛引申指不同群體的活動「領域」或鐘錶的指針盤面。",
+      "hook_zh": "英文的 sphere（球體）在開頭補上西語習慣的 e-，就是 esfera。",
+      "usage_zh": "陰性名詞。常用於抽象領域，例如 en la esfera pública（在公共領域內）。",
+      "example_es": "La Tierra no es una esfera perfecta.",
+      "example_zh": "地球並不是一個完美的球體。",
+      "image": "emoji:🌐",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esfera"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estupidez",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "愚蠢；蠢事、傻話",
+      "en": "stupidity, nonsense, dumb thing",
+      "ipa": "/estupiˈdeθ/",
+      "breakdown": [
+        {
+          "part": "estúpido",
+          "zh": "愚蠢的"
+        },
+        {
+          "part": "-ez",
+          "zh": "表示性質或狀態的名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "estúpido",
+          "zh": "愚蠢的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estupidez",
+          "zh": "愚蠢、蠢事"
+        }
+      ],
+      "cognates_en": [
+        "stupidity"
+      ],
+      "story_zh": "由形容詞 estúpido（愚蠢的）加上抽象名詞字尾 -ez 構成，表示「愚蠢」的本質或狀態。在日常生活會話中，此字極常具體用來指某人說的「荒唐傻話」或做出的「蠢事」。",
+      "hook_zh": "estúpido（愚蠢的）加上名詞字尾 -ez，就變成名詞 estupidez（蠢事）。",
+      "usage_zh": "陰性名詞，以 -z 結尾的名詞複數形規則變化為 estupideces。",
+      "example_es": "¡No digas tantas estupideces!",
+      "example_zh": "別說那麼多蠢話！",
+      "image": "emoji:🤦",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estupidez"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "exclusivo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "專有的、獨佔的；高檔的",
+      "en": "exclusive, upscale",
+      "ipa": "/eɡskluˈsibo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "exclusivus",
+          "zh": "排外的、獨佔的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "exclusivo",
+          "zh": "專有的、獨佔的"
+        }
+      ],
+      "cognates_en": [
+        "exclusive"
+      ],
+      "story_zh": "源自拉丁語 exclusivus，屬於學術借詞。字根核心概念為排除在外、不讓其他人共享，因而引申為「專屬的、獨有的」。在商業與休閒語境中，也常形容僅對特定會員開放的高檔排外場所。",
+      "hook_zh": "和英文 exclusive（專屬的）幾乎一樣，字尾換成西語形容詞結尾 -o。",
+      "usage_zh": "陰性為 exclusiva，也可作名詞 la exclusiva 表示「獨家新聞」或「獨家專利」。",
+      "example_es": "Este restaurante es muy exclusivo y caro.",
+      "example_zh": "這家餐廳非常高檔且昂貴。",
+      "image": "emoji:💎",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:exclusivo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "extinción",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "絕種、滅絕；熄滅",
+      "en": "extinction",
+      "ipa": "/eɡstinˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "extinctiōnem",
+          "zh": "熄滅、消滅"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "extinción",
+          "zh": "絕種、滅絕"
+        }
+      ],
+      "cognates_en": [
+        "extinction"
+      ],
+      "story_zh": "源自拉丁語 extinctiōnem，原指「熄滅、消滅」。後來延伸用在生物學與自然界中，指某個物種完全消逝、滅絕的狀態。英文的 extinction 也是同源字。",
+      "hook_zh": "拼法和英文 extinction 幾乎一樣，字尾換成西語常見的 -ción。",
+      "usage_zh": "常與動詞 estar en 搭配：estar en peligro de extinción（瀕臨絕種）。",
+      "example_es": "Este animal está en peligro de extinción.",
+      "example_zh": "這種動物正面臨滅絕的危險。",
+      "image": "emoji:🦖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:extinción"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ficha",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "籌碼、棋子；資料卡、表格",
+      "en": "chip, token, index card",
+      "ipa": "/ˈfit͡ʃa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "fiche",
+          "zh": "卡片、插銷、籌碼"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ficha",
+          "zh": "籌碼、資料卡"
+        }
+      ],
+      "cognates_en": [
+        "microfiche"
+      ],
+      "story_zh": "借自法語 fiche，原意為卡片或插銷。進入西語後，既可用來指桌遊或賭博時用的「籌碼、棋子」，也能指記錄資料的「登記卡或表格」。",
+      "hook_zh": "把籌碼（ficha）插進遊戲機的孔裡，準備大玩一場。",
+      "usage_zh": "ficha médica 指病歷表；片語 mover ficha 原指走棋，引申為採取行動。",
+      "example_es": "Tienes que rellenar esta ficha con tus datos.",
+      "example_zh": "你必須在這張資料卡上填寫你的個人資料。",
+      "image": "emoji:🪙",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ficha"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "honesto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "誠實的、正直的",
+      "en": "honest, honorable",
+      "ipa": "/oˈnesto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "honor",
+          "zh": "榮譽、崇敬"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "honestus",
+          "zh": "享有榮譽的、正派高尚的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "honesto",
+          "zh": "誠實的、正直的"
+        }
+      ],
+      "cognates_en": [
+        "honest"
+      ],
+      "story_zh": "源自拉丁語 honestus，由 honor（榮譽）加上形容詞後綴組成，最初指「享有榮譽的、高尚正派的」。能贏得社會敬重的人通常言行端正，後來字義便演變為「誠實、正直」。英文的 honest 是同源字。",
+      "hook_zh": "長得跟英文 honest 幾乎一樣，開頭 h 不發音，結尾加上西語陽性結尾 -o。",
+      "usage_zh": "陰性為 honesta；h 永遠不發音。常與動詞 ser 搭配表示人格特質。",
+      "example_es": "Quiero que seas completamente honesto conmigo.",
+      "example_zh": "我希望你能對我完全誠實。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:honesto",
+        "wiktionary:la:honestus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "huella",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "腳印、指紋；痕跡、印記",
+      "en": "footprint, fingerprint, mark",
+      "ipa": "/ˈw̝eʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "hollar",
+          "zh": "踩踏、踐踏"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "huella",
+          "zh": "腳印、痕跡"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西語動詞 hollar（踩踏、踐踏）衍生而來的動詞派生名詞。腳步踏在地上踩過所留下來的印記，就是 huella（腳印、足跡），後來進一步引申為所有的痕跡或指紋。",
+      "hook_zh": "「揮了（hue-lla）」一把泥土，地上留下了清晰的腳印。",
+      "usage_zh": "常見搭配如 huella dactilar（指紋）與 huella de carbono（碳足跡）。",
+      "example_es": "La policía encontró una huella en la ventana.",
+      "example_zh": "警方在窗戶上發現了一枚指紋。",
+      "image": "emoji:👣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:huella"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "huracán",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "颶風、強烈風暴",
+      "en": "hurricane",
+      "ipa": "/uɾaˈkan/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "泰諾語",
+          "word": "*hurakā",
+          "zh": "颶風"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "huracán",
+          "zh": "颶風"
+        }
+      ],
+      "cognates_en": [
+        "hurricane"
+      ],
+      "story_zh": "借自加勒比海原住民族泰諾語（Taíno）的 *hurakā，原指狂風暴雨的神靈。西班牙殖民者在美洲初次遭遇強烈熱帶氣旋後引入此詞，英文的 hurricane 也是由此轉借而來。",
+      "hook_zh": "huracán 吹來時風大得讓人呼（hu）叫，英文的 hurricane 就是從它來的。",
+      "usage_zh": "為陽性名詞，複數是 huracanes（複數規則變換需去掉重音符號）。h 不發音。",
+      "example_es": "El huracán causó muchos daños en la costa.",
+      "example_zh": "颶風在沿海地區造成了嚴重的破壞。",
+      "image": "emoji:🌀",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:huracán"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "infinito",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "無限的、無窮的",
+      "en": "infinite, boundless",
+      "ipa": "/infiˈnito/",
+      "breakdown": [
+        {
+          "part": "in-",
+          "zh": "不、無"
+        },
+        {
+          "part": "finito",
+          "zh": "有限的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnfīnītus",
+          "zh": "無限的、無界限的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "infinito",
+          "zh": "無限的"
+        }
+      ],
+      "cognates_en": [
+        "infinite",
+        "infinity"
+      ],
+      "story_zh": "源自拉丁語 īnfīnītus，由否定前綴與表示界限的字根構成，字面意思是「沒有邊界、沒有盡頭」。後來廣泛用於形容空間、時間或數量上的無窮無盡。英文的 infinite 與 infinity 也皆同源。",
+      "hook_zh": "聯想英文 infinite（無限的），發音與拼法都非常接近，象徵無窮大 ♾️。",
+      "usage_zh": "作形容詞時有陰陽性與單複數（infinita, infinitos）；口語也可當副詞表示「非常、極度」。",
+      "example_es": "El universo parece infinito y lleno de misterios.",
+      "example_zh": "宇宙看似無窮無盡，充滿了奧祕。",
+      "image": "emoji:♾️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:infinito"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "jugada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "（遊戲或棋類的）一步、著；妙招；把戲",
+      "en": "play, move, turn; trick",
+      "ipa": "/xuˈɡada/",
+      "breakdown": [
+        {
+          "part": "jugar",
+          "zh": "玩、下棋、比賽"
+        },
+        {
+          "part": "-ada",
+          "zh": "動作或結果字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "源自西語動詞 jugar（玩、比賽）加上表示動作或結果的字尾 -ada。原指下棋或遊戲輪到自己時所走的一步或回合動作，後來延伸為比賽中的精彩妙招，或是生活中的手段把戲。",
+      "hook_zh": "輪到你下棋時「出招」，這一步就是你在這場遊戲中的 jugada。",
+      "usage_zh": "陰性名詞。常用搭配如 buena jugada（妙招、好棋）或 mala jugada（壞招、卑鄙手段）。",
+      "example_es": "Fue una jugada muy inteligente en la partida de ajedrez.",
+      "example_zh": "那是西洋棋對局中非常高明的一步。",
+      "image": "emoji:♟️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:jugada"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "lateral",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "側面的、側邊的",
+      "en": "lateral, side",
+      "ipa": "/lateˈɾal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "laterālis",
+          "zh": "側面的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lateral",
+          "zh": "側面的"
+        }
+      ],
+      "cognates_en": [
+        "lateral"
+      ],
+      "story_zh": "源自拉丁語 laterālis（側面的），由表示「側面、側邊」的詞根衍生而來。自古至今一直用來指稱位於旁邊、側方的物體或方向。英文中的 lateral（側面的、橫向的）完全繼承了同一個拉丁字源。",
+      "hook_zh": "直接對應英文 lateral，想像足球比賽中邊線傳球、防守邊後衛（lateral）的畫面。",
+      "usage_zh": "陰陽同形（el lado lateral / la puerta lateral），複數為 laterales。",
+      "example_es": "Entramos al edificio por la puerta lateral.",
+      "example_zh": "我們從側門進入大樓。",
+      "image": "emoji:↔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lateral"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "limitación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "限制、局限、約束",
+      "en": "limitation, constraint",
+      "ipa": "/limitaˈθjon/",
+      "breakdown": [
+        {
+          "part": "limitar",
+          "zh": "限制"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示動作或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "līmitātiōnem",
+          "zh": "界限、限制"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "limitación",
+          "zh": "限制、局限"
+        }
+      ],
+      "cognates_en": [
+        "limitation",
+        "limit"
+      ],
+      "story_zh": "源自拉丁語 līmitātiōnem（界限、限制），最初源於劃定田地與領土邊界的測量行為。後來抽象化演變為指能力、規則、條件上的約束與界限。英文中的 limitation 也是直接承襲同一拉丁字根。",
+      "hook_zh": "看字首 limit 聯想「限制、極限」，加上名詞字尾 -ación，就是 limitation！",
+      "usage_zh": "陰性名詞，-ción 結尾皆為陰性；複數去掉重音符號寫作 limitaciones。",
+      "example_es": "Conoce sus limitaciones, pero no deja de esforzarse.",
+      "example_zh": "他清楚自己的局限，但從未停止努力。",
+      "image": "emoji:🚧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:limitación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "manifestar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "表達、表明；示威（manifestarse）",
+      "en": "to express, to reveal; to protest",
+      "ipa": "/manifesˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "manifēstāre",
+          "zh": "表明、清楚顯露"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "manifestar",
+          "zh": "表明、表達"
+        }
+      ],
+      "cognates_en": [
+        "manifest"
+      ],
+      "story_zh": "源自拉丁語動詞 manifēstāre（清楚顯露、表明）。原意指將隱藏的事物攤開在眾人眼前，引申為以言語或行動公開表明態度。現代西語中，反身動詞形式 manifestarse 常用於指群眾上街示威遊行。",
+      "hook_zh": "把心聲「擺在眼前讓人看」（manifest），民眾上街遊行也是 manifestarse！",
+      "usage_zh": "現在式不規則換音（e > ie，如 yo manifiesto）；反身形式常用於「示威遊行」。",
+      "example_es": "Los vecinos salieron a manifestar su preocupación.",
+      "example_zh": "居民們走出來表達他們的擔憂。",
+      "image": "emoji:📢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:manifestar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mega",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "百萬位元組（MB，行動網路流量簡稱）",
+      "en": "megabyte",
+      "ipa": "/ˈmeɡa/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "megabyte"
+      ],
+      "story_zh": "",
+      "hook_zh": "手機看影片流量用光時常說「沒 mega 了」，指的就是 megabyte。",
+      "usage_zh": "陰性名詞（la mega），口語中常用複數 megas 來表示手機行動數據流量。",
+      "example_es": "Ya no me quedan megas en el móvil este mes.",
+      "example_zh": "這個月我的手機網路流量已經用光了。",
+      "image": "emoji:📶",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:mega"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "migración",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "遷徙；移民；移居",
+      "en": "migration",
+      "ipa": "/miɡɾaˈθjon/",
+      "breakdown": [
+        {
+          "part": "migrar",
+          "zh": "遷徙"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示動作或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "migrātiōnem",
+          "zh": "遷徙、移居"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "migración",
+          "zh": "遷徙、移民"
+        }
+      ],
+      "cognates_en": [
+        "migration"
+      ],
+      "story_zh": "源自拉丁語 migrātiōnem（遷徙、移動）。在西班牙語中演化為 migración，用來指人群的移居或動物因季節氣候的大規模遷徙。英文的 migration 也是源自同一個字。",
+      "hook_zh": "和英文 migration 拼法極像，只要把英文的 -tion 替換成西語的 -ción。",
+      "usage_zh": "陰性名詞，字尾為 -ción。常見搭配如 la migración de aves（鳥類遷徙）。",
+      "example_es": "La migración de las aves ocurre en otoño.",
+      "example_zh": "鳥類的遷徙發生在秋天。",
+      "image": "emoji:🕊️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:migración"
+      ],
+      "writer": "gemini"
     }
   ]
 }
