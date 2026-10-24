@@ -17,7 +17,7 @@ const { factsLemma } = require('./geminiEntries');
 const BATCH_SIZE = 100;
 const FUNCTION_POS = new Set(['article', 'det', 'pron', 'prep', 'conj', 'contraction', 'intj', 'particle']);
 // In running text these are names or shorthand (Luis, María, Brasil, PP), not "louis (coin)" or "brazilwood"
-const SKIP_WORDS = new Set(['luis', 'maría', 'brasil', 'pp']);
+const SKIP_WORDS = new Set(['luis', 'maría', 'brasil', 'pp', 'to', 'cuba', 'post', 'sr']);
 // Words that look like a form of another word but are learned on their own
 const NO_FOLD = new Set(['política', 'lista', 'firma']);
 // Kinds of Wiktionary entries that are not words to learn
