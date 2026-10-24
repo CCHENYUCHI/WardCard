@@ -83,6 +83,12 @@ function foldTarget(word, readFacts) {
   return null;
 }
 
+// Words the batch agent judged to be names, places, English words or fragments (batch-agent.js): { word: reason }
+const AGENT_SKIP_FILE = path.join(LEXICON_ROOT, 'freq-skip.json');
+const agentSkips = () => (fs.existsSync(AGENT_SKIP_FILE) ? JSON.parse(fs.readFileSync(AGENT_SKIP_FILE, 'utf8')) : {});
+
+const AGENT_SKIPS = agentSkips();
+
 const factsFile = (factsDir, word) => path.join(factsDir, `${word}.json`);
 
 /** Lemma keys of the A1 lexicon (the hand-written set wins over the frequency set) */
@@ -102,7 +108,7 @@ function isLearnable(facts) {
   if (!/^[a-záéíóúüñ ]+$/i.test(lemma)) return false;
   // Single letters are words only as y, o, e, u, a; otherwise letter names or abbreviations
   if (lemma.length === 1 && !'yoeua'.includes(lemma.toLowerCase())) return false;
-  if (SKIP_WORDS.has(lemma)) return false;
+  if (SKIP_WORDS.has(lemma) || Object.hasOwn(AGENT_SKIPS, lemma)) return false;
   return entries.some(e => !SKIP_POS.has(e.pos));
 }
 
@@ -186,7 +192,7 @@ function toBatches(queue, size = BATCH_SIZE, { partial = false } = {}) {
   return batches;
 }
 
-module.exports = { FOLD, baseCandidates, foldTarget, formOfTarget, isLearnable, buildQueue, toBatches, a1Keys, BATCH_SIZE };
+module.exports = { AGENT_SKIP_FILE, FOLD, baseCandidates, foldTarget, formOfTarget, isLearnable, buildQueue, toBatches, a1Keys, BATCH_SIZE };
 
 if (require.main === module) {
   const args = process.argv.slice(2);

@@ -77,6 +77,15 @@ class AgyClient {
     if (result.isError) throw new Error(`ask_gemini: ${text.slice(0, 300)}`);
     return text.replace(/\n+— [^\n]*$/, '');
   }
+
+  /** Call one of the server's other tools and parse its JSON answer (start_batch / get_batch / cancel_batch) */
+  async callJson(name, args) {
+    await this.init();
+    const result = await this.request('tools/call', { name, arguments: args });
+    const text = (result.content || []).filter(c => c.type === 'text').map(c => c.text).join('\n');
+    if (result.isError) throw new Error(`${name}: ${text.slice(0, 300)}`);
+    return JSON.parse(text);
+  }
 }
 
 module.exports = { AgyClient, parseRpcBody, serverUrl };

@@ -154,6 +154,6 @@ async function main() {
   }
 }
 
-module.exports = { batchRange };
+module.exports = { batchRange, readBatch, writeBatch, exampleEntries, FREQ_DIR };
 
 if (require.main === module) main();
