@@ -3547,6 +3547,116 @@
         "wiktionary:es:básicamente"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "carmen",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "格拉納達傳統庭園別墅",
+      "en": "traditional villa in Granada",
+      "ipa": "/ˈkaɾmen/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "كَرْم (karm)",
+          "zh": "葡萄園"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "carmen",
+          "zh": "格拉納達庭園別墅"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自阿拉伯語 كَرْم（karm），本義是「葡萄園」。在摩爾人統治格拉納達時期，帶有果園與花園的鄉間宅邸被稱為 carmen，後來演變為指當地依山而建、附帶庭園的典型傳統住宅。",
+      "hook_zh": "在格拉納達漫步，白色圍牆內飄出花香與果樹芬芳的庭園宅邸就是 carmen。",
+      "usage_zh": "陽性名詞，複數加重音符號變為 cármenes。特指西班牙格拉納達當地的傳統庭園住宅。",
+      "example_es": "Desde este carmen se ve la Alhambra.",
+      "example_zh": "從這座庭園別墅可以看到阿爾罕布拉宮。",
+      "image": "emoji:🏡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:carmen"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "casado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "已婚的、結婚的",
+      "en": "married",
+      "ipa": "/kaˈsado/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "結了婚、建立了自己的家（casa），狀態就變成了 casado。",
+      "usage_zh": "表示婚姻狀態時通常搭配動詞 estar（estar casado/a）。陰性形式為 casada。",
+      "example_es": "Juan está casado y tiene dos hijos.",
+      "example_zh": "胡安已經結婚了，有兩個小孩。",
+      "image": "emoji:💍",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:casado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "caza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "狩獵、打獵；獵物",
+      "en": "hunting, hunt; prey",
+      "ipa": "/ˈkaθa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "caça",
+          "zh": "打獵"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caza",
+          "zh": "狩獵、打獵"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "傳承自古西班牙語 caça，原指追尋並獵捕野生動物的活動。在現代西班牙語中，除了指「打獵、狩獵」的行為，也能代指捕獲到的「獵物」。",
+      "hook_zh": "獵人出發去深山打獵、追捕獵物，這場行動就是 caza。",
+      "usage_zh": "陰性名詞。但若是作為 avión de caza（戰鬥機）的簡稱時，則作陽性名詞 el caza。",
+      "example_es": "La caza está prohibida en este bosque.",
+      "example_zh": "這座森林裡禁止打獵。",
+      "image": "emoji:🏹",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caza"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "combustible",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "燃料；可燃物",
+      "en": "fuel; combustible",
+      "ipa": "/kombusˈtible/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "英文也是 combustible（可燃的），汽車開去加油站加的燃料就是 combustible。",
+      "usage_zh": "常作陽性名詞表示「燃料」，如 combustible fósil（化石燃料）；亦可作形容詞指「可燃的」。",
+      "example_es": "El coche se quedó sin combustible en la autopista.",
+      "example_zh": "車子在高速公路上耗盡了燃料。",
+      "image": "emoji:⛽",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:combustible"
+      ],
+      "writer": "gemini"
     }
   ]
 }
