@@ -1792,6 +1792,432 @@
         "wiktionary:la:magister"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "marco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "框架、相框、畫框",
+      "en": "frame, framework",
+      "ipa": "/ˈmaɾko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始日耳曼語",
+          "word": "*markō",
+          "zh": "邊界"
+        },
+        {
+          "lang_zh": "法蘭克語",
+          "word": "*marku",
+          "zh": "邊界"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "marcus",
+          "zh": "邊界、界限"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "marco",
+          "zh": "框架"
+        }
+      ],
+      "cognates_en": [
+        "mark"
+      ],
+      "story_zh": "源自法蘭克語的 *marku（邊界、界限），進入中世紀拉丁語作 marcus，再借入西班牙語指「框架」。畫框或相框正是框住畫面的邊界與邊限，由「邊界」延伸出「包圍四周的框架」之意。",
+      "hook_zh": "想像畫家在畫布邊緣做記號（mark），最後套上一圈實體的畫框（marco）。",
+      "usage_zh": "常見搭配如 marco de fotos（相框）、marco legal（法律架構）。",
+      "example_es": "Puse la foto de mi familia en un marco nuevo.",
+      "example_zh": "我把家人的照片放進一個新相框裡。",
+      "image": "emoji:🖼️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:marco",
+        "wiktionary:la:marcus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "materia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "物質；科目、學科",
+      "en": "matter, subject",
+      "ipa": "/maˈteɾja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*méh₂tēr",
+          "zh": "母親"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*mātēr",
+          "zh": "母親"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "māter",
+          "zh": "母親、根源"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "māteria",
+          "zh": "木材、材料、物質"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "materia",
+          "zh": "物質、科目"
+        }
+      ],
+      "cognates_en": [
+        "matter",
+        "material",
+        "mother"
+      ],
+      "story_zh": "源自拉丁語 māteria（材料、木材、物質），傳統上認為衍生自 māter（母親、源頭）。古羅馬哲學家西塞羅借用古希臘語 ὕλη（木材、物質）的概念，將其引申為構成宇宙萬物的「物質」，後來也延伸指學校裡的「學科、科目」。",
+      "hook_zh": "英文的 matter（物質）同源，萬物生長的源頭就像母親（māter）。",
+      "usage_zh": "除了指物理上的「物質」，學校裡常指「學科、科目」，與 asignatura 同義。",
+      "example_es": "Las matemáticas son mi materia favorita en la escuela.",
+      "example_zh": "數學是我在學校最喜歡的科目。",
+      "image": "emoji:📚",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:materia",
+        "wiktionary:la:materia",
+        "wiktionary:la:mater"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "oposición",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "反對、對立；公職考試",
+      "en": "opposition, civil service exam",
+      "ipa": "/oposiˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "oppositiōnem",
+          "zh": "反對、對抗"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "oposición",
+          "zh": "反對、公職考試"
+        }
+      ],
+      "cognates_en": [
+        "opposition"
+      ],
+      "story_zh": "源自拉丁語 oppositiōnem（反對、對抗）。在西班牙，除了指立場或政黨上的「反對派」，日常極常用於指競爭激烈的「公職考試」（oposiciones），因為所有考生都在相互競爭、互為對手。",
+      "hook_zh": "英文的 opposition（反對），在西班牙考公職就像面對成千上萬的對手。",
+      "usage_zh": "指「公職考試」時常作複數 las oposiciones，搭配動詞 preparar oposiciones。",
+      "example_es": "Ella está estudiando mucho para las oposiciones.",
+      "example_zh": "她正在努力準備公職考試。",
+      "image": "emoji:📝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:oposición"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "registro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "登記、記錄；搜查",
+      "en": "registration, record, search",
+      "ipa": "/reˈxistɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "regerere",
+          "zh": "帶回、記錄"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "regesta",
+          "zh": "記錄事項、清單"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "registrum",
+          "zh": "登記簿、記錄冊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "registro",
+          "zh": "登記、記錄、搜查"
+        }
+      ],
+      "cognates_en": [
+        "register"
+      ],
+      "story_zh": "源自拉丁語動詞 regerere（帶回、記錄），由 re-（回）加 gerere（攜帶）組成，引申為把事情帶回並寫下。晚期拉丁語形成名詞 regesta（記錄清單），中世紀拉丁語變為 registrum（登記簿），最終進入西語。",
+      "hook_zh": "英文的 register（登記），在西語警察進屋搜查也叫 registro（翻找記錄）。",
+      "usage_zh": "常見搭配有 el Registro Civil（戶政事務所）、hacer un registro（進行搜查）。",
+      "example_es": "Firmó el registro de entrada en la recepción.",
+      "example_zh": "他在接待處簽了登記表。",
+      "image": "emoji:📋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:registro",
+        "wiktionary:la:registrum",
+        "wiktionary:la:regero"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asamblea",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "大會、集會、議會",
+      "en": "assembly, meeting",
+      "ipa": "/asamˈblea/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "assemblée",
+          "zh": "集會、聚會"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "asamblea",
+          "zh": "大會、議會"
+        }
+      ],
+      "cognates_en": [
+        "assembly"
+      ],
+      "story_zh": "借自法語 assemblée（集會、聚集）。原指將眾人聚集在一處的活動，借入西班牙語後用來指眾人齊聚討論、決策的「全體大會、集會或議會」。",
+      "hook_zh": "英文的 assembly（集會），音近且同源，代表大家聚集開大會。",
+      "usage_zh": "陰性名詞。如 Asamblea General（聯合國大會）、asamblea de vecinos（住戶大會）。",
+      "example_es": "Los estudiantes convocaron una asamblea para mañana.",
+      "example_zh": "學生們召集了明天的全體大會。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:asamblea"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "detalle",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "細節；貼心舉動、小禮物",
+      "en": "detail, nice gesture, small gift",
+      "ipa": "/deˈtaʝe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "détail",
+          "zh": "細節"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "detalle",
+          "zh": "細節、貼心之舉"
+        }
+      ],
+      "cognates_en": [
+        "detail"
+      ],
+      "story_zh": "借自法語的 détail。在西語中除了指「細節」之外，也常引申指貼心周到的小舉動或小心意。英文的 detail 也是同一個來源。",
+      "hook_zh": "英文 detail 尾音改為 -e，就是西語的 detalle。",
+      "usage_zh": "陽性名詞。常用片語 en detalle（詳細地），或 tener un detalle（展現貼心之舉）。",
+      "example_es": "¿Puedes explicarlo con más detalle?",
+      "example_zh": "你能說得更詳細一點嗎？",
+      "image": "emoji:🔍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:detalle"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "empleo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "工作、職位；使用",
+      "en": "job, employment, use",
+      "ipa": "/emˈpleo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "emplear",
+          "zh": "僱用、使用"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "empleo",
+          "zh": "工作、職位、使用"
+        }
+      ],
+      "cognates_en": [
+        "employ",
+        "employment"
+      ],
+      "story_zh": "源自動詞 emplear（僱用、使用）的去動詞詞綴名詞。原意為「使用、任用」，進而演變為受僱獲得的「工作、職業」。英文的 employ、employment 皆同源。",
+      "hook_zh": "英文 employ（僱用）換成名詞字尾 -o，就是工作 empleo。",
+      "usage_zh": "陽性名詞。找工作是 buscar empleo，失業則是 desempleo。",
+      "example_es": "Ella está buscando un nuevo empleo.",
+      "example_zh": "她正在尋找一份新工作。",
+      "image": "emoji:💼",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:empleo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "enfermedad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "疾病、生病",
+      "en": "illness, disease",
+      "ipa": "/enfeɾmeˈdad/",
+      "breakdown": [
+        {
+          "part": "enfermo",
+          "zh": "生病的"
+        },
+        {
+          "part": "-edad",
+          "zh": "名詞字尾，表狀態或性質"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "firmus",
+          "zh": "堅固的、強壯的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnfirmus",
+          "zh": "虛弱的、生病的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnfirmitās",
+          "zh": "虛弱、疾病"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "enfermedad",
+          "zh": "疾病"
+        }
+      ],
+      "cognates_en": [
+        "infirmity",
+        "firm"
+      ],
+      "story_zh": "源自拉丁語 īnfirmitās（虛弱、疾病），由 in-（不）與 firmus（堅固、強壯）構成，原意指「不堅固、虛弱的狀態」。在西語中演變為指身體的「疾病」。",
+      "hook_zh": "形容詞 enfermo（生病的）加上抽象名詞字尾 -edad，就成了 enfermedad（疾病）。",
+      "usage_zh": "陰性名詞，字尾為 -dad，複數為 enfermedades。",
+      "example_es": "El descanso ayuda a prevenir la enfermedad.",
+      "example_zh": "充分休息有助於預防疾病。",
+      "image": "emoji:🤒",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:enfermedad",
+        "wiktionary:la:infirmitas",
+        "wiktionary:la:infirmus",
+        "wiktionary:la:firmus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "escena",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "場景、舞台；場面",
+      "en": "scene, stage",
+      "ipa": "/esˈθena/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "σκηνή",
+          "zh": "帳篷、舞台棚架"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "scaena",
+          "zh": "舞台、場景"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "escena",
+          "zh": "場景、舞台"
+        }
+      ],
+      "cognates_en": [
+        "scene"
+      ],
+      "story_zh": "學術借自拉丁語 scaena，源於古希臘語 σκηνή（帳篷、棚架）。古希臘劇場中演員在帳篷後換裝備戲，後來轉化指演出的「舞台」與戲劇中的「場景」。",
+      "hook_zh": "英文 scene 在字首 sc- 前加 e-，結尾加 -a，就是 escena。",
+      "usage_zh": "陰性名詞。en escena 為「在舞台上」，hacer una escena 則指「大吵大鬧、鬧脾氣」。",
+      "example_es": "Esa fue la mejor escena de la película.",
+      "example_zh": "那是這部電影中最精彩的一幕。",
+      "image": "emoji:🎬",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:escena"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estructura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "結構、構造",
+      "en": "structure",
+      "ipa": "/estɾuɡˈtuɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "struō",
+          "zh": "建造、堆砌"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "strūctūra",
+          "zh": "結構、構造"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estructura",
+          "zh": "結構"
+        }
+      ],
+      "cognates_en": [
+        "structure"
+      ],
+      "story_zh": "學術借自拉丁語 strūctūra，源於動詞 struō（建造、堆疊）加上名詞後綴 -tūra。原意為「建造方式」，引申為事物各部分相互關聯形成的「結構」。",
+      "hook_zh": "英文 structure 在字首 str- 前加 e-，即為西語 estructura。",
+      "usage_zh": "陰性名詞。可用於實體建築或抽象概念，如 estructura social（社會結構）。",
+      "example_es": "La estructura del edificio es muy sólida.",
+      "example_zh": "這棟建築物的結構非常堅固。",
+      "image": "emoji:🏗️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estructura"
+      ],
+      "writer": "gemini"
     }
   ]
 }
