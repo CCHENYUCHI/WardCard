@@ -18,7 +18,7 @@ const BATCH_SIZE = 100;
 const FUNCTION_POS = new Set(['article', 'det', 'pron', 'prep', 'conj', 'contraction', 'intj', 'particle']);
 // In running text these are names or shorthand (Luis, María, Brasil, PP), not "louis (coin)" or "brazilwood"
 const SKIP_WORDS = new Set(['luis', 'maría', 'brasil', 'pp', 'to', 'cuba', 'post', 'sr', 'miguel', 'japón', 'tv', 'fernando', 'jorge', 'valencia', 'lima', 'as',
-  'martín', 'castro', 'córdoba', 'panamá', 'romo', 'cristo', 'co', 'peña', 'áfrico', 'sub', 'et', 'mm', 'man', 'corea', 'cristina', 'vs', 'ja']);
+  'martín', 'castro', 'córdoba', 'panamá', 'romo', 'cristo', 'co', 'peña', 'áfrico', 'sub', 'et', 'mm', 'man', 'corea', 'cristina', 'vs', 'ja', 'paraguay', 'am', 'luca', 'rivera', 'top']);
 // Words that look like a form of another word but are learned on their own
 const NO_FOLD = new Set(['política', 'lista', 'firma']);
 // Kinds of Wiktionary entries that are not words to learn
@@ -32,7 +32,8 @@ const FOLD = {
   va: 'ir', vas: 'ir', van: 'ir', vamos: 'ir', voy: 'ir', ve: 'ir', fue: 'ir',
   da: 'dar', dé: 'dar', di: 'decir', dice: 'decir', digo: 'decir', dicho: 'decir',
   sé: 'saber', sabe: 'saber', vino: 'venir', vengo: 'venir', ven: 'venir', hecho: 'hacer', haz: 'hacer',
-  les: 'le', veces: 'vez', pasa: 'pasar', trata: 'tratar', tenia: 'tener', des: 'dar', pa: 'para', cabe: 'caber', salido: 'salir', saca: 'sacar', mata: 'matar', juro: 'jurar', nueva: 'nuevo', primera: 'primero', puede: 'poder', puedo: 'poder', quiero: 'querer', tengo: 'tener', tiene: 'tener', está: 'estar', estaba: 'estar'
+  les: 'le', veces: 'vez', pasa: 'pasar', trata: 'tratar', tenia: 'tener', des: 'dar', pa: 'para', cabe: 'caber', salido: 'salir', saca: 'sacar', mata: 'matar', juro: 'jurar', mio: 'mío', manda: 'mandar',
+  previa: 'previo', 'eléctrica': 'eléctrico', financiera: 'financiero', cuarta: 'cuarto', plena: 'pleno', nueva: 'nuevo', primera: 'primero', puede: 'poder', puedo: 'poder', quiero: 'querer', tengo: 'tener', tiene: 'tener', está: 'estar', estaba: 'estar'
 };
 
 // Possible base words of an inflected adjective / noun form: nueva -> nuevo, veces -> vez, cuentos -> cuento

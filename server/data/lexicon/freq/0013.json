@@ -793,6 +793,187 @@
         "wiktionary:es:herido"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "inmigrante",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "外來移民、移民",
+      "en": "immigrant",
+      "ipa": "/immiˈɡɾante/",
+      "breakdown": [
+        {
+          "part": "inmigrar",
+          "zh": "移入"
+        },
+        {
+          "part": "-ante",
+          "zh": "做…的人"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "inmigrar + -ante",
+          "zh": "移入 + 表示…的人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "inmigrante",
+          "zh": "移民"
+        }
+      ],
+      "cognates_en": [
+        "immigrant"
+      ],
+      "story_zh": "源自動詞 inmigrar（移居入境）加上表示「做此動作的人」的字尾 -ante。字面意思就是「移居遷入某國的人」，專門指從外國遷入本國定居的移民。",
+      "hook_zh": "in-（進入）加上 migrante（遷徙者），遷入新國家定居的人就是外來移民。英文也是 immigrant。",
+      "usage_zh": "陰陽同形的名詞，依指涉對象搭配冠詞：el inmigrante（男移民）、la inmigrante（女移民）。",
+      "example_es": "Muchos inmigrantes llegaron a la ciudad en busca de trabajo.",
+      "example_zh": "許多移民來到這座城市尋找工作。",
+      "image": "emoji:🧳",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:inmigrante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "jurado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "陪審團；評審、陪審員",
+      "en": "jury; juror, judge",
+      "ipa": "/xuˈɾado/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "iūrātus",
+          "zh": "宣誓的、發過誓的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "jurado",
+          "zh": "陪審團、陪審員"
+        }
+      ],
+      "cognates_en": [
+        "jury"
+      ],
+      "story_zh": "源自拉丁語 iūrātus，原意為「發過誓的、宣誓就職的」。在法庭或評選活動中，成員必須莊嚴宣誓公正評判，因而演變為指稱受誓就職的「陪審員」或整個「陪審團」。",
+      "hook_zh": "在法庭上舉手宣誓（jurar）公正的人，坐在台前組成陪審團（jurado）。與英文 jury 同源。",
+      "usage_zh": "指整個「陪審團」或「評審團」為陽性名詞（el jurado）；指個別評審時也可作 el jurado / la jurada。",
+      "example_es": "El jurado anunció el veredicto después del juicio.",
+      "example_zh": "陪審團在審判結束後宣布了判決。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:jurado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "paquete",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "包裹、包裝袋；套裝組合",
+      "en": "parcel, package",
+      "ipa": "/paˈkete/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "paquet",
+          "zh": "包裹、捆包"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paquete",
+          "zh": "包裹"
+        }
+      ],
+      "cognates_en": [
+        "package",
+        "packet"
+      ],
+      "story_zh": "借自法語 paquet（包裹、捆包）。原本指將多件物品捆紮在一起的包件，借入西語後保留了「包裹、郵包」的意思，現代也廣泛延伸為旅遊或產品的「套裝行程／組合」。",
+      "hook_zh": "發音與英文 package 和 packet 很像，就是郵差送來打包好的「包裹」。",
+      "usage_zh": "陽性名詞。口語中也可以用來戲謔形容笨手笨腳、派不上用場的人（笨手笨腳者）。",
+      "example_es": "Recibí un paquete de mi familia esta mañana.",
+      "example_zh": "今天早上我收到了家人寄來的一個包裹。",
+      "image": "emoji:📦",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paquete"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "propaganda",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "政治宣傳；商業廣告",
+      "en": "propaganda; advertisement",
+      "ipa": "/pɾopaˈɡanda/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "新拉丁語",
+          "word": "propāganda",
+          "zh": "應傳播的事物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "propaganda",
+          "zh": "宣傳、廣告"
+        }
+      ],
+      "cognates_en": [
+        "propaganda"
+      ],
+      "story_zh": "為新拉丁語 propāganda 的學術借詞，原意是「應當被傳播推廣的事物」。最早源自天主教會為向全球傳播信仰而成立的宣教組織，後來詞義泛化，在西語中可用於政治理念的宣傳，在部分西語國家也常指商業廣告。",
+      "hook_zh": "英文就是同一個字 propaganda；想像把理念或商品向外「傳播、宣傳」（propagate）給大眾。",
+      "usage_zh": "陰性名詞。在許多拉美國家常直接作為「廣告」使用，相當於 publicidad。",
+      "example_es": "El gobierno lanzó una campaña de propaganda.",
+      "example_zh": "政府發起了一場宣傳活動。",
+      "image": "emoji:📢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:propaganda"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ramón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "麵包堅果樹、朴樹",
+      "en": "breadnut; hackberry",
+      "ipa": "/raˈmon/",
+      "breakdown": [
+        {
+          "part": "ramo",
+          "zh": "樹枝"
+        },
+        {
+          "part": "-ón",
+          "zh": "大（指大詞尾）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "茂密的樹枝（ramo）加上指大後綴（-ón），形成枝葉繁茂的高大樹木 ramón。",
+      "usage_zh": "陽性名詞，複數為 ramones；常指中美洲的麵包堅果樹（馬雅堅果），葉與種子皆可利用。",
+      "example_es": "El ramón es un árbol tradicional de la selva maya.",
+      "example_zh": "麵包堅果樹是馬雅叢林的傳統樹種。",
+      "image": "emoji:🌳",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:ramón"
+      ],
+      "writer": "gemini"
     }
   ]
 }
