@@ -1,471 +1,7 @@
 {
   "theme": "freq-0022",
-  "theme_zh": "常用字（頻率第 5257–5494 名）",
+  "theme_zh": "常用字（頻率第 5286–5544 名）",
   "entries": [
-    {
-      "word": "voluntario",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "志工、自願者；自願的",
-      "en": "volunteer; voluntary",
-      "ipa": "/bolunˈtaɾjo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "voluntārius",
-          "zh": "自願的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "voluntario",
-          "zh": "志工、自願的"
-        }
-      ],
-      "cognates_en": [
-        "volunteer",
-        "voluntary"
-      ],
-      "story_zh": "源自拉丁語 voluntārius（自願的）。在古羅馬時期，該詞指發自內心意願而非受迫所做的行動，後來演變為西語中出於自願服務的「志工」。英文的 volunteer 與 voluntary 亦同源。",
-      "hook_zh": "聯想英文 volunteer（志工），volun- 開頭就是主動舉手自願服務。",
-      "usage_zh": "當名詞指男性志工，女性為 la voluntaria；亦常作形容詞修飾名詞。",
-      "example_es": "Juan trabaja como voluntario en el hospital local.",
-      "example_zh": "胡安在當地醫院擔任志工。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:voluntario"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "adquisición",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "獲得、取得；收購",
-      "en": "acquisition; procurement",
-      "ipa": "/adkisiˈθjon/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "adquisītiōnem",
-          "zh": "取得、獲得"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "adquisición",
-          "zh": "獲得、收購"
-        }
-      ],
-      "cognates_en": [
-        "acquisition"
-      ],
-      "story_zh": "作為學者借詞源自拉丁語 adquisītiōnem，本義為「取得、獲得」。西語保留了其正式書面語意，廣泛應用於商業收購或重要財產的購置。英文同源字為 acquisition。",
-      "hook_zh": "拼法與英文 acquisition 極為接近，看到 -ción 就聯想到企業「收購」。",
-      "usage_zh": "陰性名詞；複數形式為 adquisiciones（去重音符號）。",
-      "example_es": "La empresa anunció la adquisición de una nueva marca.",
-      "example_zh": "這家公司宣布收購了一個新品牌。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:adquisición"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "antigüedad",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "古老、古代；古董；年資",
-      "en": "antiquity; antique; seniority",
-      "ipa": "/antiɡweˈdad/",
-      "breakdown": [
-        {
-          "part": "antiguo",
-          "zh": "古老的"
-        },
-        {
-          "part": "-edad",
-          "zh": "性質、狀態（名詞字尾）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "antīquus",
-          "zh": "古老的"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "antiquitas",
-          "zh": "古老、古代"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "antigüedad",
-          "zh": "古老、古董、年資"
-        }
-      ],
-      "cognates_en": [
-        "antiquity",
-        "antique"
-      ],
-      "story_zh": "源自拉丁語 antiquitas（古代、古老），由 antīquus（古老）演變而來，西語亦可拆為 antiguo 加名詞字尾 -edad。除了指歷史久遠外，在日常生活中常指「古董」或職場上的「年資」。",
-      "hook_zh": "看到 antiguo（老舊的）加上抽象字尾 -dad，聯想到古董店滿滿的歷史感。",
-      "usage_zh": "注意 ü 上有分音符發 /ɡwe/ 音；指年資時常見搭配 tener antigüedad。",
-      "example_es": "Este reloj de pared es una valiosa antigüedad.",
-      "example_zh": "這座掛鐘是一件珍貴的古董。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:antigüedad",
-        "wiktionary:la:antiquitas"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "balance",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "結算、評估；資產負債表",
-      "en": "balance; balance sheet",
-      "ipa": "/baˈlanθe/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "*bilancia",
-          "zh": "天平"
-        },
-        {
-          "lang_zh": "法語",
-          "word": "balance",
-          "zh": "天平、平衡"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "balance",
-          "zh": "結算、評估"
-        }
-      ],
-      "cognates_en": [
-        "balance"
-      ],
-      "story_zh": "借自法語 balance，最早源於晚期拉丁語 *bilancia（天平）。由原本拿天平稱重、權衡兩端之意，引申為對局勢或收支進行全盤的「評估」與「結算」，在會計中指「資產負債表」。",
-      "hook_zh": "英文也是 balance，想像天平兩端平衡，才能做好公司的財務收支結算。",
-      "usage_zh": "陽性名詞 el balance；常見片語 hacer balance（進行總結、回顧評估）。",
-      "example_es": "Al final del año hacemos un balance de los resultados.",
-      "example_zh": "在年底時我們會對成果做一次總結評估。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:balance"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "beca",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "獎學金、助學金",
-      "en": "scholarship, grant",
-      "ipa": "/ˈbeka/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "beccus",
-          "zh": "鳥喙"
-        },
-        {
-          "lang_zh": "義大利語",
-          "word": "becco",
-          "zh": "鳥喙"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "beca",
-          "zh": "獎學金"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "借自義大利語 becco，源自拉丁語 beccus（鳥喙，推測可能源於高盧語）。中世紀歐洲領受助學金的學生會披戴長條狀如鳥喙的布袍（beca），後來這件特殊袍服轉為榮譽象徵，詞義演變成現代的「獎學金」。",
-      "hook_zh": "拿到獎學金（beca）的優秀學者，戴著如鳥喙般帥氣的中世紀學士斗篷。",
-      "usage_zh": "常見動詞搭配為 solicitar una beca（申請獎學金）或 conseguir una beca。",
-      "example_es": "Ella consiguió una beca para estudiar en el extranjero.",
-      "example_zh": "她獲得了一筆出國留學的獎學金。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:beca",
-        "wiktionary:la:beccus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "canario",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "金絲雀；加納利群島的",
-      "en": "canary; of the Canary Islands",
-      "ipa": "/kaˈnaɾjo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "Canarias",
-          "zh": "加納利群島"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "canario",
-          "zh": "金絲雀、加納利群島的"
-        }
-      ],
-      "cognates_en": [
-        "canary"
-      ],
-      "story_zh": "源自加納利群島（Canarias）。這種黃色小鳥因為原生於該群島而得名「金絲雀」；英文的 canary 也是同源借詞。",
-      "hook_zh": "加納利（Canarias）群島上清脆啼叫的黃色小鳥，就是 canario（金絲雀）。",
-      "usage_zh": "可作陽性名詞指金絲雀或加納利人，亦可作形容詞，陰性為 canaria。",
-      "example_es": "El canario canta todas las mañanas.",
-      "example_zh": "這隻金絲雀每天早上都會唱歌。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:canario"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "casar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "結婚；為…主持婚禮；使吻合",
-      "en": "to marry; to match up",
-      "ipa": "/kaˈsaɾ/",
-      "breakdown": [
-        {
-          "part": "casa",
-          "zh": "家、房屋"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "casa + -ar",
-          "zh": "家 + 動詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "casar",
-          "zh": "成家、結婚"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "推測源自 casa（家、房屋）加上動詞字尾 -ar，字面意思就是「成為家庭的一份子、組建家庭」，進而引申出「結婚」之意。",
-      "hook_zh": "有了自己的 casa（家），兩個人就要 casar（結婚）成家了。",
-      "usage_zh": "「與某人結婚」用反身動詞搭配介詞 con：casarse con alguien。",
-      "example_es": "Ellos se van a casar el próximo mes.",
-      "example_zh": "他們下個月要結婚。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:casar"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "citado",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "被提及的、上述的、引用的",
-      "en": "cited, mentioned, aforementioned",
-      "ipa": "/θiˈtado/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "在文章中被「點名引用（cita）」過的文件，就是 citado（上述的）。",
-      "usage_zh": "常置於名詞前作定語，例如 el citado documento（前述文件）；陰性為 citada。",
-      "example_es": "El autor citado en el artículo es muy famoso.",
-      "example_zh": "文章中被引用的作者非常有名。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:citado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "considerable",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "相當大的、可觀的、值得考慮的",
-      "en": "considerable, significant",
-      "ipa": "/konsideˈɾable/",
-      "breakdown": [
-        {
-          "part": "considerar",
-          "zh": "考慮"
-        },
-        {
-          "part": "-able",
-          "zh": "能夠…的、值得…的"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "considerar + -able",
-          "zh": "考慮 + 值得…的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "considerable",
-          "zh": "值得考慮的、可觀的"
-        }
-      ],
-      "cognates_en": [
-        "considerable"
-      ],
-      "story_zh": "由動詞 considerar（考慮）加上表示「值得…的」之後綴 -able 構成，原本指「值得認真考量、引人注目的事物」，後來引申為數量或程度「相當大的、可觀的」。",
-      "hook_zh": "英文同形字 considerable，數量大到必須好好「consider（考慮）」。",
-      "usage_zh": "陰陽同形（un esfuerzo considerable / una suma considerable）。",
-      "example_es": "Tuvimos un gasto considerable este mes.",
-      "example_zh": "我們這個月有一筆相當可觀的花費。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:considerable"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "convento",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "修道院",
-      "en": "convent, monastery",
-      "ipa": "/komˈbento/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "conventus",
-          "zh": "聚會、集會、集社"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "convento",
-          "zh": "修道院"
-        }
-      ],
-      "cognates_en": [
-        "convent"
-      ],
-      "story_zh": "借自拉丁語 conventus（聚會、集會、集社），原本指人群聚集在一起的集會，在教會拉丁語中專指修道士或修女共同生活的居所，即「修道院」。古西班牙語曾寫作 conviento。",
-      "hook_zh": "修士與修女「聚集（convene）」共同修行的地方，就是 convento（修道院）。",
-      "usage_zh": "陽性名詞 el convento，複數為 conventos。",
-      "example_es": "Hay un convento muy antiguo en la colina.",
-      "example_zh": "山丘上有一座非常古老的修道院。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:convento",
-        "wiktionary:la:conventus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "coro",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "合唱團、副歌",
-      "en": "choir, chorus",
-      "ipa": "/ˈkoɾo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "χορός",
-          "zh": "歌舞、合唱"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "chorus",
-          "zh": "合唱隊、舞蹈"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "coro",
-          "zh": "唱詩班、合唱團"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "coro",
-          "zh": "合唱團、副歌"
-        }
-      ],
-      "cognates_en": [
-        "chorus",
-        "choir"
-      ],
-      "story_zh": "源自古希臘語 χορός（歌舞隊），經拉丁語 chorus 與古西班牙語 coro 演變而來。古希臘戲劇中由歌舞隊邊唱邊評論劇情，後來演變成教堂唱詩班，在現代西語中也指歌曲的副歌。",
-      "hook_zh": "英文 chorus（副歌）與 choir（唱詩班）同源，想像合唱團齊聚教堂高歌。",
-      "usage_zh": "常見搭配 cantar en un coro（在合唱團唱歌），歌曲副歌亦常稱 el coro。",
-      "example_es": "Ella canta en el coro de la escuela.",
-      "example_zh": "她在學校的合唱團唱歌。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:coro"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "decena",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "十個一組、十位數、約十個",
-      "en": "ten, set of ten",
-      "ipa": "/deˈθena/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "decēni",
-          "zh": "每十個"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "decēna",
-          "zh": "十個一組"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "decena",
-          "zh": "十個一組、十位數"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁語分配數詞 decēni（每十個）及其陰性形式 decēna，指「十個一組」的集合概念。在現代西語中，常用來表示數學上的十位數，或日常生活中約十個的數量。",
-      "hook_zh": "字頭聯想到 diez（十），結尾像 docena（打、十二個），代表十個一組。",
-      "usage_zh": "常用複數 decenas de 表示「數十個」，後面接複數名詞。",
-      "example_es": "Compré una decena de huevos en el mercado.",
-      "example_zh": "我在市場買了十顆雞蛋。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:decena"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "desigualdad",
       "article": "la",
@@ -609,30 +145,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:evidentemente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "full",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "葫蘆（撲克牌型：三條加一對）",
-      "en": "full house (poker)",
-      "ipa": "/ˈful/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "full"
-      ],
-      "story_zh": "",
-      "hook_zh": "撲克牌拿到三條加一對，手牌滿滿（full），就是「葫蘆」！",
-      "usage_zh": "陽性名詞，複數同形（los full），直接借自英文 full house 的簡稱。",
-      "example_es": "Él ganó la partida de póquer con un full de ases.",
-      "example_zh": "他用三條 A 帶一對的葫蘆贏了那場撲克賽。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:full"
       ],
       "writer": "gemini"
     },
@@ -1064,49 +576,6 @@
       "writer": "gemini"
     },
     {
-      "word": "marta",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "紫貂、貂",
-      "en": "marten",
-      "ipa": "/ˈmaɾta/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "法蘭克語",
-          "word": "*marþr",
-          "zh": "貂"
-        },
-        {
-          "lang_zh": "古法語",
-          "word": "martre",
-          "zh": "貂"
-        },
-        {
-          "lang_zh": "中古法語",
-          "word": "marte",
-          "zh": "貂"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "marta",
-          "zh": "貂"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "推測可能借自中古法語 marte，源自古法語 martre，最終可追溯至法蘭克語的 *marþr。指一種生活於森林中、擁有珍貴毛皮的鼬科食肉動物（紫貂或貂）。",
-      "hook_zh": "小動物紫貂（marta）毛茸茸很可愛，名字跟常見西語女孩名 Marta 一模一樣。",
-      "usage_zh": "陰性名詞。注意此字也是西語常見女性人名（瑪塔），指動物時首字小寫。",
-      "example_es": "Vimos una marta subiendo a un árbol en el bosque.",
-      "example_zh": "我們看見一隻紫貂在森林裡爬上一棵樹。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:marta"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "modificación",
       "article": "la",
       "pos": "sustantivo",
@@ -1401,39 +870,6 @@
       "writer": "gemini"
     },
     {
-      "word": "test",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "測驗、考試；心理或醫學檢驗",
-      "en": "test, quiz",
-      "ipa": "/ˈtest/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "test",
-          "zh": "測驗、試驗"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "test",
-          "zh": "測驗、考試"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "直接借自英語 test（測驗、試驗）。在西班牙語中主要用於指稱選擇題測驗、性向測驗、心理學測試或醫學檢測等標準化測驗。",
-      "hook_zh": "跟英文 test 完全相同，在西語中專指選擇題小考、心理測驗或快篩。",
-      "usage_zh": "陽性名詞，複數可用 los test 或 los tests。學校的正式大考更常用 examen。",
-      "example_es": "Mañana tenemos un test de opción múltiple.",
-      "example_zh": "明天我們有一場選擇題測驗。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:test"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "acoso",
       "article": "el",
       "pos": "sustantivo",
@@ -1533,39 +969,6 @@
       "writer": "gemini"
     },
     {
-      "word": "arturo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "貪吃的人、貪吃者",
-      "en": "glutton",
-      "ipa": "/aɾˈtuɾo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "Arturo",
-          "zh": "人名阿圖羅"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "arturo",
-          "zh": "貪吃者"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自男子名 Arturo（阿圖羅），因為發音與動詞 hartar（吃飽、吃得過飽）押韻，而在西班牙語中被戲謔地用來指「貪吃的人」，屬於民間押韻造詞。",
-      "hook_zh": "阿圖羅（Arturo）吃得太飽（hartar），肚子圓滾滾成了大胃王。",
-      "usage_zh": "陰性為 artura（貪吃女性），複數為 arturos。多為口語或戲謔用法。",
-      "example_es": "Ese chico es un arturo, no para de comer.",
-      "example_zh": "那個男生真是個貪吃鬼，一直吃個不停。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:arturo"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "autopista",
       "article": "la",
       "pos": "sustantivo",
@@ -1639,28 +1042,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:azar"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "center",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "中鋒；中外野手",
-      "en": "center",
-      "ipa": "/ˈsenteɾ/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "直接借自英文 center，在籃球或棒球等運動中指位於中間防線的「中鋒」。",
-      "usage_zh": "陽性外來語名詞，複數為 centers；一般生活中的「中心」西語使用 centro。",
-      "example_es": "El center del equipo anotó muchos puntos.",
-      "example_zh": "球隊的中鋒得了許多分。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:center"
       ],
       "writer": "gemini"
     },
@@ -1743,39 +1124,6 @@
       "sources": [
         "wiktionary:es:circo",
         "wiktionary:la:circus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "colón",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "科朗（中美洲貨幣單位）",
-      "en": "colón (currency)",
-      "ipa": "/koˈlon/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "Cristóbal Colón",
-          "zh": "克里斯多福·哥倫布"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "colón",
-          "zh": "科朗"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "此貨幣名稱取自著名航海家克里斯多福·哥倫布（Cristóbal Colón）的西班牙語姓氏。哥斯大黎加等中美洲國家為了紀念其抵達美洲的歷史，將國家法定貨幣命名為 colón。",
-      "hook_zh": "哥倫布（Colón）航向美洲，中美洲國家用他的名字當貨幣（colón）。",
-      "usage_zh": "陽性名詞，複數為 colones。指哥斯大黎加或薩爾瓦多（歷史上）的貨幣。",
-      "example_es": "Pagué cinco mil colones por el almuerzo en Costa Rica.",
-      "example_zh": "我在哥斯大黎加花了五千科朗吃午餐。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:colón"
       ],
       "writer": "gemini"
     },
@@ -2488,28 +1836,6 @@
       "writer": "gemini"
     },
     {
-      "word": "salamanca",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "（傳說中的）巫術洞穴；邪靈蜥蜴",
-      "en": "witches' cave; mythical creature",
-      "ipa": "/salaˈmanka/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "傳說薩拉曼卡大學曾傳授黑魔法，民間便將女巫聚集的神秘洞穴稱為 salamanca。",
-      "usage_zh": "主要用於美洲西班牙語民間傳說，指女巫與惡魔立約聚會的天然洞穴。",
-      "example_es": "Cuenta la leyenda que las brujas se reunían en la salamanca.",
-      "example_zh": "傳說女巫們聚集在巫術洞穴裡。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:salamanca"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "secuestro",
       "article": "el",
       "pos": "sustantivo",
@@ -2638,28 +1964,6 @@
       "sources": [
         "wiktionary:es:sexto",
         "wiktionary:la:sextus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "suyos",
-      "article": "",
-      "pos": "pronombre",
-      "zh": "他們的；您的；你們的（所有格代名詞）",
-      "en": "theirs, yours",
-      "ipa": "/ˈsuʝos/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "所有格 su（他的、您的）變為重讀複數形 suyos，指的是對方的多樣物品。",
-      "usage_zh": "代名詞時常搭配冠詞：los suyos。修飾陽性複數名詞，可表第三人稱或第二人稱尊稱。",
-      "example_es": "Estos libros no son míos, son los suyos.",
-      "example_zh": "這些書不是我的，是他們的。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:suyos"
       ],
       "writer": "gemini"
     },
@@ -3618,6 +2922,220 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:ejemplar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "escasez",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "缺乏、短缺、匱乏",
+      "en": "shortage, scarcity",
+      "ipa": "/eskaˈseθ/",
+      "breakdown": [
+        {
+          "part": "escaso",
+          "zh": "稀少的"
+        },
+        {
+          "part": "-ez",
+          "zh": "名詞字尾，表示性質或狀態"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "架子上空空如也（escaso），處於嚴重的物資「匱乏」狀態（-ez）。",
+      "usage_zh": "陰性名詞，複數為 escaseces。常見搭配為 escasez de...（…的短缺）。",
+      "example_es": "Hay escasez de agua en la región.",
+      "example_zh": "該地區正面臨水資源短缺。",
+      "image": "emoji:🏜️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:escasez"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "escritorio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "書桌、寫字台；電腦桌面",
+      "en": "desk, study, desktop",
+      "ipa": "/eskɾiˈtoɾjo/",
+      "breakdown": [
+        {
+          "part": "escrit-",
+          "zh": "書寫"
+        },
+        {
+          "part": "-orio",
+          "zh": "處所或器具字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "scrībō",
+          "zh": "書寫"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "scrīptor",
+          "zh": "抄寫員、作者"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "scrīptōrius",
+          "zh": "與書寫相關的"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "scrīptōrium",
+          "zh": "抄寫室、寫字室"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "escritorio",
+          "zh": "書桌、寫字台"
+        }
+      ],
+      "cognates_en": [
+        "scribe"
+      ],
+      "story_zh": "源自拉丁語 scrībō（書寫），衍生出 scrīptor（抄寫員）與中世紀拉丁語 scrīptōrium（修道院的寫字室或抄經室）。後來詞義從抄寫的房間轉變為寫字用的「書桌」，在現代電腦領域更延伸為「電腦桌面」。",
+      "hook_zh": "抄寫員（scribe）在書桌（escritorio）前提筆寫字（escribir）。",
+      "usage_zh": "陽性名詞。除了實體辦公桌、書桌，電腦的「桌面」也是同一個字。",
+      "example_es": "Tengo muchos libros en mi escritorio.",
+      "example_zh": "我的書桌上有很多書。",
+      "image": "emoji:🖥️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:escritorio",
+        "wiktionary:la:scriptorium",
+        "wiktionary:la:scribo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "especialista",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "專家、專科醫生",
+      "en": "specialist",
+      "ipa": "/espeθjaˈlista/",
+      "breakdown": [
+        {
+          "part": "especial",
+          "zh": "特別的、專門的"
+        },
+        {
+          "part": "-ista",
+          "zh": "從事…的人"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "specialist"
+      ],
+      "story_zh": "",
+      "hook_zh": "專門（especial）鑽研特定領域的人（-ista），就是「專家」。",
+      "usage_zh": "陰陽同形名詞：el especialista 指男專家，la especialista 指女專家。",
+      "example_es": "Ella es especialista en medicina interna.",
+      "example_zh": "她是內科專科醫生。",
+      "image": "emoji:🩺",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:especialista"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "eterno",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "永恆的、永久的",
+      "en": "eternal",
+      "ipa": "/eˈteɾno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "aeternus",
+          "zh": "永恆的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "eterno",
+          "zh": "永恆的"
+        }
+      ],
+      "cognates_en": [
+        "eternal"
+      ],
+      "story_zh": "西班牙語借自拉丁語 aeternus，表示無窮無盡、跨越時間的「永恆」。英文同源字 eternal 保留了相同的字義與構詞。",
+      "hook_zh": "長相與英文 eternal 極度相似，記住 e- 開頭代表「永恆的」。",
+      "usage_zh": "形容詞隨名詞作陰陽性變化（eterno / eterna），常用於文學或修辭中描繪無盡的時間。",
+      "example_es": "El amor eterno es un tema común en la poesía.",
+      "example_zh": "永恆的愛是詩歌中常見的主題。",
+      "image": "emoji:♾️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:eterno"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "extender",
+      "article": "",
+      "pos": "verbo",
+      "zh": "伸展、擴展、展開；蔓延",
+      "en": "to extend, to expand, to spread",
+      "ipa": "/eɡstenˈdeɾ/",
+      "breakdown": [
+        {
+          "part": "ex-",
+          "zh": "向外"
+        },
+        {
+          "part": "tend-",
+          "zh": "伸展"
+        },
+        {
+          "part": "-er",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ex- + tendō",
+          "zh": "向外 + 伸展"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "extendō",
+          "zh": "向外伸展、擴大"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "extender",
+          "zh": "伸展、擴展"
+        }
+      ],
+      "cognates_en": [
+        "extend"
+      ],
+      "story_zh": "源自拉丁語 extendere，由字首 ex-（向外）與動詞 tendō（拉伸、伸展）組合而成，字面意思是「往外拉開」。引申指展開物體、延長時間或擴大空間範圍。英文的 extend 亦為同源字。",
+      "hook_zh": "字根「向外（ex-）拉伸（tender）」，英文 extend 加上西語動詞尾 -er。",
+      "usage_zh": "現在式為 e > ie 不規則變化（yo extiendo）。代名動詞 extenderse 常表示「蔓延、延伸」。",
+      "example_es": "El fuego se extendió rápidamente por el bosque.",
+      "example_zh": "火勢在森林中迅速蔓延。",
+      "image": "emoji:↔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:extender",
+        "wiktionary:la:extendo"
       ],
       "writer": "gemini"
     }
