@@ -3234,6 +3234,45 @@
       "writer": "gemini"
     },
     {
+      "word": "apostar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "打賭、下注",
+      "en": "to bet",
+      "ipa": "/aposˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "appositus",
+          "zh": "相鄰的、放置"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*appositāre",
+          "zh": "打賭、下注"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "apostar",
+          "zh": "打賭"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自通俗拉丁語 *appositāre，進一步源自拉丁語 appositus。演變上與把賭注「放置」在檯面上相關，後引申為下注、打賭。",
+      "hook_zh": "把籌碼擺上檯面（apostar），跟朋友打賭誰會贏。",
+      "usage_zh": "現在式第一人稱單數為 apuesto（o 變 ue 的不規則變化）。常搭配 apostar por（押注在…）。",
+      "example_es": "No me gusta apostar dinero en los juegos de azar.",
+      "example_zh": "我不喜歡在博弈遊戲中賭錢。",
+      "image": "emoji:🎲",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:apostar",
+        "wiktionary:la:appositus"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "bancario",
       "article": "",
       "pos": "adjetivo",
