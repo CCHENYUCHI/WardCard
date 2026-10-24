@@ -3529,6 +3529,234 @@
         "wiktionary:es:inferior"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "mental",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "心智的、心理的、精神的",
+      "en": "mental",
+      "ipa": "/menˈtal/",
+      "breakdown": [
+        {
+          "part": "mente",
+          "zh": "心智、大腦"
+        },
+        {
+          "part": "-al",
+          "zh": "…的（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mens",
+          "zh": "心智、心思"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "mentalis",
+          "zh": "心智的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mental",
+          "zh": "心智的、精神的"
+        }
+      ],
+      "cognates_en": [
+        "mental",
+        "mind"
+      ],
+      "story_zh": "源自拉丁語 mēns（心智、理性），在晚期拉丁語加上形容詞字尾 -ālis 演變為 mentālis，後進入西班牙語。英文的 mental 與 mind 亦出自同一個印歐語根，皆指心靈與精神層面。",
+      "hook_zh": "英文 mental 直接轉換，形容詞字尾 -al 加上 mente（心智），指大腦與心理。",
+      "usage_zh": "陰陽同形（un reto mental / la salud mental）。常用於 salud mental（心理健康）。",
+      "example_es": "Es importante cuidar la salud mental.",
+      "example_zh": "照顧心理健康非常重要。",
+      "image": "emoji:🧠",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mental",
+        "wiktionary:la:mentalis",
+        "wiktionary:la:mens"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "musical",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "音樂的；音樂劇",
+      "en": "musical",
+      "ipa": "/musiˈkal/",
+      "breakdown": [
+        {
+          "part": "música",
+          "zh": "音樂"
+        },
+        {
+          "part": "-al",
+          "zh": "…的（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "musical"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文就是 musical，由 música（音樂）加上形容詞字尾 -al 構成。",
+      "usage_zh": "陰陽同形（un instrumento musical）。作陽性名詞時指「音樂劇」（el musical）。",
+      "example_es": "Mi hermana toca un instrumento musical.",
+      "example_zh": "我妹妹會彈奏一種樂器。",
+      "image": "emoji:🎵",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:musical"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "orgullo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "驕傲、自豪、虛榮",
+      "en": "pride",
+      "ipa": "/oɾˈɡuʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*orgollium",
+          "zh": "驕傲"
+        },
+        {
+          "lang_zh": "加泰隆尼亞語",
+          "word": "orgull",
+          "zh": "驕傲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "orgullo",
+          "zh": "驕傲、自豪"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自通俗拉丁語 *orgollium，經由加泰隆尼亞語 orgull 借入西班牙語。字義涵蓋正面的「以某事為榮、尊嚴」，以及負面的「傲慢、虛榮心」。",
+      "hook_zh": "獲獎時忍不住「握拳喲」（orgullo），臉上寫滿了自豪與驕傲。",
+      "usage_zh": "陽性名詞。常搭配 estar orgulloso de…（為…感到驕傲）或 sentir orgullo（感到自豪）。",
+      "example_es": "Siento mucho orgullo por mis hijos.",
+      "example_zh": "我為我的孩子們感到非常驕傲。",
+      "image": "emoji:🦚",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:orgullo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "oriente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "東方、東邊",
+      "en": "east, Orient",
+      "ipa": "/oˈɾjente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "orientem",
+          "zh": "東方、升起處"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "oriente",
+          "zh": "東方"
+        }
+      ],
+      "cognates_en": [
+        "orient",
+        "orientation"
+      ],
+      "story_zh": "書面借自拉丁語 orientem，原意指太陽「升起之處」，引申為方位上的東方。英文的 Orient（東方）與 orient（定方位）皆源於同一拉丁字。",
+      "hook_zh": "太陽從東方升起，英文的 Orient（東方）就是 oriente。",
+      "usage_zh": "陽性名詞。大寫 Oriente 指東方世界（如 Medio Oriente 中東），反義詞為 occidente（西方）。",
+      "example_es": "El sol siempre sale por el oriente.",
+      "example_zh": "太陽總是從東方升起。",
+      "image": "emoji:🌅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:oriente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "paciente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "有耐心的；病人",
+      "en": "patient",
+      "ipa": "/paˈθjente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "patientem",
+          "zh": "忍耐的、受苦的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paciente",
+          "zh": "有耐心的；病人"
+        }
+      ],
+      "cognates_en": [
+        "patient",
+        "patience"
+      ],
+      "story_zh": "書面借自拉丁語 patientem（忍受、承受者）。能忍受等待或痛苦即「有耐心的」，引申指忍受病痛折磨的人，即「病人」。英文的 patient 亦同源。",
+      "hook_zh": "英文 patient 一模一樣，生病的人（病人）在診間必須「有耐心」等待。",
+      "usage_zh": "陰陽同形。形容詞配 ser paciente；亦可作名詞指病人（el/la paciente）。",
+      "example_es": "Tienes que ser paciente con los niños.",
+      "example_zh": "你對小孩子要有耐心。",
+      "image": "emoji:⏳",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paciente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "paga",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "工資、薪水；（父母給的）零用錢",
+      "en": "salary, allowance, payment",
+      "ipa": "/ˈpaɡa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pagar",
+          "zh": "支付、付錢"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paga",
+          "zh": "工資、零用錢"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 pagar（支付）的動詞衍生名詞。字面核心為「支付的金錢」，在西語中引申指定期領取的工資或薪餉，在家庭生活裡則特別常用來指父母定期給孩子的零用錢。",
+      "hook_zh": "動詞 pagar 是付錢，拿到的那筆錢就是 paga（薪水、零用錢）。",
+      "usage_zh": "陰性名詞。西班牙家庭常說 dar la paga（給零用錢），職場上 paga extra 則指年終或額外獎金。",
+      "example_es": "Mis padres me daban la paga cada semana.",
+      "example_zh": "我父母以前每週都會給我零用錢。",
+      "image": "emoji:💰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paga"
+      ],
+      "writer": "gemini"
     }
   ]
 }
