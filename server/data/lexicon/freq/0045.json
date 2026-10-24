@@ -1,6 +1,6 @@
 {
   "theme": "freq-0045",
-  "theme_zh": "常用字（頻率第 11912–12192 名）",
+  "theme_zh": "常用字（頻率第 11912–12218 名）",
   "entries": [
     {
       "word": "degradación",
@@ -3818,6 +3818,317 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:profundizar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "radial",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "放射狀的、輻射的",
+      "en": "radial",
+      "ipa": "/raˈdjal/",
+      "breakdown": [
+        {
+          "part": "radio",
+          "zh": "光線、半徑"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾，表示…的"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "radial"
+      ],
+      "story_zh": "",
+      "hook_zh": "像輪胎鋼絲或輪輻（radio）向外發散的圖案就是 radial。",
+      "usage_zh": "常用於幾何或醫學，例如 simetría radial（輻射對稱）。",
+      "example_es": "Las líneas forman un patrón radial.",
+      "example_zh": "這些線條形成放射狀圖案。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:radial"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "redactar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "起草、撰寫",
+      "en": "to draft, to write up",
+      "ipa": "/redaɡˈtaɾ/",
+      "breakdown": [
+        {
+          "part": "redact-",
+          "zh": "編寫、整理"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "redact"
+      ],
+      "story_zh": "",
+      "hook_zh": "把零散想法編輯整理（redact）寫成草稿：redactar。",
+      "usage_zh": "常用於公文、合約或文章：redactar un contrato（起草合約）。",
+      "example_es": "Tengo que redactar un informe hoy.",
+      "example_zh": "我今天必須起草一份報告。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:redactar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "regularidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "規律、規則性",
+      "en": "regularity",
+      "ipa": "/reɡulaɾiˈdad/",
+      "breakdown": [
+        {
+          "part": "regular",
+          "zh": "規律的"
+        },
+        {
+          "part": "-idad",
+          "zh": "名詞字尾，表示性質"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "後拉丁語",
+          "word": "regularitātem",
+          "zh": "規律性"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "regularidad",
+          "zh": "規律性"
+        }
+      ],
+      "cognates_en": [
+        "regularity"
+      ],
+      "story_zh": "源自後拉丁語 regularitātem，由 regularis（按規則的）加上抽象名詞字尾 -itās 構成。指事情依循固定週期或規則發生的狀態。",
+      "hook_zh": "生活很 regular（規律），就具備良好的 regularidad。",
+      "usage_zh": "常見片語 con regularidad（有規律地、定期地）。",
+      "example_es": "Él hace ejercicio con regularidad.",
+      "example_zh": "他有規律地做運動。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:regularidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "resonancia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "共鳴、共振、反響",
+      "en": "resonance, impact",
+      "ipa": "/resoˈnanθja/",
+      "breakdown": [
+        {
+          "part": "re-",
+          "zh": "回、再"
+        },
+        {
+          "part": "sonar",
+          "zh": "發聲、響"
+        },
+        {
+          "part": "-ancia",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "resonantia",
+          "zh": "回響、共鳴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "resonancia",
+          "zh": "共鳴、共振"
+        }
+      ],
+      "cognates_en": [
+        "resonance"
+      ],
+      "story_zh": "源自拉丁語 resonantia（回聲、反響），由 re-（回、重複）與 sonāre（發出聲音）組合而成。指聲音或振動引起的回響，現代亦引申指社會反響或磁振造影（resonancia magnética）。",
+      "hook_zh": "聲音再次響起（re + sonar），引起巨大的 resonance 共鳴。",
+      "usage_zh": "醫學上 resonancia 常指核磁共振檢查（resonancia magnética）。",
+      "example_es": "La noticia tuvo gran resonancia pública.",
+      "example_zh": "這則新聞引起了巨大的公眾反響。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:resonancia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "rodar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "滾動、轉動；拍攝（電影）",
+      "en": "to roll, to rotate, to film",
+      "ipa": "/roˈdaɾ/",
+      "breakdown": [
+        {
+          "part": "rod-",
+          "zh": "旋轉、滾動"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rota",
+          "zh": "輪子"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "rotāre",
+          "zh": "轉動、滾動"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rodar",
+          "zh": "滾動、旋轉、拍攝"
+        }
+      ],
+      "cognates_en": [
+        "rotate",
+        "roll"
+      ],
+      "story_zh": "傳承自拉丁語 rotāre（旋轉、轉動），源自名詞 rota（輪子）。從輪子在地上轉動引申為「滾動」；到了近代電影時代，因底片膠卷在攝影機中轉動，rodar 又延伸出「拍攝電影」之意。",
+      "hook_zh": "輪子滾動 rotate，在西語裡就是 rodar（滾動、開拍）。",
+      "usage_zh": "現在式為不規則靴子動詞：yo ruedo, tú ruedas, él rueda。",
+      "example_es": "La pelota echó a rodar por la colina.",
+      "example_zh": "球順著山坡滾了下去。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:rodar",
+        "wiktionary:la:roto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sacramento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "聖事、聖禮",
+      "en": "sacrament",
+      "ipa": "/sakɾaˈmento/",
+      "breakdown": [
+        {
+          "part": "sacr-",
+          "zh": "神聖的"
+        },
+        {
+          "part": "-mento",
+          "zh": "名詞字尾，表示行為或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sacer",
+          "zh": "神聖的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "sacrō",
+          "zh": "奉為神聖、祝聖"
+        },
+        {
+          "lang_zh": "教會拉丁語",
+          "word": "sacrāmentum",
+          "zh": "誓約、聖事"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sagramento",
+          "zh": "聖事"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sacramento",
+          "zh": "聖事、聖禮"
+        }
+      ],
+      "cognates_en": [
+        "sacrament",
+        "sacred"
+      ],
+      "story_zh": "源自古西班牙語 sagramento，來自教會拉丁語 sacrāmentum，最終源於拉丁語動詞 sacrō（奉獻為神聖、祝聖）與形容詞 sacer（神聖的）。在基督教神學中指天主施予恩寵的神聖禮儀。",
+      "hook_zh": "神聖的 sacred 儀式，就是教會的 sacramento。",
+      "usage_zh": "天主教有七件聖事（los siete sacramentos），如洗禮、婚禮等。",
+      "example_es": "El matrimonio es un sacramento sagrado.",
+      "example_zh": "婚姻是一件神聖的聖事。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sacramento",
+        "wiktionary:la:sacro"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sodio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "鈉",
+      "en": "sodium",
+      "ipa": "/ˈsodjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "soda",
+          "zh": "蘇打、碳酸鈉"
+        },
+        {
+          "lang_zh": "新拉丁語",
+          "word": "sodium",
+          "zh": "金屬元素鈉"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sodio",
+          "zh": "鈉"
+        }
+      ],
+      "cognates_en": [
+        "sodium",
+        "soda"
+      ],
+      "story_zh": "學者借詞自新拉丁語 sodium，由英國化學家戴維（Humphry Davy）從義大利語 soda（蘇打）造出。指化學元素週期表中原子序 11 的金屬元素鈉。",
+      "hook_zh": "蘇打（soda）水裡的關鍵金屬元素就是 sodio（鈉）。",
+      "usage_zh": "食鹽的化學名稱是 cloruro de sodio（氯化鈉）。",
+      "example_es": "La sal de mesa contiene mucho sodio.",
+      "example_zh": "食用鹽含有大量的鈉。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sodio"
       ],
       "writer": "gemini"
     }
