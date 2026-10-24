@@ -1,137 +1,7 @@
 {
   "theme": "freq-0005",
-  "theme_zh": "常用字（頻率第 1186–1421 名）",
+  "theme_zh": "常用字（頻率第 1199–1427 名）",
   "entries": [
-    {
-      "word": "independencia",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "獨立；自主",
-      "en": "independence",
-      "ipa": "/indepenˈdenθja/",
-      "breakdown": [
-        {
-          "part": "in-",
-          "zh": "否定、不"
-        },
-        {
-          "part": "dependencia",
-          "zh": "依賴、附屬"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "in- + dependencia",
-          "zh": "不 + 依賴"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "independencia",
-          "zh": "獨立"
-        }
-      ],
-      "cognates_en": [
-        "independence"
-      ],
-      "story_zh": "由否定字首 in-（不、非）與 dependencia（依賴、附屬）組合而成。字面原意是「不依賴他人、不受外力控制」，引申為國家的「獨立」或個人的「自主」。",
-      "hook_zh": "和英文 independence 同源，看到 in-（不）加 dependencia（依賴），就是「獨立」！",
-      "usage_zh": "陰性名詞。常見搭配為 declarar la independencia（宣布獨立）或 Día de la Independencia（獨立紀念日）。",
-      "example_es": "El país celebró el Día de la Independencia.",
-      "example_zh": "這個國家慶祝了獨立紀念日。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:independencia"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "plazo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "期限；時期；分期付款",
-      "en": "period, deadline, installment",
-      "ipa": "/ˈplaθo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "placeō",
-          "zh": "令人滿意"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "placitus",
-          "zh": "約定的、商定的"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "plazo",
-          "zh": "約定期限"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "plazo",
-          "zh": "期限、分期"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁語 placitus（商定的），來自 placeō（使滿意）。最初指雙方商定好、皆能滿意的「約定日期」，在古西班牙語演變為 plazo，後來引申為法律或合約上的「期限」，現今也常指「分期付款」。",
-      "hook_zh": "繳費期限（plazo）快到了！如果不能一次付清，就申請分期付款（a plazos）吧。",
-      "usage_zh": "常見片語：a corto/largo plazo（短期／長期）、a plazos（分期付款）。",
-      "example_es": "El plazo para entregar el informe termina mañana.",
-      "example_zh": "繳交報告的期限明天截止。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:plazo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "término",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "終點；結束；期限；術語",
-      "en": "end, terminus, term, period",
-      "ipa": "/ˈteɾmino/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "原始印歐語",
-          "word": "*ter-",
-          "zh": "穿過"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "terminus",
-          "zh": "界標、邊界"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "término",
-          "zh": "終點、期限、詞語"
-        }
-      ],
-      "cognates_en": [
-        "term",
-        "terminal",
-        "terminus"
-      ],
-      "story_zh": "借自拉丁語 terminus，原指土地上的「界標、邊界」，源自印歐語 *ter-（穿過）。從空間上的界線，延伸為時間上的「終點、期限」，再引申為精確劃定語義界線的「術語、詞彙」。",
-      "hook_zh": "聯想英文 terminal（終點站）與 term（學期、術語），都是代表「邊界與限制」的 término。",
-      "usage_zh": "陽性名詞，重音在第一個音節。常見搭配：poner término a...（結束……）。",
-      "example_es": "Debemos poner término a esta discusión absurda.",
-      "example_zh": "我們必須結束這場荒謬的爭論。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:término",
-        "wiktionary:la:terminus"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "corrupción",
       "article": "la",
@@ -3918,6 +3788,110 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:visión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "alcalde",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "市長；行政長官",
+      "en": "mayor",
+      "ipa": "/alˈkalde/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "اَلْقَاضِي (al-qāḍī)",
+          "zh": "法官"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "alcalde",
+          "zh": "法官、行政官"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alcalde",
+          "zh": "市長"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "來自阿拉伯語 al-qāḍī（法官），經由古西班牙語進入西語。在中世紀伊比利半島，此詞原指掌管審判的地方行政首長，後來演變為專指管轄現代市鎮的最高行政長官「市長」。",
+      "hook_zh": "摩爾人統治留下許多 al- 開頭的單字；市長就像整座城市裡權力最大的「大咖」。",
+      "usage_zh": "陰性形式為 alcaldesa（女市長），複數為 alcaldes。",
+      "example_es": "El alcalde inauguró el nuevo parque de la ciudad.",
+      "example_zh": "市長為市裡的新公園舉行了落成典禮。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alcalde"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "altura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "高度；海拔",
+      "en": "height, altitude",
+      "ipa": "/alˈtuɾa/",
+      "breakdown": [
+        {
+          "part": "alto",
+          "zh": "高"
+        },
+        {
+          "part": "-ura",
+          "zh": "名詞字尾，表狀態或性質"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "源自形容詞 alto（高的）加上名詞字尾 -ura。字尾 -ura 用來構成表示性質或狀態的抽象名詞，alto 加上 -ura 即表示「高」的狀態或程度，引申為「高度」與「海拔」。",
+      "hook_zh": "看到 alto（高）就能認出它，加上名詞字尾 -ura 就是「高度」；想像飛機飛到高空巡航的高度。",
+      "usage_zh": "陰性名詞。常見搭配如 a la altura de...（在…的高度；與…並列/齊平）。",
+      "example_es": "El avión vuela a una altura de diez mil metros.",
+      "example_zh": "飛機在高度一萬公尺的高空飛行。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:altura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "candidato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "候選人",
+      "en": "candidate",
+      "ipa": "/kandiˈdato/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "candidātus",
+          "zh": "候選人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "candidato",
+          "zh": "候選人"
+        }
+      ],
+      "cognates_en": [
+        "candidate"
+      ],
+      "story_zh": "借自拉丁語 candidātus。在古羅馬時期，競選公職的人會穿著象徵純潔與光明的白色長袍（toga candida）爭取選民支持，因而演變為「候選人」的意思。",
+      "hook_zh": "英文 candidate 字尾改為西語常見的陽性字尾 -o，即為 candidato（候選人）。",
+      "usage_zh": "女性候選人為 candidata。常見搭配為 ser candidato a…（成為…的候選人）。",
+      "example_es": "El candidato respondió a todas las preguntas en el debate.",
+      "example_zh": "候選人在辯論中回答了所有問題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:candidato"
       ],
       "writer": "gemini"
     }

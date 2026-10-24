@@ -607,15 +607,6 @@ module.exports = {
     s('path', { d: star(116, 40, 8) + star(128, 74, 6) + star(32, 112, 6) }, 'white'),
     s('path', { d: 'M130 112q-34 20-70 2M70 104l-10 10 12 6', ...SW(5) }, 'orange', { stroke: true })
   ],
-  'aquél': [
-    s('path', { d: 'M86 136q30-26 60-8v8z' }, 'mint'),
-    s('path', { d: 'M126 112v-10', ...SW(3) }, 'brown', { stroke: true }),
-    s('circle', { cx: 126, cy: 96, r: 8 }, 'green'),
-    ...person(36, 136, 'blue', { accent: true }),
-    s('path', { d: 'M46 100L76 84', ...SW(7) }, 'skin', { stroke: true }),
-    s('path', { d: 'M82 82L114 94', ...DASH(2, '4 5') }, 'gray', { stroke: true }),
-    ground()
-  ],
   aviso: [
     s('rect', { x: 36, y: 24, width: 88, height: 112, rx: 4 }, 'yellow', { accent: true }),
     s('circle', { cx: 80, cy: 32, r: 6 }, 'red'),

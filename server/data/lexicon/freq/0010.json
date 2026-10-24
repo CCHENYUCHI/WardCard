@@ -1,96 +1,7 @@
 {
   "theme": "freq-0010",
-  "theme_zh": "常用字（頻率第 2408–2653 名）",
+  "theme_zh": "常用字（頻率第 2410–2667 名）",
   "entries": [
-    {
-      "word": "reciente",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "最近的、新近的",
-      "en": "recent",
-      "ipa": "/reˈθjente/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "recentem",
-          "zh": "新鮮的、新近的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "reciente",
-          "zh": "最近的"
-        }
-      ],
-      "cognates_en": [
-        "recent"
-      ],
-      "story_zh": "繼承自拉丁語 recentem（新鮮的、剛發生的）。原意指剛採摘或出爐的新鮮狀態，在西班牙語中演變為指時間上的「最近、新近」。英文的 recent 也是同源字。",
-      "hook_zh": "長得跟英文 recent 幾乎一樣，只是字尾變成西語常見的 -e，意思也是「最近的」。",
-      "usage_zh": "男女同形形容詞（un hecho reciente / una noticia reciente），副詞為 recientemente。",
-      "example_es": "Es una noticia muy reciente.",
-      "example_zh": "這是一則很新的消息。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:reciente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "regresar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "返回、回來、回家",
-      "en": "to return, to come back",
-      "ipa": "/reɡɾeˈsaɾ/",
-      "breakdown": [
-        {
-          "part": "re-",
-          "zh": "往回、向後"
-        },
-        {
-          "part": "gres",
-          "zh": "走、步伐"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "re- + gressus",
-          "zh": "往回 + 步伐"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "regressus",
-          "zh": "返回、後退"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "regresar",
-          "zh": "返回"
-        }
-      ],
-      "cognates_en": [
-        "regress"
-      ],
-      "story_zh": "源自拉丁語名詞 regressus（返回、向後走），由前綴 re-（往回）與 gressus（步伐、行走）結合而成。從「腳步往回邁」演變為「返回、歸來」。英文的 regress（退步、倒退）同源。",
-      "hook_zh": "前綴 re-（回）加上步履，腳步往回邁，就是要「返回」或「回家」。",
-      "usage_zh": "第一變位規則動詞。常用搭配為 regresar a casa（回家）或 regresar de un viaje（旅行歸來）。",
-      "example_es": "¿A qué hora vas a regresar a casa?",
-      "example_zh": "你幾點要回家？",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:regresar",
-        "wiktionary:la:regressus"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "relacionado",
       "article": "",
@@ -2540,28 +2451,6 @@
       "writer": "gemini"
     },
     {
-      "word": "aquél",
-      "article": "",
-      "pos": "pronombre",
-      "zh": "那一個（遠處）；前者",
-      "en": "that one over there, the former",
-      "ipa": "/aˈkel/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "este 是「這個」，ese 是「那個」，音節更多的 aquél 則是「更遠處的那一個」！",
-      "usage_zh": "指距離說話雙方都較遠的人事物；依據最新正書法，不具歧義時重音符號可省略寫為 aquel。",
-      "example_es": "No me gusta este coche, prefiero aquél.",
-      "example_zh": "我不喜歡這輛車，我比較喜歡遠處那一輛。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:aquél"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "aviso",
       "article": "el",
       "pos": "sustantivo",
@@ -3865,6 +3754,94 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:funcionamiento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "intelectual",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "智力的、知識份子的",
+      "en": "intellectual",
+      "ipa": "/inteleɡˈtwal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "intellēctuālis",
+          "zh": "理智的、智力的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "intelectual",
+          "zh": "智力的、知識份子的"
+        }
+      ],
+      "cognates_en": [
+        "intellectual"
+      ],
+      "story_zh": "源自拉丁語 intellēctuālis，指與理解力或理智思考相關的事物。後來詞義延伸，既可用來形容心智與思維層面的活動，也能直接當名詞指稱具備深厚文化思考素養的知識份子。",
+      "hook_zh": "英文也是 intellectual，拼法幾乎完全相同，指智力或知識份子。",
+      "usage_zh": "作形容詞時陰陽同形；轉為名詞時指「知識份子」，可作 el intelectual 或 la intelectual。",
+      "example_es": "El ajedrez es un juego intelectual.",
+      "example_zh": "西洋棋是一項考驗智力的遊戲。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:intelectual"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "lanzamiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "發射、投擲、發表、推出",
+      "en": "launch, throwing, release",
+      "ipa": "/lanθaˈmjento/",
+      "breakdown": [
+        {
+          "part": "lanzar",
+          "zh": "投擲、發射"
+        },
+        {
+          "part": "-miento",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "火箭發射（lanzar）升空的那個瞬間與整個動作，就是 lanzamiento！",
+      "usage_zh": "除了實體的投擲與火箭發射，商業上也常指新產品或服務的「上市發表」。",
+      "example_es": "El lanzamiento del nuevo producto fue un éxito.",
+      "example_zh": "新產品的發表上市非常成功。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:lanzamiento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "paro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "停頓、罷工、失業",
+      "en": "stop, strike, unemployment",
+      "ipa": "/ˈpaɾo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "車子停下（parar）是暫停；工作停下來，在西班牙就是「罷工」或「失業」（paro）。",
+      "usage_zh": "在西班牙常用於「失業」：estar en paro（失業中）、cobrar el paro（領失業救濟）。",
+      "example_es": "Muchos jóvenes están en paro en este momento.",
+      "example_zh": "此時有許多青年處於失業狀態。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:paro"
       ],
       "writer": "gemini"
     }

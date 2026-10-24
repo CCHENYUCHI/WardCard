@@ -1,6 +1,6 @@
 {
   "theme": "freq-0001",
-  "theme_zh": "常用字（頻率第 2–436 名）",
+  "theme_zh": "常用字（頻率第 2–438 名）",
   "entries": [
     {
       "word": "la",
@@ -304,40 +304,6 @@
       "writer": "gemini"
     },
     {
-      "word": "ése",
-      "article": "",
-      "pos": "pronombre",
-      "zh": "那個（指示代名詞）",
-      "en": "that one",
-      "ipa": "/ˈese/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "ipse",
-          "zh": "本人、正是那個"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "ése",
-          "zh": "那個"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁語代名詞 ipse，本義為「本人、自己、正是那一個」。在通俗拉丁語演變為西語的過程中，語意弱化並轉為指示代名詞，用來指稱離聽話者較近或剛提及的人事物。",
-      "hook_zh": "手指著對方身旁的東西問：「那是（ése）你的嗎？」畫面感十足。",
-      "usage_zh": "傳統上指示代名詞標重音（ése）以區分形容詞（ese），但西語皇家學院現規定若無歧義可不加重音。",
-      "example_es": "No quiero este libro, prefiero ése.",
-      "example_zh": "我不要這本書，我比較想要那個。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:ése",
-        "wiktionary:la:ipse"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "do",
       "article": "el",
       "pos": "sustantivo",
@@ -615,28 +581,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:mas"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "sólo",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "只、僅僅",
-      "en": "only, just",
-      "ipa": "/ˈsolo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "一個人 solo 站在台上孤單表演，sólo 就是「只有、僅僅」。",
-      "usage_zh": "西班牙皇家語言學院（RAE）現在建議寫作 solo 即可，僅在產生語意歧義時才需加重音。",
-      "example_es": "Sólo quiero un vaso de agua.",
-      "example_zh": "我只要一杯水。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:sólo"
       ],
       "writer": "gemini"
     },
@@ -3890,6 +3834,86 @@
       "sources": [
         "wiktionary:es:línea",
         "wiktionary:la:linea"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mundial",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "世界的、全球的",
+      "en": "worldwide, global",
+      "ipa": "/munˈdjal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "mundiālis",
+          "zh": "世界的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mundial",
+          "zh": "世界的、全球的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "為學者借詞，源自晚期拉丁語 mundiālis（世界的），指涵蓋全人類或遍及整個地球規模的事物。現代西語中也常省略名詞，直接以 el Mundial 代稱「世界盃足球賽」。",
+      "hook_zh": "由 mundo（世界）加上形容詞字尾 -ial 構成，意思就是「世界的、全球的」。",
+      "usage_zh": "形容詞陰陽同形（crisis mundial / evento mundial）。大寫 el Mundial 指世界盃。",
+      "example_es": "El cambio climático es un problema mundial.",
+      "example_zh": "氣候變遷是一個全球性的問題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mundial"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "obra",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "作品、著作、工程",
+      "en": "work, artwork, construction",
+      "ipa": "/ˈobɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "opus",
+          "zh": "工作、勞動、作品"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "opera",
+          "zh": "付出努力、勞動"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "obra",
+          "zh": "作品、工程"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "obra",
+          "zh": "作品、工程"
+        }
+      ],
+      "cognates_en": [
+        "opera",
+        "operate"
+      ],
+      "story_zh": "承襲自拉丁語 opera（勞動、付出努力），源自 opus（工作、作品）的複數形。指人類勞動與智慧的心血結晶，既可用於文學藝術「作品」，也指建築施工「工程」；與英文 opera（歌劇）同源。",
+      "hook_zh": "英文 opera（歌劇）是藝術「作品」，工人操作（operate）是在進行施工 obra。",
+      "usage_zh": "常搭配 obra de arte（藝術品）；片語 estar en obras 表示「施工中、裝修中」。",
+      "example_es": "Esta pintura es una gran obra de arte.",
+      "example_zh": "這幅畫是一件偉大的藝術作品。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:obra",
+        "wiktionary:la:opera"
       ],
       "writer": "gemini"
     }

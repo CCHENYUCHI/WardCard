@@ -1,87 +1,7 @@
 {
   "theme": "freq-0002",
-  "theme_zh": "常用字（頻率第 437–722 名）",
+  "theme_zh": "常用字（頻率第 445–727 名）",
   "entries": [
-    {
-      "word": "mundial",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "世界的、全球的",
-      "en": "worldwide, global",
-      "ipa": "/munˈdjal/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "mundiālis",
-          "zh": "世界的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "mundial",
-          "zh": "世界的、全球的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "為學者借詞，源自晚期拉丁語 mundiālis（世界的），指涵蓋全人類或遍及整個地球規模的事物。現代西語中也常省略名詞，直接以 el Mundial 代稱「世界盃足球賽」。",
-      "hook_zh": "由 mundo（世界）加上形容詞字尾 -ial 構成，意思就是「世界的、全球的」。",
-      "usage_zh": "形容詞陰陽同形（crisis mundial / evento mundial）。大寫 el Mundial 指世界盃。",
-      "example_es": "El cambio climático es un problema mundial.",
-      "example_zh": "氣候變遷是一個全球性的問題。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:mundial"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "obra",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "作品、著作、工程",
-      "en": "work, artwork, construction",
-      "ipa": "/ˈobɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "opus",
-          "zh": "工作、勞動、作品"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "opera",
-          "zh": "付出努力、勞動"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "obra",
-          "zh": "作品、工程"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "obra",
-          "zh": "作品、工程"
-        }
-      ],
-      "cognates_en": [
-        "opera",
-        "operate"
-      ],
-      "story_zh": "承襲自拉丁語 opera（勞動、付出努力），源自 opus（工作、作品）的複數形。指人類勞動與智慧的心血結晶，既可用於文學藝術「作品」，也指建築施工「工程」；與英文 opera（歌劇）同源。",
-      "hook_zh": "英文 opera（歌劇）是藝術「作品」，工人操作（operate）是在進行施工 obra。",
-      "usage_zh": "常搭配 obra de arte（藝術品）；片語 estar en obras 表示「施工中、裝修中」。",
-      "example_es": "Esta pintura es una gran obra de arte.",
-      "example_zh": "這幅畫是一件偉大的藝術作品。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:obra",
-        "wiktionary:la:opera"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "atención",
       "article": "la",
@@ -3870,6 +3790,88 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:actividad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "adelante",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "向前、往前；請進",
+      "en": "forward; come in",
+      "ipa": "/adeˈlante/",
+      "breakdown": [
+        {
+          "part": "a-",
+          "zh": "朝向、往"
+        },
+        {
+          "part": "delante",
+          "zh": "在前方"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "a + delante",
+          "zh": "朝向 + 在前"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "adelante",
+          "zh": "向前"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "adelante",
+          "zh": "向前、請進"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "承襲自古西班牙語 adelante，是由介詞 a（朝向）與副詞 delante（在前面）合詞而成。字面意義就是「往前面去」，後來延伸用於空間的前進、時間的推移，以及禮貌招呼他人「請進、請繼續」。",
+      "hook_zh": "a（朝向）+ delante（前面），合起來就是往前走；有人敲門時說 adelante 就是「請進」！",
+      "usage_zh": "除作副詞表示往前，日常中極常用作感嘆詞表示「請進」或「請講」。",
+      "example_es": "¡Adelante, puedes pasar!",
+      "example_zh": "請進，你可以進來！",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:adelante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "autor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "作者、創作者；作案者",
+      "en": "author; perpetrator",
+      "ipa": "/auˈtoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "auctor",
+          "zh": "創始者、發起人、作者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "autor",
+          "zh": "作者、行為人"
+        }
+      ],
+      "cognates_en": [
+        "author"
+      ],
+      "story_zh": "半學者借詞，源自拉丁語 auctor，本義是「創始者、發起人、創作者」。在西語中除了指文學或藝術作品的創作者外，也保留了發起者的含義，在法律或新聞中常指事件的「行為人」或「作案者」。",
+      "hook_zh": "長相和英文 author 幾乎一樣（少個 h），就是一本書的「作者」。",
+      "usage_zh": "陰性形式為 autora；犯罪新聞中常見 el autor del crimen（兇手／作案者）。",
+      "example_es": "¿Quién es el autor de esta novela?",
+      "example_zh": "這本小說的作者是誰？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:autor"
       ],
       "writer": "gemini"
     }

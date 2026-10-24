@@ -1,218 +1,7 @@
 {
   "theme": "freq-0013",
-  "theme_zh": "常用字（頻率第 3140–3382 名）",
+  "theme_zh": "常用字（頻率第 3157–3401 名）",
   "entries": [
-    {
-      "word": "sueldo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "薪水、薪資",
-      "en": "salary, wage",
-      "ipa": "/ˈsweldo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "solidus",
-          "zh": "金幣"
-        },
-        {
-          "lang_zh": "後期拉丁語",
-          "word": "soldus",
-          "zh": "金幣"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "sueldo",
-          "zh": "貨幣單位、薪俸"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "sueldo",
-          "zh": "薪水"
-        }
-      ],
-      "cognates_en": [
-        "solid"
-      ],
-      "story_zh": "源自拉丁語 solidus，原意是「實心的、堅固的」，後來成為羅馬帝國著名的金幣名稱。因為受雇者與軍人的薪餉常以此金幣發放，語意逐漸轉變為「薪水」。與西語 sólido（堅固的）是同源詞。",
-      "hook_zh": "拿到薪水（sueldo）感覺口袋很扎實（solid），薪水入袋最心安！",
-      "usage_zh": "陽性名詞。常見搭配有 cobrar el sueldo（領薪水）、sueldo base（底薪）。",
-      "example_es": "Mi hermano cobra su sueldo a finales de mes.",
-      "example_zh": "我哥哥在月底領薪水。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:sueldo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "tensión",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "緊張、壓力；張力；電壓",
-      "en": "tension, stress, voltage",
-      "ipa": "/tenˈsjon/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "tendō",
-          "zh": "拉緊、伸展"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "tensio",
-          "zh": "拉伸、張力"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "tēnsiōnem",
-          "zh": "張力、緊張"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tensión",
-          "zh": "緊張、張力"
-        }
-      ],
-      "cognates_en": [
-        "tension",
-        "tense"
-      ],
-      "story_zh": "借自拉丁語 tēnsiōnem，源自代表「拉緊、伸展」的動詞 tendō。最初指物體被拉緊的物理「張力」，後來引申為心理上的「緊繃與壓力」以及電學上的「電壓」。與古西語承襲下來的 tesón（韌性、毅力）是同源詞。",
-      "hook_zh": "跟英文 tension 一模一樣，像琴弦被用力拉緊（tend-），讓人神經緊繃。",
-      "usage_zh": "陰性名詞。醫學上 tensión arterial 指「血壓」；高壓電為 alta tensión。",
-      "example_es": "Había mucha tensión en la sala de reuniones.",
-      "example_zh": "會議室裡充斥著緊繃的氣氛。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tensión",
-        "wiktionary:la:tensio"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "tránsito",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "交通；通行、過境",
-      "en": "transit, traffic",
-      "ipa": "/ˈtɾansito/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "trānsitus",
-          "zh": "經過、通行"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tránsito",
-          "zh": "交通、通行"
-        }
-      ],
-      "cognates_en": [
-        "transit"
-      ],
-      "story_zh": "源自拉丁語名詞 trānsitus，原意為「穿過、跨越的過程」。這個字作為學者借詞進入西班牙語，指人車在道路上通行與流動的狀態，因此延伸為現代生活中的「交通」與「過境」。",
-      "hook_zh": "聯想英文 transit（過境、運輸），加上西語名詞結尾，就是馬路上的交通（tránsito）。",
-      "usage_zh": "常用於指道路交通，例如 normas de tránsito（交通法規）或 accidente de tránsito（交通事故）。",
-      "example_es": "Hay mucho tránsito en el centro a esta hora.",
-      "example_zh": "這個時間市中心的交通非常繁忙。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tránsito"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "boda",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "婚禮、結婚典禮",
-      "en": "wedding",
-      "ipa": "/ˈboda/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "vōtum",
-          "zh": "誓言"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "vōta",
-          "zh": "誓言（複數）"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "boda",
-          "zh": "婚禮"
-        }
-      ],
-      "cognates_en": [
-        "vow"
-      ],
-      "story_zh": "源自拉丁語 vōtum（誓約）的中性複數形 vōta（眾多誓言）。在通俗拉丁語演變中，中性複數常被轉作陰性單數名詞。新人在神聖典禮上許下彼此相守的誓言，便成了現代西語的「婚禮」。",
-      "hook_zh": "婚禮（boda）上新人互許誓言（vow），拉丁文的誓言複數演變成了浪漫的婚禮。",
-      "usage_zh": "名詞為陰性 la boda。複數 bodas 常用於指金婚（bodas de oro）、銀婚等紀念日。",
-      "example_es": "Fuimos a la boda de mi mejor amigo.",
-      "example_zh": "我們去參加了我最好朋友的婚禮。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:boda"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "clasificación",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "分類；分級、排名",
-      "en": "classification, ranking, rating",
-      "ipa": "/klasifikaˈθjon/",
-      "breakdown": [
-        {
-          "part": "clasificar",
-          "zh": "分類"
-        },
-        {
-          "part": "-ción",
-          "zh": "名詞字尾（動作或結果）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "clasificar + -ción",
-          "zh": "分類 + 名詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "clasificación",
-          "zh": "分類、分級、排名"
-        }
-      ],
-      "cognates_en": [
-        "classification"
-      ],
-      "story_zh": "由動詞 clasificar（分類）加上表示動作或結果的名詞字尾 -ción 構成。在現代西語中，不僅指事物或概念的歸類整理，也廣泛用於體育賽事的「排名、積分榜」與影視作品的「分級制度」。",
-      "hook_zh": "英文就是 classification，把事物分入不同 class 的動作與結果就是分類分級。",
-      "usage_zh": "字尾為 -ción 的名詞一律為陰性。在體育賽事中常指聯賽積分榜或球員排名。",
-      "example_es": "Es una película con clasificación para adultos.",
-      "example_zh": "這是一部限制級（成人分級）的電影。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:clasificación"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "coño",
       "article": "el",
@@ -619,37 +408,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:propaganda"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "ramón",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "麵包堅果樹、朴樹",
-      "en": "breadnut; hackberry",
-      "ipa": "/raˈmon/",
-      "breakdown": [
-        {
-          "part": "ramo",
-          "zh": "樹枝"
-        },
-        {
-          "part": "-ón",
-          "zh": "大（指大詞尾）"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "茂密的樹枝（ramo）加上指大後綴（-ón），形成枝葉繁茂的高大樹木 ramón。",
-      "usage_zh": "陽性名詞，複數為 ramones；常指中美洲的麵包堅果樹（馬雅堅果），葉與種子皆可利用。",
-      "example_es": "El ramón es un árbol tradicional de la selva maya.",
-      "example_zh": "麵包堅果樹是馬雅叢林的傳統樹種。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:ramón"
       ],
       "writer": "gemini"
     },
@@ -1725,41 +1483,6 @@
       "writer": "gemini"
     },
     {
-      "word": "link",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "（網路）連結",
-      "en": "link, hyperlink",
-      "ipa": "/ˈlink/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "link",
-          "zh": "環節、連結"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "link",
-          "zh": "網路連結"
-        }
-      ],
-      "cognates_en": [
-        "link"
-      ],
-      "story_zh": "直接借自現代英語的 link（環節、連結）。隨著網際網路普及，西語吸收該詞專指網頁上的「超連結」，常與西語固有詞 enlace 替換使用。",
-      "hook_zh": "與英文 link 完全相同，滑鼠移過去點擊的那條「連結」就是 el link。",
-      "usage_zh": "陽性外來語（el link），西語固有詞為 enlace。點選連結可用動詞搭配 hacer clic en el link。",
-      "example_es": "Haz clic en el link para ver la información.",
-      "example_zh": "點擊連結即可查看資訊。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:link"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "oficialmente",
       "article": "",
       "pos": "adverbio",
@@ -1950,28 +1673,6 @@
       "sources": [
         "wiktionary:es:pico",
         "wiktionary:la:beccus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "pm",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "下午、午後（p.m.）",
-      "en": "p.m. (after noon)",
-      "ipa": "/peˈeme/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "與英文 p.m. 相同，表示中午 12 點之後的下午時間。",
-      "usage_zh": "表示時間時使用，西班牙語書寫時也常作 p. m.。",
-      "example_es": "La reunión empieza a las tres pm.",
-      "example_zh": "會議在下午三點開始。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:pm"
       ],
       "writer": "gemini"
     },
@@ -2978,28 +2679,6 @@
       "writer": "gemini"
     },
     {
-      "word": "na",
-      "article": "",
-      "pos": "pronombre",
-      "zh": "沒什麼、無（nada 的口語縮寫）",
-      "en": "nothing (colloquial spelling of nada)",
-      "ipa": "/ˈna/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "口語中常把 nada（沒什麼）尾音吞掉縮成 na，就像台語常把詞簡化一樣俐落。",
-      "usage_zh": "常見於口語或流行俚語，如 no pasa na（沒事啦），在正式書面語中應寫作 nada。",
-      "example_es": "No pasa na, todo está bien.",
-      "example_zh": "沒事啦，一切都很好。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:na"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "nave",
       "article": "la",
       "pos": "sustantivo",
@@ -3549,39 +3228,6 @@
       "writer": "gemini"
     },
     {
-      "word": "carmen",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "格拉納達傳統庭園別墅",
-      "en": "traditional villa in Granada",
-      "ipa": "/ˈkaɾmen/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "阿拉伯語",
-          "word": "كَرْم (karm)",
-          "zh": "葡萄園"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "carmen",
-          "zh": "格拉納達庭園別墅"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "借自阿拉伯語 كَرْم（karm），本義是「葡萄園」。在摩爾人統治格拉納達時期，帶有果園與花園的鄉間宅邸被稱為 carmen，後來演變為指當地依山而建、附帶庭園的典型傳統住宅。",
-      "hook_zh": "在格拉納達漫步，白色圍牆內飄出花香與果樹芬芳的庭園宅邸就是 carmen。",
-      "usage_zh": "陽性名詞，複數加重音符號變為 cármenes。特指西班牙格拉納達當地的傳統庭園住宅。",
-      "example_es": "Desde este carmen se ve la Alhambra.",
-      "example_zh": "從這座庭園別墅可以看到阿爾罕布拉宮。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:carmen"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "casado",
       "article": "",
       "pos": "adjetivo",
@@ -3820,6 +3466,416 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:diversidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ejercer",
+      "article": "",
+      "pos": "verbo",
+      "zh": "行使、實行；從事（職業）",
+      "en": "to exercise, to practice, to enforce",
+      "ipa": "/exeɾˈθeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "exercere",
+          "zh": "訓練、實行"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ejercer",
+          "zh": "行使、從事"
+        }
+      ],
+      "cognates_en": [
+        "exercise"
+      ],
+      "story_zh": "源自拉丁語動詞 exercēre（意為訓練、實行）。西語繼承後，語意延伸為實際執行某種權利、職責，或是從事專門職業（如律師或醫生）。英文的 exercise 也是同源字。",
+      "hook_zh": "長得像英文 exercise，但西語常用來指「行使」權利或「從事」律師等專門職業。",
+      "usage_zh": "現在式第一人稱單數為 ejerzo（c 變為 z 以維持發音）；常用於 ejercer el derecho（行使權利）。",
+      "example_es": "Ella estudió derecho para ejercer como abogada.",
+      "example_zh": "她研讀法律是為了從事律師工作。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ejercer"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "emperador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "皇帝；旗魚",
+      "en": "emperor; swordfish",
+      "ipa": "/empeɾaˈdoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "imperatorem",
+          "zh": "統帥、統治者"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "emperador",
+          "zh": "皇帝"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "emperador",
+          "zh": "皇帝"
+        }
+      ],
+      "cognates_en": [
+        "emperor"
+      ],
+      "story_zh": "源自古西班牙語 emperador，最早可追溯至拉丁語 imperātōrem（指最高軍事統帥或統治者）。演變為君王稱號「皇帝」；此外，因旗魚長吻形似威風的利劍，在西語中也被稱為 emperador。",
+      "hook_zh": "音近英文 emperor，想像羅馬皇帝頭戴皇冠、身披戰袍巡視帝國的威嚴畫面。",
+      "usage_zh": "陰性形式通常為 emperatriz（女皇／皇后），較少使用 emperadora。",
+      "example_es": "El emperador visitó todas las provincias del imperio.",
+      "example_zh": "皇帝視察了帝國的所有行省。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:emperador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ensayo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "散文、隨筆；試驗；排練",
+      "en": "essay; test, trial; rehearsal",
+      "ipa": "/enˈsaʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "exigo",
+          "zh": "驅使、衡量"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "exagium",
+          "zh": "秤重、衡量"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ensayo",
+          "zh": "試驗、散文、排練"
+        }
+      ],
+      "cognates_en": [
+        "essay",
+        "assay"
+      ],
+      "story_zh": "源自晚期拉丁語 exagium（秤重、衡量），最早出自拉丁語動詞 exigō（衡量、執行）。字義從天平上的「秤量檢驗」延伸為「試驗」與「嘗試」，後來在文學上指「散文隨筆」，在表演藝術中則引申為「排練」。",
+      "hook_zh": "英文 essay（散文）的同源字！排練戲劇也是一次次「試驗（ensayo）」直到完美。",
+      "usage_zh": "除了散文與科學試驗，在戲劇或音樂彩排時也用 ensayo（如 ensayo general 總彩排）。",
+      "example_es": "Tenemos un ensayo de teatro esta tarde.",
+      "example_zh": "我們今天下午有一場話劇排練。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ensayo",
+        "wiktionary:la:exagium",
+        "wiktionary:la:exigo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "escapar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "逃跑、逃脫；溜走",
+      "en": "to escape, to run away",
+      "ipa": "/eskaˈpaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*excappāre",
+          "zh": "脫去斗篷、逃跑"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "escapar",
+          "zh": "逃跑"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "escapar",
+          "zh": "逃脫、逃跑"
+        }
+      ],
+      "cognates_en": [
+        "escape"
+      ],
+      "story_zh": "源自通俗拉丁語 *excappāre，由拉丁語字首 ex-（向外）加上 cappa（斗篷）與動詞字尾 -āre 構成。原意是「金蟬脫殼」，形容被人抓住斗篷時，索性脫下斗篷拔腿逃跑，後來引申為一般的「逃跑、逃脫」。",
+      "hook_zh": "音近英文 escape；想像被抓時丟下斗篷（cappa）轉身逃跑（escapar）！",
+      "usage_zh": "常作反身動詞 escaparse（逃走、溜走）；搭配 de 表示從某處逃離。",
+      "example_es": "El gato se escapó por la ventana abierta.",
+      "example_zh": "貓咪從開著的窗戶溜走了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:escapar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estabilidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "穩定、穩定性",
+      "en": "stability",
+      "ipa": "/estabiliˈdad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "stabilitatem",
+          "zh": "穩定、堅固"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estabilidad",
+          "zh": "穩定、穩定性"
+        }
+      ],
+      "cognates_en": [
+        "stability"
+      ],
+      "story_zh": "屬於文人借詞（learned borrowing），直接源自拉丁語名詞 stabilitātem（意為堅固、沉著或穩定）。字義在演變過程中十分穩定，皆用來指稱事物處於穩固、不易動搖的狀態。",
+      "hook_zh": "英文 stability 的雙胞胎！西語字尾 -idad 對應英文 -ity，秒記名詞代表穩定性。",
+      "usage_zh": "陰性名詞；所有以 -dad 結尾的西語名詞皆為陰性（如 la ciudad、la verdad）。",
+      "example_es": "El gobierno trabaja para mantener la estabilidad económica.",
+      "example_zh": "政府致力於維持經濟穩定。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estabilidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "exclusivamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "專門地、唯獨、僅僅",
+      "en": "exclusively, solely",
+      "ipa": "/eɡskluˌsibaˈmente/",
+      "breakdown": [
+        {
+          "part": "exclusivo",
+          "zh": "專門的、排他的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾（…地）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "exclusivo",
+          "zh": "專有的、排他的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "exclusivamente",
+          "zh": "專門地、唯獨"
+        }
+      ],
+      "cognates_en": [
+        "exclusively",
+        "exclusive"
+      ],
+      "story_zh": "由形容詞 exclusivo（專有的、排他的）加上副詞字尾 -mente 組合而成。字面意思是「以排他的方式」，引申為「專門地」或「僅僅」，表示只限定於特定對象或範圍，將其他可能性完全排除在外。",
+      "hook_zh": "exclusive（專屬的）加上 -mente，就是「專門地」只為你開放。",
+      "usage_zh": "放在動詞後修飾動作，或置於句首強調範圍。常與 para、en 搭配表示「只針對某對象」。",
+      "example_es": "Este producto se vende exclusivamente en línea.",
+      "example_zh": "這項產品僅在網路上販售。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:exclusivamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "expresar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "表達、表示；表達自己（expresarse）",
+      "en": "to express, to voice",
+      "ipa": "/eɡspɾeˈsaɾ/",
+      "breakdown": [
+        {
+          "part": "expreso",
+          "zh": "明確的、表達出的"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "expressus",
+          "zh": "明確表達的、清楚的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "expreso",
+          "zh": "明確的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "expresar",
+          "zh": "表達"
+        }
+      ],
+      "cognates_en": [
+        "express"
+      ],
+      "story_zh": "源自西語形容詞 expreso（明確的），該詞借自拉丁語 expressus。其原意是「擠壓出來、印製成形」，引申為把內心原本隱蔽的想法清楚「推出來」給人看，演變為現代西語中「表達、陳述」的意思。",
+      "hook_zh": "英文 express 是同源字：把心中的感受「壓出來」，就是在表達（expresar）。",
+      "usage_zh": "及物動詞直接接名詞（expresar su opinión）；代名動詞 expresarse 意為「表達自己的想法」。",
+      "example_es": "Quiero expresar mi gratitud por tu ayuda.",
+      "example_zh": "我想對你的幫助表達感謝。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:expresar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fallo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "判決、裁決；錯誤、失誤",
+      "en": "verdict, ruling; mistake, failure",
+      "ipa": "/ˈfaʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "fallar",
+          "zh": "判決、失誤"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fallo",
+          "zh": "判決、錯誤"
+        }
+      ],
+      "cognates_en": [
+        "fail"
+      ],
+      "story_zh": "由動詞 fallar 衍生出的去動詞名詞。在西語中，fallo 同時保留了法庭「宣判、裁決」的正式意涵，以及日常生活中「失誤、故障」的意思。義大利語中的同源字 fallo 也是相同的構詞演變。",
+      "hook_zh": "考試 fail 了就是犯了 fallo（失誤）；法官下裁決，也是給出最終的 fallo。",
+      "usage_zh": "陽性名詞。法律上指法官的「判決書、裁決」（el fallo del juez）；科技與日常指「故障、錯誤」。",
+      "example_es": "El juez anunció el fallo esta mañana.",
+      "example_zh": "法官今天早上宣布了判決。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fallo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fundador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "創辦人、創始人；創立的",
+      "en": "founder; founding",
+      "ipa": "/fundaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "fundar",
+          "zh": "創立、建立"
+        },
+        {
+          "part": "-dor",
+          "zh": "做…的人（字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fundātor",
+          "zh": "建立者、創立者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fundador",
+          "zh": "創辦人、創立者"
+        }
+      ],
+      "cognates_en": [
+        "founder"
+      ],
+      "story_zh": "源自拉丁語 fundātor，指「打下基礎的人」或「創立者」。傳入西班牙語後保留了原本核心意義，用來指稱建立城市、機構、企業或社團的創始人，陰性形為 fundadora。",
+      "hook_zh": "英文 founder（創辦人）和西語 fundador 長得極像，都是給事業打基礎（fundar）的人。",
+      "usage_zh": "陰性為 fundadora。可作名詞（el fundador 創辦人）或形容詞（socio fundador 創始合夥人）。",
+      "example_es": "Steve Jobs fue el fundador de Apple.",
+      "example_zh": "史蒂夫·賈伯斯是蘋果公司的創辦人。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fundador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "garantizar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "保證、擔保",
+      "en": "to guarantee, to ensure",
+      "ipa": "/ɡaɾantiˈθaɾ/",
+      "breakdown": [
+        {
+          "part": "garante",
+          "zh": "保證人"
+        },
+        {
+          "part": "-izar",
+          "zh": "使…化、做…（動詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "garante",
+          "zh": "保證人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "garantizar",
+          "zh": "保證、擔保"
+        }
+      ],
+      "cognates_en": [
+        "guarantee"
+      ],
+      "story_zh": "由名詞 garante（保證人、擔保者）加上動詞字尾 -izar 構成。字面意思是「充當擔保人」，進而發展為提供擔保、確保某事一定會發生或某項權益得到維護的動詞。",
+      "hook_zh": "英文 guarantee（保證）與它同源，-izar 是動詞尾，garantizar 就是「做保證」。",
+      "usage_zh": "書寫注意正字法變化：第一人稱簡單過去式變為 garanticé（z 在 e 前變為 c）。",
+      "example_es": "La empresa garantiza la calidad de sus productos.",
+      "example_zh": "這家公司保證其產品的品質。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:garantizar"
       ],
       "writer": "gemini"
     }

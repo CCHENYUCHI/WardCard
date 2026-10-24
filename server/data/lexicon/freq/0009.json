@@ -1,86 +1,7 @@
 {
   "theme": "freq-0009",
-  "theme_zh": "常用字（頻率第 2190–2406 名）",
+  "theme_zh": "常用字（頻率第 2192–2409 名）",
   "entries": [
-    {
-      "word": "constitucional",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "憲法的、合憲的",
-      "en": "constitutional",
-      "ipa": "/konstituθjoˈnal/",
-      "breakdown": [
-        {
-          "part": "constitución",
-          "zh": "憲法"
-        },
-        {
-          "part": "-al",
-          "zh": "…的（形容詞字尾）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "constitución + -al",
-          "zh": "憲法 + 形容詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "constitucional",
-          "zh": "憲法的"
-        }
-      ],
-      "cognates_en": [
-        "constitutional"
-      ],
-      "story_zh": "由名詞 constitución（憲法）加上形容詞字尾 -al 派生而來，表示「與憲法相關的」或「合乎憲法體制的」。",
-      "hook_zh": "與英文 constitutional 完全同源，字尾轉成西語常見的 -al。",
-      "usage_zh": "陰陽同形形容詞，修飾陽性或陰性名詞形狀不變，複數為 constitucionales。",
-      "example_es": "El tribunal defendió el orden constitucional.",
-      "example_zh": "法院捍衛了憲法秩序。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:constitucional"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "controlar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "控制、管理、監控",
-      "en": "to control, to manage, to monitor",
-      "ipa": "/kontɾoˈlaɾ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "法語",
-          "word": "contrôler",
-          "zh": "查驗、控制"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "controlar",
-          "zh": "控制、管理"
-        }
-      ],
-      "cognates_en": [
-        "control"
-      ],
-      "story_zh": "借自法語 contrôler。該詞原指透過對照副本來核查帳冊名錄，後來引申為監督、調節、掌控情勢或管理情緒。",
-      "hook_zh": "英文 control 加上動詞字尾 -ar 就是西語的 controlar，意思高度重合。",
-      "usage_zh": "常見搭配 controlar la situación（控制局勢），反身動詞 controlarse 表示克制自己。",
-      "example_es": "Es importante controlar el estrés diario.",
-      "example_zh": "調適日常壓力是非常重要的。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:controlar"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "coronel",
       "article": "el",
@@ -3764,6 +3685,95 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:promoción"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reciente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "最近的、新近的",
+      "en": "recent",
+      "ipa": "/reˈθjente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "recentem",
+          "zh": "新鮮的、新近的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reciente",
+          "zh": "最近的"
+        }
+      ],
+      "cognates_en": [
+        "recent"
+      ],
+      "story_zh": "繼承自拉丁語 recentem（新鮮的、剛發生的）。原意指剛採摘或出爐的新鮮狀態，在西班牙語中演變為指時間上的「最近、新近」。英文的 recent 也是同源字。",
+      "hook_zh": "長得跟英文 recent 幾乎一樣，只是字尾變成西語常見的 -e，意思也是「最近的」。",
+      "usage_zh": "男女同形形容詞（un hecho reciente / una noticia reciente），副詞為 recientemente。",
+      "example_es": "Es una noticia muy reciente.",
+      "example_zh": "這是一則很新的消息。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reciente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "regresar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "返回、回來、回家",
+      "en": "to return, to come back",
+      "ipa": "/reɡɾeˈsaɾ/",
+      "breakdown": [
+        {
+          "part": "re-",
+          "zh": "往回、向後"
+        },
+        {
+          "part": "gres",
+          "zh": "走、步伐"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "re- + gressus",
+          "zh": "往回 + 步伐"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "regressus",
+          "zh": "返回、後退"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "regresar",
+          "zh": "返回"
+        }
+      ],
+      "cognates_en": [
+        "regress"
+      ],
+      "story_zh": "源自拉丁語名詞 regressus（返回、向後走），由前綴 re-（往回）與 gressus（步伐、行走）結合而成。從「腳步往回邁」演變為「返回、歸來」。英文的 regress（退步、倒退）同源。",
+      "hook_zh": "前綴 re-（回）加上步履，腳步往回邁，就是要「返回」或「回家」。",
+      "usage_zh": "第一變位規則動詞。常用搭配為 regresar a casa（回家）或 regresar de un viaje（旅行歸來）。",
+      "example_es": "¿A qué hora vas a regresar a casa?",
+      "example_zh": "你幾點要回家？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:regresar",
+        "wiktionary:la:regressus"
       ],
       "writer": "gemini"
     }

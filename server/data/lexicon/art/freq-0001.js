@@ -85,14 +85,6 @@ module.exports = {
     s('path', { d: 'M50 84h26', ...SW(8) }, 'skin', { stroke: true }),
     s('rect', { x: 22, y: 102, width: 28, height: 34, rx: 6 }, 'blue')
   ],
-  'ése': [
-    ground(),
-    ...person(34, 136, 'blue'),
-    s('path', { d: 'M48 100h30', ...SW(7) }, 'skin', { stroke: true }),
-    s('rect', { x: 108, y: 96, width: 34, height: 40, rx: 4 }, 'orange', { accent: true }),
-    s('path', { d: 'M108 96l17-12 17 12', ...SW(4) }, 'brown', { stroke: true }),
-    s('path', { d: 'M84 92l8 8-8 8', ...SW(4) }, 'gray', { stroke: true })
-  ],
   hace: [
     s('circle', { cx: 80, cy: 80, r: 56 }, 'white'),
     s('circle', { cx: 80, cy: 80, r: 56, ...SW(6) }, 'blue', { stroke: true }),
@@ -137,12 +129,6 @@ module.exports = {
     s('path', { d: 'M52 98V66h56v32', ...SW(5) }, 'blue', { stroke: true }),
     s('path', { d: 'M80 20l6 14 14 2-10 10 2 14-12-6-12 6 2-14-10-10 14-2z' }, 'yellow', { accent: true }),
     s('path', { d: 'M38 54l-10-6M122 54l10-6M80 8v4', ...SW(4) }, 'orange', { stroke: true })
-  ],
-  'sólo': [
-    s('rect', { x: 14, y: 110, width: 132, height: 26, rx: 4 }, 'mint'),
-    ...person(80, 116, 'red', { accent: true }),
-    s('circle', { cx: 120, cy: 34, r: 12 }, 'cream'),
-    s('path', { d: 'M24 40l6 6M30 40l-6 6', ...SW(2) }, 'gray', { stroke: true })
   ],
   gobierno: [
     ground(),

@@ -1,77 +1,7 @@
 {
   "theme": "freq-0004",
-  "theme_zh": "常用字（頻率第 962–1185 名）",
+  "theme_zh": "常用字（頻率第 964–1194 名）",
   "entries": [
-    {
-      "word": "origen",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "起源、起點、出身",
-      "en": "origin",
-      "ipa": "/oˈɾixen/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "orīginem",
-          "zh": "起源、開端"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "origen",
-          "zh": "起源、由來"
-        }
-      ],
-      "cognates_en": [
-        "origin"
-      ],
-      "story_zh": "為學者借詞，源自拉丁語單數賓格 orīginem（起點、出身、血統）。核心概念是指某件事物最初萌芽生長的地方，與英文 origin 係出同源。",
-      "hook_zh": "直接聯想英文 origin，注意西語尾音 -gen 發成帶摩擦的喉音 /xen/。",
-      "usage_zh": "陽性名詞。單數 origen 不標重音，但變為複數 orígenes 時必須補上重音符號。",
-      "example_es": "No se conoce el origen de esta palabra.",
-      "example_zh": "這個詞的起源不得而知。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:origen"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "premio",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "獎項、獎品；獎金",
-      "en": "prize, award, premium",
-      "ipa": "/ˈpɾemjo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "praemium",
-          "zh": "獎賞、報酬"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "premio",
-          "zh": "獎項、獎品"
-        }
-      ],
-      "cognates_en": [
-        "premium"
-      ],
-      "story_zh": "借自拉丁語 praemium（獎賞、報酬），原指因付出辛勞或優異表現所獲得的回報，後來進入西班牙語，指各類競賽的獎項、獎品或特別獎金。英文的 premium 也是源自同一個拉丁字。",
-      "hook_zh": "在頒獎台上領取 prize，就像獲得一份 premium 等級的豪華大獎（premio）。",
-      "usage_zh": "常搭配動詞 ganar（贏得）或 entregar（頒發），如 ganar un premio（得獎）。",
-      "example_es": "Ella ganó el primer premio en el concurso.",
-      "example_zh": "她在比賽中贏得了第一名首獎。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:premio"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "re",
       "article": "",
@@ -708,39 +638,6 @@
       "sources": [
         "wiktionary:es:voto",
         "wiktionary:la:votum"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "éste",
-      "article": "",
-      "pos": "pronombre",
-      "zh": "這個、這位",
-      "en": "this one",
-      "ipa": "/ˈeste/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "iste",
-          "zh": "這個"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "éste",
-          "zh": "這個"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "承襲自拉丁語指示代名詞 iste，原意即為「這個、此人」。在羅曼語演變過程中，它保留了指代眼前人事物的功能，用來代替已提過或不想重複的名詞。",
-      "hook_zh": "指著眼前的東西說「欸，是這個！」（é-ste），立刻記住代名詞用法。",
-      "usage_zh": "指示代名詞。傳統上為區分形容詞 este 會標重音，但現行皇家語言學院規範若無歧義可不加重音。",
-      "example_es": "No me gusta aquel coche, prefiero éste.",
-      "example_zh": "我不喜歡那一輛車，我比較喜歡這輛。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:éste"
       ],
       "writer": "gemini"
     },
@@ -3926,6 +3823,136 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:función"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "independencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "獨立；自主",
+      "en": "independence",
+      "ipa": "/indepenˈdenθja/",
+      "breakdown": [
+        {
+          "part": "in-",
+          "zh": "否定、不"
+        },
+        {
+          "part": "dependencia",
+          "zh": "依賴、附屬"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "in- + dependencia",
+          "zh": "不 + 依賴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "independencia",
+          "zh": "獨立"
+        }
+      ],
+      "cognates_en": [
+        "independence"
+      ],
+      "story_zh": "由否定字首 in-（不、非）與 dependencia（依賴、附屬）組合而成。字面原意是「不依賴他人、不受外力控制」，引申為國家的「獨立」或個人的「自主」。",
+      "hook_zh": "和英文 independence 同源，看到 in-（不）加 dependencia（依賴），就是「獨立」！",
+      "usage_zh": "陰性名詞。常見搭配為 declarar la independencia（宣布獨立）或 Día de la Independencia（獨立紀念日）。",
+      "example_es": "El país celebró el Día de la Independencia.",
+      "example_zh": "這個國家慶祝了獨立紀念日。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:independencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "plazo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "期限；時期；分期付款",
+      "en": "period, deadline, installment",
+      "ipa": "/ˈplaθo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "placeō",
+          "zh": "令人滿意"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "placitus",
+          "zh": "約定的、商定的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "plazo",
+          "zh": "約定期限"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "plazo",
+          "zh": "期限、分期"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 placitus（商定的），來自 placeō（使滿意）。最初指雙方商定好、皆能滿意的「約定日期」，在古西班牙語演變為 plazo，後來引申為法律或合約上的「期限」，現今也常指「分期付款」。",
+      "hook_zh": "繳費期限（plazo）快到了！如果不能一次付清，就申請分期付款（a plazos）吧。",
+      "usage_zh": "常見片語：a corto/largo plazo（短期／長期）、a plazos（分期付款）。",
+      "example_es": "El plazo para entregar el informe termina mañana.",
+      "example_zh": "繳交報告的期限明天截止。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:plazo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "término",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "終點；結束；期限；術語",
+      "en": "end, terminus, term, period",
+      "ipa": "/ˈteɾmino/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*ter-",
+          "zh": "穿過"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "terminus",
+          "zh": "界標、邊界"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "término",
+          "zh": "終點、期限、詞語"
+        }
+      ],
+      "cognates_en": [
+        "term",
+        "terminal",
+        "terminus"
+      ],
+      "story_zh": "借自拉丁語 terminus，原指土地上的「界標、邊界」，源自印歐語 *ter-（穿過）。從空間上的界線，延伸為時間上的「終點、期限」，再引申為精確劃定語義界線的「術語、詞彙」。",
+      "hook_zh": "聯想英文 terminal（終點站）與 term（學期、術語），都是代表「邊界與限制」的 término。",
+      "usage_zh": "陽性名詞，重音在第一個音節。常見搭配：poner término a...（結束……）。",
+      "example_es": "Debemos poner término a esta discusión absurda.",
+      "example_zh": "我們必須結束這場荒謬的爭論。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:término",
+        "wiktionary:la:terminus"
       ],
       "writer": "gemini"
     }

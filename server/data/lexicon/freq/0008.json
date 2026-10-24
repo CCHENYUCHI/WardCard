@@ -1,118 +1,7 @@
 {
   "theme": "freq-0008",
-  "theme_zh": "常用字（頻率第 1907–2187 名）",
+  "theme_zh": "常用字（頻率第 1914–2191 名）",
   "entries": [
-    {
-      "word": "señal",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "信號、標誌、跡象",
-      "en": "sign, signal",
-      "ipa": "/seˈɲal/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "signum",
-          "zh": "標記、信號"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "signāle",
-          "zh": "信號"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "señal",
-          "zh": "信號、標誌"
-        }
-      ],
-      "cognates_en": [
-        "signal",
-        "sign"
-      ],
-      "story_zh": "源自拉丁語 signum（標記、信號），在晚期拉丁語演變成名詞 signāle，指可辨識的信號或標誌。進入西班牙語後經由音變成為 señal，保留了指示與信號的核心意義。英文的 signal 和 sign 也是同源字。",
-      "hook_zh": "看見 Wi-Fi 訊號（signal）格數全滿，就是手機接收到最好的「señal」。",
-      "usage_zh": "陰性名詞。常見搭配如 señal de tráfico（交通標誌）或 dar una señal（發送信號）。",
-      "example_es": "No tengo señal en mi teléfono móvil.",
-      "example_zh": "我的手機沒有信號。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:señal",
-        "wiktionary:la:signale",
-        "wiktionary:la:signum"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "superficie",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "表面、面積",
-      "en": "surface, area",
-      "ipa": "/supeɾˈfiθje/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "superficiēs",
-          "zh": "表面、外表"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "superficie",
-          "zh": "表面、面積"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "借自古典拉丁語 superficiēs（表面、外表）。字面上由 super（在…之上）與 faciēs（面貌、臉）構成，指物體最上方顯露出的表層。西語承襲後，既指物體的物理表面，也常用於幾何或土地的面積。",
-      "hook_zh": "英文 surface 的西語親戚：super-（上層）+ ficie（臉面），浮在最上方的面就是表面。",
-      "usage_zh": "陰性名詞，字尾是特殊的 -ie（如 serie、especie），複數形為 superficies。",
-      "example_es": "La superficie de la mesa está muy limpia.",
-      "example_zh": "這張桌子的表面很乾淨。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:superficie"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "universo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "宇宙、全世界",
-      "en": "universe",
-      "ipa": "/uniˈbeɾso/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "ūniversus",
-          "zh": "全體的、合為一體的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "universo",
-          "zh": "宇宙"
-        }
-      ],
-      "cognates_en": [
-        "universe"
-      ],
-      "story_zh": "源自拉丁語形容詞 ūniversus（合為一體的、全體的）。拉丁語中由 ūnus（一）與 versus（轉向）組成，原指「旋轉匯聚為一體的所有存在」。後來演變為指稱容納一切星體與空間的「宇宙」。英文的 universe 正是同源字。",
-      "hook_zh": "直接對應英文 universe，只要把字尾改成西語常見的陽性結尾 -o。",
-      "usage_zh": "陽性名詞。指整個客觀存在的「宇宙」時，通常會加上定冠詞 el universo。",
-      "example_es": "Hay miles de millones de galaxias en el universo.",
-      "example_zh": "宇宙中有數十億個星系。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:universo"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "valle",
       "article": "el",
@@ -3972,6 +3861,85 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:cariño"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "constitucional",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "憲法的、合憲的",
+      "en": "constitutional",
+      "ipa": "/konstituθjoˈnal/",
+      "breakdown": [
+        {
+          "part": "constitución",
+          "zh": "憲法"
+        },
+        {
+          "part": "-al",
+          "zh": "…的（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "constitución + -al",
+          "zh": "憲法 + 形容詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "constitucional",
+          "zh": "憲法的"
+        }
+      ],
+      "cognates_en": [
+        "constitutional"
+      ],
+      "story_zh": "由名詞 constitución（憲法）加上形容詞字尾 -al 派生而來，表示「與憲法相關的」或「合乎憲法體制的」。",
+      "hook_zh": "與英文 constitutional 完全同源，字尾轉成西語常見的 -al。",
+      "usage_zh": "陰陽同形形容詞，修飾陽性或陰性名詞形狀不變，複數為 constitucionales。",
+      "example_es": "El tribunal defendió el orden constitucional.",
+      "example_zh": "法院捍衛了憲法秩序。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:constitucional"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "controlar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "控制、管理、監控",
+      "en": "to control, to manage, to monitor",
+      "ipa": "/kontɾoˈlaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "contrôler",
+          "zh": "查驗、控制"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "controlar",
+          "zh": "控制、管理"
+        }
+      ],
+      "cognates_en": [
+        "control"
+      ],
+      "story_zh": "借自法語 contrôler。該詞原指透過對照副本來核查帳冊名錄，後來引申為監督、調節、掌控情勢或管理情緒。",
+      "hook_zh": "英文 control 加上動詞字尾 -ar 就是西語的 controlar，意思高度重合。",
+      "usage_zh": "常見搭配 controlar la situación（控制局勢），反身動詞 controlarse 表示克制自己。",
+      "example_es": "Es importante controlar el estrés diario.",
+      "example_zh": "調適日常壓力是非常重要的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:controlar"
       ],
       "writer": "gemini"
     }

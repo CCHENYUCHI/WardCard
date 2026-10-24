@@ -1,95 +1,7 @@
 {
   "theme": "freq-0011",
-  "theme_zh": "常用字（頻率第 2659–2889 名）",
+  "theme_zh": "常用字（頻率第 2668–2895 名）",
   "entries": [
-    {
-      "word": "intelectual",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "智力的、知識份子的",
-      "en": "intellectual",
-      "ipa": "/inteleɡˈtwal/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "intellēctuālis",
-          "zh": "理智的、智力的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "intelectual",
-          "zh": "智力的、知識份子的"
-        }
-      ],
-      "cognates_en": [
-        "intellectual"
-      ],
-      "story_zh": "源自拉丁語 intellēctuālis，指與理解力或理智思考相關的事物。後來詞義延伸，既可用來形容心智與思維層面的活動，也能直接當名詞指稱具備深厚文化思考素養的知識份子。",
-      "hook_zh": "英文也是 intellectual，拼法幾乎完全相同，指智力或知識份子。",
-      "usage_zh": "作形容詞時陰陽同形；轉為名詞時指「知識份子」，可作 el intelectual 或 la intelectual。",
-      "example_es": "El ajedrez es un juego intelectual.",
-      "example_zh": "西洋棋是一項考驗智力的遊戲。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:intelectual"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "lanzamiento",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "發射、投擲、發表、推出",
-      "en": "launch, throwing, release",
-      "ipa": "/lanθaˈmjento/",
-      "breakdown": [
-        {
-          "part": "lanzar",
-          "zh": "投擲、發射"
-        },
-        {
-          "part": "-miento",
-          "zh": "名詞字尾，表動作或結果"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "火箭發射（lanzar）升空的那個瞬間與整個動作，就是 lanzamiento！",
-      "usage_zh": "除了實體的投擲與火箭發射，商業上也常指新產品或服務的「上市發表」。",
-      "example_es": "El lanzamiento del nuevo producto fue un éxito.",
-      "example_zh": "新產品的發表上市非常成功。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:lanzamiento"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "paro",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "停頓、罷工、失業",
-      "en": "stop, strike, unemployment",
-      "ipa": "/ˈpaɾo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "車子停下（parar）是暫停；工作停下來，在西班牙就是「罷工」或「失業」（paro）。",
-      "usage_zh": "在西班牙常用於「失業」：estar en paro（失業中）、cobrar el paro（領失業救濟）。",
-      "example_es": "Muchos jóvenes están en paro en este momento.",
-      "example_zh": "此時有許多青年處於失業狀態。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:paro"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "particularmente",
       "article": "",
@@ -2844,28 +2756,6 @@
       "writer": "gemini"
     },
     {
-      "word": "pai",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "父親、爸爸",
-      "en": "father, dad",
-      "ipa": "/ˈpai/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "發音像「派」，想像爸爸（pai）戴著高帽子、派頭十足地走來。",
-      "usage_zh": "陽性名詞，複數為 pais，為部分地區口語稱呼父親的用法。",
-      "example_es": "Mi pai siempre me ayuda con la tarea.",
-      "example_zh": "我爸爸總會幫我寫作業。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:pai"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "peligroso",
       "article": "",
       "pos": "adjetivo",
@@ -3897,6 +3787,150 @@
       "sources": [
         "wiktionary:es:raíz",
         "wiktionary:la:radix"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "repente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "突然的舉動、衝動；陣發",
+      "en": "fit, sudden movement, sudden impulse",
+      "ipa": "/reˈpente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rēpentem",
+          "zh": "突然的、未預料到的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "repente",
+          "zh": "突然發作、衝動"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語形容詞賓格 rēpentem，原本意思是「突然的、出乎意料的」。在西語中演變成名詞，指毫無預警突然爆發的動作、情緒或衝動。",
+      "hook_zh": "最常出現在片語 de repente，表示事情「突然」發生了！",
+      "usage_zh": "日常中最常以副詞片語 de repente（突然地）出現。單獨作名詞指突發舉動。",
+      "example_es": "Le dio un repente y salió corriendo.",
+      "example_zh": "他一時衝動就跑出去了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:repente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "rosario",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "玫瑰經念珠；玫瑰經",
+      "en": "rosary",
+      "ipa": "/roˈsaɾjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rosa",
+          "zh": "玫瑰"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "rosārium",
+          "zh": "玫瑰園；玫瑰念珠"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rosario",
+          "zh": "玫瑰經、玫瑰念珠"
+        }
+      ],
+      "cognates_en": [
+        "rosary"
+      ],
+      "story_zh": "學者借詞自拉丁語 rosārium，由 rosa（玫瑰）加上表示場所或器具的字尾 -ārium 組成，原指「玫瑰花園」。後來在天主教傳統中，人們將對聖母的祈禱比喻為一朵朵玫瑰獻禮，因而將玫瑰經與念珠稱為 rosario。",
+      "hook_zh": "玫瑰（rosa）串成的美麗念珠與禱告花園，就是 rosario。",
+      "usage_zh": "陽性名詞。常搭配 rezar el rosario（念玫瑰經）。",
+      "example_es": "Mi abuela reza el rosario todas las tardes.",
+      "example_zh": "我祖母每天下午都會念玫瑰經。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:rosario",
+        "wiktionary:la:rosarium",
+        "wiktionary:la:rosa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "solicitud",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "申請表、申請；請求",
+      "en": "application, request",
+      "ipa": "/soliθiˈtud/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sollicitūdō",
+          "zh": "關切、焦慮、照料"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "solicitud",
+          "zh": "申請、請求"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 sollicitūdō（意為關心、焦慮或專注照料）。在現代西語中演變為正式向他人提出請求、表達期盼被關切與處理的意願，進而衍生為書面的「申請表」或「申請手續」。",
+      "hook_zh": "填寫申請表時心情焦急期盼被核准，遞出這份 solicitud。",
+      "usage_zh": "陰性名詞。以 -tud 結尾的名詞皆為陰性（複數為 solicitudes）。",
+      "example_es": "Ya envié mi solicitud de empleo.",
+      "example_zh": "我已經寄出我的求職申請表了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:solicitud"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "súper",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "超市；極棒的",
+      "en": "supermarket; great, superb",
+      "ipa": "/ˈsupeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "supermercado",
+          "zh": "超級市場"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "súper",
+          "zh": "超市"
+        }
+      ],
+      "cognates_en": [
+        "supermarket",
+        "super"
+      ],
+      "story_zh": "súper 是西語日常口語中 supermercado（超級市場）的簡稱，仿自英文的 supermarket。在對話中常直接說「去 súper 買菜」；此外也能當形容詞用，表示「超棒的、極好的」。",
+      "hook_zh": "就像台灣人常說「去超商」，西語直接把 supermercado 簡稱成 súper！",
+      "usage_zh": "當名詞指超市時為陽性（el súper）；作形容詞時無性數變化（es súper）。",
+      "example_es": "Voy al súper a comprar fruta.",
+      "example_zh": "我要去超市買水果。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:súper"
       ],
       "writer": "gemini"
     }

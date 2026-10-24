@@ -211,13 +211,6 @@ module.exports = {
     s('path', { d: 'M56 74h48', ...SW(4) }, 'dark', { stroke: true }),
     s('rect', { x: 32, y: 80, width: 96, height: 56, rx: 4 }, 'blue', { accent: true })
   ],
-  'éste': [
-    ground(),
-    ...person(46, 136, 'green'),
-    s('path', { d: 'M58 98 92 90', ...SW(6) }, 'skin', { stroke: true }),
-    s('rect', { x: 96, y: 104, width: 38, height: 32, rx: 3 }, 'orange', { accent: true }),
-    arrow('M115 46v40M105 76l10 10 10-10', 'red', 5)
-  ],
   alma: [
     s('path', { d: 'M62 82Q34 50 14 62q12 8 6 18 14 2 12 14 16 2 30-12z' }, 'sky'),
     s('path', { d: 'M98 82q28-32 48-20-12 8-6 18-14 2-12 14-16 2-30-12z' }, 'sky'),

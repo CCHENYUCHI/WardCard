@@ -1,111 +1,7 @@
 {
   "theme": "freq-0007",
-  "theme_zh": "常用字（頻率第 1678–1905 名）",
+  "theme_zh": "常用字（頻率第 1688–1913 名）",
   "entries": [
-    {
-      "word": "oh",
-      "article": "",
-      "pos": "interjección",
-      "zh": "噢、哦（表驚訝、痛苦或領悟）",
-      "en": "oh (expression of awe, surprise or pain)",
-      "ipa": "/ˈo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "oh"
-      ],
-      "story_zh": "",
-      "hook_zh": "西語的 h 不發音，所以發音就跟英文 oh 一樣，是自然的感嘆聲。",
-      "usage_zh": "書寫時前後通常會加上驚嘆號，寫作 ¡Oh!。",
-      "example_es": "¡Oh, qué sorpresa verte aquí!",
-      "example_zh": "噢，真驚訝在這裡遇見你！",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:oh"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "permiso",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "許可、執照；請假；借過",
-      "en": "permission, permit, license",
-      "ipa": "/peɾˈmiso/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "permissum",
-          "zh": "許可、准許"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "permiso",
-          "zh": "許可、執照"
-        }
-      ],
-      "cognates_en": [
-        "permission",
-        "permit"
-      ],
-      "story_zh": "源自拉丁語 permissum（許可、准許），為學術借詞。原本指官方給予的准許或放行，後來延伸為各類許可證或執照，在日常生活中也用來表示短暫離開的准假或禮貌借過。",
-      "hook_zh": "想通過關卡需要 permission，西語說 permiso，拿著許可證通行無阻。",
-      "usage_zh": "常見搭配：pedir permiso（請求許可）、con permiso（借過、失陪）。",
-      "example_es": "¿Tienes permiso para entrar aquí?",
-      "example_zh": "你有進去這裡的許可嗎？",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:permiso"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "presentación",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "簡報、展示；介紹",
-      "en": "presentation, introduction",
-      "ipa": "/pɾesentaˈθjon/",
-      "breakdown": [
-        {
-          "part": "presentar",
-          "zh": "展示、介紹"
-        },
-        {
-          "part": "-ción",
-          "zh": "名詞字尾（表動作或結果）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "presentar + -ción",
-          "zh": "展示 + 名詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "presentación",
-          "zh": "簡報、介紹"
-        }
-      ],
-      "cognates_en": [
-        "presentation"
-      ],
-      "story_zh": "由動詞 presentar（展示、介紹）加上名詞字尾 -ción（表動作或結果）組合而成。指把人事物端到大眾面前公開亮相的動作，引申為上台報告、新書發表或自我介紹。",
-      "hook_zh": "在全班面前 present（展示），這場精彩的簡報就是 presentación！",
-      "usage_zh": "以 -ción 結尾的名詞皆為陰性。做簡報常用動詞搭配 hacer una presentación。",
-      "example_es": "Mañana tengo una presentación en la oficina.",
-      "example_zh": "明天我在辦公室有一場簡報。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:presentación"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "reconocimiento",
       "article": "el",
@@ -3680,6 +3576,117 @@
       "sources": [
         "wiktionary:es:sencillo",
         "wiktionary:la:singulus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "señal",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "信號、標誌、跡象",
+      "en": "sign, signal",
+      "ipa": "/seˈɲal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "signum",
+          "zh": "標記、信號"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "signāle",
+          "zh": "信號"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "señal",
+          "zh": "信號、標誌"
+        }
+      ],
+      "cognates_en": [
+        "signal",
+        "sign"
+      ],
+      "story_zh": "源自拉丁語 signum（標記、信號），在晚期拉丁語演變成名詞 signāle，指可辨識的信號或標誌。進入西班牙語後經由音變成為 señal，保留了指示與信號的核心意義。英文的 signal 和 sign 也是同源字。",
+      "hook_zh": "看見 Wi-Fi 訊號（signal）格數全滿，就是手機接收到最好的「señal」。",
+      "usage_zh": "陰性名詞。常見搭配如 señal de tráfico（交通標誌）或 dar una señal（發送信號）。",
+      "example_es": "No tengo señal en mi teléfono móvil.",
+      "example_zh": "我的手機沒有信號。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:señal",
+        "wiktionary:la:signale",
+        "wiktionary:la:signum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "superficie",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "表面、面積",
+      "en": "surface, area",
+      "ipa": "/supeɾˈfiθje/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "superficiēs",
+          "zh": "表面、外表"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "superficie",
+          "zh": "表面、面積"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自古典拉丁語 superficiēs（表面、外表）。字面上由 super（在…之上）與 faciēs（面貌、臉）構成，指物體最上方顯露出的表層。西語承襲後，既指物體的物理表面，也常用於幾何或土地的面積。",
+      "hook_zh": "英文 surface 的西語親戚：super-（上層）+ ficie（臉面），浮在最上方的面就是表面。",
+      "usage_zh": "陰性名詞，字尾是特殊的 -ie（如 serie、especie），複數形為 superficies。",
+      "example_es": "La superficie de la mesa está muy limpia.",
+      "example_zh": "這張桌子的表面很乾淨。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:superficie"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "universo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "宇宙、全世界",
+      "en": "universe",
+      "ipa": "/uniˈbeɾso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūniversus",
+          "zh": "全體的、合為一體的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "universo",
+          "zh": "宇宙"
+        }
+      ],
+      "cognates_en": [
+        "universe"
+      ],
+      "story_zh": "源自拉丁語形容詞 ūniversus（合為一體的、全體的）。拉丁語中由 ūnus（一）與 versus（轉向）組成，原指「旋轉匯聚為一體的所有存在」。後來演變為指稱容納一切星體與空間的「宇宙」。英文的 universe 正是同源字。",
+      "hook_zh": "直接對應英文 universe，只要把字尾改成西語常見的陽性結尾 -o。",
+      "usage_zh": "陽性名詞。指整個客觀存在的「宇宙」時，通常會加上定冠詞 el universo。",
+      "example_es": "Hay miles de millones de galaxias en el universo.",
+      "example_zh": "宇宙中有數十億個星系。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:universo"
       ],
       "writer": "gemini"
     }
