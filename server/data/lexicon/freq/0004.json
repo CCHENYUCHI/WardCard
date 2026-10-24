@@ -3286,6 +3286,626 @@
         "wiktionary:es:realizar"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "referencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "參考；提及；引述",
+      "en": "reference",
+      "ipa": "/refeˈɾenθja/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "論文後面的「參考資料」就像英文 reference，一眼就能認出 referencia。",
+      "usage_zh": "常搭配 hacer referencia a…（提到、提及某事），為陰性名詞。",
+      "example_es": "Él hizo una referencia a su libro favorito.",
+      "example_zh": "他提到了他最喜歡的那本書。",
+      "image": "emoji:🔖",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:referencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reforma",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "改革；整修",
+      "en": "reform",
+      "ipa": "/reˈfoɾma/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "把舊形狀（forma）重新整修（re-），就是 reforma（改革、整修）。",
+      "usage_zh": "常用於政治經濟改革，也常指住家「裝潢、翻新」（hacer reformas）。",
+      "example_es": "El gobierno aprobó una reforma educativa.",
+      "example_zh": "政府通過了一項教育改革。",
+      "image": "emoji:🛠️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:reforma"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reino",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "王國；領域；界",
+      "en": "kingdom, realm",
+      "ipa": "/ˈreino/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "regnum",
+          "zh": "王權、王國"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "reino",
+          "zh": "王國"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reino",
+          "zh": "王國"
+        }
+      ],
+      "cognates_en": [
+        "reign"
+      ],
+      "story_zh": "源自拉丁語 regnum，原指「王權、統治」，後來轉指國王管轄的統轄地「王國」。古西班牙語曾寫作 reino 或 regno，英文中的 reign（統治）也是同源字。",
+      "hook_zh": "國王（rey）統治的領地就是 reino（王國），發音也很像英文 reign。",
+      "usage_zh": "生物學的「界」也用此字，如 reino animal（動物界）、reino vegetal（植物界）。",
+      "example_es": "España es un reino con una larga historia.",
+      "example_zh": "西班牙是一個歷史悠久的王國。",
+      "image": "emoji:👑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reino",
+        "wiktionary:la:regnum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "resultar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "結果為；顯得；證明是",
+      "en": "to result, to turn out",
+      "ipa": "/resulˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "resultāre",
+          "zh": "反彈、產生結果"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "resultar",
+          "zh": "結果為、證明是"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語動詞 resultāre。拉丁詞義原指「反彈、回跳」，事情經過撞擊互動後反彈出的狀態，就演變成了「產生結果」或「最後呈現」。",
+      "hook_zh": "長得很像英文 result，記住加上動詞字尾 -ar 就成了西語動詞。",
+      "usage_zh": "常搭配形容詞表示「顯得…」，例如 resultar difícil（顯得困難）。規則變化。",
+      "example_es": "Al final, todo resultó muy bien.",
+      "example_zh": "最後，一切結果都非常順利。",
+      "image": "emoji:🎯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:resultar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "riesgo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "風險；危險",
+      "en": "risk",
+      "ipa": "/ˈrjesɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "reseco",
+          "zh": "切除、阻截"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*resecum",
+          "zh": "險峭岩壁、斷崖"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "riesco",
+          "zh": "危險、懸崖"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "riesgo",
+          "zh": "風險"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "承襲自古西班牙語 riesco，推測可能源自通俗拉丁語 *resecum（衍生自動詞 resecō「切除、斷開」），原指像被刀切開般陡峭危險的「斷崖、礁石」。航海中遭遇險礁的不確定性，逐漸演變成現代表示「風險」的詞義。",
+      "hook_zh": "站在刀削般的懸崖邊，每走一步都有墜落的「風險」（riesgo）。",
+      "usage_zh": "常搭配 correr riesgo（冒風險）或 a riesgo de（冒著…的風險）。",
+      "example_es": "No quiero correr ese riesgo ahora.",
+      "example_zh": "我現在不想冒那個風險。",
+      "image": "emoji:⚠️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:riesgo",
+        "wiktionary:la:reseco"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sacar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "拿出、取出；發行、推出",
+      "en": "to take out, to pull out, to release",
+      "ipa": "/saˈkaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "哥德語",
+          "word": "sakan",
+          "zh": "爭論、斥責"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sacar",
+          "zh": "拿出、抽出"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sacar",
+          "zh": "拿出、取出"
+        }
+      ],
+      "cognates_en": [
+        "seek"
+      ],
+      "story_zh": "繼承自古西班牙語 sacar，最早見於《熙德之歌》。詞源推測可能來自哥德語 sakan（爭論、斥責）。語義推測由法庭上的爭取、奪回權利，演變為抽取、拔出，進而引申為把東西「拿出來」或「發行」。",
+      "hook_zh": "發音像把東西從口袋「suck（吸）」出來，也可聯想英文 seek（尋找並拿出來）。",
+      "usage_zh": "第一人稱簡單過去式拼寫變化為 yo saqué（c 改為 qu）。常見搭配如 sacar la basura（倒垃圾）、sacar fotos（拍照）。",
+      "example_es": "Voy a sacar la basura antes de cenar.",
+      "example_zh": "我吃晚餐前要去倒垃圾。",
+      "image": "emoji:🗑️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sacar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "silencio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "安靜，沉默；休止符",
+      "en": "silence, rest",
+      "ipa": "/siˈlenθjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "silentium",
+          "zh": "寂靜、沉默"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "silencio",
+          "zh": "安靜、沉默"
+        }
+      ],
+      "cognates_en": [
+        "silence"
+      ],
+      "story_zh": "直接借自拉丁語的名詞 silentium，指完全無聲或靜止的狀態。這個字在西語中保留了古典拉丁語的莊嚴感，除了表示環境的安靜或人的沉默，在樂理中也指暫停演奏的「休止符」。",
+      "hook_zh": "長得跟英文 silence 幾乎一樣，只要把字尾 -ce 換成西語陽性常見的 -o。",
+      "usage_zh": "陽性名詞。常用片語有 en silencio（安靜地、默默地）以及在公共場合聽到的 ¡Silencio!（請安靜！）。",
+      "example_es": "Por favor, mantengan el silencio en la biblioteca.",
+      "example_zh": "在圖書館內請保持安靜。",
+      "image": "emoji:🤫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:silencio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "temporada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "時期，季節；（影集或賽季）季",
+      "en": "season, period, span of time",
+      "ipa": "/tempoˈɾada/",
+      "breakdown": [
+        {
+          "part": "tempor-",
+          "zh": "時間（源自拉丁語 tempus）"
+        },
+        {
+          "part": "-ada",
+          "zh": "時期、持續期間字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tempus",
+          "zh": "時間"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "temporada",
+          "zh": "時期、季節"
+        }
+      ],
+      "cognates_en": [
+        "temporary"
+      ],
+      "story_zh": "源自拉丁語 tempus（時間，詞幹為 tempor-），加上表示期間的西語後綴 -ada 組成。字面意思就是「一段持續的時間」，引申為特定的季節、時期，或現代常見的電視影集「季」與運動賽季。",
+      "hook_zh": "字首 tempor- 就跟英文 temporary（暫時的）一樣代表時間，-ada 形成一段時光。",
+      "usage_zh": "陰性名詞。注意區分 estación（指春夏秋冬四季）與 temporada（指觀光季、打折季、影集季）。",
+      "example_es": "Esta noche estrenan la nueva temporada de la serie.",
+      "example_zh": "這部影集的新一季今晚首播。",
+      "image": "emoji:🗓️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:temporada"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "autoridad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "權力，威信；當局，官方；權威人士",
+      "en": "authority",
+      "ipa": "/autoɾiˈdad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "auctōritātem",
+          "zh": "權力、威信、影響力"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "autoridad",
+          "zh": "權力、當局"
+        }
+      ],
+      "cognates_en": [
+        "authority"
+      ],
+      "story_zh": "直接借自拉丁語 auctōritātem，指由威望、職位或學識所產生的影響力與支配力。西語繼承後，既能指抽象的「權威與威信」，也可轉指行使公權力的「官方、當局」或某領域的權威人士。",
+      "hook_zh": "英文 authority 的雙胞胎兄弟，西語把 -ty 規則轉成 -dad 結尾。",
+      "usage_zh": "陰性名詞（所有 -dad 結尾名詞皆為陰性）。常用複數 las autoridades 指政府官方或警方當局。",
+      "example_es": "Las autoridades investigan las causas del accidente.",
+      "example_zh": "當局正在調查這起事故的原因。",
+      "image": "emoji:👮",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:autoridad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "comenzar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "開始，著手",
+      "en": "to begin, to commence",
+      "ipa": "/komenˈθaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "initiāre",
+          "zh": "開始"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*cominitiāre",
+          "zh": "開始"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "començar",
+          "zh": "開始"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "comenzar",
+          "zh": "開始"
+        }
+      ],
+      "cognates_en": [
+        "commence"
+      ],
+      "story_zh": "繼承自古西班牙語 començar，源於通俗拉丁語 *cominitiāre，由加強語氣前綴 com- 與動詞 initiāre（開始，源自 initium）組合而成。中世紀初期原本無雙母音化，推測後來受同義詞 empezar 的類比影響，演變出現代的母音變化（o 變 ue）。",
+      "hook_zh": "英文高級單字 commence 就是它的同源親戚，都指正式或莊重地「開始」。",
+      "usage_zh": "陳述式現在式有雙母音不規則變化：comienzo、comienzas（nosotros 不變）。常用結構為 comenzar a + 原形動詞。",
+      "example_es": "La película va a comenzar a las ocho.",
+      "example_zh": "電影將在八點開始。",
+      "image": "emoji:▶️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:comenzar",
+        "wiktionary:la:initio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "comercio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "商業、貿易；商店",
+      "en": "trade, commerce, shop",
+      "ipa": "/koˈmeɾθjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "commercium",
+          "zh": "商業、貿易、往來"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "comercio",
+          "zh": "商業、貿易；商店"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 commercium，指人與人之間的貨物交易與往來。此字為西語的學術借詞（cultismo），保留了古典拉丁語的型態，後來意思也引申為進行買賣的實體「商店」。",
+      "hook_zh": "商場的英文 commerce 和 comercio 長得極像，都是做生意的「商業貿易」。",
+      "usage_zh": "陽性名詞。可指抽象的商業貿易，也可指實體的店舖或店家。",
+      "example_es": "El comercio local creció mucho este año.",
+      "example_zh": "當地的商業今年成長了許多。",
+      "image": "emoji:🏪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:comercio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "daño",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "傷害、損害、損失",
+      "en": "damage, harm",
+      "ipa": "/ˈdaɲo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*dh₂pnom",
+          "zh": "花費、代價"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "damnum",
+          "zh": "損害、傷害、罰金"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "danno",
+          "zh": "損害"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "daño",
+          "zh": "傷害、損害"
+        }
+      ],
+      "cognates_en": [
+        "damage"
+      ],
+      "story_zh": "最早可追溯至原始印歐語 *dh₂pnom（花費、代價），進入拉丁語演變為 damnum，原指金錢上的損失、代價或罰款，後延伸為泛指任何損傷、傷害。經古西班牙語 danno 演變為現代西語 daño，英文 damage 亦源自同根。",
+      "hook_zh": "大腦受到 damage 會帶來很大傷害（daño），都是同一字根！",
+      "usage_zh": "常用片語 hacer daño a…（傷害…）或 sufrir daños（蒙受損失）。",
+      "example_es": "La tormenta causó mucho daño en la ciudad.",
+      "example_zh": "這場暴風雨對這座城市造成了很大的損害。",
+      "image": "emoji:💥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:daño",
+        "wiktionary:la:damnum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "elemento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "要素、元素；成分",
+      "en": "element, component",
+      "ipa": "/eleˈmento/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "elementum",
+          "zh": "基本要素、元素、原理"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "elemento",
+          "zh": "要素、元素"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "此字為學術借詞，直接源自拉丁語 elementum，古代指構成物質的基本要素（如水、火、土、氣四大元素）或學問的基本原理。現代西語延續此義，指構成事物的「要素」或化學「元素」。",
+      "hook_zh": "英文 element 結尾加上西語陽性結尾 -o，就是要素 elemento。",
+      "usage_zh": "陽性名詞。常用於 elemento clave（關鍵要素）或指化學元素。",
+      "example_es": "El agua es un elemento vital para la vida.",
+      "example_zh": "水是維持生命不可或缺的要素。",
+      "image": "emoji:🧩",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:elemento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "esfuerzo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "努力、盡力",
+      "en": "effort, endeavor",
+      "ipa": "/esˈfweɾθo/",
+      "breakdown": [
+        {
+          "part": "esforzar",
+          "zh": "使出力氣、努力"
+        },
+        {
+          "part": "-o",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*exfortiāre",
+          "zh": "出力、強化"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "esforçar",
+          "zh": "努力、使出全力"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "esfuerço",
+          "zh": "努力"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esfuerzo",
+          "zh": "努力"
+        }
+      ],
+      "cognates_en": [
+        "effort"
+      ],
+      "story_zh": "承襲自古西班牙語 esfuerço，源自動詞 esforçar（來自通俗拉丁語 *exfortiāre，由拉丁語力量 fortis 引申而來），表示「用盡所有力氣去克服困難」，引申為「努力、奮鬥」。英文 effort 亦是同源詞。",
+      "hook_zh": "es-（向外）+ fuerza（力量）釋放出來，就是全力以赴的「努力」。",
+      "usage_zh": "常用搭配 hacer un esfuerzo（做出努力、盡一份心力）。",
+      "example_es": "Con esfuerzo y paciencia, aprobarás el examen.",
+      "example_zh": "只要付出努力與耐心，你就能通過考試。",
+      "image": "emoji:💪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esfuerzo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gratis",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "免費地、不收費地",
+      "en": "free, without charge",
+      "ipa": "/ˈɡɾatis/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "grātīs",
+          "zh": "出於恩惠、好意；不求回報地"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gratis",
+          "zh": "免費地"
+        }
+      ],
+      "cognates_en": [
+        "grace"
+      ],
+      "story_zh": "源自拉丁語 grātīs，原本是 grātia（恩惠、好意、感謝）的奪格複數形，字面意思是「出於好意地、贈送地」，引申為「不求回報、不收費」。英文的 grace（恩惠、優雅）也是同源字。",
+      "hook_zh": "給予他人 grace（恩惠、好處），不用付錢那就是 gratis（免費）！",
+      "usage_zh": "型態不變（invariable），可作副詞或形容詞用：Entrada gratis（免費入場）。",
+      "example_es": "La entrada al museo es completamente gratis.",
+      "example_zh": "這家博物館的門票完全是免費的。",
+      "image": "emoji:🆓",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gratis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "salida",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "出口、離開、出路",
+      "en": "exit, departure",
+      "ipa": "/saˈlida/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "逃生門上常見綠色奔跑小人標誌，旁邊就寫著大大的 SALIDA（出口）。",
+      "usage_zh": "陰性名詞。機場的「出境」常標示為複數 salidas；緊急出口為 salida de emergencia。",
+      "example_es": "¿Dónde está la salida?",
+      "example_zh": "出口在哪裡？",
+      "image": "emoji:🚪",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:salida"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "selección",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "選擇、挑選；國家代表隊",
+      "en": "selection, choice, national team",
+      "ipa": "/seleɡˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sēlēctiōnem",
+          "zh": "挑選、選擇"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "selección",
+          "zh": "選擇、國家代表隊"
+        }
+      ],
+      "cognates_en": [
+        "selection"
+      ],
+      "story_zh": "源自拉丁語 sēlēctiōnem，原意為「挑選、選擇」。在西班牙語中除了指選擇或挑選的行為外，也引申指精選頂尖選手組成的「國家體育代表隊」。",
+      "hook_zh": "拼法與英文 selection 幾乎相同，在運動賽事中精挑細選組成的就是國家隊！",
+      "usage_zh": "陰性名詞，字尾 -ción 均為陰性。指國家代表隊時常大寫作 la Selección。",
+      "example_es": "La selección ganó el partido.",
+      "example_zh": "國家隊贏得了比賽。",
+      "image": "emoji:⚽",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:selección"
+      ],
+      "writer": "gemini"
     }
   ]
 }
