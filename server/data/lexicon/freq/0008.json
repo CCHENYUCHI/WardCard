@@ -1588,6 +1588,48 @@
       "writer": "gemini"
     },
     {
+      "word": "caber",
+      "article": "",
+      "pos": "verbo",
+      "zh": "裝得下、容納；進得去、穿得下",
+      "en": "to fit, to be contained",
+      "ipa": "/kaˈbeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "capere",
+          "zh": "抓住、容納"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "caber",
+          "zh": "容納"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caber",
+          "zh": "容納、裝得下"
+        }
+      ],
+      "cognates_en": [
+        "have",
+        "capture"
+      ],
+      "story_zh": "源自拉丁語動詞 capere（抓住、容納）。在古人的思維中，「容納」就是容器或空間把物體「抓住、含括」在其中，後來演變為物品「裝得下、進得去」。英文的 have 與 capture 也是來自同一個印歐語字根。",
+      "hook_zh": "東西能不能「卡進（caber）」箱子裡？只要能卡進去，就是裝得下！",
+      "usage_zh": "極不規則動詞：現在式第一人稱單數為 quepo，簡單過去式為 cupe；日常最常用第三人稱 cabe / caben 表「裝得下」。",
+      "example_es": "Toda mi ropa cabe en esta maleta.",
+      "example_zh": "我所有的衣服都裝得進這個行李箱。",
+      "image": "emoji:📦",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caber",
+        "wiktionary:la:capio"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "comandante",
       "article": "el",
       "pos": "sustantivo",
