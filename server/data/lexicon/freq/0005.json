@@ -1,7 +1,42 @@
 {
   "theme": "freq-0005",
-  "theme_zh": "常用字（頻率第 1186–1413 名）",
+  "theme_zh": "常用字（頻率第 1185–1412 名）",
   "entries": [
+    {
+      "word": "función",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "功能、職責；演出、場次",
+      "en": "function, performance, show",
+      "ipa": "/funˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fūnctiōnem",
+          "zh": "執行、履行、職責"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "función",
+          "zh": "功能、職責、演出"
+        }
+      ],
+      "cognates_en": [
+        "function"
+      ],
+      "story_zh": "源自拉丁語 fūnctiōnem（履行、職責），屬於學者借詞。原意指完成該做的工作或職責，後引申為事物所發揮的「功能」，在戲劇藝術中指一場「演出、上映」，在數學與資訊科學中則指「函數」。英文同源字為 function。",
+      "hook_zh": "就像英文 function，把結尾換成西語經典的 -ción，就是事物發揮的 función（功能）。",
+      "usage_zh": "陰性名詞，複數為 funciones（無重音）。在影劇文化中常指「電影放映場次」或「舞台表演」。",
+      "example_es": "¿A qué hora empieza la función del cine?",
+      "example_zh": "電影那場放映幾點開始？",
+      "image": "emoji:⚙️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:función"
+      ],
+      "writer": "gemini"
+    },
     {
       "word": "independencia",
       "article": "la",

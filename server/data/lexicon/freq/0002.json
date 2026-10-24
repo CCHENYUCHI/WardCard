@@ -1,7 +1,40 @@
 {
   "theme": "freq-0002",
-  "theme_zh": "常用字（頻率第 438–723 名）",
+  "theme_zh": "常用字（頻率第 437–722 名）",
   "entries": [
+    {
+      "word": "mundial",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "世界的、全球的",
+      "en": "worldwide, global",
+      "ipa": "/munˈdjal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "mundiālis",
+          "zh": "世界的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mundial",
+          "zh": "世界的、全球的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "為學者借詞，源自晚期拉丁語 mundiālis（世界的），指涵蓋全人類或遍及整個地球規模的事物。現代西語中也常省略名詞，直接以 el Mundial 代稱「世界盃足球賽」。",
+      "hook_zh": "由 mundo（世界）加上形容詞字尾 -ial 構成，意思就是「世界的、全球的」。",
+      "usage_zh": "形容詞陰陽同形（crisis mundial / evento mundial）。大寫 el Mundial 指世界盃。",
+      "example_es": "El cambio climático es un problema mundial.",
+      "example_zh": "氣候變遷是一個全球性的問題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mundial"
+      ],
+      "writer": "gemini"
+    },
     {
       "word": "obra",
       "article": "la",
@@ -3837,53 +3870,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:actividad"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "adelante",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "向前、往前；請進",
-      "en": "forward; come in",
-      "ipa": "/adeˈlante/",
-      "breakdown": [
-        {
-          "part": "a-",
-          "zh": "朝向、往"
-        },
-        {
-          "part": "delante",
-          "zh": "在前方"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "古西班牙語",
-          "word": "a + delante",
-          "zh": "朝向 + 在前"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "adelante",
-          "zh": "向前"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "adelante",
-          "zh": "向前、請進"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "承襲自古西班牙語 adelante，是由介詞 a（朝向）與副詞 delante（在前面）合詞而成。字面意義就是「往前面去」，後來延伸用於空間的前進、時間的推移，以及禮貌招呼他人「請進、請繼續」。",
-      "hook_zh": "a（朝向）+ delante（前面），合起來就是往前走；有人敲門時說 adelante 就是「請進」！",
-      "usage_zh": "除作副詞表示往前，日常中極常用作感嘆詞表示「請進」或「請講」。",
-      "example_es": "¡Adelante, puedes pasar!",
-      "example_zh": "請進，你可以進來！",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:adelante"
       ],
       "writer": "gemini"
     }

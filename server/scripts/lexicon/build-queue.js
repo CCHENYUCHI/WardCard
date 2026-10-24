@@ -95,7 +95,7 @@ const OWN_SENSES_TO_STAY = 2;
  * The lemma an inflected form folds into, from the facts' form_of list (fetch-facts.js): podemos -> poder,
  * not podar. A known lemma (A1 or queued earlier) wins, then the most frequent one.
  */
-const MISSPELLING = /^(?:misspelling|common misspelling|alternative spelling|nonstandard spelling|obsolete spelling|obsolete form) of (\S+?)[.,;]?$/i;
+const MISSPELLING = /^(?:misspelling|common misspelling|nonstandard spelling|obsolete spelling|obsolete form) of (\S+?)[.,;]?$/i;
 
 /** asi, "misspelling of así": the right spelling the entry belongs to */
 function misspelledFor(facts) {

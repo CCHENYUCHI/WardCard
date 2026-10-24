@@ -1,6 +1,6 @@
 {
   "theme": "freq-0001",
-  "theme_zh": "常用字（頻率第 2–437 名）",
+  "theme_zh": "常用字（頻率第 2–436 名）",
   "entries": [
     {
       "word": "la",
@@ -503,6 +503,44 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:e"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "esa",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "那個（陰性指示代名詞）",
+      "en": "that (feminine)",
+      "ipa": "/ˈesa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipse",
+          "zh": "自己"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipsa",
+          "zh": "她自己"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esa",
+          "zh": "那個"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語的 ipsa（由 ipse 衍生，原指「自己、親自」）。在通俗拉丁語中，這個詞逐漸轉變為指示代名詞，最終演化成西班牙語中用來指稱「離對方較近」的陰性指示詞 esa。",
+      "hook_zh": "指著對方身邊的東西說：「欸，撒（esa）點胡椒在那個上面！」",
+      "usage_zh": "指稱中距離或對方身邊的陰性事物；陽性形為 ese，中性代名詞為 eso。",
+      "example_es": "Esa chaqueta es muy elegante.",
+      "example_zh": "那件外套非常優雅。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esa"
       ],
       "writer": "gemini"
     },
@@ -3852,39 +3890,6 @@
       "sources": [
         "wiktionary:es:línea",
         "wiktionary:la:linea"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "mundial",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "世界的、全球的",
-      "en": "worldwide, global",
-      "ipa": "/munˈdjal/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "mundiālis",
-          "zh": "世界的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "mundial",
-          "zh": "世界的、全球的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "為學者借詞，源自晚期拉丁語 mundiālis（世界的），指涵蓋全人類或遍及整個地球規模的事物。現代西語中也常省略名詞，直接以 el Mundial 代稱「世界盃足球賽」。",
-      "hook_zh": "由 mundo（世界）加上形容詞字尾 -ial 構成，意思就是「世界的、全球的」。",
-      "usage_zh": "形容詞陰陽同形（crisis mundial / evento mundial）。大寫 el Mundial 指世界盃。",
-      "example_es": "El cambio climático es un problema mundial.",
-      "example_zh": "氣候變遷是一個全球性的問題。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:mundial"
       ],
       "writer": "gemini"
     }

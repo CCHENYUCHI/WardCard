@@ -689,5 +689,12 @@ module.exports = {
     s('rect', { x: 58, y: 16, width: 44, height: 10, rx: 2 }, 'gray'),
     s('rect', { x: 46, y: 94, width: 68, height: 16, rx: 2 }, 'tan'),
     s('rect', { x: 22, y: 110, width: 116, height: 26, rx: 3 }, 'brown', { accent: true })
+  ],
+  esa: [
+    ground(),
+    ...person(34, 136, 'blue'),
+    s('path', { d: 'M48 100h30', ...SW(7) }, 'skin', { stroke: true }),
+    ...lady(122, 136, 'pink', { accent: true }),
+    s('path', { d: 'M84 92l8 8-8 8', ...SW(4) }, 'gray', { stroke: true })
   ]
 };
