@@ -1239,6 +1239,41 @@
       "writer": "gemini"
     },
     {
+      "word": "adorar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "崇拜；熱愛、非常喜愛",
+      "en": "to adore, to worship",
+      "ipa": "/adoˈɾaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "adōrāre",
+          "zh": "祈求、崇拜"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "adorar",
+          "zh": "崇拜、熱愛"
+        }
+      ],
+      "cognates_en": [
+        "adore"
+      ],
+      "story_zh": "源自拉丁語動詞 adōrāre，最初在宗教情境中指對神明祈求與敬拜，後來字義延伸至對人或事物極度喜愛與傾慕。英文的 adore 也是同源字。",
+      "hook_zh": "看到可愛的人事物（adore），忍不住深深喜愛、崇拜（adorar）。",
+      "usage_zh": "常用於表達非常喜愛某人或某事，用法如 Adoro el café（我超愛咖啡）。",
+      "example_es": "Ella adora pasar tiempo con sus sobrinos.",
+      "example_zh": "她非常喜愛花時間陪姪子姪女。",
+      "image": "emoji:🙏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:adorar"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "aplicable",
       "article": "",
       "pos": "adjetivo",
@@ -2871,6 +2906,46 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:significativamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sistemático",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "有系統的、有條理的",
+      "en": "systematic",
+      "ipa": "/sisteˈmatiko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "συστηματικός",
+          "zh": "有條理的、組織的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "systematicus",
+          "zh": "系統的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sistemático",
+          "zh": "有系統的"
+        }
+      ],
+      "cognates_en": [
+        "systematic"
+      ],
+      "story_zh": "源自古希臘語 συστηματικός（有條理的），經由晚期拉丁語 systematicus 借入西班牙語。用來形容做事或組織結構如體系一般嚴謹、有條不紊。",
+      "hook_zh": "做事情如 system 一樣有固定模式與步驟，就是 sistemático（系統性的）。",
+      "usage_zh": "陰性形為 sistemática，複數形為 sistemáticos / sistemáticas。",
+      "example_es": "El científico hizo un análisis sistemático de los datos.",
+      "example_zh": "這位科學家對數據進行了系統性的分析。",
+      "image": "emoji:📊",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sistemático"
       ],
       "writer": "gemini"
     },
