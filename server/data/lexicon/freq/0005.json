@@ -3737,6 +3737,150 @@
         "wiktionary:es:jugador"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "personaje",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "角色；知名人物；性格鮮明的人",
+      "en": "character, personage, celebrity",
+      "ipa": "/peɾsoˈnaxe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "personnage",
+          "zh": "知名人士、角色"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "personaje",
+          "zh": "角色、人物"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自法語 personnage。原指有地位或名望的人物，後來延伸指戲劇、小說或影視作品中的「角色」，也可以用來指個性獨特、鮮明的人。",
+      "hook_zh": "舞台上的每個人（persona）都在演繹自己的「角色」（personaje）。",
+      "usage_zh": "多作陽性 el personaje；指女性人物時，口語有時亦可作陰性 la personaje。",
+      "example_es": "Él interpreta a un personaje misterioso.",
+      "example_zh": "他飾演一個神秘的角色。",
+      "image": "emoji:🎭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:personaje"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "好處、優點、利益",
+      "en": "advantage, benefit, pro",
+      "ipa": "/ˈpɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "prōde",
+          "zh": "有益的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "pro",
+          "zh": "好處、利益"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pro",
+          "zh": "好處、優點"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自晚期拉丁語 prōde（有益的），經由古西班牙語 pro 演變而來，原意為利益或益處。現代西語中最常出現在片語「pros y contras」（優缺點）中，指有利的條件。",
+      "hook_zh": "英文常說 pros and cons（優缺點），西語也是 los pros y los contras！",
+      "usage_zh": "最常以複數形式用於片語 los pros y los contras（優缺點、利弊）。",
+      "example_es": "Hay que sopesar los pros y los contras.",
+      "example_zh": "必須權衡利弊得失。",
+      "image": "emoji:👍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pro"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "quizá",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "也許、可能、說不定",
+      "en": "perhaps, maybe",
+      "ipa": "/kiˈθa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "qui sapit",
+          "zh": "誰知道"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "quiçab",
+          "zh": "誰知道、也許"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "quizá",
+          "zh": "也許、可能"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自通俗拉丁語片語 qui sapit（誰知道呢？），在古西班牙語中演變為 quiçab，最終簡化為 quizá。就像中文口語說「誰曉得呢」，表達無法確定的情況，引申出「也許、可能」之意。",
+      "hook_zh": "「誰知道（¿quién sabe?）呢？」發音聯想 quizá，拿不定主意就說也許！",
+      "usage_zh": "與 quizás 通用；後接虛擬式表示可能性較低，接陳述式則表示可能性較高。",
+      "example_es": "Quizá tengamos tiempo mañana.",
+      "example_zh": "也許我們明天會有時間。",
+      "image": "emoji:🤔",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:quizá"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "recién",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "剛、剛剛、最近",
+      "en": "recently, freshly, just",
+      "ipa": "/reˈθjen/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "reciente",
+          "zh": "最近的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "recién",
+          "zh": "剛、剛剛"
+        }
+      ],
+      "cognates_en": [
+        "recent"
+      ],
+      "story_zh": "源自西語形容詞 reciente（最近的）的截尾形（apócope）。形容詞在特定位置省略了尾音，轉化為副詞，用來修飾過去分詞或動詞，表示動作「才剛、剛剛」發生。",
+      "hook_zh": "看到 recién 就想到英文 recent，但後面被切掉了，代表「剛剛才」發生！",
+      "usage_zh": "在西班牙通常修飾過去分詞（如 recién hecho 剛做好的）；在拉美常直接修飾動詞。",
+      "example_es": "El pan está recién horneado.",
+      "example_zh": "這麵包剛出爐。",
+      "image": "emoji:⏱️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:recién"
+      ],
+      "writer": "gemini"
     }
   ]
 }
