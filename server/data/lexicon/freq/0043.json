@@ -1,45 +1,7 @@
 {
   "theme": "freq-0043",
-  "theme_zh": "常用字（頻率第 11256–11542 名）",
+  "theme_zh": "常用字（頻率第 11258–11581 名）",
   "entries": [
-    {
-      "word": "pertenencia",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "歸屬感；（複數）個人隨身物品、財物",
-      "en": "belonging, property, possession",
-      "ipa": "/peɾteˈnenθja/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "pertinēns",
-          "zh": "屬於、相關的"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "pertinentia",
-          "zh": "附屬物、歸屬"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "pertenencia",
-          "zh": "歸屬、個人物品"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "學術借自晚期拉丁語 pertinentia（源自 pertinēre「屬於」），單數常指心理上的「歸屬感」，複數則指個人擁有的隨身私人物品。",
-      "hook_zh": "動詞 pertenecer（屬於）的名詞形，sentido de pertenencia 就是歸屬感。",
-      "usage_zh": "常見 sentido de pertenencia（歸屬感）；複數 pertenencias 指隨身物品。",
-      "example_es": "No olvides recoger tus pertenencias antes de salir.",
-      "example_zh": "出門前別忘了帶走你的隨身物品。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:pertenencia"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "plancha",
       "article": "la",
@@ -881,39 +843,6 @@
       "writer": "gemini"
     },
     {
-      "word": "barbaro",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "極度的、瘋狂的、太棒了（口語）",
-      "en": "extreme, awesome, incredible, sick (slang)",
-      "ipa": "/baɾˈbaɾo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "義大利語",
-          "word": "barbaro",
-          "zh": "野蠻的、極端的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "barbaro",
-          "zh": "極度的、瘋狂的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "借自義大利語 barbaro，在拉丁美洲（特別是阿根廷拉普拉塔地區）流行用語中重音常落在倒數第二音節，用來形容程度極端、令人驚嘆或太棒了。",
-      "hook_zh": "拉美口語常驚嘆 ¡Qué barbaro! 表示「太誇張了」或「太神了」。",
-      "usage_zh": "口語中既可表示正面讚嘆（太棒了），也可表示負面誇張（太離譜了）。",
-      "example_es": "Tuvimos una noche con un frío barbaro en la montaña.",
-      "example_zh": "我們在山上度過了一個冷到極點的夜晚。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:barbaro"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "barón",
       "article": "el",
       "pos": "sustantivo",
@@ -1246,28 +1175,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:drenaje"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "efe",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "字母 F、f",
-      "en": "the letter F",
-      "ipa": "/ˈefe/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "西語字母 F 的名稱，直接念作 efe。",
-      "usage_zh": "西語中所有字母名稱皆為陰性名詞（la efe、la be 等）。",
-      "example_es": "La palabra flor empieza con la letra efe.",
-      "example_zh": "單字 flor 是以字母 F 開頭的。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:efe"
       ],
       "writer": "gemini"
     },
@@ -3501,6 +3408,437 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:espionaje"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estallar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "爆炸、爆發",
+      "en": "to explode, to burst",
+      "ipa": "/estaˈʝaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "astilla",
+          "zh": "碎木片"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "astellar",
+          "zh": "碎裂成片"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estallar",
+          "zh": "爆炸、爆發"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自古西班牙語 astellar（碎裂成片），而該詞又來自 astilla（碎木片）。後來因子音位置對調（metathesis）演變為 estallar，原指木頭如爆裂般炸開，後引申為炸彈爆炸或衝突爆發。",
+      "hook_zh": "炸彈 estallar，就像木片（astilla）四處炸開。",
+      "usage_zh": "常用於危機或戰爭爆發：estallar una guerra。",
+      "example_es": "La bomba va a estallar en cualquier momento.",
+      "example_zh": "炸彈隨時都會爆炸。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estallar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "eternamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "永遠地、永恆地",
+      "en": "eternally",
+      "ipa": "/eˌteɾnaˈmente/",
+      "breakdown": [
+        {
+          "part": "eterno",
+          "zh": "永恆的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "eterno",
+          "zh": "永恆的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "eternamente",
+          "zh": "永遠地"
+        }
+      ],
+      "cognates_en": [
+        "eternally"
+      ],
+      "story_zh": "由形容詞 eterno（永恆的）加上副詞後綴 -mente 構成，表示動作或狀態持續到永遠。",
+      "hook_zh": "eterno（永恆）加上 -mente（副詞字尾），就是永遠地（eternamente）。",
+      "usage_zh": "常用於表達深切謝意：estar eternamente agradecido。",
+      "example_es": "Te estaré eternamente agradecido por tu ayuda.",
+      "example_zh": "我會永遠感激你的幫助。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:eternamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fósil",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "化石",
+      "en": "fossil",
+      "ipa": "/ˈfosil/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fossilis",
+          "zh": "挖掘出來的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fósil",
+          "zh": "化石"
+        }
+      ],
+      "cognates_en": [
+        "fossil"
+      ],
+      "story_zh": "源自拉丁語形容詞 fossilis，字面意思是「挖掘出來的」（源自 fodere「挖掘」）。古代只要是從地底下挖出的奇特石頭或生物遺骸都稱此名，現代專指地層中保存的古生物化石。",
+      "hook_zh": "英文 fossil 和西語 fósil 同源，地底挖出來的骨頭就是化石。",
+      "usage_zh": "名詞陽性 el fósil，複數為 fósiles。",
+      "example_es": "Los científicos encontraron un fósil de dinosaurio.",
+      "example_zh": "科學家發現了一具恐龍化石。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fósil"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gerencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "管理；經理職位；管理層",
+      "en": "management",
+      "ipa": "/xeˈɾenθja/",
+      "breakdown": [
+        {
+          "part": "gerente",
+          "zh": "經理"
+        },
+        {
+          "part": "-ia",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "gerente",
+          "zh": "經理、管理人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gerencia",
+          "zh": "管理、管理層"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 gerente（經理、管理者）加上表示職務或抽象名詞的字尾 -ia 衍生而來，指經理的職責、管理行為或整體的管理部門。",
+      "hook_zh": "gerente（經理）所在的辦公室或職位就是 gerencia（管理處）。",
+      "usage_zh": "陰性名詞 la gerencia。常指公司的高層或管理部門。",
+      "example_es": "La gerencia aprobó el nuevo plan de trabajo.",
+      "example_zh": "管理層批准了新的工作計畫。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gerencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hito",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "里程碑；界石；重要轉折點",
+      "en": "milestone, landmark",
+      "ipa": "/ˈito/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "figo",
+          "zh": "釘立、固定"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "fictus",
+          "zh": "固定立著的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hito",
+          "zh": "界石、里程碑"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自通俗拉丁語 fictus（固定、釘立，源自拉丁語 fīgō）。原指牢牢釘立在土地上作為界線的地界石或路標，後來引申為歷史或人生進程中的重大「里程碑」。",
+      "hook_zh": "釘在路邊的界石，引申為人生或歷史上的重要里程碑（hito）。",
+      "usage_zh": "常用搭配 un hito histórico（歷史里程碑）、marcar un hito（樹立里程碑）。",
+      "example_es": "Este descubrimiento marca un hito en la medicina.",
+      "example_zh": "這項發現為醫學樹立了里程碑。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hito",
+        "wiktionary:la:fictus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hábil",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "能幹的、靈巧的、有能力的",
+      "en": "skillful, able",
+      "ipa": "/ˈabil/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "habeo",
+          "zh": "擁有、掌握"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "habilis",
+          "zh": "便於掌握的、靈巧的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hábil",
+          "zh": "能幹的、靈巧的"
+        }
+      ],
+      "cognates_en": [
+        "able"
+      ],
+      "story_zh": "源自拉丁語 habilis（容易掌握的、合適的），由動詞 habeō（擁有、拿取）加上字尾 -ilis 構成。原本形容工具好拿好用，後來轉指人雙手靈巧、做事有能力。英文的 able 與其同源。",
+      "hook_zh": "手裡「掌握」（habeo）了技術，做事就很靈巧（hábil），相當於英文 able。",
+      "usage_zh": "常用於 días hábiles（工作日/上班日）。陰陽同形：un hombre hábil / una mujer hábil。",
+      "example_es": "Es una cirujana muy hábil con las manos.",
+      "example_zh": "她是一位手法非常靈巧的外科醫生。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hábil",
+        "wiktionary:la:habilis",
+        "wiktionary:la:habeo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "invención",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "發明；發明物；虛構",
+      "en": "invention",
+      "ipa": "/imbenˈθjon/",
+      "breakdown": [
+        {
+          "part": "inventar",
+          "zh": "發明"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "invenio",
+          "zh": "遇見、發現"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "inventio",
+          "zh": "發明、發現"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "invención",
+          "zh": "發明、虛構"
+        }
+      ],
+      "cognates_en": [
+        "invention"
+      ],
+      "story_zh": "源自拉丁語 inventiō（發明、發現），來自動詞 inveniō（走進去、偶然發現、尋得）。原意是「偶然發現某種方法」，後來演變為主動構思、製造出新事物的「發明」。",
+      "hook_zh": "英文 invention 對應西語 invención，走進去（in-）找到新事物就是發明。",
+      "usage_zh": "陰性名詞 la invención。也可指編造的謊言或虛構情節。",
+      "example_es": "La rueda fue una gran invención de la humanidad.",
+      "example_zh": "輪子是人類的一大發明。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:invención",
+        "wiktionary:la:inventio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "involucrar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "使捲入、使牽涉；參與",
+      "en": "to involve",
+      "ipa": "/imboluˈkɾaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "involucro",
+          "zh": "包被、捲入"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "involucrar",
+          "zh": "使捲入、使牽涉"
+        }
+      ],
+      "cognates_en": [
+        "involve"
+      ],
+      "story_zh": "源自名詞 involucro（包皮、包裹物），進一步源自拉丁語 involvere（包捲、纏繞）。原意為將某人或某事層層包裹進去，後來引申為「使捲入」事件或紛爭中。",
+      "hook_zh": "英文 involve 和西語 involucrar 意思完全對應，都指捲入某件事之中。",
+      "usage_zh": "常作代名詞動詞 involucrarse en…（介入、參與某事）。",
+      "example_es": "No me quiero involucrar en sus problemas personales.",
+      "example_zh": "我不想捲入他們的個人問題中。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:involucrar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "lapso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "（時間的）間隔、一段時間；流逝",
+      "en": "lapse, span of time",
+      "ipa": "/ˈlabso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "lapsus",
+          "zh": "滑落、流逝、失誤"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lapso",
+          "zh": "一段時間、間隔"
+        }
+      ],
+      "cognates_en": [
+        "lapse"
+      ],
+      "story_zh": "學者借詞自拉丁語 lapsus（滑落、流逝，動詞 lābī 的過去分詞）。原意是平穩地滑落或時光悄悄溜走，在西語中引申為兩點之間流逝的「一段時間」。",
+      "hook_zh": "英文 time lapse（縮時攝影）的 lapse，對應西語 lapso de tiempo（一段時間）。",
+      "usage_zh": "最常出現於片語 un lapso de tiempo（一段時間、光陰）。",
+      "example_es": "Regresó después de un largo lapso de tiempo.",
+      "example_zh": "他在經歷漫長的一段時間後回來了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lapso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "lomo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "背脊、腰肉（里肌）；書背",
+      "en": "loin, back, spine (of a book)",
+      "ipa": "/ˈlomo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "lumbus",
+          "zh": "腰部、腰肉"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lomo",
+          "zh": "背脊、里肌肉、書背"
+        }
+      ],
+      "cognates_en": [
+        "loin"
+      ],
+      "story_zh": "繼承自拉丁語 lumbus（腰部、下背部）。拉丁語中的 -mb- 在西語演變中弱化縮合為 -m-，成了 lomo。除了指動物的背脊與腰肉（如餐館名菜 lomo），也引申為書脊。",
+      "hook_zh": "西語餐桌常見的 lomo（里肌肉），同源英文 loin（腰肉）。",
+      "usage_zh": "陽性名詞 el lomo。也指書的書背：el lomo del libro。",
+      "example_es": "Pedimos un plato de lomo saltado en el restaurante.",
+      "example_zh": "我們在餐廳點了一盤秘魯炒牛肉（里肌肉）。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lomo",
+        "wiktionary:la:lumbus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mediocre",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "平庸的、中等的、二流的",
+      "en": "mediocre",
+      "ipa": "/meˈdjokɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mediocris",
+          "zh": "中等的、普通的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mediocre",
+          "zh": "平庸的、普通的"
+        }
+      ],
+      "cognates_en": [
+        "mediocre"
+      ],
+      "story_zh": "學者借詞自拉丁語 mediocris（中等大小的、平凡的），由 medius（中間）與 ocris（崎嶇的山峰）組成，字面原意是「只爬到半山腰」。引申為能力不上不下、表現平平庸庸。",
+      "hook_zh": "英文 mediocre 和西語 mediocre 拼法完全一樣，指卡在半山腰、表現平庸。",
+      "usage_zh": "陰陽同形形容詞：un resultado mediocre / una película mediocre。",
+      "example_es": "La película recibió críticas mediocres de la prensa.",
+      "example_zh": "這部電影受到了媒體平庸的評價。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mediocre"
       ],
       "writer": "gemini"
     }

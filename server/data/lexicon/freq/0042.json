@@ -1,6 +1,6 @@
 {
   "theme": "freq-0042",
-  "theme_zh": "常用字（頻率第 10983–11254 名）",
+  "theme_zh": "常用字（頻率第 10983–11256 名）",
   "entries": [
     {
       "word": "conteo",
@@ -3039,40 +3039,6 @@
       "writer": "gemini"
     },
     {
-      "word": "facto",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "事實；（網路流行語）無可反駁的真理",
-      "en": "fact; undeniable truth (slang)",
-      "ipa": "/ˈfaɡto/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "factum",
-          "zh": "事實、行為"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "facto",
-          "zh": "事實"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "學術借自拉丁語 factum（源自 facere「做」），本義為已做成的事實，與繼承詞 hecho 為雙體詞。近年在網路社群中亦受英語 fact 影響，常以複數 factos 表示認同或無可反駁的事實。",
-      "hook_zh": "常出現在拉丁片語 de facto（事實上的），網路上常說 escupir factos（講大實話）。",
-      "usage_zh": "常出現在拉丁短語 de facto，網路流行語中常以複數 factos 用作名詞。",
-      "example_es": "El gobierno reconoció la situación de facto.",
-      "example_zh": "政府承認了這項既成事實。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:facto",
-        "wiktionary:la:factum"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "faro",
       "article": "el",
       "pos": "sustantivo",
@@ -3748,6 +3714,44 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:pedagogía"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pertenencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "歸屬感；（複數）個人隨身物品、財物",
+      "en": "belonging, property, possession",
+      "ipa": "/peɾteˈnenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pertinēns",
+          "zh": "屬於、相關的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "pertinentia",
+          "zh": "附屬物、歸屬"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pertenencia",
+          "zh": "歸屬、個人物品"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "學術借自晚期拉丁語 pertinentia（源自 pertinēre「屬於」），單數常指心理上的「歸屬感」，複數則指個人擁有的隨身私人物品。",
+      "hook_zh": "動詞 pertenecer（屬於）的名詞形，sentido de pertenencia 就是歸屬感。",
+      "usage_zh": "常見 sentido de pertenencia（歸屬感）；複數 pertenencias 指隨身物品。",
+      "example_es": "No olvides recoger tus pertenencias antes de salir.",
+      "example_zh": "出門前別忘了帶走你的隨身物品。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pertenencia"
       ],
       "writer": "gemini"
     }
