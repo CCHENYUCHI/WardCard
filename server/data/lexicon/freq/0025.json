@@ -538,6 +538,37 @@
       "writer": "gemini"
     },
     {
+      "word": "avanzado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "先進的、高級的",
+      "en": "advanced",
+      "ipa": "/abanˈθado/",
+      "breakdown": [
+        {
+          "part": "avanzar",
+          "zh": "前進"
+        },
+        {
+          "part": "-ado",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "走在最前面（avanzar 前進）的隊伍，技術或程度當然是最「先進的」。",
+      "usage_zh": "形容詞需配合陰陽性與單複數（如 tecnología avanzada 先進科技）。常用於程度：nivel avanzado（高級程度）。",
+      "example_es": "Ella estudia en un curso de nivel avanzado.",
+      "example_zh": "她在上高級程度的課程。",
+      "image": "emoji:🚀",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:avanzado"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "bono",
       "article": "el",
       "pos": "sustantivo",
@@ -3626,6 +3657,55 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:wifi"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "abarcar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "涵蓋、包含、包攬",
+      "en": "to include, to span, to encompass",
+      "ipa": "/abaɾˈkaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "βρᾰχῑ́ων",
+          "zh": "手臂"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "bracchium",
+          "zh": "手臂"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*abbracchicāre",
+          "zh": "用手臂環抱"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "abracar",
+          "zh": "環抱"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "abarcar",
+          "zh": "涵蓋、包攬"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自通俗拉丁語 *abbracchicāre，字根來自拉丁語 bracchium（手臂，借自古希臘語 βρᾰχῑ́ων），原意為用雙臂環抱。西語中由 abracar 語音對調演變為 abarcar，字義也從雙臂環抱引申為把事物包含、涵蓋在內。",
+      "hook_zh": "張開雙臂（bracchium）一把抱住，把所有東西都「涵蓋、包攬」進來。",
+      "usage_zh": "簡單過去式第一人稱單數為 abarqué（c 變 qu）。常見諺語：Quien mucho abarca, poco aprieta（貪多嚼不爛）。",
+      "example_es": "El nuevo proyecto abarca varias ciudades del país.",
+      "example_zh": "這個新計畫涵蓋了該國的數個城市。",
+      "image": "emoji:👐",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:abarcar",
+        "wiktionary:la:bracchium"
       ],
       "writer": "gemini"
     },
