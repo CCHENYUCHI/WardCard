@@ -3,6 +3,47 @@
   "theme_zh": "常用字（頻率第 7402–7646 名）",
   "entries": [
     {
+      "word": "enterar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "通知、告知；得知、獲悉（enterarse）",
+      "en": "to inform; to find out, to learn",
+      "ipa": "/enteˈɾaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "integer",
+          "zh": "完整未受損的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "integro",
+          "zh": "使完整、更新"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "enterar",
+          "zh": "通知、得知"
+        }
+      ],
+      "cognates_en": [
+        "integrate"
+      ],
+      "story_zh": "源自拉丁語 integrāre（使完整、更新），與 integer（完整的）同源。在西語中詞義從「使完整、使完全了解」演變成「告知、通知」，反身動詞 enterarse 則表示「獲悉、得知」。英文的 integrate（整合）也是其同源字。",
+      "hook_zh": "讓事情全部（entero）進入腦袋，整個人就 enterar（搞清楚、得知）了。",
+      "usage_zh": "常用反身形式 enterarse de… 表示「得知、發現某事」。",
+      "example_es": "Me acabo de enterar de la noticia.",
+      "example_zh": "我剛剛才得知這個消息。",
+      "image": "emoji:📢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:enterar",
+        "wiktionary:la:integro"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "enviado",
       "article": "el",
       "pos": "sustantivo",
