@@ -2977,6 +2977,748 @@
         "wiktionary:es:inseguridad"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "justificar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "證明…正當、合理解釋；辯護",
+      "en": "to justify, to account for",
+      "ipa": "/xustifiˈkaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "iūstificāre",
+          "zh": "使合乎正義、證明正當"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "justificar",
+          "zh": "證明…正當、辯解"
+        }
+      ],
+      "cognates_en": [
+        "justify"
+      ],
+      "story_zh": "借自晚期拉丁語 iūstificāre，原意為「使合乎正義、判定為正當」。在西語中引申為提出合理的理由或證據，證明某個行為或決定是正當合理的。英文的 justify 也是同一來源。",
+      "hook_zh": "字首就像 justice（正義），字尾 -ificar 表「使…」，合起來就是「證明合理」（justify）。",
+      "usage_zh": "第一人稱簡單過去式拼寫需變音：yo justifiqué（維持 /k/ 音）。反身 justificar se 表「自我辯解」。",
+      "example_es": "El fin no justifica los medios.",
+      "example_zh": "達到目的不能不擇手段。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:justificar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "legalmente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "合法地、在法律上",
+      "en": "legally, lawfully",
+      "ipa": "/leˌɡalˈmente/",
+      "breakdown": [
+        {
+          "part": "legal",
+          "zh": "合法的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "legal + -mente",
+          "zh": "合法的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "legalmente",
+          "zh": "合法地"
+        }
+      ],
+      "cognates_en": [
+        "legally"
+      ],
+      "story_zh": "由形容詞 legal（合法的）加上副詞字尾 -mente 組合而成。在西語中，形容詞加上 -mente 即可轉為副詞，表示「以合法的方式」或「在法律規定下」。",
+      "hook_zh": "英文 legal 加 -ly 是 legally；西語 legal 加 -mente 就成了 legalmente。",
+      "usage_zh": "常用於修飾動詞或放句首，如 actuar legalmente（依法行事）、legalmente hablando（從法律上來說）。",
+      "example_es": "La empresa opera legalmente en el país.",
+      "example_zh": "這家公司在該國合法營運。",
+      "image": "emoji:📜",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:legalmente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "libra",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "磅（重量單位）；英鎊；天秤座",
+      "en": "pound (weight/currency); Libra",
+      "ipa": "/ˈlibɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "libra",
+          "zh": "羅馬磅、天平"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "libra",
+          "zh": "磅、英鎊、天秤座"
+        }
+      ],
+      "cognates_en": [
+        "Libra",
+        "litre"
+      ],
+      "story_zh": "源自拉丁語 libra，本義是「天平」與古羅馬重量單位「羅馬磅」（約 327 克），其最早詞源不確定，推測源於原始義大利語。古代以天平稱重，後來引申為英制重量單位「磅」與英國貨幣「英鎊」（象徵一磅銀的價值）。黃道的天秤座亦得名於此。",
+      "hook_zh": "天秤座英文就是 Libra；重量單位「磅」的縮寫 lb 正是來自拉丁文 libra。",
+      "usage_zh": "常指重量「磅」（una libra de...）或英國貨幣「英鎊」（常作 libra esterlina）。陰性名詞。",
+      "example_es": "Compré una libra de café en el mercado.",
+      "example_zh": "我在市場買了一磅咖啡。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:libra",
+        "wiktionary:la:libra"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mantenido",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "靠人包養者、吃軟飯的人；寄生蟲",
+      "en": "kept man/woman, freeloader",
+      "ipa": "/manteˈnido/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "源自 mantener（撫養、供養）的過去分詞，被別人一直「養著」（mantenido），就是被包養的人。",
+      "usage_zh": "作為名詞時指被包養者，陰性為 la mantenida。帶有明顯貶義，指不工作、全靠他人經濟資助生活的人。",
+      "example_es": "Él no trabaja y vive como un mantenido.",
+      "example_zh": "他不工作，過著靠人包養的生活。",
+      "image": "emoji:🛋️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:mantenido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "maravilla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "奇蹟、令人驚嘆的事物；奇觀",
+      "en": "wonder, marvel",
+      "ipa": "/maɾaˈbiʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*(s)mey-",
+          "zh": "微笑、高興"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "mīrus",
+          "zh": "令人驚奇的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "mīrābilis",
+          "zh": "令人驚嘆的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "mīrābilia",
+          "zh": "奇事、驚奇事物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "maravilla",
+          "zh": "奇觀、奇蹟"
+        }
+      ],
+      "cognates_en": [
+        "marvel",
+        "miracle",
+        "admire"
+      ],
+      "story_zh": "源自晚期拉丁語 mīrābilia（奇事），來自拉丁語形容詞 mīrābilis（令人驚嘆的），字根可追溯至原始印歐語 *(s)mey-（微笑、喜悅）。原指讓人看見便心生歡喜、讚嘆的事物，演變為「奇蹟、令人驚奇的奇觀」。英文的 marvel 也同源。",
+      "hook_zh": "記英文同源字 marvel（漫威、奇觀）；或是跑到馬拉松終點的奇蹟（maravilla）！",
+      "usage_zh": "常用片語 a las mil maravillas（順利極了、好極了）或 maravilla del mundo（世界奇觀）。",
+      "example_es": "La Alhambra es una maravilla arquitectónica.",
+      "example_zh": "阿罕布拉宮是一座建築奇觀。",
+      "image": "emoji:✨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:maravilla",
+        "wiktionary:la:mirabilis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "marihuana",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "大麻",
+      "en": "marijuana",
+      "ipa": "/maɾiˈwana/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "marijuana"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文 marijuana 直接借自西語，兩者的發音與拼法幾乎完全相同。",
+      "usage_zh": "陰性不可數名詞，也可以拼作 mariguana。",
+      "example_es": "El consumo de marihuana está regulado por la ley.",
+      "example_zh": "大麻的使用受到法律規範。",
+      "image": "emoji:🌿",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:marihuana"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "masivo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "大規模的、大量的；實心的",
+      "en": "massive",
+      "ipa": "/maˈsibo/",
+      "breakdown": [
+        {
+          "part": "masa",
+          "zh": "質量、團塊"
+        },
+        {
+          "part": "-ivo",
+          "zh": "形容詞字尾，表示性質"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "massif",
+          "zh": "實心的、厚重的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "masivo",
+          "zh": "大規模的、大量的"
+        }
+      ],
+      "cognates_en": [
+        "massive"
+      ],
+      "story_zh": "借自法語 massif（實心的、厚重的），在西語中亦可分析為 masa（質量、塊體）加上形容詞字尾 -ivo。原指量體巨大且厚實，後來引申指數量龐大或大規模展開的事物。英文的 massive 是同源字。",
+      "hook_zh": "masa（質量、團塊）加上形容詞字尾 -ivo，引申為「大規模的」。",
+      "usage_zh": "常見搭配如 producción masiva（大量生產）或 vacunación masiva（大規模接種）。",
+      "example_es": "Hubo una protesta masiva en el centro de la ciudad.",
+      "example_zh": "市中心發生了一場大規模的抗議。",
+      "image": "emoji:👥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:masivo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "naturalmente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "自然地；當然",
+      "en": "naturally, of course",
+      "ipa": "/naˌtuɾalˈmente/",
+      "breakdown": [
+        {
+          "part": "natural",
+          "zh": "自然的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "natural + -mente",
+          "zh": "自然的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "naturalmente",
+          "zh": "自然地、當然"
+        }
+      ],
+      "cognates_en": [
+        "naturally"
+      ],
+      "story_zh": "由形容詞 natural（自然的）加上副詞字尾 -mente 構成。其字面意思為「以自然的方式」，在日常對話中常引申為事情合乎情理、理所當然。英文同源詞為 naturally。",
+      "hook_zh": "natural（自然的）加上副詞字尾 -mente，意思就是「自然地」或「當然」。",
+      "usage_zh": "放在句首或獨立使用時，常表示「當然、理所當然」，相當於 por supuesto。",
+      "example_es": "Naturalmente, puedes venir con nosotros si quieres.",
+      "example_zh": "當然，如果你想來的話可以跟我們一起。",
+      "image": "emoji:🌱",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:naturalmente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "navarro",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "納瓦拉的；納瓦拉人",
+      "en": "Navarrese",
+      "ipa": "/naˈbaro/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "Navarrese"
+      ],
+      "story_zh": "",
+      "hook_zh": "指西班牙北部自治區納瓦拉（Navarra）的居民、文化或當地方言。",
+      "usage_zh": "陰性形為 navarra；當名詞指人時為「el/la navarro/a」。",
+      "example_es": "Ella nació en Pamplona y es navarra.",
+      "example_zh": "她出生於潘普洛納，是納瓦拉人。",
+      "image": "emoji:🏰",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:navarro"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "notar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "察覺、注意到；記錄",
+      "en": "to note, to notice",
+      "ipa": "/noˈtaɾ/",
+      "breakdown": [
+        {
+          "part": "not-",
+          "zh": "記號、標記"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "notāre",
+          "zh": "做記號、記錄、留意"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "notar",
+          "zh": "察覺、注意到"
+        }
+      ],
+      "cognates_en": [
+        "note",
+        "notice"
+      ],
+      "story_zh": "源自拉丁語動詞 notāre（做記號、記錄、留意）。原意是指在文字或紙張上做上記號以便識別，後來引申為在心靈或感官上「察覺、注意到」。英文的 note 與 notice 都是同源字。",
+      "hook_zh": "英文 note（筆記）就是做「記號」，西語 notar 就是用眼睛或心「注意到」。",
+      "usage_zh": "常見搭配有 notar la diferencia（察覺差異）；反身形 notarse 表示「顯露出來」。",
+      "example_es": "Noto que estás un poco cansado hoy.",
+      "example_zh": "我注意到你今天有點累。",
+      "image": "emoji:👀",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:notar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "piano",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "鋼琴",
+      "en": "piano",
+      "ipa": "/ˈpjano/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "pianoforte",
+          "zh": "鋼琴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "piano",
+          "zh": "鋼琴"
+        }
+      ],
+      "cognates_en": [
+        "piano"
+      ],
+      "story_zh": "源自義大利語 pianoforte（鋼琴）的簡稱。這種樂器因為既能彈出弱音（piano）也能彈出強音（forte）而得名，傳入西班牙語後簡稱為 piano。",
+      "hook_zh": "琴鍵黑白分明，彈奏時輕音（piano）悠揚，這就是鋼琴。",
+      "usage_zh": "彈鋼琴搭配動詞 tocar（tocar el piano），不可用 jugar。",
+      "example_es": "Ella toca el piano todos los días.",
+      "example_zh": "她每天彈鋼琴。",
+      "image": "emoji:🎹",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:piano"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pinche",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "該死的、糟糕的；小氣的",
+      "en": "fucking, goddamned, stingy",
+      "ipa": "/ˈpint͡ʃe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "pincé",
+          "zh": "被捏取的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pinchar",
+          "zh": "戳、刺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pinche",
+          "zh": "廚房幫工；該死的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 pinchar（刺、戳），語意演變受到法語 pincé（捏取）的影響。殖民時期廚房幫工因擅長用手指精準捏取調味料而被稱為 pinche，後來在拉美轉化為常見的蔑稱與粗俗口頭禪。",
+      "hook_zh": "廚房小幫工整天被大廚捏（pinch）著罵，氣得罵出 pinche！",
+      "usage_zh": "在墨西哥是極常用的口語粗話與加強語氣詞，對長輩使用非常失禮。",
+      "example_es": "Este pinche novato no sabe jugar.",
+      "example_zh": "這個該死的新手根本不會玩。",
+      "image": "emoji:🤬",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pinche"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "preciso",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "精確的；明確的；必要的",
+      "en": "precise, necessary",
+      "ipa": "/pɾeˈθiso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "praecīsus",
+          "zh": "切斷的、剪短的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "preciso",
+          "zh": "精確的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "preciso",
+          "zh": "精確的、必要的"
+        }
+      ],
+      "cognates_en": [
+        "precise"
+      ],
+      "story_zh": "源自古西班牙語 preciso，借自拉丁語 praecīsus（切除、剪短）。事物被去除多餘雜質、裁切乾淨後，引申出「精確、精準」之意；西班牙語中亦延伸出「不可或缺、必要」的含義。",
+      "hook_zh": "和英文 precise 同源，切除贅肉雜質，剩下最「精確」與「必要」的重點。",
+      "usage_zh": "常作句型 Es preciso + 原形動詞（有必要…），同義於 Es necesario。",
+      "example_es": "Necesito saber la hora precisa de tu llegada.",
+      "example_zh": "我需要知道你抵達的精確時間。",
+      "image": "emoji:🎯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:preciso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "retrato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "肖像；畫像；描繪",
+      "en": "portrait, portrayal",
+      "ipa": "/reˈtɾato/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "ritratto",
+          "zh": "肖像、描繪"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "retrato",
+          "zh": "肖像、畫像"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自義大利語 ritratto（肖像、畫像）。文藝復興時期義大利繪畫藝術繁盛，描摹人物神韻與形象的詞彙隨之傳入西班牙，成為指稱個人畫像或寫照的專門字詞。",
+      "hook_zh": "畫家在畫布上一筆筆重現面容，框出一幅優雅的 retrato 肖像畫。",
+      "usage_zh": "動詞為 retratar（描繪、畫肖像），自反動詞 retratarse 亦可指拍照。",
+      "example_es": "El museo tiene un retrato famoso de la reina.",
+      "example_zh": "這座博物館藏有一幅著名的女王肖像。",
+      "image": "emoji:🖼️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:retrato"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sabiduría",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "智慧；學問、知識",
+      "en": "wisdom, knowledge",
+      "ipa": "/sabiduˈɾia/",
+      "breakdown": [
+        {
+          "part": "sabidor",
+          "zh": "知曉者、有智者"
+        },
+        {
+          "part": "-ía",
+          "zh": "名詞字尾，表性質或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "sabidor",
+          "zh": "知曉者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sabiduría",
+          "zh": "智慧"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西班牙語 sabidor（知曉者、博學者）加上表示抽象性質的名詞字尾 -ía 組合而成。原意為「博學之人所具備的特質」，後來演變為指稱深刻的智慧與豐富的學識。",
+      "hook_zh": "源自 saber（知道），知道很多真理、見識廣博的特質就是 sabiduría。",
+      "usage_zh": "多作不可數名詞使用；重音在結尾 -ía 上，書寫時必須標重音符號 í。",
+      "example_es": "El anciano es conocido por su gran sabiduría.",
+      "example_zh": "那位老人以他淵博的智慧聞名。",
+      "image": "emoji:🦉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sabiduría"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "suceso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "事件、事情；結果",
+      "en": "event, happening, outcome",
+      "ipa": "/suˈθeso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "successus",
+          "zh": "進展、結果"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "suceso",
+          "zh": "事件、結果"
+        }
+      ],
+      "cognates_en": [
+        "success"
+      ],
+      "story_zh": "源自拉丁語 successus，原本指的是「事情的進展或結果」。在西班牙語中演變為指「發生的事件或事情」，特別是新聞中突發的重要事件；古義中亦可指「結果」。",
+      "hook_zh": "假朋友注意！長得像英文 success（成功），但西語裡主要是「發生的事件」！",
+      "usage_zh": "假朋友陷阱！suceso 意思是「事件」，若要表達「成功」西語要用 éxito。",
+      "example_es": "Fue un suceso que cambió la historia del país.",
+      "example_zh": "那是一個改變了該國歷史的事件。",
+      "image": "emoji:📰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:suceso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tarifa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "費率、價錢、收費標準",
+      "en": "fare, fee, tariff",
+      "ipa": "/taˈɾifa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "تَعْرِفَة (taʕrifa)",
+          "zh": "通報、收費清單"
+        },
+        {
+          "lang_zh": "安達盧西亞阿拉伯語",
+          "word": "tarifa",
+          "zh": "收費清單"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "tarifa",
+          "zh": "價目表"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tarifa",
+          "zh": "費率、收費標準"
+        }
+      ],
+      "cognates_en": [
+        "tariff"
+      ],
+      "story_zh": "來自阿拉伯語 taʕrifa（通報、清單），經安達盧西亞阿拉伯語與古西班牙語演變而來。原本指公告大眾的價格與稅務清單，後來專指各類服務、交通或公用事業的「費率」與「收費標準」。",
+      "hook_zh": "出國旅遊搭車查 tariff（關稅、價目），西語的 tarifa 就是「車資、費率」。",
+      "usage_zh": "常用搭配如 tarifa plana（固定費率／吃到飽方案）或 tarifa de luz（電費）。",
+      "example_es": "¿Cuál es la tarifa del billete de autobús?",
+      "example_zh": "公車票的費用是多少？",
+      "image": "emoji:🏷️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tarifa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "traición",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "背叛、叛國",
+      "en": "treason, treachery",
+      "ipa": "/tɾaiˈθjon/",
+      "breakdown": [
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示行為或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "traditio",
+          "zh": "交出、遞交"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "trayçón",
+          "zh": "背叛"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "traición",
+          "zh": "背叛"
+        }
+      ],
+      "cognates_en": [
+        "treason",
+        "tradition"
+      ],
+      "story_zh": "源自拉丁語 traditio（交出、遞交），來自動詞 trādō（交付）。原本指「把人或城池交給敵人」，後來演變為「背叛」。有趣的是，英文的 tradition（傳統）也是同源詞，因為傳統就是代代「交遞」下去的事物。",
+      "hook_zh": "把朋友「交出去」（tradere）給敵人，就是最令人心碎的 traición（背叛）！",
+      "usage_zh": "陰性名詞。常見搭配為 cometer una traición（背叛）或 alta traición（叛國罪）。",
+      "example_es": "No puedo perdonar su traición.",
+      "example_zh": "我無法原諒他的背叛。",
+      "image": "emoji:🗡️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:traición",
+        "wiktionary:la:traditio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "trama",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "情節；緯線、織構",
+      "en": "plot, weave, weft",
+      "ipa": "/ˈtɾama/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "trama",
+          "zh": "緯線、織線"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "trama",
+          "zh": "緯線、情節"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自拉丁語 trāma，原意是織布時橫向穿梭的「緯線」。織布時線條彼此交錯編織成布料，這層概念後來被引申為小說或電影中情節交錯鋪陳的「故事結構、情節」。",
+      "hook_zh": "像織布一樣把線索一根根編織起來，就成了小說中最精彩的 trama（情節）！",
+      "usage_zh": "陰性名詞。最常見於文藝與影視作品，例如 la trama de la película（電影情節）。",
+      "example_es": "La trama de esta novela es muy interesante.",
+      "example_zh": "這本小說的情節非常有趣。",
+      "image": "emoji:🧵",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:trama"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "usado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "用過的、二手的；磨損的",
+      "en": "used, worn, worn-out",
+      "ipa": "/uˈsado/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "長得和英文 used 幾乎一模一樣，被「使用（usar）」過的東西就是二手的！",
+      "usage_zh": "作為形容詞須配合名詞作性數變化，如 coche usado（二手車）、ropa usada（二手衣）。",
+      "example_es": "Compré un coche usado a buen precio.",
+      "example_zh": "我以不錯的價格買了一輛二手車。",
+      "image": "emoji:📦",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:usado"
+      ],
+      "writer": "gemini"
     }
   ]
 }
