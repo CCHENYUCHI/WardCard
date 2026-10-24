@@ -3522,6 +3522,266 @@
         "wiktionary:es:votar"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "aceptar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "接受、答應",
+      "en": "to accept, to agree",
+      "ipa": "/aθebˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "capio",
+          "zh": "拿取、抓住"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "accipio",
+          "zh": "領受、接納"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "acceptāre",
+          "zh": "接納、領受"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "acetar",
+          "zh": "接受"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aceptar",
+          "zh": "接受"
+        }
+      ],
+      "cognates_en": [
+        "accept"
+      ],
+      "story_zh": "源自拉丁語動詞 acceptāre，而它又來自 accipiō（由 ad-「朝向」與 capiō「拿取」組成），原指將遞來的東西伸手接過來，後引申為領受與同意。古西語曾作 acetar，後重新拉丁化為 aceptar。",
+      "hook_zh": "英文同源字 accept，聯想朝自己的方向把東西「接」（cept）過來就是「接受」。",
+      "usage_zh": "常用於 aceptar una propuesta（接受提議）；過去分詞為 aceptado。",
+      "example_es": "Ella aceptó la oferta de trabajo.",
+      "example_zh": "她接受了那份工作錄取。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aceptar",
+        "wiktionary:la:accepto",
+        "wiktionary:la:accipio",
+        "wiktionary:la:capio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asesinato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "暗殺、謀殺",
+      "en": "assassination, murder",
+      "ipa": "/asesiˈnato/",
+      "breakdown": [
+        {
+          "part": "asesinar",
+          "zh": "謀殺、暗殺"
+        },
+        {
+          "part": "-ato",
+          "zh": "表示行為或結果的字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "asesinar",
+          "zh": "謀殺、暗殺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "asesinato",
+          "zh": "暗殺、謀殺"
+        }
+      ],
+      "cognates_en": [
+        "assassination"
+      ],
+      "story_zh": "由西語動詞 asesinar（暗殺、謀殺）加上名詞字尾 -ato 組成。字尾 -ato 通常用來表示特定行為或其產生的後果，因此本字用以指稱暗殺或蓄意殺人的罪行。",
+      "hook_zh": "同源英文 assassination，想像「暗殺」（asesinato）行動在黑夜中進行。",
+      "usage_zh": "陽性名詞，複數為 asesinatos。指法律或事件中的謀殺或暗殺案。",
+      "example_es": "La policía investiga el asesinato.",
+      "example_zh": "警方正在調查這起謀殺案。",
+      "image": "emoji:🔪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:asesinato"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "comité",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "委員會",
+      "en": "committee",
+      "ipa": "/komiˈte/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "committee",
+          "zh": "委員會"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "comité",
+          "zh": "委員會"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "comité",
+          "zh": "委員會"
+        }
+      ],
+      "cognates_en": [
+        "committee"
+      ],
+      "story_zh": "借自法語 comité，而法語詞則是從英語 committee 借入。西語保留了法語的尾音重音型態，指受託共同開會決策的組織或委員會。在西語中與 cometido（委任）互為雙式詞。",
+      "hook_zh": "直接聯想英文 committee；發音像「摳米爹」，想像委員會聚集在一起討論。",
+      "usage_zh": "陽性名詞，注意尾音帶重音符號 -é，複數形為 comités。",
+      "example_es": "El comité se reunirá mañana.",
+      "example_zh": "委員會明天將會開會。",
+      "image": "emoji:👥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:comité"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "conflicto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "衝突、紛爭",
+      "en": "conflict",
+      "ipa": "/konˈfliɡto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cōnflīctus",
+          "zh": "衝突、撞擊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "conflicto",
+          "zh": "衝突"
+        }
+      ],
+      "cognates_en": [
+        "conflict"
+      ],
+      "story_zh": "西語中的學者借詞，直接借自拉丁語名詞 cōnflīctus（衝撞、打擊）。引申為意見、利益或武力上的對立狀態。英文的 conflict 亦來自相同的拉丁字根。",
+      "hook_zh": "直接聯想英文 conflict；雙方意見不合、互相衝撞（flicto）就會產生 conflicto。",
+      "usage_zh": "陽性名詞。常用搭配如 conflicto de intereses（利益衝突）、entrar en conflicto（陷入衝突）。",
+      "example_es": "El diálogo evitó un gran conflicto.",
+      "example_zh": "對話避免了一場重大衝突。",
+      "image": "emoji:⚔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:conflicto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "consecuencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "後果、結果",
+      "en": "consequence",
+      "ipa": "/konseˈkwenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cōnsequentia",
+          "zh": "後果、隨之而來的事物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "consecuencia",
+          "zh": "後果、結果"
+        }
+      ],
+      "cognates_en": [
+        "consequence"
+      ],
+      "story_zh": "屬於學者借詞，直接源自拉丁語名詞 cōnsequentia（相隨而至、後果）。用來指因前因所衍生出來的後續事件或影響，英文同源字為 consequence。",
+      "hook_zh": "聯想英文 consequence；做了一件事之後，緊跟在後面（secuencia）來的就是後果。",
+      "usage_zh": "陰性名詞。極常用片語 como consecuencia de...（因為…、作為…的結果）。",
+      "example_es": "Cada acción tiene una consecuencia.",
+      "example_zh": "每個行為都有其後果。",
+      "image": "emoji:💥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:consecuencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "físico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "身體的、物理的",
+      "en": "physical",
+      "ipa": "/ˈfisiko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "φύω",
+          "zh": "生長"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "φύσις",
+          "zh": "自然、本質、起源"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "φυσικός",
+          "zh": "自然的、物理的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "physicus",
+          "zh": "自然哲學的、物理的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "físico",
+          "zh": "身體的、物理的"
+        }
+      ],
+      "cognates_en": [
+        "physical",
+        "physics",
+        "physique"
+      ],
+      "story_zh": "源自古希臘語動詞 φύω（生長），引申出名詞 φύσις（自然、本質），代表萬物生長的自然規律。希臘人以此造出形容詞 φυσικός（自然的），後經拉丁語 physicus 借入。詞義由探索大自然的「物理」，延伸為有形肉身的「身體的」，英文的 physical 正是同源字。",
+      "hook_zh": "直接聯想英文 physical：在健身房鍛鍊身體（físico），揮灑汗水對抗物理重力。",
+      "usage_zh": "陰性為 física，常見搭配如 ejercicio físico（體能運動）。當陽性名詞時可指「身材外表」（el físico）或「物理學家」。",
+      "example_es": "El ejercicio físico es muy bueno para la salud.",
+      "example_zh": "體能運動對健康非常有益。",
+      "image": "emoji:💪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:físico",
+        "wiktionary:la:physicus"
+      ],
+      "writer": "gemini"
     }
   ]
 }
