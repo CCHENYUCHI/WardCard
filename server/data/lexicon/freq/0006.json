@@ -1,0 +1,385 @@
+{
+  "theme": "freq-0006",
+  "theme_zh": "常用字（頻率第 1413–1652 名）",
+  "entries": [
+    {
+      "word": "reina",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "女王、王后；（西洋棋）后；（撲克牌）Q",
+      "en": "queen",
+      "ipa": "/ˈreina/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "regina",
+          "zh": "女王、王妃"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "reyna",
+          "zh": "女王"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reina",
+          "zh": "女王"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自古西班牙語 reyna，最終來自拉丁語 rēgīna（女王），並在演變過程中發生重音轉移。拉丁語詞源尚不完全確定，但推測與表示「統治」的印歐詞根及拉丁語 rēx（國王）密切相關，原意為女性統治者或王妃。",
+      "hook_zh": "音近「雷納」，女王頭戴皇冠氣勢如雷；也像下雨 rain 加 a，女王在雨中優雅漫步。",
+      "usage_zh": "陰性名詞。西洋棋的「后」或撲克牌的「Q」在西語中也稱為 reina。",
+      "example_es": "La reina saludó a su pueblo desde el balcón.",
+      "example_zh": "女王從陽台向她的人民致意。",
+      "image": "emoji:👑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reina",
+        "wiktionary:la:regina"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "representar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "代表；扮演、演出；象徵",
+      "en": "to represent, to constitute",
+      "ipa": "/repɾesenˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "repraesentare",
+          "zh": "展現、呈現在眼前"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "representar",
+          "zh": "代表、演出"
+        }
+      ],
+      "cognates_en": [
+        "represent"
+      ],
+      "story_zh": "源自拉丁語動詞 repraesentāre，由表示「再次、回歸」與「呈現在眼前」的概念組合而成。它最初指把具體事物展現於人前，後來延伸為在舞台上「演出」或替他人「代言、代表」。",
+      "hook_zh": "跟英文 represent 拼法幾乎相同，只要換成西語動詞字尾 -ar 就輕鬆記住。",
+      "usage_zh": "規則變化動詞。常用於 representar a alguien（代表某人）。",
+      "example_es": "Este actor va a representar al rey en la obra.",
+      "example_zh": "這位演員將在劇中扮演國王。",
+      "image": "emoji:🎭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:representar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "salvo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "平安的；除…之外（介系詞）",
+      "en": "safe; except, apart from",
+      "ipa": "/ˈsalbo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "印歐祖語",
+          "word": "*solh₂-",
+          "zh": "完整的、全部的"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*sal(V)wos",
+          "zh": "安全的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "salvus",
+          "zh": "安全、完好無損的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "salvo",
+          "zh": "安全的；除…之外"
+        }
+      ],
+      "cognates_en": [
+        "safe"
+      ],
+      "story_zh": "源自印歐祖語 *solh₂-（完整），經原始義大利語演變為拉丁語 salvus（平安、健全）。字義從「完好無損」引申出保護某事物使其免受波及，進而發展出「除…之外」的排除與例外用法。",
+      "hook_zh": "英文 safe（安全）與它同源；也可聯想「殺出重圍，全身保住」的平安感。",
+      "usage_zh": "常作介系詞表「除…之外」；成語 sano y salvo 表示「安然無恙」。",
+      "example_es": "Todos aprobaron el examen, salvo Carlos.",
+      "example_zh": "除了卡洛斯之外，大家都通過了考試。",
+      "image": "emoji:🛡️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:salvo",
+        "wiktionary:la:salvus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "velocidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "速度、時速；排檔",
+      "en": "speed, velocity",
+      "ipa": "/beloθiˈdad/",
+      "breakdown": [
+        {
+          "part": "veloz",
+          "zh": "快速的"
+        },
+        {
+          "part": "-idad",
+          "zh": "性質、狀態（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "velocitatem",
+          "zh": "速度、敏捷"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "velocidad",
+          "zh": "速度"
+        }
+      ],
+      "cognates_en": [
+        "velocity"
+      ],
+      "story_zh": "書面借自拉丁語賓格 vēlōcitātem，源於形容詞 velox（迅速、敏捷）。在現代西語構詞中，亦可視為形容詞 veloz 加上抽象名詞後綴 -idad，用來表示物體運動的快慢程度。",
+      "hook_zh": "英文同源字 velocity，開車低頭看儀表板上的時速就是 velocidad。",
+      "usage_zh": "陰性名詞。字尾 -dad 皆為陰性；常見搭配有 límite de velocidad（速限）。",
+      "example_es": "El tren viaja a una velocidad increíble.",
+      "example_zh": "火車正以驚人的速度行駛。",
+      "image": "emoji:⚡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:velocidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "visión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "視力；視野；幻象、遠見",
+      "en": "vision, sight",
+      "ipa": "/biˈsjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "visio",
+          "zh": "看、景象"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "visionem",
+          "zh": "視覺、看見的事物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "visión",
+          "zh": "視力、視野、願景"
+        }
+      ],
+      "cognates_en": [
+        "vision"
+      ],
+      "story_zh": "書面借自拉丁語賓格 vīsiōnem，源於表示「看」的動詞字根。它原指視覺感官或親眼所見的景象，後來引申指在腦海中浮現的「願景、想像」，或是看待事物的「觀點與視野」。",
+      "hook_zh": "英文就是 vision，西語只在 o 加上重音符號 visión，意思用法都相通。",
+      "usage_zh": "陰性名詞，字尾 -sión 恆為陰性，變複數時重音符號拿掉（visiones）。",
+      "example_es": "El médico examinó la visión del paciente.",
+      "example_zh": "醫生檢查了病人的視力。",
+      "image": "emoji:👁️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:visión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "alcalde",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "市長；行政長官",
+      "en": "mayor",
+      "ipa": "/alˈkalde/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "اَلْقَاضِي (al-qāḍī)",
+          "zh": "法官"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "alcalde",
+          "zh": "法官、行政官"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alcalde",
+          "zh": "市長"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "來自阿拉伯語 al-qāḍī（法官），經由古西班牙語進入西語。在中世紀伊比利半島，此詞原指掌管審判的地方行政首長，後來演變為專指管轄現代市鎮的最高行政長官「市長」。",
+      "hook_zh": "摩爾人統治留下許多 al- 開頭的單字；市長就像整座城市裡權力最大的「大咖」。",
+      "usage_zh": "陰性形式為 alcaldesa（女市長），複數為 alcaldes。",
+      "example_es": "El alcalde inauguró el nuevo parque de la ciudad.",
+      "example_zh": "市長為市裡的新公園舉行了落成典禮。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alcalde"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "altura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "高度；海拔",
+      "en": "height, altitude",
+      "ipa": "/alˈtuɾa/",
+      "breakdown": [
+        {
+          "part": "alto",
+          "zh": "高"
+        },
+        {
+          "part": "-ura",
+          "zh": "名詞字尾，表狀態或性質"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "源自形容詞 alto（高的）加上名詞字尾 -ura。字尾 -ura 用來構成表示性質或狀態的抽象名詞，alto 加上 -ura 即表示「高」的狀態或程度，引申為「高度」與「海拔」。",
+      "hook_zh": "看到 alto（高）就能認出它，加上名詞字尾 -ura 就是「高度」；想像飛機飛到高空巡航的高度。",
+      "usage_zh": "陰性名詞。常見搭配如 a la altura de...（在…的高度；與…並列/齊平）。",
+      "example_es": "El avión vuela a una altura de diez mil metros.",
+      "example_zh": "飛機在高度一萬公尺的高空飛行。",
+      "image": "emoji:🏔️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:altura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "candidato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "候選人",
+      "en": "candidate",
+      "ipa": "/kandiˈdato/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "candidātus",
+          "zh": "候選人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "candidato",
+          "zh": "候選人"
+        }
+      ],
+      "cognates_en": [
+        "candidate"
+      ],
+      "story_zh": "借自拉丁語 candidātus。在古羅馬時期，競選公職的人會穿著象徵純潔與光明的白色長袍（toga candida）爭取選民支持，因而演變為「候選人」的意思。",
+      "hook_zh": "英文 candidate 字尾改為西語常見的陽性字尾 -o，即為 candidato（候選人）。",
+      "usage_zh": "女性候選人為 candidata。常見搭配為 ser candidato a…（成為…的候選人）。",
+      "example_es": "El candidato respondió a todas las preguntas en el debate.",
+      "example_zh": "候選人在辯論中回答了所有問題。",
+      "image": "emoji:🗳️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:candidato"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "competencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "競爭、比賽；能力；管轄權",
+      "en": "competition, competence, jurisdiction",
+      "ipa": "/kompeˈtenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "competentia",
+          "zh": "能力、相稱"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "competencia",
+          "zh": "競爭；能力；管轄權"
+        }
+      ],
+      "cognates_en": [
+        "competition",
+        "competence"
+      ],
+      "story_zh": "借自晚期拉丁語 competentia，原指「適當、相稱、有資格」。在西語中引申出兩大主要語意：一是具備相稱的能力或職權，二是多人爭取同一目標時的「競爭」與「比賽」。",
+      "hook_zh": "英文的 competence（能力）和 competition（競爭），在西語合體為同一個字！",
+      "usage_zh": "陰性名詞。可指能力或比賽，作為集合名詞時也可指「競爭對手、同業競爭者」。",
+      "example_es": "Hay mucha competencia entre las dos empresas.",
+      "example_zh": "這兩家公司之間有激烈的競爭。",
+      "image": "emoji:🏆",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:competencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "facultad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "（大學的）學院、系所；能力；權力",
+      "en": "college, department, faculty, ability",
+      "ipa": "/fakulˈtad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "facultās",
+          "zh": "技能、能力"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "facultad",
+          "zh": "學院；才能；權能"
+        }
+      ],
+      "cognates_en": [
+        "faculty"
+      ],
+      "story_zh": "源自拉丁語 facultās（技能、能力、便利）。原指人做某事的能力或被賦予的權限，在中世紀大學制度中，引申指傳授特定專業學問的教學單位，即大學裡的「學院」或「系所」。",
+      "hook_zh": "英文 faculty 指大學學院或全體教員，西語 facultad 則常用於指大學的「學院」。",
+      "usage_zh": "陰性名詞（-tad 結尾皆為陰性）。指大學學院（如 Facultad de Medicina 醫學院）時首字常大寫。",
+      "example_es": "Mi hermano estudia Medicina en la facultad.",
+      "example_zh": "我哥哥在大學醫學院讀醫學。",
+      "image": "emoji:🎓",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:facultad"
+      ],
+      "writer": "gemini"
+    }
+  ]
+}
