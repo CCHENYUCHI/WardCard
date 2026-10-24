@@ -1,6 +1,6 @@
 {
   "theme": "freq-0008",
-  "theme_zh": "常用字（頻率第 1907–2170 名）",
+  "theme_zh": "常用字（頻率第 1907–2183 名）",
   "entries": [
     {
       "word": "señal",
@@ -2122,46 +2122,6 @@
       "writer": "gemini"
     },
     {
-      "word": "romo",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "鈍的、不鋒利的；扁平的",
-      "en": "blunt, dull; snub",
-      "ipa": "/ˈromo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "ῥόμβος",
-          "zh": "菱形、旋轉之物"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "rhombus",
-          "zh": "菱形"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "romo",
-          "zh": "鈍的、扁平的"
-        }
-      ],
-      "cognates_en": [
-        "rhombus"
-      ],
-      "story_zh": "源自拉丁語 rhombus（菱形），借自古希臘語 ῥόμβος。由於幾何上的菱形包含鈍角，詞義逐漸引申為角不尖銳、平鈍的特徵，在西班牙語中演變為指物體「鈍的」或鼻子等「扁平的」。",
-      "hook_zh": "鉛筆尖被磨得「肉肉的（romo）」，變得平鈍不好寫。",
-      "usage_zh": "陰性為 roma（拼寫與羅馬 Roma 相同但首字母小寫），如 una nariz roma（扁平鼻）。",
-      "example_es": "Este cuchillo tiene la punta roma.",
-      "example_zh": "這把刀的刀尖是鈍的。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:romo"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "titular",
       "article": "el",
       "pos": "sustantivo",
@@ -2748,28 +2708,6 @@
       "writer": "gemini"
     },
     {
-      "word": "martín",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "夜鷺",
-      "en": "black-crowned night heron",
-      "ipa": "/maɾˈtin/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "名字叫 Martín 的鳥在夜間水邊靜靜佇立捕捉魚蝦，就是夜鷺。",
-      "usage_zh": "陽性名詞，複數為 martines。常指夜鷺或與翠鳥（martín pescador）相關的鳥類。",
-      "example_es": "Vi un martín cerca del río anoche.",
-      "example_zh": "昨晚我在河邊看到一隻夜鷺。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:martín"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "niña",
       "article": "la",
       "pos": "sustantivo",
@@ -3014,46 +2952,6 @@
         "wiktionary:es:cola",
         "wiktionary:la:cauda",
         "wiktionary:la:coda"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "cristo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "耶穌像、基督；麻煩、混亂",
-      "en": "Christ, crucifix; mess, hassle",
-      "ipa": "/ˈkɾisto/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "Χρῑστός",
-          "zh": "受膏者、基督"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "Christus",
-          "zh": "基督"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "cristo",
-          "zh": "基督、十字架苦像"
-        }
-      ],
-      "cognates_en": [
-        "Christ"
-      ],
-      "story_zh": "西語 cristo 屬於書面借詞，源自拉丁語 Christus，最終來自古希臘語 Χρῑστός。在宗教脈絡中指耶穌基督或十字架苦像；在西班牙日常口語中，也常延伸用來形容一團混亂或大麻煩。",
-      "hook_zh": "英文的 Christ 就是基督；家裡被弄得一團糟時，忍不住驚呼「天啊（cristo）真麻煩」！",
-      "usage_zh": "陽性名詞。口語常說 armar un cristo（惹出大麻煩、大吵大鬧）。",
-      "example_es": "Se armó un cristo por culpa del retraso del tren.",
-      "example_zh": "因為火車誤點而鬧得不可開交。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:cristo"
       ],
       "writer": "gemini"
     },
@@ -3457,62 +3355,6 @@
       "writer": "gemini"
     },
     {
-      "word": "castro",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "堡壘、防禦聚落",
-      "en": "fort, fortified settlement",
-      "ipa": "/ˈkastɾo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "castrum",
-          "zh": "軍營、要塞"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "castro",
-          "zh": "堡壘、防禦聚落"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁語 castrum，原指軍團的防禦營地、要塞或城堡。借入西班牙語後，常用來指伊比利半島史前或前羅馬時期的石造防禦聚落（山城遺址）。此外，同一個拉丁字經由阿拉伯語借入西語的雙重詞（doublet）則是 alcázar（宮殿、要塞）。",
-      "hook_zh": "想像石造城堡（castle）屹立在山頂，守衛在古老要塞（castro）前戒備。",
-      "usage_zh": "陽性名詞。在西班牙常指前羅馬時期的防禦村落遺跡，也常作為地名與姓氏出現。",
-      "example_es": "Visitamos un antiguo castro celta en Galicia.",
-      "example_zh": "我們參觀了加利西亞一座古代凱爾特防禦聚落。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:castro",
-        "wiktionary:la:castrum"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "córdoba",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "哥多華（尼加拉瓜貨幣單位）",
-      "en": "cordoba (currency of Nicaragua)",
-      "ipa": "/ˈkoɾdoba/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "尼加拉瓜錢幣上面印著歷史古城 Córdoba 的印記。",
-      "usage_zh": "陽性名詞，複數為 córdobas。注意首音節有重音標記 ó。",
-      "example_es": "Pagué diez córdobas por el café.",
-      "example_zh": "我付了十科多巴買這杯咖啡。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:córdoba"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "descripción",
       "article": "la",
       "pos": "sustantivo",
@@ -3807,39 +3649,6 @@
       "writer": "gemini"
     },
     {
-      "word": "panamá",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "巴拿馬草帽",
-      "en": "Panama hat",
-      "ipa": "/panaˈma/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "Panamá",
-          "zh": "巴拿馬（地名）"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "panamá",
-          "zh": "巴拿馬草帽"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自中美洲地名 Panamá（巴拿馬）。這款輕便通風的編織草帽雖然原產自厄瓜多，但十九世紀修建巴拿馬運河時在當地大受歡迎並轉運全球，因而以巴拿馬命名。",
-      "hook_zh": "地名 Panamá 直接轉為小寫名詞，想像在炎炎夏日戴著巴拿馬草帽遮陽。",
-      "usage_zh": "陽性名詞，複數為 panamás。通常指以托奎拉草編織的經典寬邊草帽。",
-      "example_es": "Lleva un panamá para protegerse del sol.",
-      "example_zh": "他戴著一頂巴拿馬草帽來防曬。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:panamá"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "permanente",
       "article": "",
       "pos": "adjetivo",
@@ -3880,6 +3689,270 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:permanente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "prácticamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "實際上、幾乎、差不多",
+      "en": "practically, virtually",
+      "ipa": "/ˌpɾaɡtikaˈmente/",
+      "breakdown": [
+        {
+          "part": "práctico",
+          "zh": "實際的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "práctico + -mente",
+          "zh": "實際的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "prácticamente",
+          "zh": "實際上、幾乎"
+        }
+      ],
+      "cognates_en": [
+        "practically"
+      ],
+      "story_zh": "源自形容詞 práctico（實際的）加上副詞字尾 -mente。字面原意是「以實際方式」，在日常會話中常引申為「幾乎、差不多」，表示事情已經非常接近完成。",
+      "hook_zh": "英文 practically 的雙胞胎兄弟，看到它就想到「實際上、幾乎搞定」。",
+      "usage_zh": "原形容詞 práctico 保留重音符號。常見搭配如 prácticamente imposible（幾乎不可能）。",
+      "example_es": "El proyecto está prácticamente terminado.",
+      "example_zh": "這項專案幾乎已經完成了。",
+      "image": "emoji:🎯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:prácticamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "punta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "尖端、前端；（時間）尖峰的",
+      "en": "tip, point, end; peak",
+      "ipa": "/ˈpunta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*pewǵ-",
+          "zh": "刺"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*pungō",
+          "zh": "刺"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "pungō",
+          "zh": "刺"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "pūnctus",
+          "zh": "刺入的"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "puncta",
+          "zh": "尖端"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "punta",
+          "zh": "尖端"
+        }
+      ],
+      "cognates_en": [
+        "point",
+        "puncture",
+        "punch"
+      ],
+      "story_zh": "源自後期拉丁語 puncta，為古典拉丁語動詞 pungō（刺、戳）之被動過去分詞 pūnctus 的陰性形式。原指被刺出的小孔或尖端，在西語中引申為物體的「前端」，亦可作形容詞指「尖峰的」。",
+      "hook_zh": "聯想 punch（打孔）和 puncture（刺穿），尖銳的「尖端」刺過來就是 punta。",
+      "usage_zh": "horas punta 指交通或用電「尖峰時段」（punta 作形容詞不隨名詞變複數）。",
+      "example_es": "Hay mucho tráfico porque es hora punta.",
+      "example_zh": "交通非常擁擠，因為現在是尖峰時間。",
+      "image": "emoji:📍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:punta"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sub",
+      "article": "",
+      "pos": "preposición",
+      "zh": "在…之下",
+      "en": "under",
+      "ipa": "/ˈsub/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "聯想潛水艇 submarine 和地鐵 subway，開頭的 sub- 就是「在…之下」。",
+      "usage_zh": "西語中極少單獨作為前置詞使用，主要以拉丁成語（如 sub júdice）或字首形式出現。",
+      "example_es": "El caso todavía se encuentra sub júdice.",
+      "example_zh": "該案件目前仍在法官審理中。",
+      "image": "emoji:⬇️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:sub"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "traducción",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "翻譯、譯本、譯文",
+      "en": "translation",
+      "ipa": "/tɾaduɡˈθjon/",
+      "breakdown": [
+        {
+          "part": "tra-",
+          "zh": "跨越"
+        },
+        {
+          "part": "duc-",
+          "zh": "引導"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "traduco",
+          "zh": "引導穿過、運送"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "traductio",
+          "zh": "引導穿過、轉移、翻譯"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "traducción",
+          "zh": "翻譯"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語名詞 traductio（引導穿過、轉移），由動詞 traduco 衍生而來，字面意思是「帶領跨越到另一邊」。古人將話語或概念從一種語言跨越引導至另一種語言，便演變出「翻譯」之意。",
+      "hook_zh": "想像把原著文字從河的這岸「帶領穿過（tra- + duc）」到對岸，就是把內容轉換成新語言的「翻譯」。",
+      "usage_zh": "-ción 結尾皆為陰性名詞（la traducción），複數為 traducciones（去重音）；其動詞為 traducir。",
+      "example_es": "Necesito una traducción de este documento.",
+      "example_zh": "我需要這份文件的翻譯。",
+      "image": "emoji:🌐",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:traducción",
+        "wiktionary:la:traductio",
+        "wiktionary:la:traduco"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ángel",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "天使；善良可愛的人",
+      "en": "angel",
+      "ipa": "/ˈanxel/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἄγγελος",
+          "zh": "使者、信差"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "angelus",
+          "zh": "使者、天使"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "angel",
+          "zh": "天使"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ángel",
+          "zh": "天使"
+        }
+      ],
+      "cognates_en": [
+        "angel"
+      ],
+      "story_zh": "源自古希臘語 ἄγγελος（ángelos，使者、信差），經後期拉丁語 angelus 進入古西班牙語。在聖經傳統中，受神差遣傳達神聖旨意的使者即為「天使」，後來也廣泛用來形容心地純潔善良的人。",
+      "hook_zh": "拼法只比英文 angel 多了重音符號 á，發音像「按盒」，守護你的天使。",
+      "usage_zh": "陽性名詞，複數加 -es 變為 ángeles。常說 tiene ángel 形容人有魅力或討人喜愛。",
+      "example_es": "Esa niña es un ángel con todo el mundo.",
+      "example_zh": "那個小女孩對每個人都像天使一樣好。",
+      "image": "emoji:👼",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ángel",
+        "wiktionary:la:angelus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "adentro",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "往裡面、在裡面",
+      "en": "inside, indoors",
+      "ipa": "/aˈdentɾo/",
+      "breakdown": [
+        {
+          "part": "a",
+          "zh": "向、朝"
+        },
+        {
+          "part": "dentro",
+          "zh": "裡面"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "a + dentro",
+          "zh": "向 + 裡面"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "adentro",
+          "zh": "往裡面"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由介系詞 a（朝向）與副詞 dentro（裡面）合寫為一詞，字面即「向著裡面」。通常用來表示朝向內部的動作，現代西語也可用作名詞指內心深處。",
+      "hook_zh": "a（去）加上 dentro（裡面），合起來就是往裡面走 adentro。",
+      "usage_zh": "常用於動態移動（如 ir adentro）；單純描述靜態位置通常偏好用 dentro。",
+      "example_es": "Hacía frío afuera, así que fuimos adentro.",
+      "example_zh": "外面很冷，所以我們走進了裡面。",
+      "image": "emoji:🚪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:adentro"
       ],
       "writer": "gemini"
     }
