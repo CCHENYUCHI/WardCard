@@ -763,6 +763,52 @@
       "writer": "gemini"
     },
     {
+      "word": "suelto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "鬆開的、寬鬆的、零散的",
+      "en": "loose, free, undone",
+      "ipa": "/ˈswelto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "solūtus",
+          "zh": "解開的、釋放的"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*soltus",
+          "zh": "解開的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "suelto",
+          "zh": "解開的、鬆散的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "suelto",
+          "zh": "鬆開的、寬鬆的"
+        }
+      ],
+      "cognates_en": [
+        "solute"
+      ],
+      "story_zh": "源自古西班牙語 suelto，追溯至通俗拉丁語 *soltus 及拉丁語 solūtus（已解開的、自由的），為動詞 solvō（解開）的被動過去分詞。原意指未受束縛的自由狀態，引申指衣物寬鬆、未裝訂成冊的零散紙張，或零錢（dinero suelto）。",
+      "hook_zh": "解開鞋帶讓腳放鬆（suelto），散落口袋的零錢也是 suelto。",
+      "usage_zh": "名詞 el suelto 可指「零錢」；形容衣服寬鬆用 llevar la ropa suelta。",
+      "example_es": "Prefiero llevar ropa suelta cuando hace calor.",
+      "example_zh": "天氣熱時我比較喜歡穿寬鬆的衣服。",
+      "image": "emoji:🍃",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:suelto",
+        "wiktionary:la:solutus"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "supervisión",
       "article": "la",
       "pos": "sustantivo",
@@ -978,6 +1024,28 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:biología"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "belga",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "比利時的、比利時人的",
+      "en": "Belgian",
+      "ipa": "/ˈbelɡa/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "國家是 Bélgica，形容詞與居民都是 belga，聯想到美味的比利時鬆餅。",
+      "usage_zh": "陰陽性同形：un chocolate belga（比利時巧克力）、una cerveza belga（比利時啤酒）。",
+      "example_es": "El chocolate belga es muy famoso en todo el mundo.",
+      "example_zh": "比利時巧克力聞名全世界。",
+      "image": "emoji:🇧🇪",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:belga"
       ],
       "writer": "gemini"
     },
@@ -3042,6 +3110,626 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:concretamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "configuración",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "配置、設定；形狀、構造",
+      "en": "configuration, setting",
+      "ipa": "/konfiɡuɾaˈθjon/",
+      "breakdown": [
+        {
+          "part": "configurar",
+          "zh": "配置、設定"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cōnfigūrātiōnem",
+          "zh": "形狀、配置"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "configuración",
+          "zh": "配置、設定"
+        }
+      ],
+      "cognates_en": [
+        "configuration"
+      ],
+      "story_zh": "源自拉丁語名詞 cōnfigūrātiōnem，原意為將事物形塑或組合在一起的方式。西語中亦可由動詞 configurar 加上名詞字尾 -ción 解析，現代廣泛用於科技與電腦系統中的各項參數「配置」與「設定」。",
+      "hook_zh": "英文 configuration 換成西語字尾 -ción，手機齒輪圖示裡的「設定」。",
+      "usage_zh": "陰性名詞，字尾 -ción 恆為陰性。常見搭配如 configuración de fábrica（原廠設定）。",
+      "example_es": "Puedes cambiar el idioma en la configuración del móvil.",
+      "example_zh": "你可以在手機的設定裡變更語言。",
+      "image": "emoji:⚙️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:configuración"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "conquistar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "征服、攻克；迷倒、俘獲",
+      "en": "to conquer, to charm",
+      "ipa": "/konkisˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "conquīsītus",
+          "zh": "獲取的、征服的"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*conquīsītāre",
+          "zh": "征服、攻克"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "conquistar",
+          "zh": "征服、俘獲"
+        }
+      ],
+      "cognates_en": [
+        "conquer",
+        "conquest"
+      ],
+      "story_zh": "可能源自通俗拉丁語假想形式 *conquīsītāre，進一步源自拉丁語 conquīsītus（竭力尋求、獲取）；另一推測是從古西語 conquerir 的陰性分詞 conquista 衍生而來。詞義從軍事攻佔拓展至社交與感情中「俘獲芳心」。",
+      "hook_zh": "英文 conquer（征服）的同源詞，大將軍征服城池，也可以 conquistar 征服某人的心。",
+      "usage_zh": "規則 -ar 動詞。日常口語常用於感情表達，如 conquistar a alguien（贏得某人的心）。",
+      "example_es": "Su sonrisa conquistó a todos los presentes.",
+      "example_zh": "她的微笑征服了在場的所有人。",
+      "image": "emoji:⚔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:conquistar",
+        "wiktionary:la:conquisitus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "contraseña",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "密碼、暗號、口令",
+      "en": "password, countersign",
+      "ipa": "/kontɾaˈseɲa/",
+      "breakdown": [
+        {
+          "part": "contra-",
+          "zh": "相對、對應"
+        },
+        {
+          "part": "seña",
+          "zh": "信號、記號"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "contra- + seña",
+          "zh": "對應 + 信號"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "contraseña",
+          "zh": "暗號、密碼"
+        }
+      ],
+      "cognates_en": [
+        "countersign"
+      ],
+      "story_zh": "由前綴 contra-（相對、對應）與名詞 seña（信號、記號）複合而成。原意為守衛或秘密結社在接收到信號時所回覆的「應答暗號」（countersign），現代則引申為登入各類數位系統與帳號時所使用的「密碼」。",
+      "hook_zh": "對應（contra）守衛暗號（seña）的應答口令，現在每天登入都要打 contraseña。",
+      "usage_zh": "陰性名詞。常用搭配有 restablecer la contraseña（重設密碼）、contraseña segura（安全密碼）。",
+      "example_es": "He olvidado la contraseña de mi correo electrónico.",
+      "example_zh": "我忘記了電子郵件的密碼。",
+      "image": "emoji:🔑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:contraseña"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "controversia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "爭議、爭論",
+      "en": "controversy",
+      "ipa": "/kontɾoˈbeɾsja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "contrōversia",
+          "zh": "爭議、辯論"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "controversia",
+          "zh": "爭議"
+        }
+      ],
+      "cognates_en": [
+        "controversy"
+      ],
+      "story_zh": "借自拉丁語 contrōversia（爭端、辯論）。字面由表示相對、相反的詞根組成，描繪雙方意見背道而馳、各執一詞的爭辯情境。現代西班牙語常用來指公共領域中引發激烈討論的爭議事件。",
+      "hook_zh": "看英文 controversy 就認得：雙方立場 contra（相反），吵得不可開交。",
+      "usage_zh": "陰性名詞。常見搭配如 causar controversia（引發爭議）或 generar controversia。",
+      "example_es": "La nueva ley causó una gran controversia.",
+      "example_zh": "這項新法律引發了巨大的爭議。",
+      "image": "emoji:🗣️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:controversia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "corrección",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "訂正、修改；正確、得體",
+      "en": "correction, correctness",
+      "ipa": "/koreɡˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "corrēctiōnem",
+          "zh": "糾正、改正"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "corrección",
+          "zh": "訂正、修改"
+        }
+      ],
+      "cognates_en": [
+        "correction"
+      ],
+      "story_zh": "借自拉丁語 corrēctiōnem（糾正、改正）。其本義是使事物恢復筆直或引回正軌，引申為修補錯誤。在西語中既指糾正錯誤的動作或改動之處，也可指言行舉止合乎規範的端正得體。",
+      "hook_zh": "英文 correction 的雙胞胎：老師用紅筆在作業簿上批改，就是在做 corrección。",
+      "usage_zh": "陰性名詞（-ción 字尾皆為陰性）；複數變為 correcciones 時重音符號拿掉。",
+      "example_es": "Hice varias correcciones en mi ensayo.",
+      "example_zh": "我在我的文章裡做了好幾處修改。",
+      "image": "emoji:✍️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:corrección"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "criatura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "生物、造物；小嬰兒、幼童",
+      "en": "creature, infant, small child",
+      "ipa": "/kɾjaˈtuɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "creatūra",
+          "zh": "受造之物、造物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "criatura",
+          "zh": "生物；幼童"
+        }
+      ],
+      "cognates_en": [
+        "creature"
+      ],
+      "story_zh": "源自拉丁語 creatūra（被創造之物），源於動詞 creāre（創造）。原本泛指世間一切受造的生靈萬物，在西班牙語日常生活中，常帶著憐惜疼愛的心情，用來稱呼弱小無辜的小嬰兒或小孩。",
+      "hook_zh": "英文 creature（生物）的同源字：在西語除了指生靈，也常用來憐惜地叫「小寶寶」。",
+      "usage_zh": "陰性名詞。指稱幼兒時無論男女皆可用 la criatura，充滿親暱與呵護語氣。",
+      "example_es": "La pobre criatura no ha comido nada hoy.",
+      "example_zh": "可憐的小傢伙今天什麼都還沒吃。",
+      "image": "emoji:👶",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:criatura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "crudo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "生的、未煮熟的；殘酷的",
+      "en": "raw, uncooked; crude, harsh",
+      "ipa": "/ˈkɾudo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "crūdus",
+          "zh": "未煮熟的、生鮮的、粗糙的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "crudo",
+          "zh": "生的、殘酷的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "crudo",
+          "zh": "生的、未煮熟的"
+        }
+      ],
+      "cognates_en": [
+        "crude"
+      ],
+      "story_zh": "繼承自古西班牙語 crudo，源自拉丁語 crūdus（未烹煮的、帶著血水的、粗暴的）。最初指肉食未經加熱的生鮮狀態，後引申為未提煉的原料，亦可用來形容嚴冬或社會現實的嚴酷與殘忍。",
+      "hook_zh": "英文 crude oil 是原油：未經烹調的食物是 crudo，血淋淋的現實也是 crudo。",
+      "usage_zh": "陰性為 cruda。在墨西哥等拉美地區，口語常用 estar crudo 來表示「宿醉」。",
+      "example_es": "No me gusta comer pescado crudo.",
+      "example_zh": "我不喜歡吃生魚。",
+      "image": "emoji:🥩",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:crudo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "desesperación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "絕望、焦躁絕望",
+      "en": "desperation, despair",
+      "ipa": "/desespeɾaˈθjon/",
+      "breakdown": [
+        {
+          "part": "desesperar",
+          "zh": "失去希望、使絕望"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示狀態或動作"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "desesperar",
+          "zh": "失去希望、使絕望"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "desesperación",
+          "zh": "絕望"
+        }
+      ],
+      "cognates_en": [
+        "desperation"
+      ],
+      "story_zh": "由動詞 desesperar（失去希望、使絕望）加上表示名詞狀態的字尾 -ción 衍生而來。當所有的企盼完全破滅、陷入求助無門的困境時，內心極度焦慮痛楚的情緒就是 desesperación（絕望）。",
+      "hook_zh": "英文 desperation 的同源字：失去希望（des + esperar），掉入絕望痛苦的深淵。",
+      "usage_zh": "陰性名詞。常見搭配有 al borde de la desesperación（瀕臨絕望境界）。",
+      "example_es": "Gritó con desesperación al perder las llaves.",
+      "example_zh": "他弄丟鑰匙時絕望地大叫。",
+      "image": "emoji:😫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:desesperación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "designación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "指派、任命；指定",
+      "en": "designation, appointment",
+      "ipa": "/desiɡnaˈθjon/",
+      "breakdown": [
+        {
+          "part": "designar",
+          "zh": "指派、指定"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "designationem",
+          "zh": "指派、指定、標明"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "designación",
+          "zh": "指派、任命"
+        }
+      ],
+      "cognates_en": [
+        "designation"
+      ],
+      "story_zh": "源自拉丁語名詞 dēsignātiōnem，原意為「指明」或「指定標記」。在西語中可視為動詞 designar（指派、標出）加上名詞後綴 -ción，指選定人選擔任某個職務或選定特定事物的行為。",
+      "hook_zh": "英文就是 designation，也可以拆成 de- 加上 sign（簽署、做記號）來任命人選。",
+      "usage_zh": "陰性名詞。字尾為 -ción 的名詞多為陰性，常見搭配如 la designación de un cargo（職位任命）。",
+      "example_es": "Celebraron la designación del nuevo director.",
+      "example_zh": "他們慶祝了新主任的任命。",
+      "image": "emoji:📜",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:designación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "deterioro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "惡化、損壞、衰退",
+      "en": "deterioration, damage, decay",
+      "ipa": "/deteˈɾjoɾo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "deterioration"
+      ],
+      "story_zh": "",
+      "hook_zh": "聯想英文 deteriorate（惡化），看到 deterioro 就聯想到老建築損壞破舊的畫面。",
+      "usage_zh": "陽性名詞。常與動詞 sufrir 搭配，例如 sufrir un deterioro（遭受損壞、情況惡化）。",
+      "example_es": "El edificio sufrió un grave deterioro con los años.",
+      "example_zh": "這棟建築隨著歲月遭受了嚴重的損壞。",
+      "image": "emoji:🏚️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:deterioro"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "diseñador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "設計師",
+      "en": "designer",
+      "ipa": "/diseɲaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "diseñar",
+          "zh": "設計"
+        },
+        {
+          "part": "-dor",
+          "zh": "從事…的人（名詞字尾）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "designer"
+      ],
+      "story_zh": "",
+      "hook_zh": "diseñar（設計）加上表示人物的字尾 -dor，就像英文 design 加上 -er 變成 designer 一樣直覺！",
+      "usage_zh": "陰性形式為 diseñadora。常見搭配如 diseñador gráfico（平面設計師）或 de moda（服裝）。",
+      "example_es": "Mi hermana trabaja como diseñadora gráfica.",
+      "example_zh": "我姊姊是一名平面設計師。",
+      "image": "emoji:🎨",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:diseñador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "distinguir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "區分、辨別；辨認出",
+      "en": "to distinguish, discern",
+      "ipa": "/distinˈɡiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "distinguere",
+          "zh": "區分、分開、標記"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "distinguir",
+          "zh": "區分、辨別"
+        }
+      ],
+      "cognates_en": [
+        "distinguish"
+      ],
+      "story_zh": "借自拉丁語動詞 distinguere，原意為分開標記或區隔。後來演變為在視覺、聽覺或思想上把事物辨認清楚，引申出「區分」與「看清事物特徵」之意。",
+      "hook_zh": "和英文 distinguish 完全同源，字首 dis- 代表分開，把不同事物分開看就是「區分」。",
+      "usage_zh": "現在式第一人稱單數為不規則的 yo distingo（gu 遇 o 變 g）。反身形表示脫穎而出。",
+      "example_es": "No puedo distinguir los dos colores en la oscuridad.",
+      "example_zh": "我在黑暗中分不清這兩種顏色。",
+      "image": "emoji:🔍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:distinguir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "diámetro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "直徑",
+      "en": "diameter",
+      "ipa": "/ˈdjametɾo/",
+      "breakdown": [
+        {
+          "part": "diá-",
+          "zh": "穿過、跨越"
+        },
+        {
+          "part": "-metro",
+          "zh": "測量、量度"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "διάμετρος",
+          "zh": "穿過測量的（線）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "diametros",
+          "zh": "直徑"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "diámetro",
+          "zh": "直徑"
+        }
+      ],
+      "cognates_en": [
+        "diameter",
+        "meter"
+      ],
+      "story_zh": "源自古希臘語 διάμετρος，由 διά（穿過、跨過）與 μέτρον（測量、量度）結合而成，字面意思是「穿過圓心測量的線段」。經由拉丁語借入西班牙語，成為幾何學中的「直徑」。",
+      "hook_zh": "英文就是 diameter！「dia（穿過）+ metro（米、測量）」，貫穿圓形測量的長度就是直徑。",
+      "usage_zh": "陽性名詞。注意重音在第一音節的 a 上（diámetro）。",
+      "example_es": "El círculo tiene un diámetro de diez centímetros.",
+      "example_zh": "這個圓的直徑是十公分。",
+      "image": "emoji:📏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:diámetro",
+        "wiktionary:la:diametros"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "實體；存在、機構",
+      "en": "being, entity",
+      "ipa": "/ˈente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "entem",
+          "zh": "存在、實體"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ente",
+          "zh": "實體、存在"
+        }
+      ],
+      "cognates_en": [
+        "entity"
+      ],
+      "story_zh": "源自拉丁語受格單詞 entem，意為「存在」或「本體」。在哲學與法律概念中，指涉具有客觀存在或獨立運作的事物，現代西語中也經常用來指稱公家機關或法人組織。",
+      "hook_zh": "英文 entity（實體）的開頭就是 ent-，看成一個獨立運作的「ente 實體機構」。",
+      "usage_zh": "陽性名詞。新聞與法律常搭配 ente público（公營機構、公共事業單位）。",
+      "example_es": "El agua es administrada por un ente público.",
+      "example_zh": "水資源由一個公共機構負責管理。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "entrenar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "訓練、鍛鍊",
+      "en": "to train",
+      "ipa": "/entɾeˈnaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "entraîner",
+          "zh": "帶動、訓練"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "entrenar",
+          "zh": "訓練"
+        }
+      ],
+      "cognates_en": [
+        "train"
+      ],
+      "story_zh": "借自法語動詞 entraîner，本義有「帶動、引導」之意。後來演變為透過系統性的練習與指引，來提升體能、技能或專長。英文的 train 也是同源字。",
+      "hook_zh": "發音像「en + train + ar」，想像在火車（train）上認真做體能訓練。",
+      "usage_zh": "可作及物或不及物動詞，指自我鍛鍊時也常使用反身代名詞 entrenarse。",
+      "example_es": "Ella suele entrenar en el gimnasio tres veces por semana.",
+      "example_zh": "她通常每週在健身房訓練三次。",
+      "image": "emoji:🏋️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:entrenar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "escaño",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "（議會）席位；長椅",
+      "en": "seat, bench",
+      "ipa": "/esˈkaɲo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*skabʰ-",
+          "zh": "支撐"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*skaβnom",
+          "zh": "凳子、長椅"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "scamnum",
+          "zh": "凳子、長椅"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "escaño",
+          "zh": "議會席位、長椅"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "承襲自拉丁語 scamnum（板凳、長椅），印歐語根為 *skabʰ-（支撐）。起初指供多人坐的有背長木椅，後來引申為代議制度中議員在議會裡所佔有的「席位」。",
+      "hook_zh": "議員坐在議會席位（escaño）上，仔細審查掃描（scan）法案。",
+      "usage_zh": "常用於政治與選舉新聞，如 conseguir un escaño（獲得席次）或 perder escaños。",
+      "example_es": "El partido ganó diez escaños en las elecciones.",
+      "example_zh": "該黨在選舉中贏得了十個席位。",
+      "image": "emoji:🪑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:escaño",
+        "wiktionary:la:scamnum"
       ],
       "writer": "gemini"
     }
