@@ -1,6 +1,6 @@
 {
   "theme": "freq-0032",
-  "theme_zh": "常用字（頻率第 7938–8247 名）",
+  "theme_zh": "常用字（頻率第 7938–8248 名）",
   "entries": [
     {
       "word": "campana",
@@ -3234,41 +3234,6 @@
       "writer": "gemini"
     },
     {
-      "word": "apuesto",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "英俊的、儀表堂堂的",
-      "en": "handsome, good-looking",
-      "ipa": "/aˈpwesto/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "appositus",
-          "zh": "適當的、得體的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "apuesto",
-          "zh": "英俊的、體面的"
-        }
-      ],
-      "cognates_en": [
-        "apposite"
-      ],
-      "story_zh": "源自拉丁語 appositus（適當的、安排妥當的）。字義從「衣著整齊適當」逐漸演變為形容人的外表端正、相貌堂堂、英俊帥氣。",
-      "hook_zh": "穿著打扮都就定位（apposite），看起來就很 apuesto（帥氣英俊）。",
-      "usage_zh": "通常用來形容男士外表俊俏，陰性形為 apuesta。",
-      "example_es": "Es un joven muy apuesto y educado.",
-      "example_zh": "他是一位非常英俊且有禮貌的年輕人。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:apuesto"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "bancario",
       "article": "",
       "pos": "adjetivo",
@@ -3672,28 +3637,6 @@
       "writer": "gemini"
     },
     {
-      "word": "encontrado",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "互相矛盾的、對立的",
-      "en": "conflicting, opposing",
-      "ipa": "/enkonˈtɾado/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "來自 encontrar（相遇），當兩股想法迎面相撞，就成了 sentimientos encontrados（矛盾心情）。",
-      "usage_zh": "常搭配 sentimientos encontrados（矛盾複雜的心情）。",
-      "example_es": "Tengo sentimientos encontrados sobre mi nuevo trabajo.",
-      "example_zh": "我對我的新工作懷有矛盾複雜的情感。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:encontrado"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "estafa",
       "article": "la",
       "pos": "sustantivo",
@@ -3888,6 +3831,42 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:ignorante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "incidencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "影響、發生率、插曲",
+      "en": "impact, incidence, incident",
+      "ipa": "/inθiˈdenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "incidentia",
+          "zh": "降臨之事、發生之事"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "incidencia",
+          "zh": "影響、發生率、插曲事件"
+        }
+      ],
+      "cognates_en": [
+        "incidence",
+        "incident"
+      ],
+      "story_zh": "源自拉丁語 incidentia（發生、降臨），源自 incidere（落入、降臨、發生）。在西語中可用來指事件的發生、發生的插曲，或是某件事對其他事物的「影響、衝擊」。",
+      "hook_zh": "英文 incidence 代表發生率，在西語裡 incidencia 也有「影響」或「插曲事件」的意思。",
+      "usage_zh": "陰性名詞。常用片語 tener incidencia en（對…產生影響）。",
+      "example_es": "La nueva ley tendrá una gran incidencia en la economía local.",
+      "example_zh": "新法律將對當地經濟產生重大影響。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:incidencia"
       ],
       "writer": "gemini"
     }

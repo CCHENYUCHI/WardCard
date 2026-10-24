@@ -1,43 +1,7 @@
 {
   "theme": "freq-0033",
-  "theme_zh": "常用字（頻率第 8248–8494 名）",
+  "theme_zh": "常用字（頻率第 8251–8504 名）",
   "entries": [
-    {
-      "word": "incidencia",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "影響、發生率、插曲",
-      "en": "impact, incidence, incident",
-      "ipa": "/inθiˈdenθja/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "incidentia",
-          "zh": "降臨之事、發生之事"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "incidencia",
-          "zh": "影響、發生率、插曲事件"
-        }
-      ],
-      "cognates_en": [
-        "incidence",
-        "incident"
-      ],
-      "story_zh": "源自拉丁語 incidentia（發生、降臨），源自 incidere（落入、降臨、發生）。在西語中可用來指事件的發生、發生的插曲，或是某件事對其他事物的「影響、衝擊」。",
-      "hook_zh": "英文 incidence 代表發生率，在西語裡 incidencia 也有「影響」或「插曲事件」的意思。",
-      "usage_zh": "陰性名詞。常用片語 tener incidencia en（對…產生影響）。",
-      "example_es": "La nueva ley tendrá una gran incidencia en la economía local.",
-      "example_zh": "新法律將對當地經濟產生重大影響。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:incidencia"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "insultar",
       "article": "",
@@ -196,39 +160,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:palomo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "petrolera",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "石油公司",
-      "en": "oil company",
-      "ipa": "/petɾoˈleɾa/",
-      "breakdown": [
-        {
-          "part": "petróleo",
-          "zh": "石油"
-        },
-        {
-          "part": "-era",
-          "zh": "企業／行業陰性字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "petroleum"
-      ],
-      "story_zh": "",
-      "hook_zh": "石油是 petróleo，加上從事該產業的陰性名詞字尾 -era，就是 petrolera（石油公司）。",
-      "usage_zh": "陰性名詞，指石油公司；亦可作為形容詞（empresas petroleras）。",
-      "example_es": "La empresa petrolera anunció nuevas inversiones en energía limpia.",
-      "example_zh": "這家石油公司宣布了在乾淨能源領域的新投資。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:petrolera"
       ],
       "writer": "gemini"
     },
@@ -2103,30 +2034,6 @@
       "writer": "gemini"
     },
     {
-      "word": "perpetua",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "千日紅（圓仔花）",
-      "en": "globe amaranth (flower)",
-      "ipa": "/peɾˈpetwa/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "perpetual"
-      ],
-      "story_zh": "",
-      "hook_zh": "像 perpetual（永恆的）一樣花期長久不凋謝的花，在西語裡就叫 perpetua（千日紅）。",
-      "usage_zh": "陰性名詞。指千日紅屬植物；也可用於 cadena perpetua（無期徒刑、終身監禁）。",
-      "example_es": "Plantaron flores de perpetua en el jardín por su resistencia.",
-      "example_zh": "他們在花園裡種了千日紅，因為這種花非常耐活。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:perpetua"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "planear",
       "article": "",
       "pos": "verbo",
@@ -3831,6 +3738,47 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:expuesto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hipocresía",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "虛偽、偽善",
+      "en": "hypocrisy",
+      "ipa": "/ipokɾeˈsia/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ὑπόκρισις",
+          "zh": "演戲、裝模作樣"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "hypocrisis",
+          "zh": "裝作、模仿"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hipocresía",
+          "zh": "虛偽、偽善"
+        }
+      ],
+      "cognates_en": [
+        "hypocrisy"
+      ],
+      "story_zh": "源自古希臘語 hypókrisis，原意是舞台上的「演戲、裝模作樣」。經晚期拉丁語 hypocrisis 進入西語，字義從單純的戲劇表演引申為隱藏真實想法、表裡不一的「虛偽」。",
+      "hook_zh": "在舞台下還戴著面具演戲，說一套做一套，就是典型的 hipocresía。",
+      "usage_zh": "陰性名詞。相關衍生詞有 hipócrita（偽善的；偽君子）。",
+      "example_es": "No soporto la hipocresía de la gente que finge ser amiga.",
+      "example_zh": "我受不了那些假裝是朋友的人的虛偽。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hipocresía",
+        "wiktionary:la:hypocrisis"
       ],
       "writer": "gemini"
     }
