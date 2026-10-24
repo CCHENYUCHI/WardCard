@@ -119,13 +119,6 @@ module.exports = {
     s('circle', { cx: 110, cy: 80, r: 30 }, 'yellow'),
     s('path', { d: 'M80 66v28M66 80h28', ...SW(8) }, 'dark', { stroke: true })
   ],
-  esa: [
-    ground(),
-    ...person(34, 136, 'blue'),
-    s('path', { d: 'M48 100h30', ...SW(7) }, 'skin', { stroke: true }),
-    ...lady(122, 136, 'pink', { accent: true }),
-    s('path', { d: 'M84 92l8 8-8 8', ...SW(4) }, 'gray', { stroke: true })
-  ],
   estado: [
     s('path', { d: 'M28 40l40-12 36 10 30-6-6 40 8 34-38 14-34-6-30 10 4-40z' }, 'mint'),
     s('path', { d: 'M28 40l40-12 36 10 30-6-6 40 8 34-38 14-34-6-30 10 4-40z', ...SW(4) }, 'green', { stroke: true }),

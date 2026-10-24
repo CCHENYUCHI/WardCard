@@ -1,54 +1,7 @@
 {
   "theme": "freq-0003",
-  "theme_zh": "常用字（頻率第 723–958 名）",
+  "theme_zh": "常用字（頻率第 727–961 名）",
   "entries": [
-    {
-      "word": "adelante",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "向前、往前；請進",
-      "en": "forward; come in",
-      "ipa": "/adeˈlante/",
-      "breakdown": [
-        {
-          "part": "a-",
-          "zh": "朝向、往"
-        },
-        {
-          "part": "delante",
-          "zh": "在前方"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "古西班牙語",
-          "word": "a + delante",
-          "zh": "朝向 + 在前"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "adelante",
-          "zh": "向前"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "adelante",
-          "zh": "向前、請進"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "承襲自古西班牙語 adelante，是由介詞 a（朝向）與副詞 delante（在前面）合詞而成。字面意義就是「往前面去」，後來延伸用於空間的前進、時間的推移，以及禮貌招呼他人「請進、請繼續」。",
-      "hook_zh": "a（朝向）+ delante（前面），合起來就是往前走；有人敲門時說 adelante 就是「請進」！",
-      "usage_zh": "除作副詞表示往前，日常中極常用作感嘆詞表示「請進」或「請講」。",
-      "example_es": "¡Adelante, puedes pasar!",
-      "example_zh": "請進，你可以進來！",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:adelante"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "autor",
       "article": "el",
@@ -3645,41 +3598,6 @@
       "writer": "gemini"
     },
     {
-      "word": "post",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "（網路）貼文、文章",
-      "en": "post",
-      "ipa": "/ˈpost/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "post",
-          "zh": "貼文"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "post",
-          "zh": "貼文"
-        }
-      ],
-      "cognates_en": [
-        "post"
-      ],
-      "story_zh": "直接借自現代英語的 post（貼文）。隨著網路與社群媒體普及，西語直接吸收此字指稱線上的發文或文章，與西語固有的 puesto 和 poste 為同源詞。",
-      "hook_zh": "跟英文社群媒體上的 post 完全相同，意思就是「貼文」。",
-      "usage_zh": "陽性名詞，複數形可以維持 post 不變，亦常寫作 posts。",
-      "example_es": "He leído tu último post en el blog.",
-      "example_zh": "我讀了你部落格上最新的貼文。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:post"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "presencia",
       "article": "la",
       "pos": "sustantivo",
@@ -3752,28 +3670,6 @@
       "sources": [
         "wiktionary:es:respeto",
         "wiktionary:la:respectus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "sr",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "先生（Sr. 的縮寫）",
-      "en": "Mr., sir",
-      "ipa": "/seˈɲoɾ/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "Sr. 是 señor 的縮寫，像英文 Mr. 代表 Mister 一樣，對男士的敬稱。",
-      "usage_zh": "首字母大寫的縮寫詞；複數為 sres.，女性為 sra.（señora）。",
-      "example_es": "El sr. Gómez no está en su oficina.",
-      "example_zh": "戈麥斯先生不在辦公室裡。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:sr"
       ],
       "writer": "gemini"
     },
@@ -3968,6 +3864,119 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:importancia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "industria",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "工業、產業；勤奮",
+      "en": "industry, diligence",
+      "ipa": "/inˈdustɾja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "industria",
+          "zh": "勤奮、勤勉"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "industria",
+          "zh": "工業、勤奮"
+        }
+      ],
+      "cognates_en": [
+        "industry"
+      ],
+      "story_zh": "源自拉丁語 industria，原本指個人的勤勉與努力不懈。隨著生產方式演進，字義從辛勤工作延伸至集體製造產品的「工業」與「產業」。",
+      "hook_zh": "拼法與英文 industry 幾乎相同，在工廠裡勤奮幹活的身影就是 industria。",
+      "usage_zh": "陰性名詞。指「工業、產業界」整體時常用單數，指各行各業時可用複數 industrias。",
+      "example_es": "La industria del turismo es clave para el país.",
+      "example_zh": "觀光產業對該國至關重要。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:industria"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "instituto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "研究所、學院；中學、高中",
+      "en": "institute, secondary school",
+      "ipa": "/instiˈtuto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnstitūtum",
+          "zh": "建立物、制度、規章"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "instituto",
+          "zh": "研究所、學院、高中"
+        }
+      ],
+      "cognates_en": [
+        "institute"
+      ],
+      "story_zh": "為學者借詞，源自拉丁語 īnstitūtum（設立之物、體制）。在現代西語除了指專門學術機構，在西班牙日常生活中更是公立中學或高中的標準稱呼。",
+      "hook_zh": "字形對應英文 institute，但在西班牙街頭看到的 instituto 多半是高中校園。",
+      "usage_zh": "在西班牙，公立中學通常簡稱 IES（Instituto de Educación Secundaria）。",
+      "example_es": "Mi hermano menor estudia en el instituto.",
+      "example_zh": "我弟弟在高中唸書。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:instituto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "loco",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "瘋狂的、發瘋的",
+      "en": "crazy, insane",
+      "ipa": "/ˈloko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "أَلْوَق (ʔalwaq)",
+          "zh": "愚蠢的"
+        },
+        {
+          "lang_zh": "安達盧西亞阿拉伯語",
+          "word": "لَوْقَاء (láwqa)",
+          "zh": "愚蠢的（陰性）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "loco",
+          "zh": "發瘋的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "loco",
+          "zh": "瘋狂的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "詞源不確定。繼承自古西班牙語 loco，推測可能來自安達盧西亞阿拉伯語 láwqa（源自阿拉伯語「愚蠢」的陰性形 lawqāʔ），因字尾 -a 被誤認是陰性而逆推造出陽性形 loco。",
+      "hook_zh": "腦袋轉不過來、「咯咯 (loco)」傻笑發瘋，整個人陷入 crazy 狀態。",
+      "usage_zh": "常與 estar 搭配：estar loco por…（為…著迷瘋狂）。也能直接作陽性名詞指瘋子。",
+      "example_es": "La gente piensa que tengo una idea loca.",
+      "example_zh": "大家覺得我有一個瘋狂的想法。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:loco"
       ],
       "writer": "gemini"
     }

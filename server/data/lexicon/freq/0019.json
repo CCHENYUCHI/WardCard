@@ -1,6 +1,6 @@
 {
   "theme": "freq-0019",
-  "theme_zh": "常用字（頻率第 4344–4547 名）",
+  "theme_zh": "常用字（頻率第 4355–4559 名）",
   "entries": [
     {
       "word": "podar",
@@ -46,6 +46,42 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:podar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "uso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "使用、用途；習俗、慣例",
+      "en": "use, usage; custom",
+      "ipa": "/ˈuso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "usus",
+          "zh": "使用、習慣"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "uso",
+          "zh": "使用、習慣"
+        }
+      ],
+      "cognates_en": [
+        "use",
+        "usage"
+      ],
+      "story_zh": "承襲自拉丁語 ūsus（使用、習慣）。拉丁文原義指透過反覆操作物品的「使用」，以及經由長期重複實踐而形成的「慣例」或「風俗」。西班牙語完整保留了這兩層含意，既指實質的用途，也指文化上的習俗。",
+      "hook_zh": "長相和英文 use 極為相似，只要把字尾 e 換成西語陽性結尾 o 就是 uso。",
+      "usage_zh": "陽性名詞。常見片語有 fuera de uso（故障中、停止使用）、hacer uso de（使用…）。",
+      "example_es": "Este diccionario está diseñado para el uso diario.",
+      "example_zh": "這本字典是設計給日常使用。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:uso"
       ],
       "writer": "gemini"
     }
