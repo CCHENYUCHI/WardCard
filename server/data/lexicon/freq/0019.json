@@ -1,201 +1,7 @@
 {
   "theme": "freq-0019",
-  "theme_zh": "常用字（頻率第 4510–4736 名）",
+  "theme_zh": "常用字（頻率第 4526–4779 名）",
   "entries": [
-    {
-      "word": "magnitud",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "規模、大小、重要性",
-      "en": "magnitude, size",
-      "ipa": "/maɡniˈtud/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "magnitūdō",
-          "zh": "巨大、規模"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "magnitud",
-          "zh": "規模、大小"
-        }
-      ],
-      "cognates_en": [
-        "magnitude"
-      ],
-      "story_zh": "借自拉丁文 magnitūdō，指巨大的程度或量度。在西班牙語中用來表示物體的尺寸、事情的重要程度，或是地震的規模。",
-      "hook_zh": "英文就是 magnitude，西語結尾 -tud 常對應抽象特質或度量。",
-      "usage_zh": "陰性名詞（-tud 結尾多為陰性）。常用搭配如 magnitud del sismo（地震規模）。",
-      "example_es": "El terremoto fue de gran magnitud.",
-      "example_zh": "這場地震的規模很大。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:magnitud"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "medicamento",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "藥物、藥品",
-      "en": "medicine, medicament",
-      "ipa": "/medikaˈmento/",
-      "breakdown": [
-        {
-          "part": "medicar",
-          "zh": "治療、投藥"
-        },
-        {
-          "part": "-mento",
-          "zh": "名詞字尾，表事物或產物"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "medicārī",
-          "zh": "醫治、治療"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "medicāmentum",
-          "zh": "藥劑、藥物"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "melezinamiento",
-          "zh": "藥劑、醫治"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "medicamento",
-          "zh": "藥品、藥物"
-        }
-      ],
-      "cognates_en": [
-        "medication",
-        "medicine"
-      ],
-      "story_zh": "源自拉丁文 medicāmentum（藥物），由 medicārī（醫治）加上字尾 -mentum 組成，經古西班牙語 melezinamiento 演變為今日形式，指用來治療疾病的藥物。",
-      "hook_zh": "聯想英文 medication，加上西語常見陽性名詞字尾 -mento。",
-      "usage_zh": "陽性名詞。常見搭配為 tomar un medicamento（吃藥、服藥）。",
-      "example_es": "Tienes que tomar este medicamento con agua.",
-      "example_zh": "你必須配水服用這個藥物。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:medicamento",
-        "wiktionary:la:medicamentum"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "monumento",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "紀念碑、歷史古蹟",
-      "en": "monument",
-      "ipa": "/monuˈmento/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "monumentum",
-          "zh": "紀念碑、紀念物"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "monumento",
-          "zh": "紀念碑、古蹟"
-        }
-      ],
-      "cognates_en": [
-        "monument"
-      ],
-      "story_zh": "借自拉丁文 monumentum，原指讓人銘記某人或歷史事件的紀念物。在現代西語中，常用來指具有歷史或文化價值的紀念碑與古蹟建築。",
-      "hook_zh": "與英文 monument 拼寫幾乎一模一樣，只需將結尾母音唸成 -to。",
-      "usage_zh": "陽性名詞。常用於歷史建築，如 monumento histórico（歷史古蹟）。",
-      "example_es": "Ese monumento fue construido en el siglo XIX.",
-      "example_zh": "那座紀念碑建於十九世紀。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:monumento"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "observación",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "觀察、注視；評論",
-      "en": "observation",
-      "ipa": "/obseɾbaˈθjon/",
-      "breakdown": [
-        {
-          "part": "observar",
-          "zh": "觀察"
-        },
-        {
-          "part": "-ción",
-          "zh": "名詞字尾，表動作或狀態"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "observar",
-          "zh": "觀察"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "observación",
-          "zh": "觀察、注意"
-        }
-      ],
-      "cognates_en": [
-        "observation"
-      ],
-      "story_zh": "由動詞 observar（觀察）加上名詞字尾 -ción 衍生而來。指仔細注視、監控的過程，在醫學與日常中也常指觀察病況或提出的意見觀察。",
-      "hook_zh": "英文 observation 去掉 tion 換成西語字尾 -ción，加上重音符號 ó。",
-      "usage_zh": "陰性名詞。醫學常見片語 estar en observación，表示「留院觀察」。",
-      "example_es": "El paciente se quedó en el hospital bajo observación.",
-      "example_zh": "病人留在醫院接受觀察。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:observación"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "olímpico",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "奧林匹克的、奧運的",
-      "en": "Olympic",
-      "ipa": "/oˈlimpiko/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "Olympic"
-      ],
-      "story_zh": "",
-      "hook_zh": "英文 Olympic 字尾加上 -o，即成西語形容詞 olímpico。",
-      "usage_zh": "有陰陽性變化。如 piscina olímpica（標準泳池）、Juegos Olímpicos（奧運）。",
-      "example_es": "Ella sueña con participar en los Juegos Olímpicos.",
-      "example_zh": "她夢想著參加奧運。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:olímpico"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "plástico",
       "article": "el",
@@ -1976,48 +1782,6 @@
       "writer": "gemini"
     },
     {
-      "word": "ojalar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "開鈕釦孔；縫製釦眼",
-      "en": "to make buttonholes",
-      "ipa": "/oxaˈlaɾ/",
-      "breakdown": [
-        {
-          "part": "ojal",
-          "zh": "鈕釦孔"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "ojal",
-          "zh": "鈕釦孔"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "ojalar",
-          "zh": "開鈕釦孔"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自西語名詞 ojal（鈕釦孔、釦眼）加上動詞字尾 -ar，字面意思就是「製作鈕釦孔」。裁縫製衣時，替襯衫或外套開洞縫邊以固定鈕釦，就會使用這個動詞。",
-      "hook_zh": "裁縫師在一排鈕釦旁精準開出釦眼（ojal），方便穿衣服。",
-      "usage_zh": "規則第一變位動詞。注意切勿和感嘆詞 ¡ojalá!（但願）搞混。",
-      "example_es": "El sastre va a ojalar la camisa.",
-      "example_zh": "裁縫師準備替襯衫開釦眼。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:ojalar"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "paginar",
       "article": "",
       "pos": "verbo",
@@ -2102,51 +1866,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:peruano"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "play",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "播放鍵；播放",
-      "en": "play button",
-      "ipa": "/ˈplei/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古英語",
-          "word": "plega",
-          "zh": "玩耍、運動"
-        },
-        {
-          "lang_zh": "中古英語",
-          "word": "pleye",
-          "zh": "玩耍"
-        },
-        {
-          "lang_zh": "英語",
-          "word": "play",
-          "zh": "播放、玩"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "play",
-          "zh": "播放鍵"
-        }
-      ],
-      "cognates_en": [
-        "play"
-      ],
-      "story_zh": "直接借自英語的 play。古英語 plega 原指玩耍、運動，在英語中發展出播放之意，隨後隨著影音器材普及，指稱播放鈕的概念借入西班牙語中。",
-      "hook_zh": "螢幕上熟悉的三角形按鈕，按下 play 就開始播放。",
-      "usage_zh": "陽性名詞（el play），常見口語搭配如 darle al play（按下播放鍵）。",
-      "example_es": "Dale al play para ver el video.",
-      "example_zh": "按一下播放鍵來看影片吧。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:play"
       ],
       "writer": "gemini"
     },
@@ -2539,44 +2258,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:transferencia"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "vega",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "肥沃低地；河谷平原；草地",
-      "en": "fertile lowland, meadow, valley plain",
-      "ipa": "/ˈbeɡa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古巴斯克語",
-          "word": "*bai-ko",
-          "zh": "河谷平原、水草地"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "vayca",
-          "zh": "肥沃低地"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "vega",
-          "zh": "肥沃低地、草地"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自古巴斯克語 *bai-ko（河谷平原、水草地），與巴斯克語的 ibai（河流）相關。經古西班牙語 vayca 演變為 vega，指河流兩岸土壤肥沃、綠草如茵的平原或低地。西班牙許多地名與姓氏皆源自此字。",
-      "hook_zh": "想像河谷平原長滿新鮮蔬菜（vegetable / vega），一片綠油油的肥沃草地。",
-      "usage_zh": "陰性名詞。指河流沖積的肥沃農耕低地，常出現在西語系國家的地名與姓氏中。",
-      "example_es": "El río riega una vega muy fértil.",
-      "example_zh": "這條河流灌溉了一片非常肥沃的低地平原。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:vega"
       ],
       "writer": "gemini"
     },
@@ -3149,48 +2830,6 @@
       "writer": "gemini"
     },
     {
-      "word": "eleno",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "哥倫比亞民族解放軍成員",
-      "en": "member of the National Liberation Army",
-      "ipa": "/eˈleno/",
-      "breakdown": [
-        {
-          "part": "ELN",
-          "zh": "民族解放軍縮寫"
-        },
-        {
-          "part": "-eno",
-          "zh": "表示成員的後綴"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "ELN + -eno",
-          "zh": "民族解放軍 + 成員後綴"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "eleno",
-          "zh": "民族解放軍成員"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自哥倫比亞左翼游擊隊「民族解放軍」（Ejército de Liberación Nacional，簡稱 ELN）的字母讀音，再加上表示人群或來源的西語後綴 -eno。專門用來指稱該組織的成員或相關事務。",
-      "hook_zh": "組織簡稱 ELN 唸作 E-L-N，後面加上 -eno 就是游擊隊成員 eleno。",
-      "usage_zh": "陰性形式為 elena（女成員），亦可作形容詞使用修飾相關事物。",
-      "example_es": "El gobierno busca negociar con los elenos.",
-      "example_zh": "政府試圖與民族解放軍成員展開談判。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:eleno"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "estándar",
       "article": "el",
       "pos": "sustantivo",
@@ -3446,28 +3085,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:marcado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "medina",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "（阿拉伯城市的）老城區、舊城",
-      "en": "medina",
-      "ipa": "/meˈdina/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "走入北非古城的老城區（medina），巷弄宛如迷宮般曲折交錯。",
-      "usage_zh": "專指北非或阿拉伯傳統歷史城鎮中的「老城區、舊市街」，為陰性名詞。",
-      "example_es": "Paseamos por las calles de la medina.",
-      "example_zh": "我們漫步在老城區的街道上。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:medina"
       ],
       "writer": "gemini"
     },
@@ -3859,6 +3476,390 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:rumor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sinceramente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "真誠地、老實說",
+      "en": "sincerely, honestly",
+      "ipa": "/sinˌθeɾaˈmente/",
+      "breakdown": [
+        {
+          "part": "sincero",
+          "zh": "真誠的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾（地）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "sincero + -mente",
+          "zh": "真誠的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sinceramente",
+          "zh": "真誠地"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由形容詞 sincero（真誠的）加上副詞字尾 -mente 組合而成。字面原意是「以真誠的心態」，後來演變為常用副詞，表示「真誠地」或在言談中作插入語表示「坦白說、老實講」。",
+      "hook_zh": "英文 sincere（真誠的）加上 mente（心智/方式），就是發自內心「真誠地」說話。",
+      "usage_zh": "常放在句首作插入語，如 Sinceramente, no lo sé（老實說，我不知道）。",
+      "example_es": "Sinceramente, no creo que sea una buena idea.",
+      "example_zh": "老實說，我不覺得這是個好主意。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sinceramente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "apuntar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "瞄準、對準；指出；記下",
+      "en": "to aim, to point, to note down",
+      "ipa": "/apunˈtaɾ/",
+      "breakdown": [
+        {
+          "part": "a-",
+          "zh": "朝向"
+        },
+        {
+          "part": "punto",
+          "zh": "點"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "appoint"
+      ],
+      "story_zh": "源自前綴 a- 加上 punto（點）或 punta（尖端）及動詞字尾 -ar。原意為將尖端朝向目標引申為「瞄準」，進一步衍生出將焦點引向某事的「指出」，以及把重點逐項記在紙上的「記下」。",
+      "hook_zh": "拿槍瞄準靶心的一個「點」（punto），或是拿筆把重點一「點」一「點」記在筆記本上。",
+      "usage_zh": "apuntar a 表示「瞄準」；代名詞形 apuntarse a 常見於「報名、參加（活動）」。",
+      "example_es": "Voy a apuntar tu número de teléfono.",
+      "example_zh": "我來記下你的電話號碼。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:apuntar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asistente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "助理、助手；出席者、與會者",
+      "en": "assistant, attendee",
+      "ipa": "/asisˈtente/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "助理（asistente）在會議中協助大家，本身也是現場的「出席者」。",
+      "usage_zh": "陰陽同形（el/la asistente），指女性家務助理或幫傭時也可用 asistenta。",
+      "example_es": "El asistente del director organizó la reunión.",
+      "example_zh": "主管的助理安排了這次會議。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:asistente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "casco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "安全帽、頭盔；船身",
+      "en": "helmet; hull",
+      "ipa": "/ˈkasko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*quassicāre",
+          "zh": "碎裂、打破"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cascar",
+          "zh": "打破、碎裂"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "casco",
+          "zh": "安全帽、頭盔"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 cascar（打破、碎裂），可追溯至通俗拉丁語 *quassicāre。最初指破裂後的碎片或硬殼，後來引申為保護頭部防破裂的「安全帽、頭盔」，亦可指船體外殼。",
+      "hook_zh": "騎車一定要戴「安全帽」（casco），不然頭部被敲破（cascar）可就危險了！",
+      "usage_zh": "常見搭配為 llevar casco（戴安全帽）或 ponerse el casco。",
+      "example_es": "Siempre llevo el casco cuando ando en moto.",
+      "example_zh": "我騎機車時總是戴著安全帽。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:casco"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "contaminación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "污染",
+      "en": "pollution; contamination",
+      "ipa": "/kontaminaˈθjon/",
+      "breakdown": [
+        {
+          "part": "contaminar",
+          "zh": "污染"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表動作或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "contāminātiōnem",
+          "zh": "玷污、污染"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "contaminación",
+          "zh": "污染"
+        }
+      ],
+      "cognates_en": [
+        "contamination"
+      ],
+      "story_zh": "學術借詞自拉丁語 contāminātiōnem（玷污、損壞）。原指使純淨物體混入雜質而受玷污，現代西語則廣泛用於指稱環境、空氣或水質等各類污染。",
+      "hook_zh": "英文就是 contamination，把英文名詞尾巴 -tion 改成西語的 -ción 即可。",
+      "usage_zh": "陰性不可數名詞，常見搭配如 contaminación ambiental（環境污染）。",
+      "example_es": "La contaminación del aire es un problema grave.",
+      "example_zh": "空氣污染是一個嚴重的問題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:contaminación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "descargar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "下載；卸貨；卸除",
+      "en": "to download; to unload",
+      "ipa": "/deskaɾˈɡaɾ/",
+      "breakdown": [
+        {
+          "part": "des-",
+          "zh": "解除、相反"
+        },
+        {
+          "part": "cargar",
+          "zh": "裝載、負擔"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "carrus",
+          "zh": "貨車、雙輪載車"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "discarricāre",
+          "zh": "卸下貨物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "descargar",
+          "zh": "卸貨、下載"
+        }
+      ],
+      "cognates_en": [
+        "car",
+        "discharge"
+      ],
+      "story_zh": "繼承自後期拉丁語 discarricāre，由表示反向的 dis- 加上源自 carrus（貨車）的動詞組成，原義為「從貨車上卸貨」。在數位時代，字義延伸為從網路上將資料「卸載」到裝置中，即「下載」。",
+      "hook_zh": "des-（卸除）加上 cargar（裝載），把載重卸下來是卸貨，引申為「下載」檔案！",
+      "usage_zh": "簡單過去式第一人稱單數為不規則拼寫：yo descargué；反義詞為 cargar。",
+      "example_es": "Puedes descargar la aplicación gratis en tu móvil.",
+      "example_zh": "你可以在手機上免費下載這個應用程式。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:descargar",
+        "wiktionary:la:discarrico",
+        "wiktionary:la:carrus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "diagnóstico",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "診斷、診斷結果；診斷的",
+      "en": "diagnosis; diagnostic",
+      "ipa": "/djaɡˈnostiko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "διαγνωστικός",
+          "zh": "用於區別的、具判斷力的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "diagnóstico",
+          "zh": "診斷"
+        }
+      ],
+      "cognates_en": [
+        "diagnosis",
+        "diagnostic"
+      ],
+      "story_zh": "源自古希臘語 διαγνωστικός（具辨別能力的）。其核心概念為透過仔細觀察來辨識事物的本質，後專用於醫學領域，指醫師根據病徵分析判斷病因的「診斷」。",
+      "hook_zh": "英文同源字是 diagnosis 與 diagnostic，發音與拼法都極為相似！",
+      "usage_zh": "陽性名詞，亦可作形容詞，陰性形為 diagnóstica（例如 prueba diagnóstica）。",
+      "example_es": "El médico dará el diagnóstico mañana.",
+      "example_zh": "醫生明天會給出診斷結果。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:diagnóstico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "digno",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "值得的、配得上的；有尊嚴的",
+      "en": "worthy, honorable, dignified",
+      "ipa": "/ˈdiɡno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dignus",
+          "zh": "相稱的、配得上的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "digno",
+          "zh": "值得的、有尊嚴的"
+        }
+      ],
+      "cognates_en": [
+        "dignity",
+        "dignify"
+      ],
+      "story_zh": "學術借詞自拉丁語 dignus（相稱的、配得上的、有價值的）。中古西班牙語曾演化出通俗形式 dino，但後來被更貼近古典拉丁文的 digno 取代，指某人事物值得受到尊敬或配得上某項待遇。",
+      "hook_zh": "聯想英文 dignity（尊嚴），表現得有尊嚴的人，是「值得」大家敬重的。",
+      "usage_zh": "常搭配介係詞 de：ser digno de…（配得上…、值得…），如 digno de admiración。",
+      "example_es": "Su esfuerzo es digno de admiración.",
+      "example_zh": "他的努力值得欽佩。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:digno"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "doña",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "女士、夫人（尊稱）",
+      "en": "lady, Mrs., madam",
+      "ipa": "/ˈdoɲa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dominus",
+          "zh": "主人、統治者"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "domina",
+          "zh": "女主人"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "domna",
+          "zh": "女主人、夫人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "doña",
+          "zh": "女士、夫人"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語的 domina（女主人），為 dominus（主人）的陰性形。在晚期拉丁語中音節脫落簡化為 domna，最後演化成現代西班牙語對女性的尊稱 doña。它與 dueña（女主人）及 dama（女士）也是同源詞。",
+      "hook_zh": "唐吉訶德（Don Quijote）的 Don 是男士尊稱，女士尊稱就是 Doña！",
+      "usage_zh": "置於女性名字（nombre）之前以示尊稱，例如 doña Carmen；通常不直接接姓氏。",
+      "example_es": "Buenos días, doña Carmen, ¿cómo está?",
+      "example_zh": "卡門女士早安，您最近好嗎？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:doña",
+        "wiktionary:la:domna",
+        "wiktionary:la:domina",
+        "wiktionary:la:dominus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "grabación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "錄音；錄影；錄音檔",
+      "en": "recording",
+      "ipa": "/ɡɾabaˈθjon/",
+      "breakdown": [
+        {
+          "part": "grabar",
+          "zh": "錄製"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示動作或結果"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "把聲音「抓（gra-）」進機器「變（-ba-）」成一首曲（-ción），就是錄音！",
+      "usage_zh": "陰性名詞。字尾為 -ción 的名詞皆為陰性，複數時去掉重音符號寫作 grabaciones。",
+      "example_es": "Escuché la grabación de la reunión.",
+      "example_zh": "我聽了那場會議的錄音。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:grabación"
       ],
       "writer": "gemini"
     }

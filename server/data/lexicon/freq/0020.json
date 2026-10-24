@@ -1,435 +1,7 @@
 {
   "theme": "freq-0020",
-  "theme_zh": "常用字（頻率第 4737–4992 名）",
+  "theme_zh": "常用字（頻率第 4780–5039 名）",
   "entries": [
-    {
-      "word": "sinceramente",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "真誠地、老實說",
-      "en": "sincerely, honestly",
-      "ipa": "/sinˌθeɾaˈmente/",
-      "breakdown": [
-        {
-          "part": "sincero",
-          "zh": "真誠的"
-        },
-        {
-          "part": "-mente",
-          "zh": "副詞字尾（地）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "sincero + -mente",
-          "zh": "真誠的 + 副詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "sinceramente",
-          "zh": "真誠地"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由形容詞 sincero（真誠的）加上副詞字尾 -mente 組合而成。字面原意是「以真誠的心態」，後來演變為常用副詞，表示「真誠地」或在言談中作插入語表示「坦白說、老實講」。",
-      "hook_zh": "英文 sincere（真誠的）加上 mente（心智/方式），就是發自內心「真誠地」說話。",
-      "usage_zh": "常放在句首作插入語，如 Sinceramente, no lo sé（老實說，我不知道）。",
-      "example_es": "Sinceramente, no creo que sea una buena idea.",
-      "example_zh": "老實說，我不覺得這是個好主意。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:sinceramente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "xi",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "希臘字母第十四字 Ξ、ξ",
-      "en": "xi (Greek letter Ξ, ξ)",
-      "ipa": "/ˈsi/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "希臘字母第十四個字 Ξ 與 ξ，發音接近中文的「西」，常見於數學符號。",
-      "usage_zh": "陰性名詞（la xi），複數為 xíes。在科學與數學中常被用作變數符號。",
-      "example_es": "La letra xi es la decimocuarta del alfabeto griego.",
-      "example_zh": "字母 xi 是希臘字母表的第十四個字母。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:xi"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "apuntar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "瞄準、對準；指出；記下",
-      "en": "to aim, to point, to note down",
-      "ipa": "/apunˈtaɾ/",
-      "breakdown": [
-        {
-          "part": "a-",
-          "zh": "朝向"
-        },
-        {
-          "part": "punto",
-          "zh": "點"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "appoint"
-      ],
-      "story_zh": "源自前綴 a- 加上 punto（點）或 punta（尖端）及動詞字尾 -ar。原意為將尖端朝向目標引申為「瞄準」，進一步衍生出將焦點引向某事的「指出」，以及把重點逐項記在紙上的「記下」。",
-      "hook_zh": "拿槍瞄準靶心的一個「點」（punto），或是拿筆把重點一「點」一「點」記在筆記本上。",
-      "usage_zh": "apuntar a 表示「瞄準」；代名詞形 apuntarse a 常見於「報名、參加（活動）」。",
-      "example_es": "Voy a apuntar tu número de teléfono.",
-      "example_zh": "我來記下你的電話號碼。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:apuntar"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "asistente",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "助理、助手；出席者、與會者",
-      "en": "assistant, attendee",
-      "ipa": "/asisˈtente/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "助理（asistente）在會議中協助大家，本身也是現場的「出席者」。",
-      "usage_zh": "陰陽同形（el/la asistente），指女性家務助理或幫傭時也可用 asistenta。",
-      "example_es": "El asistente del director organizó la reunión.",
-      "example_zh": "主管的助理安排了這次會議。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:asistente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "be",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "字母 B；（羊的）咩咩叫聲",
-      "en": "letter B; baa (bleating)",
-      "ipa": "/ˈbe/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "字母 B 在西語就唸作 be；羊叫聲也是擬聲詞 be（咩～）。",
-      "usage_zh": "作為字母名時為陰性（la be），常用來區分發音相同的字母 b 與 v（uve）。",
-      "example_es": "Barcelona se escribe con be alta.",
-      "example_zh": "巴塞隆納的拼寫是以大寫 B 開頭。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:be"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "casco",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "安全帽、頭盔；船身",
-      "en": "helmet; hull",
-      "ipa": "/ˈkasko/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "*quassicāre",
-          "zh": "碎裂、打破"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "cascar",
-          "zh": "打破、碎裂"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "casco",
-          "zh": "安全帽、頭盔"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自動詞 cascar（打破、碎裂），可追溯至通俗拉丁語 *quassicāre。最初指破裂後的碎片或硬殼，後來引申為保護頭部防破裂的「安全帽、頭盔」，亦可指船體外殼。",
-      "hook_zh": "騎車一定要戴「安全帽」（casco），不然頭部被敲破（cascar）可就危險了！",
-      "usage_zh": "常見搭配為 llevar casco（戴安全帽）或 ponerse el casco。",
-      "example_es": "Siempre llevo el casco cuando ando en moto.",
-      "example_zh": "我騎機車時總是戴著安全帽。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:casco"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "contaminación",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "污染",
-      "en": "pollution; contamination",
-      "ipa": "/kontaminaˈθjon/",
-      "breakdown": [
-        {
-          "part": "contaminar",
-          "zh": "污染"
-        },
-        {
-          "part": "-ción",
-          "zh": "名詞字尾，表動作或狀態"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "contāminātiōnem",
-          "zh": "玷污、污染"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "contaminación",
-          "zh": "污染"
-        }
-      ],
-      "cognates_en": [
-        "contamination"
-      ],
-      "story_zh": "學術借詞自拉丁語 contāminātiōnem（玷污、損壞）。原指使純淨物體混入雜質而受玷污，現代西語則廣泛用於指稱環境、空氣或水質等各類污染。",
-      "hook_zh": "英文就是 contamination，把英文名詞尾巴 -tion 改成西語的 -ción 即可。",
-      "usage_zh": "陰性不可數名詞，常見搭配如 contaminación ambiental（環境污染）。",
-      "example_es": "La contaminación del aire es un problema grave.",
-      "example_zh": "空氣污染是一個嚴重的問題。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:contaminación"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "descargar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "下載；卸貨；卸除",
-      "en": "to download; to unload",
-      "ipa": "/deskaɾˈɡaɾ/",
-      "breakdown": [
-        {
-          "part": "des-",
-          "zh": "解除、相反"
-        },
-        {
-          "part": "cargar",
-          "zh": "裝載、負擔"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "carrus",
-          "zh": "貨車、雙輪載車"
-        },
-        {
-          "lang_zh": "後期拉丁語",
-          "word": "discarricāre",
-          "zh": "卸下貨物"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "descargar",
-          "zh": "卸貨、下載"
-        }
-      ],
-      "cognates_en": [
-        "car",
-        "discharge"
-      ],
-      "story_zh": "繼承自後期拉丁語 discarricāre，由表示反向的 dis- 加上源自 carrus（貨車）的動詞組成，原義為「從貨車上卸貨」。在數位時代，字義延伸為從網路上將資料「卸載」到裝置中，即「下載」。",
-      "hook_zh": "des-（卸除）加上 cargar（裝載），把載重卸下來是卸貨，引申為「下載」檔案！",
-      "usage_zh": "簡單過去式第一人稱單數為不規則拼寫：yo descargué；反義詞為 cargar。",
-      "example_es": "Puedes descargar la aplicación gratis en tu móvil.",
-      "example_zh": "你可以在手機上免費下載這個應用程式。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:descargar",
-        "wiktionary:la:discarrico",
-        "wiktionary:la:carrus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "diagnóstico",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "診斷、診斷結果；診斷的",
-      "en": "diagnosis; diagnostic",
-      "ipa": "/djaɡˈnostiko/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "διαγνωστικός",
-          "zh": "用於區別的、具判斷力的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "diagnóstico",
-          "zh": "診斷"
-        }
-      ],
-      "cognates_en": [
-        "diagnosis",
-        "diagnostic"
-      ],
-      "story_zh": "源自古希臘語 διαγνωστικός（具辨別能力的）。其核心概念為透過仔細觀察來辨識事物的本質，後專用於醫學領域，指醫師根據病徵分析判斷病因的「診斷」。",
-      "hook_zh": "英文同源字是 diagnosis 與 diagnostic，發音與拼法都極為相似！",
-      "usage_zh": "陽性名詞，亦可作形容詞，陰性形為 diagnóstica（例如 prueba diagnóstica）。",
-      "example_es": "El médico dará el diagnóstico mañana.",
-      "example_zh": "醫生明天會給出診斷結果。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:diagnóstico"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "digno",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "值得的、配得上的；有尊嚴的",
-      "en": "worthy, honorable, dignified",
-      "ipa": "/ˈdiɡno/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "dignus",
-          "zh": "相稱的、配得上的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "digno",
-          "zh": "值得的、有尊嚴的"
-        }
-      ],
-      "cognates_en": [
-        "dignity",
-        "dignify"
-      ],
-      "story_zh": "學術借詞自拉丁語 dignus（相稱的、配得上的、有價值的）。中古西班牙語曾演化出通俗形式 dino，但後來被更貼近古典拉丁文的 digno 取代，指某人事物值得受到尊敬或配得上某項待遇。",
-      "hook_zh": "聯想英文 dignity（尊嚴），表現得有尊嚴的人，是「值得」大家敬重的。",
-      "usage_zh": "常搭配介係詞 de：ser digno de…（配得上…、值得…），如 digno de admiración。",
-      "example_es": "Su esfuerzo es digno de admiración.",
-      "example_zh": "他的努力值得欽佩。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:digno"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "doña",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "女士、夫人（尊稱）",
-      "en": "lady, Mrs., madam",
-      "ipa": "/ˈdoɲa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "dominus",
-          "zh": "主人、統治者"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "domina",
-          "zh": "女主人"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "domna",
-          "zh": "女主人、夫人"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "doña",
-          "zh": "女士、夫人"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁語的 domina（女主人），為 dominus（主人）的陰性形。在晚期拉丁語中音節脫落簡化為 domna，最後演化成現代西班牙語對女性的尊稱 doña。它與 dueña（女主人）及 dama（女士）也是同源詞。",
-      "hook_zh": "唐吉訶德（Don Quijote）的 Don 是男士尊稱，女士尊稱就是 Doña！",
-      "usage_zh": "置於女性名字（nombre）之前以示尊稱，例如 doña Carmen；通常不直接接姓氏。",
-      "example_es": "Buenos días, doña Carmen, ¿cómo está?",
-      "example_zh": "卡門女士早安，您最近好嗎？",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:doña",
-        "wiktionary:la:domna",
-        "wiktionary:la:domina",
-        "wiktionary:la:dominus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "grabación",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "錄音；錄影；錄音檔",
-      "en": "recording",
-      "ipa": "/ɡɾabaˈθjon/",
-      "breakdown": [
-        {
-          "part": "grabar",
-          "zh": "錄製"
-        },
-        {
-          "part": "-ción",
-          "zh": "名詞字尾，表示動作或結果"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "把聲音「抓（gra-）」進機器「變（-ba-）」成一首曲（-ción），就是錄音！",
-      "usage_zh": "陰性名詞。字尾為 -ción 的名詞皆為陰性，複數時去掉重音符號寫作 grabaciones。",
-      "example_es": "Escuché la grabación de la reunión.",
-      "example_zh": "我聽了那場會議的錄音。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:grabación"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "grasa",
       "article": "la",
@@ -681,30 +253,6 @@
       "writer": "gemini"
     },
     {
-      "word": "mail",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "電子郵件",
-      "en": "email",
-      "ipa": "/ˈmeil/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "mail"
-      ],
-      "story_zh": "",
-      "hook_zh": "直接源自英文 mail，在西語日常口語中常代表 correo electrónico。",
-      "usage_zh": "陽性名詞，複數為 mailes。發音近似英文 mail。",
-      "example_es": "Te envié un mail con los detalles.",
-      "example_zh": "我寄了一封包含細節的電子郵件給你。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:mail"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "maíz",
       "article": "el",
       "pos": "sustantivo",
@@ -807,28 +355,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:oral"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "ortega",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "黑腹沙雞（鳥類）",
-      "en": "black-bellied sandgrouse",
-      "ipa": "/oɾˈteɡa/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "西班牙名哲學家奧德嘉（Ortega）同名的鳥類，棲息於荒漠中。",
-      "usage_zh": "陰性名詞。在現代西班牙語中，更普遍作為西班牙人的常見姓氏使用。",
-      "example_es": "La ortega habita en las llanuras secas de la región.",
-      "example_zh": "黑腹沙雞棲息在該地區乾燥的平原上。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:ortega"
       ],
       "writer": "gemini"
     },
@@ -1552,50 +1078,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:asalto"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "av",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "大道（avenida 的縮寫）",
-      "en": "avenue (abbreviation)",
-      "ipa": "/a.βeˈni.da/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "路標上常見的 av. 就是 avenida（大道）的簡寫，類似英文的 Ave.。",
-      "usage_zh": "書寫時常帶縮寫點（av. 或 Av.），讀音通常直接讀出全詞 avenida，為陰性名詞。",
-      "example_es": "Vivo en la av. de América.",
-      "example_zh": "我住在美洲大道上。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:av"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "berlín",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "柏林果醬包（包餡炸麵包圈）",
-      "en": "donut, berliner (pastry)",
-      "ipa": "/beɾˈlin/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "名字就是德國首都柏林（Berlín），聯想圓圓胖胖、裡面填滿奶油或卡士達的德式甜甜圈。",
-      "usage_zh": "在智利等西語美洲國家指填入卡士達醬或牛奶糖醬（manjar）的圓形炸麵包；複數為 berlines。",
-      "example_es": "Compré un berlín relleno de crema para la merienda.",
-      "example_zh": "我買了一個卡士達夾心甜甜圈當下午茶點心。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:berlín"
       ],
       "writer": "gemini"
     },
@@ -2357,39 +1839,6 @@
       "writer": "gemini"
     },
     {
-      "word": "house",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "浩室音樂（電子舞曲流派）",
-      "en": "house music, house",
-      "ipa": "/ˈxaus/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "house music",
-          "zh": "浩室音樂"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "house",
-          "zh": "浩室音樂"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "直接借自英語的 house music（浩室音樂）。這是一種盛行於舞廳與派對的電子舞曲流派，西語中直接保留原英文拼寫來指稱這種音樂風格。",
-      "hook_zh": "英文 house 是房子，在舞廳（house）裡讓全場嗨翻的重低音電音就是 house。",
-      "usage_zh": "為陽性不可數名詞（el house），首字母 h 在西語中常發為 /x/ 音。",
-      "example_es": "Me gusta escuchar música house mientras trabajo.",
-      "example_zh": "我喜歡工作時聽浩室音樂。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:house"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "informático",
       "article": "",
       "pos": "adjetivo",
@@ -2780,30 +2229,6 @@
       "writer": "gemini"
     },
     {
-      "word": "sexy",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "性感的、有魅力的",
-      "en": "sexy",
-      "ipa": "/ˈseɡsi/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "sexy"
-      ],
-      "story_zh": "",
-      "hook_zh": "來自英語的借詞，拼寫與發音皆同 sexy，代表性感迷人。",
-      "usage_zh": "陰陽同形（un chico sexy / una chica sexy），西語字典亦收錄拼法 sexi。",
-      "example_es": "Ella lleva un vestido muy sexy.",
-      "example_zh": "她穿著一件非常性感的洋裝。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:sexy"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "sonoro",
       "article": "",
       "pos": "adjetivo",
@@ -2987,6 +2412,804 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:utilidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vasco",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "巴斯克的；巴斯克人（語）的",
+      "en": "Basque",
+      "ipa": "/ˈbasko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vascō",
+          "zh": "瓦斯科涅人（巴斯克祖先）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vasco",
+          "zh": "巴斯克的、巴斯克人"
+        }
+      ],
+      "cognates_en": [
+        "Basque"
+      ],
+      "story_zh": "源自拉丁語 vascō（古代居住於庇里牛斯山區的瓦斯科涅部落人）。羅馬統治伊比利半島時期以此名稱呼該地部族，後來直接繼承為西班牙語的 vasco，指巴斯克地區、巴斯克人及其獨特的語言文化。",
+      "hook_zh": "想到超人氣的「巴斯克乳酪蛋糕」（tarta de queso vasca），那焦香濃郁的風味就來自西班牙巴斯克！",
+      "usage_zh": "作形容詞有陰陽性變化（vasco / vasca）；若指巴斯克語則是陽性名詞 el vasco（也稱 euskera）。",
+      "example_es": "El euskera es la lengua tradicional del pueblo vasco.",
+      "example_zh": "巴斯克語是巴斯克民族的傳統語言。",
+      "image": "emoji:🏔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vasco",
+        "wiktionary:la:vasco"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "visible",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "看得見的、明顯的",
+      "en": "visible",
+      "ipa": "/biˈsible/",
+      "breakdown": [
+        {
+          "part": "vis-",
+          "zh": "看"
+        },
+        {
+          "part": "-ible",
+          "zh": "可…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "videō",
+          "zh": "看"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "vīsus",
+          "zh": "看見"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "vīsibilis",
+          "zh": "看得見的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "visible",
+          "zh": "看得見的"
+        }
+      ],
+      "cognates_en": [
+        "visible",
+        "vision"
+      ],
+      "story_zh": "源自晚期拉丁語 vīsibilis（看得見的），來自拉丁語動詞 videō（看）的被動過去分詞 vīsus 加上表示「能夠」的字尾 -bilis。字面意思就是「能被看見的」，後來也引申出明顯、清晰的意涵。英文的 visible 與 vision（視線）皆為同源字。",
+      "hook_zh": "直接聯想英文的 visible 與 vision（視力），字根 vis- 就是「看」，能看見的就是 visible！",
+      "usage_zh": "陰陽同形（el cambio visible / la luz visible），複數形為 visibles；常見反義字為 invisible（看不見的）。",
+      "example_es": "La luna no es visible esta noche por las nubes.",
+      "example_zh": "今晚因為雲層的關係，看不到月亮。",
+      "image": "emoji:👁️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:visible",
+        "wiktionary:la:visibilis",
+        "wiktionary:la:visus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aceptación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "接受、接納；贊同",
+      "en": "acceptance",
+      "ipa": "/aθebtaˈθjon/",
+      "breakdown": [
+        {
+          "part": "aceptar",
+          "zh": "接受"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示動作或狀態"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "acceptance"
+      ],
+      "story_zh": "由西語動詞 aceptar（接受）加上表示動作或結果的名詞字尾 -ción 衍生而來。字面核心為「接下所給予之物的動作」，進一步引申為對某個提議、想法或人的接納與贊同。",
+      "hook_zh": "動詞 aceptar（接受）加上名詞字尾 -ción，就像英文 accept 變成 acceptance！",
+      "usage_zh": "以 -ción 結尾的名詞皆為陰性（la aceptación），複數去掉重音符號變 aceptaciones。",
+      "example_es": "Su nueva novela tuvo una excelente aceptación del público.",
+      "example_zh": "他的新小說獲得了大眾極佳的認可與喜愛。",
+      "image": "emoji:🤝",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:aceptación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "agustín",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "舒服、愜意、自在",
+      "en": "at ease, comfortable",
+      "ipa": "/aɡusˈtin/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "源自西語常見的男子人名 Agustín（奧古斯丁）。因為這個名字的發音剛好與副詞片語 a gusto（愜意、舒適）押韻，在日常口語中便演變成幽默的諧音說法，用來代替 a gusto。",
+      "hook_zh": "諧音梗：叫 Agustín 的人都過得很 a gusto（愜意）！estar agustín 就是「超自在」。",
+      "usage_zh": "口語俗語，常搭配動詞 estar 或 sentirse，相當於 estar a gusto（感到自在、愜意）。",
+      "example_es": "Me siento muy agustín en esta cafetería tan tranquila.",
+      "example_zh": "我在這家安靜的咖啡館裡感到非常放鬆自在。",
+      "image": "emoji:😌",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:agustín"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "apreciar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "賞識、珍惜；察覺；升值",
+      "en": "to appreciate, to value, to notice",
+      "ipa": "/apɾeˈθjaɾ/",
+      "breakdown": [
+        {
+          "part": "a-",
+          "zh": "朝向（源自 ad-）"
+        },
+        {
+          "part": "preci-",
+          "zh": "價值（源自 pretium）"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pretium",
+          "zh": "價值、價格"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "appretiāre",
+          "zh": "評估價值、定價"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "apreciar",
+          "zh": "賞識、珍惜、察覺"
+        }
+      ],
+      "cognates_en": [
+        "appreciate",
+        "price"
+      ],
+      "story_zh": "源自拉丁語 pretium（價格、價值），結合前綴 ad-（朝向）構成後期拉丁語 appretiāre，原意是「評定價格、估價」。演變到西班牙語中，從衡量客觀價值引申為心理上的「賞識、珍惜」，以及「察覺到其存在」。",
+      "hook_zh": "和英文 appreciate 同源！字根藏著 precio（價格、價值），認定有價值就是「珍惜、賞識」。",
+      "usage_zh": "常用於表達感激（Aprecio tu apoyo）；也可表示感知、察覺（= notar）；反義詞為 depreciar。",
+      "example_es": "Aprecio mucho todo lo que has hecho por mí.",
+      "example_zh": "我非常感激你為我所做的一切。",
+      "image": "emoji:💎",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:apreciar",
+        "wiktionary:la:appretio",
+        "wiktionary:la:pretium"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "atractivo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "有吸引力的、迷人的",
+      "en": "attractive, appealing",
+      "ipa": "/atɾaɡˈtibo/",
+      "breakdown": [
+        {
+          "part": "atract-",
+          "zh": "吸引"
+        },
+        {
+          "part": "-ivo",
+          "zh": "具…特性的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "attrahō",
+          "zh": "吸引、拉近"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "attractīvus",
+          "zh": "有吸引力的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "atractivo",
+          "zh": "有吸引力的"
+        }
+      ],
+      "cognates_en": [
+        "attractive"
+      ],
+      "story_zh": "源自拉丁語 attractīvus，由動詞 attrahō（吸引、拉近）加上形容詞字尾 -īvus 構成。字面意思就是「能吸引過來的」，演變成指人或事物具有魅力、讓人心動的特性。英文的 attractive 也是同源字。",
+      "hook_zh": "英文 attractive 去掉字尾換成 -o 就是 atractivo，看到就聯想到「吸引人的」。",
+      "usage_zh": "可當陽性名詞 el atractivo（吸引力、魅力）；當形容詞時陰性為 atractiva。",
+      "example_es": "Es una propuesta muy atractiva.",
+      "example_zh": "這是一個非常誘人的提議。",
+      "image": "emoji:✨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:atractivo",
+        "wiktionary:la:attractivus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bahía",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "海灣",
+      "en": "bay",
+      "ipa": "/baˈia/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "baia",
+          "zh": "海灣"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "baie",
+          "zh": "海灣"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bahía",
+          "zh": "海灣"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自法語 baie，進一步源自晚期拉丁語 baia（海灣），其最原始來源推測可能源於伊比利語。主要用來指被陸地環抱、內凹深入的海灣水域。拼寫保留了不發音的 h，重音落在 í 上。",
+      "hook_zh": "想像陽光普照的海灣（bahía），中間的 h 就像海灣裡立著的一座平靜燈塔。",
+      "usage_zh": "陰性名詞；注意 í 上有重音符號打破雙母音（hiato），h 不發音。",
+      "example_es": "El barco navegó hacia la bahía.",
+      "example_zh": "船隻駛向了海灣。",
+      "image": "emoji:🏝️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bahía"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "campesino",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "農民、農夫；鄉村的",
+      "en": "farmer, peasant; rural",
+      "ipa": "/kampeˈsino/",
+      "breakdown": [
+        {
+          "part": "campés",
+          "zh": "田野的、鄉間的"
+        },
+        {
+          "part": "-ino",
+          "zh": "從事…的人"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "campés + -ino",
+          "zh": "田野的 + 表示人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "campesino",
+          "zh": "農民"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西語 campés（田野的、鄉間的）加上指稱身分或職業的字尾 -ino 衍生而成，核心與 campo（田野、鄉村）緊密相連。字面意思就是「在田野間生活或耕作的人」，演變成農民或鄉下人。",
+      "hook_zh": "campo（田野）裡辛勤耕作的人，就是 campesino（農民）。",
+      "usage_zh": "可當名詞指農夫（陰性 campesina），亦可當形容詞指「鄉村的、農村的」。",
+      "example_es": "El campesino trabaja en el campo todos los días.",
+      "example_zh": "這位農夫每天都在田裡工作。",
+      "image": "emoji:👨‍🌾",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:campesino"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "capitalismo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "資本主義",
+      "en": "capitalism",
+      "ipa": "/kapitaˈlismo/",
+      "breakdown": [
+        {
+          "part": "capital",
+          "zh": "資本"
+        },
+        {
+          "part": "-ismo",
+          "zh": "…主義、體制"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "capital + -ismo",
+          "zh": "資本 + 主義"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "capitalismo",
+          "zh": "資本主義"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由名詞 capital（資本、資金）加上表示學說、流派或體制的字尾 -ismo 衍生而成。構詞直觀，直接表達「以資本運作與自由市場為核心的經濟制度」。",
+      "hook_zh": "capital（資本）加上常見的主義字尾 -ismo，就是資本主義 capitalism。",
+      "usage_zh": "陽性名詞；字尾為 -ismo 的名詞在西班牙語中幾乎全為陽性（el capitalismo）。",
+      "example_es": "El capitalismo fomenta el libre mercado.",
+      "example_zh": "資本主義促進了自由市場。",
+      "image": "emoji:💰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:capitalismo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cargar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "裝載、載重；充電；負荷",
+      "en": "to load, to charge",
+      "ipa": "/kaɾˈɡaɾ/",
+      "breakdown": [
+        {
+          "part": "carg-",
+          "zh": "裝載、負重"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*ḱr̥sós",
+          "zh": "奔跑"
+        },
+        {
+          "lang_zh": "原始塞爾特語",
+          "word": "*karros",
+          "zh": "車輛"
+        },
+        {
+          "lang_zh": "高盧語",
+          "word": "*karros",
+          "zh": "車輛"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "carrus",
+          "zh": "雙輪運貨車"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "carricāre",
+          "zh": "裝載"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cargar",
+          "zh": "裝載"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cargar",
+          "zh": "裝載、承擔"
+        }
+      ],
+      "cognates_en": [
+        "charge"
+      ],
+      "story_zh": "承襲自古西班牙語 cargar，源自晚期拉丁語 carricāre（裝載），由拉丁語 carrus（兩輪貨車）衍生而來，最早可追溯至印歐語「奔跑、車輛」的字根。原意是「把貨物裝上馬車」，後延伸至承擔負擔，現代也引申出為電子設備「充電」的意思。英文 charge 為同源字。",
+      "hook_zh": "英文 car（車）與 charge（充電、裝填）都同源，把東西放上車就是 cargar。",
+      "usage_zh": "第一人稱單數簡單過去式有拼寫變化：cargué（字尾 g 遇 e 改為 gu 以維持發音）。",
+      "example_es": "Tengo que cargar la batería de mi móvil.",
+      "example_zh": "我必須給我的手機電池充電。",
+      "image": "emoji:🔋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cargar",
+        "wiktionary:la:carrico",
+        "wiktionary:la:carrus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ciar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "倒橈、使船倒退",
+      "en": "to back water, to back up",
+      "ipa": "/ˈθjaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἰσχίον",
+          "zh": "臀部、髖關節"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἰσχιας",
+          "zh": "坐骨的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "scias",
+          "zh": "坐骨"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cía",
+          "zh": "大腿骨"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ciar",
+          "zh": "倒橈、後退"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "詞源說法不一，有人認為是擬聲詞；學者推測源自古希臘語 ἰσχίον（髖部），經拉丁語轉入古西班牙語 cía（大腿骨）。划船倒划時需運用該骨骼施力，因而演變出使船隻「倒橈」或倒退之意。",
+      "hook_zh": "想像船夫划船想後退，用力帶動髖部倒划（ciar）。",
+      "usage_zh": "航海術語，指倒划槳使船向後退；有時也可用於比喻退縮。",
+      "example_es": "El remero tuvo que ciar para no chocar.",
+      "example_zh": "划船手不得不倒橈划槳以免相撞。",
+      "image": "emoji:🚣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ciar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cometer",
+      "article": "",
+      "pos": "verbo",
+      "zh": "犯（錯誤、罪行）",
+      "en": "to commit, to make (an error)",
+      "ipa": "/komeˈteɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "committere",
+          "zh": "委託、結合、犯下"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cometer",
+          "zh": "犯下、委託"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cometer",
+          "zh": "犯（錯誤）"
+        }
+      ],
+      "cognates_en": [
+        "commit"
+      ],
+      "story_zh": "源自古西班牙語 cometer，承襲自拉丁語 committere。在拉丁語中原包含結合與託付之意，後引申為付諸行動，在現代西語中最常用於犯下過失或罪行等負面行為。",
+      "hook_zh": "英文 commit 的雙胞胎兄弟，看到 cometer 就聯想到 commit an error（犯錯）。",
+      "usage_zh": "最常見的固定搭配是 cometer un error（犯錯）與 cometer un crimen（犯罪）。",
+      "example_es": "Todos podemos cometer errores alguna vez.",
+      "example_zh": "我們每個人有時候都會犯錯。",
+      "image": "emoji:⚠️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cometer"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "directivo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "主管、董事、高階管理者",
+      "en": "director, executive",
+      "ipa": "/diɾeɡˈtibo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dīrigō",
+          "zh": "引導、指引"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "dīrēctīvus",
+          "zh": "指導的、引領的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "directivo",
+          "zh": "主管、指導者"
+        }
+      ],
+      "cognates_en": [
+        "directive",
+        "direct"
+      ],
+      "story_zh": "借詞自中世紀拉丁語 dīrēctīvus，源於拉丁語動詞 dīrigō（引導、指引），原指具引導功能的。引申入西班牙語後，指擁有領導與決策權限的「主管」或「高階管理人員」。",
+      "hook_zh": "direct（指示方向）的人就是 directivo（主管），負責指引團隊前進。",
+      "usage_zh": "作為陽性名詞指男主管，女主管為 directiva；陰性名詞 la directiva 亦可指整個領導團隊或董事會。",
+      "example_es": "El directivo convocó una reunión urgente.",
+      "example_zh": "那位主管召開了一場緊急會議。",
+      "image": "emoji:👔",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:directivo",
+        "wiktionary:la:directivus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "elevado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "高的、偏高的、高昂的",
+      "en": "high, elevated",
+      "ipa": "/eleˈbado/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "聯想電梯 elevator，elevado 就是被電梯升得高高的、高昂的。",
+      "usage_zh": "多用於形容價格、溫度或數值高昂（如 un precio elevado）。",
+      "example_es": "El restaurante tiene precios muy elevados.",
+      "example_zh": "這家餐廳的價格非常高昂。",
+      "image": "emoji:📈",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:elevado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estimado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "尊敬的、敬愛的（信件抬頭）",
+      "en": "dear, esteemed",
+      "ipa": "/estiˈmado/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "aestimātus",
+          "zh": "受尊重的、被估價的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estimado",
+          "zh": "尊敬的"
+        }
+      ],
+      "cognates_en": [
+        "esteem",
+        "estimate"
+      ],
+      "story_zh": "源自拉丁語動詞分詞 aestimātus，原意為被估價或看重的，後引申為受到尊重的。在西班牙語中，最常用於正式書信或電子郵件的開頭稱呼，相當於英文的 Dear。",
+      "hook_zh": "英文 estimate 是估計價值，被高度看重評估的人就是「尊敬的」（estimado）。",
+      "usage_zh": "常見於正式信函開頭：Estimado señor / Estimada señora（尊敬的先生／女士）。",
+      "example_es": "Estimado cliente, gracias por escribirnos.",
+      "example_zh": "尊敬的客戶，感謝您的來信。",
+      "image": "emoji:✉️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estimado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estrés",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "壓力、心理壓力",
+      "en": "stress",
+      "ipa": "/esˈtɾes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "stress",
+          "zh": "壓力"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estrés",
+          "zh": "壓力"
+        }
+      ],
+      "cognates_en": [
+        "stress"
+      ],
+      "story_zh": "借自英語的 stress。指個人在承受生活、工作或精神上的重負時所產生的心理緊繃與壓迫感。",
+      "hook_zh": "發音和英文 stress 幾乎一樣，只是西語習慣在 st- 前面加上 e- 音。",
+      "usage_zh": "常用搭配如 sufrir de estrés（承受壓力）或 manejar el estrés（管理壓力）。",
+      "example_es": "El trabajo le causa mucho estrés.",
+      "example_zh": "工作給他帶來很大的壓力。",
+      "image": "emoji:😫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estrés"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "federico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "奇醜無比的、極難看的",
+      "en": "ugly as sin, fugly",
+      "ipa": "/fedeˈɾiko/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "西語俚語戲謔用法，想像一個人長得太抱歉，大家私下給他取外號叫 federico。",
+      "usage_zh": "口語或俚語用法，形容人或事物醜到極點。陰性形為 federica。",
+      "example_es": "Ese coche nuevo es bastante federico.",
+      "example_zh": "那輛新車長得奇醜無比。",
+      "image": "emoji:👹",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:federico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gimnasio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "健身房、體育館",
+      "en": "gym, gymnasium",
+      "ipa": "/ximˈnasjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "γυμνάσιον",
+          "zh": "體育館、鍛鍊場所"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "gymnasium",
+          "zh": "體操學校、體育館"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gimnasio",
+          "zh": "健身房、體育館"
+        }
+      ],
+      "cognates_en": [
+        "gymnasium"
+      ],
+      "story_zh": "源自拉丁語 gymnasium，最早借自古希臘語 γυμνάσιον（gumnásion），原指古希臘人進行體操與鍛鍊的場所，後來演化為現代供室內運動與健身的場館。",
+      "hook_zh": "字首 gim- 對應英文 gym，nasio 像「那是喔」，去健身房（gimnasio）鍛鍊身體！",
+      "usage_zh": "陽性名詞。常用搭配為 ir al gimnasio（去健身房）。",
+      "example_es": "Voy al gimnasio tres veces por semana.",
+      "example_zh": "我每週去三次健身房。",
+      "image": "emoji:🏋️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gimnasio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hectárea",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "公頃",
+      "en": "hectare",
+      "ipa": "/eɡˈtaɾea/",
+      "breakdown": [
+        {
+          "part": "hecto-",
+          "zh": "百"
+        },
+        {
+          "part": "área",
+          "zh": "公畝"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "由字首 hecto-（百）與面積單位 área（公畝）組合而成。一公畝為一百平方公尺，一百個公畝合起來便成為「公頃」。",
+      "hook_zh": "想像廣大農場一眼望去有一百個公畝（hecto- + área），整整一公頃的土地非常壯觀。",
+      "usage_zh": "陰性名詞（la hectárea，首音節非重音，不換冠詞），度量衡常縮寫為 ha。",
+      "example_es": "La granja de mis abuelos tiene dos hectáreas.",
+      "example_zh": "我祖父母的農場有兩公頃大。",
+      "image": "emoji:🌾",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:hectárea"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hey",
+      "article": "",
+      "pos": "interjección",
+      "zh": "嘿！（打招呼或引起注意）",
+      "en": "hey!",
+      "ipa": "/ˈei/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "hey",
+          "zh": "嘿"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hey",
+          "zh": "嘿"
+        }
+      ],
+      "cognates_en": [
+        "hey"
+      ],
+      "story_zh": "直接借自英語的感嘆詞 hey，在現代西班牙語日常口語中廣泛使用，用來呼喚他人、引起注意或打招呼。",
+      "hook_zh": "和英文的 hey 完全一樣，發音親切自然，路上遇到朋友打招呼時脫口而出。",
+      "usage_zh": "感嘆詞，書寫時前後常加上感嘆號：¡Hey!，屬於非正式口語。",
+      "example_es": "¡Hey, amigo! ¿Cómo estás?",
+      "example_zh": "嘿，朋友！你最近好嗎？",
+      "image": "emoji:👋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hey"
       ],
       "writer": "gemini"
     }

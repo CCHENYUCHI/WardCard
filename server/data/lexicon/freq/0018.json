@@ -1,6 +1,6 @@
 {
   "theme": "freq-0018",
-  "theme_zh": "常用字（頻率第 4313–4505 名）",
+  "theme_zh": "常用字（頻率第 4313–4520 名）",
   "entries": [
     {
       "word": "disculpa",
@@ -1094,28 +1094,6 @@
       "writer": "gemini"
     },
     {
-      "word": "rayos",
-      "article": "",
-      "pos": "interjección",
-      "zh": "可惡、糟糕、該死",
-      "en": "dang it, goddammit, heck",
-      "ipa": "/ˈraʝos/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "遇到倒楣事就像被雷（rayo）劈中好幾次，忍不住脫口大喊：Rayos！",
-      "usage_zh": "感嘆詞，用來發洩懊惱或不滿，語氣比髒話溫和，常出現在影視配音中。",
-      "example_es": "¡Rayos! Olvidé las llaves adentro de la casa.",
-      "example_zh": "糟糕！我把鑰匙忘在家裡了。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:rayos"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "semilla",
       "article": "la",
       "pos": "sustantivo",
@@ -1397,45 +1375,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:añadir"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "ca",
-      "article": "",
-      "pos": "conjunción",
-      "zh": "因為、由於（古語或文學用法）",
-      "en": "because, for",
-      "ipa": "/ˈka/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "quia",
-          "zh": "因為"
-        },
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "qua",
-          "zh": "因為"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "ca",
-          "zh": "因為"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁語連詞 quia（因為），在通俗拉丁語中變形為 qua，進一步演變成古西班牙語的 ca。在中世紀西班牙語文獻中常作為引導原因的連接詞，現代西語則已大多被 porque 取代。",
-      "hook_zh": "發音像「卡」，話說到一半卡住了，趕緊解釋原因（ca = 因為）。",
-      "usage_zh": "屬古西班牙語或古文用法，現代西語日常表達原因皆用 porque 或 ya que。",
-      "example_es": "No vino a la fiesta, ca estaba ocupado.",
-      "example_zh": "他沒來參加聚會，因為他很忙。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:ca",
-        "wiktionary:la:quia"
       ],
       "writer": "gemini"
     },
@@ -2016,30 +1955,6 @@
         "wiktionary:es:impedir",
         "wiktionary:la:impedio",
         "wiktionary:la:pes"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "info",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "資訊、消息",
-      "en": "info, information",
-      "ipa": "/ˈinfo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "info"
-      ],
-      "story_zh": "",
-      "hook_zh": "同英文口語的 info，就是 información 的日常極簡縮寫。",
-      "usage_zh": "為 información 的口語簡稱，雖以 -o 結尾但仍為陰性名詞（la info）。",
-      "example_es": "Mándame la info por mensaje.",
-      "example_zh": "用訊息把資訊傳給我。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:info"
       ],
       "writer": "gemini"
     },
@@ -2669,28 +2584,6 @@
       "writer": "gemini"
     },
     {
-      "word": "varga",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "陡坡、斜坡最陡峭處",
-      "en": "steepest part of a slope",
-      "ipa": "/ˈbaɾɡa/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "據語言學推測可能源自羅馬統治伊比利半島以前的前羅馬詞根。在西語地形描述中，專門指稱山坡或斜坡中最為陡峭險峻的一段階段。",
-      "hook_zh": "想像爬坡爬到最陡的一段斜坡（varga），累到快走不動，忍不住發出驚嘆。",
-      "usage_zh": "陰性名詞。主要用於地理與鄉村地形描述；同時也是常見西語姓氏（常以複數 Vargas 出現）。",
-      "example_es": "Nos costó mucho subir la varga con tantas maletas.",
-      "example_zh": "拿著那麼多行李爬上這道陡坡費了我們很大力氣。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:varga"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "vistazo",
       "article": "el",
       "pos": "sustantivo",
@@ -2770,41 +2663,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:visual"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "wow",
-      "article": "",
-      "pos": "interjección",
-      "zh": "哇！（表興奮或驚訝）",
-      "en": "wow",
-      "ipa": "/ˈwau/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "wow",
-          "zh": "哇（驚嘆詞）"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "wow",
-          "zh": "哇"
-        }
-      ],
-      "cognates_en": [
-        "wow"
-      ],
-      "story_zh": "直接借自英語的感嘆詞 wow，用來表達興奮、讚嘆或驚訝的語氣，在現代西語口語和社群網路中非常普遍。",
-      "hook_zh": "跟英文 wow 完全一樣，看到厲害事物就脫口而出「哇！」",
-      "usage_zh": "口語中常與西語本土感嘆詞 ¡guau! 混用表達驚呼。",
-      "example_es": "¡Wow, qué sorpresa verte aquí!",
-      "example_zh": "哇，真驚訝在這裡遇見你！",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:wow"
       ],
       "writer": "gemini"
     },
@@ -2931,30 +2789,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:ansiedad"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "bob",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "鮑伯頭（短髮造型）",
-      "en": "bob haircut",
-      "ipa": "/ˈbob/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "bob"
-      ],
-      "story_zh": "",
-      "hook_zh": "就是台灣大家熟悉的「鮑伯頭」短髮造型，西語直接原樣借用英文 bob。",
-      "usage_zh": "陽性名詞，複數為 bobs。最常與 corte 搭配為 corte bob（鮑伯頭髮型）。",
-      "example_es": "A Laura le queda muy bien el corte bob.",
-      "example_zh": "蘿拉剪鮑伯頭髮型非常好看。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:bob"
       ],
       "writer": "gemini"
     },
@@ -3630,6 +3464,200 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:invasión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "magnitud",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "規模、大小、重要性",
+      "en": "magnitude, size",
+      "ipa": "/maɡniˈtud/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "magnitūdō",
+          "zh": "巨大、規模"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "magnitud",
+          "zh": "規模、大小"
+        }
+      ],
+      "cognates_en": [
+        "magnitude"
+      ],
+      "story_zh": "借自拉丁文 magnitūdō，指巨大的程度或量度。在西班牙語中用來表示物體的尺寸、事情的重要程度，或是地震的規模。",
+      "hook_zh": "英文就是 magnitude，西語結尾 -tud 常對應抽象特質或度量。",
+      "usage_zh": "陰性名詞（-tud 結尾多為陰性）。常用搭配如 magnitud del sismo（地震規模）。",
+      "example_es": "El terremoto fue de gran magnitud.",
+      "example_zh": "這場地震的規模很大。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:magnitud"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "medicamento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "藥物、藥品",
+      "en": "medicine, medicament",
+      "ipa": "/medikaˈmento/",
+      "breakdown": [
+        {
+          "part": "medicar",
+          "zh": "治療、投藥"
+        },
+        {
+          "part": "-mento",
+          "zh": "名詞字尾，表事物或產物"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "medicārī",
+          "zh": "醫治、治療"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "medicāmentum",
+          "zh": "藥劑、藥物"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "melezinamiento",
+          "zh": "藥劑、醫治"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "medicamento",
+          "zh": "藥品、藥物"
+        }
+      ],
+      "cognates_en": [
+        "medication",
+        "medicine"
+      ],
+      "story_zh": "源自拉丁文 medicāmentum（藥物），由 medicārī（醫治）加上字尾 -mentum 組成，經古西班牙語 melezinamiento 演變為今日形式，指用來治療疾病的藥物。",
+      "hook_zh": "聯想英文 medication，加上西語常見陽性名詞字尾 -mento。",
+      "usage_zh": "陽性名詞。常見搭配為 tomar un medicamento（吃藥、服藥）。",
+      "example_es": "Tienes que tomar este medicamento con agua.",
+      "example_zh": "你必須配水服用這個藥物。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:medicamento",
+        "wiktionary:la:medicamentum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "monumento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "紀念碑、歷史古蹟",
+      "en": "monument",
+      "ipa": "/monuˈmento/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "monumentum",
+          "zh": "紀念碑、紀念物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "monumento",
+          "zh": "紀念碑、古蹟"
+        }
+      ],
+      "cognates_en": [
+        "monument"
+      ],
+      "story_zh": "借自拉丁文 monumentum，原指讓人銘記某人或歷史事件的紀念物。在現代西語中，常用來指具有歷史或文化價值的紀念碑與古蹟建築。",
+      "hook_zh": "與英文 monument 拼寫幾乎一模一樣，只需將結尾母音唸成 -to。",
+      "usage_zh": "陽性名詞。常用於歷史建築，如 monumento histórico（歷史古蹟）。",
+      "example_es": "Ese monumento fue construido en el siglo XIX.",
+      "example_zh": "那座紀念碑建於十九世紀。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:monumento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "observación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "觀察、注視；評論",
+      "en": "observation",
+      "ipa": "/obseɾbaˈθjon/",
+      "breakdown": [
+        {
+          "part": "observar",
+          "zh": "觀察"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表動作或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "observar",
+          "zh": "觀察"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "observación",
+          "zh": "觀察、注意"
+        }
+      ],
+      "cognates_en": [
+        "observation"
+      ],
+      "story_zh": "由動詞 observar（觀察）加上名詞字尾 -ción 衍生而來。指仔細注視、監控的過程，在醫學與日常中也常指觀察病況或提出的意見觀察。",
+      "hook_zh": "英文 observation 去掉 tion 換成西語字尾 -ción，加上重音符號 ó。",
+      "usage_zh": "陰性名詞。醫學常見片語 estar en observación，表示「留院觀察」。",
+      "example_es": "El paciente se quedó en el hospital bajo observación.",
+      "example_zh": "病人留在醫院接受觀察。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:observación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "olímpico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "奧林匹克的、奧運的",
+      "en": "Olympic",
+      "ipa": "/oˈlimpiko/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "Olympic"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文 Olympic 字尾加上 -o，即成西語形容詞 olímpico。",
+      "usage_zh": "有陰陽性變化。如 piscina olímpica（標準泳池）、Juegos Olímpicos（奧運）。",
+      "example_es": "Ella sueña con participar en los Juegos Olímpicos.",
+      "example_zh": "她夢想著參加奧運。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:olímpico"
       ],
       "writer": "gemini"
     }
