@@ -17,7 +17,7 @@ const { factsLemma } = require('./geminiEntries');
 const BATCH_SIZE = 100;
 const FUNCTION_POS = new Set(['article', 'det', 'pron', 'prep', 'conj', 'contraction', 'intj', 'particle']);
 // In running text these are names or shorthand (Luis, María, Brasil, PP), not "louis (coin)" or "brazilwood"
-const SKIP_WORDS = new Set(['luis', 'maría', 'brasil', 'pp', 'to', 'cuba', 'post', 'sr']);
+const SKIP_WORDS = new Set(['luis', 'maría', 'brasil', 'pp', 'to', 'cuba', 'post', 'sr', 'miguel', 'japón', 'tv']);
 // Words that look like a form of another word but are learned on their own
 const NO_FOLD = new Set(['política', 'lista', 'firma']);
 // Kinds of Wiktionary entries that are not words to learn
@@ -140,6 +140,7 @@ function buildQueue(words, readFacts, skipKeys = new Set()) {
     // One more hop for misspellings: dias -> dia (plural) -> día
     const next = target && misspelledFor(readFacts(target));
     if (next && next !== word) target = next;
+    if (target && FOLD[target]) target = FOLD[target]; // dichos -> dicho -> decir
     if (target && seen.has(lexiconKey(target))) continue;
     // A rarer lemma that has not been fetched: keep the facts the word itself came with
     if (target && !readFacts(target)) target = null;
