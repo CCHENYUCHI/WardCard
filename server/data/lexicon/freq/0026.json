@@ -1,581 +1,7 @@
 {
   "theme": "freq-0026",
-  "theme_zh": "常用字（頻率第 6320–6550 名）",
+  "theme_zh": "常用字（頻率第 6364–6613 名）",
   "entries": [
-    {
-      "word": "parcialmente",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "部分地、不完全地",
-      "en": "partially",
-      "ipa": "/paɾˌθjalˈmente/",
-      "breakdown": [
-        {
-          "part": "parcial",
-          "zh": "部分的"
-        },
-        {
-          "part": "-mente",
-          "zh": "副詞字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "形容詞 parcial（部分的）加上副詞字尾 -mente，意思就是「部分地」。",
-      "usage_zh": "修飾動詞或形容詞，如 estar parcialmente de acuerdo（部分同意）。",
-      "example_es": "El informe solo fue aprobado parcialmente.",
-      "example_zh": "這份報告只被部分批准。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:parcialmente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "proyección",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "投影；放映；預測",
-      "en": "projection, planning",
-      "ipa": "/pɾoʝeɡˈθjon/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "聯想英文 projection，投影機在白色布幕上投出未來的畫面。",
-      "usage_zh": "陰性名詞，複數為 proyecciones（重音符號省略）。",
-      "example_es": "La proyección de la película empieza a las ocho.",
-      "example_zh": "電影放映在八點開始。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:proyección"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "recinto",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "園區；封閉場地、場館",
-      "en": "area, site, enclosure",
-      "ipa": "/reˈθinto/",
-      "breakdown": [
-        {
-          "part": "re-",
-          "zh": "徹底、密集"
-        },
-        {
-          "part": "cīnctus",
-          "zh": "環繞、包圍"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "re- + cīnctus",
-          "zh": "徹底 + 包圍、環繞"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "recinto",
-          "zh": "場地、園區、封閉場所"
-        }
-      ],
-      "cognates_en": [
-        "precinct"
-      ],
-      "story_zh": "源自拉丁語前綴 re- 與 cīnctus（環繞、包圍）。原意指被屏障完全圍繞起來的封閉空間，後來演變成現代指特定的活動場地、園區或場館。英文的 precinct（轄區、行政區）也是同源字。",
-      "hook_zh": "四周被圍繞（cinctus）起來的特定區域，就是活動的「場地」或「園區」。",
-      "usage_zh": "陽性名詞，常用於指封閉的建築空間或專用區，如 recinto ferial（會展中心）。",
-      "example_es": "Está prohibido fumar dentro de este recinto.",
-      "example_zh": "這個場區內禁止吸菸。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:recinto",
-        "wiktionary:la:re-"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "recorrer",
-      "article": "",
-      "pos": "verbo",
-      "zh": "走遍、遊覽；行經",
-      "en": "to tour, to travel, to go",
-      "ipa": "/rekoˈreɾ/",
-      "breakdown": [
-        {
-          "part": "re-",
-          "zh": "再、遍及"
-        },
-        {
-          "part": "correr",
-          "zh": "跑"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "recurrere",
-          "zh": "跑回、折返"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "recorrer",
-          "zh": "走遍、遊覽"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁語動詞 recurrere，字面為「跑回、折返」。在西班牙語演變中，結合了 correr（跑）的概念，引申為四處奔走，最後發展出「走遍、遊覽一趟路線或地方」的意思。",
-      "hook_zh": "再一次（re-）跑（correr）過整條路線，也就是把整個地方「走遍、遊覽」。",
-      "usage_zh": "及物動詞，可直接接地點，例如 recorrer la ciudad（走遍整座城市）。",
-      "example_es": "Queremos recorrer toda España este verano.",
-      "example_zh": "我們今年夏天想走遍整個西班牙。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:recorrer"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "relevancia",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "重要性、重大意義",
-      "en": "relevance",
-      "ipa": "/releˈbanθja/",
-      "breakdown": [
-        {
-          "part": "relevante",
-          "zh": "相關的、突出的"
-        },
-        {
-          "part": "-ancia",
-          "zh": "名詞字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "聯想英文 relevance，字尾 -ancia 表名詞，指事情具備顯著的「重要性」。",
-      "usage_zh": "陰性名詞，常見搭配為 tener relevancia（具有重要性）。",
-      "example_es": "Este descubrimiento tiene una gran relevancia.",
-      "example_zh": "這項發現具有重大的意義。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:relevancia"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "rendir",
-      "article": "",
-      "pos": "verbo",
-      "zh": "投降、屈服；產出、發揮（效能）；使精疲力竭",
-      "en": "to yield, surrender, produce, tire out",
-      "ipa": "/renˈdiɾ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "dō",
-          "zh": "給予"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "reddere",
-          "zh": "交還、給出、投降"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "rendere",
-          "zh": "交還"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "rendir",
-          "zh": "交出、屈服"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "rendir",
-          "zh": "投降、產出"
-        }
-      ],
-      "cognates_en": [
-        "render"
-      ],
-      "story_zh": "源自拉丁語 reddere（交還、給出），由 re-（回）與 dō（給予）組合而成，晚期拉丁語演變為 rendere。將手中的武器或控制權交出即為「投降、屈服」；而付出精力後產出回報，則引申為「發揮效能、產出」。英文的 render 是其同源詞。",
-      "hook_zh": "士兵舉白旗高喊「認輸」（rendir），體力透支直接投降。",
-      "usage_zh": "現在式變位 e 轉 i（yo rindo）；代名動詞 rendirse 表「投降、屈服」。",
-      "example_es": "Los soldados se negaron a rendirse.",
-      "example_zh": "士兵們拒絕投降。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:rendir",
-        "wiktionary:la:reddo",
-        "wiktionary:la:do"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "restauración",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "修復、復原；政權復辟；餐飲業經營",
-      "en": "restoration, reconstruction, catering",
-      "ipa": "/restauɾaˈθjon/",
-      "breakdown": [
-        {
-          "part": "restaurar",
-          "zh": "修復"
-        },
-        {
-          "part": "-ción",
-          "zh": "名詞字尾，表動作或狀態"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "restaurātiōnem",
-          "zh": "修復、重建"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "restauración",
-          "zh": "修復、復興"
-        }
-      ],
-      "cognates_en": [
-        "restoration"
-      ],
-      "story_zh": "源自拉丁語 restaurātiōnem（修復、重建），為學者借詞，由動詞 restaurar（修復）與名詞字尾 -ción 構成。原指將破損之物修整回復原狀，政治上用來指舊體制或王朝的「復辟」，亦可指提供體力恢復服務的「餐飲業」。",
-      "hook_zh": "看到老城牆被一磚一瓦重新砌好，正是古蹟的修復（restauración）。",
-      "usage_zh": "陰性名詞（-ción 字尾皆為陰性）；複數加上 -es 變為 restauraciones。",
-      "example_es": "La restauración de la iglesia duró tres años.",
-      "example_zh": "這座教堂的修復工程持續了三年。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:restauración"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "ruptura",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "破裂、斷裂；決裂、分手",
-      "en": "rupture, fracture, breakup",
-      "ipa": "/rubˈtuɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "rumpō",
-          "zh": "打破、折斷"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "ruptūra",
-          "zh": "斷裂、折斷"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "ruptura",
-          "zh": "破裂、決裂"
-        }
-      ],
-      "cognates_en": [
-        "rupture"
-      ],
-      "story_zh": "源自拉丁語 ruptūra（斷裂、折斷），來自詞根動詞 rumpō（打破）。本義為骨折或物體的物理破裂，在西班牙語中常進一步引申指人際關係、外交談判或情侶之間的「決裂、分手」。",
-      "hook_zh": "兩人的合照從中被撕成兩半（ruptura），象徵戀情痛苦決裂。",
-      "usage_zh": "陰性名詞。常用搭配如 ruptura amorosa（分手、情變）。",
-      "example_es": "La ruptura diplomática sorprendió a todos.",
-      "example_zh": "外交關係的決裂讓所有人感到意外。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:ruptura",
-        "wiktionary:la:ruptura"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "saldo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "餘額、結餘；結果",
-      "en": "balance (of an account), remainder",
-      "ipa": "/ˈsaldo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "義大利語",
-          "word": "saldo",
-          "zh": "結算、結餘"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "saldo",
-          "zh": "餘額"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "借自義大利語 saldo（結算、結清）。主要應用於商業與會計領域，指帳目在核算清結之後所留存的「餘額」，亦可用於比喻重大事件結算之後帶來的結果或傷亡數字。",
-      "hook_zh": "刷卡前先拿出手機查一查戶頭裡的 saldo（餘額），確認錢還夠不夠。",
-      "usage_zh": "陽性名詞。常用搭配有 saldo disponible（可用餘額）與 saldo a favor（貸方餘額）。",
-      "example_es": "Puedes consultar tu saldo en el cajero automático.",
-      "example_zh": "你可以在自動提款機查詢你的餘額。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:saldo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "tanque",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "戰車、坦克；大水槽、大型容器",
-      "en": "tank (vehicle or container)",
-      "ipa": "/ˈtanke/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "葡萄牙語",
-          "word": "tanque",
-          "zh": "水槽、水箱"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tanque",
-          "zh": "戰車、水槽"
-        }
-      ],
-      "cognates_en": [
-        "tank"
-      ],
-      "story_zh": "借自葡萄牙語 tanque（蓄水池、水槽）。最初指用來儲存液體或氣體的大型密封容器；因軍事防護與封閉外觀特性，後來也引申指陸戰使用的裝甲「戰車、坦克」。",
-      "hook_zh": "像英文 tank 一樣，重裝甲的龐然大物在沙場上轟隆前進就是 tanque。",
-      "usage_zh": "陽性名詞。常見片語 tanque de gasolina（油箱）、tanque de agua（水塔）。",
-      "example_es": "Necesito llenar el tanque de mi coche.",
-      "example_zh": "我需要把我的車子油箱加滿。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tanque"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "vigencia",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "效力、有效期限、適用期",
-      "en": "validity, term of validity",
-      "ipa": "/biˈxenθja/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "法律只要在「vigencia（效期）」內，就擁有維持秩序的威嚴與力量。",
-      "usage_zh": "常見搭配如 entrar en vigencia（生效）或 perder su vigencia（失效）。",
-      "example_es": "Este contrato tiene una vigencia de dos años.",
-      "example_zh": "這份合約的有效期限為兩年。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:vigencia"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "viudo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "鰥夫、喪偶者",
-      "en": "widower, widowed",
-      "ipa": "/ˈbjudo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "viduus",
-          "zh": "喪偶的、被剝奪的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "viudo",
-          "zh": "鰥夫、喪偶的"
-        }
-      ],
-      "cognates_en": [
-        "widow",
-        "widower"
-      ],
-      "story_zh": "源自拉丁語 viduus（喪偶的、被剝奪的）。在古西班牙語中，陰性形式 viuda 出現得較早，推測陽性的 viudo 是受到陰性形式影響而類推改變形成的，用來指喪偶的男子。英文的 widow 亦與此同源。",
-      "hook_zh": "英文 widow（寡婦）字尾換成西語陽性結尾 -o，就是失去配偶的「viudo（鰥夫）」。",
-      "usage_zh": "陰性形式為 viuda（寡婦）。動詞常搭配 quedarse viudo / viuda（喪偶）。",
-      "example_es": "El señor Gómez quedó viudo hace dos años.",
-      "example_zh": "戈梅斯先生兩年前成了鰥夫。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:viudo",
-        "wiktionary:la:viduus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "wifi",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "Wi-Fi、無線網路",
-      "en": "Wi-Fi",
-      "ipa": "/ˌwai ˈfai/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "一進到西班牙咖啡廳，最重要的一句話就是問店員：「¿Hay wifi?（有 Wi-Fi 嗎？）」。",
-      "usage_zh": "在西語中陽性與陰性皆可使用（常用 el wifi，部分地區用 la wifi），複數為 wifis。",
-      "example_es": "¿Me puedes dar la contraseña del wifi, por favor?",
-      "example_zh": "可以請你給我 Wi-Fi 的密碼嗎？",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:wifi"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "abarca",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "傳統皮涼鞋、草鞋",
-      "en": "traditional sandal",
-      "ipa": "/aˈbaɾka/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "巴斯克語",
-          "word": "abarka",
-          "zh": "涼鞋"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "abarca",
-          "zh": "傳統皮涼鞋"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自古伊比利半島語言，推測可能來自巴斯克語的 abarka，指伊比利半島傳統的手工皮涼鞋。這項傳統鞋履後來也經由阿拉伯語借入，演化為雙胞詞 alpargata（草編帆布鞋）。",
-      "hook_zh": "穿著鄉村傳統皮涼鞋 abarca，腳步跨越（abarcar）崎嶇的山路。",
-      "usage_zh": "陰性名詞，複數為 abarcas。注意不要與動詞 abarcar（涵蓋、包容）的動詞變化混淆。",
-      "example_es": "Compré un par de abarcas tradicionales en el mercado.",
-      "example_zh": "我在市集買了一雙傳統皮涼鞋。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:abarca"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "aislamiento",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "隔離、孤立、隔絕（材料）",
-      "en": "isolation, insulation",
-      "ipa": "/aislaˈmjento/",
-      "breakdown": [
-        {
-          "part": "aislar",
-          "zh": "隔離、使孤立"
-        },
-        {
-          "part": "-miento",
-          "zh": "名詞字尾（動作或狀態）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "aislar",
-          "zh": "隔離"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "aislamiento",
-          "zh": "隔離、孤立"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自西班牙語動詞 aislar（隔離、使孤立）加上名詞字尾 -miento。其字面意思為隔離的動作或狀態，可指人處於孤立的處境，或在工程上阻絕熱量、噪音的隔絕材料。",
-      "hook_zh": "把動詞 aislar（隔離）加上名詞字尾 -miento，就是疫情期間大家熟悉的 isolation（隔離狀態）。",
-      "usage_zh": "陽性名詞。常用搭配如 aislamiento social（社交疏離）或 estar en aislamiento（處於隔離狀態）。",
-      "example_es": "El paciente debe permanecer en aislamiento.",
-      "example_zh": "該名病患必須保持隔離狀態。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:aislamiento"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "alcaldía",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "市政府、市政大樓；市長職位",
-      "en": "city hall, mayor's office",
-      "ipa": "/alkalˈdia/",
-      "breakdown": [
-        {
-          "part": "alcalde",
-          "zh": "市長"
-        },
-        {
-          "part": "-ía",
-          "zh": "表示處所或職位的字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "alcalde + -ía",
-          "zh": "市長 + 職位或處所字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "alcaldía",
-          "zh": "市政府、市長職位"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由 alcalde（市長）加上表示身分、職務或處所的名詞字尾 -ía 組成。原指市長的職權、任期或管轄範圍，後來進一步引申為市長辦公的實體機構與建築，也就是「市政府」或「市政大樓」。",
-      "hook_zh": "市長（alcalde）上班處理公務的「家（-ía）」，就是市政府（alcaldía）。",
-      "usage_zh": "陰性名詞，重音落在 ía 且須標重音符號。既指市府建築，也可指市長的職位。",
-      "example_es": "Tengo que ir a la alcaldía para renovar el documento.",
-      "example_zh": "我必須去市政府更新證件。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:alcaldía"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "buque",
       "article": "el",
@@ -1008,61 +434,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:golf"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "green",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "（高爾夫球場的）果嶺",
-      "en": "putting green",
-      "ipa": "/ˈɡɾin/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "原始印歐語",
-          "word": "*gróh₁nis",
-          "zh": "草綠、生長"
-        },
-        {
-          "lang_zh": "原始日耳曼語",
-          "word": "*grōniz",
-          "zh": "綠色的"
-        },
-        {
-          "lang_zh": "古英語",
-          "word": "grēne",
-          "zh": "綠色的"
-        },
-        {
-          "lang_zh": "中古英語",
-          "word": "grene",
-          "zh": "綠色的"
-        },
-        {
-          "lang_zh": "英語",
-          "word": "green",
-          "zh": "綠色、果嶺"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "green",
-          "zh": "果嶺"
-        }
-      ],
-      "cognates_en": [
-        "green"
-      ],
-      "story_zh": "源自印歐語根，經古英語演變為英語 green（綠色）。西班牙語直接借自英語，專門指高爾夫球場中草皮修剪最平整、圍繞球洞的「果嶺」區域。",
-      "hook_zh": "英文 green 是綠色，高爾夫球賽中洞口周圍最平整翠綠的一塊就是果嶺。",
-      "usage_zh": "陽性名詞，高爾夫球專用語，複數形可寫作 greens 或 greenes。",
-      "example_es": "La pelota cayó suavemente sobre el green.",
-      "example_zh": "球輕輕地落在了果嶺上。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:green"
       ],
       "writer": "gemini"
     },
@@ -1916,41 +1287,6 @@
       "writer": "gemini"
     },
     {
-      "word": "set",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "套；組；（網球等）盤",
-      "en": "set, series of things",
-      "ipa": "/ˈset/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "set",
-          "zh": "套、組"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "set",
-          "zh": "套、組"
-        }
-      ],
-      "cognates_en": [
-        "set"
-      ],
-      "story_zh": "西班牙語直接借自英語的 set，指成套、成組的物品（如餐具、工具組），或體育賽事（如網球）中的「一盤」。因為是現代外來語，語意與英語用法完全對應。",
-      "hook_zh": "直接聯想英文 set（一套、一組），不論是餐具組還是網球比賽的一「盤」都通用。",
-      "usage_zh": "陽性名詞（el set），複數常作 sets。影視領域中也指「拍片現場、攝影棚」。",
-      "example_es": "Compré un set de cubiertos para la cocina.",
-      "example_zh": "我買了一套廚房用的餐具。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:set"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "sospechoso",
       "article": "",
       "pos": "adjetivo",
@@ -2284,6 +1620,1539 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:bici"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "camioneta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "皮卡車、休旅車、小型貨車",
+      "en": "pick-up truck, station wagon",
+      "ipa": "/kamjoˈneta/",
+      "breakdown": [
+        {
+          "part": "camión",
+          "zh": "卡車"
+        },
+        {
+          "part": "-eta",
+          "zh": "指小詞尾（表小）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "大卡車是 camión，加上指小字尾 -eta 就變成輕型皮卡或休旅車 camioneta。",
+      "usage_zh": "在拉美常指皮卡或休旅車；在西班牙本土，廂型小貨車則更常稱作 furgoneta。",
+      "example_es": "Cargamos las maletas en la camioneta.",
+      "example_zh": "我們把行李搬上了休旅車。",
+      "image": "emoji:🛻",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:camioneta"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cerebral",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "大腦的、腦力的、理智的",
+      "en": "cerebral, intellectual",
+      "ipa": "/θeɾeˈbɾal/",
+      "breakdown": [
+        {
+          "part": "cerebro",
+          "zh": "大腦"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾（…的）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "cerebral"
+      ],
+      "story_zh": "",
+      "hook_zh": "與英文 cerebral 完全同形同義；由 cerebro（大腦）加上形容詞字尾 -al。",
+      "usage_zh": "陰陽同形（un análisis cerebral / una actividad cerebral）。",
+      "example_es": "El ajedrez es un juego muy cerebral.",
+      "example_zh": "西洋棋是一項非常需要動腦的智力遊戲。",
+      "image": "emoji:🧠",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:cerebral"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "coco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "椰子；妖怪、鬼怪；腦袋",
+      "en": "coconut; bogeyman",
+      "ipa": "/ˈkoko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "κόκκος",
+          "zh": "穀粒、種子、漿果"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "coccum",
+          "zh": "穀粒、種子"
+        },
+        {
+          "lang_zh": "葡萄牙語",
+          "word": "coco",
+          "zh": "鬼怪、咧嘴笑的臉"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "coco",
+          "zh": "椰子；妖怪"
+        }
+      ],
+      "cognates_en": [
+        "coconut"
+      ],
+      "story_zh": "推測源自古希臘語 κόκκος（種子），經拉丁語 coccum 進入葡萄牙語 coco，指「咧嘴笑的鬼怪」。水手看到椰子殼上的三個凹孔很像怪物的笑臉與頭顱，便稱它為 coco（椰子）。在西班牙傳說中，el coco 也是用來嚇唬不睡覺小孩的妖怪。",
+      "hook_zh": "把椰子（coco）翻過來，三個凹孔就像妖怪的鬼臉；英文 coconut 的前綴正是它。",
+      "usage_zh": "童謠常唱 que viene el coco（妖怪來了）；口語 comerse el coco 指「想太多、鑽牛角尖」。",
+      "example_es": "Bebimos agua de coco en la playa.",
+      "example_zh": "我們在海灘上喝了椰子水。",
+      "image": "emoji:🥥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:coco",
+        "wiktionary:la:coccum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "conspiración",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "陰謀、共謀",
+      "en": "conspiracy",
+      "ipa": "/konspiɾaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cōnspīrātiōnem",
+          "zh": "陰謀、共謀"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "conspiración",
+          "zh": "陰謀"
+        }
+      ],
+      "cognates_en": [
+        "conspiracy"
+      ],
+      "story_zh": "源自拉丁語 cōnspīrātiōnem（共謀、密謀）。西語作為文人借詞直接吸收了這個字，保留古典拉丁語詞義，用來指多人暗中策劃、企圖推翻政權或進行不法行動的陰謀。",
+      "hook_zh": "英文 conspiracy 換成西語名詞字尾 -ción；一群人在暗中密謀，就是一場 conspiración。",
+      "usage_zh": "結尾 -ción 均為陰性名詞；常見動詞搭配如 urdir una conspiración（策劃陰謀）。",
+      "example_es": "Descubrieron una conspiración contra el gobierno.",
+      "example_zh": "他們發現了一起反對政府的陰謀。",
+      "image": "emoji:🤫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:conspiración"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "coordinador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "協調人、統籌者；協調的",
+      "en": "coordinator; coordinating",
+      "ipa": "/kooɾdinaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "coordinar",
+          "zh": "協調"
+        },
+        {
+          "part": "-dor",
+          "zh": "名詞字尾（從事…的人）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "coordinator"
+      ],
+      "story_zh": "",
+      "hook_zh": "由動詞 coordinar（協調）加上代表「執行者」的字尾 -dor，就是協調人 coordinador。",
+      "usage_zh": "陰性形為 coordinadora；常見職稱搭配如 coordinador de proyecto（專案統籌）。",
+      "example_es": "Hablé con el coordinador del proyecto.",
+      "example_zh": "我和專案協調人談過了。",
+      "image": "emoji:📋",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:coordinador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "corregir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "改正、批改、糾正",
+      "en": "to correct",
+      "ipa": "/koreˈxiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "corrigere",
+          "zh": "糾正、改正"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "corregir",
+          "zh": "改正、批改"
+        }
+      ],
+      "cognates_en": [
+        "correct"
+      ],
+      "story_zh": "源自拉丁語 corrigere（改正、糾正），屬於西語中的學術借詞。在西班牙語中完整保留了糾正錯誤與批改的意思，英文同源字就是大家熟悉的 correct。",
+      "hook_zh": "看到 corregir 就聯想到英文 correct，都是拿紅筆把錯誤「改正」過來。",
+      "usage_zh": "不規則動詞：現在式我（yo）為 corrijo（g 轉 j），其餘人稱注意母音弱化（e 變 i，如 tú corriges）。",
+      "example_es": "El profesor tiene que corregir los exámenes.",
+      "example_zh": "老師必須批改這些考卷。",
+      "image": "emoji:✏️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:corregir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "curva",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "彎道、轉彎處；曲線",
+      "en": "curve, bend",
+      "ipa": "/ˈkuɾba/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "curvo",
+          "zh": "彎曲的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "curva",
+          "zh": "曲線、彎道"
+        }
+      ],
+      "cognates_en": [
+        "curve"
+      ],
+      "story_zh": "來自西語形容詞 curvo（彎曲的）。名詞化後轉為陰性名詞 curva，用來指道路的轉彎處或幾何上的曲線。",
+      "hook_zh": "發音和英文 curve 相似，想像開車在山路遇到危險的大轉彎 curva。",
+      "usage_zh": "陰性名詞。常用搭配如 tomar una curva（轉彎）、curva peligrosa（危險彎道）。",
+      "example_es": "El coche tomó la curva con mucho cuidado.",
+      "example_zh": "汽車非常小心地轉過彎道。",
+      "image": "emoji:↩️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:curva"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "delincuencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "犯罪、犯罪行為、違法活動",
+      "en": "crime, delinquency",
+      "ipa": "/delinˈkwenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēlinquēns",
+          "zh": "犯罪的、違法的"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "dēlinquentia",
+          "zh": "過錯、罪行"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "delincuencia",
+          "zh": "犯罪、犯罪行為"
+        }
+      ],
+      "cognates_en": [
+        "delinquency"
+      ],
+      "story_zh": "借自後期拉丁語 dēlinquentia（罪行），源於拉丁語分詞 dēlinquēns（犯錯、違法者）。演變到西語中，指整體違法現象或犯罪活動的統稱。",
+      "hook_zh": "聯想英文 delinquency（少年犯罪），看到街頭警察巡邏打擊 delincuencia。",
+      "usage_zh": "陰性名詞，通常作為集合名詞表示整體犯罪現象，常見片語如 delincuencia juvenil（青少年犯罪）。",
+      "example_es": "La policía lucha contra la delincuencia en el barrio.",
+      "example_zh": "警方正在該街區打擊犯罪。",
+      "image": "emoji:🚨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:delincuencia",
+        "wiktionary:la:delinquentia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "deriva",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "漂流、隨波逐流；偏航",
+      "en": "drift",
+      "ipa": "/deˈɾiba/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "derivar",
+          "zh": "漂流、衍生"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "deriva",
+          "zh": "漂流、偏航"
+        }
+      ],
+      "cognates_en": [
+        "derive"
+      ],
+      "story_zh": "由西語動詞 derivar（漂流、衍生）衍生而來的名詞。原本指船隻或物體隨水流與風向偏離航道，引申指失去目標與控制的漂流狀態。",
+      "hook_zh": "小船失去了船槳與動力，在茫茫大海上「漂流」deriva。",
+      "usage_zh": "陰性名詞。極常用固定片語 estar a la deriva / ir a la deriva（隨波逐流、迷失方向）。",
+      "example_es": "El barco quedó a la deriva tras el temporal.",
+      "example_zh": "暴風雨過後，那艘船隨波逐流漂失了方向。",
+      "image": "emoji:⛵",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:deriva"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "desnudo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "赤裸的、全裸的；光禿禿的",
+      "en": "naked, nude, bare",
+      "ipa": "/desˈnudo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*nogʷedʰós",
+          "zh": "赤裸的"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*nogʷedos",
+          "zh": "赤裸的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "nūdus",
+          "zh": "赤裸的、未防備的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "desnudo",
+          "zh": "赤裸的、裸體的"
+        }
+      ],
+      "cognates_en": [
+        "nude",
+        "naked"
+      ],
+      "story_zh": "最終源自原始印歐語詞根，經拉丁語 nūdus（赤裸的）演變而來，後來受到動詞 desnudar（脫衣）影響。英文的 nude 與 naked 亦與其同源。",
+      "hook_zh": "聯想英文 nude，畫面是剛出生的嬰兒全裸 desnudo 哇哇大哭。",
+      "usage_zh": "陰性形為 desnuda。亦可作陽性名詞 el desnudo 表示「裸體畫、人體藝術」。",
+      "example_es": "El niño corría completamente desnudo por la playa.",
+      "example_zh": "小男孩光溜溜地在海灘上奔跑。",
+      "image": "emoji:👶",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:desnudo",
+        "wiktionary:la:nudus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dividir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "分開、劃分、除",
+      "en": "to divide, to split",
+      "ipa": "/dibiˈdiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*h₁weydʰh₁-",
+          "zh": "劃分"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*wiðō",
+          "zh": "分開"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "dīvidō",
+          "zh": "分開、劃分"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dividir",
+          "zh": "分開、劃分"
+        }
+      ],
+      "cognates_en": [
+        "divide"
+      ],
+      "story_zh": "借自拉丁語 dīvidō（分開、劃分），由字首 dis-（分開）加上 *vidō（分離）構成，核心概念是將整體拆解劃分。英文的 divide 也是同源字。",
+      "hook_zh": "英文 divide 換成西語動詞結尾 -ir 就是 dividir，拿刀一分為二！",
+      "usage_zh": "數學上「除以」通常搭配介系詞 entre，例如 dividir diez entre dos（十除以二）。",
+      "example_es": "Vamos a dividir la pizza en cuatro partes.",
+      "example_zh": "我們把披薩分成四等份吧。",
+      "image": "emoji:➗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dividir",
+        "wiktionary:la:divido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "emitir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "發行、散發、播送",
+      "en": "to issue, to emit, to broadcast",
+      "ipa": "/emiˈtiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ēmittere",
+          "zh": "發出、送出"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "emitir",
+          "zh": "發出、發行、播送"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 ēmittere（發出、送出）。字義引申為把光線、聲音或氣味向外散發，在現代西語中也廣泛用於電視廣播或發行貨幣與證件。",
+      "hook_zh": "電視台向外「發射」訊號，或銀行發行新鈔，都是在 emitir。",
+      "usage_zh": "常用於 emitir un programa（播送節目）或 emitir una moneda（發行貨幣）。",
+      "example_es": "El canal va a emitir la película esta noche.",
+      "example_zh": "該頻道今晚將播出這部電影。",
+      "image": "emoji:📡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:emitir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ende",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "從那裡、因此",
+      "en": "thence, there, of this",
+      "ipa": "/ˈende/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "inde",
+          "zh": "從那裡、由此"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ende",
+          "zh": "從那裡"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ende",
+          "zh": "從那裡、因此"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自古西班牙語 ende，最早源自拉丁語 inde，意思是「從那裡、由此」。古代用來指稱地點或出處，現代則多用於書面語片語表示因果推論。",
+      "hook_zh": "現代西語幾乎不單獨出現，最常見的就是片語 por ende（因此）！",
+      "usage_zh": "現代西語極少單獨使用，主要見於正式書面語連接詞片語 por ende（因此、因而）。",
+      "example_es": "No estudió y, por ende, reprobó el examen.",
+      "example_zh": "他沒念書，因此考試不及格。",
+      "image": "emoji:👉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ende"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "enhorabuena",
+      "article": "",
+      "pos": "interjección",
+      "zh": "恭喜、祝賀",
+      "en": "congratulations",
+      "ipa": "/enoɾaˈbwena/",
+      "breakdown": [
+        {
+          "part": "en",
+          "zh": "在"
+        },
+        {
+          "part": "hora",
+          "zh": "時刻"
+        },
+        {
+          "part": "buena",
+          "zh": "好的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "en + hora + buena",
+          "zh": "在 + 好的 + 時刻"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "enhorabuena",
+          "zh": "恭喜、祝賀"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由介系詞 en（在）、hora（時刻）與 buena（好的）合詞而成，字面意思為「在良辰吉時」。引申為向他人迎來的好事表達祝賀與欣喜。",
+      "hook_zh": "祝賀別人在「好的時刻」（en hora buena），就是大喊一聲「恭喜」！",
+      "usage_zh": "常當感嘆詞獨立說 ¡Enhorabuena!（恭喜！），或作名詞搭配 dar la enhorabuena（道賀）。",
+      "example_es": "¡Enhorabuena por tu nuevo trabajo!",
+      "example_zh": "恭喜你找到新工作！",
+      "image": "emoji:🎉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:enhorabuena"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "establecido",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "既定的、確立的",
+      "en": "established",
+      "ipa": "/estableˈθido/",
+      "breakdown": [
+        {
+          "part": "establecer",
+          "zh": "建立、確立"
+        },
+        {
+          "part": "-ido",
+          "zh": "過去分詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "establecer",
+          "zh": "建立、確立"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "establecido",
+          "zh": "確立的、既定的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 establecer（建立、確立）的過去分詞形式，轉作形容詞使用。主要用來修飾已經被制定、公認或約定俗成的規則、秩序與標準。",
+      "hook_zh": "看到 -ido 結尾就是過去分詞，代表事情已經「被確立」、成了既定事實。",
+      "usage_zh": "有陰陽性與單複數變化，常見搭配如 norma establecida（既定規範）。",
+      "example_es": "Debemos seguir el horario establecido.",
+      "example_zh": "我們必須遵守既定的時間表。",
+      "image": "emoji:📋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:establecido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "exitoso",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "成功的、繁榮興旺的",
+      "en": "successful, prosperous",
+      "ipa": "/eɡsiˈtoso/",
+      "breakdown": [
+        {
+          "part": "éxito",
+          "zh": "成功"
+        },
+        {
+          "part": "-oso",
+          "zh": "充滿…的"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "源自名詞 éxito（成功）與形容詞字尾 -oso（充滿…的），字面意思即「充滿成功的」，用來形容事物或人「成功的」或「繁榮興旺的」。",
+      "hook_zh": "看到 éxito（成功）加上表示充滿的 -oso，成功滿滿就是 exitoso！",
+      "usage_zh": "陰性為 exitosa，常見搭配如 persona exitosa（成功人士）。",
+      "example_es": "Fue una campaña muy exitosa.",
+      "example_zh": "這是一場非常成功的活動。",
+      "image": "emoji:🏆",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:exitoso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "exploración",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "探索、探查、探測",
+      "en": "exploration, scan",
+      "ipa": "/eɡsploɾaˈθjon/",
+      "breakdown": [
+        {
+          "part": "explorar",
+          "zh": "探索"
+        },
+        {
+          "part": "-ción",
+          "zh": "表動作或結果的名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "explōrātiōnem",
+          "zh": "探索、探查"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "exploración",
+          "zh": "探索、探測"
+        }
+      ],
+      "cognates_en": [
+        "exploration"
+      ],
+      "story_zh": "源自拉丁語名詞 explōrātiōnem，指探索、探查的行為。進入西班牙語後演變為名詞 exploración，用於指對未知領域的探索或醫學上的掃描檢查。",
+      "hook_zh": "拼法和英文 exploration 極為相似，字尾 -tion 對應西語陰性名詞字尾 -ción。",
+      "usage_zh": "陰性名詞，以 -ción 結尾皆為陰性。複數為 exploraciones（去除重音符號）。",
+      "example_es": "La exploración espacial nos permite descubrir nuevos mundos.",
+      "example_zh": "太空探索讓我們發現新世界。",
+      "image": "emoji:🧭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:exploración"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "explorar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "探索、探查",
+      "en": "to explore",
+      "ipa": "/eɡsploˈɾaɾ/",
+      "breakdown": [
+        {
+          "part": "explor-",
+          "zh": "探查"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "explorāre",
+          "zh": "探查、調查"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "explorar",
+          "zh": "探索"
+        }
+      ],
+      "cognates_en": [
+        "explore"
+      ],
+      "story_zh": "源自拉丁語動詞 explorāre（探查、調查）。進入西班牙語後成為第一類規則動詞 explorar，表示對未知環境或事物的探索與考察。",
+      "hook_zh": "英文 explore 去掉字尾 e，加上西語動詞字尾 -ar 就成了 explorar。",
+      "usage_zh": "第一類規則動詞（-ar）。現在式第一人稱單數為 exploro，過去分詞為 explorado。",
+      "example_es": "Queremos explorar la selva durante las vacaciones.",
+      "example_zh": "我們想在假期期間探索這座雨林。",
+      "image": "emoji:🗺️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:explorar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "filtro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "過濾器、濾鏡、濾嘴",
+      "en": "filter",
+      "ipa": "/ˈfiltɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始西日耳曼語",
+          "word": "*felt",
+          "zh": "毛氈"
+        },
+        {
+          "lang_zh": "法蘭克語",
+          "word": "*filtir",
+          "zh": "毛氈"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "filtrum",
+          "zh": "毛氈、濾布"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "filtro",
+          "zh": "過濾器"
+        }
+      ],
+      "cognates_en": [
+        "filter",
+        "felt"
+      ],
+      "story_zh": "可能關聯或源自 fieltro（毛氈），或借自中世紀拉丁語 filtrum，最終可追溯至原始西日耳曼語 *felt（毛氈）。古人常用毛氈布塊來濾除液體雜質，詞義便從「毛氈」演變為「過濾器」。",
+      "hook_zh": "就是英文的 filter，只差在西語字尾換成了陽性名詞常見的 -o。",
+      "usage_zh": "陽性名詞。除了濾水器、濾紙等實體器具，現代也常用於指拍照或社交軟體的「濾鏡」。",
+      "example_es": "Tienes que limpiar el filtro de la cafetera.",
+      "example_zh": "你必須清洗咖啡機的濾網。",
+      "image": "emoji:☕",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:filtro",
+        "wiktionary:la:filtrum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "financiar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "提供資金、資助、融資",
+      "en": "to finance",
+      "ipa": "/finanˈθjaɾ/",
+      "breakdown": [
+        {
+          "part": "financ-",
+          "zh": "資金、財政"
+        },
+        {
+          "part": "-iar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "financer",
+          "zh": "提供資金"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "financiar",
+          "zh": "資助、融資"
+        }
+      ],
+      "cognates_en": [
+        "finance"
+      ],
+      "story_zh": "借詞自法語動詞 financer（提供資金）。在西班牙語中主要指為各項計畫、活動或企業提供所需資金或進行融資借貸。",
+      "hook_zh": "英文 finance 加上動詞字尾 -iar 即為 financiar，拼寫與意義均高度對應。",
+      "usage_zh": "現在式第一人稱單數為 financio（重音在 nan：fi-nan-cio，字母 i 上不加重音符號）。",
+      "example_es": "El gobierno va a financiar la construcción del hospital.",
+      "example_zh": "政府將資助這家醫院的興建。",
+      "image": "emoji:💰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:financiar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fotógrafo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "攝影師",
+      "en": "photographer",
+      "ipa": "/foˈtoɡɾafo/",
+      "breakdown": [
+        {
+          "part": "foto-",
+          "zh": "照片、光"
+        },
+        {
+          "part": "-grafo",
+          "zh": "記錄者、書寫者"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "photographer",
+        "photograph"
+      ],
+      "story_zh": "",
+      "hook_zh": "手拿相機拍攝 foto（照片）的人，就是 fotógrafo。",
+      "usage_zh": "指女性攝影師時使用 la fotógrafa，指男性或整體時用 el fotógrafo。",
+      "example_es": "El fotógrafo tomó una foto excelente.",
+      "example_zh": "這位攝影師拍了一張很棒的照片。",
+      "image": "emoji:📷",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:fotógrafo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "funeral",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "葬禮、喪禮",
+      "en": "funeral",
+      "ipa": "/funeˈɾal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "funus",
+          "zh": "葬禮"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "fūnerālis",
+          "zh": "葬禮的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "funeral",
+          "zh": "葬禮"
+        }
+      ],
+      "cognates_en": [
+        "funeral"
+      ],
+      "story_zh": "源自晚期拉丁語 fūnerālis（葬禮的），進一步可追溯至拉丁語 funus（葬禮）。本字作為文注文言借詞進入西班牙語，指悼念逝者的喪葬儀式。",
+      "hook_zh": "與英文 funeral 拼寫完全相同，但西語重音在最後一音節。",
+      "usage_zh": "常以複數 los funerales 表達整場喪葬儀式，意思與單數相同。",
+      "example_es": "La familia asistió al funeral ayer.",
+      "example_zh": "家屬昨天參加了葬禮。",
+      "image": "emoji:⚰️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:funeral"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gobernación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "統治、治理；內政部",
+      "en": "governance, government",
+      "ipa": "/ɡobeɾnaˈθjon/",
+      "breakdown": [
+        {
+          "part": "gobernar",
+          "zh": "統治、掌舵"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示行為或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "gubernatio",
+          "zh": "操舵、引導、管理"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "gouernaçion",
+          "zh": "治理、統治"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gobernación",
+          "zh": "統治、治理"
+        }
+      ],
+      "cognates_en": [
+        "governance",
+        "government"
+      ],
+      "story_zh": "源自拉丁語 gubernātiō（操舵、引導、管理），最早原為引導船隻航行之意，後來引申為管理國家。經古西班牙語 gouernaçion 演變而來，指治理或政府部門。",
+      "hook_zh": "由 gobernar（統治）加上名詞字尾 -ción，對應英文 governance。",
+      "usage_zh": "字尾為 -ción 一律為陰性名詞。在拉美部分國家也專指「內政部」。",
+      "example_es": "El edificio de la gobernación está en el centro.",
+      "example_zh": "政府大樓位於市中心。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gobernación",
+        "wiktionary:la:gubernatio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gubernamental",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "政府的、官方的",
+      "en": "governmental",
+      "ipa": "/ɡubeɾnamenˈtal/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "governmental"
+      ],
+      "story_zh": "",
+      "hook_zh": "字首 guber- 聯想英文 govern，加上 -mental 即為形容詞「政府的」。",
+      "usage_zh": "陰陽同形形容詞，修飾陽性或陰性名詞皆不變形（複數加 -es）。",
+      "example_es": "Recibieron apoyo gubernamental para el proyecto.",
+      "example_zh": "他們的計畫獲得了政府的支持。",
+      "image": "emoji:🏢",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:gubernamental"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "guinea",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "幾內亞金幣（英國舊幣）",
+      "en": "guinea (British gold coin)",
+      "ipa": "/ɡiˈnea/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "guinea",
+          "zh": "幾內亞金幣"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "guinea",
+          "zh": "幾內亞金幣"
+        }
+      ],
+      "cognates_en": [
+        "guinea"
+      ],
+      "story_zh": "借自英語 guinea。在西語中指英國歷史上所流通的幾內亞金幣。",
+      "hook_zh": "直接借自英文同名金幣 guinea，拼寫與發音高度對應。",
+      "usage_zh": "為陰性名詞（la guinea），現今多出現在歷史文獻或英國古典文學中。",
+      "example_es": "El comerciante pagó una guinea por el reloj.",
+      "example_zh": "商人為這只手錶支付了一幾內亞金幣。",
+      "image": "emoji:🪙",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:guinea"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "horizonte",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "地平線；眼界、前景",
+      "en": "horizon",
+      "ipa": "/oɾiˈθonte/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ὁρίζων",
+          "zh": "界線、劃分界線者"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "horizontem",
+          "zh": "地平線"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "horizonte",
+          "zh": "地平線"
+        }
+      ],
+      "cognates_en": [
+        "horizon"
+      ],
+      "story_zh": "借自拉丁語 horizontem，源自古希臘語 ὁρίζων，原指「劃分界線者」，用來指天地相交的界線。後來進入西語，指遠方天空與陸地或海洋相連的「地平線」，亦可引申為眼界或未來的展望。",
+      "hook_zh": "站在海邊看天際線，英文 horizon 尾巴加上 e 就是西語 horizonte。",
+      "usage_zh": "陽性名詞 el horizonte。引申為眼界或展望時常作複數：ampliar horizontes（開拓視野）。",
+      "example_es": "El sol se oculta en el horizonte.",
+      "example_zh": "太陽在地平線處沉落。",
+      "image": "emoji:🌅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:horizonte"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "incertidumbre",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "不確定、猶豫",
+      "en": "uncertainty",
+      "ipa": "/inθeɾtiˈdumbɾe/",
+      "breakdown": [
+        {
+          "part": "in-",
+          "zh": "不、非"
+        },
+        {
+          "part": "certidumbre",
+          "zh": "確定性"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "in- + certidumbre",
+          "zh": "不 + 確定性"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "incertidumbre",
+          "zh": "不確定"
+        }
+      ],
+      "cognates_en": [
+        "uncertainty"
+      ],
+      "story_zh": "由否定字首 in-（不）與 certidumbre（確定性）組合而成，字面意思就是「不確定」。用來表達對未來或現狀缺乏把握、充滿疑惑與動搖的心理狀態。",
+      "hook_zh": "in-（不）加 certidumbre（確定），面對未知感到「不確定」。",
+      "usage_zh": "陰性名詞 la incertidumbre。西語中以 -umbre 結尾的名詞通常都是陰性。",
+      "example_es": "El futuro del proyecto genera mucha incertidumbre.",
+      "example_zh": "這項專案的未來帶來了許多不確定性。",
+      "image": "emoji:❓",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:incertidumbre"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "infección",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "感染、傳染",
+      "en": "infection",
+      "ipa": "/infeɡˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnfectiōnem",
+          "zh": "染污、感染"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "infección",
+          "zh": "感染"
+        }
+      ],
+      "cognates_en": [
+        "infection"
+      ],
+      "story_zh": "學術借自拉丁語 īnfectiōnem，原指「染色、浸染」，後來引申為外來病菌侵入人體組織造成的「污染」與「感染」。英文同源字為 infection。",
+      "hook_zh": "英文 infection 尾巴 -tion 改成西語典型的 -ción。",
+      "usage_zh": "陰性名詞 la infección。以 -ción 結尾的名詞皆為陰性，複數時不需重音符號（infecciones）。",
+      "example_es": "El médico me recetó antibióticos para curar la infección.",
+      "example_zh": "醫生開了抗生素給我治療感染。",
+      "image": "emoji:🦠",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:infección"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "injusticia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "不公、不公正、冤屈",
+      "en": "injustice",
+      "ipa": "/inxusˈtiθja/",
+      "breakdown": [
+        {
+          "part": "in-",
+          "zh": "不、非"
+        },
+        {
+          "part": "justicia",
+          "zh": "正義、公平"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "injūstitia",
+          "zh": "不公、不正義"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "injusticia",
+          "zh": "不公、不公正"
+        }
+      ],
+      "cognates_en": [
+        "injustice"
+      ],
+      "story_zh": "學術借自拉丁語 injūstitia，由否定字首 in- 加上 jūstitia（正義、公正）構成，字面意思就是「缺乏正義」。用來指違反公平原則或道德法律的不公義行為。",
+      "hook_zh": "英文 injustice 轉成西語，把結尾 ce 換成 cia。",
+      "usage_zh": "陰性名詞 la injusticia。常用動詞搭配為 cometer una injusticia（做出不公的事）。",
+      "example_es": "La sociedad lucha contra toda clase de injusticia.",
+      "example_zh": "社會正在對抗各種形式的不公正。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:injusticia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "inmenso",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "巨大的、無邊無際的",
+      "en": "immense, huge",
+      "ipa": "/imˈmenso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "immēnsus",
+          "zh": "無法測量的、廣大的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "inmenso",
+          "zh": "巨大的、無邊無際的"
+        }
+      ],
+      "cognates_en": [
+        "immense"
+      ],
+      "story_zh": "源自拉丁語 immēnsus，由否定字首 in- 加上 mēnsus（已測量的）組成，原義為「無法測量的」。由於範圍或體積大到難以計量，演變為形容事物「廣大無邊」或「巨大無比」。",
+      "hook_zh": "英文 immense 的同源字，結尾換成西語常見的 -o。",
+      "usage_zh": "形容詞，陰性為 inmensa。置於名詞前可增強主觀感嘆語氣（un inmenso placer）。",
+      "example_es": "El universo es inmenso y misterioso.",
+      "example_zh": "宇宙是如此浩瀚而神秘。",
+      "image": "emoji:🌌",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:inmenso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "inspección",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "檢查、視察",
+      "en": "inspection",
+      "ipa": "/inspeɡˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnspectiōnem",
+          "zh": "檢視、檢查"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "inspección",
+          "zh": "檢查、視察"
+        }
+      ],
+      "cognates_en": [
+        "inspection"
+      ],
+      "story_zh": "源自拉丁語 īnspectiōnem，原意是「往裡面看、仔細檢視」。這個詞進入西班牙語後，指對人事物進行詳細的審查或官方視察。英文的 inspection 也是同源字。",
+      "hook_zh": "看著跟英文 inspection 幾乎一樣，放大鏡往裡面（in-）仔細檢視。",
+      "usage_zh": "陰性名詞（-ción 結尾），複數為 inspecciones，複數形不需加重音符號。",
+      "example_es": "El coche pasó la inspección técnica sin problemas.",
+      "example_zh": "這輛車順利通過了車輛檢驗。",
+      "image": "emoji:🔍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:inspección"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "inspirado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "有靈感的、受啟發的",
+      "en": "inspired",
+      "ipa": "/inspiˈɾado/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnspīrātus",
+          "zh": "被吹入氣息的、受啟發的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "inspirado",
+          "zh": "有靈感的"
+        }
+      ],
+      "cognates_en": [
+        "inspired"
+      ],
+      "story_zh": "源自拉丁語 īnspīrātus，本義是「被吹入氣息的」。古人相信靈感是神祇將神聖氣息吹進人的心靈中，後來引申為創作受到啟發、充滿靈感。英文的 inspired 是同源字。",
+      "hook_zh": "與英文 inspired 同源，想像文思泉湧時神靈往你腦海吹了一口靈氣。",
+      "usage_zh": "可作形容詞（陰性 inspirada），也是動詞 inspirar 的過去分詞。",
+      "example_es": "El poeta escribió un poema muy inspirado.",
+      "example_zh": "那位詩人寫了一首靈感充沛的詩。",
+      "image": "emoji:💡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:inspirado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "invisible",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "隱形的、看不見的",
+      "en": "invisible",
+      "ipa": "/imbiˈsible/",
+      "breakdown": [
+        {
+          "part": "in-",
+          "zh": "否定、不"
+        },
+        {
+          "part": "visible",
+          "zh": "看得見的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "invīsibilis",
+          "zh": "不可見的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "invisible",
+          "zh": "隱形的、看不見的"
+        }
+      ],
+      "cognates_en": [
+        "invisible"
+      ],
+      "story_zh": "源自晚期拉丁語 invīsibilis，由否定前綴加上「看得見的」組成。西班牙語透過文人借詞保留了此詞，專指肉眼無法看見的人事物。英文的 invisible 也是同源字。",
+      "hook_zh": "拼法與英文 invisible 完全相同，in-（不）加上 visible（看得見）。",
+      "usage_zh": "陰陽同形形容詞，修飾陰陽性皆為 invisible，複數為 invisibles。",
+      "example_es": "El aire es invisible pero necesario para la vida.",
+      "example_zh": "空氣雖然看不見，卻是生命不可或缺的。",
+      "image": "emoji:👻",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:invisible"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "juguete",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "玩具",
+      "en": "toy",
+      "ipa": "/xuˈɡete/",
+      "breakdown": [
+        {
+          "part": "jugar",
+          "zh": "玩耍"
+        },
+        {
+          "part": "-ete",
+          "zh": "指小後綴"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "jugar + -ete",
+          "zh": "玩耍 + 小"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "juguete",
+          "zh": "玩具"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西班牙語動詞 jugar（玩耍）加上指小後綴 -ete 構成，字面意思就是「拿來玩耍的小物件」，演變為日常生活中給孩童玩的玩具。",
+      "hook_zh": "動詞 jugar（玩）生出來的可愛小東西（-ete），就是小朋友最愛的玩具。",
+      "usage_zh": "陽性名詞，複數為 juguetes。常見搭配如 tienda de juguetes（玩具店）。",
+      "example_es": "El niño comparte su juguete con sus amigos.",
+      "example_zh": "那個小男孩和朋友分享他的玩具。",
+      "image": "emoji:🧸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:juguete"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "junior",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "初級的、資淺的；較年幼的",
+      "en": "junior",
+      "ipa": "/ˈxunjoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "junior",
+          "zh": "初級的、較年幼的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "junior",
+          "zh": "初級的、較年幼的"
+        }
+      ],
+      "cognates_en": [
+        "junior"
+      ],
+      "story_zh": "借自英語 junior。西班牙語引進後，常用於職場中指稱資歷較淺的初階人員，或體育運動中指稱青少年組的選手。",
+      "hook_zh": "完全借自英文 junior，職位、輩分比較菜的就是 junior。",
+      "usage_zh": "常亦寫作帶重音符號的 júnior。在職場稱謂上通常陰陽同形，如 diseñador junior。",
+      "example_es": "Ella empezó como programadora junior en el equipo.",
+      "example_zh": "她開始在團隊中擔任初階工程師。",
+      "image": "emoji:🌱",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:junior"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "lente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "透鏡、鏡片；眼鏡",
+      "en": "lens, glasses",
+      "ipa": "/ˈlente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "lentem",
+          "zh": "小扁豆"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lente",
+          "zh": "透鏡、鏡片"
+        }
+      ],
+      "cognates_en": [
+        "lens"
+      ],
+      "story_zh": "源自拉丁語 lentem（小扁豆）。中世紀拉丁語中，因為雙凸透鏡兩面微凸的形狀非常像小扁豆，便借用此詞來稱呼透鏡。後來進入西班牙語，指鏡片或透鏡，複數形也常用來指眼鏡。英文的 lens 也是同源字。",
+      "hook_zh": "凸透鏡長得就像一顆飽滿的小扁豆（lentil），英文 lens 跟西語 lente 都是扁豆變來的。",
+      "usage_zh": "陰陽性皆可（el lente 或 la lente），在拉丁美洲常用複數 los lentes 指整副眼鏡。",
+      "example_es": "No puedo leer bien sin mis lentes.",
+      "example_zh": "沒有眼鏡我看不清楚。",
+      "image": "emoji:👓",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lente",
+        "wiktionary:la:lens"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "masacre",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "大屠殺、慘殺",
+      "en": "massacre",
+      "ipa": "/maˈsakɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "massacre",
+          "zh": "大屠殺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "masacre",
+          "zh": "大屠殺"
+        }
+      ],
+      "cognates_en": [
+        "massacre"
+      ],
+      "story_zh": "直接借自法語 massacre（大屠殺）。這個詞在近代西語中用來指殘酷且大規模的殺戮行動。英文中的 massacre 也是直接源自同一個法語詞彙。",
+      "hook_zh": "拼法與英文 massacre 幾乎完全一樣，聯想「mass（大量）」傷亡的血腥慘案。",
+      "usage_zh": "為陰性名詞（la masacre），複數為 masacres。",
+      "example_es": "El museo conmemora a las víctimas de la masacre.",
+      "example_zh": "這座博物館紀念大屠殺的受害者。",
+      "image": "emoji:🩸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:masacre"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "metropolitano",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "大都會的、大城市的",
+      "en": "metropolitan",
+      "ipa": "/metɾopoliˈtano/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "metropolitanus",
+          "zh": "大都市的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "metropolitano",
+          "zh": "大都會的"
+        }
+      ],
+      "cognates_en": [
+        "metropolitan"
+      ],
+      "story_zh": "源自拉丁語 mētropolītānus，意思是「大都市的、母邦的」。在西班牙語中主要用來形容屬於或涵蓋大都會區的事物。英文的 metropolitan 也是同源詞。",
+      "hook_zh": "看前綴 metro 就聯想到大城市的地鐵與都會區，跟英文 metropolitan 完全對應。",
+      "usage_zh": "作形容詞有陰陽性變化（metropolitano/a）；在部分西語國家，名詞 el metropolitano 可指捷運或地鐵。",
+      "example_es": "El parque metropolitano es el más grande de la ciudad.",
+      "example_zh": "這座都會公園是全市最大的。",
+      "image": "emoji:🏙️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:metropolitano"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nativo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "本土的、土生土長的；天生的",
+      "en": "native",
+      "ipa": "/naˈtibo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nativus",
+          "zh": "天生的、與生俱來的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nativo",
+          "zh": "本土的、天生的"
+        }
+      ],
+      "cognates_en": [
+        "native"
+      ],
+      "story_zh": "直接從拉丁語 nātīvus（天生的、出生的）借入的文人借詞，指某地出生或土生土長的人事物。它與英文的 native 同源，西語本身亦有通俗繼承詞 natío。",
+      "hook_zh": "英文 native 去掉字尾 e 加上西語陽性尾 o，就是 nativo。",
+      "usage_zh": "作形容詞有陰陽性變化（nativo/nativa）。常見搭配如 hablante nativo（母語人士）。",
+      "example_es": "Él es un hablante nativo de español.",
+      "example_zh": "他是西班牙語母語人士。",
+      "image": "emoji:🌿",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nativo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nelson",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "不、沒門、才不（俚語）",
+      "en": "no, nope, no way (slang)",
+      "ipa": "/ˈnelson/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "nel",
+          "zh": "不"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nelson",
+          "zh": "才不、沒門"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西語口語否定詞 nel（不、才怪），並受到常見人名 Nelson（尼爾森）的諧音影響而產生。這是墨西哥等地區常用的雙關語與文字遊戲，用人名幽默地表示拒絕。",
+      "hook_zh": "把「No」先講成「nel」，再俏皮地拉長叫成「Nelson」，趣味拒絕！",
+      "usage_zh": "墨西哥非常道地的口語俚語，僅用於非正式場合開玩笑拒絕他人，相當於 ¡No! 或 ¡Nel!。",
+      "example_es": "—¿Quieres venir a la fiesta? —¡Nelson, tengo examen!",
+      "example_zh": "「你想來派對嗎？」「才不，我有考試！」",
+      "image": "emoji:🙅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nelson"
       ],
       "writer": "gemini"
     }
