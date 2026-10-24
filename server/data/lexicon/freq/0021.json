@@ -1190,6 +1190,47 @@
       "writer": "gemini"
     },
     {
+      "word": "pegar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "黏貼、黏住；相配",
+      "en": "to stick, to paste, to match",
+      "ipa": "/peˈɡaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pix",
+          "zh": "瀝青"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "picāre",
+          "zh": "塗抹瀝青"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pegar",
+          "zh": "黏貼"
+        }
+      ],
+      "cognates_en": [
+        "pitch"
+      ],
+      "story_zh": "源自拉丁語名詞 pix（瀝青、樹脂）衍生出的動詞 picāre（塗抹瀝青）。古代造船時會塗抹黏稠的瀝青來填縫與黏合，語意便從塗抹瀝青引申為「黏貼、黏合」，最終演變為現代西語的 pegar。英文的 pitch（瀝青）也是同源字。",
+      "hook_zh": "用黏稠黑黑的瀝青（pitch）把東西牢牢「黏貼」（pegar）在一起。",
+      "usage_zh": "簡單過去式第一人稱單數為保持發音須改寫為 pegué；口語也常表示「與…相配」或「打、揍」。",
+      "example_es": "Voy a pegar la foto en la pared.",
+      "example_zh": "我要把照片貼在牆上。",
+      "image": "emoji:📌",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pegar",
+        "wiktionary:la:pico"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "proveedor",
       "article": "el",
       "pos": "sustantivo",
