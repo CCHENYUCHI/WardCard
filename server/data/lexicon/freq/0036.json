@@ -2961,6 +2961,822 @@
         "wiktionary:es:disolución"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "emprendedor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "創業家、企業家",
+      "en": "entrepreneur",
+      "ipa": "/empɾendeˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "emprender",
+          "zh": "開創、著手"
+        },
+        {
+          "part": "-dor",
+          "zh": "…的人（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "emprender + -dor",
+          "zh": "開創 + 做…的人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "emprendedor",
+          "zh": "創業家"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 emprender（開創、著手）加上表示行動者的字尾 -dor，為法文 entrepreneur 的仿譯詞。指積極開拓新事業、勇於承擔經營風險的人。",
+      "hook_zh": "emprender（開創）加上人稱字尾 -dor，就是勇於開拓事業的創業家 emprendedor。",
+      "usage_zh": "可作陽性名詞 el emprendedor（陰性為 la emprendedora），亦可當形容詞表示「有進取心的」。",
+      "example_es": "Es un emprendedor talentoso que fundó su propia empresa.",
+      "example_zh": "他是一位創立了自己公司的優秀創業家。",
+      "image": "emoji:💼",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:emprendedor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estricto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "嚴格的、嚴厲的",
+      "en": "strict",
+      "ipa": "/esˈtɾiɡto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "strictus",
+          "zh": "束緊的、拉緊的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estricto",
+          "zh": "嚴格的"
+        }
+      ],
+      "cognates_en": [
+        "strict"
+      ],
+      "story_zh": "借自拉丁文 strictus（緊繃的、束緊的），原本是動詞 stringō（繃緊）的過去分詞。緊繃而不放鬆的狀態，引申為生活紀律或法規上的「嚴格、嚴謹」。",
+      "hook_zh": "和英文 strict 形音義完全對應，都是「嚴格的」意思。",
+      "usage_zh": "修飾陰性名詞時形式為 estricta。常見搭配如 reglas estrictas（嚴格的規則）。",
+      "example_es": "El profesor es muy estricto con las fechas de entrega.",
+      "example_zh": "老師對交件截止日期非常嚴格。",
+      "image": "emoji:📏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estricto",
+        "wiktionary:la:strictus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fabricar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "製造、生產、建造",
+      "en": "to manufacture, to build",
+      "ipa": "/fabɾiˈkaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fabricāre",
+          "zh": "製作、建造"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fabricar",
+          "zh": "製造、生產"
+        }
+      ],
+      "cognates_en": [
+        "fabricate"
+      ],
+      "story_zh": "借自拉丁文動詞 fabricāre（打造、製造），源自工匠或工場（fabrica）動手製作物品的行為。後來在現代工業中演變為在工廠裡「製造、生產」。",
+      "hook_zh": "工廠（fábrica）裡每天進行的工作就是 fabricar（製造）。",
+      "usage_zh": "簡單過去式第一人稱單數為 fabriqué（拼寫從 c 改為 qu 以維持 /k/ 音）。",
+      "example_es": "Esta fábrica fabrica componentes para teléfonos móviles.",
+      "example_zh": "這座工廠製造手機零件。",
+      "image": "emoji:🏭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fabricar",
+        "wiktionary:la:fabrico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "formulario",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "表格、申請表",
+      "en": "form (to be filled in)",
+      "ipa": "/foɾmuˈlaɾjo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "去辦事要填的制式表格（form），在西語裡就是 formulario。",
+      "usage_zh": "陽性名詞。常用動詞搭配為 rellenar un formulario（填寫表格）。",
+      "example_es": "Por favor, rellene este formulario con sus datos personales.",
+      "example_zh": "請在表格中填妥您的個人資料。",
+      "image": "emoji:📝",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:formulario"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "frustración",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "挫折、沮喪、挫敗感",
+      "en": "frustration",
+      "ipa": "/fɾustɾaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "frūstrātiōnem",
+          "zh": "欺騙、落空、挫折"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "frustración",
+          "zh": "挫折、沮喪"
+        }
+      ],
+      "cognates_en": [
+        "frustration"
+      ],
+      "story_zh": "借自拉丁文 frūstrātiōnem，源自動詞 frūstror（使受騙、使落空）。原本指期望落空帶來的失望，後來轉化為心理學上指面對阻礙時產生的「挫折感」。",
+      "hook_zh": "和英文 frustration 拼法極為相似，意思完全相同，都是挫折感。",
+      "usage_zh": "陰性名詞。複數為 frustraciones（去重音）。常見搭配 sentir frustración（感到挫折）。",
+      "example_es": "El mal resultado le causó una gran frustración.",
+      "example_zh": "糟糕的結果讓他感到非常挫折。",
+      "image": "emoji:😫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:frustración",
+        "wiktionary:la:frustratio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "guerrilla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "游擊隊；游擊戰",
+      "en": "guerrilla, guerrilla warfare",
+      "ipa": "/ɡeˈriʝa/",
+      "breakdown": [
+        {
+          "part": "guerra",
+          "zh": "戰爭"
+        },
+        {
+          "part": "-illa",
+          "zh": "小（指小詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "guerra",
+          "zh": "戰爭"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "guerrilla",
+          "zh": "游擊戰、游擊隊"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 guerra（戰爭）加上指小字尾 -illa 構成，字面意思為「小規模戰爭」。原指十九世紀初西班牙抗法戰爭中平民自發組織的伏擊戰術，後來成為全世界通用的「游擊戰」與「游擊隊」。",
+      "hook_zh": "大仗是 guerra，平民打的小仗（指小詞 -illa）就是 guerrilla（游擊隊）。",
+      "usage_zh": "陰性名詞。游擊隊員通常稱為 guerrillero（男）或 guerrillera（女）。",
+      "example_es": "La guerrilla atacó por sorpresa en el bosque.",
+      "example_zh": "游擊隊在森林中發動了突襲。",
+      "image": "emoji:🪖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:guerrilla"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hispano",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "西語國家的；西班牙人的、西裔的",
+      "en": "Hispanic, Spanish",
+      "ipa": "/isˈpano/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "Hispānus",
+          "zh": "西班牙的、伊比利半島的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hispano",
+          "zh": "西語國家的、西裔的"
+        }
+      ],
+      "cognates_en": [
+        "Hispanic"
+      ],
+      "story_zh": "借自拉丁文 Hispānus，由羅馬對伊比利半島的稱呼 Hispānia（西班牙）加上表示歸屬的字尾 -ānus 構成。現今廣泛指涉西班牙語世界的文化、民族或西裔族群。",
+      "hook_zh": "和英文 Hispanic 同源，注意西語的 h 完全不發音。",
+      "usage_zh": "修飾陰性名詞為 hispana。亦可當名詞指西裔人士（el hispano / la hispana）。",
+      "example_es": "Muchos países hispanos comparten tradiciones similares.",
+      "example_zh": "許多西語系國家都擁有相似的傳統。",
+      "image": "emoji:🌎",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hispano"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "imprenta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "印刷術；印刷機、印刷廠",
+      "en": "printing press, printing",
+      "ipa": "/imˈpɾenta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "empreinte",
+          "zh": "印記、痕跡"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "emprenta",
+          "zh": "印刷、印記"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "imprenta",
+          "zh": "印刷術、印刷機"
+        }
+      ],
+      "cognates_en": [
+        "imprint"
+      ],
+      "story_zh": "源自早期古西班牙語 emprenta，借自法語 empreinte（印記、壓印出的痕跡）。活字印刷術發明後，這項在紙張上壓印文字的技術與機器就被定名為 imprenta。",
+      "hook_zh": "print 是印刷，在紙上印出痕跡（imprint）的機器就是 imprenta。",
+      "usage_zh": "陰性名詞。既指抽象的印刷技術，也可指實體的印刷機或印刷工廠。",
+      "example_es": "La imprenta permitió la difusión masiva de libros.",
+      "example_zh": "印刷術讓書籍得以大規模傳播。",
+      "image": "emoji:🖨️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:imprenta"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "influir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "影響、產生作用",
+      "en": "to influence",
+      "ipa": "/inˈflwiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnfluere",
+          "zh": "流入、滲入"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "influir",
+          "zh": "影響"
+        }
+      ],
+      "cognates_en": [
+        "influence"
+      ],
+      "story_zh": "借自拉丁文動詞 īnfluere（流入、滲入），由 in-（進入）與 fluere（流動）構成。中古時期原指天體運行產生的無形力量「流入」人心，後引申為事物對人產生的「影響」。",
+      "hook_zh": "如同英文 influence，某種力量如水流（fluere）般流入進去產生影響。",
+      "usage_zh": "不規則動詞，現在式帶有 y（yo influyo, tú influyes）；常用介詞搭配為 influir en。",
+      "example_es": "La música puede influir positivamente en el estado de ánimo.",
+      "example_zh": "音樂可以對心情產生正面的影響。",
+      "image": "emoji:🌊",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:influir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "insoportable",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "難以忍受的、令人受不了的",
+      "en": "unbearable, insufferable",
+      "ipa": "/insopoɾˈtable/",
+      "breakdown": [
+        {
+          "part": "in-",
+          "zh": "不、無（否定字首）"
+        },
+        {
+          "part": "soportar",
+          "zh": "忍受、承擔"
+        },
+        {
+          "part": "-able",
+          "zh": "可以…的（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "in- + soportable",
+          "zh": "否定 + 可忍受的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "insoportable",
+          "zh": "難以忍受的"
+        }
+      ],
+      "cognates_en": [
+        "insupportable"
+      ],
+      "story_zh": "由否定字首 in- 加上 soportable（可忍受的，源自動詞 soportar 忍耐）組合而成。指某事物的痛苦、吵雜或痛苦程度超過極限，完全「令人無法忍受」。",
+      "hook_zh": "in-（不能）加上 soportar（忍受）與 -able，就是「不能忍受的」insoportable。",
+      "usage_zh": "陰陽同形形容詞，修飾男女或陰陽性名詞均為 insoportable，複數加 -s。",
+      "example_es": "El ruido de las obras en la calle es insoportable.",
+      "example_zh": "街上施工的噪音令人難以忍受。",
+      "image": "emoji:😫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:insoportable"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "islámico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "伊斯蘭教的、伊斯蘭文化的",
+      "en": "Islamic",
+      "ipa": "/isˈlamiko/",
+      "breakdown": [
+        {
+          "part": "islam",
+          "zh": "伊斯蘭教"
+        },
+        {
+          "part": "-ico",
+          "zh": "…的（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "islam + -ico",
+          "zh": "伊斯蘭 + 形容詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "islámico",
+          "zh": "伊斯蘭教的"
+        }
+      ],
+      "cognates_en": [
+        "Islamic"
+      ],
+      "story_zh": "由名詞 islam（伊斯蘭教）加上表示關聯的形容詞字尾 -ico 構成。指與伊斯蘭教信仰、教法、歷史或藝術文化相關的所有事物。",
+      "hook_zh": "英文 Islamic 的西語對應詞，重音在倒數第三音節的 á 上：islámico。",
+      "usage_zh": "修飾陰性名詞為 islámica，例如 el arte islámico（伊斯蘭藝術）、la cultura islámica。",
+      "example_es": "Visitamos un monumento de la época islámica en Andalucía.",
+      "example_zh": "我們參觀了安達魯西亞一座伊斯蘭時期的歷史古蹟。",
+      "image": "emoji:🕌",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:islámico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "laberinto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "迷宮",
+      "en": "labyrinth, maze",
+      "ipa": "/labeˈɾinto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "λαβύρινθος",
+          "zh": "迷宮"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "labyrinthus",
+          "zh": "迷宮"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "laberinto",
+          "zh": "迷宮"
+        }
+      ],
+      "cognates_en": [
+        "labyrinth"
+      ],
+      "story_zh": "學者借詞自拉丁文 labyrinthus，源自希臘神話中古希臘語 λαβύρινθος（克里特島囚禁牛頭怪米諾陶洛斯的迷宮）。後引申為通道錯綜複雜的場所或複雜難解的局面。",
+      "hook_zh": "和英文 labyrinth 同源，看過經典西班牙電影《羊男的迷宮》（El laberinto del fauno）就認得。",
+      "usage_zh": "陽性名詞。除了實體迷宮，也常用於比喻，如 un laberinto de calles（錯綜複雜的巷弄）。",
+      "example_es": "Nos perdimos en el laberinto de calles del centro histórico.",
+      "example_zh": "我們在歷史中心錯綜複雜的巷弄迷宮裡迷路了。",
+      "image": "emoji:🌀",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:laberinto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "maldición",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "詛咒、咒罵",
+      "en": "curse",
+      "ipa": "/maldiˈθjon/",
+      "breakdown": [
+        {
+          "part": "mal",
+          "zh": "壞、惡"
+        },
+        {
+          "part": "decir",
+          "zh": "說（名詞形式 -dición）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "maledīcō",
+          "zh": "說壞話、誹謗"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "maledictiōnem",
+          "zh": "惡言、詛咒"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "maldición",
+          "zh": "詛咒"
+        }
+      ],
+      "cognates_en": [
+        "malediction"
+      ],
+      "story_zh": "半學者借詞自拉丁文 maledictiōnem，由 maledīcō（mal 壞 + dīcō 說）演變而來，字面意思是「口出惡言」。後來轉指召喚災厄的咒語或「詛咒」。其反義詞為 bendición（祝福）。",
+      "hook_zh": "mal（壞）加上 decir（說）的名詞型 -dición，說壞話落下的就是 maldición（詛咒）。",
+      "usage_zh": "陰性名詞。複數為 maldiciones。日常口語中常作為感嘆詞：¡Maldición!（可惡！真倒楣！）。",
+      "example_es": "La bruja lanzó una terrible maldición sobre el reino.",
+      "example_zh": "女巫對王國施加了一道可怕的詛咒。",
+      "image": "emoji:🧙‍♀️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:maldición",
+        "wiktionary:la:maledictio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mutuamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "互相地、彼此地",
+      "en": "mutually",
+      "ipa": "/ˌmutwaˈmente/",
+      "breakdown": [
+        {
+          "part": "mutuo",
+          "zh": "相互的"
+        },
+        {
+          "part": "-mente",
+          "zh": "…地（副詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "mutuo + -mente",
+          "zh": "相互的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mutuamente",
+          "zh": "互相地"
+        }
+      ],
+      "cognates_en": [
+        "mutually"
+      ],
+      "story_zh": "由形容詞 mutuo（相互的、彼此的）加上西語標準副詞字尾 -mente 組合而成。表示雙方對等互動、相互影響的狀態。",
+      "hook_zh": "英文 mutually 的同源對應詞，詞根 mutua- 代表雙方彼此互動。",
+      "usage_zh": "副詞，修飾動詞或形容詞，常見搭配如 ayudarse mutuamente（互相幫助）。",
+      "example_es": "Los dos colegas se ayudan mutuamente en el trabajo.",
+      "example_zh": "兩位同事在工作上互相幫助。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mutuamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "olla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "鍋子、燉鍋；燉菜",
+      "en": "pot, cooking pot, stew",
+      "ipa": "/ˈoʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ōlla",
+          "zh": "陶罐、烹飪鍋"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "olla",
+          "zh": "鍋、燉鍋"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "olla",
+          "zh": "鍋子"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "世襲自古西班牙語 olla，源自拉丁文 ōlla（陶罐、烹飪鍋）。自古羅馬時期即指烹調燉煮食物的器皿，後來也引申為鍋中燉煮出來的燉菜料理。",
+      "hook_zh": "圓滾滾的 o 就像一口熱氣騰騰的深燉鍋 olla。",
+      "usage_zh": "陰性名詞。常見廚具如 olla a presión（快鍋、壓力鍋）、olla de barro（陶鍋）。",
+      "example_es": "Puso todos los ingredientes dentro de la olla grande.",
+      "example_zh": "她把所有食材都放進大鍋子裡。",
+      "image": "emoji:🍲",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:olla",
+        "wiktionary:la:olla"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "preocupante",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "令人擔憂的、令人憂慮的",
+      "en": "worrying, concerning",
+      "ipa": "/pɾeokuˈpante/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "由 preocupar（使擔心）加上主動形容詞字尾 -ante，代表「讓人擔心的」。",
+      "usage_zh": "陰陽同形形容詞，修飾陰陽性名詞皆為 preocupante，複數為 preocupantes。",
+      "example_es": "El aumento del desempleo es una noticia muy preocupante.",
+      "example_zh": "失業率上升是一則非常令人擔憂的消息。",
+      "image": "emoji:😟",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:preocupante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "presentador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "主持人、主講人",
+      "en": "presenter, host",
+      "ipa": "/pɾesentaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "presentar",
+          "zh": "呈現、介紹"
+        },
+        {
+          "part": "-dor",
+          "zh": "…的人（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "presentar + -dor",
+          "zh": "介紹呈現 + 行動者字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "presentador",
+          "zh": "主持人"
+        }
+      ],
+      "cognates_en": [
+        "presenter"
+      ],
+      "story_zh": "由動詞 presentar（呈現、介紹）加上表示行動者的字尾 -dor 構成。指在廣播、電視節目或大型活動中負責穿針引線、向觀眾介紹內容的主持人。",
+      "hook_zh": "負責在台上 present（展示與引言）的人，就是 presentador（主持人）。",
+      "usage_zh": "陽性名詞為 el presentador，女性主持人為 la presentadora。",
+      "example_es": "El presentador anunció el nombre del ganador del concurso.",
+      "example_zh": "主持人宣布了比賽獲勝者的名字。",
+      "image": "emoji:🎤",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:presentador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "promocionar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "促銷、宣傳、推廣",
+      "en": "to promote, to publicise",
+      "ipa": "/pɾomoθjoˈnaɾ/",
+      "breakdown": [
+        {
+          "part": "promoción",
+          "zh": "促銷、推廣"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "promoción + -ar",
+          "zh": "促銷 + 動詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "promocionar",
+          "zh": "推廣、促銷"
+        }
+      ],
+      "cognates_en": [
+        "promote"
+      ],
+      "story_zh": "由名詞 promoción（推廣、宣傳活動）加上動詞字尾 -ar 衍生而來。專門指透過商業宣傳手段或廣告活動來推廣商品、服務或品牌知名度。",
+      "hook_zh": "英文 promote 的名詞是 promotion，西語把 promoción 加上 -ar 就變成動詞 promocionar。",
+      "usage_zh": "規則第一類動詞（-ar）。常見受詞如 promocionar un producto（推廣產品）、un evento（宣傳活動）。",
+      "example_es": "La empresa lanzó una campaña para promocionar su nuevo servicio.",
+      "example_zh": "這家公司發起了一場宣傳活動來推廣其新服務。",
+      "image": "emoji:📣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:promocionar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "recomendable",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "值得推薦的、建議的",
+      "en": "recommendable, advisable",
+      "ipa": "/rekomenˈdable/",
+      "breakdown": [
+        {
+          "part": "recomendar",
+          "zh": "推薦、建議"
+        },
+        {
+          "part": "-able",
+          "zh": "可…的（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "recomendar + -able",
+          "zh": "推薦 + 可…的字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "recomendable",
+          "zh": "值得推薦的"
+        }
+      ],
+      "cognates_en": [
+        "recommendable"
+      ],
+      "story_zh": "由動詞 recomendar（推薦、建議）加上形容詞字尾 -able 構成。表示某件事物品管優良、值得採納或去做，即「值得推薦的」。",
+      "hook_zh": "recomendar（推薦）加上 -able（能夠、值得），就是值得推薦的 recomendable。",
+      "usage_zh": "陰陽同形形容詞。常見於無人稱句型：Es recomendable + 原形動詞（建議做某事）。",
+      "example_es": "Es recomendable llevar ropa cómoda para hacer la caminata.",
+      "example_zh": "健行時建議穿著舒適的衣物。",
+      "image": "emoji:👍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:recomendable"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "rezar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "祈禱、誦經；（文字標示）寫著",
+      "en": "to pray, to recite; to say (of a text)",
+      "ipa": "/reˈθaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "recitāre",
+          "zh": "朗讀、背誦"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "rezar",
+          "zh": "朗誦祈禱文、祈禱"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rezar",
+          "zh": "祈禱、做祈禱"
+        }
+      ],
+      "cognates_en": [
+        "recite"
+      ],
+      "story_zh": "世襲自拉丁文 recitāre（朗誦、背誦）。古羅馬人朗誦文章，到了中世紀演變為修士與信徒反覆誦唸經文與禱告，成為「祈禱」。西語另有借詞雙式詞 recitar（朗誦）。",
+      "hook_zh": "英文 recite 是朗誦，西語世襲演變成 rezar，專門指誦念禱文祈禱。",
+      "usage_zh": "簡單過去式第一人稱單數拼寫變化為 recé；亦有特殊用法指標誌牌寫著：El cartel reza…（告示牌上寫著…）。",
+      "example_es": "Antes de dormir, el niño suele rezar una pequeña oración.",
+      "example_zh": "睡覺前，小男孩習慣做一個簡短的祈禱。",
+      "image": "emoji:🙏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:rezar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "riego",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "灌溉、澆水",
+      "en": "irrigation, watering",
+      "ipa": "/ˈrjeɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "regar",
+          "zh": "澆水、灌溉"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "riego",
+          "zh": "灌溉"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 regar（澆水、灌溉）的去動詞名詞（deverbal）。指將水源引入農田滋潤作物的農耕措施「灌溉」，或指給植物澆水。",
+      "hook_zh": "動詞 regar（澆水）詞幹母音變化產生的名詞就是 riego（灌溉）。",
+      "usage_zh": "陽性名詞。常見農業專門搭配如 riego por goteo（滴灌）、sistema de riego（灌溉系統）。",
+      "example_es": "El agricultor revisó las tuberías del sistema de riego.",
+      "example_zh": "農夫檢查了灌溉系統的管道。",
+      "image": "emoji:💧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:riego"
+      ],
+      "writer": "gemini"
     }
   ]
 }
