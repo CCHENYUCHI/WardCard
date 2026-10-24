@@ -373,14 +373,6 @@ module.exports = {
     s('path', { d: 'M26 44l7 7 14-14M70 44l7 7 14-14M114 44l7 7 14-14', ...SW(6) }, 'green', { stroke: true }),
     s('rect', { x: 14, y: 120, width: 132, height: 18, rx: 4 }, 'tan')
   ],
-  cabe: [
-    s('ellipse', { cx: 80, cy: 134, rx: 64, ry: 8 }, 'yellow', { accent: true }),
-    s('path', { d: 'M22 76 58 44l36 32z' }, 'red'),
-    s('rect', { x: 30, y: 74, width: 56, height: 60 }, 'cream'),
-    outline({ x: 30, y: 74, width: 56, height: 60 }, 'tan'),
-    s('rect', { x: 50, y: 104, width: 16, height: 30 }, 'brown'),
-    ...person(110, 134, 'green', { h: 44, w: 28, r: 12 })
-  ],
   comandante: [
     ...person(70, 138, 'navy', { h: 58, w: 42, r: 16, accent: true }),
     s('path', { d: 'M52 56q18-24 36 0z' }, 'navy'),

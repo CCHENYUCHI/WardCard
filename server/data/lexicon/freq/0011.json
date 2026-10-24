@@ -1,6 +1,6 @@
 {
   "theme": "freq-0011",
-  "theme_zh": "常用字（頻率第 2659–2886 名）",
+  "theme_zh": "常用字（頻率第 2659–2891 名）",
   "entries": [
     {
       "word": "intelectual",
@@ -2003,71 +2003,6 @@
       "writer": "gemini"
     },
     {
-      "word": "ja",
-      "article": "",
-      "pos": "interjección",
-      "zh": "哈（笑聲擬聲詞）",
-      "en": "ha (representation of laughter)",
-      "ipa": "/ˈxa/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "西語字母 j 發音像喉音「喝」，所以 ja 聽起來就像「哈」，常用來表示笑聲。",
-      "usage_zh": "感嘆詞。在網路打字或口語中常重複使用成 jaja 或 jajaja 表示「哈哈」。",
-      "example_es": "¡Ja! Qué chiste más gracioso.",
-      "example_zh": "哈！這個笑話真搞笑。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:ja"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "juro",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "所有權；年金、特許權",
-      "en": "ownership",
-      "ipa": "/ˈxuɾo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "iūs",
-          "zh": "法律、權利"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "iūre",
-          "zh": "依法、合法地"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "jur",
-          "zh": "權利、所有權"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "juro",
-          "zh": "所有權"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "繼承自古西班牙語 jur，源自拉丁語 iūs（法律、權利）的離格 iūre（依法）。後來詞形受動詞 jurar（發誓）影響改造為 juro，指依法享有的所有權或特許產權。",
-      "hook_zh": "長得像 jurar（發誓）的動詞變化「我發誓」，名詞是指受法律立誓保障的所有權。",
-      "usage_zh": "陽性名詞。在歷史與法律文獻中多指依法享有的永久產權或官府年金。",
-      "example_es": "La familia conservó el juro durante siglos.",
-      "example_zh": "這個家族保留了這項產權長達數個世紀。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:juro"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "monte",
       "article": "el",
       "pos": "sustantivo",
@@ -2512,30 +2447,6 @@
       "writer": "gemini"
     },
     {
-      "word": "vs",
-      "article": "",
-      "pos": "preposición",
-      "zh": "對、相對於、對決",
-      "en": "vs., versus",
-      "ipa": "/ˈbeɾsus/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "versus"
-      ],
-      "story_zh": "",
-      "hook_zh": "比賽看板上雙方中間大大的 vs.，代表兩隊對決！",
-      "usage_zh": "為 versus 的常見縮寫，多用於賽事對戰或兩者對比比較。",
-      "example_es": "El partido de hoy es España vs. Italia.",
-      "example_zh": "今天的比賽是西班牙對義大利。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:vs"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "bienestar",
       "article": "el",
       "pos": "sustantivo",
@@ -2700,28 +2611,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:corona"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "cristina",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "（軍隊用）克莉絲汀娜帽、平頂船形軍帽",
-      "en": "military side cap, cristina hat",
-      "ipa": "/kɾisˈtina/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "想像名叫 Cristina 的女兵戴著整齊筆挺的船形軍帽出操行禮。",
-      "usage_zh": "陰性名詞，專指西班牙軍隊傳統的一種無簷平頂船形帽。",
-      "example_es": "El soldado se colocó la cristina antes de salir.",
-      "example_zh": "士兵在出發前戴上了他的軍帽。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:cristina"
       ],
       "writer": "gemini"
     },
@@ -3864,6 +3753,120 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:poseer"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "promover",
+      "article": "",
+      "pos": "verbo",
+      "zh": "促進、推動；提倡",
+      "en": "to promote, to advance",
+      "ipa": "/pɾomoˈbeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prōmovēre",
+          "zh": "向前推進、促進"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "promover",
+          "zh": "推動、促進"
+        }
+      ],
+      "cognates_en": [
+        "promote"
+      ],
+      "story_zh": "源自拉丁文 prōmovēre，原義是「向前推進、往前移動」。演變至現代西語，指積極推動某件事物向前發展、促進進步或提倡特定理念。英文的 promote 也是同一來源。",
+      "hook_zh": "音似英文 promote，就是把計畫往前「推進」（pro-）邁進。",
+      "usage_zh": "現在式動詞變化為 o > ue 不規則（如 yo promuevo）。",
+      "example_es": "La empresa quiere promover hábitos saludables.",
+      "example_zh": "這家公司想要推廣健康的習慣。",
+      "image": "emoji:🚀",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:promover"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "raíz",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "根、根源；牙根",
+      "en": "root",
+      "ipa": "/raˈiθ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*wréh₂ds",
+          "zh": "根"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*wrādīks",
+          "zh": "根"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "rādīcem",
+          "zh": "植物的根"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "raíz",
+          "zh": "根、根源"
+        }
+      ],
+      "cognates_en": [
+        "radish"
+      ],
+      "story_zh": "繼承自拉丁語 rādīcem（主格為 rādīx，指植物的根）。古印歐語根一路演變而來，英文中的 radish（櫻桃蘿蔔）也是同源字，皆保留了「生長在地底下的根」的核心概念。",
+      "hook_zh": "紅白蘿蔔也是根（radish），植物深扎入土的就是 raíz。",
+      "usage_zh": "陰性名詞。複數為 raíces（加 es 且 z 變為 c，維持重音符號 í）。",
+      "example_es": "El árbol tiene raíces muy profundas.",
+      "example_zh": "這棵樹的根非常深。",
+      "image": "emoji:🌱",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:raíz",
+        "wiktionary:la:radix"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "repente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "突然的舉動、衝動；陣發",
+      "en": "fit, sudden movement, sudden impulse",
+      "ipa": "/reˈpente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rēpentem",
+          "zh": "突然的、未預料到的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "repente",
+          "zh": "突然發作、衝動"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語形容詞賓格 rēpentem，原本意思是「突然的、出乎意料的」。在西語中演變成名詞，指毫無預警突然爆發的動作、情緒或衝動。",
+      "hook_zh": "最常出現在片語 de repente，表示事情「突然」發生了！",
+      "usage_zh": "日常中最常以副詞片語 de repente（突然地）出現。單獨作名詞指突發舉動。",
+      "example_es": "Le dio un repente y salió corriendo.",
+      "example_zh": "他一時衝動就跑出去了。",
+      "image": "emoji:⚡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:repente"
       ],
       "writer": "gemini"
     }
