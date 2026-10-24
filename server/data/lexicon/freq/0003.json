@@ -3116,6 +3116,839 @@
         "wiktionary:es:banda"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "contenido",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "內容；內含物、容量",
+      "en": "content, contents",
+      "ipa": "/konteˈnido/",
+      "breakdown": [
+        {
+          "part": "contener",
+          "zh": "包含、容納"
+        },
+        {
+          "part": "-ido",
+          "zh": "過去分詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "contener",
+          "zh": "包含、容納"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "contenido",
+          "zh": "內容、內含物"
+        }
+      ],
+      "cognates_en": [
+        "content"
+      ],
+      "story_zh": "源自動詞 contener（包含、容納）的過去分詞形式。原始概念是指「被容器所包容、裝在裡面的東西」，後來引申為容器內的實體物品，以及書籍、文章、藝術或影音媒體中所表達的「內容」。",
+      "hook_zh": "英文 content 就是同源字；想像把東西全部「contain（裝進）」箱子裡，裡面的東西就是 contenido。",
+      "usage_zh": "常指網路影音或文章的「數位內容」（contenido digital），複數 los contenidos 常用於指容器內的物品或書籍目錄。",
+      "example_es": "El contenido de este libro es muy interesante.",
+      "example_zh": "這本書的內容非常有趣。",
+      "image": "emoji:📦",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:contenido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "decisión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "決定、抉擇、判決",
+      "en": "decision",
+      "ipa": "/deθiˈsjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "decisiōnem",
+          "zh": "切斷、決定、判決"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "decisión",
+          "zh": "決定"
+        }
+      ],
+      "cognates_en": [
+        "decision"
+      ],
+      "story_zh": "為拉丁文 decisiōnem 的學者借詞。在拉丁文中，原意帶有「切斷、斬斷猶豫」的意味，引申為對某件事做出最終的裁決與決定。英文的 decision 也是同源字。",
+      "hook_zh": "和英文 decision 拼法幾乎相同，只要把重音放在最後的 ió 上，想像大刀切斷猶豫、做出決定。",
+      "usage_zh": "搭配動詞通常用 tomar una decisión（做決定），而不是 hacer una decisión。",
+      "example_es": "Es difícil tomar una decisión importante.",
+      "example_zh": "要做出一項重大決定很困難。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:decisión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "encuentro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "相遇、會面；比賽；衝突",
+      "en": "meeting, encounter, match",
+      "ipa": "/enˈkwentɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "encuentro",
+          "zh": "相遇、衝突"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "encuentro",
+          "zh": "會面、相遇、比賽"
+        }
+      ],
+      "cognates_en": [
+        "encounter"
+      ],
+      "story_zh": "繼承自古西班牙語的 encuentro。其詞義演變從雙方迎面走來、意外碰上的「遭遇與碰面」，進一步引申至體育賽事中兩隊交鋒的「比賽」，以及雙方激烈碰撞的「衝突」。",
+      "hook_zh": "英文 encounter（相遇）的同源兄弟；也可以聯想動詞 encontrar（找到）：相遇就是彼此找到了對方。",
+      "usage_zh": "除了日常的「會面」，在新聞或體育報導中極常指「球賽、賽事」（un encuentro deportivo）。",
+      "example_es": "Tuvimos un encuentro inesperado en la estación.",
+      "example_zh": "我們在車站意外相遇。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:encuentro"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "entrada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "入口；門票；進入",
+      "en": "entrance, admission, ticket",
+      "ipa": "/enˈtɾada/",
+      "breakdown": [
+        {
+          "part": "entrar",
+          "zh": "進入"
+        },
+        {
+          "part": "-ada",
+          "zh": "名詞字尾，表動作或場所"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "entrar",
+          "zh": "進入"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "entrada",
+          "zh": "入口、進入"
+        }
+      ],
+      "cognates_en": [
+        "entrance",
+        "entry"
+      ],
+      "story_zh": "由動詞 entrar（進入）加上名詞字尾 -ada 構成。最初指「進入的動作或權利」，隨後語意延伸為供人進入的通道或門口，即「入口」，並進一步引申為入場所需的「門票」。",
+      "hook_zh": "看見門口寫著 entrada，聯想動詞 entrar（進去），再拿出買好的 entrada（門票）驗票入場。",
+      "usage_zh": "在西班牙與拉美去看電影或演唱會，買「門票」就是 comprar una entrada（而非 billete）。",
+      "example_es": "Compré dos entradas para el concierto de mañana.",
+      "example_zh": "我買了兩張明天音樂會的門票。",
+      "image": "emoji:🎟️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:entrada"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "permitir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "允許、准許；容許",
+      "en": "to allow, to permit",
+      "ipa": "/peɾmiˈtiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "permittere",
+          "zh": "放行、釋放、允許"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "permitir",
+          "zh": "允許"
+        }
+      ],
+      "cognates_en": [
+        "permit"
+      ],
+      "story_zh": "為拉丁文 permittere 的學者借詞。拉丁字根由 per-（貫穿、完全）與 mittere（送出、放手）組成，原意為「放行、讓其通過」，後來演變為在法律或人際上「准許、容許」某事發生。",
+      "hook_zh": "英文 permit（准許）就是這個字！把結尾改為西語動詞字尾 -ir，就是 permitir。",
+      "usage_zh": "常接原形動詞：No se permite fumar（禁止吸菸）；反身代名詞形式 permitirse 表示「負擔得起」。",
+      "example_es": "El profesor no permite el uso del móvil en clase.",
+      "example_zh": "老師不允許在課堂上使用手機。",
+      "image": "emoji:✅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:permitir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pp",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "老爸、爸爸（網路縮寫）",
+      "en": "dad, papa (abbreviation)",
+      "ipa": "/paˈpa/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "手機打字常將 papá 縮寫為 pp，就像英文常把 people 打成 ppl。",
+      "usage_zh": "網路社群與通訊軟體的非正式縮寫，指爸爸（papá）。為陽性名詞。",
+      "example_es": "Hablé con mi pp ayer.",
+      "example_zh": "我昨天跟我老爸聊過了。",
+      "image": "emoji:👨",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:pp"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "unión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "結合、聯合、團結",
+      "en": "union, unity, junction",
+      "ipa": "/uˈnjon/",
+      "breakdown": [
+        {
+          "part": "uni-",
+          "zh": "單一"
+        },
+        {
+          "part": "-ón",
+          "zh": "名詞字尾，表狀態或行動"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūnus",
+          "zh": "一"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "unio",
+          "zh": "聯合、結合"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "uniōnem",
+          "zh": "聯合"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "unión",
+          "zh": "結合、聯合"
+        }
+      ],
+      "cognates_en": [
+        "union",
+        "unite"
+      ],
+      "story_zh": "源自拉丁文 ūnus（單一），衍生出動詞與名詞 unio（結合、合為一體），再進入晚期拉丁語 uniōnem。其核心語意是「將多個個體聚集歸一」，後來引申為人與人的團結、組織上的聯合或工會。",
+      "hook_zh": "發音與英文 union 幾乎完全相同，uni- 就是單一，大家合成「一」體就是 unión。",
+      "usage_zh": "陰性名詞。常用搭配如 la Unión Europea（歐洲聯盟）、la unión hace la fuerza（團結就是力量）。",
+      "example_es": "La unión de los vecinos solucionó el problema.",
+      "example_zh": "鄰居們的團結解決了這個問題。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:unión",
+        "wiktionary:la:unio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vía",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "道路、鐵軌；途徑、管道",
+      "en": "way, road, track, means",
+      "ipa": "/ˈbia/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "via",
+          "zh": "道路、路徑"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vía",
+          "zh": "道路、途徑"
+        }
+      ],
+      "cognates_en": [
+        "via"
+      ],
+      "story_zh": "直接承襲自拉丁文 via，原義即為實體的「道路、通路」。在西語發展中，除了指具體的馬路或火車軌道（vía del tren），也進一步引申出抽象概念，表示達成目標的「方式、途徑或管道」。",
+      "hook_zh": "英文裡的 via（經由）就是直接借自拉丁文 via；西語的 vía 同樣是道路與途徑。",
+      "usage_zh": "陰性名詞。鐵軌稱為 vía del tren；亦可當介系詞使用表示「經由」，例如 viajar vía Madrid。",
+      "example_es": "Era su única vía de escape.",
+      "example_zh": "那是他們唯一的逃生途徑。",
+      "image": "emoji:🛤️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vía"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "atrás",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "向後、在後面；（時間）以前",
+      "en": "behind, back, ago",
+      "ipa": "/aˈtɾas/",
+      "breakdown": [
+        {
+          "part": "a-",
+          "zh": "朝向"
+        },
+        {
+          "part": "trás",
+          "zh": "後面"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "trāns",
+          "zh": "跨越、超越"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*ad trans",
+          "zh": "朝向後方、越過"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "atras",
+          "zh": "在後面"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "atrás",
+          "zh": "向後、在後面"
+        }
+      ],
+      "cognates_en": [
+        "through"
+      ],
+      "story_zh": "源自拉丁文 trāns（跨越、超越），演變為通俗拉丁語 *ad trans（向…之後），進入古西班牙語 atras。字面意思為朝著身後或越過去，用來表示空間上的「往後、在後方」，後來也引申指時間上的「以前」。",
+      "hook_zh": "轉身退後：a-（朝向）+ trás（後方），整個人往後退，就是 atrás！",
+      "usage_zh": "副詞。常與動詞連用表示向後移動（ir hacia atrás），用在時間上表示「以前」（días atrás 幾天前）。",
+      "example_es": "Dio un paso atrás para dejar pasar a todos.",
+      "example_zh": "他往後退了一步讓大家通過。",
+      "image": "emoji:🔙",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:atrás",
+        "wiktionary:la:trans"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "capaz",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "有能力的、能夠的；（拉美口語）也許",
+      "en": "capable, able; (colloquial) perhaps",
+      "ipa": "/kaˈpaθ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "capācem",
+          "zh": "能容納的、有本領的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "capaz",
+          "zh": "有能力的、能夠的"
+        }
+      ],
+      "cognates_en": [
+        "capacious",
+        "capable"
+      ],
+      "story_zh": "學者借詞自拉丁文 capācem（有能力的、能容納的）。最初指容器或空間「容納度大」，引申為一個人的心智與能力寬廣、有度量承擔事務，即「有能力的」。在部分拉美地區口語中亦衍生出「也許」的副詞用法。",
+      "hook_zh": "拼法與英文 capable 系出同源，容量大、裝得下各種本事的人就是 capaz。",
+      "usage_zh": "陰陽同形形容詞（複數為 capaces）。常見用法為 ser capaz de + 原形動詞（有能力做…）。",
+      "example_es": "Ella es capaz de resolver cualquier problema.",
+      "example_zh": "她有能力解決任何問題。",
+      "image": "emoji:💪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:capaz"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "club",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "俱樂部、社團",
+      "en": "club, association",
+      "ipa": "/ˈklub/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "club",
+          "zh": "俱樂部"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "club",
+          "zh": "俱樂部"
+        }
+      ],
+      "cognates_en": [
+        "club"
+      ],
+      "story_zh": "借自英文的 club。原本指為了共同娛樂或體育目標而聚集的會員組織，西語直接吸收其詞義與外來詞形。",
+      "hook_zh": "英文 club 原封不動搬過來，發音重音在後念作短促的 /klub/。",
+      "usage_zh": "複數形式有兩種寫法：clubs 或 clubes 均通用。",
+      "example_es": "Él juega al tenis en un club local.",
+      "example_zh": "他在當地的一家俱樂部打網球。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:club"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "comentario",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "評論、註解、留言",
+      "en": "comment, commentary",
+      "ipa": "/komenˈtaɾjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "commentārius",
+          "zh": "筆記本、備忘錄"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "comentario",
+          "zh": "評論、註解"
+        }
+      ],
+      "cognates_en": [
+        "comment",
+        "commentary"
+      ],
+      "story_zh": "書面借用自拉丁文 commentārius，原指「記錄思緒或備忘的筆記本」。後續詞義從單純的紀錄延伸為對文章、事件所發表的「解說」與「評論」。",
+      "hook_zh": "英文 comment 加上西語常見名詞尾巴 -ario，就是網路上的「留言評論」。",
+      "usage_zh": "常見搭配如 dejar un comentario（留言）、hacer un comentario（發表評論）。",
+      "example_es": "Deja un comentario si te gusta el video.",
+      "example_zh": "如果你喜歡這支影片，請留個言。",
+      "image": "emoji:💬",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:comentario"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gusto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "味覺；品味、喜好；樂趣、高興",
+      "en": "taste, liking, pleasure",
+      "ipa": "/ˈɡusto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*ǵéwstus",
+          "zh": "品嚐"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*gustus",
+          "zh": "品嚐"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "gustus",
+          "zh": "品嚐、味覺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gusto",
+          "zh": "味覺、品味、樂趣"
+        }
+      ],
+      "cognates_en": [
+        "gusto",
+        "disgust"
+      ],
+      "story_zh": "源自拉丁文 gustus（品嚐、味覺），可追溯至印歐語根 *ǵéwstus。西語書面借用此詞取代了古西語的 gosto，詞義也從舌尖的「滋味」昇華為美感上的「品味」與心中的「喜悅」。",
+      "hook_zh": "英文 gusto 是幹勁，西語初次見面打招呼 Mucho gusto 則是「非常高興認識你」。",
+      "usage_zh": "常見片語有 Mucho gusto（很高興認識你）與 con mucho gusto（十分樂意）。",
+      "example_es": "Mucho gusto en conocerte.",
+      "example_zh": "很高興認識你。",
+      "image": "emoji:👅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gusto",
+        "wiktionary:la:gustus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hecho",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "事實、事件；行為",
+      "en": "fact, deed, event",
+      "ipa": "/ˈet͡ʃo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "factum",
+          "zh": "做過的事、事實"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hecho",
+          "zh": "事實、事件"
+        }
+      ],
+      "cognates_en": [
+        "fact"
+      ],
+      "story_zh": "繼承自拉丁文中性名詞 factum（已做之事、行為）。拉丁文字首 f- 演變成西語不發音的 h-，-ct- 轉變為 -ch-，字義也從具體的「行動」演變為「既成事實」。",
+      "hook_zh": "英文 fact（事實）源自同一個字，西語音變為 hecho，記得 h 永遠不發音！",
+      "usage_zh": "常作名詞 el hecho（事實），同時也是動詞 hacer 的過去分詞（如 hecho a mano）。",
+      "example_es": "Es un hecho bien conocido por todos.",
+      "example_zh": "這是一個眾所皆知的事實。",
+      "image": "emoji:📌",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hecho"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sexo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "性別；性行為",
+      "en": "sex, gender",
+      "ipa": "/ˈseɡso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sexus",
+          "zh": "性別"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sexo",
+          "zh": "性別、性行為"
+        }
+      ],
+      "cognates_en": [
+        "sex",
+        "sexual"
+      ],
+      "story_zh": "書面借用自拉丁文名詞 sexus（性別、男女之分）。西語完整繼承其生物上的性別劃分意涵，現代語境中也涵蓋性行為與性器官的意思。",
+      "hook_zh": "就是英文的 sex 加上陽性結尾 -o，發音念作 /seɡso/。",
+      "usage_zh": "陽性名詞。填寫個人基本資料表格時，常需填寫 sexo（性別：masculino / femenino）。",
+      "example_es": "¿Cuál es el sexo del bebé?",
+      "example_zh": "寶寶的性別是什麼？",
+      "image": "emoji:🚻",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sexo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tambien",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "也、同樣（también 的舊拼法或誤拼）",
+      "en": "also, too (misspelling of también)",
+      "ipa": "/tamˈbjen/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "tan（如此）加 bien（好），合在一起表示「也」，但現代西語一定要記得加重音！",
+      "usage_zh": "現代標準西班牙語必須加上重音符號寫作「también」，不加重音是常見拼寫錯誤。",
+      "example_es": "Yo también quiero ir al cine; no escribas «tambien».",
+      "example_zh": "我也想去電影院；別寫成沒有重音的 tambien。",
+      "image": "emoji:➕",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:tambien"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "texto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "文本、課文、文章；簡訊",
+      "en": "text; text message",
+      "ipa": "/ˈteɡsto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "texō",
+          "zh": "編織"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "textus",
+          "zh": "編織物、編織的"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "textus",
+          "zh": "文本"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "texto",
+          "zh": "文本"
+        }
+      ],
+      "cognates_en": [
+        "text",
+        "textile"
+      ],
+      "story_zh": "源自拉丁語動詞 texō（編織），其分詞形式 textus 原意為「編織物」。到了中世紀拉丁語，字義引申為將詞句如經緯絲線般交織而成的「文章、文本」。就像織布形成布料一樣，文字交織構造了篇章。",
+      "hook_zh": "織布（textile）是把線編織起來，文本（texto）則是把字句交織在一起。",
+      "usage_zh": "陽性名詞。常見搭配如 libro de texto（教科書）、mensaje de texto（簡訊）。",
+      "example_es": "Tienes que leer este texto para la clase de mañana.",
+      "example_zh": "你必須閱讀這篇文章以準備明天的課程。",
+      "image": "emoji:📄",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:texto",
+        "wiktionary:la:textus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "análisis",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "分析、解析；檢驗",
+      "en": "analysis",
+      "ipa": "/aˈnalisis/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἀνάλυσις",
+          "zh": "分解、解開"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "análisis",
+          "zh": "分析"
+        }
+      ],
+      "cognates_en": [
+        "analysis"
+      ],
+      "story_zh": "借自古希臘語 ἀνάλυσις（análusis），原意為「解開、分解」。將複雜的事物或現象逐一拆解開來仔細探究，便演變出今天「分析、檢驗」的意義。",
+      "hook_zh": "英文就是 analysis，把複雜問題拆解開來，做詳細的「分析（análisis）」。",
+      "usage_zh": "陽性名詞，單複數同形（el análisis / los análisis），常見搭配如 hacer un análisis。",
+      "example_es": "El médico revisó el análisis de sangre del paciente.",
+      "example_zh": "醫生檢查了病人的血液檢驗報告。",
+      "image": "emoji:🔍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:análisis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "apenas",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "幾乎不、勉強；剛剛；一…就…",
+      "en": "barely, scarcely; just; as soon as",
+      "ipa": "/aˈpenas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*ad poenam",
+          "zh": "費力地、帶著痛苦"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "apenas",
+          "zh": "勉強、幾乎不"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自通俗拉丁語 *ad poenam，由介詞 ad（向、帶著）與 poena（痛苦、辛苦）組成，字面意思為「費力地、帶著痛苦」。因為做事情極為辛苦費力才勉強完成，語義逐漸轉變為「勉強、幾乎不」。",
+      "hook_zh": "過程痛苦（pena）得要命，才「勉強、幾乎不（apenas）」辦到。",
+      "usage_zh": "常當副詞表示「幾乎不」，置於句首時亦可作連接詞表示「一…就…」（Apenas llegó...）。",
+      "example_es": "Apenas logré terminar el proyecto a tiempo.",
+      "example_zh": "我勉強及時完成了專案。",
+      "image": "emoji:🤏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:apenas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "constitución",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "憲法；體質；構造、組成",
+      "en": "constitution",
+      "ipa": "/konstituˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cōnstitūtiōnem",
+          "zh": "確立、法規、體制"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "constitución",
+          "zh": "憲法、構造"
+        }
+      ],
+      "cognates_en": [
+        "constitution"
+      ],
+      "story_zh": "借自拉丁語 cōnstitūtiōnem，本義為「確立、制定、法令體系」。該詞用來指明組織或國家的根本架構與法則，因而引申為「憲法」，同時也用來指事物的構造或人體的「體質」。",
+      "hook_zh": "英文就是 constitution，用來確立（constitute）國家根本制度的法就是「憲法」。",
+      "usage_zh": "陰性名詞。指國家「憲法」時首字母通常大寫（la Constitución）；指身體「體質」時小寫。",
+      "example_es": "La nueva constitución fue aprobada por el parlamento.",
+      "example_zh": "新憲法已由國會表決通過。",
+      "image": "emoji:📜",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:constitución"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "contrario",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "相反的、對立的",
+      "en": "contrary, opposite",
+      "ipa": "/konˈtɾaɾjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "contrārius",
+          "zh": "相反的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "contrario",
+          "zh": "相反的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 contrārius，本義為「相反的、對面的」。在詞義演變中，用來指事物方向全然相左，或是立場與觀點處於彼此對立、相互抵觸的狀態。",
+      "hook_zh": "聯想英文 contrary（相反的），兩者拼法與發音極像，記住「完全相反」就是 contrario。",
+      "usage_zh": "常用片語 al contrario（恰恰相反）與 todo lo contrario（完全相反）。陰性為 contraria。",
+      "example_es": "Mi hermano piensa todo lo contrario.",
+      "example_zh": "我哥哥的想法完全相反。",
+      "image": "emoji:↔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:contrario"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "código",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "代碼、密碼；法典、規範",
+      "en": "code, cheat sheet",
+      "ipa": "/ˈkodiɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "caudex",
+          "zh": "樹幹、木簡書冊"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*codicus",
+          "zh": "書冊、法典"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "código",
+          "zh": "代碼、法典"
+        }
+      ],
+      "cognates_en": [
+        "code"
+      ],
+      "story_zh": "源自拉丁語 caudex，原意是「樹幹」或劈下的「木塊」，古羅馬人將塗蠟木板裝訂成手寫冊子。通俗拉丁語演變為 *codicus，專指集結成冊的法典，現代進一步引申為行為規範與電腦代碼。英文的 code 也是同源字。",
+      "hook_zh": "看成英文 code 加上西語字尾 -igo，記得重音在前面的 ó：código！",
+      "usage_zh": "陽性名詞，常見搭配有 código postal（郵遞區號）與 código fuente（原始碼）。",
+      "example_es": "¿Me puedes dar el código de acceso?",
+      "example_zh": "你能給我通行密碼嗎？",
+      "image": "emoji:💻",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:código",
+        "wiktionary:la:caudex"
+      ],
+      "writer": "gemini"
     }
   ]
 }
