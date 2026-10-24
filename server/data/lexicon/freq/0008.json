@@ -1031,6 +1031,2104 @@
         "wiktionary:la:succedo"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "asimismo",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "同樣地、此外",
+      "en": "likewise, also, as well",
+      "ipa": "/asiˈmismo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "由西語的 así（這樣）與 mismo（相同）合為一詞而成。字面原意是「以相同的方式」，引申為「同樣地、此外」，用來表達語意上的承接與相似。",
+      "hook_zh": "看到 asimismo 就拆成 así（這樣）+ mismo（一樣）：「也是這樣」就是「同樣地」。",
+      "usage_zh": "多用於正式書面語，常置於句首並以逗號隔開，用來補充論述。",
+      "example_es": "Asimismo, es importante recordar esta regla.",
+      "example_zh": "此外，記住這條規則也很重要。",
+      "image": "emoji:➕",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:asimismo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cerebro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "大腦、腦；智囊",
+      "en": "brain",
+      "ipa": "/θeˈɾebɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cerebrum",
+          "zh": "大腦、頭骨"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cerebro",
+          "zh": "大腦"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cerebro",
+          "zh": "大腦"
+        }
+      ],
+      "cognates_en": [
+        "cerebral"
+      ],
+      "story_zh": "源自拉丁語 cerebrum（大腦、頭骨），古西班牙語早期借入該字並繼承至今。雖然在語音上演變成第二音節重音，但語義始終指頭部的大腦，現代也引申用來稱呼團隊的核心智囊。",
+      "hook_zh": "英文的 cerebral（大腦的）就源自同一個拉丁字，西語就是 cerebro。",
+      "usage_zh": "陽性名詞。除了指生理器官，口語中常指「動腦筋的人」或犯罪等計畫的「首腦」。",
+      "example_es": "El cerebro controla todas las funciones del cuerpo.",
+      "example_zh": "大腦控制著身體的所有功能。",
+      "image": "emoji:🧠",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cerebro",
+        "wiktionary:la:cerebrum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "clima",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "氣候、天氣；氣氛",
+      "en": "climate, weather",
+      "ipa": "/ˈklima/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "κλίνω",
+          "zh": "傾斜"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "κλίμα",
+          "zh": "傾斜度、緯度帶"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "clima",
+          "zh": "氣候"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "clima",
+          "zh": "氣候"
+        }
+      ],
+      "cognates_en": [
+        "climate"
+      ],
+      "story_zh": "源自古希臘語 κλίμα，本義是「傾斜」，出自動詞 κλίνω（傾斜）。古希臘人認為日照傾角決定各地冷熱，因此用「傾斜度」劃分緯度分區，後來轉指當地的「氣候」，經晚期拉丁語傳入西語。",
+      "hook_zh": "英文是 climate，西語去掉尾巴 t 就是 clima，但要注意它是陽性 el clima。",
+      "usage_zh": "陽性名詞陰性結尾（el clima）是典型的希臘語借詞特徵，切勿誤作陰性。",
+      "example_es": "El clima de esta región es muy seco en verano.",
+      "example_zh": "這個地區夏天的氣候非常乾燥。",
+      "image": "emoji:🌤️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:clima",
+        "wiktionary:la:clima"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "comportamiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "行為、舉止、表現",
+      "en": "behavior",
+      "ipa": "/kompoɾtaˈmjento/",
+      "breakdown": [
+        {
+          "part": "comportar",
+          "zh": "舉止、表現"
+        },
+        {
+          "part": "-miento",
+          "zh": "名詞字尾（動作或結果）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "comportar + -miento",
+          "zh": "舉止 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "comportamiento",
+          "zh": "行為、舉止"
+        }
+      ],
+      "cognates_en": [
+        "comportment"
+      ],
+      "story_zh": "由動詞 comportar（表現、舉止）加上常見的動作名詞字尾 -miento 衍生而來。用來指稱個體在特定情境中所展現出來的舉動與態度，也就是「行為」或「舉止」。",
+      "hook_zh": "動詞 comportarse（舉止、表現）加上動作名詞字尾 -miento，就是行為表現。",
+      "usage_zh": "陽性名詞。常用於人的品行舉止，亦可用於動物習性或系統、材料的物理行為。",
+      "example_es": "Su buen comportamiento impresionó a los profesores.",
+      "example_zh": "他的良好表現給老師們留下了深刻印象。",
+      "image": "emoji:🧍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:comportamiento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "corriente",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "水流、氣流；潮流；電流；(形) 普通的",
+      "en": "current, stream; common, ordinary",
+      "ipa": "/koˈrjente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "currentem",
+          "zh": "奔跑的、流動的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "corriente",
+          "zh": "水流；當前的、普通的"
+        }
+      ],
+      "cognates_en": [
+        "current"
+      ],
+      "story_zh": "繼承自拉丁語 currentem（奔跑的、流動的）。起初用來形容水流般「奔馳流動」的狀態，隨後名詞化指水流、氣流甚至電流；又因為流動著的事物代表當下，引申為「當前的」，再轉化為到處可見的「常見、普通」。",
+      "hook_zh": "英文的 current（水流；當前的）完全同源；聯想動詞 correr（跑），跑動的水就是 corriente。",
+      "usage_zh": "作名詞為陰性（la corriente 水流/電流）；作形容詞時陰陽同形（un caso corriente 普通案例）。",
+      "example_es": "La casa tiene luz y agua corriente.",
+      "example_zh": "這棟房子有電和自來水。",
+      "image": "emoji:🌊",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:corriente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "discusión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "討論、爭論、辯論",
+      "en": "discussion, argument",
+      "ipa": "/diskuˈsjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "discussiōnem",
+          "zh": "討論、審查"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "discusión",
+          "zh": "討論、爭論"
+        }
+      ],
+      "cognates_en": [
+        "discussion"
+      ],
+      "story_zh": "借自拉丁語 discussiōnem（討論、審查）。在西語中除了一般的理性「討論」外，更常用來指帶有情緒或意見不合的「爭吵」與「辯論」。英文同源字為 discussion。",
+      "hook_zh": "長得像英文 discussion，但在西語日常對話裡，常直接指「吵架」！",
+      "usage_zh": "常與 tener 搭配：tener una discusión 指「發生爭吵」；純理性探討也常說 debate。",
+      "example_es": "Tuvimos una fuerte discusión sobre el tema.",
+      "example_zh": "我們針對那個主題進行了一場激烈的爭論。",
+      "image": "emoji:🗣️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:discusión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dominio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "統治、掌控；領域；網域",
+      "en": "domain, rule, control, mastery",
+      "ipa": "/doˈminjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dominus",
+          "zh": "主人、領主"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "dominium",
+          "zh": "統治、所有權"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dominio",
+          "zh": "統治、領域"
+        }
+      ],
+      "cognates_en": [
+        "domain",
+        "dominion"
+      ],
+      "story_zh": "借自拉丁語 dominium（所有權、統治），源於 dominus（主人）。由主人的支配權延伸為「掌控」與「統治」，現代更引申為知識學科的「領域」以及網路的「網域名稱」。",
+      "hook_zh": "聯想英文 domain（領域、網域）與 dominate（支配），都是「主人」管轄的範圍。",
+      "usage_zh": "常用搭配 tener dominio de... 表「精通、熟練掌握某技能」；dominio web 為網域。",
+      "example_es": "El profesor tiene un gran dominio del tema.",
+      "example_zh": "這位教授對該主題有極佳的掌握度。",
+      "image": "emoji:👑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dominio",
+        "wiktionary:la:dominium"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "escala",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "梯子；規模；音階；轉機中停",
+      "en": "scale, ladder, stopover",
+      "ipa": "/esˈkala/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*skend-",
+          "zh": "攀爬"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "scāla",
+          "zh": "梯子、階梯"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "escala",
+          "zh": "梯子、規模、轉機中停"
+        }
+      ],
+      "cognates_en": [
+        "scale"
+      ],
+      "story_zh": "承襲自拉丁語 scāla（梯子、階梯），最初源於印歐語字根「攀爬」。一階階的梯子引申為等級、測量「刻度」與「規模」；在航海與飛行中，則引申為沿途落腳的「中途停留、轉機」。",
+      "hook_zh": "聯想英文 scale（刻度、規模），一階一階往上爬的梯子就是 escala。",
+      "usage_zh": "常見搭配 hacer escala en...（在…中途轉機停留）與 a gran escala（大規模）。",
+      "example_es": "El vuelo hace escala en Madrid.",
+      "example_zh": "這班飛機在馬德里中途轉機。",
+      "image": "emoji:🪜",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:escala",
+        "wiktionary:la:scala"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gracia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "優雅；恩惠；幽默、好笑；謝謝（複數）",
+      "en": "grace, charm, humor",
+      "ipa": "/ˈɡɾaθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "grātus",
+          "zh": "令人喜愛的、感激的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "grātia",
+          "zh": "恩惠、魅力、好感"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gracia",
+          "zh": "優雅、幽默、恩典"
+        }
+      ],
+      "cognates_en": [
+        "grace"
+      ],
+      "story_zh": "借自拉丁語 grātia（恩惠、感激、吸引力），源於 grātus（令人喜愛的）。由討人喜愛發展出姿態的「優雅」，再衍生出逗人笑的「幽默感」；其複數 gracias 即西語最常用的「謝謝」。",
+      "hook_zh": "每天說的 gracias（謝謝）單數就是 gracia，既指「優雅」也指「好笑、逗趣」。",
+      "usage_zh": "hacer gracia 表示「覺得有趣、好笑」，如 No me hace gracia（我覺得不好笑）。",
+      "example_es": "El chiste no me hace ninguna gracia.",
+      "example_zh": "那個笑話我覺得一點都不好笑。",
+      "image": "emoji:💃",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gracia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "intervención",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "介入、干預；發言；手術",
+      "en": "intervention",
+      "ipa": "/inteɾbenˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "interventiōnem",
+          "zh": "介入、調停"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "intervención",
+          "zh": "介入、干預"
+        }
+      ],
+      "cognates_en": [
+        "intervention"
+      ],
+      "story_zh": "借自拉丁語 interventiōnem（介入、調停）。字義為在事態中介入採取行動，廣泛用於政治或法律上的「干預」；在現代醫學語境中，也常用來代表外科「手術」。",
+      "hook_zh": "拼法與英文 intervention 幾乎完全相同（僅差重音），意思也是「介入、干預」。",
+      "usage_zh": "intervención quirúrgica 是醫學常見用語，正式指稱「外科手術」。",
+      "example_es": "El paciente necesita una intervención urgente.",
+      "example_zh": "這名病患需要緊急手術。",
+      "image": "emoji:🏥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:intervención"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "montón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "一堆、大量",
+      "en": "heap, pile, a lot",
+      "ipa": "/monˈton/",
+      "breakdown": [
+        {
+          "part": "monte",
+          "zh": "山"
+        },
+        {
+          "part": "-ón",
+          "zh": "指大詞尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "monte",
+          "zh": "山"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "montón",
+          "zh": "一堆、大量"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西語的 monte（山）加上指大詞尾 -ón。原本指堆疊得像小山一樣的物體，後來引申為「一堆」或「大量」。",
+      "hook_zh": "東西多到像一座小山（monte），累積成一大堆（montón）！",
+      "usage_zh": "常見搭配為 un montón de...（許多、一堆…），在口語中極常代替 mucho。",
+      "example_es": "Tenemos un montón de cosas de que hablar.",
+      "example_zh": "我們有一大堆事情要聊。",
+      "image": "emoji:📦",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:montón"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pasada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "橫越；棒極了的事、誇張的事",
+      "en": "crossing, turn, awesome thing",
+      "ipa": "/paˈsada/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "事情「過去（pasar）」了還讓人回味無窮，真是太精彩、太酷了！",
+      "usage_zh": "西班牙口語極常用 ¡Qué pasada! 表示「太棒了、太酷了」或「太誇張了」。",
+      "example_es": "¡Qué pasada de película vimos ayer!",
+      "example_zh": "我們昨天看的那部電影真是太精彩了！",
+      "image": "emoji:🤩",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:pasada"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sensación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "感覺、知覺；轟動",
+      "en": "sensation, feeling",
+      "ipa": "/sensaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sēnsātiō",
+          "zh": "感覺、知覺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sensación",
+          "zh": "感覺、知覺"
+        }
+      ],
+      "cognates_en": [
+        "sensation"
+      ],
+      "story_zh": "源自拉丁語 sēnsātiō，指身體的感受或感知能力。傳入西班牙語後保留了「感覺、知覺」的意思，現代也常引申指引發大眾熱烈反響的「轟動」。",
+      "hook_zh": "英文也是 sensation，指感官體驗或在全城造成「轟動」的感覺。",
+      "usage_zh": "陰性名詞。常用搭配有 tener la sensación de que...（感覺好像…）。",
+      "example_es": "Tengo la sensación de que todo saldrá bien.",
+      "example_zh": "我有一種一切都會順利的感覺。",
+      "image": "emoji:💭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sensación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "show",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "表演、秀；鬧劇、出洋相",
+      "en": "show, spectacle",
+      "ipa": "/ˈʃow/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古英語",
+          "word": "scēawian",
+          "zh": "觀看、展示"
+        },
+        {
+          "lang_zh": "中古英語",
+          "word": "schewen",
+          "zh": "展示"
+        },
+        {
+          "lang_zh": "英語",
+          "word": "show",
+          "zh": "展示、表演"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "show",
+          "zh": "表演、秀"
+        }
+      ],
+      "cognates_en": [
+        "show"
+      ],
+      "story_zh": "直接借自英語 show，其詞源可追溯至古英語的 scēawian（觀看、展示）。在西語中除了指舞台上的「表演、秀」，也常引申指在眾人面前大吵大鬧、出洋相的鬧劇。",
+      "hook_zh": "英文的 show 直接借用，想像舞台上的精彩表演，或有人在公開場合大作秀。",
+      "usage_zh": "陽性外來語。hacer un show 可指「演一齣戲」或「大鬧一場、引人側目」。",
+      "example_es": "El show de magia empieza a las ocho.",
+      "example_zh": "魔術表演八點開始。",
+      "image": "emoji:🎭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:show"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "terrible",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "可怕的、糟糕的、極度的",
+      "en": "terrible, awful, intense",
+      "ipa": "/teˈrible/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "terreō",
+          "zh": "使害怕、驚嚇"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "terribilis",
+          "zh": "可怕的、駭人的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "terrible",
+          "zh": "可怕的、糟糕的"
+        }
+      ],
+      "cognates_en": [
+        "terrible"
+      ],
+      "story_zh": "源自拉丁語 terribilis（可怕的），由動詞 terreō（使害怕、恐嚇）加上字尾 -bilis（可…的）構成，原指「令人害怕恐懼的」。後來詞義泛化，也用來形容極其糟糕、嚴重，或程度強烈的人事物。",
+      "hook_zh": "和英文 terrible 完全相同，想像遭遇可怕大災難時大喊 terrible。",
+      "usage_zh": "陰陽同形（un error terrible / una noticia terrible），也可用於強調程度極大。",
+      "example_es": "Hoy hace un calor terrible en la ciudad.",
+      "example_zh": "今天城裡熱得要命。",
+      "image": "emoji:😱",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:terrible",
+        "wiktionary:la:terribilis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vergüenza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "羞愧、難為情；恥辱",
+      "en": "shame, embarrassment",
+      "ipa": "/beɾˈɡwenθa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vereor",
+          "zh": "敬畏、害怕"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "verēcundus",
+          "zh": "感到羞恥的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "verēcundia",
+          "zh": "羞怯、羞愧"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "berguença",
+          "zh": "羞恥"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vergüenza",
+          "zh": "羞愧、難為情"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 verēcundia（羞恥、羞怯），而它來自表達「敬畏、害怕」的動詞 vereor。古人認為對尊長心存敬畏而退縮的心態，逐漸演變成自省的羞恥感與害羞，經古西班牙語 berguença 演變為今日的詞彙。",
+      "hook_zh": "杯子滾下桌（諧音：vergüen-za），在眾人注視下讓人超想找地洞鑽，真是 vergüenza！",
+      "usage_zh": "常用片語有 tener vergüenza（感到害羞、不好意思）與 ¡Qué vergüenza!（真丟臉！）。",
+      "example_es": "No tengas vergüenza de pedir ayuda si la necesitas.",
+      "example_zh": "如果你需要幫忙，不要不好意思開口。",
+      "image": "emoji:😳",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vergüenza",
+        "wiktionary:la:verecundia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "agencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "機構、辦事處；代理行",
+      "en": "agency, branch",
+      "ipa": "/aˈxenθja/",
+      "breakdown": [
+        {
+          "part": "-encia",
+          "zh": "名詞字尾，表機構或性質"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "agentia",
+          "zh": "作為、代理"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "agencia",
+          "zh": "機構、代理處"
+        }
+      ],
+      "cognates_en": [
+        "agency",
+        "agent"
+      ],
+      "story_zh": "這是直接借自拉丁語 agentia（代理、有所作為）的學術借詞。原指代理他人職能的地方，後來廣泛延伸為為大眾辦理特定業務的機構、分支處所或行政單位。",
+      "hook_zh": "與英文 agency 長得幾乎一樣，注意發音時 g 要發出如喝水般的喉音 /x/。",
+      "usage_zh": "常見搭配有 agencia de viajes（旅行社）、agencia inmobiliaria（房屋仲介）。",
+      "example_es": "Contratamos una excursión en la agencia de viajes.",
+      "example_zh": "我們在旅行社預訂了一趟一日遊行程。",
+      "image": "emoji:🏢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:agencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "anunciar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "宣布、宣告；登廣告宣傳",
+      "en": "to announce, to advertise",
+      "ipa": "/anunˈθjaɾ/",
+      "breakdown": [
+        {
+          "part": "-ar",
+          "zh": "第一類動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "annūntiāre",
+          "zh": "通報、宣布"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "anunciar",
+          "zh": "宣布、登廣告"
+        }
+      ],
+      "cognates_en": [
+        "announce"
+      ],
+      "story_zh": "借自拉丁語動詞 annūntiāre（向人通報、宣告）。在傳達訊息的原意上，現代西語進一步延伸至商業領域，用來表示在媒體大眾面前「登廣告宣傳」。",
+      "hook_zh": "英文 announce（宣布）加上西語動詞字尾 -ar，記住這兩者是同源詞！",
+      "usage_zh": "第一人稱現在式為 anuncio，而名詞 el anuncio 則表示「廣告」或「公告」。",
+      "example_es": "La empresa va a anunciar un nuevo producto mañana.",
+      "example_zh": "該公司明天將宣布一項新產品。",
+      "image": "emoji:📢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:anunciar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "apoyar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "支撐、靠著；支持",
+      "en": "to support, to lean",
+      "ipa": "/apoˈʝaɾ/",
+      "breakdown": [
+        {
+          "part": "-ar",
+          "zh": "第一類動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "appoggiare",
+          "zh": "支撐、倚靠"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "poyo",
+          "zh": "石凳、台座"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "apoyar",
+          "zh": "支撐、支持"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "推測借自義大利語 appoggiare（靠著、支撐），並在西語中受到 poyo（靠牆的石凳、石座）詞形影響而融合演變。字義從實體「倚靠在某物上以防跌倒」引申為精神或實質上的「支持某人」。",
+      "hook_zh": "朋友失意時伸出雙手「啊，抱呀（a-poy-ar）」，給他最堅強的支持與倚靠。",
+      "usage_zh": "「支持某人」是及物用法：Te apoyo（我支持你）；「靠在某物上」常反身用：apoyarse en。",
+      "example_es": "Mis padres siempre me apoyan en mis decisiones.",
+      "example_zh": "我的父母總是在我的決定上全力支持我。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:apoyar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asistencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "出席、到場；援助、照護",
+      "en": "attendance, assistance, aid",
+      "ipa": "/asisˈtenθja/",
+      "breakdown": [
+        {
+          "part": "asistir",
+          "zh": "出席；協助"
+        },
+        {
+          "part": "-encia",
+          "zh": "名詞字尾，表狀態或性質"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "asistir",
+          "zh": "出席、協助"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "asistencia",
+          "zh": "出席、援助"
+        }
+      ],
+      "cognates_en": [
+        "assistance"
+      ],
+      "story_zh": "由動詞 asistir（出席、協助）加上抽象名詞字尾 -encia 組成。動詞源於拉丁語「站在身旁」，站在旁觀看演變為「出席、在場」，站在旁照應則引申為「協助、救助」，名詞因而同時具備這兩層意思。",
+      "hook_zh": "雖然長得像英文 assistance（協助），但西語最常見的日常意思是「出席、到場」。",
+      "usage_zh": "假朋友陷阱！學校點名的「出席率」是 control de asistencia，而非只指援助。",
+      "example_es": "La asistencia a esta conferencia es obligatoria.",
+      "example_zh": "這場會議的出席是強制的。",
+      "image": "emoji:🙋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:asistencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cabe",
+      "article": "",
+      "pos": "preposición",
+      "zh": "在…旁邊、緊鄰",
+      "en": "alongside, beside, next to",
+      "ipa": "/ˈkabe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "caput",
+          "zh": "頭、末端"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cabe",
+          "zh": "在...旁邊"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 caput（頭、端點），在西語中先演變為 cabo（末端），並構成片語 a cabo de（在…的端點、身旁）。後來該片語縮合為單一介詞 cabe，表示「在…旁邊、緊鄰」，現多見於古典文學或詩歌中。",
+      "hook_zh": "站在桌子最外側的「邊緣」（cabo），就是 cabe（緊鄰、在…身旁）。",
+      "usage_zh": "書面語古雅介詞，現代西語口語通常改用 junto a 或 al lado de。",
+      "example_es": "El perro duerme cabe la chimenea.",
+      "example_zh": "那隻狗在壁爐旁睡覺。",
+      "image": "emoji:📍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cabe",
+        "wiktionary:la:caput"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "comandante",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "指揮官、司令官",
+      "en": "commander",
+      "ipa": "/komanˈdante/",
+      "breakdown": [
+        {
+          "part": "comandar",
+          "zh": "指揮、統率"
+        },
+        {
+          "part": "-ante",
+          "zh": "做…的人（字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "comandar + -ante",
+          "zh": "指揮 + …的人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "comandante",
+          "zh": "指揮官"
+        }
+      ],
+      "cognates_en": [
+        "commander"
+      ],
+      "story_zh": "由動詞 comandar（指揮）加上表示「從事某動作之人」的後綴 -ante 組合而成。字面原意即為「發號施令、統率部隊的人」，引申為軍隊或特定組織體系中的指揮官、司令官。",
+      "hook_zh": "音近「可慢待得」？司令官（comandante）下了 command（命令），絕不能慢待！",
+      "usage_zh": "陰陽同形（el comandante / la comandante）；在部分軍隊或口語中，女性指揮官亦可稱作 la comandanta。",
+      "example_es": "El comandante dio la orden de avanzar hacia el norte.",
+      "example_zh": "指揮官下達了向北前進的命令。",
+      "image": "emoji:🫡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:comandante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "constante",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "持續不斷的、恆定的；堅持不懈的",
+      "en": "constant, persistent",
+      "ipa": "/konsˈtante/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "constant"
+      ],
+      "story_zh": "",
+      "hook_zh": "拼法和英文 constant 幾乎一樣，只要把字尾 -t 換成西語形容詞常見的 -te。",
+      "usage_zh": "陰陽同形（un esfuerzo constante / una lluvia constante）；作名詞時為陰性 la constante（常數）。",
+      "example_es": "El éxito en los estudios requiere un esfuerzo constante.",
+      "example_zh": "學業上的成功需要持之以恆的努力。",
+      "image": "emoji:♾️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:constante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "contener",
+      "article": "",
+      "pos": "verbo",
+      "zh": "包含、容納；抑制、克制",
+      "en": "to contain, to hold, to restrain",
+      "ipa": "/konteˈneɾ/",
+      "breakdown": [
+        {
+          "part": "con-",
+          "zh": "共同、完全"
+        },
+        {
+          "part": "tener",
+          "zh": "握持、擁有"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "continēre",
+          "zh": "包含、約束"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "contener",
+          "zh": "包含、克制"
+        }
+      ],
+      "cognates_en": [
+        "contain"
+      ],
+      "story_zh": "源自拉丁語 continēre，由前綴 con-（共同、完全）與動詞 teneō（握持、擁有）組成，字面意思是「緊緊握在一起」。從把東西集中握住引申為「容納、包含」，再延伸到克制情感的「抑制」。英文 contain 亦源自同源詞。",
+      "hook_zh": "英文 contain 的西語親戚：把所有東西都「hold 住」（tener），就是容納與克制。",
+      "usage_zh": "動詞變化同 tener：現在式 yo contengo、過去式 yo contuve。常用搭配 contener el aliento（屏住呼吸）。",
+      "example_es": "Esta caja puede contener muchos libros.",
+      "example_zh": "這個箱子可以容納很多書。",
+      "image": "emoji:📦",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:contener",
+        "wiktionary:la:contineo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "convertir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "使轉變、使變成；變成",
+      "en": "to turn into, to become",
+      "ipa": "/kombeɾˈtiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "convertō",
+          "zh": "轉變、轉向"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "convertir",
+          "zh": "轉變、使變成"
+        }
+      ],
+      "cognates_en": [
+        "convert"
+      ],
+      "story_zh": "源自拉丁語動詞 convertō，字面意思是轉變方向或改變形態。進入西班牙語後成為 convertir，表示將某物轉變或使之成為另一種狀態；加上反身代名詞 convertirse en 則表示「變成、轉化為」。英文的 convert 亦為同源字。",
+      "hook_zh": "英文 convert（轉變）加上西語動詞字尾 -ir，就是 convertir。",
+      "usage_zh": "母音會發生 e > ie 或 e > i 變化（如 convierto, convirtió）。常與 en 連用：convertirse en（變成…）。",
+      "example_es": "El agua se puede convertir en hielo.",
+      "example_zh": "水可以轉變成冰。",
+      "image": "emoji:🔄",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:convertir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fundamental",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "根本的、基礎的、首要的",
+      "en": "fundamental, essential",
+      "ipa": "/fundamenˈtal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fundāmentālis",
+          "zh": "基礎的"
+        }
+      ],
+      "cognates_en": [
+        "fundamental"
+      ],
+      "story_zh": "源自拉丁語形容詞 fundāmentālis，指「根基的、底層的」。事情最底部的支撐如果動搖，整個結構就會垮掉，因此引申為不可或缺的「根本」與「關鍵」。英文的 fundamental 正是直接承襲自同一個拉丁字根。",
+      "hook_zh": "與英文 fundamental 長得一模一樣，就是最「根本、關鍵」的基石！",
+      "usage_zh": "陰陽同形（un cambio fundamental / una razón fundamental）。",
+      "example_es": "Dormir bien es fundamental para la salud.",
+      "example_zh": "睡個好覺對健康至關重要。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fundamental"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "igualmente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "同樣地；（社交回應）我也一樣、彼此",
+      "en": "equally, likewise; the same to you",
+      "ipa": "/iˌɡwalˈmente/",
+      "breakdown": [
+        {
+          "part": "igual",
+          "zh": "相同的、平等的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾（地）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "聽到對方說「祝你有美好的一天」，回一句 ¡Igualmente! 就像送出「等號」：你我也一樣！",
+      "usage_zh": "西語最常用的寒暄禮貌用語之一，如對方說 ¡Mucho gusto! 或 ¡Buen fin de semana! 即可回 ¡Igualmente!。",
+      "example_es": "—¡Que tengas un buen día! —¡Igualmente!",
+      "example_zh": "「祝你有美好的一天！」「你也是！」",
+      "image": "emoji:🤝",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:igualmente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "indicar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "指示、指出、表明；建議（療法等）",
+      "en": "to indicate, signal, prescribe",
+      "ipa": "/indiˈkaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "indicāre",
+          "zh": "指出、指明"
+        }
+      ],
+      "cognates_en": [
+        "indicate"
+      ],
+      "story_zh": "借自拉丁語動詞 indicāre，意為「指出、告知或表明」。用手勢或標誌引導方向，讓人明瞭，進一步也可用於醫師為患者「開立、指定」適當的療法。英文同源字為 indicate。",
+      "hook_zh": "看著路標或指標（indicar），就像英文 indicate 伸出食指（index）為你指路。",
+      "usage_zh": "規則 -ar 動詞，但第一人稱簡單過去式為了保持 /k/ 音須改拼為 indiqué。",
+      "example_es": "El mapa indica el camino correcto.",
+      "example_zh": "地圖指出了正確的路線。",
+      "image": "emoji:👉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:indicar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "industrial",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "工業的、產業的",
+      "en": "industrial",
+      "ipa": "/indusˈtɾjal/",
+      "breakdown": [
+        {
+          "part": "industria",
+          "zh": "工業、勤勉"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾（…的）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "industrial"
+      ],
+      "story_zh": "",
+      "hook_zh": "和英文 industrial 完全同字，看到工廠煙囪就能直接連起來！",
+      "usage_zh": "陰陽同形：zona industrial（工業區）、parque industrial（科技園區）。",
+      "example_es": "Esta ciudad es un gran centro industrial.",
+      "example_zh": "這座城市是一座大型工業中心。",
+      "image": "emoji:🏭",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:industrial"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "masa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "麵團；團、塊；大眾、群眾；質量",
+      "en": "dough, mass, drove",
+      "ipa": "/ˈmasa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "μᾶζα",
+          "zh": "麥餅、生麵團"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "massa",
+          "zh": "塊狀物、麵團"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "massa",
+          "zh": "麵團、群塊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "masa",
+          "zh": "麵團、群眾"
+        }
+      ],
+      "cognates_en": [
+        "mass"
+      ],
+      "story_zh": "最早源自古希臘語 μᾶζα（mâza），指大麥製成揉和成團的麵餅或生麵團。進入拉丁語後演變為 massa，泛指聚集揉合在一塊的整體，既能代表揉好的烘焙麵團，也能指龐大聚集的「群眾」或物理上的「質量」。英文同源字為 mass。",
+      "hook_zh": "烘焙師傅用手揉捏大塊麵團（masa），聚集在一起就是 mass！",
+      "usage_zh": "陰性名詞。片語 en masa 表示「成群結隊地、蜂擁地」。",
+      "example_es": "Tienes que amasar bien la masa para hacer pan.",
+      "example_zh": "做麵包得把麵團揉好才行。",
+      "image": "emoji:🥖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:masa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nuevamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "重新、再度、再次",
+      "en": "again, newly",
+      "ipa": "/ˌnwebaˈmente/",
+      "breakdown": [
+        {
+          "part": "nueva",
+          "zh": "新的（陰性形）"
+        },
+        {
+          "part": "-mente",
+          "zh": "…地（副詞字尾）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "nuevo 變成陰性 nueva 加上副詞字尾 -mente，字面即「以新的方式」，引申為「重新、再次」。",
+      "usage_zh": "由陰性單數形容詞加 -mente 構成副詞；日常口語中意思等同於 otra vez。",
+      "example_es": "Nos reuniremos nuevamente la próxima semana.",
+      "example_zh": "我們下週會再次聚會。",
+      "image": "emoji:🔄",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:nuevamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "placer",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "樂趣、愉快；榮幸",
+      "en": "pleasure",
+      "ipa": "/plaˈθeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "placēre",
+          "zh": "使愉悅、使滿意"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "placer",
+          "zh": "樂趣、愉快"
+        }
+      ],
+      "cognates_en": [
+        "please",
+        "pleasure"
+      ],
+      "story_zh": "源自拉丁語 placēre（使滿意、使愉悅）。在西語語音演變中，字首 pl- 原本大多會變為 ll-，但此字不規則地保留了 pl-。英文的 please 和 pleasure 也是源自同一個拉丁詞。",
+      "hook_zh": "初次見面常說「¡Un placer!」，意思就是「這是我的榮幸（placer）」。",
+      "usage_zh": "社交客套常用「Es un placer」或「Un placer conocerte」；作名詞為陽性。",
+      "example_es": "Es un placer trabajar contigo.",
+      "example_zh": "能跟你一起工作是我的榮幸。",
+      "image": "emoji:😊",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:placer",
+        "wiktionary:la:placeo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "representación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "代表；演出、表現",
+      "en": "representation; performance",
+      "ipa": "/repɾesentaˈθjon/",
+      "breakdown": [
+        {
+          "part": "representar",
+          "zh": "代表、演出"
+        },
+        {
+          "part": "-ción",
+          "zh": "動作或結果（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "repraesentātiōnem",
+          "zh": "展現、呈現"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "representación",
+          "zh": "代表、演出"
+        }
+      ],
+      "cognates_en": [
+        "representation"
+      ],
+      "story_zh": "源自拉丁語 repraesentātiōnem（展現、呈現）。原指在眾人面前展現事物，後來引申為在舞台上的「表演、演出」，或是替群體發聲的「代表、代理」。英文的 representation 同源且同義。",
+      "hook_zh": "將英文 representation 的字尾 -tion 換成西語名詞字尾 -ción 即可輕鬆記住。",
+      "usage_zh": "字尾為 -ción 的名詞一律為陰性（la）；複數為 representaciones（需去除重音符號）。",
+      "example_es": "Fuimos al teatro a ver la representación.",
+      "example_zh": "我們去劇院看演出。",
+      "image": "emoji:🎭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:representación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "requerir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "需要；要求",
+      "en": "to require, need",
+      "ipa": "/rekeˈɾiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "requīrere",
+          "zh": "尋找、需要"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "requerir",
+          "zh": "需要、要求"
+        }
+      ],
+      "cognates_en": [
+        "require"
+      ],
+      "story_zh": "源自拉丁語 requīrere，由尋找、探問引申為對某事物提出要求或必須具備。英文的 require 也是同源字，在現代西語中常用於表示事情所需的條件或正式請求。",
+      "hook_zh": "拼法與英文 require 極為相似，意思是「需要」或正式「要求」。",
+      "usage_zh": "現在式有 e 變 ie 的不規則變化（yo requiero）。",
+      "example_es": "Este trámite suele requerir varios documentos.",
+      "example_zh": "這項手續通常需要多份文件。",
+      "image": "emoji:📋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:requerir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "resumen",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "摘要、總結；履歷",
+      "en": "summary, abstract; résumé",
+      "ipa": "/reˈsumen/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "resūmentem",
+          "zh": "重新拾起、概述"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "resumen",
+          "zh": "摘要、總結"
+        }
+      ],
+      "cognates_en": [
+        "resume",
+        "résumé"
+      ],
+      "story_zh": "源自拉丁語 resūmentem（重新拾起、概述）。原意指將事情的核心要點再次整理陳述，演化為「摘要、總結」，在部分地區亦可指個人「履歷」。英文的 résumé 亦為同源字。",
+      "hook_zh": "聯想英文 resume（履歷／摘要），西語 resumen 就是把重點重新總結整理。",
+      "usage_zh": "常見片語 en resumen 表示「總而言之」；單數無重音號，複數需加上重音：resúmenes。",
+      "example_es": "En resumen, el viaje fue una gran experiencia.",
+      "example_zh": "總結來說，那趟旅行是個很棒的經驗。",
+      "image": "emoji:📑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:resumen"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "romo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "鈍的、不鋒利的；扁平的",
+      "en": "blunt, dull; snub",
+      "ipa": "/ˈromo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ῥόμβος",
+          "zh": "菱形、旋轉之物"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "rhombus",
+          "zh": "菱形"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "romo",
+          "zh": "鈍的、扁平的"
+        }
+      ],
+      "cognates_en": [
+        "rhombus"
+      ],
+      "story_zh": "源自拉丁語 rhombus（菱形），借自古希臘語 ῥόμβος。由於幾何上的菱形包含鈍角，詞義逐漸引申為角不尖銳、平鈍的特徵，在西班牙語中演變為指物體「鈍的」或鼻子等「扁平的」。",
+      "hook_zh": "鉛筆尖被磨得「肉肉的（romo）」，變得平鈍不好寫。",
+      "usage_zh": "陰性為 roma（拼寫與羅馬 Roma 相同但首字母小寫），如 una nariz roma（扁平鼻）。",
+      "example_es": "Este cuchillo tiene la punta roma.",
+      "example_zh": "這把刀的刀尖是鈍的。",
+      "image": "emoji:✏️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:romo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "titular",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "標題、頭條；持有人、先發球員",
+      "en": "headline; holder, starter",
+      "ipa": "/tituˈlaɾ/",
+      "breakdown": [
+        {
+          "part": "título",
+          "zh": "標題、頭銜"
+        },
+        {
+          "part": "-ar",
+          "zh": "相關名詞或形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "titulus",
+          "zh": "標籤、標題、頭銜"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "titulāris",
+          "zh": "名義上的、有頭銜的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "titular",
+          "zh": "標題；持有人、先發球員"
+        }
+      ],
+      "cognates_en": [
+        "titular",
+        "title"
+      ],
+      "story_zh": "源自晚期拉丁語 titulāris，由 titulus（標籤、頭銜）衍生而來。原指「擁有特定名銜或資格的」，在現代西語中除作形容詞外，也引申為佔據正選地位的「先發球員」或職位「持有人」，以及新聞最醒目的「頭條標題」。",
+      "hook_zh": "看到 title 就想到頭銜或標題，報紙最上方的標題就是 titular。",
+      "usage_zh": "指新聞標題時為陽性名詞；指人（如先發球員、帳戶持有人）時依性別作 el/la titular。",
+      "example_es": "El delantero saldrá de titular en el partido.",
+      "example_zh": "這位前鋒將在比賽中以先發身分上場。",
+      "image": "emoji:📰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:titular",
+        "wiktionary:la:titularis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "turismo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "觀光、旅遊業；自用小客車",
+      "en": "tourism; private car",
+      "ipa": "/tuˈɾismo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "tourism",
+          "zh": "觀光、旅遊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "turismo",
+          "zh": "觀光、旅遊"
+        }
+      ],
+      "cognates_en": [
+        "tourism"
+      ],
+      "story_zh": "直接借自英語 tourism。指前往各地巡迴遊覽的活動與產業；在西班牙本土，turismo 也常被用來代指一般的自用小客車或轎車。",
+      "hook_zh": "發音與英文 tourism 完全對應，指旅行與觀光產業。",
+      "usage_zh": "陽性名詞 el turismo；注意「觀光客」是 turista，不可混淆。",
+      "example_es": "El turismo es muy importante para la economía.",
+      "example_zh": "觀光業對經濟非常重要。",
+      "image": "emoji:🧳",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:turismo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "actuar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "行動、表現；表演、演出",
+      "en": "to act, to behave, to perform",
+      "ipa": "/aɡˈtwaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "agō",
+          "zh": "做、推動"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "āctus",
+          "zh": "已做的事、行為"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "āctuāre",
+          "zh": "實行、驅動"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "actuar",
+          "zh": "行動、表現、演戲"
+        }
+      ],
+      "cognates_en": [
+        "act",
+        "action",
+        "actuate"
+      ],
+      "story_zh": "源自中世紀拉丁語 āctuāre（實行、促動），根源於拉丁語動詞 agō（做、驅動）的過去分詞 āctus（行為）。本義為「將計畫付諸實行」，後延伸至個人的日常「行動、處事表現」，以及在舞台上的「表演」。",
+      "hook_zh": "英文 act 是行動與演戲，西語加上動詞字尾就是 actuar。",
+      "usage_zh": "現在式單數與第三人稱複數的 u 須加重音符號：actúo, actúas, actúa, actúan。",
+      "example_es": "Tenemos que actuar con rapidez.",
+      "example_zh": "我們必須迅速採取行動。",
+      "image": "emoji:🎭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:actuar",
+        "wiktionary:la:actuo",
+        "wiktionary:la:actus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "anual",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "年度的、一年一次的",
+      "en": "yearly, annual",
+      "ipa": "/aˈnwal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "annuus",
+          "zh": "一年的、每年的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "annuālis",
+          "zh": "每年的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "anual",
+          "zh": "年度的、每年的"
+        }
+      ],
+      "cognates_en": [
+        "annual"
+      ],
+      "story_zh": "學術借詞自晚期拉丁語 annuālis，源於拉丁語 annuus（每年的）加形容詞字尾 -ālis。核心概念為「年」，用以修飾一年發生一次或持續一整年的事物，英文 annual 亦源於此。",
+      "hook_zh": "長得跟英文 annual 幾乎一樣，只少了一個 n，意思同樣是「年度的」。",
+      "usage_zh": "陰陽同形（un informe anual / una cuota anual），複數形式為 anuales。",
+      "example_es": "La empresa celebra su reunión anual hoy.",
+      "example_zh": "這家公司今天舉行年度會議。",
+      "image": "emoji:📅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:anual"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "archivo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "檔案；檔案館；資料夾",
+      "en": "archive, file, filing cabinet",
+      "ipa": "/aɾˈt͡ʃibo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἀρχεῖον",
+          "zh": "市政廳、官署"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "archīvum",
+          "zh": "公共檔案館"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "archivo",
+          "zh": "檔案、檔案館"
+        }
+      ],
+      "cognates_en": [
+        "archive"
+      ],
+      "story_zh": "源自古希臘語 ἀρχεῖον（原指市政廳或官署），後進入晚期拉丁語 archīvum，指保存公共紀錄的檔案處所。西班牙語繼承此字後，原指歷史檔案館，現代隨科技發展也引申指電腦中的電子檔案或資料夾。",
+      "hook_zh": "檔案夾上標著「archivo」，聯想英文 archive，都是整理歸檔重要資料的地方。",
+      "usage_zh": "在電腦科技中極常見，如 guardar archivo（儲存檔案）、adjuntar archivo（附加檔案）。",
+      "example_es": "Por favor, guarda los cambios en el archivo antes de cerrar el programa.",
+      "example_zh": "關閉程式前，請把變更儲存到檔案中。",
+      "image": "emoji:📁",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:archivo",
+        "wiktionary:la:archivum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aumentar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "增加、提高、增長",
+      "en": "to increase, augment, enhance",
+      "ipa": "/aumenˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "augeō",
+          "zh": "增加"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "augmentum",
+          "zh": "增加、生長"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "augmentāre",
+          "zh": "使增加"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aumentar",
+          "zh": "增加、增長"
+        }
+      ],
+      "cognates_en": [
+        "augment"
+      ],
+      "story_zh": "源自拉丁語動詞 augeō（增加），加上後綴衍生出名詞 augmentum（增長），再派生出晚期拉丁語動詞 augmentāre。西語作為學術借詞吸收後演變為 aumentar，核心含義始終是「增多、提升」。",
+      "hook_zh": "發音像「熬門踏」，業績增加（aumentar），門檻都被踏破；也可聯想英文 augment。",
+      "usage_zh": "及物與不及物皆可，如 aumentar el precio（提高價格）、el precio aumentó（價格上漲）。",
+      "example_es": "La empresa planea aumentar las ventas este mes.",
+      "example_zh": "這家公司計劃這個月提高銷售額。",
+      "image": "emoji:📈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aumentar",
+        "wiktionary:la:augmento",
+        "wiktionary:la:augmentum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "carajo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "鬼東西；絲毫；該死、可惡（感嘆詞）",
+      "en": "damn, hell, shit; cock",
+      "ipa": "/kaˈɾaxo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "χάραξ",
+          "zh": "木棍、木樁"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*c(h)araculum",
+          "zh": "小木棍"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "carajo",
+          "zh": "鬼東西、可惡"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "詞源尚不確定，語言學家推測最可能源自通俗拉丁語 *c(h)araculum（小木棍），來自古希臘語 χάραξ（木樁）。可能因形似男性生殖器演變為下流指稱，進而廣泛成為表達強烈不滿或咒罵的通俗感嘆詞。",
+      "hook_zh": "生氣怒吼「¡Carajo!」（去你的！搞什麼鬼！），發音有力，情緒瞬間爆發。",
+      "usage_zh": "屬不雅粗俗語，日常宜慎用；常見片語如 no me importa un carajo（我一點也不在乎）。",
+      "example_es": "No me importa un carajo lo que digan los demás.",
+      "example_zh": "別人說什麼我一點也不在乎。",
+      "image": "emoji:🤬",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:carajo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "continuar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "繼續、持續、延續",
+      "en": "to continue, to carry on",
+      "ipa": "/kontiˈnwaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "continuāre",
+          "zh": "使連接、繼續"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "continuar",
+          "zh": "繼續、持續"
+        }
+      ],
+      "cognates_en": [
+        "continue"
+      ],
+      "story_zh": "為拉丁語 continuāre 的學術借詞，原意是「使相連、使不中斷」，引申為「持續、接續進行」。西班牙語繼承其含義，表示時間或動作的不斷延續。英文的 continue 亦源自同一拉丁詞根。",
+      "hook_zh": "看到 continuar 直接對應英文 continue，聯想影片播放器的「繼續播放」圖示。",
+      "usage_zh": "現在式單數與第三人稱複數需加重音：continúo, continúas, continúa, continúan。",
+      "example_es": "Vamos a continuar el trabajo después del almuerzo.",
+      "example_zh": "我們午餐後會繼續工作。",
+      "image": "emoji:▶️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:continuar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "definitivamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "肯定地、絕對；最終地",
+      "en": "definitely, definitively",
+      "ipa": "/definiˌtibaˈmente/",
+      "breakdown": [
+        {
+          "part": "definitivo",
+          "zh": "確定的、最終的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾（…地）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "definitivo + -mente",
+          "zh": "確定的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "definitivamente",
+          "zh": "肯定地、確定地"
+        }
+      ],
+      "cognates_en": [
+        "definitely"
+      ],
+      "story_zh": "由形容詞 definitivo（確定的、最終的）加上副詞後綴 -mente 複合而成。在西班牙語語法中，以形容詞陰性形式接上 -mente 形成副詞是標準構詞法，用以加強語氣表示「毫無疑問地」或「蓋棺論定地」。",
+      "hook_zh": "聯想英文 definitely，聽到別人提議超棒時直接回答：¡Definitivamente!（絕對如此！）",
+      "usage_zh": "句中作為肯定答覆時可單獨使用，意為「當然、毫無疑問」；放在動詞前後修飾整句。",
+      "example_es": "Definitivamente voy a ir a la fiesta contigo.",
+      "example_zh": "我絕對會和你一起去派對。",
+      "image": "emoji:🎯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:definitivamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dictadura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "獨裁政權、獨裁統治",
+      "en": "dictatorship",
+      "ipa": "/diɡtaˈduɾa/",
+      "breakdown": [
+        {
+          "part": "dictar",
+          "zh": "口述、命令"
+        },
+        {
+          "part": "-dura",
+          "zh": "名詞字尾，表示狀態或行為結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dictātūra",
+          "zh": "獨裁官職位、獨裁"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dictadura",
+          "zh": "獨裁政權"
+        }
+      ],
+      "cognates_en": [
+        "dictatorship"
+      ],
+      "story_zh": "源自拉丁語 dictātūra，由 dictar（口述、下令）加上表示狀態的名詞字尾 -dura 構成。古羅馬時原指「獨裁官的職位與權力」，後引申指少數人或單一人掌握絕對權力、不受法律約束的統治體制，即現代所稱的獨裁政權。",
+      "hook_zh": "獨裁者用硬嘴巴「下達（dictar）」嚴苛（dura）命令，這就是 dictadura。",
+      "usage_zh": "陰性名詞。常見搭配如 dictadura militar（軍事獨裁政權）。",
+      "example_es": "El país vivió bajo una dictadura militar durante años.",
+      "example_zh": "這個國家在軍事獨裁統治下生活了多年。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dictadura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "década",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "十年",
+      "en": "decade",
+      "ipa": "/ˈdekada/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "δεκάς",
+          "zh": "十、十個一組"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "decas",
+          "zh": "十年"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "década",
+          "zh": "十年"
+        }
+      ],
+      "cognates_en": [
+        "decade"
+      ],
+      "story_zh": "源自拉丁語 decas，更早源於古希臘語 δεκάς（dekás），意思是「十個一組」或「十」。傳入拉丁語與西班牙語後，專指連續十年的時間跨度。英文同源字 decade 也是相同概念。",
+      "hook_zh": "聯想英文 decade（十年），前綴 dec- 代表數字 10，十年間就是 una década。",
+      "usage_zh": "陰性名詞。常搭配介系詞表達年代，如 en la década de 1990（在 1990 年代）。",
+      "example_es": "La economía creció mucho en la última década.",
+      "example_zh": "經濟在過去十年間大幅成長。",
+      "image": "emoji:🗓️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:década",
+        "wiktionary:la:decas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "establecer",
+      "article": "",
+      "pos": "verbo",
+      "zh": "建立、設立、確立",
+      "en": "to establish, to set",
+      "ipa": "/estableˈθeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "stabilīre",
+          "zh": "使穩固、使固定"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*stabiliscere",
+          "zh": "使穩固、建立"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "establecer",
+          "zh": "建立、確立"
+        }
+      ],
+      "cognates_en": [
+        "establish"
+      ],
+      "story_zh": "源自通俗拉丁語 *stabiliscere，進一步來自拉丁語 stabilīre（使穩固、使固定），源頭是 stabilis（穩固的）。字根原意為「使某物站穩不倒」，演變為西班牙語後引申為「建立」制度或規則。",
+      "hook_zh": "聯想英文 establish 和 stable（穩定的），把地基打穩才能「建立」（establecer）。",
+      "usage_zh": "第一人稱單數現在式不規則：yo establezco；其餘人稱規則變化。",
+      "example_es": "El gobierno decidió establecer nuevas reglas.",
+      "example_zh": "政府決定制定新的規則。",
+      "image": "emoji:🏗️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:establecer",
+        "wiktionary:la:stabilio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gay",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "同性戀的、同志的",
+      "en": "gay, homosexual",
+      "ipa": "/ˈɡei/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古法語",
+          "word": "gai",
+          "zh": "快樂的"
+        },
+        {
+          "lang_zh": "英語",
+          "word": "gay",
+          "zh": "同性戀的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gay",
+          "zh": "同性戀的"
+        }
+      ],
+      "cognates_en": [
+        "gay"
+      ],
+      "story_zh": "西班牙語直接借自英語 gay。此字在英語中原本有「快樂、歡樂」之意，源自古法語與奧克語，20 世紀中葉起轉為指稱同性戀者，並成為全球通用詞，西班牙語以未變更拼寫的外來語形式直接採用。",
+      "hook_zh": "和英文 gay 完全相同，看見彩虹旗就能直接聯想到 gay。",
+      "usage_zh": "陽陰同形形容詞；亦可當名詞使用。複數形式為 gais 或 gays。",
+      "example_es": "María es la única persona que no sabe que su hermano es gay.",
+      "example_zh": "瑪麗亞是唯一不知道自己哥哥是同志的人。",
+      "image": "emoji:🏳️‍🌈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gay"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "lectura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "閱讀、讀物",
+      "en": "reading",
+      "ipa": "/leɡˈtuɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "lēctūrus",
+          "zh": "將要閱讀的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "lēctūra",
+          "zh": "閱讀"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lectura",
+          "zh": "閱讀"
+        }
+      ],
+      "cognates_en": [
+        "lecture"
+      ],
+      "story_zh": "為晚期拉丁語 lēctūra 的學術借詞，源自拉丁語動詞 legere（閱讀）的將來分詞 lēctūrus，原意與「即將閱讀的事物」有關。名詞化後轉指「閱讀行為」或「供閱讀的文本」。",
+      "hook_zh": "聯想英文 lecture（講座），靜下心翻開書本享受閱讀（lectura）。",
+      "usage_zh": "陰性名詞。注意與英文 lecture（講座、演講）是假朋友，西語主要是「閱讀」。",
+      "example_es": "Me gusta dedicar tiempo a la lectura cada noche.",
+      "example_zh": "我喜歡每天晚上花時間閱讀。",
+      "image": "emoji:📖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lectura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "martín",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "夜鷺",
+      "en": "black-crowned night heron",
+      "ipa": "/maɾˈtin/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "名字叫 Martín 的鳥在夜間水邊靜靜佇立捕捉魚蝦，就是夜鷺。",
+      "usage_zh": "陽性名詞，複數為 martines。常指夜鷺或與翠鳥（martín pescador）相關的鳥類。",
+      "example_es": "Vi un martín cerca del río anoche.",
+      "example_zh": "昨晚我在河邊看到一隻夜鷺。",
+      "image": "emoji:🐦",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:martín"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "niña",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "女孩、女童；瞳孔",
+      "en": "girl, pupil (of the eye)",
+      "ipa": "/ˈniɲa/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "可愛的小女孩（niña）眨著眼睛，眼神裡映出純真的光芒。",
+      "usage_zh": "陰性名詞。niña de los ojos 原指「瞳孔」，常轉借為「心頭肉、掌上明珠」。",
+      "example_es": "La niña juega en el parque con sus amigas.",
+      "example_zh": "小女孩正在公園和她的朋友們玩耍。",
+      "image": "emoji:👧",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:niña"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "porqué",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "原因、理由",
+      "en": "reason, why",
+      "ipa": "/poɾˈke/",
+      "breakdown": [
+        {
+          "part": "por",
+          "zh": "為了、因"
+        },
+        {
+          "part": "qué",
+          "zh": "什麼"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "por qué",
+          "zh": "為什麼"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "porqué",
+          "zh": "原因、理由"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由片語 por qué（為什麼）合詞化而來。將疑問詞合寫並標上重音符號後，轉變成陽性名詞，指事情背後的「緣由、為什麼」。",
+      "hook_zh": "把問句的「por qué（為什麼）」合體成名詞 el porqué，就是在探究「背後的理由」。",
+      "usage_zh": "陽性名詞，常搭配冠詞 el，複數為 porqués。注意勿與 por qué（為什麼）或 porque（因為）混淆。",
+      "example_es": "No entiendo el porqué de su decisión.",
+      "example_zh": "我不懂他做這個決定的原因。",
+      "image": "emoji:❓",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:porqué"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "príncipe",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "王子；君主、統治者",
+      "en": "prince",
+      "ipa": "/ˈpɾinθipe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prīncipem",
+          "zh": "第一、首領、統治者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "príncipe",
+          "zh": "王子、統治者"
+        }
+      ],
+      "cognates_en": [
+        "prince",
+        "principal"
+      ],
+      "story_zh": "學者借詞自拉丁語 prīncipem（賓格，主格為 prīnceps），字面意為「第一位、首領」。羅馬時期原指第一公民或領袖，在歐洲封建體系中演變為統治者或王室之子「王子」。",
+      "hook_zh": "英文同源字 prince（王子），源頭都是拉丁文代表「第一、首要人物」的字根。",
+      "usage_zh": "陽性名詞，陰性為 princesa（公主）。片語 príncipe azul 指「白馬王子」。",
+      "example_es": "El príncipe vivía en un gran castillo.",
+      "example_zh": "王子住在一個巨大的城堡裡。",
+      "image": "emoji:👑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:príncipe"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tiro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "投擲；射擊、槍聲；射程",
+      "en": "shot, throw, gunshot",
+      "ipa": "/ˈtiɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "tirar",
+          "zh": "投擲、發射、開槍"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tiro",
+          "zh": "投擲、射擊"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西語動詞 tirar（投擲、拉、開槍）的去尾派生名詞（deverbal）。原指丟擲或擊發的動作，隨後引申指開槍、槍響以及武器的射程。",
+      "hook_zh": "動詞 tirar 是「投擲、開槍」，去掉字尾變成名詞 tiro 就是「一記投擲、一聲槍響」。",
+      "usage_zh": "陽性名詞。常用片語 a tiro（在射程內、唾手可得）與 tiro al blanco（靶心射擊）。",
+      "example_es": "Escuchamos el tiro a lo lejos.",
+      "example_zh": "我們聽到了遠處傳來的槍聲。",
+      "image": "emoji:🎯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tiro"
+      ],
+      "writer": "gemini"
     }
   ]
 }
