@@ -994,6 +994,168 @@
         "wiktionary:la:Francus"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "individual",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "個人的、個別的",
+      "en": "individual, personal",
+      "ipa": "/indibiˈdwal/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "individual"
+      ],
+      "story_zh": "",
+      "hook_zh": "和英文 individual 長得一模一樣，聯想「個人的、獨自的」空間。",
+      "usage_zh": "陰陽同形（un esfuerzo individual / una clase individual），複數加 -es 成 individuales。",
+      "example_es": "Cada alumno tiene un escritorio individual.",
+      "example_zh": "每個學生都有一張獨立的書桌。",
+      "image": "emoji:👤",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:individual"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "individuo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "個人、個體",
+      "en": "individual, person",
+      "ipa": "/indiˈbidwo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "individuus",
+          "zh": "不可分割的、個體"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "individuo",
+          "zh": "個人、個體"
+        }
+      ],
+      "cognates_en": [
+        "individual"
+      ],
+      "story_zh": "源自拉丁語 indīviduus。在古代哲學概念中，指無法再往下細分的最小獨立單位，後來演變為指社會群體中的「單一個人」或「個體」。",
+      "hook_zh": "每個「個體」（individuo）都是社會中不可分割的一分子，聯想英文 individual。",
+      "usage_zh": "陽性名詞 el individuo。有時在口語中帶有貶義或輕蔑語氣，指「某個可疑的傢伙」。",
+      "example_es": "La sociedad está formada por cada individuo.",
+      "example_zh": "社會是由每一個個體所組成的。",
+      "image": "emoji:🧍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:individuo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "infancia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "童年、幼年時期",
+      "en": "childhood, infancy",
+      "ipa": "/inˈfanθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "infantia",
+          "zh": "童年、幼年"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "infancia",
+          "zh": "童年"
+        }
+      ],
+      "cognates_en": [
+        "infancy"
+      ],
+      "story_zh": "為拉丁語 īnfāntia 的學術借詞，在拉丁文中指孩童從出生到懂事說話的幼年階段。西語中保留此意，指人的童年或幼年時代。",
+      "hook_zh": "拼法就像英文 infancy（幼兒期），讓人想起無憂無慮的「童年」時光。",
+      "usage_zh": "陰性名詞。常用搭配如 tener una infancia feliz（擁有快樂的童年）、en mi infancia（在我的童年時期）。",
+      "example_es": "Pasé una infancia muy feliz en el campo.",
+      "example_zh": "我在鄉下度過了一個非常快樂的童年。",
+      "image": "emoji:🧸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:infancia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "infraestructura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "基礎建設、公共設施",
+      "en": "infrastructure",
+      "ipa": "/ˌinfɾaˌestɾuɡˈtuɾa/",
+      "breakdown": [
+        {
+          "part": "infra-",
+          "zh": "在底下"
+        },
+        {
+          "part": "estructura",
+          "zh": "結構"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "infra- + estructura",
+          "zh": "在底下 + 結構"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "infraestructura",
+          "zh": "基礎建設"
+        }
+      ],
+      "cognates_en": [
+        "infrastructure"
+      ],
+      "story_zh": "由前綴 infra-（在……下方、底層）與 estructura（結構）組合而成。字面意思是「底層的結構」，引申為支撐社會與經濟運作的基礎設施。",
+      "hook_zh": "infra（底層）加上 estructura（結構），合起來就是支撐整個國家的「基礎建設」。",
+      "usage_zh": "陰性名詞。常以單數統稱所有硬體或公共設施，例如 mejorar la infraestructura（改善基礎設施）。",
+      "example_es": "El país necesita invertir más en su infraestructura.",
+      "example_zh": "這個國家需要對其基礎設施投入更多資金。",
+      "image": "emoji:🏗️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:infraestructura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ingeniería",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "工程、工程學",
+      "en": "engineering",
+      "ipa": "/inxenjeˈɾia/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "engineering"
+      ],
+      "story_zh": "",
+      "hook_zh": "聯想工程師（ingeniero），用聰明才智（ingenio）解決問題的學問就是 ingeniería。",
+      "usage_zh": "陰性名詞。大寫 Ingeniería 可指大學的「工程系」或「工學院」；estudiar ingeniería（讀工科）。",
+      "example_es": "Mi hermana decidió estudiar ingeniería informática.",
+      "example_zh": "我妹妹決定攻讀資訊工程。",
+      "image": "emoji:⚙️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:ingeniería"
+      ],
+      "writer": "gemini"
     }
   ]
 }
