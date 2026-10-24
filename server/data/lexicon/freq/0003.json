@@ -1,6 +1,6 @@
 {
   "theme": "freq-0003",
-  "theme_zh": "常用字（頻率第 723–960 名）",
+  "theme_zh": "常用字（頻率第 723–961 名）",
   "entries": [
     {
       "word": "adelante",
@@ -3274,41 +3274,6 @@
       "writer": "gemini"
     },
     {
-      "word": "hecho",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "事實、事件；行為",
-      "en": "fact, deed, event",
-      "ipa": "/ˈet͡ʃo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "factum",
-          "zh": "做過的事、事實"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "hecho",
-          "zh": "事實、事件"
-        }
-      ],
-      "cognates_en": [
-        "fact"
-      ],
-      "story_zh": "繼承自拉丁文中性名詞 factum（已做之事、行為）。拉丁文字首 f- 演變成西語不發音的 h-，-ct- 轉變為 -ch-，字義也從具體的「行動」演變為「既成事實」。",
-      "hook_zh": "英文 fact（事實）源自同一個字，西語音變為 hecho，記得 h 永遠不發音！",
-      "usage_zh": "常作名詞 el hecho（事實），同時也是動詞 hacer 的過去分詞（如 hecho a mano）。",
-      "example_es": "Es un hecho bien conocido por todos.",
-      "example_zh": "這是一個眾所皆知的事實。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:hecho"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "sexo",
       "article": "el",
       "pos": "sustantivo",
@@ -3981,6 +3946,49 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:instituto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "loco",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "瘋狂的、發瘋的",
+      "en": "crazy, insane",
+      "ipa": "/ˈloko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "أَلْوَق (ʔalwaq)",
+          "zh": "愚蠢的"
+        },
+        {
+          "lang_zh": "安達盧西亞阿拉伯語",
+          "word": "لَوْقَاء (láwqa)",
+          "zh": "愚蠢的（陰性）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "loco",
+          "zh": "發瘋的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "loco",
+          "zh": "瘋狂的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "詞源不確定。繼承自古西班牙語 loco，推測可能來自安達盧西亞阿拉伯語 láwqa（源自阿拉伯語「愚蠢」的陰性形 lawqāʔ），因字尾 -a 被誤認是陰性而逆推造出陽性形 loco。",
+      "hook_zh": "腦袋轉不過來、「咯咯 (loco)」傻笑發瘋，整個人陷入 crazy 狀態。",
+      "usage_zh": "常與 estar 搭配：estar loco por…（為…著迷瘋狂）。也能直接作陽性名詞指瘋子。",
+      "example_es": "La gente piensa que tengo una idea loca.",
+      "example_zh": "大家覺得我有一個瘋狂的想法。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:loco"
       ],
       "writer": "gemini"
     }

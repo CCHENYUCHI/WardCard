@@ -1,50 +1,7 @@
 {
   "theme": "freq-0004",
-  "theme_zh": "常用字（頻率第 961–1184 名）",
+  "theme_zh": "常用字（頻率第 962–1185 名）",
   "entries": [
-    {
-      "word": "loco",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "瘋狂的、發瘋的",
-      "en": "crazy, insane",
-      "ipa": "/ˈloko/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "阿拉伯語",
-          "word": "أَلْوَق (ʔalwaq)",
-          "zh": "愚蠢的"
-        },
-        {
-          "lang_zh": "安達盧西亞阿拉伯語",
-          "word": "لَوْقَاء (láwqa)",
-          "zh": "愚蠢的（陰性）"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "loco",
-          "zh": "發瘋的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "loco",
-          "zh": "瘋狂的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "詞源不確定。繼承自古西班牙語 loco，推測可能來自安達盧西亞阿拉伯語 láwqa（源自阿拉伯語「愚蠢」的陰性形 lawqāʔ），因字尾 -a 被誤認是陰性而逆推造出陽性形 loco。",
-      "hook_zh": "腦袋轉不過來、「咯咯 (loco)」傻笑發瘋，整個人陷入 crazy 狀態。",
-      "usage_zh": "常與 estar 搭配：estar loco por…（為…著迷瘋狂）。也能直接作陽性名詞指瘋子。",
-      "example_es": "La gente piensa que tengo una idea loca.",
-      "example_zh": "大家覺得我有一個瘋狂的想法。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:loco"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "origen",
       "article": "el",
@@ -3934,6 +3891,41 @@
       "sources": [
         "wiktionary:es:excelente",
         "wiktionary:la:excellens"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "función",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "功能、職責；演出、場次",
+      "en": "function, performance, show",
+      "ipa": "/funˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fūnctiōnem",
+          "zh": "執行、履行、職責"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "función",
+          "zh": "功能、職責、演出"
+        }
+      ],
+      "cognates_en": [
+        "function"
+      ],
+      "story_zh": "源自拉丁語 fūnctiōnem（履行、職責），屬於學者借詞。原意指完成該做的工作或職責，後引申為事物所發揮的「功能」，在戲劇藝術中指一場「演出、上映」，在數學與資訊科學中則指「函數」。英文同源字為 function。",
+      "hook_zh": "就像英文 function，把結尾換成西語經典的 -ción，就是事物發揮的 función（功能）。",
+      "usage_zh": "陰性名詞，複數為 funciones（無重音）。在影劇文化中常指「電影放映場次」或「舞台表演」。",
+      "example_es": "¿A qué hora empieza la función del cine?",
+      "example_zh": "電影那場放映幾點開始？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:función"
       ],
       "writer": "gemini"
     }

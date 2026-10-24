@@ -680,13 +680,6 @@ module.exports = {
     s('ellipse', { cx: 96, cy: 106, rx: 11, ry: 9 }, 'pink'),
     s('path', { d: dots([[44, 90], [116, 90]], 7) }, 'orange')
   ],
-  hecho: [
-    s('rect', { x: 34, y: 24, width: 92, height: 118, rx: 6 }, 'brown'),
-    s('rect', { x: 42, y: 36, width: 76, height: 98 }, 'white'),
-    s('rect', { x: 60, y: 16, width: 40, height: 16, rx: 4 }, 'gray'),
-    s('path', { d: 'M50 58l6 6 10-12M50 86l6 6 10-12M50 114l6 6 10-12', ...SW(4) }, 'green', { stroke: true, accent: true }),
-    s('path', { d: 'M76 58h34M76 86h34M76 114h34', ...SW(4) }, 'gray', { stroke: true })
-  ],
   sexo: [
     s('circle', { cx: 56, cy: 66, r: 24, ...SW(8) }, 'pink', { stroke: true, accent: true }),
     s('path', { d: 'M56 90v40M40 112h32', ...SW(8) }, 'pink', { stroke: true }),
