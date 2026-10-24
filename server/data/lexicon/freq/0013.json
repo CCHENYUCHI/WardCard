@@ -2701,6 +2701,439 @@
         "wiktionary:es:básico"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "cobertura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "覆蓋；涵蓋範圍；訊號覆蓋率",
+      "en": "cover, coverage, reception",
+      "ipa": "/kobeɾˈtuɾa/",
+      "breakdown": [
+        {
+          "part": "cobert-",
+          "zh": "覆蓋"
+        },
+        {
+          "part": "-ura",
+          "zh": "名詞字尾，表狀態或事物"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "coopertus",
+          "zh": "覆蓋的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "coopertūra",
+          "zh": "覆蓋物、遮蓋"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cobertura",
+          "zh": "覆蓋、涵蓋範圍、訊號"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自晚期拉丁語 coopertūra（覆蓋物），進一步源自拉丁語形容詞 coopertus（已覆蓋的）。原本指具體遮蓋或披覆的物品，後來引申為廣播、電視或手機網路的「訊號涵蓋範圍」，以及新聞媒體的「報導涵蓋面」。",
+      "hook_zh": "出門不怕手機沒訊號，只要這裡的 cobertura 像被子一樣把你完全「cover」住。",
+      "usage_zh": "常指手機或網路收訊，例如：No hay cobertura.（這裡沒有收訊／沒訊號）。",
+      "example_es": "En esta zona no hay buena cobertura de móvil.",
+      "example_zh": "這個區域的手機收訊不太好。",
+      "image": "emoji:📶",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cobertura",
+        "wiktionary:la:coopertura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "colombiano",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "哥倫比亞的；哥倫比亞人",
+      "en": "Colombian",
+      "ipa": "/kolomˈbjano/",
+      "breakdown": [
+        {
+          "part": "Colombia",
+          "zh": "哥倫比亞"
+        },
+        {
+          "part": "-ano",
+          "zh": "…的、…人（字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "Colombia + -ano",
+          "zh": "哥倫比亞 + 籍貫字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "colombiano",
+          "zh": "哥倫比亞的、哥倫比亞人"
+        }
+      ],
+      "cognates_en": [
+        "Colombian"
+      ],
+      "story_zh": "源自國名 Colombia（哥倫比亞）加上表示地域或出身的字尾 -ano。用作形容詞時表示屬於哥倫比亞的，用作名詞時則指哥倫比亞人。",
+      "hook_zh": "喝一杯世界聞名的哥倫比亞咖啡（café colombiano），記住這個國家與人。",
+      "usage_zh": "有陰陽性變化：陰性為 colombiana；大寫首字母指國名 Colombia，形容詞小寫。",
+      "example_es": "Me encanta el café colombiano.",
+      "example_zh": "我很喜歡哥倫比亞咖啡。",
+      "image": "emoji:🇨🇴",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:colombiano"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "conforme",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "一致的；符合的；滿意的",
+      "en": "in agreement, compliant, satisfied",
+      "ipa": "/konˈfoɾme/",
+      "breakdown": [
+        {
+          "part": "con-",
+          "zh": "共同、一起"
+        },
+        {
+          "part": "forme",
+          "zh": "形狀、形式"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "conformis",
+          "zh": "形狀相同的、一致的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "conforme",
+          "zh": "一致的、符合的、滿意的"
+        }
+      ],
+      "cognates_en": [
+        "conform"
+      ],
+      "story_zh": "源自拉丁語 cōnfōrmis，由 cōn-（共同、一起）與 forma（形狀、形式）組合而成，原指「具有相同形狀或特徵的」。演變到西語中，引申指各方面完全「一致、符合」，進而表示對現狀感到「滿意」或心滿意足。",
+      "hook_zh": "大家都擁有一樣的 form（形式形狀），彼此「一致」（conforme），事情就很順利。",
+      "usage_zh": "陰陽同形（un cliente conforme / una clienta conforme）；常接 estar conforme con…（對…感到滿意）。",
+      "example_es": "Estoy muy conforme con los resultados del examen.",
+      "example_zh": "我對這次的考試結果很滿意。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:conforme"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "desgracia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "不幸；厄運；災難",
+      "en": "misfortune, bad luck, disaster",
+      "ipa": "/desˈɡɾaθja/",
+      "breakdown": [
+        {
+          "part": "des-",
+          "zh": "否定、相反、失去"
+        },
+        {
+          "part": "gracia",
+          "zh": "恩惠、幸運、優雅"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "des- + gracia",
+          "zh": "失去/相反 + 恩惠/好運"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "desgracia",
+          "zh": "不幸、厄運、災難"
+        }
+      ],
+      "cognates_en": [
+        "disgrace"
+      ],
+      "story_zh": "由否定前綴 des-（表相反、除去）與 gracia（恩惠、好運）結合而成。字面原意是「失去了神或命運的眷顧與好運」，後來演變為指稱遭受「厄運」、「不幸」或嚴重的意外災難。",
+      "hook_zh": "失去了（des-）好運和恩典（gracia），就落入了「不幸與災難」（desgracia）。",
+      "usage_zh": "常用片語 por desgracia（不幸地、遺憾地），相當於 desafortunadamente。",
+      "example_es": "Por desgracia, no pudimos llegar a tiempo.",
+      "example_zh": "不幸的是，我們沒能及時趕到。",
+      "image": "emoji:🌧️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:desgracia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "detener",
+      "article": "",
+      "pos": "verbo",
+      "zh": "阻止、停下；逮捕；停住（detenerse）",
+      "en": "to stop, to halt, to detain, to arrest",
+      "ipa": "/deteˈneɾ/",
+      "breakdown": [
+        {
+          "part": "de-",
+          "zh": "阻擋、向後"
+        },
+        {
+          "part": "tener",
+          "zh": "握住、持有"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dē- + teneō",
+          "zh": "阻擋 + 握住"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "dētinēre",
+          "zh": "扣留、阻擋、停止"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "detener",
+          "zh": "阻止、停下、逮捕"
+        }
+      ],
+      "cognates_en": [
+        "detain"
+      ],
+      "story_zh": "源自拉丁語 dētinēre，由前綴 dē-（阻擋、使離開）與 teneō（握住、持有）組成，字面意思是「緊緊抓住使其無法離開」。這項含義引申為「阻擋前進」或「扣留、逮捕」，進入西班牙語後演變為 detener。",
+      "hook_zh": "英文同源字是 detain（拘留）；想像伸出手抓住（tener）不讓走，把動作擋住停下來。",
+      "usage_zh": "動詞不規則變化同 tener（如 detengo、detuve）。表示人或車輛「自行停下」時常用反身形式 detenerse。",
+      "example_es": "El conductor logró detener el coche a tiempo.",
+      "example_zh": "司機及時把車子停了下來。",
+      "image": "emoji:🛑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:detener",
+        "wiktionary:la:detineo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "enfoque",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "焦點；觀點、切入角度、方法",
+      "en": "focus, approach",
+      "ipa": "/enˈfoke/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "enfocar",
+          "zh": "對焦、聚焦"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "enfoque",
+          "zh": "焦點、切入角度"
+        }
+      ],
+      "cognates_en": [
+        "focus"
+      ],
+      "story_zh": "由動詞 enfocar（對焦、聚焦）衍生而來的名詞。原本指調整鏡頭使焦點清晰的動作，後來引申為思考、研究或解決問題時的「焦點」、「切入角度」或「處理方法」。",
+      "hook_zh": "拍照時把鏡頭 en（放進）foco（焦點），就是找到對的「切入點」（enfoque）。",
+      "usage_zh": "陽性名詞 el enfoque，常與介詞 de 搭配：un enfoque de...（…的視角／方法）。",
+      "example_es": "Necesitamos un nuevo enfoque para resolver el problema.",
+      "example_zh": "我們需要一個新的切入角度來解決這個問題。",
+      "image": "emoji:🎯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:enfoque"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "entrenador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "教練、訓練員",
+      "en": "coach, trainer",
+      "ipa": "/entɾenaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "entrenar",
+          "zh": "訓練"
+        },
+        {
+          "part": "-dor",
+          "zh": "表示從事…的人（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "entrenar + -dor",
+          "zh": "訓練 + 從事者字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "entrenador",
+          "zh": "教練、訓練員"
+        }
+      ],
+      "cognates_en": [
+        "trainer"
+      ],
+      "story_zh": "源自西語動詞 entrenar（訓練），加上表示「從事該動作的人」的後綴 -dor 構成。字面意思就是「負責訓練他人的人」，在現代生活中廣泛指運動隊伍的教練或健身房的訓練員。",
+      "hook_zh": "教練（entrenador）每天在球場上對著隊員大喊「entrenar（訓練）！」。",
+      "usage_zh": "陰性形式為 entrenadora（女教練）；名詞同形動詞為 entrenar（訓練）。",
+      "example_es": "El entrenador felicitó al equipo por la victoria.",
+      "example_zh": "教練為這場勝利向球隊表示祝賀。",
+      "image": "emoji:🏋️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:entrenador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "evaluación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "評估、評價；測驗、考試",
+      "en": "evaluation, assessment, exam",
+      "ipa": "/ebalwaˈθjon/",
+      "breakdown": [
+        {
+          "part": "evaluar",
+          "zh": "評估、評價"
+        },
+        {
+          "part": "-ción",
+          "zh": "動作或狀態（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "evaluar + -ción",
+          "zh": "評估 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "evaluación",
+          "zh": "評估、考核"
+        }
+      ],
+      "cognates_en": [
+        "evaluation"
+      ],
+      "story_zh": "由動詞 evaluar（評估、評價）加上表示動作或結果的名詞後綴 -ción 構成。指對某項事物進行系統性衡量、審查或鑑定的過程，常用於學校的考試測驗或職場的績效評估。",
+      "hook_zh": "老師發下考卷要評估（evaluar）成績，這場考試就是 evaluación。",
+      "usage_zh": "陰性名詞 la evaluación，字尾 -ción 均為陰性，複數形為 evaluaciones。",
+      "example_es": "Mañana tenemos una evaluación de matemáticas.",
+      "example_zh": "明天我們有一場數學測驗。",
+      "image": "emoji:📝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:evaluación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "explotación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "開發、開採；剝削",
+      "en": "exploitation, mining",
+      "ipa": "/eɡsplotaˈθjon/",
+      "breakdown": [
+        {
+          "part": "explotar",
+          "zh": "開採、剝削"
+        },
+        {
+          "part": "-ción",
+          "zh": "動作或結果（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "explotar + -ción",
+          "zh": "開採、剝削 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "explotación",
+          "zh": "開採、剝削"
+        }
+      ],
+      "cognates_en": [
+        "exploitation"
+      ],
+      "story_zh": "源自動詞 explotar（開採、利用；剝削），加上名詞後綴 -ción 構成。原指對礦產、土地等自然資源的開發與利用，後引申為以不公平手段榨取勞動力或利益的「剝削」行為。",
+      "hook_zh": "老闆要員工像礦坑開採（explotar）一樣加班，這就是剝削（explotación）！",
+      "usage_zh": "陰性名詞 la explotación，字尾 -ción 恆為陰性，複數為 explotaciones。",
+      "example_es": "La ley prohíbe la explotación laboral infantil.",
+      "example_zh": "法律禁止童工剝削。",
+      "image": "emoji:⛏️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:explotación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "financiero",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "金融的、財務的、財政的",
+      "en": "financial",
+      "ipa": "/finanˈθjeɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "financier",
+          "zh": "金融的、財政的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "financiero",
+          "zh": "金融的、財務的"
+        }
+      ],
+      "cognates_en": [
+        "financial",
+        "financier"
+      ],
+      "story_zh": "借自法語的 financier（金融的、財政的），進入西語後加上形容詞字尾 -o。用來描述所有與資金運作、貨幣管理、銀行業或國家財政相關的事物，與英文的 financial 同源。",
+      "hook_zh": "看到 finance（金融）就知道，financiero 就是跟錢與財務有關的！",
+      "usage_zh": "陰性為 financiera。常見搭配如 crisis financiera（金融危機）、sector financiero（金融業）。",
+      "example_es": "El banco ofrece asesoramiento financiero a sus clientes.",
+      "example_zh": "這家銀行為客戶提供財務諮詢服務。",
+      "image": "emoji:💼",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:financiero"
+      ],
+      "writer": "gemini"
     }
   ]
 }
