@@ -29,7 +29,7 @@ const SKIP_WORDS = new Set(['luis', 'maría', 'brasil', 'pp', 'to', 'cuba', 'pos
   'open', 'film', 'may', 'uh', 'pos', 'mega', 'fi', 'musicar', 'burgo', 'irlanda', 'benito', 'guinea', 'nelson',
   'line', 'off', 'out', 'flash', 'junior', 'uds', 'abc', 'bla', 'pe', 'pr', 'ps', 'ro', 'claudia', 'catalina', 'bruno',
   'ultra', 'je', 'arabio', 'nasa', 'soto', 'sarmiento', 'ginebra', 'patricio', 'augusto', 'magdalena', 'sobretodo', 'trans', 'leu', 'wey', 'madero', 'montero', 'beta', 'pi', 'non',
-  'grey', 'living', 'roque', 'carrillo', 'prieto', 'pascual']);
+  'grey', 'living', 'roque', 'carrillo', 'prieto', 'pascual', 'efe', 'sic', 'facto', 'colon']);
 // Words that look like a form of another word but are learned on their own
 const NO_FOLD = new Set(['política', 'lista', 'firma']);
 // Kinds of Wiktionary entries that are not words to learn
@@ -50,7 +50,7 @@ const FOLD = {
   designado: 'designar', enterado: 'enterar', 'energética': 'energético',
   encontrado: 'encontrar', apuesto: 'apostar', adoro: 'adorar', honda: 'hondo', redonda: 'redondo', perpetua: 'perpetuo',
   'sistemática': 'sistemático', petrolera: 'petrolero', cayo: 'caer', 'vió': 'ver', ano: 'año', antemano: 'mano',
-  prostituto: 'prostituta', vendido: 'vender', pica: 'picar', resta: 'restar', sosa: 'soso',
+  prostituto: 'prostituta', vendido: 'vender', pica: 'picar', resta: 'restar', sosa: 'soso', barbaro: 'bárbaro',
   // Accented demonstratives and sólo are old spellings (RAE 2010): the same words as ese, este, aquel, solo
   'ése': 'ese', 'ésa': 'ese', 'ésos': 'ese', 'ésas': 'ese', 'éste': 'este', 'ésta': 'este', 'éstos': 'este', 'éstas': 'este',
   'aquél': 'aquel', 'aquélla': 'aquel', 'aquéllos': 'aquel', 'aquéllas': 'aquel', 'sólo': 'solo',
