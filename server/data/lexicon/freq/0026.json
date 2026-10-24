@@ -3155,6 +3155,655 @@
         "wiktionary:es:nelson"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "perteneciente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "屬於…的、隸屬的",
+      "en": "belonging to",
+      "ipa": "/peɾteneˈθjente/",
+      "breakdown": [
+        {
+          "part": "pertenecer",
+          "zh": "屬於"
+        },
+        {
+          "part": "-iente",
+          "zh": "…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pertenecer",
+          "zh": "屬於"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "perteneciente",
+          "zh": "屬於…的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 pertenecer（屬於）加上形容詞字尾 -iente。字面意思是「屬於…的」，專門用來修飾隸屬於某個組織、團體、國家或範疇的人與事物。",
+      "hook_zh": "看到 pertenecer（屬於）加上 -iente（的），就是「屬於」某處的成員。",
+      "usage_zh": "常與前置詞 a 搭配：perteneciente a…（屬於／隸屬於…）。",
+      "example_es": "Son documentos pertenecientes a la empresa.",
+      "example_zh": "這些是屬於公司的文件。",
+      "image": "emoji:🏷️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:perteneciente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "proveniente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "來自…的、源自…的",
+      "en": "coming from, originating from",
+      "ipa": "/pɾobeˈnjente/",
+      "breakdown": [
+        {
+          "part": "provenir",
+          "zh": "源自、來自"
+        },
+        {
+          "part": "-iente",
+          "zh": "…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "provenir",
+          "zh": "來自、源自"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "proveniente",
+          "zh": "來自…的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 provenir（來自、源自）加上形容詞字尾 -iente。用來指某人、某物或某種現象是「從某處而來」或「源於某個出處」。",
+      "hook_zh": "provenir（源自）加上 -iente（的），想像包裹「來自」遠方。",
+      "usage_zh": "固定與前置詞 de 連用：proveniente de…（來自／產自…）。",
+      "example_es": "Es un vuelo proveniente de Madrid.",
+      "example_zh": "這是一班來自馬德里的航班。",
+      "image": "emoji:🛫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:proveniente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reclamo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "投訴、抗議；誘餌、號召",
+      "en": "complaint, claim; advertisement, call",
+      "ipa": "/reˈklamo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "reclamar",
+          "zh": "要求、索賠、抗議"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reclamo",
+          "zh": "抗議、投訴；號召"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 reclamar（要求、索賠、抗議）去動詞字尾名詞化而來。原指大聲呼喚或要求，後來延伸指法律或消費上的「抗議、投訴」，以及用來吸引鳥類或顧客的「誘餌、廣告號召」。",
+      "hook_zh": "向店員 reclamar（抗議），留下的那張申訴單就是 el reclamo。",
+      "usage_zh": "陽性名詞。常用搭配如 hacer un reclamo（提出申訴、抗議）。",
+      "example_es": "El cliente presentó un reclamo por el mal servicio.",
+      "example_zh": "顧客因為服務不佳而提出了投訴。",
+      "image": "emoji:📢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reclamo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reparación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "修理、修復；賠償",
+      "en": "repair, restoration, reparation",
+      "ipa": "/repaɾaˈθjon/",
+      "breakdown": [
+        {
+          "part": "reparar",
+          "zh": "修理、修復"
+        },
+        {
+          "part": "-ción",
+          "zh": "動作或狀態（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "reparātiōnem",
+          "zh": "修復、恢復"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reparación",
+          "zh": "修理、修復"
+        }
+      ],
+      "cognates_en": [
+        "reparation"
+      ],
+      "story_zh": "借自拉丁語 reparātiōnem（修復、復原），在西語中可視為 reparar（修理）加上名詞字尾 -ción。原指把破損的東西恢復原狀，延伸為實體的「修理、修繕」，以及精神或法律上的「補償、賠償」。英文同源字為 reparation。",
+      "hook_zh": "英文 repair 加上 -ción，水管壞了需要 reparación（修理）。",
+      "usage_zh": "陰性名詞，字尾為 -ción。常見搭配如 en reparación（維修中）。",
+      "example_es": "El coche está en reparación en el taller.",
+      "example_zh": "那輛車正在車廠維修中。",
+      "image": "emoji:🔧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reparación",
+        "wiktionary:la:reparatio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "robot",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "機器人",
+      "en": "robot",
+      "ipa": "/roˈbot/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始斯拉夫語",
+          "word": "*orbota",
+          "zh": "苦役、勞役"
+        },
+        {
+          "lang_zh": "古捷克語",
+          "word": "robota",
+          "zh": "苦役、農奴勞動"
+        },
+        {
+          "lang_zh": "捷克語",
+          "word": "robot",
+          "zh": "機器人"
+        },
+        {
+          "lang_zh": "英語",
+          "word": "robot",
+          "zh": "機器人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "robot",
+          "zh": "機器人"
+        }
+      ],
+      "cognates_en": [
+        "robot"
+      ],
+      "story_zh": "源自原始斯拉夫語 *orbota（苦役、勞動），經古捷克語演變為 robota（苦工）。捷克作家以此造出 robot 一詞，指代任勞任怨的人造僕人，隨後經英語借入西語成為「機器人」。",
+      "hook_zh": "捷克字 robota 原意是「苦工」，不知疲倦做苦工的就是 robot（機器人）。",
+      "usage_zh": "陽性名詞。複數形為規則加 -s 形成 robots。",
+      "example_es": "El robot limpia el suelo automáticamente.",
+      "example_zh": "這台機器人會自動清理地板。",
+      "image": "emoji:🤖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:robot"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "salio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "薩利安人（法蘭克人的一支）",
+      "en": "Salian (Frank)",
+      "ipa": "/ˈsaljo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "歐洲歷史上的「薩利安法蘭克人」，建立了著名的墨洛溫王朝。",
+      "usage_zh": "歷史專有名詞，女性為 salia；常用於 francos salios（薩利安法蘭克人）。",
+      "example_es": "Los francos salios se establecieron en la Galia.",
+      "example_zh": "薩利安法蘭克人定居在高盧地區。",
+      "image": "emoji:⚔️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:salio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "satélite",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "衛星、人造衛星",
+      "en": "satellite",
+      "ipa": "/saˈtelite/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "satellitem",
+          "zh": "侍從、隨從"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "satélite",
+          "zh": "衛星"
+        }
+      ],
+      "cognates_en": [
+        "satellite"
+      ],
+      "story_zh": "借自拉丁語 satellitem，本義為「侍從、衛士」。在天文學中，繞著行星運轉的天體就像隨侍在側的侍從，因此得名「衛星」，現代亦指人造衛星。英文同源詞即為 satellite。",
+      "hook_zh": "繞著地球轉的衛星就像貼身侍從，英文 satellite 拼法幾乎完全一樣。",
+      "usage_zh": "陽性名詞。天然衛星稱為 satélite natural，人造衛星稱為 satélite artificial。",
+      "example_es": "La Luna es el único satélite natural de la Tierra.",
+      "example_zh": "月球是地球唯一的天然衛星。",
+      "image": "emoji:🛰️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:satélite"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "titulado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "學位持有者、大學畢業生",
+      "en": "degree holder, university graduate",
+      "ipa": "/tituˈlado/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "獲得 título（學位）的人就是 titulado，代表取得學歷的畢業生。",
+      "usage_zh": "作名詞指大學畢業生；亦可作形容詞（titulado/a）表示「持有學位的」或「名為…的」。",
+      "example_es": "La empresa busca titulados en ingeniería informática.",
+      "example_zh": "這家公司正在尋找資訊工程領域的大學畢業生。",
+      "image": "emoji:🎓",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:titulado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "trigo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "小麥",
+      "en": "wheat",
+      "ipa": "/ˈtɾiɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "terō",
+          "zh": "研磨、碾磨"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "trīticum",
+          "zh": "小麥"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "trigo",
+          "zh": "小麥"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 trīticum（小麥），該詞源於動詞 terō（碾磨、脫粒），原意指「被碾磨脫殼的穀物」。古人收穫麥子時需搓揉碾壓去殼，因此得名。演變至西語後成為 trigo。",
+      "hook_zh": "金黃麥田裡收割的小麥（trigo），需要經過「碾磨」才能做成麵粉。",
+      "usage_zh": "陽性名詞。成語 separar el trigo de la paja 表示「去蕪存菁、去粗取精」。",
+      "example_es": "Este pan está hecho con harina de trigo integral.",
+      "example_zh": "這款麵包是用全麥麵粉製作的。",
+      "image": "emoji:🌾",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:trigo",
+        "wiktionary:la:triticum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "uds",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "您各位、你們（ustedes 縮寫）",
+      "en": "you (plural, polite, abbreviation of ustedes)",
+      "ipa": "/usˈtedes/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "uds 是 ustedes 的縮寫，看見 ud 加複數 s 就是代表「您各位」。",
+      "usage_zh": "書寫時通常首字母大寫並帶句點（Uds.），動詞一律搭配第三人稱複數形式。",
+      "example_es": "¿Uds. quieren tomar un café después de clase?",
+      "example_zh": "您各位下課後想一起喝杯咖啡嗎？",
+      "image": "emoji:👥",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:uds"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vanguardia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "前鋒、先鋒；前衛",
+      "en": "vanguard, avant-garde",
+      "ipa": "/banˈɡwaɾdja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "avanguardia",
+          "zh": "前鋒"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vanguardia",
+          "zh": "前鋒、前衛"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自古西班牙語 avanguardia，由 aván（源自意為「向前」的 avante）與 guardia（守衛）組合而成，原指走在軍隊最前方的「先鋒部隊」。後來字首脫落簡化為 vanguardia，語義也從軍事前線引申至藝術與潮流中引領時代的「前衛」。",
+      "hook_zh": "聯想英文 vanguard（前鋒）；畫面是一位站在隊伍最前方守衛（guardia）開路的先鋒旗手。",
+      "usage_zh": "陰性名詞。常見搭配為 estar a la vanguardia（走在前端、居領先地位）或 arte de vanguardia（前衛藝術）。",
+      "example_es": "Esta empresa siempre está a la vanguardia de la tecnología.",
+      "example_zh": "這家公司始終走在科技的最前端。",
+      "image": "emoji:🚩",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vanguardia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vertical",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "垂直的、直立的",
+      "en": "vertical, upright",
+      "ipa": "/beɾtiˈkal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "verticālis",
+          "zh": "頂點的、垂直的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vertical",
+          "zh": "垂直的"
+        }
+      ],
+      "cognates_en": [
+        "vertical"
+      ],
+      "story_zh": "學術借詞自後期拉丁語 verticālis，源於表示「頂點、天頂」的字根。它原指由頭頂最高處筆直延伸向下的方向，後來演變為幾何學與日常生活中的「垂直、直立」。英文的 vertical 也是來自同一個拉丁字。",
+      "hook_zh": "英文 vertical 拼寫完全相同，發音時注意西班牙語重音落在最後音節 -cal。",
+      "usage_zh": "形容詞陰陽同形（una línea vertical），複數為 verticales。",
+      "example_es": "Dibuja una línea vertical en el papel.",
+      "example_zh": "在紙上畫一條垂直線。",
+      "image": "emoji:📏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vertical"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "agrupación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "團體、群體；聚集",
+      "en": "grouping, group, association",
+      "ipa": "/aɡɾupaˈθjon/",
+      "breakdown": [
+        {
+          "part": "agrupar",
+          "zh": "分組、聚集"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示動作或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "agrupar + -ción",
+          "zh": "聚集 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "agrupación",
+          "zh": "團體、集結"
+        }
+      ],
+      "cognates_en": [
+        "group"
+      ],
+      "story_zh": "由西語動詞 agrupar（把…聚集、分組）加上表示動作或結果的名詞字尾 -ción 衍生而來。它最初指把人或物品集中在一起的動作，後來具體指稱因為共同興趣、目的而聚在一起的「團體」或「組織」。",
+      "hook_zh": "將人 group 起來（agrupar）的動作（-ción），形成了一整個「團體」（agrupación）。",
+      "usage_zh": "陰性名詞。字尾為 -ción 的字皆為陰性，複數為 agrupaciones（去重音符號）。",
+      "example_es": "Ella toca el violín en una agrupación musical.",
+      "example_zh": "她在一個音樂團體裡拉小提琴。",
+      "image": "emoji:👥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:agrupación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "altar",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "祭壇、聖壇",
+      "en": "altar",
+      "ipa": "/alˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "altāre",
+          "zh": "祭壇"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "altar",
+          "zh": "祭壇"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "altar",
+          "zh": "祭壇"
+        }
+      ],
+      "cognates_en": [
+        "altar"
+      ],
+      "story_zh": "繼承自古西班牙語 altar，源自拉丁語 altāre（祭壇、供奉祭品之處）。字源可能與火供燃燒或崇高的高處有關。此字早在中世紀著名西班牙史詩《熙德之歌》中就已記載，一直沿用至今。",
+      "hook_zh": "拼字與英文 altar 完全相同，想像教堂高處神聖的「聖壇」。",
+      "usage_zh": "陽性名詞，複數為 altares。常用片語 llegar al altar 象徵「步入結婚禮堂」。",
+      "example_es": "Pusieron velas y flores sobre el altar.",
+      "example_zh": "他們在祭壇上擺放了蠟燭與鮮花。",
+      "image": "emoji:🕯️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:altar",
+        "wiktionary:la:altare"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "atracción",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "吸引、吸引力；遊樂設施",
+      "en": "attraction, pull, amusement ride",
+      "ipa": "/atɾaɡˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "attractiōnem",
+          "zh": "拉向、吸引"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "atracción",
+          "zh": "吸引、吸引力"
+        }
+      ],
+      "cognates_en": [
+        "attraction"
+      ],
+      "story_zh": "學術借詞自拉丁語 attractiōnem，原意為「拉向自己」。起初指物理上的拉引或磁石的引力，後來延伸指人與人之間的情感「吸引力」，在現代西語中也常用來指遊樂園裡吸引遊客的「遊樂設施」。",
+      "hook_zh": "英文就是 attraction，西語雙寫 c（-cción），像磁鐵深深吸引。",
+      "usage_zh": "陰性名詞。注意 -cción 的雙 c 拼寫；遊樂園常稱作 parque de atracciones。",
+      "example_es": "La montaña rusa es la atracción más popular del parque.",
+      "example_zh": "雲霄飛車是該公園最受歡迎的遊樂設施。",
+      "image": "emoji:🧲",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:atracción"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bla",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "廢話、空話",
+      "en": "blah, idle talk",
+      "ipa": "/bla/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "聊天時一直 bla bla bla 講個不停，全都是言不及義的廢話。",
+      "usage_zh": "最常見於口語疊詞 bla, bla, bla（等等、諸如此類的廢話）。",
+      "example_es": "Mucho bla, bla, bla y no hace nada.",
+      "example_zh": "講了一堆廢話，卻什麼都沒做。",
+      "image": "emoji:💬",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:bla"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "borracho",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "喝醉的；醉漢",
+      "en": "drunk, inebriated; drunkard",
+      "ipa": "/boˈrat͡ʃo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "加泰隆尼亞語",
+          "word": "morratxa",
+          "zh": "酒壺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "borracha",
+          "zh": "皮酒囊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "borracho",
+          "zh": "喝醉的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "來自西語 borracha（皮酒囊），推測可能源自加泰隆尼亞語的 morratxa（酒壺），並受到加泰隆尼亞語 morro（口鼻部）的影響。原指盛酒的皮袋，後來引申為裝滿了酒的人，也就是「喝醉的」或「醉鬼」。",
+      "hook_zh": "抱著 borracha（皮酒囊）狂灌，整個人就醉醺醺（borracho）了。",
+      "usage_zh": "陰性為 borracha。搭配 estar 表「喝醉了」（狀態），搭配 ser 則指「是個酒鬼」（特質）。",
+      "example_es": "Él bebió mucho anoche y estaba borracho.",
+      "example_zh": "他昨晚喝了很多酒，整個人都醉了。",
+      "image": "emoji:🍺",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:borracho"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cagar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "拉屎、大便；搞砸",
+      "en": "to shit; to mess up",
+      "ipa": "/kaˈɡaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "印歐原始語",
+          "word": "*kakka-",
+          "zh": "排泄"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*kakāō",
+          "zh": "排便"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cacāre",
+          "zh": "排便、拉屎"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cagar",
+          "zh": "拉屎"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cagar",
+          "zh": "拉屎"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "傳承自古西班牙語 cagar，源自拉丁語 cacāre（排便），最遠可追溯至印歐原始語的擬聲詞根 *kakka-。這是一個歷史悠久的口語俚俗詞，在西語中除了生理上的排便，也引申出把事情「搞砸」的用法。",
+      "hook_zh": "肚子卡卡拉不出來，衝進廁所終於順利 cagar（大便）了。",
+      "usage_zh": "屬粗俗俚語。常見代名詞用法 cagarse（嚇破膽），或口語表達 la cagaste（你搞砸了）。",
+      "example_es": "Tengo que ir al baño a cagar.",
+      "example_zh": "我得去洗手間大便。",
+      "image": "emoji:💩",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cagar",
+        "wiktionary:la:caco"
+      ],
+      "writer": "gemini"
     }
   ]
 }
