@@ -2622,6 +2622,61 @@
       "writer": "gemini"
     },
     {
+      "word": "perseguir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "追逐、追捕、追求",
+      "en": "to pursue, to chase",
+      "ipa": "/peɾseˈɡiɾ/",
+      "breakdown": [
+        {
+          "part": "per-",
+          "zh": "徹底、貫徹"
+        },
+        {
+          "part": "seguir",
+          "zh": "跟隨"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "persequī",
+          "zh": "緊緊跟隨、追逐"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*persequīre",
+          "zh": "追趕"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "perseguir",
+          "zh": "追逐"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "perseguir",
+          "zh": "追逐、追捕"
+        }
+      ],
+      "cognates_en": [
+        "persecute"
+      ],
+      "story_zh": "源自拉丁文 persequī，由字首 per-（徹底、自始至終）與 sequī（跟隨）組成，原意是「從頭到尾緊跟在後」，後來引申為「追趕、追捕」。英文的 persecute（迫害）也是同源字。",
+      "hook_zh": "徹底（per）跟在後頭（seguir），一步都不放過：這就是「追逐」。",
+      "usage_zh": "母音變化動詞（e → i）：yo persigo、tú persigues；現在式第一人稱 gu 遇到 o 轉為 g。",
+      "example_es": "El perro empezó a perseguir al gato por el jardín.",
+      "example_zh": "狗開始在花園裡追貓。",
+      "image": "emoji:🏃",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:perseguir",
+        "wiktionary:la:persequor"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "potable",
       "article": "",
       "pos": "adjetivo",
