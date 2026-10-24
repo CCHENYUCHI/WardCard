@@ -1858,6 +1858,54 @@
       "writer": "gemini"
     },
     {
+      "word": "quitar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "拿走、拿掉、脫下、消除",
+      "en": "to remove, to take off",
+      "ipa": "/kiˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quietus",
+          "zh": "平靜的、休息的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "quietare",
+          "zh": "使平靜"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "quitare",
+          "zh": "免除、釋放"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "quitar",
+          "zh": "拿走、去除"
+        }
+      ],
+      "cognates_en": [
+        "quiet",
+        "quit"
+      ],
+      "story_zh": "源自拉丁語 quietus（平靜的），推測經由晚期拉丁語 quietāre（使平靜）演變為中世紀拉丁語 quitāre（釋放、免除）。當負擔或物品被拿走、免除時，人便能重獲平靜，字義因而引申為「拿走、去除」。英文的 quiet（安靜）與 quit（退出）也是同源字。",
+      "hook_zh": "把身上的沉重外套拿掉（quitar），讓整個人安靜休息（quit / quiet）。",
+      "usage_zh": "脫衣物常用反身動詞：quitarse la ropa（脫衣服）、quitarse los zapatos（脫鞋）。",
+      "example_es": "Por favor, quita los platos de la mesa.",
+      "example_zh": "請把餐桌上的盤子收走。",
+      "image": "emoji:🗑️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:quitar",
+        "wiktionary:la:quietus",
+        "wiktionary:la:quieto"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "ramo",
       "article": "el",
       "pos": "sustantivo",
@@ -3297,6 +3345,528 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:quinto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "rendimiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "表現、效能、產量、效益",
+      "en": "performance, yield, return",
+      "ipa": "/rendiˈmjento/",
+      "breakdown": [
+        {
+          "part": "rendir",
+          "zh": "產出、付出"
+        },
+        {
+          "part": "-miento",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "動詞 rendir（產出、發揮）加上 -miento，就是機器或人在工作上的「產能」與「表現」。",
+      "usage_zh": "常見搭配如 alto rendimiento（高性能、高產能）與 bajo rendimiento（低表現）。",
+      "example_es": "El nuevo motor tiene un gran rendimiento.",
+      "example_zh": "這顆新引擎的效能非常好。",
+      "image": "emoji:📈",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:rendimiento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "挑戰、難題；挑釁",
+      "en": "challenge, dare",
+      "ipa": "/ˈreto/",
+      "breakdown": [
+        {
+          "part": "retar",
+          "zh": "挑戰、指責"
+        },
+        {
+          "part": "-o",
+          "zh": "陽性名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "reputare",
+          "zh": "反覆計算、深思"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "rebtar",
+          "zh": "指責、控告"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "repto",
+          "zh": "指責、挑戰"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reto",
+          "zh": "挑戰"
+        }
+      ],
+      "cognates_en": [
+        "repute"
+      ],
+      "story_zh": "源自拉丁語 reputāre（反覆計算、深思），在古西班牙語演化為 rebtar（指控、責難）與名詞 repto，後來簡化為 reto。從最初嚴格審視與質問他人罪責，逐漸轉化為發出挑戰或面對艱難考驗。英文的 repute（名聲、認為）為同源字。",
+      "hook_zh": "面對人生的高難度挑戰（reto），必須像 repute 一樣謹慎反覆考量、沉著應對。",
+      "usage_zh": "常用搭配動詞為 enfrentar un reto（面對挑戰）或 aceptar un reto（接受挑戰）。",
+      "example_es": "Aprender español es un gran reto para mí.",
+      "example_zh": "學西班牙文對我來說是一大挑戰。",
+      "image": "emoji:🎯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reto",
+        "wiktionary:la:reputo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sentado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "坐著的；沈著穩重的",
+      "en": "seated, settled, sensible",
+      "ipa": "/senˈtado/",
+      "breakdown": [
+        {
+          "part": "sentar",
+          "zh": "坐下"
+        },
+        {
+          "part": "-ado",
+          "zh": "分詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "人坐下來（sentar）安頓好就是 sentado；引申形容一個人行事穩固、沉著懂事。",
+      "usage_zh": "常用片語 dar por sentado 表示「視為理所當然」；陰性形為 sentada。",
+      "example_es": "Él está sentado en el sofá.",
+      "example_zh": "他正坐在沙發上。",
+      "image": "emoji:🪑",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:sentado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "típico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "典型的、具代表性的；傳統道地的",
+      "en": "typical, traditional",
+      "ipa": "/ˈtipiko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "typicus",
+          "zh": "典型的、代表性的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "típico",
+          "zh": "典型的、傳統的"
+        }
+      ],
+      "cognates_en": [
+        "typical"
+      ],
+      "story_zh": "屬於學術借詞（cultismo），直接源自拉丁語 typicus，指符合某種形態或特徵的代表事物。在西班牙語中不僅指「典型的」，也常延伸指代表在地傳統與文化特徵的「道地」事物。英文的 typical 為同源字。",
+      "hook_zh": "看到 típico 就聯想到英文 typical（典型的），西語中常指「道地特色、傳統的」。",
+      "usage_zh": "常用於形容道地飲食或文化特色：comida típica（道地菜餚）、traje típico（傳統服飾）。",
+      "example_es": "La paella es un plato típico de España.",
+      "example_zh": "西班牙大鍋飯是西班牙的傳統特色料理。",
+      "image": "emoji:🥘",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:típico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ud",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "您（usted 的簡寫）",
+      "en": "you (formal, abbreviation of usted)",
+      "ipa": "/ˈud/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "「Ud.」是西語尊稱「您」（usted）的書面縮寫，書信郵件中最常見。",
+      "usage_zh": "書寫時常作 Ud. 或 Vd.，指稱「您」，但動詞須搭配第三人稱單數。",
+      "example_es": "¿Tiene Ud. alguna pregunta?",
+      "example_zh": "您有任何問題嗎？",
+      "image": "emoji:🤝",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:ud"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "unir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "結合、聯合、連接",
+      "en": "to unite, join",
+      "ipa": "/uˈniɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūnīre",
+          "zh": "使合一、結合"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "unir",
+          "zh": "結合、聯合"
+        }
+      ],
+      "cognates_en": [
+        "unite",
+        "union"
+      ],
+      "story_zh": "源自拉丁語動詞 ūnīre，本義為「使合為一體」。經由文人學術借詞進入西班牙語，指將分散的個體、群體或事物緊密聯繫起來。英文的 unite 與 union 皆源自相同字源。",
+      "hook_zh": "看見 uni- 就想到「一」，把大家聚在一起就是「unir」（聯合）。",
+      "usage_zh": "常作代名詞動詞 unirse a…，表示「加入、與…結合」，如加入公會或團隊。",
+      "example_es": "Tenemos que unir fuerzas para ganar.",
+      "example_zh": "我們必須團結力量才能獲勝。",
+      "image": "emoji:🔗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:unir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "valiente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "勇敢的、英勇的",
+      "en": "brave, courageous",
+      "ipa": "/baˈljente/",
+      "breakdown": [
+        {
+          "part": "valer",
+          "zh": "強健、有力量"
+        },
+        {
+          "part": "-iente",
+          "zh": "…的（現在分詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "valeō",
+          "zh": "強壯、有力量"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "valentem",
+          "zh": "強壯的、有力的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "valente",
+          "zh": "強壯的、勇敢的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "valiente",
+          "zh": "勇敢的"
+        }
+      ],
+      "cognates_en": [
+        "valiant"
+      ],
+      "story_zh": "源自拉丁語動詞 valeō（身強力壯、有力量）的現在分詞 valentem。古人認為具備強健身軀與充沛力量的人才能無畏挺身作戰，字義因而從「強健」演變成「勇敢、英勇」。",
+      "hook_zh": "英文英勇的是 valiant，西語就是 valiente，發音很像超好記！",
+      "usage_zh": "陰陽同形形容詞（un hombre valiente / una mujer valiente）。",
+      "example_es": "Fue muy valiente al decir la verdad.",
+      "example_zh": "他說出實話非常勇敢。",
+      "image": "emoji:🦁",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:valiente",
+        "wiktionary:la:valens"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "verga",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "帆桁、桿；（粗俗俚語）陰莖",
+      "en": "yardarm, pole; (vulgar) penis",
+      "ipa": "/ˈbeɾɡa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "virga",
+          "zh": "細枝、嫩條、棍棒"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "verga",
+          "zh": "枝條、棍棒"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "verga",
+          "zh": "桿、帆桁；陰莖"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 virga，本義指「嫩枝、柳條或細木棍」，推測可能源於印歐語表示柔韌枝條的字根。進入西班牙語後引申為航海船帆的橫桁與木桿，近代在拉美口語中依外形轉化為男性生殖器的粗口俚語。",
+      "hook_zh": "原指帆船上的長橫桿（帆桁），在拉美口語常被當作粗口用詞。",
+      "usage_zh": "在拉美地區極為常見的粗俗詞彙（常用於感嘆或髒話），正式場合切忌使用。",
+      "example_es": "Los marineros arreglaron la verga del barco.",
+      "example_zh": "水手們修好了帆船的帆桁。",
+      "image": "emoji:⛵",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:verga",
+        "wiktionary:la:virga"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vicepresidente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "副總統、副主席、副總裁",
+      "en": "vice president",
+      "ipa": "/ˌbiθepɾesiˈdente/",
+      "breakdown": [
+        {
+          "part": "vice-",
+          "zh": "副的、代理"
+        },
+        {
+          "part": "presidente",
+          "zh": "總統、主席"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "vice- + presidente",
+          "zh": "副的 + 主席、總統"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vicepresidente",
+          "zh": "副總統、副主席"
+        }
+      ],
+      "cognates_en": [
+        "vice president"
+      ],
+      "story_zh": "由表示「副職、代理」的前綴 vice- 與名詞 presidente（總統、主席）複合而成。字面上指「代理總統或主席職責的人」，指位階僅次於正職首長的高層職位。",
+      "hook_zh": "vice（副的）加上 presidente（總統），就是副總統！",
+      "usage_zh": "陰性指稱可作 la vicepresidente 或 la vicepresidenta，皆屬常見規範用法。",
+      "example_es": "El vicepresidente pronunció un discurso.",
+      "example_zh": "副總統發表了一場演說。",
+      "image": "emoji:💼",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vicepresidente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "acusado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "被告；被指控的",
+      "en": "defendant, accused",
+      "ipa": "/akuˈsado/",
+      "breakdown": [
+        {
+          "part": "acusar",
+          "zh": "指控"
+        },
+        {
+          "part": "-ado",
+          "zh": "過去分詞／被動名詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "被指控（acusar）的人加上名詞字尾 -ado，就成了站在法庭上的「被告」（acusado）。",
+      "usage_zh": "可作名詞或形容詞。指女性被告時使用陰性形 la acusada。",
+      "example_es": "El acusado declaró ante el juez esta mañana.",
+      "example_zh": "被告今天早上面對法官進行了陳述。",
+      "image": "emoji:⚖️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:acusado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "analizar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "分析",
+      "en": "to analyze",
+      "ipa": "/analiˈθaɾ/",
+      "breakdown": [
+        {
+          "part": "análisis",
+          "zh": "分析"
+        },
+        {
+          "part": "-izar",
+          "zh": "動詞字尾（使…）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "在名詞 análisis（分析）後面加上動詞尾巴 -izar，就是動詞「分析」。",
+      "usage_zh": "第一人稱單數現在完成時（點過去）會拼寫變化：yo analicé（z 變 c）。",
+      "example_es": "Tenemos que analizar los resultados del examen.",
+      "example_zh": "我們必須分析考試的結果。",
+      "image": "emoji:🔍",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:analizar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "app",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "應用程式、App",
+      "en": "app, application",
+      "ipa": "/ˈap/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "app",
+          "zh": "應用程式"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "app",
+          "zh": "應用程式"
+        }
+      ],
+      "cognates_en": [
+        "app"
+      ],
+      "story_zh": "直接借自英語的 app。因為西語中對應的完整名詞 aplicación（應用程式）是陰性，所以在西語中通常搭配陰性冠詞 la app。",
+      "hook_zh": "英文怎麼說，西文就怎麼借！只要記得它通常借用 aplicación 的陰性格冠詞 la 即可。",
+      "usage_zh": "陰陽性皆可見，但通常因 aplicación 為陰性而作陰性：la app（複數 las apps）。",
+      "example_es": "Descargué una app para aprender español.",
+      "example_zh": "我下載了一個學西語的 App。",
+      "image": "emoji:📱",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:app"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "arco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "弓；拱門；弧形",
+      "en": "bow, arch, arc",
+      "ipa": "/ˈaɾko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*h₂erkʷo-",
+          "zh": "弓、箭"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "arcus",
+          "zh": "弓、拱門、彩虹"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "arco",
+          "zh": "弓、拱門"
+        }
+      ],
+      "cognates_en": [
+        "archery",
+        "arrow",
+        "arch",
+        "arc"
+      ],
+      "story_zh": "源自拉丁語的 arcus，本指射箭的「弓」或天上的「彩虹」，祖先可追溯到原始印歐語表示弓箭的詞根。因為彎曲的形狀，後來延伸指建築上的拱門與幾何的弧線。英文的 arrow（箭）和 archery（射箭）都是它的同源字。",
+      "hook_zh": "拉滿的弓（arco）像一座彎彎的拱門（arch），隨時準備把箭射向遠方。",
+      "usage_zh": "射箭運動在西語中稱為 tiro con arco。",
+      "example_es": "El cazador lleva un arco y varias flechas.",
+      "example_zh": "獵人帶著一把弓和幾支箭。",
+      "image": "emoji:🏹",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:arco",
+        "wiktionary:la:arcus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asesino",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "兇手、殺手；殘酷的",
+      "en": "murderer, assassin",
+      "ipa": "/aseˈsino/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "حَشَّاشِين",
+          "zh": "大麻吸食者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "asesino",
+          "zh": "殺手、兇手"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自阿拉伯語 ḥaššāšīn，原指十字軍時期中東的暗殺派成員，傳說他們出任務前會使用大麻（hashish）；另一種說法指其源於表示信奉教派根基的詞彙。後來該詞傳入歐洲各語言，演變為專指冷酷行刺的「殺手」與「兇手」。",
+      "hook_zh": "傳說中暗殺組織刺客（assassin）出動，就是令人膽寒的 asesino。",
+      "usage_zh": "指女性兇手時使用陰性形 asesina；亦可當形容詞修飾名詞。",
+      "example_es": "La policía busca al asesino por toda la ciudad.",
+      "example_zh": "警方正在全城搜捕那名兇手。",
+      "image": "emoji:🗡️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:asesino"
       ],
       "writer": "gemini"
     }
