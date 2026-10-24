@@ -1,6 +1,6 @@
 {
   "theme": "freq-0010",
-  "theme_zh": "常用字（頻率第 2408–2642 名）",
+  "theme_zh": "常用字（頻率第 2408–2653 名）",
   "entries": [
     {
       "word": "reciente",
@@ -622,39 +622,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:estadio"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "et",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "&符號、ampersand",
-      "en": "ampersand (&)",
-      "ipa": "/ˈet/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "et",
-          "zh": "和、與"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "et",
-          "zh": "&符號"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "為學者借詞，直接源自拉丁語連接詞 et（意為「和、與」）。在書寫演變中，拉丁字母 e 與 t 的連寫草書逐漸演變為現代常見的「&」符號，因此西語將此符號稱為 et。",
-      "hook_zh": "想像把拉丁文的 e 和 t 手寫連筆快速畫過去，就變成了熟悉的「&」符號。",
-      "usage_zh": "陽性名詞 el et，專指印刷與書寫中的「&」符號（ampersand），複數為 ets。",
-      "example_es": "El signo & se conoce formalmente como et.",
-      "example_zh": "符號 & 在正式名稱中被稱為 et。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:et"
       ],
       "writer": "gemini"
     },
@@ -1612,28 +1579,6 @@
       "writer": "gemini"
     },
     {
-      "word": "mm",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "公釐、毫米（milímetro 縮寫）",
-      "en": "millimeter (abbreviation)",
-      "ipa": "/miliˈmetɾo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "拿尺量東西時，最小、最密集的刻度就是 mm（milímetro），一眼就能看出的長度縮寫。",
-      "usage_zh": "長度單位「公釐」（milímetro）的國際縮寫，數值後直接加 mm，符號後不加縮寫點。",
-      "example_es": "El grosor de esta moneda es de solo dos mm.",
-      "example_zh": "這枚硬幣的厚度只有兩公釐。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:mm"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "múltiple",
       "article": "",
       "pos": "adjetivo",
@@ -2353,41 +2298,6 @@
       "writer": "gemini"
     },
     {
-      "word": "man",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "男人、老兄、傢伙",
-      "en": "man, guy, dude",
-      "ipa": "/ˈman/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "man",
-          "zh": "男人"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "man",
-          "zh": "男人、老兄"
-        }
-      ],
-      "cognates_en": [
-        "man"
-      ],
-      "story_zh": "直接借自英語的 man（男人）。在拉丁美洲（特別是哥倫比亞、厄瓜多等地）的口語中廣泛使用，用來隨意稱呼男性朋友、老兄或泛指某個男人。",
-      "hook_zh": "跟英文的 man 拼寫和意思完全一樣，拉美西語口語常拿來稱呼老兄！",
-      "usage_zh": "拉美口語俗語，複數可為 mans 或 manes。注意加利西亞語同形字 man 指「手」（假朋友）。",
-      "example_es": "Ese man es muy buena gente.",
-      "example_zh": "那個老兄人非常隨和善良。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:man"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "numeroso",
       "article": "",
       "pos": "adjetivo",
@@ -2464,41 +2374,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:oriental"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "saca",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "大麻袋、大包；提取、取出",
-      "en": "large sack, bag; extraction, removal",
-      "ipa": "/ˈsaka/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "saco",
-          "zh": "袋子、麻袋"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "saca",
-          "zh": "大麻袋"
-        }
-      ],
-      "cognates_en": [
-        "sack"
-      ],
-      "story_zh": "作為「大袋子」時源自 saco（袋子）。在西語中，將陽性轉為陰性（-o 變 -a）常用來表示尺寸更大的同類容器；另一個意思是動詞 sacar（取出）的名詞化，指「提取、抽取」。",
-      "hook_zh": "把裝東西的 saco（袋子）放大就是 saca（大麻袋）；同時也連繫動詞 sacar（取出）。",
-      "usage_zh": "陰性名詞。常見搭配如 saca de correos（郵務大郵袋）或 saca de corcho（軟木採收）。",
-      "example_es": "El cartero lleva una gran saca de cartas.",
-      "example_zh": "郵差提著一大袋裝滿信件的郵袋。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:saca"
       ],
       "writer": "gemini"
     },
@@ -3115,41 +2990,6 @@
       "writer": "gemini"
     },
     {
-      "word": "mata",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "矮樹、灌木；小灌叢",
-      "en": "shrub, sprig, plant",
-      "ipa": "/ˈmata/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "matta",
-          "zh": "草蓆、地墊"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "mata",
-          "zh": "矮樹、灌木"
-        }
-      ],
-      "cognates_en": [
-        "mat"
-      ],
-      "story_zh": "推測可能源自晚期拉丁語 matta（草蓆、地墊）。低矮叢生的矮樹與草叢外觀如同鋪在地上的蓆子，因而引申出灌木、矮樹之意。",
-      "hook_zh": "英文的 mat（墊子）是同源字！想像矮灌木叢就像鋪在地上一塊塊綠色草蓆。",
-      "usage_zh": "陰性名詞。注意不要和動詞 matar（殺死）的第三人稱現在式變化搞混。",
-      "example_es": "Plantamos una mata de tomates en el jardín.",
-      "example_zh": "我們在花園裡種了一株番茄。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:mata"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "meta",
       "article": "la",
       "pos": "sustantivo",
@@ -3676,46 +3516,6 @@
       "writer": "gemini"
     },
     {
-      "word": "corea",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "舞蹈症（一種不自主運動的神經障礙）",
-      "en": "chorea",
-      "ipa": "/koˈɾea/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "χορεία",
-          "zh": "舞蹈、環形舞動"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "chorēa",
-          "zh": "舞蹈"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "corea",
-          "zh": "舞蹈症"
-        }
-      ],
-      "cognates_en": [
-        "chorea"
-      ],
-      "story_zh": "源自拉丁語 chorēa，借自古希臘語 χορεία（khoreía，意為舞蹈、環形舞動）。在醫學上用來指肢體不由自主、如舞步般抽動的「舞蹈症」。與西語的 jauría（獵犬群）為同源雙式詞。",
-      "hook_zh": "小寫 corea 不是韓國（Corea），而是身體像在跳舞一樣的「舞蹈症」。",
-      "usage_zh": "陰性名詞。注意大寫 Corea 為專有名詞「韓國／朝鮮」，小寫 corea 才是醫學病名。",
-      "example_es": "La corea es un trastorno neurológico poco común.",
-      "example_zh": "舞蹈症是一種罕見的神經系統疾病。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:corea"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "dedicado",
       "article": "",
       "pos": "adjetivo",
@@ -3836,6 +3636,235 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:desear"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "enseñanza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "教學、教育、教誨",
+      "en": "teaching, education",
+      "ipa": "/enseˈɲanθa/",
+      "breakdown": [
+        {
+          "part": "enseñar",
+          "zh": "教導"
+        },
+        {
+          "part": "-anza",
+          "zh": "名詞字尾（表行為、狀態）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "enseñar + -anza",
+          "zh": "教導 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "enseñanza",
+          "zh": "教學、教育"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西語動詞 enseñar（教導）加上表示行為或狀態的名詞字尾 -anza。字面即「傳授知識的行為與過程」，延伸指學校教育、教學活動，或者人生中學到的教誨與道理。",
+      "hook_zh": "動詞 enseñar（教）加上 -anza 就變成名詞「教學」，想像老師在台上教學的畫面。",
+      "usage_zh": "陰性名詞。常指教育體制或教學工作，如 la enseñanza pública（公立教育）；複數 enseñanzas 亦可指「教導、教訓」。",
+      "example_es": "Ella se dedica a la enseñanza de idiomas.",
+      "example_zh": "她從事語言教學工作。",
+      "image": "emoji:📚",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:enseñanza"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "entidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "實體、機構、單位",
+      "en": "entity, organization",
+      "ipa": "/entiˈdad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "entitātem",
+          "zh": "實體、存在"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "entidad",
+          "zh": "實體、機構"
+        }
+      ],
+      "cognates_en": [
+        "entity"
+      ],
+      "story_zh": "源自中世紀拉丁語 entitātem（實體、本質），源於哲學討論中對「存在、實質存在之物」的探討。後來詞義延伸至法律與行政領域，用來指稱獨立存在的個體、組織或法人機構。",
+      "hook_zh": "英文的 entity 就是它！字尾 -idad 對應英文 -ity，代表「實體」或「機構」。",
+      "usage_zh": "陰性名詞。常用於指機構或單位，例如 entidad bancaria（銀行機構）、entidad pública（公共機構）。",
+      "example_es": "El banco es una entidad financiera muy importante.",
+      "example_zh": "這家銀行是一家非常重要的金融機構。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:entidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "entrenamiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "訓練、鍛鍊",
+      "en": "training, workout",
+      "ipa": "/entɾenaˈmjento/",
+      "breakdown": [
+        {
+          "part": "entrenar",
+          "zh": "訓練"
+        },
+        {
+          "part": "-miento",
+          "zh": "名詞字尾（表動作或結果）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "entrenar + -miento",
+          "zh": "訓練 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "entrenamiento",
+          "zh": "訓練、鍛鍊"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西語動詞 entrenar（訓練、鍛鍊）加上名詞字尾 -miento（表示動作或其結果）。字面即「訓練的動作與過程」，常用於體育鍛鍊、運動員訓練或各類技能的實務演練。",
+      "hook_zh": "動詞 entrenar（訓練）+ -miento（名詞字尾），就像運動員每天進行的「訓練」。",
+      "usage_zh": "陽性名詞。常搭配動詞 tener entrenamiento（有訓練）、hacer entrenamiento（做鍛鍊）。",
+      "example_es": "El entrenamiento de fútbol empieza a las cinco.",
+      "example_zh": "足球訓練下午五點開始。",
+      "image": "emoji:🏋️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:entrenamiento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "espectáculo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "表演、演出；奇觀",
+      "en": "show, performance, spectacle",
+      "ipa": "/espeɡˈtakulo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "spectaculum",
+          "zh": "表演、奇觀"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "espectáculo",
+          "zh": "表演、演出"
+        }
+      ],
+      "cognates_en": [
+        "spectacle"
+      ],
+      "story_zh": "源自拉丁語 spectaculum，源於動詞 spectō（觀看）與名詞字尾 -culum，本義指「表演、奇觀」或「觀賞表演的場所」。西班牙語借入後用來指公開的戲劇、歌舞等表演，或引人注目的壯觀景象。",
+      "hook_zh": "百老匯大秀（espectáculo）超精彩，台下觀眾（spectator）戴起眼鏡（spectacles）看得目不轉睛。",
+      "usage_zh": "陽性名詞。除了指舞台演出，片語 dar el espectáculo 常指「出洋相、引人非議」。",
+      "example_es": "Es el mejor espectáculo en Broadway.",
+      "example_zh": "這是百老匯最精彩的演出。",
+      "image": "emoji:🎭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:espectáculo",
+        "wiktionary:la:spectaculum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fenómeno",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "現象、奇才、怪人",
+      "en": "phenomenon, freak",
+      "ipa": "/feˈnomeno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "φαινόμενον",
+          "zh": "出現的事物、顯現之物"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "phaenomenon",
+          "zh": "現象"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fenómeno",
+          "zh": "現象、奇才"
+        }
+      ],
+      "cognates_en": [
+        "phenomenon"
+      ],
+      "story_zh": "源自古希臘語 φαινόμενον（phainómenon），本義是「顯現出來、被看到的事物」。經晚期拉丁語 phaenomenon 進入西語，用來指可觀察到的自然或社會現象；口語中也可指非凡的奇才或怪人。",
+      "hook_zh": "英文 phenomenon 的西語版！發音像「非糯米糯」，指各種奇妙的「現象」。",
+      "usage_zh": "陽性名詞。倒數第三音節有重音（fe-nó-me-no）。口語誇獎某人是奇才或超厲害時可說：¡Es un fenómeno!",
+      "example_es": "Este fenómeno natural ocurre cada primavera.",
+      "example_zh": "這種自然現象每年春天都會發生。",
+      "image": "emoji:🌪️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fenómeno"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "funcionamiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "運作、運轉、機能",
+      "en": "functioning, operation",
+      "ipa": "/funθjonaˈmjento/",
+      "breakdown": [
+        {
+          "part": "funcionar",
+          "zh": "運作"
+        },
+        {
+          "part": "-miento",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "functioning",
+        "function"
+      ],
+      "story_zh": "",
+      "hook_zh": "機器一開始運轉（funcionar），整個系統的 funcionamiento（運作）就開始了。",
+      "usage_zh": "常搭配 estar en buen funcionamiento（運作良好）或 fallo de funcionamiento（運轉故障）。",
+      "example_es": "El buen funcionamiento de la máquina es clave.",
+      "example_zh": "機器的良好運作是關鍵。",
+      "image": "emoji:⚙️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:funcionamiento"
       ],
       "writer": "gemini"
     }
