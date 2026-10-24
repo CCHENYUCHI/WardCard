@@ -428,13 +428,6 @@ module.exports = {
     s('rect', { x: 14, y: 34, width: 132, height: 92, rx: 4 }, 'blue', { accent: true }),
     s('path', { d: Array.from({ length: 12 }, (_, i) => star(80 + 30 * Math.cos(i * Math.PI / 6), 80 + 30 * Math.sin(i * Math.PI / 6), 6)).join('') }, 'yellow')
   ],
-  fernando: [
-    s('path', { d: 'M53 54h54l-4.6 80H57.6z' }, 'brown', { accent: true }),
-    s('path', { d: 'M52 44q7-6 14 0t14 0t14 0t14 0v12H52z' }, 'tan'),
-    s('path', { d: rects([[64, 74, 14, 14], [84, 92, 14, 14]]) }, 'sky'),
-    s('path', { d: 'M50 30h60l-6 106H56z', ...SW(3) }, 'gray', { stroke: true }),
-    s('path', { d: 'M98 16 88 64', ...SW(5) }, 'red', { stroke: true })
-  ],
   influencia: [
     s('rect', { x: 58, y: 100, width: 44, height: 36, rx: 3 }, 'tan'),
     ...person(80, 100, 'purple', { h: 34, w: 26, r: 12, accent: true }),
@@ -603,13 +596,6 @@ module.exports = {
     s('path', { d: 'M62 118q18-12 36 0q-18 10-36 0z' }, 'red'),
     s('path', { d: 'M28 74q-8 14 2 18 8-4-2-18zM132 74q8 14-2 18-8-4 2-18z' }, 'sky')
   ],
-  jorge: [
-    s('path', { d: 'M56 78 30 64M52 98H24M56 118l-22 14M104 78l26-14M108 98h28M104 118l22 14M74 44 64 26M86 44l10-18', ...SW(4) }, 'dark', { stroke: true }),
-    s('ellipse', { cx: 80, cy: 98, rx: 30, ry: 38 }, 'brown', { accent: true }),
-    s('circle', { cx: 80, cy: 56, r: 14 }, 'dark'),
-    s('path', { d: 'M80 66v68', ...SW(3) }, 'dark', { stroke: true }),
-    s('path', { d: 'M64 84q4-10 10-12', ...SW(3) }, 'tan', { stroke: true })
-  ],
   'mínimo': [
     s('rect', { x: 52, y: 18, width: 48, height: 124, rx: 8, ...SW(4) }, 'dark', { stroke: true }),
     s('path', { d: rects([[60, 94, 32, 18], [60, 72, 32, 18], [60, 50, 32, 18], [60, 28, 32, 18]]), ...SW(2, { 'stroke-dasharray': '4 4' }) }, 'gray', { stroke: true }),
@@ -749,12 +735,6 @@ module.exports = {
     s('path', { d: 'M24 48v26M48 48v26M72 48v26M96 48v26M120 48v26M140 48v26M20 56h124M20 66h124', ...SW(4) }, 'brown', { stroke: true }),
     s('path', { d: 'M100 128v-26M100 102l14 6-14 6z', ...SW(3) }, 'red', { stroke: true })
   ],
-  valencia: [
-    s('path', { d: 'M80 80 34 40M80 80l46-40M80 80 34 120M80 80l46 40', ...SW(6) }, 'gray', { stroke: true }),
-    s('circle', { cx: 80, cy: 80, r: 22 }, 'red', { accent: true }),
-    s('path', { d: dots([[34, 40], [126, 40], [34, 120], [126, 120]], 14) }, 'sky'),
-    s('path', { d: dots([[74, 74], [28, 34], [120, 34], [28, 114], [120, 114]], 4) }, 'white')
-  ],
   voluntad: [
     s('path', { d: burst(80, 74, 60, 42, 14) }, 'orange', { accent: true }),
     s('rect', { x: 64, y: 92, width: 30, height: 44 }, 'skin'),
@@ -859,5 +839,5 @@ module.exports = {
     s('path', { d: 'M64 96 44 72 48 40M96 96l20-24-4-32', ...SW(8) }, 'skin', { stroke: true }),
     s('path', { d: 'M30 38h100', ...SW(5) }, 'dark', { stroke: true }),
     s('path', { d: rects([[20, 24, 12, 28], [128, 24, 12, 28]]) }, 'dark')
-  ],
+  ]
 };

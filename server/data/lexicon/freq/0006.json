@@ -1,6 +1,6 @@
 {
   "theme": "freq-0006",
-  "theme_zh": "常用字（頻率第 1423–1667 名）",
+  "theme_zh": "常用字（頻率第 1423–1676 名）",
   "entries": [
     {
       "word": "alcalde",
@@ -1722,28 +1722,6 @@
       "writer": "gemini"
     },
     {
-      "word": "fernando",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "費奈可樂調酒（Fernet 苦酒混可樂）",
-      "en": "fernet with Coca-Cola",
-      "ipa": "/feɾˈnando/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "阿根廷國民調酒：將義大利苦酒 Fernet 混入可樂，取諧音暱稱為男子名字 Fernando。",
-      "usage_zh": "阿根廷特有的通俗調酒名稱，指 Fernet 苦酒調可樂，做調酒名詞時為陽性名詞。",
-      "example_es": "Vamos a preparar un fernando para la fiesta.",
-      "example_zh": "我們來為派對調一杯費奈可樂吧。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:fernando"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "influencia",
       "article": "la",
       "pos": "sustantivo",
@@ -2635,28 +2613,6 @@
       "writer": "gemini"
     },
     {
-      "word": "jorge",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "鰓金龜（甲蟲的一種）",
-      "en": "cockchafer",
-      "ipa": "/ˈxoɾxe/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "想像一隻名叫「豪爾赫（Jorge）」的甲蟲在農田裡爬行。",
-      "usage_zh": "陽性名詞。首字小寫時為昆蟲名；首字大寫時為常見男子名 Jorge（相當於英文 George）。",
-      "example_es": "Vimos un jorge volando en el jardín.",
-      "example_zh": "我們在花園裡看見一隻鰓金龜在飛。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:jorge"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "mínimo",
       "article": "",
       "pos": "adjetivo",
@@ -3398,48 +3354,6 @@
       "writer": "gemini"
     },
     {
-      "word": "valencia",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "（化學）化合價、價；效價",
-      "en": "valency, valence",
-      "ipa": "/baˈlenθja/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "valēns",
-          "zh": "強壯的、健康的"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "valentia",
-          "zh": "力量、活力"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "valencia",
-          "zh": "化合價"
-        }
-      ],
-      "cognates_en": [
-        "valence"
-      ],
-      "story_zh": "借自晚期拉丁語 valentia（力量、活力），源頭為拉丁語分詞 valēns（強壯的）。在現代化學發展中，科學家藉由「結合的力量與容量」之意，將其引申指原子相互化合的能力，即「化合價」。",
-      "hook_zh": "聯想英文 valence（化合價），原子伸出強而有力的手臂相互連結。",
-      "usage_zh": "陰性名詞。作化學術語指化合價；若首字母大寫 Valencia 則是西班牙第三大城市瓦倫西亞。",
-      "example_es": "El profesor explicó la valencia de los elementos químicos.",
-      "example_zh": "老師解釋了化學元素的化合價。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:valencia",
-        "wiktionary:la:valentia",
-        "wiktionary:la:valens"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "voluntad",
       "article": "la",
       "pos": "sustantivo",
@@ -3780,6 +3694,120 @@
       "sources": [
         "wiktionary:es:físico",
         "wiktionary:la:physicus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "impuesto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "稅、稅款",
+      "en": "tax, levy",
+      "ipa": "/imˈpwesto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "imponer",
+          "zh": "強加、徵收"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "impuesto",
+          "zh": "稅、稅款"
+        }
+      ],
+      "cognates_en": [
+        "impost"
+      ],
+      "story_zh": "源自動詞 imponer（強加、徵收）的過去分詞，該動詞借自拉丁語。原指政府強制向人民徵收的款項，引申為「稅捐、稅金」。英文的 impost 亦與其同源。",
+      "hook_zh": "政府「強加」（imponer）在帳單上的額外負擔，就是 impuesto（稅）。",
+      "usage_zh": "陽性名詞。常用搭配如 pagar impuestos（繳稅）或 declaración de impuestos（報稅）。",
+      "example_es": "El gobierno va a subir los impuestos.",
+      "example_zh": "政府將要調高稅率。",
+      "image": "emoji:🧾",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:impuesto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "inmediatamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "立刻、馬上",
+      "en": "immediately",
+      "ipa": "/immeˌdjataˈmente/",
+      "breakdown": [
+        {
+          "part": "inmediato",
+          "zh": "直接的、立即的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "inmediato + -mente",
+          "zh": "直接的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "inmediatamente",
+          "zh": "立刻、馬上"
+        }
+      ],
+      "cognates_en": [
+        "immediately"
+      ],
+      "story_zh": "由形容詞 inmediato（直接的、立即的）加上副詞字尾 -mente 構成。字面意思為不經任何中介、直接發生，引申為「立刻、馬上」。",
+      "hook_zh": "看到 inmedia- 就聯想到英文 immediately，加上 -mente 就是副詞「立刻」。",
+      "usage_zh": "副詞無陰陽性變化，常用於句首或句尾，口語也可說 ahora mismo。",
+      "example_es": "Por favor, llámame inmediatamente.",
+      "example_zh": "請立刻打電話給我。",
+      "image": "emoji:⚡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:inmediatamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "novela",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "小說；連續劇",
+      "en": "novel; soap opera",
+      "ipa": "/noˈbela/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "novella",
+          "zh": "故事"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "novela",
+          "zh": "小說"
+        }
+      ],
+      "cognates_en": [
+        "novel"
+      ],
+      "story_zh": "借自義大利語 novella（原指新奇的小故事）。在文藝復興時期演變成篇幅較長、情節豐富的故事文學，現代西語亦用來稱呼電視連續劇。",
+      "hook_zh": "英文小說是 novel，西語只要在後面加 a 就變成 novela。",
+      "usage_zh": "陰性名詞。除了長篇小說，在西語國家也常指 telenovela（電視肥皂劇）。",
+      "example_es": "Ella escribe una novela de amor.",
+      "example_zh": "她正在寫一部愛情小說。",
+      "image": "emoji:📖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:novela"
       ],
       "writer": "gemini"
     }
