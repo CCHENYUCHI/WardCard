@@ -23,7 +23,8 @@ const SKIP_WORDS = new Set(['luis', 'maría', 'brasil', 'pp', 'to', 'cuba', 'pos
   'puebla', 'toledo', 'césar', 'go', 'ud', 'data', 'orto',
   'ta', 'we', 'whatsapp', 'adema', 'mariano', 'calderón',
   'ca', 'varga', 'eleno', 'ojalar', 'medina', 'bob', 'house', 'info', 'play', 'wow', 'mail', 'sexy', 'xi', 'be', 'av',
-  'ortega', 'berlín', 'vega']);
+  'ortega', 'berlín', 'vega', 'agustín', 'federico', 'tony', 'arturo', 'marta', 'colón', 'salamanca', 'jama', 'ciar',
+  'osea', 'boy', 'full', 'center', 'miss', 'hey', 'test', 'po']);
 // Words that look like a form of another word but are learned on their own
 const NO_FOLD = new Set(['política', 'lista', 'firma']);
 // Kinds of Wiktionary entries that are not words to learn
@@ -38,7 +39,7 @@ const FOLD = {
   da: 'dar', dé: 'dar', di: 'decir', dice: 'decir', digo: 'decir', dicho: 'decir',
   sé: 'saber', sabe: 'saber', vino: 'venir', vengo: 'venir', ven: 'venir', hecho: 'hacer', haz: 'hacer',
   les: 'le', veces: 'vez', pasa: 'pasar', trata: 'tratar', tenia: 'tener', des: 'dar', pa: 'para', cabe: 'caber', salido: 'salir', saca: 'sacar', mata: 'matar', juro: 'jurar', mio: 'mío', manda: 'mandar', na: 'nada', quita: 'quitar', mama: 'mamá', basa: 'basar', tira: 'tirar', 'fué': 'ir',
-  quinta: 'quinto', negativa: 'negativo', 'dió': 'dar', nombrado: 'nombrar', finanza: 'finanzas', rayos: 'rayo', embarazado: 'embarazada',
+  quinta: 'quinto', negativa: 'negativo', 'dió': 'dar', nombrado: 'nombrar', finanza: 'finanzas', rayos: 'rayo', embarazado: 'embarazada', pega: 'pegar', tocado: 'tocar', mantenido: 'mantener', suyos: 'suyo',
   // Accented demonstratives and sólo are old spellings (RAE 2010): the same words as ese, este, aquel, solo
   'ése': 'ese', 'ésa': 'ese', 'ésos': 'ese', 'ésas': 'ese', 'éste': 'este', 'ésta': 'este', 'éstos': 'este', 'éstas': 'este',
   'aquél': 'aquel', 'aquélla': 'aquel', 'aquéllos': 'aquel', 'aquéllas': 'aquel', 'sólo': 'solo',
