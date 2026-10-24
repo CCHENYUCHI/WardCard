@@ -2243,6 +2243,63 @@
       "writer": "gemini"
     },
     {
+      "word": "eléctrico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "電的、電力的",
+      "en": "electric, electrical",
+      "ipa": "/eˈleɡtɾiko/",
+      "breakdown": [
+        {
+          "part": "electr-",
+          "zh": "琥珀、電"
+        },
+        {
+          "part": "-ico",
+          "zh": "…的（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἤλεκτρον",
+          "zh": "琥珀"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "electrum",
+          "zh": "琥珀"
+        },
+        {
+          "lang_zh": "新拉丁語",
+          "word": "electricus",
+          "zh": "電的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "eléctrico",
+          "zh": "電的"
+        }
+      ],
+      "cognates_en": [
+        "electric",
+        "electricity"
+      ],
+      "story_zh": "源自古希臘語 ἤλεκτρον（琥珀）。古希臘人發現用布摩擦琥珀能產生靜電並吸引輕物，近代新拉丁語便造出 ēlectricus 來指稱這種如同琥珀般的帶電現象，演變為現代西語中「電的」。",
+      "hook_zh": "英文就是 electric，想成摩擦「琥珀」產生靜電，就是電力的由來。",
+      "usage_zh": "陰性為 eléctrica。常見搭配如 coche eléctrico（電動車）、guitarra eléctrica（電吉他）。",
+      "example_es": "Mi hermano se compró un coche eléctrico.",
+      "example_zh": "我哥哥買了一輛電動車。",
+      "image": "emoji:⚡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:eléctrico",
+        "wiktionary:la:electricus",
+        "wiktionary:la:electrum"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "escritura",
       "article": "la",
       "pos": "sustantivo",
@@ -2641,6 +2698,41 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:petición"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "previo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "先前的、事先的",
+      "en": "previous, preliminary",
+      "ipa": "/ˈpɾebjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "praevius",
+          "zh": "走在前面的、先前的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "previo",
+          "zh": "先前的、事先的"
+        }
+      ],
+      "cognates_en": [
+        "previous"
+      ],
+      "story_zh": "源自拉丁語借詞 praevius，原本指走在前面或在前方引導，後來演變成在某件事發生之前的先行條件或準備，也就是「先前的、事先的」。英文的 previous 也是同源字。",
+      "hook_zh": "長得跟英文 previous 極為相似，只要把尾巴換成西語常見的 -o 就記住了。",
+      "usage_zh": "陰性為 previa。常見片語如 previo aviso（事先通知）或 sin previo aviso（無預警地）。",
+      "example_es": "Necesitas hacer una cita previa para la consulta.",
+      "example_zh": "看診前你需要先預約。",
+      "image": "emoji:⏮️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:previo"
       ],
       "writer": "gemini"
     },
