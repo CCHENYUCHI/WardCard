@@ -1,6 +1,6 @@
 {
   "theme": "freq-0017",
-  "theme_zh": "常用字（頻率第 4063–4301 名）",
+  "theme_zh": "常用字（頻率第 4063–4312 名）",
   "entries": [
     {
       "word": "documentación",
@@ -395,67 +395,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:legado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "mariano",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "聖母瑪利亞的、聖母的",
-      "en": "Marian (relating to the Virgin Mary)",
-      "ipa": "/maˈɾjano/",
-      "breakdown": [
-        {
-          "part": "María",
-          "zh": "聖母瑪利亞"
-        },
-        {
-          "part": "-ano",
-          "zh": "形容詞字尾，與…相關"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "聖經希伯來語",
-          "word": "מרים",
-          "zh": "米利暗"
-        },
-        {
-          "lang_zh": "通用希臘語",
-          "word": "Μᾰρῐ́ᾱ",
-          "zh": "瑪利亞"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "Maria",
-          "zh": "瑪利亞"
-        },
-        {
-          "lang_zh": "新拉丁語",
-          "word": "Marianus",
-          "zh": "聖母瑪利亞的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "mariano",
-          "zh": "聖母瑪利亞的"
-        }
-      ],
-      "cognates_en": [
-        "Marian"
-      ],
-      "story_zh": "源自新拉丁語 Marianus，由聖母名 Maria 加上形容詞字尾 -anus 組成；Maria 則可一路溯源至通用希臘語 Μᾰρῐ́ᾱ 與聖經希伯來語 מרים。在天主教傳統中，專門用來指稱與聖母瑪利亞相關的事物。",
-      "hook_zh": "María（瑪利亞）+ -ano（形容詞尾）= mariano（聖母瑪利亞的）。",
-      "usage_zh": "宗教專用形容詞，有陰陽性變化（mariano / mariana），常見如 devoción mariana（聖母敬禮）。",
-      "example_es": "El mes de mayo está dedicado a la devoción mariana.",
-      "example_zh": "五月是天主教奉獻給聖母敬禮的月份。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:mariano",
-        "wiktionary:la:Marianus",
-        "wiktionary:la:Maria"
       ],
       "writer": "gemini"
     },
@@ -861,28 +800,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:sufrimiento"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "ta",
-      "article": "",
-      "pos": "interjección",
-      "zh": "好吧、知道了；在（está 的縮寫）",
-      "en": "okay; is (clipping of está)",
-      "ipa": "/ˈta/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "口語中輕快的一聲「ta！」，就像中文的「妥了、好啦」，簡潔俐落。",
-      "usage_zh": "在烏拉圭與阿根廷常用於表示贊同（同 tá）；口語中也是 está 的省音縮寫。",
-      "example_es": "¡Ta, nos vemos mañana!",
-      "example_zh": "好，我們明天見！",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:ta"
       ],
       "writer": "gemini"
     },
@@ -2227,28 +2144,6 @@
       "writer": "gemini"
     },
     {
-      "word": "adema",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "（礦坑中的）支柱、支架",
-      "en": "mine prop, shore",
-      "ipa": "/aˈdema/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "礦工走進黑暗坑道，看到兩旁木頭支柱撐住岩壁，確保安全「阿德馬（adema）」！",
-      "usage_zh": "陰性名詞，礦業專業術語，同義詞為 ademe。",
-      "example_es": "Los mineros reforzaron la adema del túnel.",
-      "example_zh": "礦工們加固了坑道的支架。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:adema"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "afectado",
       "article": "",
       "pos": "adjetivo",
@@ -2324,62 +2219,6 @@
       "sources": [
         "wiktionary:es:biblia",
         "wiktionary:la:biblia"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "calderón",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "大鐵鍋；延長記號；段落符號（¶）；領航鯨",
-      "en": "large cauldron; fermata; pilcrow; pilot whale",
-      "ipa": "/kaldeˈɾon/",
-      "breakdown": [
-        {
-          "part": "caldera",
-          "zh": "鍋爐、大水鍋"
-        },
-        {
-          "part": "-ón",
-          "zh": "表巨大之指大字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "caldus",
-          "zh": "溫暖的、熱的"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "caldaria",
-          "zh": "熱水鍋、大水壺"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "caldera",
-          "zh": "鍋爐"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "calderón",
-          "zh": "大鐵鍋；延長記號；領航鯨"
-        }
-      ],
-      "cognates_en": [
-        "cauldron"
-      ],
-      "story_zh": "源自拉丁語 caldus（熱的），發展出 caldaria（熱水壺、水鍋），西語變為 caldera（大水鍋），加上指大字尾 -ón 成為「巨大鐵鍋」。樂譜上的延長記號（𝄐）因形狀像個倒扣的半圓弧鍋蓋，也被形象地稱為 calderón。",
-      "hook_zh": "英文 cauldron（大鍋），加上西語指大字尾 -ón，樂譜延長記號像口倒扣的鍋！",
-      "usage_zh": "陽性名詞，字尾重音帶重音符號 -ón，複數形去掉重音標記為 calderones。",
-      "example_es": "El director mantuvo la nota con un calderón.",
-      "example_zh": "指揮用延長記號將這個音符延長停留。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:calderón",
-        "wiktionary:la:caldaria",
-        "wiktionary:la:caldus"
       ],
       "writer": "gemini"
     },
@@ -3560,61 +3399,6 @@
       "writer": "gemini"
     },
     {
-      "word": "we",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "老兄、傢伙；笨蛋（墨西哥俚語）",
-      "en": "dude, guy, buddy, idiot",
-      "ipa": "/ˈwe/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "güey",
-          "zh": "老兄、蠢蛋"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "we",
-          "zh": "老兄、傢伙"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "為墨西哥俚語 güey 的口語速讀變體，反映了日常交談中 /gw/ 音弱化，並在某些情況下丟失結尾 /i/ 音的語音演變現象。",
-      "hook_zh": "墨西哥聊天時滿滿的 we，相當於美式口語中的 dude 或 bro。",
-      "usage_zh": "極口語的墨西哥俗語，多用於平輩朋友之間，切勿對長輩或正式場合使用。",
-      "example_es": "¡Hola, we! ¿A dónde vas?",
-      "example_zh": "嗨，老兄！你要去哪裡？",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:we"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "whatsapp",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "WhatsApp 訊息；WhatsApp 通訊軟體",
-      "en": "WhatsApp, WhatsApp message",
-      "ipa": "/ˈwatsap/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "傳訊息在西語常直接說 mandar un whatsapp，就像台灣人說「賴我一下」。",
-      "usage_zh": "陽性名詞（el whatsapp），小寫通常指一則 WhatsApp 訊息，複數為 whatsapps。",
-      "example_es": "Te envié un whatsapp pero no me respondiste.",
-      "example_zh": "我傳了一則 WhatsApp 給你，但你沒回覆。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:whatsapp"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "adquirir",
       "article": "",
       "pos": "verbo",
@@ -4042,6 +3826,238 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:comprobar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "correa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "皮帶、帶子；牽繩",
+      "en": "belt, band, leash",
+      "ipa": "/koˈrea/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "corrigia",
+          "zh": "鞋帶、皮帶"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "correa",
+          "zh": "皮帶、牽繩"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 corrigia，本義是指綁鞋子用的皮帶或皮繩。隨著歷史演變，西語中保留了這個字並擴展其義，用來指稱各式各樣由皮革或其他材質製成的帶子、機械傳動皮帶，如今在日常生活中更廣泛用作遛狗用的「牽繩」。",
+      "hook_zh": "帶小狗出門時牠一直想往前跑（correr），你手上必須牢牢拉住牽繩（correa）。",
+      "usage_zh": "陰性名詞。日常生活極常指遛狗牽繩（correa para perros），也可指行李箱綁帶或手錶帶。",
+      "example_es": "Siempre llevo a mi perro con correa.",
+      "example_zh": "我總是繫著牽繩遛狗。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:correa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cruel",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "殘忍的、刻薄的",
+      "en": "cruel, mean",
+      "ipa": "/ˈkɾwel/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "crūdēlis",
+          "zh": "殘酷的、冷血的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cruel",
+          "zh": "殘忍的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cruel",
+          "zh": "殘忍的、刻薄的"
+        }
+      ],
+      "cognates_en": [
+        "cruel"
+      ],
+      "story_zh": "經由古西班牙語繼承自拉丁語 crūdēlis，原意即為殘酷無情、冷血。英語的 cruel 同樣源於該拉丁語字根，因此西語與英語在拼法上完全一致，核心詞義亦始終保持不變。",
+      "hook_zh": "與英文 cruel 拼法完全相同、意思完全一致，看到就能直接轉換記憶！",
+      "usage_zh": "陰陽同形形容詞，修飾陽性或陰性名詞形式皆為 cruel，複數形為 crueles。",
+      "example_es": "A veces la vida puede ser muy cruel.",
+      "example_zh": "有時候生活可能非常殘酷。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cruel"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "difundir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "散布、傳播（消息、理念等）",
+      "en": "to spread, disseminate (ideas, etc.)",
+      "ipa": "/difunˈdiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "diffundere",
+          "zh": "散開、傾注、擴散"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "difundir",
+          "zh": "散布、傳播"
+        }
+      ],
+      "cognates_en": [
+        "diffuse"
+      ],
+      "story_zh": "書面借自拉丁語動詞 diffundere，原意是「往四周倒出、擴散、散開」。引申至西班牙語中，主要指將資訊、學說、文化或訊息像液體散開般廣泛傳播開來。",
+      "hook_zh": "聯想英文 diffuse（擴散），西語 difundir 就是把訊息廣泛向外傳播發散出去。",
+      "usage_zh": "第三類規則動詞（-ir）。新聞與網路常見搭配為 difundir noticias（散播消息）。",
+      "example_es": "No debemos difundir noticias falsas.",
+      "example_zh": "我們不應該散布假消息。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:difundir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dinámica",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "動力、動態；（社群）互動抽獎活動",
+      "en": "dynamic, dynamics; contest",
+      "ipa": "/diˈnamika/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "δύναμαι",
+          "zh": "能夠"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "δύναμις",
+          "zh": "力量"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "δυναμικός",
+          "zh": "有力量的、強大的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dinámica",
+          "zh": "動力、動態、互動活動"
+        }
+      ],
+      "cognates_en": [
+        "dynamic"
+      ],
+      "story_zh": "學者借自古希臘語 δυναμικός（有力量的），其源頭為 δύναμις（力量）與動詞 δύναμαι（能夠）。引入西語後最初指動力學或事物運作的動態機制；在現代拉美社群網路上，更引申指活絡氣氛的「互動小遊戲」或「抽獎活動」。",
+      "hook_zh": "英文 dynamic 的名詞形式，想成小編為了增加社群「活力動態」而舉辦的抽獎活動。",
+      "usage_zh": "陰性名詞。拉美網路常用「hacer una dinámica」指舉辦社群抽獎或問答互動。",
+      "example_es": "Gané un libro en una dinámica de Instagram.",
+      "example_zh": "我在 Instagram 的抽獎活動中贏得了一本書。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dinámica"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "disciplina",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "紀律、自律；學科、專業領域",
+      "en": "discipline, subject (area of study)",
+      "ipa": "/disθiˈplina/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "disciplina",
+          "zh": "教學、學問、紀律"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "disciplina",
+          "zh": "紀律、學科"
+        }
+      ],
+      "cognates_en": [
+        "discipline"
+      ],
+      "story_zh": "源自拉丁語 disciplina，本義是「受教、指導、學識門類」。因為求學與吸收知識必須具備秩序與自制力，該詞逐漸演變出自我約束的「紀律」之意，同時也一直保留著學術「學科、專業領域」的意思。",
+      "hook_zh": "英文 discipline 結尾 e 換成西語陰性結尾 a，拼寫相仿、意思完全對應。",
+      "usage_zh": "陰性名詞。除了維持秩序與自律外，也常指大學院系裡的「學術領域」或運動項目。",
+      "example_es": "La disciplina es fundamental para aprender un idioma.",
+      "example_zh": "自律是學好一門語言的根本。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:disciplina"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "discriminación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "歧視、區分",
+      "en": "discrimination",
+      "ipa": "/diskɾiminaˈθjon/",
+      "breakdown": [
+        {
+          "part": "discriminar",
+          "zh": "區分、歧視"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示行為或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "discrīminātiōnem",
+          "zh": "劃分、區分"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "discriminación",
+          "zh": "歧視、區別"
+        }
+      ],
+      "cognates_en": [
+        "discrimination"
+      ],
+      "story_zh": "源自拉丁語 discrīminātiōnem，本義為「劃分界線、區分」。在詞義演變中，這個詞從客觀中立的「分辨、區隔」，逐漸轉變為帶有負面色彩的「不平等對待」或「歧視」。",
+      "hook_zh": "英文 discrimination 直接對應西語，注意字尾 -tion 換成西語的 -ción 即可。",
+      "usage_zh": "陰性名詞。常搭配介詞 contra（反對…歧視）或 por（因…而歧視），如 discriminación racial。",
+      "example_es": "La ley prohíbe cualquier tipo de discriminación.",
+      "example_zh": "法律禁止任何形式的歧視。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:discriminación"
       ],
       "writer": "gemini"
     }
