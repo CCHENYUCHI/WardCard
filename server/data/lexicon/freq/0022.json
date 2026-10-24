@@ -3442,6 +3442,184 @@
         "wiktionary:es:coste"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "cuero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "皮革、獸皮",
+      "en": "leather, animal skin",
+      "ipa": "/ˈkweɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*(s)ker-",
+          "zh": "切下、分離"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "corium",
+          "zh": "獸皮、皮革"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuero",
+          "zh": "皮革、獸皮"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 corium（獸皮、皮革），可追溯至印歐語根 *(s)ker-（切開、剝下），最初指從動物身上割剝下來的整張皮，後來演變為經鞣製加工後的皮革。在西語口語中也可借指皮球或好身材。",
+      "hook_zh": "想像真皮（cuero）皮夾很有質感，摸起來觸感細緻；發音像「枯葉揉」成皮革。",
+      "usage_zh": "常用 de cuero（真皮製的），如 chaqueta de cuero（皮夾克）、zapatos de cuero（皮鞋）。",
+      "example_es": "Esta chaqueta está hecha de cuero auténtico.",
+      "example_zh": "這件夾克是真皮製成的。",
+      "image": "emoji:👞",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuero",
+        "wiktionary:la:corium"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "diana",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "靶心、靶子；晨號",
+      "en": "bullseye, target, reveille",
+      "ipa": "/ˈdjana/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "Stella Diana",
+          "zh": "晨星"
+        },
+        {
+          "lang_zh": "義大利語",
+          "word": "battere la Diana",
+          "zh": "吹奏晨號"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "diana",
+          "zh": "晨號、靶心"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "詞源尚不確定。推測晨號之意源自義大利語片語 battere la Diana，其中 Diana 指拂曉時分的晨星（Stella Diana）。士兵破曉時聽晨號起床並集合進行射擊訓練，後來便引申指射擊練習的「靶心」或「靶子」。",
+      "hook_zh": "射箭正中「靶心（diana）」，就像神射手黛安娜（Diana）女神一樣神準！",
+      "usage_zh": "常見片語 dar en la diana 表示「命中靶心」，引申為「說中要害、切中核心」。",
+      "example_es": "La flecha dio justo en el centro de la diana.",
+      "example_zh": "箭正好射中了靶心中央。",
+      "image": "emoji:🎯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:diana"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "disminución",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "減少、降低、縮減",
+      "en": "reduction, decrease, abatement",
+      "ipa": "/disminuˈθjon/",
+      "breakdown": [
+        {
+          "part": "disminuir",
+          "zh": "減少"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "由動詞 disminuir（減少）加上表動作或狀態的名詞字尾 -ción 衍生而來，指數量、程度、規模或強度的降低與縮減。",
+      "hook_zh": "字根 dis-（分開、減少）加 min-（小），名詞字尾 -ción，合起來就是「縮小、減少」。",
+      "usage_zh": "陰性名詞，複數為 disminuciones（去重音）。常用搭配 una disminución de/en（…的減少）。",
+      "example_es": "Hubo una notable disminución en las ventas este mes.",
+      "example_zh": "這個月的銷售量出現了顯著的減少。",
+      "image": "emoji:📉",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:disminución"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "diversión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "娛樂、消遣、好玩",
+      "en": "fun, entertainment, amusement",
+      "ipa": "/dibeɾˈsjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "dīversiōnem",
+          "zh": "轉移、娛樂"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "diversión",
+          "zh": "娛樂、消遣"
+        }
+      ],
+      "cognates_en": [
+        "diversion"
+      ],
+      "story_zh": "學術借自中世紀拉丁語 dīversiōnem，原意為「轉向、轉移」。當注意力從繁重嚴肅的工作中轉移開來，給心靈帶來放鬆與消遣，就演變成了「娛樂、好玩」。英文同源字 diversion 也有消遣之意。",
+      "hook_zh": "英文 diversion（轉移、消遣），把繁重的心情「轉移」開來，就是西語的 diversión（娛樂）！",
+      "usage_zh": "陰性名詞，複數 diversiones。形容詞為 divertido（有趣的），動詞為 divertirse（玩得開心）。",
+      "example_es": "El parque de atracciones ofrece mucha diversión para los niños.",
+      "example_zh": "這座遊樂園為孩子們提供了許多樂趣。",
+      "image": "emoji:🎡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:diversión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ejemplar",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "模範的、典範的；樣本、一冊",
+      "en": "exemplary; copy, specimen",
+      "ipa": "/exemˈplaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "exemplārem",
+          "zh": "模範的、榜樣的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ejemplar",
+          "zh": "模範的；樣本、一冊"
+        }
+      ],
+      "cognates_en": [
+        "exemplary"
+      ],
+      "story_zh": "學術借自拉丁語形容詞 exemplārem（榜樣的、作為範本的），源自 exemplum（例子、樣本）。在西語中可作形容詞表示「堪稱模範的」，也轉作陽性名詞，指書籍的「一本、一冊」或動植物「標本」。英文同源字為 exemplary。",
+      "hook_zh": "由 ejemplo（例子）延伸而來：能當作例子的就是「模範的（ejemplar）」，一本書的樣本也是 ejemplar。",
+      "usage_zh": "作形容詞男女同形（conducta ejemplar）；作陽性名詞指書刊的「一冊、一本」（un ejemplar del libro）。",
+      "example_es": "El profesor felicitó al alumno por su conducta ejemplar.",
+      "example_zh": "老師稱讚了那位學生模範般的表現。",
+      "image": "emoji:📖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ejemplar"
+      ],
+      "writer": "gemini"
     }
   ]
 }
