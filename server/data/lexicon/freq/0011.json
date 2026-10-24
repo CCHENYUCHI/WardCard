@@ -2003,6 +2003,47 @@
       "writer": "gemini"
     },
     {
+      "word": "jurar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "發誓、宣誓；咒罵",
+      "en": "to swear, to take an oath",
+      "ipa": "/xuˈɾaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "iūrāre",
+          "zh": "發誓、立誓"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "iurar",
+          "zh": "發誓"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "jurar",
+          "zh": "發誓、宣誓"
+        }
+      ],
+      "cognates_en": [
+        "jury"
+      ],
+      "story_zh": "源自拉丁語動詞 iūrāre，本義為莊嚴地立誓或做出具法律約束力的承諾。該詞經由古西班牙語 iurar 傳承為現代西語的 jurar。法庭上必須宣誓公正裁決的「陪審團」（jury）即為同源字。",
+      "hook_zh": "想想法庭上的陪審團（jury），開庭前每個人都要舉起右手「發誓」（jurar）。",
+      "usage_zh": "常見句型如 jurar por...（對著…發誓）或 jurar que...（發誓…）；第一人稱現在式為規則變化 juro。",
+      "example_es": "Te juro que digo la verdad.",
+      "example_zh": "我向你發誓我說的是實話。",
+      "image": "emoji:✋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:jurar",
+        "wiktionary:la:iuro"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "monte",
       "article": "el",
       "pos": "sustantivo",
