@@ -3,6 +3,358 @@
   "theme_zh": "常用字（頻率第 3598–3817 名）",
   "entries": [
     {
+      "word": "asiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "座位、椅子",
+      "en": "seat",
+      "ipa": "/aˈsjento/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "在捷運上看到空位趕快「啊，先坐（a-sien-to）」！這就是座位。",
+      "usage_zh": "常見搭配如 tomar asiento（入座、坐下）、asiento de ventanilla（靠窗座位）。",
+      "example_es": "Por favor, tome asiento.",
+      "example_zh": "請坐。",
+      "image": "emoji:🪑",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:asiento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asumir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "承擔、承接；假定、認為",
+      "en": "to assume, to take on, to suppose",
+      "ipa": "/asuˈmiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "assūmere",
+          "zh": "採取、接受、承擔"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "asumir",
+          "zh": "承擔、假定"
+        }
+      ],
+      "cognates_en": [
+        "assume"
+      ],
+      "story_zh": "源自拉丁語 assūmere（由 ad-「朝向」與 sūmō「拿取」組成），原意為「接過來、承擔、接受」。後來引申為在職責上主動承擔責任，或在心理上先「假定、認可」某件事為真。英文的 assume 亦同源。",
+      "hook_zh": "英文的 assume（假定、承擔），在西語把字尾換成 -ir 就是動詞 asumir。",
+      "usage_zh": "常見搭配為 asumir la responsabilidad（承擔責任）或 asumir las consecuencias（承擔後果）。",
+      "example_es": "Debemos asumir la responsabilidad de nuestros actos.",
+      "example_zh": "我們必須為自己的行為承擔責任。",
+      "image": "emoji:💼",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:asumir",
+        "wiktionary:la:assumo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "calma",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "平靜、鎮靜、安寧",
+      "en": "calm, stillness, tranquility",
+      "ipa": "/ˈkalma/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "καῦμα",
+          "zh": "酷熱"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "cauma",
+          "zh": "酷熱、白天的炎熱"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "calma",
+          "zh": "平靜、安寧"
+        }
+      ],
+      "cognates_en": [
+        "calm"
+      ],
+      "story_zh": "源自古希臘語 καῦμα（酷熱），經晚期拉丁語 cauma 進入西語，也推測可能受到義大利語影響。原本指地中海正午酷熱時萬物止息、無風無浪的狀態，後引申為風平浪靜與內心的平靜。英文的 calm 亦同源。",
+      "hook_zh": "英文就是 calm，字尾加個 a 變成西語陰性名詞 calma（平靜、冷靜）。",
+      "usage_zh": "常用片語有 con calma（從容地、慢慢來）與 mantener la calma（保持冷靜）。",
+      "example_es": "Debes mantener la calma en situaciones difíciles.",
+      "example_zh": "在困難的情況下，你必須保持冷靜。",
+      "image": "emoji:🧘",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:calma",
+        "wiktionary:la:cauma"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "capa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "披風、斗篷；層、塗層",
+      "en": "cloak, cape, layer, coat",
+      "ipa": "/ˈkapa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "cappa",
+          "zh": "防雨斗篷、披風"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "capa",
+          "zh": "披風"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "capa",
+          "zh": "披風、層"
+        }
+      ],
+      "cognates_en": [
+        "cape"
+      ],
+      "story_zh": "源自古西班牙語 capa，往前可追溯至晚期拉丁語 cappa（防雨斗篷、披風）。斗篷是罩在衣物最外面的覆蓋物，因而引申出覆蓋在表面上的「層、塗層」。英文的 cape（斗篷、披肩）與此同源。",
+      "hook_zh": "超級英雄出任務都要穿 cape（斗篷披風），西語把 e 換成 a 就是 capa！",
+      "usage_zh": "除了指披風，日常生活中極常用於各種「層」，如 capa de ozono（臭氧層）。",
+      "example_es": "El superhéroe lleva una capa roja.",
+      "example_zh": "那位超級英雄穿著一件紅色披風。",
+      "image": "emoji:🦸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:capa",
+        "wiktionary:la:cappa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cuento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "故事、童話；謊言",
+      "en": "story, tale, lie",
+      "ipa": "/ˈkwento/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "computus",
+          "zh": "計算、算帳"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*contus",
+          "zh": "計算"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuento",
+          "zh": "故事、童話"
+        }
+      ],
+      "cognates_en": [
+        "count"
+      ],
+      "story_zh": "源自拉丁語 computus（計算、算帳），經通俗拉丁語演變為西語 cuento。古代「點算數目」與「依序敘述事件」概念相通，因此從算帳引申為講述事情，最終演變為「故事」，甚至指編造的「謊話」。",
+      "hook_zh": "爺爺一邊「數（contar）」零錢，一邊講小時候的「故事（cuento）」。",
+      "usage_zh": "常用搭配有 contar un cuento（講故事）；¡No me vengas con cuentos! 意為「少跟我編藉口！」",
+      "example_es": "Mi abuela me contaba un cuento antes de dormir.",
+      "example_zh": "我奶奶以前睡前都會給我講故事。",
+      "image": "emoji:📖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuento",
+        "wiktionary:la:computus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cumbre",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "山頂、高峰；高峰會",
+      "en": "summit, peak, top",
+      "ipa": "/ˈkumbɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*kelH-",
+          "zh": "高起、聳立"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "culminem",
+          "zh": "頂部、頂端"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cumbre",
+          "zh": "山頂、高峰會"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自原始印歐語 *kelH-（高起、聳立），在拉丁語中演化為 culminem（頂部），進入西語後演變為 cumbre，指山峰或頂點。現代用來指各國領袖齊聚的「高峰會」，則是仿譯自英語的 summit。",
+      "hook_zh": "想像爬上最高峰（cumbre），雲霧就在腳下，這就是「山頂」。",
+      "usage_zh": "陰性名詞。除了指山頂，也常用於「高峰會」，如 la Cumbre del Clima（氣候峰會）。",
+      "example_es": "Los montañeros llegaron a la cumbre.",
+      "example_zh": "登山者們到達了山頂。",
+      "image": "emoji:⛰️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cumbre",
+        "wiktionary:la:culmen"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "desaparecido",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "失蹤的、不見的",
+      "en": "missing, disappeared",
+      "ipa": "/desapaɾeˈθido/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "des-（否定）加 aparecer（出現），沒出現、不見了就是「失蹤的」。",
+      "usage_zh": "常與 estar 連用表示狀態：estar desaparecido（失蹤）。也常作名詞指失蹤者。",
+      "example_es": "¿Adónde se fue el conejo desaparecido?",
+      "example_zh": "那隻失蹤的兔子跑去哪裡了？",
+      "image": "emoji:🔍",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:desaparecido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "embajador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "大使",
+      "en": "ambassador",
+      "ipa": "/embaxaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "embajada",
+          "zh": "使團、出使任務"
+        },
+        {
+          "part": "-dor",
+          "zh": "表示人"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "embaxador",
+          "zh": "使者、大使"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "embajador",
+          "zh": "大使"
+        }
+      ],
+      "cognates_en": [
+        "ambassador"
+      ],
+      "story_zh": "源自古西班牙語 embaxador，由 embajada（使團、出使任務）加上代表施事者的字尾 -dor 構成，專指代表國家出訪駐節的外交官。英文的 ambassador 也是同源字。",
+      "hook_zh": "英文是 ambassador，西語把 a- 換成 em-，字尾變成 -ador，就是「大使」。",
+      "usage_zh": "陽性名詞，陰性為 embajadora（女大使）；所屬的外交機構是 embajada（大使館）。",
+      "example_es": "El embajador de España visitó Taiwán.",
+      "example_zh": "西班牙大使訪問了台灣。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:embajador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "equilibrio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "平衡、均衡",
+      "en": "equilibrium, balance",
+      "ipa": "/ekiˈlibɾjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "aequilībrium",
+          "zh": "平衡"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "equilibrio",
+          "zh": "平衡"
+        }
+      ],
+      "cognates_en": [
+        "equilibrium"
+      ],
+      "story_zh": "源自拉丁語 aequilībrium，指均等且穩定的平衡狀態。西班牙語直接作為學術借詞吸收，完整保留了「平衡」的核心語義。英文的 equilibrium 也是同源字。",
+      "hook_zh": "英文 equilibrium 結尾改為西語的 -o，就是雜耍特技時需要的「平衡」。",
+      "usage_zh": "陽性名詞。常用片語有 perder el equilibrio（失去平衡）和 mantener el equilibrio（保持平衡）。",
+      "example_es": "El niño perdió el equilibrio y se cayó.",
+      "example_zh": "小男孩失去平衡跌倒了。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:equilibrio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "equivocado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "搞錯的、錯誤的",
+      "en": "mistaken, wrong",
+      "ipa": "/ekiboˈkado/",
+      "breakdown": [
+        {
+          "part": "equivocar",
+          "zh": "弄錯、搞錯"
+        },
+        {
+          "part": "-ado",
+          "zh": "形容詞/分詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "電話打錯號碼時，西語會說 número equivocado（打錯號碼了）。",
+      "usage_zh": "常與 estar 連用：estar equivocado（搞錯了、想錯了）。修飾陰性名詞時用 equivocada。",
+      "example_es": "Perdón, creo que estás equivocado.",
+      "example_zh": "抱歉，我覺得你搞錯了。",
+      "image": "emoji:❌",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:equivocado"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "vivo",
       "article": "",
       "pos": "adjetivo",
