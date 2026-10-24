@@ -781,6 +781,47 @@
       "writer": "gemini"
     },
     {
+      "word": "nombrar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "命名；任命、提及",
+      "en": "to name, to appoint",
+      "ipa": "/nomˈbɾaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nōmināre",
+          "zh": "命名、指定"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "nombrar",
+          "zh": "命名"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nombrar",
+          "zh": "命名、任命"
+        }
+      ],
+      "cognates_en": [
+        "nominate"
+      ],
+      "story_zh": "繼承自古西班牙語 nombrar，最終源自拉丁語 nōmināre（命名、提及），由 nōmen（名字）衍生而來。從「呼喚其名」演變為「命名」與「任命」官職。英文的 nominate（提名）也是來自同一拉丁字根。",
+      "hook_zh": "nombre 是名字，nombrar 就是把名字大聲叫出來：「命名」或「任命」某人。",
+      "usage_zh": "常接人稱前置詞 a，如 nombrar a alguien ministro（任命某人為部長）。",
+      "example_es": "Lo nombraron director de la empresa.",
+      "example_zh": "他們任命他為公司主管。",
+      "image": "emoji:🏷️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nombrar",
+        "wiktionary:la:nomino"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "pelear",
       "article": "",
       "pos": "verbo",
@@ -3340,6 +3381,255 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:depósito"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "desafío",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "挑戰；挑釁",
+      "en": "challenge, defiance",
+      "ipa": "/desaˈfio/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "面對巨大「挑戰」（desafío），想像勇士無畏地向巨龍拔劍下戰帖的畫面！",
+      "usage_zh": "陽性名詞，字尾 -ío 有重音。常見搭配如 aceptar un desafío（接受挑戰）。",
+      "example_es": "Aceptó el desafío con mucha valentía.",
+      "example_zh": "他非常勇敢地接受了這項挑戰。",
+      "image": "emoji:⚔️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:desafío"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "destinado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "注定的、預定的",
+      "en": "destined, predestined",
+      "ipa": "/destiˈnado/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "長得很像英文 destined，想像兩條命中注定（destinado）交會的命運紅線。",
+      "usage_zh": "常與介詞 a 連用：estar destinado a（注定要…、預定用於…）。陰性為 destinada。",
+      "example_es": "Estamos destinados a estar juntos.",
+      "example_zh": "我們注定要在一起。",
+      "image": "emoji:🎯",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:destinado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "embarazado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "懷孕的；尷尬不安的",
+      "en": "pregnant, uncomfortable",
+      "ipa": "/embaɾaˈθado/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "西語超級假朋友陷阱！長得像英文 embarrassed（尷尬），但西語其實是「懷孕的」。",
+      "usage_zh": "假朋友警示：英文 embarrassed 是「尷尬」，西語 embarazada 是「懷孕」，常用 estar embarazada。",
+      "example_es": "Mi hermana está embarazada de tres meses.",
+      "example_zh": "我姐姐懷孕三個月了。",
+      "image": "emoji:🤰",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:embarazado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gravedad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "嚴重性；重力、地心引力",
+      "en": "seriousness, gravity",
+      "ipa": "/ɡɾabeˈdad/",
+      "breakdown": [
+        {
+          "part": "grave",
+          "zh": "沉重、嚴重"
+        },
+        {
+          "part": "-dad",
+          "zh": "名詞字尾，表性質或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "gravitas",
+          "zh": "沉重、莊重"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gravedad",
+          "zh": "嚴重性、重力"
+        }
+      ],
+      "cognates_en": [
+        "gravity"
+      ],
+      "story_zh": "源自拉丁語 gravitas（沉重、莊重），來自形容詞 gravis（沉重）。最初指事情的「沉重、嚴重性」，推測對應拉丁語 gravitātem；後來才引申為物理學上的「重力」。英文的 gravity 也是同源字。",
+      "hook_zh": "牛頓被掉落的蘋果砸到發現「重力」（gravity），神情也瞬間變得「嚴重」了。",
+      "usage_zh": "陰性名詞。常見搭配如 herido de gravedad（重傷）或 ley de la gravedad（萬有引力定律）。",
+      "example_es": "El médico nos explicó la gravedad de la herida.",
+      "example_zh": "醫生向我們解釋了傷勢的嚴重性。",
+      "image": "emoji:🍎",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gravedad",
+        "wiktionary:la:gravitas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "herencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "遺產、繼承；遺傳",
+      "en": "inheritance, heredity",
+      "ipa": "/eˈɾenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*ǵʰeh₁-",
+          "zh": "留下、遺棄"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "hēres",
+          "zh": "繼承人"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "haerentia",
+          "zh": "繼承物"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "herencia",
+          "zh": "遺產"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "herencia",
+          "zh": "遺產、繼承"
+        }
+      ],
+      "cognates_en": [
+        "heir",
+        "heritage"
+      ],
+      "story_zh": "源自拉丁語 hēres（繼承人），更早可追溯至印歐語根，帶有「留下、遺棄」之意。後來演變出拉丁詞 haerentia，並經由古西班牙語進入現代西語。這個字最初指前人離世後「留下來」交給後代的事物，因而延伸為遺產與遺傳。",
+      "hook_zh": "英文的 heir（繼承人）和 heritage（遺產）都系出同門，看到 heren- 就聯想到繼承！",
+      "usage_zh": "為陰性名詞。常見搭配如 recibir una herencia（獲得遺產）或 dejar en herencia（留作遺產）。",
+      "example_es": "Ella recibió una pequeña herencia de su abuelo.",
+      "example_zh": "她從祖父那裡繼承了一筆小額遺產。",
+      "image": "emoji:📜",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:herencia",
+        "wiktionary:la:heres"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "innovación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "創新、革新",
+      "en": "innovation",
+      "ipa": "/innobaˈθjon/",
+      "breakdown": [
+        {
+          "part": "innovar",
+          "zh": "創新"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表動作或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "innovō",
+          "zh": "更新、革新"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "innovātiō",
+          "zh": "更新、革新"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "innovación",
+          "zh": "創新、革新"
+        }
+      ],
+      "cognates_en": [
+        "innovation"
+      ],
+      "story_zh": "源自拉丁語動詞 innovō（使煥然一新），由字首 in-（進入、朝向）加上 novus 相關詞根組成，再加上名詞字尾 -tiō 形成晚期拉丁語 innovātiō。西語借入後指注入新觀念、使事物煥然一新的「創新」行為或成果。",
+      "hook_zh": "跟英文 innovation 長得一模一樣，核心就是 in（進去）+ nova（新的）！",
+      "usage_zh": "以 -ción 結尾必為陰性名詞，複數時重音符號去除變為 innovaciones。",
+      "example_es": "La innovación tecnológica cambia nuestras vidas.",
+      "example_zh": "科技創新改變了我們的生活。",
+      "image": "emoji:💡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:innovación",
+        "wiktionary:la:innovatio",
+        "wiktionary:la:innovo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "invasión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "侵略、入侵",
+      "en": "invasion",
+      "ipa": "/imbaˈsjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "invasiō",
+          "zh": "侵入、入侵"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "invasión",
+          "zh": "侵略、入侵"
+        }
+      ],
+      "cognates_en": [
+        "invasion"
+      ],
+      "story_zh": "借自晚期拉丁語 invasiō（侵入、襲擊），指跨越界線、強力進入並佔領他方領地的行徑。西語保留了這個學術借詞，現今廣泛用於軍事侵略、物種入侵或生活中的侵擾。",
+      "hook_zh": "拼法和英文 invasion 幾乎相同，只差西語在 -sión 加上重音符號。",
+      "usage_zh": "以 -sión 結尾的名詞皆為陰性名詞，複數為 invasiones。",
+      "example_es": "La invasión de las tropas causó gran pánico.",
+      "example_zh": "部隊的入侵引發了極大的恐慌。",
+      "image": "emoji:⚔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:invasión"
       ],
       "writer": "gemini"
     }
