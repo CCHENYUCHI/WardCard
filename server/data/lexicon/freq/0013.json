@@ -3657,6 +3657,171 @@
         "wiktionary:es:combustible"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "curiosidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "好奇心；新奇古怪的事物",
+      "en": "curiosity",
+      "ipa": "/kuɾjosiˈdad/",
+      "breakdown": [
+        {
+          "part": "curioso",
+          "zh": "好奇的"
+        },
+        {
+          "part": "-idad",
+          "zh": "名詞字尾，表性質或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "curiositātem",
+          "zh": "求知欲、好奇心"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "curiosidad",
+          "zh": "好奇心"
+        }
+      ],
+      "cognates_en": [
+        "curiosity"
+      ],
+      "story_zh": "源自拉丁語名詞 curiositātem（求知欲、好奇心），為學術借詞。原本指對周遭未知事物渴望探究的心思，後來進入西班牙語演變成 curiosidad，既指內在的「好奇心」，也能指引人好奇的「珍奇事物」。英文同源字為 curiosity。",
+      "hook_zh": "英文 curiosity 把字尾 -ty 換成西語名詞字尾 -dad，就成了 curiosidad。",
+      "usage_zh": "陰性名詞。常用搭配 por curiosidad（出於好奇）或 sentir/tener curiosidad（感到好奇）。",
+      "example_es": "Tengo mucha curiosidad por saber la verdad.",
+      "example_zh": "我很好奇想知道真相。",
+      "image": "emoji:🔍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:curiosidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "deportivo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "運動的、體育的；運動風的",
+      "en": "sports, sportive, athletic",
+      "ipa": "/depoɾˈtibo/",
+      "breakdown": [
+        {
+          "part": "deporte",
+          "zh": "運動、體育"
+        },
+        {
+          "part": "-ivo",
+          "zh": "形容詞字尾，表具有…特性"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "deporte + -ivo",
+          "zh": "運動 + 具有…特質的形容詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "deportivo",
+          "zh": "運動的、體育的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西班牙語名詞 deporte（運動）加上形容詞字尾 -ivo（表示具備某種特性）衍生而來。字面意思就是「具有運動特質的」，用來修飾各類體育活動、服裝或設施。作名詞時也可指體育中心，或跑車（coche deportivo 的簡稱）。",
+      "hook_zh": "deporte（運動）加上字尾 -ivo 變形容詞 deportivo，穿上運動裝去運動！",
+      "usage_zh": "陽性 deportivo、陰性 deportiva。常修飾 ropa deportiva（運動服）或 coche deportivo（跑車）。",
+      "example_es": "Me gusta llevar ropa deportiva los fines de semana.",
+      "example_zh": "我週末喜歡穿運動服。",
+      "image": "emoji:⚽",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:deportivo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "describir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "描寫、描述；刻畫",
+      "en": "to describe, to depict",
+      "ipa": "/deskɾiˈbiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēscrībere",
+          "zh": "描寫、記述"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "describir",
+          "zh": "描述"
+        }
+      ],
+      "cognates_en": [
+        "describe"
+      ],
+      "story_zh": "源自拉丁語動詞 dēscrībere（記述、抄寫、描寫）。演變為西班牙語後，保留了「用言語或文字詳細刻畫人事物的樣貌與特徵」的核心意義。英文的 describe 也是直接源自同一個拉丁字。",
+      "hook_zh": "英文 describe 的同源字，把字尾 -be 改成西語動詞字尾 -bir 就是 describir。",
+      "usage_zh": "規則動詞，但過去分詞為不規則的 descrito（在阿根廷與烏拉圭亦可作 descripto）。",
+      "example_es": "¿Puedes describir cómo era la casa?",
+      "example_zh": "你能描述一下那座房子長什麼樣子嗎？",
+      "image": "emoji:📝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:describir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "diversidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "多樣性、多元性；差異",
+      "en": "diversity, variety",
+      "ipa": "/dibeɾsiˈdad/",
+      "breakdown": [
+        {
+          "part": "diverso",
+          "zh": "不同的、多元的"
+        },
+        {
+          "part": "-idad",
+          "zh": "名詞字尾，表性質或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dīversitātem",
+          "zh": "多樣、差異"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "diversidad",
+          "zh": "多元性、多樣性"
+        }
+      ],
+      "cognates_en": [
+        "diversity"
+      ],
+      "story_zh": "源自拉丁語名詞 dīversitātem（差異、多種多樣）。這個字進入西班牙語後成為 diversidad，用來指事物呈現出豐富不同面貌的性質或狀態，廣泛應用於生態多樣性與文化多元等領域。英文同源字為 diversity。",
+      "hook_zh": "英文 diversity 的同源字，將名詞字尾 -ty 轉換成西語的 -dad 即為 diversidad。",
+      "usage_zh": "陰性名詞。常見搭配如 diversidad cultural（文化多樣性）或 biodiversidad（生物多樣性）。",
+      "example_es": "La ciudad es famosa por su gran diversidad cultural.",
+      "example_zh": "這座城市以其豐富的文化多樣性聞名。",
+      "image": "emoji:🌈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:diversidad"
+      ],
+      "writer": "gemini"
     }
   ]
 }
