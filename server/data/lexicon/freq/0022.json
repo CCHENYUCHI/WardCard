@@ -1,6 +1,6 @@
 {
   "theme": "freq-0022",
-  "theme_zh": "常用字（頻率第 5286–5544 名）",
+  "theme_zh": "常用字（頻率第 5286–5551 名）",
   "entries": [
     {
       "word": "desigualdad",
@@ -2787,44 +2787,6 @@
       "writer": "gemini"
     },
     {
-      "word": "diana",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "靶心、靶子；晨號",
-      "en": "bullseye, target, reveille",
-      "ipa": "/ˈdjana/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "義大利語",
-          "word": "Stella Diana",
-          "zh": "晨星"
-        },
-        {
-          "lang_zh": "義大利語",
-          "word": "battere la Diana",
-          "zh": "吹奏晨號"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "diana",
-          "zh": "晨號、靶心"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "詞源尚不確定。推測晨號之意源自義大利語片語 battere la Diana，其中 Diana 指拂曉時分的晨星（Stella Diana）。士兵破曉時聽晨號起床並集合進行射擊訓練，後來便引申指射擊練習的「靶心」或「靶子」。",
-      "hook_zh": "射箭正中「靶心（diana）」，就像神射手黛安娜（Diana）女神一樣神準！",
-      "usage_zh": "常見片語 dar en la diana 表示「命中靶心」，引申為「說中要害、切中核心」。",
-      "example_es": "La flecha dio justo en el centro de la diana.",
-      "example_zh": "箭正好射中了靶心中央。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:diana"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "disminución",
       "article": "la",
       "pos": "sustantivo",
@@ -3292,39 +3254,6 @@
       "writer": "gemini"
     },
     {
-      "word": "jo",
-      "article": "",
-      "pos": "interjección",
-      "zh": "哎呀、討厭（表沮喪或抗議）；停（喝馬聲）",
-      "en": "aw, shoot; whoa",
-      "ipa": "/ˈxo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "joder",
-          "zh": "該死、操"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "jo",
-          "zh": "哎呀、討厭"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "西語日常口語中常見的感嘆詞，主要是粗口動詞 joder（該死）的委婉縮截詞（euphemistic clipping）。說話者為了避免口出穢言，在脫口前截斷為 ¡jo!，用來傳達輕微的懊惱、失望或抗議。",
-      "hook_zh": "發音就像中文的「吼！」，遇到不順心的事情時忍不住脫口而出「吼～討厭」。",
-      "usage_zh": "感嘆詞，書寫時前後加上倒感嘆號 ¡jo!，語氣比 joder 溫和許多，在日常生活中十分普遍。",
-      "example_es": "¡Jo, se me olvidó la cartera en casa!",
-      "example_zh": "哎呀，我把皮夾忘在家裡了！",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:jo"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "laguna",
       "article": "la",
       "pos": "sustantivo",
@@ -3680,41 +3609,6 @@
       "writer": "gemini"
     },
     {
-      "word": "press",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "（健身）推舉；新聞界",
-      "en": "exercise press; news press",
-      "ipa": "/ˈpɾes/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "press",
-          "zh": "推舉；出版印刷"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "press",
-          "zh": "推舉；新聞界"
-        }
-      ],
-      "cognates_en": [
-        "press"
-      ],
-      "story_zh": "未同化的現代外來語，直接借自英語 press。在西語中常用於健身重訓動作，亦可指出版新聞界。",
-      "hook_zh": "在健身房平躺用力「press」（推壓槓鈴），這動作就是臥推。",
-      "usage_zh": "外來語名詞，單複數同形（los press）。健身最常見搭配為 el press de banca（臥推）。",
-      "example_es": "Hoy en el gimnasio voy a hacer press de banca.",
-      "example_zh": "今天在健身房我要做臥推。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:press"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "prohibición",
       "article": "la",
       "pos": "sustantivo",
@@ -3870,37 +3764,171 @@
       "writer": "gemini"
     },
     {
-      "word": "setiembre",
-      "article": "el",
+      "word": "significativo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "有意義的、顯著的、重大的",
+      "en": "significant, meaningful",
+      "ipa": "/siɡnifikaˈtibo/",
+      "breakdown": [
+        {
+          "part": "significar",
+          "zh": "意味著、表示"
+        },
+        {
+          "part": "-ivo",
+          "zh": "具…特徵的形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "significatīvus",
+          "zh": "有意義的、表示的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "significativo",
+          "zh": "顯著的、有重大意義的"
+        }
+      ],
+      "cognates_en": [
+        "significant"
+      ],
+      "story_zh": "源自晚期拉丁語 significatīvus，由動詞 significar（表示、意味著）加上形容詞字尾 -ivo 構成。它最初指具有明確象徵或代表意義的事物，現代西語中多引申為「顯著的、重大的」，用來形容幅度或影響不可忽視。",
+      "hook_zh": "看到 sign（記號）就很有意義，英文 significant 和它根本是雙胞胎。",
+      "usage_zh": "常修飾 cambio（改變）或 aumento（增加），如 un cambio significativo（顯著的改變）。",
+      "example_es": "Hubo un aumento significativo en las ventas este mes.",
+      "example_zh": "這個月的銷售量有了顯著的增長。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:significativo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sobra",
+      "article": "la",
       "pos": "sustantivo",
-      "zh": "九月（septiembre 的異體）",
-      "en": "September",
-      "ipa": "/seˈtjembɾe/",
+      "zh": "剩餘、多餘；（複數）剩菜",
+      "en": "surplus, excess, leftovers",
+      "ipa": "/ˈsobɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "sobrar",
+          "zh": "剩餘、多出"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sobra",
+          "zh": "剩餘、多餘物"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西語動詞 sobrar（多出、剩餘）衍生而來的名詞，指多餘、超出需要的事物。在日常生活中，極常使用複數形態 sobras 來指餐後吃不完的「剩菜」。",
+      "hook_zh": "冰箱裡「剩」下（sobra）很多食物，都是昨天吃剩的菜。",
+      "usage_zh": "常用複數 las sobras 指「剩菜」；常見片語 de sobra 意為「綽綽有餘」。",
+      "example_es": "Guardamos las sobras de la cena en la nevera.",
+      "example_zh": "我們把晚餐吃剩的菜冰進冰箱裡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sobra"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "solitario",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "孤單的、孤獨的；獨居的",
+      "en": "lonely, solitary",
+      "ipa": "/soliˈtaɾjo/",
       "breakdown": [],
       "origin_chain": [
         {
           "lang_zh": "拉丁語",
-          "word": "septembrem",
-          "zh": "七月（古羅馬曆）"
+          "word": "sōlus",
+          "zh": "單獨的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "sōlitās",
+          "zh": "孤獨、寂寞"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "sōlitārius",
+          "zh": "孤獨的、獨自的"
         },
         {
           "lang_zh": "西班牙語",
-          "word": "setiembre",
-          "zh": "九月"
+          "word": "solitario",
+          "zh": "孤單的、孤獨的"
         }
       ],
       "cognates_en": [
-        "September"
+        "solitary",
+        "solitaire"
       ],
-      "story_zh": "直接繼承自拉丁語 septembrem。古羅馬曆以三月為歲首，因此第七個月（字根 septem 意為「七」）即為今日的九月。西語中簡化了子音 p，是常見異體。",
-      "hook_zh": "英文 September 去掉中間的 p，就變成西語的 setiembre。",
-      "usage_zh": "陽性名詞。在西班牙與拉美均可使用，但標準書面語中帶 p 的 septiembre 更常見。",
-      "example_es": "Las clases comienzan a principios de setiembre.",
-      "example_zh": "課程於九月初開始。",
+      "story_zh": "源自拉丁語 sōlitārius（孤單的），由 sōlus（單獨的）衍生出 sōlitās（孤獨），再加上形容詞字尾 -ārius。它用來描寫遠離人群、獨自一人的狀態。英文的 solitary（孤獨的）與單人紙牌接龍 solitaire 都源自同一個字。",
+      "hook_zh": "英文 solitary 是孤獨，西語換成 -o 結尾；一人玩接龍牌超孤單。",
+      "usage_zh": "陰性為 solitaria；作陽性名詞 el solitario 時指「單人接龍紙牌遊戲」。",
+      "example_es": "A él le gusta dar paseos solitarios por la playa.",
+      "example_zh": "他喜歡在海灘上獨自散步。",
       "image": "svg",
       "confidence": "sourced",
       "sources": [
-        "wiktionary:es:setiembre"
+        "wiktionary:es:solitario",
+        "wiktionary:la:solitarius",
+        "wiktionary:la:solitas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tecnológico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "技術的、科技的",
+      "en": "technological",
+      "ipa": "/teɡnoˈloxiko/",
+      "breakdown": [
+        {
+          "part": "tecnología",
+          "zh": "技術、科技"
+        },
+        {
+          "part": "-ico",
+          "zh": "與…相關的形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "tecnología",
+          "zh": "科技、技術"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tecnológico",
+          "zh": "科技的、技術的"
+        }
+      ],
+      "cognates_en": [
+        "technological"
+      ],
+      "story_zh": "由西語名詞 tecnología（科技）加上形容詞字尾 -ico 構成，表示「與科技相關的」。常指現代科學技術的應用、進步或產業創新。英文同源字為 technological。",
+      "hook_zh": "看到 techno- 就聯想到 technology（科技），尾巴 -ico 是形容詞。",
+      "usage_zh": "陰性為 tecnológica。常見搭配如 avance tecnológico（科技進步）。",
+      "example_es": "Vivimos en una era de gran desarrollo tecnológico.",
+      "example_zh": "我們生活在一個科技高度發展的時代。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tecnológico"
       ],
       "writer": "gemini"
     }

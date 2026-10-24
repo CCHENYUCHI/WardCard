@@ -1,176 +1,7 @@
 {
   "theme": "freq-0023",
-  "theme_zh": "常用字（頻率第 5546–5771 名）",
+  "theme_zh": "常用字（頻率第 5554–5815 名）",
   "entries": [
-    {
-      "word": "significativo",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "有意義的、顯著的、重大的",
-      "en": "significant, meaningful",
-      "ipa": "/siɡnifikaˈtibo/",
-      "breakdown": [
-        {
-          "part": "significar",
-          "zh": "意味著、表示"
-        },
-        {
-          "part": "-ivo",
-          "zh": "具…特徵的形容詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "significatīvus",
-          "zh": "有意義的、表示的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "significativo",
-          "zh": "顯著的、有重大意義的"
-        }
-      ],
-      "cognates_en": [
-        "significant"
-      ],
-      "story_zh": "源自晚期拉丁語 significatīvus，由動詞 significar（表示、意味著）加上形容詞字尾 -ivo 構成。它最初指具有明確象徵或代表意義的事物，現代西語中多引申為「顯著的、重大的」，用來形容幅度或影響不可忽視。",
-      "hook_zh": "看到 sign（記號）就很有意義，英文 significant 和它根本是雙胞胎。",
-      "usage_zh": "常修飾 cambio（改變）或 aumento（增加），如 un cambio significativo（顯著的改變）。",
-      "example_es": "Hubo un aumento significativo en las ventas este mes.",
-      "example_zh": "這個月的銷售量有了顯著的增長。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:significativo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "sobra",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "剩餘、多餘；（複數）剩菜",
-      "en": "surplus, excess, leftovers",
-      "ipa": "/ˈsobɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "sobrar",
-          "zh": "剩餘、多出"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "sobra",
-          "zh": "剩餘、多餘物"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由西語動詞 sobrar（多出、剩餘）衍生而來的名詞，指多餘、超出需要的事物。在日常生活中，極常使用複數形態 sobras 來指餐後吃不完的「剩菜」。",
-      "hook_zh": "冰箱裡「剩」下（sobra）很多食物，都是昨天吃剩的菜。",
-      "usage_zh": "常用複數 las sobras 指「剩菜」；常見片語 de sobra 意為「綽綽有餘」。",
-      "example_es": "Guardamos las sobras de la cena en la nevera.",
-      "example_zh": "我們把晚餐吃剩的菜冰進冰箱裡。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:sobra"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "solitario",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "孤單的、孤獨的；獨居的",
-      "en": "lonely, solitary",
-      "ipa": "/soliˈtaɾjo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "sōlus",
-          "zh": "單獨的"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "sōlitās",
-          "zh": "孤獨、寂寞"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "sōlitārius",
-          "zh": "孤獨的、獨自的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "solitario",
-          "zh": "孤單的、孤獨的"
-        }
-      ],
-      "cognates_en": [
-        "solitary",
-        "solitaire"
-      ],
-      "story_zh": "源自拉丁語 sōlitārius（孤單的），由 sōlus（單獨的）衍生出 sōlitās（孤獨），再加上形容詞字尾 -ārius。它用來描寫遠離人群、獨自一人的狀態。英文的 solitary（孤獨的）與單人紙牌接龍 solitaire 都源自同一個字。",
-      "hook_zh": "英文 solitary 是孤獨，西語換成 -o 結尾；一人玩接龍牌超孤單。",
-      "usage_zh": "陰性為 solitaria；作陽性名詞 el solitario 時指「單人接龍紙牌遊戲」。",
-      "example_es": "A él le gusta dar paseos solitarios por la playa.",
-      "example_zh": "他喜歡在海灘上獨自散步。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:solitario",
-        "wiktionary:la:solitarius",
-        "wiktionary:la:solitas"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "tecnológico",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "技術的、科技的",
-      "en": "technological",
-      "ipa": "/teɡnoˈloxiko/",
-      "breakdown": [
-        {
-          "part": "tecnología",
-          "zh": "技術、科技"
-        },
-        {
-          "part": "-ico",
-          "zh": "與…相關的形容詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "tecnología",
-          "zh": "科技、技術"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tecnológico",
-          "zh": "科技的、技術的"
-        }
-      ],
-      "cognates_en": [
-        "technological"
-      ],
-      "story_zh": "由西語名詞 tecnología（科技）加上形容詞字尾 -ico 構成，表示「與科技相關的」。常指現代科學技術的應用、進步或產業創新。英文同源字為 technological。",
-      "hook_zh": "看到 techno- 就聯想到 technology（科技），尾巴 -ico 是形容詞。",
-      "usage_zh": "陰性為 tecnológica。常見搭配如 avance tecnológico（科技進步）。",
-      "example_es": "Vivimos en una era de gran desarrollo tecnológico.",
-      "example_zh": "我們生活在一個科技高度發展的時代。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tecnológico"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "trinidad",
       "article": "la",
@@ -394,50 +225,6 @@
       "writer": "gemini"
     },
     {
-      "word": "autora",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "女作者、女作家",
-      "en": "female author, authoress",
-      "ipa": "/auˈtoɾa/",
-      "breakdown": [
-        {
-          "part": "autor",
-          "zh": "作者"
-        },
-        {
-          "part": "-a",
-          "zh": "陰性字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "autor",
-          "zh": "作者"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "autora",
-          "zh": "女作者"
-        }
-      ],
-      "cognates_en": [
-        "author"
-      ],
-      "story_zh": "源自 autor（作者）加上陰性名詞字尾 -a。在西班牙語中，許多以子音結尾的身分名詞，只要在詞尾加上 -a 即可轉換為指稱女性的對應字。",
-      "hook_zh": "看見 autor 想到作者，字尾換成 a 就是女作者（autora）。",
-      "usage_zh": "陽性為 autor，陰性為 autora。冠詞依性別搭配 el autor 或 la autora。",
-      "example_es": "Isabel Allende es una autora chilena muy famosa.",
-      "example_zh": "伊莎貝·阿言德是一位非常著名的智利女作家。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:autora"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "borrar",
       "article": "",
       "pos": "verbo",
@@ -476,28 +263,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:borrar"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "bs",
-      "article": "",
-      "pos": "frase",
-      "zh": "親親、吻（besos 的縮寫）",
-      "en": "kisses (abbreviation of besos)",
-      "ipa": "/ˈbesos/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "傳簡訊說再見時附上 bs，代表送你兩頰大大的親親（besos）。",
-      "usage_zh": "常見於西語傳訊或信件末尾的非正式道別，常連寫為 besos 或縮寫 bs。",
-      "example_es": "Nos vemos el viernes, bs.",
-      "example_zh": "我們週五見，親親。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:bs"
       ],
       "writer": "gemini"
     },
@@ -802,31 +567,6 @@
       "sources": [
         "wiktionary:es:demonio",
         "wiktionary:la:daemonium"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "denominado",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "被稱為…的；所謂的",
-      "en": "named, called, denominated",
-      "ipa": "/denomiˈnado/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "denominate",
-        "denomination"
-      ],
-      "story_zh": "",
-      "hook_zh": "英文同源字 denominate（命名），字根裡藏著 nombre（名字），表示「被取了名字的」。",
-      "usage_zh": "動詞 denominar 的過去分詞轉形容詞，常作 los denominados…（所謂的…），須配合性數。",
-      "example_es": "Es el denominado efecto invernadero.",
-      "example_zh": "這就是所謂的溫室效應。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:denominado"
       ],
       "writer": "gemini"
     },
@@ -1532,41 +1272,6 @@
       "writer": "gemini"
     },
     {
-      "word": "plus",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "額外津貼、加給；加號、優勢",
-      "en": "bonus, extra earnings, plus",
-      "ipa": "/ˈplus/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "plūs",
-          "zh": "更多"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "plus",
-          "zh": "津貼、加給"
-        }
-      ],
-      "cognates_en": [
-        "plus"
-      ],
-      "story_zh": "借自拉丁語的 plūs，本義為「更多」。在西語中借入作為名詞，引申指正常薪資之外的「額外津貼、加給」，或指額外附加的價值與好處。",
-      "hook_zh": "就像英文的 plus（加號），在薪水上「多加」一點，就是津貼或獎金。",
-      "usage_zh": "陽性名詞，複數為 pluses。常指工作上的加給（如 un plus de peligrosidad 危險加給）。",
-      "example_es": "La empresa nos dio un plus este mes por el buen rendimiento.",
-      "example_zh": "公司這個月因為表現良好給了我們一筆加給。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:plus"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "productividad",
       "article": "la",
       "pos": "sustantivo",
@@ -2126,28 +1831,6 @@
       "writer": "gemini"
     },
     {
-      "word": "ésto",
-      "article": "",
-      "pos": "pronombre",
-      "zh": "這（esto 的常見誤拼）",
-      "en": "this (misspelling of esto)",
-      "ipa": "/ˈesto/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "中性代名詞 esto 永遠不加重音！記住「中性字從不戴帽子」，寫 ésto 就扣分。",
-      "usage_zh": "正寫法規範：RAE 早已明定中性指示代名詞 esto 絕無重音符號，寫成 ésto 屬拼寫錯誤。",
-      "example_es": "Es un error común escribir ésto en lugar de esto.",
-      "example_zh": "把 esto 寫成 ésto 是很常見的錯誤。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:ésto"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "acusación",
       "article": "la",
       "pos": "sustantivo",
@@ -2343,28 +2026,6 @@
       "sources": [
         "wiktionary:es:beso",
         "wiktionary:la:basium"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "carolina",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "玄鳳鸚鵡；柳葉膠木",
-      "en": "cockatiel; willow bustic",
-      "ipa": "/kaɾoˈlina/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "頭頂著鮮黃羽冠、臉頰自帶腮紅的玄鳳鸚鵡，就像一位名叫 Carolina 的俏皮女孩。",
-      "usage_zh": "在西班牙日常語境中多指寵物鳥「玄鳳鸚鵡」，為陰性名詞（la carolina）。",
-      "example_es": "Mi carolina canta contenta en su jaula.",
-      "example_zh": "我的玄鳳鸚鵡在籠子裡開心地唱歌。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:carolina"
       ],
       "writer": "gemini"
     },
@@ -2683,28 +2344,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:divino"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "elegido",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "獲選者、天選之人、當選者",
-      "en": "chosen one, elect",
-      "ipa": "/eleˈxido/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "聯想「被選出來」的命定之人，就像電影《駭客任務》裡救世主般的「The Chosen One」。",
-      "usage_zh": "陰性形式為 la elegida。亦可作動詞 elegir 的過去分詞（已選出）。",
-      "example_es": "En la película, él descubre que es el elegido.",
-      "example_zh": "在電影中，他發現自己就是天選之人。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:elegido"
       ],
       "writer": "gemini"
     },
@@ -3157,41 +2796,6 @@
       "writer": "gemini"
     },
     {
-      "word": "like",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "（社群媒體的）讚",
-      "en": "like (on social media)",
-      "ipa": "/ˈlaik/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "like",
-          "zh": "讚、喜歡"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "like",
-          "zh": "讚"
-        }
-      ],
-      "cognates_en": [
-        "like"
-      ],
-      "story_zh": "直接借自現代英語的 like。隨著 Facebook、Instagram 等社群網路服務在全球普及，西語使用者也將按讚的功能與獲得的「讚」直接稱為 like。",
-      "hook_zh": "社群平台臉書或 IG 上按的那個英文「like」，西語原封不動直接借用！",
-      "usage_zh": "陽性名詞 el like，複數為 likes；常見動詞搭配為 dar like（按讚）。",
-      "example_es": "Si te gusta el video, dale un like.",
-      "example_zh": "如果你喜歡這部影片，請按個讚。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:like"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "limitar",
       "article": "",
       "pos": "verbo",
@@ -3391,48 +2995,6 @@
       "sources": [
         "wiktionary:es:minoría",
         "wiktionary:la:minor"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "molinar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "研磨、碾磨",
-      "en": "to mill, to grind",
-      "ipa": "/moliˈnaɾ/",
-      "breakdown": [
-        {
-          "part": "molino",
-          "zh": "磨坊、磨盤"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "molino",
-          "zh": "磨坊、磨盤"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "molinar",
-          "zh": "研磨、碾磨"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由西班牙語名詞 molino（磨坊、磨盤）加上動詞字尾 -ar 構成，字面意思就是「在磨坊中操作」，引申為「碾磨、磨碎穀物」。日常更常用不規則動詞 moler。",
-      "hook_zh": "走進磨坊 molino，把玉米拿去「磨」就是 molinar。",
-      "usage_zh": "規則第一變化動詞（-ar）。日常生活中更常使用同義不規則動詞 moler。",
-      "example_es": "Tienen que molinar el maíz para hacer harina.",
-      "example_zh": "他們必須研磨玉米來製作麵粉。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:molinar"
       ],
       "writer": "gemini"
     },
@@ -3688,81 +3250,6 @@
       "writer": "gemini"
     },
     {
-      "word": "simón",
-      "article": "",
-      "pos": "interjección",
-      "zh": "沒錯、當然（口語肯定回應）",
-      "en": "yes, hell yeah",
-      "ipa": "/siˈmon/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "sí",
-          "zh": "是、對"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "simón",
-          "zh": "沒錯、當然"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自西語肯定詞 sí（是的），透過押韻與人名 Simón（西蒙）的諧音轉化而來。這是常見的俚語玩法，用親切的諧音代替單純的「是」，表達爽快贊同。",
-      "hook_zh": "跟 sí（是的）押韻的西蒙（Simón），聽起來就像「沒錯啦」！",
-      "usage_zh": "墨西哥等拉美地區的口語俚語，用來爽快回答「對、好啊」，僅限非正式場合。",
-      "example_es": "—¿Vienes a la fiesta? —¡Simón, claro que voy!",
-      "example_zh": "——你要來派對嗎？——沒錯，我當然去！",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:simón"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "tomado",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "喝醉的",
-      "en": "drunk",
-      "ipa": "/toˈmado/",
-      "breakdown": [
-        {
-          "part": "tomar",
-          "zh": "喝、拿"
-        },
-        {
-          "part": "-ado",
-          "zh": "過去分詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "tomar",
-          "zh": "喝、拿"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tomado",
-          "zh": "喝醉的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "來自動詞 tomar（拿取、喝）的過去分詞。在西語日常口語中 tomar 常用於指「飲酒」，因此其分詞 tomado 便延伸表示「喝了酒的狀態」，即喝醉了。",
-      "hook_zh": "酒喝（tomar）太多了，整個人就處於「醉了的」（tomado）狀態。",
-      "usage_zh": "作形容詞時通常與 estar 搭配表示醉酒狀態；陰性形為 tomada。",
-      "example_es": "No manejes porque estás un poco tomado.",
-      "example_zh": "別開車，因為你有點喝醉了。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tomado"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "valer",
       "article": "",
       "pos": "verbo",
@@ -3809,6 +3296,547 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:valer"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vigor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "活力、精力、效力",
+      "en": "vigor, vitality, strength",
+      "ipa": "/biˈɡoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vigōrem",
+          "zh": "活力、精力"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vigor",
+          "zh": "活力、精力"
+        }
+      ],
+      "cognates_en": [
+        "vigor",
+        "vigorous"
+      ],
+      "story_zh": "借自拉丁語 vigōrem（精力、活力）。西班牙語作為學者借詞保留了這個詞彙，最初指充沛的生機與體力，在現代法律或制度用語中也延伸指「法律效力」。",
+      "hook_zh": "與英文的 vigor（精力）同源且拼法相同，聯想活力充沛、精力十足的樣子。",
+      "usage_zh": "常見法律或正式搭配為 entrar en vigor，表示法規或協議「生效、開始實施」。",
+      "example_es": "El anciano trabaja todos los días con mucho vigor.",
+      "example_zh": "這位老人家每天工作依然活力充沛。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vigor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ampliación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "擴大、擴建、放大",
+      "en": "enlargement, expansion, amplification",
+      "ipa": "/ampljaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "聯想形容詞 amplio（寬廣的），把空間或照片放大拉寬就是 ampliación。",
+      "usage_zh": "以 -ción 結尾的陰性名詞，複數形式為 ampliaciones，失去原有的重音符號。",
+      "example_es": "La empresa aprobó la ampliación de la oficina.",
+      "example_zh": "公司批准了辦公室的擴建計劃。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:ampliación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "balón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "球（大球、運動球）、氣球",
+      "en": "ball, balloon",
+      "ipa": "/baˈlon/",
+      "breakdown": [
+        {
+          "part": "bala",
+          "zh": "彈丸、小球"
+        },
+        {
+          "part": "-ón",
+          "zh": "指大詞綴"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "bala",
+          "zh": "彈丸、小球"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "balón",
+          "zh": "大球"
+        }
+      ],
+      "cognates_en": [
+        "balloon"
+      ],
+      "story_zh": "由 bala（彈丸、小球）加上表示巨大的詞尾 -ón 衍生而來，字面意思就是「大球」。在西語中通常指足球、籃球這類較大的運動充氣球，小球則多稱為 pelota。",
+      "hook_zh": "發音像英文 balloon（氣球），都是圓圓膨脹的球體；足籃球用 balón。",
+      "usage_zh": "足球或籃球等充氣大球慣用 balón（如 Balón de Oro 金球獎），小球用 pelota。",
+      "example_es": "Los niños juegan con el balón en el jardín.",
+      "example_zh": "孩子們在花園裡玩球。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:balón"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "barrera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "障礙、柵欄、人牆（足球）",
+      "en": "barrier, obstacle, wall",
+      "ipa": "/baˈreɾa/",
+      "breakdown": [
+        {
+          "part": "barra",
+          "zh": "橫木、橫條"
+        },
+        {
+          "part": "-era",
+          "zh": "指物品或場所的詞尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "barra",
+          "zh": "橫木、橫條"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "barrera",
+          "zh": "柵欄、障礙"
+        }
+      ],
+      "cognates_en": [
+        "barrier"
+      ],
+      "story_zh": "由 barra（橫木、欄杆）加上詞尾 -era 組成，原指用橫木架設擋路的柵欄。後來引申指各類實體路障，以及語言、文化等抽象障礙；在足球賽中也指阻擋自由球的人牆。",
+      "hook_zh": "英文 barrier（障礙）同源，想像一根長木條（barra）擋在路中央設下屏障。",
+      "usage_zh": "常指抽象障礙，例如 barrera del idioma（語言障礙）或 romper barreras（突破障礙）。",
+      "example_es": "El idioma no fue una barrera para hacer amigos.",
+      "example_zh": "語言並沒有成為交朋友的障礙。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:barrera"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bronce",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "青銅、銅牌",
+      "en": "bronze",
+      "ipa": "/ˈbɾonθe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "aes Brandusi",
+          "zh": "布林迪西之銅"
+        },
+        {
+          "lang_zh": "義大利語",
+          "word": "bronzo",
+          "zh": "青銅"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bronce",
+          "zh": "青銅"
+        }
+      ],
+      "cognates_en": [
+        "bronze"
+      ],
+      "story_zh": "借自義大利語 bronzo，源於拉丁語 aes Brandusi（布林迪西之銅）。義大利古城布林迪西在古代以鑄造青銅器聞名，該地名逐漸演變成青銅的通稱，後傳入西班牙語。",
+      "hook_zh": "與英文 bronze 同源且發音相近，也可聯想運動會頒獎台上第三名的「銅牌」。",
+      "usage_zh": "在體育競賽中常指第三名，例如 medalla de bronce（銅牌）或 ganarse el bronce。",
+      "example_es": "La estatua antigua está hecha de bronce.",
+      "example_zh": "這座古代雕像是用青銅鑄造的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bronce",
+        "wiktionary:la:aes"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cadáver",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "屍體、遺體",
+      "en": "corpse, cadaver",
+      "ipa": "/kaˈdabeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cadāvere",
+          "zh": "屍體"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cadáver",
+          "zh": "屍體"
+        }
+      ],
+      "cognates_en": [
+        "cadaver"
+      ],
+      "story_zh": "借自拉丁語的 cadāvere（屍體）。在西班牙語中屬於書面借詞，完整保留了原本指稱過世者遺骸、身軀的含義。",
+      "hook_zh": "英文醫學解剖用的 cadaver（大體、屍體），西語拼法幾乎完全相同。",
+      "usage_zh": "陽性名詞，複數加 -es 變為 cadáveres，重音依然落在 dá 不變。",
+      "example_es": "La policía encontró un cadáver en el bosque.",
+      "example_zh": "警方在森林裡發現了一具屍體。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cadáver"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "caracterizar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "具有…特徵；描繪…的特點",
+      "en": "to characterize",
+      "ipa": "/kaɾaɡteɾiˈθaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "χαρακτήρ",
+          "zh": "刻印、特徵"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "χαρακτηρίζω",
+          "zh": "刻畫、描繪特徵"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "charactērizō",
+          "zh": "表現特徵"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caracterizar",
+          "zh": "具有…特徵"
+        }
+      ],
+      "cognates_en": [
+        "characterize",
+        "character"
+      ],
+      "story_zh": "源自古希臘語 χαρακτήρ（原指雕刻工具或刻印的印記，引申為特徵），後衍生出動詞 χαρακτηρίζω（刻畫特徵）。經中世紀拉丁語借入西語後，演變成表示具備或描繪某種特質。",
+      "hook_zh": "聯想英文 character（性格、特色）加上動詞字尾，即「賦予或展現特質」。",
+      "usage_zh": "常用代名詞用法 caracterizarse por…，表示「以…為特色或特徵」。",
+      "example_es": "La amabilidad caracteriza a los habitantes de esta ciudad.",
+      "example_zh": "親切友善是這座城市居民的特點。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caracterizar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "colaborador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "合作者、協作者；同仁",
+      "en": "collaborator, co-worker",
+      "ipa": "/kolaboɾaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "colaborar",
+          "zh": "合作"
+        },
+        {
+          "part": "-dor",
+          "zh": "做…的人"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "collaborator"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文 collaborator（合作者），字尾 -dor 在西語代表「從事某動作的人」。",
+      "usage_zh": "陰性為 colaboradora。在職場環境中常作為對員工或團隊成員的尊稱。",
+      "example_es": "Él es un colaborador muy valioso para nuestro equipo.",
+      "example_zh": "他是我們團隊中非常寶貴的合作夥伴。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:colaborador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "destacado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "傑出的、出色的；突出的",
+      "en": "outstanding, prominent, notable",
+      "ipa": "/destaˈkado/",
+      "breakdown": [
+        {
+          "part": "destacar",
+          "zh": "突出、脫穎而出"
+        },
+        {
+          "part": "-ado",
+          "zh": "過去分詞／形容詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "從人群或背景中「突出」（destacar）出來的，自然就是「傑出的」。",
+      "usage_zh": "形容詞有陰陽性變化（destacado / destacada），亦可用來表示被強調、精選的內容。",
+      "example_es": "Es una científica destacada a nivel internacional.",
+      "example_zh": "她是國際知名的傑出科學家。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:destacado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "determinación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "決心、果斷；測定、確定",
+      "en": "determination, resolve, decision",
+      "ipa": "/deteɾminaˈθjon/",
+      "breakdown": [
+        {
+          "part": "determinar",
+          "zh": "決定、測定"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾（表動作或狀態）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "determinatio",
+          "zh": "邊界、結論"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "determinātiōnem",
+          "zh": "界定、決心"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "determinación",
+          "zh": "決心、確定"
+        }
+      ],
+      "cognates_en": [
+        "determination"
+      ],
+      "story_zh": "借自拉丁語 determinātiōnem（來自 determinatio，原指劃定界限或得出結論）。當事情的邊界被清楚定下，便引申為下定明確主張，進而演變成現代「意志堅定、決心」的意涵。",
+      "hook_zh": "英文 determination 完全同源同義，西語結尾 -ción 對應英文 -tion。",
+      "usage_zh": "陰性名詞。表達「帶著堅定決心」常見搭配為 con determinación；複數為 determinaciones。",
+      "example_es": "Trabajó con gran determinación para alcanzar su meta.",
+      "example_zh": "他帶著堅定的決心努力達成目標。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:determinación",
+        "wiktionary:la:determinatio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "enfrentamiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "衝突、交鋒、對抗",
+      "en": "clash, confrontation, showdown",
+      "ipa": "/enfɾentaˈmjento/",
+      "breakdown": [
+        {
+          "part": "enfrentar",
+          "zh": "面對、對抗"
+        },
+        {
+          "part": "-miento",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "enfrentar",
+          "zh": "面對、對抗"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "enfrentamiento",
+          "zh": "衝突、交鋒"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西語動詞 enfrentar（面對、對抗）加上名詞字尾 -miento。字面意思是雙方面對面的對峙狀態，進而引申為意見不合的衝突、兩軍交戰或體育賽事中的正面交鋒。",
+      "hook_zh": "兩個人在「前線」（frente）正面交鋒、互相對峙，爆發了激烈的 enfrentamiento！",
+      "usage_zh": "常見搭配有 enfrentamiento armado（武裝衝突）或 enfrentamiento político（政治交鋒）。",
+      "example_es": "El enfrentamiento entre los dos equipos fue intenso.",
+      "example_zh": "兩隊之間的對決非常激烈。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:enfrentamiento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "engañar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "欺騙、瞞騙；出軌",
+      "en": "to deceive, to trick, to cheat on",
+      "ipa": "/enɡaˈɲaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "gannio",
+          "zh": "吠叫、抱怨、嘲弄"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "ingannāre",
+          "zh": "欺騙、捉弄"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "engañar",
+          "zh": "欺騙、瞞騙"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自通俗拉丁語 ingannāre（欺騙），其源頭是古典拉丁語動詞 gannio，原意為「犬吠、抱怨、低吠」，後衍生出「冷嘲熱諷、捉弄」之意。經由對人嘲弄、戲弄的語義轉變，在通俗拉丁語中發展出「欺瞞、哄騙」的意思，最後演變為西語的 engañar。",
+      "hook_zh": "騙子戴著假面具（engañar），在背後嘲弄上當受騙的人。",
+      "usage_zh": "常作及物動詞 engañar a alguien（騙某人）；反身動詞 engañarse 表示「自欺欺人」。",
+      "example_es": "Él me engañó con mentiras.",
+      "example_zh": "他用謊言欺騙了我。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:engañar",
+        "wiktionary:la:inganno",
+        "wiktionary:la:gannio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "enseguida",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "立刻、馬上",
+      "en": "immediately, right away",
+      "ipa": "/enseˈɡida/",
+      "breakdown": [
+        {
+          "part": "en",
+          "zh": "在…中"
+        },
+        {
+          "part": "seguida",
+          "zh": "接續、緊跟"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "en + seguida",
+          "zh": "在…接續中"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "enseguida",
+          "zh": "立刻、馬上"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由介詞 en（在…之中）與 seguida（緊接、跟隨）合詞而成。字面意思是「緊接著前一件事的步伐」，引申為事情毫無間隔地發生，即「立刻、馬上」。",
+      "hook_zh": "在（en）後面緊緊跟著（seguida），一步都不停留，意思就是「馬上」去做！",
+      "usage_zh": "常單獨用作回答：¡Enseguida voy!（我馬上來！），也可以分開寫成 en seguida。",
+      "example_es": "Termino esto y voy enseguida.",
+      "example_zh": "我做完這個就馬上過去。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:enseguida"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estatua",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "雕像、塑像",
+      "en": "statue",
+      "ipa": "/esˈtatwa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "statua",
+          "zh": "雕像、立像"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estatua",
+          "zh": "雕像"
+        }
+      ],
+      "cognates_en": [
+        "statue"
+      ],
+      "story_zh": "直接借自拉丁語名詞 statua（雕像、塑像），源自代表「站立、安置」的詞根。雕像通常是巍然屹立、靜止不動的立體人像或造物，西語完整保留了拉丁原詞的形態與含義。",
+      "hook_zh": "英文 statue（雕像）在西語前面加上 e- 就變成 estatua，畫面是一座站立不動的石雕。",
+      "usage_zh": "陰性名詞（la estatua）。形容人愣住一動也不動可用 quedarse como una estatua。",
+      "example_es": "Hay una estatua hermosa en la plaza.",
+      "example_zh": "廣場上有一座美麗的雕像。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estatua"
       ],
       "writer": "gemini"
     }
