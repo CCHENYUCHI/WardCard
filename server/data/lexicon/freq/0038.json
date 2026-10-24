@@ -1,6 +1,6 @@
 {
   "theme": "freq-0038",
-  "theme_zh": "常用字（頻率第 9709–10037 名）",
+  "theme_zh": "常用字（頻率第 9709–10039 名）",
   "entries": [
     {
       "word": "timbre",
@@ -3677,58 +3677,6 @@
       "writer": "gemini"
     },
     {
-      "word": "pascual",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "復活節的、逾越節的",
-      "en": "Paschal",
-      "ipa": "/pasˈkwal/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "聖經希伯來語",
-          "word": "פֶּסַח",
-          "zh": "逾越節"
-        },
-        {
-          "lang_zh": "阿拉姆語",
-          "word": "פַּסְחָא",
-          "zh": "逾越節"
-        },
-        {
-          "lang_zh": "古希臘語",
-          "word": "πάσχα",
-          "zh": "逾越節、復活節"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "paschālis",
-          "zh": "復活節的、逾越節的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "pascual",
-          "zh": "復活節的"
-        }
-      ],
-      "cognates_en": [
-        "paschal"
-      ],
-      "story_zh": "借自晚期拉丁語 paschālis，受西語名詞 pascua 影響同化演變而成。最終源於希伯來語 פֶּסַח（pésaḥ，逾越節）。基督教將其沿用為紀念基督復活之節期，指復活節相關的儀式與禮俗。",
-      "hook_zh": "Pascua（復活節）的形容詞形式就是 pascual，英文是 paschal。",
-      "usage_zh": "陰陽同形形容詞。常見固定搭配如 cordero pascual（逾越節/復活節羔羊）或 cirio pascual（復活節大蠟燭）。",
-      "example_es": "La familia se reunió para compartir la cena pascual.",
-      "example_zh": "全家人聚在一起共進復活節晚餐。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:pascual",
-        "wiktionary:la:paschalis",
-        "wiktionary:la:pascha"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "piola",
       "article": "la",
       "pos": "sustantivo",
@@ -4086,6 +4034,50 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:roble"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "salarial",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "薪資的、工資的",
+      "en": "wage, salary",
+      "ipa": "/salaˈɾjal/",
+      "breakdown": [
+        {
+          "part": "salario",
+          "zh": "薪資、工資"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾（與…相關的）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "salario",
+          "zh": "薪資"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "salarial",
+          "zh": "薪資的"
+        }
+      ],
+      "cognates_en": [
+        "salary"
+      ],
+      "story_zh": "由名詞 salario（工資、薪水，源自拉丁文 salārium，原為古羅馬士兵購買食鹽所發放的補助津貼）加上關係形容詞後綴 -al 衍生而成。指與勞工工作待遇、酬勞直接相關的各項事務。",
+      "hook_zh": "salario（薪水）加上 -al 變成形容詞，aumento salarial 就是加薪！",
+      "usage_zh": "陰陽同形形容詞。常見搭配 brecha salarial（男女薪資差距）或 masa salarial（薪資總額）。",
+      "example_es": "Los sindicatos exigen una mejora salarial este año.",
+      "example_zh": "工會要求今年改善薪資待遇。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:salarial"
       ],
       "writer": "gemini"
     }
