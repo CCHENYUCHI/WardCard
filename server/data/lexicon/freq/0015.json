@@ -1,62 +1,7 @@
 {
   "theme": "freq-0015",
-  "theme_zh": "常用字（頻率第 3597–3816 名）",
+  "theme_zh": "常用字（頻率第 3599–3831 名）",
   "entries": [
-    {
-      "word": "asesino",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "兇手、殺手；殘酷的",
-      "en": "murderer, assassin",
-      "ipa": "/aseˈsino/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "阿拉伯語",
-          "word": "حَشَّاشِين",
-          "zh": "大麻吸食者"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "asesino",
-          "zh": "殺手、兇手"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自阿拉伯語 ḥaššāšīn，原指十字軍時期中東的暗殺派成員，傳說他們出任務前會使用大麻（hashish）；另一種說法指其源於表示信奉教派根基的詞彙。後來該詞傳入歐洲各語言，演變為專指冷酷行刺的「殺手」與「兇手」。",
-      "hook_zh": "傳說中暗殺組織刺客（assassin）出動，就是令人膽寒的 asesino。",
-      "usage_zh": "指女性兇手時使用陰性形 asesina；亦可當形容詞修飾名詞。",
-      "example_es": "La policía busca al asesino por toda la ciudad.",
-      "example_zh": "警方正在全城搜捕那名兇手。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:asesino"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "asiento",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "座位、椅子",
-      "en": "seat",
-      "ipa": "/aˈsjento/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "在捷運上看到空位趕快「啊，先坐（a-sien-to）」！這就是座位。",
-      "usage_zh": "常見搭配如 tomar asiento（入座、坐下）、asiento de ventanilla（靠窗座位）。",
-      "example_es": "Por favor, tome asiento.",
-      "example_zh": "請坐。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:asiento"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "asumir",
       "article": "",
@@ -650,57 +595,37 @@
       "writer": "gemini"
     },
     {
-      "word": "negativa",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "拒絕、否定、反對",
-      "en": "refusal, denial",
-      "ipa": "/neɡaˈtiba/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "面對提問給出 negative（負面的）回答，就是給了對方一次拒絕（negativa）。",
-      "usage_zh": "陰性名詞。常用搭配有 dar una negativa（回絕）或 una rotunda negativa（斷然拒絕）。",
-      "example_es": "Su respuesta fue una rotunda negativa.",
-      "example_zh": "他的回答是斷然的拒絕。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:negativa"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "orto",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "日出、天體升起",
-      "en": "sunrise, rise (of a celestial body)",
-      "ipa": "/ˈoɾto/",
+      "word": "negativo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "負面的、消極的；否定的",
+      "en": "negative",
+      "ipa": "/neɡaˈtibo/",
       "breakdown": [],
       "origin_chain": [
         {
           "lang_zh": "拉丁語",
-          "word": "ortus",
-          "zh": "升起、誕生"
+          "word": "negātīvus",
+          "zh": "否定的"
         },
         {
           "lang_zh": "西班牙語",
-          "word": "orto",
-          "zh": "日出、天體升起"
+          "word": "negativo",
+          "zh": "負面的、否定的"
         }
       ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁語 ortus（升起、誕生）。專門指太陽或任何天體穿過地平線升起的瞬間，是天文學與文學書面語中表示「日出」的雅詞。",
-      "hook_zh": "太陽破土而出、升起（orto），象徵一天的破曉黎明。",
-      "usage_zh": "天文學專用詞，反義詞為 ocaso（日落、降落）。在阿根廷等南美俚語中亦有「屁股」之俗義。",
-      "example_es": "Observamos el orto del sol desde la cima.",
-      "example_zh": "我們從山頂觀賞了日出。",
+      "cognates_en": [
+        "negative"
+      ],
+      "story_zh": "源自拉丁語 negātīvus（否定的）。最初用於文法或邏輯上的否定與拒絕，後來延伸至科學檢驗上的陰性反應、數學中的負數，以及心理與生活態度上的消極和負面。",
+      "hook_zh": "英文 negative 尾巴 -ive 改成西語常見形容詞尾 -ivo，就是 negativo！",
+      "usage_zh": "陰性為 negativa。反義詞為 positivo（正面的、積極的）。",
+      "example_es": "No seas tan negativo y busca una solución.",
+      "example_zh": "別那麼消極，想想解決辦法吧。",
       "image": "svg",
       "confidence": "sourced",
       "sources": [
-        "wiktionary:es:orto"
+        "wiktionary:es:negativo"
       ],
       "writer": "gemini"
     },
@@ -829,53 +754,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:portada"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "puebla",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "城鎮、村落",
-      "en": "town, village",
-      "ipa": "/ˈpwebla/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "populus",
-          "zh": "人民"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "populāre",
-          "zh": "定居、繁衍"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "poblar",
-          "zh": "定居、使有人口"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "puebla",
-          "zh": "村落、城鎮"
-        }
-      ],
-      "cognates_en": [
-        "people",
-        "populate"
-      ],
-      "story_zh": "來自西語動詞 poblar（定居、聚集人口）的反推動詞名詞，承襲自拉丁語動詞 populāre。其詞源與拉丁語 populus（人民）相關，原意為聚集人口居住的地方，因而演變為「城鎮」或「村落」。",
-      "hook_zh": "pueblo 是村莊與人民，陰性的 puebla 也是人口聚居的古樸小城鎮。",
-      "usage_zh": "陰性名詞。現代西班牙語較少獨立使用，多保留在特定地名中（如墨西哥的 Puebla）。",
-      "example_es": "Llegamos a una pequeña puebla cerca del río.",
-      "example_zh": "我們抵達了河邊的一座小村落。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:puebla",
-        "wiktionary:la:populo"
       ],
       "writer": "gemini"
     },
@@ -1629,53 +1507,6 @@
       "writer": "gemini"
     },
     {
-      "word": "data",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "日期（文書或事件的日期）",
-      "en": "date",
-      "ipa": "/ˈdata/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "dō",
-          "zh": "給予"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "datus",
-          "zh": "被給予的"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "data",
-          "zh": "日期、交付的事實"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "data",
-          "zh": "日期"
-        }
-      ],
-      "cognates_en": [
-        "date",
-        "data"
-      ],
-      "story_zh": "源自拉丁語動詞 dō（給予）的被動分詞 datus，晚期拉丁語轉化為 data。過去公文書末尾常註記「於某地某日交付給出」（如 datum Romae），久而久之 data 便轉指文件或交易發生的「日期」。",
-      "hook_zh": "拼字跟英文 data 一模一樣，在古代指文件在特定日期「被交出（date）」。",
-      "usage_zh": "陰性名詞。現代西語日常指日期多用 fecha，data 則多見於歷史或公文檔案。",
-      "example_es": "Este documento antiguo no tiene ninguna data.",
-      "example_zh": "這份古老的文件沒有註記任何日期。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:data",
-        "wiktionary:la:datus"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "definir",
       "article": "",
       "pos": "verbo",
@@ -1933,28 +1764,6 @@
       "writer": "gemini"
     },
     {
-      "word": "go",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "圍棋",
-      "en": "go (board game)",
-      "ipa": "/ˈɡo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "下圍棋黑白子輪流出招，英文和西語都叫 go，輪到你了就換你 go！",
-      "usage_zh": "陽性不可數名詞，指起源於東亞的棋類「圍棋」，常說 jugar al go（下圍棋）。",
-      "example_es": "Mi hermano juega al go todos los domingos.",
-      "example_zh": "我哥哥每個星期天都下圍棋。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:go"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "huelga",
       "article": "la",
       "pos": "sustantivo",
@@ -2118,41 +1927,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:muchacho"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "negativo",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "負面的、消極的；否定的",
-      "en": "negative",
-      "ipa": "/neɡaˈtibo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "negātīvus",
-          "zh": "否定的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "negativo",
-          "zh": "負面的、否定的"
-        }
-      ],
-      "cognates_en": [
-        "negative"
-      ],
-      "story_zh": "源自拉丁語 negātīvus（否定的）。最初用於文法或邏輯上的否定與拒絕，後來延伸至科學檢驗上的陰性反應、數學中的負數，以及心理與生活態度上的消極和負面。",
-      "hook_zh": "英文 negative 尾巴 -ive 改成西語常見形容詞尾 -ivo，就是 negativo！",
-      "usage_zh": "陰性為 negativa。反義詞為 positivo（正面的、積極的）。",
-      "example_es": "No seas tan negativo y busca una solución.",
-      "example_zh": "別那麼消極，想想解決辦法吧。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:negativo"
       ],
       "writer": "gemini"
     },
@@ -2439,39 +2213,6 @@
       "writer": "gemini"
     },
     {
-      "word": "tira",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "長條、細帶、紙條",
-      "en": "strip, ribbon, strap",
-      "ipa": "/ˈtiɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "tirar",
-          "zh": "拉、扯"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tira",
-          "zh": "長條、細帶"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自西語動詞 tirar（拉、扯），是由動詞逆生構詞（deverbal）而來的名詞。原指拉扯或撕扯出來的一長段物體，後來固定指「長條、細帶、布條或紙條」，報紙上的連環漫畫也稱為 tira cómica。",
-      "hook_zh": "把長紙用力 tirar（拉）扯開來，手上就拿著一條 tira（紙條）。",
-      "usage_zh": "陰性名詞；常見搭配有 tira cómica（連環漫畫）與 tira reactiva（試紙）。",
-      "example_es": "Cortó una tira de papel para escribir una nota.",
-      "example_zh": "他剪了一張紙條來寫筆記。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tira"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "transformación",
       "article": "la",
       "pos": "sustantivo",
@@ -2738,28 +2479,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:aprovechar"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "basa",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "基底；柱腳；底座",
-      "en": "base, pedestal",
-      "ipa": "/ˈbasa/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "柱子最底下穩固支撐的底座（basa），形同建築的 base。",
-      "usage_zh": "建築領域專用詞，指圓柱的底座或基座；日常生活中的「基礎」通常使用 base。",
-      "example_es": "La estatua fue colocada sobre una basa de mármol.",
-      "example_zh": "雕像被安置在大理石基座上。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:basa"
       ],
       "writer": "gemini"
     },
@@ -3830,6 +3549,314 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:británico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "combinación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "結合；組合；密碼",
+      "en": "combination",
+      "ipa": "/kombinaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "combīnātiōnem",
+          "zh": "結合、聯合"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "combinación",
+          "zh": "結合、組合"
+        }
+      ],
+      "cognates_en": [
+        "combination"
+      ],
+      "story_zh": "學者借詞自晚期拉丁語 combīnātiōnem（結合、聯合），指將事物聯繫或組合在一起的動作與結果。現代西語中可用於事物的組合或保險箱的密碼組合。",
+      "hook_zh": "拼法與英文 combination 幾乎相同，聯想把不同元素「combine（結合）」在一起。",
+      "usage_zh": "陰性名詞。除了「組合」，也常用於大眾運輸的「轉乘」（hacer combinación）。",
+      "example_es": "Esta combinación de colores me encanta.",
+      "example_zh": "我很喜歡這個顏色組合。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:combinación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cultivo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "耕作、種植；農作物；細菌培養",
+      "en": "cultivation, crop, culture",
+      "ipa": "/kulˈtibo/",
+      "breakdown": [
+        {
+          "part": "culto",
+          "zh": "耕作"
+        },
+        {
+          "part": "-ivo",
+          "zh": "具…性質的字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "culto + -ivo",
+          "zh": "耕作 + 字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cultivo",
+          "zh": "耕作、農作物"
+        }
+      ],
+      "cognates_en": [
+        "cultivate",
+        "culture"
+      ],
+      "story_zh": "源自西語字根 culto（耕作、精修）加上字尾 -ivo。原指對土地與作物的辛勤開墾與培育，後來引申為田裡種植出的「農作物」。在現代生物醫學領域中，也引申指微生物或細胞的「培養」。",
+      "hook_zh": "農夫在田裡辛勤培育作物，英文 cultivate（耕作）跟它長得很像！",
+      "usage_zh": "陽性名詞 el cultivo。常見搭配有 cultivo de bacterias（細菌培養）或 tierra de cultivo（耕地）。",
+      "example_es": "El cultivo de maíz es muy importante en esta región.",
+      "example_zh": "玉米的種植在這個地區非常重要。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cultivo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cuántas",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "多少、幾位（陰性複數）",
+      "en": "how many",
+      "ipa": "/ˈkwantas/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "問女生朋友「有幾位」要來，結尾 -as 正好對應陰性複數！",
+      "usage_zh": "專門修飾或指代陰性複數名詞，書寫時必須標注重音符號 á（¿Cuántas…?）。",
+      "example_es": "¿Cuántas manzanas compraste en el mercado?",
+      "example_zh": "你在市場買了幾顆蘋果？",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:cuántas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "célula",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "細胞；（組織的）小組、支部",
+      "en": "cell",
+      "ipa": "/ˈθelula/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cellula",
+          "zh": "小房間、小隔間"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "célula",
+          "zh": "細胞"
+        }
+      ],
+      "cognates_en": [
+        "cell",
+        "cellular"
+      ],
+      "story_zh": "借自拉丁語 cellula，原意為「小房間、小室」。學者借入此詞來指稱構成生物體最基本構造的小室單位，即生物學上的「細胞」。後來也延伸指大型組織架構中行動獨立的基層「小組」。",
+      "hook_zh": "想像在顯微鏡下看切片，那一個個整齊排列的小隔間就是 cell / célula！",
+      "usage_zh": "陰性名詞 la célula，複數為 células。重音在倒數第三音節，需加重音符號 é。",
+      "example_es": "La célula es la unidad básica de todos los seres vivos.",
+      "example_zh": "細胞是所有生物的基本單位。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:célula"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "desconocido",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "未知的、陌生的；不知名的",
+      "en": "unknown, unfamiliar",
+      "ipa": "/deskonoˈθido/",
+      "breakdown": [
+        {
+          "part": "desconocer",
+          "zh": "不認識、未知"
+        },
+        {
+          "part": "-ido",
+          "zh": "過去分詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "desconocer + -ido",
+          "zh": "不認識 + 過去分詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "desconocido",
+          "zh": "未知的、陌生的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 desconocer（不認識、不知道）加上過去分詞字尾 -ido。字面意義為「未被認識、不為人知」，因而轉化為形容詞表示「未知的」或「陌生的」；作名詞時亦可指「陌生人」。",
+      "hook_zh": "des（相反）+ conocido（認識的），完全不認識的人就是陌生人、未知的！",
+      "usage_zh": "作形容詞有陰陽性與單複數變化；亦可加冠詞轉為名詞 un desconocido（陌生人）。",
+      "example_es": "Recibí un mensaje de un número desconocido.",
+      "example_zh": "我收到一則來自未知號碼的簡訊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:desconocido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "embajada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "大使館",
+      "en": "embassy",
+      "ipa": "/embaˈxada/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "高盧語",
+          "word": "ambaxtos",
+          "zh": "隨從、使者"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "ambactia",
+          "zh": "差使、出使"
+        },
+        {
+          "lang_zh": "古奧克語",
+          "word": "ambaissada",
+          "zh": "使團、出使"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "embaxada",
+          "zh": "使館、使命"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "embajada",
+          "zh": "大使館"
+        }
+      ],
+      "cognates_en": [
+        "embassy",
+        "ambassador"
+      ],
+      "story_zh": "源自高盧語 ambaxtos（隨從、使者），經晚期拉丁語 ambactia 傳入古奧克語成為 ambaissada，原指使者出使的差事或使節團。進入西班牙語後演變為 embajada，現代主要指國家派駐外國的外交機構「大使館」。英文的 embassy 和 ambassador 也是同源字。",
+      "hook_zh": "聯想英文 embassy，發音和字形都很像，門口飄揚著國旗的「大使館」。",
+      "usage_zh": "陰性名詞。大使本人則是 embajador（男）或 embajadora（女）。",
+      "example_es": "Fui a la embajada para renovar mi pasaporte.",
+      "example_zh": "我去大使館換發護照。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:embajada"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "específico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "特定的、具體的",
+      "en": "specific",
+      "ipa": "/espeˈθifiko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "specificus",
+          "zh": "特定的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "específico",
+          "zh": "特定的"
+        }
+      ],
+      "cognates_en": [
+        "specific"
+      ],
+      "story_zh": "源自晚期拉丁語 specificus，由 speciēs（種類）與 faciō（製作）組合而成，原意為「構成特定種類的」。後來引申指「特定的、明確的」，用來限定或區分具體的事物。",
+      "hook_zh": "英文同源字就是 specific（特定的），開頭補上西語習慣加的 e- 就是 específico。",
+      "usage_zh": "陰性形式為 específica。常置於名詞後，如 caso específico（具體案例）。",
+      "example_es": "Necesito una respuesta más específica.",
+      "example_zh": "我需要一個更具體的回答。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:específico",
+        "wiktionary:la:specificus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fijo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "固定的、穩固的",
+      "en": "fixed, firm",
+      "ipa": "/ˈfixo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fīgō",
+          "zh": "釘緊、固定"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "fīxus",
+          "zh": "固定的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fijo",
+          "zh": "固定的、穩固的"
+        }
+      ],
+      "cognates_en": [
+        "fix",
+        "fixed"
+      ],
+      "story_zh": "來自拉丁語動詞 fīgō（釘住、固定）的完成被動分詞 fīxus。在進入西班牙語的過程中保留了「固定、緊固」的核心意義。它在西語中有一個庶民演變的雙生詞 hito（界石、里程碑），而 fijo 則是半學者借詞。",
+      "hook_zh": "聯想英文 fix（固定），fijo 就是被「固定（fix）」住的狀態。",
+      "usage_zh": "陰性為 fija。常見搭配如 de forma fija（固定地）或 teléfono fijo（市話）。",
+      "example_es": "No tengo un horario fijo de trabajo.",
+      "example_zh": "我沒有固定的工作時間。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fijo"
       ],
       "writer": "gemini"
     }

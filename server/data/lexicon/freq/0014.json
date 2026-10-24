@@ -1,6 +1,6 @@
 {
   "theme": "freq-0014",
-  "theme_zh": "常用字（頻率第 3401–3596 名）",
+  "theme_zh": "常用字（頻率第 3401–3598 名）",
   "entries": [
     {
       "word": "garantizar",
@@ -3057,28 +3057,6 @@
       "writer": "gemini"
     },
     {
-      "word": "fué",
-      "article": "",
-      "pos": "verbo",
-      "zh": "（fue 的舊拼法）去；是",
-      "en": "was; went (superseded spelling of fue)",
-      "ipa": "/ˈfwe/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "單音節字原則上不加重音符，1952 年西語廢除此重音，現在一律寫作 fue。",
-      "usage_zh": "1952年西班牙皇家語言學院已廢止此拼法，現代西語一律寫作沒有重音符的 fue。",
-      "example_es": "Ayer fué un día maravilloso para todos.",
-      "example_zh": "昨天對大家來說是美好的一天。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:fué"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "genio",
       "article": "el",
       "pos": "sustantivo",
@@ -3545,28 +3523,6 @@
       "writer": "gemini"
     },
     {
-      "word": "ud",
-      "article": "",
-      "pos": "pronombre",
-      "zh": "您（usted 的簡寫）",
-      "en": "you (formal, abbreviation of usted)",
-      "ipa": "/ˈud/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "「Ud.」是西語尊稱「您」（usted）的書面縮寫，書信郵件中最常見。",
-      "usage_zh": "書寫時常作 Ud. 或 Vd.，指稱「您」，但動詞須搭配第三人稱單數。",
-      "example_es": "¿Tiene Ud. alguna pregunta?",
-      "example_zh": "您有任何問題嗎？",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:ud"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "unir",
       "article": "",
       "pos": "verbo",
@@ -3878,6 +3834,61 @@
       "sources": [
         "wiktionary:es:arco",
         "wiktionary:la:arcus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asesino",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "兇手、殺手；殘酷的",
+      "en": "murderer, assassin",
+      "ipa": "/aseˈsino/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "حَشَّاشِين",
+          "zh": "大麻吸食者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "asesino",
+          "zh": "殺手、兇手"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自阿拉伯語 ḥaššāšīn，原指十字軍時期中東的暗殺派成員，傳說他們出任務前會使用大麻（hashish）；另一種說法指其源於表示信奉教派根基的詞彙。後來該詞傳入歐洲各語言，演變為專指冷酷行刺的「殺手」與「兇手」。",
+      "hook_zh": "傳說中暗殺組織刺客（assassin）出動，就是令人膽寒的 asesino。",
+      "usage_zh": "指女性兇手時使用陰性形 asesina；亦可當形容詞修飾名詞。",
+      "example_es": "La policía busca al asesino por toda la ciudad.",
+      "example_zh": "警方正在全城搜捕那名兇手。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:asesino"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "座位、椅子",
+      "en": "seat",
+      "ipa": "/aˈsjento/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "在捷運上看到空位趕快「啊，先坐（a-sien-to）」！這就是座位。",
+      "usage_zh": "常見搭配如 tomar asiento（入座、坐下）、asiento de ventanilla（靠窗座位）。",
+      "example_es": "Por favor, tome asiento.",
+      "example_zh": "請坐。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:asiento"
       ],
       "writer": "gemini"
     }
