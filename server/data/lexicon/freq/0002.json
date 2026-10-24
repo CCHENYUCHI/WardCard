@@ -1,47 +1,7 @@
 {
   "theme": "freq-0002",
-  "theme_zh": "常用字（頻率第 433–695 名）",
+  "theme_zh": "常用字（頻率第 436–709 名）",
   "entries": [
-    {
-      "word": "zona",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "區域、地區、地帶",
-      "en": "zone, district, area",
-      "ipa": "/ˈθona/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "ζώνη",
-          "zh": "腰帶、帶子"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "zōna",
-          "zh": "腰帶、地帶"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "zona",
-          "zh": "區域、地區"
-        }
-      ],
-      "cognates_en": [
-        "zone"
-      ],
-      "story_zh": "借自拉丁語 zōna（腰帶、地帶），源於古希臘語 ζώνη（腰帶）。古希臘地理學家將地球依照緯度劃分成不同的氣候環帶，如同繫在地球上的腰帶，後引申指特定劃分的「區域、地帶」。",
-      "hook_zh": "拼法和英文 zone 幾乎相同，聯想地圖上一圈圈被腰帶框出的「區域」。",
-      "usage_zh": "為陰性名詞。常見搭配有 zona urbana（市區）與 zona rural（鄉村地區）。",
-      "example_es": "Esta zona de la ciudad es muy tranquila.",
-      "example_zh": "這座城市的這塊區域非常安靜。",
-      "image": "emoji:📍",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:zona"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "línea",
       "article": "la",
@@ -76,7 +36,7 @@
       "usage_zh": "陰性名詞。常用片語有 en línea（連線上網）與 línea de metro（捷運路線）。",
       "example_es": "Por favor, espera detrás de la línea blanca.",
       "example_zh": "請在白線後方等候。",
-      "image": "emoji:📏",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:línea",
@@ -110,7 +70,7 @@
       "usage_zh": "形容詞陰陽同形（crisis mundial / evento mundial）。大寫 el Mundial 指世界盃。",
       "example_es": "El cambio climático es un problema mundial.",
       "example_zh": "氣候變遷是一個全球性的問題。",
-      "image": "emoji:🌍",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:mundial"
@@ -156,33 +116,11 @@
       "usage_zh": "常搭配 obra de arte（藝術品）；片語 estar en obras 表示「施工中、裝修中」。",
       "example_es": "Esta pintura es una gran obra de arte.",
       "example_zh": "這幅畫是一件偉大的藝術作品。",
-      "image": "emoji:🎨",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:obra",
         "wiktionary:la:opera"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "os",
-      "article": "",
-      "pos": "interjección",
-      "zh": "噓、趕鳥聲（用於驅趕禽鳥）",
-      "en": "shoo (alternative form of ox, to scare birds)",
-      "ipa": "/ˈos/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "看到農田有鳥兒偷吃，揮手大喊一聲「os！」把牠們通通嚇跑。",
-      "usage_zh": "傳統用於驅趕禽鳥的感嘆詞，為 ox 的異體寫法，現代生活中極少使用。",
-      "example_es": "¡Os, fuera del huerto!",
-      "example_zh": "噓！快離開菜園！",
-      "image": "emoji:🐦",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:os"
       ],
       "writer": "gemini"
     },
@@ -214,7 +152,7 @@
       "usage_zh": "常見搭配有 prestar atención（專心）與 llamar la atención（引人注目）。",
       "example_es": "Debes prestar atención en clase.",
       "example_zh": "你上課時必須專心。",
-      "image": "emoji:👀",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:atención"
@@ -249,7 +187,7 @@
       "usage_zh": "最常見用法為片語 respecto a 或 con respecto a（關於），表「尊敬」要用 respeto。",
       "example_es": "No tengo nada que decir al respecto.",
       "example_zh": "關於這一點，我沒什麼好說的。",
-      "image": "emoji:🔗",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:respecto"
@@ -284,7 +222,7 @@
       "usage_zh": "陰陽性陷阱：la capital 是「首都」，el capital 則是「資金、資本」。",
       "example_es": "Madrid es la capital de España.",
       "example_zh": "馬德里是西班牙的首都。",
-      "image": "emoji:🏛️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:capital"
@@ -339,7 +277,7 @@
       "usage_zh": "陰性名詞。指「人口」時通常使用單數（la población）。",
       "example_es": "La población de la ciudad continúa creciendo.",
       "example_zh": "這座城市的人口持續在增長。",
-      "image": "emoji:👥",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:población",
@@ -377,32 +315,10 @@
       "usage_zh": "陰性名詞。常用搭配如 tener una relación con...（與…交往、保持關係）。",
       "example_es": "Ellos tienen una relación muy cercana.",
       "example_zh": "他們的關係非常親密。",
-      "image": "emoji:🤝",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:relación"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "sabes",
-      "article": "",
-      "pos": "interjección",
-      "zh": "你知道嗎？、懂嗎？（口語反詰）",
-      "en": "you know? (rhetorical question)",
-      "ipa": "/ˈsabes/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "聊天聊到一半問一句 ¿sabes?，就像英文口語常說的 you know? 一樣自然。",
-      "usage_zh": "源於動詞 saber（知道）的 tú 人稱現在式，常用於句首或句尾作為尋求認同的口頭禪。",
-      "example_es": "Es una buena idea, ¿sabes?",
-      "example_zh": "這是個好主意，你知道嗎？",
-      "image": "emoji:💬",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:sabes"
       ],
       "writer": "gemini"
     },
@@ -436,46 +352,10 @@
       "usage_zh": "複數 varios / varias 放在名詞前時，常作不定形容詞表示「好幾個、若干個」。",
       "example_es": "Compré varios libros en la tienda.",
       "example_zh": "我在店裡買了好幾本書。",
-      "image": "emoji:🎨",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:vario"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "debido",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "應得的、正當的；欠缺的",
-      "en": "owed, due, appropriate",
-      "ipa": "/deˈbido/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "deber",
-          "zh": "欠、應當"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "debido",
-          "zh": "欠的、應得的"
-        }
-      ],
-      "cognates_en": [
-        "due",
-        "debt"
-      ],
-      "story_zh": "源自西班牙語動詞 deber（欠債、應當）的過去分詞，字面意思為「所欠的、應給的」。後來引申為「應有的、適當的」，在現代西語中也極常構成片語 debido a（由於、因為）。",
-      "hook_zh": "把動詞 deber（欠、該）加上分詞字尾 -ido，欠別人的東西就是「應付的」debido。",
-      "usage_zh": "最常見片語為 debido a...（由於…、因為…），後接名詞或原形動詞。",
-      "example_es": "El partido se canceló debido a la lluvia.",
-      "example_zh": "比賽因為下雨而取消了。",
-      "image": "emoji:🧾",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:debido"
       ],
       "writer": "gemini"
     },
@@ -514,7 +394,7 @@
       "usage_zh": "指男性音樂家時用 el músico，女性用 la música（注意與「音樂」同形）。",
       "example_es": "Ese músico toca la guitarra muy bien.",
       "example_zh": "那位音樂家的吉他彈得非常好。",
-      "image": "emoji:🎵",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:músico"
@@ -560,7 +440,7 @@
       "usage_zh": "複數為 reyes（加 -es 且 y 轉為輔音），陰性「王后」為不規則名詞 reina。",
       "example_es": "El rey pronunció un discurso para toda la nación.",
       "example_zh": "國王向全國發表了一場演說。",
-      "image": "emoji:👑",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:rey",
@@ -594,7 +474,7 @@
       "usage_zh": "拉美（如阿根廷）常用於取代 tú，動詞有專屬規則變化，如 vos sos、vos tenés。",
       "example_es": "¿Y vos qué pensás de esta película?",
       "example_zh": "那你覺得這部電影怎麼樣？",
-      "image": "emoji:🫵",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:vos",
@@ -617,7 +497,7 @@
       "usage_zh": "常見搭配有 apoyo moral（精神支持）、en apoyo de（支持…）。",
       "example_es": "Agradezco mucho tu apoyo en este momento difícil.",
       "example_zh": "我非常感謝你在這個艱難時刻給予的支持。",
-      "image": "emoji:🤝",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:apoyo"
@@ -650,7 +530,7 @@
       "usage_zh": "若作介詞或連接詞 dado que 意為「鑑於、考量到」，此時為陽性單數或隨名詞性數變化。",
       "example_es": "Tira el dado para ver quién empieza el juego.",
       "example_zh": "擲骰子看看由誰先開始遊戲。",
-      "image": "emoji:🎲",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:dado",
@@ -696,7 +576,7 @@
       "usage_zh": "常見片語有 a la fuerza（勉強、強迫地）、fuerzas armadas（武裝部隊）。",
       "example_es": "El viento soplaba con mucha fuerza esta mañana.",
       "example_zh": "今天早上風吹得非常強勁。",
-      "image": "emoji:💪",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:fuerza",
@@ -742,7 +622,7 @@
       "usage_zh": "作形容詞時陰陽同形（visita oficial 官方訪問）；亦可作名詞指「官員、警官」。",
       "example_es": "Esperamos el comunicado oficial.",
       "example_zh": "我們在等待官方公告。",
-      "image": "emoji:🏛️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:oficial",
@@ -778,43 +658,10 @@
       "usage_zh": "置於名詞前強調「自己的」（mi propia casa）；置於名詞後多表示「特有的、專屬的」。",
       "example_es": "Tengo mi propio coche y casa.",
       "example_zh": "我有自己的車子和房子。",
-      "image": "emoji:🔑",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:propio"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "buenas",
-      "article": "",
-      "pos": "interjección",
-      "zh": "你好、您好（全天候問候語）",
-      "en": "hello, hi",
-      "ipa": "/ˈbwenas/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "buenas tardes",
-          "zh": "午安、傍晚好"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "buenas",
-          "zh": "你好"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "據推測很可能是西語問候語 buenas tardes（午安／傍晚好）的省略說法。現代西語中已演變成全天候、不論早中晚隨時都能使用的親切打招呼方式。",
-      "hook_zh": "把長長的問候語精簡化：不論早安午安，碰面親切喊一聲 Buenas 就對了！",
-      "usage_zh": "屬於非正式口語打招呼，進店家或碰見熟人鄰居時非常實用，任何時段皆可使用。",
-      "example_es": "¡Buenas! ¿Cómo estás hoy?",
-      "example_zh": "嗨！你今天好嗎？",
-      "image": "emoji:👋",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:buenas"
       ],
       "writer": "gemini"
     },
@@ -846,7 +693,7 @@
       "usage_zh": "陽性名詞 el chile。在墨西哥及中美洲指辣椒；西班牙本土料理多稱 pimiento。",
       "example_es": "Esta salsa lleva mucho chile.",
       "example_zh": "這個醬汁放了很多辣椒。",
-      "image": "emoji:🌶️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:chile"
@@ -881,7 +728,7 @@
       "usage_zh": "陽性名詞 el control，複數為 controles。口語常說 el control remoto（遙控器）。",
       "example_es": "El conductor perdió el control.",
       "example_zh": "司機失去了對車子的控制。",
-      "image": "emoji:🎮",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:control"
@@ -916,7 +763,7 @@
       "usage_zh": "陰性名詞（la serie）。追劇在西語常用 ver una serie。",
       "example_es": "Esta noche voy a ver una serie en Netflix.",
       "example_zh": "我今晚要在 Netflix 上看一部影集。",
-      "image": "emoji:📺",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:serie"
@@ -938,7 +785,7 @@
       "usage_zh": "現代標準西語中必須在 i 加上重音寫作 así，asi 屬於錯字或古舊拼法。",
       "example_es": "No se escribe asi, se escribe con tilde: así.",
       "example_zh": "不是寫成 asi，要有重音符號寫作 así。",
-      "image": "emoji:⚠️",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:asi"
@@ -973,7 +820,7 @@
       "usage_zh": "作名詞為陽性（el futuro）；常見搭配有 en el futuro（在未來）。",
       "example_es": "Nadie puede predecir el futuro con exactitud.",
       "example_zh": "沒有人能準確預測未來。",
-      "image": "emoji:🚀",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:futuro"
@@ -1008,7 +855,7 @@
       "usage_zh": "陰性名詞（la justicia）。常見片語如 hacer justicia（主持公道、伸張正義）。",
       "example_es": "La gente pide justicia en las calles.",
       "example_zh": "民眾在街頭要求正義。",
-      "image": "emoji:⚖️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:justicia"
@@ -1067,7 +914,7 @@
       "usage_zh": "陰性名詞（la libertad）。注意所有以 -tad、-dad 結尾的名詞皆為陰性。",
       "example_es": "Todos los seres humanos tienen derecho a la libertad.",
       "example_zh": "所有人類都擁有享有自由的權利。",
-      "image": "emoji:🕊️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:libertad",
@@ -1108,7 +955,7 @@
       "usage_zh": "及物動詞表「稱重」，不及物動詞表「重達」；片語 a pesar de 表示「儘管」。",
       "example_es": "Esta maleta pesa más de veinte kilos.",
       "example_zh": "這個行李箱重超過二十公斤。",
-      "image": "emoji:⚖️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:pesar",
@@ -1142,7 +989,7 @@
       "usage_zh": "指雙方皆遠的「那裡」（遠於 ahí 和 allí）；常見片語 más allá（在更遠處）。",
       "example_es": "Mi casa está más allá del río.",
       "example_zh": "我的家在河流的另一邊。",
-      "image": "emoji:👉",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:allá",
@@ -1189,7 +1036,7 @@
       "usage_zh": "陰性名詞。常用搭配 una gran cantidad de（大量的…）。",
       "example_es": "Hay una gran cantidad de personas aquí.",
       "example_zh": "這裡有非常多的人。",
-      "image": "emoji:🔢",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:cantidad",
@@ -1226,7 +1073,7 @@
       "usage_zh": "不及物動詞；陳述客觀存在時常以第三人稱單數 existe 或複數 existen 出現。",
       "example_es": "¿Crees que existen otras formas de vida?",
       "example_zh": "你相信有其他生命形式存在嗎？",
-      "image": "emoji:🪐",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:existir"
@@ -1261,7 +1108,7 @@
       "usage_zh": "陰性名詞（la imagen），注意複數形要補上重音符號變成 imágenes。",
       "example_es": "Esta cámara toma imágenes de alta calidad.",
       "example_zh": "這台相機可以拍攝出高品質的影像。",
-      "image": "emoji:🖼️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:imagen"
@@ -1307,7 +1154,7 @@
       "usage_zh": "可作名詞指政治人物（el político / la política）；作形容詞修飾名詞時陰性為 política。",
       "example_es": "El debate político fue muy interesante.",
       "example_zh": "那場政治辯論非常有趣。",
-      "image": "emoji:🏛️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:político"
@@ -1348,7 +1195,7 @@
       "usage_zh": "陰陽同形（el motivo principal、la razón principal），複數加 -es 成為 principales。",
       "example_es": "La calle principal está llena de tiendas.",
       "example_zh": "主要的那條街上開滿了商店。",
-      "image": "emoji:⭐",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:principal"
@@ -1389,7 +1236,7 @@
       "usage_zh": "陰性名詞。常用片語 a la vista 表示「在視線範圍內、看得見」。",
       "example_es": "El hotel tiene una hermosa vista al mar.",
       "example_zh": "這家飯店擁有美麗的海景。",
-      "image": "emoji:👀",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:vista",
@@ -1430,7 +1277,7 @@
       "usage_zh": "常見假朋友：西語 actual 是「當前、現今」，若要表達英文 actual（真實的），西語應用 real。",
       "example_es": "El presidente actual dará un discurso hoy.",
       "example_zh": "現任總統今天將發表談話。",
-      "image": "emoji:📅",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:actual",
@@ -1471,7 +1318,7 @@
       "usage_zh": "修飾名詞時不加定冠詞（說 ambos libros，不說 los ambos libros）；陰性為 ambas。",
       "example_es": "Ambas opciones son buenas para mí.",
       "example_zh": "兩個選項對我來說都很好。",
-      "image": "emoji:👥",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:ambos"
@@ -1506,51 +1353,10 @@
       "usage_zh": "陰性名詞，複數去掉重音符號寫作 elecciones；政治選舉通常以複數形呈現。",
       "example_es": "Tomaste una buena elección al estudiar aquí.",
       "example_zh": "你在這裡就讀是個很好的選擇。",
-      "image": "emoji:🗳️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:elección"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "estudio",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "研讀、學習；研究；工作室、書房",
-      "en": "study, studio",
-      "ipa": "/esˈtudjo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "studium",
-          "zh": "熱誠、專心、研究"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "estudio",
-          "zh": "研讀、學習"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "estudio",
-          "zh": "學習、研究、工作室"
-        }
-      ],
-      "cognates_en": [
-        "study",
-        "studio"
-      ],
-      "story_zh": "繼承自古西班牙語 estudio，為拉丁語 studium（熱忱、專心致志）的學者借詞。原指懷抱熱誠專注投入某種學問，後來引申為「研讀、研究」，以及進行鑽研與創作的場所「書房、工作室」。",
-      "hook_zh": "英文 study 和 studio 的西語親戚，前面加上西班牙語常見的 e-。",
-      "usage_zh": "既是陽性名詞，也是動詞 estudiar 的第一人稱現在式（yo estudio，我讀書）。",
-      "example_es": "El estudio de idiomas es muy divertido.",
-      "example_zh": "學習語言非常有趣。",
-      "image": "emoji:📚",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:estudio"
       ],
       "writer": "gemini"
     },
@@ -1582,7 +1388,7 @@
       "usage_zh": "指襪子時常用複數 las medias；注意作為形容詞時是 medio 的陰性形（半個）。",
       "example_es": "Ella compró unas medias negras para la fiesta.",
       "example_zh": "她買了一雙黑色絲襪去參加派對。",
-      "image": "emoji:🧦",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:media"
@@ -1615,7 +1421,7 @@
       "usage_zh": "常見片語 tener en el punto de mira（列為密切關注目標、鎖定）。",
       "example_es": "El fotógrafo ajustó la mira de su cámara.",
       "example_zh": "攝影師調整了他的相機觀景窗。",
-      "image": "emoji:🎯",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:mira"
@@ -1656,7 +1462,7 @@
       "usage_zh": "常用片語：de todos modos（無論如何）、de ningún modo（絕不）、de este modo（如此一來）。",
       "example_es": "Hay un modo sencillo de aprender español.",
       "example_zh": "有一個學西班牙語的簡單方法。",
-      "image": "emoji:⚙️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:modo"
@@ -1689,7 +1495,7 @@
       "usage_zh": "常見搭配為 tener un plan（有計畫）或 hacer planes（做規劃）。複數為 planes。",
       "example_es": "Tenemos un buen plan para el fin de semana.",
       "example_zh": "我們週末有一個好計畫。",
-      "image": "emoji:📋",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:plan"
@@ -1724,7 +1530,7 @@
       "usage_zh": "陰性名詞。注意複數形式為 regiones，因為倒數第二音節為重音，省略重音符號。",
       "example_es": "Esta región es famosa por sus vinos.",
       "example_zh": "這個地區以葡萄酒聞名。",
-      "image": "emoji:🗺️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:región"
@@ -1768,7 +1574,7 @@
       "usage_zh": "陰性名詞。在西班牙行政區劃中，常用來簡稱自治區（comunidad autónoma）。",
       "example_es": "Es una comunidad muy unida y amable.",
       "example_zh": "這是一個非常團結且友善的社群。",
-      "image": "emoji:👥",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:comunidad"
@@ -1812,7 +1618,7 @@
       "usage_zh": "陰性名詞。複數為 investigaciones（取消重音符號）。做研究常搭配動詞 hacer 或 realizar。",
       "example_es": "La policía inició una investigación sobre el caso.",
       "example_zh": "警方對這起案件展開了調查。",
-      "image": "emoji:🔬",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:investigación"
@@ -1847,7 +1653,7 @@
       "usage_zh": "常用片語 a partir de 表示「從…開始」；表示出發前往某地時常接介系詞 hacia 或 para。",
       "example_es": "El tren va a partir en diez minutos.",
       "example_zh": "火車將在十分鐘後出發。",
-      "image": "emoji:🚂",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:partir"
@@ -1882,7 +1688,7 @@
       "usage_zh": "陰性名詞。重音落在倒數第三個音節，所以字母 ú 必須標重音。",
       "example_es": "España no es una república, es una monarquía.",
       "example_zh": "西班牙不是共和國，而是君主立憲國。",
-      "image": "emoji:🏛️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:república"
@@ -1915,7 +1721,7 @@
       "usage_zh": "常見片語 el resto de…（…的其餘部分）。複數 los restos 可指遺體或廢墟遺跡。",
       "example_es": "Pasó el resto de la tarde leyendo en casa.",
       "example_zh": "他整個下午剩餘的時間都在家裡看書。",
-      "image": "emoji:🍰",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:resto"
@@ -1960,7 +1766,7 @@
       "usage_zh": "常用片語 dar una vuelta（去散步、兜風）、estar de vuelta（回來了）。買東西找零也是 vuelta。",
       "example_es": "Vamos a dar una vuelta por el parque.",
       "example_zh": "我們去公園散散步吧。",
-      "image": "emoji:🔄",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:vuelta",
@@ -2001,53 +1807,11 @@
       "usage_zh": "作「建議」時為可數名詞（un consejo）。注意與 concejo（市鎮議會）同音不同義。",
       "example_es": "Gracias por tu consejo, me ayudó muchísimo.",
       "example_zh": "謝謝你的建議，對我幫助非常大。",
-      "image": "emoji:💡",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:consejo",
         "wiktionary:la:consilium"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "llamado",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "呼叫、召喚、號召",
-      "en": "call",
-      "ipa": "/ʝaˈmado/",
-      "breakdown": [
-        {
-          "part": "llamar",
-          "zh": "呼叫、打電話"
-        },
-        {
-          "part": "-ado",
-          "zh": "名詞/分詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "llamar + -ado",
-          "zh": "呼叫 + 名詞/分詞後綴"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "llamado",
-          "zh": "呼叫、號召"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由動詞 llamar（呼喚、打電話）加上名詞後綴 -ado 構成。把發出呼喊的動作轉為具體事件，指發出的「呼籲、號召」或「電話呼叫」。",
-      "hook_zh": "電話鈴聲響起，那是遠方傳來的一個 llamado（呼叫）。",
-      "usage_zh": "在拉丁美洲常作名詞指「電話」或「呼籲」；在西班牙則多用 llamada。作形容詞時表示「名為…的」。",
-      "example_es": "El presidente hizo un llamado a la calma.",
-      "example_zh": "總統發出呼籲，希望大家保持冷靜。",
-      "image": "emoji:📞",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:llamado"
       ],
       "writer": "gemini"
     },
@@ -2093,7 +1857,7 @@
       "usage_zh": "陽性名詞。除了指肢體動作，也常指「社會運動」（movimiento social）。",
       "example_es": "El baile requiere mucho movimiento corporal.",
       "example_zh": "跳舞需要大量的肢體動作。",
-      "image": "emoji:🏃",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:movimiento",
@@ -2126,7 +1890,7 @@
       "usage_zh": "常用來表達「只不過、僅僅」，語氣比 solo 更強調事情的單純或直接。",
       "example_es": "Simplemente no tengo ganas de salir hoy.",
       "example_zh": "我今天只是單純不想出門。",
-      "image": "emoji:👌",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:simplemente"
@@ -2164,7 +1928,7 @@
       "usage_zh": "不帶重音的 aun 通常表示「甚至」（相當於 incluso）；加重音的 aún 則等於 todavía（仍然）。",
       "example_es": "Aun en ese caso, debemos tener cuidado.",
       "example_zh": "即使在那個情況下，我們也必須小心。",
-      "image": "emoji:➕",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:aun"
@@ -2186,7 +1950,7 @@
       "usage_zh": "常見搭配片語 hacerse cargo de…（負責…）與 a cargo de…（由…負責）。",
       "example_es": "Ella asumió un cargo importante en la empresa.",
       "example_zh": "她在公司裡接下了一個重要職位。",
-      "image": "emoji:💼",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:cargo"
@@ -2224,7 +1988,7 @@
       "usage_zh": "主格與介詞後同形（如 para ellas）。群體中若有任一陽性名詞，須改用 ellos。",
       "example_es": "Ellas son las nuevas estudiantes de intercambio.",
       "example_zh": "她們是新來的交換學生。",
-      "image": "emoji:👭",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:ellas"
@@ -2259,50 +2023,10 @@
       "usage_zh": "指不可數的工作經驗用單數；指一次次具體的人生經歷時可用複數 experiencias。",
       "example_es": "Tiene mucha experiencia en este trabajo.",
       "example_zh": "他在這份工作上有很多經驗。",
-      "image": "emoji:🧗",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:experiencia"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "llama",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "火焰、火苗；駱馬",
-      "en": "flame; llama",
-      "ipa": "/ˈʝama/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "flamma",
-          "zh": "火焰"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "llama",
-          "zh": "火焰"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "llama",
-          "zh": "火焰"
-        }
-      ],
-      "cognates_en": [
-        "flame"
-      ],
-      "story_zh": "源自拉丁文 flamma（火焰）。在早期西班牙語演變中，拉丁文字首的 fl- 常轉變為雙寫 ll-，因此 flamma 變成了 llama。英文的 flame 也是它的同源字。",
-      "hook_zh": "想像一隻可愛的「駱馬」（llama）頭頂冒著一團熊熊「火焰」！",
-      "usage_zh": "是同形多義字，既是「火焰」也是南美動物「駱馬」，亦為動詞 llamar 的第三人稱單數。",
-      "example_es": "La llama de la vela ilumina la habitación.",
-      "example_zh": "蠟燭的火苗照亮了房間。",
-      "image": "emoji:🔥",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:llama"
       ],
       "writer": "gemini"
     },
@@ -2344,7 +2068,7 @@
       "usage_zh": "指團體成員時，指女性傳統上也多用 el miembro；miembra 屬於受爭議的俗用法。",
       "example_es": "Es un miembro importante de nuestro equipo.",
       "example_zh": "他是我們團隊的重要成員。",
-      "image": "emoji:👥",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:miembro",
@@ -2391,7 +2115,7 @@
       "usage_zh": "常見片語：¡Qué pena!（真可惜！）、vale la pena（值得）、dar pena（令人同情）。",
       "example_es": "Es una pena que no puedas venir a la fiesta.",
       "example_zh": "真可惜你不能來參加派對。",
-      "image": "emoji:🥺",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:pena"
@@ -2445,7 +2169,7 @@
       "usage_zh": "陰性名詞，字尾 -ción 重音在後；複數形為 producciones（去重音符號）。",
       "example_es": "La fábrica aumentó la producción este mes.",
       "example_zh": "工廠這個月增加了產量。",
-      "image": "emoji:🏭",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:producción",
@@ -2486,7 +2210,7 @@
       "usage_zh": "常用片語有 llevar a cabo（實行、完成）以及 de cabo a rabo（從頭到尾）。",
       "example_es": "Vamos a llevar a cabo este proyecto juntos.",
       "example_zh": "我們要一起實行這個專案。",
-      "image": "emoji:🪢",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:cabo",
@@ -2523,7 +2247,7 @@
       "usage_zh": "陰陽同形（un error común / una duda común）；常用片語 en común（共同、共有）。",
       "example_es": "Tenemos muchos intereses en común.",
       "example_zh": "我們有很多共同的興趣。",
-      "image": "emoji:🤝",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:común",
@@ -2565,7 +2289,7 @@
       "usage_zh": "陰性名詞。注意重音在最後的 ía；日常生活中若要表示節省開銷，可用複數 hacer economías。",
       "example_es": "La economía del país está mejorando este año.",
       "example_zh": "這個國家的經濟今年正在好轉。",
-      "image": "emoji:📈",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:economía"
@@ -2600,7 +2324,7 @@
       "usage_zh": "陽性名詞。表示「一段時間」時常用 por espacio de…；電腦鍵盤的「空白鍵」稱為 barra espaciadora。",
       "example_es": "No hay suficiente espacio en esta habitación.",
       "example_zh": "這個房間裡沒有足夠的空間。",
-      "image": "emoji:🚀",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:espacio"
@@ -2635,7 +2359,7 @@
       "usage_zh": "陰性名詞（-dad 結尾皆為陰性）。常見搭配有 aprovechar la oportunidad（把握機會）。",
       "example_es": "Es una gran oportunidad para aprender español.",
       "example_zh": "這是個學習西語的大好機會。",
-      "image": "emoji:🌟",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:oportunidad"
@@ -2668,7 +2392,7 @@
       "usage_zh": "陰性名詞，字尾 -ción 均為陰性；複數時去重音符號為 organizaciones。",
       "example_es": "Ella trabaja en una organización internacional.",
       "example_zh": "她在一家國際組織工作。",
-      "image": "emoji:🏢",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:organización"
@@ -2701,7 +2425,7 @@
       "usage_zh": "陽性名詞，常與動詞 dar（給出結果）或 tener（有結果）搭配使用。",
       "example_es": "Estamos esperando el resultado del examen.",
       "example_zh": "我們正在等待考試結果。",
-      "image": "emoji:📊",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:resultado"
@@ -2746,7 +2470,7 @@
       "usage_zh": "作形容詞置於陽性單數名詞前時通常縮略為 san（如 San José），但以 Do- 或 To- 開頭者除外（如 Santo Domingo）。",
       "example_es": "El primero de noviembre se celebra el Día de Todos los Santos.",
       "example_zh": "十一月一日是諸聖節（萬聖節）。",
-      "image": "emoji:😇",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:santo",
@@ -2787,7 +2511,7 @@
       "usage_zh": "陰性名詞，複數為 acciones；在商業上常指「股票」，例如 comprar acciones（買股票）。",
       "example_es": "Es el momento de pasar a la acción.",
       "example_zh": "現在是採取行動的時候了。",
-      "image": "emoji:🎬",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:acción"
@@ -2827,7 +2551,7 @@
       "usage_zh": "常用片語 a condición de que（條件是…，後接虛擬式）；複數形式 condiciones 常指工作或生活環境條件。",
       "example_es": "Aceptó la propuesta con una condición.",
       "example_zh": "他附帶一個條件接受了這項提議。",
-      "image": "emoji:📜",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:condición",
@@ -2851,7 +2575,7 @@
       "usage_zh": "連接詞 o 在遇到以 o 或 ho 開頭的單字時必須改為 u，例如 siete u ocho。",
       "example_es": "¿Prefieres este u otro?",
       "example_zh": "你偏好這一個還是另一個？",
-      "image": "emoji:🔀",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:u"
@@ -2896,7 +2620,7 @@
       "usage_zh": "陽性名詞。除了指金錢價值，也常用於 tener el valor de + 原形動詞（有勇氣做…）。",
       "example_es": "Él tuvo el valor de decir la verdad.",
       "example_zh": "他有勇氣說出實話。",
-      "image": "emoji:💎",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:valor",
@@ -2939,7 +2663,7 @@
       "usage_zh": "陰性為 viva。搭配 estar 表示「還活著（沒死）」，搭配 ser 則形容人「機靈、反應敏捷」。",
       "example_es": "El pez todavía está vivo.",
       "example_zh": "這條魚還活著。",
-      "image": "emoji:🌱",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:vivo",
@@ -2975,7 +2699,7 @@
       "usage_zh": "陰性名詞。注意辨析：calidad 指物品或成果的「品質優劣」，cualidad 則指「特質、特長」。",
       "example_es": "Este restaurante ofrece comida de buena calidad.",
       "example_zh": "這家餐廳提供品質良好的食物。",
-      "image": "emoji:⭐",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:calidad"
@@ -3015,7 +2739,7 @@
       "usage_zh": "陰性名詞。極常見片語 a causa de…（因為…、由於…），後面接名詞或代名詞。",
       "example_es": "El vuelo se canceló a causa de la lluvia.",
       "example_zh": "航班因為下雨而取消了。",
-      "image": "emoji:🔍",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:causa",
@@ -3051,7 +2775,7 @@
       "usage_zh": "陰陽同形（el punto central / la idea central）。作名詞時多為陰性（la central 總部、發電廠）。",
       "example_es": "La estación central de tren está cerca de aquí.",
       "example_zh": "火車中央車站就在這附近。",
-      "image": "emoji:📍",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:central"
@@ -3092,7 +2816,7 @@
       "usage_zh": "陰性形為 directora。指中小學校長、樂團指揮或影視導演皆用此字。",
       "example_es": "El director de la escuela habló con los estudiantes.",
       "example_zh": "學校校長和學生們說了話。",
-      "image": "emoji:🎬",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:director"
@@ -3127,7 +2851,7 @@
       "usage_zh": "陰性名詞。常用片語有 sin duda（毫無疑問）、tener dudas（有疑問）。",
       "example_es": "Si tienes alguna duda, puedes preguntarme.",
       "example_zh": "如果你有任何疑問，可以問我。",
-      "image": "emoji:❓",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:duda"
@@ -3149,7 +2873,7 @@
       "usage_zh": "陰性名詞，但因開頭為重音 a，單數定冠詞用 el（el alta）。常見如 dar el alta（准許出院）。",
       "example_es": "El médico le dio el alta esta mañana.",
       "example_zh": "醫生今天早上准許他出院了。",
-      "image": "emoji:🏥",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:alta"
@@ -3190,7 +2914,7 @@
       "usage_zh": "陰陽同形（el estado civil 婚姻狀況 / la guerra civil 內戰）。",
       "example_es": "La guerra civil causó un gran impacto en el país.",
       "example_zh": "內戰對這個國家造成了巨大的衝擊。",
-      "image": "emoji:⚖️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:civil"
@@ -3232,7 +2956,7 @@
       "usage_zh": "可作形容詞「當地的」（陰陽同形，複數 locales），亦可作陽性名詞指「店面、營業場所」（el local）。",
       "example_es": "Compré estas frutas frescas en el mercado local.",
       "example_zh": "我在當地的市場買了這些新鮮水果。",
-      "image": "emoji:🏪",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:local",
@@ -3267,7 +2991,7 @@
       "usage_zh": "幾乎只用於片語 acerca de（關於…），用法相當於 sobre，後面接名詞或代名詞。",
       "example_es": "Hablamos acerca de los planes para el viaje.",
       "example_zh": "我們聊了關於旅行的計畫。",
-      "image": "emoji:💭",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:acerca"
@@ -3300,7 +3024,7 @@
       "usage_zh": "拉美常用 acá，西班牙多用 aquí。acá 常用於移動動詞（如 ven acá 到這裡來），指向範圍較廣。",
       "example_es": "Ven acá y mira esta foto divertida.",
       "example_zh": "來這裡看看這張有趣的照片。",
-      "image": "emoji:📍",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:acá"
@@ -3333,7 +3057,7 @@
       "usage_zh": "常接 de 形成 alrededor de（在…周圍；大約）。也可作陽性名詞 el alrededor（常用複數 los alrededores 指周邊地區）。",
       "example_es": "Hay muchos árboles alrededor del parque.",
       "example_zh": "公園周圍有許多樹木。",
-      "image": "emoji:🔄",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:alrededor"
@@ -3381,7 +3105,7 @@
       "usage_zh": "陰性名詞（la campaña）。常見搭配有 campaña electoral（競選活動）與 campaña publicitaria（廣告宣傳）。",
       "example_es": "La empresa lanzó una nueva campaña publicitaria.",
       "example_zh": "這家公司推出了一場新的廣告宣傳活動。",
-      "image": "emoji:📢",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:campaña",
@@ -3424,7 +3148,7 @@
       "usage_zh": "常用片語有 carrera contra el tiempo（與時間賽跑），指大學主修時常搭配 estudiar una carrera。",
       "example_es": "Es una carrera contra el tiempo.",
       "example_zh": "這是一場與時間的賽跑。",
-      "image": "emoji:🏃",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:carrera",
@@ -3465,11 +3189,52 @@
       "usage_zh": "陽性名詞。指國家軍種時通常首字母大寫，例如 Ejército de Tierra（陸軍）。",
       "example_es": "El ejército defiende las fronteras del país.",
       "example_zh": "軍隊保衛國家的邊境。",
-      "image": "emoji:🪖",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:ejército",
         "wiktionary:la:exercitus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estudio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "研讀、學習；研究；工作室、書房",
+      "en": "study, studio",
+      "ipa": "/esˈtudjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "studium",
+          "zh": "熱誠、專心、研究"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "estudio",
+          "zh": "研讀、學習"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estudio",
+          "zh": "學習、研究、工作室"
+        }
+      ],
+      "cognates_en": [
+        "study",
+        "studio"
+      ],
+      "story_zh": "繼承自古西班牙語 estudio，為拉丁語 studium（熱忱、專心致志）的學者借詞。原指懷抱熱誠專注投入某種學問，後來引申為「研讀、研究」，以及進行鑽研與創作的場所「書房、工作室」。",
+      "hook_zh": "英文 study 和 studio 的西語親戚，前面加上西班牙語常見的 e-。",
+      "usage_zh": "既是陽性名詞，也是動詞 estudiar 的第一人稱現在式（yo estudio，我讀書）。",
+      "example_es": "El estudio de idiomas es muy divertido.",
+      "example_zh": "學習語言非常有趣。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estudio"
       ],
       "writer": "gemini"
     },
@@ -3501,7 +3266,7 @@
       "usage_zh": "複數為 intereses。表示「對…感興趣」常搭配 tener interés en 或 mostrar interés por。",
       "example_es": "Tengo mucho interés en aprender español.",
       "example_zh": "我對學習西班牙語非常感興趣。",
-      "image": "emoji:💡",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:interés"
@@ -3536,7 +3301,7 @@
       "usage_zh": "作陽性名詞表示「目標」，作形容詞時有陰陽性變化（objetivo / objetiva，客觀的）。",
       "example_es": "Nuestro objetivo es terminar el proyecto hoy.",
       "example_zh": "我們的目標是今天完成這項專案。",
-      "image": "emoji:🎯",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:objetivo"
@@ -3571,7 +3336,7 @@
       "usage_zh": "常見片語有 al principio（起初、一開始）、en principio（原則上）。",
       "example_es": "Al principio todo era difícil, pero ahora es fácil.",
       "example_zh": "起初一切都很困難，但現在很容易了。",
-      "image": "emoji:🏁",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:principio"
@@ -3606,7 +3371,7 @@
       "usage_zh": "陰性名詞，複數為 provincias。在西班牙是自治區（comunidad autónoma）之下的二級行政區劃。",
       "example_es": "Toledo es una provincia de España.",
       "example_zh": "托雷多是西班牙的一個省。",
-      "image": "emoji:🏛️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:provincia"
@@ -3641,7 +3406,7 @@
       "usage_zh": "常用複數 recursos 指「自然資源（recursos naturales）」或「人力資源（recursos humanos）」。",
       "example_es": "No tenemos suficientes recursos para el viaje.",
       "example_zh": "我們沒有足夠的資源來進行這趟旅行。",
-      "image": "emoji:💡",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:recurso"
@@ -3684,7 +3449,7 @@
       "usage_zh": "陰性名詞，複數為 redes。社群網路稱為 redes sociales，上網則是 navegar por la red。",
       "example_es": "Pescamos varios peces con la red.",
       "example_zh": "我們用漁網捕到了好幾條魚。",
-      "image": "emoji:🕸️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:red",
@@ -3709,7 +3474,7 @@
       "usage_zh": "感嘆詞，書寫時前後需加上倒驚嘆號與驚嘆號：¡Ah!。",
       "example_es": "¡Ah, ahora entiendo todo!",
       "example_zh": "啊，我現在全懂了！",
-      "image": "emoji:😮",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:ah"
@@ -3731,7 +3496,7 @@
       "usage_zh": "陽性複數指示詞，表示空間或時間上距離說話雙方都較遠的人或事物。陰性複數為 aquellas。",
       "example_es": "Aquellos días fueron inolvidables.",
       "example_zh": "那些日子令人難忘。",
-      "image": "emoji:👉",
+      "image": "svg",
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:aquellos"
@@ -3781,10 +3546,281 @@
       "usage_zh": "陰性名詞。常用片語為 hacer compañía a alguien（陪伴某人）或 en compañía de（在…陪伴下）。",
       "example_es": "Gracias por hacerme compañía esta tarde.",
       "example_zh": "謝謝你今天下午陪我。",
-      "image": "emoji:🏢",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:compañía"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "especialmente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "特別地、尤其是",
+      "en": "especially, specially",
+      "ipa": "/espeˌθjalˈmente/",
+      "breakdown": [
+        {
+          "part": "especial",
+          "zh": "特別的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾，…地"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "espeçialmente",
+          "zh": "特別地"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "especialmente",
+          "zh": "特別地"
+        }
+      ],
+      "cognates_en": [
+        "especially"
+      ],
+      "story_zh": "源自古西班牙語 espeçialmente，在構詞上是由形容詞 especial（特別的）加上副詞字尾 -mente 組成，用來修飾動詞或形容詞，表示「特別地」或「尤其」。",
+      "hook_zh": "長得就跟英文 especially 一模一樣，字尾換成西語副詞招牌 -mente！",
+      "usage_zh": "常放在句首或修飾形容詞，如 especialmente importante（特別重要）。",
+      "example_es": "Me gusta la fruta, especialmente las manzanas.",
+      "example_zh": "我喜歡水果，特別是蘋果。",
+      "image": "emoji:⭐",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:especialmente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "interior",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "內部、室內",
+      "en": "interior, inside",
+      "ipa": "/inteˈɾjoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "interior",
+          "zh": "內部的、較裡面的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "interior",
+          "zh": "內部、室內"
+        }
+      ],
+      "cognates_en": [
+        "interior"
+      ],
+      "story_zh": "源自拉丁語形容詞 interior（更裡面的、內部的）。傳入西班牙語後除了作形容詞，也廣泛轉為陽性名詞使用，指空間的「內部」或「室內」。",
+      "hook_zh": "拼法和英文 interior 完全相同，發音把重音放在最後的 -or！",
+      "usage_zh": "作名詞時為陽性（el interior）；作形容詞時陰陽同形（un patio interior）。",
+      "example_es": "El interior de la casa es muy luminoso.",
+      "example_zh": "這棟房子的內部採光非常好。",
+      "image": "emoji:🏠",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:interior"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "lucha",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "搏鬥、戰鬥；鬥爭",
+      "en": "fight, struggle, wrestling",
+      "ipa": "/ˈlut͡ʃa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "luctor",
+          "zh": "摔角、搏鬥"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "lucta",
+          "zh": "搏鬥、摔角比賽"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lucha",
+          "zh": "搏鬥、鬥爭"
+        }
+      ],
+      "cognates_en": [
+        "reluctant"
+      ],
+      "story_zh": "源自後期拉丁語名詞 lucta（摔角、博鬥），該字由拉丁語動詞 luctor（搏鬥、角力）衍生而來。在西語演變中，拉丁語的 -ct- 常規則演變為 -ch-，於是 lucta 便演化成西語的 lucha。",
+      "hook_zh": "墨西哥摔角手 luchador 戴著面具，在擂台上展開熱血的 lucha！",
+      "usage_zh": "為陰性名詞。常用搭配如 la lucha contra el cáncer（對抗癌症的鬥爭）。",
+      "example_es": "Continúa la lucha por los derechos humanos.",
+      "example_zh": "爭取人權的奮鬥仍在持續。",
+      "image": "emoji:🤼",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lucha",
+        "wiktionary:la:lucta",
+        "wiktionary:la:luctor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mediante",
+      "article": "",
+      "pos": "preposición",
+      "zh": "藉由、透過",
+      "en": "by means of, through, using",
+      "ipa": "/meˈdjante/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mediantem",
+          "zh": "處於中間的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mediante",
+          "zh": "藉由、透過"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 mediantem，原為動詞 mediare（處於中間）的現在分詞賓格。它原本表示「作為中間媒介」，在西班牙語中演變為介詞，表示「藉由」或「透過某種方式」。",
+      "hook_zh": "看到 med- 想到 medium（媒介）或 middle（中間）：透過中間媒介來達成。",
+      "usage_zh": "為介詞，後面直接接名詞，功能相當於 a través de 或 por medio de。",
+      "example_es": "Resolvieron el problema mediante el diálogo.",
+      "example_zh": "他們透過對話解決了問題。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mediante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "prueba",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "證據、證明；測驗、考驗",
+      "en": "proof, evidence, test, trial",
+      "ipa": "/ˈpɾweba/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "probus",
+          "zh": "優秀的、正直的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "probo",
+          "zh": "檢驗、證明"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "proba",
+          "zh": "試驗、證據"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "prueba",
+          "zh": "考驗、測驗、證據"
+        }
+      ],
+      "cognates_en": [
+        "proof",
+        "prove"
+      ],
+      "story_zh": "源自後期拉丁語 proba（試驗、證據），源頭為動詞 probō（檢驗、證明），可追溯至 probus（良好的）。經過檢驗確認為良好，引申為「證明」；拉丁語短母音 ŏ 在西語重音下規則雙母音化為 ue，演變成 prueba。",
+      "hook_zh": "英文 proof 和 prove 的同源親戚，把 pro 換成西語雙母音 prue！",
+      "usage_zh": "陰性名詞。參加測驗是 hacer una prueba；司法或科學上的證據常以複數 pruebas 出現。",
+      "example_es": "La policía encontró una prueba importante.",
+      "example_zh": "警方找到了一項重要證據。",
+      "image": "emoji:🔍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:prueba",
+        "wiktionary:la:proba",
+        "wiktionary:la:probo",
+        "wiktionary:la:probus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vaya",
+      "article": "",
+      "pos": "interjección",
+      "zh": "哎呀；哇；真是不錯的…（表感嘆或驚訝）",
+      "en": "wow!, what a..., oh dear!",
+      "ipa": "/ˈbaʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "ir",
+          "zh": "走、去"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vaya",
+          "zh": "哎呀、哇"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 ir（走、去）的虛擬式現在式單數第三人稱形式。在語氣上借由行動的呼求，轉化為表達驚嘆、讚賞或無奈的感嘆詞，就像英文中用「go on!」來表達強烈情緒一樣。",
+      "hook_zh": "看到超炫的跑車忍不住大叫「哇呀（vaya）！太帥了吧！」",
+      "usage_zh": "常接名詞表感嘆：¡Vaya coche!（好棒的車！）或 ¡Vaya lío!（真是一團糟！）。",
+      "example_es": "¡Vaya coche que tiene tu hermana!",
+      "example_zh": "你姐姐那台車真是太帥了！",
+      "image": "emoji:😲",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vaya"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "anterior",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "先前的、過去的；前面的",
+      "en": "previous, earlier, former",
+      "ipa": "/anteˈɾjoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "anterior",
+          "zh": "在前的、較先的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "anterior",
+          "zh": "先前的、前面的"
+        }
+      ],
+      "cognates_en": [
+        "anterior"
+      ],
+      "story_zh": "直接借自拉丁語 anterior，本義指「在前面的、時間上較先的」。西班牙語完整保留了這個詞，用來指稱時間上的上一任、先前階段，或是空間上的前方部位。",
+      "hook_zh": "英文同源字就是 anterior（前面的、先前的），字首 ante- 是「在…之前」。",
+      "usage_zh": "陰陽同形（el día anterior / la semana anterior），通常置於名詞之後。",
+      "example_es": "En el capítulo anterior vimos las reglas básicas.",
+      "example_zh": "在上一章中，我們看過了基本規則。",
+      "image": "emoji:⏮️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:anterior"
       ],
       "writer": "gemini"
     }

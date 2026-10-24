@@ -1,278 +1,7 @@
 {
   "theme": "freq-0003",
-  "theme_zh": "常用字（頻率第 697–903 名）",
+  "theme_zh": "常用字（頻率第 711–924 名）",
   "entries": [
-    {
-      "word": "especialmente",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "特別地、尤其是",
-      "en": "especially, specially",
-      "ipa": "/espeˌθjalˈmente/",
-      "breakdown": [
-        {
-          "part": "especial",
-          "zh": "特別的"
-        },
-        {
-          "part": "-mente",
-          "zh": "副詞字尾，…地"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "古西班牙語",
-          "word": "espeçialmente",
-          "zh": "特別地"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "especialmente",
-          "zh": "特別地"
-        }
-      ],
-      "cognates_en": [
-        "especially"
-      ],
-      "story_zh": "源自古西班牙語 espeçialmente，在構詞上是由形容詞 especial（特別的）加上副詞字尾 -mente 組成，用來修飾動詞或形容詞，表示「特別地」或「尤其」。",
-      "hook_zh": "長得就跟英文 especially 一模一樣，字尾換成西語副詞招牌 -mente！",
-      "usage_zh": "常放在句首或修飾形容詞，如 especialmente importante（特別重要）。",
-      "example_es": "Me gusta la fruta, especialmente las manzanas.",
-      "example_zh": "我喜歡水果，特別是蘋果。",
-      "image": "emoji:⭐",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:especialmente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "interior",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "內部、室內",
-      "en": "interior, inside",
-      "ipa": "/inteˈɾjoɾ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "interior",
-          "zh": "內部的、較裡面的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "interior",
-          "zh": "內部、室內"
-        }
-      ],
-      "cognates_en": [
-        "interior"
-      ],
-      "story_zh": "源自拉丁語形容詞 interior（更裡面的、內部的）。傳入西班牙語後除了作形容詞，也廣泛轉為陽性名詞使用，指空間的「內部」或「室內」。",
-      "hook_zh": "拼法和英文 interior 完全相同，發音把重音放在最後的 -or！",
-      "usage_zh": "作名詞時為陽性（el interior）；作形容詞時陰陽同形（un patio interior）。",
-      "example_es": "El interior de la casa es muy luminoso.",
-      "example_zh": "這棟房子的內部採光非常好。",
-      "image": "emoji:🏠",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:interior"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "lucha",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "搏鬥、戰鬥；鬥爭",
-      "en": "fight, struggle, wrestling",
-      "ipa": "/ˈlut͡ʃa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "luctor",
-          "zh": "摔角、搏鬥"
-        },
-        {
-          "lang_zh": "後期拉丁語",
-          "word": "lucta",
-          "zh": "搏鬥、摔角比賽"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "lucha",
-          "zh": "搏鬥、鬥爭"
-        }
-      ],
-      "cognates_en": [
-        "reluctant"
-      ],
-      "story_zh": "源自後期拉丁語名詞 lucta（摔角、博鬥），該字由拉丁語動詞 luctor（搏鬥、角力）衍生而來。在西語演變中，拉丁語的 -ct- 常規則演變為 -ch-，於是 lucta 便演化成西語的 lucha。",
-      "hook_zh": "墨西哥摔角手 luchador 戴著面具，在擂台上展開熱血的 lucha！",
-      "usage_zh": "為陰性名詞。常用搭配如 la lucha contra el cáncer（對抗癌症的鬥爭）。",
-      "example_es": "Continúa la lucha por los derechos humanos.",
-      "example_zh": "爭取人權的奮鬥仍在持續。",
-      "image": "emoji:🤼",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:lucha",
-        "wiktionary:la:lucta",
-        "wiktionary:la:luctor"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "mediante",
-      "article": "",
-      "pos": "preposición",
-      "zh": "藉由、透過",
-      "en": "by means of, through, using",
-      "ipa": "/meˈdjante/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "mediantem",
-          "zh": "處於中間的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "mediante",
-          "zh": "藉由、透過"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁語 mediantem，原為動詞 mediare（處於中間）的現在分詞賓格。它原本表示「作為中間媒介」，在西班牙語中演變為介詞，表示「藉由」或「透過某種方式」。",
-      "hook_zh": "看到 med- 想到 medium（媒介）或 middle（中間）：透過中間媒介來達成。",
-      "usage_zh": "為介詞，後面直接接名詞，功能相當於 a través de 或 por medio de。",
-      "example_es": "Resolvieron el problema mediante el diálogo.",
-      "example_zh": "他們透過對話解決了問題。",
-      "image": "emoji:🤝",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:mediante"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "prueba",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "證據、證明；測驗、考驗",
-      "en": "proof, evidence, test, trial",
-      "ipa": "/ˈpɾweba/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "probus",
-          "zh": "優秀的、正直的"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "probo",
-          "zh": "檢驗、證明"
-        },
-        {
-          "lang_zh": "後期拉丁語",
-          "word": "proba",
-          "zh": "試驗、證據"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "prueba",
-          "zh": "考驗、測驗、證據"
-        }
-      ],
-      "cognates_en": [
-        "proof",
-        "prove"
-      ],
-      "story_zh": "源自後期拉丁語 proba（試驗、證據），源頭為動詞 probō（檢驗、證明），可追溯至 probus（良好的）。經過檢驗確認為良好，引申為「證明」；拉丁語短母音 ŏ 在西語重音下規則雙母音化為 ue，演變成 prueba。",
-      "hook_zh": "英文 proof 和 prove 的同源親戚，把 pro 換成西語雙母音 prue！",
-      "usage_zh": "陰性名詞。參加測驗是 hacer una prueba；司法或科學上的證據常以複數 pruebas 出現。",
-      "example_es": "La policía encontró una prueba importante.",
-      "example_zh": "警方找到了一項重要證據。",
-      "image": "emoji:🔍",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:prueba",
-        "wiktionary:la:proba",
-        "wiktionary:la:probo",
-        "wiktionary:la:probus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "vaya",
-      "article": "",
-      "pos": "interjección",
-      "zh": "哎呀；哇；真是不錯的…（表感嘆或驚訝）",
-      "en": "wow!, what a..., oh dear!",
-      "ipa": "/ˈbaʝa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "ir",
-          "zh": "走、去"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "vaya",
-          "zh": "哎呀、哇"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自動詞 ir（走、去）的虛擬式現在式單數第三人稱形式。在語氣上借由行動的呼求，轉化為表達驚嘆、讚賞或無奈的感嘆詞，就像英文中用「go on!」來表達強烈情緒一樣。",
-      "hook_zh": "看到超炫的跑車忍不住大叫「哇呀（vaya）！太帥了吧！」",
-      "usage_zh": "常接名詞表感嘆：¡Vaya coche!（好棒的車！）或 ¡Vaya lío!（真是一團糟！）。",
-      "example_es": "¡Vaya coche que tiene tu hermana!",
-      "example_zh": "你姐姐那台車真是太帥了！",
-      "image": "emoji:😲",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:vaya"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "anterior",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "先前的、過去的；前面的",
-      "en": "previous, earlier, former",
-      "ipa": "/anteˈɾjoɾ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "anterior",
-          "zh": "在前的、較先的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "anterior",
-          "zh": "先前的、前面的"
-        }
-      ],
-      "cognates_en": [
-        "anterior"
-      ],
-      "story_zh": "直接借自拉丁語 anterior，本義指「在前面的、時間上較先的」。西班牙語完整保留了這個詞，用來指稱時間上的上一任、先前階段，或是空間上的前方部位。",
-      "hook_zh": "英文同源字就是 anterior（前面的、先前的），字首 ante- 是「在…之前」。",
-      "usage_zh": "陰陽同形（el día anterior / la semana anterior），通常置於名詞之後。",
-      "example_es": "En el capítulo anterior vimos las reglas básicas.",
-      "example_zh": "在上一章中，我們看過了基本規則。",
-      "image": "emoji:⏮️",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:anterior"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "dia",
       "article": "el",
@@ -1166,6 +895,342 @@
       "writer": "gemini"
     },
     {
+      "word": "humano",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "人類的；有人情味的、仁慈的",
+      "en": "human, humane",
+      "ipa": "/uˈmano/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "印歐原始語",
+          "word": "*ǵʰmṓ",
+          "zh": "人"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "homō",
+          "zh": "人、人類"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "hūmānus",
+          "zh": "人的、人道的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "humano",
+          "zh": "人類的"
+        }
+      ],
+      "cognates_en": [
+        "human",
+        "humane"
+      ],
+      "story_zh": "源自拉丁語 hūmānus（人的、有人情味的），推測與拉丁語 homō（人）同源。在古羅馬文化中，這個字不僅指屬於人類，更延伸出具備仁慈、同理心與教養的高尚特質，這也是英文 human 與 humane 的共同字源。",
+      "hook_zh": "拼法和英文 human 幾乎一模一樣，把字尾換成西語陽性常見的 -o 就是 humano。",
+      "usage_zh": "陰性形式為 humana。常見搭配如 ser humano（人類）、derechos humanos（人權）。",
+      "example_es": "Cometer errores es humano.",
+      "example_zh": "犯錯是人之常情。",
+      "image": "emoji:🧑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:humano",
+        "wiktionary:la:humanus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "menor",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "較小的；較年幼的；未成年的",
+      "en": "smaller, younger, underage",
+      "ipa": "/meˈnoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "minōrem",
+          "zh": "較小的、較年幼的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "menor",
+          "zh": "較小的、未成年的"
+        }
+      ],
+      "cognates_en": [
+        "minor"
+      ],
+      "story_zh": "源自拉丁語 minōrem（較小、較年幼），原為形容詞 parvus（小）的比較級。演變為西班牙語後保留了比較含意，指年齡較小或尺寸、程度次要，後來在法律與日常用語中專指未滿法定年齡的未成年人。",
+      "hook_zh": "直接聯想英文 minor（未成年的、次要的），發音與意義都高度對應！",
+      "usage_zh": "陰陽同形（el/la menor）。常放在名詞後表年幼，如 mi hermano menor（我弟弟）；反義詞為 mayor。",
+      "example_es": "Mi hermano menor vive en Barcelona.",
+      "example_zh": "我的弟弟住在巴塞隆納。",
+      "image": "emoji:🧒",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:menor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ministerio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "（政府）部、部會",
+      "en": "ministry, government department",
+      "ipa": "/minisˈteɾjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ministerium",
+          "zh": "職務、僕役之職"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ministerio",
+          "zh": "部會、部門"
+        }
+      ],
+      "cognates_en": [
+        "ministry"
+      ],
+      "story_zh": "借自拉丁語 ministerium，原意為「僕役之職、侍奉或公務職責」，源於僕人或助手之意。隨著時代演進，字義從侍奉君主擴展為執行國家政務，最終成為現代專指政府行政部門的「部會」。",
+      "hook_zh": "英文 ministry 的西語雙胞胎，把字尾 -y 換成西語常見名詞尾 -io 就是 ministerio。",
+      "usage_zh": "陽性名詞。指政府部會時首字母常大寫，如 Ministerio de Educación（教育部）。",
+      "example_es": "Ella trabaja en el Ministerio de Cultura.",
+      "example_zh": "她在文化部工作。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ministerio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "puerto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "港口、海港；山口、隘口",
+      "en": "port, harbour, mountain pass",
+      "ipa": "/ˈpweɾto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "印歐原始語",
+          "word": "*per-",
+          "zh": "穿過、前進"
+        },
+        {
+          "lang_zh": "印歐原始語",
+          "word": "*pértus",
+          "zh": "通道、渡口"
+        },
+        {
+          "lang_zh": "義大利原始語",
+          "word": "*portus",
+          "zh": "港口、通道"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "portus",
+          "zh": "港口、避難所"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "puerto",
+          "zh": "港口、隘口"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "puerto",
+          "zh": "港口、山口"
+        }
+      ],
+      "cognates_en": [
+        "port",
+        "ford"
+      ],
+      "story_zh": "源自印歐原始語 *pértus（通道），經拉丁語 portus 演變而來。其核心概念是「進出或穿越的渡口」，因此發展為讓船隻進出、避風停靠的「港口」；在陸地地理上，則指穿越崇山峻嶺之間的「山口」或「隘口」。",
+      "hook_zh": "英文 port 的母音在西語裂變為 ue，想像船隻駛進開闊的大港（puerto）。",
+      "usage_zh": "陽性名詞。puerto de montaña 特指山間的「隘口、山口」；在科技領域也可指電腦的「連接埠」。",
+      "example_es": "El barco llegó al puerto esta mañana.",
+      "example_zh": "船隻今天早上抵達了港口。",
+      "image": "emoji:⚓",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:puerto",
+        "wiktionary:la:portus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "acceso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "進入；通道；（疾病或情緒）發作",
+      "en": "access, entrance, fit",
+      "ipa": "/aɡˈθeso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "accessus",
+          "zh": "接近、進入"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "acceso",
+          "zh": "進入、通道"
+        }
+      ],
+      "cognates_en": [
+        "access"
+      ],
+      "story_zh": "源自拉丁語 accessus（接近、進入），為學者借詞。原指走近或到達某處的途徑，後引申為物理上的「通道」或資訊系統的「進入權限」。在醫學上也用來形容疾病或情緒的突發狀況，如咳嗽發作。",
+      "hook_zh": "外觀就像英文 access，逼逼刷卡獲得「進入權」，打開通往內部的小道。",
+      "usage_zh": "常搭配介系詞 a，如 tener acceso a internet（能上網、有網路連線）。",
+      "example_es": "No tengo acceso a internet en esta zona.",
+      "example_zh": "我在這個區域沒有網路連線。",
+      "image": "emoji:🔑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:acceso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "arma",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "武器；兵器",
+      "en": "weapon, arm",
+      "ipa": "/ˈaɾma/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*h₂er-",
+          "zh": "連接"
+        },
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*h₂(e)rmos",
+          "zh": "裝備、裝配"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "arma",
+          "zh": "武器、防具"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "arma",
+          "zh": "武器"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "arma",
+          "zh": "武器"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "arma",
+          "zh": "武器"
+        }
+      ],
+      "cognates_en": [
+        "arms",
+        "armor"
+      ],
+      "story_zh": "源自原始印歐語字根 *h₂er-（連接、組裝），衍生出 *h₂(e)rmos（裝備）。進入拉丁語後演變為 arma，原指防禦用的「甲冑武器」，晚期拉丁語轉為陰性單數，最終演變成西語的「武器」。",
+      "hook_zh": "看見軍隊全副武裝（army / arms），每個人手上都拿著一把致命武器。",
+      "usage_zh": "陰性名詞，但因重音 a- 開頭，單數冠詞用 el（el arma），複數用 las（las armas）。",
+      "example_es": "El policía encontró el arma secreta.",
+      "example_zh": "警察找到了那把秘密武器。",
+      "image": "emoji:⚔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:arma",
+        "wiktionary:la:arma"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "comunicación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "溝通；通訊；交流",
+      "en": "communication",
+      "ipa": "/komunikaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "communicātiōnem",
+          "zh": "分享、交流"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "comunicación",
+          "zh": "溝通、通訊"
+        }
+      ],
+      "cognates_en": [
+        "communication"
+      ],
+      "story_zh": "源自拉丁語 communicātiōnem（分享、共有、交流），為學者借詞。其核心概念是將資訊或想法公諸於眾、使彼此「共有」，後來演變為人際之間的「溝通」以及傳遞訊號的「通訊」。",
+      "hook_zh": "長相和英文 communication 幾乎一樣，互相「溝通」讓彼此的心情相通。",
+      "usage_zh": "以 -ción 結尾的字皆為陰性名詞，複數為 comunicaciones。",
+      "example_es": "La buena comunicación es clave en el trabajo.",
+      "example_zh": "良好的溝通在工作中至關重要。",
+      "image": "emoji:🗣️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:comunicación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "congreso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "國會；議會；代表大會",
+      "en": "congress, assembly, conference",
+      "ipa": "/konˈɡɾeso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "congressus",
+          "zh": "會合、聚集"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "congreso",
+          "zh": "國會、代表大會"
+        }
+      ],
+      "cognates_en": [
+        "congress"
+      ],
+      "story_zh": "源自拉丁語 congressus（聚集、會合），為學者借詞。字面原意是大家走到同一處聚會，後來引申為各界代表齊聚討論政事或學術的集會，演變成現代西語的「國會」與「代表大會」。",
+      "hook_zh": "國會（congress）開會時，議員們「共同走到一起」激烈辯論法案。",
+      "usage_zh": "指國家立法機關時首字母大寫（el Congreso，國會）；指學術研討會時小寫。",
+      "example_es": "El Congreso aprobó la nueva ley ayer.",
+      "example_zh": "國會昨天通過了新法律。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:congreso"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "crear",
       "article": "",
       "pos": "verbo",
@@ -1197,6 +1262,48 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:crear"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "llamado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "呼叫、召喚、號召",
+      "en": "call",
+      "ipa": "/ʝaˈmado/",
+      "breakdown": [
+        {
+          "part": "llamar",
+          "zh": "呼叫、打電話"
+        },
+        {
+          "part": "-ado",
+          "zh": "名詞/分詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "llamar + -ado",
+          "zh": "呼叫 + 名詞/分詞後綴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "llamado",
+          "zh": "呼叫、號召"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 llamar（呼喚、打電話）加上名詞後綴 -ado 構成。把發出呼喊的動作轉為具體事件，指發出的「呼籲、號召」或「電話呼叫」。",
+      "hook_zh": "電話鈴聲響起，那是遠方傳來的一個 llamado（呼叫）。",
+      "usage_zh": "在拉丁美洲常作名詞指「電話」或「呼籲」；在西班牙則多用 llamada。作形容詞時表示「名為…的」。",
+      "example_es": "El presidente hizo un llamado a la calma.",
+      "example_zh": "總統發出呼籲，希望大家保持冷靜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:llamado"
       ],
       "writer": "gemini"
     }

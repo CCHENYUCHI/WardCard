@@ -1,6 +1,6 @@
 {
   "theme": "freq-0001",
-  "theme_zh": "常用字（頻率第 2–428 名）",
+  "theme_zh": "常用字（頻率第 2–433 名）",
   "entries": [
     {
       "word": "la",
@@ -3728,7 +3728,7 @@
       "usage_zh": "常接 de 加原形動詞表示「試圖做…」（tratar de）；片語 se trata de 則表示「這是關於…」。",
       "example_es": "Trato de practicar español todos los días.",
       "example_zh": "我試著每天練習西班牙文。",
-      "image": "emoji:🤝",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:tratar",
@@ -3848,35 +3848,42 @@
       "writer": "gemini"
     },
     {
-      "word": "queda",
+      "word": "zona",
       "article": "la",
       "pos": "sustantivo",
-      "zh": "宵禁、熄燈號",
-      "en": "curfew",
-      "ipa": "/ˈkeda/",
+      "zh": "區域、地區、地帶",
+      "en": "zone, district, area",
+      "ipa": "/ˈθona/",
       "breakdown": [],
       "origin_chain": [
         {
-          "lang_zh": "西班牙語",
-          "word": "quedar",
-          "zh": "留下、停留"
+          "lang_zh": "古希臘語",
+          "word": "ζώνη",
+          "zh": "腰帶、帶子"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "zōna",
+          "zh": "腰帶、地帶"
         },
         {
           "lang_zh": "西班牙語",
-          "word": "queda",
-          "zh": "宵禁、熄燈號"
+          "word": "zona",
+          "zh": "區域、地區"
         }
       ],
-      "cognates_en": [],
-      "story_zh": "源自西語動詞 quedar（留下、停留）的去動詞派生詞。原指夜晚鐘聲響起後，居民必須留在家中的訊號，後來演變為「宵禁」與「熄燈號」的意思。",
-      "hook_zh": "晚上鐘聲一響就必須「留在」（quedar）家裡，這就是 queda（宵禁）。",
-      "usage_zh": "常與 toque（敲擊、鐘聲）連用成 toque de queda，指「宵禁令」或「宵禁鐘聲」。",
-      "example_es": "El gobierno declaró el toque de queda.",
-      "example_zh": "政府宣布實施宵禁。",
-      "image": "emoji:🔔",
+      "cognates_en": [
+        "zone"
+      ],
+      "story_zh": "借自拉丁語 zōna（腰帶、地帶），源於古希臘語 ζώνη（腰帶）。古希臘地理學家將地球依照緯度劃分成不同的氣候環帶，如同繫在地球上的腰帶，後引申指特定劃分的「區域、地帶」。",
+      "hook_zh": "拼法和英文 zone 幾乎相同，聯想地圖上一圈圈被腰帶框出的「區域」。",
+      "usage_zh": "為陰性名詞。常見搭配有 zona urbana（市區）與 zona rural（鄉村地區）。",
+      "example_es": "Esta zona de la ciudad es muy tranquila.",
+      "example_zh": "這座城市的這塊區域非常安靜。",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
-        "wiktionary:es:queda"
+        "wiktionary:es:zona"
       ],
       "writer": "gemini"
     }

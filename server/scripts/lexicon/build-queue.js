@@ -92,17 +92,25 @@ const OWN_SENSES_TO_STAY = 2;
  * The lemma an inflected form folds into, from the facts' form_of list (fetch-facts.js): podemos -> poder,
  * not podar. A known lemma (A1 or queued earlier) wins, then the most frequent one.
  */
+const MISSPELLING = /^(?:misspelling|common misspelling|alternative spelling|nonstandard spelling) of (\S+?)[.,;]?$/i;
+
 function formOfTarget(word, facts, known, rankOf) {
+  // asi, "misspelling of así": the entry belongs to the right spelling
+  const glosses = (facts?.base ? [] : facts?.entries || []).flatMap(e => e.glosses || []);
+  const spelled = glosses.length && glosses.every(g => MISSPELLING.test(g)) ? MISSPELLING.exec(glosses[0])[1] : null;
+  if (spelled && spelled !== word) return spelled;
   const targets = facts?.form_of || (facts?.base ? [facts.base] : []);
   if (!targets.length || NO_FOLD.has(word)) return null;
   const own = facts.base ? [] : facts.entries || [];
-  if (own.some(e => FUNCTION_POS.has(e.pos))) return null;
+  // Interjection senses (sabes "you know?", os "alternative form of ox") do not make a verb form a word of its own
+  if (own.some(e => FUNCTION_POS.has(e.pos) && e.pos !== 'intj')) return null;
   if (own.some(e => e.pos === 'verb') && /(ar|er|ir|ír)(se)?$/.test(word)) return null; // an infinitive is a lemma
   if (own.reduce((n, e) => n + (e.glosses || []).length, 0) > OWN_SENSES_TO_STAY) return null;
   const score = (t) => (known.has(lexiconKey(t)) ? -1 : rankOf.get(t) ?? Infinity);
   const target = [...targets].sort((a, b) => score(a) - score(b))[0];
-  // A word with senses of its own folds only into a more frequent lemma: pasa -> pasar, but gobierno stays (gobernar is rarer)
-  if (own.length && !((rankOf.get(target) ?? Infinity) < (rankOf.get(word) ?? Infinity))) return null;
+  // A word with senses of its own folds into a lemma the learner already has (queda -> quedar), or else only into
+  // a more frequent one: pasa -> pasar, but gobierno stays (gobernar is rarer)
+  if (own.length && !known.has(lexiconKey(target)) && !((rankOf.get(target) ?? Infinity) < (rankOf.get(word) ?? Infinity))) return null;
   return target;
 }
 
