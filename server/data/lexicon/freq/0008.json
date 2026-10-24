@@ -2779,6 +2779,48 @@
       "writer": "gemini"
     },
     {
+      "word": "carretero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "車夫；造車匠；道路的",
+      "en": "carter, cartwright; road-related",
+      "ipa": "/kareˈteɾo/",
+      "breakdown": [
+        {
+          "part": "carreta",
+          "zh": "大車、馬車"
+        },
+        {
+          "part": "-ero",
+          "zh": "表示職業或相關者的字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "carreta + -ero",
+          "zh": "大車 + 從事者字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "carretero",
+          "zh": "車夫、造車匠"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西語 carreta（雙輪大車）加上表示職業或身分的字尾 -ero。字面即「與大車打交道的人」，因此指駕駛大車的「車夫」或製作修繕的「造車匠」。作為形容詞時，則延伸指與道路或大車行駛相關的事物。",
+      "hook_zh": "大家熟知的西語公路 carretera 就是它的陰性形：車夫（carretero）開著車在路上走。",
+      "usage_zh": "陰性形 carretera 除了指女車夫，日常生活最常見的意思是「公路、大道」。",
+      "example_es": "El carretero transportaba la carga por el camino.",
+      "example_zh": "車夫沿著小路運送貨物。",
+      "image": "emoji:🛞",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:carretero"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "caída",
       "article": "la",
       "pos": "sustantivo",
