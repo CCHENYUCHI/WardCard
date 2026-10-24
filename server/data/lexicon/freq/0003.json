@@ -3,6 +3,1169 @@
   "theme_zh": "常用字（頻率第 697–903 名）",
   "entries": [
     {
+      "word": "especialmente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "特別地、尤其是",
+      "en": "especially, specially",
+      "ipa": "/espeˌθjalˈmente/",
+      "breakdown": [
+        {
+          "part": "especial",
+          "zh": "特別的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾，…地"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "espeçialmente",
+          "zh": "特別地"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "especialmente",
+          "zh": "特別地"
+        }
+      ],
+      "cognates_en": [
+        "especially"
+      ],
+      "story_zh": "源自古西班牙語 espeçialmente，在構詞上是由形容詞 especial（特別的）加上副詞字尾 -mente 組成，用來修飾動詞或形容詞，表示「特別地」或「尤其」。",
+      "hook_zh": "長得就跟英文 especially 一模一樣，字尾換成西語副詞招牌 -mente！",
+      "usage_zh": "常放在句首或修飾形容詞，如 especialmente importante（特別重要）。",
+      "example_es": "Me gusta la fruta, especialmente las manzanas.",
+      "example_zh": "我喜歡水果，特別是蘋果。",
+      "image": "emoji:⭐",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:especialmente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "interior",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "內部、室內",
+      "en": "interior, inside",
+      "ipa": "/inteˈɾjoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "interior",
+          "zh": "內部的、較裡面的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "interior",
+          "zh": "內部、室內"
+        }
+      ],
+      "cognates_en": [
+        "interior"
+      ],
+      "story_zh": "源自拉丁語形容詞 interior（更裡面的、內部的）。傳入西班牙語後除了作形容詞，也廣泛轉為陽性名詞使用，指空間的「內部」或「室內」。",
+      "hook_zh": "拼法和英文 interior 完全相同，發音把重音放在最後的 -or！",
+      "usage_zh": "作名詞時為陽性（el interior）；作形容詞時陰陽同形（un patio interior）。",
+      "example_es": "El interior de la casa es muy luminoso.",
+      "example_zh": "這棟房子的內部採光非常好。",
+      "image": "emoji:🏠",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:interior"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "lucha",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "搏鬥、戰鬥；鬥爭",
+      "en": "fight, struggle, wrestling",
+      "ipa": "/ˈlut͡ʃa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "luctor",
+          "zh": "摔角、搏鬥"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "lucta",
+          "zh": "搏鬥、摔角比賽"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lucha",
+          "zh": "搏鬥、鬥爭"
+        }
+      ],
+      "cognates_en": [
+        "reluctant"
+      ],
+      "story_zh": "源自後期拉丁語名詞 lucta（摔角、博鬥），該字由拉丁語動詞 luctor（搏鬥、角力）衍生而來。在西語演變中，拉丁語的 -ct- 常規則演變為 -ch-，於是 lucta 便演化成西語的 lucha。",
+      "hook_zh": "墨西哥摔角手 luchador 戴著面具，在擂台上展開熱血的 lucha！",
+      "usage_zh": "為陰性名詞。常用搭配如 la lucha contra el cáncer（對抗癌症的鬥爭）。",
+      "example_es": "Continúa la lucha por los derechos humanos.",
+      "example_zh": "爭取人權的奮鬥仍在持續。",
+      "image": "emoji:🤼",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lucha",
+        "wiktionary:la:lucta",
+        "wiktionary:la:luctor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mediante",
+      "article": "",
+      "pos": "preposición",
+      "zh": "藉由、透過",
+      "en": "by means of, through, using",
+      "ipa": "/meˈdjante/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mediantem",
+          "zh": "處於中間的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mediante",
+          "zh": "藉由、透過"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 mediantem，原為動詞 mediare（處於中間）的現在分詞賓格。它原本表示「作為中間媒介」，在西班牙語中演變為介詞，表示「藉由」或「透過某種方式」。",
+      "hook_zh": "看到 med- 想到 medium（媒介）或 middle（中間）：透過中間媒介來達成。",
+      "usage_zh": "為介詞，後面直接接名詞，功能相當於 a través de 或 por medio de。",
+      "example_es": "Resolvieron el problema mediante el diálogo.",
+      "example_zh": "他們透過對話解決了問題。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mediante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "prueba",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "證據、證明；測驗、考驗",
+      "en": "proof, evidence, test, trial",
+      "ipa": "/ˈpɾweba/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "probus",
+          "zh": "優秀的、正直的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "probo",
+          "zh": "檢驗、證明"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "proba",
+          "zh": "試驗、證據"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "prueba",
+          "zh": "考驗、測驗、證據"
+        }
+      ],
+      "cognates_en": [
+        "proof",
+        "prove"
+      ],
+      "story_zh": "源自後期拉丁語 proba（試驗、證據），源頭為動詞 probō（檢驗、證明），可追溯至 probus（良好的）。經過檢驗確認為良好，引申為「證明」；拉丁語短母音 ŏ 在西語重音下規則雙母音化為 ue，演變成 prueba。",
+      "hook_zh": "英文 proof 和 prove 的同源親戚，把 pro 換成西語雙母音 prue！",
+      "usage_zh": "陰性名詞。參加測驗是 hacer una prueba；司法或科學上的證據常以複數 pruebas 出現。",
+      "example_es": "La policía encontró una prueba importante.",
+      "example_zh": "警方找到了一項重要證據。",
+      "image": "emoji:🔍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:prueba",
+        "wiktionary:la:proba",
+        "wiktionary:la:probo",
+        "wiktionary:la:probus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vaya",
+      "article": "",
+      "pos": "interjección",
+      "zh": "哎呀；哇；真是不錯的…（表感嘆或驚訝）",
+      "en": "wow!, what a..., oh dear!",
+      "ipa": "/ˈbaʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "ir",
+          "zh": "走、去"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vaya",
+          "zh": "哎呀、哇"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 ir（走、去）的虛擬式現在式單數第三人稱形式。在語氣上借由行動的呼求，轉化為表達驚嘆、讚賞或無奈的感嘆詞，就像英文中用「go on!」來表達強烈情緒一樣。",
+      "hook_zh": "看到超炫的跑車忍不住大叫「哇呀（vaya）！太帥了吧！」",
+      "usage_zh": "常接名詞表感嘆：¡Vaya coche!（好棒的車！）或 ¡Vaya lío!（真是一團糟！）。",
+      "example_es": "¡Vaya coche que tiene tu hermana!",
+      "example_zh": "你姐姐那台車真是太帥了！",
+      "image": "emoji:😲",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vaya"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "anterior",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "先前的、過去的；前面的",
+      "en": "previous, earlier, former",
+      "ipa": "/anteˈɾjoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "anterior",
+          "zh": "在前的、較先的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "anterior",
+          "zh": "先前的、前面的"
+        }
+      ],
+      "cognates_en": [
+        "anterior"
+      ],
+      "story_zh": "直接借自拉丁語 anterior，本義指「在前面的、時間上較先的」。西班牙語完整保留了這個詞，用來指稱時間上的上一任、先前階段，或是空間上的前方部位。",
+      "hook_zh": "英文同源字就是 anterior（前面的、先前的），字首 ante- 是「在…之前」。",
+      "usage_zh": "陰陽同形（el día anterior / la semana anterior），通常置於名詞之後。",
+      "example_es": "En el capítulo anterior vimos las reglas básicas.",
+      "example_zh": "在上一章中，我們看過了基本規則。",
+      "image": "emoji:⏮️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:anterior"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dia",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "天、日子（día 的舊拼法或誤拼）",
+      "en": "day (misspelling of día)",
+      "ipa": "/ˈdi.a/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "這個字漏掉了 i 上面的重音符號！記住西語的「天」一定要加重音寫成 día。",
+      "usage_zh": "現代標準拼法為 día，是少見以 -a 結尾的陽性名詞（el día）。dia 為誤拼。",
+      "example_es": "Hoy es un buen día para empezar.",
+      "example_zh": "今天是個開始的好日子。",
+      "image": "emoji:☀️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:dia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "justo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "公平的、正義的；剛好的",
+      "en": "just, fair, exact",
+      "ipa": "/ˈxusto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*h₂yew-",
+          "zh": "正義、規則"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*jowestos",
+          "zh": "符合正義的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "iūstus",
+          "zh": "公正的、合法的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "justo",
+          "zh": "公正的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "justo",
+          "zh": "公平的、正義的"
+        }
+      ],
+      "cognates_en": [
+        "just",
+        "justice"
+      ],
+      "story_zh": "源自拉丁語 iūstus，核心概念是「合乎法律與正義的」，源頭可追溯至印歐語。進入西班牙語後，除了維持「公平正直」的含義，也引申指尺寸、分量或時間上分毫不差的「剛好、恰好」。",
+      "hook_zh": "英文的 just 同時有「剛好」與「公正」之意，名詞是 justice（正義）。",
+      "usage_zh": "作形容詞有陰陽性變化（justo / justa）；作副詞時不變化，表示「正好、恰巧」。",
+      "example_es": "No es justo que tengas que pagar todo.",
+      "example_zh": "要你付全部的錢是不公平的。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:justo",
+        "wiktionary:la:iustus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "medida",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "尺寸；計量；措施、手段",
+      "en": "measurement, measure, action",
+      "ipa": "/meˈdida/",
+      "breakdown": [
+        {
+          "part": "medir",
+          "zh": "測量"
+        },
+        {
+          "part": "-ida",
+          "zh": "動作的結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "medir + -ida",
+          "zh": "測量 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "medida",
+          "zh": "尺寸、措施"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 medir（測量）加上名詞字尾 -ida 構成，原意指「測量出來的結果、規格或標準」。後來引申到治理與管理層面，表示為了因應問題而採取的「手段、措施」。",
+      "hook_zh": "先拿尺測量（medir），量出來的規格和應對辦法就是 medida。",
+      "usage_zh": "陰性名詞。常見搭配有 tomar medidas（採取措施）、a medida que（隨著…）。",
+      "example_es": "El gobierno debe tomar medidas urgentes.",
+      "example_zh": "政府必須採取緊急措施。",
+      "image": "emoji:📏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:medida"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "éxito",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "成功、成就；熱門作品",
+      "en": "success, hit",
+      "ipa": "/ˈeɡsito/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "exeo",
+          "zh": "出去"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "exitus",
+          "zh": "出口、結局、結果"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "éxito",
+          "zh": "成功"
+        }
+      ],
+      "cognates_en": [
+        "exit"
+      ],
+      "story_zh": "借自拉丁語 exitus，原意是「出去、出口」或事情的「結局、結果」，與英文 exit 同源。在西語中，字義從中性的「結果」逐漸演變為「好結果」，最終定格為今天的「成功」。",
+      "hook_zh": "經典假朋友！長得像英文 exit（出口），西語中走出困境就是「成功」（éxito）。",
+      "usage_zh": "不要與英文 exit 混淆（出口是 salida）；祝人順利常說 ¡Mucho éxito!。",
+      "example_es": "Su nueva canción es un gran éxito.",
+      "example_zh": "他的新歌非常成功（大受歡迎）。",
+      "image": "emoji:🏆",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:éxito",
+        "wiktionary:la:exitus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "actividad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "活動、行動；活躍",
+      "en": "activity",
+      "ipa": "/aɡtibiˈdad/",
+      "breakdown": [
+        {
+          "part": "activo",
+          "zh": "活躍的"
+        },
+        {
+          "part": "-idad",
+          "zh": "表示狀態或性質的抽象名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "activitatem",
+          "zh": "活動、活力"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "actividad",
+          "zh": "活動"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "經由學者借詞引入西語，源自拉丁語 āctīvitātem。構詞上是由形容詞 activo（活躍的、積極的）加上抽象名詞字尾 -idad 組成，原指處於活躍或運作的狀態，後來也指具體進行的各項活動。",
+      "hook_zh": "activo（活躍的）加上名詞字尾 -idad，就像英文 activity，多動就是「活動」。",
+      "usage_zh": "名詞以 -idad 結尾一律為陰性（la actividad），複數規則加 -es。",
+      "example_es": "Hacer deporte es una actividad muy saludable.",
+      "example_zh": "做運動是一項非常健康的活動。",
+      "image": "emoji:🏃",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:actividad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "adelante",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "向前、往前；請進",
+      "en": "forward; come in",
+      "ipa": "/adeˈlante/",
+      "breakdown": [
+        {
+          "part": "a-",
+          "zh": "朝向、往"
+        },
+        {
+          "part": "delante",
+          "zh": "在前方"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "a + delante",
+          "zh": "朝向 + 在前"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "adelante",
+          "zh": "向前"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "adelante",
+          "zh": "向前、請進"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "承襲自古西班牙語 adelante，是由介詞 a（朝向）與副詞 delante（在前面）合詞而成。字面意義就是「往前面去」，後來延伸用於空間的前進、時間的推移，以及禮貌招呼他人「請進、請繼續」。",
+      "hook_zh": "a（朝向）+ delante（前面），合起來就是往前走；有人敲門時說 adelante 就是「請進」！",
+      "usage_zh": "除作副詞表示往前，日常中極常用作感嘆詞表示「請進」或「請講」。",
+      "example_es": "¡Adelante, puedes pasar!",
+      "example_zh": "請進，你可以進來！",
+      "image": "emoji:⏩",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:adelante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "autor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "作者、創作者；作案者",
+      "en": "author; perpetrator",
+      "ipa": "/auˈtoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "auctor",
+          "zh": "創始者、發起人、作者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "autor",
+          "zh": "作者、行為人"
+        }
+      ],
+      "cognates_en": [
+        "author"
+      ],
+      "story_zh": "半學者借詞，源自拉丁語 auctor，本義是「創始者、發起人、創作者」。在西語中除了指文學或藝術作品的創作者外，也保留了發起者的含義，在法律或新聞中常指事件的「行為人」或「作案者」。",
+      "hook_zh": "長相和英文 author 幾乎一樣（少個 h），就是一本書的「作者」。",
+      "usage_zh": "陰性形式為 autora；犯罪新聞中常見 el autor del crimen（兇手／作案者）。",
+      "example_es": "¿Quién es el autor de esta novela?",
+      "example_zh": "這本小說的作者是誰？",
+      "image": "emoji:✍️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:autor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "baja",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "傷亡、減員；病假；下降",
+      "en": "casualty, drop, sick leave",
+      "ipa": "/ˈbaxa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "bajar",
+          "zh": "下降、降低"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "baja",
+          "zh": "下降、傷亡、病假"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 bajar（下降、降低）衍生而來的名詞。字面核心是「減少或降低」，在戰場上指人員減少的「傷亡」，在職場上則指因生病或受傷而暫時停止出勤的「病假休養」。",
+      "hook_zh": "動詞 bajar（降下）的名詞形：人數降下是「傷亡」，不上班的假是「病假」。",
+      "usage_zh": "職場高頻片語：estar de baja（請病假中）、darse de baja（退訂、註銷）。",
+      "example_es": "Hoy no trabaja porque está de baja médica.",
+      "example_zh": "他今天沒上班，因為請了病假。",
+      "image": "emoji:📉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:baja"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "diferencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "差異、不同；差額",
+      "en": "difference",
+      "ipa": "/difeˈɾenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "differentia",
+          "zh": "差異"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "diferencia",
+          "zh": "差異"
+        }
+      ],
+      "cognates_en": [
+        "difference"
+      ],
+      "story_zh": "源自拉丁語 differentia（差異）。西語承襲此字，指事物之間的相異之處或差距。在數學運算中，也用來表示兩數相減後的差額。",
+      "hook_zh": "英文 difference 尾巴改成西語常見的 -cia，就是 diferencia。",
+      "usage_zh": "常用搭配如 marcar la diferencia（產生影響）與 a diferencia de（與…不同）。",
+      "example_es": "Hay una gran diferencia entre los dos hoteles.",
+      "example_zh": "這兩家飯店之間有很大的差異。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:diferencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dije",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "吊墜、小飾品；護身符",
+      "en": "pendant, charm, trinket",
+      "ipa": "/ˈdixe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "decir",
+          "zh": "說"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dije",
+          "zh": "我說過（動詞形式）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dije",
+          "zh": "吊墜、飾品"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 decir（說）的簡單過去時第一人稱單數 dije（我說過）。語意演變推測是從「八卦、閒話」轉化為「瑣碎小玩意」，最後定型為項鍊上的「小飾品、吊墜」。",
+      "hook_zh": "「我說（dije）要送你項鍊吊墜（dije）！」——名詞與動詞過去式同形。",
+      "usage_zh": "陽性名詞 el dije。在拉美地區常用來指項鍊墜子；也是 decir 的動詞變化形。",
+      "example_es": "Compró un dije de plata para su cadena.",
+      "example_zh": "他為自己的項鍊買了一個銀飾吊墜。",
+      "image": "emoji:📿",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dije"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estilo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "風格、作風、做事方式",
+      "en": "style, manner",
+      "ipa": "/esˈtilo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "stilus",
+          "zh": "尖筆、鐵筆"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estilo",
+          "zh": "風格、方式"
+        }
+      ],
+      "cognates_en": [
+        "style",
+        "stylus"
+      ],
+      "story_zh": "借自拉丁語 stilus（古代用於蠟板書寫的尖筆、鐵筆）。原本指書寫工具，後來引申為個人的書寫筆風與文體，再進一步擴展指做事方式、生活風範或藝術風格。",
+      "hook_zh": "英文 style 開頭加上西語常見的 e- 破音，就成了 estilo。",
+      "usage_zh": "陽性名詞。常用片語 por el estilo（諸如此類、類似的）。",
+      "example_es": "Me gusta mucho tu estilo de vestir.",
+      "example_zh": "我很喜歡你的穿搭風格。",
+      "image": "emoji:✨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estilo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ex",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "前任（前夫、前妻或前伴侶）",
+      "en": "ex, former partner",
+      "ipa": "/ˈeɡs/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "ex-",
+          "zh": "前任的（字首）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ex",
+          "zh": "前任"
+        }
+      ],
+      "cognates_en": [
+        "ex"
+      ],
+      "story_zh": "源自表示「以前的」字首 ex-。原本放在名詞前表示前任身分（如 exmarido 前夫），後來直接獨立作為名詞使用，專指分手的前伴侶。",
+      "hook_zh": "和英文的 ex 拼法與意思一模一樣，指曾經相愛的前任。",
+      "usage_zh": "陰陽同形且單複數同形：el ex（前夫／男友）、la ex（前妻／女友）、los ex。",
+      "example_es": "Ayer vi a mi ex en la biblioteca.",
+      "example_zh": "昨天我在圖書館看到我的前任。",
+      "image": "emoji:💔",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ex"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "luis",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "路易（法國舊金幣或銀幣）",
+      "en": "louis (former French coin)",
+      "ipa": "/ˈlwis/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "Louis",
+          "zh": "路易（人名）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "luis",
+          "zh": "路易（貨幣）"
+        }
+      ],
+      "cognates_en": [
+        "louis"
+      ],
+      "story_zh": "源自多位法國國王的名字路易（Louis）。17世紀法國國王路易十三首次鑄造以自己名字命名的金幣，此後該幣廣泛流通於歐洲，西語便以 luis 稱呼該金幣。",
+      "hook_zh": "法國國王路易（Louis）的名字直接當成了金幣名字 luis。",
+      "usage_zh": "陽性名詞，複數為 luises。屬於歷史貨幣單位，日常較少見。",
+      "example_es": "El museo exhibe un luis de oro del siglo diecisiete.",
+      "example_zh": "該博物館展出了一枚十七世紀的金路易。",
+      "image": "emoji:🪙",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:luis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "maría",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "瑪麗亞餅乾；輕鬆的課（營養學分）",
+      "en": "Marie biscuit; gut course, easy subject",
+      "ipa": "/maˈɾia/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "在西班牙，「瑪麗亞餅乾」家喻戶曉，大學裡好過如嚼餅乾的課就被稱為「瑪麗亞（營養學分）」。",
+      "usage_zh": "常見搭配為 asignatura maría（營養學分、好拿學分的涼課）。陰性名詞。",
+      "example_es": "Esta clase es una maría, todos aprueban sin problema.",
+      "example_zh": "這門課是個營養學分，大家都能順利過關。",
+      "image": "emoji:🍪",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:maría"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "militar",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "軍人；軍事的",
+      "en": "military; soldier",
+      "ipa": "/miliˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mīles",
+          "zh": "士兵"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "mīlitāris",
+          "zh": "士兵的、軍事的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "militar",
+          "zh": "軍人；軍事的"
+        }
+      ],
+      "cognates_en": [
+        "military"
+      ],
+      "story_zh": "源自拉丁語 mīles（士兵），延伸出形容詞 mīlitāris（軍人的、軍事的），後來西語直接借入成為 militar。它在西語中既能當形容詞表示「軍事的」，也能當名詞指稱「軍人」。",
+      "hook_zh": "英文同源字 military（軍事的）去掉結尾 y 改成 ar，就是西語的 militar。",
+      "usage_zh": "作名詞指軍人時陰陽同形：el militar（男軍人）、la militar（女軍人）。",
+      "example_es": "Su padre fue un militar destacado durante muchos años.",
+      "example_zh": "他的父親多年來一直是一位傑出的軍人。",
+      "image": "emoji:🎖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:militar",
+        "wiktionary:la:militaris"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "muestra",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "樣本、樣品；展覽",
+      "en": "sample, specimen; exhibition",
+      "ipa": "/ˈmwestɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "mostrar",
+          "zh": "展示、顯示"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "muestra",
+          "zh": "樣本、樣品"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西語動詞 mostrar（展示）的衍生名詞。將物件拿出來展示給人看的一小部分，就是「樣本」或「樣品」；眾多作品聚集陳列供人觀賞，則引申為「展覽」。",
+      "hook_zh": "動詞 mostrar 是「展示」，拿出來向大家展示（muestra）的小樣品就是「樣品」。",
+      "usage_zh": "常見搭配如 muestra de sangre（血液樣本）、tomar muestras（取樣）。陰性名詞。",
+      "example_es": "El médico tomó una muestra de sangre para el análisis.",
+      "example_zh": "醫生抽取了血液樣本以進行化驗。",
+      "image": "emoji:🧪",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:muestra"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "oro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "黃金；金幣；金牌",
+      "en": "gold; gold coin",
+      "ipa": "/ˈoɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*h₂é-h₂us-o-",
+          "zh": "發光"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*auzom",
+          "zh": "黃金"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "aurum",
+          "zh": "黃金"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "oro",
+          "zh": "黃金"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "oro",
+          "zh": "黃金"
+        }
+      ],
+      "cognates_en": [
+        "aurum"
+      ],
+      "story_zh": "源自原始印歐語 *h₂é-h₂us-o-（發光、破曉），進入拉丁語演變為 aurum（黃金），形容金屬閃閃發光的特徵。古西班牙語繼承為 oro。化學元素符號 Au 也正是來自拉丁語 aurum。",
+      "hook_zh": "奧運金牌閃耀著金光：元素符號 Au 簡化成三個字母 oro，想像金牌金光耀眼！",
+      "usage_zh": "常見搭配：medalla de oro（金牌）。片語 no todo lo que reluce es oro（虛有其表）。",
+      "example_es": "El atleta ganó una medalla de oro en los Juegos Olímpicos.",
+      "example_zh": "那位運動員在奧運會上贏得了一枚金牌。",
+      "image": "emoji:🥇",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:oro",
+        "wiktionary:la:aurum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "par",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "一雙、一對；偶數的",
+      "en": "pair, couple; even (number)",
+      "ipa": "/ˈpaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pār",
+          "zh": "相等的、相似的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "par",
+          "zh": "一雙、一對；雙數的"
+        }
+      ],
+      "cognates_en": [
+        "pair",
+        "peer"
+      ],
+      "story_zh": "源自拉丁語 pār（相等的、平等的）。因為成雙成對的事物彼此對等相襯，因而引申為「一雙、一對」；在數學上也用來指能被二均分的「偶數」。英文的 pair（一雙）也是同源字。",
+      "hook_zh": "英文 pair（一雙）去掉字母 i 就是西語的 par，成雙成對、偶數平分。",
+      "usage_zh": "常接介系詞 de：un par de zapatos（一雙鞋）。偶數稱為 número par。",
+      "example_es": "Compré un par de calcetines nuevos en la tienda.",
+      "example_zh": "我在店裡買了一雙新襪子。",
+      "image": "emoji:👟",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:par"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "plata",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "銀；錢（拉美口語）",
+      "en": "silver; money",
+      "ipa": "/ˈplata/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "πλατύς",
+          "zh": "寬的、扁平的"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*platta",
+          "zh": "扁平板塊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "plata",
+          "zh": "銀；錢"
+        }
+      ],
+      "cognates_en": [
+        "plate"
+      ],
+      "story_zh": "源自古希臘語 πλατύς（寬的、平的），進入通俗拉丁語演變為 *platta，因為古代白銀常被鍛打成扁平薄片。進入西語後專指「銀」，在拉丁美洲口語中更廣泛用來指稱「錢」。英文的 plate（盤子、金屬板）也是同源字。",
+      "hook_zh": "銀子打成扁平的盤子（plate）；在拉美沒錢就喊沒有 plata！",
+      "usage_zh": "陰性名詞。在拉丁美洲極常用 plata 代替 dinero 指「錢」，如 no tengo plata（我沒錢）。",
+      "example_es": "¿Tienes plata para pagar el taxi?",
+      "example_zh": "你有付計程車費的錢嗎？",
+      "image": "emoji:🪙",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:plata"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "contigo",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "和你一起、跟你",
+      "en": "with you",
+      "ipa": "/konˈtiɡo/",
+      "breakdown": [
+        {
+          "part": "con-",
+          "zh": "和"
+        },
+        {
+          "part": "-ti-",
+          "zh": "你"
+        },
+        {
+          "part": "-go",
+          "zh": "和（源自拉丁語 cum）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cum + tēcum",
+          "zh": "和 + 和你"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "contigo",
+          "zh": "和你一起"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 cum（和）與 tēcum（和你）。拉丁語習慣把介系詞 cum 附在代名詞後形成 tēcum；演變為西語時，人們忘記後綴的 -cum 已經是「和」，又在前面重複加了一次 con，字面意思成了趣味的「和你一起和」。",
+      "hook_zh": "con（和）+ ti（你）+ go，牽著「你」一起「走（go）」。",
+      "usage_zh": "專用於介系詞 con 接第二人稱單數 ti 時的特殊融合型，不可說 con ti。",
+      "example_es": "Quiero ir al cine contigo este fin de semana.",
+      "example_zh": "這個週末我想和你一起去看電影。",
+      "image": "emoji:🤝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:contigo",
+        "wiktionary:la:cum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "defensa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "防禦、防衛；辯護；後衛",
+      "en": "defense; defense attorney; defender",
+      "ipa": "/deˈfensa/",
+      "breakdown": [
+        {
+          "part": "de-",
+          "zh": "遠離、自"
+        },
+        {
+          "part": "fensa",
+          "zh": "擊打、推開"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēfendō",
+          "zh": "擊退、保護"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēfēnsa",
+          "zh": "防衛、保護"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "defensa",
+          "zh": "防衛、後衛"
+        }
+      ],
+      "cognates_en": [
+        "defense",
+        "fend"
+      ],
+      "story_zh": "作為學者借詞源自晚期拉丁語 dēfēnsa（防衛），出自古典拉丁語動詞 dēfendō（擊退、保護）。該字由 dē-（離開）與 *fendō（打擊、推開）組合而成，原意為「將危險或敵人打退開來」。英文的 defense 也是同源字。",
+      "hook_zh": "英文 defense 尾巴換成西班牙語陰性 -a，就是 defensa。",
+      "usage_zh": "表防禦或後衛線為陰性（la defensa）；指足球等運動的「後衛球員」時為陰陽同形（el/la defensa）。",
+      "example_es": "El equipo tiene una defensa muy sólida.",
+      "example_zh": "這支隊伍的防守非常堅固。",
+      "image": "emoji:🛡️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:defensa",
+        "wiktionary:la:defensa",
+        "wiktionary:la:defendo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dólar",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "美元、元（貨幣單位）",
+      "en": "dollar",
+      "ipa": "/ˈdolaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "dollar",
+          "zh": "元、美元"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dólar",
+          "zh": "美元"
+        }
+      ],
+      "cognates_en": [
+        "dollar"
+      ],
+      "story_zh": "直接借自英語的 dollar。其在歷史上的西語同源詞為 tálero（源自德語泰勒銀幣 Thaler）。借入西語後加上重音符號 ó，以符合倒數第二音節重音的西語發音規則。",
+      "hook_zh": "英文 dollar 的發音加上西語倒數第二音節重音符號 ó，就成 dólar。",
+      "usage_zh": "陽性名詞，複數為 dólares。書寫時注意 o 上有重音符號。",
+      "example_es": "Este libro cuesta veinte dólares.",
+      "example_zh": "這本書要價二十美元。",
+      "image": "emoji:💵",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dólar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fondo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "底部；深處；資金、基金",
+      "en": "bottom; background; fund",
+      "ipa": "/ˈfondo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fundus",
+          "zh": "底部、地面"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "fondo",
+          "zh": "底部"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fondo",
+          "zh": "底部；基金"
+        }
+      ],
+      "cognates_en": [
+        "fund",
+        "foundation"
+      ],
+      "story_zh": "繼承自古西班牙語，源頭為拉丁語 fundus（底部、土地）。西語保留了古老的字首 f-，推測是為了與已經自然音變為 h- 的同源形容詞 hondo（深邃的）做區分。英文的 fund（基金）與 foundation（基礎）皆為其同源詞。",
+      "hook_zh": "把備用「基金」（fund）塞在最深的口「袋底」（fondo）。",
+      "usage_zh": "陽性名詞。常用片語 al fondo（在盡頭、深處）、a fondo（深入地）；複數 fondos 常指「資金」。",
+      "example_es": "El baño está al fondo del pasillo a la derecha.",
+      "example_zh": "洗手間在走廊盡頭右轉處。",
+      "image": "emoji:⚓",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fondo",
+        "wiktionary:la:fundus"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "crear",
       "article": "",
       "pos": "verbo",
