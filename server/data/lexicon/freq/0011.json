@@ -3651,6 +3651,221 @@
         "wiktionary:la:imaginor"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "intercambio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "交換、交流",
+      "en": "exchange, interchange",
+      "ipa": "/inteɾˈkambjo/",
+      "breakdown": [
+        {
+          "part": "inter-",
+          "zh": "在…之間、互相"
+        },
+        {
+          "part": "cambio",
+          "zh": "交換、改變"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "inter- + cambio",
+          "zh": "互相 + 交換"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "intercambio",
+          "zh": "交換、交流"
+        }
+      ],
+      "cognates_en": [
+        "interchange"
+      ],
+      "story_zh": "由前綴 inter-（在…之間、互相）與 cambio（交換）組合而成，字面意思就是「在彼此之間互相交換」，用來指各類交流、交換或替換。",
+      "hook_zh": "inter（在…之間）加上 cambio（交換），就是彼此之間的交流。",
+      "usage_zh": "常見搭配如 estudiante de intercambio（交換學生）或 intercambio cultural（文化交流）。",
+      "example_es": "Es un estudiante de intercambio.",
+      "example_zh": "他是一名交換學生。",
+      "image": "emoji:🔄",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:intercambio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "introducción",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "介紹、引言、導論",
+      "en": "introduction, opening",
+      "ipa": "/intɾoduɡˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "introductiōnem",
+          "zh": "引導進入、介紹"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "introducción",
+          "zh": "介紹、引言、導論"
+        }
+      ],
+      "cognates_en": [
+        "introduction"
+      ],
+      "story_zh": "學術借詞源自拉丁語 introductiōnem，原意是「帶領入內、引入」。後來延伸指書籍或文章開頭帶領讀者進入主題的「導論、引言」，或向眾人引介的「介紹」。",
+      "hook_zh": "長得跟英文 introduction 幾乎一模一樣，把結尾 -tion 換成西語的 -ción。",
+      "usage_zh": "以 -ción 結尾的名詞皆為陰性（la introducción），複數形去掉重音符號為 introducciones。",
+      "example_es": "Leí la introducción del libro.",
+      "example_zh": "我讀了這本書的引言。",
+      "image": "emoji:📖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:introducción"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "organismo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "生物、有機體；機構、組織",
+      "en": "organism, body, organization",
+      "ipa": "/oɾɡaˈnismo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "organism",
+          "zh": "有機體、生物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "organismo",
+          "zh": "生物、有機體；機構"
+        }
+      ],
+      "cognates_en": [
+        "organism"
+      ],
+      "story_zh": "借自英語 organism。在西語中既可以指有生命的「生物、有機體」，也可以延伸指由許多部門運作組成的「組織、機構」。",
+      "hook_zh": "英文 organism 加上西語常見名詞字尾 -o，就變成了西語的 organismo。",
+      "usage_zh": "陽性名詞。除了生物學用法，也常指行政或國際組織，例如 organismo internacional（國際機構）。",
+      "example_es": "Trabaja en un organismo internacional.",
+      "example_zh": "他在一個國際機構工作。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:organismo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "organizado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "有組織的、有條理的",
+      "en": "organized",
+      "ipa": "/oɾɡaniˈθado/",
+      "breakdown": [
+        {
+          "part": "organizar",
+          "zh": "組織"
+        },
+        {
+          "part": "-ado",
+          "zh": "形容詞/過去分詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "organized"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文 organized 結尾換成西語過去分詞 -ado，形容人事物「井然有序、有條理」。",
+      "usage_zh": "作形容詞需配合名詞性數變化（organizado / organizada），反義詞為 desorganizado。",
+      "example_es": "Es una persona muy organizada.",
+      "example_zh": "她是個非常有條理的人。",
+      "image": "emoji:📋",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:organizado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pedo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "屁；醉酒、麻煩（口語俚語）",
+      "en": "fart; drunkenness, trouble (slang)",
+      "ipa": "/ˈpedo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pēditum",
+          "zh": "放屁"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pedo",
+          "zh": "屁；醉酒、麻煩"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "承襲自拉丁語 pēditum（放屁）。在西班牙語日常中保留了本義「屁」，但在許多西語國家的口語與俚語中，還引申出「喝醉、派對、麻煩、問題」等豐富用法。",
+      "hook_zh": "發音像「配豆」，吃了豆子（pedo）容易排氣放屁！",
+      "usage_zh": "本義是屁，但在口語中是俚語。例如 estar pedo（喝醉），墨西哥口語常用 ¿Qué pedo?（怎麼了？）。",
+      "example_es": "El bebé se tiró un pedo.",
+      "example_zh": "小寶寶放了一個屁。",
+      "image": "emoji:💨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pedo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "poseer",
+      "article": "",
+      "pos": "verbo",
+      "zh": "擁有、具有、持有",
+      "en": "to possess, to own",
+      "ipa": "/poseˈeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "possidēre",
+          "zh": "擁有、佔有"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "poseer",
+          "zh": "擁有、具有"
+        }
+      ],
+      "cognates_en": [
+        "possess"
+      ],
+      "story_zh": "源自拉丁語動詞 possidēre，原意即為「擁有、佔有」。西班牙語直接繼承了此字，歷經語音簡化後演變為 poseer，始終保留著掌握、持有財物或特質的核心語義。",
+      "hook_zh": "音形皆可直接對應英文的 possess（擁有），想像雙手緊緊握住屬於自己的寶物。",
+      "usage_zh": "動詞變化注意母音 i 變成 y 的現象：第三人稱簡單過去式為 poseyó、poseyeron，副詞形為 poseyendo。",
+      "example_es": "El museo posee varias obras de arte famosas.",
+      "example_zh": "這間博物館收藏了許多著名的藝術品。",
+      "image": "emoji:🗝️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:poseer"
+      ],
+      "writer": "gemini"
     }
   ]
 }
