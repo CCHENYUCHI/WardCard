@@ -33,6 +33,9 @@ const FOLD = {
   da: 'dar', dé: 'dar', di: 'decir', dice: 'decir', digo: 'decir', dicho: 'decir',
   sé: 'saber', sabe: 'saber', vino: 'venir', vengo: 'venir', ven: 'venir', hecho: 'hacer', haz: 'hacer',
   les: 'le', veces: 'vez', pasa: 'pasar', trata: 'tratar', tenia: 'tener', des: 'dar', pa: 'para', cabe: 'caber', salido: 'salir', saca: 'sacar', mata: 'matar', juro: 'jurar', mio: 'mío', manda: 'mandar',
+  // Accented demonstratives and sólo are old spellings (RAE 2010): the same words as ese, este, aquel, solo
+  'ése': 'ese', 'ésa': 'ese', 'ésos': 'ese', 'ésas': 'ese', 'éste': 'este', 'ésta': 'este', 'éstos': 'este', 'éstas': 'este',
+  'aquél': 'aquel', 'aquélla': 'aquel', 'aquéllos': 'aquel', 'aquéllas': 'aquel', 'sólo': 'solo',
   previa: 'previo', 'eléctrica': 'eléctrico', financiera: 'financiero', cuarta: 'cuarto', plena: 'pleno', nueva: 'nuevo', primera: 'primero', puede: 'poder', puedo: 'poder', quiero: 'querer', tengo: 'tener', tiene: 'tener', está: 'estar', estaba: 'estar'
 };
 
