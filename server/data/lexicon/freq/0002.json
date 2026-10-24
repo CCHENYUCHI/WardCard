@@ -1,49 +1,7 @@
 {
   "theme": "freq-0002",
-  "theme_zh": "常用字（頻率第 436–709 名）",
+  "theme_zh": "常用字（頻率第 437–722 名）",
   "entries": [
-    {
-      "word": "línea",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "線、線條、路線、台詞",
-      "en": "line, thread, script line",
-      "ipa": "/ˈlinea/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "līnum",
-          "zh": "亞麻"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "līnea",
-          "zh": "亞麻線、繩線"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "línea",
-          "zh": "線、線條"
-        }
-      ],
-      "cognates_en": [
-        "line",
-        "linen"
-      ],
-      "story_zh": "借自拉丁語 līnea（亞麻線、繩線），源於 līnum（亞麻）。古羅馬木匠與測量員用拉緊的亞麻細繩來取直與標記界線，字義遂由實體的「細麻繩」引申為幾何上的「線條」與各類「路線」。",
-      "hook_zh": "與英文 line 及 linen（亞麻布）同源，就是用亞麻搓出來的一條「線」。",
-      "usage_zh": "陰性名詞。常用片語有 en línea（連線上網）與 línea de metro（捷運路線）。",
-      "example_es": "Por favor, espera detrás de la línea blanca.",
-      "example_zh": "請在白線後方等候。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:línea",
-        "wiktionary:la:linea"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "mundial",
       "article": "",
@@ -767,28 +725,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:serie"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "asi",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "這樣、如此（así 的舊拼法或錯字）",
-      "en": "misspelling or obsolete spelling of así",
-      "ipa": "/aˈsi/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "是「這樣」（así）漏打了重音符號。看到 asi 請記得標準拼法要補上重音 así。",
-      "usage_zh": "現代標準西語中必須在 i 加上重音寫作 así，asi 屬於錯字或古舊拼法。",
-      "example_es": "No se escribe asi, se escribe con tilde: así.",
-      "example_zh": "不是寫成 asi，要有重音符號寫作 así。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:asi"
       ],
       "writer": "gemini"
     },
@@ -2630,48 +2566,6 @@
       "writer": "gemini"
     },
     {
-      "word": "vivo",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "活著的；生動的、充滿活力的",
-      "en": "alive, living, lively, vivid",
-      "ipa": "/ˈbibo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "vīvus",
-          "zh": "活著的、生動的"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "bivo",
-          "zh": "活著的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "vivo",
-          "zh": "活著的、活潑的"
-        }
-      ],
-      "cognates_en": [
-        "vivid",
-        "survive"
-      ],
-      "story_zh": "源自拉丁語形容詞 vīvus（活著的）。在中古西班牙語中常異化拼作 bivo，直到西班牙黃金時代為貼近拉丁原貌而改回 vivo。詞義也從單純的「有生命、活著」引申為「生動鮮明、精力充沛」。",
-      "hook_zh": "英文 vivid（生動的）與 survive（生存）都有 viv-；萬歲喊的 ¡Viva! 也是同根！",
-      "usage_zh": "陰性為 viva。搭配 estar 表示「還活著（沒死）」，搭配 ser 則形容人「機靈、反應敏捷」。",
-      "example_es": "El pez todavía está vivo.",
-      "example_zh": "這條魚還活著。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:vivo",
-        "wiktionary:la:vivus"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "calidad",
       "article": "la",
       "pos": "sustantivo",
@@ -2855,28 +2749,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:duda"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "alta",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "出院證明、加入登記、申報",
-      "en": "discharge certificate, registration",
-      "ipa": "/ˈalta/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "拿到這張證明，心跳不再高（alto/alta）懸，終於可以順利出院辦理登記！",
-      "usage_zh": "陰性名詞，但因開頭為重音 a，單數定冠詞用 el（el alta）。常見如 dar el alta（准許出院）。",
-      "example_es": "El médico le dio el alta esta mañana.",
-      "example_zh": "醫生今天早上准許他出院了。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:alta"
       ],
       "writer": "gemini"
     },
@@ -3590,7 +3462,7 @@
       "usage_zh": "常放在句首或修飾形容詞，如 especialmente importante（特別重要）。",
       "example_es": "Me gusta la fruta, especialmente las manzanas.",
       "example_zh": "我喜歡水果，特別是蘋果。",
-      "image": "emoji:⭐",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:especialmente"
@@ -3625,7 +3497,7 @@
       "usage_zh": "作名詞時為陽性（el interior）；作形容詞時陰陽同形（un patio interior）。",
       "example_es": "El interior de la casa es muy luminoso.",
       "example_zh": "這棟房子的內部採光非常好。",
-      "image": "emoji:🏠",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:interior"
@@ -3665,7 +3537,7 @@
       "usage_zh": "為陰性名詞。常用搭配如 la lucha contra el cáncer（對抗癌症的鬥爭）。",
       "example_es": "Continúa la lucha por los derechos humanos.",
       "example_zh": "爭取人權的奮鬥仍在持續。",
-      "image": "emoji:🤼",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:lucha",
@@ -3700,7 +3572,7 @@
       "usage_zh": "為介詞，後面直接接名詞，功能相當於 a través de 或 por medio de。",
       "example_es": "Resolvieron el problema mediante el diálogo.",
       "example_zh": "他們透過對話解決了問題。",
-      "image": "emoji:🤝",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:mediante"
@@ -3746,7 +3618,7 @@
       "usage_zh": "陰性名詞。參加測驗是 hacer una prueba；司法或科學上的證據常以複數 pruebas 出現。",
       "example_es": "La policía encontró una prueba importante.",
       "example_zh": "警方找到了一項重要證據。",
-      "image": "emoji:🔍",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:prueba",
@@ -3782,7 +3654,7 @@
       "usage_zh": "常接名詞表感嘆：¡Vaya coche!（好棒的車！）或 ¡Vaya lío!（真是一團糟！）。",
       "example_es": "¡Vaya coche que tiene tu hermana!",
       "example_zh": "你姐姐那台車真是太帥了！",
-      "image": "emoji:😲",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:vaya"
@@ -3817,10 +3689,187 @@
       "usage_zh": "陰陽同形（el día anterior / la semana anterior），通常置於名詞之後。",
       "example_es": "En el capítulo anterior vimos las reglas básicas.",
       "example_zh": "在上一章中，我們看過了基本規則。",
-      "image": "emoji:⏮️",
+      "image": "svg",
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:anterior"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "justo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "公平的、正義的；剛好的",
+      "en": "just, fair, exact",
+      "ipa": "/ˈxusto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*h₂yew-",
+          "zh": "正義、規則"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*jowestos",
+          "zh": "符合正義的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "iūstus",
+          "zh": "公正的、合法的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "justo",
+          "zh": "公正的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "justo",
+          "zh": "公平的、正義的"
+        }
+      ],
+      "cognates_en": [
+        "just",
+        "justice"
+      ],
+      "story_zh": "源自拉丁語 iūstus，核心概念是「合乎法律與正義的」，源頭可追溯至印歐語。進入西班牙語後，除了維持「公平正直」的含義，也引申指尺寸、分量或時間上分毫不差的「剛好、恰好」。",
+      "hook_zh": "英文的 just 同時有「剛好」與「公正」之意，名詞是 justice（正義）。",
+      "usage_zh": "作形容詞有陰陽性變化（justo / justa）；作副詞時不變化，表示「正好、恰巧」。",
+      "example_es": "No es justo que tengas que pagar todo.",
+      "example_zh": "要你付全部的錢是不公平的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:justo",
+        "wiktionary:la:iustus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "medida",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "尺寸；計量；措施、手段",
+      "en": "measurement, measure, action",
+      "ipa": "/meˈdida/",
+      "breakdown": [
+        {
+          "part": "medir",
+          "zh": "測量"
+        },
+        {
+          "part": "-ida",
+          "zh": "動作的結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "medir + -ida",
+          "zh": "測量 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "medida",
+          "zh": "尺寸、措施"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 medir（測量）加上名詞字尾 -ida 構成，原意指「測量出來的結果、規格或標準」。後來引申到治理與管理層面，表示為了因應問題而採取的「手段、措施」。",
+      "hook_zh": "先拿尺測量（medir），量出來的規格和應對辦法就是 medida。",
+      "usage_zh": "陰性名詞。常見搭配有 tomar medidas（採取措施）、a medida que（隨著…）。",
+      "example_es": "El gobierno debe tomar medidas urgentes.",
+      "example_zh": "政府必須採取緊急措施。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:medida"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "éxito",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "成功、成就；熱門作品",
+      "en": "success, hit",
+      "ipa": "/ˈeɡsito/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "exeo",
+          "zh": "出去"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "exitus",
+          "zh": "出口、結局、結果"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "éxito",
+          "zh": "成功"
+        }
+      ],
+      "cognates_en": [
+        "exit"
+      ],
+      "story_zh": "借自拉丁語 exitus，原意是「出去、出口」或事情的「結局、結果」，與英文 exit 同源。在西語中，字義從中性的「結果」逐漸演變為「好結果」，最終定格為今天的「成功」。",
+      "hook_zh": "經典假朋友！長得像英文 exit（出口），西語中走出困境就是「成功」（éxito）。",
+      "usage_zh": "不要與英文 exit 混淆（出口是 salida）；祝人順利常說 ¡Mucho éxito!。",
+      "example_es": "Su nueva canción es un gran éxito.",
+      "example_zh": "他的新歌非常成功（大受歡迎）。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:éxito",
+        "wiktionary:la:exitus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "actividad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "活動、行動；活躍",
+      "en": "activity",
+      "ipa": "/aɡtibiˈdad/",
+      "breakdown": [
+        {
+          "part": "activo",
+          "zh": "活躍的"
+        },
+        {
+          "part": "-idad",
+          "zh": "表示狀態或性質的抽象名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "activitatem",
+          "zh": "活動、活力"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "actividad",
+          "zh": "活動"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "經由學者借詞引入西語，源自拉丁語 āctīvitātem。構詞上是由形容詞 activo（活躍的、積極的）加上抽象名詞字尾 -idad 組成，原指處於活躍或運作的狀態，後來也指具體進行的各項活動。",
+      "hook_zh": "activo（活躍的）加上名詞字尾 -idad，就像英文 activity，多動就是「活動」。",
+      "usage_zh": "名詞以 -idad 結尾一律為陰性（la actividad），複數規則加 -es。",
+      "example_es": "Hacer deporte es una actividad muy saludable.",
+      "example_zh": "做運動是一項非常健康的活動。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:actividad"
       ],
       "writer": "gemini"
     }

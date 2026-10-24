@@ -147,7 +147,7 @@ test('buildQueue folds verb forms into the known or most frequent lemma, unless 
   const facts = {
     podemos: { word: 'podemos', base: 'podar', form_of: ['podar', 'poder'], entries: [{ pos: 'verb', glosses: ['to prune'] }] },
     pasa: { word: 'pasa', base: null, form_of: ['pasar'], entries: [{ pos: 'noun', glosses: ['raisin'] }] },
-    estado: { word: 'estado', base: null, form_of: ['estar'], entries: [{ pos: 'noun', glosses: ['state', 'condition', 'status'] }] },
+    estado: { word: 'estado', base: null, form_of: ['estar'], entries: [{ pos: 'noun', glosses: ['state', 'condition', 'status', 'nation', 'stage'] }] },
     sino: { word: 'sino', base: null, form_of: ['sinar'], entries: [{ pos: 'conj', glosses: ['but rather'] }] },
     d: { word: 'd', base: null, entries: [{ pos: 'prep', glosses: ['abbreviation of de'] }] },
     pasar: { word: 'pasar', base: null, entries: [{ pos: 'verb', glosses: ['to pass'] }] }

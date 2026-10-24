@@ -1,6 +1,6 @@
 {
   "theme": "freq-0001",
-  "theme_zh": "常用字（頻率第 2–433 名）",
+  "theme_zh": "常用字（頻率第 2–436 名）",
   "entries": [
     {
       "word": "la",
@@ -2657,42 +2657,6 @@
       "writer": "gemini"
     },
     {
-      "word": "uso",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "使用、用途；習俗、慣例",
-      "en": "use, usage; custom",
-      "ipa": "/ˈuso/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "usus",
-          "zh": "使用、習慣"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "uso",
-          "zh": "使用、習慣"
-        }
-      ],
-      "cognates_en": [
-        "use",
-        "usage"
-      ],
-      "story_zh": "承襲自拉丁語 ūsus（使用、習慣）。拉丁文原義指透過反覆操作物品的「使用」，以及經由長期重複實踐而形成的「慣例」或「風俗」。西班牙語完整保留了這兩層含意，既指實質的用途，也指文化上的習俗。",
-      "hook_zh": "長相和英文 use 極為相似，只要把字尾 e 換成西語陽性結尾 o 就是 uso。",
-      "usage_zh": "陽性名詞。常見片語有 fuera de uso（故障中、停止使用）、hacer uso de（使用…）。",
-      "example_es": "Este diccionario está diseñado para el uso diario.",
-      "example_zh": "這本字典是設計給日常使用。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:uso"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "artículo",
       "article": "el",
       "pos": "sustantivo",
@@ -3884,6 +3848,48 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:zona"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "línea",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "線、線條、路線、台詞",
+      "en": "line, thread, script line",
+      "ipa": "/ˈlinea/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "līnum",
+          "zh": "亞麻"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "līnea",
+          "zh": "亞麻線、繩線"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "línea",
+          "zh": "線、線條"
+        }
+      ],
+      "cognates_en": [
+        "line",
+        "linen"
+      ],
+      "story_zh": "借自拉丁語 līnea（亞麻線、繩線），源於 līnum（亞麻）。古羅馬木匠與測量員用拉緊的亞麻細繩來取直與標記界線，字義遂由實體的「細麻繩」引申為幾何上的「線條」與各類「路線」。",
+      "hook_zh": "與英文 line 及 linen（亞麻布）同源，就是用亞麻搓出來的一條「線」。",
+      "usage_zh": "陰性名詞。常用片語有 en línea（連線上網）與 línea de metro（捷運路線）。",
+      "example_es": "Por favor, espera detrás de la línea blanca.",
+      "example_zh": "請在白線後方等候。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:línea",
+        "wiktionary:la:linea"
       ],
       "writer": "gemini"
     }

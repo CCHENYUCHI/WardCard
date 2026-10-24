@@ -194,15 +194,6 @@ module.exports = {
     s('rect', { x: 104, y: 62, width: 34, height: 36, rx: 2 }, 'pink'),
     s('path', { d: 'M74 70v20l16-10z' }, 'red')
   ],
-  asi: [
-    ground(),
-    ...person(46, 136, 'blue', { w: 24, accent: true }),
-    s('path', { d: 'M34 98H18M58 98h16', ...SW(6) }, 'skin', { stroke: true }),
-    s('circle', { cx: 116, cy: 78, r: 12, ...SW(3, { 'stroke-dasharray': '5 4' }) }, 'gray', { stroke: true }),
-    s('rect', { x: 104, y: 92, width: 24, height: 44, rx: 8, ...SW(3, { 'stroke-dasharray': '5 4' }) }, 'gray', { stroke: true }),
-    s('path', { d: 'M104 98H88M128 98h16', ...SW(3, { 'stroke-dasharray': '5 4' }) }, 'gray', { stroke: true }),
-    arrow('M72 62q14-14 28 0m-10 0h10v-10', 'orange', 4)
-  ],
   futuro: [
     s('path', { d: 'M48 138l8-24h48l8 24z' }, 'brown'),
     s('circle', { cx: 80, cy: 70, r: 46 }, 'purple', { accent: true }),
@@ -618,14 +609,6 @@ module.exports = {
     s('path', { d: 'M98 38a17 17 0 1 1 24 16c-6 3-7 8-7 14', ...SW(8) }, 'orange', { stroke: true, accent: true }),
     s('circle', { cx: 115, cy: 88, r: 6 }, 'orange'),
     s('path', { d: 'M82 70q8-4 4-14', ...SW(7) }, 'skin', { stroke: true })
-  ],
-  alta: [
-    ground(),
-    s('rect', { x: 14, y: 46, width: 72, height: 90, rx: 3 }, 'gray'),
-    s('path', { d: 'M43 58h14v12h12v14H57v12H43V84H31V70h12z' }, 'red'),
-    s('rect', { x: 40, y: 110, width: 20, height: 26 }, 'dark'),
-    ...person(120, 136, 'green', { accent: true }),
-    arrow('M96 40h36m-10-10 10 10-10 10', 'orange', 5)
   ],
   civil: [
     ground(),
