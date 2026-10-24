@@ -1,235 +1,7 @@
 {
   "theme": "freq-0008",
-  "theme_zh": "常用字（頻率第 1889–2160 名）",
+  "theme_zh": "常用字（頻率第 1907–2170 名）",
   "entries": [
-    {
-      "word": "guardia",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "警衛、守衛；守衛隊、值勤",
-      "en": "guard, warden; watch, guard duty",
-      "ipa": "/ˈɡwaɾdja/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "哥德語",
-          "word": "wardja",
-          "zh": "守衛者"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "guardia",
-          "zh": "守衛、警衛"
-        }
-      ],
-      "cognates_en": [
-        "guard",
-        "warden"
-      ],
-      "story_zh": "源自哥德語 wardja（守衛者）。在中世紀日耳曼部族進入伊比利半島後，日耳曼語首的 w- 音在西語中演變成 gu-（例如 war 變成 guerra）。因此 wardja 演變成了西語的 guardia，用來指負責看守的人，後來也引申出守衛部隊與值勤的意思。",
-      "hook_zh": "警衛在門口站崗 guard（guardia），保護整棟大樓的安全。",
-      "usage_zh": "指人時 el guardia 是男警衛，la guardia 是女警衛；指值勤隊或班次時是陰性（estar de guardia 表值班）。",
-      "example_es": "El guardia de seguridad revisó mi pasaporte.",
-      "example_zh": "保全警衛檢查了我的護照。",
-      "image": "emoji:👮",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:guardia"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "juventud",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "青春、青年時期；青年群體",
-      "en": "youth, young person",
-      "ipa": "/xubenˈtud/",
-      "breakdown": [
-        {
-          "part": "juven-",
-          "zh": "年輕"
-        },
-        {
-          "part": "-tud",
-          "zh": "名詞字尾，表示狀態或特質"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "iuvenis",
-          "zh": "年輕的"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "iuventūtem",
-          "zh": "青春、青年時期"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "iuuentut",
-          "zh": "青春"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "juventud",
-          "zh": "青春、青年"
-        }
-      ],
-      "cognates_en": [
-        "juvenile",
-        "rejuvenate"
-      ],
-      "story_zh": "源自拉丁語 iuventūtem（青年時期），由形容詞 iuvenis（年輕的）加上抽象名詞後綴衍生而來。古西班牙語寫作 iuuentut，隨後演變為現代西語的 juventud。這個字既指人生中的青春年華，也可指年輕人或青年族群。",
-      "hook_zh": "juventud 的 juven 與英文 juvenile（青少年的）同源，青春正是充滿活力的時光。",
-      "usage_zh": "為陰性名詞。西語以 -tud 結尾的名詞通常都是陰性（如 actitud、gratitud）。",
-      "example_es": "Ella recuerda con alegría su juventud en el pueblo.",
-      "example_zh": "她開心地回想著在村子裡度過的青春時光。",
-      "image": "emoji:🌱",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:juventud",
-        "wiktionary:la:iuventus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "probable",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "很可能的、大概的",
-      "en": "probable, likely",
-      "ipa": "/pɾoˈbable/",
-      "breakdown": [
-        {
-          "part": "prob-",
-          "zh": "驗證、檢驗"
-        },
-        {
-          "part": "-able",
-          "zh": "可…的，形容詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "probābilis",
-          "zh": "可證實的、值得稱讚的、很可能的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "probable",
-          "zh": "很可能的"
-        }
-      ],
-      "cognates_en": [
-        "probable",
-        "prove"
-      ],
-      "story_zh": "源自拉丁語 probābilis，由檢驗、測試引申為「值得稱許的、言之成理的」，進一步演變為「很有可能的、可被證實的」。現代西語承襲此意，指某件事發生的機率極高。",
-      "hook_zh": "與英文 probable 拼法一模一樣，意思是「很有可能」發生的事。",
-      "usage_zh": "陰陽同形。常見句型「Es probable que + 虛擬式」表示推測（例如很可能會下雨）。",
-      "example_es": "Es muy probable que llueva esta tarde.",
-      "example_zh": "今天下午很有可能會下雨。",
-      "image": "emoji:🎲",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:probable"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "producir",
-      "article": "",
-      "pos": "verbo",
-      "zh": "生產、製造；產生、發生",
-      "en": "to produce, to generate, to occur",
-      "ipa": "/pɾoduˈθiɾ/",
-      "breakdown": [
-        {
-          "part": "pro-",
-          "zh": "向前"
-        },
-        {
-          "part": "-ducir",
-          "zh": "引導、帶領"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "prōdūcere",
-          "zh": "向前引導、產生"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "producir",
-          "zh": "生產、產生"
-        }
-      ],
-      "cognates_en": [
-        "produce",
-        "product"
-      ],
-      "story_zh": "借自拉丁語 prōdūcere，由字首 prō-（向前）與動詞 dūcere（引導、帶領）組成，原意為「向前引導、帶領出來」，引申為「創造、產生」。在西語中可用於工廠生產商品，或是自然現象與事件的產生。",
-      "hook_zh": "向前（pro）帶領（ducir），工廠全力運轉生產（produce）新產品。",
-      "usage_zh": "不規則動詞：現在式單數第一人稱是 produzco，簡單過去式為 produje、produjiste、produjo。",
-      "example_es": "Esta fábrica produce miles de botellas cada día.",
-      "example_zh": "這家工廠每天生產數千個瓶子。",
-      "image": "emoji:🏭",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:producir"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "sencillo",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "簡單的、單純的；樸素的",
-      "en": "simple, plain, straightforward",
-      "ipa": "/senˈθiʝo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "singulus",
-          "zh": "單一的、各別的"
-        },
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "*singellus",
-          "zh": "單一的、簡單的"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "senziello",
-          "zh": "單純的、樸素的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "sencillo",
-          "zh": "簡單的、樸素的"
-        }
-      ],
-      "cognates_en": [
-        "single"
-      ],
-      "story_zh": "源自拉丁語 singulus（單一的、個別的，英文 single 的字源），在通俗拉丁語演化為指小詞形 *singellus，經古西語 senziello 成為 sencillo。從「單一、不複合」的概念，演變成「樸素、不複雜、簡單」之意。",
-      "hook_zh": "如同一張單程票 single 般單純不繁複，事情就是這麼 sencillo（簡單）。",
-      "usage_zh": "陰性為 sencilla。除了作形容詞「簡單的」，陽性名詞 el sencillo 也可指「零錢」。",
-      "example_es": "Esta receta de cocina es muy sencilla de preparar.",
-      "example_zh": "這道料理食譜準備起來非常簡單。",
-      "image": "emoji:👌",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:sencillo",
-        "wiktionary:la:singulus"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "señal",
       "article": "la",
@@ -3127,6 +2899,803 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:tiro"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "torno",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "車床；絞盤",
+      "en": "lathe, winch",
+      "ipa": "/ˈtoɾno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "τόρνος",
+          "zh": "木工畫圓工具、車床"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "tornus",
+          "zh": "車床、陶輪"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "torno",
+          "zh": "車床、絞盤"
+        }
+      ],
+      "cognates_en": [
+        "turn"
+      ],
+      "story_zh": "西語 torno 源自拉丁語 tornus（車床、陶輪），而拉丁語又借自古希臘語 τόρνος（木工畫圓工具、車床）。這個詞的核心概念與旋轉相關，古人利用旋轉的圓輪來塑形陶器或切削木料，後來延伸指車床與絞盤等旋轉機械。",
+      "hook_zh": "工廠裡的車床（torno）不斷旋轉（turn），把木頭削成圓柱。",
+      "usage_zh": "常見搭配 en torno a（圍繞著、大約），例如 hablar en torno a un tema（圍繞某主題討論）。",
+      "example_es": "El carpintero usa el torno para fabricar la mesa.",
+      "example_zh": "木匠用車床來製作桌子。",
+      "image": "emoji:⚙️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:torno",
+        "wiktionary:la:tornus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "caída",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "跌倒、落下；（電腦）當機",
+      "en": "fall, crash, downfall",
+      "ipa": "/kaˈida/",
+      "breakdown": [
+        {
+          "part": "caer",
+          "zh": "掉落"
+        },
+        {
+          "part": "-ida",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "電腦畫面突然掉下來（caer）卡住，系統整個當機（caída）了！",
+      "usage_zh": "陰性名詞。動詞 caer 的過去分詞是 caído，名詞形為 caída，指跌倒、下降或電腦系統當機。",
+      "example_es": "La caída de internet interrumpió la reunión.",
+      "example_zh": "網路斷線中斷了會議。",
+      "image": "emoji:📉",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:caída"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cola",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "尾巴；排隊隊伍",
+      "en": "tail; queue, line",
+      "ipa": "/ˈkola/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cauda",
+          "zh": "尾巴"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "coda",
+          "zh": "尾巴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cola",
+          "zh": "尾巴、排隊隊伍"
+        }
+      ],
+      "cognates_en": [
+        "queue",
+        "coda"
+      ],
+      "story_zh": "源自拉丁語 cauda（動物尾巴），在通俗拉丁語中變為 coda，最終演變為西語的 cola。除了指動物的尾巴，也因人們排成一長列隊伍的外觀酷似尾巴，而引申為「排隊隊伍」。",
+      "hook_zh": "小狗搖著長長的 cola（尾巴），後面跟著一長串排隊的人龍。",
+      "usage_zh": "排隊常說 hacer cola；當隊伍最後一人可說 al final de la cola。",
+      "example_es": "Había una cola muy larga para comprar las entradas.",
+      "example_zh": "買票的人排了很長的一條隊伍。",
+      "image": "emoji:🐕",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cola",
+        "wiktionary:la:cauda",
+        "wiktionary:la:coda"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cristo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "耶穌像、基督；麻煩、混亂",
+      "en": "Christ, crucifix; mess, hassle",
+      "ipa": "/ˈkɾisto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "Χρῑστός",
+          "zh": "受膏者、基督"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "Christus",
+          "zh": "基督"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cristo",
+          "zh": "基督、十字架苦像"
+        }
+      ],
+      "cognates_en": [
+        "Christ"
+      ],
+      "story_zh": "西語 cristo 屬於書面借詞，源自拉丁語 Christus，最終來自古希臘語 Χρῑστός。在宗教脈絡中指耶穌基督或十字架苦像；在西班牙日常口語中，也常延伸用來形容一團混亂或大麻煩。",
+      "hook_zh": "英文的 Christ 就是基督；家裡被弄得一團糟時，忍不住驚呼「天啊（cristo）真麻煩」！",
+      "usage_zh": "陽性名詞。口語常說 armar un cristo（惹出大麻煩、大吵大鬧）。",
+      "example_es": "Se armó un cristo por culpa del retraso del tren.",
+      "example_zh": "因為火車誤點而鬧得不可開交。",
+      "image": "emoji:✝️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cristo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "disposición",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "處置、支配；意願；規定、安排",
+      "en": "disposal; disposition; capability",
+      "ipa": "/disposiˈθjon/",
+      "breakdown": [
+        {
+          "part": "dis-",
+          "zh": "分開、處置"
+        },
+        {
+          "part": "posición",
+          "zh": "位置、放置"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dispositiōnem",
+          "zh": "安排、佈局、處置"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "disposición",
+          "zh": "處置、意願、規定"
+        }
+      ],
+      "cognates_en": [
+        "disposition",
+        "disposal"
+      ],
+      "story_zh": "源自拉丁語 dispositiōnem（安排、配置、佈局）。字面原意是「將事物依序各就其位」，引申出對事物的處置與安排。用在人身上時，則指某人做某事的內在心態、意願或隨時準備配合的狀態。",
+      "hook_zh": "英文同源詞 disposition（性情、處置），各就各位、隨時準備好的「意願」。",
+      "usage_zh": "常用片語 estar a disposición de alguien（聽候某人差遣、供某人隨時使用）。",
+      "example_es": "Estoy a su completa disposición para cualquier duda.",
+      "example_zh": "若有任何疑問，我隨時樂意為您服務。",
+      "image": "emoji:📋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:disposición"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dueño",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "主人、房東、擁有者",
+      "en": "owner, landlord, master",
+      "ipa": "/ˈdweɲo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dominus",
+          "zh": "主人、擁有者"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "domnus",
+          "zh": "主人（縮約形）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dueño",
+          "zh": "主人、所有者"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 dominus（主人、屋主），在晚期拉丁語縮約為 domnus，最後演變成西語的 dueño。古羅馬時期 dominus 原指一家之主或房產所有人，後來詞義自然延伸至各種物品、店鋪或房產的擁有者、房東。",
+      "hook_zh": "走進店裡詢問誰是老闆，櫃檯笑著回答「對喔（due-ño），我就是這裡的房東兼老闆！」",
+      "usage_zh": "陰性形式為 dueña（女主人、女房東）。片語 ser dueño de... 表示「身為…的主人」或「掌控…」。",
+      "example_es": "Él es el dueño de este restaurante.",
+      "example_zh": "他是這家餐廳的老闆。",
+      "image": "emoji:🔑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dueño",
+        "wiktionary:la:domnus",
+        "wiktionary:la:dominus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "editorial",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "出版社；社論",
+      "en": "publisher; editorial",
+      "ipa": "/editoˈɾjal/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "editorial"
+      ],
+      "story_zh": "",
+      "hook_zh": "長得跟英文 editorial 一模一樣，既可當形容詞「社論的」，也能當名詞「出版社」。",
+      "usage_zh": "陰陽性不同義：la editorial 指「出版社」（陰性），el editorial 則指報章的「社論」（陽性）。",
+      "example_es": "Ella trabaja en una editorial famosa.",
+      "example_zh": "她在一家知名的出版社工作。",
+      "image": "emoji:📚",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:editorial"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "labor",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "工作、勞動、任務",
+      "en": "labor, work, chore",
+      "ipa": "/laˈboɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "labor",
+          "zh": "勞動、辛勞"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "lavor",
+          "zh": "工作、勞作"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "labor",
+          "zh": "工作、任務"
+        }
+      ],
+      "cognates_en": [
+        "labor"
+      ],
+      "story_zh": "源自拉丁語 labor（辛勞、勞動），經由古西班牙語 lavor 演變為現代西語。本義指付出體力或心力所做的辛勤工作，後來字義拓展至各類工作、職責、任務，亦可用於指手工刺繡等針線活。",
+      "hook_zh": "拼法與英文 labor 完全相同，直接聯想「辛勤勞動、努力工作」。",
+      "usage_zh": "雖然以 -or 結尾，但它是陰性名詞（la labor），複數加 -es 為 labores。",
+      "example_es": "Su labor como voluntario es admirable.",
+      "example_zh": "他身為志工的付出令人欽佩。",
+      "image": "emoji:💼",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:labor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "suma",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "總和、加法、金額",
+      "en": "sum, addition, total",
+      "ipa": "/ˈsuma/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "summa",
+          "zh": "總數、總和"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "suma",
+          "zh": "加法、總和"
+        }
+      ],
+      "cognates_en": [
+        "sum"
+      ],
+      "story_zh": "直接借自拉丁語 summa（總數、總和）。在西語中作為數學與計算用語，指「加法」運算或累加後的「總數、總金額」。值得一提的是，它與繼承自同源詞的 soma（粗麵粉）在語言學上互為同源異形詞。",
+      "hook_zh": "英文的 sum（總和）尾巴加上 a 就是 suma；聯想做加法運算時「數目（suma）越加越大」。",
+      "usage_zh": "常見片語如 en suma（總而言之、簡言之），以及 hacer una suma（做加法）。",
+      "example_es": "La suma de dos y tres es cinco.",
+      "example_zh": "二加三的總和是五。",
+      "image": "emoji:➕",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:suma"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tasa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "比率、費用、稅",
+      "en": "rate, tax, fee",
+      "ipa": "/ˈtasa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "tasar",
+          "zh": "估價、定價"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tasa",
+          "zh": "比率、稅金"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西語動詞 tasar（估價、評價、定價）衍生而來的動詞衍生名詞。原指官方或市場評估、核定出來的價格或標準，後來引申為各類「比率、費率」以及依法徵收的「規費、稅收」。",
+      "hook_zh": "注意同音陷阱！喝咖啡的杯子是 taza（z），而計算利息、失業率的「比率、稅」是 tasa（s）。",
+      "usage_zh": "經濟領域常見搭配，例如 tasa de interés（利率）、tasa de desempleo（失業率）。",
+      "example_es": "El banco decidió reducir la tasa de interés.",
+      "example_zh": "銀行決定調降利率。",
+      "image": "emoji:📊",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tasa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "universal",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "普遍的、全體的、宇宙的",
+      "en": "universal",
+      "ipa": "/unibeɾˈsal/",
+      "breakdown": [
+        {
+          "part": "universo",
+          "zh": "宇宙、全體"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾，表示…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūniversālis",
+          "zh": "整體的、普遍的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "universal",
+          "zh": "普遍的、全球通用的"
+        }
+      ],
+      "cognates_en": [
+        "universal"
+      ],
+      "story_zh": "源自拉丁語 ūniversālis（整體的、普遍的）。這個字指涵蓋所有人事物、不分地域或界限的概念，演變成現代西語中指「普遍的、全世界通用的」。",
+      "hook_zh": "跟英文 universal 完全同形同義，想像環球影業片頭旋轉的地球。",
+      "usage_zh": "陽性與陰性同形（un valor universal、una ley universal），複數為 universales。",
+      "example_es": "La música es un lenguaje universal.",
+      "example_zh": "音樂是一種全世界通用的語言。",
+      "image": "emoji:🌍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:universal"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vivienda",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "住宅、住房、住所",
+      "en": "housing, dwelling",
+      "ipa": "/biˈbjenda/",
+      "breakdown": [
+        {
+          "part": "vivir",
+          "zh": "生活、居住"
+        },
+        {
+          "part": "-enda",
+          "zh": "名詞字尾，指應當…之事物"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vīvō",
+          "zh": "活著、居住"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "vivenda",
+          "zh": "應當生活居住的事物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vivienda",
+          "zh": "住宅、住房"
+        }
+      ],
+      "cognates_en": [
+        "survive",
+        "vivid"
+      ],
+      "story_zh": "源自拉丁語動詞 vīvō（生活、活著）的被動將來分詞陰性形式 vivenda，原意為「應當生活、居住的地方或事物」。在西語中引申為讓人安居生活的「住宅、房屋」。",
+      "hook_zh": "能讓人在裡面生活（vivir）的地方，就是 vivienda（住宅）。",
+      "usage_zh": "陰性名詞，常泛指「居住、住宅問題」（el problema de la vivienda）。",
+      "example_es": "El precio de la vivienda ha subido mucho este año.",
+      "example_zh": "今年的房價上漲了許多。",
+      "image": "emoji:🏠",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vivienda"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "absolutamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "絕對地、完全地",
+      "en": "absolutely, completely",
+      "ipa": "/absoˌlutaˈmente/",
+      "breakdown": [
+        {
+          "part": "absoluto",
+          "zh": "絕對的、完全的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾，…地"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "absoluto + -mente",
+          "zh": "絕對的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "absolutamente",
+          "zh": "絕對地、完全地"
+        }
+      ],
+      "cognates_en": [
+        "absolutely"
+      ],
+      "story_zh": "由形容詞 absoluto（絕對的、完全的）加上副詞字尾 -mente（…地）構成。用來強調事情毫無保留、完全肯定或徹底否定，語義如同英文的 absolutely。",
+      "hook_zh": "英文 absolutely 換成西語副詞字尾 -mente 就是 absolutamente。",
+      "usage_zh": "在否定句中表示「完全不、根本不」，例如：No entiendo absolutamente nada（我完全聽不懂）。",
+      "example_es": "Tienes absolutamente toda la razón.",
+      "example_zh": "你說得完全正確。",
+      "image": "emoji:💯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:absolutamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "anteriormente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "先前、以前、早先",
+      "en": "previously, earlier",
+      "ipa": "/anˌteɾjoɾˈmente/",
+      "breakdown": [
+        {
+          "part": "anterior",
+          "zh": "先前的、前者的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾，…地"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "anterior + -mente",
+          "zh": "先前的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "anteriormente",
+          "zh": "先前、以前"
+        }
+      ],
+      "cognates_en": [
+        "anterior"
+      ],
+      "story_zh": "由形容詞 anterior（先前的、前者的）結合副詞後綴 -mente（…地）組合而成。用來表示時間或順序上「在此之前、早先」發生的狀態。",
+      "hook_zh": "anterior（先前的）+ mente（副詞字尾）= 先前地、以前。",
+      "usage_zh": "常用於正式或書面語境，指「在特定時間點之前」；日常口語中也常直接用 antes。",
+      "example_es": "Ese edificio era anteriormente un hospital.",
+      "example_zh": "那棟建築物以前是一家醫院。",
+      "image": "emoji:⏮️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:anteriormente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "castro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "堡壘、防禦聚落",
+      "en": "fort, fortified settlement",
+      "ipa": "/ˈkastɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "castrum",
+          "zh": "軍營、要塞"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "castro",
+          "zh": "堡壘、防禦聚落"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 castrum，原指軍團的防禦營地、要塞或城堡。借入西班牙語後，常用來指伊比利半島史前或前羅馬時期的石造防禦聚落（山城遺址）。此外，同一個拉丁字經由阿拉伯語借入西語的雙重詞（doublet）則是 alcázar（宮殿、要塞）。",
+      "hook_zh": "想像石造城堡（castle）屹立在山頂，守衛在古老要塞（castro）前戒備。",
+      "usage_zh": "陽性名詞。在西班牙常指前羅馬時期的防禦村落遺跡，也常作為地名與姓氏出現。",
+      "example_es": "Visitamos un antiguo castro celta en Galicia.",
+      "example_zh": "我們參觀了加利西亞一座古代凱爾特防禦聚落。",
+      "image": "emoji:🏰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:castro",
+        "wiktionary:la:castrum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "córdoba",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "哥多華（尼加拉瓜貨幣單位）",
+      "en": "cordoba (currency of Nicaragua)",
+      "ipa": "/ˈkoɾdoba/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "尼加拉瓜錢幣上面印著歷史古城 Córdoba 的印記。",
+      "usage_zh": "陽性名詞，複數為 córdobas。注意首音節有重音標記 ó。",
+      "example_es": "Pagué diez córdobas por el café.",
+      "example_zh": "我付了十科多巴買這杯咖啡。",
+      "image": "emoji:🪙",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:córdoba"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "descripción",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "描述、描寫、說明",
+      "en": "description",
+      "ipa": "/deskɾibˈθjon/",
+      "breakdown": [
+        {
+          "part": "des-",
+          "zh": "自…離開、向下"
+        },
+        {
+          "part": "crip-",
+          "zh": "寫"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾（動作、狀態）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēscrīptiōnem",
+          "zh": "抄寫、描繪、描述"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "descripción",
+          "zh": "描述、描寫"
+        }
+      ],
+      "cognates_en": [
+        "description"
+      ],
+      "story_zh": "源自拉丁語 dēscrīptiōnem，本義為抄寫或仔細描繪。透過文字或語言把事物的樣貌完整記錄下來，就演變成了「描述、說明」。",
+      "hook_zh": "英文就是 description，字首 de- 加上寫（scrib/crip），描寫下來。",
+      "usage_zh": "陰性名詞（以 -ción 結尾皆為陰性），複數為 descripciones（去重音符號）。",
+      "example_es": "La policía pidió una descripción del ladrón.",
+      "example_zh": "警方要求提供小偷的外貌描述。",
+      "image": "emoji:📝",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:descripción"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "evolución",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "演化、進化、發展",
+      "en": "evolution, development",
+      "ipa": "/eboluˈθjon/",
+      "breakdown": [
+        {
+          "part": "e-",
+          "zh": "向外"
+        },
+        {
+          "part": "volu-",
+          "zh": "滾動、展開"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾（動作、過程）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ēvolvō",
+          "zh": "展開、攤開書卷"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ēvolūtiōnem",
+          "zh": "展開書卷的動作、閱讀"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "évolution",
+          "zh": "演變、發展"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "evolución",
+          "zh": "演化、發展"
+        }
+      ],
+      "cognates_en": [
+        "evolution"
+      ],
+      "story_zh": "源自拉丁語 ēvolvō（展開、滾動展開），原本指古代閱讀時「攤開卷軸」的動作，後借入法語 évolution，引申為事物一步步展開、循序漸進的「演變、演化」。",
+      "hook_zh": "英文 evolution，卷軸一頁頁展開（e- + volu），就是文明與物種的「演化」。",
+      "usage_zh": "陰性名詞，常見搭配 la evolución biológica（生物演化）。複數為 evoluciones。",
+      "example_es": "La teoría de la evolución cambió la ciencia.",
+      "example_zh": "演化論改變了科學界。",
+      "image": "emoji:🧬",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:evolución",
+        "wiktionary:la:evolutio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "indígena",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "原住民、土著；本土的",
+      "en": "indigenous person; indigenous, native",
+      "ipa": "/inˈdixena/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "indigena",
+          "zh": "土生土長的、本地出生的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "indígena",
+          "zh": "原住民、土著"
+        }
+      ],
+      "cognates_en": [
+        "indigenous"
+      ],
+      "story_zh": "源自拉丁語 indigena，本義為土生土長的人或原產於當地的動植物。後來進入西班牙語，指代某地最早居住的「原住民」。",
+      "hook_zh": "英文 indigenous 的西語同源字；外形像 in + 根（gen），在地生根的人。",
+      "usage_zh": "名詞陰陽同形（el/la indígena），形容詞亦不隨性別變尾（pueblos indígenas）。",
+      "example_es": "El guía respeta las tradiciones del pueblo indígena.",
+      "example_zh": "導遊尊重原住民族的傳統。",
+      "image": "emoji:🏹",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:indígena"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "infantil",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "兒童的、幼兒的；幼稚的",
+      "en": "childish, childlike, for children",
+      "ipa": "/infanˈtil/",
+      "breakdown": [
+        {
+          "part": "infant-",
+          "zh": "幼兒、嬰兒"
+        },
+        {
+          "part": "-il",
+          "zh": "形容詞字尾（具有…性質的）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnfantilis",
+          "zh": "嬰幼兒的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "infantil",
+          "zh": "兒童的、幼稚的"
+        }
+      ],
+      "cognates_en": [
+        "infantile",
+        "infant"
+      ],
+      "story_zh": "源自拉丁語 īnfantilis（幼兒的、嬰兒的），為學者借詞。原指與幼童相關的事物，後亦可引申用來形容成年人行為像小孩子般「幼稚、不成熟」。",
+      "hook_zh": "英文 infant（嬰兒）加上形容詞字尾 -il，就是「兒童的」或「幼稚的」。",
+      "usage_zh": "陰陽同形形容詞，修飾陽性或陰性名詞皆為 infantil，複數為 infantiles。",
+      "example_es": "Mi hermana menor lee mucha literatura infantil.",
+      "example_zh": "我妹妹讀很多兒童文學。",
+      "image": "emoji:🧸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:infantil"
       ],
       "writer": "gemini"
     }

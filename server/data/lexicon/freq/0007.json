@@ -1,6 +1,6 @@
 {
   "theme": "freq-0007",
-  "theme_zh": "常用字（頻率第 1678–1887 名）",
+  "theme_zh": "常用字（頻率第 1678–1905 名）",
   "entries": [
     {
       "word": "oh",
@@ -23,28 +23,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:oh"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "pa",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "老爸、爸爸（papá 的口語縮寫）",
-      "en": "dad, pop",
-      "ipa": "/ˈpa/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "把 papá 砍半只喊 pa，就像中文親切地叫一聲「爸」！",
-      "usage_zh": "口語中為 papá 的親暱簡稱；在日常西語口語也常是 para 的縮寫（寫作 pa'）。",
-      "example_es": "Hola, pa, ¿adónde vas?",
-      "example_zh": "嗨，老爸，你要去哪裡？",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:pa"
       ],
       "writer": "gemini"
     },
@@ -228,44 +206,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:representante"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "tenia",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "絛蟲、絛蟲病",
-      "en": "tapeworm",
-      "ipa": "/ˈtenja/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "ταινία",
-          "zh": "緞帶、帶子"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "taenia",
-          "zh": "緞帶、絛蟲"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tenia",
-          "zh": "絛蟲"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自古希臘語 ταινία（緞帶、帶子），經由拉丁語 taenia 進入西語。這種寄生蟲外觀扁平且長，就像一條細長柔軟的緞帶，因此得名。",
-      "hook_zh": "扁扁長長的寄生蟲像緞帶（tape），在肚子裡「貼你」（tenia）。",
-      "usage_zh": "陰性名詞。注意與 tener 的過去未完成式 tenía（有重音）拼寫與重音不同。",
-      "example_es": "El médico le recetó pastillas para eliminar la tenia.",
-      "example_zh": "醫生給他開了除絛蟲的藥丸。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tenia"
       ],
       "writer": "gemini"
     },
@@ -1998,44 +1938,6 @@
       "writer": "gemini"
     },
     {
-      "word": "des",
-      "article": "",
-      "pos": "preposición",
-      "zh": "自、從（desde 的古同義詞）",
-      "en": "since, from",
-      "ipa": "/ˈdes/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "dē ex",
-          "zh": "從…出"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "des",
-          "zh": "自、從"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "des",
-          "zh": "自、從"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "承襲自古西班牙語 des，更早源自晚期拉丁語短語 dē ex（由 dē「從」與 ex「出」組合），表示事物的起點。在現代西語中已被 desde 取代，主要見於古籍或歷史文獻。",
-      "hook_zh": "它就是 desde 的前身，去掉後面的 de 即是古形的 des。",
-      "usage_zh": "介系詞，現代西語已不再日常使用，多已被 desde 取代，僅存於古文或方言中。",
-      "example_es": "En textos antiguos se usaba des como desde.",
-      "example_zh": "在古代文獻中，des 常被用作 desde。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:des"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "disponible",
       "article": "",
       "pos": "adjetivo",
@@ -2927,47 +2829,6 @@
       "writer": "gemini"
     },
     {
-      "word": "lima",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "萊姆、青檸",
-      "en": "lime",
-      "ipa": "/ˈlima/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "阿拉伯語",
-          "word": "laymūn",
-          "zh": "檸檬、萊姆"
-        },
-        {
-          "lang_zh": "安達盧西亞阿拉伯語",
-          "word": "līma",
-          "zh": "萊姆"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "lima",
-          "zh": "萊姆"
-        }
-      ],
-      "cognates_en": [
-        "lime",
-        "lemon"
-      ],
-      "story_zh": "借自安達盧西亞阿拉伯語 līma，可追溯至阿拉伯語 laymūn（檸檬、萊姆）。隨著摩爾人將柑橘類水果引進伊比利半島，該詞進入西語。英文的 lime 與 lemon 亦同源。",
-      "hook_zh": "發音就像「立馬」：口渴了，立馬切一顆酸爽的青檸（lima）泡水喝！",
-      "usage_zh": "陰性名詞（la lima）。在西語中 lima 亦指「指甲銼刀」或秘魯首都「利馬」。",
-      "example_es": "Quiero un vaso de agua con lima.",
-      "example_zh": "我想要一杯加萊姆的水。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:lima"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "lindo",
       "article": "",
       "pos": "adjetivo",
@@ -3356,41 +3217,6 @@
       "writer": "gemini"
     },
     {
-      "word": "as",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "（撲克牌）A牌、王牌；頂尖高手",
-      "en": "ace (card), expert",
-      "ipa": "/ˈas/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "ās",
-          "zh": "羅馬銅幣、基本計量單位"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "as",
-          "zh": "A牌、王牌、高手"
-        }
-      ],
-      "cognates_en": [
-        "ace"
-      ],
-      "story_zh": "源自拉丁語 ās，原本是古羅馬的一種重量單位與代表「一」的銅幣。在紙牌遊戲傳入歐洲後，用來指點數最小或最大的一點（A牌），隨後進一步引申為團隊中實力最強的「王牌」或各領域的「頂尖高手」。",
-      "hook_zh": "發音與英文的 ace（王牌）非常接近，想像網球發球直接得分的 Ace 球！",
-      "usage_zh": "陽性名詞，複數加 -es 成 ases。常用搭配如 ser un as en...（在某方面是高手）。",
-      "example_es": "Ella es un as de la guitarra eléctrica.",
-      "example_zh": "她是電吉他高手。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:as"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "breve",
       "article": "",
       "pos": "adjetivo",
@@ -3626,6 +3452,234 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:firma"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "guardia",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "警衛、守衛；守衛隊、值勤",
+      "en": "guard, warden; watch, guard duty",
+      "ipa": "/ˈɡwaɾdja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "哥德語",
+          "word": "wardja",
+          "zh": "守衛者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "guardia",
+          "zh": "守衛、警衛"
+        }
+      ],
+      "cognates_en": [
+        "guard",
+        "warden"
+      ],
+      "story_zh": "源自哥德語 wardja（守衛者）。在中世紀日耳曼部族進入伊比利半島後，日耳曼語首的 w- 音在西語中演變成 gu-（例如 war 變成 guerra）。因此 wardja 演變成了西語的 guardia，用來指負責看守的人，後來也引申出守衛部隊與值勤的意思。",
+      "hook_zh": "警衛在門口站崗 guard（guardia），保護整棟大樓的安全。",
+      "usage_zh": "指人時 el guardia 是男警衛，la guardia 是女警衛；指值勤隊或班次時是陰性（estar de guardia 表值班）。",
+      "example_es": "El guardia de seguridad revisó mi pasaporte.",
+      "example_zh": "保全警衛檢查了我的護照。",
+      "image": "emoji:👮",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:guardia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "juventud",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "青春、青年時期；青年群體",
+      "en": "youth, young person",
+      "ipa": "/xubenˈtud/",
+      "breakdown": [
+        {
+          "part": "juven-",
+          "zh": "年輕"
+        },
+        {
+          "part": "-tud",
+          "zh": "名詞字尾，表示狀態或特質"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "iuvenis",
+          "zh": "年輕的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "iuventūtem",
+          "zh": "青春、青年時期"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "iuuentut",
+          "zh": "青春"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "juventud",
+          "zh": "青春、青年"
+        }
+      ],
+      "cognates_en": [
+        "juvenile",
+        "rejuvenate"
+      ],
+      "story_zh": "源自拉丁語 iuventūtem（青年時期），由形容詞 iuvenis（年輕的）加上抽象名詞後綴衍生而來。古西班牙語寫作 iuuentut，隨後演變為現代西語的 juventud。這個字既指人生中的青春年華，也可指年輕人或青年族群。",
+      "hook_zh": "juventud 的 juven 與英文 juvenile（青少年的）同源，青春正是充滿活力的時光。",
+      "usage_zh": "為陰性名詞。西語以 -tud 結尾的名詞通常都是陰性（如 actitud、gratitud）。",
+      "example_es": "Ella recuerda con alegría su juventud en el pueblo.",
+      "example_zh": "她開心地回想著在村子裡度過的青春時光。",
+      "image": "emoji:🌱",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:juventud",
+        "wiktionary:la:iuventus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "probable",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "很可能的、大概的",
+      "en": "probable, likely",
+      "ipa": "/pɾoˈbable/",
+      "breakdown": [
+        {
+          "part": "prob-",
+          "zh": "驗證、檢驗"
+        },
+        {
+          "part": "-able",
+          "zh": "可…的，形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "probābilis",
+          "zh": "可證實的、值得稱讚的、很可能的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "probable",
+          "zh": "很可能的"
+        }
+      ],
+      "cognates_en": [
+        "probable",
+        "prove"
+      ],
+      "story_zh": "源自拉丁語 probābilis，由檢驗、測試引申為「值得稱許的、言之成理的」，進一步演變為「很有可能的、可被證實的」。現代西語承襲此意，指某件事發生的機率極高。",
+      "hook_zh": "與英文 probable 拼法一模一樣，意思是「很有可能」發生的事。",
+      "usage_zh": "陰陽同形。常見句型「Es probable que + 虛擬式」表示推測（例如很可能會下雨）。",
+      "example_es": "Es muy probable que llueva esta tarde.",
+      "example_zh": "今天下午很有可能會下雨。",
+      "image": "emoji:🎲",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:probable"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "producir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "生產、製造；產生、發生",
+      "en": "to produce, to generate, to occur",
+      "ipa": "/pɾoduˈθiɾ/",
+      "breakdown": [
+        {
+          "part": "pro-",
+          "zh": "向前"
+        },
+        {
+          "part": "-ducir",
+          "zh": "引導、帶領"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prōdūcere",
+          "zh": "向前引導、產生"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "producir",
+          "zh": "生產、產生"
+        }
+      ],
+      "cognates_en": [
+        "produce",
+        "product"
+      ],
+      "story_zh": "借自拉丁語 prōdūcere，由字首 prō-（向前）與動詞 dūcere（引導、帶領）組成，原意為「向前引導、帶領出來」，引申為「創造、產生」。在西語中可用於工廠生產商品，或是自然現象與事件的產生。",
+      "hook_zh": "向前（pro）帶領（ducir），工廠全力運轉生產（produce）新產品。",
+      "usage_zh": "不規則動詞：現在式單數第一人稱是 produzco，簡單過去式為 produje、produjiste、produjo。",
+      "example_es": "Esta fábrica produce miles de botellas cada día.",
+      "example_zh": "這家工廠每天生產數千個瓶子。",
+      "image": "emoji:🏭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:producir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sencillo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "簡單的、單純的；樸素的",
+      "en": "simple, plain, straightforward",
+      "ipa": "/senˈθiʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "singulus",
+          "zh": "單一的、各別的"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*singellus",
+          "zh": "單一的、簡單的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "senziello",
+          "zh": "單純的、樸素的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sencillo",
+          "zh": "簡單的、樸素的"
+        }
+      ],
+      "cognates_en": [
+        "single"
+      ],
+      "story_zh": "源自拉丁語 singulus（單一的、個別的，英文 single 的字源），在通俗拉丁語演化為指小詞形 *singellus，經古西語 senziello 成為 sencillo。從「單一、不複合」的概念，演變成「樸素、不複雜、簡單」之意。",
+      "hook_zh": "如同一張單程票 single 般單純不繁複，事情就是這麼 sencillo（簡單）。",
+      "usage_zh": "陰性為 sencilla。除了作形容詞「簡單的」，陽性名詞 el sencillo 也可指「零錢」。",
+      "example_es": "Esta receta de cocina es muy sencilla de preparar.",
+      "example_zh": "這道料理食譜準備起來非常簡單。",
+      "image": "emoji:👌",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sencillo",
+        "wiktionary:la:singulus"
       ],
       "writer": "gemini"
     }
