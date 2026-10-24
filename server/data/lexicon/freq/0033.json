@@ -164,6 +164,37 @@
       "writer": "gemini"
     },
     {
+      "word": "petrolero",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "石油的、石油業的",
+      "en": "oil, petroleum",
+      "ipa": "/petɾoˈleɾo/",
+      "breakdown": [
+        {
+          "part": "petróleo",
+          "zh": "石油"
+        },
+        {
+          "part": "-ero",
+          "zh": "表示與…相關的字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "開著油輪（petrolero）運送石油（petróleo），滿載黑金。",
+      "usage_zh": "可作形容詞「石油的」（industria petrolera），亦可作陽性名詞指「油輪」。",
+      "example_es": "Trabaja en una empresa petrolera.",
+      "example_zh": "他在一家石油公司工作。",
+      "image": "emoji:🛢️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:petrolero"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "preservar",
       "article": "",
       "pos": "verbo",
@@ -2034,6 +2065,41 @@
       "writer": "gemini"
     },
     {
+      "word": "perpetuo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "永久的、終身的",
+      "en": "perpetual",
+      "ipa": "/peɾˈpetwo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "perpetuus",
+          "zh": "持續不斷的、永久的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "perpetuo",
+          "zh": "永久的"
+        }
+      ],
+      "cognates_en": [
+        "perpetual"
+      ],
+      "story_zh": "源自拉丁語 perpetuus，表示「持續不斷、永久的」。在西班牙語中保留了這個意義，常用來形容長久不變的事物或終身的體制。英文中的 perpetual 也是同源字。",
+      "hook_zh": "perpetual 就是 perpetuo，兩者長得幾乎一樣，都代表「永久的」。",
+      "usage_zh": "常見搭配 cadena perpetua 表示「終身監禁、無期徒刑」。陰性形為 perpetua。",
+      "example_es": "El condenado recibió cadena perpetua.",
+      "example_zh": "罪犯被判處終身監禁。",
+      "image": "emoji:♾️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:perpetuo"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "planear",
       "article": "",
       "pos": "verbo",
@@ -3779,6 +3845,45 @@
       "sources": [
         "wiktionary:es:hipocresía",
         "wiktionary:la:hypocrisis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hondo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "深的、深刻的",
+      "en": "deep, profound",
+      "ipa": "/ˈondo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fundus",
+          "zh": "底部、地面"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "fondo",
+          "zh": "深的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hondo",
+          "zh": "深的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自古西班牙語 fondo，源頭是拉丁語的名詞 fundus（底部）。在西班牙語中，古西語首音 f- 演變為不發音的 h-，演變出形容詞 hondo（深的）；而保留 f- 的名詞 fondo（底部）則成為它的同源雙胞詞。",
+      "hook_zh": "hondo 是「深的」，而底部的名詞是 fondo，兩者其實是同一個字根。",
+      "usage_zh": "與 profundo 意思相近，但 hondo 常用於具體深度（如水井、盤子），也可指深沉情緒。",
+      "example_es": "El pozo es muy hondo.",
+      "example_zh": "這口井非常深。",
+      "image": "emoji:🕳️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hondo",
+        "wiktionary:la:fundus"
       ],
       "writer": "gemini"
     }
