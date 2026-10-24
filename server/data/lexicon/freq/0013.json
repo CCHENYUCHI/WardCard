@@ -1,7 +1,51 @@
 {
   "theme": "freq-0013",
-  "theme_zh": "常用字（頻率第 3157–3401 名）",
+  "theme_zh": "常用字（頻率第 3154–3400 名）",
   "entries": [
+    {
+      "word": "clasificación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "分類；分級、排名",
+      "en": "classification, ranking, rating",
+      "ipa": "/klasifikaˈθjon/",
+      "breakdown": [
+        {
+          "part": "clasificar",
+          "zh": "分類"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾（動作或結果）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "clasificar + -ción",
+          "zh": "分類 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "clasificación",
+          "zh": "分類、分級、排名"
+        }
+      ],
+      "cognates_en": [
+        "classification"
+      ],
+      "story_zh": "由動詞 clasificar（分類）加上表示動作或結果的名詞字尾 -ción 構成。在現代西語中，不僅指事物或概念的歸類整理，也廣泛用於體育賽事的「排名、積分榜」與影視作品的「分級制度」。",
+      "hook_zh": "英文就是 classification，把事物分入不同 class 的動作與結果就是分類分級。",
+      "usage_zh": "字尾為 -ción 的名詞一律為陰性。在體育賽事中常指聯賽積分榜或球員排名。",
+      "example_es": "Es una película con clasificación para adultos.",
+      "example_zh": "這是一部限制級（成人分級）的電影。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:clasificación"
+      ],
+      "writer": "gemini"
+    },
     {
       "word": "coño",
       "article": "el",
@@ -3865,50 +3909,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:fundador"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "garantizar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "保證、擔保",
-      "en": "to guarantee, to ensure",
-      "ipa": "/ɡaɾantiˈθaɾ/",
-      "breakdown": [
-        {
-          "part": "garante",
-          "zh": "保證人"
-        },
-        {
-          "part": "-izar",
-          "zh": "使…化、做…（動詞字尾）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "garante",
-          "zh": "保證人"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "garantizar",
-          "zh": "保證、擔保"
-        }
-      ],
-      "cognates_en": [
-        "guarantee"
-      ],
-      "story_zh": "由名詞 garante（保證人、擔保者）加上動詞字尾 -izar 構成。字面意思是「充當擔保人」，進而發展為提供擔保、確保某事一定會發生或某項權益得到維護的動詞。",
-      "hook_zh": "英文 guarantee（保證）與它同源，-izar 是動詞尾，garantizar 就是「做保證」。",
-      "usage_zh": "書寫注意正字法變化：第一人稱簡單過去式變為 garanticé（z 在 e 前變為 c）。",
-      "example_es": "La empresa garantiza la calidad de sus productos.",
-      "example_zh": "這家公司保證其產品的品質。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:garantizar"
       ],
       "writer": "gemini"
     }

@@ -1,6 +1,6 @@
 {
   "theme": "freq-0012",
-  "theme_zh": "常用字（頻率第 2897–3154 名）",
+  "theme_zh": "常用字（頻率第 2897–3152 名）",
   "entries": [
     {
       "word": "testigo",
@@ -111,6 +111,47 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:aparentemente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "carrera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "賽跑、奔馳；大學學位、專業",
+      "en": "race; run; university degree, career",
+      "ipa": "/kaˈreɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "carrus",
+          "zh": "雙輪運貨馬車"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "carrāria",
+          "zh": "車道、馬車路"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "carrera",
+          "zh": "賽跑；大學專業、職業生涯"
+        }
+      ],
+      "cognates_en": [
+        "career"
+      ],
+      "story_zh": "源自拉丁語 carrus（雙輪運貨馬車），在晚期拉丁語中演變出 carrāria（車道）。後來引申為在跑道上奔馳的「賽跑」，並進一步延伸為求學過程或人生歷程中的「大學學業」與「職業生涯」。英文的 career 亦為同源字。",
+      "hook_zh": "在人生的道路（career）上全力奔馳，衝向終點就是 carrera。",
+      "usage_zh": "常用片語有 carrera contra el tiempo（與時間賽跑），指大學主修時常搭配 estudiar una carrera。",
+      "example_es": "Es una carrera contra el tiempo.",
+      "example_zh": "這是一場與時間的賽跑。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:carrera",
+        "wiktionary:la:carrus"
       ],
       "writer": "gemini"
     },
@@ -3885,50 +3926,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:boda"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "clasificación",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "分類；分級、排名",
-      "en": "classification, ranking, rating",
-      "ipa": "/klasifikaˈθjon/",
-      "breakdown": [
-        {
-          "part": "clasificar",
-          "zh": "分類"
-        },
-        {
-          "part": "-ción",
-          "zh": "名詞字尾（動作或結果）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "clasificar + -ción",
-          "zh": "分類 + 名詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "clasificación",
-          "zh": "分類、分級、排名"
-        }
-      ],
-      "cognates_en": [
-        "classification"
-      ],
-      "story_zh": "由動詞 clasificar（分類）加上表示動作或結果的名詞字尾 -ción 構成。在現代西語中，不僅指事物或概念的歸類整理，也廣泛用於體育賽事的「排名、積分榜」與影視作品的「分級制度」。",
-      "hook_zh": "英文就是 classification，把事物分入不同 class 的動作與結果就是分類分級。",
-      "usage_zh": "字尾為 -ción 的名詞一律為陰性。在體育賽事中常指聯賽積分榜或球員排名。",
-      "example_es": "Es una película con clasificación para adultos.",
-      "example_zh": "這是一部限制級（成人分級）的電影。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:clasificación"
       ],
       "writer": "gemini"
     }

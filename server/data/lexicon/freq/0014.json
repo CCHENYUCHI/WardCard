@@ -1,7 +1,51 @@
 {
   "theme": "freq-0014",
-  "theme_zh": "常用字（頻率第 3408–3597 名）",
+  "theme_zh": "常用字（頻率第 3401–3596 名）",
   "entries": [
+    {
+      "word": "garantizar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "保證、擔保",
+      "en": "to guarantee, to ensure",
+      "ipa": "/ɡaɾantiˈθaɾ/",
+      "breakdown": [
+        {
+          "part": "garante",
+          "zh": "保證人"
+        },
+        {
+          "part": "-izar",
+          "zh": "使…化、做…（動詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "garante",
+          "zh": "保證人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "garantizar",
+          "zh": "保證、擔保"
+        }
+      ],
+      "cognates_en": [
+        "guarantee"
+      ],
+      "story_zh": "由名詞 garante（保證人、擔保者）加上動詞字尾 -izar 構成。字面意思是「充當擔保人」，進而發展為提供擔保、確保某事一定會發生或某項權益得到維護的動詞。",
+      "hook_zh": "英文 guarantee（保證）與它同源，-izar 是動詞尾，garantizar 就是「做保證」。",
+      "usage_zh": "書寫注意正字法變化：第一人稱簡單過去式變為 garanticé（z 在 e 前變為 c）。",
+      "example_es": "La empresa garantiza la calidad de sus productos.",
+      "example_zh": "這家公司保證其產品的品質。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:garantizar"
+      ],
+      "writer": "gemini"
+    },
     {
       "word": "incendio",
       "article": "el",
@@ -3834,39 +3878,6 @@
       "sources": [
         "wiktionary:es:arco",
         "wiktionary:la:arcus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "asesino",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "兇手、殺手；殘酷的",
-      "en": "murderer, assassin",
-      "ipa": "/aseˈsino/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "阿拉伯語",
-          "word": "حَشَّاشِين",
-          "zh": "大麻吸食者"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "asesino",
-          "zh": "殺手、兇手"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自阿拉伯語 ḥaššāšīn，原指十字軍時期中東的暗殺派成員，傳說他們出任務前會使用大麻（hashish）；另一種說法指其源於表示信奉教派根基的詞彙。後來該詞傳入歐洲各語言，演變為專指冷酷行刺的「殺手」與「兇手」。",
-      "hook_zh": "傳說中暗殺組織刺客（assassin）出動，就是令人膽寒的 asesino。",
-      "usage_zh": "指女性兇手時使用陰性形 asesina；亦可當形容詞修飾名詞。",
-      "example_es": "La policía busca al asesino por toda la ciudad.",
-      "example_zh": "警方正在全城搜捕那名兇手。",
-      "image": "emoji:🗡️",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:asesino"
       ],
       "writer": "gemini"
     }
