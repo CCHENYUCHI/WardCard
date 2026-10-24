@@ -3,6 +3,735 @@
   "theme_zh": "常用字（頻率第 2399–2632 名）",
   "entries": [
     {
+      "word": "pasión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "熱情；激情",
+      "en": "passion",
+      "ipa": "/paˈsjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "passiōnem",
+          "zh": "受苦、強烈情緒"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pasión",
+          "zh": "熱情、激情"
+        }
+      ],
+      "cognates_en": [
+        "passion"
+      ],
+      "story_zh": "源自拉丁語 passiōnem，本義與承受、忍受痛苦相關，後演變為指無法抑制的強烈情感。在西班牙語中，它主要指對某事物充滿狂熱與喜愛，即「熱情」或「激情」。",
+      "hook_zh": "英文的 passion 和西語 pasión 幾乎一模一樣，都指內心燃燒的熱情。",
+      "usage_zh": "陰性名詞，字尾 -sión 形成複數時去重音符號變為 pasiones。",
+      "example_es": "Ella tiene una gran pasión por la música.",
+      "example_zh": "她對音樂有極大的熱情。",
+      "image": "emoji:🔥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pasión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pintura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "繪畫；油漆、顏料",
+      "en": "painting, paint",
+      "ipa": "/pinˈtuɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pictūra",
+          "zh": "繪畫"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*pinctūra",
+          "zh": "繪畫"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "pintura",
+          "zh": "繪畫"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pintura",
+          "zh": "繪畫、顏料"
+        }
+      ],
+      "cognates_en": [
+        "picture"
+      ],
+      "story_zh": "源自拉丁語 pictūra（繪畫），來自 pingō（繪畫）與名詞字尾 -tūra。通俗拉丁語受現在式詞幹影響演變出鼻音形式 *pinctūra，經古西班牙語傳承為現代西語的 pintura，兼指繪畫作品與顏料塗料。",
+      "hook_zh": "動詞 pintar（畫畫）加上名詞字尾 -ura 就變成名詞 pintura（畫作、油漆）。",
+      "usage_zh": "既可指藝術作品（畫作），也可指塗料、油漆等物質名詞。",
+      "example_es": "La pintura de este cuadro es muy colorida.",
+      "example_zh": "這幅畫的色彩非常豐富。",
+      "image": "emoji:🎨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pintura",
+        "wiktionary:la:pictura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pista",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "跑道；球場；線索；音軌",
+      "en": "track, court, runway, clue",
+      "ipa": "/ˈpista/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "pista",
+          "zh": "足跡、踩出的路徑"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pista",
+          "zh": "跑道、線索"
+        }
+      ],
+      "cognates_en": [
+        "piston"
+      ],
+      "story_zh": "借自義大利語 pista，原指踏出或壓出的痕跡、路徑。引申至現代西語中，不僅指運動場地、跑道或舞池（pista de baile），也可以指破案的「線索」或音樂的「音軌」。",
+      "hook_zh": "想像在滑雪道（piste）上留下的痕跡；名偵探找「線索」也是找 pista！",
+      "usage_zh": "常見搭配：pista de aterrizaje（機場跑道）、dar una pista（提供線索）。",
+      "example_es": "Los detectives encontraron una pista importante.",
+      "example_zh": "偵探們找到了一條重要線索。",
+      "image": "emoji:🔍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pista"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "positivo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "正面的、積極的；陽性的",
+      "en": "positive",
+      "ipa": "/posiˈtibo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "positīvus",
+          "zh": "確定的、設定的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "positivo",
+          "zh": "正面的、積極的"
+        }
+      ],
+      "cognates_en": [
+        "positive"
+      ],
+      "story_zh": "源自拉丁語 positīvus，源於「放置、確定」之意。後來在哲學與實證學說中用來表示既定、明確的事物，現代延伸為充滿肯定、樂觀的「積極正面」或是檢驗中的「陽性反應」。",
+      "hook_zh": "和英文 positive 拼法與意思幾乎一樣，最後改為西語陽性形容詞結尾 -o。",
+      "usage_zh": "陰性形為 positiva；反義詞為 negativo（消極的、負面的、陰性的）。",
+      "example_es": "Siempre intenta mantener una actitud positiva.",
+      "example_zh": "他總是試著保持積極的態度。",
+      "image": "emoji:➕",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:positivo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "promoción",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "促銷；升遷；屆（畢業生）",
+      "en": "promotion, advancement, graduating class",
+      "ipa": "/pɾomoˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prōmōtiō",
+          "zh": "向前推進、升遷"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "promoción",
+          "zh": "推廣、促銷、升遷"
+        }
+      ],
+      "cognates_en": [
+        "promotion"
+      ],
+      "story_zh": "源自拉丁語 prōmōtiō（推進、提拔）。在現代西語中引申涵蓋「促銷活動」、「職位升遷」，還可以特別指學校的「同屆畢業生」（例如 la promoción de 2024）。",
+      "hook_zh": "商場促銷（promo）或是職場升官，都跟英文 promotion 和西語 promoción 相關！",
+      "usage_zh": "陰性名詞；字尾 -ción 變複數為 promociones（去重音）。口語常簡稱為 promo。",
+      "example_es": "Aproveché una buena promoción en el supermercado.",
+      "example_zh": "我利用了超市的一次划算促銷。",
+      "image": "emoji:🏷️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:promoción"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reciente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "最近的、新近的",
+      "en": "recent",
+      "ipa": "/reˈθjente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "recentem",
+          "zh": "新鮮的、新近的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reciente",
+          "zh": "最近的"
+        }
+      ],
+      "cognates_en": [
+        "recent"
+      ],
+      "story_zh": "繼承自拉丁語 recentem（新鮮的、剛發生的）。原意指剛採摘或出爐的新鮮狀態，在西班牙語中演變為指時間上的「最近、新近」。英文的 recent 也是同源字。",
+      "hook_zh": "長得跟英文 recent 幾乎一樣，只是字尾變成西語常見的 -e，意思也是「最近的」。",
+      "usage_zh": "男女同形形容詞（un hecho reciente / una noticia reciente），副詞為 recientemente。",
+      "example_es": "Es una noticia muy reciente.",
+      "example_zh": "這是一則很新的消息。",
+      "image": "emoji:🆕",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reciente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "regresar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "返回、回來、回家",
+      "en": "to return, to come back",
+      "ipa": "/reɡɾeˈsaɾ/",
+      "breakdown": [
+        {
+          "part": "re-",
+          "zh": "往回、向後"
+        },
+        {
+          "part": "gres",
+          "zh": "走、步伐"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "re- + gressus",
+          "zh": "往回 + 步伐"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "regressus",
+          "zh": "返回、後退"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "regresar",
+          "zh": "返回"
+        }
+      ],
+      "cognates_en": [
+        "regress"
+      ],
+      "story_zh": "源自拉丁語名詞 regressus（返回、向後走），由前綴 re-（往回）與 gressus（步伐、行走）結合而成。從「腳步往回邁」演變為「返回、歸來」。英文的 regress（退步、倒退）同源。",
+      "hook_zh": "前綴 re-（回）加上步履，腳步往回邁，就是要「返回」或「回家」。",
+      "usage_zh": "第一變位規則動詞。常用搭配為 regresar a casa（回家）或 regresar de un viaje（旅行歸來）。",
+      "example_es": "¿A qué hora vas a regresar a casa?",
+      "example_zh": "你幾點要回家？",
+      "image": "emoji:🔙",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:regresar",
+        "wiktionary:la:regressus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "relacionado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "相關的、有關聯的",
+      "en": "related",
+      "ipa": "/relaθjoˈnado/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "看到 relación（關係）加上形容詞字尾 -ado，就是「相關的」。",
+      "usage_zh": "常搭配介係詞 con：estar relacionado con...（與…有關）。陰性形式為 relacionada。",
+      "example_es": "Su pregunta está relacionada con el proyecto.",
+      "example_zh": "他的問題與這個專案有關。",
+      "image": "emoji:🔗",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:relacionado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reserva",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "預訂、預約；自然保護區；儲備",
+      "en": "reservation, booking; reserve",
+      "ipa": "/reˈseɾba/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "reservar",
+          "zh": "保留、預訂"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reserva",
+          "zh": "預訂、保護區"
+        }
+      ],
+      "cognates_en": [
+        "reserve"
+      ],
+      "story_zh": "源自西語動詞 reservar（保留、預約）的名詞化衍生字。核心意象是「預先留下來」，在日常生活中引申為飯店或機票的「預訂、預約」，在生態上則指把土地完整保留下來的「自然保護區」。",
+      "hook_zh": "出國旅行要先 reserve（預訂），在西語裡就是 la reserva！",
+      "usage_zh": "陰性名詞。常見搭配有 hacer una reserva（預約、訂位）與 reserva natural（自然保護區）。",
+      "example_es": "Tengo una reserva para dos personas esta noche.",
+      "example_zh": "我今晚有兩個人的訂位。",
+      "image": "emoji:📅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reserva"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ritmo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "節奏、韻律；步調",
+      "en": "rhythm, pace",
+      "ipa": "/ˈridmo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ῥέω",
+          "zh": "流動"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "ῥυθμός",
+          "zh": "節律、韻律"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "rhythmus",
+          "zh": "節奏"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ritmo",
+          "zh": "節奏、步調"
+        }
+      ],
+      "cognates_en": [
+        "rhythm"
+      ],
+      "story_zh": "借自拉丁語 rhythmus，源自古希臘語 ῥυθμός（節律），其字根為動詞 ῥέω（流動）。古希臘人將如同波浪般規律流動的狀態比喻為音樂與詩歌的節奏，後來延伸至各類事情進行的速度與步調。英文 rhythm 同源。",
+      "hook_zh": "英文 rhythm 拿掉拗口的 h 就變成西語 ritmo，發音是「立特摩」，跟著節奏搖擺。",
+      "usage_zh": "陽性名詞。常用片語：al ritmo de...（伴隨著…的節奏）、seguir el ritmo（跟上步調）。",
+      "example_es": "Tienes que seguir mi ritmo.",
+      "example_zh": "你必須跟上我的步調。",
+      "image": "emoji:🥁",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ritmo",
+        "wiktionary:la:rhythmus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "robo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "搶劫、偷竊；盜竊案",
+      "en": "robbery, theft",
+      "ipa": "/ˈrobo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "robar",
+          "zh": "偷、搶"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "robo",
+          "zh": "搶劫、偷竊"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西班牙語動詞 robar（偷、搶），由動詞直接逆構詞而來的名詞。原本指偷竊或搶奪的動作，後來引申為具體的搶劫事件或竊案。",
+      "hook_zh": "發音像「肉包」：小偷把剛出爐的肉包搶（robo）走了！聯想動詞 robar。",
+      "usage_zh": "陽性名詞。除了竊案，口語買東西嫌太貴時也常驚呼「¡Es un robo!」（簡直是搶劫！）。",
+      "example_es": "La policía investiga el robo en el banco.",
+      "example_zh": "警方正在調查那起銀行搶案。",
+      "image": "emoji:🚨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:robo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tono",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "音調、聲調；語氣、色調",
+      "en": "tone",
+      "ipa": "/ˈtono/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tonus",
+          "zh": "音調、張力"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tono",
+          "zh": "音調、語氣"
+        }
+      ],
+      "cognates_en": [
+        "tone"
+      ],
+      "story_zh": "借自拉丁語 tonus（音調、張力）。原指聲音的高低張力，後來引申為音樂的音調、說話時的語氣，以及繪畫中色彩的明暗色調。英文的 tone 也是同源字。",
+      "hook_zh": "音同英文 tone，直接聯想說話的「語氣」或吉他的「音調」。",
+      "usage_zh": "陽性名詞。常用於 tono de voz（說話語氣）或 tono de llamada（手機鈴聲）。",
+      "example_es": "Cambia tu tono de voz cuando hables con tu madre.",
+      "example_zh": "和你媽媽說話時請注意你的語氣。",
+      "image": "emoji:🎵",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tono"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "variedad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "多樣性、種類、品種",
+      "en": "variety, breed",
+      "ipa": "/baɾjeˈdad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "varietātem",
+          "zh": "多樣、變化"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "variedad",
+          "zh": "多樣性、種類"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自拉丁語 varietātem（多樣、變化）。詞根表達不同事物的變化與差異，進入西班牙語後用來表示事物豐富的多樣性、種類或動植物的品種。",
+      "hook_zh": "長得和英文 variety 幾乎一模一樣，西語字尾 -dad 常對應英文的 -ty。",
+      "usage_zh": "陰性名詞（-dad 結尾皆為陰性）。常與介系詞 de 搭配：una gran variedad de…（各式各樣的…）。",
+      "example_es": "Este mercado tiene una gran variedad de frutas.",
+      "example_zh": "這個市場有各式各樣的水果。",
+      "image": "emoji:🌈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:variedad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "únicamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "僅僅、只有、唯獨",
+      "en": "only, uniquely, solely",
+      "ipa": "/ˌunikaˈmente/",
+      "breakdown": [
+        {
+          "part": "único",
+          "zh": "唯一的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "único + -mente",
+          "zh": "唯一的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "únicamente",
+          "zh": "僅僅、只有"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西班牙語形容詞 único（唯一的）與副詞字尾 -mente 結合而成。字面意思是「唯一地」，在語意演變中用來限定範圍，表示「僅僅、只有」。",
+      "hook_zh": "único（唯一的）加上 -mente（副詞字尾），就是「唯一地、只有」。",
+      "usage_zh": "副詞，修飾動詞或整個句子，意思等同於 solamente 或 solo；注意單字仍保留 único 原本的重音符號。",
+      "example_es": "La tienda abre únicamente por las mañanas.",
+      "example_zh": "這家店只有在早上營業。",
+      "image": "emoji:☝️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:únicamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "academia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "學院、學術機構；補習班",
+      "en": "academy, academy school",
+      "ipa": "/akaˈdemja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "acadēmīa",
+          "zh": "學院、學園"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "academia",
+          "zh": "學院、學會"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自拉丁語 acadēmīa（學院）。最初指高等學術研究機構或皇家學會，進入現代西語後語義擴展，在日常生活中也常用來指稱各類才藝補習班或私立專科學校。",
+      "hook_zh": "長得像英文 academy，在西語國家街頭看到 academia，很多都是語言或舞蹈補習班！",
+      "usage_zh": "陰性名詞。在西班牙與拉美常指「補習班」，例如 academia de inglés（英語補習班）、academia de baile（舞蹈教室）。",
+      "example_es": "Ella estudia español en una academia de idiomas.",
+      "example_zh": "她在一家語言補習班學西語。",
+      "image": "emoji:🏛️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:academia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "activo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "活躍的、積極的；（會計）資產",
+      "en": "active; asset",
+      "ipa": "/aɡˈtibo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "āctīvus",
+          "zh": "主動的、活躍的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "activo",
+          "zh": "活躍的、積極的"
+        }
+      ],
+      "cognates_en": [
+        "active"
+      ],
+      "story_zh": "借自拉丁語 āctīvus（具有行動力的、主動的）。西語保留了積極參與、運作中的核心意義；在商業與會計語境中，也引申作為名詞，指能帶來經濟效益的「資產」。",
+      "hook_zh": "英文 active 直接對應西語 activo，形容人充滿活力、做事超「積極」。",
+      "usage_zh": "做名詞時為陽性 el activo（資產），與 el pasivo（負債）相對。",
+      "example_es": "Es un miembro muy activo de nuestra comunidad.",
+      "example_zh": "他是我們社群中非常活躍的成員。",
+      "image": "emoji:🏃",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:activo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ausencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "缺席、不在",
+      "en": "absence",
+      "ipa": "/auˈsenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "absentia",
+          "zh": "缺席"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ausencia",
+          "zh": "缺席"
+        }
+      ],
+      "cognates_en": [
+        "absence"
+      ],
+      "story_zh": "源自拉丁語 absentia（缺席），由 absēns（缺席的）衍生而來，進一步源自 absum（不在）。西語以半文言借詞形式吸收，演變成現在的 ausencia。",
+      "hook_zh": "英文是 absence，西語將 b 變為 u 成為 ausencia，拼法與發音十分相近。",
+      "usage_zh": "為陰性名詞，常用片語為 en ausencia de...（在缺乏…的情況下、在…不在時）。",
+      "example_es": "Notamos tu ausencia en la fiesta.",
+      "example_zh": "我們在派對上注意到你沒來。",
+      "image": "emoji:🪑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ausencia",
+        "wiktionary:la:absentia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cabello",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "頭髮、髮絲",
+      "en": "hair",
+      "ipa": "/kaˈbeʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "capillus",
+          "zh": "頭髮"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cabello",
+          "zh": "頭髮"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cabello",
+          "zh": "頭髮"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自古西班牙語 cabello，源頭是拉丁語 capillus（頭髮）。在西語中通常指人頭上的整頭秀髮，相比日常生活常用的 pelo，cabello 語感更正式、典雅，多用於文學或美髮護理。",
+      "hook_zh": "梳理「卡倍友」（cabello）的好朋友，一頭柔順漂亮的秀髮隨風飄逸。",
+      "usage_zh": "陽性名詞。日常生活中剪髮多用 pelo，但沙龍美髮或洗髮精常標示 cuidado del cabello。",
+      "example_es": "Ella tiene el cabello muy suave y brillante.",
+      "example_zh": "她的頭髮非常柔順且有光澤。",
+      "image": "emoji:💇",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cabello"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cercano",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "鄰近的、接近的；親近的",
+      "en": "near, nearby, close",
+      "ipa": "/θeɾˈkano/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cerca",
+          "zh": "靠近、在附近"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cercano",
+          "zh": "鄰近的、親近的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "衍生自西語副詞 cerca（靠近、鄰近）。原本用來指空間地理位置上的「相鄰、不遠」，後來也廣泛引申到時間上的「即將到來」，以及人際關係上的「親密、親近」。",
+      "hook_zh": "就在 cerca（附近）的事物，就是 cercano（鄰近的），反義詞是 lejano。",
+      "usage_zh": "可形容距離（un lugar cercano）或關係（un amigo cercano 親近的朋友）。",
+      "example_es": "Hay un hospital muy cercano a mi casa.",
+      "example_zh": "我家附近有一家非常近的醫院。",
+      "image": "emoji:📍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cercano"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dispuesto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "願意的、樂意的；準備好的",
+      "en": "willing, ready",
+      "ipa": "/disˈpwesto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "disponer",
+          "zh": "安排、佈置"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dispuesto",
+          "zh": "準備好的、願意的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 disponer（安排、配置）的過去分詞。原義指事物已經「被佈置妥當、就緒」，引申到個人的心理狀態時，便表示「已經做好準備、樂意去做某事」。",
+      "hook_zh": "事情全部安排（disponer）到位，我就已經「準備好、願意」（dispuesto）出發。",
+      "usage_zh": "最常見句型為 estar dispuesto a + 原形動詞，表示「樂意／準備好做某事」。陰性為 dispuesta。",
+      "example_es": "Siempre está dispuesto a ayudar a los demás.",
+      "example_zh": "他總是樂意幫助他人。",
+      "image": "emoji:🙋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dispuesto"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "recuerdo",
       "article": "el",
       "pos": "sustantivo",
