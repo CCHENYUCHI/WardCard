@@ -1,6 +1,6 @@
 {
   "theme": "freq-0008",
-  "theme_zh": "常用字（頻率第 1907–2183 名）",
+  "theme_zh": "常用字（頻率第 1907–2187 名）",
   "entries": [
     {
       "word": "señal",
@@ -3794,28 +3794,6 @@
       "writer": "gemini"
     },
     {
-      "word": "sub",
-      "article": "",
-      "pos": "preposición",
-      "zh": "在…之下",
-      "en": "under",
-      "ipa": "/ˈsub/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "聯想潛水艇 submarine 和地鐵 subway，開頭的 sub- 就是「在…之下」。",
-      "usage_zh": "西語中極少單獨作為前置詞使用，主要以拉丁成語（如 sub júdice）或字首形式出現。",
-      "example_es": "El caso todavía se encuentra sub júdice.",
-      "example_zh": "該案件目前仍在法官審理中。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:sub"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "traducción",
       "article": "la",
       "pos": "sustantivo",
@@ -3953,6 +3931,39 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:adentro"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cariño",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "愛意、關愛；親愛的",
+      "en": "affection, fondness, darling",
+      "ipa": "/kaˈɾiɲo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉貢語",
+          "word": "carinyo",
+          "zh": "關愛（推測）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cariño",
+          "zh": "愛意、親愛的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "詞源尚不確定，推測可能經由阿拉貢語的 carinyo 演變而來。用來表達深厚溫暖的情感與關懷，在日常口語中也常作為對伴侶或子女的暱稱「親愛的」。",
+      "hook_zh": "對你百般照顧、呵護關愛（cariño）的人，就是你最親愛的寶貝。",
+      "usage_zh": "做暱稱稱呼時無性別區分，對男性或女性都可親暱地喊 ¡Hola, cariño!。",
+      "example_es": "Le tengo mucho cariño a mi abuela.",
+      "example_zh": "我對祖母懷有深厚的情感。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cariño"
       ],
       "writer": "gemini"
     }
