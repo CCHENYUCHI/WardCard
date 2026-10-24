@@ -553,6 +553,41 @@
       "writer": "gemini"
     },
     {
+      "word": "mero",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "純粹的、僅僅的",
+      "en": "mere, pure",
+      "ipa": "/ˈmeɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "merus",
+          "zh": "純粹的、未攙雜的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mero",
+          "zh": "純粹的、僅僅的"
+        }
+      ],
+      "cognates_en": [
+        "mere"
+      ],
+      "story_zh": "源自拉丁語 merus，本義為「純粹的、未經水稀釋的」，後來引申為「單純的、僅僅的」。西語繼承了這個意思，英文的 mere 也是同源字。",
+      "hook_zh": "英文 mere 是「僅僅」，西語 mero 也是「僅僅的、純粹的」，尾音加 o 很好記。",
+      "usage_zh": "常置於名詞前修飾，例如 una mera coincidencia（純屬巧合）。陰性形為 mera。",
+      "example_es": "Es una mera coincidencia.",
+      "example_zh": "這純粹是個巧合。",
+      "image": "emoji:✨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mero"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "monopolio",
       "article": "el",
       "pos": "sustantivo",
@@ -1715,6 +1750,41 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:delegado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "designar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "指定、任命、指派",
+      "en": "to designate, to appoint",
+      "ipa": "/desiɡˈnaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēsignāre",
+          "zh": "標記、指定"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "designar",
+          "zh": "指定、任命"
+        }
+      ],
+      "cognates_en": [
+        "designate"
+      ],
+      "story_zh": "源自拉丁語 dēsignāre（標記、指出、指定），作為學者借詞進入西班牙語。它與西語動詞 diseñar（設計）是同源詞，英文同源字為 designate。",
+      "hook_zh": "英文 designate 是「指定」，西語 designar 長得幾乎一樣，字尾改成動詞 -ar。",
+      "usage_zh": "常見搭配為 designar a alguien como…（任命某人為…）或 designar a alguien para…（指派某人去做…）。",
+      "example_es": "El presidente va a designar a un nuevo ministro.",
+      "example_zh": "總統將任命一位新部長。",
+      "image": "emoji:👉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:designar"
       ],
       "writer": "gemini"
     },
@@ -3309,6 +3379,28 @@
       "writer": "gemini"
     },
     {
+      "word": "chupar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "吸、吮、吸吮",
+      "en": "to suck, to absorb",
+      "ipa": "/t͡ʃuˈpaɾ/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "發音 chupa- 就像用力吸吮東西時發出的啾啾聲，形象生動。",
+      "usage_zh": "口語常見片語 chuparse los dedos（吮指，形容食物極美味）。在某些地區有粗俗性涵義需注意場合。",
+      "example_es": "El niño no para de chupar el caramelo.",
+      "example_zh": "那小孩不停地舔吸著糖果。",
+      "image": "emoji:🍭",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:chupar"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "colorado",
       "article": "",
       "pos": "adjetivo",
@@ -3635,6 +3727,30 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:encargar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "energético",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "能量的、精力的、有活力的",
+      "en": "energetic, relating to energy",
+      "ipa": "/eneɾˈxetiko/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "energetic"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文 energetic 就是「有活力的」，西語拼法近乎相同，注意重音在 é。",
+      "usage_zh": "常指能源相關或精力充沛，例如 una bebida energética（能量飲料）。陰性為 energética。",
+      "example_es": "Tomé una bebida energética para no dormirme.",
+      "example_zh": "我喝了一罐能量飲料以免睡著。",
+      "image": "emoji:⚡",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:energético"
       ],
       "writer": "gemini"
     }
