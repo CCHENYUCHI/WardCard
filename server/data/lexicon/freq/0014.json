@@ -982,6 +982,200 @@
         "wiktionary:es:universitario"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "abuso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "濫用；虐待；過度使用",
+      "en": "abuse, overuse",
+      "ipa": "/aˈbuso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "abūsus",
+          "zh": "濫用、過度使用"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "abuso",
+          "zh": "濫用"
+        }
+      ],
+      "cognates_en": [
+        "abuse"
+      ],
+      "story_zh": "直接借自拉丁語的 abūsus，原意為「濫用」或「過度耗用」。進入西班牙語後，詞義延伸至對權力、物質、信任的不當使用，或對他人的侵害與虐待行為。英文的 abuse 亦為同源字。",
+      "hook_zh": "長得跟英文 abuse 一模一樣，只多了一個 o，意思也是「濫用、虐待」。",
+      "usage_zh": "常用搭配如 abuso de poder（濫用職權）、abuso sexual（性侵犯）。動詞為 abusar。",
+      "example_es": "El alcalde fue condenado por abuso de poder.",
+      "example_zh": "市長因濫用職權而被判刑。",
+      "image": "emoji:🛑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:abuso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ambiental",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "環境的；環境保護的",
+      "en": "environmental",
+      "ipa": "/ambjenˈtal/",
+      "breakdown": [
+        {
+          "part": "ambiente",
+          "zh": "環境"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾，表示與…相關的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "ambiente",
+          "zh": "環境"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ambiental",
+          "zh": "環境的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自名詞 ambiente（環境）加上表示「與…相關」的形容詞字尾 -al，字面意思即為「環境的」。常用於各種與大自然環境及環境保護相關的議題。",
+      "hook_zh": "看見 ambiente（環境）加上形容詞字尾 -al，立刻聯想到隨手關燈、做環保的畫面。",
+      "usage_zh": "陰陽同形（un impacto ambiental / una ley ambiental），複數為 ambientales。",
+      "example_es": "Debemos reducir la contaminación ambiental.",
+      "example_zh": "我們必須減少環境污染。",
+      "image": "emoji:🌱",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ambiental"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "噁心、反感、厭惡",
+      "en": "disgust, nausea",
+      "ipa": "/ˈasko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ōsus",
+          "zh": "厭惡、憎恨"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*ōsicāre",
+          "zh": "厭惡"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "usgo",
+          "zh": "厭惡"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "asco",
+          "zh": "噁心、反感"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "asco",
+          "zh": "噁心、反感"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "推測源自拉丁語 ōsus（厭惡、痛恨），在通俗拉丁語形成動詞 *ōsicāre，進入古西班牙語後演變為 usgo，最後逆構形變成 asco。字義始終保留「反胃、令人作嘔」的強烈嫌惡感。",
+      "hook_zh": "看到超噁心的東西，忍不住發出「啊…死狗（asco）」般想吐的聲音：真噁心！",
+      "usage_zh": "極常用口語 ¡Qué asco!（真噁心！）；表示「使某人反胃」用 dar asco（Me da asco）。",
+      "example_es": "¡Qué asco! Hay una mosca en mi sopa.",
+      "example_zh": "真噁心！我的湯裡有一隻蒼蠅。",
+      "image": "emoji:🤢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:asco",
+        "wiktionary:la:osus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bolívar",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "玻利瓦（委內瑞拉貨幣單位）",
+      "en": "bolívar",
+      "ipa": "/boˈlibaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "巴斯克語",
+          "word": "Bolibar",
+          "zh": "地名（風車之谷）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bolívar",
+          "zh": "玻利瓦（貨幣名）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "委內瑞拉貨幣名稱得名自拉美獨立英雄西蒙·玻利瓦（Simón Bolívar）。其家族姓氏源自西班牙比斯開省的村莊 Puebla de Bolívar，該村莊的巴斯克語原名 Bolibar 由 bolu（風車）與 ibar（山谷）組成，意為「風車之谷」。",
+      "hook_zh": "印著獨立英雄玻利瓦肖像的委內瑞拉鈔票，在風車山谷間飄揚。",
+      "usage_zh": "陽性名詞，複數加 -es 為 bolívares；重音在倒數第二音節 í，書寫時必須加重音符號。",
+      "example_es": "El café cuesta cincuenta bolívares.",
+      "example_zh": "這杯咖啡要價五十玻利瓦。",
+      "image": "emoji:💵",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bolívar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cartel",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "海報、告示；壟斷集團",
+      "en": "poster, placard; cartel",
+      "ipa": "/kaɾˈtel/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "奧克語",
+          "word": "cartel",
+          "zh": "告示、牌子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cartel",
+          "zh": "海報、告示牌"
+        }
+      ],
+      "cognates_en": [
+        "cartel"
+      ],
+      "story_zh": "指「海報、告示」時借自奧克語 cartel 或加泰隆尼亞語 cartell；指商業或犯罪「壟斷集團」時，則是經由法語、英語等轉借自義大利語 cartello（小紙條、公告）。兩者核心都與公開張貼的紙條有關。",
+      "hook_zh": "英文 cartel 是壟斷集團，西語街頭隨處可見的則是宣傳「海報（cartel）」。",
+      "usage_zh": "重音在結尾 el（cartel 海報）；若指企業壟斷同盟，西語也可寫成重音在前音節的 cártel。",
+      "example_es": "Pegaron un cartel informativo en la entrada.",
+      "example_zh": "他們在入口處貼了一張資訊海報。",
+      "image": "emoji:🪧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cartel"
+      ],
+      "writer": "gemini"
     }
   ]
 }
