@@ -2604,6 +2604,41 @@
       "writer": "gemini"
     },
     {
+      "word": "picar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "刺、叮；剁碎；發癢",
+      "en": "to sting, bite, chop, itch",
+      "ipa": "/piˈkaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*pīccāre",
+          "zh": "刺、戳"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "picar",
+          "zh": "刺、叮、剁碎"
+        }
+      ],
+      "cognates_en": [
+        "pique"
+      ],
+      "story_zh": "源自通俗拉丁語 *pīccāre（刺、戳），可能衍生自法蘭克語 *pikkōn 或擬聲詞。這個詞原本指用尖銳物體戳刺，後來引申出蚊蟲叮咬、食物使舌頭刺痛辛辣、切剁食材，以及皮膚被叮咬後引起的發癢感。",
+      "hook_zh": "被蚊子叮（picar）會發癢，吃辣椒舌頭被刺（picar）會覺得辣。",
+      "usage_zh": "當「發癢」時常用間接代名詞：Me pica la espalda（我背很癢）。注意變位 piqué。",
+      "example_es": "Me picó un mosquito en el brazo.",
+      "example_zh": "一隻蚊子叮了我的手臂。",
+      "image": "emoji:🦟",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:picar"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "pirámide",
       "article": "la",
       "pos": "sustantivo",
