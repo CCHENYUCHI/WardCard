@@ -752,6 +752,39 @@
       "writer": "gemini"
     },
     {
+      "word": "restar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "減去、扣除；剩下",
+      "en": "to subtract, to reduce; to remain",
+      "ipa": "/resˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "restāre",
+          "zh": "站穩、留下"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "restar",
+          "zh": "減去、剩下"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 restāre，本義為「站穩、留下」。留在後面的部分即是「剩下的」，由此延伸出「剩下」，而在數學運算中進一步引申為「減去、扣除」。",
+      "hook_zh": "數學課上的「減法」（restar），減完之後「rest」（剩下）多少？",
+      "usage_zh": "常用於數學運算：restar A de B（從 B 減去 A）；亦可引申指「削弱、減少」，如 restar importancia（淡化重要性）。",
+      "example_es": "Si a diez le restas tres, quedan siete.",
+      "example_zh": "如果從十減去三，剩下七。",
+      "image": "emoji:➖",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:restar"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "rocío",
       "article": "el",
       "pos": "sustantivo",

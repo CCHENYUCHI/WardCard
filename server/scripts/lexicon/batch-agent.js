@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
  * Write common-word lexicon batches with Gemini working as an agent (start_batch on the antigravity MCP server):
- * one job per batch of 100 words. The agent gets the rules, the words' Wiktionary facts and a check.mjs built from
+ * one job per batch of 100 words; small gaps a queue rebuild leaves in written batches are pooled into one job.
+ * The agent gets the rules, the words' Wiktionary facts and a check.mjs built from
  * the same rules as the local check (batchCheck.js); it writes output.json and runs the check until it passes.
  * Words it judges to be names, places, English words or fragments it marks { word, skip: reason } instead.
  * Back here every entry is checked again (geminiEntries.checkAnswer): passing entries go into freq/<batch>.json,
@@ -21,6 +22,8 @@ const { AGENT_SKIP_FILE } = require('./build-queue');
 const { batchRange, readBatch, writeBatch, exampleEntries } = require('./gemini-write');
 
 const DEFAULT_MODEL = 'gemini-3.8-flash-medium';
+const GAP_SIZE = 50; // a batch with fewer words left than this is a gap, pooled with other gaps
+const JOB_SIZE = 100;
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 const TASK = (count) => `# 任務：寫 ${count} 筆西語字源圖鑑條目
@@ -83,13 +86,10 @@ async function main() {
   const client = new AgyClient();
   const readFacts = (word) => JSON.parse(fs.readFileSync(path.join(queue.factsDir, `${word}.json`), 'utf8'));
 
-  for (const id of batchRange(batchesSpec, Object.keys(queue.batches).sort())) {
-    const items = queue.batches[id];
-    const entriesByKey = new Map((readBatch(id)?.entries || []).map(e => [lexiconKey(e.word), e]));
-    const skips = readSkips();
-    const todo = items.filter(it => !entriesByKey.has(lexiconKey(it.lemma)) && !Object.hasOwn(skips, it.lemma)).map(it => readFacts(it.word));
-    if (todo.length === 0) continue;
-
+  // One job for a list of { id, facts }: the words of one batch, or small gaps from several batches after a rebuild
+  async function runUnit(unit) {
+    const label = [...new Set(unit.map(u => u.id))].join('+');
+    const todo = unit.map(u => u.facts);
     const input = todo.map(f => ({ word: factsLemma(f), facts: compactFacts(f) }));
     const started = Date.now();
     const job = await runJob(client, {
@@ -101,15 +101,15 @@ async function main() {
     }, pollMs);
     const minutes = ((Date.now() - started) / 60000).toFixed(1);
     if (job.status !== 'done') {
-      console.log(`batch ${id}: job ${job.status} after ${minutes} min: ${String(job.error || '').slice(0, 200)}`);
-      continue;
+      console.log(`batch ${label}: job ${job.status} after ${minutes} min: ${String(job.error || '').slice(0, 200)}`);
+      return;
     }
-
     let answer;
     try { answer = parseEntries(job.output); } catch (err) {
-      console.log(`batch ${id}: output.json unreadable (${err.message}) after ${minutes} min`);
-      continue;
+      console.log(`batch ${label}: output.json unreadable (${err.message}) after ${minutes} min`);
+      return;
     }
+    const skips = readSkips();
     const asked = new Map(todo.map(f => [lexiconKey(factsLemma(f)), factsLemma(f)]));
     let skipped = 0;
     for (const e of answer.filter(x => x.skip && asked.has(lexiconKey(x.word)))) {
@@ -118,24 +118,49 @@ async function main() {
     }
     const keep = todo.filter(f => !Object.hasOwn(skips, factsLemma(f)));
     const results = checkAnswer(answer.filter(x => !x.skip), keep);
-    let written = 0;
+    const batchOf = new Map(unit.map(u => [factsLemma(u.facts), u.id]));
+    const written = new Map(); // batch id -> entries to add
+    let added = 0;
     let failed = 0;
     for (const [word, { entry, errors }] of Object.entries(results)) {
       if (entry && errors.length === 0) {
-        entriesByKey.set(lexiconKey(word), entry);
+        if (!written.has(batchOf.get(word))) written.set(batchOf.get(word), []);
+        written.get(batchOf.get(word)).push(entry);
         delete failedLog[word];
-        written++;
+        added++;
       } else {
-        failedLog[word] = { batch: id, errors };
+        failedLog[word] = { batch: batchOf.get(word), errors };
         failed++;
       }
     }
-    writeBatch(id, items.filter(it => !Object.hasOwn(skips, it.lemma)), entriesByKey);
+    for (const id of new Set(unit.map(u => u.id))) {
+      const entriesByKey = new Map((readBatch(id)?.entries || []).map(e => [lexiconKey(e.word), e]));
+      for (const e of written.get(id) || []) entriesByKey.set(lexiconKey(e.word), e);
+      writeBatch(id, queue.batches[id].filter(it => !Object.hasOwn(skips, it.lemma)), entriesByKey);
+    }
     saveSkips(skips);
     fs.writeFileSync(failedPath, JSON.stringify(failedLog, null, 1));
     const tokens = job.stats?.usage?.total_tokens;
-    console.log(`batch ${id}: +${written} written, ${skipped} skipped, ${failed} failed in ${minutes} min${tokens ? ` (${tokens} tokens)` : ''}`);
+    console.log(`batch ${label}: +${added} written, ${skipped} skipped, ${failed} failed in ${minutes} min${tokens ? ` (${tokens} tokens)` : ''}`);
   }
+
+  // Words still to write, batch by batch; small gaps (left by a queue rebuild) are pooled into one job
+  let gaps = [];
+  for (const id of batchRange(batchesSpec, Object.keys(queue.batches).sort())) {
+    const done = new Set((readBatch(id)?.entries || []).map(e => lexiconKey(e.word)));
+    const skips = readSkips();
+    const todo = queue.batches[id].filter(it => !done.has(lexiconKey(it.lemma)) && !Object.hasOwn(skips, it.lemma))
+      .map(it => ({ id, facts: readFacts(it.word) }));
+    if (todo.length === 0) continue;
+    if (todo.length < GAP_SIZE) {
+      gaps.push(...todo);
+      if (gaps.length >= JOB_SIZE) { await runUnit(gaps); gaps = []; }
+      continue;
+    }
+    if (gaps.length) { await runUnit(gaps); gaps = []; }
+    await runUnit(todo);
+  }
+  if (gaps.length) await runUnit(gaps);
 }
 
 if (require.main === module) main().catch(err => { console.error(err.message); process.exit(1); });
