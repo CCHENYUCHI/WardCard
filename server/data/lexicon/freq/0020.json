@@ -3212,6 +3212,693 @@
         "wiktionary:es:hey"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "jodido",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "完蛋的、倒楣的、棘手的",
+      "en": "screwed, fucked up, crappy",
+      "ipa": "/xoˈdido/",
+      "breakdown": [
+        {
+          "part": "joder",
+          "zh": "搞砸、弄壞"
+        },
+        {
+          "part": "-ido",
+          "zh": "過去分詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "joder",
+          "zh": "搞砸、弄壞"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "jodido",
+          "zh": "完蛋的、倒楣的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 joder 的過去分詞。原動詞帶有強烈搞砸或粗俗的意味，轉為分詞形容詞後，用來表示事情徹底搞砸、陷入困境，引申出「完蛋的、棘手的、該死的」之意。",
+      "hook_zh": "事情被搞砸（joder）到底，局面就徹底 jodido（完蛋、糟糕透頂）了。",
+      "usage_zh": "語氣強烈且粗俗，常用 estar jodido（完蛋了、處境艱難）。陰性為 jodida。",
+      "example_es": "La situación está muy jodida.",
+      "example_zh": "情況非常棘手糟糕。",
+      "image": "emoji:💥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:jodido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "marketing",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "行銷、市場營銷",
+      "en": "marketing",
+      "ipa": "/ˈmaɾketin/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "marketing",
+          "zh": "市場營銷、行銷"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "marketing",
+          "zh": "行銷"
+        }
+      ],
+      "cognates_en": [
+        "marketing"
+      ],
+      "story_zh": "直接借自英語 marketing，為未改動拼寫的直接外來語。在西班牙語中直接保留原詞，專門指推廣與銷售產品或服務的商業行銷策略。",
+      "hook_zh": "直接聯想英文 marketing，拼寫發音完全相通，就是商業「行銷」。",
+      "usage_zh": "陽性名詞，保留英文 -ing 字尾。西語本土對應詞為 mercadotecnia。",
+      "example_es": "Ella trabaja en una agencia de marketing.",
+      "example_zh": "她在一家行銷公司工作。",
+      "image": "emoji:📈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:marketing"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "milla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "哩、英哩",
+      "en": "mile",
+      "ipa": "/ˈmiʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mīlle",
+          "zh": "一千"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "mīlia",
+          "zh": "羅馬哩、千步"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "milla",
+          "zh": "哩、英哩"
+        }
+      ],
+      "cognates_en": [
+        "mile"
+      ],
+      "story_zh": "源自拉丁語 mīlia（羅馬哩），原本是 mīlle（一千）的複數形，指羅馬軍團行軍「一千雙步（約 1.4 至 1.6 公里）」的長度。後來演變為英美常用的長度單位，英文的 mile 也源於此。",
+      "hook_zh": "羅馬士兵走了一千步（mīlle）就是一哩（milla）；發音也神似英文 mile。",
+      "usage_zh": "陰性名詞。陸上英哩為 milla terrestre，海哩則為 milla náutica。",
+      "example_es": "El pueblo está a una milla de aquí.",
+      "example_zh": "村莊距離這裡一英哩。",
+      "image": "emoji:🛣️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:milla"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "minería",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "採礦業、礦業",
+      "en": "mining",
+      "ipa": "/mineˈɾia/",
+      "breakdown": [
+        {
+          "part": "mina",
+          "zh": "礦坑、礦場"
+        },
+        {
+          "part": "-ería",
+          "zh": "行業、場所字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "礦坑（mina）加上行業字尾 -ería，就是開採礦產的「採礦業」。",
+      "usage_zh": "陰性名詞。常用搭配如 minería a cielo abierto（露天採礦）或 minería de datos（資料探勘）。",
+      "example_es": "La minería es la principal fuente de ingresos del país.",
+      "example_zh": "採礦業是該國主要的收入來源。",
+      "image": "emoji:⛏️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:minería"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mini",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "微型的、迷你的",
+      "en": "mini, miniature",
+      "ipa": "/ˈmini/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "拼法與意思與英文 mini 一模一樣，直接聯想「迷你、微小」之意。",
+      "usage_zh": "陰陽同形形容詞：un coche mini、una falda mini；複數通常為 minis。",
+      "example_es": "Compré una nevera mini para mi habitación.",
+      "example_zh": "我為房間買了一台迷你小冰箱。",
+      "image": "emoji:🤏",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:mini"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mérito",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "功勞、功績、價值",
+      "en": "merit, worth",
+      "ipa": "/ˈmeɾito/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "meritum",
+          "zh": "價值、功績"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mérito",
+          "zh": "功勞、價值"
+        }
+      ],
+      "cognates_en": [
+        "merit"
+      ],
+      "story_zh": "借自拉丁語名詞 meritum，原意為「功績、應得之物或價值」。進入西班牙語後作為學術借詞，保留了對於人的功勞成就或事物本身價值的讚許意涵。",
+      "hook_zh": "跟英文 merit（優點、功績）同源，只要努力做出好表現，就有值得稱讚的 mérito！",
+      "usage_zh": "陽性名詞。常見片語有 hacer méritos（努力求表現以爭取認可）或 tener mérito（值得嘉許）。",
+      "example_es": "Él tiene mucho mérito por haber terminado la carrera.",
+      "example_zh": "他能順利完成大學學業真的很值得稱讚。",
+      "image": "emoji:🏅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mérito"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ocultar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "隱藏、掩蓋；躲藏（ocultarse）",
+      "en": "to hide, to conceal",
+      "ipa": "/okulˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "occultāre",
+          "zh": "隱蔽、隱藏"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ocultar",
+          "zh": "隱藏、掩蓋"
+        }
+      ],
+      "cognates_en": [
+        "occult"
+      ],
+      "story_zh": "源自拉丁語動詞 occultāre，意思是「隱藏、隱蔽」。西語繼承後演變為 ocultar，保留把事物藏匿、遮蔽起來不讓他人看見的意思。英文中表示神祕、玄秘的 occult 也出自同一語源。",
+      "hook_zh": "小心翼翼把秘密藏在最暗的角落，別被發現：ocultar 就是隱藏。",
+      "usage_zh": "常作反身動詞 ocultarse 表示「躲藏」或太陽「落山」；隱瞞某事可用 ocultar algo a alguien。",
+      "example_es": "No puedes ocultar la verdad por mucho tiempo.",
+      "example_zh": "你沒辦法把真相隱瞞太久。",
+      "image": "emoji:🙈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ocultar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pasaje",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "票券（機票、車票）；通道、小巷",
+      "en": "ticket, fare, passage",
+      "ipa": "/paˈsaxe/",
+      "breakdown": [
+        {
+          "part": "pasar",
+          "zh": "通過"
+        },
+        {
+          "part": "-aje",
+          "zh": "名詞字尾，表行為或費用"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pasar + -aje",
+          "zh": "通過 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pasaje",
+          "zh": "通行；票券、窄巷"
+        }
+      ],
+      "cognates_en": [
+        "passage"
+      ],
+      "story_zh": "由動詞 pasar（通過）加上名詞字尾 -aje 構成，原本指「通行」或「穿越」。後來語意具體化為通行所需的「交通票券（如機票、船票）」，以及供人穿越的小徑或通道。",
+      "hook_zh": "英文 passage 是通道，西語 pasaje 買了才能通過登機門，就是機票！",
+      "usage_zh": "陽性名詞。在拉丁美洲非常普遍用來指交通票券（如 pasaje de avión）。",
+      "example_es": "Ya compré el pasaje de avión para las vacaciones.",
+      "example_zh": "我已經買好放假要搭的機票了。",
+      "image": "emoji:🎫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pasaje"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "po",
+      "article": "",
+      "pos": "interjección",
+      "zh": "哎、那（語氣助詞，表示強調）",
+      "en": "emphatic particle, well",
+      "ipa": "/ˈpo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pues",
+          "zh": "那麼、既然"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "po",
+          "zh": "語氣助詞"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西班牙語常見的連接兼語氣詞 pues，在口語快速連讀與縮音下演變為單音節的 po。主要用作句首或句尾的語氣助詞，用來加強語氣或承接上下文。",
+      "hook_zh": "口語講太快把 pues 縮短成 po；智利人最常掛在嘴邊的「Sipo!（當然囉）」。",
+      "usage_zh": "口語感嘆詞，特別在智利西語中極為常見，常附在詞尾加強語氣（如 sí po、no po）。",
+      "example_es": "Po yo pensaba que no ibas a venir.",
+      "example_zh": "哎，我原本還以為你不會來呢。",
+      "image": "emoji:🗣️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:po"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "renovación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "更新、換發、翻新",
+      "en": "renewal, renovation",
+      "ipa": "/renobaˈθjon/",
+      "breakdown": [
+        {
+          "part": "renovar",
+          "zh": "更新"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表動作或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "renovatio",
+          "zh": "更新、復新"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "renovación",
+          "zh": "更新、翻新"
+        }
+      ],
+      "cognates_en": [
+        "renovation"
+      ],
+      "story_zh": "借自拉丁語名詞 renovātiōnem（主格 renovatio），源自 renovō（更新），由 re-（重新）與 novus（新）組成。字面意為「使事物重回嶄新」，引申為證件的續期或空間的翻修。",
+      "hook_zh": "長相與英文 renovation 幾乎相同，把舊東西「重新變新」，就是 renovación！",
+      "usage_zh": "陰性名詞。常用於證件手續（la renovación del pasaporte）或房屋裝修工程。",
+      "example_es": "La renovación del pasaporte puede tardar unos días.",
+      "example_zh": "護照換發可能需要幾天的時間。",
+      "image": "emoji:🔄",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:renovación",
+        "wiktionary:la:renovatio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "retorno",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "返回、歸來；回報",
+      "en": "return",
+      "ipa": "/reˈtoɾno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "retornar",
+          "zh": "返回"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "retorno",
+          "zh": "返回、歸來"
+        }
+      ],
+      "cognates_en": [
+        "return"
+      ],
+      "story_zh": "源自西語動詞 retornar（返回），屬於動詞去尾變化的反衍生名詞（deverbal）。原本指踏上歸途或返回原處的動作與過程，引申為事物或狀態的回歸，現代在商業投資中也常指獲得的「回報」。",
+      "hook_zh": "英文 return 的攣生兄弟，re（回）+ torno（轉），就是「轉身返回」。",
+      "usage_zh": "常用於指旅程返回或投資回報（retorno de la inversión）；單程票為 billete de ida，來回票為 billete de ida y vuelta。",
+      "example_es": "Esperamos un buen retorno de esta inversión.",
+      "example_zh": "我們期待這筆投資能帶來良好的回報。",
+      "image": "emoji:🔄",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:retorno"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "semestre",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "學期；半年",
+      "en": "semester",
+      "ipa": "/seˈmestɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "semestris",
+          "zh": "六個月的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "semestre",
+          "zh": "學期、半年"
+        }
+      ],
+      "cognates_en": [
+        "semester"
+      ],
+      "story_zh": "源自拉丁語 semestris（六個月的），由 sex（六）與 mensis（月份）組合演變而來。最初指持續六個月的時間，後來在現代教育體制中專指為期半年的「學期」。",
+      "hook_zh": "和英文的 semester（學期）拼法幾乎相同，只要把字尾 -er 換成 -re 就是西語！",
+      "usage_zh": "為陽性名詞（el semestre），大學常分成上學期（primer semestre）與下學期（segundo semestre）。",
+      "example_es": "Este semestre tengo cinco clases en la universidad.",
+      "example_zh": "這學期我在大學有五門課。",
+      "image": "emoji:🗓️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:semestre",
+        "wiktionary:la:semestris"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "servidor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "伺服器；服務者、僕人",
+      "en": "server, servant",
+      "ipa": "/seɾbiˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "servir",
+          "zh": "服務"
+        },
+        {
+          "part": "-dor",
+          "zh": "表示執行者或工具的字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "servus",
+          "zh": "奴隸、僕人"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "servīre",
+          "zh": "服侍、侍奉"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "servītōrem",
+          "zh": "侍從、僕人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "servidor",
+          "zh": "伺服器、僕人"
+        }
+      ],
+      "cognates_en": [
+        "server",
+        "servant",
+        "servitor"
+      ],
+      "story_zh": "源自後期拉丁語 servītōrem（服務者），根源為 servus（奴僕）衍生的動詞 servīre（服侍）。西語在 servir（服務）加上名詞字尾 -dor，原指提供勞務的僕人，現代科技中則借用指提供網路運算與資料的「伺服器」。",
+      "hook_zh": "servir（服務）+ -dor（器物/人）＝ 默默為大家服務的「伺服器」。",
+      "usage_zh": "在科技領域專指「伺服器」（陽性）；指人時女性形為 servidora，也可用於自謙表達。",
+      "example_es": "El servidor de la empresa está en mantenimiento.",
+      "example_zh": "公司的伺服器正在進行維護。",
+      "image": "emoji:🖥️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:servidor",
+        "wiktionary:la:servio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "terminal",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "航廈、終點站；終端機；末端的",
+      "en": "terminal, station, final",
+      "ipa": "/teɾmiˈnal/",
+      "breakdown": [
+        {
+          "part": "termin-",
+          "zh": "界線、終點"
+        },
+        {
+          "part": "-al",
+          "zh": "與…相關的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "terminus",
+          "zh": "界限、邊界"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "terminālis",
+          "zh": "末端的、界限的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "terminal",
+          "zh": "終點站、末端的"
+        }
+      ],
+      "cognates_en": [
+        "terminal",
+        "term",
+        "terminate"
+      ],
+      "story_zh": "學者借詞自後期拉丁語 terminālis，由名詞 terminus（界限、終點）加上形容詞後綴 -ālis 構成。原意是「位於邊界或盡頭的」，引申至交通路線最末端的「終點站、航廈」，以及醫學上指疾病最後階段的「末期」。",
+      "hook_zh": "英文也是 terminal，交通路線走到最後邊界的「終點站、航廈」。",
+      "usage_zh": "指機場航廈或客運總站時多為陰性（la terminal）；指電腦終端機或行動設備時多為陽性（el terminal）。",
+      "example_es": "Nos encontramos en la terminal del aeropuerto.",
+      "example_zh": "我們在機場航廈碰面。",
+      "image": "emoji:🚉",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:terminal"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "terremoto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "地震",
+      "en": "earthquake",
+      "ipa": "/tereˈmoto/",
+      "breakdown": [
+        {
+          "part": "terre-",
+          "zh": "大地、土地"
+        },
+        {
+          "part": "moto",
+          "zh": "晃動、運動"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "terraemōtus",
+          "zh": "大地晃動、地震"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "terremoto",
+          "zh": "地震"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "推測借自義大利語 terremoto，或直接源於拉丁語學術借詞 terraemōtus。字根由表示土地的 terra 與表示運動晃動的 mōtus 組成，字面意為「大地的晃動」，生動描繪了地殼劇烈搖晃的自然災害「地震」。",
+      "hook_zh": "terre（大地）發生了猛烈的大 moto（運動、晃動），就是「地震」。",
+      "usage_zh": "陽性名詞，表示「發生地震」常搭配動詞 haber（如 Hubo un terremoto）或 producirse。",
+      "example_es": "El terremoto causó graves daños en el centro.",
+      "example_zh": "地震在市中心造成了嚴重的損害。",
+      "image": "emoji:🏚️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:terremoto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tony",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "馬戲團小丑",
+      "en": "circus clown",
+      "ipa": "/ˈtoni/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "Tony Grice",
+          "zh": "19世紀英國小丑藝名"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tony",
+          "zh": "馬戲團小丑"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自19世紀著名的英國馬戲團小丑與表演者 Tony Grice（1849–1892）。因其詼諧逗趣的演出在西班牙廣受歡迎，他的名字便演變為指稱馬戲團小丑的普通名詞。",
+      "hook_zh": "想像小丑 Tony 在馬戲團舞台上滑倒耍寶，逗得觀眾開懷大笑。",
+      "usage_zh": "陽性名詞，複數為 tonys。主要指馬戲團裡專門逗趣打鬧的小丑角。",
+      "example_es": "El tony hizo reír a todos los niños en el circo.",
+      "example_zh": "馬戲團裡的小丑逗得所有孩子哈哈大笑。",
+      "image": "emoji:🤡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tony"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "trampa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "陷阱、圈套；作弊",
+      "en": "trap, snare; cheating",
+      "ipa": "/ˈtɾampa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "trappa",
+          "zh": "陷阱、活板門"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "trampa",
+          "zh": "陷阱、作弊"
+        }
+      ],
+      "cognates_en": [
+        "trap"
+      ],
+      "story_zh": "可能借自中世紀拉丁語 trappa（陷阱）或中古高地德語 trampen（重步踩踏），源頭推測與日耳曼語表示踩踏的詞根相關，英文的 trap（陷阱）也是同源字。由捕捉獵物的踏板陷阱，引申為各種騙局與不合規矩的作弊行為。",
+      "hook_zh": "英文 trap 中間塞入 m 就成了西語 trampa，都是害人踩中的「陷阱」。",
+      "usage_zh": "常用搭配：hacer trampa（作弊）、caer en una trampa（落入陷阱）。",
+      "example_es": "El jugador intentó hacer trampa en la partida.",
+      "example_zh": "那位玩家試圖在遊戲中作弊。",
+      "image": "emoji:🪤",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:trampa",
+        "wiktionary:la:trappa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tremendo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "巨大的、極度的；極好或極糟的",
+      "en": "tremendous, huge, dreadful",
+      "ipa": "/tɾeˈmendo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tremendus",
+          "zh": "令人可怕的、巨大的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tremendo",
+          "zh": "巨大的、極度的"
+        }
+      ],
+      "cognates_en": [
+        "tremendous"
+      ],
+      "story_zh": "源自拉丁語 tremendus。在西語中用來形容程度極其巨大或強烈，評價依語氣而定，既可用來讚嘆極好，也能用來強調災難或情況極為嚴重。",
+      "hook_zh": "和英文 tremendous 長得極像，直接記「巨大的、驚人的」。",
+      "usage_zh": "陰性為 tremenda。常置於名詞前表強調，如 un tremendo error（極嚴重的錯誤）。",
+      "example_es": "Nos llevamos un susto tremendo con el ruido.",
+      "example_zh": "那個聲響把我們嚇了一大跳。",
+      "image": "emoji:💥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tremendo"
+      ],
+      "writer": "gemini"
     }
   ]
 }
