@@ -3517,6 +3517,117 @@
         "wiktionary:la:cliens"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "defender",
+      "article": "",
+      "pos": "verbo",
+      "zh": "防衛、保護；辯護",
+      "en": "to defend, to protect",
+      "ipa": "/defenˈdeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dēfendere",
+          "zh": "驅逐、防衛"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "defender",
+          "zh": "防衛"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "defender",
+          "zh": "防衛、保護"
+        }
+      ],
+      "cognates_en": [
+        "defend"
+      ],
+      "story_zh": "源自拉丁語 dēfendere，由字首 dē-（離開、除掉）與字根 *fendō（擊打、推開）組成，原意為「擊退、驅逐」，後來演變為「防衛、保護」。經由古西班牙語演化為現代西語 defender，英文同源字為 defend。",
+      "hook_zh": "聯想英文 defend（防守），想像足球場上的 defender（後衛）正全力防守球門。",
+      "usage_zh": "現在式為母音變化動詞（e > ie），如 defiendo；保護某人時慣用 defender a alguien。",
+      "example_es": "¿Quién puede defendernos ahora?",
+      "example_zh": "現在誰能保護我們？",
+      "image": "emoji:🛡️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:defender",
+        "wiktionary:la:defendo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "evidencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "證據、跡象；顯而易見",
+      "en": "evidence",
+      "ipa": "/ebiˈdenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ēvidentia",
+          "zh": "明顯、清楚"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "evidencia",
+          "zh": "證據、跡象"
+        }
+      ],
+      "cognates_en": [
+        "evidence"
+      ],
+      "story_zh": "借自拉丁語 ēvidentia，原指「清晰可見、一目了然的事物」。進入西班牙語後，指用來證實真相、使事實清楚明瞭的跡象，即「證據」。",
+      "hook_zh": "拼法與英文 evidence 幾乎完全相同，字尾轉為西語常見的 -cia，一眼就能認出是證據。",
+      "usage_zh": "陰性名詞。常用搭配如 una evidencia clara（清楚的證據）、no hay evidencia（沒有證據）。",
+      "example_es": "La policía encontró una evidencia importante.",
+      "example_zh": "警方找到了一項重要證據。",
+      "image": "emoji:🔍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:evidencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "firma",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "簽名、署名；公司、商號",
+      "en": "signature, company",
+      "ipa": "/ˈfiɾma/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "firmar",
+          "zh": "簽署"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "firma",
+          "zh": "簽名"
+        }
+      ],
+      "cognates_en": [
+        "firm"
+      ],
+      "story_zh": "源自西語動詞 firmar（簽名），是由動詞直接衍生出的名詞。本義指簽署的行為或親筆簽名，在商業與法律語境中亦引申為代表簽署主體的「公司」或「商號」。",
+      "hook_zh": "在合約下方鄭重簽名（firma），代表同意條款；也可以聯想英文的 law firm（律師事務所）。",
+      "usage_zh": "陰性名詞。常用搭配如 poner la firma（簽名）、recoger firmas（連署、蒐集簽名）。",
+      "example_es": "Necesito su firma en este documento.",
+      "example_zh": "我需要您在這份文件上簽名。",
+      "image": "emoji:✍️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:firma"
+      ],
+      "writer": "gemini"
     }
   ]
 }
