@@ -1,6 +1,6 @@
 {
   "theme": "freq-0035",
-  "theme_zh": "常用字（頻率第 8760–9078 名）",
+  "theme_zh": "常用字（頻率第 8760–9082 名）",
   "entries": [
     {
       "word": "detallado",
@@ -3114,28 +3114,6 @@
       "writer": "gemini"
     },
     {
-      "word": "vió",
-      "article": "",
-      "pos": "verbo",
-      "zh": "看見（ver 的舊式過去式拼寫）",
-      "en": "saw (superseded spelling of vio)",
-      "ipa": "/ˈbjo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "就是動詞 ver 的過去式 vio，早年西語寫作帶重音的 vió。",
-      "usage_zh": "西語皇家學院（RAE）在 1952 年廢除此重音，現今一律寫為 vio。",
-      "example_es": "Él la vió en la plaza ayer por la tarde.",
-      "example_zh": "他昨天下午在廣場上看見了她。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:vió"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "vocabulario",
       "article": "el",
       "pos": "sustantivo",
@@ -3167,39 +3145,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:vocabulario"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "wey",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "老兄、傢伙（墨西哥俚語）",
-      "en": "dude, guy, pal",
-      "ipa": "/ˈwei/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "güey",
-          "zh": "老兄、笨蛋"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "wey",
-          "zh": "老兄、傢伙"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "為墨西哥西語俚語 güey 的變體拼法，反映了口語中將 /ɡw/ 發音放鬆為 /w/ 的現象，常用於朋友間的隨性稱呼。",
-      "hook_zh": "讀音像英文 way，在墨西哥街頭招呼朋友時常喊：¿Qué onda, wey?",
-      "usage_zh": "墨西哥極常見口語，但對長輩或正式場合不宜使用，略帶不敬。",
-      "example_es": "Oye wey, ¿a dónde vas tan temprano?",
-      "example_zh": "嘿老兄，你這麼早要去哪裡？",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:wey"
       ],
       "writer": "gemini"
     },
@@ -3332,46 +3277,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:azteca"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "beta",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "希臘字母第二個字母（β）；測試版",
-      "en": "beta (Greek letter; beta version)",
-      "ipa": "/ˈbeta/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "原始閃語",
-          "word": "bayt",
-          "zh": "房屋"
-        },
-        {
-          "lang_zh": "古希臘語",
-          "word": "βητα",
-          "zh": "第二個希臘字母"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "beta",
-          "zh": "貝塔字母"
-        }
-      ],
-      "cognates_en": [
-        "beta"
-      ],
-      "story_zh": "借自古希臘字母名 βῆτα，其源頭可追溯至原始閃語 *bayt-（房屋），象徵古代象形符號。現代也延伸指軟體測試版。",
-      "hook_zh": "Alfa 跟 Beta 是希臘字母前兩棒，英文也是 beta。",
-      "usage_zh": "作為希臘字母時為陰性名詞（la beta）。",
-      "example_es": "La letra beta es la segunda del alfabeto griego.",
-      "example_zh": "字母 beta 是希臘字母表中的第二個字母。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:beta"
       ],
       "writer": "gemini"
     },
@@ -3780,6 +3685,127 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:encerrado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "enfermería",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "醫務室、保健室；護理學",
+      "en": "infirmary, nursing",
+      "ipa": "/enfeɾmeˈɾia/",
+      "breakdown": [
+        {
+          "part": "enfermo",
+          "zh": "生病的"
+        },
+        {
+          "part": "-ería",
+          "zh": "場所、領域字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "infirmary"
+      ],
+      "story_zh": "",
+      "hook_zh": "enfermo（生病的）加上場所字尾 -ería，就是照顧病患的醫務室。",
+      "usage_zh": "陰性名詞，既可指實體醫護室，也可指大學的護理專業。",
+      "example_es": "El niño fue a la enfermería de la escuela.",
+      "example_zh": "小男孩去了學校的醫務室。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:enfermería"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "equipamiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "設備、裝備",
+      "en": "equipment, gear",
+      "ipa": "/ekipaˈmjento/",
+      "breakdown": [
+        {
+          "part": "equipar",
+          "zh": "裝備、配備"
+        },
+        {
+          "part": "-miento",
+          "zh": "名詞字尾，表行動或器具"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "equipar",
+          "zh": "配備、裝備"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "equipamiento",
+          "zh": "裝備、設施"
+        }
+      ],
+      "cognates_en": [
+        "equipment"
+      ],
+      "story_zh": "由動詞 equipar（裝備、配備）加上名詞化後綴 -miento 衍生而來，指為了特定活動或工作所配備的一整套設備。",
+      "hook_zh": "equipar + -miento，呼應英文 equipment，指身上的裝備器材。",
+      "usage_zh": "為陽性名詞，例如 equipamiento deportivo（運動裝備）。",
+      "example_es": "Compraron nuevo equipamiento para el laboratorio.",
+      "example_zh": "他們為實驗室購買了新設備。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:equipamiento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "equivaler",
+      "article": "",
+      "pos": "verbo",
+      "zh": "相當於、等於",
+      "en": "to be equivalent to",
+      "ipa": "/ekibaˈleɾ/",
+      "breakdown": [
+        {
+          "part": "equi-",
+          "zh": "等同"
+        },
+        {
+          "part": "valer",
+          "zh": "價值、值得"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "aequivalere",
+          "zh": "具有相等價值"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "equivaler",
+          "zh": "相當於"
+        }
+      ],
+      "cognates_en": [
+        "equivalent"
+      ],
+      "story_zh": "學者借詞自拉丁語 aequivalēre，由 aequi-（相等）與 valēre（有價值）組合而成，字面意思就是「具有等同價值」。",
+      "hook_zh": "equi（相等）加 valer（價值），合起來就是「價值相當於」。",
+      "usage_zh": "常搭配介系詞 a，例如 equivaler a un euro（等同於一歐元）。第一人稱現在式為 equivalgo。",
+      "example_es": "Un kilómetro equivale a mil metros.",
+      "example_zh": "一公里相當於一千公尺。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:equivaler"
       ],
       "writer": "gemini"
     }

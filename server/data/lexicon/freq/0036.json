@@ -1,128 +1,7 @@
 {
   "theme": "freq-0036",
-  "theme_zh": "常用字（頻率第 9080–9333 名）",
+  "theme_zh": "常用字（頻率第 9085–9378 名）",
   "entries": [
-    {
-      "word": "enfermería",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "醫務室、保健室；護理學",
-      "en": "infirmary, nursing",
-      "ipa": "/enfeɾmeˈɾia/",
-      "breakdown": [
-        {
-          "part": "enfermo",
-          "zh": "生病的"
-        },
-        {
-          "part": "-ería",
-          "zh": "場所、領域字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "infirmary"
-      ],
-      "story_zh": "",
-      "hook_zh": "enfermo（生病的）加上場所字尾 -ería，就是照顧病患的醫務室。",
-      "usage_zh": "陰性名詞，既可指實體醫護室，也可指大學的護理專業。",
-      "example_es": "El niño fue a la enfermería de la escuela.",
-      "example_zh": "小男孩去了學校的醫務室。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:enfermería"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "equipamiento",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "設備、裝備",
-      "en": "equipment, gear",
-      "ipa": "/ekipaˈmjento/",
-      "breakdown": [
-        {
-          "part": "equipar",
-          "zh": "裝備、配備"
-        },
-        {
-          "part": "-miento",
-          "zh": "名詞字尾，表行動或器具"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "equipar",
-          "zh": "配備、裝備"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "equipamiento",
-          "zh": "裝備、設施"
-        }
-      ],
-      "cognates_en": [
-        "equipment"
-      ],
-      "story_zh": "由動詞 equipar（裝備、配備）加上名詞化後綴 -miento 衍生而來，指為了特定活動或工作所配備的一整套設備。",
-      "hook_zh": "equipar + -miento，呼應英文 equipment，指身上的裝備器材。",
-      "usage_zh": "為陽性名詞，例如 equipamiento deportivo（運動裝備）。",
-      "example_es": "Compraron nuevo equipamiento para el laboratorio.",
-      "example_zh": "他們為實驗室購買了新設備。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:equipamiento"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "equivaler",
-      "article": "",
-      "pos": "verbo",
-      "zh": "相當於、等於",
-      "en": "to be equivalent to",
-      "ipa": "/ekibaˈleɾ/",
-      "breakdown": [
-        {
-          "part": "equi-",
-          "zh": "等同"
-        },
-        {
-          "part": "valer",
-          "zh": "價值、值得"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "aequivalere",
-          "zh": "具有相等價值"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "equivaler",
-          "zh": "相當於"
-        }
-      ],
-      "cognates_en": [
-        "equivalent"
-      ],
-      "story_zh": "學者借詞自拉丁語 aequivalēre，由 aequi-（相等）與 valēre（有價值）組合而成，字面意思就是「具有等同價值」。",
-      "hook_zh": "equi（相等）加 valer（價值），合起來就是「價值相當於」。",
-      "usage_zh": "常搭配介系詞 a，例如 equivaler a un euro（等同於一歐元）。第一人稱現在式為 equivalgo。",
-      "example_es": "Un kilómetro equivale a mil metros.",
-      "example_zh": "一公里相當於一千公尺。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:equivaler"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "escultura",
       "article": "la",
@@ -571,48 +450,6 @@
       "writer": "gemini"
     },
     {
-      "word": "madero",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "厚木條、木料；警察（俚語）",
-      "en": "piece of wood, timber",
-      "ipa": "/maˈdeɾo/",
-      "breakdown": [
-        {
-          "part": "madera",
-          "zh": "木材"
-        },
-        {
-          "part": "-ero",
-          "zh": "名詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "madera",
-          "zh": "木材"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "madero",
-          "zh": "木料、木條"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "衍生自 madera（木材），指較大塊或長條狀的厚實木料。在西班牙俚語中也謔稱警察（因為以前身穿咖啡色警服）。",
-      "hook_zh": "madera 是木頭，madero 就是粗粗的厚木料。",
-      "usage_zh": "陽性名詞，多指建材木梁；口語俚語也指警察（los maderos）。",
-      "example_es": "Colocaron un madero para sostener el techo.",
-      "example_zh": "他們放了一根粗木梁來支撐屋頂。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:madero"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "mango",
       "article": "el",
       "pos": "sustantivo",
@@ -736,48 +573,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:moderado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "montero",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "獵人、圍獵手",
-      "en": "hunter, beater",
-      "ipa": "/monˈteɾo/",
-      "breakdown": [
-        {
-          "part": "monte",
-          "zh": "山野、灌木叢"
-        },
-        {
-          "part": "-ero",
-          "zh": "人員字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "monte",
-          "zh": "山林、荒野"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "montero",
-          "zh": "山林獵人"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由 monte（山野、灌木山丘）加上表示身分職業的字尾 -ero 構成，指熟悉山野地形並在其中巡山或狩獵的獵手。",
-      "hook_zh": "monte（山丘荒野）加上職業後綴 -ero，就是在山上打獵的人。",
-      "usage_zh": "陽性名詞，陰性形為 montera；在西語世界也常見作姓氏。",
-      "example_es": "El montero guio a los perros por el bosque.",
-      "example_zh": "獵人帶領獵犬穿過了森林。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:montero"
       ],
       "writer": "gemini"
     },
@@ -1012,30 +807,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:pescador"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "pi",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "希臘字母第十六個字母（π）；圓周率",
-      "en": "pi (Greek letter; ratio)",
-      "ipa": "/ˈpi/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "pi"
-      ],
-      "story_zh": "",
-      "hook_zh": "數學裡的圓周率 π（3.14159…），在西語字母表名稱為 la pi。",
-      "usage_zh": "作為字母名為陰性（la pi），指圓周率常說 el número pi。",
-      "example_es": "La letra pi representa la razón de una circunferencia.",
-      "example_zh": "字母 pi 代表圓周的比例常數。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:pi"
       ],
       "writer": "gemini"
     },
@@ -1615,37 +1386,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:vegetación"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "vendido",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "叛徒、背叛者、被收買的人",
-      "en": "sellout",
-      "ipa": "/benˈdido/",
-      "breakdown": [
-        {
-          "part": "vender",
-          "zh": "出賣、販售"
-        },
-        {
-          "part": "-ido",
-          "zh": "名詞/分詞字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "vender（賣）的分詞，把自己靈魂出賣的人就是「叛徒、走狗」。",
-      "usage_zh": "名詞（出賣原則的人），也可作形容詞（售出的、被出賣的）。",
-      "example_es": "Muchos lo llamaron vendido por apoyar la ley.",
-      "example_zh": "許多人因他支持這項法案而罵他是個叛徒。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:vendido"
       ],
       "writer": "gemini"
     },
@@ -3775,6 +3515,532 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:riego"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "simpatía",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "同情；好感、親切",
+      "en": "sympathy; friendliness",
+      "ipa": "/simpaˈtia/",
+      "breakdown": [
+        {
+          "part": "sim-",
+          "zh": "共同"
+        },
+        {
+          "part": "-patía",
+          "zh": "感受、情感"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "sumpatheia",
+          "zh": "共同感受"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "sympathia",
+          "zh": "同情、共感"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "simpatía",
+          "zh": "好感、同情"
+        }
+      ],
+      "cognates_en": [
+        "sympathy"
+      ],
+      "story_zh": "源自古希臘語 sumpatheia，由表示「共同」的字首與表示「感受」的字根組成，指彼此感受相通。經拉丁語 sympathia 進入西語，除了指同情心，在西語中更常指讓人覺得親切、討人喜歡的特質。",
+      "hook_zh": "sim（共同）加上 patía（感受），彼此心意相通，自然讓人產生好感（simpatía）。",
+      "usage_zh": "tener simpatía por（對…有好感）；形容詞為 simpático（討人喜歡的）。",
+      "example_es": "Ella tiene una gran simpatía por los animales.",
+      "example_zh": "她對動物很有愛心與好感。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:simpatía"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tatuaje",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "刺青、紋身",
+      "en": "tattoo",
+      "ipa": "/taˈtwaxe/",
+      "breakdown": [
+        {
+          "part": "tatuar",
+          "zh": "刺青"
+        },
+        {
+          "part": "-aje",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "tatouage",
+          "zh": "刺青"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tatuaje",
+          "zh": "刺青、紋身"
+        }
+      ],
+      "cognates_en": [
+        "tattoo"
+      ],
+      "story_zh": "西語藉由法語 tatouage 借入此字。源頭可追溯至波里尼西亞語系，指在皮膚上刺上圖案。字尾 -aje 用於表示行為或其產物。",
+      "hook_zh": "發音像「踏爪鞋」，彷彿把爪痕圖樣刺（tatuaje）在身上。",
+      "usage_zh": "動詞為 tatuar（刺青），hacerse un tatuaje 表示去紋身。",
+      "example_es": "Se hizo un tatuaje en el brazo.",
+      "example_zh": "他在手臂上刺了一個青。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tatuaje"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ternura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "溫柔、深情",
+      "en": "tenderness",
+      "ipa": "/teɾˈnuɾa/",
+      "breakdown": [
+        {
+          "part": "tierno",
+          "zh": "溫柔的、柔軟的"
+        },
+        {
+          "part": "-ura",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "tierno",
+          "zh": "溫柔的、柔軟的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ternura",
+          "zh": "溫柔、深情"
+        }
+      ],
+      "cognates_en": [
+        "tender"
+      ],
+      "story_zh": "由形容詞 tierno（柔軟的、溫柔的）加上表示抽象性質的名詞字尾 -ura 構成，形容內心溫柔細膩的情感或態度。",
+      "hook_zh": "像柔軟溫嫩（tierno）的羽毛撫摸心靈，這就是溫柔（ternura）。",
+      "usage_zh": "常搭配介系詞 con：tratar con ternura（溫柔對待）。",
+      "example_es": "Miró al bebé con mucha ternura.",
+      "example_zh": "她滿懷溫柔地看著小嬰兒。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ternura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vulnerable",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "脆弱的、易受傷害的",
+      "en": "vulnerable",
+      "ipa": "/bulneˈɾable/",
+      "breakdown": [
+        {
+          "part": "vuln-",
+          "zh": "傷害"
+        },
+        {
+          "part": "-able",
+          "zh": "可…的、易…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vulnerō",
+          "zh": "傷害"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "vulnerābilis",
+          "zh": "易受傷害的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vulnerable",
+          "zh": "脆弱的"
+        }
+      ],
+      "cognates_en": [
+        "vulnerable"
+      ],
+      "story_zh": "源自拉丁語動詞 vulnerō（傷害）加上形容詞字尾 -bilis（可…的），演變為晚期拉丁語 vulnerābilis，原意是「容易受到創傷的」，後引申為脆弱、易受攻擊的狀態。",
+      "hook_zh": "英文同源字 vulnerable，字根與創傷有關，形容防禦薄弱容易受傷。",
+      "usage_zh": "陰陽同形。常搭配介系詞 a：ser vulnerable a...（對…很脆弱）。",
+      "example_es": "Los niños son muy vulnerables a las enfermedades.",
+      "example_zh": "孩童對疾病非常脆弱易感。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vulnerable"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "abastecimiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "供應、供給、補給",
+      "en": "supply, provision",
+      "ipa": "/abasteθiˈmjento/",
+      "breakdown": [
+        {
+          "part": "abastecer",
+          "zh": "供應、供給"
+        },
+        {
+          "part": "-miento",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "abastecer",
+          "zh": "供給、供應"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "abastecimiento",
+          "zh": "供應、補給"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 abastecer（提供物資、供給）加上表示行為或結果的名詞字尾 -miento 衍生而來，指生活必需品或物資的供應與補給系統。",
+      "hook_zh": "基地（base）需要物資，所以要持續進行補給與供應（abastecimiento）。",
+      "usage_zh": "常見搭配：abastecimiento de agua（供水）、cadena de abastecimiento（供應鏈）。",
+      "example_es": "El abastecimiento de agua está garantizado.",
+      "example_zh": "供水已獲得保障。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:abastecimiento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "adaptar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "適應；改編、調整",
+      "en": "to adapt, adjust",
+      "ipa": "/adabˈtaɾ/",
+      "breakdown": [
+        {
+          "part": "ad-",
+          "zh": "朝向、往"
+        },
+        {
+          "part": "aptar",
+          "zh": "使適合"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "adaptāre",
+          "zh": "使適合、裝配"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "adaptar",
+          "zh": "適應、改編"
+        }
+      ],
+      "cognates_en": [
+        "adapt"
+      ],
+      "story_zh": "學者借詞自拉丁語 adaptāre（使適合），由前綴 ad-（朝向）與 aptus（適合的）組合而成。指調整自身以適合環境，或改裝某物以符合新需求。",
+      "hook_zh": "英文同源字 adapt，讓自己變得 apt（適合的），就是適應（adaptar）。",
+      "usage_zh": "及物動詞為改編或使適應；反身動詞 adaptarse a 表示「適應…」。",
+      "example_es": "Ella se adaptó rápidamente a su nueva vida.",
+      "example_zh": "她很快就適應了新生活。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:adaptar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "afín",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "類似的、相近的；姻親的",
+      "en": "akin, related, adjacent",
+      "ipa": "/aˈfin/",
+      "breakdown": [
+        {
+          "part": "ad-",
+          "zh": "鄰近、朝向"
+        },
+        {
+          "part": "fin",
+          "zh": "邊界、界線"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "affīnis",
+          "zh": "鄰近的、有親屬關係的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "afín",
+          "zh": "相近的、同類的"
+        }
+      ],
+      "cognates_en": [
+        "affine"
+      ],
+      "story_zh": "借自拉丁語 affīnis，由 ad-（靠近）與 fīnis（邊界）組成，本義是「邊界相鄰的」。後引申為關係緊密、志趣相投或性質相近的。",
+      "hook_zh": "邊界相近、在同一個 fin（終點／邊界）附近的人，自然理念相近（afín）。",
+      "usage_zh": "複數形為 afines。常搭配 a：ideas afines a las mías（與我相近的想法）。",
+      "example_es": "Tenemos opiniones muy afines sobre este tema.",
+      "example_zh": "我們對這個議題有非常相近的看法。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:afín",
+        "wiktionary:la:affinis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ambición",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "野心、抱負、志向",
+      "en": "ambition",
+      "ipa": "/ambiˈθjon/",
+      "breakdown": [
+        {
+          "part": "amb-",
+          "zh": "周圍"
+        },
+        {
+          "part": "ición",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ambitiōnem",
+          "zh": "環遊拉票、抱負"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ambición",
+          "zh": "野心、抱負"
+        }
+      ],
+      "cognates_en": [
+        "ambition"
+      ],
+      "story_zh": "學者借詞自拉丁語 ambitiōnem，原指古羅馬候選人為了競選而四處走訪、拉票的舉動（amb- 意為「在四周走動」）。後來演變為渴望獲得榮譽、權力或成功的野心與抱負。",
+      "hook_zh": "英文同源字 ambition，候選人到處走動拉票，展現出強烈的野心（ambición）。",
+      "usage_zh": "形容詞為 ambicioso（有野心的、雄心勃勃的）。",
+      "example_es": "Su gran ambición es ser médico.",
+      "example_zh": "他的宏大志向是成為一名醫生。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ambición"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "anterioridad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "前、早、在先",
+      "en": "anteriority, precedence",
+      "ipa": "/anteɾjoɾiˈdad/",
+      "breakdown": [
+        {
+          "part": "anterior",
+          "zh": "先前的"
+        },
+        {
+          "part": "-idad",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "anterior",
+          "zh": "先前的、在前的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "anterioridad",
+          "zh": "在先、先前"
+        }
+      ],
+      "cognates_en": [
+        "anteriority"
+      ],
+      "story_zh": "由形容詞 anterior（先前的、在前的）加上表示性質或狀態的名詞字尾 -idad 構成，指時間或順序上處於較早的狀態。",
+      "hook_zh": "anterior（在前）加上 -idad，就是「時間在前」（anterioridad）。",
+      "usage_zh": "最常見固定片語為 con anterioridad a（在…之前）。",
+      "example_es": "Debes avisar con anterioridad a la fecha del viaje.",
+      "example_zh": "你必須在旅行日期之前先行通知。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:anterioridad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "antropología",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "人類學",
+      "en": "anthropology",
+      "ipa": "/antɾopoloˈxia/",
+      "breakdown": [
+        {
+          "part": "antropo-",
+          "zh": "人類"
+        },
+        {
+          "part": "-logía",
+          "zh": "學科、研究"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "新拉丁語",
+          "word": "anthropologia",
+          "zh": "人類學"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "antropología",
+          "zh": "人類學"
+        }
+      ],
+      "cognates_en": [
+        "anthropology"
+      ],
+      "story_zh": "學者借詞自新拉丁語 anthropologia。結合希臘文字根 anthropo-（人類）與 -logia（學說、研究），為研究人類起源、演化與文化習俗的科學。",
+      "hook_zh": "英文同源字 anthropology，antropo（人）加 logía（學），就是人類學。",
+      "usage_zh": "相關詞：antropólogo（人類學家）、antropológico（人類學的）。",
+      "example_es": "Ella estudia antropología social en la universidad.",
+      "example_zh": "她在大學研讀社會人類學。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:antropología"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aportación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "貢獻、付出、捐助",
+      "en": "contribution",
+      "ipa": "/apoɾtaˈθjon/",
+      "breakdown": [
+        {
+          "part": "aportar",
+          "zh": "提供、貢獻"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "apportatio",
+          "zh": "帶來、運來"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aportación",
+          "zh": "貢獻、付出"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 apportatio（帶來、運至），衍生自動詞 apportāre（帶到某處）。在西語中引申為為某個群體或目標所帶來的投入、貢獻或捐款。",
+      "hook_zh": "把物資帶到港口（puerto）或目的地，為大家做出貢獻（aportación）。",
+      "usage_zh": "動詞為 aportar（貢獻、提供），也常作 hacer una aportación。",
+      "example_es": "Agradecemos su valiosa aportación al proyecto.",
+      "example_zh": "我們感謝他對專案的寶貴貢獻。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aportación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aurora",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "曙光、黎明；極光",
+      "en": "aurora, dawn",
+      "ipa": "/auˈɾoɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "aurora",
+          "zh": "黎明、晨曦"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aurora",
+          "zh": "曙光、極光"
+        }
+      ],
+      "cognates_en": [
+        "aurora"
+      ],
+      "story_zh": "學者借詞自拉丁語 aurōra（黎明、破曉），在羅馬神話中也是掌管黎明的女神名字。西語中指天剛破曉時微亮的光芒，現代也用來稱呼極光（aurora boreal）。",
+      "hook_zh": "英文同源字 aurora，看著極光與晨曦（aurora），金光閃耀。",
+      "usage_zh": "極光常說 aurora boreal（北極光）或 aurora austral（南極光）。",
+      "example_es": "Vimos la hermosa aurora al amanecer.",
+      "example_zh": "破曉時分我們看到了美麗的曙光。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aurora"
       ],
       "writer": "gemini"
     }
