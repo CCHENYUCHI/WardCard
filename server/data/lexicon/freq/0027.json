@@ -1,214 +1,7 @@
 {
   "theme": "freq-0027",
-  "theme_zh": "常用字（頻率第 6614–6869 名）",
+  "theme_zh": "常用字（頻率第 6639–6892 名）",
   "entries": [
-    {
-      "word": "capitalista",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "資本家；資本主義者",
-      "en": "capitalist",
-      "ipa": "/kapitaˈlista/",
-      "breakdown": [
-        {
-          "part": "capital",
-          "zh": "資本"
-        },
-        {
-          "part": "-ista",
-          "zh": "從事…者、支持…主義者"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "capital + -ista",
-          "zh": "資本 + …者"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "capitalista",
-          "zh": "資本家"
-        }
-      ],
-      "cognates_en": [
-        "capitalist"
-      ],
-      "story_zh": "由 capital（資本）加上表示特定身分或支持者的字尾 -ista 組成。指擁有或投入資本進行生產以賺取利潤的人，亦可指支持資本主義體系者。",
-      "hook_zh": "英文就是 capitalist，字尾 -ista 如同 artista，手握 capital（資本）的大老闆就是 capitalista。",
-      "usage_zh": "陰陽同形，男性用 el capitalista，女性用 la capitalista；亦可當形容詞修飾名詞。",
-      "example_es": "El capitalista decidió invertir en la empresa.",
-      "example_zh": "這位資本家決定投資這家公司。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:capitalista"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "coincidencia",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "巧合；相符、一致",
-      "en": "coincidence, match, agreement",
-      "ipa": "/koinθiˈdenθja/",
-      "breakdown": [
-        {
-          "part": "coincidir",
-          "zh": "同時發生、相符"
-        },
-        {
-          "part": "-encia",
-          "zh": "名詞字尾，表示狀態或性質"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "coincidentia",
-          "zh": "巧合、重合"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "coincidencia",
-          "zh": "巧合、一致"
-        }
-      ],
-      "cognates_en": [
-        "coincidence"
-      ],
-      "story_zh": "由動詞 coincidir（同時發生、相符）加上抽象名詞字尾 -encia 構成，對應中世紀拉丁語 coincidentia。指兩件事在時間或空間上偶然重疊，引申為相符或純屬巧合。",
-      "hook_zh": "英文就是 coincidence！兩件事「co（一起）+ inside（在裡面）」碰在一起，就是純屬巧合。",
-      "usage_zh": "常用搭配：¡Qué coincidencia!（真巧！）、pura coincidencia（純屬巧合）。",
-      "example_es": "Fue una gran coincidencia encontrarte aquí.",
-      "example_zh": "在這裡遇見你真是太巧了。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:coincidencia"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "cotidiano",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "日常的、每日的",
-      "en": "daily, everyday",
-      "ipa": "/kotiˈdjano/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "cotīdiānus",
-          "zh": "每日的、日常的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "cotidiano",
-          "zh": "日常的、每日的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "為學術借詞，直接借自拉丁語 cotīdiānus（每日的、日常的）。在西班牙語中用來形容每天都會發生、習以為常的事物，多用於表達日常生活或作息。",
-      "hook_zh": "出門前看日曆（cotidiano），每天（co-ti-）都要認真過日子：日常的、每日的。",
-      "usage_zh": "常搭配 vida 或 rutina，如 la vida cotidiana（日常生活）；陰性形式為 cotidiana。",
-      "example_es": "El café es parte de mi vida cotidiana.",
-      "example_zh": "咖啡是我日常生活的一部分。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:cotidiano"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "cuán",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "多麼、何等（用於感嘆或疑問）",
-      "en": "how (in exclamations)",
-      "ipa": "/ˈkwan/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "看到壯麗山景不禁「誇（cuán）張」驚嘆：多麼壯觀！cuán 專門用來感嘆「多麼…」。",
-      "usage_zh": "為 cuan 的重音形式，用於書面或詩歌感嘆句（如 ¡Cuán grande! 多麼偉大！），口語多用 qué 或 cómo。",
-      "example_es": "¡Cuán hermosa es la puesta de sol hoy!",
-      "example_zh": "今天的夕陽多麼美麗啊！",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:cuán"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "derivado",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "衍生物、派生物；衍生詞",
-      "en": "derivative",
-      "ipa": "/deɾiˈbado/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "英文 derivative（衍生物），想像主河道分流出一條小支流，衍生出來的產物就是 derivado。",
-      "usage_zh": "常指工業或化學衍生物，如 derivados del petróleo（石油衍生物）；亦作動詞 derivar 的過去分詞。",
-      "example_es": "El queso es un producto derivado de la leche.",
-      "example_zh": "起司是乳製品的衍生物。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:derivado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "diosa",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "女神",
-      "en": "goddess",
-      "ipa": "/ˈdjosa/",
-      "breakdown": [
-        {
-          "part": "dios",
-          "zh": "神"
-        },
-        {
-          "part": "-a",
-          "zh": "陰性名詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "dios",
-          "zh": "神"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "diosa",
-          "zh": "女神"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自名詞 dios（神），加上陰性字尾 -a 構成，專指女性神祇。除了用於宗教神話中的女神，在現代西語中也常借喻容貌出眾、極具風采或魅力的女性。",
-      "hook_zh": "dios（神）加上女生的 -a，就成了美麗尊貴的女神 diosa。",
-      "usage_zh": "陽性為 dios（神、上帝）。大寫 Dios 專指天主教或基督教的唯一真神（上帝）。",
-      "example_es": "Atenea es la diosa griega de la sabiduría.",
-      "example_zh": "雅典娜是希臘神話中的智慧女神。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:diosa"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "doctorado",
       "article": "el",
@@ -901,28 +694,6 @@
       "sources": [
         "wiktionary:es:parroquia",
         "wiktionary:la:parochia"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "pe",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "字母 P",
-      "en": "the letter P",
-      "ipa": "/ˈpe/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "發音就像「配」，西語字母 P 念作 pe，想像比出 P 的手勢。",
-      "usage_zh": "西語所有字母名稱皆為陰性名詞，故搭配陰性冠詞 la pe。",
-      "example_es": "La palabra «perro» empieza con la letra pe.",
-      "example_zh": "單字「perro」以字母 P 開頭。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:pe"
       ],
       "writer": "gemini"
     },
@@ -2378,41 +2149,6 @@
       "writer": "gemini"
     },
     {
-      "word": "line",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "（橄欖球）界外爭球",
-      "en": "lineout",
-      "ipa": "/ˈlain/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "lineout",
-          "zh": "界外爭球"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "line",
-          "zh": "界外爭球"
-        }
-      ],
-      "cognates_en": [
-        "lineout"
-      ],
-      "story_zh": "這是橄欖球領域中的偽英文字（pseudo-anglicism），直接縮略自英語的 lineout（界外爭球）。西語借用此詞來指橄欖球比賽中雙方球員在邊線旁列隊爭球的戰術。",
-      "hook_zh": "源自英文 lineout 的省略，想像球員在邊線（line）旁列陣爭球。",
-      "usage_zh": "橄欖球專項術語，為陽性名詞 el line，複數形為 lines。",
-      "example_es": "El equipo ganó el balón en el line.",
-      "example_zh": "球隊在界外爭球中搶到了球。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:line"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "mediterráneo",
       "article": "",
       "pos": "adjetivo",
@@ -2466,41 +2202,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:normativa"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "off",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "幕後的；非主流的",
-      "en": "off-screen; minor-league, alternative",
-      "ipa": "/ˈof/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "off",
-          "zh": "離開、偏離"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "off",
-          "zh": "幕後的、非主流的"
-        }
-      ],
-      "cognates_en": [
-        "off"
-      ],
-      "story_zh": "直接借自英語單字 off。在西語中作為不變化的形容詞，常用來指影視中「鏡頭外的、幕後的」，或是如外百老匯（off-Broadway）那樣獨立非主流的小劇場製作。",
-      "hook_zh": "鏡頭關掉（off）或在舞台主線外，就是幕後、非主流的 off 演出。",
-      "usage_zh": "為外來形容詞，形式不隨修飾的名詞性別或單複數改變。",
-      "example_es": "Ayer vimos una obra de teatro off en Madrid.",
-      "example_zh": "昨天我們在馬德里看了一場非主流小劇場話劇。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:off"
       ],
       "writer": "gemini"
     },
@@ -3248,28 +2949,6 @@
       "writer": "gemini"
     },
     {
-      "word": "acompañado",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "配菜、附餐",
-      "en": "side dish",
-      "ipa": "/akompaˈɲado/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "主菜旁端上來「陪伴」著一起吃的美味配菜。",
-      "usage_zh": "在部分拉美地區指隨餐附上的配菜；名詞為陽性 el acompañado。",
-      "example_es": "El plato incluye arroz como acompañado.",
-      "example_zh": "這道菜附有米飯作為配菜。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:acompañado"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "acusar",
       "article": "",
       "pos": "verbo",
@@ -3631,46 +3310,6 @@
       "writer": "gemini"
     },
     {
-      "word": "benito",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "本篤會修士",
-      "en": "Benedictine monk",
-      "ipa": "/beˈnito/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "benedicō",
-          "zh": "讚美、祝福"
-        },
-        {
-          "lang_zh": "後期拉丁語",
-          "word": "benedictus",
-          "zh": "受祝福的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "benito",
-          "zh": "本篤會修士"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自教會拉丁語 benedictus（受祝福的），其字源為拉丁語 benedicō（讚美、祝福，由 bene「好」與 dīcō「說」組成）。此詞在西語演變中成了聖本篤修會修士的專稱，與半文雅借詞 bendito（受祝福的）是同源的雙音詞。",
-      "hook_zh": "源自 bene（好）＋ dico（說），即「被說好話、獲祝福的人」，指本篤會修道士。",
-      "usage_zh": "陽性名詞，專指天主教本篤會修士。同時也是西語世界常見的男性教名（如 Benito）。",
-      "example_es": "El benito dedicaba su vida a la oración.",
-      "example_zh": "那位本篤會修士將一生奉獻於祈禱。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:benito",
-        "wiktionary:la:benedictus",
-        "wiktionary:la:benedico"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "bibliografía",
       "article": "la",
       "pos": "sustantivo",
@@ -3863,6 +3502,466 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:centímetro"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "coincidir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "巧合、一致、相符",
+      "en": "to coincide, to agree",
+      "ipa": "/koinθiˈdiɾ/",
+      "breakdown": [
+        {
+          "part": "co-",
+          "zh": "共同"
+        },
+        {
+          "part": "incidir",
+          "zh": "落入、發生"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "coincidere",
+          "zh": "巧合、相符"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "coincidir",
+          "zh": "巧合、一致"
+        }
+      ],
+      "cognates_en": [
+        "coincide"
+      ],
+      "story_zh": "源自拉丁語 coincidere，由共同與落入構成，原指兩件事物在時空上恰好落在同一個點。後來引申指雙方的想法、行程或意見「不謀而合、完全相符」。英文的 coincide 也是同一個字源。",
+      "hook_zh": "兩人想法 co（共同）落入同一點，就是不謀而合的 coincide！",
+      "usage_zh": "常搭配介系詞 en（意見一致）或 con（與某人一致）：Coincido contigo（我贊成你）。",
+      "example_es": "Nuestras opiniones coinciden en este tema.",
+      "example_zh": "我們的意見在這個主題上不謀而合。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:coincidir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cole",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "學校（colegio 的口語簡稱）",
+      "en": "school (colloquial)",
+      "ipa": "/ˈkole/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "colegio",
+          "zh": "學校"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cole",
+          "zh": "學校（簡稱）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "這是西班牙日常口語中對學校 colegio 的親切簡稱。就像中文常把「大學」或各級學校縮短簡稱一樣，孩童與家長在每天上學、放學的對話中極常使用這個字。",
+      "hook_zh": "上學快遲到了，連 colegio 名字都只念一半叫 cole！",
+      "usage_zh": "陽性名詞 el cole，為極常見的口語字，多指幼兒園或小學。",
+      "example_es": "Mi hijo va al cole caminando todos los días.",
+      "example_zh": "我兒子每天走路去上學。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cole"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "comisario",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "警長、分局長；專員",
+      "en": "police commissioner, inspector",
+      "ipa": "/komiˈsaɾjo/",
+      "breakdown": [
+        {
+          "part": "comis-",
+          "zh": "委任、託付"
+        },
+        {
+          "part": "-ario",
+          "zh": "從事…的人（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "commissārius",
+          "zh": "被委任者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "comisario",
+          "zh": "警長、專員"
+        }
+      ],
+      "cognates_en": [
+        "commissary",
+        "commissioner"
+      ],
+      "story_zh": "源自拉丁語 commissārius，核心概念來自受託付與委任，原指代表主管機關處理公務的特派代表。現代西語中除指政府專員外，也普遍用來指稱掌管地方警局的警長或分局長。",
+      "hook_zh": "背負國家委任（commission）辦案的大長官，就是警長 comisario。",
+      "usage_zh": "陰性為 comisaria（女警長）；若是警察局則為 comisaría（重音在最後）。",
+      "example_es": "El comisario habló con la prensa tras el robo.",
+      "example_zh": "警長在搶案發生後向媒體發言。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:comisario"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "convivencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "共同生活、共處、和睦相處",
+      "en": "coexistence, living together",
+      "ipa": "/kombiˈbenθja/",
+      "breakdown": [
+        {
+          "part": "con-",
+          "zh": "共同"
+        },
+        {
+          "part": "vivir",
+          "zh": "生活"
+        },
+        {
+          "part": "-encia",
+          "zh": "狀態、性質（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "convivir",
+          "zh": "共同生活"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "convivencia",
+          "zh": "共處、同居"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 convivir（共同生活）加上名詞字尾 -encia 組合而成。它不單指家人或室友同住一個屋簷下的生活狀態，在社會議題上也常用來指不同族群、鄰里間和平包容的和睦「共處」。",
+      "hook_zh": "con（一起）＋ vivir（活著生活），大家融洽住在一起就是共處。",
+      "usage_zh": "陰性名詞。常搭配 buena convivencia（和睦相處）或 normas de convivencia（公約）。",
+      "example_es": "El respeto mutuo es clave para una buena convivencia.",
+      "example_zh": "互相尊重是良好共處的關鍵。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:convivencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "disparar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "開槍、射擊；飆升、暴漲",
+      "en": "to shoot, to fire; to skyrocket",
+      "ipa": "/dispaˈɾaɾ/",
+      "breakdown": [
+        {
+          "part": "dis-",
+          "zh": "分離、反向"
+        },
+        {
+          "part": "parar",
+          "zh": "準備、使相等"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "disparāre",
+          "zh": "分開、劃分"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "desparar",
+          "zh": "射出、拆解"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "disparar",
+          "zh": "開槍、射擊"
+        }
+      ],
+      "cognates_en": [
+        "disparate"
+      ],
+      "story_zh": "源自拉丁語 disparāre（分開、劃分），古西班牙語為 desparar。在通俗羅曼語中被視為 parō（準備、佈置）的反義，原指解除弩機的準備狀態、扣扳機放箭，演變成今日的「開槍、射擊」。",
+      "hook_zh": "把準備好的武器解除鎖定（dis- + parar），碰的一聲射擊出去！",
+      "usage_zh": "反身動詞 dispararse 常用來形容價格、數字「飆升、暴漲」。",
+      "example_es": "Los precios se dispararon después de la crisis.",
+      "example_zh": "物價在危機過後大幅飆升。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:disparar",
+        "wiktionary:la:disparo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "economista",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "經濟學家",
+      "en": "economist",
+      "ipa": "/ekonoˈmista/",
+      "breakdown": [
+        {
+          "part": "economía",
+          "zh": "經濟"
+        },
+        {
+          "part": "-ista",
+          "zh": "從事…者、專家"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "economía + -ista",
+          "zh": "經濟 + 專家"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "economista",
+          "zh": "經濟學家"
+        }
+      ],
+      "cognates_en": [
+        "economist"
+      ],
+      "story_zh": "源自西語 economía（經濟）加上表示「專門從事某領域者」的後綴 -ista。字面意思就是專門研究經濟運行與商業規律的人。英文的 economist 也是相同構詞法。",
+      "hook_zh": "對應英文 economist，字尾 -ista 就像西語中各領域專家的招牌標籤。",
+      "usage_zh": "陰陽同形名詞：男經濟學家是 el economista，女經濟學家則是 la economista。",
+      "example_es": "El economista analizó la situación del mercado.",
+      "example_zh": "這位經濟學家分析了市場情勢。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:economista"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "económicamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "在經濟上、在財務上",
+      "en": "economically, financially",
+      "ipa": "/ekoˌnomikaˈmente/",
+      "breakdown": [
+        {
+          "part": "económica",
+          "zh": "經濟的（陰性）"
+        },
+        {
+          "part": "-mente",
+          "zh": "…地（副詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "económica + -mente",
+          "zh": "經濟的 + 地"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "económicamente",
+          "zh": "在經濟上"
+        }
+      ],
+      "cognates_en": [
+        "economically"
+      ],
+      "story_zh": "由形容詞陰性形 económica（經濟的）加上西語最典型的副詞字尾 -mente（…地）構成。用來修飾動作或情況，表示在財務或經濟層面上的狀態。",
+      "hook_zh": "económica（經濟的）加上副詞字尾 -mente，意思就是「在經濟層面上」。",
+      "usage_zh": "修飾動詞或形容詞，常見搭配如 ayudar económicamente（在經濟上資助）。",
+      "example_es": "Esta opción es mejor económicamente.",
+      "example_zh": "這個選項在經濟上比較划算。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:económicamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ego",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "自我、自尊心",
+      "en": "ego",
+      "ipa": "/ˈeɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ego",
+          "zh": "我"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ego",
+          "zh": "自我、自尊"
+        }
+      ],
+      "cognates_en": [
+        "ego"
+      ],
+      "story_zh": "屬於學術借詞，直接源自拉丁語代名詞 ego（我）。西語日常的第一人稱代名詞 yo 是它的同源演變形，而 ego 則保留原貌，引申為心理學上的「自我」或日常指的「自尊心」。",
+      "hook_zh": "英文與西語完全同字 ego，想像把「我」無限放大就是膨脹的自尊心。",
+      "usage_zh": "陽性名詞 el ego，常見片語如 herir el ego（傷害自尊心）。",
+      "example_es": "Tiene un ego muy grande y no acepta críticas.",
+      "example_zh": "他的自尊心很強，無法接受批評。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ego"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fanático",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "狂熱者、狂熱粉絲",
+      "en": "fanatic, fan, zealot",
+      "ipa": "/faˈnatiko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fānāticus",
+          "zh": "狂熱的、受神靈附體的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fanático",
+          "zh": "狂熱者、狂熱的"
+        }
+      ],
+      "cognates_en": [
+        "fanatic",
+        "fan"
+      ],
+      "story_zh": "學術借詞，源自拉丁語 fānāticus。最初指在神殿中受神靈附體而狂熱發狂的人，後來字義擴展為對宗教、某種思想或偶像極度著迷且盲從的狂熱者。英文的 fan（粉絲）也縮寫自同一字源。",
+      "hook_zh": "英文 fanatic（狂熱者）與 fan（粉絲）同源，想像演唱會上瘋狂尖叫的粉絲。",
+      "usage_zh": "可做名詞或形容詞。陰性為 fanática；常搭配介系詞 de，如 fanático del fútbol。",
+      "example_es": "Es un fanático del fútbol y no se pierde ningún partido.",
+      "example_zh": "他是個狂熱的足球迷，一場比賽都不錯過。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fanático"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fragmento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "碎片、片段、節錄",
+      "en": "fragment",
+      "ipa": "/fɾaɡˈmento/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fragmentum",
+          "zh": "碎片"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fragmento",
+          "zh": "碎片、片段"
+        }
+      ],
+      "cognates_en": [
+        "fragment"
+      ],
+      "story_zh": "學術借詞，直接源自拉丁語 fragmentum（碎片、斷片）。該字原本與折斷、打碎的動作相關，後來用來指破裂脫落的一塊，或指文章、樂曲中被節錄的一小段。",
+      "hook_zh": "對應英文 fragment（碎片），frag- 就像東西掉在地上摔碎的聲音。",
+      "usage_zh": "陽性名詞 el fragmento，常用於文學或音樂，如 un fragmento de una novela（小說片段）。",
+      "example_es": "Leímos un fragmento de la novela en clase.",
+      "example_zh": "我們在課堂上讀了這部小說的一個片段。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fragmento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hueco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "洞、空隙；（時間上的）空檔",
+      "en": "hole, gap; free time",
+      "ipa": "/ˈw̝eko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "occa",
+          "zh": "耙（農具）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "occāre",
+          "zh": "耙地、鬆土"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ocar",
+          "zh": "使中空"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "hueco",
+          "zh": "洞、空隙；中空的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自古西班牙語動詞 ocar（使中空），該動詞可追溯至拉丁文 occāre（耙地、鬆土）與 occa（耙）。古人用農具將堅硬的泥土耙鬆，翻出一道道凹槽與空隙，字義由此延伸為「洞、空隙」或「中空的」。",
+      "hook_zh": "想像地上凹下去一個洞（hueco），風吹過去發出呼呼聲，裡面空洞無物。",
+      "usage_zh": "常見片語 hacer un hueco（抽空、騰出時間）與 tener un hueco（有空檔）。",
+      "example_es": "Te llamo esta tarde si tengo un hueco en el trabajo.",
+      "example_zh": "如果我下午工作有空檔，就打電話給你。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:hueco",
+        "wiktionary:la:occo"
       ],
       "writer": "gemini"
     }
