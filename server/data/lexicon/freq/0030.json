@@ -1,312 +1,7 @@
 {
   "theme": "freq-0030",
-  "theme_zh": "常用字（頻率第 7386–7628 名）",
+  "theme_zh": "常用字（頻率第 7402–7646 名）",
   "entries": [
-    {
-      "word": "confederación",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "聯邦、聯盟",
-      "en": "confederation, confederacy",
-      "ipa": "/konfedeɾaˈθjon/",
-      "breakdown": [
-        {
-          "part": "confederar",
-          "zh": "結盟"
-        },
-        {
-          "part": "-ción",
-          "zh": "名詞字尾，表動作或狀態"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "confederar + -ción",
-          "zh": "結盟 + 名詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "confederación",
-          "zh": "聯邦、聯盟"
-        }
-      ],
-      "cognates_en": [
-        "confederation"
-      ],
-      "story_zh": "源自西語動詞 confederar（結盟、聯合）加上表示動作或狀態的名詞後綴 -ción。用來指由數個邦聯、國家或自治實體依約定結合而成的同盟或聯邦組織。",
-      "hook_zh": "con-（共同）加上聯邦 federación，大家聚在一起組成聯盟。",
-      "usage_zh": "陰性名詞。字尾為 -ción 的字皆為陰性，複數時重音符號去掉為 confederaciones。",
-      "example_es": "Varios estados formaron una confederación.",
-      "example_zh": "數個邦國組成了一個聯邦。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:confederación"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "consuelo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "安慰、慰藉",
-      "en": "solace, consolation",
-      "ipa": "/konˈswelo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "cōnsolāre",
-          "zh": "安慰"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "consolar",
-          "zh": "安慰"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "consuelo",
-          "zh": "安慰、慰藉"
-        }
-      ],
-      "cognates_en": [
-        "console",
-        "consolation"
-      ],
-      "story_zh": "由西語動詞 consolar（安慰）衍生而來的去動詞名詞，該動詞源自拉丁語 cōnsolāre（安慰）。從「給予安慰的動作」轉化為名詞，指讓人減輕痛苦或悲傷的慰藉。",
-      "hook_zh": "聯想英文 console（安慰），在傷心低潮時，朋友的一句話就是最大的 consuelo。",
-      "usage_zh": "常見搭配如 servir de consuelo（當作安慰）、dar consuelo（給予安慰）。",
-      "example_es": "Sus palabras fueron un gran consuelo para mí.",
-      "example_zh": "他的話語對我而言是一大安慰。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:consuelo",
-        "wiktionary:la:consolare"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "cordero",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "小羊、羔羊",
-      "en": "lamb",
-      "ipa": "/koɾˈdeɾo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "chordus",
-          "zh": "晚生的"
-        },
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "*cordārium",
-          "zh": "晚生的小羊"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "cordero",
-          "zh": "羔羊、小羊"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "繼承自通俗拉丁語 *cordārium（晚生的小羊），源頭是古典拉丁語 chordus（晚生、晚產的）。西語原本用源自拉丁語 agnus 的 año 稱呼羊，但因與表示「年」的 año 撞音混淆，最終被 cordero 取代。",
-      "hook_zh": "想像小羊（cordero）脖子上繫著一條繩子（cord）在草地上跳躍。",
-      "usage_zh": "陰性為 cordera（母小羊）。餐廳菜單上肉品常作 carne de cordero（羊肉）。",
-      "example_es": "El cordero come hierba fresca en el campo.",
-      "example_zh": "小羊在田野裡吃著新鮮的青草。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:cordero",
-        "wiktionary:la:chordus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "curar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "治癒、治療；照料",
-      "en": "to cure, heal; to care",
-      "ipa": "/kuˈɾaɾ/",
-      "breakdown": [
-        {
-          "part": "cur-",
-          "zh": "照料、醫治"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "cūrāre",
-          "zh": "照顧、照料、關心"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "curar",
-          "zh": "治癒、治療"
-        }
-      ],
-      "cognates_en": [
-        "cure",
-        "curate"
-      ],
-      "story_zh": "繼承自拉丁語動詞 cūrāre，原本的核心意義是「關心、照料、處理事務」。隨著時間演進，照料傷病者的含義逐漸成為主流，進而演變成現代「醫治、治癒」的意思。",
-      "hook_zh": "與英文 cure（治癒）完全同源，醫生照顧並治癒（curar）病人。",
-      "usage_zh": "作及物動詞表示「治好」；作代名動詞 curarse 則表示「痊癒、康復」。",
-      "example_es": "El médico logró curar la herida en pocos días.",
-      "example_zh": "醫生在幾天之內就治好了傷口。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:curar"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "desafortunadamente",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "不幸地、遺憾地",
-      "en": "unfortunately, regrettably",
-      "ipa": "/desafoɾtuˌnadaˈmente/",
-      "breakdown": [
-        {
-          "part": "des-",
-          "zh": "相反、否定"
-        },
-        {
-          "part": "afortunado",
-          "zh": "幸運的"
-        },
-        {
-          "part": "-mente",
-          "zh": "副詞字尾，…地"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "desafortunado + -mente",
-          "zh": "不幸的 + 副詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "desafortunadamente",
-          "zh": "不幸地、遺憾地"
-        }
-      ],
-      "cognates_en": [
-        "fortunate",
-        "unfortunately"
-      ],
-      "story_zh": "由形容詞 desafortunado（不幸的）加上副詞後綴 -mente 複合而成。desafortunado 本身由否定前綴 des- 加上 afortunado（幸運的）構成，整字字面意思即為「不幸地、遺憾地」。",
-      "hook_zh": "des-（不）＋ afortunado（幸運）＋ -mente（地）＝ 不幸地（unfortunately）。",
-      "usage_zh": "常置於句首作修飾全句的評註性副詞，後面通常接逗號。",
-      "example_es": "Desafortunadamente, no pudimos llegar a tiempo.",
-      "example_zh": "不幸的是，我們沒能及時趕到。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:desafortunadamente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "encargar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "委託、託付；訂購；負責（encargarse）",
-      "en": "to entrust, to order, to handle",
-      "ipa": "/enkaɾˈɡaɾ/",
-      "breakdown": [
-        {
-          "part": "en-",
-          "zh": "使、進入"
-        },
-        {
-          "part": "cargar",
-          "zh": "裝載、負擔"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "*incarricāre",
-          "zh": "裝載、把重物放上"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "encargar",
-          "zh": "委託、託付、負責"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自通俗拉丁語 *incarricāre，由前綴 en-（放入）加上 cargar（裝載、承載）構成。原意是「把重物裝載上去」，後來引申為把差事或責任交付給某人，演變成「委託、託付」；若是自己承接這份重量，即為「負責」。",
-      "hook_zh": "把一箱重物（cargar）推進（en-）別人懷裡委託他，或自己一把扛下說「我來負責」！",
-      "usage_zh": "常用反身動詞 encargarse de（負責某事），如：Yo me encargo de esto（這件事由我來負責）。",
-      "example_es": "No te preocupes, yo me encargo de hacer la reserva.",
-      "example_zh": "別擔心，我來負責訂位。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:encargar"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "energética",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "能源公司；能量學",
-      "en": "energy company, energetics",
-      "ipa": "/eneɾˈxetika/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "看到 energy（能量）加上陰性字尾，就聯想到供應電力的「能源公司」發電廠。",
-      "usage_zh": "此處作陰性名詞指能源公司（la energética）；也可作形容詞 energético（有活力的）的陰性形。",
-      "example_es": "La energética anunció nuevas tarifas de electricidad.",
-      "example_zh": "這家能源公司公布了新的電費費率。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:energética"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "enterado",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "自以為全懂的人、自大萬事通",
-      "en": "know-it-all",
-      "ipa": "/enteˈɾado/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "逢人就大聲喊「我早就知道了（enterado）！」的人，正是標準的自大萬事通。",
-      "usage_zh": "帶有貶義，形容自以為是、愛裝懂的人。亦為動詞 enterar（通知、使知情）的過去分詞。",
-      "example_es": "Nadie soporta a Juan porque es un enterado.",
-      "example_zh": "沒人受得了胡安，因為他是個自以為是的萬事通。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:enterado"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "enviado",
       "article": "el",
@@ -521,28 +216,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:ingrediente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "je",
-      "article": "",
-      "pos": "interjección",
-      "zh": "嘿、哼（冷笑或嘲弄聲）",
-      "en": "heh",
-      "ipa": "/xe/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "連續冷笑「je, je, je」，就是西語裡表示嘲諷的「呵呵」。",
-      "usage_zh": "多重複使用（je, je），用來表示懷疑、嘲諷或冷笑。",
-      "example_es": "—¿De verdad te creíste eso? —Je, claro que no.",
-      "example_zh": "「你真的相信那個？」「哼，當然沒有。」",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:je"
       ],
       "writer": "gemini"
     },
@@ -3853,6 +3526,355 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:abundante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "actualizar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "更新；使現代化",
+      "en": "to update, to refresh",
+      "ipa": "/aɡtwaliˈθaɾ/",
+      "breakdown": [
+        {
+          "part": "actual",
+          "zh": "當前的、現今的"
+        },
+        {
+          "part": "-izar",
+          "zh": "使…化（動詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "actual + -izar",
+          "zh": "當前的 + 使…化"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "actualizar",
+          "zh": "更新"
+        }
+      ],
+      "cognates_en": [
+        "actualize"
+      ],
+      "story_zh": "由 actual（當前的、現今的）加上動詞後綴 -izar（使…化）構成，字面意思就是「使成為當前最新的狀態」，因此引申為「更新」、「刷新」軟體或資訊。",
+      "hook_zh": "電腦跳出 update 視窗，要把資料變成 actual（當前最新）的狀態：actualizar。",
+      "usage_zh": "第一人稱現在式為 actualizo，簡單過去式為 actualicé（z 變 c）。",
+      "example_es": "Necesito actualizar el sistema operativo.",
+      "example_zh": "我需要更新作業系統。",
+      "image": "emoji:🔄",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:actualizar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "adjunto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "隨附的、隨信附上的",
+      "en": "attached, enclosed",
+      "ipa": "/adˈxunto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "adiūnctus",
+          "zh": "連接的、附加的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "adjunto",
+          "zh": "隨附的"
+        }
+      ],
+      "cognates_en": [
+        "adjunct"
+      ],
+      "story_zh": "源自拉丁語 adiūnctus（連接的、附加的），為半習得借詞。在現代西語中，常用來表示附加在電子郵件或信件中的文件，即「隨附的」。",
+      "hook_zh": "寄 Email 時夾帶附件，點選 attachment，就是隨信附上（adjunto）的檔案。",
+      "usage_zh": "常作信件用語：Te envío adjunto el archivo（隨信附上檔案）。陰性為 adjunta。",
+      "example_es": "El documento está en el correo adjunto.",
+      "example_zh": "文件在隨附的電子郵件中。",
+      "image": "emoji:📎",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:adjunto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aduana",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "海關；海關辦事處",
+      "en": "customs, customs office",
+      "ipa": "/aˈdwana/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "蘇美語",
+          "word": "𒁾 (dub)",
+          "zh": "泥板、記錄"
+        },
+        {
+          "lang_zh": "波斯語",
+          "word": "دیوان (dêvân)",
+          "zh": "官署、辦事處"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "دِيوَان (dīwān)",
+          "zh": "行政機關"
+        },
+        {
+          "lang_zh": "安達盧斯阿拉伯語",
+          "word": "*دوان (duwān)",
+          "zh": "官署"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "aduana",
+          "zh": "海關"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aduana",
+          "zh": "海關"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "最終可追溯至蘇美語表示記錄的「泥板」，經波斯語與阿拉伯語的 dīwān（官署、帳冊）傳入安達盧斯阿拉伯語，帶有冠詞演變為古西班牙語，專指進出徵稅的「海關」。法語 douane 亦同源。",
+      "hook_zh": "出國旅行過海關，行李箱被開箱檢查的地方就是 aduana。",
+      "usage_zh": "陰性名詞。常見搭配：pasar por la aduana（過海關）、agente de aduanas（海關人員）。",
+      "example_es": "Tuvimos que declarar las compras en la aduana.",
+      "example_zh": "我們必須在海關申報所購買的物品。",
+      "image": "emoji:🛃",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aduana"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "afrontar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "面對、應對、正視",
+      "en": "to face, to confront, to tackle",
+      "ipa": "/afɾonˈtaɾ/",
+      "breakdown": [
+        {
+          "part": "a-",
+          "zh": "朝向（源自拉丁語 ad-）"
+        },
+        {
+          "part": "front-",
+          "zh": "額頭、正面（源自 frontem）"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ad- + frontem",
+          "zh": "朝向 + 前額、正面"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*affrontāre",
+          "zh": "迎面相向、面對"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "afrontar",
+          "zh": "面對、應對"
+        }
+      ],
+      "cognates_en": [
+        "affront",
+        "confront",
+        "front"
+      ],
+      "story_zh": "源自通俗拉丁語 *affrontāre，由拉丁語字首 ad-（朝向）加上 frontem（前額、正面）構成，原意是「以額頭迎向前去、正面相迎」。後來引申為勇敢地「面對」問題或挑戰。與 afrentar（侮辱）為同源雙胞詞。",
+      "hook_zh": "把額頭（frente）迎上前去（a-），正面迎戰難題：afrontar！",
+      "usage_zh": "規則動詞。常見搭配：afrontar un problema（面對問題）、afrontar la realidad（面對現實）。",
+      "example_es": "Debemos afrontar este problema juntos.",
+      "example_zh": "我們必須共同面對這個問題。",
+      "image": "emoji:🧗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:afrontar",
+        "wiktionary:la:ad-"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "alejado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "遙遠的、偏遠的",
+      "en": "far, faraway, distant",
+      "ipa": "/aleˈxado/",
+      "breakdown": [
+        {
+          "part": "alejar",
+          "zh": "使遠離"
+        },
+        {
+          "part": "-ado",
+          "zh": "過去分詞／形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "alejar",
+          "zh": "使遠離"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alejado",
+          "zh": "遙遠的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "為動詞 alejar（使遠離、推開）的過去分詞轉化而來的形容詞，其核心為副詞 lejos（遠）。表示某人或某地處於被拉開距離的狀態，即「遙遠的」或「偏僻的」。",
+      "hook_zh": "和 lejos（遠）同一家族，被遠遠拉開（alejado）的荒郊野外。",
+      "usage_zh": "陰性為 alejada。常見句型：estar alejado de...（距離…很遙遠）。",
+      "example_es": "Ellos viven en un pueblo muy alejado.",
+      "example_zh": "他們住在一個非常偏遠的村莊。",
+      "image": "emoji:🏝️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alejado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "arranque",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "啟動；（情緒）發作、衝動",
+      "en": "startup; fit, burst (of emotion)",
+      "ipa": "/aˈranke/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "arrancar",
+          "zh": "拔起、發動"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "arranque",
+          "zh": "啟動、爆發"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 arrancar（連根拔起、發動）去動詞字尾衍生的名詞（deverbal）。從物體突然發力拔起或機器瞬間開動的爆發力，引申指引擎的「啟動」，以及情緒突如其來的「發作、衝動」。",
+      "hook_zh": "鑰匙一轉，引擎轟隆一聲啟動（arranque），車子瞬間衝出！",
+      "usage_zh": "陽性名詞。指情緒時常說 un arranque de ira（一陣暴怒）；指汽車或電腦開機為 arranque。",
+      "example_es": "El motor tuvo un fallo en el arranque.",
+      "example_zh": "引擎在啟動時發生了故障。",
+      "image": "emoji:🚀",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:arranque"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asignación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "津貼、補助；分配、指派",
+      "en": "allowance, allocation, assignment",
+      "ipa": "/asiɡnaˈθjon/",
+      "breakdown": [
+        {
+          "part": "asignar",
+          "zh": "指派、分配"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾（動作或結果）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "assīgnātiōnem",
+          "zh": "指派、指定"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "asignación",
+          "zh": "津貼、分配"
+        }
+      ],
+      "cognates_en": [
+        "assignment",
+        "assignation"
+      ],
+      "story_zh": "學者借詞自拉丁語 assīgnātiōnem（指派、指定）。在現代西語中，指把款項、資源或職責撥給特定對象的行為，也常專指定期發放的「津貼」或「補助金」。",
+      "hook_zh": "英文 assignment 是指派作業，西語 asignación 則常是政府或父母分配給你的津貼。",
+      "usage_zh": "陰性名詞，複數為 asignaciones。常見搭配：asignación mensual（每月津貼）。",
+      "example_es": "Los estudiantes reciben una asignación mensual.",
+      "example_zh": "學生們每個月領取一筆津貼。",
+      "image": "emoji:💶",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:asignación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "augusto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "威嚴的、崇高的、莊嚴的",
+      "en": "august, solemn, majestic",
+      "ipa": "/auˈɡusto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*augostos",
+          "zh": "增大的、強化的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "augustus",
+          "zh": "莊嚴的、威嚴的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "augusto",
+          "zh": "威嚴的、崇高的"
+        }
+      ],
+      "cognates_en": [
+        "august"
+      ],
+      "story_zh": "借自拉丁語 augustus（莊嚴的、神聖的），最初源於原始義大利語 *augostos，字根與動詞 augeō（增加、擴大）同源。在西語中它是文人借詞，而民間自然演變的同源詞則是月份 agosto（八月）。",
+      "hook_zh": "羅馬帝國奧古斯都大帝尊貴顯赫，其頭銜 augusto 就是「崇高威嚴的」象徵。",
+      "usage_zh": "形容詞，陰性為 augusta。注意與同源雙胞詞 agosto（八月）區分。",
+      "example_es": "El rey mantenía un porte augusto.",
+      "example_zh": "國王保持著威嚴莊重的儀態。",
+      "image": "emoji:👑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:augusto",
+        "wiktionary:la:augustus"
       ],
       "writer": "gemini"
     }

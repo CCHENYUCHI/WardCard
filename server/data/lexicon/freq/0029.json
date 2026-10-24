@@ -1,76 +1,7 @@
 {
   "theme": "freq-0029",
-  "theme_zh": "常用字（頻率第 7139–7382 名）",
+  "theme_zh": "常用字（頻率第 7141–7401 名）",
   "entries": [
-    {
-      "word": "especializado",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "專業的、專門的",
-      "en": "specialized",
-      "ipa": "/espeθjaliˈθado/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "長得很像英文 specialized，都是指在特定領域非常「專業」或「專門」。",
-      "usage_zh": "修飾陰性名詞時要配合陰陽性，變為 especializada。",
-      "example_es": "Es un médico especializado en cardiología.",
-      "example_zh": "他是一位心臟科專科醫生。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:especializado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "estacionamiento",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "停車場、停車",
-      "en": "parking, parking lot",
-      "ipa": "/estaθjonaˈmjento/",
-      "breakdown": [
-        {
-          "part": "estacionar",
-          "zh": "停放、停車"
-        },
-        {
-          "part": "-miento",
-          "zh": "名詞字尾，表動作或結果"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "estacionar",
-          "zh": "停車"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "-miento",
-          "zh": "名詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "estacionamiento",
-          "zh": "停車場、停車"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自動詞 estacionar（停車、使停駐），加上表示動作或場所狀態的名詞字尾 -miento，合起來即指「停車」的動作或是指「停車場」。",
-      "hook_zh": "把車子開到車站（station）旁停好，就是 estacionamiento（停車場）。",
-      "usage_zh": "陽性名詞。在拉丁美洲常用於指停車場，西班牙本土則常稱作 aparcamiento。",
-      "example_es": "No encuentro lugar en el estacionamiento.",
-      "example_zh": "我在停車場找不到位子。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:estacionamiento"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "estatuto",
       "article": "el",
@@ -618,28 +549,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:madurez"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "mera",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "女負責人、女性首領",
-      "en": "female person in charge",
-      "ipa": "/ˈmeɾa/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "「沒人（mera）敢惹的女主管」：她是這裡的最高負責人，全場都聽她的。",
-      "usage_zh": "常用於美洲西語口語（如 la mera mera），指最高女當家、女老大。",
-      "example_es": "Ella es la mera de la empresa y toma las decisiones.",
-      "example_zh": "她是公司的女負責人，由她做各項決定。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:mera"
       ],
       "writer": "gemini"
     },
@@ -1446,42 +1355,6 @@
       "writer": "gemini"
     },
     {
-      "word": "bruno",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "深褐色的；黑色的",
-      "en": "dark brown; black",
-      "ipa": "/ˈbɾuno/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "法語",
-          "word": "brun",
-          "zh": "深褐色、棕色"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "bruno",
-          "zh": "深褐色的、黑色的"
-        }
-      ],
-      "cognates_en": [
-        "brown",
-        "brunette"
-      ],
-      "story_zh": "借自法語的 brun（棕色、深褐色），在西語中指深褐色或近黑色的暗色調。英文中表示深褐色頭髮女性的 brunette 也是來自同一個法文字根。",
-      "hook_zh": "聯想英文 brunette（深褐髮女子），bruno 就是深褐色。",
-      "usage_zh": "形容詞需隨名詞做性數變化，陰性為 bruna，複數為 brunos / brunas。",
-      "example_es": "El caballo tiene un pelaje bruno muy brillante.",
-      "example_zh": "這匹馬有著非常有光澤的深褐色毛皮。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:bruno"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "canadiense",
       "article": "el",
       "pos": "sustantivo",
@@ -1522,28 +1395,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:canadiense"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "catalina",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "（自行車的）大齒盤、曲柄鏈輪組",
-      "en": "crankset; chainset",
-      "ipa": "/kataˈlina/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "女孩踩動自行車大齒盤（catalina），車鏈喀嗒喀嗒轉動。",
-      "usage_zh": "自行車機械零件名詞，指大齒盤或曲柄鏈輪組，為陰性名詞。",
-      "example_es": "El mecánico tuvo que ajustar la catalina de la bicicleta.",
-      "example_zh": "技師必須調整腳踏車的大齒盤。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:catalina"
       ],
       "writer": "gemini"
     },
@@ -1589,28 +1440,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:centenario"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "claudia",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "青李、綠李（歐洲李的一種）",
-      "en": "greengage",
-      "ipa": "/ˈklaudja/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "想像名叫 Claudia 的女孩在果園裡採摘酸甜爽口的青李。",
-      "usage_zh": "為陰性名詞，複數為 claudias；也常稱作 ciruela claudia。",
-      "example_es": "Compré un kilo de claudias dulces en el mercado.",
-      "example_zh": "我在市場買了一公斤香甜的青李。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:claudia"
       ],
       "writer": "gemini"
     },
@@ -1886,30 +1715,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:delegado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "designado",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "代理人、指定接班人",
-      "en": "vice, stand-in, designee",
-      "ipa": "/desiɡˈnado/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "designate"
-      ],
-      "story_zh": "",
-      "hook_zh": "來自英文 designate（指定）的同源詞形，指被指定職責的「代理人」。",
-      "usage_zh": "陰性為 designada。除作名詞表副手、代理人外，也是動詞的分詞「被指定的」。",
-      "example_es": "El ministro presentó a su designado para la cumbre.",
-      "example_zh": "部長介紹了他出席峰會的代理人。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:designado"
       ],
       "writer": "gemini"
     },
@@ -2752,28 +2557,6 @@
       "writer": "gemini"
     },
     {
-      "word": "ps",
-      "article": "",
-      "pos": "conjunción",
-      "zh": "「pues」的口語簡寫，表示那麼、好吧",
-      "en": "well, then (colloquial abbreviation of pues)",
-      "ipa": "/ps/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "口語中隨意吐出一聲「ps…」，就像中文聊天時敷衍地說「好啦、好吧」。",
-      "usage_zh": "pues 在通訊軟體上的口語簡寫，通常用於語氣詞，不放在正式寫作中。",
-      "example_es": "¿Vas a venir a la fiesta? —Ps, creo que no.",
-      "example_zh": "你要去派對嗎？——嗯，我想不去。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:ps"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "racional",
       "article": "",
       "pos": "adjetivo",
@@ -2887,30 +2670,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:revelación"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "ro",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "希臘字母 Ρ、ρ（rho）",
-      "en": "rho (the Greek letter Ρ, ρ)",
-      "ipa": "/ˈro/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "rho"
-      ],
-      "story_zh": "",
-      "hook_zh": "希臘字母第十七個字母 ρ，英文寫作 rho，西語拼成 ro。",
-      "usage_zh": "為陰性名詞（la ro）。在物理與工程中常借用為密度符號。",
-      "example_es": "La letra griega ro se escribe similar a una pe.",
-      "example_zh": "希臘字母 ro 寫起來跟字母 p 很像。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:ro"
       ],
       "writer": "gemini"
     },
@@ -3550,39 +3309,6 @@
       "writer": "gemini"
     },
     {
-      "word": "chupa",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "皮夾克；奶嘴",
-      "en": "leather jacket; pacifier",
-      "ipa": "/ˈt͡ʃupa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "法語",
-          "word": "jupe",
-          "zh": "短裙、外衣"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "chupa",
-          "zh": "夾克、皮衣"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "「皮夾克」的用法借自法語 jupe（原指裙子或某種外衣），傳入西語後指夾克；另一意思「奶嘴」則源自動詞 chupar（吸、吮）。",
-      "hook_zh": "想像穿著帥氣皮衣（chupa）在吸吮（chupar）棒棒糖的逗趣畫面。",
-      "usage_zh": "陰性名詞 la chupa。在西班牙常用於指短夾克或皮衣；在拉丁美洲有些地方指奶嘴。",
-      "example_es": "Me compré una chupa de cuero negro.",
-      "example_zh": "我買了一件黑色的皮夾克。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:chupa"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "colorado",
       "article": "",
       "pos": "adjetivo",
@@ -3648,6 +3374,267 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:comprometido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "confederación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "聯邦、聯盟",
+      "en": "confederation, confederacy",
+      "ipa": "/konfedeɾaˈθjon/",
+      "breakdown": [
+        {
+          "part": "confederar",
+          "zh": "結盟"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表動作或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "confederar + -ción",
+          "zh": "結盟 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "confederación",
+          "zh": "聯邦、聯盟"
+        }
+      ],
+      "cognates_en": [
+        "confederation"
+      ],
+      "story_zh": "源自西語動詞 confederar（結盟、聯合）加上表示動作或狀態的名詞後綴 -ción。用來指由數個邦聯、國家或自治實體依約定結合而成的同盟或聯邦組織。",
+      "hook_zh": "con-（共同）加上聯邦 federación，大家聚在一起組成聯盟。",
+      "usage_zh": "陰性名詞。字尾為 -ción 的字皆為陰性，複數時重音符號去掉為 confederaciones。",
+      "example_es": "Varios estados formaron una confederación.",
+      "example_zh": "數個邦國組成了一個聯邦。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:confederación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "consuelo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "安慰、慰藉",
+      "en": "solace, consolation",
+      "ipa": "/konˈswelo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cōnsolāre",
+          "zh": "安慰"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "consolar",
+          "zh": "安慰"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "consuelo",
+          "zh": "安慰、慰藉"
+        }
+      ],
+      "cognates_en": [
+        "console",
+        "consolation"
+      ],
+      "story_zh": "由西語動詞 consolar（安慰）衍生而來的去動詞名詞，該動詞源自拉丁語 cōnsolāre（安慰）。從「給予安慰的動作」轉化為名詞，指讓人減輕痛苦或悲傷的慰藉。",
+      "hook_zh": "聯想英文 console（安慰），在傷心低潮時，朋友的一句話就是最大的 consuelo。",
+      "usage_zh": "常見搭配如 servir de consuelo（當作安慰）、dar consuelo（給予安慰）。",
+      "example_es": "Sus palabras fueron un gran consuelo para mí.",
+      "example_zh": "他的話語對我而言是一大安慰。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:consuelo",
+        "wiktionary:la:consolare"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cordero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "小羊、羔羊",
+      "en": "lamb",
+      "ipa": "/koɾˈdeɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "chordus",
+          "zh": "晚生的"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*cordārium",
+          "zh": "晚生的小羊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cordero",
+          "zh": "羔羊、小羊"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自通俗拉丁語 *cordārium（晚生的小羊），源頭是古典拉丁語 chordus（晚生、晚產的）。西語原本用源自拉丁語 agnus 的 año 稱呼羊，但因與表示「年」的 año 撞音混淆，最終被 cordero 取代。",
+      "hook_zh": "想像小羊（cordero）脖子上繫著一條繩子（cord）在草地上跳躍。",
+      "usage_zh": "陰性為 cordera（母小羊）。餐廳菜單上肉品常作 carne de cordero（羊肉）。",
+      "example_es": "El cordero come hierba fresca en el campo.",
+      "example_zh": "小羊在田野裡吃著新鮮的青草。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cordero",
+        "wiktionary:la:chordus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "curar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "治癒、治療；照料",
+      "en": "to cure, heal; to care",
+      "ipa": "/kuˈɾaɾ/",
+      "breakdown": [
+        {
+          "part": "cur-",
+          "zh": "照料、醫治"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cūrāre",
+          "zh": "照顧、照料、關心"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "curar",
+          "zh": "治癒、治療"
+        }
+      ],
+      "cognates_en": [
+        "cure",
+        "curate"
+      ],
+      "story_zh": "繼承自拉丁語動詞 cūrāre，原本的核心意義是「關心、照料、處理事務」。隨著時間演進，照料傷病者的含義逐漸成為主流，進而演變成現代「醫治、治癒」的意思。",
+      "hook_zh": "與英文 cure（治癒）完全同源，醫生照顧並治癒（curar）病人。",
+      "usage_zh": "作及物動詞表示「治好」；作代名動詞 curarse 則表示「痊癒、康復」。",
+      "example_es": "El médico logró curar la herida en pocos días.",
+      "example_zh": "醫生在幾天之內就治好了傷口。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:curar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "desafortunadamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "不幸地、遺憾地",
+      "en": "unfortunately, regrettably",
+      "ipa": "/desafoɾtuˌnadaˈmente/",
+      "breakdown": [
+        {
+          "part": "des-",
+          "zh": "相反、否定"
+        },
+        {
+          "part": "afortunado",
+          "zh": "幸運的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾，…地"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "desafortunado + -mente",
+          "zh": "不幸的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "desafortunadamente",
+          "zh": "不幸地、遺憾地"
+        }
+      ],
+      "cognates_en": [
+        "fortunate",
+        "unfortunately"
+      ],
+      "story_zh": "由形容詞 desafortunado（不幸的）加上副詞後綴 -mente 複合而成。desafortunado 本身由否定前綴 des- 加上 afortunado（幸運的）構成，整字字面意思即為「不幸地、遺憾地」。",
+      "hook_zh": "des-（不）＋ afortunado（幸運）＋ -mente（地）＝ 不幸地（unfortunately）。",
+      "usage_zh": "常置於句首作修飾全句的評註性副詞，後面通常接逗號。",
+      "example_es": "Desafortunadamente, no pudimos llegar a tiempo.",
+      "example_zh": "不幸的是，我們沒能及時趕到。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:desafortunadamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "encargar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "委託、託付；訂購；負責（encargarse）",
+      "en": "to entrust, to order, to handle",
+      "ipa": "/enkaɾˈɡaɾ/",
+      "breakdown": [
+        {
+          "part": "en-",
+          "zh": "使、進入"
+        },
+        {
+          "part": "cargar",
+          "zh": "裝載、負擔"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*incarricāre",
+          "zh": "裝載、把重物放上"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "encargar",
+          "zh": "委託、託付、負責"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自通俗拉丁語 *incarricāre，由前綴 en-（放入）加上 cargar（裝載、承載）構成。原意是「把重物裝載上去」，後來引申為把差事或責任交付給某人，演變成「委託、託付」；若是自己承接這份重量，即為「負責」。",
+      "hook_zh": "把一箱重物（cargar）推進（en-）別人懷裡委託他，或自己一把扛下說「我來負責」！",
+      "usage_zh": "常用反身動詞 encargarse de（負責某事），如：Yo me encargo de esto（這件事由我來負責）。",
+      "example_es": "No te preocupes, yo me encargo de hacer la reserva.",
+      "example_zh": "別擔心，我來負責訂位。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:encargar"
       ],
       "writer": "gemini"
     }

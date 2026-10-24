@@ -1,6 +1,6 @@
 {
   "theme": "freq-0028",
-  "theme_zh": "常用字（頻率第 6893–7138 名）",
+  "theme_zh": "常用字（頻率第 6893–7140 名）",
   "entries": [
     {
       "word": "imbécil",
@@ -2053,28 +2053,6 @@
       "writer": "gemini"
     },
     {
-      "word": "pr",
-      "article": "",
-      "pos": "preposición",
-      "zh": "（縮寫）為了、由（por / para 的簡寫）",
-      "en": "abbreviation of por or para",
-      "ipa": "/poɾ/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "西語打字聊天時常把 por 或 para 縮寫成 pr，就像英文打 ur 一樣。",
-      "usage_zh": "網路與簡訊中的非正式縮寫，代表 por、para 或 pero，正式書寫請勿使用。",
-      "example_es": "Gracias pr avisarme a tiempo.",
-      "example_zh": "謝謝你及時通知我。（簡訊縮寫用語）",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:pr"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "racista",
       "article": "",
       "pos": "adjetivo",
@@ -2515,28 +2493,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:tropical"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "ultra",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "極端的；極右派的",
-      "en": "extreme, far-right",
-      "ipa": "/ˈultɾa/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "聯想英文 ultra（超級、極限），在西語中常用來形容政治立場或行為極端。",
-      "usage_zh": "陰陽同形形容詞，複數為 ultras；亦可作為名詞指「極端主義者」或「激進狂熱球迷」。",
-      "example_es": "El grupo ultra generó disturbios después del partido.",
-      "example_zh": "該極端團體在比賽結束後引發了騷亂。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:ultra"
       ],
       "writer": "gemini"
     },
@@ -3730,6 +3686,75 @@
       "sources": [
         "wiktionary:es:escaño",
         "wiktionary:la:scamnum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "especializado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "專業的、專門的",
+      "en": "specialized",
+      "ipa": "/espeθjaliˈθado/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "長得很像英文 specialized，都是指在特定領域非常「專業」或「專門」。",
+      "usage_zh": "修飾陰性名詞時要配合陰陽性，變為 especializada。",
+      "example_es": "Es un médico especializado en cardiología.",
+      "example_zh": "他是一位心臟科專科醫生。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:especializado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estacionamiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "停車場、停車",
+      "en": "parking, parking lot",
+      "ipa": "/estaθjonaˈmjento/",
+      "breakdown": [
+        {
+          "part": "estacionar",
+          "zh": "停放、停車"
+        },
+        {
+          "part": "-miento",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "estacionar",
+          "zh": "停車"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "-miento",
+          "zh": "名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estacionamiento",
+          "zh": "停車場、停車"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 estacionar（停車、使停駐），加上表示動作或場所狀態的名詞字尾 -miento，合起來即指「停車」的動作或是指「停車場」。",
+      "hook_zh": "把車子開到車站（station）旁停好，就是 estacionamiento（停車場）。",
+      "usage_zh": "陽性名詞。在拉丁美洲常用於指停車場，西班牙本土則常稱作 aparcamiento。",
+      "example_es": "No encuentro lugar en el estacionamiento.",
+      "example_zh": "我在停車場找不到位子。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estacionamiento"
       ],
       "writer": "gemini"
     }
