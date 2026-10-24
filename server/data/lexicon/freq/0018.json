@@ -1094,6 +1094,43 @@
       "writer": "gemini"
     },
     {
+      "word": "rayo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "光線、光束；閃電",
+      "en": "ray, beam; lightning bolt",
+      "ipa": "/ˈraʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "radius",
+          "zh": "輪輻、丈量棒"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rayo",
+          "zh": "光線、閃電"
+        }
+      ],
+      "cognates_en": [
+        "ray",
+        "radius"
+      ],
+      "story_zh": "源自拉丁語 radius，原指車輪的「輪輻」或丈量棒。由於輪輻從中心向外放射，古人便引申指像輪輻般射出的「光芒」；演變到西班牙語後，更延伸指從雲端直劈而下的「閃電」。它與直接借用拉丁語形的 radio（半徑、廣播）是同源成對詞。",
+      "hook_zh": "英文 ray（光線）加上 o 就是 rayo；天空劈下一道刺眼的光線，就是閃電！",
+      "usage_zh": "陽性名詞。常見搭配如 un rayo de sol（一縷陽光），或片語 como un rayo（像閃電般迅速、飛快地）。",
+      "example_es": "Un rayo cayó cerca de la casa.",
+      "example_zh": "一道閃電落在了房子附近。",
+      "image": "emoji:⚡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:rayo",
+        "wiktionary:la:radius"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "semilla",
       "article": "la",
       "pos": "sustantivo",
