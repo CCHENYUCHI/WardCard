@@ -1,521 +1,7 @@
 {
   "theme": "freq-0032",
-  "theme_zh": "常用字（頻率第 7905–8184 名）",
+  "theme_zh": "常用字（頻率第 7938–8247 名）",
   "entries": [
-    {
-      "word": "traductor",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "譯者、翻譯員；翻譯機",
-      "en": "translator",
-      "ipa": "/tɾaduɡˈtoɾ/",
-      "breakdown": [
-        {
-          "part": "trans-",
-          "zh": "跨越、穿過"
-        },
-        {
-          "part": "duc-",
-          "zh": "引導、帶領"
-        },
-        {
-          "part": "-tor",
-          "zh": "做…的人或物"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "traductor",
-          "zh": "轉移者、引渡者"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "traductor",
-          "zh": "翻譯者"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁語 traductor（傳遞者、轉移者），來自 trādūcō（跨越引導）。在後古典拉丁語中衍生出「將文字轉譯」的意思，後來演變成西語的翻譯員。",
-      "hook_zh": "把話從這端「引導跨越」（trans + duc）到另一端的人，就是 traductor。",
-      "usage_zh": "陰性形式為 traductora，複數為 traductores。",
-      "example_es": "El traductor trabaja con varios idiomas.",
-      "example_zh": "這位翻譯員精通多種語言。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:traductor",
-        "wiktionary:la:traductor"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "transcurso",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "（時間的）流逝、經過",
-      "en": "course, passing",
-      "ipa": "/tɾansˈkuɾso/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "時間在跨越（trans）中奔馳前進，歲月就在 transcurso 中流逝。",
-      "usage_zh": "常搭配片語：con el transcurso de…（隨著…的流逝）。",
-      "example_es": "Todo cambió con el transcurso del tiempo.",
-      "example_zh": "隨著時間的流逝，一切都改變了。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:transcurso"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "urna",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "票箱、投票箱；骨灰罈",
-      "en": "ballot box, urn",
-      "ipa": "/ˈuɾna/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "urna",
-          "zh": "水甕、陶罐"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "urna",
-          "zh": "票箱、骨灰罈"
-        }
-      ],
-      "cognates_en": [
-        "urn"
-      ],
-      "story_zh": "源自拉丁語 urna（陶罐、水甕）。古羅馬人便曾以陶罐盛裝籤條與選票，在現代西語中主要指投票用的票箱，也保留了放骨灰的罈甕之意。",
-      "hook_zh": "投下神聖的一票，把選票放進透明的 urna。",
-      "usage_zh": "陰性名詞。選舉時常說 acudir a las urnas（前往投票所投票）。",
-      "example_es": "Los ciudadanos depositan su voto en la urna.",
-      "example_zh": "公民們將選票投入投票箱中。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:urna"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "verbo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "動詞；話語",
-      "en": "verb",
-      "ipa": "/ˈbeɾbo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "原始印歐語",
-          "word": "*werdʰom",
-          "zh": "話語"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "verbum",
-          "zh": "字、話語、動詞"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "verbo",
-          "zh": "動詞"
-        }
-      ],
-      "cognates_en": [
-        "verb",
-        "word"
-      ],
-      "story_zh": "源自拉丁語 verbum（字詞、言辭）。在古羅馬文法學中，動詞被視為句子的靈魂與核心之詞，因而專指動詞。英文的 verb 與 word 亦同源。",
-      "hook_zh": "一個句子不能沒有動作，最重要的「話」就是動詞 verbo。",
-      "usage_zh": "語法名詞為陽性：el verbo regular（規則動詞）。",
-      "example_es": "El verbo ser es irregular en español.",
-      "example_zh": "動詞 ser 在西班牙語中是不規則的。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:verbo",
-        "wiktionary:la:verbum"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "vicio",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "惡習、不良嗜好；惡德",
-      "en": "vice, bad habit",
-      "ipa": "/ˈbiθjo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "vitium",
-          "zh": "瑕疵、缺點、罪過"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "vicio",
-          "zh": "惡習、壞習慣"
-        }
-      ],
-      "cognates_en": [
-        "vice",
-        "vicious"
-      ],
-      "story_zh": "源自拉丁語 vitium，原指「瑕疵、缺陷、毛病」，後來引申為道德上的缺點與不良習慣。英文的 vice 和 vicious 皆由此衍生而來。",
-      "hook_zh": "英文 vice 就是西語 vicio，養成壞習慣就像心靈沾上污漬。",
-      "usage_zh": "常見片語 tener el vicio de…（有…的惡習）。",
-      "example_es": "Fumar es un mal vicio para la salud.",
-      "example_zh": "抽菸是對健康有害的壞習慣。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:vicio",
-        "wiktionary:la:vitium"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "volcán",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "火山",
-      "en": "volcano",
-      "ipa": "/bolˈkan/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "伊特拉斯坎語",
-          "word": "Velchans",
-          "zh": "火神名"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "Vulcanus",
-          "zh": "火神武爾坎努斯"
-        },
-        {
-          "lang_zh": "義大利語",
-          "word": "vulcano",
-          "zh": "火山"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "volcán",
-          "zh": "火山"
-        }
-      ],
-      "cognates_en": [
-        "volcano",
-        "Vulcan"
-      ],
-      "story_zh": "源自羅馬神話的火神與鍛造神 Vulcanus。古人認為火山噴發是神明在山底地爐打鐵冶煉，義大利語轉為 vulcano，西語借入成為 volcán。",
-      "hook_zh": "火神 Vulcan 發怒，地底熔岩爆發，就形成了噴火的 volcán。",
-      "usage_zh": "陽性名詞，複數形式加 -es 並去掉重音：los volcanes。",
-      "example_es": "El volcán entró en erupción de repente.",
-      "example_zh": "這座火山突然噴發了。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:volcán",
-        "wiktionary:la:Vulcanus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "activista",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "社運人士、行動主義者",
-      "en": "activist",
-      "ipa": "/aɡtiˈbista/",
-      "breakdown": [
-        {
-          "part": "activ-",
-          "zh": "活躍、行動"
-        },
-        {
-          "part": "-ista",
-          "zh": "…主義者、從業者"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "activist"
-      ],
-      "story_zh": "",
-      "hook_zh": "積極主動（activo）走上街頭推動改變的人（-ista），就是 activista。",
-      "usage_zh": "陰陽同形：el activista（男活動家）、la activista（女活動家）。",
-      "example_es": "Ella es una activista por los derechos humanos.",
-      "example_zh": "她是捍衛人權的社運人士。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:activista"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "adelantado",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "先進的、超前的；提早的",
-      "en": "advanced, ahead of one's time",
-      "ipa": "/adelanˈtado/",
-      "breakdown": [
-        {
-          "part": "adelantar",
-          "zh": "前進、提前"
-        },
-        {
-          "part": "-ado",
-          "zh": "過去分詞形容詞字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "走在大家前面（adelante）的人事物，自然就是 adelantado（走在前頭的）。",
-      "usage_zh": "常搭配片語 adelantado a su tiempo（超越他所在的時代）。",
-      "example_es": "Era un artista muy adelantado a su época.",
-      "example_zh": "他是一位藝術觀念遠超前於時代的藝術家。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:adelantado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "administrar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "管理、經營；給予（藥物）",
-      "en": "to manage, to administer",
-      "ipa": "/adminisˈtɾaɾ/",
-      "breakdown": [
-        {
-          "part": "ad-",
-          "zh": "朝向、給予"
-        },
-        {
-          "part": "ministr-",
-          "zh": "服務、執行"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "administrare",
-          "zh": "協助、管理、執行"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "administrar",
-          "zh": "管理、經營"
-        }
-      ],
-      "cognates_en": [
-        "administer",
-        "administration"
-      ],
-      "story_zh": "學術借詞源自拉丁語 administrāre，由 ad-（朝向）與 ministrāre（服侍、提供服務）組合而成，原意為在旁給予協助與執行，後演變為統籌管理。",
-      "hook_zh": "英文 administer 拼法幾乎一樣，ministro（部長）也是同源的管理職。",
-      "usage_zh": "可指管理公司，也可指醫生開藥給藥：administrar un medicamento。",
-      "example_es": "Ella sabe cómo administrar bien sus recursos.",
-      "example_zh": "她懂得如何妥善管理自己的資源。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:administrar"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "alimentario",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "食品的、飲食的、食物相關的",
-      "en": "alimentary, dietary, food-related",
-      "ipa": "/alimenˈtaɾjo/",
-      "breakdown": [
-        {
-          "part": "alimento",
-          "zh": "食物、養分"
-        },
-        {
-          "part": "-ario",
-          "zh": "形容詞字尾（與…有關的）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "alimentarius",
-          "zh": "食物的、營養的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "alimentario",
-          "zh": "飲食的、食品的"
-        }
-      ],
-      "cognates_en": [
-        "alimentary"
-      ],
-      "story_zh": "學術借詞源自拉丁語 alimentārius，由 alimentum（食物、養料）衍生而來，專門指涉與飲食、食品供應及營養相關的事務。",
-      "hook_zh": "超市食品包裝上的 industria alimentaria 就是食品工業。",
-      "usage_zh": "陰性為 alimentaria，如 cadena alimentaria（食物鏈）。",
-      "example_es": "La seguridad alimentaria es un derecho básico.",
-      "example_zh": "糧食與食品安全是一項基本權利。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:alimentario"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "aria",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "詠嘆調、獨唱曲",
-      "en": "aria",
-      "ipa": "/ˈaɾja/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "義大利語",
-          "word": "aria",
-          "zh": "空氣；曲調、詠嘆調"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "aria",
-          "zh": "詠嘆調"
-        }
-      ],
-      "cognates_en": [
-        "aria",
-        "air"
-      ],
-      "story_zh": "借自義大利語 aria。原意為「空氣、氣息」，在音樂上引申為隨氣息歌唱的抒情曲調，特指歌劇或神劇中的獨唱詠嘆調。",
-      "hook_zh": "歌劇名伶深深吸入一口空氣（aria），唱出優美動人的詠嘆調。",
-      "usage_zh": "陰性名詞但首音為重音 a-，單數冠詞用 el：el aria，複數為 las arias。",
-      "example_es": "La soprano cantó un aria hermosa.",
-      "example_zh": "女高音唱了一首優美的詠嘆調。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:aria"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "brigada",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "旅（軍事編制）；大隊、工作小組",
-      "en": "brigade, squad, team",
-      "ipa": "/bɾiˈɡada/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "法語",
-          "word": "brigade",
-          "zh": "旅、小隊"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "brigada",
-          "zh": "旅、工作大隊"
-        }
-      ],
-      "cognates_en": [
-        "brigade"
-      ],
-      "story_zh": "借自法語 brigade。原為陸軍軍事編制「旅」，後在現代社會中廣泛指稱從事特定救援或公共任務的專職工作大隊（如消防隊、搜救隊）。",
-      "hook_zh": "英文 brigade 與西語 brigada 同源，指同心協力執行任務的小隊。",
-      "usage_zh": "陰性名詞。如 brigada de rescate（搜救隊）。",
-      "example_es": "La brigada de bomberos apagó el fuego.",
-      "example_zh": "消防隊撲滅了火勢。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:brigada"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "caballería",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "騎兵；騎士制度、騎士風範",
-      "en": "cavalry, chivalry",
-      "ipa": "/kabaʝeˈɾia/",
-      "breakdown": [
-        {
-          "part": "caballero",
-          "zh": "騎士、騎手"
-        },
-        {
-          "part": "-ía",
-          "zh": "名詞字尾（群體、制度）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "caballus",
-          "zh": "馬匹"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "caballarius",
-          "zh": "騎馬者"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "caballero",
-          "zh": "騎士、紳士"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "caballería",
-          "zh": "騎兵、騎士制度"
-        }
-      ],
-      "cognates_en": [
-        "cavalry",
-        "chivalry"
-      ],
-      "story_zh": "源自晚期拉丁語 caballārius（騎馬者），來自拉丁語 caballus（馬匹）。在西語中先形成 caballero（騎士），加上字尾 -ía 後指稱騎兵部隊或騎士道精神。英文 cavalry 亦同源。",
-      "hook_zh": "騎著駿馬（caballo）的騎士（caballero）組成的軍隊，就是 caballería。",
-      "usage_zh": "陰性名詞。西班牙文學名作常提及 libros de caballerías（騎士小說）。",
-      "example_es": "La caballería avanzó con gran fuerza.",
-      "example_zh": "騎兵部隊勢如破竹地向前推進。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:caballería",
-        "wiktionary:la:caballarius"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "campana",
       "article": "la",
@@ -1699,37 +1185,6 @@
       "sources": [
         "wiktionary:es:soberano",
         "wiktionary:la:super"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "sobretodo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "寬大罩衫、大衣外套、工作罩袍",
-      "en": "overalls, overcoat",
-      "ipa": "/sobɾeˈtodo/",
-      "breakdown": [
-        {
-          "part": "sobre-",
-          "zh": "在…之上、外覆"
-        },
-        {
-          "part": "todo",
-          "zh": "全部衣物"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "套在所有衣服外面（sobre + todo）用來保暖防塵的外套，就是 sobretodo。",
-      "usage_zh": "注意區別：sobretodo（名詞，大衣外套）與 sobre todo（副詞片語，尤其是）。",
-      "example_es": "Se puso el sobretodo para salir a la nieve.",
-      "example_zh": "他穿上大衣外套走入雪地中。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:sobretodo"
       ],
       "writer": "gemini"
     },
@@ -3599,6 +3054,840 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:abundancia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "adolescencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "青春期",
+      "en": "adolescence",
+      "ipa": "/adolesˈθenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "adolēscentia",
+          "zh": "青年期"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "adolescencia",
+          "zh": "青春期"
+        }
+      ],
+      "cognates_en": [
+        "adolescence"
+      ],
+      "story_zh": "源自拉丁語 adolēscentia，本義為青年時期，指從童年邁向成年的成長過渡階段。",
+      "hook_zh": "長大成熟的階段就是 adolescence，西語拼成 adolescencia。",
+      "usage_zh": "陰性名詞。常搭配 durante la adolescencia（在青春期期間）。",
+      "example_es": "La adolescencia es una etapa de grandes cambios.",
+      "example_zh": "青春期是一個充滿重大變化的階段。",
+      "image": "emoji:🧑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:adolescencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ajedrez",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "西洋棋",
+      "en": "chess",
+      "ipa": "/axeˈdɾeθ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "梵語",
+          "word": "चतुरङ्ग (caturaṅga)",
+          "zh": "四兵（象、馬、車、步）"
+        },
+        {
+          "lang_zh": "中古波斯語",
+          "word": "čatrang",
+          "zh": "象棋"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "شِطْرَنْج (šiṭranj)",
+          "zh": "象棋"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "axedrez",
+          "zh": "西洋棋"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ajedrez",
+          "zh": "西洋棋"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自梵語 caturaṅga（四兵，象徵古代印度的四種兵種），傳入波斯後變為 čatrang，再經由阿拉伯語 šiṭranj 經安達盧西亞傳入西班牙，成為古西語 axedrez，演變為現代西語 ajedrez。",
+      "hook_zh": "下西洋棋需要開動腦筋，記住國王走一步，ajedrez 就是西洋棋。",
+      "usage_zh": "陽性名詞。複數形是 ajedreces（z 變 c）。",
+      "example_es": "Jugamos una partida de ajedrez por la tarde.",
+      "example_zh": "我們下午下了一盤西洋棋。",
+      "image": "emoji:♟️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ajedrez"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "alfa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "希臘字母的第一個字母",
+      "en": "alpha (Greek letter)",
+      "ipa": "/ˈalfa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἄλφα (álpha)",
+          "zh": "希臘字母第一個字"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alfa",
+          "zh": "希臘字母的第一個字母"
+        }
+      ],
+      "cognates_en": [
+        "alpha",
+        "alphabet"
+      ],
+      "story_zh": "借自古希臘語 ἄλφα（álpha），源於閃米特語系（如腓尼基字母 aleph，意為牛）。它是希臘字母的第一個字母，英文的 alphabet 也是由 alpha 和 beta 組合而來。",
+      "hook_zh": "希臘字母的第一個字就是 alfa，常用於代表「第一」或「開端」。",
+      "usage_zh": "陰性名詞。因為以重音 a 開頭，單數定冠詞常使用 el alfa 以利發音。",
+      "example_es": "Alfa es la primera letra del alfabeto griego.",
+      "example_zh": "Alfa 是希臘字母的第一個字母。",
+      "image": "emoji:🔤",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alfa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aplauso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "掌聲、鼓掌",
+      "en": "applause",
+      "ipa": "/aˈplauso/",
+      "breakdown": [
+        {
+          "part": "applaud-",
+          "zh": "拍手、鼓掌"
+        },
+        {
+          "part": "-so",
+          "zh": "動作名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "plaudō",
+          "zh": "擊打、拍擊"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "applaudō",
+          "zh": "鼓掌、拍手"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "applausus",
+          "zh": "拍手、掌聲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aplauso",
+          "zh": "掌聲、鼓掌"
+        }
+      ],
+      "cognates_en": [
+        "applause",
+        "applaud"
+      ],
+      "story_zh": "源自拉丁語 applausus，由動詞 applaudō（拍手鼓掌）演變而來，而 applaudō 又來自 ad-（朝向）與 plaudō（拍擊）。原本是指拍擊拍打的動作，後來引申為向表演者拍手喝采的掌聲。",
+      "hook_zh": "表演結束時大家雙手拍擊，給予熱烈的 aplauso（掌聲）。",
+      "usage_zh": "陽性名詞，常搭配 un fuerte aplauso（熱烈掌聲）或 dar un aplauso。",
+      "example_es": "El público despidió al actor con un fuerte aplauso.",
+      "example_zh": "觀眾以熱烈的掌聲送別這位演員。",
+      "image": "emoji:👏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aplauso",
+        "wiktionary:la:applausus",
+        "wiktionary:la:applaudo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "apuesto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "英俊的、儀表堂堂的",
+      "en": "handsome, good-looking",
+      "ipa": "/aˈpwesto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "appositus",
+          "zh": "適當的、得體的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "apuesto",
+          "zh": "英俊的、體面的"
+        }
+      ],
+      "cognates_en": [
+        "apposite"
+      ],
+      "story_zh": "源自拉丁語 appositus（適當的、安排妥當的）。字義從「衣著整齊適當」逐漸演變為形容人的外表端正、相貌堂堂、英俊帥氣。",
+      "hook_zh": "穿著打扮都就定位（apposite），看起來就很 apuesto（帥氣英俊）。",
+      "usage_zh": "通常用來形容男士外表俊俏，陰性形為 apuesta。",
+      "example_es": "Es un joven muy apuesto y educado.",
+      "example_zh": "他是一位非常英俊且有禮貌的年輕人。",
+      "image": "emoji:🤵",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:apuesto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bancario",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "銀行的",
+      "en": "related to banks",
+      "ipa": "/banˈkaɾjo/",
+      "breakdown": [
+        {
+          "part": "banca",
+          "zh": "銀行業"
+        },
+        {
+          "part": "-ario",
+          "zh": "與…有關的形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "banca",
+          "zh": "銀行業"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bancario",
+          "zh": "銀行的"
+        }
+      ],
+      "cognates_en": [
+        "bank"
+      ],
+      "story_zh": "由西班牙語 banca（銀行業）或 banco（銀行）加上形容詞字尾 -ario 構成，表示「與銀行有關的」。",
+      "hook_zh": "銀行（banco）加上形容詞字尾 -ario，就是銀行的業務（bancario）。",
+      "usage_zh": "形容詞，常見搭配有 cuenta bancaria（銀行帳戶）、sistema bancario（銀行體系）。",
+      "example_es": "Necesito abrir una nueva cuenta bancaria.",
+      "example_zh": "我需要開立一個新的銀行帳戶。",
+      "image": "emoji:🏦",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bancario"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "callado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "沉默的、安靜的",
+      "en": "quiet, silent",
+      "ipa": "/kaˈʝado/",
+      "breakdown": [
+        {
+          "part": "callar",
+          "zh": "安靜、沉默"
+        },
+        {
+          "part": "-ado",
+          "zh": "分詞／形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "callar",
+          "zh": "沉默、閉嘴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "callado",
+          "zh": "沉默的、安靜的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "來自動詞 callar（保持沉默、閉嘴）的過去分詞形，轉為形容詞使用，指人性格寡言沉靜或環境寂靜。",
+      "hook_zh": "叫別人「安靜」（¡Cállate!），個性安靜的人就是 callado。",
+      "usage_zh": "形容詞，可與 estar 搭配表示「處於沉默狀態」，與 ser 搭配表示「性格沉默寡言」。",
+      "example_es": "El niño se quedó callado durante la reunión.",
+      "example_zh": "那個小孩在會議期間保持沉默。",
+      "image": "emoji:🤫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:callado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cazador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "獵人",
+      "en": "hunter",
+      "ipa": "/kaθaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "cazar",
+          "zh": "打獵、捕獵"
+        },
+        {
+          "part": "-dor",
+          "zh": "從事…者字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cazar",
+          "zh": "打獵"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cazador",
+          "zh": "獵人"
+        }
+      ],
+      "cognates_en": [
+        "chaser",
+        "catch"
+      ],
+      "story_zh": "由動詞 cazar（打獵、狩獵）加上表示從事者或工具的字尾 -dor 構成，字面意思就是「狩獵的人」，即獵人。",
+      "hook_zh": "去打獵（cazar）的人（-dor），合起來就是 cazador（獵人）。",
+      "usage_zh": "陽性名詞，陰性形式為 cazadora（女獵人，亦可指夾克外套）。",
+      "example_es": "El cazador caminaba en silencio por el bosque.",
+      "example_zh": "獵人安靜地走在森林中。",
+      "image": "emoji:🏹",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cazador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "celeste",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "天藍色的、天空的",
+      "en": "sky blue, heavenly",
+      "ipa": "/θeˈleste/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "caelestis",
+          "zh": "天空的、天上的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "celeste",
+          "zh": "天空的、天藍色的"
+        }
+      ],
+      "cognates_en": [
+        "celestial"
+      ],
+      "story_zh": "源自拉丁語 caelestis（天上的、屬於天空的），源自 caelum（天空）。後來在西語中引申用來指像晴朗天空一樣的「天藍色」。",
+      "hook_zh": "英文 celestial（天體的、神聖的），在西語裡 celeste 就代表美麗的天藍色。",
+      "usage_zh": "單數陰陽同形（el cielo celeste、la camisa celeste），複數為 celestes。",
+      "example_es": "El cielo de verano tiene un hermoso color celeste.",
+      "example_zh": "夏天的天空呈現美麗的天藍色。",
+      "image": "emoji:🌌",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:celeste"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "compasión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "同情心、憐憫",
+      "en": "compassion, sympathy",
+      "ipa": "/kompaˈsjon/",
+      "breakdown": [
+        {
+          "part": "com-",
+          "zh": "共同、一起"
+        },
+        {
+          "part": "pasión",
+          "zh": "承受、受苦"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "patior",
+          "zh": "承受、忍受"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "compatior",
+          "zh": "一同承受、同情"
+        },
+        {
+          "lang_zh": "教會拉丁語",
+          "word": "compassio",
+          "zh": "同情、同受痛苦"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "compasión",
+          "zh": "同情心、憐憫"
+        }
+      ],
+      "cognates_en": [
+        "compassion",
+        "passion"
+      ],
+      "story_zh": "借自教會拉丁語 compassiōnem，源自動詞 compatior。由 com-（一同）和 patior（受苦、承受）組成，字面本義是「一同受苦」，引申為對他人苦難感同身受的「憐憫」與「同情心」。",
+      "hook_zh": "看到別人受苦，心與對方「共同承受」（com + patior），這就是 compasión（同情）。",
+      "usage_zh": "陰性名詞。常用片語 tener compasión de / por（同情、憐憫某人）。",
+      "example_es": "Sintió mucha compasión por los animales abandonados.",
+      "example_zh": "她對那些被遺棄的動物感到非常同情。",
+      "image": "emoji:❤️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:compasión",
+        "wiktionary:la:compatior"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "computación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "電腦學、計算",
+      "en": "computation, computer science",
+      "ipa": "/komputaˈθjon/",
+      "breakdown": [
+        {
+          "part": "computar",
+          "zh": "計算"
+        },
+        {
+          "part": "-ción",
+          "zh": "動作或名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "computātiō",
+          "zh": "計算"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "computación",
+          "zh": "電腦學、計算"
+        }
+      ],
+      "cognates_en": [
+        "computation",
+        "compute",
+        "computer"
+      ],
+      "story_zh": "借自拉丁語 computātiōnem（計算、計數），源自 computāre（計算）。在現代西班牙語（尤其美洲西語）中，廣泛用來指電腦科學或資訊工程領域。",
+      "hook_zh": "英文 computation 是計算，在西語裡 ciencias de la computación 就是「電腦科學」。",
+      "usage_zh": "陰性名詞。在美洲西語常用指電腦科學或電腦應用課程。",
+      "example_es": "Ella estudia ciencias de la computación en la universidad.",
+      "example_zh": "她在大學主修電腦科學。",
+      "image": "emoji:💻",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:computación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "conversar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "交談、談話",
+      "en": "to talk, converse",
+      "ipa": "/kombeɾˈsaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "conversāre",
+          "zh": "生活在一起、往來、交談"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "conversar",
+          "zh": "交談、談話"
+        }
+      ],
+      "cognates_en": [
+        "converse",
+        "conversation"
+      ],
+      "story_zh": "源自拉丁語 conversāre，原本含有「常與人來往相處」之意，後來核心意義演變為人與人之間的「交談、說話」。英文的 conversation 也是同源字。",
+      "hook_zh": "與英文 converse（交談）完全同源，兩人面對面說話就是 conversar。",
+      "usage_zh": "常搭配介系詞 con（與某人交談）及 sobre / de（談論某話題）。",
+      "example_es": "Nos gusta conversar de varios temas mientras tomamos un café.",
+      "example_zh": "我們喜歡一邊喝咖啡一邊聊各種話題。",
+      "image": "emoji:🗣️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:conversar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cooperativa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "合作社",
+      "en": "cooperative",
+      "ipa": "/koopeɾaˈtiba/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "cooperative"
+      ],
+      "story_zh": "",
+      "hook_zh": "大家「合作」（cooperate）共同經營的機構，就是一間 cooperativa（合作社）。",
+      "usage_zh": "陰性名詞，例如 una cooperativa agrícola（農業合作社）。",
+      "example_es": "Los agricultores locales formaron una cooperativa.",
+      "example_zh": "當地的農民組建了一家合作社。",
+      "image": "emoji:🤝",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:cooperativa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "debatir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "辯論、討論",
+      "en": "to debate",
+      "ipa": "/debaˈtiɾ/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "debate"
+      ],
+      "story_zh": "",
+      "hook_zh": "拼寫和英文 debate 非常相近，字尾加上西語動詞字尾 -ir 就是 debatir（辯論）。",
+      "usage_zh": "常搭配 sobre（辯論某主題），例：debatir sobre la propuesta。",
+      "example_es": "Los candidatos van a debatir sobre la economía esta noche.",
+      "example_zh": "候選人今晚將針對經濟議題進行辯論。",
+      "image": "emoji:🎙️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:debatir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ecuatoriano",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "厄瓜多的",
+      "en": "Ecuadorian",
+      "ipa": "/ekwatoˈɾjano/",
+      "breakdown": [
+        {
+          "part": "Ecuador",
+          "zh": "厄瓜多（赤道）"
+        },
+        {
+          "part": "-iano",
+          "zh": "…人的形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "aequator",
+          "zh": "使相等者、赤道"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "Ecuador",
+          "zh": "厄瓜多"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ecuatoriano",
+          "zh": "厄瓜多的"
+        }
+      ],
+      "cognates_en": [
+        "Ecuadorian",
+        "equator"
+      ],
+      "story_zh": "來自國名 Ecuador（厄瓜多，源於拉丁語 aequātor「赤道」）加上形容詞字尾 -iano。因為該國坐落在赤道線上而得名，ecuatoriano 即指厄瓜多的或厄瓜多人。",
+      "hook_zh": "國名 Ecuador（厄瓜多）加上字尾 -iano，就變成形容詞 ecuatoriano。",
+      "usage_zh": "可作形容詞或名詞（指厄瓜多人），陰性為 ecuatoriana。",
+      "example_es": "Mi amigo ecuatoriano cocina platos tradicionales deliciosos.",
+      "example_zh": "我的厄瓜多朋友會煮美味的傳統菜餚。",
+      "image": "emoji:🇪🇨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ecuatoriano",
+        "wiktionary:la:aequator"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "encontrado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "互相矛盾的、對立的",
+      "en": "conflicting, opposing",
+      "ipa": "/enkonˈtɾado/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "來自 encontrar（相遇），當兩股想法迎面相撞，就成了 sentimientos encontrados（矛盾心情）。",
+      "usage_zh": "常搭配 sentimientos encontrados（矛盾複雜的心情）。",
+      "example_es": "Tengo sentimientos encontrados sobre mi nuevo trabajo.",
+      "example_zh": "我對我的新工作懷有矛盾複雜的情感。",
+      "image": "emoji:🔀",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:encontrado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estafa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "詐騙、騙局",
+      "en": "scam, fraud",
+      "ipa": "/esˈtafa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "staffa",
+          "zh": "馬鐙（轉指藉機敲詐）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estafar",
+          "zh": "詐騙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estafa",
+          "zh": "詐騙、騙局"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 estafar（詐騙）的反向名詞構詞，源自義大利語 staffa。在西班牙語中專指透過欺瞞手腕詐取金錢財物的騙局或詐欺行為。",
+      "hook_zh": "遇到不合理的便宜好康要當心，很可能是一場 estafa（詐騙）。",
+      "usage_zh": "陰性名詞。常見搭配 caer en una estafa（掉入詐騙陷阱）。",
+      "example_es": "La policía advirtió a los ciudadanos sobre una estafa telefónica.",
+      "example_zh": "警方警告市民注意一樁電話詐騙案。",
+      "image": "emoji:⚠️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estafa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "excesivo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "過度的、過多的",
+      "en": "excessive",
+      "ipa": "/eɡsθeˈsibo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "excessīvus",
+          "zh": "過度的、過分的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "excesivo",
+          "zh": "過度的、過多的"
+        }
+      ],
+      "cognates_en": [
+        "excessive",
+        "excess"
+      ],
+      "story_zh": "借自拉丁語 excessīvus，源自 excessus（超出、過量），指任何事物超出正常規範或標準的狀態，引申為「過度的、過分的」。",
+      "hook_zh": "與英文 excessive 形神皆似，形容數量或程度「過度」用 excesivo。",
+      "usage_zh": "形容詞，陰性為 excesiva。例：un precio excesivo（過高的價格）。",
+      "example_es": "El precio del boleto de avión me parece excesivo.",
+      "example_zh": "我覺得這張機票的價格過高了。",
+      "image": "emoji:📈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:excesivo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "favorecer",
+      "article": "",
+      "pos": "verbo",
+      "zh": "有利於、偏袒、支持",
+      "en": "to support, to favour",
+      "ipa": "/faboɾeˈθeɾ/",
+      "breakdown": [
+        {
+          "part": "favor",
+          "zh": "恩惠、支持"
+        },
+        {
+          "part": "-ecer",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "favor",
+          "zh": "好意、恩惠"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "favorecer",
+          "zh": "有利於、支持"
+        }
+      ],
+      "cognates_en": [
+        "favor",
+        "favour"
+      ],
+      "story_zh": "源自名詞 favor（恩惠、好意）加上動詞字尾 -ecer，字面意思是給予恩惠、偏愛，引申為「有利於、支持、偏向」。",
+      "hook_zh": "給予某人 favor（好意、恩惠），在西語動詞就是 favorecer（支持、有利於）。",
+      "usage_zh": "第一人稱現在式為 favorezco（c 變 zc）。",
+      "example_es": "El clima soleado favorece el crecimiento de las plantas.",
+      "example_zh": "晴朗的天氣有利於植物的生長。",
+      "image": "emoji:👍",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:favorecer"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "flora",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "植物相、植物群",
+      "en": "flora",
+      "ipa": "/ˈfloɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "flōs",
+          "zh": "花朵"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "Flora",
+          "zh": "花神弗洛拉"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "flora",
+          "zh": "植物群、植物相"
+        }
+      ],
+      "cognates_en": [
+        "flora",
+        "floral",
+        "flower"
+      ],
+      "story_zh": "借自拉丁語 Flōra（羅馬神話中的花神弗洛拉），源自 flōs（花朵）。後來在科學與日常用語中，引申指特定地區或環境中的所有「植物相」。",
+      "hook_zh": "英文也是 flora，指特定地區的植物相，常與 fauna（動物相）成對出現。",
+      "usage_zh": "陰性名詞。常見搭配 flora y fauna（動植物相）。",
+      "example_es": "La isla tiene una flora muy rica y variada.",
+      "example_zh": "這座島嶼擁有非常豐富多樣的植物相。",
+      "image": "emoji:🌸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:flora",
+        "wiktionary:la:Flora"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ignorante",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "無知的、不知情的",
+      "en": "ignorant",
+      "ipa": "/iɡnoˈɾante/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ignōrāns",
+          "zh": "不知曉的、無知的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ignorante",
+          "zh": "無知的、不知情的"
+        }
+      ],
+      "cognates_en": [
+        "ignorant",
+        "ignore"
+      ],
+      "story_zh": "源自拉丁語 īgnōrāns（不了解、不知情），動詞 ignōrāre 的現在分詞。指缺乏某方面知識或對事物不知情的人。",
+      "hook_zh": "英文 ignorant，西班牙語直接拼成 ignorante，表示無知或不知情。",
+      "usage_zh": "可作形容詞或名詞（指無知的人）。單數陰陽同形。",
+      "example_es": "No soy ignorante sobre este tema, solo necesito más datos.",
+      "example_zh": "我對這個議題並非一無所知，只是需要更多數據。",
+      "image": "emoji:🤷",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ignorante"
       ],
       "writer": "gemini"
     }

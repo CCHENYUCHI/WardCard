@@ -1,6 +1,6 @@
 {
   "theme": "freq-0030",
-  "theme_zh": "常用字（頻率第 7402–7646 名）",
+  "theme_zh": "常用字（頻率第 7402–7654 名）",
   "entries": [
     {
       "word": "enterar",
@@ -1173,31 +1173,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:alimentar"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "arabio",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "阿拉伯的、阿拉伯人的",
-      "en": "Arab, Arabic",
-      "ipa": "/aˈɾabjo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "Arab",
-        "Arabic"
-      ],
-      "story_zh": "",
-      "hook_zh": "直接聯想英文 Arab（阿拉伯人）與 Arabic（阿拉伯語），字首拼法如出一轍。",
-      "usage_zh": "較古舊或方言的形容詞用法，現代西班牙語普遍使用 árabe 來表示「阿拉伯的」。",
-      "example_es": "Este manuscrito tiene origen arabio.",
-      "example_zh": "這份手稿具有阿拉伯淵源。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:arabio"
       ],
       "writer": "gemini"
     },
@@ -2961,39 +2936,6 @@
       "writer": "gemini"
     },
     {
-      "word": "nasa",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "魚籠、捕魚籠",
-      "en": "fish-trap, weir",
-      "ipa": "/ˈnasa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "nassa",
-          "zh": "狹口捕魚籠"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "nasa",
-          "zh": "魚籠"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "傳承自拉丁語 nassa，原指一種用柳條或竹篾編織、入口大而內部窄狹的傳統魚簍或捕魚陷阱。西語繼承後將雙寫輔音 -ss- 簡化為單寫 -s-，保留了捕魚用籠具的原義。",
-      "hook_zh": "注意不是美國太空總署 NASA！西語小寫 la nasa 是漁民沉入水中誘捕魚蝦的「魚籠」。",
-      "usage_zh": "陰性名詞，複數為 nasas。注意為小寫名詞，不可與大寫縮寫的美國航太總署（NASA）混淆。",
-      "example_es": "El pescador colocó la nasa en el río.",
-      "example_zh": "漁夫把魚籠放進河裡。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:nasa"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "noreste",
       "article": "el",
       "pos": "sustantivo",
@@ -3021,41 +2963,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:noreste"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "patricio",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "（古羅馬）貴族；貴族成員",
-      "en": "patrician, noble",
-      "ipa": "/paˈtɾiθjo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "pātricius",
-          "zh": "貴族的、羅馬貴族"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "patricio",
-          "zh": "貴族"
-        }
-      ],
-      "cognates_en": [
-        "patrician"
-      ],
-      "story_zh": "源自拉丁語 pātricius，指古羅馬社會中享有特權的統治貴族階級。這個詞後來進入西班牙語，專指古羅馬貴族，亦可引申指具有崇高社會地位的貴族成員。",
-      "hook_zh": "英文的 patrician（貴族）發音和拼法極為相似，直接聯想羅馬元老院裡的貴族長老。",
-      "usage_zh": "陰性形為 patricia；在現代西語中也常作為形容詞使用，表示「貴族的」或「顯赫的」。",
-      "example_es": "En la antigua Roma, los patricios tenían muchos privilegios.",
-      "example_zh": "在古羅馬，貴族享有許多特權。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:patricio"
       ],
       "writer": "gemini"
     },
@@ -3879,43 +3786,149 @@
       "writer": "gemini"
     },
     {
-      "word": "augusto",
+      "word": "auxiliar",
       "article": "",
       "pos": "adjetivo",
-      "zh": "威嚴的、崇高的、莊嚴的",
-      "en": "august, solemn, majestic",
-      "ipa": "/auˈɡusto/",
+      "zh": "輔助的、備用的；助理",
+      "en": "auxiliary, assisting; assistant",
+      "ipa": "/auɡsiˈljaɾ/",
       "breakdown": [],
       "origin_chain": [
         {
-          "lang_zh": "原始義大利語",
-          "word": "*augostos",
-          "zh": "增大的、強化的"
+          "lang_zh": "拉丁語",
+          "word": "auxilium",
+          "zh": "幫助、援助"
         },
         {
           "lang_zh": "拉丁語",
-          "word": "augustus",
-          "zh": "莊嚴的、威嚴的"
+          "word": "auxiliāris",
+          "zh": "提供援助的、輔助的"
         },
         {
           "lang_zh": "西班牙語",
-          "word": "augusto",
-          "zh": "威嚴的、崇高的"
+          "word": "auxiliar",
+          "zh": "輔助的"
         }
       ],
       "cognates_en": [
-        "august"
+        "auxiliary"
       ],
-      "story_zh": "借自拉丁語 augustus（莊嚴的、神聖的），最初源於原始義大利語 *augostos，字根與動詞 augeō（增加、擴大）同源。在西語中它是文人借詞，而民間自然演變的同源詞則是月份 agosto（八月）。",
-      "hook_zh": "羅馬帝國奧古斯都大帝尊貴顯赫，其頭銜 augusto 就是「崇高威嚴的」象徵。",
-      "usage_zh": "形容詞，陰性為 augusta。注意與同源雙胞詞 agosto（八月）區分。",
-      "example_es": "El rey mantenía un porte augusto.",
-      "example_zh": "國王保持著威嚴莊重的儀態。",
+      "story_zh": "借自拉丁語 auxiliāris（提供援助的、輔助的），源自名詞 auxilium（幫助、援助）。在西語中可當形容詞指「輔助的」，或轉指擔任輔助角色的「助理、助教」，也可作動詞表示「援助」。",
+      "hook_zh": "英文的 auxiliary verb 是助動詞，西語的 verbo auxiliar 也是同一個輔助字。",
+      "usage_zh": "男女同形：un enfermero auxiliar / una enfermera auxiliar。也可當動詞表示援助。",
+      "example_es": "Contrataron nuevo personal auxiliar.",
+      "example_zh": "他們聘僱了新的輔助工作人員。",
       "image": "svg",
       "confidence": "sourced",
       "sources": [
-        "wiktionary:es:augusto",
-        "wiktionary:la:augustus"
+        "wiktionary:es:auxiliar",
+        "wiktionary:la:auxiliaris"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bo",
+      "article": "",
+      "pos": "interjección",
+      "zh": "喂、嘿、老兄",
+      "en": "hey, mate, dude",
+      "ipa": "/ˈbo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "烏拉圭人打招呼常用「¡Bo!」，就像阿根廷人愛喊「¡Che!」一樣親切。",
+      "usage_zh": "烏拉圭拉普拉塔河流域特有的非正式口語感嘆詞，用來呼喚熟人。",
+      "example_es": "¡Pará un poco, bo!",
+      "example_zh": "等一下啦，老兄！",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:bo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "brecha",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "裂口、缺口、差距",
+      "en": "breach, gap",
+      "ipa": "/ˈbɾet͡ʃa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法蘭克語",
+          "word": "*breka",
+          "zh": "破裂"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "brèche",
+          "zh": "缺口"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "brecha",
+          "zh": "缺口、裂痕"
+        }
+      ],
+      "cognates_en": [
+        "breach"
+      ],
+      "story_zh": "源自法語 brèche（缺口），而法語又借自法蘭克語的 *breka（破裂）。原本指城牆攻破後打出的缺口，後來引申為各方面的差距或裂痕。英文的 breach 也是同源字。",
+      "hook_zh": "城牆被打破（break）出一個大缺口，就是 brecha！",
+      "usage_zh": "常用於抽象差距，如 brecha digital（數位落差）或 brecha salarial（薪資差距）。",
+      "example_es": "Hay una gran brecha entre ricos y pobres.",
+      "example_zh": "貧富之間存在著巨大的差距。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:brecha"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cal",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "石灰",
+      "en": "lime, calcium oxide",
+      "ipa": "/ˈkal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "χάλιξ",
+          "zh": "小石子"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "calx",
+          "zh": "石灰石、白堊"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "cals",
+          "zh": "石灰"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cal",
+          "zh": "石灰"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自通俗拉丁語 cals，出自拉丁語 calx（石灰石），可能源自古希臘語 χάλιξ（小石子）。古人將石灰石高溫煅燒後製成熟石灰用於建築塗料，演變成今日西語的 cal。",
+      "hook_zh": "補鈣（calcium）要吃鈣片，建築抹牆要用石灰 cal。",
+      "usage_zh": "不可數陰性名詞。常用片語 una de cal y otra de arena（好壞參半）。",
+      "example_es": "Pintaron las paredes de la casa con cal.",
+      "example_zh": "他們用石灰粉刷了房子的牆壁。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cal",
+        "wiktionary:la:calx"
       ],
       "writer": "gemini"
     }

@@ -1,154 +1,7 @@
 {
   "theme": "freq-0031",
-  "theme_zh": "常用字（頻率第 7647–7903 名）",
+  "theme_zh": "常用字（頻率第 7655–7936 名）",
   "entries": [
-    {
-      "word": "auxiliar",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "輔助的、備用的；助理",
-      "en": "auxiliary, assisting; assistant",
-      "ipa": "/auɡsiˈljaɾ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "auxilium",
-          "zh": "幫助、援助"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "auxiliāris",
-          "zh": "提供援助的、輔助的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "auxiliar",
-          "zh": "輔助的"
-        }
-      ],
-      "cognates_en": [
-        "auxiliary"
-      ],
-      "story_zh": "借自拉丁語 auxiliāris（提供援助的、輔助的），源自名詞 auxilium（幫助、援助）。在西語中可當形容詞指「輔助的」，或轉指擔任輔助角色的「助理、助教」，也可作動詞表示「援助」。",
-      "hook_zh": "英文的 auxiliary verb 是助動詞，西語的 verbo auxiliar 也是同一個輔助字。",
-      "usage_zh": "男女同形：un enfermero auxiliar / una enfermera auxiliar。也可當動詞表示援助。",
-      "example_es": "Contrataron nuevo personal auxiliar.",
-      "example_zh": "他們聘僱了新的輔助工作人員。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:auxiliar",
-        "wiktionary:la:auxiliaris"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "bo",
-      "article": "",
-      "pos": "interjección",
-      "zh": "喂、嘿、老兄",
-      "en": "hey, mate, dude",
-      "ipa": "/ˈbo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "烏拉圭人打招呼常用「¡Bo!」，就像阿根廷人愛喊「¡Che!」一樣親切。",
-      "usage_zh": "烏拉圭拉普拉塔河流域特有的非正式口語感嘆詞，用來呼喚熟人。",
-      "example_es": "¡Pará un poco, bo!",
-      "example_zh": "等一下啦，老兄！",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:bo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "brecha",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "裂口、缺口、差距",
-      "en": "breach, gap",
-      "ipa": "/ˈbɾet͡ʃa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "法蘭克語",
-          "word": "*breka",
-          "zh": "破裂"
-        },
-        {
-          "lang_zh": "法語",
-          "word": "brèche",
-          "zh": "缺口"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "brecha",
-          "zh": "缺口、裂痕"
-        }
-      ],
-      "cognates_en": [
-        "breach"
-      ],
-      "story_zh": "源自法語 brèche（缺口），而法語又借自法蘭克語的 *breka（破裂）。原本指城牆攻破後打出的缺口，後來引申為各方面的差距或裂痕。英文的 breach 也是同源字。",
-      "hook_zh": "城牆被打破（break）出一個大缺口，就是 brecha！",
-      "usage_zh": "常用於抽象差距，如 brecha digital（數位落差）或 brecha salarial（薪資差距）。",
-      "example_es": "Hay una gran brecha entre ricos y pobres.",
-      "example_zh": "貧富之間存在著巨大的差距。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:brecha"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "cal",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "石灰",
-      "en": "lime, calcium oxide",
-      "ipa": "/ˈkal/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "χάλιξ",
-          "zh": "小石子"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "calx",
-          "zh": "石灰石、白堊"
-        },
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "cals",
-          "zh": "石灰"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "cal",
-          "zh": "石灰"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自通俗拉丁語 cals，出自拉丁語 calx（石灰石），可能源自古希臘語 χάλιξ（小石子）。古人將石灰石高溫煅燒後製成熟石灰用於建築塗料，演變成今日西語的 cal。",
-      "hook_zh": "補鈣（calcium）要吃鈣片，建築抹牆要用石灰 cal。",
-      "usage_zh": "不可數陰性名詞。常用片語 una de cal y otra de arena（好壞參半）。",
-      "example_es": "Pintaron las paredes de la casa con cal.",
-      "example_zh": "他們用石灰粉刷了房子的牆壁。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:cal",
-        "wiktionary:la:calx"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "celda",
       "article": "la",
@@ -1827,39 +1680,6 @@
       "writer": "gemini"
     },
     {
-      "word": "soto",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "河畔樹叢、灌木林",
-      "en": "grove, copse",
-      "ipa": "/ˈsoto/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "saltus",
-          "zh": "林地牧場、山林"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "soto",
-          "zh": "河岸樹叢、小林地"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "繼承自拉丁語 saltus（林地、林間草地、山林隘道）。在西班牙語音變中，-al- 在子音前演變為 -o-（如 altro > otro），saltus 因而演變成 soto，專指河畔或濕潤低地旁生長茂盛的小樹林。",
-      "hook_zh": "常見西語姓氏 Soto 原意就是「河畔小樹林」！",
-      "usage_zh": "陽性名詞。文學或地理用語，指生長在河岸或濕地旁的樹林叢。",
-      "example_es": "Paseamos por el soto a la orilla del río.",
-      "example_zh": "我們漫步在河邊的小樹林裡。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:soto"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "terrestre",
       "article": "",
       "pos": "adjetivo",
@@ -3060,41 +2880,6 @@
       "writer": "gemini"
     },
     {
-      "word": "ginebra",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "琴酒、金酒",
-      "en": "gin",
-      "ipa": "/xiˈnebɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "法語",
-          "word": "genièvre",
-          "zh": "杜松子、杜松酒"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "ginebra",
-          "zh": "琴酒"
-        }
-      ],
-      "cognates_en": [
-        "geneva"
-      ],
-      "story_zh": "借自法語 genièvre（杜松子酒，源自拉丁語 iūniperus「杜松」）。琴酒以杜松子為核心香料蒸餾而成，英文的 gin 即是從同一個字簡稱而來。注意西語本字 enebro（杜松）是其雙生詞。",
-      "hook_zh": "琴酒就是杜松子酒，調配琴通寧（gin-tonic）喝的酒就是 ginebra！",
-      "usage_zh": "陰性名詞。在西班牙常見調酒為 gin-tonic（常拼作 gintonic），也可指杜松子蒸餾酒 ginebra。",
-      "example_es": "Pidió un vaso de ginebra con tónica y limón.",
-      "example_zh": "他點了一杯琴酒加通寧水和檸檬。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:ginebra"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "iris",
       "article": "el",
       "pos": "sustantivo",
@@ -3222,41 +3007,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:lingüística"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "magdalena",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "瑪德蓮蛋糕、杯子小蛋糕",
-      "en": "madeleine cake, cupcake",
-      "ipa": "/maɡdaˈlena/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "法語",
-          "word": "madeleine",
-          "zh": "瑪德蓮蛋糕"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "magdalena",
-          "zh": "瑪德蓮蛋糕"
-        }
-      ],
-      "cognates_en": [
-        "madeleine"
-      ],
-      "story_zh": "仿譯自法語 madeleine（瑪德蓮蛋糕）。相傳此甜點得名於發明它的糕點師或聖經人物抹大拉的馬利亞（Magdalena）。在西班牙，magdalena 泛指西語國家早餐常見的貝殼形或圓形杯子小蛋糕。",
-      "hook_zh": "西班牙人早餐泡咖啡常吃的杯子蛋糕就是 una magdalena。",
-      "usage_zh": "陰性名詞。西班牙最普遍的傳統常溫糕點，常用於早餐或下午茶（merienda）。",
-      "example_es": "Me gusta mojar una magdalena en el café con leche.",
-      "example_zh": "我喜歡把瑪德蓮蛋糕浸進拿鐵咖啡裡吃。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:magdalena"
       ],
       "writer": "gemini"
     },
@@ -3766,39 +3516,6 @@
       "writer": "gemini"
     },
     {
-      "word": "sarmiento",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "葡萄藤枝、藤條、插枝",
-      "en": "vine shoot, vine branch",
-      "ipa": "/saɾˈmjento/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "sarmentum",
-          "zh": "修剪下的樹枝、藤條"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "sarmiento",
-          "zh": "葡萄藤枝、藤蔓"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "繼承自拉丁語 sarmentum（修剪下的樹枝、灌木枝條），源自動詞 sarpō（修剪葡萄藤）。在西班牙葡萄酒文化中，專指葡萄樹上細長柔韌的藤條，每年冬季修剪下來的乾燥藤枝常用來做傳統烤肉的柴火。",
-      "hook_zh": "西班牙烤羊排常用葡萄藤枝（sarmiento）當柴火燻烤，香氣撲鼻！",
-      "usage_zh": "陽性名詞。葡萄種植與烹飪專門詞彙：chuletas al sarmiento（葡萄藤煙燻烤羊排）。",
-      "example_es": "Asaron la carne en las brasas de sarmiento.",
-      "example_zh": "他們用葡萄藤柴火的炭火烤肉。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:sarmiento"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "serbio",
       "article": "",
       "pos": "adjetivo",
@@ -3904,6 +3621,520 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:tope"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "traductor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "譯者、翻譯員；翻譯機",
+      "en": "translator",
+      "ipa": "/tɾaduɡˈtoɾ/",
+      "breakdown": [
+        {
+          "part": "trans-",
+          "zh": "跨越、穿過"
+        },
+        {
+          "part": "duc-",
+          "zh": "引導、帶領"
+        },
+        {
+          "part": "-tor",
+          "zh": "做…的人或物"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "traductor",
+          "zh": "轉移者、引渡者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "traductor",
+          "zh": "翻譯者"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 traductor（傳遞者、轉移者），來自 trādūcō（跨越引導）。在後古典拉丁語中衍生出「將文字轉譯」的意思，後來演變成西語的翻譯員。",
+      "hook_zh": "把話從這端「引導跨越」（trans + duc）到另一端的人，就是 traductor。",
+      "usage_zh": "陰性形式為 traductora，複數為 traductores。",
+      "example_es": "El traductor trabaja con varios idiomas.",
+      "example_zh": "這位翻譯員精通多種語言。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:traductor",
+        "wiktionary:la:traductor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "transcurso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "（時間的）流逝、經過",
+      "en": "course, passing",
+      "ipa": "/tɾansˈkuɾso/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "時間在跨越（trans）中奔馳前進，歲月就在 transcurso 中流逝。",
+      "usage_zh": "常搭配片語：con el transcurso de…（隨著…的流逝）。",
+      "example_es": "Todo cambió con el transcurso del tiempo.",
+      "example_zh": "隨著時間的流逝，一切都改變了。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:transcurso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "urna",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "票箱、投票箱；骨灰罈",
+      "en": "ballot box, urn",
+      "ipa": "/ˈuɾna/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "urna",
+          "zh": "水甕、陶罐"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "urna",
+          "zh": "票箱、骨灰罈"
+        }
+      ],
+      "cognates_en": [
+        "urn"
+      ],
+      "story_zh": "源自拉丁語 urna（陶罐、水甕）。古羅馬人便曾以陶罐盛裝籤條與選票，在現代西語中主要指投票用的票箱，也保留了放骨灰的罈甕之意。",
+      "hook_zh": "投下神聖的一票，把選票放進透明的 urna。",
+      "usage_zh": "陰性名詞。選舉時常說 acudir a las urnas（前往投票所投票）。",
+      "example_es": "Los ciudadanos depositan su voto en la urna.",
+      "example_zh": "公民們將選票投入投票箱中。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:urna"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "verbo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "動詞；話語",
+      "en": "verb",
+      "ipa": "/ˈbeɾbo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*werdʰom",
+          "zh": "話語"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "verbum",
+          "zh": "字、話語、動詞"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "verbo",
+          "zh": "動詞"
+        }
+      ],
+      "cognates_en": [
+        "verb",
+        "word"
+      ],
+      "story_zh": "源自拉丁語 verbum（字詞、言辭）。在古羅馬文法學中，動詞被視為句子的靈魂與核心之詞，因而專指動詞。英文的 verb 與 word 亦同源。",
+      "hook_zh": "一個句子不能沒有動作，最重要的「話」就是動詞 verbo。",
+      "usage_zh": "語法名詞為陽性：el verbo regular（規則動詞）。",
+      "example_es": "El verbo ser es irregular en español.",
+      "example_zh": "動詞 ser 在西班牙語中是不規則的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:verbo",
+        "wiktionary:la:verbum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vicio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "惡習、不良嗜好；惡德",
+      "en": "vice, bad habit",
+      "ipa": "/ˈbiθjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vitium",
+          "zh": "瑕疵、缺點、罪過"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vicio",
+          "zh": "惡習、壞習慣"
+        }
+      ],
+      "cognates_en": [
+        "vice",
+        "vicious"
+      ],
+      "story_zh": "源自拉丁語 vitium，原指「瑕疵、缺陷、毛病」，後來引申為道德上的缺點與不良習慣。英文的 vice 和 vicious 皆由此衍生而來。",
+      "hook_zh": "英文 vice 就是西語 vicio，養成壞習慣就像心靈沾上污漬。",
+      "usage_zh": "常見片語 tener el vicio de…（有…的惡習）。",
+      "example_es": "Fumar es un mal vicio para la salud.",
+      "example_zh": "抽菸是對健康有害的壞習慣。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vicio",
+        "wiktionary:la:vitium"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "volcán",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "火山",
+      "en": "volcano",
+      "ipa": "/bolˈkan/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "伊特拉斯坎語",
+          "word": "Velchans",
+          "zh": "火神名"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "Vulcanus",
+          "zh": "火神武爾坎努斯"
+        },
+        {
+          "lang_zh": "義大利語",
+          "word": "vulcano",
+          "zh": "火山"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "volcán",
+          "zh": "火山"
+        }
+      ],
+      "cognates_en": [
+        "volcano",
+        "Vulcan"
+      ],
+      "story_zh": "源自羅馬神話的火神與鍛造神 Vulcanus。古人認為火山噴發是神明在山底地爐打鐵冶煉，義大利語轉為 vulcano，西語借入成為 volcán。",
+      "hook_zh": "火神 Vulcan 發怒，地底熔岩爆發，就形成了噴火的 volcán。",
+      "usage_zh": "陽性名詞，複數形式加 -es 並去掉重音：los volcanes。",
+      "example_es": "El volcán entró en erupción de repente.",
+      "example_zh": "這座火山突然噴發了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:volcán",
+        "wiktionary:la:Vulcanus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "activista",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "社運人士、行動主義者",
+      "en": "activist",
+      "ipa": "/aɡtiˈbista/",
+      "breakdown": [
+        {
+          "part": "activ-",
+          "zh": "活躍、行動"
+        },
+        {
+          "part": "-ista",
+          "zh": "…主義者、從業者"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "activist"
+      ],
+      "story_zh": "",
+      "hook_zh": "積極主動（activo）走上街頭推動改變的人（-ista），就是 activista。",
+      "usage_zh": "陰陽同形：el activista（男活動家）、la activista（女活動家）。",
+      "example_es": "Ella es una activista por los derechos humanos.",
+      "example_zh": "她是捍衛人權的社運人士。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:activista"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "adelantado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "先進的、超前的；提早的",
+      "en": "advanced, ahead of one's time",
+      "ipa": "/adelanˈtado/",
+      "breakdown": [
+        {
+          "part": "adelantar",
+          "zh": "前進、提前"
+        },
+        {
+          "part": "-ado",
+          "zh": "過去分詞形容詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "走在大家前面（adelante）的人事物，自然就是 adelantado（走在前頭的）。",
+      "usage_zh": "常搭配片語 adelantado a su tiempo（超越他所在的時代）。",
+      "example_es": "Era un artista muy adelantado a su época.",
+      "example_zh": "他是一位藝術觀念遠超前於時代的藝術家。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:adelantado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "administrar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "管理、經營；給予（藥物）",
+      "en": "to manage, to administer",
+      "ipa": "/adminisˈtɾaɾ/",
+      "breakdown": [
+        {
+          "part": "ad-",
+          "zh": "朝向、給予"
+        },
+        {
+          "part": "ministr-",
+          "zh": "服務、執行"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "administrare",
+          "zh": "協助、管理、執行"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "administrar",
+          "zh": "管理、經營"
+        }
+      ],
+      "cognates_en": [
+        "administer",
+        "administration"
+      ],
+      "story_zh": "學術借詞源自拉丁語 administrāre，由 ad-（朝向）與 ministrāre（服侍、提供服務）組合而成，原意為在旁給予協助與執行，後演變為統籌管理。",
+      "hook_zh": "英文 administer 拼法幾乎一樣，ministro（部長）也是同源的管理職。",
+      "usage_zh": "可指管理公司，也可指醫生開藥給藥：administrar un medicamento。",
+      "example_es": "Ella sabe cómo administrar bien sus recursos.",
+      "example_zh": "她懂得如何妥善管理自己的資源。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:administrar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "alimentario",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "食品的、飲食的、食物相關的",
+      "en": "alimentary, dietary, food-related",
+      "ipa": "/alimenˈtaɾjo/",
+      "breakdown": [
+        {
+          "part": "alimento",
+          "zh": "食物、養分"
+        },
+        {
+          "part": "-ario",
+          "zh": "形容詞字尾（與…有關的）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "alimentarius",
+          "zh": "食物的、營養的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alimentario",
+          "zh": "飲食的、食品的"
+        }
+      ],
+      "cognates_en": [
+        "alimentary"
+      ],
+      "story_zh": "學術借詞源自拉丁語 alimentārius，由 alimentum（食物、養料）衍生而來，專門指涉與飲食、食品供應及營養相關的事務。",
+      "hook_zh": "超市食品包裝上的 industria alimentaria 就是食品工業。",
+      "usage_zh": "陰性為 alimentaria，如 cadena alimentaria（食物鏈）。",
+      "example_es": "La seguridad alimentaria es un derecho básico.",
+      "example_zh": "糧食與食品安全是一項基本權利。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alimentario"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aria",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "詠嘆調、獨唱曲",
+      "en": "aria",
+      "ipa": "/ˈaɾja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "aria",
+          "zh": "空氣；曲調、詠嘆調"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aria",
+          "zh": "詠嘆調"
+        }
+      ],
+      "cognates_en": [
+        "aria",
+        "air"
+      ],
+      "story_zh": "借自義大利語 aria。原意為「空氣、氣息」，在音樂上引申為隨氣息歌唱的抒情曲調，特指歌劇或神劇中的獨唱詠嘆調。",
+      "hook_zh": "歌劇名伶深深吸入一口空氣（aria），唱出優美動人的詠嘆調。",
+      "usage_zh": "陰性名詞但首音為重音 a-，單數冠詞用 el：el aria，複數為 las arias。",
+      "example_es": "La soprano cantó un aria hermosa.",
+      "example_zh": "女高音唱了一首優美的詠嘆調。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aria"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "brigada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "旅（軍事編制）；大隊、工作小組",
+      "en": "brigade, squad, team",
+      "ipa": "/bɾiˈɡada/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "brigade",
+          "zh": "旅、小隊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "brigada",
+          "zh": "旅、工作大隊"
+        }
+      ],
+      "cognates_en": [
+        "brigade"
+      ],
+      "story_zh": "借自法語 brigade。原為陸軍軍事編制「旅」，後在現代社會中廣泛指稱從事特定救援或公共任務的專職工作大隊（如消防隊、搜救隊）。",
+      "hook_zh": "英文 brigade 與西語 brigada 同源，指同心協力執行任務的小隊。",
+      "usage_zh": "陰性名詞。如 brigada de rescate（搜救隊）。",
+      "example_es": "La brigada de bomberos apagó el fuego.",
+      "example_zh": "消防隊撲滅了火勢。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:brigada"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "caballería",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "騎兵；騎士制度、騎士風範",
+      "en": "cavalry, chivalry",
+      "ipa": "/kabaʝeˈɾia/",
+      "breakdown": [
+        {
+          "part": "caballero",
+          "zh": "騎士、騎手"
+        },
+        {
+          "part": "-ía",
+          "zh": "名詞字尾（群體、制度）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "caballus",
+          "zh": "馬匹"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "caballarius",
+          "zh": "騎馬者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caballero",
+          "zh": "騎士、紳士"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caballería",
+          "zh": "騎兵、騎士制度"
+        }
+      ],
+      "cognates_en": [
+        "cavalry",
+        "chivalry"
+      ],
+      "story_zh": "源自晚期拉丁語 caballārius（騎馬者），來自拉丁語 caballus（馬匹）。在西語中先形成 caballero（騎士），加上字尾 -ía 後指稱騎兵部隊或騎士道精神。英文 cavalry 亦同源。",
+      "hook_zh": "騎著駿馬（caballo）的騎士（caballero）組成的軍隊，就是 caballería。",
+      "usage_zh": "陰性名詞。西班牙文學名作常提及 libros de caballerías（騎士小說）。",
+      "example_es": "La caballería avanzó con gran fuerza.",
+      "example_zh": "騎兵部隊勢如破竹地向前推進。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caballería",
+        "wiktionary:la:caballarius"
       ],
       "writer": "gemini"
     }
