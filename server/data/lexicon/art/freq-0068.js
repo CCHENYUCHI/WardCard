@@ -231,14 +231,6 @@ module.exports = {
     s('ellipse', { cx: 80, cy: 97, rx: 14, ry: 11 }, 'white'),
     s('circle', { cx: 80, cy: 98, r: 6 }, 'orange')
   ],
-  memo: [
-    s('circle', { cx: 80, cy: 86, r: 48 }, 'skin', { accent: true }),
-    s('path', { d: spiral(56, 76) + spiral(94, 76), ...SW(3) }, 'dark', { stroke: true }),
-    s('path', { d: 'M56 106q24 18 48 0', ...SW(5) }, 'dark', { stroke: true }),
-    s('path', { d: drop(102, 120, 5) }, 'sky'),
-    s('path', { d: 'M62 40q4-14 12-2M80 36q6-14 12 0', ...SW(4) }, 'brown', { stroke: true }),
-    s('path', { d: sparkle(26, 34, 10) + sparkle(136, 36, 8) }, 'yellow')
-  ],
   mole: [
     s('ellipse', { cx: 80, cy: 96, rx: 64, ry: 36 }, 'white'),
     s('ellipse', { cx: 80, cy: 96, rx: 64, ry: 36, ...SW(3) }, 'gray', { stroke: true }),
@@ -696,15 +688,6 @@ module.exports = {
     s('path', { d: 'M38 56q18-16 34-4q-2 18 10 20q2 22-14 26q-12-10-14-24q-12-6-16-18zM96 40q22 2 34 26q-8 12-20 4q-10 6-12-10q-8-8-2-20zM92 104q16-8 28 4q-6 18-24 16z' }, 'green'),
     ...[[56, 62], [110, 54], [100, 104], [70, 100], [124, 82]].map(([x, y], i) => s('path', { d: `M${x} ${y}c-10-12-10-24 0-24s10 12 0 24z` }, 'red', i ? {} : { accent: true })),
     s('path', { d: dots([[56, 48], [110, 40], [100, 90], [70, 86], [124, 68]], 3) }, 'white')
-  ],
-  'dueña': [
-    ground(),
-    s('rect', { x: 92, y: 60, width: 48, height: 76 }, 'tan'),
-    s('path', { d: 'M86 62l30-26 30 26z' }, 'brown'),
-    s('rect', { x: 106, y: 98, width: 20, height: 38 }, 'brown'),
-    ...lady(50, 136, 'red', { accent: true }),
-    s('path', { d: ring(78, 82, 7), ...SW(4) }, 'yellow', { stroke: true }),
-    s('path', { d: 'M78 89v20M78 102h6M78 108h5', ...SW(4) }, 'yellow', { stroke: true })
   ],
   epa: [
     ground(),
@@ -1246,13 +1229,6 @@ module.exports = {
     s('circle', { cx: 128, cy: 128, r: 13 }, 'orange', { accent: true }),
     s('path', { d: star(128, 128, 9) }, 'yellow')
   ],
-  virgo: [
-    backdrop('navy'),
-    s('path', { d: 'M32 40l26 22 30-6 18 26 10 30M88 56l-8 40 18 22M58 62l-12 40', ...SW(2) }, 'sky', { stroke: true }),
-    s('path', { d: [[32, 40], [58, 62], [88, 56], [106, 82], [80, 96], [98, 118], [46, 102]].map(([x, y]) => sparkle(x, y, 7)).join('') }, 'yellow', { accent: true }),
-    s('path', { d: sparkle(116, 112, 10) }, 'white'),
-    s('path', { d: 'M124 40q-12 4-8 18M124 40q-4 12-14 8', ...SW(3) }, 'yellow', { stroke: true })
-  ],
   yuan: [
     s('rect', { x: 18, y: 34, width: 96, height: 56, rx: 4, transform: 'rotate(-8 66 62)' }, 'red'),
     s('circle', { cx: 66, cy: 62, r: 16, transform: 'rotate(-8 66 62)' }, 'pink'),
@@ -1339,15 +1315,6 @@ module.exports = {
     s('circle', { cx: 84, cy: 60, r: 10 }, 'white', { accent: true }),
     s('path', { d: sparkle(130, 34, 8) + sparkle(36, 40, 6) + sparkle(126, 106, 7) }, 'orange')
   ],
-  boulevard: [
-    s('rect', { x: 14, y: 104, width: 132, height: 32 }, 'gray'),
-    s('path', { d: 'M14 120h132', ...SW(3, { 'stroke-dasharray': '10 8' }) }, 'white', { stroke: true }),
-    s('path', { d: 'M14 104h132', ...SW(5) }, 'tan', { stroke: true }),
-    s('path', { d: 'M30 102V70M72 102V70M114 102V70', ...SW(6) }, 'brown', { stroke: true }),
-    s('path', { d: dots([[30, 52], [72, 52], [114, 52]], 20) }, 'green', { accent: true }),
-    s('path', { d: 'M142 102V62M136 62h12', ...SW(4) }, 'dark', { stroke: true }),
-    ...scaled(car(0, 0, 'red'), 0.55, 60, 112)
-  ],
   budismo: [
     s('path', { d: 'M14 128q66-14 132 0', ...SW(5) }, 'sky', { stroke: true }),
     s('path', { d: leaflet(80, 116, -90, 66, 16) }, 'pink', { accent: true }),
@@ -1402,14 +1369,6 @@ module.exports = {
     s('path', { d: 'M38 66q12-6 30 0q12 10 4 22q-18 8-30 0q-10-12-4-22z' }, 'red', { accent: true }),
     s('circle', { cx: 52, cy: 76, r: 6 }, 'white'),
     s('path', { d: 'M90 72q10 12 0 22q10 12 0 22q14 10 24 0q-10-10 0-22q-10-10 0-22z', transform: 'rotate(90 102 94) translate(0 -14)' }, 'pink')
-  ],
-  cas: [
-    s('path', { d: leaflet(52, 46, -60, 34, 10) }, 'green'),
-    s('circle', { cx: 56, cy: 82, r: 36 }, 'yellow'),
-    s('path', { d: 'M40 70q4-8 12-10', ...SW(4) }, 'cream', { stroke: true }),
-    s('circle', { cx: 112, cy: 104, r: 30 }, 'green'),
-    s('circle', { cx: 112, cy: 104, r: 24 }, 'cream', { accent: true }),
-    s('path', { d: dots(around(112, 104, 12, 8), 2.5) }, 'tan')
   ],
   cata: [
     ...glass(58, -16, true),
@@ -2030,5 +1989,5 @@ module.exports = {
     s('path', { d: 'M52 18h40v62h22q16 0 16 16v18H52z' }, 'dark', { accent: true }),
     s('path', { d: 'M52 110h78', ...SW(4) }, 'black', { stroke: true }),
     s('path', { d: 'M30 112l-14-6M32 126H14M136 112l12-8M138 128h10', ...SW(4) }, 'orange', { stroke: true })
-  ],
+  ]
 };

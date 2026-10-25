@@ -1,6 +1,6 @@
 {
   "theme": "freq-0065",
-  "theme_zh": "常用字（頻率第 18568–18864 名）",
+  "theme_zh": "常用字（頻率第 18568–18878 名）",
   "entries": [
     {
       "word": "pergamino",
@@ -3630,6 +3630,347 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:portuario"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "potro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "小公馬、駒",
+      "en": "colt, foal",
+      "ipa": "/ˈpotɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pullus",
+          "zh": "幼獸"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*pulliter",
+          "zh": "幼馬"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "potro",
+          "zh": "小公馬"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁文 pullus（幼獸、雛鳥），在通俗拉丁語演變為 *pulliter，進入西班牙語後成為 potro，專指年輕的小馬。同源字根在其他語言中也指代各類幼年動物。",
+      "hook_zh": "小馬跑得破破破（potro）地往前衝。",
+      "usage_zh": "陽性名詞，陰性為 potra。口語中也常形容身材健美、有吸引力的人。",
+      "example_es": "El potro corre libre por el prado.",
+      "example_zh": "那隻小馬在草地上自由奔跑。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:potro",
+        "wiktionary:la:pullus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "preciado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "珍貴的、寶貴的",
+      "en": "precious, valuable",
+      "ipa": "/pɾeˈθjado/",
+      "breakdown": [
+        {
+          "part": "preciar",
+          "zh": "珍視、重視"
+        },
+        {
+          "part": "-ado",
+          "zh": "形容詞後綴，表狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "preciar",
+          "zh": "珍視"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "preciado",
+          "zh": "珍貴的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 preciar（珍視、評價），加上後綴 -ado 構成形容詞，用來形容極具價值或受到珍惜的事物。常形容時間、資源或心愛的物品。",
+      "hook_zh": "受到高度珍視（preciar）的寶物，自然十分 preciado。",
+      "usage_zh": "常用來修飾名詞如 el bien más preciado（最珍貴的資產）。",
+      "example_es": "El agua es un bien muy preciado en el desierto.",
+      "example_zh": "水在沙漠中是非常寶貴的資源。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:preciado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "precoz",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "早熟的、過早的",
+      "en": "precocious, early",
+      "ipa": "/pɾeˈkoθ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "praecox",
+          "zh": "過早成熟的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "precoz",
+          "zh": "早熟的"
+        }
+      ],
+      "cognates_en": [
+        "precocious"
+      ],
+      "story_zh": "學者借詞自拉丁文 praecox（過早成熟的）。有趣的是，水果「杏桃」（albaricoque）也是經由阿拉伯語借入的同源雙生詞，兩者皆含有提早成熟之意。",
+      "hook_zh": "英文 precocious 和西語 precoz 長得很像，都指早熟。",
+      "usage_zh": "陰陽同形（un niño precoz / una niña precoz），複數為 precoces。",
+      "example_es": "Es un niño precoz para su edad.",
+      "example_zh": "以他的年紀來說，他是個早熟的孩子。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:precoz"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "predecesor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "前任者、前輩、前身",
+      "en": "predecessor",
+      "ipa": "/pɾedeθeˈsoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "praedēcessor",
+          "zh": "前任者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "predecesor",
+          "zh": "前任者"
+        }
+      ],
+      "cognates_en": [
+        "predecessor"
+      ],
+      "story_zh": "學者借詞自晚期拉丁文 praedēcessor，表示在前任職或在前離去的人。進入西班牙語後，指職位上的前任者或事物的前身。",
+      "hook_zh": "英文 predecessor 與西語 predecesor 幾乎一模一樣。",
+      "usage_zh": "陰性為 predecesora，複數為 predecesores。",
+      "example_es": "El nuevo presidente elogió a su predecesor.",
+      "example_zh": "新總統讚揚了他的前任。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:predecesor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "prescindir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "免除、省略、放棄、沒有…也行",
+      "en": "to do without, to dispense with",
+      "ipa": "/pɾesθinˈdiɾ/",
+      "breakdown": [
+        {
+          "part": "pre-",
+          "zh": "事先、在前"
+        },
+        {
+          "part": "escindir",
+          "zh": "切除、分割"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "scindō",
+          "zh": "切開、撕碎"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "praescindō",
+          "zh": "在前方切斷"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "prescindir",
+          "zh": "免除、不用"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁文 praescindō，由 prae-（在前面）與 scindō（切斷、分開）組成，原指「在前方切開剪除」。引申為把不必要的事物從眼前切除捨棄，演變成現代「不需要、免去、沒有也行」的意思。",
+      "hook_zh": "把前面不需要的雜物剪掉（scindir），就能 prescindir（免除、不用）。",
+      "usage_zh": "通常搭配介系詞 de：prescindir de algo/alguien（省去、沒有…也行）。",
+      "example_es": "No podemos prescindir de su ayuda.",
+      "example_zh": "我們不能沒有他的幫助。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:prescindir",
+        "wiktionary:la:praescindo",
+        "wiktionary:la:scindo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pretemporada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "季前賽、季前訓練期",
+      "en": "preseason",
+      "ipa": "/pɾetempoˈɾada/",
+      "breakdown": [
+        {
+          "part": "pre-",
+          "zh": "前、預先"
+        },
+        {
+          "part": "temporada",
+          "zh": "賽季、時期"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "temporada",
+          "zh": "時期、季"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pretemporada",
+          "zh": "季前"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由前綴 pre-（在…之前）加上 temporada（時期、季節、賽季）組成，字面意思就是「正式賽季開始之前的時期」，常用於體育賽事指球隊的季前集訓與熱身期。",
+      "hook_zh": "pre-（前）加上 temporada（賽季），就是球隊開賽前的 pretemporada。",
+      "usage_zh": "陰性名詞。常搭配動詞 hacer la pretemporada（進行季前訓練）。",
+      "example_es": "El equipo comenzó la pretemporada en julio.",
+      "example_zh": "球隊在七月開始了季前集訓。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pretemporada"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "prometedor",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "有前途的、大有可為的",
+      "en": "promising",
+      "ipa": "/pɾometeˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "prometer",
+          "zh": "承諾、答應"
+        },
+        {
+          "part": "-dor",
+          "zh": "形容詞/名詞字尾，具…特質者"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "prometer",
+          "zh": "承諾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "prometedor",
+          "zh": "有前途的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 prometer（承諾、保證）加上後綴 -dor 構成，字面意思為「許下承諾的、讓人看好未來的」，引申為前景大好、充滿希望的意思。",
+      "hook_zh": "未來彷彿對你許下承諾（prometer），前景當然 prometedor（大有可為）。",
+      "usage_zh": "陰性為 prometedora，常用於 un futuro prometedor（充滿希望的未來）。",
+      "example_es": "El joven tiene un futuro muy prometedor.",
+      "example_zh": "這位年輕人有著非常光明的前途。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:prometedor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pétalo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "花瓣",
+      "en": "petal",
+      "ipa": "/ˈpetalo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "πέταλον",
+          "zh": "葉片、葉狀物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pétalo",
+          "zh": "花瓣"
+        }
+      ],
+      "cognates_en": [
+        "petal"
+      ],
+      "story_zh": "學者借詞自古希臘文 πέταλον（pétalon，葉狀物、薄片），進入現代語言後專指花朵的花瓣。英文的 petal 也是來自同一個希臘字源。",
+      "hook_zh": "英文 petal 加上西班牙語陽性結尾 -o 就是 pétalo。",
+      "usage_zh": "重音在第一音節（重音符號 é）。複數為 pétalos。",
+      "example_es": "El viento arrancó los pétalos de la rosa.",
+      "example_zh": "風吹落了玫瑰花的花瓣。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pétalo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "quejar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "抱怨、訴苦（通常作 quejarse）",
+      "en": "to complain, to afflict",
+      "ipa": "/keˈxaɾ/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "遇到讓人很不爽的客人（queje），店員都在私下抱怨（quejarse）。",
+      "usage_zh": "絕大多數情況為代名詞動詞 quejarse de（抱怨某事），例如 No te quejes（別抱怨）。",
+      "example_es": "Siempre se queja del mal tiempo.",
+      "example_zh": "他總是抱怨天氣不好。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:quejar"
       ],
       "writer": "gemini"
     }

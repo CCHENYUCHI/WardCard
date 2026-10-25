@@ -1,348 +1,7 @@
 {
   "theme": "freq-0066",
-  "theme_zh": "常用字（頻率第 18866–19110 名）",
+  "theme_zh": "常用字（頻率第 18881–19191 名）",
   "entries": [
-    {
-      "word": "potro",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "小公馬、駒",
-      "en": "colt, foal",
-      "ipa": "/ˈpotɾo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "pullus",
-          "zh": "幼獸"
-        },
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "*pulliter",
-          "zh": "幼馬"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "potro",
-          "zh": "小公馬"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁文 pullus（幼獸、雛鳥），在通俗拉丁語演變為 *pulliter，進入西班牙語後成為 potro，專指年輕的小馬。同源字根在其他語言中也指代各類幼年動物。",
-      "hook_zh": "小馬跑得破破破（potro）地往前衝。",
-      "usage_zh": "陽性名詞，陰性為 potra。口語中也常形容身材健美、有吸引力的人。",
-      "example_es": "El potro corre libre por el prado.",
-      "example_zh": "那隻小馬在草地上自由奔跑。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:potro",
-        "wiktionary:la:pullus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "preciado",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "珍貴的、寶貴的",
-      "en": "precious, valuable",
-      "ipa": "/pɾeˈθjado/",
-      "breakdown": [
-        {
-          "part": "preciar",
-          "zh": "珍視、重視"
-        },
-        {
-          "part": "-ado",
-          "zh": "形容詞後綴，表狀態"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "preciar",
-          "zh": "珍視"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "preciado",
-          "zh": "珍貴的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自動詞 preciar（珍視、評價），加上後綴 -ado 構成形容詞，用來形容極具價值或受到珍惜的事物。常形容時間、資源或心愛的物品。",
-      "hook_zh": "受到高度珍視（preciar）的寶物，自然十分 preciado。",
-      "usage_zh": "常用來修飾名詞如 el bien más preciado（最珍貴的資產）。",
-      "example_es": "El agua es un bien muy preciado en el desierto.",
-      "example_zh": "水在沙漠中是非常寶貴的資源。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:preciado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "precoz",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "早熟的、過早的",
-      "en": "precocious, early",
-      "ipa": "/pɾeˈkoθ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "praecox",
-          "zh": "過早成熟的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "precoz",
-          "zh": "早熟的"
-        }
-      ],
-      "cognates_en": [
-        "precocious"
-      ],
-      "story_zh": "學者借詞自拉丁文 praecox（過早成熟的）。有趣的是，水果「杏桃」（albaricoque）也是經由阿拉伯語借入的同源雙生詞，兩者皆含有提早成熟之意。",
-      "hook_zh": "英文 precocious 和西語 precoz 長得很像，都指早熟。",
-      "usage_zh": "陰陽同形（un niño precoz / una niña precoz），複數為 precoces。",
-      "example_es": "Es un niño precoz para su edad.",
-      "example_zh": "以他的年紀來說，他是個早熟的孩子。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:precoz"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "predecesor",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "前任者、前輩、前身",
-      "en": "predecessor",
-      "ipa": "/pɾedeθeˈsoɾ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "praedēcessor",
-          "zh": "前任者"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "predecesor",
-          "zh": "前任者"
-        }
-      ],
-      "cognates_en": [
-        "predecessor"
-      ],
-      "story_zh": "學者借詞自晚期拉丁文 praedēcessor，表示在前任職或在前離去的人。進入西班牙語後，指職位上的前任者或事物的前身。",
-      "hook_zh": "英文 predecessor 與西語 predecesor 幾乎一模一樣。",
-      "usage_zh": "陰性為 predecesora，複數為 predecesores。",
-      "example_es": "El nuevo presidente elogió a su predecesor.",
-      "example_zh": "新總統讚揚了他的前任。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:predecesor"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "prescindir",
-      "article": "",
-      "pos": "verbo",
-      "zh": "免除、省略、放棄、沒有…也行",
-      "en": "to do without, to dispense with",
-      "ipa": "/pɾesθinˈdiɾ/",
-      "breakdown": [
-        {
-          "part": "pre-",
-          "zh": "事先、在前"
-        },
-        {
-          "part": "escindir",
-          "zh": "切除、分割"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "scindō",
-          "zh": "切開、撕碎"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "praescindō",
-          "zh": "在前方切斷"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "prescindir",
-          "zh": "免除、不用"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自拉丁文 praescindō，由 prae-（在前面）與 scindō（切斷、分開）組成，原指「在前方切開剪除」。引申為把不必要的事物從眼前切除捨棄，演變成現代「不需要、免去、沒有也行」的意思。",
-      "hook_zh": "把前面不需要的雜物剪掉（scindir），就能 prescindir（免除、不用）。",
-      "usage_zh": "通常搭配介系詞 de：prescindir de algo/alguien（省去、沒有…也行）。",
-      "example_es": "No podemos prescindir de su ayuda.",
-      "example_zh": "我們不能沒有他的幫助。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:prescindir",
-        "wiktionary:la:praescindo",
-        "wiktionary:la:scindo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "pretemporada",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "季前賽、季前訓練期",
-      "en": "preseason",
-      "ipa": "/pɾetempoˈɾada/",
-      "breakdown": [
-        {
-          "part": "pre-",
-          "zh": "前、預先"
-        },
-        {
-          "part": "temporada",
-          "zh": "賽季、時期"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "temporada",
-          "zh": "時期、季"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "pretemporada",
-          "zh": "季前"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由前綴 pre-（在…之前）加上 temporada（時期、季節、賽季）組成，字面意思就是「正式賽季開始之前的時期」，常用於體育賽事指球隊的季前集訓與熱身期。",
-      "hook_zh": "pre-（前）加上 temporada（賽季），就是球隊開賽前的 pretemporada。",
-      "usage_zh": "陰性名詞。常搭配動詞 hacer la pretemporada（進行季前訓練）。",
-      "example_es": "El equipo comenzó la pretemporada en julio.",
-      "example_zh": "球隊在七月開始了季前集訓。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:pretemporada"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "prometedor",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "有前途的、大有可為的",
-      "en": "promising",
-      "ipa": "/pɾometeˈdoɾ/",
-      "breakdown": [
-        {
-          "part": "prometer",
-          "zh": "承諾、答應"
-        },
-        {
-          "part": "-dor",
-          "zh": "形容詞/名詞字尾，具…特質者"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "prometer",
-          "zh": "承諾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "prometedor",
-          "zh": "有前途的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由動詞 prometer（承諾、保證）加上後綴 -dor 構成，字面意思為「許下承諾的、讓人看好未來的」，引申為前景大好、充滿希望的意思。",
-      "hook_zh": "未來彷彿對你許下承諾（prometer），前景當然 prometedor（大有可為）。",
-      "usage_zh": "陰性為 prometedora，常用於 un futuro prometedor（充滿希望的未來）。",
-      "example_es": "El joven tiene un futuro muy prometedor.",
-      "example_zh": "這位年輕人有著非常光明的前途。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:prometedor"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "pétalo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "花瓣",
-      "en": "petal",
-      "ipa": "/ˈpetalo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "πέταλον",
-          "zh": "葉片、葉狀物"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "pétalo",
-          "zh": "花瓣"
-        }
-      ],
-      "cognates_en": [
-        "petal"
-      ],
-      "story_zh": "學者借詞自古希臘文 πέταλον（pétalon，葉狀物、薄片），進入現代語言後專指花朵的花瓣。英文的 petal 也是來自同一個希臘字源。",
-      "hook_zh": "英文 petal 加上西班牙語陽性結尾 -o 就是 pétalo。",
-      "usage_zh": "重音在第一音節（重音符號 é）。複數為 pétalos。",
-      "example_es": "El viento arrancó los pétalos de la rosa.",
-      "example_zh": "風吹落了玫瑰花的花瓣。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:pétalo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "quejar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "抱怨、訴苦（通常作 quejarse）",
-      "en": "to complain, to afflict",
-      "ipa": "/keˈxaɾ/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "遇到讓人很不爽的客人（queje），店員都在私下抱怨（quejarse）。",
-      "usage_zh": "絕大多數情況為代名詞動詞 quejarse de（抱怨某事），例如 No te quejes（別抱怨）。",
-      "example_es": "Siempre se queja del mal tiempo.",
-      "example_zh": "他總是抱怨天氣不好。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:quejar"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "rabino",
       "article": "el",
@@ -3264,28 +2923,6 @@
       "writer": "gemini"
     },
     {
-      "word": "memo",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "傻的、呆滯的、笨拙的；傻子",
-      "en": "silly, stupid, idiot",
-      "ipa": "/ˈmemo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "摸摸（memo）自己的腦袋，傻呼呼地傻笑。",
-      "usage_zh": "陰性為 mema。口語常用片語 hacerse el memo（裝傻、裝糊塗）。",
-      "example_es": "¡No te hagas el memo y respóndeme la verdad!",
-      "example_zh": "別跟我裝傻，老實回答我！",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:memo"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "mole",
       "article": "la",
       "pos": "sustantivo",
@@ -3426,6 +3063,816 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:nata"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ocasionar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "引起、造成",
+      "en": "to cause, to bring about",
+      "ipa": "/okasjoˈnaɾ/",
+      "breakdown": [
+        {
+          "part": "ocasión",
+          "zh": "場合、機會"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "ocasión",
+          "zh": "場合、機會"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ocasionar",
+          "zh": "引起、造成"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由名詞 ocasión（場合、時機）加上動詞字尾 -ar 構成。表示在某種場合或情況下產生某件事，進而引申為「引起、造成」。",
+      "hook_zh": "英文 occasion 是場合，動詞 ocasionar 就是「製造某個場合／狀況」，也就是造成、引起。",
+      "usage_zh": "常用於造成不良後果，如 ocasionar problemas（造成問題）、ocasionar daños（造成損害）。",
+      "example_es": "La lluvia fuerte ocasionó muchos problemas.",
+      "example_zh": "大雨造成了許多問題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ocasionar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "opio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "鴉片",
+      "en": "opium",
+      "ipa": "/ˈopjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ὀπός",
+          "zh": "植物汁液"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "ὄπιον",
+          "zh": "罌粟汁、鴉片"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "opium",
+          "zh": "鴉片"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "opio",
+          "zh": "鴉片"
+        }
+      ],
+      "cognates_en": [
+        "opium"
+      ],
+      "story_zh": "源自拉丁語 opium，最早可追溯至古希臘語 ὄπιον（罌粟汁），是 ὀπός（植物汁液）的指小詞。古代從罌粟未成熟果實割取乳汁乾燥製成麻醉劑，後來沿用為鴉片的名稱。",
+      "hook_zh": "發音和英文 opium 極為接近，都是「鴉片」的意思。",
+      "usage_zh": "為不可數陽性名詞。成語 el opio del pueblo（人民的鴉片）常用於政治與社會論述。",
+      "example_es": "El cultivo de opio está prohibido en muchos países.",
+      "example_zh": "許多國家禁止種植鴉片。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:opio",
+        "wiktionary:la:opium"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "panorámico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "全景的、全貌的",
+      "en": "panoramic",
+      "ipa": "/panoˈɾamiko/",
+      "breakdown": [
+        {
+          "part": "panorama",
+          "zh": "全景"
+        },
+        {
+          "part": "-ico",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "panorama",
+          "zh": "全景"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "panorámico",
+          "zh": "全景的"
+        }
+      ],
+      "cognates_en": [
+        "panoramic"
+      ],
+      "story_zh": "由 panorama（全景）加上形容詞字尾 -ico 構成。用來形容視野開闊、能將周圍景象盡收眼底的景觀或畫面。",
+      "hook_zh": "panorama（全景）加上 -ico 變成形容詞，和英文 panoramic 完全對應。",
+      "usage_zh": "常用搭配如 vista panorámica（全景視野）、pantalla panorámica（寬螢幕）。",
+      "example_es": "Disfrutamos de una vista panorámica desde la montaña.",
+      "example_zh": "我們在山上欣賞了壯麗的全景視野。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:panorámico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "papeleta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "選票；紙條",
+      "en": "ballot, slip of paper",
+      "ipa": "/papeˈleta/",
+      "breakdown": [
+        {
+          "part": "papel",
+          "zh": "紙"
+        },
+        {
+          "part": "-eta",
+          "zh": "指小詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "papel",
+          "zh": "紙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "papeleta",
+          "zh": "紙條、選票"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 papel（紙）加上指小後綴 -eta 構成，原意指「小紙片」。後來專門指選舉時用於投票的選票，或各類填寫資料用的小單據。",
+      "hook_zh": "papel（紙）縮小成小紙片（-eta），投票時投入箱子裡的那張小紙片就是 papeleta（選票）。",
+      "usage_zh": "陰性名詞。口語片語 tener muchas papeletas para… 表示「很有可能遭遇或獲得某事」。",
+      "example_es": "Depositó su papeleta en la urna de votación.",
+      "example_zh": "他把選票投進了投票箱。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:papeleta"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "perito",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "專家、鑑定人",
+      "en": "expert, expert witness",
+      "ipa": "/peˈɾito/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "perītus",
+          "zh": "有經驗的、熟練的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "perito",
+          "zh": "專家、行家"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 perītus（有經驗的、熟練的）。學者借詞引入西班牙語後，除了形容經驗豐富，也專指在司法或特定專業領域中負責評估與鑑定的「專家」。",
+      "hook_zh": "perito 聽起來像「陪你透徹分析」的專家，法庭上的鑑定人就是 perito。",
+      "usage_zh": "陰性為 perita。常用於司法或保險領域，如 perito judicial（法庭專家證人）。",
+      "example_es": "El juez llamó a un perito para examinar las pruebas.",
+      "example_zh": "法官傳喚了一位專家來檢驗證據。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:perito"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "popularmente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "普遍地、大眾地；俗稱地",
+      "en": "popularly, commonly",
+      "ipa": "/popuˌlaɾˈmente/",
+      "breakdown": [
+        {
+          "part": "popular",
+          "zh": "大眾的、流行的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "popular",
+          "zh": "大眾的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "popularmente",
+          "zh": "普遍地、俗稱地"
+        }
+      ],
+      "cognates_en": [
+        "popularly"
+      ],
+      "story_zh": "由形容詞 popular（大眾的、民間的）加上副詞後綴 -mente 構成。常用來表示某種說法、稱呼在民間廣泛流傳或普遍被大眾接受。",
+      "hook_zh": "popular（受歡迎的、大眾的）加 -mente，就是英文的 popularly（大眾普遍地）。",
+      "usage_zh": "常與動詞 conocer 搭配：conocido popularmente como…（俗稱、民間通稱…）。",
+      "example_es": "Esta planta es conocida popularmente como hierba buena.",
+      "example_zh": "這種植物在民間俗稱為薄荷草。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:popularmente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "posguerra",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "戰後時期",
+      "en": "post-war period",
+      "ipa": "/posˈɡera/",
+      "breakdown": [
+        {
+          "part": "pos-",
+          "zh": "在…之後"
+        },
+        {
+          "part": "guerra",
+          "zh": "戰爭"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "guerra",
+          "zh": "戰爭"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "posguerra",
+          "zh": "戰後時期"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由前綴 pos-（在…之後）與名詞 guerra（戰爭）結合而成。指戰爭結束後國家進行重建、社會與經濟逐步復甦的歷史時期。",
+      "hook_zh": "pos（英文 post- 之後）加上 guerra（戰爭），就是「戰後時期」。",
+      "usage_zh": "陰性名詞。也可拼作 postguerra，但在現代西語中 posguerra 更為常見。",
+      "example_es": "La economía se recuperó lentamente durante la posguerra.",
+      "example_zh": "經濟在戰後時期緩慢復甦。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:posguerra"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "previsible",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "可預見的、意料之中的",
+      "en": "foreseeable, predictable",
+      "ipa": "/pɾebiˈsible/",
+      "breakdown": [
+        {
+          "part": "pre-",
+          "zh": "預先"
+        },
+        {
+          "part": "visible",
+          "zh": "看得見的"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "pre-（事先）加上 visible（看得見），能事先看到的當然就是「可預見的」。",
+      "usage_zh": "陽陰同形。反義詞為 imprevisible（難以預料的）。",
+      "example_es": "El resultado del partido era bastante previsible.",
+      "example_zh": "這場比賽的結果相當容易預料。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:previsible"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "prótesis",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "義肢、假體",
+      "en": "prosthesis",
+      "ipa": "/ˈpɾotesis/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "prosthesis"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文 prosthesis 是義肢，西語 prótesis 拼寫更簡潔，單複數同形。",
+      "usage_zh": "陰性名詞，單複數同形（la prótesis / las prótesis）。例如 prótesis dental（假牙）。",
+      "example_es": "El paciente camina bien con su nueva prótesis.",
+      "example_zh": "病人穿著他的新義肢走得很好。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:prótesis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "puntero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "游標、指針；領先者",
+      "en": "pointer, cursor, leader",
+      "ipa": "/punˈteɾo/",
+      "breakdown": [
+        {
+          "part": "punta",
+          "zh": "尖端、前端"
+        },
+        {
+          "part": "-ero",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "punta",
+          "zh": "尖端"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "puntero",
+          "zh": "指針、游標"
+        }
+      ],
+      "cognates_en": [
+        "pointer"
+      ],
+      "story_zh": "源自 punta（尖端、前頭）加上字尾 -ero。原指指向尖端的工具，在電腦時代用來指滑鼠「游標、指標」，在競賽或技術領域也指走在最前端的「領先者」。",
+      "hook_zh": "punta 是尖頭，能指著尖端的就是 puntero（游標、指針）。",
+      "usage_zh": "電腦上常用 el puntero del ratón（滑鼠游標）；形容詞用法如 tecnología puntera（尖端技術）。",
+      "example_es": "Mueve el puntero del ratón hacia el botón de guardar.",
+      "example_zh": "將滑鼠游標移到儲存按鈕上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:puntero"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "rambla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "林蔭大道、漫步大道；乾河道",
+      "en": "promenade, tree-lined avenue",
+      "ipa": "/ˈrambla/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "رَمْلَة",
+          "zh": "沙地"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rambla",
+          "zh": "漫步大道、乾河道"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自阿拉伯語 رَمْلَة（ramla，意為沙地）。原指伊比利半島夏季乾涸、滿是沙石的季節性河道。由於這些河道平坦寬敞，後來許多西班牙城市將其改建為綠樹成蔭的漫步大道。",
+      "hook_zh": "巴塞隆納最著名的觀光步行街就是 Las Ramblas，兩旁有高大樹木與咖啡館。",
+      "usage_zh": "陰性名詞。在加泰隆尼亞及西班牙東部特別常用於指市中心的林蔭漫步大街。",
+      "example_es": "Paseamos por la rambla todas las tardes.",
+      "example_zh": "我們每天傍晚都在林蔭大道上散步。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:rambla"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reivindicar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "爭取、主張；為…平反",
+      "en": "to claim, to demand, to stand up for",
+      "ipa": "/reibindiˈkaɾ/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "vindicate"
+      ],
+      "story_zh": "",
+      "hook_zh": "re-（重新）加上 vindicar（英文 vindicate 辯護、平反），合起來就是「重新爭取主張權益」。",
+      "usage_zh": "常用搭配如 reivindicar los derechos（爭取權利）、reivindicar un atentado（宣稱對襲擊負責）。",
+      "example_es": "Los trabajadores salieron a la calle a reivindicar sus derechos.",
+      "example_zh": "工人們走上街頭爭取自己的權益。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:reivindicar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "resguardo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "收據、存根；防護、庇護",
+      "en": "receipt, counterfoil, protection",
+      "ipa": "/resˈɡwaɾdo/",
+      "breakdown": [
+        {
+          "part": "resguardar",
+          "zh": "保護、防護"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "resguardar",
+          "zh": "保護、防護"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "resguardo",
+          "zh": "收據、保護"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 resguardar（保護、防護）的去動詞後綴派生名詞。最初指防護措施或保障，引申為保障買賣雙方權益的憑據，即「收據、存根」。",
+      "hook_zh": "guardar 是保管，resguardo 既是保護自身安全的庇護所，也是妥善保管的取件「收據」。",
+      "usage_zh": "在西班牙郵局或官方機構辦理業務時，給你的留底回執單通常就叫 resguardo。",
+      "example_es": "Guarda bien el resguardo para poder recoger el paquete.",
+      "example_zh": "收好這張收據，以便領取包裹。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:resguardo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "retratar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "描繪、畫肖像；拍照",
+      "en": "to portray, to depict, to photograph",
+      "ipa": "/retɾaˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "retracto",
+          "zh": "重新處理、重新描繪"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "retractāre",
+          "zh": "描畫、描繪"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "retratar",
+          "zh": "畫像、描繪"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自晚期拉丁語 retractāre，源自 retracto（重新處理、描摹）。原指對著真人模特兒重新臨摹與勾勒容貌，演變為繪製肖像，現代西班牙語中亦可指拍照或在文學中深入描繪人物。",
+      "hook_zh": "名詞 retrato 是肖像、照片，動詞 retratar 就是為某人畫肖像或拍照。",
+      "usage_zh": "可用於具體繪畫攝影，也常用於比喻：La novela retrata la vida en el campo（小說生動描繪了鄉村生活）。",
+      "example_es": "El pintor retrató al rey con gran detalle.",
+      "example_zh": "畫家極為細緻地描繪了國王的肖像。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:retratar",
+        "wiktionary:la:retracto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sacudir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "搖晃、拍打灰塵；抖落",
+      "en": "to shake, to dust, to shake off",
+      "ipa": "/sakuˈdiɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "succutere",
+          "zh": "從下方震動、搖晃"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sacudir",
+          "zh": "搖動、抖落"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sacudir",
+          "zh": "搖晃、拍打灰塵"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 succutere（由 sub- 下方 + quatere 震動組成，意為從下方搖晃）。進入古西班牙語後經由音變成為 sacudir。原意是猛烈搖晃，引申為抖去灰塵或搖落樹上的果實。",
+      "hook_zh": "拿抹布用力甩動「刷、刷、庫、滴」地抖落灰塵：sacudir！",
+      "usage_zh": "常用搭配如 sacudir el polvo（拍掉灰塵）、sacudir la cabeza（搖頭）。",
+      "example_es": "Antes de entrar a la casa, sacudió la alfombra.",
+      "example_zh": "進屋之前，他先拍打了地毯上的灰塵。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sacudir",
+        "wiktionary:la:succutio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "satelital",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "衛星的",
+      "en": "satellite",
+      "ipa": "/sateliˈtal/",
+      "breakdown": [
+        {
+          "part": "satélite",
+          "zh": "衛星"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "satélite",
+          "zh": "衛星"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "satelital",
+          "zh": "衛星的"
+        }
+      ],
+      "cognates_en": [
+        "satellite"
+      ],
+      "story_zh": "由 satélite（衛星）加上形容詞字尾 -al 構成。專門用來形容與人造衛星相關的技術、訊號或影像。",
+      "hook_zh": "satélite（衛星）加上 -al 變成形容詞，容易和英文 satellite 聯想。",
+      "usage_zh": "陽陰同形。常見搭配有 imagen satelital（衛星影像）、conexión satelital（衛星連線）。",
+      "example_es": "El mapa muestra una imagen satelital muy clara.",
+      "example_zh": "這張地圖顯示了非常清晰的衛星影像。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:satelital"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "saturación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "飽和；過度充斥",
+      "en": "saturation",
+      "ipa": "/satuɾaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "satūrātiōnem",
+          "zh": "飽滿、充滿"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "saturación",
+          "zh": "飽和、飽足"
+        }
+      ],
+      "cognates_en": [
+        "saturation"
+      ],
+      "story_zh": "借自晚期拉丁語 satūrātiōnem，源自飽滿、充滿的含義。最初用於化學中物質無法再溶解的「飽和」狀態，後來也廣泛應用於市場飽和、色彩飽和度等概念。",
+      "hook_zh": "英文 saturation 是飽和，西語加重音符號寫作 saturación。",
+      "usage_zh": "陰性名詞。常用於科技與色彩：saturación de color（色彩飽和度）、saturación del mercado（市場飽和）。",
+      "example_es": "El mercado de teléfonos ha alcanzado la saturación.",
+      "example_zh": "手機市場已經達到了飽和狀態。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:saturación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "secar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "使乾燥、弄乾；變乾",
+      "en": "to dry, to dry up",
+      "ipa": "/seˈkaɾ/",
+      "breakdown": [
+        {
+          "part": "seco",
+          "zh": "乾燥的"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "siccāre",
+          "zh": "使乾燥"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "secar",
+          "zh": "弄乾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "secar",
+          "zh": "弄乾、變乾"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 siccāre（使乾燥）。由形容詞 seco（乾燥的）加上動詞字尾 -ar 演變而來。可以作及物動詞表示將某物弄乾，或作反身動詞 secarse 表示自己變乾、河川乾涸。",
+      "hook_zh": "seco 是乾燥的，字尾改成 -ar 變成動詞 secar（弄乾）。",
+      "usage_zh": "常作反身動詞 secarse：secarse las manos（擦乾雙手）。",
+      "example_es": "Puso la ropa al sol para secar.",
+      "example_zh": "他把衣服放在太陽下曬乾。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:secar",
+        "wiktionary:la:sicco"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sombrío",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "陰暗的、陰鬱的",
+      "en": "gloomy, bleak, somber",
+      "ipa": "/somˈbɾio/",
+      "breakdown": [
+        {
+          "part": "sombra",
+          "zh": "陰影、影子"
+        },
+        {
+          "part": "-ío",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "sombra",
+          "zh": "陰影"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sombrío",
+          "zh": "陰暗的、陰鬱的"
+        }
+      ],
+      "cognates_en": [
+        "somber"
+      ],
+      "story_zh": "由 sombra（陰影、影子）加上形容詞後綴 -ío 構成。原意是指被陰影籠罩、缺乏陽光的地方，進一步引申用來形容人或氣氛「陰沉、憂鬱、灰暗」。",
+      "hook_zh": "sombra 是影子，多影子的（sombrío）地方自然昏暗陰沉。",
+      "usage_zh": "陰性為 sombría。既可用於描寫環境（un bosque sombrío 陰暗森林），也可用於心情或前景（un panorama sombrío 黯淡前景）。",
+      "example_es": "Caminamos por un bosque sombrío y silencioso.",
+      "example_zh": "我們漫步在一座陰暗又寧靜的森林中。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sombrío"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "talón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "腳後跟；支票",
+      "en": "heel, check",
+      "ipa": "/taˈlon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tālus",
+          "zh": "踝骨、腳後跟"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*tālōnem",
+          "zh": "腳後跟"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "talón",
+          "zh": "腳後跟、支票"
+        }
+      ],
+      "cognates_en": [
+        "talon"
+      ],
+      "story_zh": "源自通俗拉丁語 *tālōnem，為古典拉丁語 tālus（腳踝、後跟）的指大詞。指人體的腳後跟或鞋跟；後來也引申指支票存根，進而指「支票」。",
+      "hook_zh": "知名典故「阿基里斯腱」西語即為 talón de Aquiles（致命弱點）。",
+      "usage_zh": "陽性名詞。常用片語 talón de Aquiles 表示「阿基里斯之踵（致命弱點）」。",
+      "example_es": "Le dolía el talón después de correr tanto.",
+      "example_zh": "跑了這麼久之後他的腳後跟很痛。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:talón"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tanda",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "輪班；梯次、批次",
+      "en": "shift, turn, batch",
+      "ipa": "/ˈtanda/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tandem",
+          "zh": "最終、持續一段時間"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tanda",
+          "zh": "輪班、批次"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "語源不確定，推測可能源自拉丁語 tanta（那樣多）或 tandem（最終、持續）。指固定劃分的一段時間或輪流進行的工作，引申為工廠的「輪班」或出爐的「一梯次、一批」。",
+      "hook_zh": "一批批攤開（tanda）來輪流做：工作輪班就是 tanda。",
+      "usage_zh": "陰性名詞。常用於工作與烹飪：trabajar por tandas（輪班工作）、una tanda de galletas（一批餅乾）。",
+      "example_es": "Trabajamos en dos tandas para terminar a tiempo.",
+      "example_zh": "我們分兩班工作以準時完成。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tanda",
+        "wiktionary:la:tandem"
       ],
       "writer": "gemini"
     }
