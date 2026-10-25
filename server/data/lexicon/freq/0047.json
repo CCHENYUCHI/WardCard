@@ -1,6 +1,6 @@
 {
   "theme": "freq-0047",
-  "theme_zh": "常用字（頻率第 12575–12829 名）",
+  "theme_zh": "常用字（頻率第 12575–12842 名）",
   "entries": [
     {
       "word": "gradual",
@@ -3536,39 +3536,6 @@
       "writer": "gemini"
     },
     {
-      "word": "ji",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "希臘字母 Χ、χ（chi）",
-      "en": "chi (Greek letter)",
-      "ipa": "/ˈxi/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "χεῖ",
-          "zh": "字母 chi"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "ji",
-          "zh": "希臘字母 chi"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "借自古希臘語 χεῖ（kheî），指希臘字母表中的第 22 個字母 Χ、χ。在現代西班牙語中用來標記該字母的名稱，統計學著名的「卡方分配」西語即為 distribución ji-cuadrada。",
-      "hook_zh": "希臘字母 χ 在西語中讀作 ji，長得像英文字母 X。",
-      "usage_zh": "陰性名詞，複數為 jíes；統計學中的卡方檢定西語為 prueba de ji-cuadrado。",
-      "example_es": "La letra griega ji equivale a la combinación de sonidos.",
-      "example_zh": "希臘字母 ji 對應特定的發音組合。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:ji"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "laurel",
       "article": "el",
       "pos": "sustantivo",
@@ -3655,41 +3622,6 @@
       "sources": [
         "wiktionary:es:lecho",
         "wiktionary:la:lectus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "led",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "發光二極體、LED 燈",
-      "en": "LED (light-emitting diode)",
-      "ipa": "/ˈled/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "LED",
-          "zh": "發光二極體"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "led",
-          "zh": "發光二極體"
-        }
-      ],
-      "cognates_en": [
-        "LED"
-      ],
-      "story_zh": "借自英文首字母縮寫詞 LED（Light-Emitting Diode，發光二極體），在現代西班牙語中已被詞彙化為普通陽性名詞，專指省電且壽命長的半導體照明元件。",
-      "hook_zh": "發出明亮光芒的省電小燈泡，就是 led 燈。",
-      "usage_zh": "陽性名詞，複數可用 leds 或 ledes；常作名詞修飾語，如 bombilla led（LED 燈泡）。",
-      "example_es": "Cambiamos todas las luces de la casa por bombillas led.",
-      "example_zh": "我們把家裡的所有燈都換成了 LED 燈泡。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:led"
       ],
       "writer": "gemini"
     },
@@ -3940,6 +3872,182 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:marginal"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "milímetro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "公釐、毫米",
+      "en": "millimeter",
+      "ipa": "/miˈlimetɾo/",
+      "breakdown": [
+        {
+          "part": "mili-",
+          "zh": "千分之一、毫"
+        },
+        {
+          "part": "-metro",
+          "zh": "公尺"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "millimeter"
+      ],
+      "story_zh": "",
+      "hook_zh": "尺上最細小的一小格就是 milímetro（mili- 毫 + metro 公尺）。",
+      "usage_zh": "陽性名詞，縮寫為 mm。",
+      "example_es": "La aguja mide unos dos milímetros de largo.",
+      "example_zh": "這根針長約兩公釐。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:milímetro"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "minimizar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "最小化、縮小；淡化、貶低",
+      "en": "to minimize, to downplay",
+      "ipa": "/minimiˈθaɾ/",
+      "breakdown": [
+        {
+          "part": "mínimo",
+          "zh": "最小的"
+        },
+        {
+          "part": "-izar",
+          "zh": "使成為（動詞字尾）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "minimize"
+      ],
+      "story_zh": "",
+      "hook_zh": "把視窗縮小到底下，或是大事化小，都是 minimizar（mínimo 最小）。",
+      "usage_zh": "規則動詞，但在第一人稱簡單過去式為 minimicé（z 變 c）。",
+      "example_es": "Debemos minimizar los riesgos del proyecto.",
+      "example_zh": "我們必須將專案的風險降到最低。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:minimizar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "monitoreo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "監控、監測",
+      "en": "monitoring",
+      "ipa": "/monitoˈɾeo/",
+      "breakdown": [
+        {
+          "part": "monitorear",
+          "zh": "監控"
+        },
+        {
+          "part": "-eo",
+          "zh": "動作與狀態名詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "monitoring"
+      ],
+      "story_zh": "",
+      "hook_zh": "螢幕上隨時掌握數據動態，這就是系統的 monitoreo（監測）。",
+      "usage_zh": "陽性名詞，源自動詞 monitorear，在拉美西語中特別常用。",
+      "example_es": "El hospital realiza un monitoreo constante de los pacientes.",
+      "example_zh": "醫院對病患進行持續的監控。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:monitoreo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "obesidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "肥胖症、肥胖",
+      "en": "obesity",
+      "ipa": "/obesiˈdad/",
+      "breakdown": [
+        {
+          "part": "obeso",
+          "zh": "肥胖的"
+        },
+        {
+          "part": "-idad",
+          "zh": "性質狀態字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "obesĭtātem",
+          "zh": "肥胖狀態"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "obesidad",
+          "zh": "肥胖症"
+        }
+      ],
+      "cognates_en": [
+        "obesity"
+      ],
+      "story_zh": "源自拉丁文 obesĭtātem（受格形式），指身體過度豐滿、肥胖的生理狀態。傳入西班牙語後保留為醫學與健康領域的名詞，指體重超標的現象。",
+      "hook_zh": "英文的 obesity 與西語 obesidad 幾乎長得一樣，字尾 -dad 對應 -ty。",
+      "usage_zh": "陰性名詞，為不可數名詞，常用於公共衛生與醫學議題。",
+      "example_es": "La obesidad infantil es un problema de salud pública.",
+      "example_zh": "兒童肥胖是公共衛生的一大問題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:obesidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "objetividad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "客觀性、客觀",
+      "en": "objectivity",
+      "ipa": "/obxetibiˈdad/",
+      "breakdown": [
+        {
+          "part": "objetivo",
+          "zh": "客觀的"
+        },
+        {
+          "part": "-idad",
+          "zh": "性質狀態字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "objectivity"
+      ],
+      "story_zh": "",
+      "hook_zh": "不摻雜個人主觀偏見，就事論事（objetivo），就是 objetividad。",
+      "usage_zh": "陰性名詞，字尾 -dad 為常見的抽象名詞字尾。",
+      "example_es": "El periodista debe informar con total objetividad.",
+      "example_zh": "記者必須完全客觀地報導新聞。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:objetividad"
       ],
       "writer": "gemini"
     }
