@@ -1,439 +1,7 @@
 {
   "theme": "freq-0088",
-  "theme_zh": "常用字（頻率第 26509–26782 名）",
+  "theme_zh": "常用字（頻率第 26539–26859 名）",
   "entries": [
-    {
-      "word": "surtido",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "綜合式樣、什錦、選輯",
-      "en": "assortment, variety",
-      "ipa": "/suɾˈtido/",
-      "breakdown": [
-        {
-          "part": "surtir",
-          "zh": "供應、湧出"
-        },
-        {
-          "part": "-ido",
-          "zh": "名詞與分詞字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "超市的綜合餅乾盒就是一個 surtido，各種口味一應俱全。",
-      "usage_zh": "可作名詞（el surtido 綜合商品）或形容詞（surtido 綜合的）。",
-      "example_es": "La tienda tiene un surtido variado de frutas.",
-      "example_zh": "這家店有品項豐富的水果拼盤。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:surtido"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "talibán",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "塔利班、塔利班成員",
-      "en": "Taliban, Talib",
-      "ipa": "/taliˈban/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "阿拉伯語",
-          "word": "طالب",
-          "zh": "學生、尋求者"
-        },
-        {
-          "lang_zh": "普什圖語",
-          "word": "طالبان",
-          "zh": "學生們（複數）"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "talibán",
-          "zh": "塔利班"
-        }
-      ],
-      "cognates_en": [
-        "Taliban"
-      ],
-      "story_zh": "源自普什圖語 طالبان（ṭālibān，學生們），為 طالب（ṭālib，學生）的複數，最終源自阿拉伯語 طَالِب（尋求知識者、學生）。原本指伊斯蘭神學院的學生，後來成為阿富汗塔利班運動的專有名詞。",
-      "hook_zh": "英文 Taliban 和西語 talibán 拼法只差重音符號，原義其實是「神學院的學生」。",
-      "usage_zh": "複數形可為 talibán 或 talibanes；陰陽同形（el/la talibán）。",
-      "example_es": "El gobierno negoció con los talibanes.",
-      "example_zh": "政府與塔利班成員進行了談判。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:talibán"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "tazón",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "大碗、大杯",
-      "en": "bowl, large mug",
-      "ipa": "/taˈθon/",
-      "breakdown": [
-        {
-          "part": "taza",
-          "zh": "杯子、碗"
-        },
-        {
-          "part": "-ón",
-          "zh": "大詞綴（指大）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "taza + -ón",
-          "zh": "杯子 + 大詞綴"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tazón",
-          "zh": "大碗、大馬克杯"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由西語的 taza（杯子）加上指大字尾 -ón 構成，字面意思就是「特大號的杯子」，在日常生活中常用來指喝麥片、湯或熱牛奶的大碗或大馬克杯。",
-      "hook_zh": "taza 是普通的杯子，加了 -ón 變得超級大，就成了喝熱湯的大碗 tazón。",
-      "usage_zh": "陽性名詞，複數為 tazones（去掉重音符號）。",
-      "example_es": "Tomó un tazón de leche caliente por la mañana.",
-      "example_zh": "他早上喝了一大碗熱牛奶。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tazón"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "telégrafo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "電報機、電報",
-      "en": "telegraph",
-      "ipa": "/teˈleɡɾafo/",
-      "breakdown": [
-        {
-          "part": "tele-",
-          "zh": "遠處"
-        },
-        {
-          "part": "-grafo",
-          "zh": "書寫器、記錄者"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "tele- + -grafo",
-          "zh": "遠處 + 書寫器"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "telégrafo",
-          "zh": "電報機"
-        }
-      ],
-      "cognates_en": [
-        "telegraph"
-      ],
-      "story_zh": "由希臘字首 tele-（遠距離）與 -grafo（書寫器）結合而成，字面意思即為「傳遞到遠方的書寫工具」。十九世紀發明後成為人類跨越空間傳送訊息的關鍵技術。",
-      "hook_zh": "英文 telegraph 對應西語 telégrafo，tele-（遠方）加上 -grafo（書寫）。",
-      "usage_zh": "陽性名詞，重音在倒數第三音節（esdrújula），必加重音符號。",
-      "example_es": "El mensaje llegó por telégrafo.",
-      "example_zh": "這則訊息是透過電報傳達的。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:telégrafo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "textualmente",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "一字不差地、照字面地",
-      "en": "textually, literally, word for word",
-      "ipa": "/teɡstwalˈmente/",
-      "breakdown": [
-        {
-          "part": "textual",
-          "zh": "文本的、照字面的"
-        },
-        {
-          "part": "-mente",
-          "zh": "副詞字尾（方式）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "textual + -mente",
-          "zh": "文本的 + 副詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "textualmente",
-          "zh": "一字不差地"
-        }
-      ],
-      "cognates_en": [
-        "textually"
-      ],
-      "story_zh": "由形容詞 textual（文本的、依據原文的）加上副詞後綴 -mente 衍生而來，用來強調發言或引用完全依照原文，字字句句毫無變更。",
-      "hook_zh": "英文 textually，西語 textual（文本）加 -mente（副詞），表示「原汁原味一字不漏」。",
-      "usage_zh": "副詞修飾動詞，常見搭配有 citar textualmente（逐字引用）。",
-      "example_es": "El periodista citó textualmente las palabras del presidente.",
-      "example_zh": "記者逐字引用了總統的原話。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:textualmente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "tonalidad",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "色調、調性",
-      "en": "tonality, shade of color",
-      "ipa": "/tonaliˈdad/",
-      "breakdown": [
-        {
-          "part": "tonal",
-          "zh": "音調的、色調的"
-        },
-        {
-          "part": "-idad",
-          "zh": "性質名詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "tonal + -idad",
-          "zh": "色調的 + 性質名詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tonalidad",
-          "zh": "色調、調性"
-        }
-      ],
-      "cognates_en": [
-        "tonality"
-      ],
-      "story_zh": "源自 tonal（音調的、色調的）加上名詞後綴 -idad，最初在音樂理論中指樂曲的「調性」，後來廣泛引申至繪畫與視覺藝術中不同深淺層次的「色調」。",
-      "hook_zh": "英文 tonality，音樂有調性、顏色有色調，tonal + -idad 形成抽象名詞。",
-      "usage_zh": "陰性名詞。用於音樂指樂曲調性，用於美術指色彩的色調。",
-      "example_es": "La pintura destaca por su hermosa tonalidad azul.",
-      "example_zh": "這幅畫以其美麗的藍色調脫穎而出。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tonalidad"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "torpedo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "魚雷、電鰩",
-      "en": "torpedo, electric ray",
-      "ipa": "/toɾˈpedo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "torpedo",
-          "zh": "電鰩、麻木"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "torpedo",
-          "zh": "魚雷、電鰩"
-        }
-      ],
-      "cognates_en": [
-        "torpedo",
-        "torpor"
-      ],
-      "story_zh": "源自拉丁語 torpēdō，原指會放電使捕食者手腳發麻的「電鰩」，來自字根 torpere（麻木、遲鈍）。十九世紀發明水下爆炸武器時，因其具有如同電鰩般的致命電擊威力而借用此名，成為現代的「魚雷」。",
-      "hook_zh": "魚雷就像海裡的電鰩（torpedo），一旦碰上就會讓人瞬間麻痺動彈不得。",
-      "usage_zh": "陽性名詞。口語中在拉美部分地區也可指考試作弊的小抄。",
-      "example_es": "El submarino lanzó un torpedo contra el barco enemigo.",
-      "example_zh": "潛水艇向敵艦發射了一枚魚雷。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:torpedo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "trompada",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "重拳猛擊、一記痛擊",
-      "en": "smack, punch, heavy blow",
-      "ipa": "/tɾomˈpada/",
-      "breakdown": [
-        {
-          "part": "trompa",
-          "zh": "象鼻、大鼻子"
-        },
-        {
-          "part": "-ada",
-          "zh": "打擊字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "被大象長鼻子（trompa）迎面猛抽一下（-ada），就是結結實實挨了一記重拳 trompada。",
-      "usage_zh": "口語名詞，dar una trompada 意為「揍一拳、狠打一下」。",
-      "example_es": "Le dio una trompada en la cara.",
-      "example_zh": "他朝對方的臉上狠揍了一拳。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:trompada"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "trueque",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "以物易物、交換",
-      "en": "barter, exchange",
-      "ipa": "/ˈtɾweke/",
-      "breakdown": [
-        {
-          "part": "trocar",
-          "zh": "交換"
-        },
-        {
-          "part": "-e",
-          "zh": "去動詞詞尾名詞化"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "trocar",
-          "zh": "交換"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "trueque",
-          "zh": "以物易物、交換"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "來自動詞 trocar（交換、掉換）的去動詞詞綴名詞化，動詞變位發音裂化為 -ue-。指不使用貨幣、直接以貨物交換貨物的交易方式，即「以物易物」。",
-      "hook_zh": "在沒有錢的古代，大家都是拿自己做的東西來交換（trocar -> trueque）。",
-      "usage_zh": "常與動詞 hacer 搭配：hacer trueque（進行以物易物）。片語 a trueque de 意為「以…為代價」。",
-      "example_es": "Antes de la moneda existía el trueque.",
-      "example_zh": "在貨幣發明之前，人們以物易物。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:trueque"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "urbanístico",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "都市規劃的、城市建設的",
-      "en": "urban, urbanistic, town-planning",
-      "ipa": "/uɾbaˈnistiko/",
-      "breakdown": [
-        {
-          "part": "urbano",
-          "zh": "城市的"
-        },
-        {
-          "part": "-ístico",
-          "zh": "形容詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "urbano + -ístico",
-          "zh": "城市的 + 形容詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "urbanístico",
-          "zh": "都市規劃的"
-        }
-      ],
-      "cognates_en": [
-        "urbanistic",
-        "urban"
-      ],
-      "story_zh": "由 urbano（城市的）加上專門形容學術或專業體系的後綴 -ístico 構成（受義大利語 urbanistico 影響）。專門指涉及城鄉規劃、市容配置及都市發展架構的相關事物。",
-      "hook_zh": "英文 urban 加 -istic 變成 urbanístico，指城市都市規劃方面的。",
-      "usage_zh": "陽性 urbanístico，陰性 urbanística。常見搭配 diseño urbanístico（都市設計）。",
-      "example_es": "El nuevo plan urbanístico mejorará el transporte.",
-      "example_zh": "新的都市規劃方案將改善交通。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:urbanístico"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "usurpación",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "篡奪、強占、霸佔",
-      "en": "usurpation",
-      "ipa": "/usuɾpaˈθjon/",
-      "breakdown": [
-        {
-          "part": "usurpar",
-          "zh": "篡奪、侵占"
-        },
-        {
-          "part": "-ción",
-          "zh": "動作名詞字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "usurpation"
-      ],
-      "story_zh": "",
-      "hook_zh": "英文 usurpation 對應西語 usurpación，指用不正當手段非法篡奪權力或強占土地。",
-      "usage_zh": "陰性名詞。法律上指 usurpación de identidad（身分盜用）或 usurpación de funciones（越權）。",
-      "example_es": "La usurpación del trono provocó una guerra.",
-      "example_zh": "篡奪王位引發了一場戰爭。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:usurpación"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "venerable",
       "article": "",
@@ -3665,6 +3233,763 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:linchamiento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "longitudinal",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "縱向的、經度的",
+      "en": "longitudinal",
+      "ipa": "/lonxitudiˈnal/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "longitudinal"
+      ],
+      "story_zh": "",
+      "hook_zh": "long 是長度，沿著長度方向延伸的就是「縱向的」（longitudinal）。",
+      "usage_zh": "陰陽同形：un corte longitudinal（縱向切面）。",
+      "example_es": "Hicieron un estudio longitudinal de diez años.",
+      "example_zh": "他們進行了一項為期十年的縱向研究。",
+      "image": "emoji:📏",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:longitudinal"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mariachi",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "墨西哥街頭樂隊；樂手；其演奏的傳統音樂",
+      "en": "mariachi (band or musician)",
+      "ipa": "/maˈɾjat͡ʃi/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "mariage",
+          "zh": "婚禮（推測）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mariachi",
+          "zh": "墨西哥街頭樂隊"
+        }
+      ],
+      "cognates_en": [
+        "mariachi"
+      ],
+      "story_zh": "常見說法推測源自法語 mariage（婚禮），因這類樂隊常在婚禮慶典上演奏，但此說法仍有爭議。如今專指墨西哥哈利斯科州起源的傳統民謠樂隊與樂手。",
+      "hook_zh": "婚禮（marriage）上熱鬧演奏的墨西哥大帽子樂隊，就是 mariachi！",
+      "usage_zh": "可指樂隊風格，也可指樂手：un músico de mariachi。",
+      "example_es": "Contratamos un mariachi para la fiesta.",
+      "example_zh": "我們為派對請了一組墨西哥樂隊。",
+      "image": "emoji:🎺",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mariachi"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "merlo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "烏鶇；褐管唇魚",
+      "en": "blackbird; brown wrasse",
+      "ipa": "/ˈmeɾlo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "merula",
+          "zh": "烏鶇"
+        },
+        {
+          "lang_zh": "後拉丁語",
+          "word": "merulum",
+          "zh": "烏鶇"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "merlo",
+          "zh": "烏鶇"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 merula（烏鶇），經後拉丁語演變而來。在西語中指全身黑羽的烏鶇，後來也用來指稱外型特徵相似的褐管唇魚。現代西語更常用同源字 mirlo。",
+      "hook_zh": "黑羽的 merlo（烏鶇）在樹枝上唱歌，西語常作 mirlo。",
+      "usage_zh": "現代西語指烏鶇較常說 mirlo，merlo 也指特定海魚。",
+      "example_es": "El merlo canta temprano por la mañana.",
+      "example_zh": "烏鶇在清晨啼唱。",
+      "image": "emoji:🐦",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:merlo",
+        "wiktionary:la:merula"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "milagrosamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "奇蹟似地",
+      "en": "miraculously",
+      "ipa": "/milaˌɡɾosaˈmente/",
+      "breakdown": [
+        {
+          "part": "milagroso",
+          "zh": "奇蹟的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "milagroso + -mente",
+          "zh": "奇蹟的 + 副詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "milagrosamente",
+          "zh": "奇蹟似地"
+        }
+      ],
+      "cognates_en": [
+        "miraculously"
+      ],
+      "story_zh": "由形容詞 milagroso（奇蹟的）加上副詞字尾 -mente 組成，表示「以奇蹟般的方式、令人難以置信地」。",
+      "hook_zh": "milagro 是奇蹟，後面接 -mente 就變成副詞「奇蹟般地」。",
+      "usage_zh": "修飾動詞或全句，常置於句首加逗號：Milagrosamente, nadie resultó herido.",
+      "example_es": "El conductor se salvó milagrosamente.",
+      "example_zh": "司機奇蹟似地倖免於難。",
+      "image": "emoji:✨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:milagrosamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "minorista",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "零售商；零售的",
+      "en": "retailer; retail",
+      "ipa": "/minoˈɾista/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "minority"
+      ],
+      "story_zh": "",
+      "hook_zh": "minor 代表小規模，專門小量小量賣給顧客的人就是「零售商」（minorista）。",
+      "usage_zh": "陰陽同形：el/la minorista（零售商）；comercio minorista（零售業）。",
+      "example_es": "Es un pequeño comerciante minorista.",
+      "example_zh": "他是一位小零售商。",
+      "image": "emoji:🏪",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:minorista"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "montonero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "游擊隊員；暴民戰士；（阿根廷）蒙托內羅成員",
+      "en": "guerilla fighter; mob fighter",
+      "ipa": "/montoˈneɾo/",
+      "breakdown": [
+        {
+          "part": "montón",
+          "zh": "成堆、群集"
+        },
+        {
+          "part": "-ero",
+          "zh": "從事…的人"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "montón + -ero",
+          "zh": "成堆、聚集 + 人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "montonero",
+          "zh": "游擊隊員、暴民戰士"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自 montón（一大堆、成群）加上表示人員的字尾 -ero。原指糾集烏合之眾成群作戰的武裝民兵，在 1970 年代阿根廷則專指反抗軍事獨裁的左翼城市游擊組織成員。",
+      "hook_zh": "一大堆人（montón）聚在一起拿槍反抗，就是游擊隊員 montonero。",
+      "usage_zh": "陰性為 montonera；大寫 Montoneros 專指阿根廷歷史上的游擊組織。",
+      "example_es": "El montonero luchó en las montañas.",
+      "example_zh": "游擊隊員在山區作戰。",
+      "image": "emoji:👥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:montonero"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "narcótico",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "麻醉毒品、鎮痛麻醉劑；麻醉的",
+      "en": "narcotic, drug",
+      "ipa": "/naɾˈkotiko/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "narcotic"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文 narcotic 就是西語 narcótico，指讓人昏睡沉迷的麻醉藥品。",
+      "usage_zh": "可作名詞指毒品（los narcóticos），也可作形容詞 sustancia narcótica（麻醉物質）。",
+      "example_es": "El médico le recetó un narcótico fuerte.",
+      "example_zh": "醫生給他開了強效麻醉鎮痛劑。",
+      "image": "emoji:💊",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:narcótico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "obediente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "服從的、順從的",
+      "en": "obedient",
+      "ipa": "/obeˈdjente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "oboedientem",
+          "zh": "服從的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "obediente",
+          "zh": "服從的"
+        }
+      ],
+      "cognates_en": [
+        "obedient"
+      ],
+      "story_zh": "源自拉丁語 oboedientem（順從的、聽從的），由 ob-（朝向、對著）和 audīre（傾聽）衍生而來，核心概念是「專心傾聽並照著做」。英文字 obedient 與之同源。",
+      "hook_zh": "英文 obedient 對應西語 obediente，認真聽話（audire）就是順從。",
+      "usage_zh": "陰陽同形：un hijo obediente / una hija obediente。",
+      "example_es": "El perro es muy obediente con su dueño.",
+      "example_zh": "這隻狗對主人非常順從。",
+      "image": "emoji:🐕",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:obediente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "obligatoriedad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "強制性、義務性",
+      "en": "obligatoriness, compulsory nature",
+      "ipa": "/obliɡatoɾjeˈdad/",
+      "breakdown": [
+        {
+          "part": "obligatorio",
+          "zh": "強制的、義務的"
+        },
+        {
+          "part": "-dad",
+          "zh": "名詞字尾，表示性質"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "obligatorio + -dad",
+          "zh": "強制的 + 性質字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "obligatoriedad",
+          "zh": "強制性、義務性"
+        }
+      ],
+      "cognates_en": [
+        "obligation",
+        "obligatory"
+      ],
+      "story_zh": "由形容詞 obligatorio（義務的、強制的）加上表示抽象性質的字尾 -dad 構成，指法律或規定所賦予的「強制性」與「約束力」。",
+      "hook_zh": "obligar（強迫）加上 -torio 與 -dad，就成為規定具有的「強制性」（obligatoriedad）。",
+      "usage_zh": "陰性名詞，不可數為主：la obligatoriedad de la ley（法律的強制約束力）。",
+      "example_es": "La ley establece la obligatoriedad del uso del casco.",
+      "example_zh": "法律規定必須佩戴安全帽。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:obligatoriedad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "orquídea",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "蘭花",
+      "en": "orchid",
+      "ipa": "/oɾˈkidea/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ὄρχις",
+          "zh": "睪丸；蘭花"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "orchis",
+          "zh": "蘭花"
+        },
+        {
+          "lang_zh": "新拉丁語",
+          "word": "Orchideae",
+          "zh": "蘭科"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "orquídea",
+          "zh": "蘭花"
+        }
+      ],
+      "cognates_en": [
+        "orchid"
+      ],
+      "story_zh": "源自古希臘語 ὄρχις（órkhis），原意為「睪丸」，因某些蘭花的地下塊莖形狀似睪丸而得名。經拉丁語 orchis 與植物學新拉丁語分類名稱演變進入西班牙語。英文 orchid 亦同源。",
+      "hook_zh": "英文 orchid 對應西語 orquídea，幽香典雅的蘭花。",
+      "usage_zh": "陰性名詞：cultivar orquídeas（培育蘭花）。",
+      "example_es": "Compró una hermosa orquídea para su madre.",
+      "example_zh": "他為母親買了一株美麗的蘭花。",
+      "image": "emoji:🌸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:orquídea",
+        "wiktionary:la:orchis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ozono",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "臭氧",
+      "en": "ozone",
+      "ipa": "/oˈθono/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ὄζω",
+          "zh": "發出氣味"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "ὄζον",
+          "zh": "有氣味的"
+        },
+        {
+          "lang_zh": "德語",
+          "word": "Ozon",
+          "zh": "臭氧"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ozono",
+          "zh": "臭氧"
+        }
+      ],
+      "cognates_en": [
+        "ozone"
+      ],
+      "story_zh": "借自德語 Ozon，由化學家舍恩拜因於 1840 年造字，取自古希臘語 ὄζον（ózon，發出氣味的中性分詞），因該氣體帶有刺鼻氣味而得名。英文的 ozone 也是同一個字。",
+      "hook_zh": "臭氧（ozono）散發強烈氣味（希臘語 ὄζω），最常出現在「臭氧層」（capa de ozono）。",
+      "usage_zh": "陽性不可數名詞，常見搭配：capa de ozono（臭氧層）。",
+      "example_es": "Es vital proteger la capa de ozono.",
+      "example_zh": "保護臭氧層至關重要。",
+      "image": "emoji:🫧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ozono"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "parcialidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "偏袒、偏心；偏頗",
+      "en": "partiality, bias",
+      "ipa": "/paɾθjaliˈdad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pars",
+          "zh": "部分、黨派"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "partialitatem",
+          "zh": "偏袒"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "parcialidad",
+          "zh": "偏袒、偏頗"
+        }
+      ],
+      "cognates_en": [
+        "partiality"
+      ],
+      "story_zh": "學者借詞自中世紀拉丁語 partiālitātem，源自拉丁語 pars（部分、黨派）。只看特定一部分、站在特定一方而不顧全大局，引申為「偏袒、不客觀」。反義詞為 imparcialidad（公正無私）。",
+      "hook_zh": "只看局部 part（西語 parte），就有了偏袒 parcialidad。",
+      "usage_zh": "反義詞為 imparcialidad（公正）。常見搭配：actuar con parcialidad（偏頗行事）。",
+      "example_es": "El juez fue acusado de parcialidad.",
+      "example_zh": "法官被指控偏袒一方。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:parcialidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pedacito",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "小塊、小片",
+      "en": "small piece, little bit",
+      "ipa": "/pedaˈθito/",
+      "breakdown": [
+        {
+          "part": "pedazo",
+          "zh": "塊、片"
+        },
+        {
+          "part": "-ito",
+          "zh": "指小詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pedazo + -ito",
+          "zh": "塊 + 指小詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pedacito",
+          "zh": "小片、小塊"
+        }
+      ],
+      "cognates_en": [
+        "piece"
+      ],
+      "story_zh": "由 pedazo（塊、片）加上常見指小詞字尾 -ito 構成，z 在 i 前面規則變形為 c。表示非常微小的一片或一小塊，常帶有親切或口語色彩。",
+      "hook_zh": "pedazo 是一整塊，加 -ito 縮小成小碎塊 pedacito。",
+      "usage_zh": "陽性名詞：un pedacito de pan（一小片麵包）、un pedacito de pastel（一小塊蛋糕）。",
+      "example_es": "¿Me das un pedacito de chocolate?",
+      "example_zh": "可以給我一小塊巧克力嗎？",
+      "image": "emoji:🍫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pedacito"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pliegue",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "摺痕、褶裥、摺疊處",
+      "en": "fold, crease, pleat",
+      "ipa": "/ˈpljeɡe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "plegar",
+          "zh": "摺疊"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pliegue",
+          "zh": "摺痕、褶裥"
+        }
+      ],
+      "cognates_en": [
+        "ply",
+        "plait"
+      ],
+      "story_zh": "源自動詞 plegar（摺疊）的去動詞名詞化形式（deverbal）。由動詞的雙元音化重音詞幹演變出名詞，指物體彎摺後留下的紋路、衣物的褶痕或布料的褶裥。",
+      "hook_zh": "衣服被折（plegar）起來，表面就留下一條條 pliegue（摺痕）。",
+      "usage_zh": "陽性名詞：los pliegues del vestido（洋裝的褶皺）。",
+      "example_es": "La falda tiene hermosos pliegues.",
+      "example_zh": "這件裙子有漂亮的褶裥。",
+      "image": "emoji:👗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pliegue"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "podre",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "腐爛物、膿液；腐敗",
+      "en": "rot, pus, decay",
+      "ipa": "/ˈpodɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "putrem",
+          "zh": "腐爛的（賓格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "podre",
+          "zh": "腐爛物、膿"
+        }
+      ],
+      "cognates_en": [
+        "putrid"
+      ],
+      "story_zh": "繼承自拉丁語 putrem（腐爛的，putris 的賓格）。在古西班牙語語音演變中，音節間的無聲爆破音 t 濁化為 d，演變為名詞指腐爛化膿的物質。與動詞 pudrir（腐爛）及英文 putrid 同源。",
+      "hook_zh": "英文 putrid（腐臭的）對應西語 podre（膿液、腐物），發出腐臭的爛泥。",
+      "usage_zh": "陰性名詞：limpiar la podre de la herida（清理傷口處的化膿腐肉）。",
+      "example_es": "El médico limpió la podre de la herida.",
+      "example_zh": "醫生清理了傷口的化膿腐物。",
+      "image": "emoji:🦠",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:podre"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pregrado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "大學本科、大學部；學士學位階段",
+      "en": "undergraduate study, bachelor's program",
+      "ipa": "/pɾeˈɡɾado/",
+      "breakdown": [
+        {
+          "part": "pre-",
+          "zh": "在…之前"
+        },
+        {
+          "part": "grado",
+          "zh": "學位、等級"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "degree",
+        "grade"
+      ],
+      "story_zh": "",
+      "hook_zh": "pre-（在…前）加上 grado（學位），在拿到正式研究生學位前的階段就是「大學本科」（pregrado）。",
+      "usage_zh": "在拉丁美洲常指大學部階段，對比 postgrado（研究所）。",
+      "example_es": "Terminó sus estudios de pregrado en la universidad.",
+      "example_zh": "他在大學完成了大學部學業。",
+      "image": "emoji:🎓",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:pregrado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pupila",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "瞳孔",
+      "en": "pupil (of the eye)",
+      "ipa": "/puˈpila/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pupilla",
+          "zh": "小玩偶、小女孩；瞳孔"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pupila",
+          "zh": "瞳孔"
+        }
+      ],
+      "cognates_en": [
+        "pupil"
+      ],
+      "story_zh": "學者借詞自拉丁語 pupilla（小女孩、玩偶），是 pūpa 的指小詞。古羅馬人看著別人的眼睛深處時，能看見自己微小的倒影，彷彿一個精緻的小玩偶，因此稱瞳孔為 pupilla。英文 pupil 亦同源。",
+      "hook_zh": "看著對方的眼睛，瞳孔裡倒映著一個小玩偶（pupilla）。",
+      "usage_zh": "陰性名詞：dilatación de las pupilas（瞳孔放大）。指女學生亦可用 pupila（較文雅）。",
+      "example_es": "La luz brillante hizo que su pupila se contrajera.",
+      "example_zh": "強光使他的瞳孔收縮。",
+      "image": "emoji:👁️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pupila"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pus",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "膿、膿汁",
+      "en": "pus",
+      "ipa": "/ˈpus/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pus",
+          "zh": "膿、黏稠腐液"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pus",
+          "zh": "膿、膿汁"
+        }
+      ],
+      "cognates_en": [
+        "pus"
+      ],
+      "story_zh": "學者借詞自拉丁語 pūs（傷口發炎化膿所產生的液體），源自印歐語系表示發臭或腐爛的詞根。西班牙語保留了該詞的醫學術語意義。英文 pus 完全相同。",
+      "hook_zh": "英文與西語完全同拼 pus，傷口發炎流出的膿液。",
+      "usage_zh": "在西班牙與大部分拉美地區為陽性（el pus），部分拉美地區有作陰性使用的習慣。",
+      "example_es": "La herida infectada comenzó a botar pus.",
+      "example_zh": "受感染的傷口開始流膿。",
+      "image": "emoji:🩹",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "rareza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "稀有、罕見；古怪、怪癖",
+      "en": "rarity; quirk, oddity",
+      "ipa": "/raˈɾeθa/",
+      "breakdown": [
+        {
+          "part": "raro",
+          "zh": "稀有的、奇怪的"
+        },
+        {
+          "part": "-eza",
+          "zh": "抽象名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "raro + -eza",
+          "zh": "稀奇的 + 抽象名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rareza",
+          "zh": "稀有；怪癖"
+        }
+      ],
+      "cognates_en": [
+        "rare",
+        "rarity"
+      ],
+      "story_zh": "由形容詞 raro（罕見的、奇特的）加上源自拉丁語 -itia 的抽象名詞後綴 -eza 組成。既可表示數量或出現頻率極低的「稀有性」，也常引申指人的言行舉止特立獨行、不可思議的「怪僻」。",
+      "hook_zh": "raro 是少見古怪，加上 -eza 變成名詞 rareza（稀罕事物或怪僻）。",
+      "usage_zh": "可指抽象的罕見（por su rareza），也可作可數名詞指奇特的怪癖或珍稀物品。",
+      "example_es": "Este libro antiguo es una auténtica rareza.",
+      "example_zh": "這本古書是貨真價實的珍品稀物。",
+      "image": "emoji:💎",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:rareza"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "recreativo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "娛樂的、休閒的",
+      "en": "recreational",
+      "ipa": "/rekɾeaˈtibo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "recreation",
+        "recreational"
+      ],
+      "story_zh": "",
+      "hook_zh": "recreo 是課間休息，recreativo 就是讓人放鬆玩耍的「娛樂休閒的」。",
+      "usage_zh": "常見搭配：actividades recreativas（娛樂休閒活動）、centro recreativo（休閒中心）。",
+      "example_es": "El parque ofrece muchas actividades recreativas.",
+      "example_zh": "這座公園提供許多娛樂休閒活動。",
+      "image": "emoji:🎡",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:recreativo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "remitente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "寄件人、發信人",
+      "en": "sender",
+      "ipa": "/remiˈtente/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "remit",
+        "remittance"
+      ],
+      "story_zh": "",
+      "hook_zh": "信封上的 remitente 是寄信的人，對應收信人 destinatario。",
+      "usage_zh": "陰陽同形：el remitente / la remitente；信封背面必填字樣。",
+      "example_es": "No reconocí el nombre del remitente en la carta.",
+      "example_zh": "我認不出信封上寄件人的名字。",
+      "image": "emoji:✉️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:remitente"
       ],
       "writer": "gemini"
     }

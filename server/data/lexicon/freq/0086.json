@@ -1,6 +1,6 @@
 {
   "theme": "freq-0086",
-  "theme_zh": "常用字（頻率第 25804–26163 名）",
+  "theme_zh": "常用字（頻率第 25804–26182 名）",
   "entries": [
     {
       "word": "burocrático",
@@ -1078,50 +1078,6 @@
       "writer": "gemini"
     },
     {
-      "word": "espinar",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "荊棘叢、刺灌木林",
-      "en": "hawthorn wood, thorny place",
-      "ipa": "/espiˈnaɾ/",
-      "breakdown": [
-        {
-          "part": "espina",
-          "zh": "刺、荊棘"
-        },
-        {
-          "part": "-ar",
-          "zh": "群聚處字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "espina",
-          "zh": "荊棘、刺"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "espinar",
-          "zh": "荊棘叢、刺灌木林"
-        }
-      ],
-      "cognates_en": [
-        "spine"
-      ],
-      "story_zh": "源自名詞 espina（刺、荊棘）加上表示植物叢生地點的字尾 -ar。指長滿帶刺植物、灌木叢生難以通行的多刺灌木林地。",
-      "hook_zh": "長滿 espina（刺）的地方，就是容易刮傷人的 espinar（荊棘叢）。",
-      "usage_zh": "陽性名詞。亦可作動詞 espinar（刺傷、用言語刺傷人）。",
-      "example_es": "El conejo se escondió dentro del espinar para huir.",
-      "example_zh": "兔子躲進荊棘叢中以逃避追捕。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:espinar"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "estrofa",
       "article": "la",
       "pos": "sustantivo",
@@ -2190,39 +2146,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:legitimación"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "llera",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "礫石灘、碎石地",
-      "en": "pebbly or stony area, gravel ground",
-      "ipa": "/ˈʎeɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "glarea",
-          "zh": "碎石、砂礫"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "llera",
-          "zh": "礫石灘、石子地"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "可能借自阿斯圖里亞斯語 llera，源自拉丁語 glārea（碎石、礫石）。地理上指河流沿岸或山坡上堆積滿地碎石、圓形卵石的石礫灘地。",
-      "hook_zh": "河岸邊滿地 glārea（碎石）鋪成的河灘石子地，就是 llera。",
-      "usage_zh": "陰性名詞。西班牙北部多見於地名與河床碎石灘地形。",
-      "example_es": "El agua del río fluía transparente sobre la llera pedregosa.",
-      "example_zh": "清澈的河水流淌在滿是碎石的石礫灘上。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:llera"
       ],
       "writer": "gemini"
     },
@@ -3868,31 +3791,6 @@
       "writer": "gemini"
     },
     {
-      "word": "yin",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "陰（陰陽之陰）、精靈",
-      "en": "yin (yin and yang), djinn",
-      "ipa": "/ˈʝin/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "yin",
-        "djinn"
-      ],
-      "story_zh": "",
-      "hook_zh": "陰陽概念中的 yin（陰），或者指阿拉伯神話中的精靈 djinn。",
-      "usage_zh": "陽性名詞，日常最常用於片語 el yin y el yang（陰陽平衡）。",
-      "example_es": "El yin y el yang representan fuerzas opuestas y complementarias.",
-      "example_zh": "陰與陽代表著相互對立且互補的力量。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:yin"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "zumbido",
       "article": "el",
       "pos": "sustantivo",
@@ -3979,6 +3877,142 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:acariciar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "afianzar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "鞏固、加強、使牢固、擔保",
+      "en": "to strengthen, to consolidate, to secure",
+      "ipa": "/afjanˈθaɾ/",
+      "breakdown": [
+        {
+          "part": "a-",
+          "zh": "使成為"
+        },
+        {
+          "part": "fianza",
+          "zh": "保證、押金"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "fianza",
+          "zh": "擔保、信任"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "afianzar",
+          "zh": "鞏固、確立"
+        }
+      ],
+      "cognates_en": [
+        "affiance"
+      ],
+      "story_zh": "由前綴 a- 加上名詞 fianza（保證、保釋金，源自 fío 信任）與動詞字尾 -ar 構成。字面指提供擔保使人放心，引申為把結構固定牢靠，或在政治經濟上「鞏固」地位。",
+      "hook_zh": "fianza 是押金擔保，afianzar 就是給予擔保、讓基礎穩固牢靠。",
+      "usage_zh": "及物動詞，也常作代名詞動詞 afianzarse en（在…站穩腳跟、鞏固自身地位）。",
+      "example_es": "La empresa busca afianzar su posición en el mercado.",
+      "example_zh": "該公司力求鞏固其在市場上的地位。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:afianzar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "amenazante",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "威脅的、具威脅性的、險惡的",
+      "en": "threatening, menacing",
+      "ipa": "/amenaˈθante/",
+      "breakdown": [
+        {
+          "part": "amenazar",
+          "zh": "威脅、恐嚇"
+        },
+        {
+          "part": "-ante",
+          "zh": "現在分詞形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "amenazar",
+          "zh": "威脅、恐嚇"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "amenazante",
+          "zh": "具威脅性的"
+        }
+      ],
+      "cognates_en": [
+        "menacing"
+      ],
+      "story_zh": "源自動詞 amenazar（威脅），加上現在分詞形容詞後綴 -ante。形容某人展現出兇狠恐嚇的態度，或外在事物（如烏雲、局勢）帶來潛在危險的迫近感。",
+      "hook_zh": "amenaza 是威脅，加上 -ante 變成形容詞，烏雲密布顯得威脅逼人。",
+      "usage_zh": "陰陽同形形容詞，複數為 amenazantes。常見搭配 mirada amenazante（威脅的眼神）。",
+      "example_es": "Nubes negras y amenazantes cubrieron el cielo.",
+      "example_zh": "黑沉沉且具威脅感的烏雲籠罩了天空。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:amenazante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "angostura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "狹窄、峽口、隘道",
+      "en": "defile, narrow pass, narrowness",
+      "ipa": "/anɡosˈtuɾa/",
+      "breakdown": [
+        {
+          "part": "angosto",
+          "zh": "狹窄的"
+        },
+        {
+          "part": "-ura",
+          "zh": "名詞字尾，表示性質或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "angosto",
+          "zh": "狹窄的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "angostura",
+          "zh": "狹隘、峽口"
+        }
+      ],
+      "cognates_en": [
+        "anguish"
+      ],
+      "story_zh": "源自西語形容詞 angosto（狹窄的），加上抽象名詞後綴 -ura。指兩山夾峙間狹窄的水道或山隘。委內瑞拉城市安哥斯圖拉（現玻利瓦爾城）因地處奧里諾科河狹窄處而得名，著名的安格仕苦精亦發源於此。",
+      "hook_zh": "形容詞 angosto 是狹窄，加上 -ura 變成狹窄的山谷通道 angostura。",
+      "usage_zh": "陰性名詞。大寫 Angostura 時常指調酒常用之「安格仕苦精（amargo de Angostura）」。",
+      "example_es": "El barco navegó con cuidado por la angostura del río.",
+      "example_zh": "船隻小心翼翼地穿過河流狹窄的水道。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:angostura"
       ],
       "writer": "gemini"
     }
