@@ -52,7 +52,7 @@ const FOLD = {
   designado: 'designar', enterado: 'enterar', 'energética': 'energético',
   encontrado: 'encontrar', apuesto: 'apostar', adoro: 'adorar', honda: 'hondo', redonda: 'redondo', perpetua: 'perpetuo',
   'sistemática': 'sistemático', petrolera: 'petrolero', cayo: 'caer', 'vió': 'ver', ano: 'año', antemano: 'mano',
-  prostituto: 'prostituta', vendido: 'vender', pica: 'picar', resta: 'restar', sosa: 'soso', barbaro: 'bárbaro', talvez: 'tal vez', procura: 'procurar', cano: 'canoso', borra: 'borrar', iguala: 'igualar', caracter: 'carácter', tomo: 'tomar', quebrado: 'quebrar', lagrimar: 'lagrimear', 'dueña': 'dueño', negrito: 'negro', brasilero: 'brasileño', practicamente: 'prácticamente', peque: 'pequeño', culturar: 'cultivar',
+  prostituto: 'prostituta', vendido: 'vender', pica: 'picar', resta: 'restar', sosa: 'soso', barbaro: 'bárbaro', talvez: 'tal vez', procura: 'procurar', cano: 'canoso', borra: 'borrar', iguala: 'igualar', caracter: 'carácter', tomo: 'tomar', quebrado: 'quebrar', lagrimar: 'lagrimear', 'dueña': 'dueño', negrito: 'negro', brasilero: 'brasileño', practicamente: 'prácticamente', peque: 'pequeño', culturar: 'cultivar', forjado: 'forjar',
   // Accented demonstratives and sólo are old spellings (RAE 2010): the same words as ese, este, aquel, solo
   'ése': 'ese', 'ésa': 'ese', 'ésos': 'ese', 'ésas': 'ese', 'éste': 'este', 'ésta': 'este', 'éstos': 'este', 'éstas': 'este',
   'aquél': 'aquel', 'aquélla': 'aquel', 'aquéllos': 'aquel', 'aquéllas': 'aquel', 'sólo': 'solo',
