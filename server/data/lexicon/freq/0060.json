@@ -1,133 +1,7 @@
 {
   "theme": "freq-0060",
-  "theme_zh": "常用字（頻率第 16821–17139 名）",
+  "theme_zh": "常用字（頻率第 16826–17170 名）",
   "entries": [
-    {
-      "word": "inherente",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "固有的、內在的、與生俱來的",
-      "en": "inherent",
-      "ipa": "/ineˈɾente/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "inhaerentem",
-          "zh": "附著的、固有的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "inherente",
-          "zh": "固有的、內在的"
-        }
-      ],
-      "cognates_en": [
-        "inherent",
-        "adhere"
-      ],
-      "story_zh": "源自拉丁語 inhaerentem，源動詞 inhaerēre 由 in-（在…內）與 haerēre（黏附）組成，原意為「緊緊黏附在內部」，引申為本質上不可分割的、固有的特質。",
-      "hook_zh": "英文 inherent 同源，就像黏在內部（in- + adhere）一樣固有。",
-      "usage_zh": "陰陽同形（un riesgo inherente）。常搭配介詞 a：inherente a（為…所固有的）。",
-      "example_es": "El riesgo es inherente a cualquier negocio de inversión.",
-      "example_zh": "風險是任何投資生意所固有的特質。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:inherente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "inmaculado",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "潔白無瑕的、純潔的",
-      "en": "immaculate, spotless",
-      "ipa": "/immakuˈlado/",
-      "breakdown": [
-        {
-          "part": "in-",
-          "zh": "不、無"
-        },
-        {
-          "part": "maculado",
-          "zh": "有污點的"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "immaculatus",
-          "zh": "沒有污點的、純潔的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "inmaculado",
-          "zh": "潔白無瑕的"
-        }
-      ],
-      "cognates_en": [
-        "immaculate"
-      ],
-      "story_zh": "源自拉丁語 immaculātus，由否定前綴 in-（不、非）與 maculātus（有斑點的、受玷污的，源自 macula「斑點、污漬」）組合而成，字面意思是「沒有任何污點」，形容純潔無暇。",
-      "hook_zh": "英文 immaculate 同源，沒有任何污漬（macula）就是 inmaculado。",
-      "usage_zh": "形容詞，陰性為 inmaculada。如 Inmaculada Concepción（聖母無染原罪）。",
-      "example_es": "El doctor llevaba una bata blanca e inmaculada.",
-      "example_zh": "醫生穿著一件潔白無瑕的白袍。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:inmaculado",
-        "wiktionary:la:immaculatus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "intacto",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "完整無缺的、未受損壞的",
-      "en": "intact, untouched",
-      "ipa": "/inˈtaɡto/",
-      "breakdown": [
-        {
-          "part": "in-",
-          "zh": "未、不"
-        },
-        {
-          "part": "tacto",
-          "zh": "觸碰"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "intactus",
-          "zh": "未被觸碰的、完整的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "intacto",
-          "zh": "完整無缺的"
-        }
-      ],
-      "cognates_en": [
-        "intact",
-        "tactile"
-      ],
-      "story_zh": "源自拉丁語 intāctus，由否定前綴 in-（未、非）與 tangere（觸碰）的被動分詞 tāctus 組成，字面意為「未曾被觸碰過的」，進而引申為完好如初、未受絲毫破壞的。",
-      "hook_zh": "英文 intact 同源，連碰都沒被碰過（in- + touch），保存完好。",
-      "usage_zh": "形容詞，陰性為 intacta。常用搭配如 mantenerse intacto（保持完好無缺）。",
-      "example_es": "Afortunadamente, el edificio quedó intacto tras el temblor.",
-      "example_zh": "幸運的是，地震過後大樓完好無損。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:intacto"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "inventor",
       "article": "el",
@@ -4012,6 +3886,294 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:matón"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "medioambiente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "環境、自然環境",
+      "en": "environment",
+      "ipa": "/medjoamˈbjente/",
+      "breakdown": [
+        {
+          "part": "medio",
+          "zh": "環境、介質"
+        },
+        {
+          "part": "ambiente",
+          "zh": "周遭、氛圍"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "由 medio（環境）和 ambiente（周遭）組合而成，指自然環境。",
+      "usage_zh": "也可分開寫作 medio ambiente，意思相同。",
+      "example_es": "Debemos proteger el medioambiente.",
+      "example_zh": "我們必須保護環境。",
+      "image": "emoji:🌱",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:medioambiente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "naturalidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "自然、不做作",
+      "en": "naturalness",
+      "ipa": "/natuɾaliˈdad/",
+      "breakdown": [
+        {
+          "part": "natural",
+          "zh": "自然的"
+        },
+        {
+          "part": "-idad",
+          "zh": "性質（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "natura",
+          "zh": "自然、本質"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "naturalitas",
+          "zh": "自然"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "naturalidad",
+          "zh": "自然、不做作"
+        }
+      ],
+      "cognates_en": [
+        "natural",
+        "naturalness"
+      ],
+      "story_zh": "源自拉丁語 natura（自然、本質），衍生出晚期拉丁語 naturalitas（自然性質）。西班牙語借入為 naturalidad，用來指舉止神態自然不做作的特質。",
+      "hook_zh": "natural（自然的）加上抽象名詞尾 -idad，就是「自然流露、不做作」。",
+      "usage_zh": "常搭配 con naturalidad，表示「自然地、泰然自若地」。",
+      "example_es": "Ella habla en público con mucha naturalidad.",
+      "example_zh": "她在公開場合說話非常自然不做作。",
+      "image": "emoji:🌿",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:naturalidad",
+        "wiktionary:la:naturalitas",
+        "wiktionary:la:natura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "novato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "新手、菜鳥",
+      "en": "novice, beginner",
+      "ipa": "/noˈbato/",
+      "breakdown": [
+        {
+          "part": "nuevo",
+          "zh": "新的"
+        },
+        {
+          "part": "-ato",
+          "zh": "人（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "nuevo",
+          "zh": "新的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "novato",
+          "zh": "新手、菜鳥"
+        }
+      ],
+      "cognates_en": [
+        "novice"
+      ],
+      "story_zh": "源自西班牙語 nuevo（新的）加上後綴 -ato，字面意思是「新來的人」，專指剛進入某個領域、缺乏經驗的新手或菜鳥。",
+      "hook_zh": "nova（新星）初次登場，就像個 novato（新手）。",
+      "usage_zh": "陰性為 novata。在大學迎新活動中，給新生的惡作劇稱為 novatada。",
+      "example_es": "Es su primer día y todavía es un novato.",
+      "example_zh": "這是他的第一天，他還只是個菜鳥。",
+      "image": "emoji:🐣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:novato"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "obstrucción",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "阻塞、阻礙",
+      "en": "obstruction",
+      "ipa": "/obstɾuɡˈθjon/",
+      "breakdown": [
+        {
+          "part": "obstruir",
+          "zh": "阻礙"
+        },
+        {
+          "part": "-ción",
+          "zh": "動作與結果（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "obstructio",
+          "zh": "阻礙、阻隔"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "obstrucción",
+          "zh": "阻塞、阻礙"
+        }
+      ],
+      "cognates_en": [
+        "obstruction"
+      ],
+      "story_zh": "源自拉丁語 obstructio（阻隔、妨礙），由 obstruct-（阻擋）衍生而來。指通道被堵住，或是事情進展受到妨礙與阻撓。",
+      "hook_zh": "英文 obstruction 的同源字，結尾 -tion 變成西語的 -ción。",
+      "usage_zh": "常見於醫學（血管或氣道阻塞）與法律（obstrucción a la justicia，妨礙司法）。",
+      "example_es": "La obstrucción de la tubería causó una inundación.",
+      "example_zh": "水管堵塞導致了淹水。",
+      "image": "emoji:🚧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:obstrucción"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "paréntesis",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "括號；暫停、插曲",
+      "en": "parenthesis, break",
+      "ipa": "/paˈɾentesis/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "παρένθεσις",
+          "zh": "插入、附言"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "parenthesis",
+          "zh": "插入語"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paréntesis",
+          "zh": "括號、插曲"
+        }
+      ],
+      "cognates_en": [
+        "parenthesis"
+      ],
+      "story_zh": "源自古希臘語 παρένθεσις（parénthesis，插入、置入），經晚期拉丁語進入西班牙語。原本指正文中額外插入的補充說明文字，後引申為標點符號括號，以及生活中暫時的中斷或插曲。",
+      "hook_zh": "英文 parenthesis 同源；生活中開了括號（paréntesis），就是暫時喘口氣的插曲。",
+      "usage_zh": "單複數同形（el paréntesis / los paréntesis）。片語 hacer un paréntesis 表示「暫停一下」。",
+      "example_es": "Hagamos un paréntesis para tomar un café.",
+      "example_zh": "我們暫停一下去喝杯咖啡吧。",
+      "image": "emoji:⏸️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paréntesis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "paulatinamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "逐漸地、緩慢地",
+      "en": "gradually, slowly",
+      "ipa": "/paulaˌtinaˈmente/",
+      "breakdown": [
+        {
+          "part": "paulatino",
+          "zh": "逐漸的、漸進的"
+        },
+        {
+          "part": "-mente",
+          "zh": "地（副詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "paulatino",
+          "zh": "逐漸的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paulatinamente",
+          "zh": "逐漸地"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由形容詞 paulatino（逐漸的、緩步的）加上副詞後綴 -mente 構成，形容事物以緩慢而穩定的節奏漸次推移。",
+      "hook_zh": "想像步伐一步一步慢慢往前走，就是「逐漸地」。",
+      "usage_zh": "修飾動詞時通常放在動詞之後，如 mejorar paulatinamente（逐漸好轉）。",
+      "example_es": "La situación mejoró paulatinamente.",
+      "example_zh": "情況逐漸好轉。",
+      "image": "emoji:📈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paulatinamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "penitencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "懺悔、苦修、贖罪",
+      "en": "penance",
+      "ipa": "/peniˈtenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "paenitentia",
+          "zh": "後悔、懺悔"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "penitencia",
+          "zh": "懺悔、苦修"
+        }
+      ],
+      "cognates_en": [
+        "penitence"
+      ],
+      "story_zh": "學者借詞自拉丁語 paenitentia（後悔、悔悟），源於動詞 paenitere（感到遺憾、後悔）。在宗教背景下指為了彌補過錯所做的懺悔、祈禱或處罰。",
+      "hook_zh": "英文 penitence 的同源字；做錯事感到痛苦而做 penitencia 贖罪。",
+      "usage_zh": "常見搭配 cumplir una penitencia（服苦役贖罪、接受處罰）。",
+      "example_es": "El sacerdote le impuso una penitencia.",
+      "example_zh": "神父對他處以告解後的善功贖罪。",
+      "image": "emoji:🙏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:penitencia"
       ],
       "writer": "gemini"
     }

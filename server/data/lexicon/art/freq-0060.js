@@ -597,14 +597,6 @@ module.exports = {
     s('circle', { cx: 118, cy: 60, r: 4 }, 'dark'),
     s('path', { d: drop(40, 118, 4) + drop(126, 112, 4) }, 'sky')
   ],
-  saltillo: [
-    s('path', { d: 'M14 30h50v30H14z' }, 'gray'),
-    s('path', { d: 'M96 76h50v60H96z' }, 'gray'),
-    s('path', { d: 'M14 30q60-2 70 20t12 70', ...SW(14) }, 'sky', { stroke: true, accent: true }),
-    s('path', { d: 'M60 136q36-24 86-4', ...SW(4) }, 'blue', { stroke: true }),
-    s('path', { d: ells([[100, 124, 28, 8]]) }, 'blue'),
-    s('path', { d: dots([[76, 120], [118, 108], [86, 108]], 4) }, 'white')
-  ],
   'sintonía': [
     s('rect', { x: 20, y: 58, width: 120, height: 78, rx: 10 }, 'orange', { accent: true }),
     s('path', { d: 'M40 58l60-34', ...SW(4) }, 'gray', { stroke: true }),
@@ -945,11 +937,6 @@ module.exports = {
     s('path', { d: 'M22 74h116M74 22v116', ...SW(4, { 'stroke-linecap': 'butt' }) }, 'red', { stroke: true }),
     s('path', { d: 'M22 120h116M120 22v116', ...SW(2, { 'stroke-linecap': 'butt' }) }, 'yellow', { stroke: true })
   ],
-  espartar: [
-    s('path', { d: 'M30 82h100l-12 54H42z' }, 'tan', { accent: true }),
-    s('path', { d: 'M34 96h92M38 110h84M42 124h76M50 82l6 54M70 82l2 54M90 82l-2 54M110 82l-6 54', ...SW(3) }, 'brown', { stroke: true }),
-    s('path', { d: 'M40 82q-6-40-16-56M54 82q0-36 10-60M72 82q4-34 0-56M92 82q8-32 22-52M110 82q12-30 26-40', ...SW(4) }, 'green', { stroke: true })
-  ],
   estimar: [
     s('path', { d: 'M86 52h44v80q0 6-6 6H92q-6 0-6-6z' }, 'sky'),
     s('path', { d: dots([[96, 126], [108, 126], [120, 126], [102, 114], [114, 114], [96, 102], [120, 102], [108, 92]], 5) }, 'red', { accent: true }),
@@ -980,14 +967,6 @@ module.exports = {
     s('path', { d: dots([[56, 62], [110, 92]], 5) }, 'white'),
     s('path', { d: 'M40 140q10-40 16-50M100 140q4-20 10-22', ...DASH(3, '3 5') }, 'orange', { stroke: true }),
     s('path', { d: sparkle(124, 36, 7) + sparkle(36, 116, 6) }, 'white')
-  ],
-  garrido: [
-    ground(),
-    s('circle', { cx: 80, cy: 50, r: 14 }, 'skin'),
-    s('path', { d: 'M66 46q0-18 14-18t14 18q-4-8-14-8t-14 8z' }, 'dark'),
-    s('path', { d: 'M62 68h36l-6 68H68z' }, 'blue', { accent: true }),
-    s('path', { d: 'M62 74l-20 10 4-26M98 74l20 10-4-26', ...SW(10) }, 'skin', { stroke: true }),
-    s('path', { d: sparkle(28, 40, 9) + sparkle(130, 34, 8) }, 'yellow')
   ],
   guardaespaldas: [
     ground(),
@@ -1527,5 +1506,5 @@ module.exports = {
     s('path', { d: 'M100 36l20-14 20 10-10 18z' }, 'yellow'),
     s('path', { d: 'M114 48l-2 18', ...SW(2) }, 'dark', { stroke: true }),
     arrow('M84 74l8-8', 'orange', 4)
-  ],
+  ]
 };

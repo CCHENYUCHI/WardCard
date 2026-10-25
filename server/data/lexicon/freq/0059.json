@@ -1,6 +1,6 @@
 {
   "theme": "freq-0059",
-  "theme_zh": "常用字（頻率第 16495–16820 名）",
+  "theme_zh": "常用字（頻率第 16495–16825 名）",
   "entries": [
     {
       "word": "descifrar",
@@ -1810,54 +1810,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:salmón"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "saltillo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "小瀑布；跳躍指小詞；聲門塞音符號",
-      "en": "small waterfall, small leap; saltillo (symbol)",
-      "ipa": "/salˈtiʝo/",
-      "breakdown": [
-        {
-          "part": "salto",
-          "zh": "跳躍；瀑布"
-        },
-        {
-          "part": "-illo",
-          "zh": "指小詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "saltus",
-          "zh": "跳躍、飛躍"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "salto",
-          "zh": "跳躍；瀑布"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "saltillo",
-          "zh": "小瀑布、小跳步"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由 salto（跳躍；亦指水流跌落的瀑布，源自拉丁語 saltus）加上指小詞字尾 -illo 構成，字面意思為「小跳一步」，引申指小型瀑布。在美洲原住民語言學中，也用來稱呼如撇號形狀的「聲門塞音標記」。",
-      "hook_zh": "salto 是跳躍或大瀑布（如 Salto Ángel），加 -illo 變小就是 saltillo（小瀑布）。",
-      "usage_zh": "陽性名詞。墨西哥大城市 Saltillo 的名字亦源於當地泉水形成的小瀑布。",
-      "example_es": "El agua del río caía formando un hermoso saltillo.",
-      "example_zh": "河水傾瀉而下，形成了一道美麗的小瀑布。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:saltillo",
-        "wiktionary:la:saltus"
       ],
       "writer": "gemini"
     },
@@ -3704,51 +3656,6 @@
       "writer": "gemini"
     },
     {
-      "word": "espartar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "用針茅草覆蓋或編織",
-      "en": "to cover with esparto",
-      "ipa": "/espaɾˈtaɾ/",
-      "breakdown": [
-        {
-          "part": "esparto",
-          "zh": "針茅草"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "esparto",
-          "zh": "針茅草"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "espartar",
-          "zh": "覆蓋針茅草"
-        }
-      ],
-      "cognates_en": [
-        "esparto"
-      ],
-      "story_zh": "源自名詞 esparto（針茅草，地中海地區常用於編織草鞋、籃子和繩索的堅韌植物），加上動詞字尾 -ar，表示用針茅草加工、鋪設或覆蓋。",
-      "hook_zh": "斯巴達戰士穿著針茅草（esparto）編織鞋去覆蓋（espartar）地面。",
-      "usage_zh": "規則第一類動詞（-ar），主要用於傳統工藝與農作語境。",
-      "example_es": "El artesano suele espartar el suelo de la cabaña.",
-      "example_zh": "手工藝人習慣用針茅草鋪在小屋的地面上。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:esparta",
-        "wiktionary:es:espartar"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "estimar",
       "article": "",
       "pos": "verbo",
@@ -3915,52 +3822,6 @@
       "writer": "gemini"
     },
     {
-      "word": "garrido",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "俊美的、優雅的、健壯的",
-      "en": "good-looking, handsome, elegant",
-      "ipa": "/ɡaˈrido/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "garrio",
-          "zh": "喋喋不休"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "garrire",
-          "zh": "嘮叨、說笑"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "garrir",
-          "zh": "饒舌、談笑"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "garrido",
-          "zh": "俊美的、瀟灑的"
-        }
-      ],
-      "cognates_en": [
-        "care"
-      ],
-      "story_zh": "源自古西班牙語動詞 garrir（喋喋不休、談笑風生）的過去分詞，進一步源自拉丁語 garrīre（啁啾、啼叫）。原意是指說話生動討喜的人，語義逐漸轉化為外貌出眾、舉止優雅俊美或健壯瀟灑。",
-      "hook_zh": "談笑（garrir）風生的人，風度翩翩、相貌俊美（garrido）。",
-      "usage_zh": "文學詞彙，陰性為 garrida。現代也作為西班牙常見姓氏 Garrido。",
-      "example_es": "El caballero garrido saludó a la multitud con elegancia.",
-      "example_zh": "英挺俊美的騎士優雅地向群眾致意。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:garrido",
-        "wiktionary:la:garrio"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "guardaespaldas",
       "article": "el",
       "pos": "sustantivo",
@@ -4095,6 +3956,132 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:inflamación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "inherente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "固有的、內在的、與生俱來的",
+      "en": "inherent",
+      "ipa": "/ineˈɾente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "inhaerentem",
+          "zh": "附著的、固有的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "inherente",
+          "zh": "固有的、內在的"
+        }
+      ],
+      "cognates_en": [
+        "inherent",
+        "adhere"
+      ],
+      "story_zh": "源自拉丁語 inhaerentem，源動詞 inhaerēre 由 in-（在…內）與 haerēre（黏附）組成，原意為「緊緊黏附在內部」，引申為本質上不可分割的、固有的特質。",
+      "hook_zh": "英文 inherent 同源，就像黏在內部（in- + adhere）一樣固有。",
+      "usage_zh": "陰陽同形（un riesgo inherente）。常搭配介詞 a：inherente a（為…所固有的）。",
+      "example_es": "El riesgo es inherente a cualquier negocio de inversión.",
+      "example_zh": "風險是任何投資生意所固有的特質。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:inherente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "inmaculado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "潔白無瑕的、純潔的",
+      "en": "immaculate, spotless",
+      "ipa": "/immakuˈlado/",
+      "breakdown": [
+        {
+          "part": "in-",
+          "zh": "不、無"
+        },
+        {
+          "part": "maculado",
+          "zh": "有污點的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "immaculatus",
+          "zh": "沒有污點的、純潔的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "inmaculado",
+          "zh": "潔白無瑕的"
+        }
+      ],
+      "cognates_en": [
+        "immaculate"
+      ],
+      "story_zh": "源自拉丁語 immaculātus，由否定前綴 in-（不、非）與 maculātus（有斑點的、受玷污的，源自 macula「斑點、污漬」）組合而成，字面意思是「沒有任何污點」，形容純潔無暇。",
+      "hook_zh": "英文 immaculate 同源，沒有任何污漬（macula）就是 inmaculado。",
+      "usage_zh": "形容詞，陰性為 inmaculada。如 Inmaculada Concepción（聖母無染原罪）。",
+      "example_es": "El doctor llevaba una bata blanca e inmaculada.",
+      "example_zh": "醫生穿著一件潔白無瑕的白袍。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:inmaculado",
+        "wiktionary:la:immaculatus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "intacto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "完整無缺的、未受損壞的",
+      "en": "intact, untouched",
+      "ipa": "/inˈtaɡto/",
+      "breakdown": [
+        {
+          "part": "in-",
+          "zh": "未、不"
+        },
+        {
+          "part": "tacto",
+          "zh": "觸碰"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "intactus",
+          "zh": "未被觸碰的、完整的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "intacto",
+          "zh": "完整無缺的"
+        }
+      ],
+      "cognates_en": [
+        "intact",
+        "tactile"
+      ],
+      "story_zh": "源自拉丁語 intāctus，由否定前綴 in-（未、非）與 tangere（觸碰）的被動分詞 tāctus 組成，字面意為「未曾被觸碰過的」，進而引申為完好如初、未受絲毫破壞的。",
+      "hook_zh": "英文 intact 同源，連碰都沒被碰過（in- + touch），保存完好。",
+      "usage_zh": "形容詞，陰性為 intacta。常用搭配如 mantenerse intacto（保持完好無缺）。",
+      "example_es": "Afortunadamente, el edificio quedó intacto tras el temblor.",
+      "example_zh": "幸運的是，地震過後大樓完好無損。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:intacto"
       ],
       "writer": "gemini"
     }
