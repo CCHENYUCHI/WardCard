@@ -1,56 +1,7 @@
 {
   "theme": "freq-0102",
-  "theme_zh": "常用字（頻率第 31829–32229 名）",
+  "theme_zh": "常用字（頻率第 31834–32254 名）",
   "entries": [
-    {
-      "word": "subestimar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "低估、小看",
-      "en": "to underestimate, to underrate",
-      "ipa": "/subestiˈmaɾ/",
-      "breakdown": [
-        {
-          "part": "sub-",
-          "zh": "在…之下、不足"
-        },
-        {
-          "part": "estimar",
-          "zh": "估計、看重"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "sub",
-          "zh": "在…之下"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "estimar",
-          "zh": "估計、評價"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "subestimar",
-          "zh": "低估"
-        }
-      ],
-      "cognates_en": [
-        "underestimate"
-      ],
-      "story_zh": "由前綴 sub-（在…之下、不足）與動詞 estimar（估算、評價）複合而成，字面意思是給予過低的評價或估值，即低估或輕視對手與難度。",
-      "hook_zh": "sub（低於）+ estimar（評估），評價過低就是 subestimar。",
-      "usage_zh": "規則第一變化動詞。反義詞為 sobreestimar（高估）。",
-      "example_es": "Nunca debes subestimar la capacidad de tu rival.",
-      "example_zh": "你絕不應該低估對手的能力。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:subestimar"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "tablón",
       "article": "el",
@@ -225,39 +176,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:toreo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "tosca",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "凝灰岩、粗硬沉積岩",
-      "en": "tuff, calcareous tufa",
-      "ipa": "/ˈtoska/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "tosco",
-          "zh": "粗糙的、粗劣的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tosca",
-          "zh": "粗硬凝灰岩"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自形容詞 tosco（粗糙的、未雕琢的）。因為這種岩石多孔、粗糙且未經打磨，故名詞化指質地粗糙的多孔凝灰石或石灰質硬層沉積岩。",
-      "hook_zh": "形容詞 tosco 是粗糙的，名詞 la tosca 就是表面粗糙的硬岩石。",
-      "usage_zh": "陰性名詞。地質學中指硬岩層，也是建築使用的粗石材料。",
-      "example_es": "La casa antigua fue construida con bloques de tosca marina.",
-      "example_zh": "那座老房子是用海相凝灰岩塊建成的。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tosca"
       ],
       "writer": "gemini"
     },
@@ -3532,50 +3450,6 @@
       "writer": "gemini"
     },
     {
-      "word": "rular",
-      "article": "",
-      "pos": "verbo",
-      "zh": "滾動；（口語）運轉順暢；傳遞",
-      "en": "to go round, to work, to pass",
-      "ipa": "/ruˈlaɾ/",
-      "breakdown": [
-        {
-          "part": "rul-",
-          "zh": "滾動"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "法語",
-          "word": "rouler",
-          "zh": "滾動、轉動、行駛"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "rular",
-          "zh": "滾動、流傳、運轉"
-        }
-      ],
-      "cognates_en": [
-        "roll"
-      ],
-      "story_zh": "借自法語動詞 rouler（滾動、轉動）。在西班牙口語中廣泛使用，指東西滾動、運轉順暢，或是傳遞、流傳。",
-      "hook_zh": "來自法文 rouler（等於英文 roll）。球在地上滾、機器順利滾動運轉，就是 rular！",
-      "usage_zh": "口語動詞，規則第一類變化。西語口語極常用於表示機器「運作正常」：Esto no rula（這壞了）。",
-      "example_es": "Mi ordenador viejo ya no rula como antes.",
-      "example_zh": "我的舊電腦運作已經不像以前那麼順了。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:rular"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "sacristía",
       "article": "la",
       "pos": "sustantivo",
@@ -3813,6 +3687,252 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:sequedad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "silicona",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "矽膠；矽",
+      "en": "silicone; silicon",
+      "ipa": "/siliˈkona/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "silicone"
+      ],
+      "story_zh": "",
+      "hook_zh": "手機保護套摸起來軟軟彈彈的，就是 silicona 製成的矽膠殼。",
+      "usage_zh": "日常生活與化學常指矽膠，為陰性名詞。",
+      "example_es": "La funda del móvil está hecha de silicona.",
+      "example_zh": "這個手機殼是用矽膠做的。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:silicona"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sobriedad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "清醒；節制；樸素",
+      "en": "sobriety, temperance",
+      "ipa": "/sobɾjeˈdad/",
+      "breakdown": [
+        {
+          "part": "sobrio",
+          "zh": "清醒的、節制的"
+        },
+        {
+          "part": "-dad",
+          "zh": "名詞字尾，表示性質"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sobrius",
+          "zh": "清醒的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "sobrietas",
+          "zh": "節制、清醒"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sobriedad",
+          "zh": "清醒、節制"
+        }
+      ],
+      "cognates_en": [
+        "sobriety",
+        "sober"
+      ],
+      "story_zh": "源自拉丁語 sobrietas（節制、清醒），其字根是 sōbrius（清醒、未醉）。最初指不酗酒的清醒狀態，後來也延伸形容生活或藝術風格的簡樸、沉穩。",
+      "hook_zh": "喝醉的人需要清醒（sobriedad），英語的 sobriety 和 sober 也是同源字。",
+      "usage_zh": "通常為不可數名詞，除了指不喝酒的清醒，也常形容設計或言行莊重簡樸。",
+      "example_es": "Él mantiene su sobriedad desde hace cinco años.",
+      "example_zh": "他已經保持清醒戒酒五年了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sobriedad",
+        "wiktionary:la:sobrietas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "soltura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "流利；敏捷；輕鬆自如",
+      "en": "fluency, looseness",
+      "ipa": "/solˈtuɾa/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "動作鬆開（soltar）毫無拘束，講話或做事就非常流利自如（soltura）。",
+      "usage_zh": "常與動詞 hablar、actuar 搭配：hablar con soltura（說話流暢自如）。",
+      "example_es": "Ella habla español con mucha soltura.",
+      "example_zh": "她西班牙語說得非常流利自如。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:soltura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "superliga",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "超級聯賽",
+      "en": "superleague",
+      "ipa": "/ˌsupeɾˈliɡa/",
+      "breakdown": [
+        {
+          "part": "super-",
+          "zh": "超級、超越"
+        },
+        {
+          "part": "liga",
+          "zh": "聯盟、聯賽"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "superleague"
+      ],
+      "story_zh": "",
+      "hook_zh": "由 super-（超級）加上 liga（聯賽）組成，指頂級球隊角逐的超級聯賽。",
+      "usage_zh": "陰性名詞，複數為 superligas，常出現在足球或體育新聞中。",
+      "example_es": "Varios clubes grandes querían crear una nueva superliga.",
+      "example_zh": "幾家豪門俱樂部曾想創立一個新的超級聯賽。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:superliga"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "superposición",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "疊加；重疊",
+      "en": "superposition",
+      "ipa": "/supeɾposiˈθjon/",
+      "breakdown": [
+        {
+          "part": "super-",
+          "zh": "在…之上、超越"
+        },
+        {
+          "part": "posición",
+          "zh": "位置"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "superposition"
+      ],
+      "story_zh": "",
+      "hook_zh": "把一個東西的位置（posición）放在另一個之上（super-），就是疊加。",
+      "usage_zh": "陰性名詞，複數為 superposiciones，在物理與量子力學中常指疊加態。",
+      "example_es": "La física cuántica estudia el principio de superposición.",
+      "example_zh": "量子物理學研究疊加原理。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:superposición"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sutura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "縫合；縫合線",
+      "en": "suture, stitch",
+      "ipa": "/suˈtuɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "suo",
+          "zh": "縫合"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "sutura",
+          "zh": "縫合、接縫"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sutura",
+          "zh": "縫合、縫合線"
+        }
+      ],
+      "cognates_en": [
+        "suture"
+      ],
+      "story_zh": "借自拉丁語 sūtūra（縫合、接縫），源自動詞 suō（縫紉、縫合）。最初指縫合傷口或布料的接縫，醫學上專指外科傷口的縫合術或縫合線。",
+      "hook_zh": "外科醫生用針線把傷口「塑起塗藥」，就是 sutura（縫合）。",
+      "usage_zh": "為陰性名詞，動詞搭配常為 dar puntos de sutura（縫幾針）。",
+      "example_es": "El médico le aplicó varios puntos de sutura en la herida.",
+      "example_zh": "醫生在她的傷口上縫了幾針。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sutura",
+        "wiktionary:la:sutura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tajante",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "斷然的；堅決的；斬釘截鐵的",
+      "en": "emphatic, categorical, cutting",
+      "ipa": "/taˈxante/",
+      "breakdown": [
+        {
+          "part": "tajar",
+          "zh": "切斷、割"
+        },
+        {
+          "part": "-ante",
+          "zh": "形容詞字尾，…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "tajar",
+          "zh": "切斷"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tajante",
+          "zh": "切斷的；斷然的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 tajar（切、割），加上現在分詞字尾 -ante，原意是「鋒利能切斷的」。如同中文說「斬釘截鐵」，引申為言論或態度堅決俐落、斷然不容置疑。",
+      "hook_zh": "講話像刀子切下去（tajar）一樣乾脆，就是 tajante（斬釘截鐵的）。",
+      "usage_zh": "陰陽同形形容詞，常用於 una respuesta tajante（斷然的回答）。",
+      "example_es": "El director dio una respuesta tajante y se negó a negociar.",
+      "example_zh": "局長給出了斷然的回答，拒絕談判。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tajante"
       ],
       "writer": "gemini"
     }

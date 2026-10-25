@@ -1,6 +1,6 @@
 {
   "theme": "freq-0101",
-  "theme_zh": "常用字（頻率第 31474–31826 名）",
+  "theme_zh": "常用字（頻率第 31474–31829 名）",
   "entries": [
     {
       "word": "aniquilación",
@@ -1380,58 +1380,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:dolencia"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "elijar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "熬煮、水煮萃取",
-      "en": "to boil, seethe",
-      "ipa": "/eliˈxaɾ/",
-      "breakdown": [
-        {
-          "part": "e-",
-          "zh": "徹底"
-        },
-        {
-          "part": "lij-",
-          "zh": "液體（源自 lixa）"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "lixa",
-          "zh": "水、液體"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "elixāre",
-          "zh": "徹底煮沸"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "elijar",
-          "zh": "水煮、熬煮"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自晚期拉丁語 elixāre（源自 lixa「水、液體」），指在藥學或古老烹飪中用水徹底熬煮、煎煮藥材或食物以萃取成分。",
-      "hook_zh": "古典醫藥詞彙，把草藥放入水（lixa）中慢慢「熬煮」成汁。",
-      "usage_zh": "古舊及藥學術語，日常烹飪更常用 hervir 或 cocer。",
-      "example_es": "El boticario procedió a elijar las hierbas medicinales.",
-      "example_zh": "藥劑師接著開始熬煮草藥。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:elijar",
-        "wiktionary:la:elixo"
       ],
       "writer": "gemini"
     },
@@ -4128,6 +4076,55 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:soluble"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "subestimar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "低估、小看",
+      "en": "to underestimate, to underrate",
+      "ipa": "/subestiˈmaɾ/",
+      "breakdown": [
+        {
+          "part": "sub-",
+          "zh": "在…之下、不足"
+        },
+        {
+          "part": "estimar",
+          "zh": "估計、看重"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "sub",
+          "zh": "在…之下"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estimar",
+          "zh": "估計、評價"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "subestimar",
+          "zh": "低估"
+        }
+      ],
+      "cognates_en": [
+        "underestimate"
+      ],
+      "story_zh": "由前綴 sub-（在…之下、不足）與動詞 estimar（估算、評價）複合而成，字面意思是給予過低的評價或估值，即低估或輕視對手與難度。",
+      "hook_zh": "sub（低於）+ estimar（評估），評價過低就是 subestimar。",
+      "usage_zh": "規則第一變化動詞。反義詞為 sobreestimar（高估）。",
+      "example_es": "Nunca debes subestimar la capacidad de tu rival.",
+      "example_zh": "你絕不應該低估對手的能力。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:subestimar"
       ],
       "writer": "gemini"
     }

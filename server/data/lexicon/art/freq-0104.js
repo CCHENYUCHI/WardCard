@@ -824,13 +824,6 @@ module.exports = {
     s('path', { d: rects([[100, 108, 26, 26], [112, 80, 26, 26]]), ...SW(3) }, 'sky', { stroke: true }),
     s('path', { d: sparkle(122, 48, 10) }, 'yellow')
   ],
-  landa: [
-    backdrop('sky'),
-    s('path', { d: 'M14 96q40-24 70-6t62-8v64H14z' }, 'green'),
-    s('path', { d: ells([[36, 110, 14, 8], [70, 102, 12, 7], [110, 114, 16, 9], [56, 128, 14, 7], [128, 98, 10, 6]]) }, 'purple', { accent: true }),
-    s('path', { d: 'M14 70q30-16 60-4', ...SW(4) }, 'gray', { stroke: true }),
-    s('path', { d: birds([[104, 44], [124, 54]]), ...SW(3) }, 'dark', { stroke: true })
-  ],
   lechero: [
     s('path', { d: 'M54 140V62q0-10 8-14V30h36v18q8 4 8 14v78z' }, 'gray'),
     s('rect', { x: 58, y: 22, width: 44, height: 12, rx: 4 }, 'dark'),
@@ -941,13 +934,6 @@ module.exports = {
     s('path', { d: dots([[96, 72], [110, 64], [124, 72], [104, 82], [118, 82]], 11) }, 'green'),
     s('path', { d: sparkle(30, 40, 9) + sparkle(138, 34, 7) }, 'yellow')
   ],
-  oreo: [
-    s('rect', { x: 50, y: 22, width: 86, height: 106, rx: 4 }, 'sky'),
-    s('path', { d: 'M50 22h86v106H50zM93 22v106M50 75h86', ...SW(5) }, 'brown', { stroke: true }),
-    s('path', { d: 'M50 22q-24 30-6 70 4 22-8 42h22q-6-60-8-112z' }, 'red', { accent: true }),
-    s('path', { d: 'M18 50q20-8 40 0M14 70q26-8 52 0M22 90q20-8 40 0', ...SW(4) }, 'blue', { stroke: true }),
-    s('path', { d: 'M40 136h104', ...SW(5) }, 'brown', { stroke: true })
-  ],
   'patógeno': [
     s('path', { d: rays(80, 80, 30, 50, 10), ...SW(5) }, 'green', { stroke: true }),
     s('path', { d: dots(around(80, 80, 52, 10), 7) }, 'green'),
@@ -975,14 +961,6 @@ module.exports = {
     s('path', { d: 'M110 50q-10-26 16-30M110 50q14-24 30-12', ...SW(3) }, 'gray', { stroke: true }),
     s('path', { d: 'M96 56L80 72M104 58l-4 18M116 58l6 16', ...SW(2) }, 'dark', { stroke: true }),
     s('path', { d: 'M48 96l-6-8M92 96l6-8', ...SW(3) }, 'red', { stroke: true })
-  ],
-  pina: [
-    s('rect', { x: 14, y: 80, width: 66, height: 60 }, 'green'),
-    s('rect', { x: 80, y: 80, width: 66, height: 60 }, 'yellow'),
-    s('path', { d: 'M80 80v60', ...DASH(3) }, 'brown', { stroke: true }),
-    s('path', { d: 'M64 112V58q0-18 16-18t16 18v54z' }, 'gray', { accent: true }),
-    s('path', { d: 'M72 60h16', ...SW(3) }, 'dark', { stroke: true }),
-    s('path', { d: 'M14 80h132', ...SW(3) }, 'brown', { stroke: true })
   ],
   pistolero: [
     ground(),
@@ -1104,14 +1082,6 @@ module.exports = {
     s('ellipse', { cx: 72, cy: 72, rx: 42, ry: 8 }, 'sky'),
     s('rect', { x: 112, y: 30, width: 10, height: 5, rx: 2 }, 'gray')
   ],
-  roche: [
-    s('circle', { cx: 80, cy: 84, r: 50 }, 'skin'),
-    s('path', { d: ells([[52, 92, 12, 8], [108, 92, 12, 8]]) }, 'red', { accent: true }),
-    s('path', { d: 'M58 74q6 6 12 0M90 74q6 6 12 0', ...SW(3) }, 'dark', { stroke: true }),
-    s('path', { d: 'M70 110q10-6 20 0', ...SW(3) }, 'dark', { stroke: true }),
-    s('path', { d: drop(124, 52, 6) }, 'sky'),
-    s('path', { d: 'M46 30l-6-10M80 24V12M114 30l6-10', ...SW(3) }, 'pink', { stroke: true })
-  ],
   'ruiseñor': [
     backdrop('navy'),
     s('path', { d: 'M110 30a14 14 0 1 0 14 22 12 12 0 0 1-14-22z' }, 'cream'),
@@ -1177,13 +1147,6 @@ module.exports = {
     s('path', { d: 'M86 128V30l20-14', ...SW(8) }, 'red', { stroke: true, accent: true }),
     arrow('M124 80V44m-8 8 8-8 8 8', 'blue', 4),
     arrow('M36 80V44m-8 8 8-8 8 8', 'blue', 4)
-  ],
-  suso: [
-    ground(),
-    s('rect', { x: 40, y: 90, width: 80, height: 46, rx: 4 }, 'brown'),
-    s('circle', { cx: 80, cy: 36, r: 20 }, 'red', { accent: true }),
-    arrow('M80 84V64m-8 8 8-8 8 8', 'gray', 4),
-    s('path', { d: 'M40 106h80', ...SW(3) }, 'tan', { stroke: true })
   ],
   tajada: [
     s('path', { d: 'M18 56h124a62 62 0 0 1-124 0z' }, 'green'),
@@ -1992,5 +1955,5 @@ module.exports = {
     s('circle', { cx: 80, cy: 90, r: 11 }, 'black'),
     s('circle', { cx: 86, cy: 84, r: 4 }, 'white'),
     s('path', { d: 'M40 40l-8-12M80 30V14M120 40l8-12', ...SW(4) }, 'orange', { stroke: true })
-  ],
+  ]
 };

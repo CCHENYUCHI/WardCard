@@ -1,253 +1,7 @@
 {
   "theme": "freq-0103",
-  "theme_zh": "常用字（頻率第 32232–32573 名）",
+  "theme_zh": "常用字（頻率第 32255–32649 名）",
   "entries": [
-    {
-      "word": "silicona",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "矽膠；矽",
-      "en": "silicone; silicon",
-      "ipa": "/siliˈkona/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "silicone"
-      ],
-      "story_zh": "",
-      "hook_zh": "手機保護套摸起來軟軟彈彈的，就是 silicona 製成的矽膠殼。",
-      "usage_zh": "日常生活與化學常指矽膠，為陰性名詞。",
-      "example_es": "La funda del móvil está hecha de silicona.",
-      "example_zh": "這個手機殼是用矽膠做的。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:silicona"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "sobriedad",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "清醒；節制；樸素",
-      "en": "sobriety, temperance",
-      "ipa": "/sobɾjeˈdad/",
-      "breakdown": [
-        {
-          "part": "sobrio",
-          "zh": "清醒的、節制的"
-        },
-        {
-          "part": "-dad",
-          "zh": "名詞字尾，表示性質"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "sobrius",
-          "zh": "清醒的"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "sobrietas",
-          "zh": "節制、清醒"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "sobriedad",
-          "zh": "清醒、節制"
-        }
-      ],
-      "cognates_en": [
-        "sobriety",
-        "sober"
-      ],
-      "story_zh": "源自拉丁語 sobrietas（節制、清醒），其字根是 sōbrius（清醒、未醉）。最初指不酗酒的清醒狀態，後來也延伸形容生活或藝術風格的簡樸、沉穩。",
-      "hook_zh": "喝醉的人需要清醒（sobriedad），英語的 sobriety 和 sober 也是同源字。",
-      "usage_zh": "通常為不可數名詞，除了指不喝酒的清醒，也常形容設計或言行莊重簡樸。",
-      "example_es": "Él mantiene su sobriedad desde hace cinco años.",
-      "example_zh": "他已經保持清醒戒酒五年了。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:sobriedad",
-        "wiktionary:la:sobrietas"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "soltura",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "流利；敏捷；輕鬆自如",
-      "en": "fluency, looseness",
-      "ipa": "/solˈtuɾa/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "動作鬆開（soltar）毫無拘束，講話或做事就非常流利自如（soltura）。",
-      "usage_zh": "常與動詞 hablar、actuar 搭配：hablar con soltura（說話流暢自如）。",
-      "example_es": "Ella habla español con mucha soltura.",
-      "example_zh": "她西班牙語說得非常流利自如。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:soltura"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "superliga",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "超級聯賽",
-      "en": "superleague",
-      "ipa": "/ˌsupeɾˈliɡa/",
-      "breakdown": [
-        {
-          "part": "super-",
-          "zh": "超級、超越"
-        },
-        {
-          "part": "liga",
-          "zh": "聯盟、聯賽"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "superleague"
-      ],
-      "story_zh": "",
-      "hook_zh": "由 super-（超級）加上 liga（聯賽）組成，指頂級球隊角逐的超級聯賽。",
-      "usage_zh": "陰性名詞，複數為 superligas，常出現在足球或體育新聞中。",
-      "example_es": "Varios clubes grandes querían crear una nueva superliga.",
-      "example_zh": "幾家豪門俱樂部曾想創立一個新的超級聯賽。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:superliga"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "superposición",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "疊加；重疊",
-      "en": "superposition",
-      "ipa": "/supeɾposiˈθjon/",
-      "breakdown": [
-        {
-          "part": "super-",
-          "zh": "在…之上、超越"
-        },
-        {
-          "part": "posición",
-          "zh": "位置"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "superposition"
-      ],
-      "story_zh": "",
-      "hook_zh": "把一個東西的位置（posición）放在另一個之上（super-），就是疊加。",
-      "usage_zh": "陰性名詞，複數為 superposiciones，在物理與量子力學中常指疊加態。",
-      "example_es": "La física cuántica estudia el principio de superposición.",
-      "example_zh": "量子物理學研究疊加原理。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:superposición"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "sutura",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "縫合；縫合線",
-      "en": "suture, stitch",
-      "ipa": "/suˈtuɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "suo",
-          "zh": "縫合"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "sutura",
-          "zh": "縫合、接縫"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "sutura",
-          "zh": "縫合、縫合線"
-        }
-      ],
-      "cognates_en": [
-        "suture"
-      ],
-      "story_zh": "借自拉丁語 sūtūra（縫合、接縫），源自動詞 suō（縫紉、縫合）。最初指縫合傷口或布料的接縫，醫學上專指外科傷口的縫合術或縫合線。",
-      "hook_zh": "外科醫生用針線把傷口「塑起塗藥」，就是 sutura（縫合）。",
-      "usage_zh": "為陰性名詞，動詞搭配常為 dar puntos de sutura（縫幾針）。",
-      "example_es": "El médico le aplicó varios puntos de sutura en la herida.",
-      "example_zh": "醫生在她的傷口上縫了幾針。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:sutura",
-        "wiktionary:la:sutura"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "tajante",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "斷然的；堅決的；斬釘截鐵的",
-      "en": "emphatic, categorical, cutting",
-      "ipa": "/taˈxante/",
-      "breakdown": [
-        {
-          "part": "tajar",
-          "zh": "切斷、割"
-        },
-        {
-          "part": "-ante",
-          "zh": "形容詞字尾，…的"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "tajar",
-          "zh": "切斷"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tajante",
-          "zh": "切斷的；斷然的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自動詞 tajar（切、割），加上現在分詞字尾 -ante，原意是「鋒利能切斷的」。如同中文說「斬釘截鐵」，引申為言論或態度堅決俐落、斷然不容置疑。",
-      "hook_zh": "講話像刀子切下去（tajar）一樣乾脆，就是 tajante（斬釘截鐵的）。",
-      "usage_zh": "陰陽同形形容詞，常用於 una respuesta tajante（斷然的回答）。",
-      "example_es": "El director dio una respuesta tajante y se negó a negociar.",
-      "example_zh": "局長給出了斷然的回答，拒絕談判。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tajante"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "tapiz",
       "article": "el",
@@ -3181,46 +2935,6 @@
       "writer": "gemini"
     },
     {
-      "word": "landa",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "石楠荒原；灌木荒地",
-      "en": "heath, moorland, sandy plain",
-      "ipa": "/ˈlanda/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "高盧語",
-          "word": "*landā",
-          "zh": "荒野、開闊地"
-        },
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "*landa",
-          "zh": "荒地、原野"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "landa",
-          "zh": "石楠荒原"
-        }
-      ],
-      "cognates_en": [
-        "land"
-      ],
-      "story_zh": "繼承自通俗拉丁語 *landa，借自高盧語 *landā（原野、荒地），最終源於原始凱爾特語。指土壤貧瘠、生長低矮灌木與石楠花叢的沙質荒原。",
-      "hook_zh": "生滿低矮石楠荒草的原野，與英文 land 有著古老的凱爾特字源淵源。",
-      "usage_zh": "陰性名詞，地理名詞，常用於西班牙北部或法國西南部海岸的荒原生態區。",
-      "example_es": "Caminamos por la vasta landa cubierta de brezo.",
-      "example_zh": "我們走在長滿石楠花叢的遼闊荒原上。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:landa"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "lechero",
       "article": "",
       "pos": "adjetivo",
@@ -3354,6 +3068,758 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:lugarteniente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "medallista",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "獎牌得主、得獎者",
+      "en": "medalist",
+      "ipa": "/medaˈʝista/",
+      "breakdown": [
+        {
+          "part": "medalla",
+          "zh": "獎牌"
+        },
+        {
+          "part": "-ista",
+          "zh": "從事…的人、…者"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "medalist"
+      ],
+      "story_zh": "",
+      "hook_zh": "medalla（獎牌）加上 -ista（人），就是站上頒獎台的 medallista！",
+      "usage_zh": "陰陽同形：el medallista（男得主）/ la medallista（女得主）。",
+      "example_es": "El medallista de oro celebró su victoria.",
+      "example_zh": "金牌得主慶祝了他的勝利。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:medallista"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "melodrama",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "通俗劇、情節劇",
+      "en": "melodrama",
+      "ipa": "/meloˈdɾama/",
+      "breakdown": [
+        {
+          "part": "melo-",
+          "zh": "歌曲、音樂"
+        },
+        {
+          "part": "-drama",
+          "zh": "戲劇"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "μέλος",
+          "zh": "歌曲"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "δρᾶμα",
+          "zh": "戲劇"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "melodrama",
+          "zh": "通俗劇"
+        }
+      ],
+      "cognates_en": [
+        "melodrama"
+      ],
+      "story_zh": "源自古希臘語 μέλος（歌曲、音樂）與 δρᾶμα（戲劇、動作）。最初指配有音樂伴奏的戲劇，藉由音樂烘托誇張的情感，後來演變成強調大喜大悲、善惡分明的通俗劇。",
+      "hook_zh": "旋律（melo）配上戲劇（drama），配樂催淚的大戲就是 melodrama。",
+      "usage_zh": "希臘字根 -ma 結尾的陽性名詞：el melodrama，複數 los melodramas。",
+      "example_es": "La película no era más que un melodrama sentimental.",
+      "example_zh": "這部電影只不過是一部煽情的通俗劇。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:melodrama"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "militarización",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "軍事化",
+      "en": "militarization",
+      "ipa": "/militaɾiθaˈθjon/",
+      "breakdown": [
+        {
+          "part": "militarizar",
+          "zh": "軍事化"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示動作或狀態"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "militarization"
+      ],
+      "story_zh": "",
+      "hook_zh": "軍隊 militar 加上 -ización 變成名詞，就是全面的 militarización（軍事化）。",
+      "usage_zh": "以 -ción 結尾的陰性名詞：la militarización，複數 militarizaciones。",
+      "example_es": "La militarización de la frontera generó tensión.",
+      "example_zh": "邊界軍事化引發了緊張局勢。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:militarización"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "molusco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "軟體動物",
+      "en": "mollusc",
+      "ipa": "/moˈlusko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "mollis",
+          "zh": "柔軟的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "molluscus",
+          "zh": "軟的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "molusco",
+          "zh": "軟體動物"
+        }
+      ],
+      "cognates_en": [
+        "mollusc",
+        "mollusk"
+      ],
+      "story_zh": "源自拉丁語 mollis（柔軟的）及其衍生詞 molluscus。近代生物學將軟體動物門命名為 Mollusca，指身體柔軟無骨骼的動物，西語單數化後成為 molusco。",
+      "hook_zh": "身體軟趴趴（mollis）的小生物，就是蝸牛、章魚這類的軟體動物 molusco。",
+      "usage_zh": "陽性名詞：el molusco，複數 los moluscos。",
+      "example_es": "El pulpo es un molusco muy inteligente.",
+      "example_zh": "章魚是一種非常聰明的軟體動物。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:molusco",
+        "wiktionary:la:molluscus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "muleta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "拐杖；鬥牛紅布",
+      "en": "crutch, bullfighter's red cloth",
+      "ipa": "/muˈleta/",
+      "breakdown": [
+        {
+          "part": "mulo",
+          "zh": "騾子"
+        },
+        {
+          "part": "-eta",
+          "zh": "指小後綴"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "腳受傷不能走，拿著像小騾子（mulo + -eta）一樣吃力支撐你的拐杖 muleta。",
+      "usage_zh": "陰性名詞：la muleta。鬥牛士最後階段手持的紅布也叫 muleta。",
+      "example_es": "Tuvo que caminar con muletas durante un mes.",
+      "example_zh": "他必須拄著拐杖走了一個月。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:muleta"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nitrato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "硝酸鹽",
+      "en": "nitrate",
+      "ipa": "/niˈtɾato/",
+      "breakdown": [
+        {
+          "part": "nitro",
+          "zh": "硝石"
+        },
+        {
+          "part": "-ato",
+          "zh": "化學鹽類字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "nitrate"
+      ],
+      "story_zh": "",
+      "hook_zh": "化學名詞：nitro（硝）加上鹽類字尾 -ato，就是化學肥料常見的硝酸鹽 nitrato。",
+      "usage_zh": "陽性名詞：el nitrato，常作農業肥料或工業原料。",
+      "example_es": "El nitrato se utiliza ampliamente como fertilizante.",
+      "example_zh": "硝酸鹽被廣泛用作肥料。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:nitrato"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nostálgico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "懷舊的、鄉愁的",
+      "en": "nostalgic, homesick",
+      "ipa": "/nosˈtalxiko/",
+      "breakdown": [
+        {
+          "part": "nostalgia",
+          "zh": "思鄉、懷舊"
+        },
+        {
+          "part": "-ico",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "nostalgic"
+      ],
+      "story_zh": "",
+      "hook_zh": "懷念（nostalgia）過去的時光，心情就變成了 nostálgico。",
+      "usage_zh": "形容詞，陰性為 nostálgica。也可用作名詞指懷舊的人。",
+      "example_es": "Me siento nostálgico cuando escucho esta canción.",
+      "example_zh": "聽這首歌時，我感到很懷舊。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:nostálgico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "novel",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "新手的、初出茅廬的",
+      "en": "novel, new, inexperienced",
+      "ipa": "/noˈbel/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "novellus",
+          "zh": "嶄新的、年輕的"
+        },
+        {
+          "lang_zh": "加泰隆尼亞語",
+          "word": "novell",
+          "zh": "新手的、新鮮的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "novel",
+          "zh": "新手的"
+        }
+      ],
+      "cognates_en": [
+        "novel"
+      ],
+      "story_zh": "借自加泰隆尼亞語 novell，源自拉丁語 novellus（嶄新的、年輕的，由 novus 衍生）。用來指剛涉足某個領域的新人、新手。英文的 novel（新奇的）也是同源字。",
+      "hook_zh": "在某個領域是個新手（novel），就像剛出爐、新奇的事物一樣。",
+      "usage_zh": "陰陽同形：un escritor novel（新手作家）/ una escritora novel。",
+      "example_es": "Es un autor novel pero con mucho talento.",
+      "example_zh": "他是一位新人作家，但非常有才華。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:novel"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nutricionista",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "營養師",
+      "en": "nutritionist",
+      "ipa": "/nutɾiθjoˈnista/",
+      "breakdown": [
+        {
+          "part": "nutrición",
+          "zh": "營養"
+        },
+        {
+          "part": "-ista",
+          "zh": "專家、從業者"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "nutritionist"
+      ],
+      "story_zh": "",
+      "hook_zh": "專門研究營養 nutrición 的專家 -ista，就是營養師 nutricionista。",
+      "usage_zh": "陰陽同形：el nutricionista（男營養師）/ la nutricionista（女營養師）。",
+      "example_es": "La nutricionista me recomendó comer más verduras.",
+      "example_zh": "營養師建議我多吃蔬菜。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:nutricionista"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nutritivo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "有營養的、滋養的",
+      "en": "nutritious",
+      "ipa": "/nutɾiˈtibo/",
+      "breakdown": [
+        {
+          "part": "nutri-",
+          "zh": "滋養"
+        },
+        {
+          "part": "-tivo",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "nutritious"
+      ],
+      "story_zh": "",
+      "hook_zh": "能給身體提供 nutrition 的食物，就是營養豐富的 nutritivo。",
+      "usage_zh": "陰性為 nutritiva：comida nutritiva（營養的食物）。",
+      "example_es": "Este desayuno es sano y muy nutritivo.",
+      "example_zh": "這份早餐健康又非常有營養。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:nutritivo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "patógeno",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "病原體；致病的",
+      "en": "pathogen, pathogenic",
+      "ipa": "/paˈtoxeno/",
+      "breakdown": [
+        {
+          "part": "pato-",
+          "zh": "疾病"
+        },
+        {
+          "part": "-geno",
+          "zh": "產生、引起"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "pathogen",
+        "pathogenic"
+      ],
+      "story_zh": "",
+      "hook_zh": "產生疾病（pato- + -geno）的微生物，就是病原體 patógeno。",
+      "usage_zh": "可作名詞 el patógeno（病原體）或形容詞 un agente patógeno（致病因子）。",
+      "example_es": "El virus es un patógeno muy contagioso.",
+      "example_zh": "這種病毒是一種極具傳染性的病原體。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:patógeno"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "paulatino",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "逐漸的、漸進的",
+      "en": "gradual",
+      "ipa": "/paulaˈtino/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "paulus",
+          "zh": "微小的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "paulatim",
+          "zh": "逐漸地"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paulatino",
+          "zh": "逐漸的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自拉丁語副詞 paulatim（逐漸地、一步步地），源自 paulus（微小的）。西語加上形容詞字尾 -ino，引申為「逐漸的、循序漸進的」。",
+      "hook_zh": "一步一步（paulatim）慢慢走，過程就是 paulatino（漸進的）。",
+      "usage_zh": "陰性為 paulatina。常修飾變化或過程：un cambio paulatino（漸進的改變）。",
+      "example_es": "Hubo una mejora paulatina en la economía.",
+      "example_zh": "經濟出現了逐步的改善。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paulatino",
+        "wiktionary:la:paulatim"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pertinencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "適切性、相關性",
+      "en": "pertinence, relevance",
+      "ipa": "/peɾtiˈnenθja/",
+      "breakdown": [
+        {
+          "part": "pertinente",
+          "zh": "相關的、合適的"
+        },
+        {
+          "part": "-encia",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "pertinence"
+      ],
+      "story_zh": "",
+      "hook_zh": "與主題密切相關、切題（pertinent）的特質，就是 pertinencia（適切性）。",
+      "usage_zh": "陰性名詞：la pertinencia。常用於評估提案或言論是否適當切題。",
+      "example_es": "El comité evaluó la pertinencia de la propuesta.",
+      "example_zh": "委員會評估了該提案的適切性。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:pertinencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "picadura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "叮咬、叮咬傷痕",
+      "en": "sting, insect bite",
+      "ipa": "/pikaˈduɾa/",
+      "breakdown": [
+        {
+          "part": "picar",
+          "zh": "叮、刺"
+        },
+        {
+          "part": "-dura",
+          "zh": "名詞字尾，表動作結果"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "蚊蟲叮咬 picar 留下的包或傷口 -dura，就是 picadura。",
+      "usage_zh": "陰性名詞：la picadura。常用於昆蟲叮咬：picadura de mosquito（蚊子叮咬）。",
+      "example_es": "Tengo una picadura de mosquito en el brazo.",
+      "example_zh": "我的手臂上有一個蚊子叮咬的包。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:picadura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pistolero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "槍手、持槍暴徒",
+      "en": "gunman",
+      "ipa": "/pistoˈleɾo/",
+      "breakdown": [
+        {
+          "part": "pistola",
+          "zh": "手槍"
+        },
+        {
+          "part": "-ero",
+          "zh": "從事…的人"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "拿著手槍（pistola）射擊的人（-ero），就是西部片裡的槍手 pistolero。",
+      "usage_zh": "陽性名詞：el pistolero，陰性為 la pistolera。常用於西部片或黑幫語境。",
+      "example_es": "El pistolero entró en la taberna del pueblo.",
+      "example_zh": "槍手走進了村莊的小酒館。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:pistolero"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "polilla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "蛀蟲、蠹魚、衣蛾",
+      "en": "moth, woodworm",
+      "ipa": "/poˈliʝa/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "衣櫃裡偷偷咬破衣服、撲向燈火的飛蛾就是 polilla。",
+      "usage_zh": "陰性名詞：la polilla。常指衣蛾或蛀木蟲，也可比喻暗中破壞的力量。",
+      "example_es": "La polilla arruinó mi suéter favorito.",
+      "example_zh": "蛀蟲弄壞了我最喜歡的毛衣。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:polilla"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "politólogo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "政治學家",
+      "en": "political scientist",
+      "ipa": "/poliˈtoloɡo/",
+      "breakdown": [
+        {
+          "part": "polito-",
+          "zh": "政治"
+        },
+        {
+          "part": "-logo",
+          "zh": "學者、研究專家"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "研究政治 política 的專家 -ólogo，就是政治學家 politólogo。",
+      "usage_zh": "陽性 el politólogo，陰性 la politóloga。複數 politólogos / politólogas。",
+      "example_es": "El politólogo analizó los resultados electorales.",
+      "example_zh": "這位政治學家分析了選舉結果。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:politólogo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pomo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "門把手；球形把頭",
+      "en": "doorknob, pommel",
+      "ipa": "/ˈpomo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pomum",
+          "zh": "果實、蘋果"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pomo",
+          "zh": "圓把手"
+        }
+      ],
+      "cognates_en": [
+        "pome",
+        "pommel"
+      ],
+      "story_zh": "借自拉丁語 pōmum（果實、水果）。因為蘋果等果實多呈圓球狀，引申指圓球形的物體，如門把手、刀劍柄頭（pommel）。",
+      "hook_zh": "圓圓像蘋果（pomum）的門把手，握住旋轉的就是 pomo de la puerta。",
+      "usage_zh": "陽性名詞：el pomo。最常見搭配為 el pomo de la puerta（門把）。",
+      "example_es": "Giró el pomo de la puerta y entró.",
+      "example_zh": "他轉動門把手走了進去。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pomo",
+        "wiktionary:la:pomum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "precandidato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "初選候選人、潛在候選人",
+      "en": "potential candidate",
+      "ipa": "/pɾekandiˈdato/",
+      "breakdown": [
+        {
+          "part": "pre-",
+          "zh": "預先"
+        },
+        {
+          "part": "candidato",
+          "zh": "候選人"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "在成為正式候選人（candidato）之前（pre-），是初選的 precandidato。",
+      "usage_zh": "陽性 el precandidato，陰性 la precandidata。常用於政黨初選階段。",
+      "example_es": "El precandidato presentó sus propuestas en el debate.",
+      "example_zh": "初選候選人在辯論中提出了他的政見。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:precandidato"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "predilecto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "最喜愛的、偏愛的",
+      "en": "favorite, preferred",
+      "ipa": "/pɾediˈleɡto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "praedīlēctus",
+          "zh": "特別偏愛的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "predilecto",
+          "zh": "最喜愛的"
+        }
+      ],
+      "cognates_en": [
+        "predilection"
+      ],
+      "story_zh": "學者借詞，源自拉丁語 praedīlēctus（特別喜愛的，由 prae-「在先」加上 dīligere「珍愛、選擇」組成）。指在眾多選擇中被優先喜愛的人或事物。",
+      "hook_zh": "在所有事物之前（prae）被選中疼愛的，就是你的最愛 predilecto。",
+      "usage_zh": "形容詞，陰性為 predilecta。常用於 un hijo predilecto 或 mi plato predilecto。",
+      "example_es": "Este cuadro es la obra predilecta del pintor.",
+      "example_zh": "這幅畫是這位畫家最偏愛的作品。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:predilecto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "preponderante",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "佔優勢的、起主導作用的",
+      "en": "predominant, prevailing",
+      "ipa": "/pɾepondeˈɾante/",
+      "breakdown": [
+        {
+          "part": "preponderar",
+          "zh": "佔優勢、重量超過"
+        },
+        {
+          "part": "-ante",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "preponderant"
+      ],
+      "story_zh": "",
+      "hook_zh": "在天平上重量更重、佔主導地位的力量就是 preponderante。",
+      "usage_zh": "陰陽同形：un papel preponderante（關鍵主導的角色）。",
+      "example_es": "La tecnología juega un papel preponderante hoy.",
+      "example_zh": "科技在今日扮演著舉足輕重的角色。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:preponderante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "primate",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "靈長類動物",
+      "en": "primate",
+      "ipa": "/pɾiˈmate/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "prīmātem",
+          "zh": "首要的、第一的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "primate",
+          "zh": "靈長類動物"
+        }
+      ],
+      "cognates_en": [
+        "primate"
+      ],
+      "story_zh": "學者借詞，源自拉丁語 prīmātem（首要的、居第一位的，源自 prīmus「第一」）。生物學分類上將人類與猿猴等高等智慧動物列為靈長目，西語引申為 primate。",
+      "hook_zh": "在動物界排名第一（prīmus）的高等智慧生物，就是靈長類 primate。",
+      "usage_zh": "陽性名詞：el primate，複數 los primates。指生物學上的靈長類動物。",
+      "example_es": "Los chimpancés son los primates más cercanos a nosotros.",
+      "example_zh": "黑猩猩是與我們血緣最接近的靈長類動物。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:primate"
       ],
       "writer": "gemini"
     }
