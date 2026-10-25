@@ -529,12 +529,6 @@ module.exports = {
     s('circle', { cx: 120, cy: 122, r: 14 }, 'black'),
     s('path', { d: 'M56 56l-10-6M64 52v-10M72 56l10-6', ...SW(3) }, 'red', { stroke: true })
   ],
-  quebrado: [
-    s('path', { d: 'M74 30a50 50 0 0 0 0 100l8-18-10-14 12-16-10-16 10-18z' }, 'yellow', { accent: true }),
-    s('path', { d: 'M86 30a50 50 0 0 1 0 100l8-18-10-14 12-16-10-16 10-18z', transform: 'translate(14 8)' }, 'yellow'),
-    s('path', { d: 'M60 60a26 26 0 0 0 0 40', ...SW(4) }, 'orange', { stroke: true }),
-    arrow('M138 20v26m-8-8 8 8 8-8', 'red', 6)
-  ],
   rebote: [
     ground(),
     s('path', { d: 'M20 40q20 0 36 96q16-60 40-60', ...DASH(3) }, 'gray', { stroke: true }),
@@ -803,14 +797,6 @@ module.exports = {
     s('path', { d: 'M52 66h36', ...SW(4) }, 'dark', { stroke: true }),
     s('path', { d: 'M84 100l18-18-14-14', ...SW(8) }, 'navy', { stroke: true }),
     s('path', { d: 'M64 96h12M64 106h12', ...SW(3) }, 'yellow', { stroke: true })
-  ],
-  chin: [
-    s('path', { d: 'M20 120q16-30 46-36l20-2q6 6 0 12l-20 4' }, 'skin'),
-    s('path', { d: 'M20 120q16-30 46-36l20-2q6 6 0 12l-20 4', ...SW(3) }, 'tan', { stroke: true }),
-    s('path', { d: 'M28 44q30-8 50 8l14 12q2 8-6 10l-18-8q-20-4-40 0z' }, 'skin'),
-    s('path', { d: 'M28 44q30-8 50 8l14 12q2 8-6 10l-18-8q-20-4-40 0z', ...SW(3) }, 'tan', { stroke: true }),
-    s('circle', { cx: 100, cy: 78, r: 4 }, 'brown', { accent: true }),
-    s('path', { d: 'M114 60l14-10M118 78h16M114 96l14 10', ...SW(3) }, 'orange', { stroke: true })
   ],
   clamor: [
     s('path', { d: busts([30, 62, 98, 130], 136, 28, 34) }, 'blue'),
@@ -1360,5 +1346,5 @@ module.exports = {
     s('path', { d: ring(104, 60, 22), ...SW(7) }, 'dark', { stroke: true }),
     s('circle', { cx: 104, cy: 60, r: 18 }, 'sky', { accent: true }),
     s('path', { d: 'M120 76l20 20', ...SW(9) }, 'dark', { stroke: true })
-  ],
+  ]
 };
