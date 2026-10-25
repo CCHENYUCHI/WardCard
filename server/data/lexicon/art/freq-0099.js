@@ -702,13 +702,6 @@ module.exports = {
     s('path', { d: 'M48 148q32 10 64-6', ...SW(5) }, 'red', { stroke: true, accent: true }),
     s('path', { d: 'M40 138l8 10-12 2z' }, 'red')
   ],
-  riba: [
-    s('rect', { x: 14, y: 14, width: 132, height: 132, rx: 10 }, 'sky'),
-    s('path', { d: 'M14 70q50 10 70 40q20 26 62 30v6H14z' }, 'blue', { accent: true }),
-    s('path', { d: 'M14 70q50 10 70 40q20 26 62 30V14H14z' }, 'green'),
-    s('path', { d: 'M14 70q50 10 70 40q20 26 62 30', ...SW(8) }, 'tan', { stroke: true }),
-    s('path', { d: 'M100 70v-14M108 72v-18M116 76v-14', ...SW(3) }, 'mint', { stroke: true })
-  ],
   rizo: [
     s('circle', { cx: 80, cy: 88, r: 34 }, 'skin'),
     s('path', { d: dots([[50, 54], [66, 42], [84, 38], [102, 42], [116, 56], [42, 74], [120, 76]], 14) }, 'brown', { accent: true }),
@@ -753,15 +746,6 @@ module.exports = {
     s('path', { d: 'M40 94l14 14 30-30', ...SW(8) }, 'green', { stroke: true, accent: true }),
     s('path', { d: ells([[118, 132, 22, 8], [118, 120, 22, 8], [118, 108, 22, 8]]) }, 'yellow'),
     s('path', { d: 'M96 132q0-6 22-6M96 120q0-6 22-6', ...SW(2) }, 'orange', { stroke: true })
-  ],
-  sensei: [
-    backdrop('tan'),
-    s('circle', { cx: 80, cy: 40, r: 16 }, 'skin'),
-    s('path', { d: 'M50 146V76q0-18 30-18t30 18v70z' }, 'white'),
-    s('path', { d: 'M66 60l14 30 14-30', ...SW(3) }, 'gray', { stroke: true }),
-    s('rect', { x: 50, y: 98, width: 60, height: 10 }, 'black', { accent: true }),
-    s('path', { d: 'M76 108l-8 22M84 108l8 22', ...SW(6) }, 'black', { stroke: true }),
-    s('path', { d: 'M64 26q16-14 32 0', ...SW(5) }, 'dark', { stroke: true })
   ],
   'simbólicamente': [
     s('path', { d: 'M18 112q62-30 124 0l-6 28H24z' }, 'red'),
@@ -1061,21 +1045,6 @@ module.exports = {
     s('path', { d: 'M116 92l26 30', ...SW(10) }, 'dark', { stroke: true }),
     s('path', { d: ells([[96, 72, 6, 10]]) }, 'brown', { accent: true })
   ],
-  clivar: [
-    s('path', { d: 'M30 140l10-60 30-20 6 80z' }, 'purple', { accent: true }),
-    s('path', { d: 'M88 140l-4-80 30 18 16 62z' }, 'purple'),
-    s('path', { d: 'M40 80l30-20M84 60l30 18', ...SW(2) }, 'pink', { stroke: true }),
-    s('path', { d: 'M78 52V14', ...DASH(3, '5 4') }, 'gray', { stroke: true }),
-    s('path', { d: 'M88 32l38-12', ...SW(6) }, 'brown', { stroke: true }),
-    s('rect', { x: 118, y: 6, width: 16, height: 30, rx: 3, transform: 'rotate(-18 126 21)' }, 'gray')
-  ],
-  cogida: [
-    ground(),
-    s('path', { d: 'M20 136V108q0-28 30-32h30q20 0 26 18l6 20-14 6-8-16v42h-10v-30H40v30H30z' }, 'dark'),
-    s('path', { d: 'M100 92q14-14 10-30M88 86q0-20-8-28', ...SW(6) }, 'cream', { stroke: true }),
-    s('path', { d: 'M100 40l30-24 16 20-34 20z' }, 'red', { accent: true }),
-    s('path', { d: 'M96 30l-6-8M86 42l-10-2', ...SW(3) }, 'orange', { stroke: true })
-  ],
   coito: [
     s('path', { d: heart(64, 90, 26) }, 'pink'),
     s('path', { d: heart(96, 90, 26) }, 'red', { accent: true }),
@@ -1297,14 +1266,6 @@ module.exports = {
     s('path', { d: 'M56 70l40 26M70 64l36 22M54 84l24 16', ...SW(3) }, 'dark', { stroke: true }),
     s('path', { d: leaflet(112, 112, -20, 20, 6) + leaflet(118, 108, 30, 18, 6) }, 'green')
   ],
-  fontana: [
-    s('ellipse', { cx: 80, cy: 126, rx: 64, ry: 14 }, 'gray'),
-    s('ellipse', { cx: 80, cy: 122, rx: 56, ry: 9 }, 'sky', { accent: true }),
-    s('rect', { x: 74, y: 70, width: 12, height: 52 }, 'gray'),
-    s('ellipse', { cx: 80, cy: 70, rx: 30, ry: 7 }, 'gray'),
-    s('path', { d: 'M80 64q-6-40-40 46M80 64q6-40 40 46M80 66V24', ...SW(4) }, 'blue', { stroke: true }),
-    s('path', { d: dots([[80, 20], [40, 112], [120, 112]], 4) }, 'blue')
-  ],
   formativo: [
     s('rect', { x: 14, y: 124, width: 132, height: 20, rx: 4 }, 'brown'),
     s('path', { d: 'M56 124V44', ...SW(4) }, 'tan', { stroke: true }),
@@ -1511,5 +1472,5 @@ module.exports = {
     s('circle', { cx: 80, cy: 70, r: 12 }, 'orange', { accent: true }),
     s('path', { d: 'M48 114h64M48 126h44', ...SW(3) }, 'gray', { stroke: true }),
     s('path', { d: 'M30 16v128', ...SW(8) }, 'red', { stroke: true })
-  ],
+  ]
 };

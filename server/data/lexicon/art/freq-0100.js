@@ -291,13 +291,6 @@ module.exports = {
     s('path', { d: 'M76 100q14 6 26 0', ...SW(6) }, 'skin', { stroke: true }),
     s('path', { d: heart(88, 30, 14) }, 'red')
   ],
-  peer: [
-    ...person(56, 136, 'blue', { accent: true }),
-    s('path', { d: 'M44 136v-10M68 136v-10', ...SW(4) }, 'navy', { stroke: true }),
-    s('path', { d: ells([[100, 104, 14, 12], [118, 92, 12, 10], [132, 110, 12, 10]]) }, 'mint'),
-    s('path', { d: 'M84 116q8-4 12 2', ...SW(3) }, 'green', { stroke: true }),
-    s('path', { d: 'M104 82q-6-8 0-14M124 76q-6-8 0-14', ...SW(3) }, 'green', { stroke: true })
-  ],
   peligrosidad: [
     s('path', { d: wedge(80, 112, 56, 180, 240) }, 'green'),
     s('path', { d: wedge(80, 112, 56, 240, 300) }, 'yellow'),
@@ -1293,5 +1286,5 @@ module.exports = {
     s('path', { d: 'M66 98l14-10 14 10z' }, 'white'),
     s('path', { d: 'M66 98l14-10 14 10z', ...SW(2) }, 'red', { stroke: true }),
     s('path', { d: 'M60 76l20 8', ...SW(6) }, 'skin', { stroke: true })
-  ],
+  ]
 };

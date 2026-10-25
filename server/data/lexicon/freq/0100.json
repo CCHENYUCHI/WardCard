@@ -1,331 +1,7 @@
 {
   "theme": "freq-0100",
-  "theme_zh": "常用字（頻率第 31082–31418 名）",
+  "theme_zh": "常用字（頻率第 31101–31472 名）",
   "entries": [
-    {
-      "word": "cadencia",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "節奏、韻律；抑揚頓挫",
-      "en": "cadence, rhythm",
-      "ipa": "/kaˈdenθja/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "cadō",
-          "zh": "落下"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "cadēns",
-          "zh": "落下的"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "cadentia",
-          "zh": "落下"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "cadencia",
-          "zh": "節奏、韻律"
-        }
-      ],
-      "cognates_en": [
-        "cadence"
-      ],
-      "story_zh": "源自拉丁語 cadentia，由動詞 cadō（落下）的現在分詞 cadēns 衍生而來，本義為「落下」。後來引申為聲音或音調的「下落」與收尾，進而演變成音樂或說話時的「節奏、韻律」。",
-      "hook_zh": "音調像雨滴自然落下（cadence），形成優美的節奏 cadencia。",
-      "usage_zh": "陰性名詞。常用於音樂或文學中指節奏、抑揚頓挫。",
-      "example_es": "La música tenía una cadencia suave y relajante.",
-      "example_zh": "這首音樂有著柔和且令人放鬆的節奏。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:cadencia",
-        "wiktionary:la:cadentia"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "camada",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "一窩、一胎幼崽",
-      "en": "litter, brood",
-      "ipa": "/kaˈmada/",
-      "breakdown": [
-        {
-          "part": "cama",
-          "zh": "床、動物臥榻"
-        },
-        {
-          "part": "-ada",
-          "zh": "集合、整體"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "cama",
-          "zh": "床、獸窩"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "camada",
-          "zh": "一窩、一胎幼崽"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自西語 cama（床、獸窩）加上名詞字尾 -ada。原指在同一個窩或墊草上出生的一窩動物幼崽，引申為同一胎所生的小動物。",
-      "hook_zh": "在同一張床（cama）上出生的一整窩（camada）小狗。",
-      "usage_zh": "陰性名詞。常用於指貓、狗等哺乳動物同一胎出生的一窩小動物。",
-      "example_es": "La perra dio a luz a una camada de cinco cachorros.",
-      "example_zh": "母狗生了一窩五隻小狗。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:camada"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "candente",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "熾熱的、白熱化的；熱門爭議的",
-      "en": "red-hot, burning, hotly debated",
-      "ipa": "/kanˈdente/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "candentem",
-          "zh": "熾熱的、發白的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "candente",
-          "zh": "熾熱的、白熱化的"
-        }
-      ],
-      "cognates_en": [
-        "candid",
-        "candle"
-      ],
-      "story_zh": "源自拉丁語 candentem（熾熱、發白光的）。原指金屬加熱至發白發紅的熾熱狀態，引申指議題「白熱化」或引起激烈爭論。",
-      "hook_zh": "像蠟燭（candle）的火焰一樣 candente（熾熱、白熱化）。",
-      "usage_zh": "陰陽同形形容詞。常見搭配為 tema candente（熱門爭議話題）。",
-      "example_es": "El debate sobre la economía es un tema candente.",
-      "example_zh": "關於經濟的辯論是一個白熱化的熱門話題。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:candente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "cariñosamente",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "親切地、深情地",
-      "en": "affectionately, warmly",
-      "ipa": "/kaɾiˌɲosaˈmente/",
-      "breakdown": [
-        {
-          "part": "cariñoso",
-          "zh": "親切的、深情的"
-        },
-        {
-          "part": "-mente",
-          "zh": "副詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "cariño",
-          "zh": "關愛、喜愛"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "cariñoso",
-          "zh": "親切的、深情的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "cariñosamente",
-          "zh": "親切地、深情地"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由形容詞 cariñoso（親切的、深情的）加上副詞字尾 -mente 構成，表示帶著關愛與溫柔的情感行動。",
-      "hook_zh": "帶有滿滿 cariño（愛意）地（-mente）擁抱就是 cariñosamente。",
-      "usage_zh": "副詞，無陰陽性變化。常用於修飾 abraza、saluda、sonríe 等動詞。",
-      "example_es": "La abuela saludó cariñosamente a sus nietos.",
-      "example_zh": "祖母親切地問候她的孫子們。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:cariñosamente"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "catarsis",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "宣洩、淨化、心靈洗滌",
-      "en": "catharsis",
-      "ipa": "/kaˈtaɾsis/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "καθαρός",
-          "zh": "純淨的"
-        },
-        {
-          "lang_zh": "古希臘語",
-          "word": "κάθαρσις",
-          "zh": "清洗、淨化"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "catarsis",
-          "zh": "宣洩、淨化"
-        }
-      ],
-      "cognates_en": [
-        "catharsis"
-      ],
-      "story_zh": "借自古希臘語 κάθαρσις（淨化、排毒），源於形容詞 καθαρός（純淨的）。亞里斯多德在《詩學》中用此詞指悲劇讓觀眾情緒得到釋放與昇華，現多指心靈的情感宣洩。",
-      "hook_zh": "看感人的電影大哭一場，心情徹底 catarsis（宣洩淨化）。",
-      "usage_zh": "陰性名詞，單複數同形（una catarsis / las catarsis）。",
-      "example_es": "Llorar durante la película fue una auténtica catarsis.",
-      "example_zh": "在看電影時大哭一場是一次真正的心理宣洩。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:catarsis"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "censor",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "審查員、審查官；監察官",
-      "en": "censor",
-      "ipa": "/θenˈsoɾ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "cēnsor",
-          "zh": "羅馬監察官、審查官"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "censor",
-          "zh": "審查員、監察官"
-        }
-      ],
-      "cognates_en": [
-        "censor",
-        "census"
-      ],
-      "story_zh": "借自拉丁語 cēnsor，原為古羅馬負責登記戶口與監督公共道德的監察官。後演變為負責審查出版物、影片或言論的審查人員。",
-      "hook_zh": "專門給出版物挑毛病、進行 censor（審查）的官員。",
-      "usage_zh": "陽性名詞，陰性為 censora，複數為 censores。亦可作形容詞指審查的。",
-      "example_es": "El censor eliminó varias escenas de la película.",
-      "example_zh": "審查員刪減了電影裡的幾個片段。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:censor"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "centralización",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "中央集權、集中化",
-      "en": "centralization",
-      "ipa": "/θentɾaliθaˈθjon/",
-      "breakdown": [
-        {
-          "part": "centralizar",
-          "zh": "集中、使中央化"
-        },
-        {
-          "part": "-ción",
-          "zh": "動作或狀態字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "centralizar",
-          "zh": "集中"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "centralización",
-          "zh": "集中化、中央集權"
-        }
-      ],
-      "cognates_en": [
-        "centralization"
-      ],
-      "story_zh": "由動詞 centralizar（使集中）加上名詞字尾 -ción 構成。指將權力、行政或資源集中至單一中心或中央政府的過程。",
-      "hook_zh": "所有事情都往中心（centro）靠攏，就是 centralización（集中化）。",
-      "usage_zh": "陰性名詞。常與 de poder（權力集中）或 administrativa（行政集權）連用。",
-      "example_es": "La centralización del poder generó protestas en las regiones.",
-      "example_zh": "權力集中引發了地方各區域的抗議。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:centralización"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "chabón",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "傢伙、老兄、男人",
-      "en": "guy, dude",
-      "ipa": "/t͡ʃaˈbon/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "羅姆語",
-          "word": "ćhavo",
-          "zh": "少年、孩子"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "chabón",
-          "zh": "傢伙、老兄"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "阿根廷與烏拉圭等拉普拉塔河地區俚語（Lunfardo）。可能源自 charabón 的縮寫，或推測來自羅姆語的 ćhavo（少年、孩子），經卡洛語傳入西語，現廣泛指「老兄、傢伙」。",
-      "hook_zh": "阿根廷人跟朋友打招呼常說：「¿Qué hacés, chabón?」（老兄你在幹嘛？）。",
-      "usage_zh": "陽性名詞。阿根廷與烏拉圭口語俚語，陰性為 chabona。",
-      "example_es": "Ese chabón sabe mucho de fútbol.",
-      "example_zh": "那個傢伙對足球非常懂。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:chabón"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "civismo",
       "article": "el",
@@ -3665,6 +3341,773 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:tutoría"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "umbilical",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "臍帶的、肚臍的",
+      "en": "umbilical",
+      "ipa": "/umbiliˈkal/",
+      "breakdown": [
+        {
+          "part": "umbilic-",
+          "zh": "肚臍"
+        },
+        {
+          "part": "-al",
+          "zh": "…的（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "umbilīcus",
+          "zh": "肚臍"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "umbilical",
+          "zh": "臍帶的"
+        }
+      ],
+      "cognates_en": [
+        "umbilical"
+      ],
+      "story_zh": "源自拉丁語 umbilīcus（肚臍），加上形容詞字尾 -al，指與肚臍或臍帶相關的事物。",
+      "hook_zh": "英文 umbilical cord 就是臍帶，字根直接對應。",
+      "usage_zh": "常見搭配 el cordón umbilical（臍帶）。",
+      "example_es": "El médico cortó el cordón umbilical.",
+      "example_zh": "醫生剪斷了臍帶。",
+      "image": "emoji:👶",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:umbilical"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vanguardista",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "前衛的、先鋒的",
+      "en": "avant-garde",
+      "ipa": "/banɡwaɾˈdista/",
+      "breakdown": [
+        {
+          "part": "vanguardia",
+          "zh": "前衛、先鋒"
+        },
+        {
+          "part": "-ista",
+          "zh": "…主義的、…者（字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "vanguardia",
+          "zh": "前衛"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vanguardista",
+          "zh": "前衛的"
+        }
+      ],
+      "cognates_en": [
+        "vanguard"
+      ],
+      "story_zh": "由 vanguardia（前衛、先鋒部隊）加上表示人或主義的字尾 -ista 組成，指在藝術、文學或思想上走在最前端的前衛風格或人士。",
+      "hook_zh": "英文 vanguard（前鋒）加上 -ista，就是走在潮流最前面的「前衛派」。",
+      "usage_zh": "陰陽同形：un artista vanguardista（前衛男藝術家）、una artista vanguardista（前衛女藝術家）。",
+      "example_es": "Es una escritora vanguardista y muy original.",
+      "example_zh": "她是一位前衛且極具原創性的作家。",
+      "image": "emoji:🎨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vanguardista"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "varilla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "細桿、小棍、攪拌棒",
+      "en": "rod, spoke, whisk",
+      "ipa": "/baˈɾiʝa/",
+      "breakdown": [
+        {
+          "part": "vara",
+          "zh": "木杖、長桿"
+        },
+        {
+          "part": "-illa",
+          "zh": "小（指小詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "vara",
+          "zh": "木杖、長桿"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "varilla",
+          "zh": "細桿、小棍"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自 vara（長桿、木棍），加上指小詞字尾 -illa，原意為「小桿子」，引申為傘骨、攪拌棒或鋼筋等細長條狀物。",
+      "hook_zh": "vara 是長木棍，縮小成 -illa 就變成了細長的「小金屬桿」或「攪拌棒」。",
+      "usage_zh": "常用於烹飪（varilla de batir 攪拌棒）或建築（varilla de acero 鋼筋）。",
+      "example_es": "Usa la varilla para batir los huevos.",
+      "example_zh": "用攪拌棒把雞蛋打勻。",
+      "image": "emoji:🥢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:varilla"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "veintiocho",
+      "article": "",
+      "pos": "numeral",
+      "zh": "二十八",
+      "en": "twenty-eight",
+      "ipa": "/beinˈtjot͡ʃo/",
+      "breakdown": [
+        {
+          "part": "veinte",
+          "zh": "二十"
+        },
+        {
+          "part": "y",
+          "zh": "和"
+        },
+        {
+          "part": "ocho",
+          "zh": "八"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "veinte + y + ocho",
+          "zh": "二十 + 和 + 八"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "veintiocho",
+          "zh": "二十八"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 veinte（二十）、y（和）與 ocho（八）縮合而成，為西班牙語 21 至 29 複合數字的標準連寫構詞。",
+      "hook_zh": "veinte（20）加上 ocho（8），合在一起就是 veintiocho（28）。",
+      "usage_zh": "修飾名詞時不因性別變化：veintiocho días（28天）。",
+      "example_es": "Febrero tiene veintiocho días en años comunes.",
+      "example_zh": "平年的二月有二十八天。",
+      "image": "emoji:🔢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:veintiocho"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "veintisiete",
+      "article": "",
+      "pos": "numeral",
+      "zh": "二十七",
+      "en": "twenty-seven",
+      "ipa": "/beintiˈsjete/",
+      "breakdown": [
+        {
+          "part": "veinte",
+          "zh": "二十"
+        },
+        {
+          "part": "y",
+          "zh": "和"
+        },
+        {
+          "part": "siete",
+          "zh": "七"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "veinte + y + siete",
+          "zh": "二十 + 和 + 七"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "veintisiete",
+          "zh": "二十七"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 veinte（二十）、y（和）與 siete（七）縮合而成，為西班牙語 21 至 29 複合數字的標準連寫構詞。",
+      "hook_zh": "veinte（20）加上 siete（7），連寫變為 veintisiete（27）。",
+      "usage_zh": "修飾名詞時不隨陰陽性變化：veintisiete personas（27個人）。",
+      "example_es": "Hoy cumplo veintisiete años.",
+      "example_zh": "我今天滿二十七歲。",
+      "image": "emoji:🔢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:veintisiete"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "viveza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "活力、生氣、機智",
+      "en": "liveliness, cunning",
+      "ipa": "/biˈbeθa/",
+      "breakdown": [
+        {
+          "part": "vivo",
+          "zh": "有生氣的、活的"
+        },
+        {
+          "part": "-eza",
+          "zh": "性質（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "vivo",
+          "zh": "有活力的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "viveza",
+          "zh": "活力、敏銳"
+        }
+      ],
+      "cognates_en": [
+        "vivid"
+      ],
+      "story_zh": "源自形容詞 vivo（活著的、有生氣的），加上抽象名詞字尾 -eza，指「活力、敏捷」，也常引申為機靈、狡黠。",
+      "hook_zh": "vivo 是有生氣的，加上 -eza 就是充滿生命的「活力」或「機敏」。",
+      "usage_zh": "常用 viveza criolla 指拉美文化中善於鑽漏洞取巧的「小聰明」。",
+      "example_es": "La niña respondió con gran viveza e inteligencia.",
+      "example_zh": "小女孩非常敏捷且聰慧地回答了問題。",
+      "image": "emoji:⚡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:viveza"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "álamo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "白楊木、白楊樹",
+      "en": "white poplar",
+      "ipa": "/ˈalamo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "著名的阿拉莫之戰（Battle of the Alamo）地點，名稱正源自白楊樹（álamo）。",
+      "usage_zh": "陽性名詞 el álamo，複數 los álamos。注意重音在第一音節 á。",
+      "example_es": "Paseamos bajo la sombra de los álamos del parque.",
+      "example_zh": "我們在公園白楊樹的樹蔭下散步。",
+      "image": "emoji:🌳",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:álamo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "abrumar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "使不堪重負、壓垮",
+      "en": "to overwhelm, crush",
+      "ipa": "/abɾuˈmaɾ/",
+      "breakdown": [
+        {
+          "part": "a-",
+          "zh": "使…"
+        },
+        {
+          "part": "bruma",
+          "zh": "蛀蟲（broma 的變體）"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "broma",
+          "zh": "蛀船蟲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bruma",
+          "zh": "沉重負擔、蛀蟲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "abrumar",
+          "zh": "壓垮、使不堪重負"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自 bruma（蛀船蟲 broma 的變體）。蛀船蟲附著在木船上使其沉重不堪、難以航行，引申為被沉重壓力壓倒、使人喘不過氣。",
+      "hook_zh": "蟲子把整艘船吃空壓沉，就像工作壓力把人「壓垮」（abrumar）。",
+      "usage_zh": "常用過去分詞當形容詞：estar abrumado/a（感到不堪重負、心力交瘁）。",
+      "example_es": "Tanto trabajo me va a abrumar si no descanso.",
+      "example_zh": "如果不休息，這麼多工作會把我壓垮。",
+      "image": "emoji:😫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:abrumar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "acallar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "使安靜、平息",
+      "en": "to quiet, hush, silence",
+      "ipa": "/akaˈʝaɾ/",
+      "breakdown": [
+        {
+          "part": "a-",
+          "zh": "使…"
+        },
+        {
+          "part": "callar",
+          "zh": "安靜、沉默"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "callar",
+          "zh": "沉默、安靜"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "acallar",
+          "zh": "使安靜、平息"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由前綴 a- 加上動詞 callar（安靜、閉嘴）構成，原意為「使安靜」，多用於平息哭聲、謠言或心中的懷疑與恐懼。",
+      "hook_zh": "¡Cállate! 是安靜閉嘴，前面加上 a- 就是主動去「平息」紛擾。",
+      "usage_zh": "常用於抽象事物：acallar los rumores（平息謠言）、acallar las dudas（消除疑慮）。",
+      "example_es": "La madre intentó acallar el llanto del bebé.",
+      "example_zh": "母親試圖安撫寶寶的哭聲。",
+      "image": "emoji:🤫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:acallar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "acentuar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "標重音、強調",
+      "en": "to accentuate, emphasize",
+      "ipa": "/aθenˈtwaɾ/",
+      "breakdown": [
+        {
+          "part": "acentu-",
+          "zh": "重音"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "accentuāre",
+          "zh": "標重音、強調"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "acentuar",
+          "zh": "標重音、強調"
+        }
+      ],
+      "cognates_en": [
+        "accentuate",
+        "accent"
+      ],
+      "story_zh": "借自中世紀拉丁語 accentuāre，源於 accentus（重音、口音）。原指在發音或書寫上標明重音，引申為突顯、強調某種特質。",
+      "hook_zh": "英文 accentuate（強調）與 accent（口音），都是源自同一個拉丁字根。",
+      "usage_zh": "現在式單數與第三人稱複數變位需加重音符號：acentúo, acentúas, acentúa, acentúan。",
+      "example_es": "Esta luz acentúa los detalles de la pintura.",
+      "example_zh": "這道光強調了畫作的細節。",
+      "image": "emoji:❗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:acentuar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "acondicionamiento",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "調節、整修、整備",
+      "en": "conditioning, remodeling",
+      "ipa": "/akondiθjonaˈmjento/",
+      "breakdown": [
+        {
+          "part": "acondicionar",
+          "zh": "調節、使具備條件"
+        },
+        {
+          "part": "-miento",
+          "zh": "行為、結果（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "acondicionar",
+          "zh": "調節、整備"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "acondicionamiento",
+          "zh": "調節、改建"
+        }
+      ],
+      "cognates_en": [
+        "conditioning"
+      ],
+      "story_zh": "由動詞 acondicionar（調節、整備、給予條件）加上名詞字尾 -miento 衍生而來，指使環境或身體達到合適狀態的整備過程或行為。",
+      "hook_zh": "aire acondicionado（冷氣空調）的動詞名詞化：做好空間的「調節整備」。",
+      "usage_zh": "常用於體能訓練（acondicionamiento físico）或空間整修、空調裝設。",
+      "example_es": "El acondicionamiento de las oficinas tomó un mes.",
+      "example_zh": "辦公室的整修工程花了一個月。",
+      "image": "emoji:🛠️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:acondicionamiento"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "admisible",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "可接受的、容許的",
+      "en": "admissible",
+      "ipa": "/admiˈsible/",
+      "breakdown": [
+        {
+          "part": "admis-",
+          "zh": "接納、准許"
+        },
+        {
+          "part": "-ible",
+          "zh": "可…的（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "admissus",
+          "zh": "准許進入的"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "admissibilis",
+          "zh": "可接納的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "admisible",
+          "zh": "可接受的"
+        }
+      ],
+      "cognates_en": [
+        "admissible"
+      ],
+      "story_zh": "源自拉丁語動詞 admittere（准許、接納）的過去分詞詞幹 admiss-，加上形容詞字尾 -ible，指符合標準、在法律或情理上可被採納的事物。",
+      "hook_zh": "英文 admissible（法庭上可採納的）完全同形同義。",
+      "usage_zh": "陰陽同形：un error admisible（可容許的失誤）、una prueba admisible（可採納的證據）。反義 inadmisible。",
+      "example_es": "Ese comportamiento no es admisible en la escuela.",
+      "example_zh": "這種行為在學校裡是不可接受的。",
+      "image": "emoji:✅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:admisible"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aflicción",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "痛苦、折磨、悲痛",
+      "en": "affliction, sorrow",
+      "ipa": "/afliɡˈθjon/",
+      "breakdown": [
+        {
+          "part": "aflic-",
+          "zh": "打擊、折磨"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "afflictio",
+          "zh": "痛苦、折磨"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "aflicion",
+          "zh": "痛苦"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aflicción",
+          "zh": "痛苦、悲痛"
+        }
+      ],
+      "cognates_en": [
+        "affliction"
+      ],
+      "story_zh": "源自拉丁語 afflīctiōnem，由 afflīgere（擊倒、重創）演變而來，原指肉體遭受重擊，引申為內心遭遇深重的打擊、苦難與哀傷。",
+      "hook_zh": "英文 affliction（苦難）同源，想像心靈被重重打擊（flict）。",
+      "usage_zh": "陰性名詞。常用於表達深切的哀傷：con gran aflicción（帶著極大悲痛）。",
+      "example_es": "La pérdida de su amigo le causó una profunda aflicción.",
+      "example_zh": "朋友的離去給他帶來了極大的悲痛。",
+      "image": "emoji:💔",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aflicción",
+        "wiktionary:la:afflictio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "afrenta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "侮辱、冒犯",
+      "en": "affront, insult",
+      "ipa": "/aˈfɾenta/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "affront"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文 affront（當面侮辱），front 是臉面，當眾甩面子就是 afrenta。",
+      "usage_zh": "陰性名詞 una afrenta。常見搭配 una afrenta a la dignidad（對尊嚴的侮辱）。",
+      "example_es": "Sus palabras fueron una afrenta para toda la familia.",
+      "example_zh": "他的話對全家人來說是一種侮辱。",
+      "image": "emoji:😡",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:afrenta"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "agridulce",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "酸甜的、苦樂參半的",
+      "en": "sweet and sour, bittersweet",
+      "ipa": "/aɡɾiˈdulθe/",
+      "breakdown": [
+        {
+          "part": "agrio",
+          "zh": "酸的"
+        },
+        {
+          "part": "dulce",
+          "zh": "甜的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "agrio + dulce",
+          "zh": "酸 + 甜"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "agridulce",
+          "zh": "酸甜的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 agrio（酸的）和 dulce（甜的）複合而成，形容兼具酸甜兩種味道的滋味，也常用來比喻悲喜交加、百感交集的複雜心境。",
+      "hook_zh": "agrio（酸）+ dulce（甜）= agridulce（糖醋、苦樂參半）。",
+      "usage_zh": "陰陽同形：salsa agridulce（糖醋醬）、recuerdo agridulce（苦樂參半的回憶）。",
+      "example_es": "Me gusta pedir pollo con salsa agridulce.",
+      "example_zh": "我喜歡點糖醋雞肉。",
+      "image": "emoji:🍯",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:agridulce"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "alavés",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "阿拉瓦的、阿拉瓦人",
+      "en": "of Álava",
+      "ipa": "/alaˈbes/",
+      "breakdown": [
+        {
+          "part": "Álava",
+          "zh": "阿拉瓦（西班牙省份）"
+        },
+        {
+          "part": "-és",
+          "zh": "…地方的（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "Álava",
+          "zh": "阿拉瓦"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alavés",
+          "zh": "阿拉瓦的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西班牙巴斯克自治區的阿拉瓦省（Álava）加上表示籍貫與出處的字尾 -és 構成，指該省的人或與其相關的事物。",
+      "hook_zh": "Álava（西班牙巴斯克省份）加上籍貫字尾 -és，就是 alavés。",
+      "usage_zh": "陰性為 alavesa，陽性複數 alaveses。也作名詞指阿拉瓦人。",
+      "example_es": "Vitoria es la capital alavesa.",
+      "example_zh": "維多利亞是阿拉瓦省的首府。",
+      "image": "emoji:🏞️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alavés"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "alentador",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "令人鼓舞的、振奮人心的",
+      "en": "encouraging",
+      "ipa": "/alentaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "alentar",
+          "zh": "鼓舞、使振作"
+        },
+        {
+          "part": "-dor",
+          "zh": "具有…性質的（字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "alentar",
+          "zh": "鼓舞、激勵"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alentador",
+          "zh": "令人鼓舞的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 alentar（鼓舞、激勵，字根來自 aliento 呼吸、生氣），加上具有該性質的字尾 -dor，形容帶來希望與力量、讓人振作的事物。",
+      "hook_zh": "alentar 是給人一口氣（aliento）打氣，alentador 就是「令人振奮的」。",
+      "usage_zh": "陰性為 alentadora，常見搭配 resultados alentadores（令人振奮的結果）。",
+      "example_es": "Los resultados del experimento son muy alentadores.",
+      "example_zh": "實驗的結果非常令人鼓舞。",
+      "image": "emoji:👏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alentador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "anglosajón",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "盎格魯撒克遜的",
+      "en": "Anglo-Saxon",
+      "ipa": "/anɡlosaˈxon/",
+      "breakdown": [
+        {
+          "part": "anglo-",
+          "zh": "盎格魯（英國）"
+        },
+        {
+          "part": "sajón",
+          "zh": "撒克遜"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "anglo- + sajón",
+          "zh": "盎格魯 + 撒克遜"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "anglosajón",
+          "zh": "盎格魯撒克遜的"
+        }
+      ],
+      "cognates_en": [
+        "Anglo-Saxon"
+      ],
+      "story_zh": "由 anglo-（盎格魯人）與 sajón（撒克遜人）複合而成，原指古代定居大不列顛島的日耳曼部落，現代泛指英語系國家、民族或文化。",
+      "hook_zh": "英文 Anglo-Saxon 的西語對應詞，字根完全一致。",
+      "usage_zh": "陰性為 anglosajona，陽性複數 anglosajones。常指英語系文化（cultura anglosajona）。",
+      "example_es": "La cultura anglosajona influye en todo el mundo.",
+      "example_zh": "盎格魯撒克遜文化影響著全世界。",
+      "image": "emoji:🇬🇧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:anglosajón"
       ],
       "writer": "gemini"
     }

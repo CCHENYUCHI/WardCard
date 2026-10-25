@@ -1,177 +1,7 @@
 {
   "theme": "freq-0099",
-  "theme_zh": "常用字（頻率第 30714–31076 名）",
+  "theme_zh": "常用字（頻率第 30737–31098 名）",
   "entries": [
-    {
-      "word": "detonante",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "起因、導火線；引爆的",
-      "en": "trigger, spark, catalyst; detonating",
-      "ipa": "/detoˈnante/",
-      "breakdown": [
-        {
-          "part": "detonar",
-          "zh": "引爆、爆炸"
-        },
-        {
-          "part": "-ante",
-          "zh": "現在分詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "detonar + -ante",
-          "zh": "引爆 + 分詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "detonante",
-          "zh": "引信、導火線"
-        }
-      ],
-      "cognates_en": [
-        "detonating",
-        "detonate"
-      ],
-      "story_zh": "源自動詞 detonar（引爆、爆炸）的現在分詞形式名詞化。本指引爆炸藥的雷管或引信，在社會、歷史與政治新聞中極常引申為促成某重大事件爆發的「導火線、誘因」。",
-      "hook_zh": "像引爆彈藥（detonate）一樣點燃危機的導火線 detonante。",
-      "usage_zh": "作為名詞填陽性 el detonante；亦可當形容詞（陰陽同形）。",
-      "example_es": "La subida de precios fue el detonante de las protestas.",
-      "example_zh": "物價上漲是引發抗議潮的導火線。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:detonante"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "difamar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "誹謗、中傷",
-      "en": "to defame, to libel",
-      "ipa": "/difaˈmaɾ/",
-      "breakdown": [
-        {
-          "part": "dis-",
-          "zh": "散佈、破壞"
-        },
-        {
-          "part": "fama",
-          "zh": "名聲"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "diffamo",
-          "zh": "散播惡名、誹謗"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "diffāmāre",
-          "zh": "中傷、誹謗"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "difamar",
-          "zh": "誹謗、中傷"
-        }
-      ],
-      "cognates_en": [
-        "defame",
-        "fame"
-      ],
-      "story_zh": "借自拉丁語 diffāmāre，由 dis-（四散、向外）加上 fāma（名聲、傳聞）與動詞後綴組成，字面意思是散佈不好的傳聞以敗壞他人名聲。",
-      "hook_zh": "英文 defame，破壞他人的名譽（fama）就是 difamar。",
-      "usage_zh": "及物動詞：difamar a alguien（誹謗某人）。名詞為 difamación（誹謗）。",
-      "example_es": "Intentaron difamar al candidato con acusaciones falsas.",
-      "example_zh": "他們試圖用不實指控誹謗那位候選人。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:difamar",
-        "wiktionary:la:diffamo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "difuso",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "擴散的、模糊不清的、冗長的",
-      "en": "diffuse; fuzzy, blurred",
-      "ipa": "/diˈfuso/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "diffusus",
-          "zh": "四處散開的、廣泛的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "difuso",
-          "zh": "模糊的、擴散的"
-        }
-      ],
-      "cognates_en": [
-        "diffuse"
-      ],
-      "story_zh": "學者借詞自拉丁語 diffusus，是 diffundere（向四處傾倒、散播，由 dis- 與 fundere 倒出組成）的過去分詞，指光線或事物散開而界限不明顯。",
-      "hook_zh": "英文 diffuse，光線擴散或記憶模糊（difuso）。",
-      "usage_zh": "陰性 difusa。可用於光線（luz difusa 漫射光）或記憶思想（recuerdo difuso 模糊記憶）。",
-      "example_es": "Tengo un recuerdo muy difuso de aquel viaje.",
-      "example_zh": "我對那次旅行的記憶非常模糊。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:difuso"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "efigie",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "肖像、塑像、畫像",
-      "en": "effigy",
-      "ipa": "/eˈfixje/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "effigiēs",
-          "zh": "造形、肖像、雕像"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "efigie",
-          "zh": "肖像、塑像"
-        }
-      ],
-      "cognates_en": [
-        "effigy"
-      ],
-      "story_zh": "學者借詞自拉丁語 effigiēs（雕像、圖像），源自 effingere（塑造、描摹），由 ex-（出）與 fingere（塑造、捏塑）組合而成，指具體塑造出來的人物形象或肖像。",
-      "hook_zh": "英文 effigy，硬幣或紙鈔上印的人物肖像 efigie。",
-      "usage_zh": "陰性名詞 la efigie。常指印在硬幣、郵票上的名人肖像，或象徵性焚燒的假人像。",
-      "example_es": "La efigie del monarca aparece en las monedas de curso legal.",
-      "example_zh": "君主的肖像出現在法定貨幣的硬幣上。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:efigie"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "errar",
       "article": "",
@@ -681,48 +511,6 @@
       "sources": [
         "wiktionary:es:filete",
         "wiktionary:la:filum"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "fontana",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "噴泉、泉水",
-      "en": "fountain, spring",
-      "ipa": "/fonˈtana/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "fontanus",
-          "zh": "泉水的"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "fontāna",
-          "zh": "泉水、噴泉"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "fontana",
-          "zh": "水泉、噴泉"
-        }
-      ],
-      "cognates_en": [
-        "fountain"
-      ],
-      "story_zh": "借自晚期拉丁語 fontāna（泉水、水源），源自拉丁語形容詞 fontānus（泉的，來自 fōns 泉源、水泉）。西語現代日常多用 fuente，fontana 則多見於文學、地名或義大利著名噴泉（如羅馬特雷維噴泉）。",
-      "hook_zh": "英文 fountain，羅馬著名的許願池就叫 Fontana di Trevi。",
-      "usage_zh": "陰性名詞 la fontana，文學或詩意詞彙，日常對應詞為 la fuente。",
-      "example_es": "El agua clara brotaba de la antigua fontana.",
-      "example_zh": "清澈的泉水從古老的水泉中湧出。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:fontana",
-        "wiktionary:la:fontana",
-        "wiktionary:la:fontanus"
       ],
       "writer": "gemini"
     },
@@ -2109,40 +1897,6 @@
       "writer": "gemini"
     },
     {
-      "word": "peer",
-      "article": "",
-      "pos": "verbo",
-      "zh": "放屁",
-      "en": "to fart, to break wind",
-      "ipa": "/peˈeɾ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "pēdere",
-          "zh": "放屁"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "peer",
-          "zh": "放屁"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "傳承自拉丁文動詞 pēdere（放屁），在通俗西語中因語音演變中間的 d 脫落形成 peer。西語日常中常以代名動詞 peerse 使用（名詞為 pedo）。",
-      "hook_zh": "名詞 pedo（屁）的動詞就是 peer，吃太飽肚子脹氣就會 peer。",
-      "usage_zh": "不規則動詞：現在式 yo peo，過去式 yo peí，過去分詞 peído。常作 peerse。",
-      "example_es": "El perro se peyó debajo de la mesa.",
-      "example_zh": "狗狗在桌子底下放了個屁。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:peer",
-        "wiktionary:la:pedo"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "peligrosidad",
       "article": "la",
       "pos": "sustantivo",
@@ -3487,6 +3241,330 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:borrón"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cadencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "節奏、韻律；抑揚頓挫",
+      "en": "cadence, rhythm",
+      "ipa": "/kaˈdenθja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cadō",
+          "zh": "落下"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cadēns",
+          "zh": "落下的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cadentia",
+          "zh": "落下"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cadencia",
+          "zh": "節奏、韻律"
+        }
+      ],
+      "cognates_en": [
+        "cadence"
+      ],
+      "story_zh": "源自拉丁語 cadentia，由動詞 cadō（落下）的現在分詞 cadēns 衍生而來，本義為「落下」。後來引申為聲音或音調的「下落」與收尾，進而演變成音樂或說話時的「節奏、韻律」。",
+      "hook_zh": "音調像雨滴自然落下（cadence），形成優美的節奏 cadencia。",
+      "usage_zh": "陰性名詞。常用於音樂或文學中指節奏、抑揚頓挫。",
+      "example_es": "La música tenía una cadencia suave y relajante.",
+      "example_zh": "這首音樂有著柔和且令人放鬆的節奏。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cadencia",
+        "wiktionary:la:cadentia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "camada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "一窩、一胎幼崽",
+      "en": "litter, brood",
+      "ipa": "/kaˈmada/",
+      "breakdown": [
+        {
+          "part": "cama",
+          "zh": "床、動物臥榻"
+        },
+        {
+          "part": "-ada",
+          "zh": "集合、整體"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cama",
+          "zh": "床、獸窩"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "camada",
+          "zh": "一窩、一胎幼崽"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西語 cama（床、獸窩）加上名詞字尾 -ada。原指在同一個窩或墊草上出生的一窩動物幼崽，引申為同一胎所生的小動物。",
+      "hook_zh": "在同一張床（cama）上出生的一整窩（camada）小狗。",
+      "usage_zh": "陰性名詞。常用於指貓、狗等哺乳動物同一胎出生的一窩小動物。",
+      "example_es": "La perra dio a luz a una camada de cinco cachorros.",
+      "example_zh": "母狗生了一窩五隻小狗。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:camada"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "candente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "熾熱的、白熱化的；熱門爭議的",
+      "en": "red-hot, burning, hotly debated",
+      "ipa": "/kanˈdente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "candentem",
+          "zh": "熾熱的、發白的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "candente",
+          "zh": "熾熱的、白熱化的"
+        }
+      ],
+      "cognates_en": [
+        "candid",
+        "candle"
+      ],
+      "story_zh": "源自拉丁語 candentem（熾熱、發白光的）。原指金屬加熱至發白發紅的熾熱狀態，引申指議題「白熱化」或引起激烈爭論。",
+      "hook_zh": "像蠟燭（candle）的火焰一樣 candente（熾熱、白熱化）。",
+      "usage_zh": "陰陽同形形容詞。常見搭配為 tema candente（熱門爭議話題）。",
+      "example_es": "El debate sobre la economía es un tema candente.",
+      "example_zh": "關於經濟的辯論是一個白熱化的熱門話題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:candente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cariñosamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "親切地、深情地",
+      "en": "affectionately, warmly",
+      "ipa": "/kaɾiˌɲosaˈmente/",
+      "breakdown": [
+        {
+          "part": "cariñoso",
+          "zh": "親切的、深情的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cariño",
+          "zh": "關愛、喜愛"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cariñoso",
+          "zh": "親切的、深情的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cariñosamente",
+          "zh": "親切地、深情地"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由形容詞 cariñoso（親切的、深情的）加上副詞字尾 -mente 構成，表示帶著關愛與溫柔的情感行動。",
+      "hook_zh": "帶有滿滿 cariño（愛意）地（-mente）擁抱就是 cariñosamente。",
+      "usage_zh": "副詞，無陰陽性變化。常用於修飾 abraza、saluda、sonríe 等動詞。",
+      "example_es": "La abuela saludó cariñosamente a sus nietos.",
+      "example_zh": "祖母親切地問候她的孫子們。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cariñosamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "catarsis",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "宣洩、淨化、心靈洗滌",
+      "en": "catharsis",
+      "ipa": "/kaˈtaɾsis/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "καθαρός",
+          "zh": "純淨的"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "κάθαρσις",
+          "zh": "清洗、淨化"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "catarsis",
+          "zh": "宣洩、淨化"
+        }
+      ],
+      "cognates_en": [
+        "catharsis"
+      ],
+      "story_zh": "借自古希臘語 κάθαρσις（淨化、排毒），源於形容詞 καθαρός（純淨的）。亞里斯多德在《詩學》中用此詞指悲劇讓觀眾情緒得到釋放與昇華，現多指心靈的情感宣洩。",
+      "hook_zh": "看感人的電影大哭一場，心情徹底 catarsis（宣洩淨化）。",
+      "usage_zh": "陰性名詞，單複數同形（una catarsis / las catarsis）。",
+      "example_es": "Llorar durante la película fue una auténtica catarsis.",
+      "example_zh": "在看電影時大哭一場是一次真正的心理宣洩。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:catarsis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "censor",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "審查員、審查官；監察官",
+      "en": "censor",
+      "ipa": "/θenˈsoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cēnsor",
+          "zh": "羅馬監察官、審查官"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "censor",
+          "zh": "審查員、監察官"
+        }
+      ],
+      "cognates_en": [
+        "censor",
+        "census"
+      ],
+      "story_zh": "借自拉丁語 cēnsor，原為古羅馬負責登記戶口與監督公共道德的監察官。後演變為負責審查出版物、影片或言論的審查人員。",
+      "hook_zh": "專門給出版物挑毛病、進行 censor（審查）的官員。",
+      "usage_zh": "陽性名詞，陰性為 censora，複數為 censores。亦可作形容詞指審查的。",
+      "example_es": "El censor eliminó varias escenas de la película.",
+      "example_zh": "審查員刪減了電影裡的幾個片段。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:censor"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "centralización",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "中央集權、集中化",
+      "en": "centralization",
+      "ipa": "/θentɾaliθaˈθjon/",
+      "breakdown": [
+        {
+          "part": "centralizar",
+          "zh": "集中、使中央化"
+        },
+        {
+          "part": "-ción",
+          "zh": "動作或狀態字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "centralizar",
+          "zh": "集中"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "centralización",
+          "zh": "集中化、中央集權"
+        }
+      ],
+      "cognates_en": [
+        "centralization"
+      ],
+      "story_zh": "由動詞 centralizar（使集中）加上名詞字尾 -ción 構成。指將權力、行政或資源集中至單一中心或中央政府的過程。",
+      "hook_zh": "所有事情都往中心（centro）靠攏，就是 centralización（集中化）。",
+      "usage_zh": "陰性名詞。常與 de poder（權力集中）或 administrativa（行政集權）連用。",
+      "example_es": "La centralización del poder generó protestas en las regiones.",
+      "example_zh": "權力集中引發了地方各區域的抗議。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:centralización"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "chabón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "傢伙、老兄、男人",
+      "en": "guy, dude",
+      "ipa": "/t͡ʃaˈbon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "羅姆語",
+          "word": "ćhavo",
+          "zh": "少年、孩子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "chabón",
+          "zh": "傢伙、老兄"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "阿根廷與烏拉圭等拉普拉塔河地區俚語（Lunfardo）。可能源自 charabón 的縮寫，或推測來自羅姆語的 ćhavo（少年、孩子），經卡洛語傳入西語，現廣泛指「老兄、傢伙」。",
+      "hook_zh": "阿根廷人跟朋友打招呼常說：「¿Qué hacés, chabón?」（老兄你在幹嘛？）。",
+      "usage_zh": "陽性名詞。阿根廷與烏拉圭口語俚語，陰性為 chabona。",
+      "example_es": "Ese chabón sabe mucho de fútbol.",
+      "example_zh": "那個傢伙對足球非常懂。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:chabón"
       ],
       "writer": "gemini"
     }
