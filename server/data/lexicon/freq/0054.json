@@ -461,6 +461,489 @@
         "wiktionary:es:predominante"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "presenciar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "目擊、見證",
+      "en": "to witness",
+      "ipa": "/pɾesenˈθjaɾ/",
+      "breakdown": [
+        {
+          "part": "presencia",
+          "zh": "存在、出席"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "人在現場（presencia）親眼看到，就是目擊 presenciar。",
+      "usage_zh": "及物動詞，直接加受詞：presenciar un accidente（目擊意外）。",
+      "example_es": "Muchas personas presenciaron el accidente.",
+      "example_zh": "許多人目擊了那場意外。",
+      "image": "emoji:👀",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:presenciar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "presunción",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "推定；自負、傲慢",
+      "en": "presumption; conceit",
+      "ipa": "/pɾesunˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "praesūmptiōnem",
+          "zh": "預先設想、傲慢"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "presunción",
+          "zh": "推定、自負"
+        }
+      ],
+      "cognates_en": [
+        "presumption"
+      ],
+      "story_zh": "源自拉丁語 praesūmptiōnem，由預先設想演變為「在未證實前便認定」，法律上指「推定」；在個人態度上則引申為「自以為是、傲慢」。",
+      "hook_zh": "預先（pre）在心裡下定論，既是「推定」，自視甚高時就是「自負」。",
+      "usage_zh": "法律常說 presunción de inocencia（無罪推定原則）。",
+      "example_es": "Existe la presunción de inocencia.",
+      "example_zh": "存在無罪推定的原則。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:presunción"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "prórroga",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "延長、展期；延長賽",
+      "en": "extension, extra time, overtime",
+      "ipa": "/ˈpɾoroɡa/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "比賽時間結束還分不出勝負，進入 prórroga（延長賽）繼續踢。",
+      "usage_zh": "陰性名詞。常用 pedir una prórroga（申請展期、延期）。",
+      "example_es": "El partido se decidió en la prórroga.",
+      "example_zh": "這場比賽在延長賽分出勝負。",
+      "image": "emoji:⏱️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:prórroga"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "revancha",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "報復、復仇；重賽",
+      "en": "revenge; rematch",
+      "ipa": "/reˈbant͡ʃa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "revanche",
+          "zh": "報復、報仇"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "revancha",
+          "zh": "復仇、重賽"
+        }
+      ],
+      "cognates_en": [
+        "revenge"
+      ],
+      "story_zh": "借自法語 revanche（報仇），英文的 revenge 也是同一來源。在體育競技中，revancha 常用來指輸掉後再戰一場的「重賽、雪恥賽」。",
+      "hook_zh": "輸了比賽不服氣，要求再來一場 revancha 討回公道。",
+      "usage_zh": "常用 tomar revancha（報仇、雪恥）或 partido de revancha（重賽）。",
+      "example_es": "El equipo busca la revancha en el próximo partido.",
+      "example_zh": "該隊尋求在下一場比賽中雪恥。",
+      "image": "emoji:🥊",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:revancha"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reverendo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "受尊崇的；十足的、徹頭徹尾的",
+      "en": "reverend; utter, veritable",
+      "ipa": "/rebeˈɾendo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "reverendus",
+          "zh": "應受尊重的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reverendo",
+          "zh": "受尊崇的、十足的"
+        }
+      ],
+      "cognates_en": [
+        "reverend"
+      ],
+      "story_zh": "文人借自拉丁語 reverendus（動名詞形式，意為「應當尊敬的」）。在口語中常反諷地作為加強詞，表示「徹頭徹尾的、十足的」。",
+      "hook_zh": "英文 reverend 是神父尊稱；西語裡說 un reverendo tonto 則是「十足的大傻瓜」。",
+      "usage_zh": "口語中常用來加強負面語氣：un reverendo lío（一團大混亂）。",
+      "example_es": "Es una reverenda tontería.",
+      "example_zh": "這純粹是一件大蠢事。",
+      "image": "emoji:🙏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reverendo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sapo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "蟾蜍；愛管閒事的人、告密者",
+      "en": "toad; telltale, loudmouth",
+      "ipa": "/ˈsapo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "伊比利亞語",
+          "word": "sapo",
+          "zh": "蟾蜍落水聲（擬聲）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sapo",
+          "zh": "蟾蜍"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "詞源不詳，可能源自伊比利亞語的擬聲詞，模仿蟾蜍撲通掉進水坑時的聲音，與巴斯克語 apo 同源。在拉丁美洲俗語中常引申指愛打聽消息、愛告密的人。",
+      "hook_zh": "草叢裡蹲著一隻大肚子蟾蜍 sapo，呱呱叫到處告密。",
+      "usage_zh": "陽性名詞 el sapo，陰性 la sapa。在南美俚語中 ojo al sapo 指小心告密者。",
+      "example_es": "Había un sapo grande en el jardín.",
+      "example_zh": "花園裡有一隻大蟾蜍。",
+      "image": "emoji:🐸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sapo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "satanás",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "魔鬼、惡魔",
+      "en": "devil",
+      "ipa": "/sataˈnas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "Satanás",
+          "zh": "撒旦（專有名詞）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "satanás",
+          "zh": "魔鬼、惡魔"
+        }
+      ],
+      "cognates_en": [
+        "Satan"
+      ],
+      "story_zh": "源自專有名詞 Satanás（撒旦）。在西語中可小寫作為普通名詞，用來形容邪惡的魔鬼或凶狠暴躁的人。",
+      "hook_zh": "撒旦 Satanás 的名字變成普通名詞，專指害人作惡的魔鬼。",
+      "usage_zh": "陽性名詞，複數為 satanases，陰性可作 satanasa。",
+      "example_es": "Ese hombre es un satanás.",
+      "example_zh": "那個男人真是個魔鬼。",
+      "image": "emoji:😈",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:satanás"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "señoría",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "大人、閣下（法官尊稱）；領地",
+      "en": "worship, lordship; dominion",
+      "ipa": "/seɲoˈɾia/",
+      "breakdown": [
+        {
+          "part": "señor",
+          "zh": "先生、領主"
+        },
+        {
+          "part": "-ía",
+          "zh": "名詞字尾（身分、領地）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "señor（先生、領主）加上 -ía 變成尊稱，在法庭上稱法官為 Su Señoría（法官大人）。",
+      "usage_zh": "法庭常見尊稱 Su Señoría（審判長大人）。",
+      "example_es": "No tengo más preguntas, Señoría.",
+      "example_zh": "法官大人，我沒有其他問題了。",
+      "image": "emoji:⚖️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:señoría"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sorprendentemente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "令人驚訝地、出人意料地",
+      "en": "surprisingly",
+      "ipa": "/soɾpɾenˌdenteˈmente/",
+      "breakdown": [
+        {
+          "part": "sorprendente",
+          "zh": "令人驚訝的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "形容詞 sorprendente 加上副詞字尾 -mente，意思就是出乎意料地、驚人地。",
+      "usage_zh": "修飾形容詞或整個句子：Sorprendentemente, nadie protestó.",
+      "example_es": "El examen fue sorprendentemente fácil.",
+      "example_zh": "考試出乎意料地簡單。",
+      "image": "emoji:😲",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:sorprendentemente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "temblar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "發抖、顫抖；震動",
+      "en": "to tremble, to shake, to shiver",
+      "ipa": "/temˈblaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tremō",
+          "zh": "發抖"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "tremulus",
+          "zh": "顫抖的"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "tremulāre",
+          "zh": "發抖、顫抖"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "temblar",
+          "zh": "發抖"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "temblar",
+          "zh": "發抖、顫抖"
+        }
+      ],
+      "cognates_en": [
+        "tremble"
+      ],
+      "story_zh": "承襲自古西班牙語 temblar，源自晚期拉丁語 tremulāre（顫抖），由古典拉丁語 tremulus（顫抖的）衍生，詞根為 tremō。演變過程中發生異化作用，前方的 r 音脫落演變成 temblar。",
+      "hook_zh": "冷到全身一直 tremble，在西語裡就是 temblar 發抖。",
+      "usage_zh": "陳述式現在時單數與第三人稱複數發音變：tiemblo, tiemblas, tiembla, tiemblan。",
+      "example_es": "Temblaba de frío en la calle.",
+      "example_zh": "他在街上冷得發抖。",
+      "image": "emoji:🥶",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:temblar",
+        "wiktionary:la:tremulo",
+        "wiktionary:la:tremulus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "unilateral",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "單方面的、單邊的",
+      "en": "unilateral",
+      "ipa": "/unilateˈɾal/",
+      "breakdown": [
+        {
+          "part": "uni-",
+          "zh": "單一"
+        },
+        {
+          "part": "lateral",
+          "zh": "側面的、邊的"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "unilateral"
+      ],
+      "story_zh": "",
+      "hook_zh": "uni-（單一）加上 lateral（側面的），只顧自己一方就是「單方面」。",
+      "usage_zh": "陰陽同形：una decisión unilateral（單方面的決定）。",
+      "example_es": "Tomaron una decisión unilateral.",
+      "example_zh": "他們做出了單方面的決定。",
+      "image": "emoji:👉",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:unilateral"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vagón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "車廂（火車或地鐵）",
+      "en": "train car, railway carriage",
+      "ipa": "/baˈɡon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "wagon",
+          "zh": "火車車廂"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vagón",
+          "zh": "車廂"
+        }
+      ],
+      "cognates_en": [
+        "wagon"
+      ],
+      "story_zh": "借自法語 wagon（車廂），法語則是借自英文 wagon。進入西語後拼寫改為符合西語發音規則的 vagón，重音在第二音節。",
+      "hook_zh": "英文的 wagon 是四輪運貨馬車，西語 vagón 專指火車或地鐵車廂。",
+      "usage_zh": "陽性名詞。複數加 -es 並去掉重音符號：vagones。",
+      "example_es": "Subí al último vagón del tren.",
+      "example_zh": "我上了火車的最後一節車廂。",
+      "image": "emoji:🚃",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vagón"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vestíbulo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "前廳、門廳、大廳",
+      "en": "lobby, vestibule, foyer, entrance hall",
+      "ipa": "/besˈtibulo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vestibulum",
+          "zh": "前院、門廳"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vestíbulo",
+          "zh": "門廳、大廳"
+        }
+      ],
+      "cognates_en": [
+        "vestibule"
+      ],
+      "story_zh": "源自拉丁語 vestibulum，原指古羅馬住宅大門與街道之間的前院或入口前廊，後來演變為進入建築物內部的大門玄關、門廳。",
+      "hook_zh": "進飯店大門第一眼看到的挑高大廳、門廳就是 vestíbulo。",
+      "usage_zh": "陽性名詞。飯店、劇院或公寓入口大廳常稱為 vestíbulo。",
+      "example_es": "Nos encontramos en el vestíbulo del hotel.",
+      "example_zh": "我們在飯店大廳見面。",
+      "image": "emoji:🏨",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vestíbulo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "éxodo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "大批離去、移居；《出埃及記》",
+      "en": "exodus",
+      "ipa": "/ˈeɡsodo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἔξοδος",
+          "zh": "外出、離開"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "exodus",
+          "zh": "出境、出埃及記"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "éxodo",
+          "zh": "大出走、移居"
+        }
+      ],
+      "cognates_en": [
+        "exodus"
+      ],
+      "story_zh": "經由拉丁語 exodus 源自古希臘語 ἔξοδος（éxodos），由 ἐξ（出、外）與 ὁδός（道路）組成，本義是「走出去的路」。聖經中指摩西帶領以色列人離開埃及，現代引申為人口大規模遷徙出走。",
+      "hook_zh": "ex（出去）+ hodos（路）= 眾人踏上離鄉之路，大批撤離 éxodo。",
+      "usage_zh": "陽性名詞。常見搭配：éxodo rural（農村人口大量外移）。",
+      "example_es": "La guerra provocó un éxodo masivo.",
+      "example_zh": "戰爭引發了大規模人口外逃。",
+      "image": "emoji:🚶",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:éxodo"
+      ],
+      "writer": "gemini"
     }
   ]
 }

@@ -36,7 +36,8 @@ const TASK = (count) => `# 任務：寫 ${count} 筆西語字源圖鑑條目
    如果某個字在一般文章裡主要是**另一個字的變化形**（動詞變位或過去分詞，例如 apuesto、encontrado、cayo；
    陰性或複數形容詞，例如 honda、redonda、petrolera），也一樣跳過，原因寫「form of <原形>」。真正獨立的西語字不要跳過。
 5. 中文一律用繁體中文、台灣用語。字源只能根據 facts，不要自己補。
-6. 完成後回報：寫了幾個字、跳過幾個、還有沒有修不好的錯誤。
+6. \`input.json\` 的每一個字都要處理完（寫成條目或標 skip）才算完成；\`check.mjs\` 沒印出「all done」前不要停。
+7. 完成後回報：寫了幾個字、跳過幾個、還有沒有修不好的錯誤。
 `;
 
 function readSkips() {
@@ -144,23 +145,26 @@ async function main() {
     console.log(`batch ${label}: +${added} written, ${skipped} skipped, ${failed} failed in ${minutes} min${tokens ? ` (${tokens} tokens)` : ''}`);
   }
 
-  // Words still to write, batch by batch; small gaps (left by a queue rebuild) are pooled into one job
-  let gaps = [];
-  for (const id of batchRange(batchesSpec, Object.keys(queue.batches).sort())) {
-    const done = new Set((readBatch(id)?.entries || []).map(e => lexiconKey(e.word)));
-    const skips = readSkips();
-    const todo = queue.batches[id].filter(it => !done.has(lexiconKey(it.lemma)) && !Object.hasOwn(skips, it.lemma))
-      .map(it => ({ id, facts: readFacts(it.word) }));
-    if (todo.length === 0) continue;
-    if (todo.length < GAP_SIZE) {
-      gaps.push(...todo);
-      if (gaps.length >= JOB_SIZE) { await runUnit(gaps); gaps = []; }
-      continue;
+  // Two passes: the second one retries words the agent left out of its answer (it sometimes stops early)
+  for (let pass = 0; pass < 2; pass++) {
+    // Words still to write, batch by batch; small gaps (left by a queue rebuild) are pooled into one job
+    let gaps = [];
+    for (const id of batchRange(batchesSpec, Object.keys(queue.batches).sort())) {
+      const done = new Set((readBatch(id)?.entries || []).map(e => lexiconKey(e.word)));
+      const skips = readSkips();
+      const todo = queue.batches[id].filter(it => !done.has(lexiconKey(it.lemma)) && !Object.hasOwn(skips, it.lemma))
+        .map(it => ({ id, facts: readFacts(it.word) }));
+      if (todo.length === 0) continue;
+      if (todo.length < GAP_SIZE) {
+        gaps.push(...todo);
+        if (gaps.length >= JOB_SIZE) { await runUnit(gaps); gaps = []; }
+        continue;
+      }
+      if (gaps.length) { await runUnit(gaps); gaps = []; }
+      await runUnit(todo);
     }
-    if (gaps.length) { await runUnit(gaps); gaps = []; }
-    await runUnit(todo);
+    if (gaps.length) await runUnit(gaps);
   }
-  if (gaps.length) await runUnit(gaps);
 }
 
 if (require.main === module) main().catch(err => { console.error(err.message); process.exit(1); });
