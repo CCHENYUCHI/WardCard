@@ -1,6 +1,6 @@
 {
   "theme": "freq-0091",
-  "theme_zh": "常用字（頻率第 27596–27948 名）",
+  "theme_zh": "常用字（頻率第 27596–27954 名）",
   "entries": [
     {
       "word": "playera",
@@ -3463,39 +3463,6 @@
       "writer": "gemini"
     },
     {
-      "word": "luisiano",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "路易斯安那的；路易斯安那人",
-      "en": "Louisianian",
-      "ipa": "/lwiˈsjano/",
-      "breakdown": [
-        {
-          "part": "Luisiana",
-          "zh": "路易斯安那"
-        },
-        {
-          "part": "-ano",
-          "zh": "來自…的（人）"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "Louisianian"
-      ],
-      "story_zh": "",
-      "hook_zh": "美國路易斯安那州 Luisiana 加上居住者字尾 -ano，就是路易斯安那人。",
-      "usage_zh": "陰性為 luisiana；也可當名詞（el/la luisiano/a），指路易斯安那州居民。",
-      "example_es": "La música de jazz es una tradición muy representativa del pueblo luisiano.",
-      "example_zh": "爵士樂是路易斯安那人非常具代表性的傳統。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:luisiano"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "marañón",
       "article": "el",
       "pos": "sustantivo",
@@ -3523,40 +3490,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:marañón"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "menar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "搖動（跳繩）；驅趕牲畜",
-      "en": "to turn the jump rope; to drive livestock",
-      "ipa": "/meˈnaɾ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "mināre",
-          "zh": "驅趕牲畜"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "menar",
-          "zh": "驅趕牲畜、搖跳繩"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "繼承自拉丁語 mināre（驅趕牲口、吆喝引導）。原先指放牧時驅趕牲畜前進，引申為持續擺動或引領。在西班牙傳統跳繩遊戲中，特指兩端各有一人「搖動跳繩繩索」的動作。",
-      "hook_zh": "聯想 manejar（操作、引導），menar 是手中節奏性地搖動長繩。",
-      "usage_zh": "規則 -ar 動詞，在西班牙兒童民俗中常指 saltar a la comba 時搖繩子的動作。",
-      "example_es": "A los niños les gusta menar la cuerda mientras cantan.",
-      "example_zh": "孩子們喜歡一邊唱歌一邊搖跳繩。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:menar",
-        "wiktionary:la:mino"
       ],
       "writer": "gemini"
     },
@@ -3687,6 +3620,72 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:monitorización"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "monstruoso",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "怪異的、可怕的、龐大的",
+      "en": "monstrous, horrible",
+      "ipa": "/monsˈtɾwoso/",
+      "breakdown": [
+        {
+          "part": "monstruo",
+          "zh": "怪物"
+        },
+        {
+          "part": "-oso",
+          "zh": "充滿…的"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "monstrous"
+      ],
+      "story_zh": "",
+      "hook_zh": "monstruo（怪物）加 -oso，長相或行為如同怪物般嚇人或體積龐大。",
+      "usage_zh": "陰性為 monstruosa，可形容可怕的罪行（crimen monstruoso）或巨大體積。",
+      "example_es": "Una criatura monstruosa apareció en la película.",
+      "example_zh": "一隻巨大的怪物出現在電影中。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:monstruoso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "motriz",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "原動力的、驅動的",
+      "en": "motive, driving",
+      "ipa": "/moˈtɾiθ/",
+      "breakdown": [
+        {
+          "part": "motor",
+          "zh": "動力的"
+        },
+        {
+          "part": "-triz",
+          "zh": "陰性主動字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "motive"
+      ],
+      "story_zh": "",
+      "hook_zh": "motor（引擎、動力）的特殊陰性形式，產生運動的力量就是 motriz。",
+      "usage_zh": "常用搭配如 fuerza motriz（原動力）或 habilidad motriz（運動機能）。複數為 motrices。",
+      "example_es": "El motor de vapor fue la principal fuerza motriz de la época.",
+      "example_zh": "蒸汽機是那個時代主要的動力來源。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:motriz"
       ],
       "writer": "gemini"
     }

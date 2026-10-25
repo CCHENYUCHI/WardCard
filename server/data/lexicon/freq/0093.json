@@ -1,214 +1,7 @@
 {
   "theme": "freq-0093",
-  "theme_zh": "常用字（頻率第 28304–28668 名）",
+  "theme_zh": "常用字（頻率第 28326–28736 名）",
   "entries": [
-    {
-      "word": "loto",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "蓮花、荷花",
-      "en": "lotus",
-      "ipa": "/ˈloto/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "lotus",
-          "zh": "蓮花"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "loto",
-          "zh": "蓮花"
-        }
-      ],
-      "cognates_en": [
-        "lotus"
-      ],
-      "story_zh": "源自拉丁語 lotus，指水生蓮花植物。在東方哲學與古埃及文化中，象徵著出淤泥而不染的純潔與再生。",
-      "hook_zh": "英文 lotus 去掉 -us 就是西語的 loto（蓮花）。",
-      "usage_zh": "陽性名詞。常說 flor de loto（蓮花），在瑜伽中有 postura de loto（蓮花坐姿）。",
-      "example_es": "Vimos una hermosa flor de loto en el estanque.",
-      "example_zh": "我們在池塘裡看到一朵美麗的蓮花。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:loto"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "macabro",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "駭人的、恐怖的、與死亡相關的",
-      "en": "macabre",
-      "ipa": "/maˈkabɾo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "法語",
-          "word": "macabre",
-          "zh": "恐怖的、可怕的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "macabro",
-          "zh": "駭人的、恐怖的"
-        }
-      ],
-      "cognates_en": [
-        "macabre"
-      ],
-      "story_zh": "借自法語 macabre，來源可能與中世紀聖經人物馬加比（Maccabees）或阿拉伯語 maqābir（墓地）有關。傳統上常見於「死亡之舞」（danse macabre），指令人毛骨悚然、充滿死亡氛圍的事物。",
-      "hook_zh": "英文 macabre，西語字尾換成 -o 便是 macabro。",
-      "usage_zh": "陰性為 macabra。常用搭配：un humor macabro（黑色幽默）、un hallazgo macabro（駭人的發現）。",
-      "example_es": "La policía hizo un hallazgo macabro en el bosque.",
-      "example_zh": "警方在森林裡有了一項駭人的恐怖發現。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:macabro"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "matricular",
-      "article": "",
-      "pos": "verbo",
-      "zh": "註冊、登記入學",
-      "en": "to enroll, to register, to matriculate",
-      "ipa": "/matɾikuˈlaɾ/",
-      "breakdown": [
-        {
-          "part": "matrícula",
-          "zh": "註冊、名冊"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "matriculate"
-      ],
-      "story_zh": "",
-      "hook_zh": "matrícula 是註冊或車牌，動詞形式 matricular 就是去學校「辦理註冊」。",
-      "usage_zh": "常以反身形式出現：matricularse en la universidad（在大學註冊入學）。",
-      "example_es": "Decidió matricularse en el curso de español.",
-      "example_zh": "他決定註冊報名這門西班牙語課程。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:matricular"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "merma",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "減少、損耗、縮減",
-      "en": "decline, shrinkage",
-      "ipa": "/ˈmeɾma/",
-      "breakdown": [
-        {
-          "part": "mermar",
-          "zh": "減少、削弱"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "mermar 是縮水減少，去掉動詞尾形成的陰性名詞 la merma 就是「損耗、減退」。",
-      "usage_zh": "陰性名詞。商業與經濟常用：merma de ingresos（收入減少）。",
-      "example_es": "La empresa sufrió una merma en sus beneficios.",
-      "example_zh": "這家公司的利潤出現了明顯縮減。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:merma"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "mezquino",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "小氣的、吝嗇的、卑劣的",
-      "en": "miserly, mean, stingy",
-      "ipa": "/meθˈkino/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "阿拉伯語",
-          "word": "مِسْكِين",
-          "zh": "貧窮的"
-        },
-        {
-          "lang_zh": "古西班牙語",
-          "word": "mesquino",
-          "zh": "窮困的、乞丐"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "mezquino",
-          "zh": "吝嗇的、小氣的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "繼承自古西班牙語 mesquino，借自阿拉伯語 مِسْكِين（miskīn，貧窮的、可憐的）。在中世紀原本指貧困無助的乞丐，近代初期語意轉變為雖然有錢卻一毛不拔的「吝嗇鬼、小氣鬼」。",
-      "hook_zh": "阿拉伯話講 miskin（窮人），西語變成 mezquino，專門形容捨不得花錢的小氣鬼。",
-      "usage_zh": "陰性為 mezquina。可形容人小氣，也可形容行為卑劣（un acto mezquino）。",
-      "example_es": "Es un hombre rico pero muy mezquino.",
-      "example_zh": "他雖是個富翁，為人卻非常吝嗇。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:mezquino"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "milano",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "鳶（猛禽）",
-      "en": "kite (bird of prey)",
-      "ipa": "/miˈlano/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "milvus",
-          "zh": "鳶"
-        },
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "*milānus",
-          "zh": "鳶"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "milano",
-          "zh": "鳶"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "繼承自通俗拉丁語 *milānus，源自古典拉丁語 milvus（鳶、猛禽）。指一種身手矯捷、以腐肉或小動物為食的鷹科猛禽。",
-      "hook_zh": "看著天空盤旋的猛禽 milano，像在義大利米蘭上空飛翔的大鳥。",
-      "usage_zh": "陽性名詞。西班牙最常見的為 milano real（赤鳶）與 milano negro（黑鳶）。",
-      "example_es": "Un milano sobrevolaba el campo en busca de presas.",
-      "example_zh": "一隻鳶在田野上空盤旋搜尋獵物。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:milano",
-        "wiktionary:la:milvus"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "minucioso",
       "article": "",
@@ -3565,37 +3358,406 @@
       "writer": "gemini"
     },
     {
-      "word": "item",
+      "word": "jugoso",
       "article": "",
-      "pos": "adverbio",
-      "zh": "此外、同樣地",
-      "en": "likewise, furthermore",
-      "ipa": "/ˈitem/",
+      "pos": "adjetivo",
+      "zh": "多汁的",
+      "en": "juicy",
+      "ipa": "/xuˈɡoso/",
+      "breakdown": [
+        {
+          "part": "jugo",
+          "zh": "汁液"
+        },
+        {
+          "part": "-oso",
+          "zh": "充滿…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sucosus",
+          "zh": "充滿汁液的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "jugoso",
+          "zh": "多汁的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁文 sūcōsus（充滿汁液的），由 sūcus（汁液）加上形容詞字尾 -ōsus 構成。在西班牙語中相當於 jugo（汁液）加上 -oso（充滿…的），形容肉或水果飽含水分。",
+      "hook_zh": "jugo 是果汁，加上 -oso 變成形容詞，就是「多汁的」jugoso。",
+      "usage_zh": "陰性形式為 jugosa，常用於形容牛排或水果。",
+      "example_es": "Esta naranja está muy jugosa.",
+      "example_zh": "這顆柳橙非常多汁。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:jugoso",
+        "wiktionary:la:sucosus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "lamer",
+      "article": "",
+      "pos": "verbo",
+      "zh": "舔、舔食",
+      "en": "to lick",
+      "ipa": "/laˈmeɾ/",
       "breakdown": [],
       "origin_chain": [
         {
           "lang_zh": "拉丁語",
-          "word": "item",
-          "zh": "同樣地、此外"
+          "word": "lambere",
+          "zh": "舔"
         },
         {
           "lang_zh": "西班牙語",
-          "word": "item",
-          "zh": "此外、同樣地"
+          "word": "lamer",
+          "zh": "舔"
         }
       ],
-      "cognates_en": [
-        "item"
-      ],
-      "story_zh": "為拉丁語副詞 item 的文人借詞，原意為「同樣地、此外」。古時在法律文件或合約清單中，常放在條款開頭以引出下一項內容，英文名詞 item 亦由此演變而來。",
-      "hook_zh": "英文 item（項目）的源頭，在拉丁語與西語古文中作為副詞表示「此外、同樣」。",
-      "usage_zh": "副詞，多見於法律或正式文件（如 item más）。現代表示「項目」的名詞通常寫作加重音的 ítem。",
-      "example_es": "Item, se acordó celebrar una nueva sesión el mes próximo.",
-      "example_zh": "此外，雙方商定下個月召開一次新會議。",
+      "cognates_en": [],
+      "story_zh": "源自拉丁文 lambere（舔、舔食）。拉丁文的 -mb- 輔音群在演變為西班牙語時簡化為 -m-，形成 lamer。指用舌頭舔舐食物或清理表面。",
+      "hook_zh": "小狗興奮地伸出舌頭到處舔（lamer）。",
+      "usage_zh": "現在式第一人稱單數為規則變位 lamo，過去分詞為 lamido。",
+      "example_es": "El perro empezó a lamer mi mano.",
+      "example_zh": "狗狗開始舔我的手。",
       "image": "svg",
       "confidence": "sourced",
       "sources": [
-        "wiktionary:es:item"
+        "wiktionary:es:lamer"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "loza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "陶器、餐具、瓷器",
+      "en": "earthenware, dishes, china",
+      "ipa": "/ˈloθa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "lautia",
+          "zh": "宴會器具、奢華"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "loza",
+          "zh": "陶器、餐具"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁文 lautia（奢華盛宴的器具），指古羅馬宴席上陳列的精緻器皿；另一說可能來自拉丁文 lutea（陶土製的）。詞義逐漸演變為日常廚房洗滌使用的陶器與餐具。",
+      "hook_zh": "吃飽後把碗盤 loza 拿去水槽洗乾淨。",
+      "usage_zh": "陰性名詞。常用片語 lavar la loza（洗碗盤）。",
+      "example_es": "Después de cenar me toca lavar la loza.",
+      "example_zh": "吃完晚餐後輪到我洗碗盤。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:loza",
+        "wiktionary:la:lautia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "malicioso",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "惡意的、懷有惡意的",
+      "en": "malicious",
+      "ipa": "/maliˈθjoso/",
+      "breakdown": [
+        {
+          "part": "malicia",
+          "zh": "惡意"
+        },
+        {
+          "part": "-oso",
+          "zh": "充滿…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "malitiosus",
+          "zh": "懷有惡意的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "malicioso",
+          "zh": "惡意的"
+        }
+      ],
+      "cognates_en": [
+        "malicious"
+      ],
+      "story_zh": "源自拉丁文 malitiōsus（懷有惡意的），由 malitia（惡毒、惡意）加上形容詞字尾 -ōsus 構成。指蓄意傷害他人或帶有惡劣企圖的行為與態度。英文的 malicious 也是同源字。",
+      "hook_zh": "英文 malicious 對應西語 malicioso，mal- 是「壞」，-oso 是「充滿」。",
+      "usage_zh": "陰性形式為 maliciosa。在資訊安全中 software malicioso 即「惡意軟體」。",
+      "example_es": "No abras ese enlace malicioso.",
+      "example_zh": "不要點開那個惡意連結。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:malicioso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "medusa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "水母、海蜇",
+      "en": "jellyfish",
+      "ipa": "/meˈdusa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "Medusa",
+          "zh": "美杜莎（蛇髮女妖）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "medusa",
+          "zh": "水母"
+        }
+      ],
+      "cognates_en": [
+        "medusa"
+      ],
+      "story_zh": "源自希臘神話中的蛇髮女妖美杜莎（Medusa）。林奈在為生物命名時，因水母觸手飄蕩的模樣非常像美杜莎滿頭扭動的蛇髮，因而將水母命名為 medusa。",
+      "hook_zh": "希臘神話蛇髮美杜莎（Medusa），觸鬚飄在海裡就是水母 medusa！",
+      "usage_zh": "陰性名詞。注意水母蜇人可說 picadura de medusa。",
+      "example_es": "Ten cuidado con las medusas en la playa.",
+      "example_zh": "在海灘上要小心水母。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:medusa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "memorizar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "記住、背熟、默記",
+      "en": "to memorize",
+      "ipa": "/memoɾiˈθaɾ/",
+      "breakdown": [
+        {
+          "part": "memoria",
+          "zh": "記憶"
+        },
+        {
+          "part": "-izar",
+          "zh": "使動詞化"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "memorize"
+      ],
+      "story_zh": "",
+      "hook_zh": "memoria（記憶）加上動詞字尾 -izar，就是「背誦、記住」memorizar。",
+      "usage_zh": "第一人稱簡單過去式為 memoricé（字尾 z 遇到 e 變為 c）。",
+      "example_es": "Tengo que memorizar este poema para mañana.",
+      "example_zh": "我必須在明天前把這首詩背熟。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:memorizar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "naco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "俗氣的人、沒教養的人；土氣的",
+      "en": "uncultured, tacky, vulgar; tacky person",
+      "ipa": "/ˈnako/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "totonaco",
+          "zh": "托托納克人（墨西哥原住民）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "naco",
+          "zh": "俗氣的人、土氣的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自墨西哥原住民托托納克族名稱 totonaco 的簡化截短詞。在墨西哥俚語中逐漸演變為帶有文化或階級貶義的用語，用來形容言行舉止粗俗、品味土氣或沒教養的人。",
+      "hook_zh": "墨西哥口語中常見的貶稱 naco，形容人沒品味、舉止俗氣。",
+      "usage_zh": "墨西哥道地俚語，帶有強烈歧視色彩，日常交際中務必謹慎避免使用。",
+      "example_es": "Es una actitud muy naca.",
+      "example_zh": "那是很沒水準的態度。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:naco"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pastelería",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "糕點店、西點店、烘焙坊",
+      "en": "pastry shop, cake shop",
+      "ipa": "/pasteleˈɾia/",
+      "breakdown": [
+        {
+          "part": "pastel",
+          "zh": "糕點、蛋糕"
+        },
+        {
+          "part": "-ería",
+          "zh": "商店、場所字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pastel",
+          "zh": "糕點"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pastelería",
+          "zh": "糕點店"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 pastel（蛋糕、糕點）加上表示店家或場所的名詞字尾 -ería 構成。指專門製作與販售各類甜點、蛋糕及西點的店鋪。",
+      "hook_zh": "pastel（蛋糕）加上商店字尾（-ería），就是甜點店 pastelería！",
+      "usage_zh": "陰性名詞。重音落在 ía 上，字母 i 帶重音符號。",
+      "example_es": "Compré una tarta en la pastelería.",
+      "example_zh": "我在糕點店買了一個蛋糕。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pastelería"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pava",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "母火雞；熱水壺",
+      "en": "turkey hen; kettle",
+      "ipa": "/ˈpaba/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "pavo 是公火雞，陰性 pava 是母火雞；在阿根廷也是煮開水的「熱水壺」。",
+      "usage_zh": "在阿根廷與烏拉圭廣泛指燒水泡茶的水壺（pava eléctrica 即快煮壺）。",
+      "example_es": "Puso la pava en el fuego para preparar té.",
+      "example_zh": "她把水壺放在火上煮水泡茶。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:pava"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "periodicidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "週期性、規律性、頻率",
+      "en": "periodicity, regularity",
+      "ipa": "/peɾjodiθiˈdad/",
+      "breakdown": [
+        {
+          "part": "periódico",
+          "zh": "週期的、定期的"
+        },
+        {
+          "part": "-idad",
+          "zh": "性質狀態字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "periódico",
+          "zh": "週期的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "periodicidad",
+          "zh": "週期性"
+        }
+      ],
+      "cognates_en": [
+        "periodicity"
+      ],
+      "story_zh": "由形容詞 periódico（週期的、定期的）加上抽象名詞字尾 -idad 構成，指事物依照固定時間間隔重複發生的規律性或頻率。",
+      "hook_zh": "英文 periodicity 對應西語 periodicidad，指按固定週期發生的規律。",
+      "usage_zh": "陰性名詞。字尾為 -dad 的西語名詞皆為陰性。",
+      "example_es": "La revista se publica con periodicidad mensual.",
+      "example_zh": "這本雜誌以每月一次的週期出版。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:periodicidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "perpendicular",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "垂直的、正交的",
+      "en": "perpendicular",
+      "ipa": "/peɾpendikuˈlaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "perpendiculum",
+          "zh": "鉛錘線"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "perpendicularis",
+          "zh": "垂直的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "perpendicular",
+          "zh": "垂直的"
+        }
+      ],
+      "cognates_en": [
+        "perpendicular"
+      ],
+      "story_zh": "借自晚期拉丁文 perpendiculāris，源自 perpendiculum（鉛錘線、鉛垂儀）。建築工匠懸掛鉛錘垂下的直線必定與地面水平垂直，由此衍生出幾何學上的「垂直」。",
+      "hook_zh": "英文與西語完全同形 perpendicular，鉛錘線垂直落下成九十度直角。",
+      "usage_zh": "陰陽同形形容詞，複數加 -es：líneas perpendiculares（垂直線）。",
+      "example_es": "Dibuja una línea perpendicular a la base.",
+      "example_zh": "畫一條垂直於底邊的直線。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:perpendicular",
+        "wiktionary:la:perpendicularis"
       ],
       "writer": "gemini"
     }

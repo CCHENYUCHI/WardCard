@@ -524,13 +524,6 @@ module.exports = {
     s('path', { d: ring(90, 76, 34), ...SW(8) }, 'dark', { stroke: true }),
     s('path', { d: 'M114 100l26 26', ...SW(12) }, 'brown', { stroke: true, accent: true })
   ],
-  item: [
-    s('circle', { cx: 36, cy: 86, r: 20 }, 'red', { accent: true }),
-    s('circle', { cx: 124, cy: 86, r: 20 }, 'red'),
-    s('path', { d: 'M36 66q2-10 8-14M124 66q2-10 8-14', ...SW(4) }, 'brown', { stroke: true }),
-    s('path', { d: leaflet(40, 62, -30, 16, 5) + leaflet(128, 62, -30, 16, 5) }, 'green'),
-    s('path', { d: 'M80 74v24M68 86h24', ...SW(7) }, 'gray', { stroke: true })
-  ],
   jugoso: [
     s('circle', { cx: 74, cy: 86, r: 48 }, 'orange'),
     s('circle', { cx: 74, cy: 86, r: 40 }, 'yellow', { accent: true }),
@@ -1130,5 +1123,5 @@ module.exports = {
     s('path', { d: 'M74 116l20 6', ...SW(6) }, 'skin', { stroke: true }),
     s('circle', { cx: 112, cy: 120, r: 16 }, 'white'),
     s('path', { d: ring(112, 120, 16) + 'M106 114l6-4 6 4-2 7h-8z', ...SW(3) }, 'dark', { stroke: true })
-  ],
+  ]
 };
