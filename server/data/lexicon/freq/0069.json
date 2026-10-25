@@ -1,6 +1,6 @@
 {
   "theme": "freq-0069",
-  "theme_zh": "常用字（頻率第 19852–20170 名）",
+  "theme_zh": "常用字（頻率第 19852–20175 名）",
   "entries": [
     {
       "word": "buceo",
@@ -2628,50 +2628,6 @@
       "writer": "gemini"
     },
     {
-      "word": "negrito",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "黑人（親暱稱呼）；涅格利陀人",
-      "en": "person of African descent (often affectionate), Negrito",
-      "ipa": "/neˈɡɾito/",
-      "breakdown": [
-        {
-          "part": "negro",
-          "zh": "黑色的"
-        },
-        {
-          "part": "-ito",
-          "zh": "指小詞字尾（小的、親切的）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "negro",
-          "zh": "黑色、黑人"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "negrito",
-          "zh": "黑人（暱稱）、涅格利陀人"
-        }
-      ],
-      "cognates_en": [
-        "Negrito"
-      ],
-      "story_zh": "由 negro（黑色、黑人）加上指小詞字尾 -ito 構成。在西語文化中，加上 -ito 通常帶有親切溫暖的情感色彩；此外也用來稱呼東南亞體型矮小的原住民族群（涅格利陀人）。",
-      "hook_zh": "negro 加親切小巧字尾 -ito，在拉美日常中常作為親暱稱謂：negrito。",
-      "usage_zh": "陰性形式為 negrita。在西語美洲家庭與伴侶之間常用作親密暱稱（類似「親愛的」）。",
-      "example_es": "En esa región habita la comunidad negrita desde hace siglos.",
-      "example_zh": "這個地區數世紀以來一直居住著非裔社群。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:negrito"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "oscilar",
       "article": "",
       "pos": "verbo",
@@ -4001,47 +3957,84 @@
       "writer": "gemini"
     },
     {
-      "word": "amador",
-      "article": "el",
+      "word": "ametralladora",
+      "article": "la",
       "pos": "sustantivo",
-      "zh": "熱愛者、戀人；熱愛的",
-      "en": "lover, one who loves; loving",
-      "ipa": "/amaˈdoɾ/",
+      "zh": "機關槍、機槍",
+      "en": "machine gun",
+      "ipa": "/ametɾaʝaˈdoɾa/",
       "breakdown": [
         {
-          "part": "amar",
-          "zh": "愛"
+          "part": "ametrallar",
+          "zh": "用機槍掃射、用霰彈射擊"
         },
         {
-          "part": "-dor",
-          "zh": "從事…的人（字尾）"
+          "part": "-dora",
+          "zh": "器具（陰性名詞字尾）"
         }
       ],
       "origin_chain": [
         {
-          "lang_zh": "拉丁語",
-          "word": "amatorem",
-          "zh": "愛好者、情人"
+          "lang_zh": "西班牙語",
+          "word": "ametrallar",
+          "zh": "用霰彈或機槍掃射"
         },
         {
           "lang_zh": "西班牙語",
-          "word": "amador",
-          "zh": "熱愛者、愛人"
+          "word": "ametralladora",
+          "zh": "機關槍"
         }
       ],
-      "cognates_en": [
-        "amateur",
-        "amorous"
-      ],
-      "story_zh": "繼承自拉丁文 amātōrem（愛好者、熱愛者），由動詞 amāre（愛）衍生而來。它與經法語借入的 amateur（業餘愛好者）是同源詞（doublet）。文學中指懷抱深情去熱愛某人或某事物的人。",
-      "hook_zh": "amar 是愛，加上 -dor 人稱字尾，就是全身心投入熱愛的 el amador。",
-      "usage_zh": "陰性為 amadora。常作名詞（un amador de la paz 和平愛好者），亦可作形容詞。",
-      "example_es": "Fue siempre un fiel amador de la naturaleza y los animales.",
-      "example_zh": "他始終是一位忠實熱愛大自然與動物的人。",
+      "cognates_en": [],
+      "story_zh": "由動詞 ametrallar（用霰彈射擊、機槍掃射，源自 metralla「霰彈、碎彈片」）加上表示器具的字尾 -dora 組成。指能夠連續快速發射子彈的自動化重火器。",
+      "hook_zh": "連續掃射 metralla（碎彈子彈）的自動武器，就是 la ametralladora。",
+      "usage_zh": "陰性名詞。常用搭配 nido de ametralladoras（機槍巢/機槍陣地）。",
+      "example_es": "Los soldados instalaron una ametralladora pesada en la colina.",
+      "example_zh": "士兵們在山丘上架設了一挺重機槍。",
       "image": "svg",
       "confidence": "sourced",
       "sources": [
-        "wiktionary:es:amador"
+        "wiktionary:es:ametralladora"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "anticipo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "預付款、定金；提前",
+      "en": "advance, advance payment",
+      "ipa": "/antiˈθipo/",
+      "breakdown": [
+        {
+          "part": "anticipar",
+          "zh": "提早、預先"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "anticipar",
+          "zh": "提前、預支"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "anticipo",
+          "zh": "預付款、預支"
+        }
+      ],
+      "cognates_en": [
+        "anticipation"
+      ],
+      "story_zh": "由動詞 anticipar（預先、提前，源自拉丁文 anticipāre）去除動詞字尾去動詞化（deverbal）而成的名詞。商業與職場上特指在工作完成或商品交付前「預先支付的款項（預付款）」。",
+      "hook_zh": "在發薪日前 anticipate（提早）拿到的薪水，就是 el anticipo（預支款）。",
+      "usage_zh": "陽性名詞。常用於 pedir un anticipo（申請預支薪資）、anticipo de sueldo（薪資預支）。",
+      "example_es": "El empleado pidió un anticipo de su sueldo para la mudanza.",
+      "example_zh": "員工為了搬家申請了一筆預支薪資。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:anticipo"
       ],
       "writer": "gemini"
     }

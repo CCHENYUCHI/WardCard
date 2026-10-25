@@ -1,89 +1,7 @@
 {
   "theme": "freq-0070",
-  "theme_zh": "常用字（頻率第 20172–20466 名）",
+  "theme_zh": "常用字（頻率第 20184–20494 名）",
   "entries": [
-    {
-      "word": "ametralladora",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "機關槍、機槍",
-      "en": "machine gun",
-      "ipa": "/ametɾaʝaˈdoɾa/",
-      "breakdown": [
-        {
-          "part": "ametrallar",
-          "zh": "用機槍掃射、用霰彈射擊"
-        },
-        {
-          "part": "-dora",
-          "zh": "器具（陰性名詞字尾）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "ametrallar",
-          "zh": "用霰彈或機槍掃射"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "ametralladora",
-          "zh": "機關槍"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由動詞 ametrallar（用霰彈射擊、機槍掃射，源自 metralla「霰彈、碎彈片」）加上表示器具的字尾 -dora 組成。指能夠連續快速發射子彈的自動化重火器。",
-      "hook_zh": "連續掃射 metralla（碎彈子彈）的自動武器，就是 la ametralladora。",
-      "usage_zh": "陰性名詞。常用搭配 nido de ametralladoras（機槍巢/機槍陣地）。",
-      "example_es": "Los soldados instalaron una ametralladora pesada en la colina.",
-      "example_zh": "士兵們在山丘上架設了一挺重機槍。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:ametralladora"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "anticipo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "預付款、定金；提前",
-      "en": "advance, advance payment",
-      "ipa": "/antiˈθipo/",
-      "breakdown": [
-        {
-          "part": "anticipar",
-          "zh": "提早、預先"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "anticipar",
-          "zh": "提前、預支"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "anticipo",
-          "zh": "預付款、預支"
-        }
-      ],
-      "cognates_en": [
-        "anticipation"
-      ],
-      "story_zh": "由動詞 anticipar（預先、提前，源自拉丁文 anticipāre）去除動詞字尾去動詞化（deverbal）而成的名詞。商業與職場上特指在工作完成或商品交付前「預先支付的款項（預付款）」。",
-      "hook_zh": "在發薪日前 anticipate（提早）拿到的薪水，就是 el anticipo（預支款）。",
-      "usage_zh": "陽性名詞。常用於 pedir un anticipo（申請預支薪資）、anticipo de sueldo（薪資預支）。",
-      "example_es": "El empleado pidió un anticipo de su sueldo para la mudanza.",
-      "example_zh": "員工為了搬家申請了一筆預支薪資。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:anticipo"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "asfixia",
       "article": "la",
@@ -417,42 +335,6 @@
       "sources": [
         "wiktionary:es:bañar",
         "wiktionary:la:balneum"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "bel",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "貝爾（聲音強度單位）",
-      "en": "bel (unit of sound power ratio)",
-      "ipa": "/ˈbel/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "bel",
-          "zh": "貝爾（以電話發明人貝爾命名）"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "bel",
-          "zh": "貝爾（音量單位）"
-        }
-      ],
-      "cognates_en": [
-        "bel",
-        "decibel"
-      ],
-      "story_zh": "借自英語 bel。該物理測量單位是為了紀念電話發明者亞歷山大·格拉漢姆·貝爾（Alexander Graham Bell）而命名。用於衡量聲強或電訊號功率比率，最常用的十進制單位即為「分貝（decibelio / decibel）」。",
-      "hook_zh": "電話發明人貝爾（Bell）命名的聲音強度單位，1 bel 等於 10 分貝。",
-      "usage_zh": "陽性名詞，複數為 beles。日常生活中更普遍使用其十分之一的分貝（decibel 或 decibelio）。",
-      "example_es": "El bel es una unidad que mide la intensidad del sonido.",
-      "example_zh": "貝爾是用來衡量聲音強度的單位。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:bel"
       ],
       "writer": "gemini"
     },
@@ -3725,6 +3607,320 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:zombi"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "agilidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "敏捷、靈活",
+      "en": "agility",
+      "ipa": "/axiliˈdad/",
+      "breakdown": [
+        {
+          "part": "ágil",
+          "zh": "敏捷的"
+        },
+        {
+          "part": "-idad",
+          "zh": "名詞字尾（表示性質）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "agilitatem",
+          "zh": "敏捷"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "agilidad",
+          "zh": "敏捷、靈活"
+        }
+      ],
+      "cognates_en": [
+        "agility"
+      ],
+      "story_zh": "源自拉丁文 agilitātem（agilitās 的賓格），指行動迅速敏捷的特質，由 agilis（敏捷的）衍生而來，屬於西語中的文雅借詞。",
+      "hook_zh": "英文 agility（敏捷）與西語 agilidad 同源，字尾 -dad 對應英文 -ty。",
+      "usage_zh": "陰性名詞。常用搭配：agilidad mental（思維敏捷）、agilidad física（身手矯健）。",
+      "example_es": "El gato saltó a la mesa con gran agilidad.",
+      "example_zh": "那隻貓非常敏捷地跳上了桌子。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:agilidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "almendra",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "杏仁",
+      "en": "almond",
+      "ipa": "/alˈmendɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "αμυγδαλη",
+          "zh": "杏仁"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "amygdala",
+          "zh": "杏仁"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "amendla",
+          "zh": "杏仁"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "almendra",
+          "zh": "杏仁"
+        }
+      ],
+      "cognates_en": [
+        "almond"
+      ],
+      "story_zh": "源自古希臘語 ἀμυγδάλη，經由拉丁語 amygdala 與通俗拉丁語 amendla 演變而來。西語在開頭受阿拉伯語冠詞影響或語音變化加上了 l，成為 almendra。",
+      "hook_zh": "英文 almond 和西語 almendra 同源，都有「alm-」開頭，都是健康美味的杏仁堅果。",
+      "usage_zh": "陰性名詞。複數 almendras。常用詞組：leche de almendras（杏仁奶）。",
+      "example_es": "Me gusta comer un puñado de almendras cada mañana.",
+      "example_zh": "我喜歡每天早上吃一小把杏仁。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:almendra",
+        "wiktionary:la:amygdala"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "alojar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "住宿、留宿、容納",
+      "en": "to house, accommodate, lodge",
+      "ipa": "/aloˈxaɾ/",
+      "breakdown": [
+        {
+          "part": "aloj-",
+          "zh": "住宿"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "奧克語",
+          "word": "alotjar",
+          "zh": "寄宿、安置"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "alojar",
+          "zh": "住宿、留宿"
+        }
+      ],
+      "cognates_en": [
+        "lodge"
+      ],
+      "story_zh": "借自奧克語 alotjar，源自日耳曼語族詞彙，與英文 lodge（小屋、寄宿）同源。西語中指為人提供住處，反身形式 alojarse 則表示「投宿、入住」。",
+      "hook_zh": "alojar 跟英文 lodge（住所、投宿）同源，想像去遠方旅行投宿在山林的小木屋（lodge）。",
+      "usage_zh": "及物動詞表「接待、留宿」；反身動詞 alojarse en 指「投宿於…」。",
+      "example_es": "Nos alojamos en un hotel cerca del centro.",
+      "example_zh": "我們住在市中心附近的一家飯店。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:alojar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "anuario",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "年鑑、年刊",
+      "en": "yearbook, annual",
+      "ipa": "/aˈnwaɾjo/",
+      "breakdown": [
+        {
+          "part": "anu-",
+          "zh": "年（源自 annus）"
+        },
+        {
+          "part": "-ario",
+          "zh": "表示集合或物品的字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "annus",
+          "zh": "年"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "annuarius",
+          "zh": "年度的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "anuario",
+          "zh": "年鑑、年刊"
+        }
+      ],
+      "cognates_en": [
+        "annual"
+      ],
+      "story_zh": "源自晚期拉丁語 annuārius（年度的），由拉丁文 annus（年）衍生而來，指按年份彙編記錄一年大事或資訊的出版品。",
+      "hook_zh": "跟英文 annual（年度的）同源，加上 -ario（地方/冊子）就成了記錄一整年的「年鑑」。",
+      "usage_zh": "陽性名詞。常用於學校畢業紀念冊（anuario escolar）或統計年鑑（anuario estadístico）。",
+      "example_es": "Consulté los datos económicos en el anuario de este año.",
+      "example_zh": "我在今年的年鑑中查閱了經濟數據。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:anuario",
+        "wiktionary:la:annus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "apodar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "取綽號、評定",
+      "en": "to nickname, to dub",
+      "ipa": "/apoˈdaɾ/",
+      "breakdown": [
+        {
+          "part": "apod-",
+          "zh": "綽號、評價"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "putare",
+          "zh": "思考、評價"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "apputare",
+          "zh": "評判、評估"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "apodar",
+          "zh": "取綽號"
+        }
+      ],
+      "cognates_en": [
+        "compute",
+        "depute"
+      ],
+      "story_zh": "繼承自晚期拉丁語 apputāre（評判、估量），由 ad-（向）與 putāre（思考、計算）組成。早期指評估人的特質，後來演變為根據特質「給人取外號、綽號」。",
+      "hook_zh": "名詞 apodo 是綽號；動詞 apodar 就是「取綽號」，評價（putāre）之後送你一個稱號。",
+      "usage_zh": "常以被動或過去分詞形式出現：ser apodado...（被冠以…的外號）。名詞為 el apodo。",
+      "example_es": "A mi amigo lo apodan el Flaco por ser tan alto y delgado.",
+      "example_zh": "我的朋友因為又高又瘦，大家給他取了「瘦子」的綽號。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:apodar",
+        "wiktionary:la:apputo",
+        "wiktionary:la:puto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asturiano",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "阿斯圖里亞斯人；阿斯圖里亞斯的",
+      "en": "Asturian",
+      "ipa": "/astuˈɾjano/",
+      "breakdown": [
+        {
+          "part": "Asturias",
+          "zh": "阿斯圖里亞斯（西班牙自治區）"
+        },
+        {
+          "part": "-ano",
+          "zh": "表示地方居民或形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "asturiano",
+          "zh": "阿斯圖里亞斯人、阿斯圖里亞斯語"
+        }
+      ],
+      "cognates_en": [
+        "Asturian"
+      ],
+      "story_zh": "由地名 Asturias（阿斯圖里亞斯，西班牙北部自治區）加上表示居民與所屬的字尾 -ano 構成，用來指當地的人、方言或事物。",
+      "hook_zh": "地名 Asturias 加上 -ano，就是「阿斯圖里亞斯人」或「阿斯圖里亞斯的」。",
+      "usage_zh": "可作名詞（陰性 asturiana，陽性指當地語言）或形容詞。陰性為 asturiana。",
+      "example_es": "Mi abuelo es un asturiano orgulloso de su tierra.",
+      "example_zh": "我的祖父是一位以家鄉為榮的阿斯圖里亞斯人。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:asturiano"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "atmosférico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "大氣的、大氣層的",
+      "en": "atmospheric",
+      "ipa": "/admosˈfeɾiko/",
+      "breakdown": [
+        {
+          "part": "atmósfera",
+          "zh": "大氣"
+        },
+        {
+          "part": "-ico",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "atmosférico",
+          "zh": "大氣的"
+        }
+      ],
+      "cognates_en": [
+        "atmospheric"
+      ],
+      "story_zh": "由 atmósfera（大氣層）加上表示性質的形容詞字尾 -ico 構成，用來描述與大氣層、氣象或空氣狀況相關的事物。",
+      "hook_zh": "跟英文 atmospheric（大氣的）拼法與字根近乎一致，-ico 對應英文 -ic。",
+      "usage_zh": "常見搭配：presión atmosférica（大氣壓力）、condiciones atmosféricas（氣候條件）。",
+      "example_es": "La presión atmosférica disminuye con la altitud.",
+      "example_zh": "大氣壓力會隨著高度增加而降低。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:atmosférico"
       ],
       "writer": "gemini"
     }

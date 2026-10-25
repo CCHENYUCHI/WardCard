@@ -735,13 +735,6 @@ module.exports = {
     s('rect', { x: 18, y: 40, width: 40, height: 60, rx: 18, ...SW(4) }, 'brown', { stroke: true }),
     s('path', { d: 'M38 40l-6 22 10 8-8 30M42 70l14 4', ...SW(2) }, 'dark', { stroke: true })
   ],
-  negrito: [
-    ground(),
-    s('path', { d: busts([56, 104], 136, 36, 50) }, 'purple'),
-    s('path', { d: dots([[56, 70], [104, 70]], 16) }, 'brown'),
-    s('path', { d: 'M74 106l12 0', ...SW(8) }, 'brown', { stroke: true }),
-    s('path', { d: heart(80, 38, 14) }, 'red', { accent: true })
-  ],
   oscilar: [
     s('rect', { x: 50, y: 18, width: 60, height: 8, rx: 3 }, 'brown'),
     s('path', { d: 'M80 26L46 110M80 26L114 110', ...SW(2) }, 'gray', { stroke: true }),
@@ -1002,13 +995,6 @@ module.exports = {
     s('path', { d: 'M92 72h22v6q0 10-11 10q-11 0-11-10zM114 74q8 0 6 8M100 76l-8 4M86 88l-6-8', ...SW(3) }, 'blue', { stroke: true }),
     s('path', { d: sparkle(124, 48, 8) }, 'yellow')
   ],
-  amador: [
-    ground(),
-    ...person(80, 136, 'blue'),
-    s('path', { d: heart(80, 110, 18) }, 'red', { accent: true }),
-    s('path', { d: 'M62 108q18 14 36 0', ...SW(7) }, 'skin', { stroke: true }),
-    s('path', { d: heart(124, 46, 7) + heart(36, 54, 6) }, 'pink')
-  ],
   ametralladora: [
     s('path', { d: 'M64 96l-28 40M70 96v40M76 96l28 40', ...SW(5) }, 'dark', { stroke: true }),
     s('rect', { x: 40, y: 72, width: 56, height: 26, rx: 4 }, 'dark', { accent: true }),
@@ -1090,12 +1076,6 @@ module.exports = {
     s('path', { d: 'M22 76h116v20q0 26-30 26H52q-30 0-30-26z' }, 'blue', { accent: true }),
     s('path', { d: 'M40 120l-6 14M120 120l6 14', ...SW(6) }, 'gray', { stroke: true }),
     s('path', { d: 'M126 76V36q0-10 10-10', ...SW(5) }, 'gray', { stroke: true })
-  ],
-  bel: [
-    s('path', { d: 'M20 60h20l24-22v84L40 100H20z' }, 'dark', { accent: true }),
-    s('path', { d: rects([[78, 98, 12, 24], [96, 82, 12, 40], [114, 64, 12, 58], [132, 44, 12, 78]]) }, 'green'),
-    s('path', { d: rects([[132, 44, 12, 24]]) }, 'red'),
-    s('path', { d: 'M74 132h72', ...SW(3) }, 'gray', { stroke: true })
   ],
   bocina: [
     s('path', { d: 'M30 72h16l50-30v76L46 88H30z' }, 'orange', { accent: true }),
@@ -1244,5 +1224,5 @@ module.exports = {
     s('ellipse', { cx: 84, cy: 50, rx: 10, ry: 12 }, 'skin'),
     arrow('M44 92V58m-8 8l8-8 8 8', 'orange', 4),
     s('path', { d: dots([[62, 104], [98, 108], [80, 120]], 4) }, 'dark')
-  ],
+  ]
 };

@@ -1,321 +1,7 @@
 {
   "theme": "freq-0071",
-  "theme_zh": "常用字（頻率第 20475–20765 名）",
+  "theme_zh": "常用字（頻率第 20505–20838 名）",
   "entries": [
-    {
-      "word": "agilidad",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "敏捷、靈活",
-      "en": "agility",
-      "ipa": "/axiliˈdad/",
-      "breakdown": [
-        {
-          "part": "ágil",
-          "zh": "敏捷的"
-        },
-        {
-          "part": "-idad",
-          "zh": "名詞字尾（表示性質）"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "agilitatem",
-          "zh": "敏捷"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "agilidad",
-          "zh": "敏捷、靈活"
-        }
-      ],
-      "cognates_en": [
-        "agility"
-      ],
-      "story_zh": "源自拉丁文 agilitātem（agilitās 的賓格），指行動迅速敏捷的特質，由 agilis（敏捷的）衍生而來，屬於西語中的文雅借詞。",
-      "hook_zh": "英文 agility（敏捷）與西語 agilidad 同源，字尾 -dad 對應英文 -ty。",
-      "usage_zh": "陰性名詞。常用搭配：agilidad mental（思維敏捷）、agilidad física（身手矯健）。",
-      "example_es": "El gato saltó a la mesa con gran agilidad.",
-      "example_zh": "那隻貓非常敏捷地跳上了桌子。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:agilidad"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "almendra",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "杏仁",
-      "en": "almond",
-      "ipa": "/alˈmendɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "αμυγδαλη",
-          "zh": "杏仁"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "amygdala",
-          "zh": "杏仁"
-        },
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "amendla",
-          "zh": "杏仁"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "almendra",
-          "zh": "杏仁"
-        }
-      ],
-      "cognates_en": [
-        "almond"
-      ],
-      "story_zh": "源自古希臘語 ἀμυγδάλη，經由拉丁語 amygdala 與通俗拉丁語 amendla 演變而來。西語在開頭受阿拉伯語冠詞影響或語音變化加上了 l，成為 almendra。",
-      "hook_zh": "英文 almond 和西語 almendra 同源，都有「alm-」開頭，都是健康美味的杏仁堅果。",
-      "usage_zh": "陰性名詞。複數 almendras。常用詞組：leche de almendras（杏仁奶）。",
-      "example_es": "Me gusta comer un puñado de almendras cada mañana.",
-      "example_zh": "我喜歡每天早上吃一小把杏仁。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:almendra",
-        "wiktionary:la:amygdala"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "alojar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "住宿、留宿、容納",
-      "en": "to house, accommodate, lodge",
-      "ipa": "/aloˈxaɾ/",
-      "breakdown": [
-        {
-          "part": "aloj-",
-          "zh": "住宿"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "奧克語",
-          "word": "alotjar",
-          "zh": "寄宿、安置"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "alojar",
-          "zh": "住宿、留宿"
-        }
-      ],
-      "cognates_en": [
-        "lodge"
-      ],
-      "story_zh": "借自奧克語 alotjar，源自日耳曼語族詞彙，與英文 lodge（小屋、寄宿）同源。西語中指為人提供住處，反身形式 alojarse 則表示「投宿、入住」。",
-      "hook_zh": "alojar 跟英文 lodge（住所、投宿）同源，想像去遠方旅行投宿在山林的小木屋（lodge）。",
-      "usage_zh": "及物動詞表「接待、留宿」；反身動詞 alojarse en 指「投宿於…」。",
-      "example_es": "Nos alojamos en un hotel cerca del centro.",
-      "example_zh": "我們住在市中心附近的一家飯店。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:alojar"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "anuario",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "年鑑、年刊",
-      "en": "yearbook, annual",
-      "ipa": "/aˈnwaɾjo/",
-      "breakdown": [
-        {
-          "part": "anu-",
-          "zh": "年（源自 annus）"
-        },
-        {
-          "part": "-ario",
-          "zh": "表示集合或物品的字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "annus",
-          "zh": "年"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "annuarius",
-          "zh": "年度的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "anuario",
-          "zh": "年鑑、年刊"
-        }
-      ],
-      "cognates_en": [
-        "annual"
-      ],
-      "story_zh": "源自晚期拉丁語 annuārius（年度的），由拉丁文 annus（年）衍生而來，指按年份彙編記錄一年大事或資訊的出版品。",
-      "hook_zh": "跟英文 annual（年度的）同源，加上 -ario（地方/冊子）就成了記錄一整年的「年鑑」。",
-      "usage_zh": "陽性名詞。常用於學校畢業紀念冊（anuario escolar）或統計年鑑（anuario estadístico）。",
-      "example_es": "Consulté los datos económicos en el anuario de este año.",
-      "example_zh": "我在今年的年鑑中查閱了經濟數據。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:anuario",
-        "wiktionary:la:annus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "apodar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "取綽號、評定",
-      "en": "to nickname, to dub",
-      "ipa": "/apoˈdaɾ/",
-      "breakdown": [
-        {
-          "part": "apod-",
-          "zh": "綽號、評價"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "putare",
-          "zh": "思考、評價"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "apputare",
-          "zh": "評判、評估"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "apodar",
-          "zh": "取綽號"
-        }
-      ],
-      "cognates_en": [
-        "compute",
-        "depute"
-      ],
-      "story_zh": "繼承自晚期拉丁語 apputāre（評判、估量），由 ad-（向）與 putāre（思考、計算）組成。早期指評估人的特質，後來演變為根據特質「給人取外號、綽號」。",
-      "hook_zh": "名詞 apodo 是綽號；動詞 apodar 就是「取綽號」，評價（putāre）之後送你一個稱號。",
-      "usage_zh": "常以被動或過去分詞形式出現：ser apodado...（被冠以…的外號）。名詞為 el apodo。",
-      "example_es": "A mi amigo lo apodan el Flaco por ser tan alto y delgado.",
-      "example_zh": "我的朋友因為又高又瘦，大家給他取了「瘦子」的綽號。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:apodar",
-        "wiktionary:la:apputo",
-        "wiktionary:la:puto"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "asturiano",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "阿斯圖里亞斯人；阿斯圖里亞斯的",
-      "en": "Asturian",
-      "ipa": "/astuˈɾjano/",
-      "breakdown": [
-        {
-          "part": "Asturias",
-          "zh": "阿斯圖里亞斯（西班牙自治區）"
-        },
-        {
-          "part": "-ano",
-          "zh": "表示地方居民或形容詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "asturiano",
-          "zh": "阿斯圖里亞斯人、阿斯圖里亞斯語"
-        }
-      ],
-      "cognates_en": [
-        "Asturian"
-      ],
-      "story_zh": "由地名 Asturias（阿斯圖里亞斯，西班牙北部自治區）加上表示居民與所屬的字尾 -ano 構成，用來指當地的人、方言或事物。",
-      "hook_zh": "地名 Asturias 加上 -ano，就是「阿斯圖里亞斯人」或「阿斯圖里亞斯的」。",
-      "usage_zh": "可作名詞（陰性 asturiana，陽性指當地語言）或形容詞。陰性為 asturiana。",
-      "example_es": "Mi abuelo es un asturiano orgulloso de su tierra.",
-      "example_zh": "我的祖父是一位以家鄉為榮的阿斯圖里亞斯人。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:asturiano"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "atmosférico",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "大氣的、大氣層的",
-      "en": "atmospheric",
-      "ipa": "/admosˈfeɾiko/",
-      "breakdown": [
-        {
-          "part": "atmósfera",
-          "zh": "大氣"
-        },
-        {
-          "part": "-ico",
-          "zh": "形容詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "atmosférico",
-          "zh": "大氣的"
-        }
-      ],
-      "cognates_en": [
-        "atmospheric"
-      ],
-      "story_zh": "由 atmósfera（大氣層）加上表示性質的形容詞字尾 -ico 構成，用來描述與大氣層、氣象或空氣狀況相關的事物。",
-      "hook_zh": "跟英文 atmospheric（大氣的）拼法與字根近乎一致，-ico 對應英文 -ic。",
-      "usage_zh": "常見搭配：presión atmosférica（大氣壓力）、condiciones atmosféricas（氣候條件）。",
-      "example_es": "La presión atmosférica disminuye con la altitud.",
-      "example_zh": "大氣壓力會隨著高度增加而降低。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:atmosférico"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "braga",
       "article": "la",
@@ -3341,6 +3027,972 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:transitar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "trascendental",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "重大的；先驗的、超驗的",
+      "en": "transcendental, momentous",
+      "ipa": "/tɾasθendenˈtal/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "transcendental"
+      ],
+      "story_zh": "",
+      "hook_zh": "與英文 transcendental 同源，指具有深遠重大影響的關鍵事物。",
+      "usage_zh": "常用於修飾重大決定或歷史事件：una decisión trascendental。",
+      "example_es": "Fue una decisión trascendental para el país.",
+      "example_zh": "這對國家來說是一個重大的決定。",
+      "image": "emoji:🌟",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:trascendental"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "uniformado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "穿制服的人、軍警人員",
+      "en": "uniformed person, police officer",
+      "ipa": "/unifoɾˈmado/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "uniforme（制服）加上 -ado，指身穿制服執勤的警察或軍人。",
+      "usage_zh": "複數 los uniformados 常在新聞中指軍警部隊。",
+      "example_es": "Varios uniformados vigilaban la entrada del edificio.",
+      "example_zh": "數名軍警人員在建築物入口處戒備。",
+      "image": "emoji:👮",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:uniformado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "validar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "驗證、使生效",
+      "en": "to validate",
+      "ipa": "/baliˈdaɾ/",
+      "breakdown": [
+        {
+          "part": "valid-",
+          "zh": "有效的"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "validus",
+          "zh": "強壯的、有效的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "validāre",
+          "zh": "使有效"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "validar",
+          "zh": "驗證、使生效"
+        }
+      ],
+      "cognates_en": [
+        "validate",
+        "valid"
+      ],
+      "story_zh": "源自拉丁語動詞 validāre，而該詞源於形容詞 validus（強壯的、有效的）。原指使某事物具有效力或法律力量，現代延伸為驗證資料、票券或理論的有效性。",
+      "hook_zh": "與英文 validate 同源，捷運刷卡「使票卡有效」（validar）才能過閘門。",
+      "usage_zh": "常用於驗證車票、帳號或合約：validar el billete（驗票）。",
+      "example_es": "Tienes que validar el billete antes de subir al tren.",
+      "example_zh": "上火車之前你必須先驗票。",
+      "image": "emoji:✅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:validar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "óptico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "光學的；視覺的",
+      "en": "optical; optic",
+      "ipa": "/ˈobtiko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "opticus",
+          "zh": "視覺的、光學的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "óptico",
+          "zh": "光學的；視覺的"
+        }
+      ],
+      "cognates_en": [
+        "optical",
+        "optic"
+      ],
+      "story_zh": "源自拉丁語 opticus，指與視覺或光線相關的事物。西語中既可作形容詞表示「光學的」，也可用作名詞指「驗光師」或「眼鏡行」。",
+      "hook_zh": "與英文 optical 同源，指與光線傳輸或眼睛視覺相關的科技。",
+      "usage_zh": "常用詞組 fibra óptica（光纖）、ilusión óptica（錯覺）。",
+      "example_es": "La fibra óptica permite una conexión a internet muy rápida.",
+      "example_zh": "光纖能提供非常快速的網路連線。",
+      "image": "emoji:👓",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:óptico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "abrumador",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "壓倒性的、令人難以承受的",
+      "en": "overwhelming, exhausting",
+      "ipa": "/abɾumaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "abrumar",
+          "zh": "壓倒、使難以承受"
+        },
+        {
+          "part": "-dor",
+          "zh": "具此特性的形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "abrumar",
+          "zh": "壓倒、使難以承受"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "abrumador",
+          "zh": "壓倒性的、令人難以承受的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 abrumar（壓倒、使喘不過氣）加上表示特性或施事者的字尾 -dor 構成，形容力量、數量或壓力巨大到讓人無法招架。",
+      "hook_zh": "被沉重的壓力壓得「啊（a-）快被埋沒」，就是壓倒性的 abrumador。",
+      "usage_zh": "陰性為 abrumadora。常搭配 mayoría abrumadora（壓倒性多數）。",
+      "example_es": "El candidato ganó las elecciones con una mayoría abrumadora.",
+      "example_zh": "該候選人以壓倒性多數贏得了選舉。",
+      "image": "emoji:🌊",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:abrumador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "acelerador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "油門、加速器",
+      "en": "accelerator, accelerator pedal",
+      "ipa": "/aθeleɾaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "acelerar",
+          "zh": "加速"
+        },
+        {
+          "part": "-dor",
+          "zh": "器具字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "acelerar",
+          "zh": "加速"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "acelerador",
+          "zh": "油門、加速器"
+        }
+      ],
+      "cognates_en": [
+        "accelerator"
+      ],
+      "story_zh": "由動詞 acelerar（加速）加上表示工具的字尾 -dor 組成，字面意思是「加速的裝置」，在日常生活中最常指汽車的油門踏板。",
+      "hook_zh": "踩下 acelerador（油門），車子就開始 accelerate（加速）。",
+      "usage_zh": "開車常用片語：pisar el acelerador（踩油門）。",
+      "example_es": "Pisó el acelerador para adelantar al camión.",
+      "example_zh": "他踩下油門以超車前方的卡車。",
+      "image": "emoji:🚗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:acelerador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "acopio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "聚集、囤積、儲備",
+      "en": "gathering, collecting, stockpile",
+      "ipa": "/aˈkopjo/",
+      "breakdown": [
+        {
+          "part": "acopiar",
+          "zh": "收集、囤積"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "acopiar",
+          "zh": "收集、儲備"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "acopio",
+          "zh": "收集、儲備、囤積"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 acopiar（大量聚集、囤積）的去動詞詞尾名詞。指將物資、糧食或資訊大量聚集或儲備起來的行為或儲備處。",
+      "hook_zh": "把大量物品聚集 copy 很多份存起來，就是 acopio（儲備、囤積）。",
+      "usage_zh": "最常見搭配為固定片語 hacer acopio de（大量儲備、囤積…）。",
+      "example_es": "Decidieron hacer acopio de alimentos antes de la tormenta.",
+      "example_zh": "他們決定在暴風雨來臨前儲備糧食。",
+      "image": "emoji:📦",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:acopio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "adyacente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "相鄰的、毗連的",
+      "en": "adjacent",
+      "ipa": "/adʝaˈθente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "adiacentem",
+          "zh": "鄰近的、毗連的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "adyacente",
+          "zh": "鄰近的、毗鄰的"
+        }
+      ],
+      "cognates_en": [
+        "adjacent"
+      ],
+      "story_zh": "學者借詞自拉丁語 adiacentem（躺在旁邊的、鄰接的）。指在空間位置上彼此緊鄰、相接的事物。",
+      "hook_zh": "與英文 adjacent 同源，指就在旁邊、緊密相連的相鄰位置。",
+      "usage_zh": "陰陽同形：una habitación adyacente（相鄰的房間）。",
+      "example_es": "Nos alojamos en el edificio adyacente al hotel principal.",
+      "example_zh": "我們住在主飯店旁邊的相鄰建築裡。",
+      "image": "emoji:🏘️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:adyacente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aeronáutica",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "航空學、航空業",
+      "en": "aeronautics",
+      "ipa": "/aeɾoˈnautika/",
+      "breakdown": [
+        {
+          "part": "aero-",
+          "zh": "空中、航空"
+        },
+        {
+          "part": "náutica",
+          "zh": "航行學"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "aeronáutico",
+          "zh": "航空的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aeronáutica",
+          "zh": "航空學、航空業"
+        }
+      ],
+      "cognates_en": [
+        "aeronautics"
+      ],
+      "story_zh": "由形容詞 aeronáutico（航空的）陰性名詞化而來。結合了希臘字根 aero-（空氣、空中）與 náutica（航海學、航行），字面意為「空中航行之學」。",
+      "hook_zh": "aero（空中）＋ náutica（航行），即在天空中飛行的航空科技。",
+      "usage_zh": "陰性名詞，指航空學或航空工業：la industria aeronáutica。",
+      "example_es": "Ella estudia ingeniería aeronáutica en la universidad.",
+      "example_zh": "她在大學攻讀航空工程學。",
+      "image": "emoji:✈️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aeronáutica"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "altavoz",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "揚聲器、擴音器、喇叭",
+      "en": "loudspeaker, speaker",
+      "ipa": "/altaˈboθ/",
+      "breakdown": [
+        {
+          "part": "alta",
+          "zh": "大聲的"
+        },
+        {
+          "part": "voz",
+          "zh": "聲音"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "alta（大聲）＋ voz（聲音）＝ 發出洪亮聲音的「擴音喇叭」（altavoz）。",
+      "usage_zh": "陽性名詞，複數為 altavoces。手機上「開擴音」是 poner el altavoz。",
+      "example_es": "Pon el teléfono en altavoz para que todos podamos oír.",
+      "example_zh": "把手機切換成擴音模式，這樣我們大家都能聽到。",
+      "image": "emoji:📢",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:altavoz"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "amnesia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "失憶症、健忘",
+      "en": "amnesia",
+      "ipa": "/amˈnesja/",
+      "breakdown": [
+        {
+          "part": "a-",
+          "zh": "無、沒有"
+        },
+        {
+          "part": "mnesia",
+          "zh": "記憶"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἀμνησία",
+          "zh": "遺忘、健忘"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "amnesia",
+          "zh": "失憶症、健忘"
+        }
+      ],
+      "cognates_en": [
+        "amnesia"
+      ],
+      "story_zh": "借自古希臘語 ἀμνησία（amnēsía，遺忘），由否定前綴 a-（無、沒有）加上 mnēsis（記憶）構成，字面意思為「失去記憶」，醫學上專指失憶症。",
+      "hook_zh": "與英文 amnesia 完全同源，a-（沒有）＋ mnesia（記憶）＝ 失憶。",
+      "usage_zh": "陰性名詞。常用片語 tener amnesia（罹患失憶症）。",
+      "example_es": "El golpe en la cabeza le provocó una amnesia temporal.",
+      "example_zh": "頭部的撞擊導致他暫時性失憶。",
+      "image": "emoji:🧠",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:amnesia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "apasionar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "使充滿熱情、使著迷",
+      "en": "to impassion, to excite",
+      "ipa": "/apasjoˈnaɾ/",
+      "breakdown": [
+        {
+          "part": "a-",
+          "zh": "使動前綴"
+        },
+        {
+          "part": "pasión",
+          "zh": "熱情"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pasión",
+          "zh": "熱情、熱愛"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "apasionar",
+          "zh": "使充滿熱情、使著迷"
+        }
+      ],
+      "cognates_en": [
+        "passion"
+      ],
+      "story_zh": "由前綴 a- 加上名詞 pasión（熱情）與動詞後綴 -ar 構成。字面意思為「激起強烈的熱情」，引申為對某事物深深著迷或狂熱喜愛。",
+      "hook_zh": "心中充滿 a + pasión（熱情），表示這件事超級吸引你、讓你 apaixonar。",
+      "usage_zh": "常作類似 gustar 的用法：Me apasiona la música（我熱愛音樂）。",
+      "example_es": "A mi hermano le apasiona la historia antigua.",
+      "example_zh": "我哥哥對古代歷史非常著迷。",
+      "image": "emoji:🔥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:apasionar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "arribo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "抵達、到達",
+      "en": "arrival",
+      "ipa": "/aˈribo/",
+      "breakdown": [
+        {
+          "part": "arribar",
+          "zh": "抵達、靠岸"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "arribar",
+          "zh": "抵達、靠岸"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "arribo",
+          "zh": "抵達、到達"
+        }
+      ],
+      "cognates_en": [
+        "arrive"
+      ],
+      "story_zh": "源自動詞 arribar（靠岸、抵達，源自拉丁語 ad rīpam 到達岸邊）的去動詞詞尾名詞。在美洲西語中特別常用來表示「抵達、到達」，相當於西歐常見的 llegada。",
+      "hook_zh": "arribo 與英文 arrive（抵達）同源，機場看板常看到 arribos（入境航班）。",
+      "usage_zh": "常用於機場或港口指「抵達」：sala de arribos（抵達大廳）。",
+      "example_es": "El arribo del vuelo se retrasó dos horas por la niebla.",
+      "example_zh": "由於濃霧，該航班的抵達延誤了兩小時。",
+      "image": "emoji:🛬",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:arribo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "asentado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "定居的、穩固的、沉穩的",
+      "en": "settled, permanent, stable",
+      "ipa": "/asenˈtado/",
+      "breakdown": [
+        {
+          "part": "asentar",
+          "zh": "安置、穩固、定居"
+        },
+        {
+          "part": "-ado",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "asentar",
+          "zh": "安放、安置、定居"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "asentado",
+          "zh": "定居的、穩固的、沉穩的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自動詞 asentar（使坐下、安頓、奠定基礎）的過去分詞。延伸為形容詞，指生活安頓下來、根基穩固，或是為人處世沉穩成熟。",
+      "hook_zh": "asentar（安坐、定居）後的生活狀態，就是 asentado（穩定沉著的）。",
+      "usage_zh": "陰性為 asentada。常形容人成熟沉穩，或社群定居於某地：estar bien asentado。",
+      "example_es": "Es una persona muy sensata y asentada en su trabajo.",
+      "example_zh": "他是一個非常明智且工作穩定沉著的人。",
+      "image": "emoji:⚓",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:asentado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "brasilero",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "巴西的；巴西人",
+      "en": "Brazilian",
+      "ipa": "/bɾasiˈleɾo/",
+      "breakdown": [
+        {
+          "part": "Brasil",
+          "zh": "巴西"
+        },
+        {
+          "part": "-ero",
+          "zh": "人或來源字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "葡萄牙語",
+          "word": "brasileiro",
+          "zh": "巴西的、巴西人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "brasilero",
+          "zh": "巴西的；巴西人"
+        }
+      ],
+      "cognates_en": [
+        "Brazilian"
+      ],
+      "story_zh": "仿譯自葡萄牙語 brasileiro，由國名 Brasil（巴西）加上字尾 -ero 構成。在美洲西語中廣泛使用，與標準西語的 brasileño 同義。",
+      "hook_zh": "Brasil 加上 -ero，指巴西人或與巴西相關的事物。",
+      "usage_zh": "美洲西語常用 brasilero，西班牙本土多用 brasileño。陰性為 brasilera。",
+      "example_es": "El café brasilero es famoso en todo el mundo por su calidad.",
+      "example_zh": "巴西咖啡因其優良品質而在全球享有盛譽。",
+      "image": "emoji:🇧🇷",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:brasilero"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "brújula",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "指南針、羅盤",
+      "en": "compass",
+      "ipa": "/ˈbɾuxula/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "πυξίς",
+          "zh": "小盒子"
+        },
+        {
+          "lang_zh": "後期拉丁語",
+          "word": "buxis",
+          "zh": "盒子"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*buxula",
+          "zh": "小盒子"
+        },
+        {
+          "lang_zh": "義大利語",
+          "word": "bùssola",
+          "zh": "羅盤、指南針"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "brújula",
+          "zh": "指南針、羅盤"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自義大利語 bùssola，最終可追溯至古希臘語 πυξίς（黃楊木製小盒子）。航海羅盤最初裝在小木盒中而得名；傳入西班牙時受到西語 bruja（女巫、巫術）的民間詞源影響，產生了首音節變化。",
+      "hook_zh": "古人覺得像巫術（bruja）一樣神奇指出方向的小盒子，就是指南針 brújula。",
+      "usage_zh": "陰性名詞。比喻用法：perder la brújula（失去方向、失去分寸）。",
+      "example_es": "Usó la brújula para no perderse en la montaña.",
+      "example_zh": "他使用指南針以避免在山中迷路。",
+      "image": "emoji:🧭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:brújula",
+        "wiktionary:la:buxis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bélico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "戰爭的、軍事的、好戰的",
+      "en": "military, war, warlike",
+      "ipa": "/ˈbeliko/",
+      "breakdown": [
+        {
+          "part": "bel-",
+          "zh": "戰爭"
+        },
+        {
+          "part": "-ico",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "bellicus",
+          "zh": "戰爭的、軍事的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bélico",
+          "zh": "戰爭的、好戰的、軍事的"
+        }
+      ],
+      "cognates_en": [
+        "bellicose",
+        "belligerent"
+      ],
+      "story_zh": "學者借詞自拉丁語 bellicus，源自名詞 bellum（戰爭）。專門用來形容與戰爭、武力衝突或軍事行動相關的事物。",
+      "hook_zh": "與英文 bellicose（好戰的）同源，字根 bell- 代表戰爭。",
+      "usage_zh": "陰性為 bélica。常用詞組 conflicto bélico（武裝衝突）、película bélica（戰爭片）。",
+      "example_es": "La novela narra la vida en la ciudad durante el conflicto bélico.",
+      "example_zh": "這部小說講述了武裝衝突期間城裡的百姓生活。",
+      "image": "emoji:⚔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bélico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "caballito",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "小馬；翹孤輪；搖搖馬",
+      "en": "wheelie, rocking horse, horsy",
+      "ipa": "/kabaˈʝito/",
+      "breakdown": [
+        {
+          "part": "caballo",
+          "zh": "馬"
+        },
+        {
+          "part": "-ito",
+          "zh": "小稱字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "caballo",
+          "zh": "馬"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caballito",
+          "zh": "小馬；翹孤輪；搖搖馬"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 caballo（馬）加上小稱字尾 -ito 構成，原意為「小馬」。延伸指兒童玩具木馬、旋轉木馬，也生動地用來形容騎機車或腳踏車時前輪懸空的特技動作「翹孤輪」。",
+      "hook_zh": "caballo（馬）的小稱 -ito，特技騎車像小馬昂首立起就是 hacer un caballito。",
+      "usage_zh": "常見特技動作片語：hacer un caballito（翹孤輪、單輪騎行）。",
+      "example_es": "El joven hizo un caballito peligroso con su motocicleta.",
+      "example_zh": "那個年輕人騎摩托車做了一個危險的翹孤輪動作。",
+      "image": "emoji:🎠",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caballito"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "calavera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "骷髏頭、頭蓋骨",
+      "en": "skull",
+      "ipa": "/kalaˈbeɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "calvus",
+          "zh": "禿的、無毛的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "calvāria",
+          "zh": "頭蓋骨"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "calavera",
+          "zh": "骷髏、頭蓋骨"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "calavera",
+          "zh": "骷髏、頭骨"
+        }
+      ],
+      "cognates_en": [
+        "Calvary"
+      ],
+      "story_zh": "繼承自古西班牙語 calavera，源自拉丁語 calvāria（頭骨），進一步源於形容詞 calvus（光禿禿的）。骷髏頭上沒有毛髮，因此以「光禿之處」命名。民間常誤以為來自 cadaver（屍體），但事實上是源自「光禿」。",
+      "hook_zh": "光禿禿（calvus）沒有頭髮的白色骨頭，就是骷髏頭 calavera。",
+      "usage_zh": "陰性名詞。墨西哥亡靈節代表性物品即為 calavera de azúcar（糖骷髏）。",
+      "example_es": "Compraron una calavera de azúcar para el Día de los Muertos.",
+      "example_zh": "他們為亡靈節買了一個糖骷髏。",
+      "image": "emoji:💀",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:calavera",
+        "wiktionary:la:calvaria",
+        "wiktionary:la:calvus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "callo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "老繭、雞眼；牛肚",
+      "en": "callus, corn, tripe",
+      "ipa": "/ˈkaʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "callum",
+          "zh": "老繭、硬皮"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "callo",
+          "zh": "老繭、雞眼；牛肚"
+        }
+      ],
+      "cognates_en": [
+        "callus"
+      ],
+      "story_zh": "繼承自拉丁語 callum（皮膚硬化處、厚皮）。在西語中指皮膚因摩擦而增厚形成的厚繭或腳上的雞眼；複數 callos 則指牛肚，是西班牙著名的傳統名菜。",
+      "hook_zh": "與英文 callus（老繭）同源，手腳常摩擦長出的厚皮就是 callo。",
+      "usage_zh": "注意複數 callos 在菜單上指「燉牛肚」（如 callos a la madrileña）。",
+      "example_es": "Le salió un callo doloroso en el pie por los zapatos nuevos.",
+      "example_zh": "因為穿新鞋，他的腳上長了一個疼痛的雞眼。",
+      "image": "emoji:🦶",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:callo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "camionero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "卡車司機",
+      "en": "trucker, truck driver",
+      "ipa": "/kamjoˈneɾo/",
+      "breakdown": [
+        {
+          "part": "camión",
+          "zh": "卡車"
+        },
+        {
+          "part": "-ero",
+          "zh": "職業人員字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "camión",
+          "zh": "卡車"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "camionero",
+          "zh": "卡車司機"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 camión（卡車）加上表示職業或相關人員的後綴 -ero 構成，指駕駛大型卡車運送貨物的司機。",
+      "hook_zh": "開著 camión（卡車）四處送貨的人，就是 camionero（卡車司機）。",
+      "usage_zh": "陰性為 camionera（女卡車司機）。也可作形容詞表示「與卡車相關的」。",
+      "example_es": "El camionero condujo durante toda la noche para entregar la carga.",
+      "example_zh": "那名卡車司機開了一整夜的車以送達貨物。",
+      "image": "emoji:🚛",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:camionero"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "capucha",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "兜帽、連帽",
+      "en": "hood, hoodie",
+      "ipa": "/kaˈput͡ʃa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "cappuccio",
+          "zh": "兜帽、頭巾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "capucho",
+          "zh": "尖頂兜帽"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "capucha",
+          "zh": "兜帽、連帽"
+        }
+      ],
+      "cognates_en": [
+        "cappuccino"
+      ],
+      "story_zh": "源自義大利語 cappuccio（兜帽，亦為卡布奇諾咖啡名稱由來，因色澤如僧侶兜帽）。西語經由 capucho 演變成陰性名詞 capucha，指外套或帽 T 上的帽子。",
+      "hook_zh": "下雨天拉起外套後面的「卡布恰」（capucha），就不會淋濕頭髮。",
+      "usage_zh": "陰性名詞。常用片語 sudadera con capucha（連帽衫、帽 T）。",
+      "example_es": "Se puso la capucha de la chaqueta porque empezó a llover.",
+      "example_zh": "因為開始下雨，他拉起了外套上的兜帽。",
+      "image": "emoji:🧥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:capucha"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "carente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "缺乏的、欠缺的",
+      "en": "lacking, devoid",
+      "ipa": "/kaˈɾente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "carēre",
+          "zh": "缺乏、缺少"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "carentem",
+          "zh": "缺乏的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "carente",
+          "zh": "缺乏的、欠缺的"
+        }
+      ],
+      "cognates_en": [
+        "caret"
+      ],
+      "story_zh": "借自拉丁語現在分詞 carentem，源自動詞 carēre（缺乏、缺少，英文校對符號 caret 亦源於此）。形容完全沒有或缺乏某種品質、資源或條件。",
+      "hook_zh": "與英文校對符號 caret（脫字號，表示缺少文字）同源，指「缺乏、缺少」的狀態。",
+      "usage_zh": "常搭配介系詞 de：carente de recursos（缺乏資源的）。陰陽同形。",
+      "example_es": "El informe presentado era confuso y carente de datos precisos.",
+      "example_zh": "提出的這份報告雜亂無章且缺乏精確數據。",
+      "image": "emoji:📭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:carente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "caserío",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "農舍、村落、小聚落",
+      "en": "country house, hamlet",
+      "ipa": "/kaseˈɾio/",
+      "breakdown": [
+        {
+          "part": "casa",
+          "zh": "房屋"
+        },
+        {
+          "part": "-erío",
+          "zh": "集合名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "casa",
+          "zh": "房屋"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caserío",
+          "zh": "農舍、村落、小聚落"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 casa（房屋）加上表示集合的後綴 -erío 組成。原指少數房屋零星聚集在一起的小聚落或村莊；在西班牙北部（特別是巴斯克與納瓦拉地區），特指典型的傳統鄉村大農舍。",
+      "hook_zh": "很多 casa（房屋）聚在一起，就成了一個小小的村落 caserío。",
+      "usage_zh": "陽性名詞。指西班牙北部傳統農舍或只有零星幾戶的小村落。",
+      "example_es": "Viven en un hermoso caserío tradicional en el norte del país.",
+      "example_zh": "他們住在該國北部一棟美麗的傳統鄉村農舍裡。",
+      "image": "emoji:🏡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caserío"
       ],
       "writer": "gemini"
     }
