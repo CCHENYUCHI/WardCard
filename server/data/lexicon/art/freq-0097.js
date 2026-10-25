@@ -330,15 +330,6 @@ module.exports = {
     s('path', { d: ells([[112, 52, 10, 10], [116, 50, 10, 10]]) }, 'yellow'),
     s('path', { d: 'M30 118q26-8 50 0t50 0', ...SW(4) }, 'white', { stroke: true })
   ],
-  casal: [
-    ground(),
-    s('path', { d: 'M14 136q30-18 60-6t72-8v14z' }, 'green'),
-    s('rect', { x: 32, y: 66, width: 96, height: 62 }, 'cream', { accent: true }),
-    s('path', { d: 'M24 70l56-40 56 40z' }, 'red'),
-    s('path', { d: 'M70 128v-30h20v30z' }, 'brown'),
-    s('path', { d: rects([[42, 82, 16, 16], [102, 82, 16, 16]]) }, 'sky'),
-    s('path', { d: 'M104 48V30h10v24z' }, 'gray')
-  ],
   certificar: [
     ...paper(26, 22, 96, 116),
     s('path', { d: 'M40 44h68M40 60h68M40 76h48', ...SW(4) }, 'gray', { stroke: true }),
@@ -702,13 +693,6 @@ module.exports = {
     s('path', { d: 'M96 140v-26q0-18 20-18t20 18v26z' }, 'pink', { accent: true }),
     s('path', { d: 'M110 70q6-6 12 0', ...SW(3) }, 'brown', { stroke: true })
   ],
-  pepito: [
-    s('path', { d: 'M18 90q0-28 62-30t62 30z' }, 'tan', { accent: true }),
-    s('path', { d: 'M20 92h120l-6 10H26z' }, 'brown'),
-    s('path', { d: 'M20 102q10 6 20 0t20 0 20 0 20 0 20 0 20 0', ...SW(5) }, 'green', { stroke: true }),
-    s('path', { d: 'M18 106h124q0 22-62 22t-62-22z' }, 'tan'),
-    s('path', { d: 'M48 72l6-4M76 68l6-4M104 72l6-4', ...SW(3) }, 'cream', { stroke: true })
-  ],
   prefijo: [
     s('path', { d: rects([[66, 70, 24, 24], [94, 70, 24, 24], [122, 70, 24, 24]]) }, 'blue'),
     s('rect', { x: 18, y: 66, width: 32, height: 32, rx: 4 }, 'orange', { accent: true }),
@@ -864,13 +848,6 @@ module.exports = {
     s('path', { d: 'M86 106l-6 0', ...SW(6) }, 'navy', { stroke: true }),
     s('rect', { x: 42, y: 88, width: 36, height: 8, rx: 2 }, 'red')
   ],
-  somo: [
-    backdrop('sky'),
-    s('path', { d: 'M14 146l66-100 66 100z' }, 'gray'),
-    s('path', { d: 'M62 74l18-28 18 28-10-6-8 8-8-8z' }, 'white'),
-    s('path', { d: 'M80 46V18', ...SW(3) }, 'dark', { stroke: true }),
-    s('path', { d: 'M80 18l22 6-22 8z' }, 'red', { accent: true })
-  ],
   sutileza: [
     s('path', { d: 'M40 136q30-40 90-110q-6 50-50 90z' }, 'sky', { accent: true }),
     s('path', { d: 'M30 146l100-120', ...SW(3) }, 'navy', { stroke: true }),
@@ -928,14 +905,6 @@ module.exports = {
     s('ellipse', { cx: 110, cy: 94, rx: 26, ry: 9 }, 'yellow', { accent: true }),
     s('path', { d: 'M46 120h40', ...SW(5) }, 'green', { stroke: true }),
     s('path', { d: 'M92 120l-10-7v14z' }, 'green'),
-  ],
-  tulio: [
-    s('rect', { x: 26, y: 26, width: 108, height: 108, rx: 10 }, 'mint'),
-    s('rect', { x: 26, y: 26, width: 108, height: 108, rx: 10, ...SW(4) }, 'green', { stroke: true }),
-    s('ellipse', { cx: 80, cy: 80, rx: 40, ry: 14, ...SW(3) }, 'navy', { stroke: true }),
-    s('ellipse', { cx: 80, cy: 80, rx: 40, ry: 14, transform: 'rotate(60 80 80)', ...SW(3) }, 'navy', { stroke: true }),
-    s('ellipse', { cx: 80, cy: 80, rx: 40, ry: 14, transform: 'rotate(120 80 80)', ...SW(3) }, 'navy', { stroke: true }),
-    s('circle', { cx: 80, cy: 80, r: 9 }, 'purple', { accent: true })
   ],
   vallenato: [
     s('rect', { x: 18, y: 64, width: 18, height: 52, rx: 4 }, 'red', { accent: true }),
@@ -1149,14 +1118,6 @@ module.exports = {
     s('path', { d: ells([[76, 84, 44, 20]]) + 'M98 76l12-38 18 4-8 40z', ...SW(2) }, 'dark', { stroke: true }),
     s('path', { d: 'M34 80q-12 10-8 30', ...SW(4) }, 'dark', { stroke: true })
   ],
-  chili: [
-    s('path', { d: 'M20 76h120q-4 56-60 60q-56-4-60-60z' }, 'gray'),
-    s('ellipse', { cx: 80, cy: 76, rx: 60, ry: 14 }, 'red', { accent: true }),
-    s('path', { d: ells([[56, 74, 6, 4], [80, 70, 6, 4], [104, 76, 6, 4], [70, 82, 6, 4]]) }, 'brown'),
-    s('path', { d: dots([[92, 82], [64, 70]], 3) }, 'green'),
-    s('path', { d: 'M116 36q10 20-24 34q30 0 34-26z' }, 'red'),
-    s('path', { d: 'M118 38l8-12', ...SW(4) }, 'green', { stroke: true })
-  ],
   chinchilla: [
     s('path', { d: ells([[84, 102, 46, 36]]) }, 'gray', { accent: true }),
     s('circle', { cx: 58, cy: 70, r: 30 }, 'gray'),
@@ -1250,5 +1211,5 @@ module.exports = {
     s('path', { d: ells([[114, 58, 30, 22]]) }, 'yellow', { accent: true }),
     s('path', { d: 'M86 52l-6 4M142 64l6-4', ...SW(5) }, 'yellow', { stroke: true }),
     s('path', { d: leaflet(112, 36, -60, 20, 6) }, 'green')
-  ],
+  ]
 };

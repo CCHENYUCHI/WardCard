@@ -1,6 +1,6 @@
 {
   "theme": "freq-0094",
-  "theme_zh": "常用字（頻率第 28737–29186 名）",
+  "theme_zh": "常用字（頻率第 28737–29190 名）",
   "entries": [
     {
       "word": "perturbador",
@@ -3753,46 +3753,6 @@
       "writer": "gemini"
     },
     {
-      "word": "momo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "鬼臉；怪相",
-      "en": "funny face, silly face",
-      "ipa": "/ˈmomo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "μῶμος",
-          "zh": "嘲弄、嘲諷之神"
-        },
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "*mōmus",
-          "zh": "做鬼臉、滑稽模仿"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "momo",
-          "zh": "鬼臉、怪相"
-        }
-      ],
-      "cognates_en": [
-        "mum"
-      ],
-      "story_zh": "詞源說法不一，推測可能源自古希臘語 μῶμος（嘲弄，也是希臘神話中諷刺與嘲弄之神 Mômos），進入通俗拉丁語後指滑稽做作的表演。在西班牙語中指逗趣搞笑的鬼臉或怪相。",
-      "hook_zh": "對著鏡子做誇張扮醜的怪相鬼臉，逗人發笑的就是 momo。",
-      "usage_zh": "陽性名詞，常用片語 hacer momos（做鬼臉、扮怪相）。",
-      "example_es": "El payaso hacía momos divertidos para hacer reír a los niños.",
-      "example_zh": "小丑做著有趣的鬼臉來逗孩子們發笑。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:momo"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "monotonía",
       "article": "la",
       "pos": "sustantivo",
@@ -4004,6 +3964,48 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:otaku"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "partitura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "樂譜；總譜",
+      "en": "sheet music, score",
+      "ipa": "/paɾtiˈtuɾa/",
+      "breakdown": [
+        {
+          "part": "partir",
+          "zh": "分開、劃分"
+        },
+        {
+          "part": "-tura",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "partitura",
+          "zh": "總譜、樂譜"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "partitura",
+          "zh": "樂譜、總譜"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自義大利語 partitura，字根源自動詞 partire（分開、劃分）。在音樂術語中，本義指將各個樂器或聲部的音樂各自分行排列、劃分清楚寫在同一份譜表上的「總譜」，後來引申為各種樂譜。",
+      "hook_zh": "將各個聲部分開（part）對齊編排的完整音樂樂譜（score），就是 partitura。",
+      "usage_zh": "陰性名詞。常用搭配 leer partituras（讀譜）或 escribir una partitura（譜曲）。",
+      "example_es": "El pianista colocó la partitura en el atril antes de comenzar a tocar.",
+      "example_zh": "鋼琴家在開始演奏前將樂譜放在譜架上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:partitura"
       ],
       "writer": "gemini"
     }

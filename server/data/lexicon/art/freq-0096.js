@@ -372,13 +372,6 @@ module.exports = {
     arrow('M78 56q30 0 36 30', 'gray', 4),
     arrow('M106 80l8 8 6-10', 'gray', 4)
   ],
-  momo: [
-    s('circle', { cx: 80, cy: 80, r: 56 }, 'yellow'),
-    s('path', { d: spiral(54, 66) + spiral(98, 66), ...SW(3) }, 'dark', { stroke: true }),
-    s('path', { d: 'M56 100q24 14 48 0', ...SW(4) }, 'dark', { stroke: true }),
-    s('path', { d: 'M72 104h16v16a8 8 0 0 1-16 0z' }, 'red', { accent: true }),
-    s('path', { d: 'M24 64l-10-6M136 64l10-6', ...SW(8) }, 'skin', { stroke: true })
-  ],
   'monotonía': [
     s('rect', { x: 14, y: 22, width: 132, height: 64, rx: 8 }, 'dark'),
     s('path', { d: 'M22 54h116', ...SW(4) }, 'mint', { stroke: true, accent: true }),
@@ -744,13 +737,6 @@ module.exports = {
     s('path', { d: ring(66, 92, 34) + 'M66 60v64', ...SW(3) }, 'gray', { stroke: true }),
     s('circle', { cx: 112, cy: 52, r: 16 }, 'white'),
     s('path', { d: ring(112, 52, 16) + 'M100 52h24', ...SW(3) }, 'gray', { stroke: true })
-  ],
-  barroso: [
-    s('path', { d: 'M14 110q40-12 70-2t62-4v42H14z' }, 'brown', { accent: true }),
-    s('path', { d: ells([[48, 124, 22, 6], [110, 132, 18, 5]]) }, 'dark'),
-    s('path', { d: 'M76 32q0-6 6-6h14q6 0 6 6v54l18 6q12 4 12 16v2H76z' }, 'yellow'),
-    s('path', { d: 'M74 108h60M78 38h22', ...SW(6) }, 'dark', { stroke: true }),
-    s('path', { d: dots([[64, 100], [140, 98], [30, 102]], 4) }, 'brown'),
   ],
   bestial: [
     s('path', { d: burst(80, 82, 66, 52, 14) }, 'orange'),
@@ -1214,13 +1200,6 @@ module.exports = {
     s('path', { d: 'M58 64v36M102 64v36M72 66l-2 34M88 66l2 34', ...SW(6) }, 'red', { stroke: true, accent: true }),
     s('path', { d: 'M48 66q0 30 10 34M112 66q0 30-10 34', ...SW(2) }, 'tan', { stroke: true })
   ],
-  lupus: [
-    s('circle', { cx: 80, cy: 80, r: 56 }, 'skin'),
-    s('path', { d: 'M80 92q-14-22-34-14q-8 14 8 24q14 6 26-10q12 16 26 10q16-10 8-24q-20-8-34 14z' }, 'pink', { accent: true }),
-    s('path', { d: dots([[60, 66], [100, 66]], 5) }, 'dark'),
-    s('path', { d: 'M66 116q14 6 28 0', ...SW(4) }, 'dark', { stroke: true }),
-    s('path', { d: 'M28 50q20-34 52-30q34 0 52 30q-20-12-52-12t-52 12z' }, 'brown')
-  ],
   maleza: [
     s('rect', { x: 14, y: 116, width: 132, height: 26, rx: 4 }, 'brown'),
     s('path', { d: leaflet(30, 118, -80, 50, 9) + leaflet(30, 118, -120, 36, 7) + leaflet(56, 118, -60, 60, 10) + leaflet(70, 118, -100, 44, 8) + leaflet(96, 118, -75, 56, 10) + leaflet(118, 118, -110, 48, 9) + leaflet(132, 118, -60, 40, 8) }, 'green', { accent: true }),
@@ -1241,13 +1220,6 @@ module.exports = {
     s('circle', { cx: 80, cy: 104, r: 10 }, 'yellow', { accent: true }),
     s('path', { d: star(80, 104, 6) }, 'orange'),
     s('path', { d: sparkle(40, 50, 8) + sparkle(122, 44, 8) + sparkle(126, 92, 6) }, 'yellow')
-  ],
-  mistral: [
-    s('rect', { x: 14, y: 14, width: 132, height: 132, rx: 12 }, 'sky'),
-    s('path', { d: 'M22 46h70q14 0 14-12t-12-10M22 70h96q14 0 14 12t-12 10M22 94h56', ...SW(6) }, 'white', { stroke: true, accent: true }),
-    s('path', { d: 'M118 146q4-30-6-50', ...SW(5) }, 'brown', { stroke: true }),
-    s('path', { d: leaflet(112, 98, 150, 26, 8) + leaflet(112, 106, 170, 24, 7) + leaflet(114, 114, 190, 22, 7) }, 'green'),
-    s('path', { d: dots([[40, 130], [52, 124], [64, 132]], 5) }, 'purple')
   ],
   modelar: [
     s('rect', { x: 26, y: 120, width: 108, height: 14, rx: 6 }, 'gray'),
@@ -1292,13 +1264,6 @@ module.exports = {
     s('path', { d: dots([[62, 78], [98, 78]], 5) }, 'red'),
     s('path', { d: 'M56 108q24-12 48 0', ...SW(5) }, 'dark', { stroke: true }),
     s('path', { d: 'M60 106l4-16 6 14zM100 106l-4-16-6 14z' }, 'cream')
-  ],
-  pichincha: [
-    s('path', { d: 'M20 60l40-40h50v50l-40 40z' }, 'yellow', { accent: true }),
-    s('circle', { cx: 92, cy: 38, r: 7 }, 'white'),
-    arrow('M64 58v34M52 80l12 12 12-12', 'red', 7),
-    s('path', { d: ells([[108, 130, 26, 7], [108, 120, 26, 7], [108, 110, 26, 7]]) }, 'orange'),
-    s('path', { d: sparkle(30, 112, 8) + sparkle(140, 84, 6) }, 'green')
   ],
   plebe: [
     s('path', { d: busts([30, 58, 86, 114, 142], 148, 26, 40) }, 'tan'),
@@ -1467,5 +1432,5 @@ module.exports = {
     s('path', { d: 'M126 52L70 108', ...SW(3) }, 'tan', { stroke: true }),
     s('path', { d: 'M74 102l-8-8', ...SW(6) }, 'skin', { stroke: true }),
     ...note(130, 108, 'purple')
-  ],
+  ]
 };

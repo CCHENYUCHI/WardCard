@@ -1,100 +1,7 @@
 {
   "theme": "freq-0096",
-  "theme_zh": "常用字（頻率第 29556–29970 名）",
+  "theme_zh": "常用字（頻率第 29560–30027 名）",
   "entries": [
-    {
-      "word": "interconexión",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "互連、相互連接",
-      "en": "interconnection",
-      "ipa": "/inteɾkoneɡˈsjon/",
-      "breakdown": [
-        {
-          "part": "inter-",
-          "zh": "在…之間、互相"
-        },
-        {
-          "part": "conexión",
-          "zh": "連接"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "inter",
-          "zh": "在…之間、互相"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "conexion",
-          "zh": "連接"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "interconexión",
-          "zh": "互連"
-        }
-      ],
-      "cognates_en": [
-        "interconnection"
-      ],
-      "story_zh": "由前綴 inter-（在…之間、相互）與名詞 conexión（連接）組合而成，指兩個或多個獨立的系統、電網或電腦網路之間建立起的互通連接管道。",
-      "hook_zh": "inter-（相互）+ conexión（連接）= 系統與網路之間的「相互連線」",
-      "usage_zh": "陰性名詞，複數為 interconexiones。工程上常用 red de interconexión（互聯網路）。",
-      "example_es": "La interconexión de las redes eléctricas mejoró el suministro.",
-      "example_zh": "電網的互相連接改善了供電狀況。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:interconexión"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "intuitivo",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "直覺的、憑直覺的；易操作的",
-      "en": "intuitive",
-      "ipa": "/intwiˈtibo/",
-      "breakdown": [
-        {
-          "part": "intuición",
-          "zh": "直覺"
-        },
-        {
-          "part": "-ivo",
-          "zh": "具…性質的"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "intuicion",
-          "zh": "直覺"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "intuitivo",
-          "zh": "直覺的"
-        }
-      ],
-      "cognates_en": [
-        "intuitive"
-      ],
-      "story_zh": "源自名詞 intuición（直覺）加上表示傾向或特性的形容詞字尾 -ivo。原指依靠本能或直覺感受而非理性推導的思維方式，科技產品上引申為介面設計友善直覺、不看說明書也能輕易操作。",
-      "hook_zh": "英文 intuitive 同源字，不需多想、看一眼憑直覺就會用的設計。",
-      "usage_zh": "陰性為 intuitiva。科技業常見 diseño intuitivo（直覺化設計）。",
-      "example_es": "Esta aplicación tiene una interfaz muy fácil e intuitiva.",
-      "example_zh": "這個應用程式的介面非常簡單且具直覺性。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:intuitivo"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "invariablemente",
       "article": "",
@@ -342,41 +249,6 @@
       "writer": "gemini"
     },
     {
-      "word": "lupus",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "紅斑性狼瘡；狼",
-      "en": "lupus",
-      "ipa": "/ˈlupus/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "lupus",
-          "zh": "狼"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "lupus",
-          "zh": "紅斑狼瘡"
-        }
-      ],
-      "cognates_en": [
-        "lupus"
-      ],
-      "story_zh": "學者借詞自拉丁文 lupus（狼）。古代醫學家因患者臉上出現的紅斑與皮膚潰爛宛如被狼咬傷撕裂的傷痕，故以此為病名。此字在西語中與民間傳承詞 lobo（狼）為同源詞（doublet）。",
-      "hook_zh": "拉丁文的「狼」（lupus），醫學上指在臉上啃蝕出紅斑傷痕的「紅斑狼瘡」。",
-      "usage_zh": "陽性名詞，單複數同形（el lupus）。醫學全稱為 lupus eritematoso sistémico（全身性紅斑狼瘡）。",
-      "example_es": "El médico diagnosticó que la paciente padecía de lupus.",
-      "example_zh": "醫生診斷出該病患患有紅斑性狼瘡。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:lupus"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "maleza",
       "article": "la",
       "pos": "sustantivo",
@@ -497,47 +369,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:merecedor"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "mistral",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "密史脫拉風（法國南部乾冷強風）",
-      "en": "mistral",
-      "ipa": "/misˈtɾal/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "magistralis",
-          "zh": "大師的、具支配力的"
-        },
-        {
-          "lang_zh": "奧克語",
-          "word": "mistral",
-          "zh": "主風、西北強風"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "mistral",
-          "zh": "密史脫拉風"
-        }
-      ],
-      "cognates_en": [
-        "mistral",
-        "magisterial"
-      ],
-      "story_zh": "借自奧克語 mistral，源於拉丁文 magistrālis（主人的、具支配地位的，源自 magister 大師、長官）。指吹拂於法國南部及地中海西北部強勁乾冷的西北風，因風勢極為強大如「主宰之風」而得名。",
-      "hook_zh": "來自 magister（大師、支配者）的強勁大風，地中海乾冷的「密史脫拉風」。",
-      "usage_zh": "陽性名詞。與西語中的 maestral 和 magistral 為同源詞（doublet）。",
-      "example_es": "El viento mistral soplaba con fuerza sobre la costa del mar.",
-      "example_zh": "密史脫拉風在海岸上強勁地吹拂著。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:mistral"
       ],
       "writer": "gemini"
     },
@@ -755,39 +586,6 @@
       "sources": [
         "wiktionary:es:orco",
         "wiktionary:la:Orcus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "pichincha",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "便宜貨、划算的買賣",
-      "en": "bargain",
-      "ipa": "/piˈt͡ʃint͡ʃa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "葡萄牙語",
-          "word": "pechincha",
-          "zh": "意外之財、便宜買到的好東西"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "pichincha",
-          "zh": "便宜貨、撿便宜"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "借自葡萄牙語 pechincha（意為討價還價買到的便宜貨或意外撿到的便宜）。在拉普拉塔河流域及南美洲部分西語國家廣泛使用，指用遠低於市場價值的極低價格買到的划算好物。",
-      "hook_zh": "撿到便宜的好康！價格低到不可思議的超值好物就是「撿大便宜」（pichincha）。",
-      "usage_zh": "陰性名詞。口語常用 ¡Es una pichincha!（真是太划算了！簡直是撿到大便宜！）。",
-      "example_es": "Compré este hermoso abrigo por poco dinero, fue una pichincha.",
-      "example_zh": "我花很少的錢買了這件漂亮的大衣，真是撿到大便宜了。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:pichincha"
       ],
       "writer": "gemini"
     },
@@ -2442,54 +2240,6 @@
       "writer": "gemini"
     },
     {
-      "word": "casal",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "鄉村農舍、莊園宅邸；（成對交配的）雌雄一對",
-      "en": "country house; mating pair of animals",
-      "ipa": "/kaˈsal/",
-      "breakdown": [
-        {
-          "part": "casa",
-          "zh": "房屋"
-        },
-        {
-          "part": "-al",
-          "zh": "與…相關的字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "casa",
-          "zh": "小屋、茅舍"
-        },
-        {
-          "lang_zh": "後拉丁語",
-          "word": "casalis",
-          "zh": "屬於房屋的、農舍"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "casal",
-          "zh": "農舍、鄉間宅邸"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自後拉丁語 casālis（家庭的、屬於房屋的）或 casāle（農舍、農場），最終源自拉丁語 casa（小木屋、屋舍）。原指鄉間提供農工居住的農舍或鄉村莊園；在某些地區亦用來指同居一屋的成對伴侶或一對禽鳥。",
-      "hook_zh": "源自 casa（家），擴大成鄉間的大農舍莊園就是 casal。",
-      "usage_zh": "陽性名詞，複數為 casales。在加泰隆尼亞和瓦倫西亞地區也指社區文化活動中心（casal de barri）。",
-      "example_es": "La familia pasó el verano en un antiguo casal de campo.",
-      "example_zh": "全家人在一座古老的鄉村農舍度過了夏天。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:casal",
-        "wiktionary:la:casalis"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "certificar",
       "article": "",
       "pos": "verbo",
@@ -3867,6 +3617,421 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:intangible"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "intensificación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "強化、加劇",
+      "en": "intensification",
+      "ipa": "/intensifikaˈθjon/",
+      "breakdown": [
+        {
+          "part": "intensificar",
+          "zh": "強化"
+        },
+        {
+          "part": "-ción",
+          "zh": "動作名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "intensificar",
+          "zh": "加劇、強化"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "intensificación",
+          "zh": "強化、加劇"
+        }
+      ],
+      "cognates_en": [
+        "intensification"
+      ],
+      "story_zh": "源自動詞 intensificar（強化），加上動作名詞字尾 -ción，指事物強度、程度或活動的加劇與提升。",
+      "hook_zh": "詞根 intense（強烈），字尾 -ción 表過程，就是「強化、加深」。",
+      "usage_zh": "陰性名詞，字尾 -ción 永遠為陰性且有重音符號。",
+      "example_es": "Hubo una intensificación del conflicto en la frontera.",
+      "example_zh": "邊境衝突出現了加劇的趨勢。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:intensificación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "internacionalización",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "國際化",
+      "en": "internationalization",
+      "ipa": "/inteɾnaθjonaliθaˈθjon/",
+      "breakdown": [
+        {
+          "part": "internacionalizar",
+          "zh": "使國際化"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "internacionalizar",
+          "zh": "使國際化"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "internacionalización",
+          "zh": "國際化"
+        }
+      ],
+      "cognates_en": [
+        "internationalization"
+      ],
+      "story_zh": "由動詞 internacionalizar（使國際化）加上動作名詞字尾 -ción 衍生而來，指企業、市場或活動跨越國界推廣至全球的過程。",
+      "hook_zh": "internacional（國際的）+ -ización（…化），直覺就是國際化。",
+      "usage_zh": "陰性名詞，經常用於商業與教育領域的全球擴張策略。",
+      "example_es": "La empresa busca la internacionalización de sus servicios.",
+      "example_zh": "該公司正尋求其服務的國際化。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:internacionalización"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "metralla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "霰彈、彈片",
+      "en": "shrapnel, grapeshot",
+      "ipa": "/meˈtɾaʝa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "mitraille",
+          "zh": "碎金屬塊、霰彈"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "metralla",
+          "zh": "霰彈、彈片"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自法語 mitraille（碎金屬塊、碎屑霰彈），進入西班牙語指砲彈爆裂後四散的小金屬破片或老式火砲發射的散彈。",
+      "hook_zh": "metralla 聽起來像 metal（金屬）碎裂飛濺的破片。",
+      "usage_zh": "陰性名詞，引申指恐怖攻擊或爆炸中四散的碎裂碎片。",
+      "example_es": "El soldado resultó herido por una esquirla de metralla.",
+      "example_zh": "這名士兵被一枚霰彈彈片擊傷。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:metralla"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "misericordioso",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "仁慈的、富憐憫心的",
+      "en": "merciful",
+      "ipa": "/miseɾikoɾˈdjoso/",
+      "breakdown": [
+        {
+          "part": "misericordia",
+          "zh": "慈悲、憐憫"
+        },
+        {
+          "part": "-oso",
+          "zh": "形容詞字尾，充滿…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "misericordiosus",
+          "zh": "充滿憐憫的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "misericordioso",
+          "zh": "仁慈的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自中世紀拉丁語 misericordiosus，由 misericordia（慈悲、同情心）加上形容詞字尾 -oso 組成，形容滿懷同情與寬恕之心的人。",
+      "hook_zh": "misericordia（慈悲）+ -oso（充滿），充滿慈悲即仁慈。",
+      "usage_zh": "陽性形容詞，陰性為 misericordiosa；常在宗教文本中形容神明或仁厚的君王。",
+      "example_es": "El juez fue misericordioso con el acusado.",
+      "example_zh": "法官對被告展現了仁慈。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:misericordioso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mutual",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "相互的、彼此的",
+      "en": "mutual",
+      "ipa": "/muˈtwal/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "mutual"
+      ],
+      "story_zh": "",
+      "hook_zh": "與英文 mutual 完全同源同形，意思是相互的、彼此的。",
+      "usage_zh": "陽陰同形形容詞，複數為 mutuales；也當陰性名詞指互助會或醫療互助機構。",
+      "example_es": "Tienen un respeto mutual y una gran confianza.",
+      "example_zh": "他們彼此尊重，並且互相信任。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:mutual"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "natividad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "誕生、耶穌降生",
+      "en": "nativity, birth",
+      "ipa": "/natibiˈdad/",
+      "breakdown": [
+        {
+          "part": "nativi-",
+          "zh": "出生"
+        },
+        {
+          "part": "-dad",
+          "zh": "抽象名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nativitatem",
+          "zh": "出生、降生"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "natividad",
+          "zh": "誕生、降生"
+        }
+      ],
+      "cognates_en": [
+        "nativity"
+      ],
+      "story_zh": "借自拉丁語 nativitatem（出生），是 Navidad（聖誕節）的學者借詞成對詞。Navidad 走通俗口語演變，而 natividad 則保留莊嚴典雅的宗教誕生意涵。",
+      "hook_zh": "與 Navidad（聖誕節）同源，就是神聖的「誕生」。",
+      "usage_zh": "陰性名詞，字首大寫 La Natividad 專指耶穌降生。",
+      "example_es": "Celebramos la natividad del nuevo miembro de la familia.",
+      "example_zh": "我們慶祝家庭新成員的誕生。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:natividad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "noria",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "水車；摩天輪",
+      "en": "noria, water wheel, Ferris wheel",
+      "ipa": "/ˈnoɾja/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "naʕura",
+          "zh": "水車、發出轟鳴者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "noria",
+          "zh": "水車、摩天輪"
+        }
+      ],
+      "cognates_en": [
+        "noria"
+      ],
+      "story_zh": "源自阿拉伯語 nā'ūrah，本意是「會發出轟隆吼聲之物」，形容引水大水車轉動時發出的水聲。在現代西語中除指傳統水車外，亦指遊樂園裡的摩天輪。",
+      "hook_zh": "noria 像輪子一直轉，西班牙遊樂園的摩天輪就是 noria。",
+      "usage_zh": "陰性名詞，在西班牙常用來指稱 Ferris wheel（摩天輪）。",
+      "example_es": "Nos subimos a la noria del parque de atracciones.",
+      "example_zh": "我們坐上了遊樂園裡的摩天輪。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:noria"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nupcias",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "婚禮、婚姻",
+      "en": "wedding, nuptials",
+      "ipa": "/ˈnubθjas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nuptias",
+          "zh": "婚禮"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nupcias",
+          "zh": "婚禮、婚姻"
+        }
+      ],
+      "cognates_en": [
+        "nuptials"
+      ],
+      "story_zh": "借自拉丁語 nuptias（婚禮，nuptiae 的賓格複數）。通常以複數形態出現，帶有莊重、正式的法律或儀式色彩。",
+      "hook_zh": "英文 nuptial 就是婚禮的，西班牙語 nupcias 就是婚禮、聯姻。",
+      "usage_zh": "陰性名詞，通常只用複數形（plural only），常見搭配如 contraer nupcias（結為連理）。",
+      "example_es": "La pareja contrajo nupcias en una ceremonia íntima.",
+      "example_zh": "這對新人在溫馨的小型典禮中結為連理。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nupcias"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "obviar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "避開；忽視、略過",
+      "en": "to avoid, to obviate, to ignore",
+      "ipa": "/oˈbjaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "obviare",
+          "zh": "在路上阻擋、阻攔"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "obviar",
+          "zh": "避開、消除、略過"
+        }
+      ],
+      "cognates_en": [
+        "obviate"
+      ],
+      "story_zh": "借自拉丁語 obviare（在途中迎面阻擋），原指迎頭處理障礙以排除它，後來演變出「避開麻煩」乃至「略過、忽視」之意。",
+      "hook_zh": "英文 obviate（排除、免除），西語 obviar 也常指刻意略過或避開。",
+      "usage_zh": "及物動詞，規則第一變位。注意常用於「避開視線或爭端」（obviar problemas）。",
+      "example_es": "No podemos obviar los problemas que tenemos enfrente.",
+      "example_zh": "我們不能忽視眼前的問題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:obviar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "opacidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "不透明度；晦澀",
+      "en": "opacity",
+      "ipa": "/opaθiˈdad/",
+      "breakdown": [
+        {
+          "part": "opaco",
+          "zh": "不透明的、昏暗的"
+        },
+        {
+          "part": "-idad",
+          "zh": "抽象名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "opaco",
+          "zh": "不透明的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "opacidad",
+          "zh": "不透明度"
+        }
+      ],
+      "cognates_en": [
+        "opacity"
+      ],
+      "story_zh": "由形容詞 opaco（不透光的、晦暗的）加上名詞字尾 -idad 構成，原本指光線無法穿透的物理特性，引申指制度或言論的晦澀與不透明。",
+      "hook_zh": "英文 opacity，西語 opaco + -idad，就是不透明度。",
+      "usage_zh": "陰性名詞，政治經濟常指缺乏透明度的「暗箱作業」（opacidad financiera）。",
+      "example_es": "La opacidad del cristal impedía ver el interior.",
+      "example_zh": "玻璃的不透明度讓人無法看見內部。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:opacidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "palmar",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "手掌的；明顯的",
+      "en": "palmar; obvious",
+      "ipa": "/palˈmaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "palmaris",
+          "zh": "手掌的；一掌寬的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "palmar",
+          "zh": "手掌的；明顯的"
+        }
+      ],
+      "cognates_en": [
+        "palmar"
+      ],
+      "story_zh": "源自拉丁語 palmāris（手掌的）。引申義指「像擺在掌心上一樣清楚可見」，因而有「顯而易見的、不容置疑的」之意。",
+      "hook_zh": "手掌 palma 加上形容詞字尾，攤在手掌上就是「顯而易見」。",
+      "usage_zh": "陽陰同形形容詞。常見搭配 un error palmar（顯而易見的錯誤）。口語中動詞 palmar 意為掛掉、輸掉。",
+      "example_es": "Cometió un error palmar en el cálculo final.",
+      "example_zh": "他在最後的計算中犯了一個顯而易見的錯誤。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:palmar"
       ],
       "writer": "gemini"
     }

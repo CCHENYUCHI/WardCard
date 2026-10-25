@@ -1,49 +1,7 @@
 {
   "theme": "freq-0095",
-  "theme_zh": "常用字（頻率第 29190–29553 名）",
+  "theme_zh": "常用字（頻率第 29194–29559 名）",
   "entries": [
-    {
-      "word": "partitura",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "樂譜；總譜",
-      "en": "sheet music, score",
-      "ipa": "/paɾtiˈtuɾa/",
-      "breakdown": [
-        {
-          "part": "partir",
-          "zh": "分開、劃分"
-        },
-        {
-          "part": "-tura",
-          "zh": "名詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "義大利語",
-          "word": "partitura",
-          "zh": "總譜、樂譜"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "partitura",
-          "zh": "樂譜、總譜"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "借自義大利語 partitura，字根源自動詞 partire（分開、劃分）。在音樂術語中，本義指將各個樂器或聲部的音樂各自分行排列、劃分清楚寫在同一份譜表上的「總譜」，後來引申為各種樂譜。",
-      "hook_zh": "將各個聲部分開（part）對齊編排的完整音樂樂譜（score），就是 partitura。",
-      "usage_zh": "陰性名詞。常用搭配 leer partituras（讀譜）或 escribir una partitura（譜曲）。",
-      "example_es": "El pianista colocó la partitura en el atril antes de comenzar a tocar.",
-      "example_zh": "鋼琴家在開始演奏前將樂譜放在譜架上。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:partitura"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "patrullero",
       "article": "el",
@@ -1898,48 +1856,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:aspirina"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "barroso",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "泥濘的；長滿粉刺的",
-      "en": "muddy, pimply",
-      "ipa": "/baˈroso/",
-      "breakdown": [
-        {
-          "part": "barro",
-          "zh": "泥巴、粉刺"
-        },
-        {
-          "part": "-oso",
-          "zh": "充滿…的"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "barro",
-          "zh": "泥土、粉刺"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "barroso",
-          "zh": "泥濘的、多粉刺的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由名詞 barro（泥巴；亦指臉上的青春痘粉刺）加上表示多而豐富的形容詞字尾 -oso 構成。指路面充滿爛泥，或形容臉上長滿痤瘡粉刺。",
-      "hook_zh": "下大雨後路上全是一灘灘爛泥巴（barro），濕滑泥濘的就是 barroso。",
-      "usage_zh": "形容詞，陰性為 barrosa。常見搭配 camino barroso（泥濘的道路）。",
-      "example_es": "El coche quedó atrapado en el camino barroso después de la tormenta.",
-      "example_zh": "暴風雨後汽車被困在泥濘的道路上。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:barroso"
       ],
       "writer": "gemini"
     },
@@ -4144,6 +4060,99 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:inimaginable"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "interconexión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "互連、相互連接",
+      "en": "interconnection",
+      "ipa": "/inteɾkoneɡˈsjon/",
+      "breakdown": [
+        {
+          "part": "inter-",
+          "zh": "在…之間、互相"
+        },
+        {
+          "part": "conexión",
+          "zh": "連接"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "inter",
+          "zh": "在…之間、互相"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "conexion",
+          "zh": "連接"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "interconexión",
+          "zh": "互連"
+        }
+      ],
+      "cognates_en": [
+        "interconnection"
+      ],
+      "story_zh": "由前綴 inter-（在…之間、相互）與名詞 conexión（連接）組合而成，指兩個或多個獨立的系統、電網或電腦網路之間建立起的互通連接管道。",
+      "hook_zh": "inter-（相互）+ conexión（連接）= 系統與網路之間的「相互連線」",
+      "usage_zh": "陰性名詞，複數為 interconexiones。工程上常用 red de interconexión（互聯網路）。",
+      "example_es": "La interconexión de las redes eléctricas mejoró el suministro.",
+      "example_zh": "電網的互相連接改善了供電狀況。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:interconexión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "intuitivo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "直覺的、憑直覺的；易操作的",
+      "en": "intuitive",
+      "ipa": "/intwiˈtibo/",
+      "breakdown": [
+        {
+          "part": "intuición",
+          "zh": "直覺"
+        },
+        {
+          "part": "-ivo",
+          "zh": "具…性質的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "intuicion",
+          "zh": "直覺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "intuitivo",
+          "zh": "直覺的"
+        }
+      ],
+      "cognates_en": [
+        "intuitive"
+      ],
+      "story_zh": "源自名詞 intuición（直覺）加上表示傾向或特性的形容詞字尾 -ivo。原指依靠本能或直覺感受而非理性推導的思維方式，科技產品上引申為介面設計友善直覺、不看說明書也能輕易操作。",
+      "hook_zh": "英文 intuitive 同源字，不需多想、看一眼憑直覺就會用的設計。",
+      "usage_zh": "陰性為 intuitiva。科技業常見 diseño intuitivo（直覺化設計）。",
+      "example_es": "Esta aplicación tiene una interfaz muy fácil e intuitiva.",
+      "example_zh": "這個應用程式的介面非常簡單且具直覺性。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:intuitivo"
       ],
       "writer": "gemini"
     }
