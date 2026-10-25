@@ -1,6 +1,6 @@
 {
   "theme": "freq-0089",
-  "theme_zh": "常用字（頻率第 26867–27234 名）",
+  "theme_zh": "常用字（頻率第 26867–27238 名）",
   "entries": [
     {
       "word": "reunificación",
@@ -2130,48 +2130,6 @@
       "writer": "gemini"
     },
     {
-      "word": "filar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "察覺、看穿；領會、盯上",
-      "en": "to cotton on, realize, catch on",
-      "ipa": "/fiˈlaɾ/",
-      "breakdown": [
-        {
-          "part": "filo",
-          "zh": "刀鋒、鋒芒"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "filo + -ar",
-          "zh": "刀刃 + 動詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "filar",
-          "zh": "盯住、察覺"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自 filo（刀刃、尖銳處）加上字尾 -ar。原指目光銳利如刀尖般鎖定目標，在口語與方言俚語中引申指「敏銳地察覺到、看穿秘密或察知對方的真正意圖」。",
-      "hook_zh": "眼神像刀鋒（filo）一樣尖銳，一下就 filar（看破察覺）了真相。",
-      "usage_zh": "口語動詞：filar la jugada（看穿某人的詭計／把戲）。",
-      "example_es": "El detective logró filar las intenciones del sospechoso.",
-      "example_zh": "偵探成功察覺了嫌疑人的意圖。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:filar"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "folclore",
       "article": "el",
       "pos": "sustantivo",
@@ -3914,6 +3872,50 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:propulsión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "proyector",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "投影機、放映機",
+      "en": "projector, video projector",
+      "ipa": "/pɾoʝeɡˈtoɾ/",
+      "breakdown": [
+        {
+          "part": "proyectar",
+          "zh": "投影、放映"
+        },
+        {
+          "part": "-or",
+          "zh": "器具、儀器"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "proyectar",
+          "zh": "投影、放映"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "proyector",
+          "zh": "投影機"
+        }
+      ],
+      "cognates_en": [
+        "projector"
+      ],
+      "story_zh": "源自動詞 proyectar（投射、放映）加上器具後綴 -or，用來指將光影或影片畫面投射至大銀幕的放映設備或投影機。",
+      "hook_zh": "proyectar（投影）+ -or（工具），投影在牆上的放映機就是 proyector。",
+      "usage_zh": "陽性名詞 el proyector。常用於 proyector de video（投影機）。",
+      "example_es": "Conectó la computadora al proyector para la presentación.",
+      "example_zh": "他將電腦連接到投影機以進行簡報。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:proyector"
       ],
       "writer": "gemini"
     }

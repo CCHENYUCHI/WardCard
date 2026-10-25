@@ -325,13 +325,6 @@ module.exports = {
     s('path', { d: 'M116 132Q126 70 146 26q-30 26-36 74z' }, 'white'),
     s('path', { d: 'M116 132Q126 70 146 26', ...SW(3) }, 'gray', { stroke: true })
   ],
-  equis: [
-    ground(),
-    s('path', { d: busts([30, 130], 136, 26, 46) + dots([[30, 76], [130, 76]], 12) }, 'gray'),
-    ...person(80, 136, 'gray', { h: 50, accent: true }),
-    s('path', { d: dots([[76, 70], [84, 70]], 1.8) + 'M76 78h8' }, 'dark'),
-    s('path', { d: 'M75 78h10', ...SW(2) }, 'dark', { stroke: true })
-  ],
   escarlata: [
     s('path', { d: 'M24 30h112', ...SW(6) }, 'brown', { stroke: true }),
     s('path', { d: 'M28 32h104l-6 100q-10 6-20 0q-10 6-20 0q-10 6-20 0q-10 6-20 0q-10 6-20 0z' }, 'red', { accent: true }),
@@ -1184,5 +1177,5 @@ module.exports = {
     s('path', { d: dots([[60, 66], [104, 72]], 5) }, 'dark'),
     s('path', { d: ells([[82, 90, 12, 16]]) }, 'pink'),
     s('path', { d: 'M54 112q26 16 54 0q-26 6-54 0zM66 116v8M90 116v6', ...SW(4) }, 'dark', { stroke: true })
-  ],
+  ]
 };

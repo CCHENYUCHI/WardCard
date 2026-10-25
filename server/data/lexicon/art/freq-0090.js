@@ -803,14 +803,6 @@ module.exports = {
     s('path', { d: dots([[110, 66], [126, 66]], 5) }, 'red'),
     s('path', { d: 'M40 46l6 14M62 42v14M80 46l-6 14', ...SW(3) }, 'gray', { stroke: true })
   ],
-  filar: [
-    s('path', { d: 'M14 70q36-40 72 0q-36 40-72 0z' }, 'white'),
-    s('path', { d: 'M14 70q36-40 72 0q-36 40-72 0z', ...SW(3) }, 'dark', { stroke: true }),
-    s('circle', { cx: 50, cy: 70, r: 12 }, 'black'),
-    s('path', { d: 'M18 46q30-14 64 0', ...SW(4) }, 'dark', { stroke: true }),
-    s('path', { d: 'M90 70h40', ...DASH(4) }, 'orange', { stroke: true }),
-    s('path', { d: ring(132, 70, 14) + ring(132, 70, 6), ...SW(4) }, 'red', { stroke: true, accent: true }),
-  ],
   folclore: [
     ground(),
     s('circle', { cx: 80, cy: 46, r: 12 }, 'skin'),
@@ -1330,14 +1322,6 @@ module.exports = {
     s('path', { d: dots([[64, 30], [72, 30], [80, 30], [88, 30], [96, 30]], 3.5) }, 'white'),
     s('path', { d: ring(64, 30, 3.5) + ring(72, 30, 3.5) + ring(80, 30, 3.5) + ring(88, 30, 3.5) + ring(96, 30, 3.5), ...SW(1.5) }, 'gray', { stroke: true })
   ],
-  zeta: [
-    s('rect', { x: 14, y: 104, width: 28, height: 28, rx: 4 }, 'red'),
-    s('rect', { x: 46, y: 104, width: 28, height: 28, rx: 4 }, 'yellow'),
-    s('rect', { x: 78, y: 104, width: 28, height: 28, rx: 4 }, 'green'),
-    s('rect', { x: 112, y: 92, width: 36, height: 40, rx: 5 }, 'purple', { accent: true }),
-    s('path', { d: 'M20 80q60-50 112-4M120 64l12 12-16 4', ...SW(5) }, 'orange', { stroke: true }),
-    s('path', { d: sparkle(130, 40, 9) }, 'yellow')
-  ],
   zodiaco: [
     s('circle', { cx: 80, cy: 80, r: 64 }, 'purple'),
     s('path', { d: [0, 60, 120, 180, 240, 300].map(a => wedge(80, 80, 64, a, a + 30)).join('') }, 'blue'),
@@ -1345,15 +1329,6 @@ module.exports = {
     s('circle', { cx: 80, cy: 80, r: 38 }, 'cream'),
     s('path', { d: rays(80, 80, 22, 32, 8), ...SW(4) }, 'orange', { stroke: true }),
     s('circle', { cx: 80, cy: 80, r: 16 }, 'orange', { accent: true })
-  ],
-  aba: [
-    ground(),
-    s('circle', { cx: 40, cy: 104, r: 32 }, 'gray', { accent: true }),
-    s('path', { d: 'M28 86q10-8 20 2M30 116q12 6 22-4', ...SW(3) }, 'dark', { stroke: true }),
-    s('path', { d: 'M78 96h14M76 112h20M80 80h10', ...SW(4) }, 'gray', { stroke: true }),
-    ...lean(122, 136, 24, 'orange'),
-    s('path', { d: 'M136 98l10-20M116 92l-6-18', ...SW(6) }, 'skin', { stroke: true }),
-    s('path', { d: 'M128 52l8-12M144 60l6-8', ...SW(3) }, 'red', { stroke: true })
   ],
   adornar: [
     s('path', { d: 'M80 14L36 80h16l-24 40h104l-24-40h16z' }, 'green'),
@@ -1562,5 +1537,5 @@ module.exports = {
     s('circle', { cx: 120, cy: 34, r: 20 }, 'white'),
     s('path', { d: ring(120, 34, 20) + 'M120 22v12l8 6', ...SW(4) }, 'dark', { stroke: true }),
     s('path', { d: 'M126 102l10-8M128 116h12', ...SW(3) }, 'orange', { stroke: true })
-  ],
+  ]
 };
