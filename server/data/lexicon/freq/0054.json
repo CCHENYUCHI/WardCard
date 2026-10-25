@@ -1,6 +1,6 @@
 {
   "theme": "freq-0054",
-  "theme_zh": "常用字（頻率第 14839–15146 名）",
+  "theme_zh": "常用字（頻率第 14839–15168 名）",
   "entries": [
     {
       "word": "llanta",
@@ -3247,6 +3247,334 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:paternidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "peaje",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "過路費、收費站",
+      "en": "toll",
+      "ipa": "/peˈaxe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "加泰隆尼亞語",
+          "word": "peatge",
+          "zh": "過路費"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "peaje",
+          "zh": "過路費"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自加泰隆尼亞語 peatge（或法語 péage），最初指行人步行（源自 pie 腳）過橋或進入城門時繳納的「通行稅」。到了現代，轉為指在高速公路或收費站向車輛收取的「通行費/過路費」。",
+      "hook_zh": "高速公路上看到 peaje 的牌子，就要準備零錢或感應卡付過路費。",
+      "usage_zh": "陽性名詞。cabina de peaje（收費亭）、autopista de peaje（收費高速公路）。",
+      "example_es": "Tuvimos que pagar el peaje en la autopista.",
+      "example_zh": "我們必須在高速公路上支付過路費。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:peaje"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "planificar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "規劃、籌劃",
+      "en": "to plan",
+      "ipa": "/planifiˈkaɾ/",
+      "breakdown": [
+        {
+          "part": "plan",
+          "zh": "計畫"
+        },
+        {
+          "part": "-ificar",
+          "zh": "使成為（動詞字尾）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "plan"
+      ],
+      "story_zh": "",
+      "hook_zh": "有了一個 plan（計畫），動手去落實（-ificar），就是在 planificar（規劃）。",
+      "usage_zh": "第一人稱單數簡單過去式變位為 planifiqué（c 換為 qu）。",
+      "example_es": "Debemos planificar el viaje con anticipación.",
+      "example_zh": "我們必須提前規劃這次旅行。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:planificar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "preferido",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "最喜愛的、首選的",
+      "en": "favorite, preferred",
+      "ipa": "/pɾefeˈɾido/",
+      "breakdown": [
+        {
+          "part": "preferir",
+          "zh": "偏好"
+        },
+        {
+          "part": "-ido",
+          "zh": "過去分詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "prefer"
+      ],
+      "story_zh": "",
+      "hook_zh": "眾多選項中你最 prefer（偏好）的那一個，就是你的 preferido（最愛）。",
+      "usage_zh": "陰性為 preferida。常作名詞使用：el preferido（最受寵愛者）。",
+      "example_es": "El chocolate es mi sabor preferido de helado.",
+      "example_zh": "巧克力是我最喜歡的冰淇淋口味。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:preferido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pretensión",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "企圖、抱負、要求",
+      "en": "aspiration, claim",
+      "ipa": "/pɾetenˈsjon/",
+      "breakdown": [
+        {
+          "part": "pretender",
+          "zh": "意圖、聲稱"
+        },
+        {
+          "part": "-sión",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "pretension"
+      ],
+      "story_zh": "",
+      "hook_zh": "想要展現野心與要求（pretend），心中的企圖就是 pretensión。",
+      "usage_zh": "陰性名詞，複數 pretensiones。常指過高的期望或自負（sin pretensiones 謙遜的）。",
+      "example_es": "No tiene ninguna pretensión de ser famoso.",
+      "example_zh": "他絲毫沒有成名的企圖。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:pretensión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "párroco",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "堂區主任司鐸、堂區神父",
+      "en": "parish priest",
+      "ipa": "/ˈparoko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "parochus",
+          "zh": "教區神父、公職接待員"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "párroco",
+          "zh": "堂區本堂神父"
+        }
+      ],
+      "cognates_en": [
+        "parish"
+      ],
+      "story_zh": "源自拉丁語 parochus（接待官員的公職人員，後在教會拉丁語中演變為教區主持者）。在西班牙天主教傳統中，專指掌管一個堂區（parroquia）並負責牧養教友的主任神父。",
+      "hook_zh": "主持整間教區教堂（parroquia）的神父，就是那位 párroco。",
+      "usage_zh": "陽性名詞。指天主教堂區的首席神父；女本堂神父（在非天主教教派）可用 párroca。",
+      "example_es": "El párroco celebró la misa de los domingos.",
+      "example_zh": "堂區神父主持了週日的彌撒。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:párroco"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reivindicación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "訴求、爭取權益、索賠",
+      "en": "claim, demand",
+      "ipa": "/rei̯bindikaˈθjon/",
+      "breakdown": [
+        {
+          "part": "reivindicar",
+          "zh": "爭取、主張"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rei vindicātiō",
+          "zh": "物權索還、權利主張"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reivindicación",
+          "zh": "權益訴求、討回公道"
+        }
+      ],
+      "cognates_en": [
+        "vindication"
+      ],
+      "story_zh": "源自拉丁法律用語 rei vindicātiō（要求歸還所屬財產），由 res（物）和 vindicātiō（索討、主張）結合。西語借入後，從單純的物權追索，延伸至社會運動中工會或公民爭取自身權利的「正當訴求與爭取」。",
+      "hook_zh": "走上街頭大聲疾呼自己的權益，提出堅定的 reivindicación（訴求）。",
+      "usage_zh": "陰性名詞。常用於工會活動或社運抗爭（reivindicaciones laborales 勞動權利訴求）。",
+      "example_es": "Los trabajadores marcharon con sus reivindicaciones.",
+      "example_zh": "工人們帶著他們的訴求上街遊行。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reivindicación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "repaso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "複習、溫習、回顧",
+      "en": "review, revision",
+      "ipa": "/reˈpaso/",
+      "breakdown": [
+        {
+          "part": "re-",
+          "zh": "再次"
+        },
+        {
+          "part": "paso",
+          "zh": "走過、瀏覽"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "repasar",
+          "zh": "再次檢視、溫習"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "repaso",
+          "zh": "複習、回顧"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源起動詞 repasar（再次走過、重溫）的反推名詞。在西語中，將學過或檢查過的內容「重新走過一遍（re- + pasar）」，就變成了考前的「複習」或對文件的「快速檢查」。",
+      "hook_zh": "考試前把筆記再過（pasar）一遍（re-），就是扎實的 repaso（複習）。",
+      "usage_zh": "陽性名詞。常見搭配 dar un repaso a algo（快速複習某事物）。",
+      "example_es": "Daremos un repaso rápido a la lección antes del examen.",
+      "example_zh": "考試前我們會快速複習一下這課內容。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:repaso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "repentino",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "突然的、猝不及防的",
+      "en": "sudden",
+      "ipa": "/repenˈtino/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "repēns",
+          "zh": "突然的、出乎意料的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "repentīnus",
+          "zh": "突然發生的、倉促的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "repentino",
+          "zh": "突然的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自拉丁語 repentīnus，源於 repēns（突然的、意外的）。指事情毫無徵兆、猛然發生，就像一陣驟雨或突如其來的變化。其副詞片語 de repente（突然間）在西語口語中極為常見。",
+      "hook_zh": "毫無預警突然降臨的事物，就是 repentino；副詞 de repente 是其近親！",
+      "usage_zh": "陰性為 repentina。常見搭配 muerte repentina（猝死）、cambio repentino（突變）。",
+      "example_es": "Un repentino cambio de clima arruinó el pícnic.",
+      "example_zh": "天氣的突然變化毀了這次野餐。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:repentino",
+        "wiktionary:la:repentinus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "repudio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "斥責、休妻、拒絕接受",
+      "en": "repudiation, rejection",
+      "ipa": "/reˈpudjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "repudium",
+          "zh": "休書、休妻、拒絕"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "repudio",
+          "zh": "譴責、斥責、否定"
+        }
+      ],
+      "cognates_en": [
+        "repudiate",
+        "repudiation"
+      ],
+      "story_zh": "源自拉丁語 repudium，在羅馬法中專指丈夫發出休書「休妻」或解除婚約。進入西班牙語後，詞義擴展為社會或道德上強烈且公開的「譴責、唾棄或徹底拒絕」。",
+      "hook_zh": "對暴力與不公不義表達強烈的 repudio（斥責、唾棄）。",
+      "usage_zh": "陽性名詞。常見片語 expresar su repudio hacia algo（對…表達強烈譴責）。",
+      "example_es": "La sociedad expresó un enérgico repudio contra la violencia.",
+      "example_zh": "社會對暴力行為表達了強烈的譴責。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:repudio"
       ],
       "writer": "gemini"
     }

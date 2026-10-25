@@ -1,335 +1,7 @@
 {
   "theme": "freq-0055",
-  "theme_zh": "常用字（頻率第 15147–15438 名）",
+  "theme_zh": "常用字（頻率第 15172–15469 名）",
   "entries": [
-    {
-      "word": "peaje",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "過路費、收費站",
-      "en": "toll",
-      "ipa": "/peˈaxe/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "加泰隆尼亞語",
-          "word": "peatge",
-          "zh": "過路費"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "peaje",
-          "zh": "過路費"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源自加泰隆尼亞語 peatge（或法語 péage），最初指行人步行（源自 pie 腳）過橋或進入城門時繳納的「通行稅」。到了現代，轉為指在高速公路或收費站向車輛收取的「通行費/過路費」。",
-      "hook_zh": "高速公路上看到 peaje 的牌子，就要準備零錢或感應卡付過路費。",
-      "usage_zh": "陽性名詞。cabina de peaje（收費亭）、autopista de peaje（收費高速公路）。",
-      "example_es": "Tuvimos que pagar el peaje en la autopista.",
-      "example_zh": "我們必須在高速公路上支付過路費。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:peaje"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "planificar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "規劃、籌劃",
-      "en": "to plan",
-      "ipa": "/planifiˈkaɾ/",
-      "breakdown": [
-        {
-          "part": "plan",
-          "zh": "計畫"
-        },
-        {
-          "part": "-ificar",
-          "zh": "使成為（動詞字尾）"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "plan"
-      ],
-      "story_zh": "",
-      "hook_zh": "有了一個 plan（計畫），動手去落實（-ificar），就是在 planificar（規劃）。",
-      "usage_zh": "第一人稱單數簡單過去式變位為 planifiqué（c 換為 qu）。",
-      "example_es": "Debemos planificar el viaje con anticipación.",
-      "example_zh": "我們必須提前規劃這次旅行。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:planificar"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "preferido",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "最喜愛的、首選的",
-      "en": "favorite, preferred",
-      "ipa": "/pɾefeˈɾido/",
-      "breakdown": [
-        {
-          "part": "preferir",
-          "zh": "偏好"
-        },
-        {
-          "part": "-ido",
-          "zh": "過去分詞字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "prefer"
-      ],
-      "story_zh": "",
-      "hook_zh": "眾多選項中你最 prefer（偏好）的那一個，就是你的 preferido（最愛）。",
-      "usage_zh": "陰性為 preferida。常作名詞使用：el preferido（最受寵愛者）。",
-      "example_es": "El chocolate es mi sabor preferido de helado.",
-      "example_zh": "巧克力是我最喜歡的冰淇淋口味。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:preferido"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "pretensión",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "企圖、抱負、要求",
-      "en": "aspiration, claim",
-      "ipa": "/pɾetenˈsjon/",
-      "breakdown": [
-        {
-          "part": "pretender",
-          "zh": "意圖、聲稱"
-        },
-        {
-          "part": "-sión",
-          "zh": "名詞字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "pretension"
-      ],
-      "story_zh": "",
-      "hook_zh": "想要展現野心與要求（pretend），心中的企圖就是 pretensión。",
-      "usage_zh": "陰性名詞，複數 pretensiones。常指過高的期望或自負（sin pretensiones 謙遜的）。",
-      "example_es": "No tiene ninguna pretensión de ser famoso.",
-      "example_zh": "他絲毫沒有成名的企圖。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:pretensión"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "párroco",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "堂區主任司鐸、堂區神父",
-      "en": "parish priest",
-      "ipa": "/ˈparoko/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "parochus",
-          "zh": "教區神父、公職接待員"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "párroco",
-          "zh": "堂區本堂神父"
-        }
-      ],
-      "cognates_en": [
-        "parish"
-      ],
-      "story_zh": "源自拉丁語 parochus（接待官員的公職人員，後在教會拉丁語中演變為教區主持者）。在西班牙天主教傳統中，專指掌管一個堂區（parroquia）並負責牧養教友的主任神父。",
-      "hook_zh": "主持整間教區教堂（parroquia）的神父，就是那位 párroco。",
-      "usage_zh": "陽性名詞。指天主教堂區的首席神父；女本堂神父（在非天主教教派）可用 párroca。",
-      "example_es": "El párroco celebró la misa de los domingos.",
-      "example_zh": "堂區神父主持了週日的彌撒。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:párroco"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "reivindicación",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "訴求、爭取權益、索賠",
-      "en": "claim, demand",
-      "ipa": "/rei̯bindikaˈθjon/",
-      "breakdown": [
-        {
-          "part": "reivindicar",
-          "zh": "爭取、主張"
-        },
-        {
-          "part": "-ción",
-          "zh": "名詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "rei vindicātiō",
-          "zh": "物權索還、權利主張"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "reivindicación",
-          "zh": "權益訴求、討回公道"
-        }
-      ],
-      "cognates_en": [
-        "vindication"
-      ],
-      "story_zh": "源自拉丁法律用語 rei vindicātiō（要求歸還所屬財產），由 res（物）和 vindicātiō（索討、主張）結合。西語借入後，從單純的物權追索，延伸至社會運動中工會或公民爭取自身權利的「正當訴求與爭取」。",
-      "hook_zh": "走上街頭大聲疾呼自己的權益，提出堅定的 reivindicación（訴求）。",
-      "usage_zh": "陰性名詞。常用於工會活動或社運抗爭（reivindicaciones laborales 勞動權利訴求）。",
-      "example_es": "Los trabajadores marcharon con sus reivindicaciones.",
-      "example_zh": "工人們帶著他們的訴求上街遊行。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:reivindicación"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "repaso",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "複習、溫習、回顧",
-      "en": "review, revision",
-      "ipa": "/reˈpaso/",
-      "breakdown": [
-        {
-          "part": "re-",
-          "zh": "再次"
-        },
-        {
-          "part": "paso",
-          "zh": "走過、瀏覽"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "repasar",
-          "zh": "再次檢視、溫習"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "repaso",
-          "zh": "複習、回顧"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "源起動詞 repasar（再次走過、重溫）的反推名詞。在西語中，將學過或檢查過的內容「重新走過一遍（re- + pasar）」，就變成了考前的「複習」或對文件的「快速檢查」。",
-      "hook_zh": "考試前把筆記再過（pasar）一遍（re-），就是扎實的 repaso（複習）。",
-      "usage_zh": "陽性名詞。常見搭配 dar un repaso a algo（快速複習某事物）。",
-      "example_es": "Daremos un repaso rápido a la lección antes del examen.",
-      "example_zh": "考試前我們會快速複習一下這課內容。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:repaso"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "repentino",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "突然的、猝不及防的",
-      "en": "sudden",
-      "ipa": "/repenˈtino/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "repēns",
-          "zh": "突然的、出乎意料的"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "repentīnus",
-          "zh": "突然發生的、倉促的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "repentino",
-          "zh": "突然的"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "借自拉丁語 repentīnus，源於 repēns（突然的、意外的）。指事情毫無徵兆、猛然發生，就像一陣驟雨或突如其來的變化。其副詞片語 de repente（突然間）在西語口語中極為常見。",
-      "hook_zh": "毫無預警突然降臨的事物，就是 repentino；副詞 de repente 是其近親！",
-      "usage_zh": "陰性為 repentina。常見搭配 muerte repentina（猝死）、cambio repentino（突變）。",
-      "example_es": "Un repentino cambio de clima arruinó el pícnic.",
-      "example_zh": "天氣的突然變化毀了這次野餐。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:repentino",
-        "wiktionary:la:repentinus"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "repudio",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "斥責、休妻、拒絕接受",
-      "en": "repudiation, rejection",
-      "ipa": "/reˈpudjo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "repudium",
-          "zh": "休書、休妻、拒絕"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "repudio",
-          "zh": "譴責、斥責、否定"
-        }
-      ],
-      "cognates_en": [
-        "repudiate",
-        "repudiation"
-      ],
-      "story_zh": "源自拉丁語 repudium，在羅馬法中專指丈夫發出休書「休妻」或解除婚約。進入西班牙語後，詞義擴展為社會或道德上強烈且公開的「譴責、唾棄或徹底拒絕」。",
-      "hook_zh": "對暴力與不公不義表達強烈的 repudio（斥責、唾棄）。",
-      "usage_zh": "陽性名詞。常見片語 expresar su repudio hacia algo（對…表達強烈譴責）。",
-      "example_es": "La sociedad expresó un enérgico repudio contra la violencia.",
-      "example_zh": "社會對暴力行為表達了強烈的譴責。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:repudio"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "rifle",
       "article": "el",
@@ -3646,6 +3318,493 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:sobrenatural"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "subdirector",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "副主任、副局長",
+      "en": "subdirector, deputy director",
+      "ipa": "/subdiɾeɡˈtoɾ/",
+      "breakdown": [
+        {
+          "part": "sub-",
+          "zh": "副、下"
+        },
+        {
+          "part": "director",
+          "zh": "主任、局長"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "director"
+      ],
+      "story_zh": "",
+      "hook_zh": "sub（下面、副的）加 director（主任），就是副主任。",
+      "usage_zh": "陰性形為 subdirectora，指女性副主任。",
+      "example_es": "El subdirector presidió la reunión.",
+      "example_zh": "副主任主持了會議。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:subdirector"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sublime",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "崇高的、莊嚴的、絕妙的",
+      "en": "sublime",
+      "ipa": "/suˈblime/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sublimis",
+          "zh": "高聳的、崇高的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sublime",
+          "zh": "崇高的、絕妙的"
+        }
+      ],
+      "cognates_en": [
+        "sublime"
+      ],
+      "story_zh": "借自拉丁語 sublimis，由 sub-（向上、到…下方）和 līmen（門檻、界限）推測組合而成，原意為「升至門楣高處」，引申為令人敬畏的高尚或壯麗境界。",
+      "hook_zh": "英文 sublime 同源同義，想到昇華與崇高的藝術感。",
+      "usage_zh": "陰陽同形形容詞，修飾陽性與陰性名詞皆為 sublime。",
+      "example_es": "La vista de las montañas fue sublime.",
+      "example_zh": "群山的景色壯麗無比。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sublime"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "subsistencia",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "生存、生計、維持生活",
+      "en": "subsistence",
+      "ipa": "/subsisˈtenθja/",
+      "breakdown": [
+        {
+          "part": "sub-",
+          "zh": "在…下"
+        },
+        {
+          "part": "sistencia",
+          "zh": "站立、存在"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "subsistentia",
+          "zh": "實體、存在"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "subsistencia",
+          "zh": "生存、生計"
+        }
+      ],
+      "cognates_en": [
+        "subsistence"
+      ],
+      "story_zh": "源自拉丁語 subsistentia，來自動詞 subsistere（支撐、停留、立足）。字面意義為在底層站穩支撐，引申為維持生命基本需求的能力或物資。",
+      "hook_zh": "英文 subsistence 同源，想到基本生計（subsist）。",
+      "usage_zh": "陰性名詞。常用於 medios de subsistencia（謀生工具、生計來源）。",
+      "example_es": "Luchan por su subsistencia diaria.",
+      "example_zh": "他們為每天的生計奮鬥。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:subsistencia"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tajo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "切口；工作、工地",
+      "en": "cut, slash; task, workplace",
+      "ipa": "/ˈtaxo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "tajar",
+          "zh": "切、割"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tajo",
+          "zh": "切口；工作"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西語動詞 tajar（切、割）的動詞衍生名詞（deverbal）。原指一刀切下的切痕或斷崖，引申為採石場或被劃分指派的工作崗位。",
+      "hook_zh": "口語常見 ir al tajo（去上工），想像是拿起工具去開切幹活。",
+      "usage_zh": "陽性名詞。西語口語片語 estar al tajo / ir al tajo 意為「在工作 / 去上班」。注意首字母大寫的 Tajo 是塔霍河（地名）。",
+      "example_es": "Me voy al tajo temprano por la mañana.",
+      "example_zh": "我大清早就要去上工。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tajo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "transcurrir",
+      "article": "",
+      "pos": "verbo",
+      "zh": "流逝、過去",
+      "en": "to pass by, to elapse",
+      "ipa": "/tɾanskuˈriɾ/",
+      "breakdown": [
+        {
+          "part": "trans-",
+          "zh": "穿過、跨越"
+        },
+        {
+          "part": "currir",
+          "zh": "跑、流動"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "trānscurrere",
+          "zh": "跑過、穿過"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "transcurrir",
+          "zh": "流逝、過去"
+        }
+      ],
+      "cognates_en": [
+        "occur",
+        "current"
+      ],
+      "story_zh": "源自拉丁語 trānscurrere，由 trans-（穿過、跨越）和 currere（奔跑）組成，字面為「跑著穿過」。在西班牙語中主要用來形容時間的流逝或事件的演進過程。",
+      "hook_zh": "trans（穿過）加 currere（跑），時間飛快跑過就是 transcurrir。",
+      "usage_zh": "通常用於時間（el tiempo transcurre）或事件經過。過去分詞為 transcurrido。",
+      "example_es": "El tiempo transcurre muy rápido.",
+      "example_zh": "時間過得真快。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:transcurrir"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "trasplante",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "移植；器官移植",
+      "en": "transplant",
+      "ipa": "/tɾasˈplante/",
+      "breakdown": [
+        {
+          "part": "tras-",
+          "zh": "換、轉"
+        },
+        {
+          "part": "plante",
+          "zh": "栽種、放置"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "transplant"
+      ],
+      "story_zh": "",
+      "hook_zh": "tras（轉移）加上 plantar（種植），將器官或植物移到別處就是 trasplante。",
+      "usage_zh": "陽性名詞。醫學上指器官移植，如 trasplante de corazón（心臟移植）。",
+      "example_es": "El trasplante de riñón fue un éxito.",
+      "example_zh": "腎臟移植手術很成功。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:trasplante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "uranio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "鈾",
+      "en": "uranium",
+      "ipa": "/uˈɾanjo/",
+      "breakdown": [
+        {
+          "part": "Urano",
+          "zh": "天王星"
+        },
+        {
+          "part": "-io",
+          "zh": "化學元素字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "Urano",
+          "zh": "天王星"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "uranio",
+          "zh": "鈾"
+        }
+      ],
+      "cognates_en": [
+        "uranium"
+      ],
+      "story_zh": "由 Urano（天王星）加上金屬元素字尾 -io 構成。因為此金屬元素發現時，恰逢天文學家不久前發現了天王星，故以之命名紀念。",
+      "hook_zh": "英文 uranium，天王星 Uranus 發現後命名的放射性元素。",
+      "usage_zh": "陽性不可數名詞。常出現在核能與化學相關領域。",
+      "example_es": "El uranio se utiliza como combustible nuclear.",
+      "example_zh": "鈾被用作核燃料。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:uranio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vasto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "廣大的、遼闊的",
+      "en": "vast",
+      "ipa": "/ˈbasto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vastus",
+          "zh": "空曠的、龐大的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vasto",
+          "zh": "廣大的、遼闊的"
+        }
+      ],
+      "cognates_en": [
+        "vast",
+        "waste"
+      ],
+      "story_zh": "源自拉丁語 vastus，原指「空曠荒涼的、浩大的」。後來演變為指面積或範圍極其廣闊無垠，英文的 vast 與 waste 皆屬同源。",
+      "hook_zh": "英文 vast 一模一樣，想像一眼望不到邊的遼闊平原。",
+      "usage_zh": "注意發音與 basto（粗魯的、粗糙的）相同，但拼寫與意義不同，切勿混淆。",
+      "example_es": "El océano es un territorio vasto y misterioso.",
+      "example_zh": "海洋是一片廣大而神秘的領域。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vasto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "viabilidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "可行性；生存能力",
+      "en": "viability",
+      "ipa": "/bjabiliˈdad/",
+      "breakdown": [
+        {
+          "part": "viable",
+          "zh": "可行的、能存活的"
+        },
+        {
+          "part": "-idad",
+          "zh": "表示性質的字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "viability"
+      ],
+      "story_zh": "",
+      "hook_zh": "viable（可行的）加 -idad（名詞字尾），就是評估計畫的「可行性」。",
+      "usage_zh": "陰性名詞。商業與工程常用 estudio de viabilidad（可行性研究報告）。",
+      "example_es": "Analizamos la viabilidad del nuevo proyecto.",
+      "example_zh": "我們分析了新專案的可行性。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:viabilidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vocero",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "發言人",
+      "en": "spokesman",
+      "ipa": "/boˈθeɾo/",
+      "breakdown": [
+        {
+          "part": "voz",
+          "zh": "聲音、話語"
+        },
+        {
+          "part": "-ero",
+          "zh": "職業或特定角色字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "voice"
+      ],
+      "story_zh": "",
+      "hook_zh": "voz（聲音）加 -ero（從事者），替團隊發出聲音的人就是發言人。",
+      "usage_zh": "陰性形式為 vocera（女發言人）。拉美新聞中極其常見。",
+      "example_es": "El vocero del gobierno dio una conferencia.",
+      "example_zh": "政府發言人舉行了記者會。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:vocero"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ébola",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "伊波拉病毒、伊波拉病",
+      "en": "Ebola",
+      "ipa": "/ˈebola/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "Ebola",
+          "zh": "伊波拉"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ébola",
+          "zh": "伊波拉"
+        }
+      ],
+      "cognates_en": [
+        "ebola"
+      ],
+      "story_zh": "借自英語 Ebola，源自非洲剛果的伊波拉河（Ebola River），因1976年該病毒在該河流附近的村莊首次爆發而得名。",
+      "hook_zh": "英文 Ebola，西語加了重音符號 ébola，代表可怕的病毒。",
+      "usage_zh": "陽性名詞，首字母小寫指疾病或病毒本身：el virus del ébola。",
+      "example_es": "Los médicos luchan contra el brote de ébola.",
+      "example_zh": "醫生們正在對抗伊波拉疫情爆發。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ébola"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "épico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "史詩的、壯麗的",
+      "en": "epic",
+      "ipa": "/ˈepiko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ἐπικός",
+          "zh": "史詩的、話語的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "epicus",
+          "zh": "史詩的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "épico",
+          "zh": "史詩的、壯烈的"
+        }
+      ],
+      "cognates_en": [
+        "epic"
+      ],
+      "story_zh": "借自拉丁語 epicus，源於古希臘語 ἐπικός（epikós），來自 ἔπος（épos，話語、詩歌、傳奇敘事）。原指歌頌英雄偉業的長篇詩歌，後引申為宏大壯烈的事物。",
+      "hook_zh": "英文 epic 同源同義，現代口語常用來形容「超猛、超狂、史詩級」。",
+      "usage_zh": "陰性為 épica。常用 poesía épica（史詩）或 una batalla épica（史詩般的戰役）。",
+      "example_es": "Fue una victoria épica para el equipo.",
+      "example_zh": "這對球隊來說是一場史詩般的勝利。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:épico",
+        "wiktionary:la:epicus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "abstención",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "棄權、戒絕",
+      "en": "abstention",
+      "ipa": "/abstenˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "abstineō",
+          "zh": "克制、遠離"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "abstentio",
+          "zh": "克制、棄權"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "abstención",
+          "zh": "棄權、戒絕"
+        }
+      ],
+      "cognates_en": [
+        "abstention",
+        "abstain"
+      ],
+      "story_zh": "借自後拉丁語 abstentiōnem，由動詞 abstinēre（abs- 離開 + tenēre 握住）衍生而來，原意是「放手不拿、自我克制」。在現代廣泛用於投票中的「棄權」。",
+      "hook_zh": "英文 abstain（戒絕）的名詞 abstention，投票時不選任何一邊。",
+      "usage_zh": "陰性名詞。政治選舉中常見 tasa de abstención（棄權率）。",
+      "example_es": "Hubo una alta tasa de abstención en las elecciones.",
+      "example_zh": "選舉中的棄權率相當高。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:abstención",
+        "wiktionary:la:abstentio"
       ],
       "writer": "gemini"
     }
