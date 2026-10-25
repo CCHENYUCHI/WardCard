@@ -12,7 +12,7 @@
   - **每個字都有 SVG 插圖**：Claude 依 `draw-list.js` 只讀到的「字、詞性、中文、記憶聯想」畫插圖規格（`art/freq-<批次>.js`），`mark-drawn.js` 把畫好的字從 emoji 換成 SVG。
   - **選字規則**：變化形併回原形（`fetch-facts.js` 記錄 `form_of`，`podemos` → poder 而不是 podar；`nueva` → nuevo；`pasa` → pasar），名詞有自己的意思就保留（estado、gobierno、lista）；拼錯的字（`aqui`、`dia`）歸到正確拼法；人名、縮寫等非單字跳過（luis、cuba、sr）。字表改變時 `rebatch.js` 搬移已寫好的條目、刪掉被併掉的字的插圖。
   - **批次 agent（`batch-agent.js`、`batchCheck.js`）**：改用 agy MCP 的非同步批次工作，一次把 100 字交給 Gemini agent，附上由同一套檢查規則產生的 `check.mjs` 讓它自己修到全部通過；每批約 11–14 分鐘（原本逐次呼叫 35–40 分鐘）。agent 判斷是人名、地名、英文字或變化形的字記在 `freq-skip.json`。
-  - **進度**：前 56 批、約 5,500 字完成文字與插圖（每批由繪圖 agent 畫、看縮圖總覽修正）。
+  - **進度**：前 84 批、8,396 字完成文字（7,013 字有字源、其餘只有記憶聯想），其中 8,347 字已有插圖（每批由繪圖 agent 畫、看縮圖總覽修正）；另有 818 個人名、地名、英文字等跳過。
   - 其他：`server/scripts/lexicon/agy.js`（agy MCP 的 JSON-RPC 用戶端）、`build-queue.js`（頻率字表 → 原形批次，批次編號固定）；`lexicon.js` / `validate.js` 改成讀 `a1/` 與 `freq/` 兩個資料夾（同一個字以 A1 為準）；設定頁的「A1 圖鑑」字數改稱「字源圖鑑」。
 - **開發工具：AI agent 可以問 Gemini (`.mcp.json`)**：專案層級的 MCP 設定，連到另外部署的 [antigravity-mcp](https://github.com/CCHENYUCHI/antigravity-mcp)（Oracle 上的 Docker 容器，透過 Antigravity CLI 使用免費的 Gemini 額度），提供 `ask_gemini` 工具，給雲端 Claude Code 用來請 Gemini 給第二意見或做大量撰寫 / 檢查工作（例如字根字首表）。不影響 PalabraCard 本身；token 不在 repo 裡，雲端環境用 network secret 帶上，本機用 user scope 的 MCP 設定。
 - **變化表視窗 (`FormsModal.jsx`)**：在字典頁每個動詞 / 名詞 / 形容詞條目旁按「變位表 / 變化表」，或在單字卡詳情的字典資料區按按鈕，開出獨立視窗：動詞依語氣（直陳式、虛擬式、命令式）各一張表，人稱 × 時態；名詞與形容詞是陰陽性 × 單複數表，另列指小詞等。點任一個形態可以聽發音；手機上表格可橫向捲動、人稱欄固定；`Esc` 關閉。
