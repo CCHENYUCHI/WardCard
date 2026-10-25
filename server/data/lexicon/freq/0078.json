@@ -1,6 +1,6 @@
 {
   "theme": "freq-0078",
-  "theme_zh": "常用字（頻率第 22822–23121 名）",
+  "theme_zh": "常用字（頻率第 22822–23130 名）",
   "entries": [
     {
       "word": "acampar",
@@ -2845,28 +2845,6 @@
       "writer": "gemini"
     },
     {
-      "word": "marico",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "傢伙、哥們；蔑稱",
-      "en": "dude, bro; derogatory term",
-      "ipa": "/maˈɾiko/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "在委內瑞拉街頭常聽到年輕人互稱 marico，類似口語的「老兄、哥們」。",
-      "usage_zh": "委內瑞拉極常見的口語俗語，對熟人可表親暱，但原義具強烈冒犯性，需慎用。",
-      "example_es": "Oye, marico, ¿a qué hora nos vemos hoy?",
-      "example_zh": "嘿，老兄，我們今天幾點見面？",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:marico"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "mimo",
       "article": "el",
       "pos": "sustantivo",
@@ -3288,41 +3266,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:parabrisas"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "pay",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "派、餡餅（美洲西語）",
-      "en": "pie",
-      "ipa": "/ˈpai/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "英語",
-          "word": "pie",
-          "zh": "派、餡餅"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "pay",
-          "zh": "派、餡餅"
-        }
-      ],
-      "cognates_en": [
-        "pie"
-      ],
-      "story_zh": "借自英語 pie（派），主要在墨西哥等美洲西語國家廣泛使用，並按照西語拼寫習慣將結尾寫成 y。",
-      "hook_zh": "英文的 pie 換個西語拼法就成了美味的 pay（派）。",
-      "usage_zh": "陽性名詞，複數為 pays。在西班牙通常稱作 tarta 或 pastel。",
-      "example_es": "Compré un delicioso pay de queso en la panadería.",
-      "example_zh": "我在麵包店買了一個美味的乳酪派。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:pay"
       ],
       "writer": "gemini"
     },
@@ -4173,6 +4116,70 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:retroalimentación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "revelado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "底片沖洗、照片沖印",
+      "en": "photographic development, processing",
+      "ipa": "/rebeˈlado/",
+      "breakdown": [
+        {
+          "part": "revelar",
+          "zh": "顯影、沖洗"
+        },
+        {
+          "part": "-ado",
+          "zh": "動作與結果（名詞字尾）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "把底片潛在影像揭示（revelar）顯影出來的過程，就是沖印 revelado。",
+      "usage_zh": "陽性名詞。常用搭配如 revelado fotográfico（照片沖印）。",
+      "example_es": "Llevó el carrete a la tienda para su revelado.",
+      "example_zh": "他把底片拿去店裡沖洗。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:revelado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sarcástico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "諷刺的、挖苦的、嘲弄的",
+      "en": "sarcastic, snarky",
+      "ipa": "/saɾˈkastiko/",
+      "breakdown": [
+        {
+          "part": "sarcasmo",
+          "zh": "諷刺"
+        },
+        {
+          "part": "-ico",
+          "zh": "具…特質的（形容詞字尾）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "sarcastic"
+      ],
+      "story_zh": "",
+      "hook_zh": "sarcasmo 是諷刺，帶有嘲諷挖苦語氣的態度就是 sarcástico。",
+      "usage_zh": "陰性為 sarcástica，複數加 -s。常見搭配 comentario sarcástico（冷嘲熱諷）。",
+      "example_es": "Hizo un comentario sarcástico sobre el retraso.",
+      "example_zh": "他對遲到發表了一句挖苦的評論。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:sarcástico"
       ],
       "writer": "gemini"
     }

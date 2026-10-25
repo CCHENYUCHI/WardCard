@@ -1,71 +1,7 @@
 {
   "theme": "freq-0079",
-  "theme_zh": "常用字（頻率第 23122–23418 名）",
+  "theme_zh": "常用字（頻率第 23132–23436 名）",
   "entries": [
-    {
-      "word": "revelado",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "底片沖洗、照片沖印",
-      "en": "photographic development, processing",
-      "ipa": "/rebeˈlado/",
-      "breakdown": [
-        {
-          "part": "revelar",
-          "zh": "顯影、沖洗"
-        },
-        {
-          "part": "-ado",
-          "zh": "動作與結果（名詞字尾）"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "把底片潛在影像揭示（revelar）顯影出來的過程，就是沖印 revelado。",
-      "usage_zh": "陽性名詞。常用搭配如 revelado fotográfico（照片沖印）。",
-      "example_es": "Llevó el carrete a la tienda para su revelado.",
-      "example_zh": "他把底片拿去店裡沖洗。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:revelado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "sarcástico",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "諷刺的、挖苦的、嘲弄的",
-      "en": "sarcastic, snarky",
-      "ipa": "/saɾˈkastiko/",
-      "breakdown": [
-        {
-          "part": "sarcasmo",
-          "zh": "諷刺"
-        },
-        {
-          "part": "-ico",
-          "zh": "具…特質的（形容詞字尾）"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "sarcastic"
-      ],
-      "story_zh": "",
-      "hook_zh": "sarcasmo 是諷刺，帶有嘲諷挖苦語氣的態度就是 sarcástico。",
-      "usage_zh": "陰性為 sarcástica，複數加 -s。常見搭配 comentario sarcástico（冷嘲熱諷）。",
-      "example_es": "Hizo un comentario sarcástico sobre el retraso.",
-      "example_zh": "他對遲到發表了一句挖苦的評論。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:sarcástico"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "sendos",
       "article": "",
@@ -476,28 +412,6 @@
       "writer": "gemini"
     },
     {
-      "word": "tula",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "長旅行袋；捉迷藏遊戲；俚語陰莖",
-      "en": "duffel bag; tag game; penis (slang)",
-      "ipa": "/ˈtula/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "在智利口語中 tula 常用作男性器官俚語；而在哥倫比亞等地則是長形旅行袋。",
-      "usage_zh": "陰性名詞。在智利極度粗俗（指陰莖），在其他國家指運動旅行手提包。",
-      "example_es": "Guardó su ropa de deporte dentro de la tula.",
-      "example_zh": "他把運動服裝收進了長提袋裡。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:tula"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "vidente",
       "article": "el",
       "pos": "sustantivo",
@@ -616,28 +530,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:vómito"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "za",
-      "article": "",
-      "pos": "interjección",
-      "zh": "去、走開、噓（驅趕動物感嘆詞）",
-      "en": "shoo, scat",
-      "ipa": "/ˈθa/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "發出「¡za!」的一聲喝斥，用來把靠近的野狗或動物趕走。",
-      "usage_zh": "感嘆詞，常寫在驚嘆號內：¡za!。主要用於嚇跑犬隻或其他動物。",
-      "example_es": "El granjero gritó ¡za! para espantar a los perros.",
-      "example_zh": "農夫大喊了一聲「去！」來嚇跑野狗。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:za"
       ],
       "writer": "gemini"
     },
@@ -3821,51 +3713,6 @@
       "writer": "gemini"
     },
     {
-      "word": "naturar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "（在建築或城市空間）綠化、植生",
-      "en": "to green, to add vegetation to urban areas",
-      "ipa": "/natuˈɾaɾ/",
-      "breakdown": [
-        {
-          "part": "natura",
-          "zh": "自然"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "natura + -ar",
-          "zh": "自然 + 動詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "naturar",
-          "zh": "綠化、植生"
-        }
-      ],
-      "cognates_en": [
-        "nature",
-        "natural"
-      ],
-      "story_zh": "由 natura（自然）加上動詞字尾 -ar 構成。現代環境建築中用來指在屋頂、建築立面或都會公共空間引入植物植被，進行生態綠化以改善城市微氣候。",
-      "hook_zh": "把 natura（自然）引進城市水泥建築中，這就是動詞 naturar（綠化）！",
-      "usage_zh": "新興環保建築詞彙，常見如 naturar azoteas（綠化屋頂、打造空中花園）。",
-      "example_es": "El ayuntamiento planea naturar las terrazas urbanas.",
-      "example_zh": "市議會計劃對都會區的建築露台進行植生綠化。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:naturar"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "obsesivo",
       "article": "",
       "pos": "adjetivo",
@@ -3930,6 +3777,388 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:obsoleto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ocupacional",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "職業的",
+      "en": "occupational",
+      "ipa": "/okupaθjoˈnal/",
+      "breakdown": [
+        {
+          "part": "ocupación",
+          "zh": "職業"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "occupational",
+          "zh": "職業的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ocupacional",
+          "zh": "職業的"
+        }
+      ],
+      "cognates_en": [
+        "occupational",
+        "occupation"
+      ],
+      "story_zh": "借自英文 occupational，源自 occupation（職業、佔用）。在西語中指與工作或職業治療相關的事物。",
+      "hook_zh": "ocupar（佔據、忙於）＋ al，佔用你每天時間的事，就是「職業的」。",
+      "usage_zh": "常見搭配 terapia ocupacional（職能治療）、salud ocupacional（職業健康）。",
+      "example_es": "Ella estudia terapia ocupacional en la universidad.",
+      "example_zh": "她在大學研讀職能治療。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ocupacional"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "otrora",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "昔日、從前",
+      "en": "formerly, in days of yore",
+      "ipa": "/oˈtɾoɾa/",
+      "breakdown": [
+        {
+          "part": "otra",
+          "zh": "其他"
+        },
+        {
+          "part": "hora",
+          "zh": "時間"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "otra",
+          "zh": "另一個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "otrora",
+          "zh": "昔日、從前"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 otra（另一個）與 hora（時間）合詞而成，字面意思就是「在另一個時代」，引申為「昔日、從前」。",
+      "hook_zh": "otra（另一個）＋ hora（時刻），「另一個時光」就是從前。",
+      "usage_zh": "書面語，常用於文學或新聞回顧過往，如 otrora famoso（昔日著名的）。",
+      "example_es": "La fábrica, otrora próspera, ahora está abandonada.",
+      "example_zh": "這座昔日繁榮的工廠如今已被廢棄。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:otrora"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pacificar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "平定、撫平",
+      "en": "to pacify",
+      "ipa": "/paθifiˈkaɾ/",
+      "breakdown": [
+        {
+          "part": "paz",
+          "zh": "和平"
+        },
+        {
+          "part": "-ificar",
+          "zh": "使成為"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "pacify"
+      ],
+      "story_zh": "",
+      "hook_zh": "聯想 paz（和平）＋ -ificar（使變成），使局勢恢復平靜就是 pacificar。",
+      "usage_zh": "及物動詞，注意 c 在 e 前變 qu 的變位：pacifiqué。",
+      "example_es": "El gobierno intenta pacificar la región en conflicto.",
+      "example_zh": "政府試圖平定衝突地區。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:pacificar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "palpable",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "可觸摸的、明顯的",
+      "en": "palpable, tangible",
+      "ipa": "/palˈpable/",
+      "breakdown": [
+        {
+          "part": "palpar",
+          "zh": "觸摸"
+        },
+        {
+          "part": "-able",
+          "zh": "可…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "palpābilis",
+          "zh": "可觸摸的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "palpable",
+          "zh": "可觸摸的、明顯的"
+        }
+      ],
+      "cognates_en": [
+        "palpable"
+      ],
+      "story_zh": "學者借詞自晚期拉丁語 palpābilis，源自 palpo（撫摸、觸碰）。原本指「觸摸得到的」，後引申為「極為明顯的、昭然若揭的」。",
+      "hook_zh": "palpar（摸）＋ able（能），「摸得到的」就是顯而易見的、切實的。",
+      "usage_zh": "常形容抽象的氣氛或緊張感，如 una tensión palpable（顯而易見的緊張氣氛）。",
+      "example_es": "Había una tensión palpable en la sala de reuniones.",
+      "example_zh": "會議室裡瀰漫著顯而易見的緊張氣氛。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:palpable"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "papal",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "教宗的",
+      "en": "papal",
+      "ipa": "/paˈpal/",
+      "breakdown": [
+        {
+          "part": "papa",
+          "zh": "教宗"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "教會拉丁語",
+          "word": "pāpa",
+          "zh": "教宗"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "papālis",
+          "zh": "教宗的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "papal",
+          "zh": "教宗的"
+        }
+      ],
+      "cognates_en": [
+        "papal",
+        "pope"
+      ],
+      "story_zh": "借自中世紀拉丁語 papālis，源於教會拉丁語 pāpa（教宗、宗主教），加上形容詞字尾 -ālis。指與天主教羅馬教宗有關的事物。",
+      "hook_zh": "Papa（教宗）＋ al，字面就是「教宗的」。英文也是 papal。",
+      "usage_zh": "陰陽同形形容詞：la visita papal（教宗的訪問）。",
+      "example_es": "La visita papal atrajo a miles de fieles a la plaza.",
+      "example_zh": "教宗的來訪吸引了數千名信徒聚集在廣場。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:papal",
+        "wiktionary:la:papalis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "paranormal",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "超自然的",
+      "en": "paranormal",
+      "ipa": "/paɾanoɾˈmal/",
+      "breakdown": [
+        {
+          "part": "para-",
+          "zh": "超越、在…之外"
+        },
+        {
+          "part": "normal",
+          "zh": "正常的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "para",
+          "zh": "超越、超乎"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paranormal",
+          "zh": "超自然的"
+        }
+      ],
+      "cognates_en": [
+        "paranormal"
+      ],
+      "story_zh": "由前綴 para-（超出、在…之外）結合 normal（正常、常態）構成，意為「超出科學常態能解釋的範圍」，即超自然現象。",
+      "hook_zh": "para-（超乎）＋ normal（正常）＝ 超出常態的、超自然的。",
+      "usage_zh": "陰陽同形形容詞：fenómenos paranormales（超自然現象）。",
+      "example_es": "El equipo investigó una serie de sucesos paranormales.",
+      "example_zh": "團隊調查了一連串超自然事件。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paranormal"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "patrio",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "祖國的、家鄉的",
+      "en": "native, home, patriotic",
+      "ipa": "/ˈpatɾjo/",
+      "breakdown": [
+        {
+          "part": "patria",
+          "zh": "祖國"
+        },
+        {
+          "part": "-io",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "patrius",
+          "zh": "父親的、祖國的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "patrio",
+          "zh": "祖國的、家鄉的"
+        }
+      ],
+      "cognates_en": [
+        "patriotic"
+      ],
+      "story_zh": "學者借詞自拉丁語 patrius（父親的、祖先的、本土的），源自 pater（父親）。在西語中指與祖國、故土有關的事物。",
+      "hook_zh": "源自 pater（父親），和 patria（祖國）同源，指「祖國的」。",
+      "usage_zh": "常用搭配 símbolos patrios（國家象徵、國旗國徽等）、mes patrio（國慶月）。",
+      "example_es": "Los estudiantes cantaron el himno patrio con orgullo.",
+      "example_zh": "學生們自豪地唱著國歌。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:patrio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pelar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "削皮、剝皮",
+      "en": "to peel, to skin",
+      "ipa": "/peˈlaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pilāre",
+          "zh": "拔毛、脫毛"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pelar",
+          "zh": "削皮、剝皮"
+        }
+      ],
+      "cognates_en": [
+        "peel"
+      ],
+      "story_zh": "繼承自拉丁語 pilāre（拔毛、脫毛），源自 pilus（毛髮）。原本指拔掉禽獸的毛髮，後來引申為削去水果、蔬菜的果皮。",
+      "hook_zh": "pelo 是毛髮，pelar 原本是「拔毛」，引申為「剝皮、削皮」。",
+      "usage_zh": "及物動詞：pelar una manzana（削蘋果皮）。口語 me la pela 意為「我不在乎」。",
+      "example_es": "Voy a pelar las papas para la cena.",
+      "example_zh": "我要削馬鈴薯皮來做晚餐。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pelar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pensionista",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "領退休金者",
+      "en": "pensioner",
+      "ipa": "/pensjoˈnista/",
+      "breakdown": [
+        {
+          "part": "pensión",
+          "zh": "退休金"
+        },
+        {
+          "part": "-ista",
+          "zh": "具有…身分者"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pensión",
+          "zh": "退休金、年金"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pensionista",
+          "zh": "領退休金者"
+        }
+      ],
+      "cognates_en": [
+        "pensioner"
+      ],
+      "story_zh": "由 pensión（退休金、養老金）加上表示身分的名詞字尾 -ista 組成，指領取養老金或撫卹金的退休人員。",
+      "hook_zh": "pensión（年金）＋ ista（人），領退休金的人就是 pensionista。",
+      "usage_zh": "陰陽同形名詞：el pensionista（男退休人員）、la pensionista（女退休人員）。",
+      "example_es": "El gobierno anunció un aumento para los pensionistas.",
+      "example_zh": "政府宣布提高領取退休金者的補助。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pensionista"
       ],
       "writer": "gemini"
     }
