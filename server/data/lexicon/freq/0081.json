@@ -1,6 +1,6 @@
 {
   "theme": "freq-0081",
-  "theme_zh": "常用字（頻率第 23814–24237 名）",
+  "theme_zh": "常用字（頻率第 23814–24264 名）",
   "entries": [
     {
       "word": "recambio",
@@ -232,39 +232,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:rústico"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "salvado",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "麥麩、麩皮",
-      "en": "bran",
-      "ipa": "/salˈbado/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "salvar",
-          "zh": "篩選、挽救"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "salvado",
-          "zh": "麥麩"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "名詞義來自動詞 salvar 的過去分詞。在古代篩麵粉的過程中，留在篩子上方被「留存/篩出」的穀物外皮部分被稱為 salvado（麥麩）。",
-      "hook_zh": "從麵粉中篩留出來的穀皮就是 salvado（麩皮），富含高纖維。",
-      "usage_zh": "陽性名詞。常用於食品營養如 salvado de avena（燕麥麩）、salvado de trigo（小麥麩）。",
-      "example_es": "El pan integral contiene salvado de trigo.",
-      "example_zh": "全麥麵包含有小麥麩皮。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:salvado"
       ],
       "writer": "gemini"
     },
@@ -2821,28 +2788,6 @@
       "writer": "gemini"
     },
     {
-      "word": "roda",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "船艏柱（船頭前緣骨架）",
-      "en": "stem, cutwater (ship bow part)",
-      "ipa": "/ˈroda/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [],
-      "story_zh": "",
-      "hook_zh": "船隻在海上乘風破浪時，最前頭切開水面的那一根大柱子就是 roda。",
-      "usage_zh": "陰性名詞。屬於造船與航海專業術語，指船頭龍骨前端向上延伸的骨架結構。",
-      "example_es": "La roda del barco cortaba las olas con fuerza.",
-      "example_zh": "船艏柱有力地劈開海浪。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:roda"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "ruidoso",
       "article": "",
       "pos": "adjetivo",
@@ -3441,6 +3386,255 @@
       "sources": [
         "wiktionary:es:viñedo",
         "wiktionary:la:vinetum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "volcánico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "火山的；猛烈的",
+      "en": "volcanic; fiery",
+      "ipa": "/bolˈkaniko/",
+      "breakdown": [
+        {
+          "part": "volcán",
+          "zh": "火山"
+        },
+        {
+          "part": "-ico",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "volcanic"
+      ],
+      "story_zh": "",
+      "hook_zh": "volcán（火山）加 -ico 變成形容詞，想像火山噴發時熾熱狂暴的景象。",
+      "usage_zh": "除了指火山，也常形容人的性格或脾氣如火山般狂烈（carácter volcánico）。",
+      "example_es": "Esa isla tiene varias montañas de origen volcánico.",
+      "example_zh": "那座島嶼有幾座火山成因的山脈。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:volcánico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "vértice",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "頂點、最高點",
+      "en": "vertex, apex",
+      "ipa": "/ˈbeɾtiθe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vertex",
+          "zh": "旋轉軸心、最高點"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "vértice",
+          "zh": "頂點"
+        }
+      ],
+      "cognates_en": [
+        "vertex"
+      ],
+      "story_zh": "源自拉丁文 vertex，原指旋轉的軸心或漩渦，引申為人頭頂的旋律處，再進一步延伸為幾何圖形或山峰的最頂點。在西語中與 vórtice（漩渦）是同源異形詞。",
+      "hook_zh": "頂點是向上延伸匯聚的極致，英文也是 vertex。",
+      "usage_zh": "陽性名詞 el vértice，幾何學指多邊形或角相交的頂點。",
+      "example_es": "El triángulo tiene tres lados y tres vértices.",
+      "example_zh": "三角形有三個邊和三個頂點。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:vértice"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "índico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "印度的；印度洋的",
+      "en": "Indian; related to the Indian Ocean",
+      "ipa": "/ˈindiko/",
+      "breakdown": [
+        {
+          "part": "India",
+          "zh": "印度"
+        },
+        {
+          "part": "-ico",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ινδικος",
+          "zh": "印度的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "indicus",
+          "zh": "印度的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "índico",
+          "zh": "印度的、印度洋的"
+        }
+      ],
+      "cognates_en": [
+        "indic"
+      ],
+      "story_zh": "學術借詞，經由拉丁語 Indicus 借自古希臘語 Ἰνδικός（Indikós），由 Ἰνδία（印度）加上形容詞字尾組成，現代西語最常用於「印度洋」（océano Índico）。",
+      "hook_zh": "India 加上 -ico 就是 índico，最常見於 océano Índico（印度洋）。",
+      "usage_zh": "專有名詞 océano Índico（印度洋）首字常大寫；作一般形容詞時指印度的。",
+      "example_es": "El océano Índico baña las costas de África y Asia.",
+      "example_zh": "印度洋沖刷著非洲與亞洲的海岸。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:índico"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "acomodado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "富裕的、家境好的",
+      "en": "well-off, wealthy, comfortable",
+      "ipa": "/akomoˈdado/",
+      "breakdown": [
+        {
+          "part": "acomodar",
+          "zh": "安排、安頓"
+        },
+        {
+          "part": "-ado",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "acomodar",
+          "zh": "安排、安置"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "acomodado",
+          "zh": "安頓好的、富裕安適的"
+        }
+      ],
+      "cognates_en": [
+        "accommodate"
+      ],
+      "story_zh": "源自西語動詞 acomodar（安頓、使適應）加上分詞後綴 -ado。生活一切都被安排得妥妥當當、無憂無慮，因而引申指「家境富裕的、經濟寬裕的」。",
+      "hook_zh": "被安排得舒服妥當（acomodar），生活自然富裕優渥（acomodado）。",
+      "usage_zh": "常用搭配 familia acomodada（富裕家庭）、clase acomodada（富裕階層）。",
+      "example_es": "Ella nació en una familia muy acomodada.",
+      "example_zh": "她出生在一個非常富裕的家庭。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:acomodado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "anticuado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "過時的、陳舊的",
+      "en": "antiquated, obsolete",
+      "ipa": "/antiˈkwado/",
+      "breakdown": [
+        {
+          "part": "anticuar",
+          "zh": "使過時"
+        },
+        {
+          "part": "-ado",
+          "zh": "形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "anticuar",
+          "zh": "廢棄、使過時"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "anticuado",
+          "zh": "過時的、陳舊的"
+        }
+      ],
+      "cognates_en": [
+        "antiquated"
+      ],
+      "story_zh": "源自西語動詞 anticuar（使成為古老、使廢止）加上後綴 -ado，字面表示「已經變老的、被淘汰的」，用來形容思想、觀念或設備跟不上時代。",
+      "hook_zh": "來自 antiguo（古老的），變成 anticuado 就是指觀念或東西太老舊、過時。",
+      "usage_zh": "陰性為 anticuada，常用來修飾想法（ideas anticuadas）或方法（métodos anticuados）。",
+      "example_es": "Ese televisor es un modelo anticuado.",
+      "example_zh": "那台電視是一個過時的機型。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:anticuado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "apasionante",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "扣人心弦的、激動人心的",
+      "en": "exciting, thrilling",
+      "ipa": "/apasjoˈnante/",
+      "breakdown": [
+        {
+          "part": "apasionar",
+          "zh": "使狂熱、使著迷"
+        },
+        {
+          "part": "-ante",
+          "zh": "現在分詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "apasionar",
+          "zh": "使充滿熱情、使著迷"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "apasionante",
+          "zh": "令人著迷激動的"
+        }
+      ],
+      "cognates_en": [
+        "passion"
+      ],
+      "story_zh": "由動詞 apasionar（激發熱情、使入迷）加上分詞形容詞後綴 -ante 構成，表示「激起強烈熱情的事物」，形容故事、比賽或經歷極具吸引力。",
+      "hook_zh": "內心充滿 pasión（熱情），這場比賽太 apasionante（精采刺激）了！",
+      "usage_zh": "陰陽同形（un libro apasionante / una historia apasionante）。",
+      "example_es": "La final del torneo fue un partido apasionante.",
+      "example_zh": "錦標賽的決賽是一場扣人心弦的比賽。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:apasionante"
       ],
       "writer": "gemini"
     }
