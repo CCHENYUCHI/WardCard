@@ -3252,6 +3252,710 @@
         "wiktionary:es:nicho"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "peón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "（西洋棋的）兵；苦工、雜工",
+      "en": "pawn; laborer, worker",
+      "ipa": "/peˈon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pes",
+          "zh": "腳"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "pedō",
+          "zh": "步兵、徒步者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "peón",
+          "zh": "步兵；兵、卒；苦工"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 pes（腳），演變出晚期拉丁語 pedō（步兵、徒步的人），進入西班牙語成為 peón。因為是徒步作戰的士兵，在西洋棋中被用來指地位最低但數量最多的一步步往前走的「兵／卒」；後來也引申指從事體力勞動的粗工或苦力。",
+      "hook_zh": "peón 在棋盤上用雙腳一步一步往前走，就是西洋棋裡的小兵。",
+      "usage_zh": "陽性名詞，複數為 peones（去掉重音符號）。女性苦工為 peona。",
+      "example_es": "El jugador movió un peón.",
+      "example_zh": "那位棋手移動了一顆兵。",
+      "image": "emoji:♟️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:peón",
+        "wiktionary:la:pes",
+        "wiktionary:la:pedo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pleito",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "訴訟、官司；爭吵、糾紛",
+      "en": "lawsuit; dispute, fight",
+      "ipa": "/ˈpleito/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "placitum",
+          "zh": "訴訟、法令、決定"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pleito",
+          "zh": "訴訟；爭吵"
+        }
+      ],
+      "cognates_en": [
+        "plea"
+      ],
+      "story_zh": "源自中世紀拉丁語 placitum（原指協議、法令、訴訟審判），進入西班牙語後演變為 pleito，主要指法院中的「訴訟、官司」，後來也延伸指一般的「爭執、糾紛」。英文的 plea（懇求、抗辯）亦源於同一個拉丁字根。",
+      "hook_zh": "為了官司（pleito）上法院，律師提出訴求（plea）。",
+      "usage_zh": "常見搭配如 ganar un pleito（勝訴）、tener pleitos con alguien（與某人起爭執）。",
+      "example_es": "Los dos vecinos resolvieron su pleito en el tribunal.",
+      "example_zh": "兩位鄰居在法庭上解決了他們的訴訟糾紛。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pleito",
+        "wiktionary:la:placitum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "popa",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "船尾、艉",
+      "en": "stern, poop (of a ship)",
+      "ipa": "/ˈpopa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "puppis",
+          "zh": "船尾"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*puppa",
+          "zh": "船尾"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "popa",
+          "zh": "船尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "popa",
+          "zh": "船尾"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 puppis（船尾），經由通俗拉丁語 *puppa 演變為古西班牙語 popa，最終進入現代西班牙語，指船隻後部的船尾。在航海用語中非常重要，例如著名成語 viento en popa（順風）。",
+      "hook_zh": "船尾 popa 吹來順風，船隻一路順風順水（viento en popa）。",
+      "usage_zh": "陰性名詞。常用成語 viento en popa（一帆風順）：El negocio va viento en popa。",
+      "example_es": "El capitán se paró en la popa del barco.",
+      "example_zh": "船長站在船尾。",
+      "image": "emoji:🚢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:popa",
+        "wiktionary:la:puppis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "predominar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "佔優勢、佔主導地位",
+      "en": "to predominate, to prevail",
+      "ipa": "/pɾedomiˈnaɾ/",
+      "breakdown": [
+        {
+          "part": "pre-",
+          "zh": "在…之前、居前"
+        },
+        {
+          "part": "dominar",
+          "zh": "支配、統治"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pre- + dominar",
+          "zh": "居前 + 支配"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "predominar",
+          "zh": "佔主導地位"
+        }
+      ],
+      "cognates_en": [
+        "predominate"
+      ],
+      "story_zh": "由前綴 pre-（在…之前、居前）和動詞 dominar（統治、支配）組合而成，字面意思是「在支配地位上居前」，引申為在數量、力量或影響力上「佔優勢、居主導地位」。",
+      "hook_zh": "pre（提前）加上 dominar（掌控），就是 predominat 佔優勢。",
+      "usage_zh": "不及物動詞，常搭配介詞 en 或 sobre：El color azul predomina en el cuadro。",
+      "example_es": "En esta región predomina el clima seco.",
+      "example_zh": "這個地區以乾燥氣候為主。",
+      "image": "emoji:👑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:predominar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "proclamación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "宣告、公布、聲明",
+      "en": "proclamation, announcement",
+      "ipa": "/pɾoklamaˈθjon/",
+      "breakdown": [
+        {
+          "part": "proclamar",
+          "zh": "宣告、聲明"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示動作或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "proclāmō",
+          "zh": "大聲呼喊、公開宣告"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "proclāmātiō",
+          "zh": "公開宣告、宣言"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "proclamación",
+          "zh": "宣告、聲明"
+        }
+      ],
+      "cognates_en": [
+        "proclamation"
+      ],
+      "story_zh": "借自晚期拉丁語 proclāmātiōnem，源自拉丁語動詞 proclamo（大聲呼喊、公開宣布）與名詞字尾 -tio。原意是向大眾高聲宣讀，引申為官方正式發布的「宣告、宣言」。",
+      "hook_zh": "官方向群眾公開 claim 聲明，這是一場 proclamation / proclamación。",
+      "usage_zh": "陰性名詞，複數為 proclamaciones。常見如 proclamación de la independencia。",
+      "example_es": "El rey leyó la proclamación ante el pueblo.",
+      "example_zh": "國王在民眾面前宣讀了宣告。",
+      "image": "emoji:📜",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:proclamación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "rabo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "尾巴；葉柄、果梗",
+      "en": "tail; stem, stalk",
+      "ipa": "/ˈrabo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rāpum",
+          "zh": "蕪菁、蘿蔔"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "rabo",
+          "zh": "尾巴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rabo",
+          "zh": "尾巴"
+        }
+      ],
+      "cognates_en": [
+        "rape"
+      ],
+      "story_zh": "源自拉丁語 rāpum（蕪菁、蘿蔔），經由古西班牙語 rabo 演變而來。因為蕪菁細長的主根外觀就像動物的尾巴，古人因而借用其形狀來指稱「尾巴」。與英文油菜籽（rapeseed）中的 rape 同源。",
+      "hook_zh": "細長的小蘿蔔搖一搖，就像小狗搖著可愛的 rabo（尾巴）。",
+      "usage_zh": "陽性名詞。西班牙名菜 rabo de toro 即為燉牛尾；por el rabillo del ojo 指用眼角餘光看。",
+      "example_es": "El perro mueve el rabo cuando está contento.",
+      "example_zh": "狗狗高興時會搖尾巴。",
+      "image": "emoji:🐕",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:rabo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "refinería",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "提煉廠、煉油廠",
+      "en": "refinery",
+      "ipa": "/refineˈɾia/",
+      "breakdown": [
+        {
+          "part": "refinar",
+          "zh": "精煉、提煉"
+        },
+        {
+          "part": "-ería",
+          "zh": "場所、工廠字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "refinar",
+          "zh": "提純、精煉"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "refinería",
+          "zh": "精煉廠、提煉廠"
+        }
+      ],
+      "cognates_en": [
+        "refinery"
+      ],
+      "story_zh": "由動詞 refinar（精煉、提純）加上表示工作場所或工廠的字尾 -ería 衍生而來，字面意思是「進行精煉提純的場所」，在現代工業中通常專指煉油廠或精煉糖、金屬的工廠。",
+      "hook_zh": "refinar（提煉）+ -ería（場所）= 提煉石油的 refinería（煉油廠）。",
+      "usage_zh": "陰性名詞。常用搭配如 refinería de petróleo（煉油廠）、refinería de azúcar（糖廠）。",
+      "example_es": "Trabaja como ingeniero en una refinería de petróleo.",
+      "example_zh": "他在一家煉油廠擔任工程師。",
+      "image": "emoji:🏭",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:refinería"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "reglamentación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "規章、條例、監管規則",
+      "en": "regulation, ruling",
+      "ipa": "/reɡlamentaˈθjon/",
+      "breakdown": [
+        {
+          "part": "reglamentar",
+          "zh": "制定規章、管制"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示動作或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "reglamentar",
+          "zh": "立規、管制"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "reglamentación",
+          "zh": "規章、管理條例"
+        }
+      ],
+      "cognates_en": [
+        "regulation"
+      ],
+      "story_zh": "由動詞 reglamentar（制定規章、管制，源自 regla 規則）加上名詞字尾 -ción 衍生而來，指制定規則的行為，或官方依法頒布的整套「規章、管理條例」。",
+      "hook_zh": "regla（規則）制定出的 reglamentación，就是大家必須遵守的規章條例。",
+      "usage_zh": "陰性名詞，複數為 reglamentaciones。常見如 cumplir la reglamentación（遵守規章）。",
+      "example_es": "La nueva reglamentación entrará en vigor el próximo mes.",
+      "example_zh": "新規章將於下個月生效。",
+      "image": "emoji:📋",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:reglamentación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "residual",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "殘留的、剩餘的；（水）廢水、汙水的",
+      "en": "residual, remaining",
+      "ipa": "/resiˈdwal/",
+      "breakdown": [
+        {
+          "part": "residuo",
+          "zh": "殘餘、殘渣"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾，…的"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "residual"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文 residual 是殘留的；西語 aguas residuales 就是都市廢水、汙水。",
+      "usage_zh": "陰陽同形形容詞，複數為 residuales。最常見搭配為 aguas residuales（廢水、汙水）。",
+      "example_es": "La planta trata las aguas residuales de la ciudad.",
+      "example_zh": "該工廠處理這座城市的廢水。",
+      "image": "emoji:💧",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:residual"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "retrospectiva",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "回顧展；回顧",
+      "en": "retrospective",
+      "ipa": "/retɾospeɡˈtiba/",
+      "breakdown": [
+        {
+          "part": "retro-",
+          "zh": "向後、往回"
+        },
+        {
+          "part": "spect",
+          "zh": "看"
+        },
+        {
+          "part": "-iva",
+          "zh": "名詞／形容詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "retrospective"
+      ],
+      "story_zh": "",
+      "hook_zh": "retro（往後）+ spect（看）= 往回看藝術家過去作品的「回顧展」（retrospectiva）。",
+      "usage_zh": "陰性名詞，複數為 retrospectivas。常用於 una retrospectiva de arte（藝術回顧展）。",
+      "example_es": "El museo inauguró una retrospectiva del pintor.",
+      "example_zh": "博物館為這位畫家舉辦了回顧展。",
+      "image": "emoji:🖼️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:retrospectiva"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "rígido",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "堅硬的、僵硬的；嚴格的、死板的",
+      "en": "rigid, stiff; strict, rigorous",
+      "ipa": "/ˈrixido/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rigeō",
+          "zh": "發僵、僵直"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "rigidus",
+          "zh": "堅硬的、嚴厲的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rígido",
+          "zh": "堅硬的、嚴格的"
+        }
+      ],
+      "cognates_en": [
+        "rigid"
+      ],
+      "story_zh": "源自拉丁語 rigidus（僵硬的、嚴格的），源自動詞 rigeō（發僵、僵硬）。在西班牙語中既指物理上的「硬挺、無法彎曲」，也引申為原則或態度上的「嚴苛、死板」。西語 recio（堅韌）為其雙式詞。",
+      "hook_zh": "英文 rigid 是僵硬死板，西語 rígido 意思完全對應。",
+      "usage_zh": "陰性為 rígida。可用於物體（cuerpo rígido 剛體）或制度（normas rígidas 嚴格規則）。",
+      "example_es": "El plástico se volvió rígido con el frío.",
+      "example_zh": "塑膠受冷後變得堅硬。",
+      "image": "emoji:📏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:rígido",
+        "wiktionary:la:rigidus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sabina",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "沙松、檜柏（柏科常綠灌木或喬木）",
+      "en": "savin (juniper shrub or tree)",
+      "ipa": "/saˈbina/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sabina",
+          "zh": "檜柏、沙松（herba Sabīna）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sabina",
+          "zh": "沙松、檜柏"
+        }
+      ],
+      "cognates_en": [
+        "savin"
+      ],
+      "story_zh": "源自晚期拉丁語 sabīna，原為 herba Sabīna（薩賓之草），得名自義大利古代的薩賓人（Sabini）地區，古羅馬人用它指稱當地出產的一種具藥用價值的常綠灌木。在西班牙語中指柏科刺柏屬的耐旱樹種（沙松、檜柏）。",
+      "hook_zh": "生長在古代薩賓山林裡的常綠針葉樹，就是耐旱的 sabina。",
+      "usage_zh": "陰性名詞。西班牙加那利群島耶羅島（El Hierro）以強風吹折彎曲的 sabina 樹聞名。",
+      "example_es": "La sabina es un árbol muy resistente a la sequía.",
+      "example_zh": "沙松是一種非常耐旱的樹木。",
+      "image": "emoji:🌲",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sabina",
+        "wiktionary:la:sabina"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sanar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "治癒、醫治；康復、痊癒",
+      "en": "to heal, to cure; to recover",
+      "ipa": "/saˈnaɾ/",
+      "breakdown": [
+        {
+          "part": "san-",
+          "zh": "健康的（源自 sano）"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sānāre",
+          "zh": "使痊癒、醫治"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sanar",
+          "zh": "治癒、康復"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sanar",
+          "zh": "痊癒、治好"
+        }
+      ],
+      "cognates_en": [
+        "sane",
+        "sanitary"
+      ],
+      "story_zh": "源自拉丁語動詞 sānāre（使健康、治癒），其詞根與形容詞 sānus（健康的，英文 sane、sanitary 的字源）相同。進入西班牙語後作及物動詞表示「醫治、治好」，作不及物動詞則表示病人「康復、痊癒」。",
+      "hook_zh": "身心 healthy 又 sane，傷口就能漸漸 sanar（癒合）。",
+      "usage_zh": "規則動詞。可當及物動詞（sanar una herida 治癒傷口）或不及物動詞（el enfermo sanó）。",
+      "example_es": "La herida tardó varias semanas en sanar.",
+      "example_zh": "傷口花了幾週才癒合。",
+      "image": "emoji:🩹",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sanar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tea",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "火把、松脂火炬",
+      "en": "torch (resinous pine torch)",
+      "ipa": "/ˈtea/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "δᾰΐς",
+          "zh": "火把、燃燒木片"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "taeda",
+          "zh": "富含松脂的松木、火炬"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "tēda",
+          "zh": "火把"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tea",
+          "zh": "火把、火炬"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "最終源自古希臘語 δᾰΐς（火把），經由拉丁語 taeda（富含松脂的松木、火炬）及其單母音化形式 tēda 演變為西班牙語 tea。原本指含有豐富松脂、易於點燃的松木枝，古代常用作照明的「火把」。",
+      "hook_zh": "古代夜晚沒有電燈，點燃松脂木棒 tea 來當火把照亮道路。",
+      "usage_zh": "陰性名詞。注意不要和借自英文的 té（茶，帶重音符號）混淆。",
+      "example_es": "Los soldados iluminaban el camino con teas.",
+      "example_zh": "士兵們用火把照亮道路。",
+      "image": "emoji:🔥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tea",
+        "wiktionary:la:taeda"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "teóricamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "理論上、在理論上",
+      "en": "theoretically",
+      "ipa": "/teˌoɾikaˈmente/",
+      "breakdown": [
+        {
+          "part": "teórica",
+          "zh": "理論的（陰性形容詞）"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾，…地"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "teórico + -mente",
+          "zh": "理論的 + …地"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "teóricamente",
+          "zh": "理論上"
+        }
+      ],
+      "cognates_en": [
+        "theoretically"
+      ],
+      "story_zh": "由形容詞 teórico 的陰性形式 teórica 加上副詞後綴 -mente 複合而成，字面意思是「以理論的方式」，用來表示在理論推導或假定情況下「理論上如此」。",
+      "hook_zh": "英文 theoretically，西語加上 -mente 就變成 teóricamente。",
+      "usage_zh": "副詞，修飾動詞或全句。常與 en la práctica（在實踐中）對比。",
+      "example_es": "Teóricamente, el plan debería funcionar sin problemas.",
+      "example_zh": "理論上，這個計畫應該能順利運作。",
+      "image": "emoji:💡",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:teóricamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ticket",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "票、入場券；收據、發票",
+      "en": "ticket; receipt",
+      "ipa": "/ˈtiket/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古法語",
+          "word": "estiquette",
+          "zh": "便條、標籤"
+        },
+        {
+          "lang_zh": "英語",
+          "word": "ticket",
+          "zh": "票券、入場券"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ticket",
+          "zh": "票、收據"
+        }
+      ],
+      "cognates_en": [
+        "ticket"
+      ],
+      "story_zh": "直接借自英語 ticket（票券、收據），源自古法語 estiquette（附籤、標籤）。在西班牙語中與 etiqueta（標籤、禮節）同源成一對雙式詞。常用於搭車門票、入場券或購物後的收據。",
+      "hook_zh": "看電影買 ticket 是入場券，買完東西拿到的 ticket 是收據。",
+      "usage_zh": "陽性名詞，複數為 tickets。西班牙皇家語言學院建議拼寫為 tíquet。",
+      "example_es": "Guardé el ticket de compra por si tengo que cambiarlo.",
+      "example_zh": "我保留了購物收據，以防需要更換商品。",
+      "image": "emoji:🎫",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ticket"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tiniebla",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "黑暗、幽暗、陰暗",
+      "en": "darkness, shadow, gloom",
+      "ipa": "/tiˈnjebla/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tenebra",
+          "zh": "黑暗、陰暗"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "tiniebra",
+          "zh": "黑暗"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tiniebla",
+          "zh": "黑暗、幽暗"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 tenebra（黑暗、陰暗），在古西班牙語中演變為 tiniebra，隨後音變為 tiniebla。通常以複數形式 las tinieblas 出現，指完全沒有光線的深沉黑暗，在文學與宗教語境中常象徵無知、邪惡或陰間。",
+      "hook_zh": "走進沒有任何光線的深淵，四周全是濃濃的 tinieblas（黑暗）。",
+      "usage_zh": "陰性名詞。日常與文學中極常使用複數形 las tinieblas（黑暗深處、幽冥）。",
+      "example_es": "Una vela brillaba en medio de las tinieblas.",
+      "example_zh": "一盞蠟燭在黑暗中閃爍。",
+      "image": "emoji:🌑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tiniebla"
+      ],
+      "writer": "gemini"
     }
   ]
 }
