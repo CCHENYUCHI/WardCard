@@ -31,7 +31,7 @@ const SKIP_WORDS = new Set(['luis', 'maría', 'brasil', 'pp', 'to', 'cuba', 'pos
   'ultra', 'je', 'arabio', 'nasa', 'soto', 'sarmiento', 'ginebra', 'patricio', 'augusto', 'magdalena', 'sobretodo', 'trans', 'leu', 'wey', 'madero', 'montero', 'beta', 'pi', 'non',
   'grey', 'living', 'roque', 'carrillo', 'prieto', 'pascual', 'efe', 'sic', 'facto', 'colon',
   'cha', 'agir', 'linear', 'mena', 'ji', 'sud', 'toar', 'peraltar', 'cid', 'cho', 'gene', 'bonus', 'versus', 'senior',
-  'led', 'wiki', 'ring', 'blues', 'omega', 'mara', 'lucio', 'pancho', 'solano', 'fausto', 'falcón', 'saltillo', 'garrido', 'espartar', 'tea', 'forum', 'fernet', 'sabina', 'ayo', 'chin', 'cas', 'boulevard', 'memo', 'virgo', 'bel', 'amador', 'leticia', 'galileo', 'serna', 'cisco', 'vito', 'nava', 'marico', 'pay', 'sito', 'naturar', 'aja', 'tula', 'escorial', 'za', 'elle', 'roda', 'rúa', 'gomar', 'liza', 'rial', 'kirchnerista', 'watt', 'carmenar', 'mancera', 'zorrilla', 'quiñón', 'pando', 'espinar', 'llera', 'yin', 'cornejo']);
+  'led', 'wiki', 'ring', 'blues', 'omega', 'mara', 'lucio', 'pancho', 'solano', 'fausto', 'falcón', 'saltillo', 'garrido', 'espartar', 'tea', 'forum', 'fernet', 'sabina', 'ayo', 'chin', 'cas', 'boulevard', 'memo', 'virgo', 'bel', 'amador', 'leticia', 'galileo', 'serna', 'cisco', 'vito', 'nava', 'marico', 'pay', 'sito', 'naturar', 'aja', 'tula', 'escorial', 'za', 'elle', 'roda', 'rúa', 'gomar', 'liza', 'rial', 'kirchnerista', 'watt', 'carmenar', 'mancera', 'zorrilla', 'quiñón', 'pando', 'espinar', 'llera', 'yin', 'cornejo', 'aba', 'filar', 'zeta']);
 // Words that look like a form of another word but are learned on their own
 const NO_FOLD = new Set(['política', 'lista', 'firma']);
 // Kinds of Wiktionary entries that are not words to learn
@@ -52,7 +52,7 @@ const FOLD = {
   designado: 'designar', enterado: 'enterar', 'energética': 'energético',
   encontrado: 'encontrar', apuesto: 'apostar', adoro: 'adorar', honda: 'hondo', redonda: 'redondo', perpetua: 'perpetuo',
   'sistemática': 'sistemático', petrolera: 'petrolero', cayo: 'caer', 'vió': 'ver', ano: 'año', antemano: 'mano',
-  prostituto: 'prostituta', vendido: 'vender', pica: 'picar', resta: 'restar', sosa: 'soso', barbaro: 'bárbaro', talvez: 'tal vez', procura: 'procurar', cano: 'canoso', borra: 'borrar', iguala: 'igualar', caracter: 'carácter', tomo: 'tomar', quebrado: 'quebrar', lagrimar: 'lagrimear', 'dueña': 'dueño', negrito: 'negro', brasilero: 'brasileño', practicamente: 'prácticamente', peque: 'pequeño', culturar: 'cultivar', forjado: 'forjar', cinema: 'cine', beisbol: 'béisbol', salvado: 'salvar', volado: 'volar', reggaeton: 'reguetón',
+  prostituto: 'prostituta', vendido: 'vender', pica: 'picar', resta: 'restar', sosa: 'soso', barbaro: 'bárbaro', talvez: 'tal vez', procura: 'procurar', cano: 'canoso', borra: 'borrar', iguala: 'igualar', caracter: 'carácter', tomo: 'tomar', quebrado: 'quebrar', lagrimar: 'lagrimear', 'dueña': 'dueño', negrito: 'negro', brasilero: 'brasileño', practicamente: 'prácticamente', peque: 'pequeño', culturar: 'cultivar', forjado: 'forjar', cinema: 'cine', beisbol: 'béisbol', salvado: 'salvar', volado: 'volar', reggaeton: 'reguetón', merlo: 'mirlo',
   // Accented demonstratives and sólo are old spellings (RAE 2010): the same words as ese, este, aquel, solo
   'ése': 'ese', 'ésa': 'ese', 'ésos': 'ese', 'ésas': 'ese', 'éste': 'este', 'ésta': 'este', 'éstos': 'este', 'éstas': 'este',
   'aquél': 'aquel', 'aquélla': 'aquel', 'aquéllos': 'aquel', 'aquéllas': 'aquel', 'sólo': 'solo',
