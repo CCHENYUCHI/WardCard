@@ -1,6 +1,6 @@
 {
   "theme": "freq-0083",
-  "theme_zh": "常用字（頻率第 24656–25078 名）",
+  "theme_zh": "常用字（頻率第 24656–25094 名）",
   "entries": [
     {
       "word": "caribeño",
@@ -2937,50 +2937,6 @@
       "writer": "gemini"
     },
     {
-      "word": "zorrilla",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "條紋艾鼬；臭鼬",
-      "en": "zorille, striped polecat",
-      "ipa": "/θoˈriʝa/",
-      "breakdown": [
-        {
-          "part": "zorro",
-          "zh": "狐狸"
-        },
-        {
-          "part": "-illa",
-          "zh": "指小詞字尾，表示小型的"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "zorro",
-          "zh": "狐狸"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "zorrilla",
-          "zh": "小狐狸；條紋艾鼬"
-        }
-      ],
-      "cognates_en": [
-        "zorille"
-      ],
-      "story_zh": "由 zorro（狐狸）加上指小字尾 -illa 構成，原意為「小狐狸」，因該動物體型小、外形略似小狐狸但會釋放惡臭防禦，英文亦借為 zorille。",
-      "hook_zh": "zorro 是狐狸，加小尾巴 -illa 變成毛茸茸放臭氣的小艾鼬 zorrilla。",
-      "usage_zh": "陰性名詞（la zorrilla），在美洲有時也用作臭鼬（zorrillo）的同義詞。",
-      "example_es": "La zorrilla ahuyentó a los animales con su olor.",
-      "example_zh": "條紋艾鼬用牠的氣味趕走了動物。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:zorrilla"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "acertar",
       "article": "",
       "pos": "verbo",
@@ -3524,39 +3480,6 @@
       "writer": "gemini"
     },
     {
-      "word": "carmenar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "梳理（羊毛、頭髮）；扯頭髮",
-      "en": "to untangle, to comb, to card wool",
-      "ipa": "/kaɾmeˈnaɾ/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "carminare",
-          "zh": "用梳子梳理毛髮"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "carmenar",
-          "zh": "梳理、解開纏結"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "繼承自拉丁文 carminare（梳毛、梳羊毛，源於 carmen「梳羊毛用的梳毛機」），原意是用梳具把打結的羊毛理順，引申為梳理糾結的頭髮或拉扯頭髮。",
-      "hook_zh": "想像拿梳子梳順（carmenar）打結糾纏的捲髮。",
-      "usage_zh": "規則第一變化動詞（carmeno, carmenas…），口語中也指扯頭髮打架。",
-      "example_es": "La abuela suele carmenar la lana antes de hilarla.",
-      "example_zh": "祖母通常在紡線前先梳理羊毛。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:carmenar"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "carroza",
       "article": "la",
       "pos": "sustantivo",
@@ -3902,6 +3825,85 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:contagioso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cuadrante",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "象限；日晷盤；輪班表",
+      "en": "quadrant, dial, roster",
+      "ipa": "/kwaˈdɾante/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quadrantis",
+          "zh": "四分之一、四分體"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuadrante",
+          "zh": "象限、刻度盤"
+        }
+      ],
+      "cognates_en": [
+        "quadrant"
+      ],
+      "story_zh": "源自拉丁文 quadrantis（四分之一、象限，源於 quattuor「四」），原指圓的四分之一部分或測量用的象限儀，現代亦指儀器鐘錶的刻度盤或劃分工作區塊的班表。",
+      "hook_zh": "cuatro 是四，切成四份的空間就是數學裡的象限 cuadrante。",
+      "usage_zh": "陽性名詞，數學上指 el primer cuadrante（第一象限）。",
+      "example_es": "El barco navega hacia el segundo cuadrante del mapa.",
+      "example_zh": "船隻正駛向地圖上的第二象限。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuadrante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "datar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "追溯至；註明日期",
+      "en": "to date, to date from",
+      "ipa": "/daˈtaɾ/",
+      "breakdown": [
+        {
+          "part": "data",
+          "zh": "日期、給定時間"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "data",
+          "zh": "日期"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "datar",
+          "zh": "註明日期、追溯"
+        }
+      ],
+      "cognates_en": [
+        "date"
+      ],
+      "story_zh": "由名詞 data（文件簽署日期，源自拉丁文 datum「給予、註明時間」）加上動詞字尾 -ar 構成，指為文件記下日期，或判定文物、歷史事件發生的年代。",
+      "hook_zh": "英語 date 和西語 datar 同源，datar de… 就是「追溯到某個年代」。",
+      "usage_zh": "常搭配介系詞 de：Esta iglesia data del siglo XVI（這座教堂始建於十六世紀）。",
+      "example_es": "Las ruinas logran datar de la época romana.",
+      "example_zh": "該遺跡可追溯至古羅馬時期。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:datar"
       ],
       "writer": "gemini"
     }

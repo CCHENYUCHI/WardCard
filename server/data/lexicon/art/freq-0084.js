@@ -723,15 +723,6 @@ module.exports = {
     s('path', { d: 'M72 24q-8-6 0-12M88 24q8-6 0-12', ...SW(3) }, 'mint', { stroke: true }),
     s('path', { d: dots([[110, 40], [122, 24], [40, 36]], 4) }, 'mint')
   ],
-  zorrilla: [
-    ground(),
-    s('path', { d: 'M90 100q20-80 50-50q-6 30-30 50z' }, 'dark'),
-    s('path', { d: 'M96 92q16-48 36-38', ...SW(5) }, 'white', { stroke: true }),
-    s('path', { d: 'M30 106q0-26 40-26t30 26q0 16-20 18H44q-14 0-14-18z' }, 'dark', { accent: true }),
-    s('path', { d: 'M40 88q30-14 56 6', ...SW(6) }, 'white', { stroke: true }),
-    s('path', { d: 'M44 124v12M84 124v12', ...SW(6) }, 'dark', { stroke: true }),
-    s('circle', { cx: 32, cy: 98, r: 3 }, 'white')
-  ],
   acertar: [
     s('circle', { cx: 74, cy: 86, r: 52 }, 'red'),
     s('circle', { cx: 74, cy: 86, r: 36 }, 'white'),
@@ -831,12 +822,6 @@ module.exports = {
     s('path', { d: 'M28 40h104v20l8 62H90l-10-40-10 40H20l8-62z' }, 'sky', { accent: true }),
     s('path', { d: 'M28 40h104v14H28z' }, 'navy'),
     s('path', { d: dots([[46, 80], [110, 76], [56, 104], [112, 106]], 5) }, 'blue')
-  ],
-  carmenar: [
-    s('path', { d: 'M30 20q-10 40 6 60t-4 60M50 20q-10 40 6 60t-4 60M70 20q-10 40 6 60t-4 60', ...SW(5) }, 'brown', { stroke: true }),
-    s('path', { d: 'M98 20v120M110 20v120M122 20v120', ...SW(5) }, 'brown', { stroke: true }),
-    s('rect', { x: 78, y: 54, width: 66, height: 16, rx: 5 }, 'orange', { accent: true }),
-    s('path', { d: 'M84 70v18M94 70v18M104 70v18M114 70v18M124 70v18M134 70v18', ...SW(4) }, 'orange', { stroke: true })
   ],
   carroza: [
     s('path', { d: 'M38 104q-8-60 42-62q50 2 42 62z' }, 'orange', { accent: true }),
@@ -1211,14 +1196,6 @@ module.exports = {
     s('path', { d: ells([[40, 34, 10, 7], [26, 24, 8, 6]]) }, 'gray'),
     s('path', { d: dots([[46, 122], [80, 122], [116, 122]], 12) }, 'dark')
   ],
-  mancera: [
-    ground(),
-    s('path', { d: 'M40 130h40l-8-14H48z' }, 'gray'),
-    s('path', { d: 'M62 116L96 46M76 120l44-60', ...SW(6) }, 'brown', { stroke: true }),
-    s('path', { d: 'M96 46l-8-10M120 60l-6-12', ...SW(8) }, 'orange', { stroke: true, accent: true }),
-    s('path', { d: 'M20 112l50-10', ...SW(4) }, 'brown', { stroke: true }),
-    s('path', { d: 'M90 136q10-6 20 0q10-6 20 0', ...SW(3) }, 'tan', { stroke: true })
-  ],
   manicomio: [
     ground(),
     s('rect', { x: 24, y: 50, width: 112, height: 86 }, 'cream'),
@@ -1265,5 +1242,5 @@ module.exports = {
     s('path', { d: 'M74 88V58', ...SW(5) }, 'dark', { stroke: true }),
     s('circle', { cx: 120, cy: 120, r: 20 }, 'green', { accent: true }),
     s('path', { d: 'M110 120l7 7 13-14', ...SW(5) }, 'white', { stroke: true })
-  ],
+  ]
 };

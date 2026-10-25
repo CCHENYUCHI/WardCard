@@ -1,86 +1,7 @@
 {
   "theme": "freq-0084",
-  "theme_zh": "常用字（頻率第 25089–25412 名）",
+  "theme_zh": "常用字（頻率第 25098–25432 名）",
   "entries": [
-    {
-      "word": "cuadrante",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "象限；日晷盤；輪班表",
-      "en": "quadrant, dial, roster",
-      "ipa": "/kwaˈdɾante/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "quadrantis",
-          "zh": "四分之一、四分體"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "cuadrante",
-          "zh": "象限、刻度盤"
-        }
-      ],
-      "cognates_en": [
-        "quadrant"
-      ],
-      "story_zh": "源自拉丁文 quadrantis（四分之一、象限，源於 quattuor「四」），原指圓的四分之一部分或測量用的象限儀，現代亦指儀器鐘錶的刻度盤或劃分工作區塊的班表。",
-      "hook_zh": "cuatro 是四，切成四份的空間就是數學裡的象限 cuadrante。",
-      "usage_zh": "陽性名詞，數學上指 el primer cuadrante（第一象限）。",
-      "example_es": "El barco navega hacia el segundo cuadrante del mapa.",
-      "example_zh": "船隻正駛向地圖上的第二象限。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:cuadrante"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "datar",
-      "article": "",
-      "pos": "verbo",
-      "zh": "追溯至；註明日期",
-      "en": "to date, to date from",
-      "ipa": "/daˈtaɾ/",
-      "breakdown": [
-        {
-          "part": "data",
-          "zh": "日期、給定時間"
-        },
-        {
-          "part": "-ar",
-          "zh": "動詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "data",
-          "zh": "日期"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "datar",
-          "zh": "註明日期、追溯"
-        }
-      ],
-      "cognates_en": [
-        "date"
-      ],
-      "story_zh": "由名詞 data（文件簽署日期，源自拉丁文 datum「給予、註明時間」）加上動詞字尾 -ar 構成，指為文件記下日期，或判定文物、歷史事件發生的年代。",
-      "hook_zh": "英語 date 和西語 datar 同源，datar de… 就是「追溯到某個年代」。",
-      "usage_zh": "常搭配介系詞 de：Esta iglesia data del siglo XVI（這座教堂始建於十六世紀）。",
-      "example_es": "Las ruinas logran datar de la época romana.",
-      "example_zh": "該遺跡可追溯至古羅馬時期。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:datar"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "delictivo",
       "article": "",
@@ -1670,53 +1591,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:locomotora"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "mancera",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "犁把；犁柄",
-      "en": "stilt, handle of a plough",
-      "ipa": "/manˈθeɾa/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "manus",
-          "zh": "手"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "manicula",
-          "zh": "小手；把手"
-        },
-        {
-          "lang_zh": "通俗拉丁語",
-          "word": "manicella",
-          "zh": "小把柄"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "mancera",
-          "zh": "犁把"
-        }
-      ],
-      "cognates_en": [
-        "manual"
-      ],
-      "story_zh": "源自拉丁文 manus（手），其指小形 manicula 在通俗拉丁語演化為 manicella，進入西語後改變後綴為 mancera，指農夫耕田時手握以操控犁具方向的犁柄。",
-      "hook_zh": "農夫用手（mano / manus）握住操控方向的犁柄，就是 mancera。",
-      "usage_zh": "陰性名詞，農業傳統詞彙（agarrar la mancera 扶握犁把）。",
-      "example_es": "El campesino sujetó la mancera con fuerza para arar.",
-      "example_zh": "農夫用力握緊犁把來翻耕土地。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:mancera",
-        "wiktionary:la:manicula",
-        "wiktionary:la:manus"
       ],
       "writer": "gemini"
     },
@@ -3922,6 +3796,308 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:bicarbonato"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "botar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "扔、丟棄；彈跳",
+      "en": "to throw, throw away, bounce",
+      "ipa": "/boˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法蘭克語",
+          "word": "*bautan",
+          "zh": "打擊"
+        },
+        {
+          "lang_zh": "古法語",
+          "word": "bouter",
+          "zh": "推、打"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "botar",
+          "zh": "丟、彈"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自法蘭克語 *bautan（打擊），經由古法語 bouter（推、打擊）傳入。最初帶有「猛力擊打」之意，後來在西語中引申出「把東西丟出去」或球「反彈、彈跳」的動作。",
+      "hook_zh": "把不想要的東西 botar 到垃圾桶裡；球撞到地板也會 botar（彈起）。",
+      "usage_zh": "在拉丁美洲常指「丟掉」（botar la basura），注意與 votar（投票）同音異義。",
+      "example_es": "No debes botar la basura en la calle.",
+      "example_zh": "你不應該把垃圾丟在街上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:botar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bruscamente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "突然地、猛然地",
+      "en": "suddenly, brusquely",
+      "ipa": "/ˌbɾuskaˈmente/",
+      "breakdown": [
+        {
+          "part": "brusco",
+          "zh": "突然的、粗暴的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾（…地）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "brusquely"
+      ],
+      "story_zh": "",
+      "hook_zh": "車子突然急煞，身體 bruscamente 往前衝！",
+      "usage_zh": "由陰性形容詞 brusca 加上副詞字尾 -mente 構成。",
+      "example_es": "El coche frenó bruscamente en la esquina.",
+      "example_zh": "汽車在轉角處猛然煞車。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:bruscamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "caligrafía",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "書法、筆跡",
+      "en": "calligraphy, handwriting",
+      "ipa": "/kaliɡɾaˈfia/",
+      "breakdown": [
+        {
+          "part": "cali-",
+          "zh": "美麗的"
+        },
+        {
+          "part": "-grafía",
+          "zh": "書寫、記錄"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "κάλλος",
+          "zh": "美麗"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "καλλιγραφία",
+          "zh": "優美書寫"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caligrafía",
+          "zh": "書法"
+        }
+      ],
+      "cognates_en": [
+        "calligraphy"
+      ],
+      "story_zh": "借自古希臘語 καλλιγραφία，由 κάλλος（美麗）和書寫字根結合而成，原意就是「優美的書寫」。後來指書法藝術，也指個人的手寫筆跡風格。",
+      "hook_zh": "英文 calligraphy 與西語 caligrafía 同源，都是把字寫得很美麗（cali）。",
+      "usage_zh": "陰性名詞。重音在 ía 上，需加重音符號。",
+      "example_es": "Ella tiene una caligrafía muy bonita y clara.",
+      "example_zh": "她的筆跡非常漂亮且工整。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caligrafía"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "campiña",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "田野、鄉間、平原",
+      "en": "countryside, plain",
+      "ipa": "/kamˈpiɲa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "campus",
+          "zh": "平原、田野"
+        },
+        {
+          "lang_zh": "後拉丁語",
+          "word": "campānia",
+          "zh": "鄉野、平原"
+        },
+        {
+          "lang_zh": "安達盧西亞阿拉伯語",
+          "word": "*kanpinyā",
+          "zh": "鄉村、田野"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "campiña",
+          "zh": "田野、鄉間"
+        }
+      ],
+      "cognates_en": [
+        "campus",
+        "campaign"
+      ],
+      "story_zh": "源自拉丁語 campus（平原、田野），在後拉丁語演變為 campānia。經由安達盧西亞阿拉伯語 *kanpinyā 吸收後進入西語成為 campiña，專指城市周遭開闊宜人的鄉村田野。",
+      "hook_zh": "campiña 讓人聯想到在開闊田野露營（camp）。",
+      "usage_zh": "陰性名詞。與 campaña（戰役、運動）是同源異形詞（doublet）。",
+      "example_es": "Paseamos por la tranquila campiña inglesa.",
+      "example_zh": "我們漫步在寧靜的英國鄉間。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:campiña",
+        "wiktionary:la:campania",
+        "wiktionary:la:campus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "capitalización",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "資本化；市值；大寫",
+      "en": "capitalization",
+      "ipa": "/kapitaliθaˈθjon/",
+      "breakdown": [
+        {
+          "part": "capital",
+          "zh": "資本；主要的"
+        },
+        {
+          "part": "-izar",
+          "zh": "使成為…（動詞化）"
+        },
+        {
+          "part": "-ción",
+          "zh": "行為、狀態（名詞字尾）"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "capitalization"
+      ],
+      "story_zh": "",
+      "hook_zh": "把資金轉化為資本（capital）的過程就是 capitalización。",
+      "usage_zh": "陰性名詞。在財經上指「資本額」或「市值」（capitalización de mercado）。",
+      "example_es": "La empresa aumentó su capitalización de mercado.",
+      "example_zh": "該公司的市場價值增加了。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:capitalización"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "carruaje",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "馬車、四輪運貨車",
+      "en": "carriage",
+      "ipa": "/kaˈrwaxe/",
+      "breakdown": [
+        {
+          "part": "carro",
+          "zh": "車輛"
+        },
+        {
+          "part": "-aje",
+          "zh": "名詞字尾（集合或動作）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "高盧語",
+          "word": "*karros",
+          "zh": "車輛"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "carrus",
+          "zh": "雙輪或四輪車"
+        },
+        {
+          "lang_zh": "加泰隆尼亞語",
+          "word": "carruatge",
+          "zh": "馬車"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "carruaje",
+          "zh": "馬車"
+        }
+      ],
+      "cognates_en": [
+        "carriage",
+        "car"
+      ],
+      "story_zh": "源自高盧語 *karros（車輛），借入拉丁語成為 carrus。後來經由加泰隆尼亞語 carruatge 或奧克語進入西班牙語，指載人或載貨的四輪大馬車。英文的 car 和 carriage 也同源。",
+      "hook_zh": "carruaje 開頭就是 car，以前的人出門坐的「車」就是馬車。",
+      "usage_zh": "陽性名詞。以 -aje 結尾的名詞在西班牙語通常為陽性。",
+      "example_es": "El rey llegó al palacio en un elegante carruaje.",
+      "example_zh": "國王乘坐一輛優雅的馬車抵達宮殿。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:carruaje",
+        "wiktionary:la:carrus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cedro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "雪松、雪松木",
+      "en": "cedar (tree, wood)",
+      "ipa": "/ˈθedɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "κέδρος",
+          "zh": "杜松、雪松"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cedrus",
+          "zh": "雪松"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cedro",
+          "zh": "雪松"
+        }
+      ],
+      "cognates_en": [
+        "cedar"
+      ],
+      "story_zh": "借自拉丁語 cedrus，後者源自古希臘語 κέδρος。古羅馬人曾用雪松油塗抹書卷以防蟲蛀與腐爛，後來成為這類芳香針葉樹種的通稱。英文 cedar 亦源自此字。",
+      "hook_zh": "cedro 就是英文 cedar 的西語兄弟，帶著清新的雪松木香。",
+      "usage_zh": "陽性名詞。指雪松樹或雪松木材，具防腐防蛀特性。",
+      "example_es": "Esta mesa antigua está hecha de madera de cedro.",
+      "example_zh": "這張古董桌是用雪松木製成的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cedro",
+        "wiktionary:la:cedrus"
       ],
       "writer": "gemini"
     }

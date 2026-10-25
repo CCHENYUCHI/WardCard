@@ -992,14 +992,6 @@ module.exports = {
     s('ellipse', { cx: 80, cy: 80, rx: 62, ry: 18, transform: 'rotate(-20 80 80)', ...SW(3) }, 'yellow', { stroke: true }),
     s('circle', { cx: 138, cy: 59, r: 6 }, 'gray')
   ],
-  pando: [
-    ground(),
-    s('rect', { x: 18, y: 60, width: 14, height: 76 }, 'gray'),
-    s('rect', { x: 128, y: 60, width: 14, height: 76 }, 'gray'),
-    s('path', { d: 'M25 60q55 50 110 0', ...SW(8) }, 'brown', { stroke: true, accent: true }),
-    s('path', { d: 'M62 50h36l6 32H56z' }, 'dark'),
-    s('path', { d: 'M80 32v10m-6-6 6 6 6-6', ...SW(3) }, 'red', { stroke: true })
-  ],
   'pediatría': [
     ...person(52, 140, 'white', { h: 56, w: 38, r: 15 }),
     s('rect', { x: 33, y: 84, width: 38, height: 56, rx: 12.7, ...SW(3) }, 'gray', { stroke: true }),
@@ -1060,13 +1052,6 @@ module.exports = {
     s('rect', { x: 24, y: 114, width: 28, height: 22 }, 'navy', { accent: true }),
     s('path', { d: 'M24 136L138 45', ...DASH(3) }, 'orange', { stroke: true }),
     s('path', { d: dots([[52, 114], [80, 92], [134, 48]], 4) }, 'orange')
-  ],
-  'quiñón': [
-    s('path', { d: rects([[20, 30, 56, 46], [84, 30, 56, 46], [20, 84, 56, 46]]) }, 'green'),
-    s('path', { d: 'M26 42h44M26 54h44M26 66h44M90 42h44M90 54h44M90 66h44M26 96h44M26 108h44M26 120h44', ...SW(2) }, 'mint', { stroke: true }),
-    s('rect', { x: 84, y: 84, width: 56, height: 46, rx: 2 }, 'yellow', { accent: true }),
-    s('path', { d: 'M112 124V90', ...SW(3) }, 'dark', { stroke: true }),
-    s('path', { d: 'M112 90l18 7-18 7z' }, 'red')
   ],
   remar: [
     s('path', { d: 'M14 132q10-6 20 0t20 0t20 0t20 0t20 0t20 0', ...SW(4) }, 'blue', { stroke: true }),
@@ -1180,5 +1165,5 @@ module.exports = {
     ...face(80, 88, 44, 'skin'),
     s('path', { d: 'M30 50q-10 6-8 18M130 52q10 8 6 20M60 26q-6-10 4-14M100 24q8-8 16 0', ...SW(5) }, 'orange', { stroke: true }),
     s('path', { d: dots([[56, 96], [62, 102], [50, 102], [104, 96], [98, 102], [110, 102]], 2) }, 'brown')
-  ],
+  ]
 };
