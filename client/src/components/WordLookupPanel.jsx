@@ -190,7 +190,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
         </div>
       )}
 
-      <StoryCard story={story} compact={compact} />
+      <StoryCard story={story} />
 
       {wiktionary.slice(0, meaningsShown).map(item => (
         <div key={`${item.lemma}|${item.pos}`} className="lookup-wikt">

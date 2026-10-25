@@ -3357,17 +3357,10 @@ textarea {
   background: var(--bg-card);
 }
 
-.story-top,
-.story-compact {
+.story-top {
   display: flex;
   gap: 12px;
   align-items: flex-start;
-}
-
-.story-compact {
-  align-items: center;
-  padding: 8px 10px;
-  text-align: left;
 }
 
 .story-pic {
@@ -3495,17 +3488,6 @@ textarea {
   opacity: 0.8;
 }
 
-.story-compact .story-hook {
-  padding: 0;
-  background: none;
-  color: var(--text-primary);
-}
-
-.story-chain-line {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
 .story-usage {
   color: var(--text-secondary);
 }
@@ -3518,6 +3500,58 @@ textarea {
 
 .study-story {
   margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+/* Verb conjugation by person on a flipped study card (StoryCard.jsx VerbPersons) */
+.verb-persons-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.verb-tense-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.verb-tense-tab {
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-secondary);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.verb-tense-tab:hover {
+  color: var(--text-primary);
+}
+
+.verb-tense-tab.is-active {
+  background: var(--google-blue-light);
+  border-color: var(--google-blue);
+  color: var(--google-blue);
+  font-weight: 600;
+}
+
+.verb-persons-table td {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.verb-persons-nonfinite {
+  padding: 8px 0 0;
 }
 
 /* Collapsed-by-default story (lookups); opens on tap */
