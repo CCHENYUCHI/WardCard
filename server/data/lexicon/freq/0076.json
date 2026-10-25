@@ -1,6 +1,6 @@
 {
   "theme": "freq-0076",
-  "theme_zh": "常用字（頻率第 22166–22502 名）",
+  "theme_zh": "常用字（頻率第 22166–22524 名）",
   "entries": [
     {
       "word": "antecesor",
@@ -965,39 +965,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:fermentación"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "forjado",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "樓板、樓板結構；鍛造件",
-      "en": "slab, floor framework; forged",
-      "ipa": "/foɾˈxado/",
-      "breakdown": [
-        {
-          "part": "forjar",
-          "zh": "鍛造、構建"
-        },
-        {
-          "part": "-ado",
-          "zh": "名詞與分詞字尾"
-        }
-      ],
-      "origin_chain": [],
-      "cognates_en": [
-        "forged"
-      ],
-      "story_zh": "",
-      "hook_zh": "動詞 forjar（鍛造、建造）衍生名詞 forjado，在建築工程中指支撐樓層的「樓板結構」。",
-      "usage_zh": "陽性名詞。建築專業術語指水平受力的樓板架構。亦可作形容詞「鍛造的」（hierro forjado 鍛鐵）。",
-      "example_es": "Los obreros terminaron de construir el forjado del piso.",
-      "example_zh": "工人們完成了該樓層樓板結構的建造。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:forjado"
       ],
       "writer": "gemini"
     },
@@ -3201,6 +3168,343 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:carné"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cautivo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "俘虜；被俘虜的",
+      "en": "captive, prisoner",
+      "ipa": "/kauˈtibo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "captivus",
+          "zh": "俘虜、被俘的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cautivo",
+          "zh": "俘虜"
+        }
+      ],
+      "cognates_en": [
+        "captive"
+      ],
+      "story_zh": "源自拉丁語 captivus（俘虜），來自 captus（被抓住的）。在通俗拉丁語到西班牙語的演變過程中，pt 音群弱化轉變為 ut，形成 cautivo。",
+      "hook_zh": "被 capture（捕獲）的人，就成了失去自由的 cautivo（俘虜）。",
+      "usage_zh": "可作名詞表示「俘虜」（el cautivo / la cautiva），也可當形容詞使用。",
+      "example_es": "El soldado permaneció cautivo durante dos años.",
+      "example_zh": "該士兵被俘虜了兩年。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cautivo",
+        "wiktionary:la:captivus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "chingar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "搞砸；騷擾；性交",
+      "en": "to bother, to screw up, to fuck",
+      "ipa": "/t͡ʃinˈɡaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "梵語",
+          "word": "चीत्कार (cītkāra)",
+          "zh": "吶喊、噪音"
+        },
+        {
+          "lang_zh": "阿育王普拉克里特語",
+          "word": "*ciṅghāra",
+          "zh": "呼喊、噪音"
+        },
+        {
+          "lang_zh": "羅姆語",
+          "word": "ćingardel",
+          "zh": "爭吵、打架"
+        },
+        {
+          "lang_zh": "卡洛語",
+          "word": "čingarár",
+          "zh": "戰鬥"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "chingar",
+          "zh": "搞砸、騷擾"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "西班牙皇家學院認為源自卡洛語（吉普賽西語）čingarár（打架），追溯至羅姆語與印度古代語言中表示「喊叫、吵鬧」的擬聲詞，字義經由「爭吵、打架」演變為墨西哥西語中多義的萬用粗話。",
+      "hook_zh": "chingar 是墨西哥最具代表性的髒話動詞，語氣強烈，使用需特別謹慎。",
+      "usage_zh": "墨西哥極常見的粗俗俚語，詞義繁多且語氣強烈，正式場合應避免使用。",
+      "example_es": "No me estés chingando, por favor.",
+      "example_zh": "請不要再煩我了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:chingar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cianuro",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "氰化物",
+      "en": "cyanide",
+      "ipa": "/θjaˈnuɾo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "cyanure",
+          "zh": "氰化物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cianuro",
+          "zh": "氰化物"
+        }
+      ],
+      "cognates_en": [
+        "cyanide"
+      ],
+      "story_zh": "借自法語 cyanure，由 cyanogène（氰）加上化學字尾 -ure（化物）構成，指具有劇毒的氰化物鹽類。",
+      "hook_zh": "英文 cyanide 與西語 cianuro 同源，化學上都代表致命毒物氰化物。",
+      "usage_zh": "陽性名詞，化學與毒物學常見詞彙，通常以單數形式出現。",
+      "example_es": "El cianuro es una sustancia altamente tóxica.",
+      "example_zh": "氰化物是一種高毒性物質。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cianuro"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "clandestinidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "地下狀態；秘密；暗中",
+      "en": "secrecy, clandestineness",
+      "ipa": "/klandestiniˈdad/",
+      "breakdown": [
+        {
+          "part": "clandestino",
+          "zh": "秘密的、地下的"
+        },
+        {
+          "part": "-idad",
+          "zh": "名詞字尾（表示狀態、性質）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "clandestino + -idad",
+          "zh": "秘密的 + 狀態字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "clandestinidad",
+          "zh": "秘密狀態、地下活動"
+        }
+      ],
+      "cognates_en": [
+        "clandestineness"
+      ],
+      "story_zh": "由形容詞 clandestino（秘密的、非法的）加上表示抽象狀態的名詞字尾 -idad 衍生而來，常用於描述政治或革命團體的地下活動狀態。",
+      "hook_zh": "clandestine（秘密的）+ -idad，聯想在暗處地下運作的活動。",
+      "usage_zh": "陰性名詞，常見搭配短語 en la clandestinidad（在地下、暗中進行）。",
+      "example_es": "El grupo político operaba en la clandestinidad.",
+      "example_zh": "該政治團體在地下秘密運作。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:clandestinidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "clavar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "釘；釘住；刺入",
+      "en": "to nail, to pin, to stick",
+      "ipa": "/klaˈbaɾ/",
+      "breakdown": [
+        {
+          "part": "clavo",
+          "zh": "釘子"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*kleh₂u-",
+          "zh": "釘、閂、鉤"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "clavus",
+          "zh": "釘子"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "clāvāre",
+          "zh": "用釘子釘上"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "clavar",
+          "zh": "釘、釘住"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 clavus（釘子），衍生出晚期拉丁語動詞 clāvāre（用釘子固定）。古羅馬人藉由金屬釘鎖定或接合木料，該詞在西語中引申為釘入、插進或緊盯不放。",
+      "hook_zh": "手拿 clavo（釘子），動作就是 clavar（釘進去）。",
+      "usage_zh": "及物動詞。引申片語如 clavar la mirada（緊盯著看）。",
+      "example_es": "Voy a clavar este cuadro en la pared.",
+      "example_zh": "我要把這幅畫釘在牆上。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:clavar",
+        "wiktionary:la:clavus",
+        "wiktionary:la:clavo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cofre",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "寶箱；保險箱；車引擎蓋",
+      "en": "chest, trunk, coffer, bonnet",
+      "ipa": "/ˈkofɾe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "coffre",
+          "zh": "箱子、櫃子"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cofre",
+          "zh": "箱子、保險箱"
+        }
+      ],
+      "cognates_en": [
+        "coffer"
+      ],
+      "story_zh": "借自法語 coffre（箱子），與英文 coffer 同源，在西語中也是 cuévano 的雙式詞。原指用來收納貴重物品的堅固木箱或金屬箱，在美洲西語中亦指汽車的引擎蓋。",
+      "hook_zh": "英文 coffer（保險箱）和 cofre 形近，裝著金幣的藏寶箱。",
+      "usage_zh": "陽性名詞。在拉丁美洲部分地區常用於指汽車前方的引擎蓋（相當於西班牙的 capó）。",
+      "example_es": "Los piratas escondieron el cofre de oro.",
+      "example_zh": "海盜把金寶箱藏了起來。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cofre"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "colación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "點心；輕食；核對",
+      "en": "light meal, snack, collation",
+      "ipa": "/kolaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "collātiōnem",
+          "zh": "集合、會談、比較"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "colación",
+          "zh": "輕食、點心、核對"
+        }
+      ],
+      "cognates_en": [
+        "collation"
+      ],
+      "story_zh": "源自拉丁語 collātiōnem（聚集、討論、比較）。中世紀修道院在晚間讀完卡西安的《聖徒言行錄》（Collationes）後，會分發少量清淡飲食，因而演變出「簡便輕食、點心」的意思。",
+      "hook_zh": "片語 traer a colación 表示「提及、帶入話題」；在美洲常指下午茶點心。",
+      "usage_zh": "陰性名詞。在智利等拉美國家特指便餐或點心；片語 traer a colación 意為「提及」。",
+      "example_es": "Los niños llevaron una colación para el recreo.",
+      "example_zh": "孩子們帶了點心去下課時間吃。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:colación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "comprensivo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "體貼的；能理解的；包容的",
+      "en": "understanding, sympathetic, comprehensive",
+      "ipa": "/kompɾenˈsibo/",
+      "breakdown": [
+        {
+          "part": "comprender",
+          "zh": "理解、包含"
+        },
+        {
+          "part": "-sivo",
+          "zh": "形容詞字尾（具有…傾向的）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "comprehendo",
+          "zh": "抓住、理解"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "comprehensivus",
+          "zh": "可理解的、包容的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "comprensivo",
+          "zh": "體諒的、能理解的"
+        }
+      ],
+      "cognates_en": [
+        "comprehensive"
+      ],
+      "story_zh": "借自晚期拉丁語 comprehēnsīvus，源自 comprehendō（全面抓住、領悟）。原指能包容或包含各方面的，引申指能夠體諒他人感受、善解人意的心態。",
+      "hook_zh": "能夠 comprehend（理解）你的人，就是非常 comprensivo（體貼的）。",
+      "usage_zh": "形容詞，陰性為 comprensiva。注意英文 comprehensive 多指「全面的」，西語主要指「善解人意的」。",
+      "example_es": "Mi profesora siempre es muy comprensiva con nosotros.",
+      "example_zh": "我的老師對我們總是非常體諒包容。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:comprensivo",
+        "wiktionary:la:comprehensivus"
       ],
       "writer": "gemini"
     }

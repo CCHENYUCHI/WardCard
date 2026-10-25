@@ -678,12 +678,6 @@ module.exports = {
     s('path', { d: dots([[64, 112], [90, 96], [76, 82], [100, 120]], 5) + dots([[70, 56], [92, 46], [84, 34]], 3.5) }, 'pink'),
     s('path', { d: 'M48 18h64', ...SW(6) }, 'brown', { stroke: true })
   ],
-  forjado: [
-    s('path', { d: 'M22 32h116M22 80h116M22 128h116', ...SW(10, { 'stroke-linecap': 'butt' }) }, 'gray', { stroke: true, accent: true }),
-    s('path', { d: 'M30 38v38M80 38v38M130 38v38M30 86v38M80 86v38M130 86v38', ...SW(8) }, 'dark', { stroke: true }),
-    s('path', { d: 'M40 76l30-34M90 76l30-34M40 124l30-34M90 124l30-34', ...SW(2) }, 'orange', { stroke: true }),
-    s('path', { d: 'M18 138h124', ...SW(4) }, 'brown', { stroke: true })
-  ],
   formalidad: [
     ...paper(34, 18, 80, 108),
     s('path', { d: 'M46 36h56M46 50h56M46 64h40M46 78h50', ...SW(4) }, 'gray', { stroke: true }),
@@ -1165,5 +1159,5 @@ module.exports = {
     s('circle', { cx: 47, cy: 80, r: 9 }, 'skin'),
     s('path', { d: 'M33 110q0-18 14-18t14 18z' }, 'navy'),
     s('path', { d: 'M78 70h50M78 86h50M78 102h30', ...SW(4) }, 'gray', { stroke: true })
-  ],
+  ]
 };

@@ -691,14 +691,6 @@ module.exports = {
     s('circle', { cx: 80, cy: 56, r: 16 }, 'orange', { accent: true }),
     s('circle', { cx: 80, cy: 56, r: 8 }, 'yellow')
   ],
-  nava: [
-    s('rect', { x: 14, y: 14, width: 132, height: 132, rx: 12 }, 'sky'),
-    s('path', { d: 'M14 96l30-56 36 56zM80 96l36-62 30 56v6z' }, 'gray'),
-    s('path', { d: 'M38 52l6-12 8 14zM110 46l6-12 8 14z' }, 'white'),
-    s('path', { d: 'M14 92q66-14 132 0v42q0 12-12 12H26q-12 0-12-12z' }, 'green', { accent: true }),
-    s('path', { d: ells([[60, 118, 18, 5], [108, 110, 14, 4]]) }, 'blue'),
-    s('path', { d: 'M34 108v-6M40 108v-8M128 126v-6M134 126v-8', ...SW(3) }, 'mint', { stroke: true })
-  ],
   nodo: [
     s('path', { d: 'M80 80L36 40M80 80l48-36M80 80l-46 46M80 80l50 42M36 40l92 4', ...SW(4) }, 'gray', { stroke: true }),
     s('path', { d: dots([[36, 40], [128, 44], [34, 126], [130, 122]], 12) }, 'blue'),
@@ -1166,14 +1158,6 @@ module.exports = {
     s('path', { d: dots([[72, 90], [88, 90]], 3) }, 'dark'),
     s('rect', { x: 52, y: 116, width: 56, height: 26, rx: 10 }, 'red')
   ],
-  cinema: [
-    s('rect', { x: 14, y: 14, width: 132, height: 132, rx: 12 }, 'dark'),
-    s('rect', { x: 34, y: 30, width: 92, height: 56, rx: 3 }, 'sky', { accent: true }),
-    s('path', { d: 'M14 20h30v82q-10-10-30-4zM146 20h-30v82q10-10 30-4z' }, 'red'),
-    s('path', { d: busts([34, 60, 86, 112, 138], 146, 22, 30) }, 'black'),
-    s('path', { d: dots([[34, 120], [60, 120], [86, 120], [112, 120]], 10) }, 'black'),
-    s('path', { d: 'M54 72l18-22 14 14 10-8 20 16z' }, 'blue')
-  ],
   circunferencia: [
     s('circle', { cx: 80, cy: 80, r: 54 }, 'mint'),
     s('path', { d: ring(80, 80, 54), ...SW(7) }, 'blue', { stroke: true, accent: true }),
@@ -1478,5 +1462,5 @@ module.exports = {
     s('path', { d: 'M108 96q0-20 20-20t20 20v30q0 12-20 12t-20-12z' }, 'dark', { accent: true }),
     arrow('M88 48q26-10 32 26', 'red', 4),
     s('path', { d: dots([[100, 40], [116, 58]], 7) }, 'yellow')
-  ],
+  ]
 };
