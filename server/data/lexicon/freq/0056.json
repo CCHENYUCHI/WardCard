@@ -1429,6 +1429,51 @@
       "writer": "gemini"
     },
     {
+      "word": "igualar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "使相等、使平等；扳平",
+      "en": "to make equal, to equalize",
+      "ipa": "/iɡwaˈlaɾ/",
+      "breakdown": [
+        {
+          "part": "igual",
+          "zh": "相等的"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "igual",
+          "zh": "相等的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "igualar",
+          "zh": "使相等"
+        }
+      ],
+      "cognates_en": [
+        "equal",
+        "equalize"
+      ],
+      "story_zh": "源自西班牙語形容詞 igual（相等的、平等的），加上動詞字尾 -ar 構成。字面意思為「使之相等」或「使平整」，引申為消除差距、比賽中扳平比分或打平。",
+      "hook_zh": "看到前面 igual 就聯想到英文 equal（相等），加上 -ar 變成動詞，就是把兩邊拉平。",
+      "usage_zh": "常搭配 igualar a alguien（追平某人），或作反身動詞 igualarse a（與…看齊、平起平坐）。",
+      "example_es": "El equipo logró igualar el marcador en el último minuto.",
+      "example_zh": "球隊在最後一分鐘成功扳平了比分。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:igualar"
+      ],
+      "writer": "gemini"
+    },
+    {
       "word": "implantar",
       "article": "",
       "pos": "verbo",
