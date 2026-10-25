@@ -2901,6 +2901,753 @@
         "wiktionary:es:notario"
       ],
       "writer": "gemini"
+    },
+    {
+      "word": "notorio",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "顯著的、眾所皆知的",
+      "en": "well-known, obvious",
+      "ipa": "/noˈtoɾjo/",
+      "breakdown": [
+        {
+          "part": "not-",
+          "zh": "認識、知道"
+        },
+        {
+          "part": "-orio",
+          "zh": "形容詞字尾，具…性質的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "gnosco",
+          "zh": "認識、得知"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "nosco",
+          "zh": "認識、得知"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "notorius",
+          "zh": "使人知曉的、顯著的"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "nōtōrius",
+          "zh": "著名的、顯著的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "notorio",
+          "zh": "顯著的、眾所皆知的"
+        }
+      ],
+      "cognates_en": [
+        "notorious",
+        "notice"
+      ],
+      "story_zh": "源自拉丁語動詞 nosco（認識、得知），衍生出形容詞 notorius，指使人知曉、顯而易見的。進入中世紀拉丁語後演變為 nōtōrius，再被西語借入為 notorio。英文的 notorious 也是同源字，不過西語多指事實清楚顯著，不一定像英文帶有貶義。",
+      "hook_zh": "英文 notorious 是惡名昭彰，西語 notorio 則是大家都知道、顯而易見。",
+      "usage_zh": "注意假朋友：英文 notorious 多為貶義（惡名昭彰），西語 notorio 通常只指「顯著的、眾所皆知的」。",
+      "example_es": "Es un hecho notorio que no necesita explicación.",
+      "example_zh": "這是一個顯而易見的事實，不需要解釋。",
+      "image": "emoji:📢",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:notorio",
+        "wiktionary:la:notorius"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "patriarca",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "族長、家長、元老",
+      "en": "patriarch",
+      "ipa": "/paˈtɾjaɾka/",
+      "breakdown": [
+        {
+          "part": "patri-",
+          "zh": "父親、家族"
+        },
+        {
+          "part": "-arca",
+          "zh": "統治者、首領"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "πατριάρχης",
+          "zh": "家族或部落首領"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "patriarcha",
+          "zh": "族長、主教"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "patriarca",
+          "zh": "族長、家長"
+        }
+      ],
+      "cognates_en": [
+        "patriarch"
+      ],
+      "story_zh": "古希臘語 πατριάρχης 由 πατριά（家族、血統）和 -άρχης（統治者、首領）組成，字面意思是「家族的領導者」。這個字經由晚期拉丁語 patriarcha 進入西班牙語，指家族或宗族的大家長，也可用於宗教體系中的主教或宗主教。",
+      "hook_zh": "patri（父親）+ arca（統治者），家族裡的最高領導人就是 patriarcha。",
+      "usage_zh": "雖然結尾是 -a，但指男性家長或男性族長時是陽性名詞：el patriarca。",
+      "example_es": "El anciano era considerado el patriarca de la familia.",
+      "example_zh": "那位老人家被視為家族裡的大家長。",
+      "image": "emoji:👴",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:patriarca",
+        "wiktionary:la:patriarcha"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "penitenciario",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "監獄的、監禁體制的",
+      "en": "penitentiary, related to prisons",
+      "ipa": "/penitenˈθjaɾjo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [
+        "penitentiary"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文 penitentiary 是監獄，西語 penitenciario 就是監獄相關的。",
+      "usage_zh": "常見搭配為 sistema penitenciario（監獄體系）或 centro penitenciario（監獄、懲教所）。",
+      "example_es": "Trabaja como guardia en el sistema penitenciario.",
+      "example_zh": "他在監獄體系擔任警衛。",
+      "image": "emoji:🏢",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:penitenciario"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pereza",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "懶惰、怠惰",
+      "en": "laziness, sloth",
+      "ipa": "/peˈɾeθa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pigritia",
+          "zh": "懶惰、怠惰"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "pereza",
+          "zh": "懶惰"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pereza",
+          "zh": "懶惰、怠惰"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語名詞 pigritia（懶惰、遲鈍）。在語音演變過程中，子音軟化並進入古西班牙語成為 pereza，代代相傳至今。它表示不想動、提不起勁的懶散狀態，七宗罪裡的「怠惰」也是這個字。",
+      "hook_zh": "看到滿桌工作覺得好疲累（pereza 音似疲累），動都不想動。",
+      "usage_zh": "常用片語 dar pereza（使人懶得做），例如：Me da pereza cocinar（我懶得煮飯）。",
+      "example_es": "Hoy me da pereza salir de casa.",
+      "example_zh": "今天我懶得出門。",
+      "image": "emoji:🦥",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pereza"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pestaña",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "睫毛；分頁標籤",
+      "en": "eyelash, tab",
+      "ipa": "/pesˈtaɲa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*pistanna",
+          "zh": "睫毛"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "pestaña",
+          "zh": "睫毛與眉毛區域"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pestaña",
+          "zh": "睫毛；分頁標籤"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自通俗拉丁語 *pistanna，在古西班牙語中原本指睫毛與眉毛周圍的區域，後來專指「睫毛」。語言學家推測可能源於印歐語根，形容身體上懸掛垂落的小物件。在現代科技用語中，因形狀類似突出的小邊緣，也被用來指瀏覽器的「分頁標籤」。",
+      "hook_zh": "眨眨眼睛時，長長的睫毛 pestañas 像拍翅膀一樣輕輕拍動。",
+      "usage_zh": "複數 pestañas 常指眼睫毛；在電腦瀏覽器中，abrir una nueva pestaña 代表「開啟新分頁」。",
+      "example_es": "Tienes una pestaña en la mejilla.",
+      "example_zh": "你臉頰上掉了一根眼睫毛。",
+      "image": "emoji:👁️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pestaña"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pileta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "水槽、洗手台；游泳池",
+      "en": "basin, swimming pool",
+      "ipa": "/piˈleta/",
+      "breakdown": [
+        {
+          "part": "pila",
+          "zh": "洗手槽、水池"
+        },
+        {
+          "part": "-eta",
+          "zh": "指小詞字尾，小的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pila",
+          "zh": "洗手槽、水池"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pileta",
+          "zh": "水槽、洗手台；游泳池"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西班牙語的 pila（水池、水槽）加上指小後綴 -eta 衍生而來，原本指小型水盆或洗手槽。在阿根廷、烏拉圭等南美西語國家，這個字常被用來稱呼「游泳池」（相當於西班牙本土的 piscina）。",
+      "hook_zh": "洗手台旁邊放了一大堆（pile）肥皂，這就是 pileta。",
+      "usage_zh": "在阿根廷等南美地區，pileta 常指游泳池（同義於 piscina），在其他地區多指廚房水槽或洗手台。",
+      "example_es": "Los niños están nadando en la pileta.",
+      "example_zh": "孩子們正在游泳池裡游泳。",
+      "image": "emoji:🏊",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pileta"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "populismo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "民粹主義",
+      "en": "populism",
+      "ipa": "/popuˈlismo/",
+      "breakdown": [
+        {
+          "part": "popul-",
+          "zh": "人民、大眾"
+        },
+        {
+          "part": "-ismo",
+          "zh": "主義、思想流派"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "populism"
+      ],
+      "story_zh": "",
+      "hook_zh": "英文 populism 直接對應西語 populismo，popul- 就是人民（people）。",
+      "usage_zh": "陽性名詞 el populismo，相關形容詞與支持者為 populista（陰陽同形）。",
+      "example_es": "El auge del populismo preocupa a muchos expertos.",
+      "example_zh": "民粹主義的興起讓許多專家感到擔憂。",
+      "image": "emoji:🗳️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:populismo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "púrpura",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "紫色、紫紅色",
+      "en": "purple",
+      "ipa": "/ˈpuɾpuɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "πορφύρα",
+          "zh": "骨螺、紫色染料"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "purpura",
+          "zh": "骨螺、紫色"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "púrpura",
+          "zh": "紫色"
+        }
+      ],
+      "cognates_en": [
+        "purple"
+      ],
+      "story_zh": "源自古希臘語 πορφύρα，最初指地中海提煉紫色染料的海蝸牛（骨螺）。羅馬人將其借為 purpura，因染料極其珍貴，紫色成為帝王與貴族的象徵。西班牙語學者將拉丁詞完整保留借入為 púrpura，英文的 purple 也是同源字。",
+      "hook_zh": "英文 purple 的西語親戚 púrpura，古代皇帝專屬的貴族紫色。",
+      "usage_zh": "重音在第一個音節 púrpura；既可當陰性名詞（la púrpura），也常當形容詞使用。",
+      "example_es": "El rey llevaba una elegante túnica púrpura.",
+      "example_zh": "國王穿著一件優雅的紫色長袍。",
+      "image": "emoji:🟣",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:púrpura",
+        "wiktionary:la:purpura"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "quincena",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "半個月、兩週；半月薪",
+      "en": "fortnight, fifteen days, biweekly wage",
+      "ipa": "/kinˈθena/",
+      "breakdown": [
+        {
+          "part": "quince",
+          "zh": "十五"
+        },
+        {
+          "part": "-ena",
+          "zh": "集合名詞字尾，…個一組"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "quince",
+          "zh": "十五"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "quincena",
+          "zh": "半個月、十五天"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由數字 quince（十五）加上集合名詞後綴 -ena 組成，字面意思是「十五天的一組」，也就是半個月。在許多西語系國家，工資是每半個月發放一次，因此 quincena 也常引申為「半月工資」或「發薪日」。",
+      "hook_zh": "quince 是 15，quincena 就是每 15 天過半個月、領半月薪的日子。",
+      "usage_zh": "陰性名詞 la quincena，在拉丁美洲常說 cobrar la quincena（領半個月的薪水）。",
+      "example_es": "Nos pagan el sueldo al final de cada quincena.",
+      "example_zh": "我們在每半個月結束時領取薪水。",
+      "image": "emoji:📅",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:quincena"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "rivalidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "競爭、敵對、競爭關係",
+      "en": "rivalry",
+      "ipa": "/ribaliˈdad/",
+      "breakdown": [
+        {
+          "part": "rival",
+          "zh": "對手、競爭者"
+        },
+        {
+          "part": "-idad",
+          "zh": "名詞字尾，表性質或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "rīvālis",
+          "zh": "共用同一條溪流的人、競爭者"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "rivalitas",
+          "zh": "競爭、對立"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rivalidad",
+          "zh": "競爭、敵對"
+        }
+      ],
+      "cognates_en": [
+        "rivalry"
+      ],
+      "story_zh": "源自拉丁語 rīvālitās。其根源 rīvālis 來自 rivus（溪流），原本指住在同一條溪邊、為爭奪水源灌溉而起衝突的鄰居，引申為「對手」。加上抽象名詞後綴演變為 rīvālitās，西班牙語借入為 rivalidad，指彼此競爭對抗的狀態。",
+      "hook_zh": "英文 rivalry 對應西語 rivalidad，爭奪同一條河的對手（rival）之間的競爭。",
+      "usage_zh": "陰性名詞 la rivalidad，常與介詞 entre 搭配：la rivalidad entre los dos equipos（兩隊之間的競爭）。",
+      "example_es": "Existe una gran rivalidad entre ambos equipos.",
+      "example_zh": "這兩支球隊之間存在著激烈的競爭關係。",
+      "image": "emoji:⚔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:rivalidad",
+        "wiktionary:la:rivalitas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "riñón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "腎臟",
+      "en": "kidney",
+      "ipa": "/riˈɲon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ren",
+          "zh": "腎臟"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*rēniōnem",
+          "zh": "腎臟"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "riñón",
+          "zh": "腎臟"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自古典拉丁語名詞 rēn（腎臟），在通俗拉丁語中加上後綴擴展為受格形式 *rēniōnem。進入西班牙語後，母音產生雙母音化並伴隨子音顎化，最終演變為現代的 riñón。義大利語的 rognone 和法語的 rognon 也來自同一詞源。",
+      "hook_zh": "西語常說 costar un riñón（花掉一顆腎），形容東西貴到讓人割腎買！",
+      "usage_zh": "俗語 costar un riñón 意思是「代價極其昂貴」（相當於中文的要花大錢、割腎）。",
+      "example_es": "Ese coche nuevo le costó un riñón.",
+      "example_zh": "那輛新車花了他一大筆錢（貴得像要割腎）。",
+      "image": "emoji:🫘",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:riñón",
+        "wiktionary:la:ren"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "rompecabezas",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "拼圖、難題",
+      "en": "jigsaw puzzle",
+      "ipa": "/rompekaˈbeθas/",
+      "breakdown": [
+        {
+          "part": "rompe",
+          "zh": "打破、折磨"
+        },
+        {
+          "part": "cabezas",
+          "zh": "頭腦、腦袋"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "rompe",
+          "zh": "打破、折磨"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "rompecabezas",
+          "zh": "拼圖、難題"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 romper（打破、折磨）的第三人稱單數形 rompe，與名詞 cabeza 的複數形 cabezas（腦袋）合成。字面意思是「讓人想破頭的東西」，最初用來比喻極其費解的謎題或難事，後來廣泛用來指稱「拼圖」或智力玩具。",
+      "hook_zh": "rompe（打破）+ cabezas（腦袋），讓人想破頭的燒腦遊戲就是拼圖！",
+      "usage_zh": "陽性名詞 el rompecabezas，單複數同形（los rompecabezas），片語 armar un rompecabezas 代表拼拼圖。",
+      "example_es": "Pasamos la tarde armando un rompecabezas de mil piezas.",
+      "example_zh": "我們花了一整個下午拼一幅一千片的拼圖。",
+      "image": "emoji:🧩",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:rompecabezas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "saliente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "突出的、顯著的；即將離任的",
+      "en": "projecting, prominent, outgoing",
+      "ipa": "/saˈljente/",
+      "breakdown": [
+        {
+          "part": "sali-",
+          "zh": "跳出、出來"
+        },
+        {
+          "part": "-ente",
+          "zh": "形容詞字尾，…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "salientem",
+          "zh": "跳躍的、突出的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "saliente",
+          "zh": "突出的；即將卸任的"
+        }
+      ],
+      "cognates_en": [
+        "salient"
+      ],
+      "story_zh": "源自拉丁語動詞 salīre（跳躍、躍出）的現在分詞受格形式 salientem，指跳出或向外凸起的事物。西班牙語繼承為 saliente，可用來描述地形或物體凸出、顯眼的部分；另一方面因動詞 salir 有離開之意，也引申為「即將卸任的」（如卸任總統）。",
+      "hook_zh": "英文 salient（顯著的、凸起的）與西語 saliente 同源，都是跳出來、引人注目的。",
+      "usage_zh": "常用搭配如 presidente saliente（即將卸任的總統），或 punto saliente（顯著突出的特點）。",
+      "example_es": "El presidente saliente felicitó a su sucesor.",
+      "example_zh": "即將卸任的總統祝賀了他的繼任者。",
+      "image": "emoji:🏔️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:saliente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "saliva",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "唾液、口水",
+      "en": "saliva, spittle",
+      "ipa": "/saˈliba/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "salīva",
+          "zh": "唾液、口水"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "saliva",
+          "zh": "唾液、口水"
+        }
+      ],
+      "cognates_en": [
+        "saliva"
+      ],
+      "story_zh": "直接借自拉丁語名詞 salīva（唾液）。該詞在古典時代即用來表示口腔分泌的液體，語源可能帶有擬聲或原始印歐語中描寫濕潤黏稠液體的根源。西語完整保留原字與發音，英文的 saliva 也是從拉丁語借入的同源詞。",
+      "hook_zh": "英文 saliva 拼法與西語 saliva 完全相同，指的就是口水。",
+      "usage_zh": "陰性名詞 la saliva，動詞「吞口水」常說 tragar saliva（有時引申為強忍情緒或緊張）。",
+      "example_es": "El olor de la comida le hizo tragar saliva de inmediato.",
+      "example_zh": "食物的香氣讓他立刻忍不住吞了吞口水。",
+      "image": "emoji:💧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:saliva",
+        "wiktionary:la:saliva"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sancionar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "制裁、懲處；批准（法律）",
+      "en": "to sanction, to penalize, to approve",
+      "ipa": "/sanθjoˈnaɾ/",
+      "breakdown": [
+        {
+          "part": "sanción",
+          "zh": "制裁、認可"
+        },
+        {
+          "part": "-ar",
+          "zh": "動詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "sanción",
+          "zh": "制裁、法規批准"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sancionar",
+          "zh": "制裁、處罰；批准"
+        }
+      ],
+      "cognates_en": [
+        "sanction"
+      ],
+      "story_zh": "由名詞 sanción 加上動詞後綴 -ar 衍生而來。sanción 原本指透過法律程序予以神聖化或確立權威。因此 sancionar 具有兩個看似相反的含義：在法律層面指正式「批准、通過」法案，在懲罰層面則指對違規行為進行「制裁、懲處」。",
+      "hook_zh": "英文 sanction 同樣有「制裁」與「批准」雙重意思，跟西語 sancionar 完全對應。",
+      "usage_zh": "注意雙重意涵：在立法上是「批准法案」，在日常或體育法律中則是「處罰、制裁」違規者。",
+      "example_es": "El árbitro decidió sancionar al jugador con una tarjeta roja.",
+      "example_zh": "裁判決定給該球員一張紅牌以示處罰。",
+      "image": "emoji:⚖️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sancionar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "simbolizar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "象徵、代表",
+      "en": "to symbolize, to stand for",
+      "ipa": "/simboliˈθaɾ/",
+      "breakdown": [
+        {
+          "part": "símbolo",
+          "zh": "象徵、符號"
+        },
+        {
+          "part": "-izar",
+          "zh": "動詞字尾，使成…"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "símbolo",
+          "zh": "象徵、符號"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "simbolizar",
+          "zh": "象徵、代表"
+        }
+      ],
+      "cognates_en": [
+        "symbolize",
+        "symbol"
+      ],
+      "story_zh": "由名詞 símbolo（象徵、符號）加上動詞後綴 -izar 構成。símbolo 原本來自希臘語，指拼湊在一起以作驗證的標記。衍生動詞 simbolizar 即指以某種圖像、符號或行為來「代表或象徵」更抽象深遠的意義。",
+      "hook_zh": "símbolo（符號、象徵）+ -izar（動詞字尾）＝ simbolizar（象徵）。英文 symbolize。",
+      "usage_zh": "規則第一變化動詞，但第一人稱簡單過去式注意拼寫變化：yo simbolicé（z 遇 e 變 c）。",
+      "example_es": "La paloma blanca suele simbolizar la paz.",
+      "example_zh": "白鴿通常象徵和平。",
+      "image": "emoji:🕊️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:simbolizar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "soborno",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "賄賂、收買",
+      "en": "bribery, bribe",
+      "ipa": "/soˈboɾno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "sobornar",
+          "zh": "賄賂、收買"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "soborno",
+          "zh": "賄賂、收買"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源起動詞 sobornar 的去詞尾名詞化（deverbal）。sobornar 來自拉丁語 subornāre（私下裝備、暗中唆使或指使）。在西班牙語中，名詞 soborno 專指透過金錢或好處暗中收買公職人員或他人的行為，或是指用來行賄的錢財。",
+      "hook_zh": "so-（在底下）+ borno（暗通款項），私底下塞紅包就是 soborno（賄賂）。",
+      "usage_zh": "陽性名詞 el soborno；動詞片語「收賄」常用 aceptar un soborno，「行賄」可用 dar un soborno。",
+      "example_es": "El funcionario fue arrestado por aceptar un soborno.",
+      "example_zh": "那名官員因收受賄賂而被逮捕。",
+      "image": "emoji:💰",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:soborno"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sobrenatural",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "超自然的",
+      "en": "supernatural",
+      "ipa": "/sobɾenatuˈɾal/",
+      "breakdown": [
+        {
+          "part": "sobre-",
+          "zh": "超越、在…之上"
+        },
+        {
+          "part": "natural",
+          "zh": "自然的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "sobre- + natural",
+          "zh": "超越 + 自然的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sobrenatural",
+          "zh": "超自然的"
+        }
+      ],
+      "cognates_en": [
+        "supernatural",
+        "natural"
+      ],
+      "story_zh": "由前綴 sobre-（在…之上、超越，源自拉丁語 super）和形容詞 natural（自然界的、天然的）組合而成。字面意即「超出自然法則之外的」，用來描述無法用現代科學或自然規律解釋的神奇現象、鬼神或魔法力量。",
+      "hook_zh": "sobre-（超、在…之上）+ natural（自然）＝ 超越自然、超自然（supernatural）。",
+      "usage_zh": "陰陽同形形容詞（fenómeno sobrenatural / fuerza sobrenatural），複數為 sobrenaturales。",
+      "example_es": "Dicen que en esa casa ocurren fenómenos sobrenaturales.",
+      "example_zh": "據說那間房子裡會發生超自然現象。",
+      "image": "emoji:👻",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sobrenatural"
+      ],
+      "writer": "gemini"
     }
   ]
 }
