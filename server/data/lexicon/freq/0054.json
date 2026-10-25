@@ -1,6 +1,6 @@
 {
   "theme": "freq-0054",
-  "theme_zh": "常用字（頻率第 14839–15116 名）",
+  "theme_zh": "常用字（頻率第 14839–15146 名）",
   "entries": [
     {
       "word": "llanta",
@@ -942,6 +942,394 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:éxodo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "modales",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "舉止、禮貌",
+      "en": "manners",
+      "ipa": "/moˈdales/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "講究 modales（禮貌）的人，舉手投足都很有 model 的風範。",
+      "usage_zh": "通常用複數 los modales，表示個人的禮貌或教養（buenos modales）。",
+      "example_es": "Tiene muy buenos modales en la mesa.",
+      "example_zh": "他在餐桌上非常有禮貌。",
+      "image": "emoji:🤝",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:modales"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "moralmente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "道德上地",
+      "en": "morally",
+      "ipa": "/moˌɾalˈmente/",
+      "breakdown": [
+        {
+          "part": "moral",
+          "zh": "道德的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "morally"
+      ],
+      "story_zh": "",
+      "hook_zh": "moral（道德）加上副詞尾 -mente，就是「道德上地」。",
+      "usage_zh": "常修飾動詞或形容詞，如 moralmente responsable（道德上有責任的）。",
+      "example_es": "Es moralmente inaceptable actuar de esa manera.",
+      "example_zh": "以那種方式行事在道德上是不可接受的。",
+      "image": "emoji:⚖️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:moralmente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "neoliberal",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "新自由主義的",
+      "en": "neoliberal",
+      "ipa": "/neolibeˈɾal/",
+      "breakdown": [
+        {
+          "part": "neo-",
+          "zh": "新"
+        },
+        {
+          "part": "liberal",
+          "zh": "自由主義的"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "neoliberal"
+      ],
+      "story_zh": "",
+      "hook_zh": "neo-（新）加 liberal（自由），合起來就是「新自由主義的」。",
+      "usage_zh": "可作形容詞或名詞（el/la neoliberal，新自由主義者）。複數為 neoliberales。",
+      "example_es": "El gobierno implementó políticas de corte neoliberal.",
+      "example_zh": "政府實施了新自由主義風格的政策。",
+      "image": "emoji:🌐",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:neoliberal"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nublado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "多雲的、陰天的",
+      "en": "cloudy",
+      "ipa": "/nuˈblado/",
+      "breakdown": [
+        {
+          "part": "nublar",
+          "zh": "遮蔽、起雲"
+        },
+        {
+          "part": "-ado",
+          "zh": "形容詞或過去分詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "天空被雲朵遮蓋（nublar），整個天色就是 nublado（陰天的）。",
+      "usage_zh": "常搭配 estar 使用：Está nublado（今天陰天）。陰性形式為 nublada。",
+      "example_es": "Hoy el cielo está muy nublado y parece que va a llover.",
+      "example_zh": "今天天空非常多雲，看起來快要下雨了。",
+      "image": "emoji:☁️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:nublado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nutriente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "營養素、養分",
+      "en": "nutrient",
+      "ipa": "/nuˈtɾjente/",
+      "breakdown": [
+        {
+          "part": "nutrir",
+          "zh": "滋養"
+        },
+        {
+          "part": "-ente",
+          "zh": "進行中的事物字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "nūtriō",
+          "zh": "哺乳、滋養"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "nūtrientem",
+          "zh": "滋養的（現在分詞賓格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nutriente",
+          "zh": "養分、營養素"
+        }
+      ],
+      "cognates_en": [
+        "nutrient",
+        "nutrition"
+      ],
+      "story_zh": "源自拉丁文動詞 nūtriō（哺育、滋養），其現在分詞賓格 nūtrientem 意為「正在滋養的」。進入西班牙語後轉為名詞，指能提供生物生命維持與成長所需的「營養成分」。英文的 nutrient 也源於此。",
+      "hook_zh": "給身體營養（nutrition）的物質就是 nutriente（養分）。",
+      "usage_zh": "陽性名詞，複數為 nutrientes。常見搭配 ricos en nutrientes（營養豐富的）。",
+      "example_es": "Las verduras aportan muchos nutrientes a nuestro cuerpo.",
+      "example_zh": "蔬菜為我們的身體提供許多營養素。",
+      "image": "emoji:🥗",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nutriente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "oasis",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "綠洲",
+      "en": "oasis",
+      "ipa": "/oˈasis/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古埃及語",
+          "word": "wḥꜣt",
+          "zh": "綠洲、大鍋"
+        },
+        {
+          "lang_zh": "通俗埃及語",
+          "word": "wḥj",
+          "zh": "綠洲"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "Ὄασις",
+          "zh": "綠洲"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "Oasis",
+          "zh": "綠洲"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "oasis",
+          "zh": "綠洲"
+        }
+      ],
+      "cognates_en": [
+        "oasis"
+      ],
+      "story_zh": "最早源自古埃及語 wḥꜣt（大鍋、綠洲），指沙漠中凹陷如鍋的含水肥沃之地。希臘人借入為 Ὄασις，後經晚期拉丁語 Oasis 傳入歐洲各語言，西語借用後維持原貌，意指沙漠綠洲或疲憊心靈的避風港。",
+      "hook_zh": "在茫茫沙漠中，看見一泓清泉與棕櫚樹：oasis（綠洲）！",
+      "usage_zh": "陽性名詞，單複數同形：el oasis / los oasis。可比喻心靈的避難所。",
+      "example_es": "Encontraron un oasis verde en medio del desierto.",
+      "example_zh": "他們在沙漠中央找到了一片綠意盎然的綠洲。",
+      "image": "emoji:🏝️",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:oasis",
+        "wiktionary:la:Oasis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "olivo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "橄欖樹",
+      "en": "olive tree",
+      "ipa": "/oˈlibo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "伊特拉斯坎語",
+          "word": "*eleiva",
+          "zh": "橄欖"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "olīva",
+          "zh": "橄欖、橄欖樹"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*olīvus",
+          "zh": "橄欖樹"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "olivo",
+          "zh": "橄欖樹"
+        }
+      ],
+      "cognates_en": [
+        "olive"
+      ],
+      "story_zh": "拉丁語中 olīva 同時指橄欖果實與橄欖樹。在通俗拉丁語中，陽性形式 *olīvus 被特別用來指稱「橄欖樹」，而陰性 oliva 則保留指橄欖果實。西語繼承此區分：el olivo 是樹，la oliva 是果實。",
+      "hook_zh": "西班牙山坡上整片整片綠色的 olivo（橄欖樹），結出美味的橄欖。",
+      "usage_zh": "陽性指樹（el olivo）；果實通常叫 la aceituna（源自阿拉伯語）或 la oliva。",
+      "example_es": "Mi abuelo cuida un olivo muy antiguo en el jardín.",
+      "example_zh": "我祖父在花園裡照顧一棵非常古老的橄欖樹。",
+      "image": "emoji:🫒",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:olivo",
+        "wiktionary:la:oliva"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "oyente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "聽眾、旁聽生",
+      "en": "listener, auditor",
+      "ipa": "/oˈʝente/",
+      "breakdown": [
+        {
+          "part": "oír",
+          "zh": "聽"
+        },
+        {
+          "part": "-ente",
+          "zh": "進行中的人"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "audientem",
+          "zh": "正在聽的（賓格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "oyente",
+          "zh": "聽者、聽眾"
+        }
+      ],
+      "cognates_en": [
+        "audience",
+        "auditor"
+      ],
+      "story_zh": "源自動詞 oír（聽）古老的現在分詞形式，或直接源自拉丁語 audientem（正在聆聽者）。字尾 -ente 代表「做某動作的人」，因此 oyente 就是專心聆聽演講或廣播的「聽眾」，也可指大學裡的「旁聽生」。",
+      "hook_zh": "用耳朵 oír（聽）的人，就是收音機前的 oyente（聽眾）。",
+      "usage_zh": "陰陽同形：el oyente（男聽眾）、la oyente（女聽眾）。廣播常用 queridos oyentes。",
+      "example_es": "El locutor de radio saludó a todos los oyentes.",
+      "example_zh": "廣播播音員向所有聽眾致意。",
+      "image": "emoji:🎧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:oyente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "participativo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "參與式的、具參與性的",
+      "en": "participative",
+      "ipa": "/paɾtiθipaˈtibo/",
+      "breakdown": [
+        {
+          "part": "participar",
+          "zh": "參與"
+        },
+        {
+          "part": "-tivo",
+          "zh": "具…傾向的字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "participative"
+      ],
+      "story_zh": "",
+      "hook_zh": "participar（參與）加上形容詞字尾 -tivo，就是「鼓勵大家一起參與的」。",
+      "usage_zh": "陰性為 participativa。常見搭配 democracia participativa（參與式民主）。",
+      "example_es": "La profesora fomenta un ambiente muy participativo.",
+      "example_zh": "老師營造了一個非常具參與性的課堂氛圍。",
+      "image": "emoji:🙋",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:participativo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "paternidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "父親身分、父職、陪產假",
+      "en": "paternity, fatherhood",
+      "ipa": "/pateɾniˈdad/",
+      "breakdown": [
+        {
+          "part": "paterno",
+          "zh": "父親的"
+        },
+        {
+          "part": "-idad",
+          "zh": "狀態名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "paternitātem",
+          "zh": "父職、父愛"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paternidad",
+          "zh": "父親身分"
+        }
+      ],
+      "cognates_en": [
+        "paternity"
+      ],
+      "story_zh": "源自晚期拉丁語 paternitātem（父愛、父親身分），其詞根為 pater（父親）。西語中加上表示狀態的抽象名詞字尾 -idad，指「身為父親的身分或地位」，現代生活也常用於 permiso de paternidad（陪產假）。",
+      "hook_zh": "pater（父親）的狀態（-idad），就是喜迎新生命的 paternidad（父職）。",
+      "usage_zh": "陰性名詞。常用片語 permiso de paternidad（陪產假）、prueba de paternidad（親子鑑定）。",
+      "example_es": "Pidió un permiso de paternidad tras el nacimiento.",
+      "example_zh": "孩子出生後，他申請了陪產假。",
+      "image": "emoji:👨‍👧",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paternidad"
       ],
       "writer": "gemini"
     }
