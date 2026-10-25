@@ -1,0 +1,3921 @@
+{
+  "theme": "freq-0001",
+  "theme_zh": "常用字（頻率第 2–438 名）",
+  "entries": [
+    {
+      "word": "la",
+      "article": "",
+      "pos": "artículo",
+      "zh": "陰性單數定冠詞（這、那）；女性或陰性受詞代名詞（她、它）",
+      "en": "the (feminine singular); her, it",
+      "ipa": "/la/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ille",
+          "zh": "那個"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "illa(m)",
+          "zh": "那個（陰性單數）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ela",
+          "zh": "定冠詞"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "la",
+          "zh": "定冠詞（陰性單數）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ille 的陰性單數形 illa(m)，本義為「那個」。進入古西班牙語後弱化為 ela，隨後詞首母音脫落，演變成現代西語的定冠詞與受詞代名詞 la。它從原本用來明確指稱遠處特定對象，逐步轉化為標示已知陰性人或事物的冠詞。",
+      "hook_zh": "想像手指著眼前一位優雅的女士（la señora），讚嘆說：「la」就是那位女孩！",
+      "usage_zh": "若後方的陰性單數名詞以重音 a- 或 ha- 開頭（如 agua、hacha），單數冠詞須改用 el 以免連音拗口。",
+      "example_es": "La casa de María es muy bonita.",
+      "example_zh": "瑪麗亞的房子非常漂亮。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:la"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "los",
+      "article": "",
+      "pos": "artículo",
+      "zh": "陽性複數定冠詞（這些、那些）；男性或陽性受詞代名詞（他們、它們）",
+      "en": "the (masculine plural); them",
+      "ipa": "/los/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ille",
+          "zh": "那個"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "illōs",
+          "zh": "那些（陽性複數受格）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "los",
+          "zh": "那些、他們"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "los",
+          "zh": "定冠詞（陽性複數）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ille 的陽性複數受格 illōs，意思是「那些」。古西班牙語承襲其形式寫作 los，並保留了「他們」的代名詞用法。隨著語言發展，它同時承擔起陽性複數定冠詞的功能，用來指稱一群特定的男性或陽性名詞。",
+      "hook_zh": "想像操場上一群熱血踢球的男孩（los chicos），大聲為「los」這群夥伴加油！",
+      "usage_zh": "修飾陽性複數名詞；若團體中有男有女，西語語法習慣以陽性複數 los 代表全體。",
+      "example_es": "Los niños juegan en el parque.",
+      "example_zh": "孩子們在公園裡玩耍。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:los"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "del",
+      "article": "",
+      "pos": "artículo",
+      "zh": "…的、從…（de 與陽性定冠詞 el 的縮合形）",
+      "en": "of the, from the",
+      "ipa": "/del/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "del 是由介系詞 de 與陽性單數定冠詞 el 縮合而成。同屬羅曼語族的葡萄牙語（do）與法語（du）也有完全對應的縮合形式。",
+      "hook_zh": "看到 del 就拆成「de + el」：de 是「的」，el 是「陽性的這個」，合起來就是「這個的」。",
+      "usage_zh": "介系詞 de 遇到陽性單數定冠詞 el 時必須強制縮合為 del，不能寫成 de el。",
+      "example_es": "El libro es del profesor.",
+      "example_zh": "這本書是老師的。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:del"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "las",
+      "article": "",
+      "pos": "artículo",
+      "zh": "陰性複數定冠詞（這些、那些）；女性或陰性受詞代名詞（她們、它們）",
+      "en": "the (feminine plural); them",
+      "ipa": "/las/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ille",
+          "zh": "那個"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "illās",
+          "zh": "那些（陰性複數受格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "las",
+          "zh": "定冠詞（陰性複數）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ille 的陰性複數受格 illās，本義為「那些」。在演變為西班牙語的過程中，詞首的音節脫落弱化，轉變為 las。它既可用作陰性複數定冠詞「這些、那些」，也可以作為直接受格代名詞，指稱「她們」或複數陰性事物。",
+      "hook_zh": "花園裡盛開著一整片繽紛美麗的花朵（las flores），這群美麗的花仙子就是 las。",
+      "usage_zh": "修飾陰性複數名詞；即使單數用 el 的詞（如 el agua），複數仍規則恢復為 las aguas。",
+      "example_es": "Las flores de este jardín son hermosas.",
+      "example_zh": "這座花園裡的花朵很美麗。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:las"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "una",
+      "article": "",
+      "pos": "artículo",
+      "zh": "陰性單數不定冠詞（一個、某個）；一個（數詞）",
+      "en": "a, an (feminine singular); one",
+      "ipa": "/ˈuna/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*óynos",
+          "zh": "單一、一個"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*oinos",
+          "zh": "一個"
+        },
+        {
+          "lang_zh": "古拉丁語",
+          "word": "oinos",
+          "zh": "一個"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūna",
+          "zh": "一個（陰性）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "una",
+          "zh": "一個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "una",
+          "zh": "一個（陰性單數）"
+        }
+      ],
+      "cognates_en": [
+        "one",
+        "unit",
+        "unique"
+      ],
+      "story_zh": "源自原始印歐語 *óynos（單一），經由古拉丁語 oinos 與拉丁語數詞 ūnus 的陰性形式 ūna，再經古西班牙語傳承為現代西語 una。它原先單純表示數目「一」，在通俗語演變中逐漸弱化為不定冠詞，用來泛指某個首次提及的女性或陰性事物。英文的 one、unit 與 unique 均與其同源。",
+      "hook_zh": "聯想英文 unit（單一元件）或 unique（唯一）：手上拿著「一個（una）」蘋果。",
+      "usage_zh": "修飾陰性單數名詞；但若陰性名詞以重音 a- 或 ha- 開頭（如 águila），通常改用 un（un águila）。",
+      "example_es": "Compré una manzana roja en el mercado.",
+      "example_zh": "我在市場買了一顆紅蘋果。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:una"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "al",
+      "article": "",
+      "pos": "preposición",
+      "zh": "到…、在…（a 與 el 的縮合形）",
+      "en": "to the, at the (contraction of a + el)",
+      "ipa": "/al/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "介詞 a 遇到陽性單數定冠詞 el 時會合體縮成 al，就像 a + el 黏在一起。",
+      "usage_zh": "介詞 a 接陽性單數定冠詞 el 時必須縮合為 al；但若 el 為專有名詞的一部分則不縮合。",
+      "example_es": "Vamos al cine esta tarde.",
+      "example_zh": "我們今天下午去電影院。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:al"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sus",
+      "article": "",
+      "pos": "determinante",
+      "zh": "您的、他們的、他的（修飾複數名詞）",
+      "en": "your, their, his, her (plural possessee)",
+      "ipa": "/sus/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "suso",
+          "zh": "suso"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "sus",
+          "zh": "sus（截短形）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sus",
+          "zh": "所有格限定詞（複數）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "根據記載，此字源自古西班牙語 sus，是 suso 的截短形式（apocope）。在現代西語中演變為所有格限定詞，專門用來修飾複數名詞，表示「您的、他們的或他的」。",
+      "hook_zh": "su 是單數所有格，後面加上複數標記 -s 成為 sus，用來修飾複數名詞。",
+      "usage_zh": "修飾複數名詞，可指他的、她的、您的、他們的或您們的，需根據上下文判斷所有者。",
+      "example_es": "Ellos leen sus libros en la biblioteca.",
+      "example_zh": "他們在圖書館讀他們的書。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "esta",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "這個、這位（陰性單數指示詞）",
+      "en": "this, this one (feminine singular)",
+      "ipa": "/ˈesta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "iste",
+          "zh": "這個（陽性）"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ista",
+          "zh": "這個（陰性）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esta",
+          "zh": "這個、這位（陰性）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ista，為 iste 的陰性單數形式。在拉丁語中指靠近對方的「這個」，傳入西班牙語後首音 i 脫落轉為 esta，專門指稱陰性單數的人事物。",
+      "hook_zh": "結尾 -a 讓人一眼認出是陰性單數，用來指眼前「這個」；陽性則是 este。",
+      "usage_zh": "可作為限定詞或代名詞。依皇家西班牙語言學院現行規範，作為代名詞時不再加重音符號。",
+      "example_es": "Esta casa es muy grande y bonita.",
+      "example_zh": "這間房子很大也很漂亮。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esta"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "do",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "唱名 do；C 音",
+      "en": "do (musical note); C",
+      "ipa": "/ˈdo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "do",
+          "zh": "唱名 do"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "do",
+          "zh": "唱名 do"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自義大利語的 do，作為唱名系統（do-re-mi）的第一個音，對應現代樂理的 C 音。西班牙語直接借用了這個義大利音樂術語。",
+      "hook_zh": "唱出「Do-Re-Mi」的第一個音，就是樂譜上的 do！",
+      "usage_zh": "陽性名詞（el do），複數形為 dos。注意不要和數字 dos（二）混淆。",
+      "example_es": "La melodía empieza con la nota do.",
+      "example_zh": "這段旋律以 do 音開頭。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:do"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "hace",
+      "article": "",
+      "pos": "preposición",
+      "zh": "前（表示時間前）；距今",
+      "en": "ago",
+      "ipa": "/ˈaθe/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "動詞 hacer（做）的第三人稱，想像時間「做」了三年，就成了「三年前」。",
+      "usage_zh": "表「…之前」時必須放在時間長度前面（如 hace dos días），與英文置於時間後的 ago 相反。",
+      "example_es": "Él nos visitó hace tres años.",
+      "example_zh": "他三年前來拜訪過我們。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:hace"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "donde",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "在…的地方、何處（關係副詞）",
+      "en": "where, in what place",
+      "ipa": "/ˈdonde/",
+      "breakdown": [
+        {
+          "part": "de",
+          "zh": "從"
+        },
+        {
+          "part": "onde",
+          "zh": "何處（源自 unde）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "unde",
+          "zh": "從何處"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "onde",
+          "zh": "從何處、何處"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "donde",
+          "zh": "在哪裡、在…的地方"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由介詞 de（從）與古西語 onde（從何處）結合而成，而 onde 繼承自拉丁語 unde（從何處）。原本帶有「從哪裡來」之意，後來在西語中取代了源自 ubi 的古詞，轉為泛指「在…的地方」。",
+      "hook_zh": "走在陌生街頭迷路，四處張望心想「到底在哪裡（donde）」。",
+      "usage_zh": "作為疑問副詞時必須標上重音（dónde，如 ¿Dónde estás?），作為關係副詞引導子句時則不帶重音。",
+      "example_es": "Deja los libros donde quieras.",
+      "example_zh": "把書放在你想放的地方。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:donde",
+        "wiktionary:la:unde"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tan",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "那麼、如此（程度副詞）",
+      "en": "so, as",
+      "ipa": "/tan/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tam",
+          "zh": "那麼、如此"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tan",
+          "zh": "那麼、如此"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自拉丁語副詞 tam，意思是「那麼、如此、到這種程度」。在演變為西班牙語時，字尾的 m 音轉化為 n 音，保留了修飾形容詞與副詞時表示強烈程度的用法。",
+      "hook_zh": "讀音像「嘆」，令人嘆氣地說：「事情怎麼會『那麼（tan）』複雜！」",
+      "usage_zh": "用來修飾形容詞或副詞，常見句型 tan... como... 表示「和…一樣…」；修飾名詞時則需用 tanto。",
+      "example_es": "Eres tan rico como te sientes.",
+      "example_zh": "你感覺自己有多富足，你就有多富足。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tan"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "e",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "和、與（替代 y）",
+      "en": "and",
+      "ipa": "/e/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "et",
+          "zh": "和、與"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "e",
+          "zh": "和、與"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自拉丁語連接詞 et（和、與）。在語音演變中字尾 t 脫落成為 e，多數場合進一步演變為 y，但在以 [i] 音開頭的單字前，為了避免連音混淆而保留了古老的 e。",
+      "hook_zh": "英文常見縮寫 etc.（et cetera）開頭的拉丁文 et 就是「和」，在西語中化身為 e。",
+      "usage_zh": "當後面的單字是以 i- 或 hi- 開頭時，連接詞 y 必須變為 e；但若接在雙母音 hie- 前則維持 y（如 cobre y hierro）。",
+      "example_es": "Hablo francés e inglés.",
+      "example_zh": "我會說法語和英語。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:e"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "esa",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "那個（陰性指示代名詞）",
+      "en": "that (feminine)",
+      "ipa": "/ˈesa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipse",
+          "zh": "自己"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipsa",
+          "zh": "她自己"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esa",
+          "zh": "那個"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語的 ipsa（由 ipse 衍生，原指「自己、親自」）。在通俗拉丁語中，這個詞逐漸轉變為指示代名詞，最終演化成西班牙語中用來指稱「離對方較近」的陰性指示詞 esa。",
+      "hook_zh": "指著對方身邊的東西說：「欸，撒（esa）點胡椒在那個上面！」",
+      "usage_zh": "指稱中距離或對方身邊的陰性事物；陽性形為 ese，中性代名詞為 eso。",
+      "example_es": "Esa chaqueta es muy elegante.",
+      "example_zh": "那件外套非常優雅。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "狀態、情況；國家、州",
+      "en": "state, status, condition, country",
+      "ipa": "/esˈtado/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "status",
+          "zh": "站立、姿態、狀態"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estado",
+          "zh": "狀態、國家"
+        }
+      ],
+      "cognates_en": [
+        "state"
+      ],
+      "story_zh": "源自拉丁語 status（站立、立足的姿態或情況）。原指人或事物立足當下的「狀況」，後來延伸指具備統治權力與社會秩序的政治實體「國家、州」，與英文的 state 同源。",
+      "hook_zh": "英文 state 開頭加上西語常見的前置 e-，就成了 estado。",
+      "usage_zh": "首字母大寫 Estado 指「國家」；常見搭配如 estado civil（婚姻狀況）。",
+      "example_es": "El edificio está en buen estado.",
+      "example_zh": "這棟建築物保存狀態良好。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estado",
+        "wiktionary:la:status"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mas",
+      "article": "",
+      "pos": "conjunción",
+      "zh": "但、然而",
+      "en": "but, however",
+      "ipa": "/mas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "magis",
+          "zh": "更多"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "mas",
+          "zh": "但"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mas",
+          "zh": "但、然而"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自古西班牙語 mas，源自拉丁語 magis（更多）。原指「更進一步」，在語意轉折演變中弱化為表示轉折的「但是」，與表示「更多」的副詞 más 是同源雙胞詞。",
+      "hook_zh": "沒戴重音帽子的 mas 是轉折詞「但是」；頭上戴帽的 más 才是「更多」。",
+      "usage_zh": "主要用於書面語或文學作品，等同 pero；注意不帶重音符號。",
+      "example_es": "Quiso responder, mas no supo qué decir.",
+      "example_zh": "他想回答，卻不知該說什麼。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gobierno",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "政府、統治",
+      "en": "government",
+      "ipa": "/ɡoˈbjeɾno/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古西班牙語",
+          "word": "gouierno",
+          "zh": "統治、掌舵"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gobierno",
+          "zh": "政府"
+        }
+      ],
+      "cognates_en": [
+        "govern",
+        "government"
+      ],
+      "story_zh": "源自古西班牙語 gouierno，名詞衍生自動詞 gobernar（統治、管理）。原意與指引方向、掌舵相關，後來演變為指掌管國家體制的「政府」。",
+      "hook_zh": "長得很像英文 govern，站在政府（gobierno）大樓前引導國家前進。",
+      "usage_zh": "陽性名詞，代指中央或地方統治體系，指特定政府組織時首字母常大寫。",
+      "example_es": "El gobierno anunció nuevas medidas.",
+      "example_zh": "政府公布了新的措施。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gobierno"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estos",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "這些",
+      "en": "these, these ones",
+      "ipa": "/ˈestos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "istōs",
+          "zh": "這些（賓格複數）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estos",
+          "zh": "這些"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 iste 的陽性賓格複數 istōs。在拉丁語中用來指稱靠近對方的那些事物，演變為西語後成為指稱靠近說話者的「這些」。",
+      "hook_zh": "esto（這個）加上複數尾巴 -s，指著眼前的物品說「這些」（estos）。",
+      "usage_zh": "指示形容詞或代名詞，修飾或指代陽性複數名詞；過去代名詞寫法為 éstos。",
+      "example_es": "Estos zapatos son muy cómodos.",
+      "example_zh": "這些鞋子非常舒服。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estos"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "estas",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "這些（陰性）",
+      "en": "these, these ones (feminine)",
+      "ipa": "/ˈestas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "istās",
+          "zh": "這些（陰性賓格複數）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "estas",
+          "zh": "這些"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ista 的陰性賓格複數 istās。在演變為西語的過程中，保留為指稱靠近說話者或提及的「這些」陰性人事物。",
+      "hook_zh": "esta（這個陰性）加上複數 -s，就是眼前的「這些」（estas）。",
+      "usage_zh": "指示形容詞或代名詞，修飾或指代陰性複數名詞；過去代名詞寫法為 éstas。",
+      "example_es": "Estas flores huelen muy bien.",
+      "example_zh": "這些花聞起來好香。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:estas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "quien",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "誰；…的人（關係代名詞）",
+      "en": "who, whom, the one who",
+      "ipa": "/ˈkjen/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*kʷís, *kʷos",
+          "zh": "誰"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*kʷoi",
+          "zh": "誰"
+        },
+        {
+          "lang_zh": "古拉丁語",
+          "word": "quei",
+          "zh": "誰"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "quem",
+          "zh": "誰（受格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "quien",
+          "zh": "誰、…的人"
+        }
+      ],
+      "cognates_en": [
+        "who",
+        "whom"
+      ],
+      "story_zh": "quien 繼承自拉丁語 quī（誰）的單數受格 quĕm，更早可追溯至古拉丁語 quei、原始義大利語 *kʷoi 與原始印歐語 *kʷís、*kʷos。拉丁語受格 quem 在演變為西語時，擴展為主格與受格通用的關係代名詞與疑問詞。",
+      "hook_zh": "發音像「客言」，想像客人發問：「到底是『誰』（quien）在說話？」",
+      "usage_zh": "作為疑問代名詞時必須標重音符號 quién；作為關係代名詞時，複數形式為 quienes。",
+      "example_es": "Ella es la profesora con quien estudio español.",
+      "example_zh": "她就是和我一起學西語的老師。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:quien"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "caso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "情況、案例；事件",
+      "en": "case, situation",
+      "ipa": "/ˈkaso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "cāsus",
+          "zh": "情況、事件"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caso",
+          "zh": "情況、案例"
+        }
+      ],
+      "cognates_en": [
+        "case"
+      ],
+      "story_zh": "caso 是源自拉丁語 cāsus（情況、事件）的學術借詞。在拉丁語中指發生之事或落入某種境遇，進入西班牙語後完整保留了原詞形式與核心含義，用來表示各種情境、事態或具體案例。",
+      "hook_zh": "與英文 case（情況、案例）完全同源且拼法極為相似，僅字尾變為西語常見的 -o。",
+      "usage_zh": "常見固定搭配有 en caso de（萬一、在…情況下）以及 hacer caso a（理會、聽從）。",
+      "example_es": "En este caso, es mejor no decir nada.",
+      "example_zh": "在這種情況下，最好什麼都別說。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nacional",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "國家的、全國性的",
+      "en": "national, nationwide",
+      "ipa": "/naθjoˈnal/",
+      "breakdown": [
+        {
+          "part": "nación",
+          "zh": "國家"
+        },
+        {
+          "part": "-al",
+          "zh": "形容詞字尾，表示…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "新拉丁語",
+          "word": "nātiōnālis",
+          "zh": "國家的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nacional",
+          "zh": "國家的、全國性的"
+        }
+      ],
+      "cognates_en": [
+        "national"
+      ],
+      "story_zh": "nacional 是由名詞 nación（國家）加上形容詞字尾 -al 構詞而成，對照新拉丁語詞彙 nātiōnālis。字面含義為「屬於國家的」，用來修飾涉及全國範疇或具有國家性質的人事物。",
+      "hook_zh": "拼寫與英文 national（國家的）非常相近，只需注意西語重音落在最後音節 -al。",
+      "usage_zh": "陰陽同形形容詞，不論修飾陽性或陰性名詞形狀皆為 nacional，複數加 -es 變 nacionales。",
+      "example_es": "El museo nacional abre todos los días.",
+      "example_zh": "國立博物館每天都開放。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nacional"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cual",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "如同、像；哪一個（關係詞）",
+      "en": "which, like, as",
+      "ipa": "/ˈkwal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quālis",
+          "zh": "怎樣的、何種的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cual",
+          "zh": "如同、哪一個"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 quālis（怎樣的、何種的）。在西語中演化為關係代名詞與副詞，用來引導子句表示「如同、像…一樣」或指稱特定事物。",
+      "hook_zh": "發音像「跨喔」，像在問人「到底跨過了哪一個（cual）」。",
+      "usage_zh": "不帶重音符號時為關係代名詞（常搭配定冠詞 el cual / la cual）或副詞；疑問詞必須加重音寫作 cuál。",
+      "example_es": "Tal vez podrías probar de otra manera, cual es simplemente ignorarlo.",
+      "example_zh": "也許你可以試試另一種方法，像是直接忽略它。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cual"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "general",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "一般的、普遍的、整體的",
+      "en": "general, overall",
+      "ipa": "/xeneˈɾal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "generālis",
+          "zh": "普遍的、全體的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "general",
+          "zh": "一般的、整體的"
+        }
+      ],
+      "cognates_en": [
+        "general"
+      ],
+      "story_zh": "源自拉丁語 generālis（普遍的、整體的）。演變為西語後保留了涵蓋全面、整體的意涵，用作形容詞表示「一般的、整體的」，亦可引申作名詞指統帥全軍的「將軍」。",
+      "hook_zh": "與英文 general 拼法與意義完全相同，指「普遍的」或軍隊裡的「將軍」。",
+      "usage_zh": "形容詞陰陽同形（una idea general）。常見片語 en general 表示「一般來說、大體上」。",
+      "example_es": "En general, el clima aquí es muy agradable.",
+      "example_zh": "一般來說，這裡的氣候非常宜人。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:general"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tal",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "如此的、這樣的",
+      "en": "such",
+      "ipa": "/ˈtal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tālis",
+          "zh": "這樣的、如此的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "tal",
+          "zh": "這樣的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tal",
+          "zh": "如此的、這樣的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 tālis（這樣的、如此的），經古西班牙語 tal 演變而來。用作形容詞或代名詞，用來指稱某種性質或前面提過的事物，表達「如此、這般」。",
+      "hook_zh": "「踏（tal）入這樣的世界」；日常問候常用 ¿Qué tal?（你好嗎、如何？）。",
+      "usage_zh": "陰陽同形，複數形為 tales。常見固定搭配包括 tal vez（也許）、¿Qué tal?（如何？）。",
+      "example_es": "No hay tal cosa como los monstruos.",
+      "example_zh": "根本沒有怪物這種東西。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tal"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "acuerdo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "協議、協定、共識",
+      "en": "agreement, compromise",
+      "ipa": "/aˈkweɾdo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "acordar",
+          "zh": "達成協議、想起"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "acuerdo",
+          "zh": "協議"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西班牙語動詞 acordar（達成協議、想起），由動詞去尾去後綴衍生為名詞（deverbal），指雙方取得一致意見、做出的共同決議或協定。",
+      "hook_zh": "雙方握手微笑達成共識：Llegamos a un acuerdo！（我們達成了協議！）",
+      "usage_zh": "常用搭配為 llegar a un acuerdo（達成協議）與 estar de acuerdo（同意）。",
+      "example_es": "Llegaron a un acuerdo después de una larga reunión.",
+      "example_zh": "在一場漫長的會議後，他們達成了協議。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:acuerdo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cualquier",
+      "article": "",
+      "pos": "determinante",
+      "zh": "任何的、任一的",
+      "en": "any, whatever, whichever",
+      "ipa": "/kwalˈkjeɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cualquiera",
+          "zh": "任何一個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cualquier",
+          "zh": "任何的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自西班牙語代名詞 cualquiera。在單數名詞前發生斷尾縮略（apócope），省略詞尾 -a 形成修飾名詞的限定詞，表示「任何一個、無論哪一個」。",
+      "hook_zh": "在名詞前要斷尾變短：cualquiera 砍掉尾巴 a，變成修飾名詞的 cualquier。",
+      "usage_zh": "置於單數名詞前（無論陽性或陰性）一律用縮略形 cualquier；單獨使用時用 cualquiera。",
+      "example_es": "Puedes llamarme a cualquier hora del día.",
+      "example_zh": "你一天當中的任何時間都可以打電話給我。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cualquier"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dios",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "神、神明；上帝、天主",
+      "en": "god",
+      "ipa": "/ˈdjos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*dyew-",
+          "zh": "天空、天界"
+        },
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*deywós",
+          "zh": "神明"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*deiwos",
+          "zh": "神明"
+        },
+        {
+          "lang_zh": "古拉丁語",
+          "word": "deivos",
+          "zh": "神明"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "deus",
+          "zh": "神、神祇"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "dios",
+          "zh": "神"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dios",
+          "zh": "神"
+        }
+      ],
+      "cognates_en": [
+        "deity",
+        "divine"
+      ],
+      "story_zh": "源自原始印歐語根 *dyew-（天空、白晝），演變出代表神明的 *deywós，經拉丁語 deus 與古西班牙語傳承為 dios。古人仰望天空與光明，將天界存在視為神。西語保留了拉丁語主格結尾 -os，推測受教會拉丁語影響。",
+      "hook_zh": "英文 deity（神祇）與 divine（神聖的）與 dios 同源；日常感嘆常說 ¡Dios mío!（天啊！）。",
+      "usage_zh": "專指基督教的唯一真神「上帝」時字首須大寫（Dios）；複數為 dioses，陰性為 diosa。",
+      "example_es": "¡Dios mío, no puedo creer lo que pasó!",
+      "example_zh": "我的天啊，我不敢相信發生了什麼事！",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dios",
+        "wiktionary:la:deus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "unos",
+      "article": "",
+      "pos": "determinante",
+      "zh": "大約、大概；一些",
+      "en": "about, approximately, some",
+      "ipa": "/ˈunos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūnus",
+          "zh": "一"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ūnōs",
+          "zh": "一些（陽性賓格複數）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "unos",
+          "zh": "大約、大概"
+        }
+      ],
+      "cognates_en": [
+        "one",
+        "unit"
+      ],
+      "story_zh": "源自拉丁語 ūnus（一）的陽性賓格複數形 ūnōs。從單數「一個」發展為複數「一些、若干」，在數詞或量詞前進一步虛化，表示概數「大約、大概」。",
+      "hook_zh": "uno 是一，加複數 s 變成 unos，放在數字前就表示「大概幾…個」。",
+      "usage_zh": "置於數詞前表示估計、概數（大約）；作不定冠詞時表示「一些」（陰性為 unas）。",
+      "example_es": "Tardamos unos diez minutos en llegar a la estación.",
+      "example_zh": "我們大約花了十分鐘才到達車站。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:unos"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ley",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "法律、法規；定律",
+      "en": "law",
+      "ipa": "/ˈlei/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*leǵ-",
+          "zh": "收集、聚集"
+        },
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*leǵ-s",
+          "zh": "法律規範"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*lēg-",
+          "zh": "法律"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "lēgem",
+          "zh": "法律（賓格）"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "ley",
+          "zh": "法律"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ley",
+          "zh": "法律"
+        }
+      ],
+      "cognates_en": [
+        "legal",
+        "legitimate"
+      ],
+      "story_zh": "源自原始印歐語根 *leǵ-（收集、聚集），經原始義大利語演變為拉丁語 lēgem（法律，主格 lex），再由古西班牙語繼承。法律原意是「整理收集成冊的條規」。英文 legal 與 legitimate 亦同源。",
+      "hook_zh": "英文 legal（合法的）去掉後綴就接近西語 ley；遵守法律（ley）行事才合法（legal）。",
+      "usage_zh": "陰性名詞，複數為 leyes（字尾加 -es，字母 y 由半元音變為輔音 [ʝ]）。",
+      "example_es": "Todos los ciudadanos deben respetar la ley.",
+      "example_zh": "所有公民都必須遵守法律。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ley",
+        "wiktionary:la:lex"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "medio",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "一半的；中間的；平均的",
+      "en": "half; middle; average",
+      "ipa": "/ˈmedjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*médʰyos",
+          "zh": "在…之間"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*meðjos",
+          "zh": "中間的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "medius",
+          "zh": "中間的、一半的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "medio",
+          "zh": "一半的、中間的"
+        }
+      ],
+      "cognates_en": [
+        "medium"
+      ],
+      "story_zh": "源自拉丁語 medius（中間的、一半的），追溯至原始印歐語 *médʰyos（在…之間）。西語未經一般語音演變（否則會像 *meo 那樣近似 mear「尿尿」），而是直接借自拉丁語。英文的 medium（媒介、中等）亦同源。",
+      "hook_zh": "英文 medium 是中等尺寸，西語的 medio 就是「中間、一半」。",
+      "usage_zh": "作形容詞時隨名詞性數變化（如 media hora）；作副詞表示「有點、半…」時不隨名詞變化（如 medio abierta）。",
+      "example_es": "Nos vemos dentro de media hora.",
+      "example_zh": "我們半小時後見。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:medio",
+        "wiktionary:la:medius"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sino",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "命運；定數",
+      "en": "destiny; fate; lot",
+      "ipa": "/ˈsino/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*sek-",
+          "zh": "切、割"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*segnom",
+          "zh": "標記"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "signum",
+          "zh": "標記、徵兆、信號"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sino",
+          "zh": "命運、注定"
+        }
+      ],
+      "cognates_en": [
+        "sign"
+      ],
+      "story_zh": "源自拉丁語 signum（標記、徵兆），追溯至原始印歐語 *sek-（切、刻劃）。古人觀察天象或神明示現的徵兆來預測吉凶，因而引申為人生的「命運、注定」。英文的 sign（記號、徵兆）與西語的 signo 為同源詞。",
+      "hook_zh": "上天刻劃下的 sign（徵兆、印記），就是每個人注定的命運（sino）。",
+      "usage_zh": "陽性名詞（el sino），指命運；需注意別和極常見的連接詞 sino（而是）混淆。",
+      "example_es": "Aceptó su sino con serenidad y valentía.",
+      "example_zh": "他平靜且勇敢地面對自己的命運。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sino",
+        "wiktionary:la:signum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sistema",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "系統、體系、制度",
+      "en": "system",
+      "ipa": "/sisˈtema/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "σύστημα",
+          "zh": "組成的整體"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "systēma",
+          "zh": "系統"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sistema",
+          "zh": "系統"
+        }
+      ],
+      "cognates_en": [
+        "system"
+      ],
+      "story_zh": "源自古希臘語 σύστημα，由 σύν（共同、一起）與 ἵστημι（站立）組成，原指「結合在一起的整體」。後來經由拉丁語 systēma 借入西班牙語，演變為由相互關聯的部分構成的「系統」或「體系」。英文的 system 也是同源字。",
+      "hook_zh": "長得跟英文 system 幾乎一樣，但請特別注意它是陽性名詞 el sistema！",
+      "usage_zh": "陽性名詞陷阱：源自希臘語、以 -ma 結尾的字常為陽性，請搭配 el sistema，不是 la。",
+      "example_es": "El sistema de metro funciona muy bien.",
+      "example_zh": "捷運系統運作得非常好。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sistema",
+        "wiktionary:la:systema"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "fin",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "結束、終點；目的、目標",
+      "en": "end, goal, purpose",
+      "ipa": "/ˈfin/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fīnis",
+          "zh": "界線、終點"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "fin",
+          "zh": "結束"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "fin",
+          "zh": "結束、目的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自古西班牙語 fin，是拉丁語 fīnis（界線、終點）的半學術繼承詞。古羅馬人用它指實體範圍的「邊界」，後來引申為時間上的「終結」與行動所追求的「目的」。",
+      "hook_zh": "電影演到最後出現「FIN」，就是故事畫下「句點、結束」。",
+      "usage_zh": "陽性名詞。常用片語：el fin de semana（週末）、al fin（終於）、a fin de（為了）。",
+      "example_es": "¿Qué planes tienes para el fin de semana?",
+      "example_zh": "你週末有什麼計畫？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:fin"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "presidente",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "總統；主席、會長",
+      "en": "president, head, leader",
+      "ipa": "/pɾesiˈdente/",
+      "breakdown": [
+        {
+          "part": "presidir",
+          "zh": "主持"
+        },
+        {
+          "part": "-ente",
+          "zh": "…的人（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "praesidentem",
+          "zh": "主持、領導者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "presidente",
+          "zh": "總統、主席"
+        }
+      ],
+      "cognates_en": [
+        "president"
+      ],
+      "story_zh": "源自拉丁語 praesidentem，原意為「坐在前面守護的人、主持者」。本字是學術借詞，在構詞上也可視為動詞 presidir（主持）加上表示「從事者」的字尾 -ente，演變成現代指稱國家元首的「總統」或機構的「主席」。",
+      "hook_zh": "英文就是 president，開會坐在正前方主持大局的人就是「主席／總統」。",
+      "usage_zh": "傳統上陽性 el presidente，現在指女性總統常用 la presidenta，也可見 la presidente。",
+      "example_es": "El presidente dio un discurso ayer.",
+      "example_zh": "總統昨天發表了演說。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:presidente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "lado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "邊、側面；方面",
+      "en": "side, face",
+      "ipa": "/ˈlado/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "latus",
+          "zh": "側面、邊"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "lado",
+          "zh": "邊、側面"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lado",
+          "zh": "邊、側面"
+        }
+      ],
+      "cognates_en": [
+        "lateral"
+      ],
+      "story_zh": "繼承自古西班牙語 lado，最終源自拉丁語 latus（側面、側邊）。在語意發展上保持了實體空間的「側面」，並引申至抽象的立場或觀點。英文的 lateral（側面的）也是同源字，可能與 latitude（緯度）同源。",
+      "hook_zh": "英文 lateral pass 是「側傳」，西語 lado 就是「身邊、側面」。",
+      "usage_zh": "陽性名詞。極常見片語：al lado de（在…旁邊）、de un lado a otro（從一邊到另一邊）。",
+      "example_es": "Mi casa está al lado del parque.",
+      "example_zh": "我家在公園旁邊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "aún",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "還、仍然；甚至",
+      "en": "still, yet, even",
+      "ipa": "/aˈun/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "adhūc",
+          "zh": "至今、直到現在"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "aún",
+          "zh": "還、仍然"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自拉丁語副詞 adhūc，原意為「至今、直到現在」。拉丁語詞形經過語音簡化與演變，進入西班牙語後成為 aún，核心語意依然保留「到現在仍然如此」的時間延續感，進而引申出「甚至更加」的強調用法。",
+      "hook_zh": "aún 讀起來像「啊～溫」，茶泡了這麼久，「還、仍然」是溫的。",
+      "usage_zh": "有重音 aún 等於 todavía（仍、還）；無重音 aun 讀作單音節 /awn/，等於 incluso（甚至）。",
+      "example_es": "Aún no he terminado mi tarea.",
+      "example_zh": "我還沒完成我的作業。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:aún"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "esos",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "那些、那些人事物",
+      "en": "those, those ones",
+      "ipa": "/ˈesos/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipse",
+          "zh": "本人、自己"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipsōs",
+          "zh": "那些人/物（受格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esos",
+          "zh": "那些"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語代名詞 ipse（本人、正是那個），其複數受格形式為 ipsōs。在語言演變過程中，原本表示強調「就是那些」的語氣逐漸轉變為普通的指示代名詞，用來指稱距離聽話者較近或剛才提及的「那些」。",
+      "hook_zh": "單數是 ese，複數加 s 變成 esos，指著對方身邊的事物：「那些」都是你的。",
+      "usage_zh": "陽性複數代名詞；陰性複數為 esas。若後方接名詞則作為指示限定詞使用。",
+      "example_es": "¿De quién son esos libros que están en la mesa?",
+      "example_zh": "桌上那些書是誰的？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esos"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "final",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "終點、結局；決賽（陰性）",
+      "en": "end, final",
+      "ipa": "/fiˈnal/",
+      "breakdown": [
+        {
+          "part": "fin",
+          "zh": "結束、終點"
+        },
+        {
+          "part": "-al",
+          "zh": "後綴，表相關事物"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fīnālis",
+          "zh": "邊界或結尾的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "final",
+          "zh": "終點、最後的"
+        }
+      ],
+      "cognates_en": [
+        "final"
+      ],
+      "story_zh": "源自拉丁語形容詞 fīnālis（邊界或結尾的），由 fin（終點、界限）加上形容詞後綴 -al 組成。隨著時間演變，除保留形容詞用法外，也轉化為名詞指事物的「結尾」或競賽的「決賽」。",
+      "hook_zh": "和英文 final 完全同形同義，看到就能直接秒記！",
+      "usage_zh": "陽性 el final 指「結尾、終點」；陰性 la final 則指運動或比賽的「決賽」。",
+      "example_es": "El final de la película fue muy emocionante.",
+      "example_zh": "那部電影的結局非常感人。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:final"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "política",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "政治、政治學；政策、方針",
+      "en": "politics, policy",
+      "ipa": "/poˈlitika/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "發音與英文 politics、policy 相似，可聯想政治人物在台上發表政策。",
+      "usage_zh": "陰性名詞。指「政治」時不可數；指具體「方針、政策」或「女性政治家」時可數。",
+      "example_es": "A ella no le interesa hablar de política.",
+      "example_zh": "她對談論政治不感興趣。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:política"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "punto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "點、地點；分數；句點",
+      "en": "point, full stop, score",
+      "ipa": "/ˈpunto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "pungō",
+          "zh": "刺、戳"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "pūnctum",
+          "zh": "刺出的小孔、點"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "punto",
+          "zh": "點"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "punto",
+          "zh": "點、分數"
+        }
+      ],
+      "cognates_en": [
+        "point",
+        "puncture",
+        "punctual"
+      ],
+      "story_zh": "源自拉丁語動詞 pungō（刺、戳），其過去分詞中性形 pūnctum 原指被針刺穿出的小孔。這個微小的印記後來引申為幾何上的「點」、文章中的「句點」，以及比賽計算得失的「分數」。",
+      "hook_zh": "想像筆尖用力刺（puncture）在紙上，留下一個小黑點，就是 punto。",
+      "usage_zh": "在標點符號中指「句點」；網址裡的 dot 也讀作 punto，例如 .com 讀作 punto com。",
+      "example_es": "Ganamos el partido por un solo punto.",
+      "example_zh": "我們以一分之差贏了這場比賽。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:punto",
+        "wiktionary:la:punctum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "guerra",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "戰爭",
+      "en": "war, warfare",
+      "ipa": "/ˈɡera/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法蘭克語",
+          "word": "*werʀu",
+          "zh": "混亂、紛爭"
+        },
+        {
+          "lang_zh": "中世紀早期拉丁語",
+          "word": "werra",
+          "zh": "戰爭"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "guerra",
+          "zh": "戰爭"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "guerra",
+          "zh": "戰爭"
+        }
+      ],
+      "cognates_en": [
+        "war"
+      ],
+      "story_zh": "源自法蘭克語 *werʀu（混亂、爭執），經中世紀早期拉丁語 werra 演變成西語 guerra。日耳曼語族用表示「混亂與紛爭」的詞彙取代古典拉丁語的 bellum，英文的 war 也是同源字。",
+      "hook_zh": "發音像「給啦」，兩國爆發「戰爭」（guerra），弱方只好割地求和通通給啦！",
+      "usage_zh": "陰性名詞。注意字母組合 gue 在西語中唸 /ɡe/，u 不發音，勿唸成「規拉」。",
+      "example_es": "Nadie quiere que empiece otra guerra.",
+      "example_zh": "沒有人希望另一場戰爭爆發。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:guerra"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ante",
+      "article": "",
+      "pos": "preposición",
+      "zh": "在……之前；面對",
+      "en": "before, in front of",
+      "ipa": "/ˈante/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ante",
+          "zh": "在…之前"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ante",
+          "zh": "在…之前、面對"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "繼承自拉丁語的 ante，原意即為「在……之前」或「在前方」。西班牙語完整保留了這個核心意義，常用於空間中「在某人或某物面前」，或延伸為抽象情境下「面對」具體事實或選擇。",
+      "hook_zh": "站在法官面前（ante el juez），心裡直「俺特」緊張！",
+      "usage_zh": "介系詞，後接名詞表示「在…面前」或「面對…」，如 ante el peligro（面對危險）。",
+      "example_es": "Tengo que comparecer ante el juez.",
+      "example_zh": "我必須出庭面對法官。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ante"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "embargo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "扣押；禁運",
+      "en": "embargo, seizure",
+      "ipa": "/emˈbaɾɡo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "embargar",
+          "zh": "扣押、阻礙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "embargo",
+          "zh": "扣押、禁運"
+        }
+      ],
+      "cognates_en": [
+        "embargo"
+      ],
+      "story_zh": "源自動詞 embargar（扣押、阻礙）的名詞化。最初在法律與航海中指官府扣留貨物或阻攔船隻出港，後來延伸至國際關係與對外貿易領域，特指政府對特定國家實施的貿易禁令。",
+      "hook_zh": "常以「sin embargo」（然而、不過）出現，字面是「沒有阻礙」。",
+      "usage_zh": "陽性名詞。日常極高頻片語為 sin embargo，相當於 pero，表示「然而、不過」。",
+      "example_es": "El gobierno decidió levantar el embargo.",
+      "example_zh": "政府決定解除禁運。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:embargo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "información",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "資訊、情報",
+      "en": "information, data",
+      "ipa": "/infoɾmaˈθjon/",
+      "breakdown": [
+        {
+          "part": "informar",
+          "zh": "通知、告知"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表動作或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnformāre",
+          "zh": "賦予形狀、告知"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "īnfōrmātiō",
+          "zh": "構想、形成、概念"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "información",
+          "zh": "資訊、情報"
+        }
+      ],
+      "cognates_en": [
+        "information",
+        "inform"
+      ],
+      "story_zh": "源自拉丁語 īnfōrmātiōnem（來自動詞 īnformāre），字面含義為「賦予形狀、塑造概念」。古人認為向人傳達訊息就像在對方心中「塑造成形」，後來引申為教育、傳授知識，進而演變成現代所稱的「資訊」與「情報」。",
+      "hook_zh": "英文 information 換成西語字尾 -ción，重音落在最後一個音節。",
+      "usage_zh": "陰性名詞。字尾 -ción 皆為陰性，通常不可數，複數形為 informaciones。",
+      "example_es": "Necesito más información sobre este curso.",
+      "example_zh": "我需要更多關於這堂課程的資訊。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:información",
+        "wiktionary:la:informatio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "san",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "聖…（santo 的斷形，用於陽性聖人名）",
+      "en": "Saint (apocopic form of santo)",
+      "ipa": "/ˈsan/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sanctus",
+          "zh": "神聖的、聖人"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "santo",
+          "zh": "聖人"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "san",
+          "zh": "聖…"
+        }
+      ],
+      "cognates_en": [
+        "saint",
+        "sanctuary"
+      ],
+      "story_zh": "源自拉丁語 sanctus（神聖的、聖人），進入古西班牙語作 santo。在西語演變中，置於大多數以子音開頭的陽性聖人名字前時會發生斷尾（apócope），省略尾音節而縮短成 san。",
+      "hook_zh": "看到舊金山 San Francisco 或聖地牙哥 San Diego，前面的 San 就是聖人！",
+      "usage_zh": "置於陽性單數聖人名前，但以 Do- 或 To- 開頭者除外（如 Santo Domingo、Santo Tomás）。",
+      "example_es": "San Pedro es uno de los santos más conocidos.",
+      "example_zh": "聖彼得是其中一位最有名的聖人。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:san",
+        "wiktionary:la:sanctus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "social",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "社會的；社交的",
+      "en": "social",
+      "ipa": "/soˈθjal/",
+      "breakdown": [
+        {
+          "part": "soci-",
+          "zh": "同伴"
+        },
+        {
+          "part": "-al",
+          "zh": "與…相關的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "socius",
+          "zh": "同伴、盟友"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "socialis",
+          "zh": "同伴的、社會的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "social",
+          "zh": "社會的、社交的"
+        }
+      ],
+      "cognates_en": [
+        "social",
+        "society"
+      ],
+      "story_zh": "源自拉丁語 sociālis（同伴的、社會的），其字根為 socius（同伴、盟友）。同伴之間互相連結、共同生活便形成了群體與社會，進而引申出「社會的」與「社交的」之意。",
+      "hook_zh": "英文也是 social，和 society（社會）同源，想像許多同伴（soci-）聚在一起。",
+      "usage_zh": "陰陽同形（un problema social / una vida social），複數為 sociales。",
+      "example_es": "El cambio social requiere la participación de todos.",
+      "example_zh": "社會變革需要所有人的參與。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:social",
+        "wiktionary:la:socialis"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "derecho",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "權利；法律",
+      "en": "right, law",
+      "ipa": "/deˈɾet͡ʃo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dīrēctus",
+          "zh": "筆直的、直接的"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*dērēctus",
+          "zh": "筆直的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "derecho",
+          "zh": "權利、法律；直的"
+        }
+      ],
+      "cognates_en": [
+        "direct"
+      ],
+      "story_zh": "源自拉丁語 dīrēctus（筆直的、直接的），經由通俗拉丁語 *dērēctus 演變而來。語義從實體方向的「筆直不偏」，引申為道德與行為上的「正當、正確」，最終在法律上發展出保障正當性的「權利」與「法律」。英文的 direct 為其同源詞。",
+      "hook_zh": "身體坐得「直」（derecho），行得正做得端，就能理直氣壯爭取「權利」（derecho）。",
+      "usage_zh": "陽性名詞 el derecho 指「權利」或「法律」；副詞指「直直走」；女性名詞 la derecha 才是「右邊」。",
+      "example_es": "Todos los ciudadanos tienen derecho a la educación.",
+      "example_zh": "所有公民都享有受教育的權利。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:derecho"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "falta",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "缺乏、短缺；缺席；過錯",
+      "en": "lack, shortage, fault",
+      "ipa": "/ˈfalta/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "fallere",
+          "zh": "失誤、欺騙、使失望"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*fallita",
+          "zh": "短缺、失誤"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "falta",
+          "zh": "缺乏、缺席、過錯"
+        }
+      ],
+      "cognates_en": [
+        "fault",
+        "fail"
+      ],
+      "story_zh": "源自通俗拉丁語 *fallita，為拉丁語動詞 fallere（犯錯、失誤、使失望）的陰性過去分詞。詞義從原本的「失誤、犯錯」，逐漸轉變為某事物該到而未到、因失誤而造成的「短缺、缺少」，進一步引申出「缺乏」與「缺席」。",
+      "hook_zh": "遇到短缺（falta），計畫就會 fail，讓人覺得是誰的 fault（過錯）。",
+      "usage_zh": "極常用片語 hacer falta（需要、缺乏，用法似 gustar）及 por falta de（由於缺乏…）。",
+      "example_es": "Me hace falta tiempo para terminar el proyecto.",
+      "example_zh": "我需要時間來完成這個專案。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:falta",
+        "wiktionary:la:fallo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cambio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "改變；找零、零錢；匯率",
+      "en": "change, shift, exchange rate",
+      "ipa": "/ˈkambjo/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "口袋裡的零錢互相碰撞聲音「康啷變（cambio）」，代表生活正在改變！",
+      "usage_zh": "常見搭配：en cambio（相反地、然而）、cambio de moneda（貨幣兌換）。",
+      "example_es": "Aquí tiene su cambio y el recibo.",
+      "example_zh": "這是找您的零錢和收據。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:cambio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mierda",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "屎、排泄物；爛東西；（感嘆詞）該死",
+      "en": "shit, crap, piece of shit",
+      "ipa": "/ˈmjeɾda/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*smerd-h₂-",
+          "zh": "惡臭"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "merda",
+          "zh": "糞便、排泄物"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "mierda",
+          "zh": "糞便"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mierda",
+          "zh": "屎、爛東西"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語的 merda（糞便），最早可追溯至原始印歐語中代表「惡臭」的詞根。進入古西班牙語後，短母音 e 雙母音化為 ie，演變為現代西語的 mierda。除了指排泄物，日常口語中也常作為情緒強烈的粗話或感嘆詞使用。",
+      "hook_zh": "踩到狗屎時忍不住大喊「mierda！」，立刻聯想法語電影常聽到的「merde」。",
+      "usage_zh": "粗俗詞彙，常作感嘆詞「¡Mierda!」（可惡、該死）或片語「irse a la mierda」（完蛋）。",
+      "example_es": "¡Mierda! Olvidé las llaves en casa.",
+      "example_zh": "該死！我把鑰匙忘在家裡了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mierda",
+        "wiktionary:la:merda"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tras",
+      "article": "",
+      "pos": "preposición",
+      "zh": "在…之後；在…背後",
+      "en": "after, behind",
+      "ipa": "/ˈtɾas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "trāns",
+          "zh": "穿過、跨越"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "tras",
+          "zh": "在…之後"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tras",
+          "zh": "在…之後、在…背後"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語介系詞 trāns（穿過、越過）。在古西班牙語時期簡化為 tras，語意也從空間上的「跨越界線」延伸出時間上的「在…之後」與空間上的「在…背後」。",
+      "hook_zh": "想像火車穿過（trans-）山洞，列車走過之後（tras）只留下煙霧。",
+      "usage_zh": "常出現在新聞與書面語中，表「在…之後」（tras la reunión）或「接連」（día tras día）。",
+      "example_es": "Tras la tormenta, salió el sol.",
+      "example_zh": "暴風雨過後，太陽出來了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tras"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "través",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "橫越；穿過（主要用於片語 a través de）",
+      "en": "bend, turn; through, across",
+      "ipa": "/tɾaˈbes/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "加泰隆尼亞語",
+          "word": "través",
+          "zh": "彎曲、轉向"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "través",
+          "zh": "彎曲、橫向"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "推測借自加泰隆尼亞語的 través，本義指彎曲、轉向或橫向傾斜。這個字在現代西語中極少單獨作名詞使用，最常見的是構成片語「a través de」，用來表示「透過」或「穿過」。",
+      "hook_zh": "出門 travel（旅行）要穿過千山萬水，través 就是「透過、穿過」（a través de）。",
+      "usage_zh": "通常不單獨使用，主要以片語「a través de」（穿過、透過、藉由）的形式出現。",
+      "example_es": "Miro la lluvia a través de la ventana.",
+      "example_zh": "我透過窗戶看著外面的雨。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:través"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "realidad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "現實、真實",
+      "en": "reality",
+      "ipa": "/realiˈdad/",
+      "breakdown": [
+        {
+          "part": "real",
+          "zh": "真實的"
+        },
+        {
+          "part": "-idad",
+          "zh": "名詞字尾，表示性質或狀態"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "reālitātem",
+          "zh": "現實、真實性"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "realidad",
+          "zh": "現實、真實"
+        }
+      ],
+      "cognates_en": [
+        "reality"
+      ],
+      "story_zh": "源自拉丁語 reālitātem（真實性），由 real（真實的）加上抽象名詞字尾 -idad 構成，用來指客觀存在的人事物狀態。英文的 reality 也是由同一個拉丁字源演變而來的同源詞。",
+      "hook_zh": "形容詞 real（真實的）加上名詞字尾 -idad，就是英文的 reality（現實）。",
+      "usage_zh": "陰性名詞。常見搭配有副詞片語「en realidad」（實際上、其實）與「hacer realidad」（實現）。",
+      "example_es": "Sus sueños se convirtieron en realidad.",
+      "example_zh": "他的夢想變成了現實。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:realidad"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "algún",
+      "article": "",
+      "pos": "determinante",
+      "zh": "某個、某些、任何（alguno 的斷尾形）",
+      "en": "some, any (apocopic form of alguno)",
+      "ipa": "/alˈɡun/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "阿公（al-gún）手裡拿著「某一個」神祕禮物要送給你。",
+      "usage_zh": "為 alguno 在陽性單數名詞前的斷尾形（如 algún día），若修飾陰性名詞則用 alguna。",
+      "example_es": "¿Tienes algún plan para este fin de semana?",
+      "example_zh": "你這個週末有什麼計畫嗎？",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:algún"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "frente",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "額頭；前線、正面",
+      "en": "forehead; front",
+      "ipa": "/ˈfɾente/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "frontem",
+          "zh": "額頭"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "fruente",
+          "zh": "額頭"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "frente",
+          "zh": "額頭、前線"
+        }
+      ],
+      "cognates_en": [
+        "front"
+      ],
+      "story_zh": "源自拉丁語 frontem（額頭），經古西班牙語 fruente 演變為現代西語 frente。本義指人臉最前端的「額頭」，後來引申為事物或軍事陣地的最前端，即「前線」或「正面」。",
+      "hook_zh": "聯想英文 front（前面）：低頭看正前方露出的就是「額頭」，陣地最前方就是「前線」。",
+      "usage_zh": "陰性 la frente 為額頭；陽性 el frente 為前線或正面。片語 frente a 表示「面對」或「在…前面」。",
+      "example_es": "Él se tocó la frente para ver si tenía fiebre.",
+      "example_zh": "他摸了摸額頭，看看自己有沒有發燒。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:frente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "incluso",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "甚至、連…都；包含在內的",
+      "en": "even; including, enclosed",
+      "ipa": "/inˈkluso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "inclusus",
+          "zh": "關在裡面的、包含的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "incluso",
+          "zh": "甚至、包含在內的"
+        }
+      ],
+      "cognates_en": [
+        "include",
+        "inclusive"
+      ],
+      "story_zh": "學者借詞自拉丁語 inclūsus（被關在裡面的、包含的）。原本作為形容詞表示「包含在內的」，後來轉化為副詞，用來強調連原本最不可能的情況都「包括」在內，演變出「甚至、連…都」的意思。",
+      "hook_zh": "聯想英文 include（包含）：把最意料之外的狀況也「包含」進去，就是「甚至」。",
+      "usage_zh": "常用於句首或主詞前加強語氣，如 Incluso yo…（連我都…）。作副詞時不隨性數變化。",
+      "example_es": "Incluso los fines de semana me levanto temprano.",
+      "example_zh": "甚至在週末我也很早起床。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:incluso"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "real",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "真實的、實際的；皇家的",
+      "en": "real, actual; royal",
+      "ipa": "/reˈal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "res",
+          "zh": "事物、實物"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "realis",
+          "zh": "實際的、真實的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "real",
+          "zh": "真實的"
+        }
+      ],
+      "cognates_en": [
+        "real",
+        "reality"
+      ],
+      "story_zh": "借自晚期拉丁語 reālis（實際的），源於古典拉丁語 rēs（事物、實物），原指真實客觀存在的事物，演變為「真實的」。西語中另有同形字 real 源於拉丁語 regālis（王室的），故兼具「皇家的」之意。",
+      "hook_zh": "與英文 real 同形同義，指「真實的」；皇家馬德里隊名（Real Madrid）也是同一個字。",
+      "usage_zh": "一字雙義：可指「真實的」（un hecho real），也可指「皇家的」（la familia real）。陰陽同形。",
+      "example_es": "Esta película está basada en una historia real.",
+      "example_zh": "這部電影改編自真實故事。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:real",
+        "wiktionary:la:realis",
+        "wiktionary:la:res"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "desarrollo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "發展、發育、開發",
+      "en": "development, growth",
+      "ipa": "/desaˈroʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "desarrollar",
+          "zh": "開展、發展"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "desarrollo",
+          "zh": "發展"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 desarrollar（開展、發展）去動詞字尾名詞化而來。指事情從開端逐步擴展、推進與成長的過程，常用於描述經濟、社會或個人能力的「發展」。",
+      "hook_zh": "動詞 desarrollar 的名詞形；想像一幅畫卷從頭展開到尾，就是完整的「發展」過程。",
+      "usage_zh": "為陽性名詞（el desarrollo）。常見搭配有 en desarrollo（發展中）、países en desarrollo（開發中國家）。",
+      "example_es": "El proyecto está en pleno desarrollo.",
+      "example_zh": "這個專案正處於全面發展階段。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:desarrollo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sociedad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "社會、社群、公司",
+      "en": "society, community, company",
+      "ipa": "/soθjeˈdad/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "socius",
+          "zh": "夥伴、同盟"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "societas",
+          "zh": "社群、夥伴關係"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sociedad",
+          "zh": "社會、公司"
+        }
+      ],
+      "cognates_en": [
+        "society",
+        "social"
+      ],
+      "story_zh": "源自拉丁語 socius（同伴、盟友），衍生出名詞 societas，原意是「夥伴關係」或「共同體」。隨著語意拓展，從小團體的結盟擴大為整個群體構成的「社會」，後來也引申出商業上的「公司」或「協會」之意。",
+      "hook_zh": "聯想英文 society，字根 socio- 代表社交與同伴，同伴聚在一起就是 sociedad（社會）。",
+      "usage_zh": "陰性名詞。以 -dad 結尾的名詞均為陰性。商業上 sociedad anónima（S.A.）代表股份有限公司。",
+      "example_es": "Vivimos en una sociedad diversa y abierta.",
+      "example_zh": "我們生活在一個多元且開放的社會中。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sociedad",
+        "wiktionary:la:societas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tema",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "主題、題目、話題",
+      "en": "theme, topic, subject",
+      "ipa": "/ˈtema/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "θέμα",
+          "zh": "放置之物、命題"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "thema",
+          "zh": "主題、題目"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tema",
+          "zh": "主題、話題"
+        }
+      ],
+      "cognates_en": [
+        "theme"
+      ],
+      "story_zh": "源自古希臘語 θέμα（théma），原意為「被放置下來的事物」或「擺出來討論的命題」，後經拉丁語 thema 借入西語。擺在桌面上供大家探討的事情，就演變成如今演講或文章的「主題」與「話題」。",
+      "hook_zh": "英文同源字 theme。發音類似「鐵馬」：今天我們報告的「主題」是環島鐵馬行。",
+      "usage_zh": "陰陽性陷阱！雖以 -a 結尾，但源自希臘語，因此是陽性名詞（el tema，複數 los temas）。",
+      "example_es": "Es un tema muy interesante para debatir.",
+      "example_zh": "這是一個非常適合辯論的主題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tema"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "esas",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "那些（陰性複數）",
+      "en": "those, those ones (feminine)",
+      "ipa": "/ˈesas/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipse",
+          "zh": "本人、自身"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ipsas",
+          "zh": "那些（陰性複數）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "esas",
+          "zh": "那些"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語指示代名詞 ipse（本人、自己）的陰性複數形式 ipsās。在通俗拉丁語演變為西語的過程中，原本用來加強語氣的「她們自己」逐漸轉變為指示詞，用來指稱距離聽話者較近或中等距離的「那些事物」。",
+      "hook_zh": "ese（那個）的陰性複數。想像手指著不遠處的「那些」（esas）東西。",
+      "usage_zh": "指中等距離或聽話者附近的陰性複數人事物。作指示代名詞時，現代正書法已不強制加上重音符號 ésas。",
+      "example_es": "Esas son las flores que más me gustan.",
+      "example_zh": "那些是我最喜歡的花。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:esas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mí",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "我（介系詞受詞）",
+      "en": "me (object of preposition)",
+      "ipa": "/ˈmi/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ego",
+          "zh": "我"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "mihi",
+          "zh": "對我、給我"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mí",
+          "zh": "我（介系詞受詞）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "承襲自古典拉丁語第一人稱單數代名詞 ego（我）的與格形式 mihi（對我、給我）。在語音簡化演變中，mihi 縮短為單音節的 mí，並在西語中專門用於介系詞（如 para、de）之後作為受格代名詞。",
+      "hook_zh": "發音就像英文的 me，專門跟在介系詞後面當「我」（如 para mí 為我）。",
+      "usage_zh": "受詞代名詞，必須帶重音符號 mí 以區分所有格形容詞 mi（我的）；與介系詞 con 連用時需變為 conmigo。",
+      "example_es": "Este regalo es muy especial para mí.",
+      "example_zh": "這份禮物對我來說非常特別。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mí"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "nivel",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "水準、程度、等級、水平儀",
+      "en": "level, standard, tier",
+      "ipa": "/niˈbel/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "libra",
+          "zh": "天平、磅"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "libella",
+          "zh": "水準儀、小天平"
+        },
+        {
+          "lang_zh": "古法語",
+          "word": "nivel",
+          "zh": "水準儀、水平"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "nivel",
+          "zh": "水準、程度、等級"
+        }
+      ],
+      "cognates_en": [
+        "level"
+      ],
+      "story_zh": "源自拉丁語 lībra（天平），加上指小詞後形成 libella，原指工匠測量平面的「水準儀」。經由古法語 nivel（字首音變由 l- 轉為 n-）或加泰隆尼亞語傳入西語，從具體的測量工具引申為高度、程度與「水準」。",
+      "hook_zh": "英文同源字 level，拼法與發音都極為接近，意思同樣是「水準」或「等級」。",
+      "usage_zh": "陽性名詞 el nivel。常搭配片語 a nivel de（在…水準/層面上），複數形為 niveles。",
+      "example_es": "Su nivel de español es excelente.",
+      "example_zh": "他的西班牙語程度非常優秀。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:nivel",
+        "wiktionary:la:libella"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "argentino",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "阿根廷的；銀色的",
+      "en": "Argentine, Argentinian; silvery",
+      "ipa": "/aɾxenˈtino/",
+      "breakdown": [
+        {
+          "part": "argent-",
+          "zh": "銀"
+        },
+        {
+          "part": "-ino",
+          "zh": "形容詞字尾，表…的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "argentum",
+          "zh": "銀"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "argentinus",
+          "zh": "銀製的、銀色的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "argentino",
+          "zh": "阿根廷的、銀色的"
+        }
+      ],
+      "cognates_en": [
+        "Argentine"
+      ],
+      "story_zh": "源自拉丁語 argentīnus（銀色的），而該詞來自 argentum（銀）。16 世紀探險家在拉普拉塔河尋找白銀，使該地區得名「阿根廷」，字面即「銀之國」。因此 argentino 原指「銀色的」，後來演變為「阿根廷的」。",
+      "hook_zh": "阿根廷（Argentina）是白銀之國，結尾換成 -ino 就是阿根廷的或阿根廷人。",
+      "usage_zh": "首字母小寫，陰性為 argentina。作名詞時表示阿根廷人（el / la argentino/a）。",
+      "example_es": "El asado argentino es famoso en todo el mundo.",
+      "example_zh": "阿根廷烤肉聞名全世界。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:argentino",
+        "wiktionary:la:argentinus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "paso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "步伐、腳步；步驟",
+      "en": "step, pace",
+      "ipa": "/ˈpaso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "passus",
+          "zh": "跨步、腳步"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "passo",
+          "zh": "步伐"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "paso",
+          "zh": "腳步、步驟"
+        }
+      ],
+      "cognates_en": [
+        "pace",
+        "pass"
+      ],
+      "story_zh": "承襲自古西班牙語 passo，最終源自拉丁語 passus（邁步、步幅）。原義是走路時雙腳邁開的距離，引申指行走的「腳步」或前進的節奏，後來也用來比喻依順序進行的「步驟」。英文的 pace（步調）與 pass（通過）皆為同源字。",
+      "hook_zh": "聯想英文 pace（步調）和 pass（通過），一步一步走過去就是一個 paso。",
+      "usage_zh": "常用片語有 paso a paso（一步步地、按部就班）和 dar un paso（邁出一步）。",
+      "example_es": "Vamos a resolver este problema paso a paso.",
+      "example_zh": "我們來按部就班解決這個問題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:paso",
+        "wiktionary:la:passus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "unido",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "團結的、聯合的；相連的",
+      "en": "united, joined, linked",
+      "ipa": "/uˈnido/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "看到 unido 就想到 Estados Unidos（美國），象徵大家手牽手「團結、聯合」在一起。",
+      "usage_zh": "陰性為 unida。是動詞 unir（結合、團結）的過去分詞轉形容詞。",
+      "example_es": "Ellos son una familia muy unida.",
+      "example_zh": "他們是一個感情非常緊密的家庭。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:unido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "artículo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "文章；物品；（語法）冠詞",
+      "en": "article, item",
+      "ipa": "/aɾˈtikulo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "artus",
+          "zh": "關節、肢體"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "articulus",
+          "zh": "小關節；條款、冠詞"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "artículo",
+          "zh": "文章、物品、冠詞"
+        }
+      ],
+      "cognates_en": [
+        "article"
+      ],
+      "story_zh": "拉丁語 articulus 是 artus（關節）的指小詞，原指「小關節」或肢體相連的小分節。古羅馬人將此概念延伸到文字上，指切分出的小段落或法條；在文法上則指連接名詞的「冠詞」。後來又進一步泛指報章雜誌上的「文章」或清單上的單件「物品」。",
+      "hook_zh": "就像關節把身體骨骼串連起來，報紙上的文章也是由一段段字句串連而成的 article。",
+      "usage_zh": "陽性名詞。文法上的「定冠詞」為 artículo definido（如 el、la），「不定冠詞」為 artículo indefinido（如 un、una）。",
+      "example_es": "Leí un artículo muy interesante en el periódico de hoy.",
+      "example_zh": "我在今天的報紙上讀到一篇非常有趣的文章。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:artículo",
+        "wiktionary:la:articulus",
+        "wiktionary:la:artus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cierto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "某個；真實的、確定的",
+      "en": "certain, true",
+      "ipa": "/ˈθjeɾto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "certus",
+          "zh": "確定的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "cierto",
+          "zh": "確定的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cierto",
+          "zh": "真實的、某個"
+        }
+      ],
+      "cognates_en": [
+        "certain"
+      ],
+      "story_zh": "源自拉丁語 certus（確定、明確），經由古西班牙語 cierto 演變而來。在西語中除了保留「真實、確定」的本義，也延伸出指稱不具體指名但確有其事的「某個」之意。英文的 certain 也是同源字。",
+      "hook_zh": "音義皆近英文 certain。放在名詞前是指「某個」，放在名詞後或搭配 ser 則指「真實的」。",
+      "usage_zh": "放在名詞前表「某個」（如 cierta persona 某個人）；放在名詞後或搭配 ser 表「真實的」（如 Es cierto 這是真的）。",
+      "example_es": "Es cierto que aprender español requiere práctica diaria.",
+      "example_zh": "學西班牙語確實需要每天練習。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cierto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mayoría",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "大多數、大部分",
+      "en": "majority",
+      "ipa": "/maʝoˈɾia/",
+      "breakdown": [
+        {
+          "part": "mayor",
+          "zh": "較大的、主要的"
+        },
+        {
+          "part": "-ía",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "源自 mayor（較大的、主要的）加上名詞字尾 -ía。字面意思為「較大的部分」，引申指群體中的「多數」或「大部分」。",
+      "hook_zh": "開會投票時，舉手的人佔了「絕大多數」（mayoría），多數決順利通過。",
+      "usage_zh": "常見搭配為 la mayoría de…（大多數的…），後接複數名詞時動詞可用單數或複數。",
+      "example_es": "La mayoría de los estudiantes habla español.",
+      "example_zh": "大多數的學生都會說西班牙語。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:mayoría"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "seguridad",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "安全；安全感、自信",
+      "en": "safety, security",
+      "ipa": "/seɡuɾiˈdad/",
+      "breakdown": [
+        {
+          "part": "seguro",
+          "zh": "安全的"
+        },
+        {
+          "part": "-idad",
+          "zh": "狀態或性質（名詞字尾）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "securitas",
+          "zh": "安全、平安"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "seguridad",
+          "zh": "安全、自信"
+        }
+      ],
+      "cognates_en": [
+        "security"
+      ],
+      "story_zh": "源自拉丁語 securitas（由形容詞 sēcūrus 加上抽象名詞字尾 -tās 組成，意為免除危險、安全無虞）。進入西班牙語後演變為 seguro 加上 -idad 字尾，既指客觀外在的「安全與防護」，也指內在心理的「安全感與自信」。英文的 security 是同源字。",
+      "hook_zh": "長得很像英文 security。生活環境很 seguro（安全），心裡就會充滿 seguridad（安全感）。",
+      "usage_zh": "陰性名詞。常見搭配如 cinturón de seguridad（安全帶）與 cámara de seguridad（監視器）。",
+      "example_es": "Por razones de seguridad, es obligatorio llevar el cinturón puesto.",
+      "example_zh": "基於安全考量，必須繫好安全帶。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:seguridad",
+        "wiktionary:la:securitas"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "visto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "看過的；顯而易見的",
+      "en": "seen, obvious",
+      "ipa": "/ˈbisto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "vīsus",
+          "zh": "看見（過去分詞）"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*vīsitus",
+          "zh": "被看見的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "visto",
+          "zh": "看過的、顯而易見的"
+        }
+      ],
+      "cognates_en": [
+        "visible",
+        "vision"
+      ],
+      "story_zh": "源自通俗拉丁語 *vīsitus，由古典拉丁語分詞 vīsus（看見）加上過去分詞字尾 -itus 規則化而來。它原本是動詞 ver（看）的過去分詞，後來引申為形容詞，表示「被眾人看見的」，進一步衍生為「顯而易見、清楚明白的」。",
+      "hook_zh": "通訊軟體傳訊息被已讀就是 visto；事情都被大家「看」在眼裡，自然是「顯而易見的」。",
+      "usage_zh": "為動詞 ver 的不規則過去分詞。常用片語有 por lo visto（顯然、看來）以及 dar el visto bueno（批准、認可）。",
+      "example_es": "Por lo visto, va a llover esta tarde en la ciudad.",
+      "example_zh": "看來今天下午城裡會下雨。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:visto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "programa",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "節目；計畫、方案；電腦程式",
+      "en": "program, show, schedule",
+      "ipa": "/pɾoˈɡɾama/",
+      "breakdown": [
+        {
+          "part": "pro-",
+          "zh": "在前、公開"
+        },
+        {
+          "part": "-grama",
+          "zh": "書寫、文字"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "πρόγραμμα",
+          "zh": "公告、告示"
+        },
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "programma",
+          "zh": "告示、節目"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "programa",
+          "zh": "節目、計畫"
+        }
+      ],
+      "cognates_en": [
+        "program",
+        "programme"
+      ],
+      "story_zh": "源自古希臘語 πρόγραμμα（prógramma），本指「公開寫出的告示或布告」。在晚期拉丁語中沿用，演變為預先安排好的活動時程或綱要，現代進一步引申為電視「節目」與電腦「程式」。",
+      "hook_zh": "英文就是 program，發音也非常相近；記住希臘字源的 -ma 結尾通常是陽性名詞！",
+      "usage_zh": "注意性別陷阱：源自希臘語 -ma 結尾，為陽性名詞（el programa），複數 los programas。",
+      "example_es": "¿Cuál es tu programa de televisión favorito?",
+      "example_zh": "你最喜歡的電視節目是什麼？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:programa"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "internacional",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "國際的",
+      "en": "international",
+      "ipa": "/inteɾnaθjoˈnal/",
+      "breakdown": [
+        {
+          "part": "inter-",
+          "zh": "在…之間"
+        },
+        {
+          "part": "nacional",
+          "zh": "國家的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "inter- + nacional",
+          "zh": "在…之間 + 國家的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "internacional",
+          "zh": "國際的"
+        }
+      ],
+      "cognates_en": [
+        "international"
+      ],
+      "story_zh": "由前綴 inter-（在…之間）與形容詞 nacional（國家的）複合而成，字面意思就是「各國之間的」，指跨越單一國家疆界、涉及多國的事務或關係。",
+      "hook_zh": "英文的 international 完全對應，inter-（之間）加上 nacional（國家）。",
+      "usage_zh": "陰陽同形（un vuelo internacional / una llamada internacional），複數為 internacionales。",
+      "example_es": "El aeropuerto internacional está lejos del centro.",
+      "example_zh": "國際機場離市中心很遠。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:internacional"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "servicio",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "服務；公共廁所；餐具組",
+      "en": "service, public toilet, amenity",
+      "ipa": "/seɾˈbiθjo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "servitium",
+          "zh": "奴役、服侍"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "servicio",
+          "zh": "服務"
+        }
+      ],
+      "cognates_en": [
+        "service",
+        "servitude"
+      ],
+      "story_zh": "借自拉丁語 servitium（原指奴僕的身分或侍奉）。隨時代演變，詞義從侍候轉化為現代社會中為他人提供的「服務」，在西語中複數 servicios 還常用來委婉指「洗手間」。",
+      "hook_zh": "英文 service 同源！在西語餐廳常問服務費或借用洗手間（los servicios）。",
+      "usage_zh": "在西語中經常以複數 los servicios 指稱公共場所的「洗手間／化妝室」。",
+      "example_es": "El servicio en este restaurante es excelente.",
+      "example_zh": "這家餐廳的服務非常棒。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:servicio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "situación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "情況、處境；位置、情勢",
+      "en": "situation, condition, location",
+      "ipa": "/sitwaˈθjon/",
+      "breakdown": [
+        {
+          "part": "situar",
+          "zh": "放置、定位"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾（狀態、動作）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "situar + -ción",
+          "zh": "定位 + 名詞字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "situación",
+          "zh": "情況、位置"
+        }
+      ],
+      "cognates_en": [
+        "situation"
+      ],
+      "story_zh": "由動詞 situar（放置、置於某處）加上表示動作或狀態的字尾 -ción 衍生而來。原指具體事物的「所在位置」，後來抽象化為人或事物所面臨的「處境、情勢、狀況」。",
+      "hook_zh": "英文的 situation 完全對應，-ción 結尾的名詞在西語都是陰性。",
+      "usage_zh": "-ción 結尾均為陰性名詞（la situación）。複數去掉重音符號：situaciones。",
+      "example_es": "Es una situación difícil para todos.",
+      "example_zh": "這對大家來說都是個艱難的情況。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:situación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "siguiente",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "下一個的、接下來的",
+      "en": "following, next",
+      "ipa": "/siˈɡjente/",
+      "breakdown": [
+        {
+          "part": "seguir",
+          "zh": "跟隨"
+        },
+        {
+          "part": "-ente",
+          "zh": "現在分詞／形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "原始印歐語",
+          "word": "*sekʷ-",
+          "zh": "跟隨"
+        },
+        {
+          "lang_zh": "原始義大利語",
+          "word": "*sekʷōr",
+          "zh": "跟隨"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "sequentem",
+          "zh": "跟隨的"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "syguiente",
+          "zh": "接下來的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "siguiente",
+          "zh": "接下來的、下一個的"
+        }
+      ],
+      "cognates_en": [
+        "sequence",
+        "sequential"
+      ],
+      "story_zh": "源自原始印歐語 *sekʷ-（跟隨），經拉丁語動詞 sequor 之現在分詞 sequentem 演變。在古西語中為動詞 seguir 的舊現在分詞 syguiente，字面意思為「緊跟在後的」，引申為「接下來的」。",
+      "hook_zh": "想成「跟著（seguir）」前面的東西，緊跟在後的就是「下一個（siguiente）」。",
+      "usage_zh": "常置於名詞之前或後，如 el siguiente día 或 el día siguiente。陰陽同形，複數 siguientes。",
+      "example_es": "Nos vemos la semana siguiente.",
+      "example_zh": "我們下週見。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:siguiente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "dato",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "資料、數據",
+      "en": "datum, piece of information, data",
+      "ipa": "/ˈdato/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "datum",
+          "zh": "給予之物、禮物"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dato",
+          "zh": "資料、數據"
+        }
+      ],
+      "cognates_en": [
+        "data",
+        "datum"
+      ],
+      "story_zh": "源自拉丁語 datum，原意是「被給予之物」或「禮物」（源自 dare「給予」）。在哲學與數學討論中，代表「被給予的前提事實」，後來演變成現代意義上的「資料」或「數據」。英文的 data 即是其複數形。",
+      "hook_zh": "英文的 data 就是它的複數形；在電腦裡每一筆被給予的「資料」就是一個 dato。",
+      "usage_zh": "常用複數形 datos 表示「資料、數據」，例如 base de datos（資料庫）。",
+      "example_es": "Necesito más datos para tomar una decisión.",
+      "example_zh": "我需要更多資料才能做出決定。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:dato",
+        "wiktionary:la:datum"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "educación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "教育；教養、禮貌",
+      "en": "education; upbringing, manners",
+      "ipa": "/edukaˈθjon/",
+      "breakdown": [
+        {
+          "part": "educar",
+          "zh": "教育、培養"
+        },
+        {
+          "part": "-ción",
+          "zh": "名詞字尾，表示行為或結果"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "educatio",
+          "zh": "撫育、培養、教育"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "educación",
+          "zh": "教育；教養"
+        }
+      ],
+      "cognates_en": [
+        "education"
+      ],
+      "story_zh": "源自拉丁語 educatio，原意為「撫育、養育與培養」，由動詞 ēdūcō（撫育）加上名詞字尾構成。在西語中除指學校體制的「教育」外，也常指個人的品格修養與家庭教養。",
+      "hook_zh": "和英文 education 幾乎一樣，結尾 -ción 是西語常見名詞字尾，重音在最後。",
+      "usage_zh": "常說 mala educación 指「沒禮貌、缺乏教養」，如 Es de mala educación（…很不禮貌）。",
+      "example_es": "Es de mala educación hablar con la boca llena.",
+      "example_zh": "嘴巴塞滿東西說話是很沒禮貌的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:educación",
+        "wiktionary:la:educatio"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "proceso",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "過程、進程；訴訟程序",
+      "en": "process, progression, lawsuit",
+      "ipa": "/pɾoˈθeso/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "processus",
+          "zh": "前進、進展、歷程"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "proceso",
+          "zh": "過程、進程；訴訟"
+        }
+      ],
+      "cognates_en": [
+        "process",
+        "proceed"
+      ],
+      "story_zh": "借自拉丁語 processus（前進、進程），原為動詞 prōcēdō（向前推進）的過去分詞名詞化。事物持續向前發展的階段稱為「過程」；在法律語境中，也引申為一步步向前推進的「訴訟程序」。",
+      "hook_zh": "英文的 process，代表事情一步步向前（pro-）推進的流程。",
+      "usage_zh": "片語 en proceso 表示「進行中」，例如：El proyecto está en proceso（專案進行中）。",
+      "example_es": "Aprender un nuevo idioma es un proceso largo.",
+      "example_zh": "學習一門新語言是一個漫長的過程。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:proceso",
+        "wiktionary:la:processus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sentido",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "感官、感覺；意義；方向",
+      "en": "sense, meaning, direction",
+      "ipa": "/senˈtido/",
+      "breakdown": [
+        {
+          "part": "sentir",
+          "zh": "感覺、感受"
+        },
+        {
+          "part": "-ido",
+          "zh": "過去分詞或名詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "身體能感受（sentir）到的器官就是「感官」（sentido），說話讓人感受得到就是有「意義」。",
+      "usage_zh": "常用搭配如 los cinco sentidos（五感）與 no tiene sentido（沒有道理、毫無意義）。",
+      "example_es": "Lo que dices no tiene ningún sentido.",
+      "example_zh": "你說的話一點道理都沒有。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:sentido"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cuanto",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "凡是…的一切、所有數量",
+      "en": "as much as, whatever quantity",
+      "ipa": "/ˈkwanto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "quantus",
+          "zh": "多少、多大"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cuanto",
+          "zh": "凡是…的所有量、多少"
+        }
+      ],
+      "cognates_en": [
+        "quantum",
+        "quantity"
+      ],
+      "story_zh": "繼承自拉丁語 quantus（多少、多大），用來詢問或指稱數量與程度。在西語中常作為關係代名詞，表示「凡是…的全部數量」或「盡可能多」，與 tanto（那麼多）相對應。英文的 quantum（量子）與 quantity（數量）皆同源。",
+      "hook_zh": "英文的 quantity（數量）和 quantum（量子）都來自同一個拉丁字根 quant-，表示「多少」。",
+      "usage_zh": "常見句型 en cuanto a…（關於…）以及 en cuanto + 虛擬式（一…就…）；無重音號，有重音號的 cuánto 才是疑問詞。",
+      "example_es": "Dame cuanto tengas.",
+      "example_zh": "把你有的全都給我。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cuanto",
+        "wiktionary:la:quantus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ello",
+      "article": "",
+      "pos": "pronombre",
+      "zh": "它、這件事（中性第三人稱代名詞）",
+      "en": "it (neuter pronoun)",
+      "ipa": "/ˈeʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "illud",
+          "zh": "那個（中性代名詞）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ello",
+          "zh": "它、這件事"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語中性指示代名詞 illud（那個），在西語中演變成中性代名詞 ello。它不像 él 或 ella 指涉具體的人事物，而是用來代指前面提過的一整件事、抽象概念或整體情況。",
+      "hook_zh": "ello 就像英文的 it，字尾 -o 代表中性，專門指涉「那件事」。",
+      "usage_zh": "常與介系詞連用，如 por ello（因此）、a pesar de ello（儘管如此）。",
+      "example_es": "Hablamos de ello durante la reunión.",
+      "example_zh": "我們在會議中討論了那件事。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ello"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "ningún",
+      "article": "",
+      "pos": "determinante",
+      "zh": "沒有任何一個的、無",
+      "en": "no, not any",
+      "ipa": "/ninˈɡun/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "ninguno",
+          "zh": "沒有任何一個"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ningún",
+          "zh": "沒有任何的（短尾形）"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自 ninguno（沒有任何一個）。當它置於陽性單數名詞前時，會發生短尾修飾（apócope），去掉字尾的 -o 並在結尾音節補上重音符號，縮短為 ningún。",
+      "hook_zh": "ningún 就像「零（ningún）個」，放在陽性名詞前俐落地削掉尾巴 -o！",
+      "usage_zh": "只修飾陽性單數名詞（如 ningún problema）；修飾陰性名詞時用 ninguna。",
+      "example_es": "No tengo ningún problema con eso.",
+      "example_zh": "我對那件事沒有任何問題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:ningún"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "orden",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "順序、秩序（陽性）；命令（陰性）",
+      "en": "order, arrangement; command",
+      "ipa": "/ˈoɾden/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "ordo",
+          "zh": "行列、順序"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "ōrdinem",
+          "zh": "行列、順序（賓格）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "orden",
+          "zh": "秩序、命令"
+        }
+      ],
+      "cognates_en": [
+        "order"
+      ],
+      "story_zh": "借自拉丁語 ōrdinem（主格 ordo），原指軍隊或織物中「排成整齊的行列」。由整齊排列引申為「秩序、順序」，進一步引申為維持規矩而頒布的「命令」。英文 order 亦同源。",
+      "hook_zh": "長得跟英文 order 一模一樣，排好順序（orden）就是有秩序。",
+      "usage_zh": "陰陽性意思不同：el orden 是「順序、秩序」；la orden 則是「命令、指令」。",
+      "example_es": "Los libros están en orden alfabético.",
+      "example_zh": "這些書是按照字母順序排列的。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:orden",
+        "wiktionary:la:ordo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "puesto",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "職位、位置；攤位；放置的",
+      "en": "job, position, market stall; placed",
+      "ipa": "/ˈpwesto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "positus",
+          "zh": "被放置的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "postus",
+          "zh": "放置的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "puesto",
+          "zh": "職位、攤位"
+        }
+      ],
+      "cognates_en": [
+        "post"
+      ],
+      "story_zh": "源自動詞 poner（放置）的過去分詞，來自拉丁語 postus（源自 positus，放置）。物體被放置的具體地點引申為市集裡的「攤位」，人被安置的位置則引申為工作「職位」。英文 post 亦同源。",
+      "hook_zh": "puesto 是被「放（poner）」在那裡的地方：放在市場是攤位，放在公司是職位。",
+      "usage_zh": "做名詞時 el puesto 指職位或攤位；做形容詞或分詞時有陰陽性變化（puesta）。",
+      "example_es": "Él consiguió un nuevo puesto en la empresa.",
+      "example_zh": "他在這家公司獲得了一個新職位。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:puesto",
+        "wiktionary:la:postus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "realmente",
+      "article": "",
+      "pos": "adverbio",
+      "zh": "真正地、確實、實際上",
+      "en": "really, actually, genuinely",
+      "ipa": "/reˌalˈmente/",
+      "breakdown": [
+        {
+          "part": "real",
+          "zh": "真實的"
+        },
+        {
+          "part": "-mente",
+          "zh": "副詞字尾（以…的方式）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "real + -mente",
+          "zh": "真實的 + 方式字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "realmente",
+          "zh": "真正地、實際上"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由形容詞 real（真實的）加上副詞字尾 -mente 組成。-mente 源自拉丁語 mente（心態、方式），合起來字面意思是「以真實的方式」，引申為「真正地、確實」。",
+      "hook_zh": "real（真的）+ mente（副詞字尾）= realmente（真的、確實）。",
+      "usage_zh": "用來修飾動詞或整個句子，表達強調；發音時 real 和 -mente 各帶次重音與主重音。",
+      "example_es": "¿Estás realmente seguro de tu decisión?",
+      "example_zh": "你真的確定你的決定嗎？",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:realmente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "demás",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "其餘的、剩下的",
+      "en": "other, remaining",
+      "ipa": "/deˈmas/",
+      "breakdown": [
+        {
+          "part": "de",
+          "zh": "從、由"
+        },
+        {
+          "part": "más",
+          "zh": "更多"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "dē magis",
+          "zh": "從更多"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "demás",
+          "zh": "其餘的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "demás",
+          "zh": "其餘的、剩下的"
+        }
+      ],
+      "cognates_en": [
+        "master"
+      ],
+      "story_zh": "源自拉丁語 dē magis（由 dē「從」與 magis「更多」組成），經古西班牙語 demás 演變而來。字面原意是「在更多之外」，進而引申指「其餘的、剩下的部分」。英文的 master 也是源自 magis 衍生詞的同源字。",
+      "hook_zh": "拆成 de（的）+ más（更多）：除了這些，剩下「更多」的就是 demás。",
+      "usage_zh": "常搭配定冠詞，如 los demás（其他人）、lo demás（其餘的事），形式不隨性數變化。",
+      "example_es": "Los demás estudiantes ya están en clase.",
+      "example_zh": "其他學生都已經在教室了。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:demás"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "junto",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "一起的、相鄰的",
+      "en": "together, joined, next to",
+      "ipa": "/ˈxunto/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "iūnctus",
+          "zh": "連接的、結合的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "junto",
+          "zh": "一起的、相鄰的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 iūnctus（意為「結合的、連接的」）。事物在空間或關係上被連結在一起，便引申為彼此「相鄰的」或大家「一起」的狀態。",
+      "hook_zh": "發音像「混頭」，大家混在一起（junto）玩得不亦樂乎。",
+      "usage_zh": "作形容詞時須隨名詞做性數變化；搭配介系詞 a（junto a）表示「在…旁邊」。",
+      "example_es": "Pablo y yo siempre estudiamos juntos.",
+      "example_zh": "巴勃羅和我總是一起讀書。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:junto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "lista",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "名單、清單；條紋",
+      "en": "list, roll, stripe",
+      "ipa": "/ˈlista/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始西日耳曼語",
+          "word": "*līstā",
+          "zh": "邊緣、長條物"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "*lista",
+          "zh": "條帶、名單"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "lista",
+          "zh": "清單、名單"
+        }
+      ],
+      "cognates_en": [
+        "list"
+      ],
+      "story_zh": "源自原始西日耳曼語 *līstā，經通俗拉丁語 *lista 演變而來，原意指「邊緣」或「長條狀的紙片或布條」。後來由寫滿項目的長條紙片引申為「名單、清單」。英文的 list 也是同源字。",
+      "hook_zh": "英文的 list 加上一個 a 就是西語的 lista（清單），照著清單打勾勾。",
+      "usage_zh": "為陰性名詞。若當形容詞 listo/lista，搭配 ser 是「聰明的」，搭配 estar 是「準備好的」。",
+      "example_es": "Hice una lista de las cosas que necesito comprar.",
+      "example_zh": "我列了一張需要買的物品清單。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:lista"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "personal",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "個人的、私人的",
+      "en": "personal",
+      "ipa": "/peɾsoˈnal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "persōnālis",
+          "zh": "個人的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "personal",
+          "zh": "個人的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "學者借詞自晚期拉丁語 persōnālis（源自 persōna「面具、角色、人」）。原意指「與特定個人或身分角色相關的」，在西班牙語中直接作為「個人的、私人的」使用。",
+      "hook_zh": "拼法和英文 personal 完全相同，意思也一樣是「個人的」，直接記！",
+      "usage_zh": "形容詞陰陽同形（複數 personales）。作陽性名詞 el personal 時指「全體員工、人事」。",
+      "example_es": "Es una opinión personal sobre este tema.",
+      "example_zh": "這是我對這個議題的個人看法。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:personal"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "total",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "總共的、全部的、完全的",
+      "en": "total, complete",
+      "ipa": "/toˈtal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "tōtus",
+          "zh": "全部的、整體的"
+        },
+        {
+          "lang_zh": "中世紀拉丁語",
+          "word": "tōtālis",
+          "zh": "總體的、全部的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "total",
+          "zh": "總共的、完全的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "學者借詞自中世紀拉丁語 tōtālis。該詞由拉丁語 tōtus（全部的、整體的）加上形容詞後綴 -ālis 衍生而來，用以表示涵蓋全部的「總體的、完全的」。",
+      "hook_zh": "拼法與英文 total 完全相同，計算機按出來的總數就是 total。",
+      "usage_zh": "形容詞陰陽同形（複數 totales）。亦可作陽性名詞 el total（總計），或口語轉折詞「總之」。",
+      "example_es": "El costo total del viaje es muy bajo.",
+      "example_zh": "這趟旅行的總花費非常低。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:total"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "tratar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "對待；處理；試圖（tratar de）",
+      "en": "to treat, to handle, to try",
+      "ipa": "/tɾaˈtaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "trahō",
+          "zh": "拉、拖"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "tractāre",
+          "zh": "反覆拉、處理"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "tratar",
+          "zh": "對待、處理"
+        }
+      ],
+      "cognates_en": [
+        "treat"
+      ],
+      "story_zh": "源自拉丁語 tractāre，是 trahō（拉、拖曳）的反覆動詞形，原義是「反覆拉扯、翻動」，後來引申為「動手處理、照管」，再進一步延伸出「對待」某人與「治療」疾病之意。英文的 treat 也是同源字。",
+      "hook_zh": "直接聯想英文 treat（對待、治療）：tratar 就是用心去「對待」人或「處理」事情。",
+      "usage_zh": "常接 de 加原形動詞表示「試圖做…」（tratar de）；片語 se trata de 則表示「這是關於…」。",
+      "example_es": "Trato de practicar español todos los días.",
+      "example_zh": "我試著每天練習西班牙文。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:tratar",
+        "wiktionary:la:tracto"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "video",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "影片、錄影；錄放影機",
+      "en": "video, VHS player",
+      "ipa": "/biˈdeo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "video",
+          "zh": "錄影、影片"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "video",
+          "zh": "影片、錄放影機"
+        }
+      ],
+      "cognates_en": [
+        "video"
+      ],
+      "story_zh": "直接借自英語的 video。在詞源上，它與西語動詞 ver 的第一人稱變位 veo（我看見）是同源對詞（doublet），兩者都源自表示觀看的字根。",
+      "hook_zh": "跟英文 video 一模一樣；而且它跟西語的 veo（我看）其實是同源字！",
+      "usage_zh": "美洲西語重音在後寫作 video（/biˈdeo/），西班牙本土重音在前寫作 vídeo（/ˈbideo/）。",
+      "example_es": "Ayer grabamos un video para nuestra clase.",
+      "example_zh": "昨天我們為課堂錄製了一段影片。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:video"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "web",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "網站、網頁、全球資訊網",
+      "en": "web, website, webpage",
+      "ipa": "/ˈw̝eb/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "英語",
+          "word": "web",
+          "zh": "網、全球資訊網"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "web",
+          "zh": "網站、網頁"
+        }
+      ],
+      "cognates_en": [
+        "web"
+      ],
+      "story_zh": "直接借自英語的 web。英語 web 原本指蜘蛛結的網，在資訊時代被引申為全球資訊網（World Wide Web），西語隨後直接吸收此詞，用來指稱網站與網頁。",
+      "hook_zh": "就像蜘蛛網（web）般連結全球的網路世界，西語直接使用這個英文借詞。",
+      "usage_zh": "日常幾乎都作陰性名詞 la web（複數 las webs），也極常使用搭配詞 página web（網頁、網站）。",
+      "example_es": "Encontré la receta en una página web.",
+      "example_zh": "我在一個網站上找到了這份食譜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:web"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "base",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "基礎、基底；基地",
+      "en": "base, basis, foundation",
+      "ipa": "/ˈbase/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "βάσις",
+          "zh": "踏步、基座"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "basis",
+          "zh": "基座、基礎"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "base",
+          "zh": "基礎、基底"
+        }
+      ],
+      "cognates_en": [
+        "base",
+        "basis"
+      ],
+      "story_zh": "源自拉丁語 basis，後者借自古希臘語 βάσις（原意為步伐、踏步，引申為腳踏的支撐點、基座）。事物底部最穩固、承載整體結構的支柱，就成了「基礎」或「基地」。",
+      "hook_zh": "跟英文 base、basis 完全同源，都是事物站立與發展的「基礎」或「基地」。",
+      "usage_zh": "陰性名詞（la base）。常見搭配有 la base militar（軍事基地）、a base de（以…為基礎）。",
+      "example_es": "La confianza mutua es la base de la amistad.",
+      "example_zh": "互相信任是友誼的基礎。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:base"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "zona",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "區域、地區、地帶",
+      "en": "zone, district, area",
+      "ipa": "/ˈθona/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "ζώνη",
+          "zh": "腰帶、帶子"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "zōna",
+          "zh": "腰帶、地帶"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "zona",
+          "zh": "區域、地區"
+        }
+      ],
+      "cognates_en": [
+        "zone"
+      ],
+      "story_zh": "借自拉丁語 zōna（腰帶、地帶），源於古希臘語 ζώνη（腰帶）。古希臘地理學家將地球依照緯度劃分成不同的氣候環帶，如同繫在地球上的腰帶，後引申指特定劃分的「區域、地帶」。",
+      "hook_zh": "拼法和英文 zone 幾乎相同，聯想地圖上一圈圈被腰帶框出的「區域」。",
+      "usage_zh": "為陰性名詞。常見搭配有 zona urbana（市區）與 zona rural（鄉村地區）。",
+      "example_es": "Esta zona de la ciudad es muy tranquila.",
+      "example_zh": "這座城市的這塊區域非常安靜。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:zona"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "línea",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "線、線條、路線、台詞",
+      "en": "line, thread, script line",
+      "ipa": "/ˈlinea/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "līnum",
+          "zh": "亞麻"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "līnea",
+          "zh": "亞麻線、繩線"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "línea",
+          "zh": "線、線條"
+        }
+      ],
+      "cognates_en": [
+        "line",
+        "linen"
+      ],
+      "story_zh": "借自拉丁語 līnea（亞麻線、繩線），源於 līnum（亞麻）。古羅馬木匠與測量員用拉緊的亞麻細繩來取直與標記界線，字義遂由實體的「細麻繩」引申為幾何上的「線條」與各類「路線」。",
+      "hook_zh": "與英文 line 及 linen（亞麻布）同源，就是用亞麻搓出來的一條「線」。",
+      "usage_zh": "陰性名詞。常用片語有 en línea（連線上網）與 línea de metro（捷運路線）。",
+      "example_es": "Por favor, espera detrás de la línea blanca.",
+      "example_zh": "請在白線後方等候。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:línea",
+        "wiktionary:la:linea"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "mundial",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "世界的、全球的",
+      "en": "worldwide, global",
+      "ipa": "/munˈdjal/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "晚期拉丁語",
+          "word": "mundiālis",
+          "zh": "世界的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "mundial",
+          "zh": "世界的、全球的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "為學者借詞，源自晚期拉丁語 mundiālis（世界的），指涵蓋全人類或遍及整個地球規模的事物。現代西語中也常省略名詞，直接以 el Mundial 代稱「世界盃足球賽」。",
+      "hook_zh": "由 mundo（世界）加上形容詞字尾 -ial 構成，意思就是「世界的、全球的」。",
+      "usage_zh": "形容詞陰陽同形（crisis mundial / evento mundial）。大寫 el Mundial 指世界盃。",
+      "example_es": "El cambio climático es un problema mundial.",
+      "example_zh": "氣候變遷是一個全球性的問題。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:mundial"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "obra",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "作品、著作、工程",
+      "en": "work, artwork, construction",
+      "ipa": "/ˈobɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "opus",
+          "zh": "工作、勞動、作品"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "opera",
+          "zh": "付出努力、勞動"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "obra",
+          "zh": "作品、工程"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "obra",
+          "zh": "作品、工程"
+        }
+      ],
+      "cognates_en": [
+        "opera",
+        "operate"
+      ],
+      "story_zh": "承襲自拉丁語 opera（勞動、付出努力），源自 opus（工作、作品）的複數形。指人類勞動與智慧的心血結晶，既可用於文學藝術「作品」，也指建築施工「工程」；與英文 opera（歌劇）同源。",
+      "hook_zh": "英文 opera（歌劇）是藝術「作品」，工人操作（operate）是在進行施工 obra。",
+      "usage_zh": "常搭配 obra de arte（藝術品）；片語 estar en obras 表示「施工中、裝修中」。",
+      "example_es": "Esta pintura es una gran obra de arte.",
+      "example_zh": "這幅畫是一件偉大的藝術作品。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:obra",
+        "wiktionary:la:opera"
+      ],
+      "writer": "gemini"
+    }
+  ]
+}

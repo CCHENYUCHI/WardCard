@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * After art/freq-<batch>.js is written and rendered: switch the batch's entries that now have a picture
+ * After the batch's drawings are written and rendered: switch the batch's entries that now have a picture
  * from their emoji stand-in to image "svg". Entries without a drawing keep the emoji.
  *
  * Usage: node server/scripts/lexicon/mark-drawn.js <batch> [<batch> ...]
@@ -13,7 +13,7 @@ const { drawnWords } = require('./draw-list');
 function markDrawn(batch) {
   const file = path.join(LEXICON_ROOT, 'freq', `${batch}.json`);
   const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-  const drawn = drawnWords(batch);
+  const drawn = drawnWords();
   let marked = 0;
   for (const e of data.entries || []) {
     if (drawn.has(lexiconKey(e.word)) && e.image !== 'svg') {

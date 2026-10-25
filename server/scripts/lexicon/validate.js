@@ -96,7 +96,7 @@ function validateAll(lexiconDirs = LEXICON_DIRS, svgDir = DEFAULT_SVG_DIR, only 
   return { count, problems };
 }
 
-module.exports = { validateEntry, validateSvg, validateAll, lexiconFiles };
+module.exports = { validateEntry, validateSvg, validateAll, lexiconFiles, POS, ARTICLES, CONFIDENCE, WRITERS, MAX };
 
 if (require.main === module) {
   const args = process.argv.slice(2);

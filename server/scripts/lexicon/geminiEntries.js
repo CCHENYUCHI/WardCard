@@ -110,12 +110,23 @@ function parseEntries(text) {
 const hasSimplified = (s) => [...String(s || '')].some(ch => SIMPLIFIED.has(ch));
 const ZH_FIELDS = ['zh', 'story_zh', 'hook_zh', 'usage_zh', 'example_zh'];
 
+/** What checking an entry needs from its facts: small enough to ship to the batch agent in input.json */
+function factInfo(facts) {
+  return { lemma: factsLemma(facts), etymology: hasEtymology(facts), corpus: factCorpus(facts), sources: [...factSources(facts)] };
+}
+
 /**
  * Check one entry against its facts. Returns { entry, errors }: the entry with the fixes a machine can make
  * (writer tag, sources limited to the fetched pages, hook-only without etymology facts), and what it cannot fix.
  */
 function checkEntry(raw, facts) {
-  const lemma = factsLemma(facts);
+  return checkEntryWith(raw, factInfo(facts));
+}
+
+// Self-contained (serialized into the batch agent's check.mjs): uses only lexiconKey, ancestorKey, hasSimplified,
+// ZH_FIELDS and validateEntry, which buildCheckScript ships alongside it
+function checkEntryWith(raw, info) {
+  const lemma = info.lemma;
   const entry = { ...raw, writer: 'gemini' };
   const errors = [];
   if (lexiconKey(entry.word) !== lexiconKey(lemma)) errors.push(`word should be "${lemma}"`);
@@ -123,21 +134,20 @@ function checkEntry(raw, facts) {
   for (const k of ['breakdown', 'origin_chain', 'cognates_en', 'sources']) if (!Array.isArray(entry[k])) entry[k] = [];
   for (const k of ['story_zh', 'usage_zh', 'article']) if (typeof entry[k] !== 'string') entry[k] = '';
 
-  const allowed = factSources(facts);
+  const allowed = new Set(info.sources);
   entry.sources = entry.sources.filter(s => allowed.has(s));
   if (allowed.has(`wiktionary:es:${lemma}`) && !entry.sources.includes(`wiktionary:es:${lemma}`)) entry.sources.unshift(`wiktionary:es:${lemma}`);
 
-  if (!hasEtymology(facts)) {
+  if (!info.etymology) {
     entry.origin_chain = [];
     entry.story_zh = '';
     entry.confidence = 'hook-only';
   } else {
-    const corpus = factCorpus(facts);
     const lemmaKey = ancestorKey(lemma);
     for (const layer of entry.origin_chain) {
       const key = ancestorKey(layer?.word);
       if (!key) { errors.push('origin_chain has an empty word'); continue; }
-      if (key === lemmaKey || corpus.includes(key)) continue;
+      if (key === lemmaKey || info.corpus.includes(key)) continue;
       errors.push(`origin_chain word "${layer.word}" is not in the facts`);
     }
     entry.confidence = entry.story_zh && entry.origin_chain.length ? 'sourced' : 'hook-only';
@@ -150,16 +160,23 @@ function checkEntry(raw, facts) {
   return { entry, errors };
 }
 
-/** Match Gemini's entries to the facts they were asked for; words missing from the answer get an error */
-function checkAnswer(entries, factsList) {
-  const byWord = new Map(entries.map(e => [lexiconKey(e.word), e]));
+/** Match entries to the words they were asked for (by fact info); words missing from the answer get an error */
+function checkAnswerWith(entries, infos) {
+  const byWord = new Map(entries.filter(e => e && typeof e === 'object').map(e => [lexiconKey(e.word), e]));
   const results = {};
-  for (const facts of factsList) {
-    const lemma = factsLemma(facts);
-    const raw = byWord.get(lexiconKey(lemma)) || entries.find(e => normalizeWord(e.word) === normalizeWord(lemma));
-    results[lemma] = raw ? checkEntry(raw, facts) : { entry: null, errors: ['missing from the answer'] };
+  for (const info of infos) {
+    const raw = byWord.get(lexiconKey(info.lemma)) || entries.find(e => e && normalizeWord(e.word) === normalizeWord(info.lemma));
+    results[info.lemma] = raw ? checkEntryWith(raw, info) : { entry: null, errors: ['missing from the answer'] };
   }
   return results;
 }
 
-module.exports = { factsLemma, hasEtymology, factCorpus, factSources, compactFacts, buildPrompt, parseEntries, hasSimplified, checkEntry, checkAnswer };
+/** Match Gemini's entries to the facts they were asked for; words missing from the answer get an error */
+function checkAnswer(entries, factsList) {
+  return checkAnswerWith(entries, factsList.map(factInfo));
+}
+
+module.exports = {
+  factsLemma, hasEtymology, factCorpus, factSources, factInfo, compactFacts, buildPrompt, parseEntries, hasSimplified,
+  checkEntry, checkEntryWith, checkAnswer, checkAnswerWith, RULES, SIMPLIFIED, ZH_FIELDS, stripMarks, ancestorKey
+};

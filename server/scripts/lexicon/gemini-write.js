@@ -7,7 +7,7 @@
  * Only counts are printed. Re-running skips words already written, so the script can be stopped at any time.
  *
  * Usage: NODE_USE_ENV_PROXY=1 node server/scripts/lexicon/gemini-write.js <queue.json> [--batches 0001-0005]
- *          [--model gemini-3.8-flash-high] [--per-call 8] [--concurrency 3] [--work <dir>]
+ *          [--model gemini-3.8-flash-high] [--per-call 5] [--concurrency 1] [--work <dir>]
  */
 const fs = require('fs');
 const path = require('path');
@@ -50,7 +50,10 @@ function readBatch(id) {
 function writeBatch(id, items, entriesByKey) {
   const first = items[0].rank;
   const last = items[items.length - 1].rank;
-  const entries = items.map(it => entriesByKey.get(lexiconKey(it.lemma))).filter(Boolean);
+  // mark-drawn.js may have switched pictures on in the file meanwhile: keep them
+  const onDisk = new Map((readBatch(id)?.entries || []).map(e => [lexiconKey(e.word), e.image]));
+  const entries = items.map(it => entriesByKey.get(lexiconKey(it.lemma))).filter(Boolean)
+    .map(e => (onDisk.get(lexiconKey(e.word)) === 'svg' ? { ...e, image: 'svg' } : e));
   fs.mkdirSync(FREQ_DIR, { recursive: true });
   fs.writeFileSync(batchFile(id), `${JSON.stringify({ theme: `freq-${id}`, theme_zh: `常用字（頻率第 ${first}–${last} 名）`, entries }, null, 2)}\n`);
 }
@@ -98,11 +101,11 @@ async function main() {
   };
   const batchesSpec = opt('--batches', 'all');
   const model = opt('--model', DEFAULT_MODEL);
-  const perCall = Number(opt('--per-call', 8));
-  const concurrency = Number(opt('--concurrency', 3));
+  const perCall = Number(opt('--per-call', 5));
+  const concurrency = Number(opt('--concurrency', 1));
   const [queuePath] = args;
   if (!queuePath) {
-    console.error('Usage: gemini-write.js <queue.json> [--batches 0001-0005] [--model id] [--per-call 8] [--concurrency 3] [--work dir]');
+    console.error('Usage: gemini-write.js <queue.json> [--batches 0001-0005] [--model id] [--per-call 5] [--concurrency 1] [--work dir]');
     process.exit(1);
   }
   const queue = JSON.parse(fs.readFileSync(queuePath, 'utf8'));
@@ -151,6 +154,6 @@ async function main() {
   }
 }
 
-module.exports = { batchRange };
+module.exports = { batchRange, readBatch, writeBatch, exampleEntries, FREQ_DIR };
 
 if (require.main === module) main();

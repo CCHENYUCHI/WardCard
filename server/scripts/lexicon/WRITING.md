@@ -66,8 +66,12 @@ python3 -I -c "from wordfreq import top_n_list; import re; print('\n'.join(w for
 NODE_USE_ENV_PROXY=1 node server/scripts/lexicon/fetch-facts.js $W/facts --list $W/freq.txt
 # 3. 批次字表：變化形併入原形、跳過 A1 已有的字和專有名詞；停在第一個還沒抓到事實的字，所以批次編號固定
 node server/scripts/lexicon/build-queue.js $W/freq.txt $W/facts $W/queue.json
-# 4. Gemini 撰寫（只印每批的數量；不合格的字在 $W/failed.json，重跑會再試）
-NODE_USE_ENV_PROXY=1 node server/scripts/lexicon/gemini-write.js $W/queue.json --batches 0001-0005
+# 4. Gemini 撰寫：每批 100 字交給 Gemini agent 一次做完（agy MCP 的 start_batch / get_batch）
+#    agent 拿到規則、input.json（字＋事實）和 check.mjs（batchCheck.js 產生，同一套機器檢查），自己反覆修到「all done」
+#    人名、地名、英文字、片段、變化形由 agent 標 skip，記在 server/data/lexicon/freq-skip.json，build-queue 會略過
+#    只印每批的數量；不合格的字在 $W/failed.json，重跑會再試（重建字表後的零星缺字會併成一個工作）
+NODE_USE_ENV_PROXY=1 node server/scripts/lexicon/batch-agent.js $W/queue.json
+#    （舊的逐次呼叫版：gemini-write.js，ask_gemini 一次 5 字，較慢）
 # 5. 畫圖：只讀這份清單，寫 server/data/lexicon/art/freq-<批次>.js
 node server/scripts/lexicon/draw-list.js 0001
 node server/scripts/lexicon/render-art.js flat --only freq-0001
