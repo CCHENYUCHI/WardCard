@@ -1,51 +1,7 @@
 {
   "theme": "freq-0058",
-  "theme_zh": "常用字（頻率第 16157–16478 名）",
+  "theme_zh": "常用字（頻率第 16159–16494 名）",
   "entries": [
-    {
-      "word": "sensato",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "明智的、通情達理的、理智的",
-      "en": "sensible, reasonable, sound",
-      "ipa": "/senˈsato/",
-      "breakdown": [
-        {
-          "part": "sens-",
-          "zh": "感知、理智"
-        },
-        {
-          "part": "-ato",
-          "zh": "具備…性質的"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "sensatus",
-          "zh": "有感知力的、具判斷力的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "sensato",
-          "zh": "明智的、通情達理的"
-        }
-      ],
-      "cognates_en": [
-        "sensible"
-      ],
-      "story_zh": "源自拉丁語形容詞 sensatus（具有感覺與良好判斷力的），源於 sensus（感覺、知覺、常識）。指人做事深思熟慮、講究常理，不衝動行事。",
-      "hook_zh": "同英文 sensible，做事有常識（sense）有判斷力的人就是「明智的」（sensato）。",
-      "usage_zh": "陰性為 sensata。常形容人或決定：una decisión sensata（明智的決定）。名詞為 sensatez（理智）。",
-      "example_es": "Tomar un descanso fue una decisión muy sensata después del viaje.",
-      "example_zh": "旅途過後休息一下是一個非常明智的決定。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:sensato"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "sermón",
       "article": "el",
@@ -3931,6 +3887,289 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:cofradía"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "compilación",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "彙編、編纂；編譯",
+      "en": "compilation",
+      "ipa": "/kompilaˈθjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "compīlātiōnem",
+          "zh": "彙編、掠奪"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "compilación",
+          "zh": "彙編"
+        }
+      ],
+      "cognates_en": [
+        "compilation"
+      ],
+      "story_zh": "源自拉丁語 compīlātiōnem，由動詞 compīlāre（搜集、彙整，本義亦有掠奪蒐羅之意）衍生而來，指將多種文獻、資料或程式碼匯集整理在一起。",
+      "hook_zh": "與英文 compilation 同源，把各方材料「compile」（彙整）成一本。",
+      "usage_zh": "陰性名詞。在電腦資訊領域也指程式碼的「編譯」。",
+      "example_es": "El libro es una compilación de poemas.",
+      "example_zh": "這本書是一部詩歌彙編。",
+      "image": "emoji:📚",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:compilación"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "constructivo",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "建設性的",
+      "en": "constructive",
+      "ipa": "/konstɾuɡˈtibo/",
+      "breakdown": [
+        {
+          "part": "construir",
+          "zh": "建造"
+        },
+        {
+          "part": "-tivo",
+          "zh": "具有…性質的形容詞字尾"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "constructive"
+      ],
+      "story_zh": "",
+      "hook_zh": "聯想英文 constructive，提出有「建設性」的意見讓事情更好。",
+      "usage_zh": "常用搭配如 crítica constructiva（建設性的批評）。陰性為 constructiva。",
+      "example_es": "Siempre agradezco una crítica constructiva.",
+      "example_zh": "我總是感謝建設性的批評。",
+      "image": "emoji:🏗️",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:constructivo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "contraloría",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "審計處、主計處、會計室",
+      "en": "accounting, comptroller's office",
+      "ipa": "/kontɾaloˈɾia/",
+      "breakdown": [
+        {
+          "part": "contralor",
+          "zh": "審計員、主計官"
+        },
+        {
+          "part": "-ía",
+          "zh": "機構或職能名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "contralor + -ía",
+          "zh": "主計官 + 職位/部門字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "contraloría",
+          "zh": "審計處、主計處"
+        }
+      ],
+      "cognates_en": [
+        "controller",
+        "comptroller"
+      ],
+      "story_zh": "由 contralor（審計員、主計官）加上表示機關、職位的名詞字尾 -ía 構成，指負責查核公款與財政收支的審計部門或會計室。",
+      "hook_zh": "contralor（類似 controller / 查帳員）的辦公室 -ía，就是 contraloría 審計處。",
+      "usage_zh": "陰性名詞。在許多拉美國家指中央或地方的審計總署（Contraloría General）。",
+      "example_es": "La contraloría revisó las cuentas del municipio.",
+      "example_zh": "審計處審查了市府的帳目。",
+      "image": "emoji:📑",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:contraloría"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cortometraje",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "短片、微電影",
+      "en": "short film",
+      "ipa": "/koɾtomeˈtɾaxe/",
+      "breakdown": [
+        {
+          "part": "corto",
+          "zh": "短的"
+        },
+        {
+          "part": "metraje",
+          "zh": "底片長度、尺數"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "court-métrage",
+          "zh": "短片（短的膠卷米數）"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cortometraje",
+          "zh": "短片"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "部分仿譯自法語 court-métrage。法文 court 為「短」，métrage 是指底片的「公尺長度／尺數」，合起來指片長較短的電影片，中文即「短片」。",
+      "hook_zh": "corto（短）+ metraje（米數、片長），膠捲米數短的電影就是「短片」。",
+      "usage_zh": "陽性名詞。常簡稱為 corto。相對長片稱為 largometraje。",
+      "example_es": "Vimos un cortometraje muy emotivo en el festival.",
+      "example_zh": "我們在影展上看了一部很感人的短片。",
+      "image": "emoji:🎬",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cortometraje"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cosita",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "小東西、小玩意",
+      "en": "small thing, thingy",
+      "ipa": "/koˈsita/",
+      "breakdown": [
+        {
+          "part": "cosa",
+          "zh": "東西、事情"
+        },
+        {
+          "part": "-ita",
+          "zh": "指小詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cosa + -ita",
+          "zh": "東西 + 小"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cosita",
+          "zh": "小東西、小玩意"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由西語最基本名詞 cosa（東西）加上陰性指小詞字尾 -ita 構成，字面意思就是「小東西」，在口語中常用來指小物件或親暱地稱呼可愛的人事物。",
+      "hook_zh": "cosa（東西）變小加 -ita ＝ cosita（小東西、小玩意）。",
+      "usage_zh": "陰性名詞。口語中也常親暱稱呼伴侶或小孩「¡Hola, cosita!」（嗨，小可愛！）。",
+      "example_es": "Tengo una cosita para ti en mi bolso.",
+      "example_zh": "我的包包裡有個小東西要給你。",
+      "image": "emoji:🧸",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cosita"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cínico",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "憤世嫉俗的；厚顏無恥的",
+      "en": "cynical, cynic",
+      "ipa": "/ˈθiniko/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "κυνικός",
+          "zh": "犬儒學派的、像狗一樣的"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cynicus",
+          "zh": "犬儒學派者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cínico",
+          "zh": "玩世不恭的、犬儒的、厚顏無恥的"
+        }
+      ],
+      "cognates_en": [
+        "cynic",
+        "cynical"
+      ],
+      "story_zh": "源自古希臘語 κυνικός（kunikós，像狗一樣的、犬儒的），據推測源於雅典安提斯泰尼講學的快犬體育場（Cynosarges）。犬儒學者鄙棄世俗禮法，後來在西語中引申為厚顏無恥、玩世不恭的態度。",
+      "hook_zh": "英文 cynical（憤世嫉俗、冷嘲熱諷的），西語就是 cínico。",
+      "usage_zh": "可作形容詞（陰性 cínica）或名詞（指憤世嫉俗或厚顏無恥的人）。西語日常口語常帶有「不知羞恥、耍賴」的強烈貶義。",
+      "example_es": "No seas tan cínico con los sentimientos de los demás.",
+      "example_zh": "別對別人的感受這麼玩世不恭。",
+      "image": "emoji:😏",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cínico",
+        "wiktionary:la:cynicus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "desactivar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "解除、停用、關閉",
+      "en": "to deactivate, to disable",
+      "ipa": "/desaɡtiˈbaɾ/",
+      "breakdown": [
+        {
+          "part": "des-",
+          "zh": "取消、相反"
+        },
+        {
+          "part": "activar",
+          "zh": "啟動、使活躍"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "des- + activar",
+          "zh": "取消 + 啟動"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "desactivar",
+          "zh": "關閉、解除、停用"
+        }
+      ],
+      "cognates_en": [
+        "deactivate"
+      ],
+      "story_zh": "由否定與反義前綴 des- 加上 activar（啟動、激發）構成，原意即「解除啟動狀態」，廣泛用於解除炸彈、關閉電子裝置或停用帳號功能。",
+      "hook_zh": "des-（解開、取消）+ activar（啟動）＝ 停用、解除。",
+      "usage_zh": "規則動詞。常搭配 desactivar la alarma（解除警報）、desactivar una cuenta（停用帳號）。",
+      "example_es": "Tienes que desactivar la alarma antes de entrar.",
+      "example_zh": "進去前你必須先解除警報。",
+      "image": "emoji:🔌",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:desactivar"
       ],
       "writer": "gemini"
     }

@@ -392,16 +392,6 @@ module.exports = {
     s('path', { d: 'M108 74v58M122 74v58M136 74v58', ...SW(6) }, 'gray', { stroke: true }),
     s('rect', { x: 100, y: 130, width: 44, height: 6 }, 'dark')
   ],
-  'falcón': [
-    s('path', { d: 'M24 118h112', ...SW(8) }, 'brown', { stroke: true }),
-    s('path', { d: 'M84 100l-14 40h20z' }, 'brown'),
-    s('ellipse', { cx: 82, cy: 84, rx: 24, ry: 32 }, 'brown', { accent: true }),
-    s('ellipse', { cx: 86, cy: 92, rx: 13, ry: 20 }, 'cream'),
-    s('circle', { cx: 86, cy: 46, r: 17 }, 'brown'),
-    s('path', { d: 'M100 42l14 6-10 10z' }, 'yellow'),
-    s('circle', { cx: 92, cy: 42, r: 3.5 }, 'dark'),
-    s('path', { d: 'M76 114v6M92 114v6', ...SW(4) }, 'yellow', { stroke: true })
-  ],
   flotante: [
     s('rect', { x: 14, y: 96, width: 132, height: 48, rx: 10 }, 'blue'),
     s('circle', { cx: 80, cy: 86, r: 30 }, 'red', { accent: true }),

@@ -1,6 +1,6 @@
 {
   "theme": "freq-0057",
-  "theme_zh": "常用字（頻率第 15807–16153 名）",
+  "theme_zh": "常用字（頻率第 15807–16157 名）",
   "entries": [
     {
       "word": "fiscalización",
@@ -2988,47 +2988,6 @@
       "writer": "gemini"
     },
     {
-      "word": "falcón",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "隼、獵鷹",
-      "en": "falcon",
-      "ipa": "/falˈkon/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "falco",
-          "zh": "隼、獵鷹"
-        },
-        {
-          "lang_zh": "晚期拉丁語",
-          "word": "falconem",
-          "zh": "隼、獵鷹（賓格）"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "falcón",
-          "zh": "隼、獵鷹"
-        }
-      ],
-      "cognates_en": [
-        "falcon"
-      ],
-      "story_zh": "借自晚期拉丁語 falconem（賓格，主格 falco），可能源於其如彎刀鐮刀（falx）般彎曲的利爪與喙嘴。在現代西班牙語中，一般繼承詞通常演變為 halcón，而 falcón 為保留古音的形式。",
-      "hook_zh": "與英文 falcon（獵鷹）同源，西語雙重詞為 halcón 與 falcón。",
-      "usage_zh": "陽性名詞，複數為 falcones。現代西語口語更常用 halcón 指獵鷹。",
-      "example_es": "El falcón volaba a gran velocidad sobre el valle.",
-      "example_zh": "獵鷹在山谷上方高速翱翔。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:falcón",
-        "wiktionary:la:falco"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "flotante",
       "article": "",
       "pos": "adjetivo",
@@ -4154,6 +4113,50 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:sándwich"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "sensato",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "明智的、通情達理的、理智的",
+      "en": "sensible, reasonable, sound",
+      "ipa": "/senˈsato/",
+      "breakdown": [
+        {
+          "part": "sens-",
+          "zh": "感知、理智"
+        },
+        {
+          "part": "-ato",
+          "zh": "具備…性質的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "sensatus",
+          "zh": "有感知力的、具判斷力的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sensato",
+          "zh": "明智的、通情達理的"
+        }
+      ],
+      "cognates_en": [
+        "sensible"
+      ],
+      "story_zh": "源自拉丁語形容詞 sensatus（具有感覺與良好判斷力的），源於 sensus（感覺、知覺、常識）。指人做事深思熟慮、講究常理，不衝動行事。",
+      "hook_zh": "同英文 sensible，做事有常識（sense）有判斷力的人就是「明智的」（sensato）。",
+      "usage_zh": "陰性為 sensata。常形容人或決定：una decisión sensata（明智的決定）。名詞為 sensatez（理智）。",
+      "example_es": "Tomar un descanso fue una decisión muy sensata después del viaje.",
+      "example_zh": "旅途過後休息一下是一個非常明智的決定。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:sensato"
       ],
       "writer": "gemini"
     }
