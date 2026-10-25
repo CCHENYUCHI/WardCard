@@ -31,7 +31,7 @@ const SKIP_WORDS = new Set(['luis', 'maría', 'brasil', 'pp', 'to', 'cuba', 'pos
   'ultra', 'je', 'arabio', 'nasa', 'soto', 'sarmiento', 'ginebra', 'patricio', 'augusto', 'magdalena', 'sobretodo', 'trans', 'leu', 'wey', 'madero', 'montero', 'beta', 'pi', 'non',
   'grey', 'living', 'roque', 'carrillo', 'prieto', 'pascual', 'efe', 'sic', 'facto', 'colon',
   'cha', 'agir', 'linear', 'mena', 'ji', 'sud', 'toar', 'peraltar', 'cid', 'cho', 'gene', 'bonus', 'versus', 'senior',
-  'led', 'wiki', 'ring', 'blues', 'omega', 'mara', 'lucio', 'pancho', 'solano', 'fausto']);
+  'led', 'wiki', 'ring', 'blues', 'omega', 'mara', 'lucio', 'pancho', 'solano', 'fausto', 'falcón']);
 // Words that look like a form of another word but are learned on their own
 const NO_FOLD = new Set(['política', 'lista', 'firma']);
 // Kinds of Wiktionary entries that are not words to learn
