@@ -237,13 +237,6 @@ module.exports = {
     s('path', { d: 'M34 88h92', ...DASH(3) }, 'white', { stroke: true }),
     s('path', { d: dots([[60, 58], [100, 58], [80, 88]], 6) }, 'yellow', { accent: true })
   ],
-  practicamente: [
-    s('rect', { x: 18, y: 70, width: 124, height: 36, rx: 12 }, 'gray'),
-    s('rect', { x: 23, y: 75, width: 104, height: 26, rx: 8 }, 'green', { accent: true }),
-    s('path', { d: 'M136 70V30', ...SW(4) }, 'dark', { stroke: true }),
-    s('path', { d: 'M136 30l-24 8 24 8z' }, 'red'),
-    s('path', { d: 'M132 88h10', ...SW(4) }, 'gray', { stroke: true })
-  ],
   prolongar: [
     s('rect', { x: 18, y: 60, width: 64, height: 36, rx: 6 }, 'blue', { accent: true }),
     s('rect', { x: 84, y: 60, width: 56, height: 36, rx: 6, ...DASH(4) }, 'blue', { stroke: true }),
@@ -624,14 +617,6 @@ module.exports = {
     s('path', { d: ring(118, 112, 26), ...DASH(4) }, 'blue', { stroke: true }),
     s('rect', { x: 102, y: 104, width: 32, height: 16, rx: 8, transform: 'rotate(-35 118 112)' }, 'orange', { accent: true }),
     s('path', { d: 'M138 92l6 8-10 2', ...SW(4) }, 'blue', { stroke: true })
-  ],
-  culturar: [
-    s('path', { d: 'M20 136q60-40 120 0z' }, 'brown'),
-    s('path', { d: 'M76 120V88', ...SW(4) }, 'green', { stroke: true }),
-    s('path', { d: leaflet(76, 98, 205, 22, 8) + leaflet(76, 92, -25, 24, 8) }, 'green', { accent: true }),
-    s('path', { d: 'M100 46h30l10-12M104 46l-12-12', ...SW(5) }, 'blue', { stroke: true }),
-    s('path', { d: 'M104 34h28v24h-28z' }, 'blue'),
-    s('path', { d: drop(86, 62, 3) + drop(80, 74, 3) + drop(92, 76, 3) }, 'sky')
   ],
   cursi: [
     s('path', { d: heart(80, 80, 34) }, 'pink', { accent: true }),
@@ -1080,14 +1065,6 @@ module.exports = {
     s('path', { d: poly(around(80, 86, 62, 5, -90)) }, 'orange', { accent: true }),
     s('path', { d: poly(around(80, 86, 40, 5, -90)), ...SW(3) }, 'white', { stroke: true }),
     s('path', { d: dots(around(80, 86, 62, 5, -90), 6) }, 'navy')
-  ],
-  peque: [
-    ground(),
-    s('path', { d: 'M90 104q6-30 16-52', ...SW(2) }, 'gray', { stroke: true }),
-    s('circle', { cx: 106, cy: 36, r: 18 }, 'red', { accent: true }),
-    s('path', { d: 'M106 54l-4 6h8z' }, 'red'),
-    ...person(76, 136, 'orange', { h: 30, w: 24, r: 14 }),
-    s('path', { d: 'M86 112l6-8', ...SW(6) }, 'skin', { stroke: true })
   ],
   'percusión': [
     s('rect', { x: 32, y: 66, width: 96, height: 64, rx: 6 }, 'red', { accent: true }),
@@ -1831,5 +1808,5 @@ module.exports = {
     s('path', { d: 'M76 22l14 5-14 5z' }, 'red', { accent: true }),
     ...openBook(80, 76, 'cream', 'blue'),
     s('path', { d: sparkle(32, 50, 8) + sparkle(130, 44, 8) }, 'yellow')
-  ],
+  ]
 };

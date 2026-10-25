@@ -1,6 +1,6 @@
 {
   "theme": "freq-0071",
-  "theme_zh": "常用字（頻率第 20505–20838 名）",
+  "theme_zh": "常用字（頻率第 20505–20840 名）",
   "entries": [
     {
       "word": "braga",
@@ -3571,50 +3571,6 @@
       "writer": "gemini"
     },
     {
-      "word": "brasilero",
-      "article": "",
-      "pos": "adjetivo",
-      "zh": "巴西的；巴西人",
-      "en": "Brazilian",
-      "ipa": "/bɾasiˈleɾo/",
-      "breakdown": [
-        {
-          "part": "Brasil",
-          "zh": "巴西"
-        },
-        {
-          "part": "-ero",
-          "zh": "人或來源字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "葡萄牙語",
-          "word": "brasileiro",
-          "zh": "巴西的、巴西人"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "brasilero",
-          "zh": "巴西的；巴西人"
-        }
-      ],
-      "cognates_en": [
-        "Brazilian"
-      ],
-      "story_zh": "仿譯自葡萄牙語 brasileiro，由國名 Brasil（巴西）加上字尾 -ero 構成。在美洲西語中廣泛使用，與標準西語的 brasileño 同義。",
-      "hook_zh": "Brasil 加上 -ero，指巴西人或與巴西相關的事物。",
-      "usage_zh": "美洲西語常用 brasilero，西班牙本土多用 brasileño。陰性為 brasilera。",
-      "example_es": "El café brasilero es famoso en todo el mundo por su calidad.",
-      "example_zh": "巴西咖啡因其優良品質而在全球享有盛譽。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:brasilero"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "brújula",
       "article": "la",
       "pos": "sustantivo",
@@ -3993,6 +3949,39 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:caserío"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "centralizado",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "集中的、中央集權的",
+      "en": "centralized",
+      "ipa": "/θentɾaliˈθado/",
+      "breakdown": [
+        {
+          "part": "central",
+          "zh": "中心的"
+        },
+        {
+          "part": "-izado",
+          "zh": "…化的"
+        }
+      ],
+      "origin_chain": [],
+      "cognates_en": [
+        "centralized"
+      ],
+      "story_zh": "",
+      "hook_zh": "與英文 centralized 同源，由 central（中央）延伸為中央集權管理。",
+      "usage_zh": "陰性為 centralizada。常用於體系管理：un sistema centralizado。",
+      "example_es": "El país tiene un sistema de gobierno muy centralizado.",
+      "example_zh": "該國擁有高度中央集權的政府體制。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:centralizado"
       ],
       "writer": "gemini"
     }

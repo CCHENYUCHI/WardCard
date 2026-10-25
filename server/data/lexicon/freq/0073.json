@@ -1,178 +1,7 @@
 {
   "theme": "freq-0073",
-  "theme_zh": "常用字（頻率第 21170–21465 名）",
+  "theme_zh": "常用字（頻率第 21178–21513 名）",
   "entries": [
-    {
-      "word": "colectividad",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "集體、社群、共同體",
-      "en": "collectivity, community",
-      "ipa": "/koleɡtibiˈdad/",
-      "breakdown": [
-        {
-          "part": "colectivo",
-          "zh": "集體的"
-        },
-        {
-          "part": "-idad",
-          "zh": "抽象名詞字尾，…性、…體"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "colectivitatem",
-          "zh": "集體狀態"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "colectividad",
-          "zh": "集體、社群"
-        }
-      ],
-      "cognates_en": [
-        "collectivity"
-      ],
-      "story_zh": "源自拉丁語 colectīvitātem，由形容詞 colectīvus（聚集的、集體的）衍生而來。指生活在同一空間或具有共同利益、文化背景的社會群體或共同體。",
-      "hook_zh": "colectivo（集體的）+ -idad（性質、群體）＝ 社會共同體（colectividad）。",
-      "usage_zh": "陰性名詞。常用於稱呼特定群體，如 la colectividad inmigrante（移民社群）。",
-      "example_es": "El festival unió a toda la colectividad del barrio.",
-      "example_zh": "這場節慶將整個社區的所有住民凝聚在一起。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:colectividad"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "colonialismo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "殖民主義",
-      "en": "colonialism",
-      "ipa": "/kolonjaˈlismo/",
-      "breakdown": [
-        {
-          "part": "colonial",
-          "zh": "殖民地的"
-        },
-        {
-          "part": "-ismo",
-          "zh": "名詞字尾，表主義、體制"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "colonial",
-          "zh": "殖民地的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "colonialismo",
-          "zh": "殖民主義"
-        }
-      ],
-      "cognates_en": [
-        "colonialism"
-      ],
-      "story_zh": "由形容詞 colonial（殖民的）加上表示體制或思想的後綴 -ismo 構成，指宗主國對外擴張、建立海外殖民地並進行政治支配與資源掠奪的歷史體系與意識形態。",
-      "hook_zh": "colonia（殖民地）→ colonial（殖民的）→ colonialismo（殖民主義）。",
-      "usage_zh": "陽性名詞。歷史與政治常用詞，反義詞如 descolonización（去殖民化）。",
-      "example_es": "El colonialismo europeo dejó huellas profundas en la región.",
-      "example_zh": "歐洲殖民主義在該地區留下了深刻的印記。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:colonialismo"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "coloquio",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "學術座談會、研討會；交談",
-      "en": "colloquy, symposium, discussion",
-      "ipa": "/koˈlokjo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "colloquium",
-          "zh": "交談、談話"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "coloquio",
-          "zh": "座談會、研討會"
-        }
-      ],
-      "cognates_en": [
-        "colloquy",
-        "colloquial"
-      ],
-      "story_zh": "文人借詞，源自拉丁語 colloquium（交談、會談），由 con-（共同）與 loquī（說話）構成。原指多人之間的對話交談，現代西語多指學術討論會或專題座談會。",
-      "hook_zh": "大家聚在一起說話（loqui），就成了學術座談會（coloquio）。",
-      "usage_zh": "陽性名詞。常用於學術或文化活動：un coloquio internacional。",
-      "example_es": "Asistí a un interesante coloquio sobre literatura contemporánea.",
-      "example_zh": "我參加了一場關於當代文學的精彩座談會。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:coloquio"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "compraventa",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "買賣、交易",
-      "en": "buying and selling, trade",
-      "ipa": "/ˌkompɾaˈbenta/",
-      "breakdown": [
-        {
-          "part": "compra",
-          "zh": "買"
-        },
-        {
-          "part": "venta",
-          "zh": "賣"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "compra",
-          "zh": "買"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "venta",
-          "zh": "賣"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "compraventa",
-          "zh": "買賣、交易"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "由名詞 compra（購買）與 venta（出售）複合而成，字面即「買與賣」。指商品或財產的所有權轉讓交易行為，亦常指買賣合約本身。",
-      "hook_zh": "compra（買）+ venta（賣）＝ 商業買賣交易（compraventa）。",
-      "usage_zh": "陰性名詞。法律商務常見，如 contrato de compraventa（買賣合約）。",
-      "example_es": "Firmaron el contrato de compraventa de la vivienda ayer.",
-      "example_zh": "他們昨天簽署了這棟住宅的買賣合約。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:compraventa"
-      ],
-      "writer": "gemini"
-    },
     {
       "word": "comprimido",
       "article": "el",
@@ -1384,51 +1213,6 @@
       "writer": "gemini"
     },
     {
-      "word": "galileo",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "加利利人；加利利的",
-      "en": "Galilean",
-      "ipa": "/ɡaliˈleo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "galilaia",
-          "zh": "加利利（地名）"
-        },
-        {
-          "lang_zh": "古希臘語",
-          "word": "galilaios",
-          "zh": "加利利的"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "galilaeus",
-          "zh": "加利利的"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "galileo",
-          "zh": "加利利人、加利利的"
-        }
-      ],
-      "cognates_en": [
-        "Galilean"
-      ],
-      "story_zh": "借自拉丁語 Galīlaeus，源於古希臘語 Galilaîos，出自地名 Galilaía（加利利）。指巴勒斯坦北部加利利地區的居民或與該地相關的事物，聖經中常用來指耶穌及其門徒。",
-      "hook_zh": "來自加利利（Galilea）的人，在西語中就是 galileo（加利利人）。",
-      "usage_zh": "可作名詞或形容詞。陰性為 galilea。歷史與宗教典籍中常見。",
-      "example_es": "El texto bíblico describe la vida del pueblo galileo.",
-      "example_zh": "聖經文本描述了加利利人民的日常生活。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:galileo"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "gourmet",
       "article": "",
       "pos": "adjetivo",
@@ -1856,45 +1640,6 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:lastre"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "leticia",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "歡愉、喜悅、快樂",
-      "en": "joy, happiness, gladness",
-      "ipa": "/leˈtiθja/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "拉丁語",
-          "word": "laetus",
-          "zh": "快樂的、欣喜的"
-        },
-        {
-          "lang_zh": "拉丁語",
-          "word": "laetitia",
-          "zh": "喜悅、歡愉"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "leticia",
-          "zh": "歡愉、喜悅"
-        }
-      ],
-      "cognates_en": [],
-      "story_zh": "借自拉丁語 laetitia（歡欣、喜悅），源自形容詞 laetus（歡樂的、豐盛的）。指由衷的喜悅與幸福感。古西班牙語中曾作為常用名詞，現代主要保留為女性教名（如西班牙王后 Letizia）。",
-      "hook_zh": "古西語中代表內心喜樂（laetitia）的字，也是常見美麗教名 Leticia 的字源。",
-      "usage_zh": "陰性名詞。古典文學詞彙，現代口語幾乎僅作為女性人名出現。",
-      "example_es": "La música llenó de leticia y regocijo los corazones de todos.",
-      "example_zh": "樂音讓所有人的心中充滿了歡愉與欣喜。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:leticia",
-        "wiktionary:la:laetitia"
       ],
       "writer": "gemini"
     },
@@ -2442,50 +2187,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:postulado"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "practicamente",
-      "article": "",
-      "pos": "adverbio",
-      "zh": "實際上、幾乎",
-      "en": "practically, almost",
-      "ipa": "/pɾaɡtikaˈmente/",
-      "breakdown": [
-        {
-          "part": "práctico",
-          "zh": "實際的"
-        },
-        {
-          "part": "-mente",
-          "zh": "副詞字尾"
-        }
-      ],
-      "origin_chain": [
-        {
-          "lang_zh": "西班牙語",
-          "word": "práctico + -mente",
-          "zh": "實際的 + 副詞字尾"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "practicamente",
-          "zh": "實際上、幾乎"
-        }
-      ],
-      "cognates_en": [
-        "practically"
-      ],
-      "story_zh": "由形容詞 práctico（實際的、實用的）加上常見的副詞字尾 -mente 構成。原本表示「以實際的方式」，引申為「幾乎、差不多等於」。",
-      "hook_zh": "práctico（實際）+ mente（方式）= practicamente（實際上、幾乎）。",
-      "usage_zh": "副詞，修飾動詞或形容詞，表示「幾乎」或「實質上」。",
-      "example_es": "El trabajo está prácticamente terminado.",
-      "example_zh": "這項工作實際上已經完成了。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:practicamente"
       ],
       "writer": "gemini"
     },
@@ -3676,6 +3377,690 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:ancla"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "azulejo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "彩繪磁磚、花磚",
+      "en": "glazed tile, ceramic tile",
+      "ipa": "/aθuˈlexo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "zuluj",
+          "zh": "平滑的石頭"
+        },
+        {
+          "lang_zh": "阿拉伯語",
+          "word": "azzulayj",
+          "zh": "拋光的石塊"
+        },
+        {
+          "lang_zh": "安達盧西亞阿拉伯語",
+          "word": "zuleyja",
+          "zh": "彩繪磁磚"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "azulejo",
+          "zh": "彩繪磁磚、花磚"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自安達盧西亞阿拉伯語 zuleyja，進一步源自阿拉伯語 azzulayj（拋光石塊），為 zuluj（平滑岩石）的指小詞。西班牙南部受摩爾文化薰陶，將這種色彩絢麗的釉面瓷磚發揚光大，成為伊比利半島建築的一大特色。",
+      "hook_zh": "在西班牙與葡萄牙的街頭，牆壁常鋪滿藍色花磚（azulejo，音近 azul 藍色）。",
+      "usage_zh": "複數形為 azulejos。常用於指伊比利傳統幾何或彩繪釉面磁磚。",
+      "example_es": "La cocina está decorada con hermosos azulejos.",
+      "example_zh": "廚房裝飾著美麗的花磚。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:azulejo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bache",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "坑洞；挫折、低潮期",
+      "en": "pothole; rough patch",
+      "ipa": "/ˈbat͡ʃe/",
+      "breakdown": [],
+      "origin_chain": [],
+      "cognates_en": [],
+      "story_zh": "",
+      "hook_zh": "開車時突然一陣劇烈震動，原來輪子掉進路面的坑洞（bache）裡。",
+      "usage_zh": "除指地面坑洞外，也常用於比喻事業或人生的「瓶頸、低潮期」。",
+      "example_es": "El coche cayó en un bache profundo de la calle.",
+      "example_zh": "車子掉進了街上一個很深的坑洞裡。",
+      "image": "svg",
+      "confidence": "hook-only",
+      "sources": [
+        "wiktionary:es:bache"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bastión",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "堡壘、要塞；堅強據點",
+      "en": "bastion, stronghold",
+      "ipa": "/basˈtjon/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "義大利語",
+          "word": "bastione",
+          "zh": "堡壘"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bastión",
+          "zh": "堡壘、要塞"
+        }
+      ],
+      "cognates_en": [
+        "bastion"
+      ],
+      "story_zh": "借自義大利語 bastione（堡壘、要塞），原指古代城牆向外突出的多邊形防禦工事，讓防守者能顧及多面夾角。後來引申指任何堅不可摧的防禦陣地或某種信念的核心據點。",
+      "hook_zh": "英文 bastion 與西語 bastión 完全同源，都是抵禦外敵的堅固堡壘。",
+      "usage_zh": "陽性名詞，複數為 bastiones（無重音符號）。",
+      "example_es": "El castillo fue el último bastión de la resistencia.",
+      "example_zh": "這座城堡是抵抗軍最後的要塞堡壘。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bastión"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "baúl",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "大木箱、皮箱；後車廂",
+      "en": "trunk, chest; car boot",
+      "ipa": "/baˈul/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "bahut",
+          "zh": "大儲物箱"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "baúl",
+          "zh": "皮箱、大木箱"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "借自法語 bahut（大型儲物箱），傳入伊比利半島後演變成 baúl，專指用來放置衣物或長途旅行的大木箱、行李皮箱。在拉丁美洲部分地區，汽車的後車廂也被稱為 baúl。",
+      "hook_zh": "收拾老物件時，把所有童年寶物（baúl）塞進厚實的大木箱裡。",
+      "usage_zh": "陽性名詞，複數為 baúles。重音在 u 上，需標重音符號以打破雙母音。",
+      "example_es": "Guardé los libros antiguos en el baúl del ático.",
+      "example_zh": "我把古舊書籍收在閣樓的木箱裡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:baúl"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bipolar",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "雙極的；躁鬱症的",
+      "en": "bipolar",
+      "ipa": "/bipoˈlaɾ/",
+      "breakdown": [
+        {
+          "part": "bi-",
+          "zh": "雙、二"
+        },
+        {
+          "part": "polar",
+          "zh": "極點的、極性的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "bi",
+          "zh": "二、雙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "polar",
+          "zh": "極的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bipolar",
+          "zh": "雙極的"
+        }
+      ],
+      "cognates_en": [
+        "bipolar"
+      ],
+      "story_zh": "由前綴 bi-（雙、二）加上 polar（極性的、極點的）組合而成。本義為具有兩個相對極點的物理特性，在精神醫學中引申為情緒在躁期與鬱期兩極之間擺盪的「躁鬱症」。",
+      "hook_zh": "英文 bipolar 與西語 bipolar 拼法完全相同，形容心境如同南北雙極。",
+      "usage_zh": "陰陽同形（trastorno bipolar），複數形為 bipolares。",
+      "example_es": "El médico diagnosticó un trastorno bipolar al paciente.",
+      "example_zh": "醫師診斷該名病患患有躁鬱症。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bipolar"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bisexual",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "雙性戀的",
+      "en": "bisexual",
+      "ipa": "/biseɡˈswal/",
+      "breakdown": [
+        {
+          "part": "bi-",
+          "zh": "雙、二"
+        },
+        {
+          "part": "sexual",
+          "zh": "性別的、性的"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "bi",
+          "zh": "二、雙"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "sexual",
+          "zh": "性的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bisexual",
+          "zh": "雙性戀的"
+        }
+      ],
+      "cognates_en": [
+        "bisexual"
+      ],
+      "story_zh": "由前綴 bi-（二、雙）與形容詞 sexual（性別的、性向的）結合而成，用來指對兩種或兩種以上性別都能產生情感或性吸引的人。",
+      "hook_zh": "英文與西語完全一致，前綴 bi- 代表雙重，sexual 代表性向。",
+      "usage_zh": "陰陽同形，亦可作名詞使用（un/una bisexual），複數為 bisexuales。",
+      "example_es": "Ella habló abiertamente sobre ser bisexual.",
+      "example_zh": "她坦誠地談論自己是雙性戀者。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bisexual"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bitácora",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "羅經櫃；航海日誌、網誌",
+      "en": "binnacle; logbook, blog",
+      "ipa": "/biˈtakoɾa/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "habitacle",
+          "zh": "住處；羅經櫃"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "bitacula",
+          "zh": "羅經櫃"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bitácora",
+          "zh": "羅經櫃；航海日誌"
+        }
+      ],
+      "cognates_en": [
+        "binnacle"
+      ],
+      "story_zh": "源自早期西語 bitácula，借自法語 habitacle（放置指南針的櫃子）。因定冠詞連音 l'habitacle 被誤聽分割為陰性冠詞 la bitacle，進而產生西語 bitácora。原指航海羅經櫃及其中的日誌，現延伸為部落格或網誌。",
+      "hook_zh": "航海員在 bitácora 旁撰寫航海日誌，現代人在網路上書寫個人的部落格。",
+      "usage_zh": "陰性名詞。cuaderno de bitácora 指航海日誌，日常亦可指專案工作紀錄簿。",
+      "example_es": "El capitán escribió en la bitácora del barco cada noche.",
+      "example_zh": "船長每晚都在船上的航海日誌上做記錄。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bitácora"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "bocado",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "一口；點心、小吃",
+      "en": "mouthful, bite, snack",
+      "ipa": "/boˈkado/",
+      "breakdown": [
+        {
+          "part": "boca",
+          "zh": "嘴巴"
+        },
+        {
+          "part": "-ado",
+          "zh": "名詞字尾（動作或容量量詞）"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "boca",
+          "zh": "嘴巴"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ado",
+          "zh": "字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "bocado",
+          "zh": "一口、點心"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 boca（嘴巴）加上名詞字尾 -ado 組成，字面涵義為「嘴巴一口能咬下或容納的份量」。隨後引申指一小口美食、點心或墊肚子的小吃。",
+      "hook_zh": "張開嘴巴 boca，吃進嘴裡的那「一口」美味就是 bocado。",
+      "usage_zh": "常見片語如 tomar un bocado（吃點東西、墊肚子）。",
+      "example_es": "Probó solo un bocado del pastel porque estaba lleno.",
+      "example_zh": "因為吃飽了，他只嘗了一小口蛋糕。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:bocado"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "caché",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "氣派、聲望、身價；快取",
+      "en": "cachet, prestige; cache memory",
+      "ipa": "/kaˈt͡ʃe/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "cachet",
+          "zh": "封印、印記；特質聲望"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "caché",
+          "zh": "氣派、聲望、演出酬勞"
+        }
+      ],
+      "cognates_en": [
+        "cachet",
+        "cache"
+      ],
+      "story_zh": "借自法語 cachet（封蠟印戳），源指代表名門權貴的封章印記，引申為優雅氣派、崇高聲望或藝人演出的身價酬勞；在資訊科學中亦受英語 cache 影響，指高速快取記憶體。",
+      "hook_zh": "法語 cachet 帶有貴族封印的華麗感，西語 caché 同樣指名氣、排場與身價。",
+      "usage_zh": "陽性名詞。指身價、氣派或出場費時為 el caché；電腦快取亦常作 el caché。",
+      "example_es": "Ese famoso restaurante tiene un gran caché.",
+      "example_zh": "那家著名餐廳非常有氣派與身價。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:caché"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cafetera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "咖啡壺、咖啡機",
+      "en": "coffeemaker, coffeepot",
+      "ipa": "/kafeˈteɾa/",
+      "breakdown": [
+        {
+          "part": "café",
+          "zh": "咖啡"
+        },
+        {
+          "part": "-era",
+          "zh": "器具字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cafe",
+          "zh": "咖啡"
+        },
+        {
+          "lang_zh": "法語",
+          "word": "cafetiere",
+          "zh": "咖啡壺"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cafetera",
+          "zh": "咖啡壺、咖啡機"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 café（咖啡）仿照法語 cafetière 構詞而成，加上表示器具的字尾 -era，指專門沖泡或盛裝咖啡的咖啡壺、摩卡壺或咖啡機。",
+      "hook_zh": "想喝香醇的 café，就打開廚房裡的 cafetera（咖啡壺）煮一壺。",
+      "usage_zh": "陰性名詞。口語亦可戲稱吵雜老舊、快解體的破車（老爺車）。",
+      "example_es": "Compré una cafetera nueva para preparar café cada mañana.",
+      "example_zh": "我買了一台新的咖啡機，每天早上煮咖啡。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cafetera"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "camarón",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "蝦、蝦子",
+      "en": "shrimp",
+      "ipa": "/kamaˈɾon/",
+      "breakdown": [
+        {
+          "part": "cámaro",
+          "zh": "蝦（古語）"
+        },
+        {
+          "part": "-ón",
+          "zh": "指大字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "古希臘語",
+          "word": "kammaros",
+          "zh": "龍蝦、海蝦"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "cammarus",
+          "zh": "龍蝦、海產甲殼類"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "camaron",
+          "zh": "蝦"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自拉丁語 cammarus（海蝦、龍蝦），進一步追溯至古希臘語 kammaros。在西班牙語中加上名詞字尾 -ón 形成 camarón。西班牙諺語說「睡著的蝦被水流沖走」，勉勵人保持警惕。",
+      "hook_zh": "享用美味的海鮮烤飯時，盤中鮮美的紅蝦就是 camarón。",
+      "usage_zh": "陽性名詞，複數為 camarones。拉丁美洲泛指蝦子，西班牙本土多稱 gamba。",
+      "example_es": "Pedimos arroz con camarones en el restaurante costeño.",
+      "example_zh": "我們在沿海餐廳點了鮮蝦飯。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:camarón",
+        "wiktionary:la:cammarus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "camello",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "駱駝；（俚語）毒販",
+      "en": "camel; drug dealer",
+      "ipa": "/kaˈmeʝo/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "原始閃米特語",
+          "word": "gamal",
+          "zh": "駱駝"
+        },
+        {
+          "lang_zh": "古希臘語",
+          "word": "kamelos",
+          "zh": "駱駝"
+        },
+        {
+          "lang_zh": "拉丁語",
+          "word": "camelus",
+          "zh": "駱駝"
+        },
+        {
+          "lang_zh": "通俗拉丁語",
+          "word": "camellus",
+          "zh": "駱駝"
+        },
+        {
+          "lang_zh": "古西班牙語",
+          "word": "camello",
+          "zh": "駱駝"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "camello",
+          "zh": "駱駝；毒販"
+        }
+      ],
+      "cognates_en": [
+        "camel"
+      ],
+      "story_zh": "源自原始閃米特語 gamal，經古希臘語 kamelos 與拉丁語 camelus 進入通俗拉丁語 camellus。除了沙漠中的駱駝，二十世紀初毒販盤查時常把毒品藏在駝背假背心下，因而衍伸出「藥頭、毒販」的西語俚語義。",
+      "hook_zh": "英文 camel 與西語 camello 發音同源，都是背負重擔的沙漠駱駝。",
+      "usage_zh": "陽性名詞，母駱駝為 camella。日常口語中亦常指在街頭散播違禁品的毒販。",
+      "example_es": "El camello cruzó el desierto bajo el sol ardiente.",
+      "example_zh": "駱駝在烈日下穿越了廣大的沙漠。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:camello",
+        "wiktionary:la:camelus"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cartelera",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "公布欄、布告欄；節目表",
+      "en": "billboard, noticeboard, cinema listings",
+      "ipa": "/kaɾteˈleɾa/",
+      "breakdown": [
+        {
+          "part": "cartel",
+          "zh": "海報、標語牌"
+        },
+        {
+          "part": "-era",
+          "zh": "放置場所字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cartel",
+          "zh": "海報、告示"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "era",
+          "zh": "字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "cartelera",
+          "zh": "布告欄、節目表"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由 cartel（海報、公告）加上表示處所或容器的字尾 -era 衍生而來，原指張貼告示與海報的大型看板，現代常用於指報紙或網站上的「電影放映時刻表、戲劇演出節目表」。",
+      "hook_zh": "牆上貼滿宣傳海報（cartel）的大看板，就是 cartelera（節目表或告示欄）。",
+      "usage_zh": "陰性名詞。cartelera de cine 即指電影院目前檔期與場次的電影放映表。",
+      "example_es": "Consulté la cartelera para ver qué películas daban hoy.",
+      "example_zh": "我查了電影時刻表，看看今天放映哪些電影。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cartelera"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "catalizador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "催化劑；促成變革者",
+      "en": "catalyst; catalytic converter",
+      "ipa": "/kataliθaˈdoɾ/",
+      "breakdown": [
+        {
+          "part": "catalizar",
+          "zh": "催化"
+        },
+        {
+          "part": "-dor",
+          "zh": "執行者、器材字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "catalizar",
+          "zh": "催化"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "dor",
+          "zh": "作用者字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "catalizador",
+          "zh": "催化劑"
+        }
+      ],
+      "cognates_en": [
+        "catalyst",
+        "catalyzer"
+      ],
+      "story_zh": "由動詞 catalizar（催化）加上具備該功能的字尾 -dor 構成。在化學上指能加速反應速度而不被耗損的物質；在社會人文中常比喻促成重大轉變的核心事件或關鍵人物。",
+      "hook_zh": "英文 catalyst 是催化劑，西語動詞 catalizar 接上 -dor 形成 catalizador。",
+      "usage_zh": "可作名詞（el catalizador）或形容詞（陰性 catalizadora）。",
+      "example_es": "La crisis económica fue el catalizador del cambio político.",
+      "example_zh": "經濟危機成為推動政治轉變的催化劑。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:catalizador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "cañada",
+      "article": "la",
+      "pos": "sustantivo",
+      "zh": "峽谷、深谷；放牧步道",
+      "en": "ravine, glen; droveway",
+      "ipa": "/kaˈɲada/",
+      "breakdown": [
+        {
+          "part": "caña",
+          "zh": "蘆葦、管狀物"
+        },
+        {
+          "part": "-ada",
+          "zh": "名詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "cana",
+          "zh": "蘆葦、管道"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "ada",
+          "zh": "字尾"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "canada",
+          "zh": "深谷、步道"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "源自 caña（蘆葦、管狀物），加上名詞後綴 -ada。最初指兩山之間如管狀狹長通行的幽谷或溪谷，在西班牙歷史上特指季節性遷徙牛羊專用的長途放牧步道。",
+      "hook_zh": "兩側高山夾峙如狹管（caña），羊群緩緩穿越深谷道 cañada。",
+      "usage_zh": "陰性名詞。西班牙歷史上的 cañada real 是皇家特許的跨區域放牧大道。",
+      "example_es": "El rebaño bajó tranquilamente por la cañada verde.",
+      "example_zh": "羊群從容地沿著碧綠的深谷步道走下來。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:cañada"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "chasis",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "車架、底盤、框架",
+      "en": "chassis",
+      "ipa": "/ˈt͡ʃasis/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "法語",
+          "word": "chassis",
+          "zh": "框、架構"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "chasis",
+          "zh": "底盤、車架"
+        }
+      ],
+      "cognates_en": [
+        "chassis"
+      ],
+      "story_zh": "借自法語 châssis（窗框、框架），源自拉丁語 capsus（箱子）。十九世紀汽車工藝興起後，專指支撐整輛汽車機件、懸吊與車殼的金屬骨架底盤。",
+      "hook_zh": "英文與法文皆為 chassis，西語簡化寫作 chasis，是車輛最根本的骨架底盤。",
+      "usage_zh": "陽性名詞，單複數同形（el chasis / los chasis）。",
+      "example_es": "El mecánico reparó el chasis del automóvil tras el impacto.",
+      "example_zh": "車輛受到撞擊後，技師修復了汽車的底盤框架。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:chasis"
       ],
       "writer": "gemini"
     }
