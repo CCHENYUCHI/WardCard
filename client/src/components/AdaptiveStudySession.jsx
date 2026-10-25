@@ -939,7 +939,7 @@ export default function AdaptiveStudySession({
 
         {/* Word story from the lexicon, only once the answer is shown (never before answering) */}
         {(isFlipped || spellingStatus !== 'typing') && (
-          <div className="study-story"><CardStory word={currentCard.word} /></div>
+          <div className="study-story"><CardStory cardId={currentCard.id} word={currentCard.word} /></div>
         )}
 
         {/* Bottom Rating Bar (Triggered when flipped or incorrect in Stage 3) */}

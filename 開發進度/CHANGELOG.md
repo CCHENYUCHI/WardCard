@@ -7,6 +7,7 @@
 ## [Unreleased] (進行中 / 待發布)
 
 ### Added
+- **今日學習翻卡後顯示完整字源卡與人稱變位 (`StoryCard.jsx` `CardStory`, `AdaptiveStudySession.jsx`)**：翻卡 / 作答後不再只顯示圖片＋記憶聯想，改成和字典頁展開後一樣的完整字源卡（構詞、記憶聯想、英文同源、字源鏈、字源故事、用法、例句）。動詞另顯示「人稱變位」：可切換現在式、簡單過去式、過去未完成式、未來式、條件式、虛擬式現在式，每個人稱（yo … ellos / ellas / ustedes）可點播發音，下方列出副動詞與過去分詞，「完整變位表」開啟原有的變位表視窗。資料來自卡片連到的離線字典條目（`GET /api/cards/:id/dictionary`），沒連到字典的卡只顯示字源卡。移除不再使用的精簡版字源卡（`compact`）。
 - **常用字字源圖鑑（`server/data/lexicon/freq/`）**：把字源圖鑑從 A1 的 1,038 字往整本字典擴充，依西語使用頻率（wordfreq）從最常用的字做起，變化形併入原形、A1 已有的字跳過，每 100 個原形一批。
   - **文字由 Gemini 撰寫、直接寫入資料檔**：`gemini-write.js` 把每個字的 Wiktionary 事實（`fetch-facts.js`）送給 agy MCP 的 `ask_gemini`，產出中文的字根拆解、字源鏈、字源故事、英文同源字、記憶聯想、用法與例句。回答不經 Claude 審閱，改由 `geminiEntries.js` 機器檢查：schema 與長度（沿用 `validate.js`）、繁體中文（簡體字偵測）、字源鏈的每個祖先字都必須出現在事實裡、`sources` 只能是實際抓過的頁面、事實沒有詞源就改成只有記憶聯想（hook-only）；不合格的字帶著錯誤重問一次，仍不合格記進 `failed.json` 之後重跑。條目帶 `writer: "gemini"`，字源卡顯示「Gemini 撰寫、程式檢查」。
   - **每個字都有 SVG 插圖**：Claude 依 `draw-list.js` 只讀到的「字、詞性、中文、記憶聯想」畫插圖規格（`art/freq-<批次>.js`），`mark-drawn.js` 把畫好的字從 emoji 換成 SVG。

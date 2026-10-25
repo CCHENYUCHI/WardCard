@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
-import { getLexiconEntry } from '../utils/dictionary';
+import { ChevronDown, Table2 } from 'lucide-react';
+import { getLexiconEntry, getCardDictionary } from '../utils/dictionary';
 import SpeakButton from './SpeakButton';
+import FormsModal from './FormsModal';
 
 function StoryPicture({ story, size }) {
   if (story.image_url) {
@@ -63,10 +64,10 @@ function StoryDetails({ story }) {
 /**
  * Hand-written lexicon entry: picture, where the word comes from, a memory hook.
  * Lookups (dictionary page, tap-a-word popover) show a one-line fold that opens on tap, so the
- * result stays short until the learner is curious. `collapsible={false}` with `compact` is the
- * always-visible picture + hook shown on a study card after it is flipped.
+ * result stays short until the learner is curious. `collapsible={false}` shows everything at once
+ * (a study card after it is flipped).
  */
-export default function StoryCard({ story, compact = false, collapsible = true }) {
+export default function StoryCard({ story, collapsible = true }) {
   const [open, setOpen] = useState(false);
   if (!story) return null;
   const chain = story.origin_chain || [];
@@ -87,20 +88,6 @@ export default function StoryCard({ story, compact = false, collapsible = true }
     );
   }
 
-  if (compact) {
-    return (
-      <div className="story-card story-compact">
-        <StoryPicture story={story} size={64} />
-        <div className="story-text">
-          {chain.length > 1 && (
-            <div className="story-chain-line">{chain[0].lang_zh} {chain[0].word} → {story.word}</div>
-          )}
-          <div className="story-hook">🧠 {story.hook_zh}</div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="story-card">
       <StoryDetails story={story} />
@@ -108,14 +95,83 @@ export default function StoryCard({ story, compact = false, collapsible = true }
   );
 }
 
-/** Study card helper: loads the lexicon entry for a card's word and shows the compact story, if there is one. */
-export function CardStory({ word }) {
-  const [story, setStory] = useState(null);
+// Tenses offered on a study card, most useful first; the full table is one tap away
+const STUDY_TENSES = [['indicative', 'present'], ['indicative', 'preterite'], ['indicative', 'imperfect'], ['indicative', 'future'], ['indicative', 'conditional'], ['subjunctive', 'present']];
+
+/** Person-by-person conjugation of one tense at a time, for a verb card after it is flipped */
+function VerbPersons({ forms, onOpenFull }) {
+  const tables = STUDY_TENSES.map(([mood, tense]) => forms.tables.find(t => t.mood === mood && t.tense === tense)).filter(Boolean);
+  const [selected, setSelected] = useState(0);
+  if (tables.length === 0) return null;
+  const table = tables[Math.min(selected, tables.length - 1)];
+  const nonfinite = forms.nonfinite.filter(n => n.key !== 'infinitive');
+  return (
+    <div className="story-card verb-persons">
+      <div className="verb-persons-head">
+        <span className="story-label">人稱變位</span>
+        <button type="button" className="btn btn-secondary btn-sm" onClick={e => { e.currentTarget.blur(); onOpenFull(); }}>
+          <Table2 size={13} /> 完整變位表
+        </button>
+      </div>
+      <div className="verb-tense-tabs" role="tablist">
+        {tables.map((t, i) => (
+          <button
+            key={`${t.mood}-${t.tense}`}
+            type="button"
+            role="tab"
+            aria-selected={t === table}
+            className={`verb-tense-tab${t === table ? ' is-active' : ''}`}
+            onClick={e => { e.currentTarget.blur(); setSelected(i); }}
+          >
+            {t.mood === 'indicative' ? t.tenseLabel : `${t.moodLabel}${t.tenseLabel}`}
+          </button>
+        ))}
+      </div>
+      <table className="dx-table verb-persons-table">
+        <tbody>
+          {table.rows.map(r => (
+            <tr key={r.person}>
+              <th scope="row">{r.person}</th>
+              <td lang="es">{r.form}<SpeakButton text={r.form} /></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {nonfinite.length > 0 && (
+        <div className="dx-nonfinite verb-persons-nonfinite">
+          {nonfinite.map(n => (
+            <span key={n.key} className="dx-nf"><span className="dx-nf-label">{n.label}</span> <span lang="es">{n.forms.join(' / ')}</span></span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Study card helper, shown once the answer is revealed: the full lexicon story for the card's word and, for verbs,
+ * the conjugation by person. Reads the dictionary entry the card is linked to; falls back to the lexicon alone.
+ */
+export function CardStory({ cardId, word }) {
+  const [data, setData] = useState(null);
+  const [formsOpen, setFormsOpen] = useState(false);
   useEffect(() => {
     let cancelled = false;
-    setStory(null);
-    getLexiconEntry(word).then(entry => { if (!cancelled) setStory(entry); }).catch(() => {});
+    setData(null);
+    setFormsOpen(false);
+    const request = cardId
+      ? getCardDictionary(cardId).catch(() => getLexiconEntry(word).then(story => ({ story })))
+      : getLexiconEntry(word).then(story => ({ story }));
+    request.then(result => { if (!cancelled) setData(result); }).catch(() => {});
     return () => { cancelled = true; };
-  }, [word]);
-  return <StoryCard story={story} compact collapsible={false} />;
+  }, [cardId, word]);
+  if (!data) return null;
+  const verbForms = data.forms?.kind === 'verb' ? data.forms : null;
+  return (
+    <>
+      <StoryCard story={data.story} collapsible={false} />
+      {verbForms && <VerbPersons forms={verbForms} onOpenFull={() => setFormsOpen(true)} />}
+      {formsOpen && <FormsModal lemma={data.lemma || word} pos={data.pos || 'verb'} onClose={() => setFormsOpen(false)} />}
+    </>
+  );
 }
