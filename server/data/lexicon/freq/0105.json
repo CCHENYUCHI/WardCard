@@ -1,6 +1,6 @@
 {
   "theme": "freq-0105",
-  "theme_zh": "常用字（頻率第 33029–33424 名）",
+  "theme_zh": "常用字（頻率第 33029–33452 名）",
   "entries": [
     {
       "word": "locución",
@@ -833,30 +833,6 @@
       "writer": "gemini"
     },
     {
-      "word": "premiere",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "首映會、首演",
-      "en": "premiere",
-      "ipa": "/pɾeˈmjeɾ/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "premiere"
-      ],
-      "story_zh": "",
-      "hook_zh": "法語與英語外來借詞，指電影、戲劇首次在公眾面前隆重放映的「首映夜」。",
-      "usage_zh": "陰性名詞（la premiere）。西語本土同義詞為 el estreno。",
-      "example_es": "Los actores asistieron a la premiere de la película en Madrid.",
-      "example_zh": "演員們出席了該部電影在馬德里的首映會。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:premiere"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "protectorado",
       "article": "el",
       "pos": "sustantivo",
@@ -1215,46 +1191,6 @@
       "writer": "gemini"
     },
     {
-      "word": "soro",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "孢子囊群（蕨類植物）",
-      "en": "sorus",
-      "ipa": "/ˈsoɾo/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "σωρός",
-          "zh": "堆、堆積物"
-        },
-        {
-          "lang_zh": "新拉丁語",
-          "word": "sōrus",
-          "zh": "孢子囊群"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "soro",
-          "zh": "孢子囊群"
-        }
-      ],
-      "cognates_en": [
-        "sorus"
-      ],
-      "story_zh": "植物學學術借詞，借自新拉丁語 sōrus，源自古希臘語 σωρός（sōrós，意為一堆、堆積）。在植物學中專指蕨類植物葉片背面聚集排列成一簇簇的棕色孢子囊群。",
-      "hook_zh": "植物學名詞：蕨類葉子背後一堆堆像小沙丘聚集的小點點就是 soro（孢子囊群）。",
-      "usage_zh": "陽性名詞，植物學專門詞彙，複數為 soros。",
-      "example_es": "Los soros se encuentran en el envés de las hojas del helecho.",
-      "example_zh": "孢子囊群位於蕨類植物葉片的背面。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:soro"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "subsahariano",
       "article": "",
       "pos": "adjetivo",
@@ -1359,41 +1295,6 @@
       "confidence": "hook-only",
       "sources": [
         "wiktionary:es:superpoder"
-      ],
-      "writer": "gemini"
-    },
-    {
-      "word": "tau",
-      "article": "la",
-      "pos": "sustantivo",
-      "zh": "陶（希臘字母第十九個字母 Τ, τ）",
-      "en": "tau (Greek letter)",
-      "ipa": "/ˈtau/",
-      "breakdown": [],
-      "origin_chain": [
-        {
-          "lang_zh": "古希臘語",
-          "word": "ταῦ",
-          "zh": "字母 tau"
-        },
-        {
-          "lang_zh": "西班牙語",
-          "word": "tau",
-          "zh": "希臘字母 tau"
-        }
-      ],
-      "cognates_en": [
-        "tau"
-      ],
-      "story_zh": "衍生自古希臘語 ταῦ（taû），更早可追溯至腓尼基字母與希伯來語 תָּו（tav，意為記號）。在希臘字母系統中名列第十九，形如 T；在物理學中常用來代表剪應力或壽命時間常數。",
-      "hook_zh": "希臘字母 T 的名字就是 tau（拉美與西班牙字母表皆用陰性 la tau）。",
-      "usage_zh": "陰性名詞（la tau），指字母時同所有希臘字母一樣為陰性；物理代表粒子時為陽性（el tauón）。",
-      "example_es": "La letra tau es la decimonovena del alfabeto griego.",
-      "example_zh": "字母 tau 是希臘字母表的第十九個字母。",
-      "image": "svg",
-      "confidence": "sourced",
-      "sources": [
-        "wiktionary:es:tau"
       ],
       "writer": "gemini"
     },
@@ -3674,6 +3575,127 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:favoritismo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "feudalismo",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "封建制度、封建主義",
+      "en": "feudalism",
+      "ipa": "/feudaˈlismo/",
+      "breakdown": [
+        {
+          "part": "feudo",
+          "zh": "采邑、封地"
+        },
+        {
+          "part": "-al",
+          "zh": "…的"
+        },
+        {
+          "part": "-ismo",
+          "zh": "制度、主義"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "feudal",
+          "zh": "封建的、領地的"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "feudalismo",
+          "zh": "封建制度"
+        }
+      ],
+      "cognates_en": [
+        "feudalism",
+        "feudal"
+      ],
+      "story_zh": "由形容詞 feudal（封地的、領地的）加上名詞後綴 -ismo 組合而成。指中世紀歐洲以領主分封土地給附庸、附庸提供軍事服從與勞役為核心的社會政治經濟制度。",
+      "hook_zh": "中世紀領主在城堡裡統治農奴的封建社會：feudalismo。",
+      "usage_zh": "陽性名詞。歷史學名詞，也可以借指封閉、等級森嚴的舊體制。",
+      "example_es": "Durante el feudalismo, los campesinos trabajaban las tierras del señor.",
+      "example_zh": "在封建制度時期，農民為封建領主耕種土地。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:feudalismo"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gladiador",
+      "article": "el",
+      "pos": "sustantivo",
+      "zh": "角鬥士、角力士",
+      "en": "gladiator",
+      "ipa": "/ɡladjaˈdoɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "gladiatorem",
+          "zh": "角鬥士、持劍格鬥者"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gladiador",
+          "zh": "角鬥士"
+        }
+      ],
+      "cognates_en": [
+        "gladiator"
+      ],
+      "story_zh": "學者借詞，借自拉丁語 gladiātōrem，源自 gladius（短劍）。在古羅馬競技場上手持短劍與其他鬥士或猛獸進行生死搏鬥的受訓戰士。",
+      "hook_zh": "手持羅馬短劍（gladius）在競技場死鬥的英勇戰士：gladiador（角鬥士）。",
+      "usage_zh": "陽性名詞。陰性為 gladiadora。亦可比喻在競賽或困境中頑強搏鬥的人。",
+      "example_es": "El gladiador luchó valientemente en la arena del coliseo romano.",
+      "example_zh": "那位角鬥士在羅馬競技場的沙地上英勇奮戰。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gladiador"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "gravar",
+      "article": "",
+      "pos": "verbo",
+      "zh": "對…課稅、加負擔",
+      "en": "to tax, encumber, burden",
+      "ipa": "/ɡɾaˈbaɾ/",
+      "breakdown": [],
+      "origin_chain": [
+        {
+          "lang_zh": "拉丁語",
+          "word": "gravare",
+          "zh": "使加重、使沉重"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "gravar",
+          "zh": "課稅、加負擔"
+        }
+      ],
+      "cognates_en": [
+        "grave",
+        "gravity",
+        "aggravate"
+      ],
+      "story_zh": "學者借詞，借自拉丁語 gravāre（加重、增加負擔），源自 gravis（沉重的）。在法律與稅法上專指對財產、收入或交易課徵稅捐或附加義務。",
+      "hook_zh": "給百姓的荷包加上沉重（grave）的負擔：政府又要 gravar（課稅）了。",
+      "usage_zh": "及物動詞。注意與 grabar（錄音、銘刻）發音完全相同但意義相異（同音異義字）。",
+      "example_es": "El gobierno planea gravar los productos con alto contenido de azúcar.",
+      "example_zh": "政府計畫對高糖分產品課徵重稅。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:gravar"
       ],
       "writer": "gemini"
     }
