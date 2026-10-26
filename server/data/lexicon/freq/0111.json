@@ -1,6 +1,6 @@
 {
   "theme": "freq-0111",
-  "theme_zh": "常用字（頻率第 35657–36034 名）",
+  "theme_zh": "常用字（頻率第 35657–36041 名）",
   "entries": [
     {
       "word": "agrio",
@@ -3284,30 +3284,6 @@
       "writer": "gemini"
     },
     {
-      "word": "mostro",
-      "article": "el",
-      "pos": "sustantivo",
-      "zh": "怪物；高手、厲害的人（口語）",
-      "en": "monster, ace, beast (colloquial)",
-      "ipa": "/ˈmostɾo/",
-      "breakdown": [],
-      "origin_chain": [],
-      "cognates_en": [
-        "monster"
-      ],
-      "story_zh": "",
-      "hook_zh": "口語中 monstruo（怪物）的簡化俗稱，形容人超強時就像一隻「怪物」。",
-      "usage_zh": "拉美口語（如秘魯、阿根廷）常用於稱讚某人在某方面極為厲害（¡Eres un mostro!）。",
-      "example_es": "Ese jugador es un mostro con el balón.",
-      "example_zh": "那個球員踢球簡直是個怪物高手。",
-      "image": "svg",
-      "confidence": "hook-only",
-      "sources": [
-        "wiktionary:es:mostro"
-      ],
-      "writer": "gemini"
-    },
-    {
       "word": "murciano",
       "article": "",
       "pos": "adjetivo",
@@ -4036,6 +4012,48 @@
       "confidence": "sourced",
       "sources": [
         "wiktionary:es:prontamente"
+      ],
+      "writer": "gemini"
+    },
+    {
+      "word": "pujante",
+      "article": "",
+      "pos": "adjetivo",
+      "zh": "蓬勃發展的、強勁有力的",
+      "en": "booming, thriving, vigorous",
+      "ipa": "/puˈxante/",
+      "breakdown": [
+        {
+          "part": "pujar",
+          "zh": "用力推、競標、奮進"
+        },
+        {
+          "part": "-ante",
+          "zh": "現在分詞/形容詞字尾"
+        }
+      ],
+      "origin_chain": [
+        {
+          "lang_zh": "西班牙語",
+          "word": "pujar",
+          "zh": "奮力、推動"
+        },
+        {
+          "lang_zh": "西班牙語",
+          "word": "pujante",
+          "zh": "蓬勃發展的、強勁的"
+        }
+      ],
+      "cognates_en": [],
+      "story_zh": "由動詞 pujar（用力推進、出價爭奪）加上現在分詞後綴 -ante 構成，形容具備強大推動力、展現出蓬勃生機與強烈上升勢頭的事物，常用於經濟或產業。",
+      "hook_zh": "pujar（用力推）出來的氣勢，形容經濟像搭火箭一樣「蓬勃旺盛（pujante）」！",
+      "usage_zh": "陰陽同形形容詞（una economía pujante / un sector pujante）。",
+      "example_es": "La ciudad tiene una industria turística muy pujante.",
+      "example_zh": "這座城市擁有非常蓬勃發展的觀光產業。",
+      "image": "svg",
+      "confidence": "sourced",
+      "sources": [
+        "wiktionary:es:pujante"
       ],
       "writer": "gemini"
     }
