@@ -1286,9 +1286,8 @@ module.exports = {
   lastra: [
     s('path', { d: 'M14 70h132v66H14z' }, 'green'),
     s('path', { d: 'M24 110l50-10 10 22-56 10z' }, 'gray', { accent: true }),
-    s('path', { d: 'M86 96l44-6 8 20-48 6zM50 80l40-6 6 14-42 6z' }, 'gray'),
+    s('path', { d: 'M86 96l44-6 8 20-48 6zM50 80l40-6 6 14-42 6z' }, 'tan'),
     s('path', { d: 'M24 110l50-10 10 22-56 10zM86 96l44-6 8 20-48 6zM50 80l40-6 6 14-42 6z', ...SW(3) }, 'dark', { stroke: true }),
-    s('path', { d: 'M40 116l20-4M100 104l20-4', ...SW(3) }, 'white', { stroke: true }),
     s('path', { d: 'M24 70l26-36 22 36zM96 70l24-28 22 28z' }, 'mint')
   ],
   lechuza: [
@@ -1597,7 +1596,8 @@ module.exports = {
     s('path', { d: sparkle(24, 24, 8) + sparkle(136, 136, 8) }, 'orange')
   ],
   rotativo: [
-    s('path', { d: 'M14 84h132', ...SW(10) }, 'cream'),
+    s('path', { d: 'M14 84h86', ...SW(12) }, 'gray', { stroke: true }),
+    s('path', { d: 'M14 84h86', ...SW(8) }, 'white', { stroke: true }),
     s('circle', { cx: 52, cy: 62, r: 20 }, 'gray', { accent: true }),
     s('circle', { cx: 52, cy: 106, r: 20 }, 'gray'),
     s('circle', { cx: 52, cy: 62, r: 6 }, 'dark'),
