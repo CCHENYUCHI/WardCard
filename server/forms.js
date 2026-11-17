@@ -90,7 +90,11 @@ function dePersonIndex(t) {
 function groupGermanVerb(forms) {
   const nonfinite = [];
   for (const [key, label, test] of DE_NONFINITE) {
-    const words = [...new Set(forms.filter(([, tags]) => test(tagSet(tags))).map(([form]) => form))];
+    let words = [...new Set(forms.filter(([, tags]) => test(tagSet(tags))).map(([form]) => form))];
+    // fahren: "haben or sein", "haben", "sein" -> one "haben / sein"
+    if (key === 'auxiliary' && words.some(w => w.includes(' or '))) {
+      words = [words.find(w => w.includes(' or ')).split(' or ').join(' / ')];
+    }
     if (words.length) nonfinite.push({ key, label, forms: words });
   }
   const tables = [];
