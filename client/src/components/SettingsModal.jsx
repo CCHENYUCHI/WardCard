@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { X, Key, Check, Volume2, Download, Upload, ExternalLink, ShieldCheck, Sparkles } from 'lucide-react';
 import VersionInfo from './VersionInfo';
 import { playSpanishPronunciation, getTtsMode, setTtsMode, TTS_MODES } from '../utils/speech';
-import { getLangConfig } from '../utils/learnLang';
+import { getLangConfig, getLearnLang } from '../utils/learnLang';
 
 export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, onCardsChanged }) {
   const [apiKey, setApiKey] = useState('');
@@ -109,6 +109,24 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
       }
     };
     reader.readAsText(file);
+  };
+
+  // Blank template for the current learning language (server builds it: header + one example row)
+  const handleCsvTemplate = async () => {
+    try {
+      const res = await fetchAPI('/api/cards/csv-template');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const url = URL.createObjectURL(await res.blob());
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `wardcard-template-${getLearnLang()}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    } catch (err) {
+      alert('下載範本失敗：' + err.message);
+    }
   };
 
   const handleCsvImport = async (e) => {
@@ -328,7 +346,16 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
                 style={{ display: 'none' }}
               />
             </label>
+
+            <button className="btn btn-secondary btn-sm" onClick={handleCsvTemplate}>
+              <Download size={14} />
+              <span>下載{getLangConfig().ui.short} CSV 空白範本</span>
+            </button>
           </div>
+          <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '8px', lineHeight: 1.5 }}>
+            CSV 欄位：<code>{getLearnLang() === 'de' ? 'German' : 'Spanish'}</code>（單字，可含冠詞）、<code>Chinese</code>、<code>English</code>、<code>Gender</code>、<code>Category</code>、<code>{getLearnLang() === 'de' ? 'Example' : 'Ejemplo'}</code>、<code>Example_ZH</code>、<code>Notes</code>、<code>lang</code>（<code>es</code> / <code>de</code>）。
+            沒有 <code>lang</code> 欄時，有 <code>German</code> 欄算德語、有 <code>Spanish</code> 欄算西語，否則匯入目前的學習語言；<code>Gender</code> 空白時依冠詞判斷{getLearnLang() === 'de' ? '（der / die / das）' : '（el / la）'}。
+          </p>
         </div>
 
         {/* Which build of the page, the server and the dictionary are running */}

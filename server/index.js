@@ -15,6 +15,7 @@ const {
   translationHash, findOwnTranslation, findSharedTranslation, saveTranslation, listTranslations, deleteTranslation
 } = require('./translations');
 const { recordLookup, setLookupTranslation, listLookups, deleteLookup, clearLookups } = require('./lookupHistory');
+const { csvRecordToCard, templateCsv } = require('./csvImport');
 const { splitArticle, normalizeWord } = require('./cardUtils');
 const { getDict, dictionaryHasEntries, lookupForm, getEntryExtras, getDictionaryInfo, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
 const { getBuildInfo } = require('./buildInfo');
@@ -394,7 +395,15 @@ app.delete('/api/cards/:id', authenticateToken, (req, res) => {
   }
 });
 
+// Blank CSV template for the learning language (header + one example row)
+app.get('/api/cards/csv-template', authenticateToken, (req, res) => {
+  res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+  res.setHeader('Content-Disposition', `attachment; filename="wardcard-template-${req.lang}.csv"`);
+  res.send(templateCsv(req.lang));
+});
+
 // Upload CSV endpoint
+
 app.post('/api/cards/upload-csv', authenticateToken, upload.single('file'), (req, res) => {
   try {
     if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
@@ -425,25 +434,11 @@ app.post('/api/cards/upload-csv', authenticateToken, upload.single('file'), (req
     let processed = 0;
     for (const record of records) {
       // Header names: Spanish / German / word (or a lang column) — default is the deck being shown
-      const rowLang = record.lang ? resolveLang(record.lang) : (record.German ? 'de' : (record.Spanish ? 'es' : req.lang));
-      let rawWord = record.Spanish || record.German || record.word || '';
-      if (!rawWord) continue;
-
-      const { word: w, article: a } = splitArticle(rawWord, '', rowLang);
-
+      const card = csvRecordToCard(record, req.lang);
+      if (!card) continue;
       insertStmt.run(
-        userId,
-        rowLang,
-        w,
-        a,
-        record.Gender || record.gender || 'none',
-        record.Chinese || record.translation || '',
-        record.English || record.english_translation || '',
-        record.Note_EN || record.Notes || record.notes || '',
-        record.Definición || record.definition_es || '',
-        record.Ejemplo || record.example_es || '',
-        record.Example_ZH || record.example_zh || '',
-        record.Category || record.category || '日常生活'
+        userId, card.lang, card.word, card.article, card.gender, card.translation, card.english_translation,
+        card.notes, card.definition_es, card.example_es, card.example_zh, card.category
       );
       processed++;
     }
