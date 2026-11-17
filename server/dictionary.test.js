@@ -41,6 +41,7 @@ const FIXTURE = [
 ];
 
 let tmpDir;
+let dictDb;
 
 test.before(async () => {
   tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'dict-test-'));
@@ -48,10 +49,13 @@ test.before(async () => {
   fs.writeFileSync(input, `${FIXTURE.map(e => JSON.stringify(e)).join('\n')}\nnot json\n`);
   const out = path.join(tmpDir, 'es-en.sqlite');
   await build(input, out);
-  setDictionary(new DatabaseSync(out, { readOnly: true }));
+  dictDb = new DatabaseSync(out, { readOnly: true });
+  setDictionary(dictDb);
 });
 
 test.after(() => {
+  setDictionary(null);
+  dictDb?.close(); // Windows cannot delete an open SQLite file
   fs.rmSync(tmpDir, { recursive: true, force: true });
 });
 
