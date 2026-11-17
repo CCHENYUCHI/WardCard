@@ -5,6 +5,8 @@ import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { API_URL, GEMINI_KEY_STORAGE } from '@/constants/api';
+import { apiFetch } from '@/constants/learn-lang';
+import LangSwitch from '@/components/lang-switch';
 
 export default function SettingsScreen() {
   const router = useRouter();
@@ -30,7 +32,7 @@ export default function SettingsScreen() {
   const fetchProfile = async () => {
     try {
       const token = await AsyncStorage.getItem('palabracard_token');
-      const response = await fetch(`${API_URL}/auth/me`, {
+      const response = await apiFetch(`${API_URL}/auth/me`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await response.json();
@@ -86,7 +88,7 @@ export default function SettingsScreen() {
       }
 
       const token = await AsyncStorage.getItem('palabracard_token');
-      const res = await fetch(`${API_URL}/cards/upload-csv`, {
+      const res = await apiFetch(`${API_URL}/cards/upload-csv`, {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` },
         body: formData
@@ -126,6 +128,14 @@ export default function SettingsScreen() {
               </View>
               <Text style={styles.username}>@{user?.username}</Text>
               <Text style={styles.role}>{user?.role === 'admin' ? '管理員' : '一般使用者'}</Text>
+            </View>
+
+            <View style={styles.langBox}>
+              <Text style={styles.keyLabel}>🌍 學習語言</Text>
+              <Text style={styles.keyHint}>切換單字庫、待複習與統計；CSV 匯入預設到目前的語言。</Text>
+              <View style={{ alignSelf: 'flex-start', marginTop: 8 }}>
+                <LangSwitch />
+              </View>
             </View>
 
             <View style={styles.keyBox}>
@@ -251,6 +261,14 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
+  },
+  langBox: {
+    backgroundColor: '#1e293b',
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 16,
+    borderWidth: 1,
+    borderColor: '#334155',
   },
   keyBox: {
     backgroundColor: '#1e293b',

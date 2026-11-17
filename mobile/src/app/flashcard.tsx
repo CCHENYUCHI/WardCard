@@ -5,6 +5,7 @@ import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { API_URL } from '@/constants/api';
+import { apiFetch, useLearnLang } from '@/constants/learn-lang';
 
 export default function FlashcardScreen() {
   const router = useRouter();
@@ -15,10 +16,11 @@ export default function FlashcardScreen() {
   const [loading, setLoading] = useState(true);
   const [isFlipped, setIsFlipped] = useState(false);
   const [flipAnim] = useState(new Animated.Value(0));
+  const lang = useLearnLang();
 
   useEffect(() => {
     fetchDueCards(selectedCategory);
-  }, [selectedCategory]);
+  }, [selectedCategory, lang]); // reload when the learning language is switched
 
   const fetchDueCards = async (category) => {
     setLoading(true);
@@ -27,8 +29,8 @@ export default function FlashcardScreen() {
       const catQuery = category && category !== 'all' ? `&category=${encodeURIComponent(category)}` : '';
       
       const [cardsRes, catsRes] = await Promise.all([
-        fetch(`${API_URL}/cards/due?limit=20${catQuery}`, { headers: { 'Authorization': `Bearer ${token}` } }),
-        fetch(`${API_URL}/categories`, { headers: { 'Authorization': `Bearer ${token}` } })
+        apiFetch(`${API_URL}/cards/due?limit=20${catQuery}`, { headers: { 'Authorization': `Bearer ${token}` } }),
+        apiFetch(`${API_URL}/categories`, { headers: { 'Authorization': `Bearer ${token}` } })
       ]);
       
       const cardsData = await cardsRes.json();
@@ -60,7 +62,7 @@ export default function FlashcardScreen() {
     const currentCard = cards[currentIndex];
     try {
       const token = await AsyncStorage.getItem('palabracard_token');
-      await fetch(`${API_URL}/cards/${currentCard.id}/review`, {
+      await apiFetch(`${API_URL}/cards/${currentCard.id}/review`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

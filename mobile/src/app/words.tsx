@@ -5,6 +5,7 @@ import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { API_URL } from '@/constants/api';
+import { apiFetch, getLangConfig, useLearnLang } from '@/constants/learn-lang';
 
 export default function WordsScreen() {
   const router = useRouter();
@@ -19,16 +20,17 @@ export default function WordsScreen() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
 
+  const lang = useLearnLang();
   useEffect(() => {
     fetchCards();
-  }, []);
+  }, [lang]); // reload when the learning language is switched
 
   const fetchCards = async () => {
     try {
       const token = await AsyncStorage.getItem('palabracard_token');
       const [cardsRes, catsRes] = await Promise.all([
-        fetch(`${API_URL}/cards?page=1&limit=500`, { headers: { 'Authorization': `Bearer ${token}` } }),
-        fetch(`${API_URL}/categories`, { headers: { 'Authorization': `Bearer ${token}` } })
+        apiFetch(`${API_URL}/cards?page=1&limit=500`, { headers: { 'Authorization': `Bearer ${token}` } }),
+        apiFetch(`${API_URL}/categories`, { headers: { 'Authorization': `Bearer ${token}` } })
       ]);
       
       const cardsData = await cardsRes.json();
@@ -52,7 +54,7 @@ export default function WordsScreen() {
         onPress: async () => {
           try {
             const token = await AsyncStorage.getItem('palabracard_token');
-            await fetch(`${API_URL}/cards/${id}`, {
+            await apiFetch(`${API_URL}/cards/${id}`, {
               method: 'DELETE',
               headers: { 'Authorization': `Bearer ${token}` }
             });
@@ -71,7 +73,7 @@ export default function WordsScreen() {
       const token = await AsyncStorage.getItem('palabracard_token');
       
       if (isAddingNew) {
-        await fetch(`${API_URL}/cards`, {
+        await apiFetch(`${API_URL}/cards`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -80,7 +82,7 @@ export default function WordsScreen() {
           body: JSON.stringify(editingCard)
         });
       } else {
-        await fetch(`${API_URL}/cards/${editingCard.id}`, {
+        await apiFetch(`${API_URL}/cards/${editingCard.id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -224,7 +226,7 @@ export default function WordsScreen() {
                   style={styles.input}
                   value={editingCard.word}
                   onChangeText={(text) => setEditingCard({...editingCard, word: text})}
-                  placeholder="西班牙文"
+                  placeholder={getLangConfig(lang).wordPlaceholder}
                   placeholderTextColor="#64748b"
                 />
                 <TextInput

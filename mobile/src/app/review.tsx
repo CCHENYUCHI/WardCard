@@ -5,7 +5,8 @@ import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { API_URL } from '@/constants/api';
-const SPANISH_SPECIAL_KEYS = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ', '¿', '¡'];
+import { apiFetch, getLangConfig, useLearnLang } from '@/constants/learn-lang';
+import { checkGermanSpelling } from '@/utils/german-spelling';
 
 const stripArticle = (str) => {
   const articles = ['el ', 'la ', 'los ', 'las ', 'un ', 'una ', 'unos ', 'unas '];
@@ -56,12 +57,16 @@ export default function ReviewScreen() {
   const [userInput, setUserInput] = useState('');
   const [status, setStatus] = useState('typing'); // 'typing', 'correct', 'incorrect'
   const [showAnswer, setShowAnswer] = useState(false);
+  const [hint, setHint] = useState(''); // German: capital letter / umlaut / ae-oe-ue-ss note
+  const [variant, setVariant] = useState(false); // German ae/oe/ue/ss answer: correct, graded Good not Easy
+  const lang = useLearnLang();
+  const L = getLangConfig(lang);
   
   const inputRef = useRef(null);
 
   useEffect(() => {
     fetchDueCards(selectedCategory);
-  }, [selectedCategory]);
+  }, [selectedCategory, lang]); // reload when the learning language is switched
 
   const fetchDueCards = async (category) => {
     setLoading(true);
@@ -70,8 +75,8 @@ export default function ReviewScreen() {
       const catQuery = category && category !== 'all' ? `&category=${encodeURIComponent(category)}` : '';
       
       const [cardsRes, catsRes] = await Promise.all([
-        fetch(`${API_URL}/cards/due?limit=20${catQuery}`, { headers: { 'Authorization': `Bearer ${token}` } }),
-        fetch(`${API_URL}/categories`, { headers: { 'Authorization': `Bearer ${token}` } })
+        apiFetch(`${API_URL}/cards/due?limit=20${catQuery}`, { headers: { 'Authorization': `Bearer ${token}` } }),
+        apiFetch(`${API_URL}/categories`, { headers: { 'Authorization': `Bearer ${token}` } })
       ]);
       
       const cardsData = await cardsRes.json();
@@ -99,6 +104,17 @@ export default function ReviewScreen() {
     if (!userInput.trim()) return;
     
     const currentCard = cards[currentIndex];
+    if (lang === 'de') {
+      // Nouns need a capital letter; ae/oe/ue/ss passes with the proper spelling shown
+      const { word, part_of_speech } = currentCard as { word?: string; part_of_speech?: string };
+      const accepted = String(word || '').split(/[/,]/).map((p: string) => p.trim()).filter(Boolean);
+      const result = checkGermanSpelling(userInput, accepted, { isNoun: part_of_speech === 'sustantivo' });
+      setHint(result.hint);
+      setVariant(result.status === 'variant');
+      setStatus(result.status === 'wrong' ? 'incorrect' : 'correct');
+      if (result.status === 'wrong') setShowAnswer(true);
+      return;
+    }
     const acceptable = getAcceptableAnswers(currentCard.word);
     const isCorrect = acceptable.includes(userInput.toLowerCase().trim());
     
@@ -108,11 +124,13 @@ export default function ReviewScreen() {
 
   const nextCard = async (ratingOverride = null) => {
     const currentCard = cards[currentIndex];
-    const rating = ratingOverride !== null ? ratingOverride : (status === 'correct' ? 4 : 1);
+    const rating = ratingOverride !== null ? ratingOverride : (status === 'correct' ? (variant ? 3 : 4) : 1);
+    setHint('');
+    setVariant(false);
     
     try {
       const token = await AsyncStorage.getItem('palabracard_token');
-      await fetch(`${API_URL}/cards/${currentCard.id}/review`, {
+      await apiFetch(`${API_URL}/cards/${currentCard.id}/review`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -225,15 +243,19 @@ export default function ReviewScreen() {
                 setUserInput(text);
                 setStatus('typing');
                 setShowAnswer(false);
+                setHint('');
+                setVariant(false);
               }}
               onSubmitEditing={status === 'typing' ? checkAnswer : () => nextCard()}
-              placeholder="輸入西班牙文拼字..."
+              placeholder={L.spellPlaceholder}
               placeholderTextColor="#64748b"
               autoCapitalize="none"
               autoCorrect={false}
               editable={status === 'typing'}
             />
           </View>
+
+          {hint ? <Text style={[styles.hintText, status === 'correct' ? styles.hintOk : styles.hintBad]}>💡 {hint}</Text> : null}
 
           {showAnswer && (
             <View style={styles.answerBox}>
@@ -249,7 +271,7 @@ export default function ReviewScreen() {
           )}
 
           <View style={styles.keyboardRow}>
-            {SPANISH_SPECIAL_KEYS.map(key => (
+            {L.specialChars.map(key => (
               <TouchableOpacity key={key} style={styles.keyBtn} onPress={() => handleSpecialKey(key)} disabled={status !== 'typing'}>
                 <Text style={styles.keyText}>{key}</Text>
               </TouchableOpacity>
@@ -282,6 +304,18 @@ export default function ReviewScreen() {
 }
 
 const styles = StyleSheet.create({
+  hintText: {
+    marginTop: 10,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 10,
+    fontSize: 14,
+    fontWeight: '600',
+    textAlign: 'center',
+    overflow: 'hidden',
+  },
+  hintOk: { backgroundColor: '#fef7e0', color: '#b06000' },
+  hintBad: { backgroundColor: '#fce8e6', color: '#c5221f' },
   container: {
     flex: 1,
     backgroundColor: '#0f172a',
