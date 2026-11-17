@@ -1160,6 +1160,7 @@ app.get('/api/dictionary/lookup', authenticateToken, (req, res) => {
     try {
       recordLookup(db, {
         userId: req.user.userId,
+        lang,
         query: q,
         lemma: context?.lemma || myCards[0]?.word || aiEntry?.word || lemmas[0] || story?.word || '',
         translation: context?.zh || myCards[0]?.translation || aiEntry?.translation || story?.zh || '',
@@ -1314,7 +1315,7 @@ app.post('/api/dictionary/ai', authenticateToken, async (req, res) => {
     const lang = req.lang;
     const cached = getCachedEntry(q, lang);
     if (cached) {
-      setLookupTranslation(db, req.user.userId, q, cached.translation);
+      setLookupTranslation(db, req.user.userId, q, cached.translation, lang);
       return res.json({ card: cached, cached: true });
     }
 
@@ -1326,7 +1327,7 @@ app.post('/api/dictionary/ai', authenticateToken, async (req, res) => {
     save.run(entryKey(q, lang), JSON.stringify(card), model);
     // Also cache under the dictionary form, so "fui" and "ir" share one entry
     if (normalizeWord(card.word) !== normalizeWord(q)) save.run(entryKey(card.word, lang), JSON.stringify(card), model);
-    setLookupTranslation(db, req.user.userId, q, card.translation);
+    setLookupTranslation(db, req.user.userId, q, card.translation, lang);
     res.json({ card, cached: false });
   } catch (err) {
     console.error('Dictionary AI Error:', err.message);
@@ -1340,7 +1341,7 @@ app.get('/api/dictionary/history', authenticateToken, (req, res) => {
     const q = String(req.query.q || '').slice(0, 80);
     const sort = req.query.sort === 'count' ? 'count' : 'recent';
     const offset = Math.max(0, parseInt(req.query.offset, 10) || 0);
-    res.json(listLookups(db, req.user.userId, { q, sort, offset }));
+    res.json(listLookups(db, req.user.userId, { lang: req.lang, q, sort, offset }));
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1358,7 +1359,7 @@ app.delete('/api/dictionary/history/:id', authenticateToken, (req, res) => {
 
 app.delete('/api/dictionary/history', authenticateToken, (req, res) => {
   try {
-    res.json({ success: true, deleted: clearLookups(db, req.user.userId) });
+    res.json({ success: true, deleted: clearLookups(db, req.user.userId, req.lang) });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1433,7 +1434,7 @@ app.post('/api/translations', authenticateToken, async (req, res) => {
 
     const shared = findSharedTranslation(db, hash);
     if (shared) {
-      const record = saveTranslation(db, { userId, inputText: text, hash, ...shared });
+      const record = saveTranslation(db, { userId, lang: req.lang, inputText: text, hash, ...shared });
       return res.status(201).json({ record, cached: true });
     }
 
@@ -1441,7 +1442,7 @@ app.post('/api/translations', authenticateToken, async (req, res) => {
     if (!apiKey) return res.status(400).json({ error: NO_KEY_ERROR });
 
     const { result, model } = await translateSentence({ apiKey, text, lang: req.lang });
-    const record = saveTranslation(db, { userId, inputText: text, hash, result, model });
+    const record = saveTranslation(db, { userId, lang: req.lang, inputText: text, hash, result, model });
     res.status(201).json({ record, cached: false });
   } catch (err) {
     console.error('Translate Error:', err.message);
@@ -1453,7 +1454,7 @@ app.get('/api/translations', authenticateToken, (req, res) => {
   try {
     const q = String(req.query.q || '').slice(0, 100);
     const offset = Math.max(0, parseInt(req.query.offset, 10) || 0);
-    res.json(listTranslations(db, req.user.userId, { q, offset }));
+    res.json(listTranslations(db, req.user.userId, { lang: req.lang, q, offset }));
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

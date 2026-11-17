@@ -98,3 +98,34 @@ test('save, find own and shared, list with search and paging, delete own only', 
   assert.equal(T.deleteTranslation(db, 1, rec.id), true);
   assert.equal(T.findOwnTranslation(db, 1, hash), null);
 });
+
+test('the translation list is per learning language', () => {
+  const db = freshDb();
+  T.saveTranslation(db, { userId: 1, inputText: 'Hola', hash: T.translationHash('Hola'), result: RESULT, model: 'm' });
+  const rec = T.saveTranslation(db, {
+    userId: 1, lang: 'de', inputText: 'Hallo', hash: T.translationHash('de:Hallo'),
+    result: { ...RESULT, source_lang: undefined, spanish: 'Hallo' }, model: 'm'
+  });
+  assert.equal(rec.source_lang, 'de');
+  assert.deepEqual(T.listTranslations(db, 1).items.map(r => r.input_text), ['Hola']);
+  assert.deepEqual(T.listTranslations(db, 1, { lang: 'de' }).items.map(r => r.input_text), ['Hallo']);
+});
+
+test('migrateTranslations adds lang and recognises language-prefixed hashes', () => {
+  const db = new DatabaseSync(':memory:');
+  db.exec(`
+    CREATE TABLE translations (
+      id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, input_text TEXT NOT NULL, input_hash TEXT NOT NULL,
+      source_lang TEXT DEFAULT 'es', translation_zh TEXT DEFAULT '', result TEXT NOT NULL, model TEXT,
+      created_at TEXT DEFAULT (datetime('now', 'localtime')), UNIQUE(user_id, input_hash)
+    );
+  `);
+  const insert = db.prepare("INSERT INTO translations (user_id, input_text, input_hash, result) VALUES (1, ?, ?, '{}')");
+  insert.run('Hola', T.translationHash('Hola'));
+  insert.run('Guten Morgen', T.translationHash('de:Guten Morgen'));
+  assert.equal(T.migrateTranslations(db, ['de']), true);
+  db.exec(T.TRANSLATIONS_SCHEMA);
+  assert.equal(T.migrateTranslations(db, ['de']), false);
+  assert.deepEqual(T.listTranslations(db, 1).items.map(r => r.input_text), ['Hola']);
+  assert.deepEqual(T.listTranslations(db, 1, { lang: 'de' }).items.map(r => r.input_text), ['Guten Morgen']);
+});

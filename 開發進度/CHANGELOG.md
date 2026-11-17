@@ -7,6 +7,7 @@
 ## [Unreleased] (進行中 / 待發布)
 
 ### Added
+- **德語第二階段：查詞紀錄與翻譯紀錄依學習語言分開 (`lookup_history.lang`, `translations.lang`)**：查詞頁下方的查詢紀錄、翻譯頁的翻譯紀錄只顯示目前學習語言的資料；「清除全部」只清目前語言；查詢紀錄比對單字庫狀態時只找同語言的卡。`lookup_history` 唯一鍵改為 `(user_id, lang, query_norm)`（同一拼法在兩個語言各一筆）。**資料庫升級**：啟動時自動執行——`lookup_history` 重建成新唯一鍵（保留 id、次數與時間，既有紀錄為西語）；`translations` 補上 `lang` 欄位，第一階段以 `de:` 前綴雜湊存下的德語翻譯自動標成德語。測試：`lookupHistory.test.js`、`translations.test.js` 各新增語言分流與升級測試。
 - **德語第二階段：介面文字跟著學習語言 (`shared/languages/*.json` `ui`)**：今日學習五階段的說明與輸入提示、AI 萃取視窗、熟練度指南、統計、今日任務駕駛艙、設定頁（發音測試改念該語言的句子）、查詞 / 翻譯 / 單字庫搜尋框、登入頁、手動新增視窗等原本寫死的「西語 / 西班牙語 / 陰陽性 / 重音符號」，改讀 `getLangConfig().ui`（新增 `long`、`spellHint`、`spellStageDesc`、`spellCheckHint`、`genderTerm`、`searchPlaceholder`、`dictionaryPlaceholder`、`translatePlaceholder`、`importPlaceholder`、`ttsSample`）。德語模式顯示「德語」、「名詞性別」、「注意變音符號，名詞字首大寫」與德語範例；西語畫面文字不變。只有西語的功能（字典健檢、字源圖鑑）文字不動。
 - **學習語言切換：🇪🇸 西班牙語 / 🇩🇪 德語（第一階段，`feature/german`）**：導覽列右上角的 🇪🇸 / 🇩🇪 切換鈕切換「學習語言」，不是介面語言。每個語言有自己的單字庫、今日任務、連續天數、歷史、統計與主修單元；切換後畫面重新載入該語言的資料，選擇記在 localStorage（`palabracard_learn_lang`）。
   - **語言設定檔**：`shared/languages/es.json`、`de.json`（國旗、TTS 語言 `es-ES` / `de-DE` 與偏好語音、特殊字元 `ä ö ü ß` / `á é ñ ¿ ¡`、定冠詞 `el/la` / `der/die/das`、性別代碼（德語多一個 `neutro`）、等級系統 DELE / Goethe-Zertifikat、介面提示文字），前後端共用同一份檔案；伺服器端 `server/languages/{es,de}.js` 再加上 AI 指令的語言片段，`server/languages/index.js` 是登錄表（`resolveLang` 不認得的代碼一律回到 `es`）。

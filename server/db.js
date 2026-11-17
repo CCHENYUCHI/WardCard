@@ -2,8 +2,9 @@ require('./time'); // pin process TZ before SQLite evaluates 'localtime'
 const { DatabaseSync } = require('node:sqlite');
 const path = require('path');
 const fs = require('fs');
-const { TRANSLATIONS_SCHEMA } = require('./translations');
-const { LOOKUP_HISTORY_SCHEMA } = require('./lookupHistory');
+const { TRANSLATIONS_SCHEMA, migrateTranslations } = require('./translations');
+const { LOOKUP_HISTORY_SCHEMA, migrateLookupHistory } = require('./lookupHistory');
+const { LANG_CODES, DEFAULT_LANG } = require('./languages');
 
 const dataDir = path.join(__dirname, '../data');
 if (!fs.existsSync(dataDir)) {
@@ -242,10 +243,12 @@ function runMigrations() {
     );
   `);
 
-  // Sentence translator history (per user)
+  // Sentence translator history (per user and learning language)
+  migrateTranslations(db, LANG_CODES.filter(code => code !== DEFAULT_LANG));
   db.exec(TRANSLATIONS_SCHEMA);
 
-  // Word lookup history (per user)
+  // Word lookup history (per user and learning language)
+  migrateLookupHistory(db);
   db.exec(LOOKUP_HISTORY_SCHEMA);
 }
 
