@@ -218,9 +218,9 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
               <Sparkles size={20} color="#fff" />
             </div>
             <div>
-              <h2 className="modal-title">AI 快速西語萃取與建卡</h2>
+              <h2 className="modal-title">AI 快速{getLangConfig().ui.short}萃取與建卡</h2>
               <p style={{ fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
-                貼上課堂筆記、文章或拍照白板，AI 自動分析陰陽性、冠詞、例句與文法說明！
+                貼上課堂筆記、文章或拍照白板，AI 自動分析{getLangConfig().ui.genderTerm}、冠詞、例句與文法說明！
               </p>
             </div>
           </div>
@@ -297,16 +297,11 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
             {/* Text Input Tab */}
             {activeTab === 'text' && (
               <div className="form-group">
-                <label className="form-label">請在此貼上西語課堂筆記、文章或生詞清單：</label>
+                <label className="form-label">請在此貼上{getLangConfig().ui.short}課堂筆記、文章或生詞清單：</label>
                 <textarea
                   className="form-textarea"
                   style={{ minHeight: '160px' }}
-                  placeholder="例如：
-Hoy en clase aprendimos:
-- la costumbre: 習俗
-- el problema: 常考陽性名詞
-- acostumbrarse a: 習慣於
-或者是整段西語閱讀短文，AI 都會自動抓出核心單字並補齊例句與陰陽性！"
+                  placeholder={getLangConfig().ui.importPlaceholder}
                   value={inputText}
                   onChange={e => setInputText(e.target.value)}
                   id="ai-import-textarea"
@@ -352,7 +347,7 @@ Hoy en clase aprendimos:
                 {isLoading ? (
                   <>
                     <span className="spinner" />
-                    <span>AI 正在深入分析西語生詞中...</span>
+                    <span>AI 正在深入分析{getLangConfig().ui.short}生詞中...</span>
                   </>
                 ) : (
                   <>
@@ -368,7 +363,7 @@ Hoy en clase aprendimos:
           <div>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', flexWrap: 'wrap', gap: '10px' }}>
               <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                AI 為您成功解析出 <strong>{extractedCards.length}</strong> 個西語單字，已勾選 <strong>{selectedIndices.size}</strong> 個，將匯入分類「<strong>{extractedCards[0]?.category}</strong>」：
+                AI 為您成功解析出 <strong>{extractedCards.length}</strong> 個{getLangConfig().ui.short}單字，已勾選 <strong>{selectedIndices.size}</strong> 個，將匯入分類「<strong>{extractedCards[0]?.category}</strong>」：
               </span>
               <button
                 className="btn btn-secondary btn-sm"
@@ -479,7 +474,7 @@ Hoy en clase aprendimos:
                               );
                             })}
                             {card.gender === 'none' && card.part_of_speech === 'sustantivo' && (
-                              <span style={{ fontSize: '0.78rem', color: '#b06000' }}>⚠ 請選擇陰陽性</span>
+                              <span style={{ fontSize: '0.78rem', color: '#b06000' }}>⚠ 請選擇{getLangConfig().ui.genderTerm}</span>
                             )}
                           </div>
                         )}

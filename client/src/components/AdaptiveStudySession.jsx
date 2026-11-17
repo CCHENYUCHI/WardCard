@@ -318,11 +318,11 @@ export default function AdaptiveStudySession({
   const getStageHeader = () => {
     switch (Math.min(stage, 5)) {
       case 1:
-        return { label: 'Stage 1: 被動辨認', desc: '看西語，在腦海中回想中文意義與發音', color: '#f59e0b' };
+        return { label: 'Stage 1: 被動辨認', desc: `看${getLangConfig().ui.short}，在腦海中回想中文意義與發音`, color: '#f59e0b' };
       case 2:
-        return { label: 'Stage 2: 提示回想', desc: '看中文與例句，主動回想出對應的西語單字', color: '#3b82f6' };
+        return { label: 'Stage 2: 提示回想', desc: `看中文與例句，主動回想出對應的${getLangConfig().ui.short}單字`, color: '#3b82f6' };
       case 3:
-        return { label: 'Stage 3: 正字拼寫', desc: '盲測輸入正確拼寫與重音符號', color: '#8b5cf6' };
+        return { label: 'Stage 3: 正字拼寫', desc: getLangConfig().ui.spellStageDesc, color: '#8b5cf6' };
       case 4:
         return { label: 'Stage 4: 語境克漏字', desc: '掌握完整句型語意與詞形變位', color: '#137333' };
       case 5:
@@ -384,7 +384,7 @@ export default function AdaptiveStudySession({
       {/* Main Flashcard Container (Google Clean White Study Card) */}
       <div className="study-card">
 
-        {/* --- STAGE 1: Recognition (西語 -> 中文) --- */}
+        {/* --- STAGE 1: Recognition (學習語言 -> 中文) --- */}
         {mode === 'recognition' && (
           <div>
             <div style={{ textAlign: 'center', margin: '20px 0 30px 0' }}>
@@ -456,7 +456,7 @@ export default function AdaptiveStudySession({
           </div>
         )}
 
-        {/* --- STAGE 2: Cued Recall (中文 -> 主動回想西語) --- */}
+        {/* --- STAGE 2: Cued Recall (中文 -> 主動回想學習語言) --- */}
         {mode === 'cued' && (
           <div>
             <div style={{ textAlign: 'center', margin: '16px 0 24px 0' }}>
@@ -551,7 +551,7 @@ export default function AdaptiveStudySession({
                 {currentCard.translation}
               </div>
               <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
-                請完整拼出西語單字（注意重音符號）
+                {getLangConfig().ui.spellHint}
               </div>
             </div>
 
@@ -563,7 +563,7 @@ export default function AdaptiveStudySession({
                   type="text"
                   value={userInput}
                   onChange={(e) => setUserInput(e.target.value)}
-                  placeholder="輸入西語單字..."
+                  placeholder={`輸入${getLangConfig().ui.short}單字...`}
                   disabled={spellingStatus !== 'typing'}
                   style={{
                     background: '#ffffff',
@@ -792,7 +792,7 @@ export default function AdaptiveStudySession({
                 <span>Stage 5 · 語境四選一</span>
               </div>
               <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '6px' }}>
-                {clozeForms.length > 0 ? '⚡ 選出填入空格的單字（可按 1–4）' : '⚡ 選出符合中文意思的西語單字（可按 1–4）'}
+                {clozeForms.length > 0 ? '⚡ 選出填入空格的單字（可按 1–4）' : `⚡ 選出符合中文意思的${getLangConfig().ui.short}單字（可按 1–4）`}
               </div>
             </div>
 
@@ -876,7 +876,7 @@ export default function AdaptiveStudySession({
                 <span>Stage 5 · 長效精通極速驗證</span>
               </div>
               <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '6px' }}>
-                ⚡ 此詞彙已固化於長期記憶區，請在 2 秒內直覺反應西語語意：
+                ⚡ 此詞彙已固化於長期記憶區，請在 2 秒內直覺反應{getLangConfig().ui.short}語意：
               </div>
             </div>
 

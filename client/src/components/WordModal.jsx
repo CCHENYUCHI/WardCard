@@ -94,7 +94,7 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
 
           <div className="form-row">
             <div>
-              <label className="form-label">陰陽性標籤</label>
+              <label className="form-label">{getLangConfig().ui.genderTerm}標籤</label>
               <select
                 className="form-input"
                 value={formData.gender}

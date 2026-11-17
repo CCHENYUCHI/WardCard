@@ -3,6 +3,7 @@ import { X, Volume2, Edit3, Trash2, Star, Flame, Calendar, Award, BookOpen, Cloc
 import { playSpanishPronunciation } from '../utils/speech';
 import DictionaryExtras from './DictionaryExtras';
 import StoryCard from './StoryCard';
+import { getLangConfig } from '../utils/learnLang';
 
 export default function WordDetailModal({ 
   card, 
@@ -108,7 +109,7 @@ export default function WordDetailModal({
               className="btn-icon"
               style={{ width: '38px', height: '38px', background: 'var(--google-blue-light)', color: 'var(--google-blue)' }}
               onClick={() => playSpanishPronunciation(card.article ? `${card.article} ${card.word}` : card.word)}
-              title="播放西語發音"
+              title={`播放${getLangConfig().ui.short}發音`}
             >
               <Volume2 size={20} />
             </button>

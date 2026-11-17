@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, HelpCircle, Flame, Star, CheckCircle, BookOpen, Layers, Award } from 'lucide-react';
+import { getLangConfig } from '../utils/learnLang';
 
 export default function MasteryGuideModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -98,10 +99,10 @@ export default function MasteryGuideModal({ isOpen, onClose }) {
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {[
-              { stage: 'Stage 1', name: '認知識讀 (選擇題)', desc: '初學或失誤 (Lapse) 搶救：看到西語單字辨別中文釋義，快速建立初始認知連結。', color: '#ea4335', bg: '#fce8e6' },
-              { stage: 'Stage 2', name: '主動回想 (提示題)', desc: '看到中文釋義與首字母提示，主動在腦中回憶西語單字。', color: '#1a73e8', bg: '#e8f0fe' },
-              { stage: 'Stage 3', name: '盲測拼寫 (正字法)', desc: '無提示盲測正字拼寫（驗證重音符號 á/é/í/ó/ú 與字母拼法）。達成此階即計入「精通掌握 (Proficient)」。', color: '#188038', bg: '#e6f4ea' },
-              { stage: 'Stage 4', name: '語境克漏字 (應用題)', desc: '在真實西語句子語境中填空，驗證詞性、動詞變位與介系詞搭配。', color: '#f29900', bg: '#fef7e0' },
+              { stage: 'Stage 1', name: '認知識讀 (選擇題)', desc: `初學或失誤 (Lapse) 搶救：看到${getLangConfig().ui.short}單字辨別中文釋義，快速建立初始認知連結。`, color: '#ea4335', bg: '#fce8e6' },
+              { stage: 'Stage 2', name: '主動回想 (提示題)', desc: `看到中文釋義與首字母提示，主動在腦中回憶${getLangConfig().ui.short}單字。`, color: '#1a73e8', bg: '#e8f0fe' },
+              { stage: 'Stage 3', name: '盲測拼寫 (正字法)', desc: `無提示盲測正字拼寫（${getLangConfig().ui.spellCheckHint}）。達成此階即計入「精通掌握 (Proficient)」。`, color: '#188038', bg: '#e6f4ea' },
+              { stage: 'Stage 4', name: '語境克漏字 (應用題)', desc: `在真實${getLangConfig().ui.short}句子語境中填空，驗證詞性、動詞變位與介系詞搭配。`, color: '#f29900', bg: '#fef7e0' },
               { stage: 'Stage 5', name: '長期精通 (Mastered)', desc: '記憶穩定度超越 30~60 天，轉為超低頻間隔鞏固。', color: '#8430ce', bg: '#f6e8ff' },
             ].map(item => (
               <div key={item.stage} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', padding: '10px 14px', background: item.bg, borderRadius: 'var(--radius-md)', border: `1px solid ${item.color}30` }}>

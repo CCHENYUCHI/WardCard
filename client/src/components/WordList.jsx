@@ -8,6 +8,7 @@ import { playSpanishPronunciation } from '../utils/speech';
 import { fetchAPI } from '../utils/api';
 import WordDetailModal from './WordDetailModal';
 import MasteryGuideModal from './MasteryGuideModal';
+import { getLangConfig } from '../utils/learnLang';
 
 export default function WordList({ 
   cards, 
@@ -493,7 +494,7 @@ export default function WordList({
             <input
               type="text"
               className="search-input"
-              placeholder="搜尋西語單字、中文釋義、例句..."
+              placeholder={getLangConfig().ui.searchPlaceholder}
               value={searchTerm}
               onChange={e => setSearchTerm(e.target.value)}
               id="wordlist-search-input"

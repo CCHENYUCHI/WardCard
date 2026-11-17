@@ -5,6 +5,7 @@ import {
   CalendarDays, Calendar
 } from 'lucide-react';
 import Tooltip from './Tooltip';
+import { getLangConfig } from '../utils/learnLang';
 
 export default function StatsView({ stats }) {
   if (!stats) return null;
@@ -88,7 +89,7 @@ export default function StatsView({ stats }) {
           </div>
           <div>
             <div className="stat-val">{total}</div>
-            <div className="stat-label">總西語詞庫量</div>
+            <div className="stat-label">總{getLangConfig().ui.short}詞庫量</div>
           </div>
         </div>
 
@@ -364,8 +365,8 @@ export default function StatsView({ stats }) {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             {[
-              { stage: 1, name: 'S1 被動辨認', desc: '看西語辨認中文 (初始認知)', count: stages[1] || 0, color: '#ea4335', bg: '#fce8e6' },
-              { stage: 2, name: 'S2 提示回想', desc: '看中文回憶西語 (字首提示)', count: stages[2] || 0, color: '#1a73e8', bg: '#e8f0fe' },
+              { stage: 1, name: 'S1 被動辨認', desc: `看${getLangConfig().ui.short}辨認中文 (初始認知)`, count: stages[1] || 0, color: '#ea4335', bg: '#fce8e6' },
+              { stage: 2, name: 'S2 提示回想', desc: `看中文回憶${getLangConfig().ui.short} (字首提示)`, count: stages[2] || 0, color: '#1a73e8', bg: '#e8f0fe' },
               { stage: 3, name: 'S3 盲測拼寫', desc: '無提示正字盲測 (拼寫精通)', count: stages[3] || 0, color: '#34a853', bg: '#e6f4ea' },
               { stage: 4, name: 'S4 語境克漏字', desc: '例句克漏字與變位應用', count: stages[4] || 0, color: '#137333', bg: '#ceead6' },
               { stage: 5, name: 'S5 長效精通', desc: '高穩定度永久記憶 (歸檔)', count: stages[5] || 0, color: '#8430ce', bg: '#f6e8ff' },

@@ -7,6 +7,7 @@
 ## [Unreleased] (進行中 / 待發布)
 
 ### Added
+- **德語第二階段：介面文字跟著學習語言 (`shared/languages/*.json` `ui`)**：今日學習五階段的說明與輸入提示、AI 萃取視窗、熟練度指南、統計、今日任務駕駛艙、設定頁（發音測試改念該語言的句子）、查詞 / 翻譯 / 單字庫搜尋框、登入頁、手動新增視窗等原本寫死的「西語 / 西班牙語 / 陰陽性 / 重音符號」，改讀 `getLangConfig().ui`（新增 `long`、`spellHint`、`spellStageDesc`、`spellCheckHint`、`genderTerm`、`searchPlaceholder`、`dictionaryPlaceholder`、`translatePlaceholder`、`importPlaceholder`、`ttsSample`）。德語模式顯示「德語」、「名詞性別」、「注意變音符號，名詞字首大寫」與德語範例；西語畫面文字不變。只有西語的功能（字典健檢、字源圖鑑）文字不動。
 - **學習語言切換：🇪🇸 西班牙語 / 🇩🇪 德語（第一階段，`feature/german`）**：導覽列右上角的 🇪🇸 / 🇩🇪 切換鈕切換「學習語言」，不是介面語言。每個語言有自己的單字庫、今日任務、連續天數、歷史、統計與主修單元；切換後畫面重新載入該語言的資料，選擇記在 localStorage（`palabracard_learn_lang`）。
   - **語言設定檔**：`shared/languages/es.json`、`de.json`（國旗、TTS 語言 `es-ES` / `de-DE` 與偏好語音、特殊字元 `ä ö ü ß` / `á é ñ ¿ ¡`、定冠詞 `el/la` / `der/die/das`、性別代碼（德語多一個 `neutro`）、等級系統 DELE / Goethe-Zertifikat、介面提示文字），前後端共用同一份檔案；伺服器端 `server/languages/{es,de}.js` 再加上 AI 指令的語言片段，`server/languages/index.js` 是登錄表（`resolveLang` 不認得的代碼一律回到 `es`）。
   - **API 依語言分流**：前端每個請求帶 `x-learn-lang` header（`client/src/utils/api.js`），伺服器的 `/api` middleware 設成 `req.lang`；沒帶 header 的舊客戶端（行動 App）照舊是西語。卡片清單、到期、新增 / CSV / 字典加入、今日任務、加練、歷史、統計、主修單元、設定、AI 萃取 / 查詞 / 句子解析 / 翻譯 / 等級校準都依語言過濾。新增 `GET /api/languages`（公開）。
@@ -49,6 +50,7 @@
   - **驗證與測試**：`server/scripts/lexicon/validate.js`（欄位、長度、來源、例句含該字、SVG 大小與安全性）；`server/lexicon.test.js`。撰寫規範見 `server/scripts/lexicon/WRITING.md`。
 
 ### Fixed
+- **Windows 上 `npm test` 有 4 個檔案的清理步驟失敗（`EBUSY`）**：`cardAudit` / `cardDict` / `dictionary` / `dictionaryExtras` 測試在刪除暫存資料夾前沒有關閉離線字典的 SQLite 連線，Windows 不能刪除開啟中的檔案；改為先 `setDictionary(null)` 並關閉連線。
 - **`POST /api/cards` 更新既有單字時回傳錯誤的 id**：upsert 撞到已存在的單字時，SQLite 的 `lastInsertRowid` 仍是上一筆，回傳的 id（以及新的字典連結）會指到別張卡；改為依單字查回正確的 id。
 - **字典建置：`artista m or f` 這類詞條被讀成只有陽性**（比對順序讓 `m` 搶先於 `m or f`），現在正確標成陰陽同形（`mf`）。
 

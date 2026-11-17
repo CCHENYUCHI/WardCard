@@ -3,6 +3,7 @@ import { Search } from 'lucide-react';
 import WordLookupPanel from './WordLookupPanel';
 import LookupHistory from './LookupHistory';
 import { forgetLookup } from '../utils/dictionary';
+import { getLangConfig } from '../utils/learnLang';
 
 export default function DictionaryView() {
   const [input, setInput] = useState('');
@@ -36,7 +37,7 @@ export default function DictionaryView() {
           type="search"
           value={input}
           onChange={e => setInput(e.target.value)}
-          placeholder="查西語單字或變化形（fui、hablamos），也可以輸入中文"
+          placeholder={getLangConfig().ui.dictionaryPlaceholder}
           autoFocus
           autoCapitalize="none"
           autoCorrect="off"

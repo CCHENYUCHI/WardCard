@@ -124,7 +124,7 @@ export default function TranslatorView() {
           value={input}
           onChange={e => setInput(e.target.value.slice(0, MAX_LENGTH))}
           onKeyDown={handleKeyDown}
-          placeholder="輸入一個西語句子（也可以輸入中文），例如：Me gustaría reservar una mesa para dos."
+          placeholder={getLangConfig().ui.translatePlaceholder}
           rows={3}
           autoFocus
           autoCapitalize="sentences"

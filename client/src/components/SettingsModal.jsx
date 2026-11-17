@@ -153,7 +153,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
             </label>
           </div>
           <p style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginBottom: '10px' }}>
-            用於 AI 拍照及筆記西語萃取（Gemini Flash 模型有免費額度，無需綁卡即可申請）。未填寫時會使用伺服器設定的 Key：
+            用於 AI 拍照及筆記{getLangConfig().ui.short}萃取（Gemini Flash 模型有免費額度，無需綁卡即可申請）。未填寫時會使用伺服器設定的 Key：
           </p>
 
           <div style={{ display: 'flex', gap: '10px' }}>
@@ -257,7 +257,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
         <div style={{ marginBottom: '24px', padding: '16px', background: '#f8f9fa', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
             <div>
-              <div style={{ fontWeight: 600, fontSize: '0.92rem', marginBottom: '2px', color: 'var(--text-primary)' }}>西班牙語真人發音測試</div>
+              <div style={{ fontWeight: 600, fontSize: '0.92rem', marginBottom: '2px', color: 'var(--text-primary)' }}>{getLangConfig().ui.long}真人發音測試</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>支援行動版 Safari、iOS、Android 與電腦瀏覽器</div>
             </div>
             <button
@@ -265,7 +265,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
               disabled={isPlayingAudio}
               onClick={() => {
                 setIsPlayingAudio(true);
-                const audioObj = playSpanishPronunciation('¡Hola! Bienvenidos a PalabraCard. ¿Cómo estás hoy?');
+                const audioObj = playSpanishPronunciation(getLangConfig().ui.ttsSample);
                 if (audioObj && audioObj.addEventListener) {
                   audioObj.addEventListener('ended', () => setIsPlayingAudio(false));
                   audioObj.addEventListener('error', () => setIsPlayingAudio(false));
@@ -275,7 +275,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
               }}
             >
               <Volume2 size={16} />
-              <span>{isPlayingAudio ? '播放中...' : '試聽西語'}</span>
+              <span>{isPlayingAudio ? '播放中...' : `試聽${getLangConfig().ui.short}`}</span>
             </button>
           </div>
 

@@ -4,6 +4,7 @@ import { fetchAPI } from '../utils/api';
 import Tooltip from './Tooltip';
 import TodayProgressCard from './TodayProgressCard';
 import StudyHistory from './StudyHistory';
+import { getLangConfig } from '../utils/learnLang';
 
 export default function DailyAgendaCockpit({ 
   onStartStudy, 
@@ -341,9 +342,9 @@ export default function DailyAgendaCockpit({
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {[
-              { stage: 1, label: 'S1 被動辨認', tip: '看西語回想中文意義與發音', count: stats?.stages?.[1] || 0, color: '#f29900' },
-              { stage: 2, label: 'S2 提示回想', tip: '看中文回想西語單字', count: stats?.stages?.[2] || 0, color: '#1a73e8' },
-              { stage: 3, label: 'S3 正字拼寫', tip: '盲測輸入完整拼寫與重音符號', count: stats?.stages?.[3] || 0, color: '#8430ce' },
+              { stage: 1, label: 'S1 被動辨認', tip: `看${getLangConfig().ui.short}回想中文意義與發音`, count: stats?.stages?.[1] || 0, color: '#f29900' },
+              { stage: 2, label: 'S2 提示回想', tip: `看中文回想${getLangConfig().ui.short}單字`, count: stats?.stages?.[2] || 0, color: '#1a73e8' },
+              { stage: 3, label: 'S3 正字拼寫', tip: getLangConfig().ui.spellStageDesc, count: stats?.stages?.[3] || 0, color: '#8430ce' },
               { stage: 4, label: 'S4 語境克漏字', tip: '例句克漏字與語境變位', count: stats?.stages?.[4] || 0, color: '#d93025' },
               { stage: 5, label: 'S5 自動化精通', tip: '高穩定度長效永久記憶', count: stats?.stages?.[5] || 0, color: '#1e8e3e' }
             ].map(item => (
