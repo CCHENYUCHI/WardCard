@@ -4249,3 +4249,56 @@ textarea {
   padding: 24px 0;
   color: var(--text-secondary);
 }
+
+/* Inflection forms of a card (German: plural, genitive, Präteritum / Perfekt, comparison) — WordForms.jsx */
+.word-forms {
+  background: var(--google-blue-light);
+  border: 1px solid #d2e3fc;
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.word-forms-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--google-blue);
+  margin-bottom: 6px;
+}
+.word-forms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 6px 14px;
+  margin: 0;
+}
+.word-forms-item {
+  min-width: 0;
+}
+.word-forms-item dt {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+.word-forms-item dd {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  overflow-wrap: anywhere;
+}
+.word-forms-item .speak-btn {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.word-forms-compact {
+  margin: 12px auto 0;
+  width: 100%;
+  max-width: 560px;
+  box-sizing: border-box;
+}

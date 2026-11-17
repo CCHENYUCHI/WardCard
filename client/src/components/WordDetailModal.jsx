@@ -3,6 +3,8 @@ import { X, Volume2, Edit3, Trash2, Star, Flame, Calendar, Award, BookOpen, Cloc
 import { playSpanishPronunciation } from '../utils/speech';
 import DictionaryExtras from './DictionaryExtras';
 import StoryCard from './StoryCard';
+import WordForms from './WordForms';
+import { parseWordForms } from '../utils/wordForms';
 import { getLangConfig } from '../utils/learnLang';
 
 export default function WordDetailModal({ 
@@ -15,6 +17,7 @@ export default function WordDetailModal({
   onQuickStatusChange 
 }) {
   if (!isOpen || !card) return null;
+  const forms = parseWordForms(card.notes, card.lang);
 
   const st = card.lifecycle_status || 'active';
   const stage = Number(card.mastery_stage) || 1;
@@ -160,8 +163,11 @@ export default function WordDetailModal({
           </div>
         )}
 
+        {/* Inflection forms (German), read from the notes line "詞形變化 → …" */}
+        <WordForms rows={forms.rows} />
+
         {/* Grammar Notes */}
-        {card.notes && (
+        {forms.rest && (
           <div style={{ 
             background: 'var(--google-yellow-light)', 
             border: '1px solid #fce8b2', 
@@ -173,7 +179,7 @@ export default function WordDetailModal({
           }}>
             <span style={{ fontWeight: 700 }}>💡 文法解析與重點：</span>
             <div style={{ marginTop: '4px', color: '#3c4043', lineHeight: 1.45 }}>
-              {card.notes}
+              {forms.rest}
             </div>
           </div>
         )}

@@ -9,6 +9,8 @@ import { shuffleArray } from '../utils/shuffle';
 import ProgressRing from './ProgressRing';
 import TappableSentence from './TappableSentence';
 import { CardStory } from './StoryCard';
+import WordForms from './WordForms';
+import { parseWordForms } from '../utils/wordForms';
 import {
   stripArticle, normalizeAnswer, getAcceptableAnswers,
   findInflectedForms, maskSentence, displayWord, pickDistractors
@@ -315,6 +317,9 @@ export default function AdaptiveStudySession({
 
   if (!currentCard) return null;
 
+  // Forms line of the notes ("詞形變化 → …") shown as its own block after answering
+  const cardForms = parseWordForms(currentCard.notes, currentCard.lang);
+
   const getStageHeader = () => {
     switch (Math.min(stage, 5)) {
       case 1:
@@ -528,9 +533,9 @@ export default function AdaptiveStudySession({
                 <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                   {currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}
                 </div>
-                {currentCard.notes && (
+                {cardForms.rest && (
                   <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '6px' }}>
-                    📝 {currentCard.notes}
+                    📝 {cardForms.rest}
                   </div>
                 )}
               </div>
@@ -769,9 +774,9 @@ export default function AdaptiveStudySession({
                 <div style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                   {currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}
                 </div>
-                {currentCard.notes && (
+                {cardForms.rest && (
                   <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
-                    💡 {currentCard.notes}
+                    💡 {cardForms.rest}
                   </div>
                 )}
               </div>
@@ -846,9 +851,9 @@ export default function AdaptiveStudySession({
                 <div style={{ fontSize: '1.05rem', color: 'var(--text-primary)', marginTop: '6px' }}>
                   {displayWord(currentCard)} · <span style={{ color: 'var(--google-blue)', fontWeight: 600 }}>{currentCard.translation}</span>
                 </div>
-                {spellingStatus === 'incorrect' && currentCard.notes && (
+                {spellingStatus === 'incorrect' && cardForms.rest && (
                   <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginTop: '6px', whiteSpace: 'pre-line' }}>
-                    💡 {currentCard.notes}
+                    💡 {cardForms.rest}
                   </div>
                 )}
               </div>
@@ -939,7 +944,8 @@ export default function AdaptiveStudySession({
           </div>
         )}
 
-        {/* Word story from the lexicon, only once the answer is shown (never before answering) */}
+        {/* Inflection forms (German) and the word story, only once the answer is shown (never before answering) */}
+        {(isFlipped || spellingStatus !== 'typing') && <WordForms rows={cardForms.rows} compact />}
         {(isFlipped || spellingStatus !== 'typing') && (
           <div className="study-story"><CardStory cardId={currentCard.id} word={currentCard.word} /></div>
         )}

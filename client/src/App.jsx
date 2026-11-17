@@ -39,7 +39,9 @@ export default function App() {
     return () => window.removeEventListener(LEARN_LANG_EVENT, onChange);
   }, []);
   useEffect(() => {
-    document.documentElement.lang = getLangConfig(learnLang).tts.bcp47;
+    const cfg = getLangConfig(learnLang);
+    document.documentElement.lang = cfg.tts.bcp47;
+    document.title = `${cfg.appName} - ${cfg.ui.short}智慧單字卡 & SRS 複習系統`;
   }, [learnLang]);
   const handleChangeLang = (code) => {
     setLearnLang(code);

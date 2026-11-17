@@ -23,7 +23,7 @@ module.exports = {
     // The genitive is listed with its article (des Hauses)
     formsKeepArticle: ['genitive'],
     formsPos: ['sustantivo', 'verbo', 'adjetivo'],
-    formsNoteMarker: '詞形變化',
+    formsNoteMarker: base.formsNoteMarker,
     formatForms(forms) {
       if (!forms) return '';
       const parts = [];

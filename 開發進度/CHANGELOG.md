@@ -7,6 +7,7 @@
 ## [Unreleased] (進行中 / 待發布)
 
 ### Added
+- **德語第二階段：卡片詳情與學習畫面顯示詞形變化 (`WordForms.jsx`, `utils/wordForms.js`)**：德語卡筆記裡 AI 寫的「詞形變化 → 複數：die Häuser；屬格：des Hauses」「三態：ging – ist gegangen」「比較級：besser – am besten」改成獨立的藍色區塊，分成 複數 / 屬格 / 過去式 / 完成式 / 比較級 / 最高級，每個形式旁有 🔊；顯示在單字詳情視窗，以及今日學習翻卡 / 作答後（作答前不顯示，不洩漏答案）。筆記只顯示其餘的文法說明，不重複。直接從筆記解析，既有德語卡不用重建、不改資料表，行動 App 照舊看到筆記原文。解析標記放在 `shared/languages/de.json` 的 `formsNoteMarker`（伺服器 `server/languages/de.js` 共用）；西語沒有設定，畫面不變。另外瀏覽器分頁標題跟著學習語言（「WortCard - 德語智慧單字卡…」）。
 - **德語第二階段：查詞紀錄與翻譯紀錄依學習語言分開 (`lookup_history.lang`, `translations.lang`)**：查詞頁下方的查詢紀錄、翻譯頁的翻譯紀錄只顯示目前學習語言的資料；「清除全部」只清目前語言；查詢紀錄比對單字庫狀態時只找同語言的卡。`lookup_history` 唯一鍵改為 `(user_id, lang, query_norm)`（同一拼法在兩個語言各一筆）。**資料庫升級**：啟動時自動執行——`lookup_history` 重建成新唯一鍵（保留 id、次數與時間，既有紀錄為西語）；`translations` 補上 `lang` 欄位，第一階段以 `de:` 前綴雜湊存下的德語翻譯自動標成德語。測試：`lookupHistory.test.js`、`translations.test.js` 各新增語言分流與升級測試。
 - **德語第二階段：介面文字跟著學習語言 (`shared/languages/*.json` `ui`)**：今日學習五階段的說明與輸入提示、AI 萃取視窗、熟練度指南、統計、今日任務駕駛艙、設定頁（發音測試改念該語言的句子）、查詞 / 翻譯 / 單字庫搜尋框、登入頁、手動新增視窗等原本寫死的「西語 / 西班牙語 / 陰陽性 / 重音符號」，改讀 `getLangConfig().ui`（新增 `long`、`spellHint`、`spellStageDesc`、`spellCheckHint`、`genderTerm`、`searchPlaceholder`、`dictionaryPlaceholder`、`translatePlaceholder`、`importPlaceholder`、`ttsSample`）。德語模式顯示「德語」、「名詞性別」、「注意變音符號，名詞字首大寫」與德語範例；西語畫面文字不變。只有西語的功能（字典健檢、字源圖鑑）文字不動。
 - **學習語言切換：🇪🇸 西班牙語 / 🇩🇪 德語（第一階段，`feature/german`）**：導覽列右上角的 🇪🇸 / 🇩🇪 切換鈕切換「學習語言」，不是介面語言。每個語言有自己的單字庫、今日任務、連續天數、歷史、統計與主修單元；切換後畫面重新載入該語言的資料，選擇記在 localStorage（`palabracard_learn_lang`）。
