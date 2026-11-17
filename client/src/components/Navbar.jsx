@@ -1,16 +1,39 @@
 import React from 'react';
 import { BookOpen, BarChart2, Sparkles, Settings, Plus, LogOut, Search, Languages } from 'lucide-react';
+import { LANGUAGES, LANG_CODES, getLangConfig } from '../utils/learnLang';
 
-export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModal, onOpenAddModal, onOpenSettings, user, onLogout }) {
+/** 🇪🇸 / 🇩🇪 switcher: each language has its own word bank, daily task and stats */
+function LangSwitcher({ learnLang, onChangeLang }) {
+  return (
+    <div className="lang-switcher" role="group" aria-label="學習語言">
+      {LANG_CODES.map(code => (
+        <button
+          key={code}
+          type="button"
+          className={`lang-switch-btn ${learnLang === code ? 'active' : ''}`}
+          onClick={() => learnLang !== code && onChangeLang(code)}
+          title={`學習${LANGUAGES[code].name}（${LANGUAGES[code].nativeName}）`}
+          aria-pressed={learnLang === code}
+          id={`lang-switch-${code}`}
+        >
+          {LANGUAGES[code].flag}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModal, onOpenAddModal, onOpenSettings, user, onLogout, learnLang, onChangeLang }) {
+  const lang = getLangConfig(learnLang);
   return (
     <>
       <header className="navbar">
         <div className="navbar-inner">
           <div className="brand" onClick={() => setActiveTab('agenda')}>
-            <div className="brand-icon">🇪🇸</div>
+            <div className="brand-icon">{lang.flag}</div>
             <div className="brand-text-wrapper">
               <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span className="brand-title">PalabraCard</span>
+                <span className="brand-title">{lang.appName}</span>
                 <span className="brand-badge">FSRS</span>
               </div>
             </div>
@@ -67,6 +90,8 @@ export default function Navbar({ activeTab, setActiveTab, dueCount, onOpenAiModa
 
           {/* Top Actions */}
           <div className="navbar-actions">
+            {onChangeLang && <LangSwitcher learnLang={learnLang} onChangeLang={onChangeLang} />}
+
             <button
               className="btn btn-ai btn-sm navbar-btn-ai"
               onClick={onOpenAiModal}

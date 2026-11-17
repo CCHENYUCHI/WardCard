@@ -102,7 +102,7 @@ test('findMyCards matches through lemmas and translations', () => {
   const db = new DatabaseSync(':memory:');
   db.exec(`CREATE TABLE cards (id INTEGER PRIMARY KEY, user_id INTEGER, word TEXT, article TEXT, gender TEXT,
     part_of_speech TEXT, translation TEXT, english_translation TEXT, example_es TEXT, example_zh TEXT, notes TEXT,
-    lifecycle_status TEXT, mastery_stage INTEGER, is_starred INTEGER)`);
+    lifecycle_status TEXT, mastery_stage INTEGER, is_starred INTEGER, lang TEXT NOT NULL DEFAULT 'es')`);
   const add = db.prepare('INSERT INTO cards (user_id, word, translation) VALUES (?, ?, ?)');
   add.run(1, 'hablar', '說話');
   add.run(1, 'bonito/a', '漂亮的');

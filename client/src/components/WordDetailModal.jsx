@@ -67,7 +67,7 @@ export default function WordDetailModal({
             )}
             {card.gender && card.gender !== 'none' && (
               <span className={`badge-gender ${card.gender}`}>
-                {card.gender === 'masculino' ? '♂ 陽性' : '♀ 陰性'}
+                {{ masculino: '♂ 陽性', femenino: '♀ 陰性', neutro: '⚲ 中性' }[card.gender] || card.gender}
               </span>
             )}
             {card.part_of_speech && (

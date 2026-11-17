@@ -49,6 +49,8 @@
 | **複習狀態過濾 (Due / Learned / New)** | Web | [x] | 快速檢索到期卡片、已學卡片或新單字 |
 | **CSV 批量匯入** | Web / Mobile | [x] | Web 端支援拖曳解析，Mobile 支援 DocumentPicker 上傳 |
 | **單字庫批次匯出 (CSV / JSON)** | Web | [x] | 已支援 JSON 完整結構備份與還原 |
+| **學習語言切換 🇪🇸 / 🇩🇪（第一階段）** | Web / Server | [x] | 導覽列切換學習語言；`cards.lang`，單字庫、今日任務、統計、AI 指令依語言分開；設定檔 `shared/languages/*.json` |
+| **德語第二階段：介面文字與德語專屬功能** | Web / Server | [📅] | 其餘畫面的「西語」字樣、查詞 / 翻譯紀錄依語言分開、德語離線字典與變位表、行動 App 支援切換 |
 
 ---
 

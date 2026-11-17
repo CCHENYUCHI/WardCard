@@ -91,7 +91,7 @@ function auditCards(db, userId) {
   if (!dictionaryHasEntries()) return { available: false, summary: {}, labels: PROBLEM_LABELS, issues: [] };
   const cards = db.prepare(`
     SELECT id, word, article, gender, part_of_speech, translation, lifecycle_status, dict_lemma, dict_pos
-    FROM cards WHERE user_id = ? ORDER BY word COLLATE NOCASE
+    FROM cards WHERE user_id = ? AND lang = 'es' ORDER BY word COLLATE NOCASE
   `).all(userId);
   const dismissed = new Map(db.prepare('SELECT card_id, signature FROM card_audit_dismissed').all().map(r => [r.card_id, r.signature]));
 
@@ -171,7 +171,7 @@ function applyFixes(db, userId, items) {
   if (!dictionaryHasEntries()) throw new Error('沒有離線字典，無法套用');
   const batchId = crypto.randomUUID();
   const getCard = db.prepare(`SELECT id, ${FIX_COLUMNS.join(', ')} FROM cards WHERE id = ? AND user_id = ?`);
-  const wordTaken = db.prepare('SELECT id FROM cards WHERE user_id = ? AND word = ? AND id != ?');
+  const wordTaken = db.prepare("SELECT id FROM cards WHERE user_id = ? AND lang = 'es' AND word = ? AND id != ?");
   const update = db.prepare(`UPDATE cards SET ${FIX_COLUMNS.map(c => `${c} = ?`).join(', ')}, updated_at = datetime('now', 'localtime') WHERE id = ? AND user_id = ?`);
   const log = db.prepare('INSERT INTO card_audit_log (batch_id, user_id, card_id, before, after) VALUES (?, ?, ?, ?, ?)');
   const undismiss = db.prepare('DELETE FROM card_audit_dismissed WHERE card_id = ?');

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { fetchAPI } from '../utils/api';
 import { Sparkles, Upload, FileText, Image as ImageIcon, Check, AlertCircle, X, Trash2, Edit3, ArrowRight } from 'lucide-react';
+import { getLearnLang, getLangConfig, articleFor } from '../utils/learnLang';
 
 // Shrink photos before upload: phone pictures are often 5MB+, Gemini only needs ~1600px
 const MAX_IMAGE_EDGE = 1600;
@@ -31,7 +32,8 @@ const POS_OPTIONS = [
   ['sustantivo', '名詞'], ['verbo', '動詞'], ['adjetivo', '形容詞'], ['adverbio', '副詞'], ['frase', '片語'],
   ['conjunción', '連接詞'], ['preposición', '介系詞'], ['pronombre', '代名詞'], ['interjección', '感嘆詞']
 ];
-const GENDERED_POS = ['sustantivo', 'adjetivo'];
+// Parts of speech with a gender picker: es nouns + adjectives, de nouns only
+const gendered = () => (getLearnLang() === 'de' ? ['sustantivo'] : ['sustantivo', 'adjetivo']);
 
 // First token of a verb entry ("acostumbrarse a" -> "acostumbrarse") should be an infinitive
 const looksLikeInfinitive = (word) => /(ar|er|ir|ír)(se)?$/i.test((word || '').trim().split(/\s+/)[0] || '');
@@ -142,11 +144,11 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
     setExtractedCards(prev => {
       const updated = [...prev];
       const card = { ...updated[index], part_of_speech: pos };
-      if (!GENDERED_POS.includes(pos)) {
+      if (!gendered().includes(pos)) {
         card.gender = 'none';
         card.article = '';
       } else if (pos === 'sustantivo' && !card.article && card.gender !== 'none') {
-        card.article = card.gender === 'masculino' ? 'el' : 'la';
+        card.article = articleFor(card.gender);
       } else if (pos !== 'sustantivo') {
         card.article = '';
       }
@@ -163,9 +165,10 @@ export default function AiImporter({ isOpen, onClose, onImportSuccess, categorie
       const targetForm = gender === 'masculino' ? card.forms?.masc_sg : gender === 'femenino' ? card.forms?.fem_sg : '';
       if (targetForm) card.word = targetForm;
       if (card.part_of_speech === 'sustantivo' && gender !== 'none') {
-        // Only touch el/la; keep plural or special articles the user may have set
-        if (!card.article || card.article === 'el' || card.article === 'la') {
-          card.article = gender === 'masculino' ? 'el' : 'la';
+        // Only touch singular definite articles (el/la, der/die/das); keep plural or special ones the user set
+        const singular = Object.values(getLangConfig().articles.definite);
+        if (!card.article || singular.includes(card.article)) {
+          card.article = articleFor(gender);
         }
       }
       updated[index] = card;
@@ -410,10 +413,10 @@ Hoy en clase aprendimos:
                               aria-label="冠詞"
                             >
                               <option value="">—</option>
-                              <option value="el">el</option>
-                              <option value="la">la</option>
-                              <option value="los">los</option>
-                              <option value="las">las</option>
+                              {[...new Set([
+                                ...Object.values(getLangConfig().articles.definite),
+                                ...Object.values(getLangConfig().articles.plural)
+                              ])].map(a => <option key={a} value={a}>{a}</option>)}
                             </select>
                           )}
                           <input
@@ -447,11 +450,12 @@ Hoy en clase aprendimos:
                         </div>
 
                         {/* Gender picker for nouns / adjectives */}
-                        {GENDERED_POS.includes(card.part_of_speech) && (
+                        {gendered().includes(card.part_of_speech) && (
                           <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap', marginBottom: '8px' }}>
                             {[
-                              ['masculino', '♂ 陽性'],
-                              ['femenino', '♀ 陰性'],
+                              ['masculino', getLearnLang() === 'de' ? '♂ der' : '♂ 陽性'],
+                              ['femenino', getLearnLang() === 'de' ? '♀ die' : '♀ 陰性'],
+                              ...(getLearnLang() === 'de' ? [['neutro', '⚲ das'], ['none', '複數名詞']] : []),
                               ...(card.part_of_speech === 'adjetivo' ? [['none', '⚥ 陰陽同形']] : [])
                             ].map(([value, label]) => {
                               const active = card.gender === value;

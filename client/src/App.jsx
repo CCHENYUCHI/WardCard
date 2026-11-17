@@ -11,6 +11,7 @@ import TranslatorView from './components/TranslatorView';
 import AiImporter from './components/AiImporter';
 import WordModal from './components/WordModal';
 import SettingsModal from './components/SettingsModal';
+import { getLearnLang, setLearnLang, getLangConfig, LEARN_LANG_EVENT } from './utils/learnLang';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('agenda'); // 'agenda' | 'session' | 'words' | 'stats' | 'dictionary' | 'translate'
@@ -30,8 +31,26 @@ export default function App() {
   const [editingCard, setEditingCard] = useState(null);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
+  // Learning language (🇪🇸 / 🇩🇪): switching reloads the deck; views are keyed on it so they refetch
+  const [learnLang, setLearnLangState] = useState(getLearnLang);
+  useEffect(() => {
+    const onChange = (e) => setLearnLangState(e.detail || getLearnLang());
+    window.addEventListener(LEARN_LANG_EVENT, onChange);
+    return () => window.removeEventListener(LEARN_LANG_EVENT, onChange);
+  }, []);
+  useEffect(() => {
+    document.documentElement.lang = getLangConfig(learnLang).tts.bcp47;
+  }, [learnLang]);
+  const handleChangeLang = (code) => {
+    setLearnLang(code);
+    setSessionPlan(null);
+    setWordFilterPreset(null);
+    setActiveTab(tab => (tab === 'session' ? 'agenda' : tab));
+  };
+
   // Fetch initial data
   const fetchData = useCallback(async () => {
+    const lang = getLearnLang();
     try {
       const [cardsRes, catRes, statsRes, todayRes] = await Promise.all([
         fetchAPI('/api/cards'),
@@ -39,6 +58,8 @@ export default function App() {
         fetchAPI('/api/stats'),
         fetchAPI('/api/study/today')
       ]);
+      // The language was switched while this was loading: a newer fetch owns the state
+      if (lang !== getLearnLang()) return;
 
       if (cardsRes.ok) setCards(await cardsRes.json());
       if (catRes.ok) setCategories(await catRes.json());
@@ -93,9 +114,11 @@ export default function App() {
   useEffect(() => {
     if (user) {
       setLoading(true);
+      setCards([]);
+      setStats(null);
       fetchData();
     }
-  }, [user, fetchData]);
+  }, [user, fetchData, learnLang]);
 
   if (authLoading) {
     return <div style={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-primary)', color: 'var(--text-secondary)' }}>載入中...</div>;
@@ -195,14 +218,16 @@ export default function App() {
             removeToken();
             setUser(null);
           }}
+          learnLang={learnLang}
+          onChangeLang={handleChangeLang}
         />
       )}
 
-      <main className="main-content">
+      <main className="main-content" key={learnLang}>
         {loading ? (
           <div style={{ textAlign: 'center', padding: '60px 0' }}>
             <div className="spinner" style={{ width: '32px', height: '32px' }} />
-            <p style={{ marginTop: '14px', color: 'var(--text-secondary)' }}>正在載入西語單字庫...</p>
+            <p style={{ marginTop: '14px', color: 'var(--text-secondary)' }}>正在載入{getLangConfig(learnLang).name}單字庫...</p>
           </div>
         ) : (
           <>
@@ -267,6 +292,7 @@ export default function App() {
 
       {/* Modals */}
       <AiImporter
+        key={`ai-${learnLang}`}
         isOpen={isAiModalOpen}
         onClose={() => setIsAiModalOpen(false)}
         onImportSuccess={() => fetchData()}
@@ -274,6 +300,7 @@ export default function App() {
       />
 
       <WordModal
+        key={`word-${learnLang}`}
         isOpen={isWordModalOpen}
         onClose={() => {
           setIsWordModalOpen(false);

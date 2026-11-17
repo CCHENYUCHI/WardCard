@@ -6,8 +6,12 @@
  *   - new words   : never-reviewed cards (active first, then 'ready' pool), capped by
  *                   daily_new_quota minus new words already learned today
  * Every review is tagged in review_logs.task_type as 'due' / 'new' / 'extra'.
+ *
+ * Everything is per learning language (cards.lang / review_logs.lang / daily_progress.lang):
+ * the 🇪🇸 and 🇩🇪 decks each have their own task, history and streak. `lang` defaults to 'es'.
  */
 const db = require('./db');
+const { resolveLang } = require('./languages');
 const { TODAY_START_SQL, TODAY_END_SQL, formatLocalDateTime } = require('./time');
 const { reviewCardFSRS } = require('./fsrs');
 
@@ -17,15 +21,29 @@ function getUser(userId) {
   return db.prepare('SELECT * FROM users WHERE id = ?').get(userId) || {};
 }
 
-// Same unit scope the agenda uses (active_curriculum)
-function unitScope(user) {
-  const unit = user.active_curriculum || '';
-  if (!unit || unit === 'ALL_ACTIVE') return { sql: '', params: [] };
+// The selected unit for one language: Spanish uses users.active_curriculum, others users.lang_settings
+function getActiveCurriculum(user, lang = 'es') {
+  const code = resolveLang(lang);
+  if (code === 'es') return user.active_curriculum || '';
+  try {
+    return JSON.parse(user.lang_settings || '{}')?.[code]?.active_curriculum || '';
+  } catch (_) {
+    return '';
+  }
+}
+
+// Card scope the agenda uses: the language, plus its active curriculum unit when one is selected
+function unitScope(user, lang = 'es') {
+  const code = resolveLang(lang);
+  const unit = getActiveCurriculum(user, code);
+  if (!unit || unit === 'ALL_ACTIVE') return { sql: ' AND lang = ?', params: [code] };
   return {
-    sql: " AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?))",
-    params: [unit, unit]
+    sql: " AND lang = ? AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?))",
+    params: [code, unit, unit]
   };
 }
+
+const langScope = (lang = 'es') => ({ sql: ' AND lang = ?', params: [resolveLang(lang)] });
 
 // Classify a review before the card is updated
 function classifyReview(card) {
@@ -38,7 +56,7 @@ function classifyReview(card) {
   return 'extra';
 }
 
-function getTodayDone(userId) {
+function getTodayDone(userId, lang = 'es') {
   const row = db.prepare(`
     SELECT
       COUNT(*) AS reviews,
@@ -49,8 +67,8 @@ function getTodayDone(userId) {
       MIN(reviewed_at) AS first_at,
       MAX(reviewed_at) AS last_at
     FROM review_logs
-    WHERE user_id = ? AND reviewed_at >= ${TODAY_START_SQL} AND reviewed_at < ${TODAY_END_SQL}
-  `).get(userId);
+    WHERE user_id = ? AND lang = ? AND reviewed_at >= ${TODAY_START_SQL} AND reviewed_at < ${TODAY_END_SQL}
+  `).get(userId, resolveLang(lang));
   return {
     reviews: Number(row.reviews) || 0,
     due: Number(row.due_done) || 0,
@@ -66,11 +84,12 @@ function getTodayDone(userId) {
  * Build today's plan: cards to study now + remaining counts.
  * @param {boolean} withCards - also return the card rows (agenda); counts only otherwise
  */
-function buildTodayPlan(userId, withCards = true) {
+function buildTodayPlan(userId, withCards = true, lang = 'es') {
+  const code = resolveLang(lang);
   const user = getUser(userId);
   const quota = Number(user.daily_new_quota) || 15;
-  const scope = unitScope(user);
-  const done = getTodayDone(userId);
+  const scope = unitScope(user, code);
+  const done = getTodayDone(userId, code);
 
   const dueWhere = `
     WHERE user_id = ? AND lifecycle_status = 'active' AND due_date < ${TODAY_END_SQL}
@@ -112,7 +131,7 @@ function buildTodayPlan(userId, withCards = true) {
     }
   }
 
-  return { user, quota, scope, done, dueTotal, newPool, newRemaining, dueCards, newCards };
+  return { lang: code, user, quota, scope, done, dueTotal, newPool, newRemaining, dueCards, newCards };
 }
 
 function currentDay() {
@@ -120,10 +139,10 @@ function currentDay() {
 }
 
 // Current & best streak: consecutive days with at least one review
-function getStreak(userId, today) {
+function getStreak(userId, today, lang = 'es') {
   const days = db.prepare(`
-    SELECT DISTINCT date(reviewed_at) AS d FROM review_logs WHERE user_id = ? ORDER BY d DESC
-  `).all(userId).map(r => r.d);
+    SELECT DISTINCT date(reviewed_at) AS d FROM review_logs WHERE user_id = ? AND lang = ? ORDER BY d DESC
+  `).all(userId, resolveLang(lang)).map(r => r.d);
 
   const daySet = new Set(days);
   const shift = (d, n) => {
@@ -156,19 +175,19 @@ function getStreak(userId, today) {
 /**
  * Today's summary (also persists the daily snapshot used by history).
  */
-function getTodaySummary(userId, plan = null) {
-  const p = plan || buildTodayPlan(userId, false);
+function getTodaySummary(userId, plan = null, lang = 'es') {
+  const p = plan || buildTodayPlan(userId, false, lang);
   const today = currentDay();
   const taskDone = p.done.due + p.done.new;
   const remaining = p.dueTotal + p.newRemaining;
   const goal = taskDone + remaining;
 
   db.prepare(`
-    INSERT INTO daily_progress (user_id, day, goal, done, extra, updated_at)
-    VALUES (?, ?, ?, ?, ?, datetime('now', 'localtime'))
-    ON CONFLICT(user_id, day) DO UPDATE SET
+    INSERT INTO daily_progress (user_id, lang, day, goal, done, extra, updated_at)
+    VALUES (?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
+    ON CONFLICT(user_id, lang, day) DO UPDATE SET
       goal = excluded.goal, done = excluded.done, extra = excluded.extra, updated_at = excluded.updated_at
-  `).run(userId, today, goal, taskDone, p.done.extra);
+  `).run(userId, p.lang, today, goal, taskDone, p.done.extra);
 
   return {
     date: today,
@@ -186,14 +205,15 @@ function getTodaySummary(userId, plan = null) {
     lastAt: p.done.lastAt,
     dailyNewQuota: p.quota,
     completed: remaining === 0 && taskDone > 0,
-    streak: getStreak(userId, today)
+    streak: getStreak(userId, today, p.lang)
   };
 }
 
 /**
  * Per-day history for the last `days` days (newest first).
  */
-function getHistory(userId, days = 30) {
+function getHistory(userId, days = 30, lang = 'es') {
+  const code = resolveLang(lang);
   const n = Math.min(Math.max(Number(days) || 30, 1), 366);
   const rows = db.prepare(`
     SELECT
@@ -206,15 +226,15 @@ function getHistory(userId, days = 30) {
       MIN(reviewed_at) AS first_at,
       MAX(reviewed_at) AS last_at
     FROM review_logs
-    WHERE user_id = ? AND reviewed_at >= datetime('now', 'localtime', 'start of day', ?)
+    WHERE user_id = ? AND lang = ? AND reviewed_at >= datetime('now', 'localtime', 'start of day', ?)
     GROUP BY day
-  `).all(userId, `-${n - 1} days`);
+  `).all(userId, code, `-${n - 1} days`);
   const byDay = new Map(rows.map(r => [r.day, r]));
 
   const goals = db.prepare(`
     SELECT day, goal FROM daily_progress
-    WHERE user_id = ? AND day >= date('now', 'localtime', ?)
-  `).all(userId, `-${n - 1} days`);
+    WHERE user_id = ? AND lang = ? AND day >= date('now', 'localtime', ?)
+  `).all(userId, code, `-${n - 1} days`);
   const goalByDay = new Map(goals.map(g => [g.day, Number(g.goal) || 0]));
 
   const today = currentDay();
@@ -255,8 +275,8 @@ const WEEKDAYS = ['週日', '週一', '週二', '週三', '週四', '週五', '�
  *                      assuming every review is rated Good (3)
  *   newWords         : today's remaining new words, then daily_new_quota per day until the pool runs out
  */
-function getWeeklyForecast(userId, plan = null) {
-  const p = plan || buildTodayPlan(userId, false);
+function getWeeklyForecast(userId, plan = null, lang = 'es') {
+  const p = plan || buildTodayPlan(userId, false, lang);
   const targetRetention = Number(p.user.target_retention) || 0.9;
   const today = currentDay();
   const todayMs = new Date(`${today}T00:00:00`).getTime();
@@ -329,8 +349,9 @@ function getWeeklyForecast(userId, plan = null) {
     SELECT COUNT(*) AS c FROM cards ${reviewedWhere} AND due_date >= ${windowEnd}
   `).get(userId, ...p.scope.params).c) || 0;
 
+  const activeUnit = getActiveCurriculum(p.user, p.lang);
   return {
-    unit: p.user.active_curriculum && p.user.active_curriculum !== 'ALL_ACTIVE' ? p.user.active_curriculum : '',
+    unit: activeUnit && activeUnit !== 'ALL_ACTIVE' ? activeUnit : '',
     newPool: p.newPool,
     beyondWindow,
     days
@@ -340,7 +361,7 @@ function getWeeklyForecast(userId, plan = null) {
 /**
  * Extra practice: previously reviewed cards that are NOT due today, weakest first.
  */
-function getPracticeCards(userId, limit = 20) {
+function getPracticeCards(userId, limit = 20, lang = 'es') {
   const n = Math.min(Math.max(Number(limit) || 20, 1), 50);
   const query = (scope) => db.prepare(`
     SELECT * FROM cards
@@ -351,14 +372,15 @@ function getPracticeCards(userId, limit = 20) {
     LIMIT ?
   `).all(userId, ...scope.params, n);
 
-  // Prefer the selected unit, then top up from all units
-  const scoped = query(unitScope(getUser(userId)));
+  // Prefer the selected unit, then top up from all units of the same language
+  const scoped = query(unitScope(getUser(userId), lang));
   if (scoped.length >= n) return scoped;
   const seen = new Set(scoped.map(c => c.id));
-  return scoped.concat(query({ sql: '', params: [] }).filter(c => !seen.has(c.id))).slice(0, n);
+  return scoped.concat(query(langScope(lang)).filter(c => !seen.has(c.id))).slice(0, n);
 }
 
 module.exports = {
+  getActiveCurriculum,
   classifyReview,
   buildTodayPlan,
   getTodaySummary,

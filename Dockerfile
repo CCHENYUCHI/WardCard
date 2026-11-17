@@ -8,6 +8,7 @@ WORKDIR /app/client
 COPY client/package*.json ./
 RUN npm install
 COPY client/ ./
+COPY shared/ /app/shared/
 COPY package.json /app/package.json
 RUN npm run build
 
@@ -22,6 +23,7 @@ RUN apk add --no-cache tzdata
 COPY package*.json ./
 RUN npm install --omit=dev
 COPY server/ ./server/
+COPY shared/ ./shared/
 
 # Copy built frontend from client-builder stage
 COPY --from=client-builder /app/client/dist /app/client/dist

@@ -1,10 +1,12 @@
 /**
- * Spanish Pronunciation Audio Helper
+ * Pronunciation Audio Helper (follows the learning language: es-ES / de-DE)
  * Smart Dual-Engine System:
  * - Desktop (Mac Safari, Chrome, Windows): Defaults to native Web Speech API (zero latency, offline, native macOS voices).
  * - Mobile (iOS Safari, Android): Defaults to online audio stream (bypasses iOS silent switch & missing voice packs).
  * - Bidirectional Fallback: If either engine encounters an error, automatically falls back to the other.
  */
+
+import { getLangConfig } from './learnLang';
 
 let currentAudio = null;
 
@@ -52,19 +54,20 @@ function playNativeSpeech(text, allowFallback = true) {
       window.speechSynthesis.cancel();
     }
 
+    const { tts } = getLangConfig();
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'es-ES';
+    utterance.lang = tts.bcp47;
     utterance.rate = 0.9;
 
-    // Pick best Spanish voice
+    // Pick the best voice for the learning language (es-ES / de-DE)
     const voices = window.speechSynthesis.getVoices() || [];
-    const esVoice = voices.find(v => 
-      v.lang.startsWith('es') && 
-      (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Monica') || v.name.includes('Mónica') || v.name.includes('Paulina') || v.name.includes('Jorge') || v.name.includes('Spanish'))
-    ) || voices.find(v => v.lang.startsWith('es'));
+    const prefix = tts.bcp47.slice(0, 2);
+    const voice = voices.find(v =>
+      v.lang.startsWith(prefix) && tts.voiceHints.some(h => v.name.includes(h))
+    ) || voices.find(v => v.lang.startsWith(prefix));
 
-    if (esVoice) {
-      utterance.voice = esVoice;
+    if (voice) {
+      utterance.voice = voice;
     }
 
     // Retain global reference to prevent WebKit garbage collection
@@ -104,7 +107,7 @@ function playOnlineAudio(text, allowFallback = true) {
       currentAudio = null;
     }
 
-    const audioUrl = `/api/tts?text=${encodeURIComponent(text)}&lang=es`;
+    const audioUrl = `/api/tts?text=${encodeURIComponent(text)}&lang=${getLangConfig().tts.online}`;
     const audio = new Audio(audioUrl);
     currentAudio = audio;
 
@@ -142,7 +145,7 @@ function playOnlineAudio(text, allowFallback = true) {
  * @param {string} text - Spanish text to pronounce
  * @param {string} [modeOverride] - Optional override mode ('auto', 'online', 'native')
  */
-export function playSpanishPronunciation(text, modeOverride) {
+export function playPronunciation(text, modeOverride) {
   if (!text) return;
   const cleanText = text.trim();
   if (!cleanText) return;
@@ -163,4 +166,5 @@ export function playSpanishPronunciation(text, modeOverride) {
   }
 }
 
-
+// Historical name, used across the app
+export const playSpanishPronunciation = playPronunciation;

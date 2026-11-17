@@ -769,7 +769,7 @@ export default function WordList({
                       <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
                         {card.gender && card.gender !== 'none' && (
                           <span className={`badge-gender ${card.gender}`} style={{ fontSize: '0.68rem', padding: '1px 5px' }}>
-                            {card.gender === 'masculino' ? '♂' : '♀'}
+                            {{ masculino: '♂', femenino: '♀', neutro: '⚲' }[card.gender] || '•'}
                           </span>
                         )}
                         <span style={{

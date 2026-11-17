@@ -1,15 +1,19 @@
-const ARTICLES = ['el', 'la', 'los', 'las', 'un', 'una'];
+const { getLanguage } = require('./languages');
+
+const ARTICLES = getLanguage('es').articles.detect;
 
 /**
- * Split a leading Spanish article off a word ("el libro" -> { article: 'el', word: 'libro' }).
+ * Split a leading article off a word ("el libro" -> { article: 'el', word: 'libro' },
+ * "das Haus" -> { article: 'das', word: 'Haus' } with lang 'de').
  * An explicitly provided article always wins over one detected in the word.
  */
-function splitArticle(rawWord, rawArticle = '') {
+function splitArticle(rawWord, rawArticle = '', lang = 'es') {
   let word = String(rawWord || '').trim();
   let article = String(rawArticle || '').trim().toLowerCase();
+  const articles = getLanguage(lang).articles.detect;
 
   const parts = word.split(/\s+/);
-  if (parts.length > 1 && ARTICLES.includes(parts[0].toLowerCase())) {
+  if (parts.length > 1 && articles.includes(parts[0].toLowerCase())) {
     if (!article) article = parts[0].toLowerCase();
     word = parts.slice(1).join(' ');
   }

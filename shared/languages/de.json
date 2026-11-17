@@ -1,0 +1,84 @@
+{
+  "code": "de",
+  "name": "德語",
+  "nativeName": "Deutsch",
+  "flag": "🇩🇪",
+  "appName": "WortCard",
+  "tts": {
+    "bcp47": "de-DE",
+    "online": "de",
+    "voiceHints": [
+      "Google",
+      "Natural",
+      "Anna",
+      "Petra",
+      "Markus",
+      "Yannick",
+      "Katja",
+      "Conrad",
+      "German",
+      "Deutsch"
+    ]
+  },
+  "specialChars": [
+    "ä",
+    "ö",
+    "ü",
+    "ß",
+    "Ä",
+    "Ö",
+    "Ü"
+  ],
+  "articles": {
+    "detect": [
+      "der",
+      "die",
+      "das",
+      "ein",
+      "eine"
+    ],
+    "definite": {
+      "masculino": "der",
+      "femenino": "die",
+      "neutro": "das"
+    },
+    "plural": {
+      "masculino": "die",
+      "femenino": "die",
+      "neutro": "die"
+    }
+  },
+  "genders": [
+    "masculino",
+    "femenino",
+    "neutro",
+    "none"
+  ],
+  "genderLabels": {
+    "masculino": "陽性 (der)",
+    "femenino": "陰性 (die)",
+    "neutro": "中性 (das)",
+    "none": "無"
+  },
+  "levels": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1",
+    "C2"
+  ],
+  "defaultLevel": "A1",
+  "levelSystem": "Goethe-Zertifikat / CEFR",
+  "levelLabel": "Goethe",
+  "exams": "Goethe-Zertifikat / telc / TestDaF",
+  "ui": {
+    "short": "德語",
+    "articleHint": "der / die / das",
+    "wordHint": "例如: Gewohnheit, entwickeln（名詞字首大寫）",
+    "categoryHint": "例如: 考試必背 (Goethe) 或 日常生活",
+    "exampleHint": "例如: In Spanien ist es üblich, spät zu Abend zu essen.",
+    "exampleZhHint": "例如: 在西班牙，晚吃晚餐是很常見的。",
+    "notesHint": "例如: -ung 結尾皆為陰性名詞；sich gewöhnen an + Akk."
+  }
+}

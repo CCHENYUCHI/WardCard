@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { X, Key, Check, Volume2, Download, Upload, ExternalLink, ShieldCheck, Sparkles } from 'lucide-react';
 import VersionInfo from './VersionInfo';
 import { playSpanishPronunciation, getTtsMode, setTtsMode, TTS_MODES } from '../utils/speech';
+import { getLangConfig } from '../utils/learnLang';
 
 export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, onCardsChanged }) {
   const [apiKey, setApiKey] = useState('');
@@ -59,13 +60,13 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
   };
 
   const handleCalibrateDele = async () => {
-    if (!window.confirm(`將由 AI 重新評估全部 ${cards?.length || 0} 個單字的 DELE 級數並覆蓋原本的級數，確定要執行嗎？`)) return;
+    if (!window.confirm(`將由 AI 重新評估全部 ${cards?.length || 0} 個單字的 ${getLangConfig().levelLabel} 級數並覆蓋原本的級數，確定要執行嗎？`)) return;
     setIsCalibrating(true);
     setCalibrateResult('');
     try {
       const res = await fetchAPI('/api/cards/calibrate-dele', { method: 'POST' });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'DELE 校準失敗');
+      if (!res.ok) throw new Error(data.error || `${getLangConfig().levelLabel} 校準失敗`);
       const dist = Object.entries(data.distribution || {})
         .filter(([, n]) => n > 0)
         .map(([lvl, n]) => `${lvl}: ${n}`)
@@ -192,7 +193,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
               id="btn-calibrate-dele"
             >
               <Sparkles size={16} />
-              <span>{isCalibrating ? 'AI 校準中…' : 'AI 一鍵校準 DELE 級數'}</span>
+              <span>{isCalibrating ? 'AI 校準中…' : `AI 一鍵校準 ${getLangConfig().levelLabel} 級數`}</span>
             </button>
             {calibrateResult && (
               <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{calibrateResult}</span>

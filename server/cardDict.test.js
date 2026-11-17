@@ -25,7 +25,8 @@ const FIXTURE = [
 
 const CARDS_SCHEMA = `CREATE TABLE cards (
   id INTEGER PRIMARY KEY AUTOINCREMENT, word TEXT, article TEXT DEFAULT '', gender TEXT DEFAULT 'none',
-  part_of_speech TEXT DEFAULT 'sustantivo', english_translation TEXT DEFAULT '', dict_lemma TEXT DEFAULT NULL, dict_pos TEXT DEFAULT NULL)`;
+  part_of_speech TEXT DEFAULT 'sustantivo', english_translation TEXT DEFAULT '', dict_lemma TEXT DEFAULT NULL, dict_pos TEXT DEFAULT NULL,
+  lang TEXT NOT NULL DEFAULT 'es')`;
 
 let tmpDir;
 test.before(async () => {

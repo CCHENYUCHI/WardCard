@@ -7,6 +7,13 @@
 ## [Unreleased] (進行中 / 待發布)
 
 ### Added
+- **學習語言切換：🇪🇸 西班牙語 / 🇩🇪 德語（第一階段，`feature/german`）**：導覽列右上角的 🇪🇸 / 🇩🇪 切換鈕切換「學習語言」，不是介面語言。每個語言有自己的單字庫、今日任務、連續天數、歷史、統計與主修單元；切換後畫面重新載入該語言的資料，選擇記在 localStorage（`palabracard_learn_lang`）。
+  - **語言設定檔**：`shared/languages/es.json`、`de.json`（國旗、TTS 語言 `es-ES` / `de-DE` 與偏好語音、特殊字元 `ä ö ü ß` / `á é ñ ¿ ¡`、定冠詞 `el/la` / `der/die/das`、性別代碼（德語多一個 `neutro`）、等級系統 DELE / Goethe-Zertifikat、介面提示文字），前後端共用同一份檔案；伺服器端 `server/languages/{es,de}.js` 再加上 AI 指令的語言片段，`server/languages/index.js` 是登錄表（`resolveLang` 不認得的代碼一律回到 `es`）。
+  - **API 依語言分流**：前端每個請求帶 `x-learn-lang` header（`client/src/utils/api.js`），伺服器的 `/api` middleware 設成 `req.lang`；沒帶 header 的舊客戶端（行動 App）照舊是西語。卡片清單、到期、新增 / CSV / 字典加入、今日任務、加練、歷史、統計、主修單元、設定、AI 萃取 / 查詞 / 句子解析 / 翻譯 / 等級校準都依語言過濾。新增 `GET /api/languages`（公開）。
+  - **AI 指令改成語言模板（`server/ai.js`）**：`extractInstruction` / `sentenceInstruction` / `translateInstruction` / `cardSchema` 依語言組出指令與 JSON schema（每個語言只組一次）；西語版本的指令與原本**逐字相同**（有測試比對）。德語版：名詞大寫、der/die/das 與 `neutro`、`forms` 改為 複數 / 屬格、動詞三態（過去式、第二分詞、haben / sein）、形容詞比較級，寫進筆記為「詞形變化 → …」；格位、可分離動詞、動詞第二位等文法重點；Goethe / CEFR 等級。`extractSpanishWords` 保留為 `extractWords` 的別名。
+  - **AI 快取依語言分開**：`dictionary_cache`、`sentence_analyses`、翻譯紀錄的雜湊，德語的 key 加 `de:` 前綴；西語沿用原本的 key，既有快取不失效。
+  - **前端**：導覽列語言切換鈕與品牌（🇩🇪 WortCard）、發音依語言選 `de-DE` 語音與線上 TTS、作答與翻譯頁的特殊字元鍵盤、手動新增視窗的 der/die/das 與中性選項和提示文字、AI 萃取預覽的冠詞與性別按鈕、中性名詞的綠色 ⚲ 標籤、設定頁的等級校準文字（DELE / Goethe）。
+  - **僅西語**：離線 Wiktionary 字典、字源圖鑑、單字庫健檢與卡片字典連結目前只有西語；德語模式下這些功能回傳空結果，查詞改用 AI。
 - **今日學習翻卡後顯示完整字源卡與人稱變位 (`StoryCard.jsx` `CardStory`, `AdaptiveStudySession.jsx`)**：翻卡 / 作答後不再只顯示圖片＋記憶聯想，改成和字典頁展開後一樣的完整字源卡（構詞、記憶聯想、英文同源、字源鏈、字源故事、用法、例句）。動詞另顯示「人稱變位」：可切換現在式、簡單過去式、過去未完成式、未來式、條件式、虛擬式現在式，每個人稱（yo … ellos / ellas / ustedes）可點播發音，下方列出副動詞與過去分詞，「完整變位表」開啟原有的變位表視窗。資料來自卡片連到的離線字典條目（`GET /api/cards/:id/dictionary`），沒連到字典的卡只顯示字源卡。移除不再使用的精簡版字源卡（`compact`）。
 - **常用字字源圖鑑（`server/data/lexicon/freq/`）**：把字源圖鑑從 A1 的 1,038 字往整本字典擴充，依西語使用頻率（wordfreq）從最常用的字做起，變化形併入原形、A1 已有的字跳過，每 100 個原形一批。
   - **文字由 Gemini 撰寫、直接寫入資料檔**：`gemini-write.js` 把每個字的 Wiktionary 事實（`fetch-facts.js`）送給 agy MCP 的 `ask_gemini`，產出中文的字根拆解、字源鏈、字源故事、英文同源字、記憶聯想、用法與例句。回答不經 Claude 審閱，改由 `geminiEntries.js` 機器檢查：schema 與長度（沿用 `validate.js`）、繁體中文（簡體字偵測）、字源鏈的每個祖先字都必須出現在事實裡、`sources` 只能是實際抓過的頁面、事實沒有詞源就改成只有記憶聯想（hook-only）；不合格的字帶著錯誤重問一次，仍不合格記進 `failed.json` 之後重跑。條目帶 `writer: "gemini"`，字源卡顯示「Gemini 撰寫、程式檢查」。
@@ -102,6 +109,8 @@
 - **自由翻卡、盲測拼寫分頁 (Web)**：今日學習（五階自適應學習）已涵蓋翻卡與拼字練習，移除 `FlashcardReview.jsx`、`SpellingReview.jsx`、只有翻卡使用的 `utils/fsrsPreview.js`、相關導覽與 CSS，以及只給它們用的 `/api/cards/due` 抓取。後端 API、`review_mode` 欄位與 `mobile/` 不受影響。
 
 ### Changed
+- **資料庫（學習語言）**：`cards.lang`（預設 `es`，現有卡片全部是西語）、`review_logs.lang`、`users.lang_settings`（西語以外的主修單元，JSON）；`daily_progress` 主鍵改為 `(user_id, lang, day)`（自動重建、舊資料歸為 `es`）；卡片唯一索引由 `(user_id, word)` 改為 `(user_id, lang, word)`，同一拼法可以同時存在於兩個語言。`ON CONFLICT` 子句同步更新。
+- **Docker**：兩個 stage 都複製 `shared/`；Vite dev server 允許讀取上一層（`server.fs.allow: ['..']`）。
 - **`.dockerignore` 排除整個 `data/`**：資料庫與離線字典（約 90MB）由 volume 掛載，不再送進 Docker build context，避免每次重建都上傳。
 - **西語比對工具共用 (`client/src/utils/spanish.js`)**：`stripArticle`、`getAcceptableAnswers`、`maskSentence`、`findInflectedForms`、`pickDistractors` 等，供自適應學習與拼字測驗共用。
 - **Gemini 呼叫層重構 (`server/ai.js`)**：抽出共用 `callGemini()`，改用 Node 內建 `fetch`、`responseSchema` 強制 JSON 結構；API Key 改放在 `x-goog-api-key` header（不再出現在網址與 log 中）。

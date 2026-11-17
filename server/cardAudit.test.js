@@ -28,8 +28,8 @@ const FIXTURE = [
 const CARDS_SCHEMA = `CREATE TABLE cards (
   id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, word TEXT, article TEXT DEFAULT '', gender TEXT DEFAULT 'none',
   part_of_speech TEXT DEFAULT 'sustantivo', translation TEXT DEFAULT '', lifecycle_status TEXT DEFAULT 'active',
-  dict_lemma TEXT DEFAULT NULL, dict_pos TEXT DEFAULT NULL, updated_at TEXT);
-  CREATE UNIQUE INDEX idx_cards_user_word ON cards(user_id, word);`;
+  dict_lemma TEXT DEFAULT NULL, dict_pos TEXT DEFAULT NULL, updated_at TEXT, lang TEXT NOT NULL DEFAULT 'es');
+  CREATE UNIQUE INDEX idx_cards_user_lang_word ON cards(user_id, lang, word);`;
 
 let tmpDir;
 test.before(async () => {

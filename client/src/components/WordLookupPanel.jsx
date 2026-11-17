@@ -6,6 +6,7 @@ import SpeakButton from './SpeakButton';
 import StoryCard from './StoryCard';
 import DictionaryExtras from './DictionaryExtras';
 import FormsModal from './FormsModal';
+import { articleFor } from '../utils/learnLang';
 
 const sameWord = (a, b) => stripAccents(normalizeAnswer(a)) === stripAccents(normalizeAnswer(b));
 const ARTICLE_BY_GENDER = { masculino: 'el', femenino: 'la' };
@@ -111,7 +112,7 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
         const gender = context.pos === 'sustantivo' || context.pos === 'adjetivo' ? (wikt?.gender || 'none') : 'none';
         card = {
           word: context.lemma,
-          article: context.pos === 'sustantivo' ? ({ masculino: 'el', femenino: 'la' }[gender] || '') : '',
+          article: context.pos === 'sustantivo' ? articleFor(gender) : '',
           gender,
           part_of_speech: context.pos,
           translation: context.zh,

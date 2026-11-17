@@ -1,0 +1,80 @@
+{
+  "code": "es",
+  "name": "西班牙語",
+  "nativeName": "Español",
+  "flag": "🇪🇸",
+  "appName": "PalabraCard",
+  "tts": {
+    "bcp47": "es-ES",
+    "online": "es",
+    "voiceHints": [
+      "Google",
+      "Natural",
+      "Monica",
+      "Mónica",
+      "Paulina",
+      "Jorge",
+      "Spanish"
+    ]
+  },
+  "specialChars": [
+    "á",
+    "é",
+    "í",
+    "ó",
+    "ú",
+    "ñ",
+    "ü",
+    "¿",
+    "¡"
+  ],
+  "articles": {
+    "detect": [
+      "el",
+      "la",
+      "los",
+      "las",
+      "un",
+      "una"
+    ],
+    "definite": {
+      "masculino": "el",
+      "femenino": "la"
+    },
+    "plural": {
+      "masculino": "los",
+      "femenino": "las"
+    }
+  },
+  "genders": [
+    "masculino",
+    "femenino",
+    "none"
+  ],
+  "genderLabels": {
+    "masculino": "陽性",
+    "femenino": "陰性",
+    "none": "無"
+  },
+  "levels": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1",
+    "C2"
+  ],
+  "defaultLevel": "A2",
+  "levelSystem": "DELE / CEFR",
+  "levelLabel": "DELE",
+  "exams": "DELE / SIELE",
+  "ui": {
+    "short": "西語",
+    "articleHint": "el / la / los / las",
+    "wordHint": "例如: costumbre, desarrollar",
+    "categoryHint": "例如: 考試必背 (DELE) 或 日常生活",
+    "exampleHint": "例如: Es una costumbre típica en España cenar tarde.",
+    "exampleZhHint": "例如: 在西班牙晚吃晚餐是一種典型習俗。",
+    "notesHint": "例如: -umbre 結尾皆為陰性名詞；固定搭配介系詞 a..."
+  }
+}

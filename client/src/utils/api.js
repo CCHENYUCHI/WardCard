@@ -1,3 +1,5 @@
+import { getLearnLang } from './learnLang';
+
 export const getToken = () => localStorage.getItem('palabracard_token');
 export const setToken = (token) => localStorage.setItem('palabracard_token', token);
 export const removeToken = () => localStorage.removeItem('palabracard_token');
@@ -16,6 +18,11 @@ export async function fetchAPI(endpoint, options = {}) {
   const geminiKey = localStorage.getItem('gemini_api_key');
   if (geminiKey && !headers['x-gemini-key']) {
     headers['x-gemini-key'] = geminiKey;
+  }
+
+  // Learning language of the deck being shown (🇪🇸 / 🇩🇪); the server scopes cards, tasks and AI by it
+  if (!headers['x-learn-lang']) {
+    headers['x-learn-lang'] = getLearnLang();
   }
 
   // If body is JSON and no Content-Type is set, set it

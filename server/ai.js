@@ -1,16 +1,16 @@
 const { splitArticle } = require('./cardUtils');
+const { getLanguage } = require('./languages');
 
 const GEMINI_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models';
 const DEFAULT_MODEL = 'gemini-3.6-flash';
 const DEFAULT_FALLBACK_MODEL = 'gemini-3.5-flash-lite';
 const DEFAULT_TIMEOUT_MS = 60_000;
 
+// Shared internal codes for every learning language (the UI maps them to labels)
 const PARTS_OF_SPEECH = ['sustantivo', 'verbo', 'adjetivo', 'adverbio', 'frase', 'conjunción', 'preposición', 'pronombre', 'interjección'];
-const GENDERS = ['masculino', 'femenino', 'none'];
 const DELE_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
-// Parts of speech that inflect for gender in Spanish
-const GENDERED_POS = ['sustantivo', 'adjetivo'];
-const FORM_KEYS = ['masc_sg', 'fem_sg', 'masc_pl', 'fem_pl'];
+// Language-specific pieces (articles, genders, inflection forms, prompt text) come from
+// server/languages/<code>.js; every function below takes a `lang` code, defaulting to Spanish.
 
 const getPrimaryModel = () => process.env.GEMINI_MODEL || DEFAULT_MODEL;
 const getFallbackModel = () => process.env.GEMINI_FALLBACK_MODEL || DEFAULT_FALLBACK_MODEL;
@@ -145,50 +145,62 @@ const pick = (value, allowed, fallback) => {
   return match || fallback;
 };
 
-// Gender forms without articles: { masc_sg: 'alto', fem_sg: 'alta', masc_pl: 'altos', fem_pl: 'altas' }
-function normalizeForms(forms) {
+// Inflection forms without articles, keyed by the language's formKeys
+// (es: { masc_sg: 'alto', fem_sg: 'alta', … }, de: { plural: 'Häuser', genitive: 'des Hauses', … })
+function normalizeForms(forms, lang = 'es') {
   if (!forms || typeof forms !== 'object') return null;
+  const { formKeys: keys, formsKeepArticle = [] } = getLanguage(lang).ai;
   const out = {};
-  for (const key of FORM_KEYS) out[key] = splitArticle(str(forms[key])).word;
-  return FORM_KEYS.some(k => out[k]) ? out : null;
+  for (const key of keys) {
+    out[key] = formsKeepArticle.includes(key) ? str(forms[key]) : splitArticle(str(forms[key]), '', lang).word;
+  }
+  return keys.some(k => out[k]) ? out : null;
 }
 
-// "陽性：alto / altos；陰性：alta / altas" — kept in notes so every client shows it
-function formatForms(forms) {
-  if (!forms) return '';
-  const masc = [forms.masc_sg, forms.masc_pl].filter(Boolean).join(' / ');
-  const fem = [forms.fem_sg, forms.fem_pl].filter(Boolean).join(' / ');
-  const parts = [masc && `陽性：${masc}`, fem && `陰性：${fem}`].filter(Boolean);
-  return parts.length ? `陰陽性變化 → ${parts.join('；')}` : '';
+// Human-readable forms ("陽性：alto / altos；陰陽性：alta / altas"), kept in notes so every client shows it
+function formatForms(forms, lang = 'es') {
+  return getLanguage(lang).ai.formatForms(forms);
+}
+
+// Definite article -> gender, singular articles first (de: der/die/das; es: el/la, then los/las)
+function articleGenders(L) {
+  const map = {};
+  for (const table of [L.articles.definite, L.articles.plural]) {
+    for (const [gender, art] of Object.entries(table || {})) if (!(art in map)) map[art] = gender;
+  }
+  return map;
 }
 
 // Clean one AI-produced card so it is safe to show and save
-function normalizeAiCard(card) {
+function normalizeAiCard(card, lang = 'es') {
   if (!card || typeof card !== 'object') return null;
-  const { word, article: rawArticle } = splitArticle(str(card.word), str(card.article));
+  const L = getLanguage(lang);
+  const { word, article: rawArticle } = splitArticle(str(card.word), str(card.article), lang);
   const translation = str(card.translation);
   if (!word || !translation) return null;
 
   const partOfSpeech = pick(card.part_of_speech, PARTS_OF_SPEECH, 'frase');
   const isNoun = partOfSpeech === 'sustantivo';
-  const isGendered = GENDERED_POS.includes(partOfSpeech);
-  const forms = isGendered ? normalizeForms(card.forms) : null;
+  const isGendered = L.genderedPos.includes(partOfSpeech);
+  const forms = L.ai.formsPos.includes(partOfSpeech) ? normalizeForms(card.forms, lang) : null;
+  const genderOf = articleGenders(L);
 
-  let article = isNoun && ['el', 'la', 'los', 'las'].includes(rawArticle) ? rawArticle : '';
-  let gender = isGendered ? pick(card.gender, GENDERS, 'none') : 'none';
-  if (isNoun && gender === 'none') {
-    if (article === 'el' || article === 'los') gender = 'masculino';
-    if (article === 'la' || article === 'las') gender = 'femenino';
+  let article = isNoun && rawArticle in genderOf ? rawArticle : '';
+  let gender = isGendered ? pick(card.gender, L.genders, 'none') : 'none';
+  if (isNoun && gender === 'none' && article && !(lang === 'de' && article === 'die' && forms && !forms.plural)) {
+    // German "die" with no plural form is a plural-only noun (die Eltern): no gender
+    gender = genderOf[article];
   }
   if (partOfSpeech === 'adjetivo' && gender === 'none' && forms?.masc_sg && forms?.fem_sg && forms.masc_sg !== forms.fem_sg) {
     // The dictionary form of a variable adjective is the masculine singular
     gender = word === forms.fem_sg ? 'femenino' : 'masculino';
   }
-  if (isNoun && !article && gender !== 'none') {
-    article = gender === 'masculino' ? 'el' : 'la';
+  if (isNoun && !article && gender !== 'none' && L.articles.definite[gender]) {
+    // Keep an explicit article even when it disagrees (es: el agua is feminine)
+    article = L.articles.definite[gender];
   }
 
-  const formsText = formatForms(forms);
+  const formsText = formatForms(forms, lang);
   const notes = str(card.notes);
 
   return {
@@ -202,28 +214,33 @@ function normalizeAiCard(card) {
     definition_es: str(card.definition_es),
     example_es: str(card.example_es),
     example_zh: str(card.example_zh),
-    notes: formsText && !notes.includes('陰陽性變化') ? [formsText, notes].filter(Boolean).join('\n') : notes,
+    notes: formsText && !notes.includes(L.ai.formsNoteMarker) ? [formsText, notes].filter(Boolean).join('\n') : notes,
     category: str(card.category) || '課堂筆記',
-    dele_level: pick(card.dele_level, DELE_LEVELS, 'A2')
+    dele_level: pick(card.dele_level, L.levels, L.defaultLevel || 'A2')
   };
 }
 
-const CARD_SCHEMA = {
+// Per-language values memoized: schemas and prompts are built once per language
+const memo = (build) => {
+  const cache = new Map();
+  return (lang = 'es') => {
+    const L = getLanguage(lang);
+    if (!cache.has(L.code)) cache.set(L.code, build(L));
+    return cache.get(L.code);
+  };
+};
+
+const cardSchema = memo((L) => ({
   type: 'OBJECT',
   properties: {
     word: { type: 'STRING' },
     article: { type: 'STRING' },
-    gender: { type: 'STRING', enum: GENDERS },
+    gender: { type: 'STRING', enum: L.genders },
     part_of_speech: { type: 'STRING', enum: PARTS_OF_SPEECH },
     forms: {
       type: 'OBJECT',
       nullable: true,
-      properties: {
-        masc_sg: { type: 'STRING' },
-        fem_sg: { type: 'STRING' },
-        masc_pl: { type: 'STRING' },
-        fem_pl: { type: 'STRING' }
-      }
+      properties: Object.fromEntries(L.ai.formKeys.map(k => [k, { type: 'STRING' }]))
     },
     translation: { type: 'STRING' },
     english_translation: { type: 'STRING' },
@@ -232,54 +249,45 @@ const CARD_SCHEMA = {
     example_zh: { type: 'STRING' },
     notes: { type: 'STRING' },
     category: { type: 'STRING' },
-    dele_level: { type: 'STRING', enum: DELE_LEVELS }
+    dele_level: { type: 'STRING', enum: L.levels }
   },
   required: ['word', 'article', 'gender', 'part_of_speech', 'translation', 'example_es', 'example_zh', 'dele_level']
-};
+}));
+const CARD_SCHEMA = cardSchema('es');
 
-const EXTRACT_INSTRUCTION = `
-你是一位精通西班牙語教學與檢定（DELE / SIELE）的專業語言學專家。
-你的任務是從使用者提供的課堂筆記、文章段落、生詞清單或講義照片中，萃取並結構化西班牙語生詞卡片，以 JSON 陣列回傳。
+const extractInstruction = memo(({ ai }) => `
+你是一位${ai.expert}。
+你的任務是從使用者提供的課堂筆記、文章段落、生詞清單或講義照片中，萃取並結構化${ai.languageName}生詞卡片，以 JSON 陣列回傳。
 
 欄位說明：
-- word：單字原形（名詞不要加冠詞；保留正確重音）
-  - 動詞一律用原形不定式（hablar、comer、vivir、acostumbrarse），即使原文是變化形（例如 fui、hablamos）也要還原成原形，並在 notes 註明原文出現的形式。
-  - 形容詞用陽性單數（alto，不是 alta / altos）。
-- article：陽性名詞填 "el"、陰性名詞填 "la"（注意 el agua 這類陰性名詞仍填 "el"），非名詞填 ""
-- gender：**名詞與形容詞都必須填寫，不可留 none**
-  - 名詞：依該名詞的文法性別填 "masculino" 或 "femenino"
-  - 形容詞：word 是陽性形式就填 "masculino"；陰陽同形（feliz、grande、importante）才填 "none"
-  - 其他詞性填 "none"
-- forms：名詞與形容詞必填，列出陰陽性與單複數變化，不要加冠詞；不存在的形式填 ""
-  - 形容詞 alto → {"masc_sg":"alto","fem_sg":"alta","masc_pl":"altos","fem_pl":"altas"}
-  - 有陰陽兩種形式的名詞 profesor → {"masc_sg":"profesor","fem_sg":"profesora","masc_pl":"profesores","fem_pl":"profesoras"}
-  - 只有單一性別的名詞 problema → {"masc_sg":"problema","fem_sg":"","masc_pl":"problemas","fem_pl":""}
-  - 動詞、副詞等其他詞性填 null
+${ai.wordRules}
 - part_of_speech：sustantivo / verbo / adjetivo / adverbio / frase / conjunción / preposición / pronombre / interjección
 - translation：精準道地的繁體中文釋義
 - english_translation：對應的英文翻譯
-- definition_es：簡短的西班牙文定義
-- example_es：實用、生活化或考試常考的西語例句
+${ai.definitionRule}
 - example_zh：例句的繁體中文翻譯
-- notes：文法重點、不規則變化、常用介系詞搭配（例如 -ma 結尾的陽性名詞）
-- category：依內容分類，例如「日常生活」、「考試必背 (DELE)」、「課堂筆記」
-- dele_level：對應的 DELE 級數 A1–C2
+${ai.notesRule}
+${ai.categoryRule}
+${ai.levelRule}
 
 規則：
 1. 若輸入是「單字清單」或「表格」，務必將所有單字全數轉換，不可遺漏。
 2. 若輸入是一整段文章，挑出最值得背誦的重點生詞（無數量限制）。
-3. 所有西語重音（á, é, í, ó, ú, ñ, ü）必須完全正確。
+3. ${ai.spellingRule}
 4. 同一個單字只輸出一次。
-`;
+`);
+const EXTRACT_INSTRUCTION = extractInstruction('es');
 
 /**
- * Extract Spanish vocabulary cards from notes text and/or a photo
+ * Extract vocabulary cards (in the learning language) from notes text and/or a photo
  * @param {object} params
  * @param {string} params.promptText - Class notes, reading, or word list
  * @param {string} params.apiKey - Gemini API Key
  * @param {object} [params.imageFile] - Optional uploaded image { buffer, mimetype }
+ * @param {string} [params.lang] - Learning language code ('es' | 'de')
  */
-async function extractSpanishWords({ promptText, apiKey, imageFile = null }) {
+async function extractWords({ promptText, apiKey, imageFile = null, lang = 'es' }) {
+  const L = getLanguage(lang);
   const parts = [];
   if (imageFile) {
     parts.push({
@@ -292,14 +300,14 @@ async function extractSpanishWords({ promptText, apiKey, imageFile = null }) {
   parts.push({
     text: promptText && promptText.trim()
       ? promptText
-      : '請分析這張課堂教材/講義照片中的西語重點生詞並結構化輸出。'
+      : L.ai.photoPrompt
   });
 
   const { data } = await callGemini({
     apiKey,
     parts,
-    systemInstruction: EXTRACT_INSTRUCTION,
-    responseSchema: { type: 'ARRAY', items: CARD_SCHEMA }
+    systemInstruction: extractInstruction(lang),
+    responseSchema: { type: 'ARRAY', items: cardSchema(lang) }
   });
 
   if (!Array.isArray(data)) {
@@ -309,7 +317,7 @@ async function extractSpanishWords({ promptText, apiKey, imageFile = null }) {
   const seen = new Set();
   const cards = [];
   for (const raw of data) {
-    const card = normalizeAiCard(raw);
+    const card = normalizeAiCard(raw, lang);
     if (!card) continue;
     const key = card.word.toLowerCase();
     if (seen.has(key)) continue;
@@ -318,6 +326,9 @@ async function extractSpanishWords({ promptText, apiKey, imageFile = null }) {
   }
   return cards;
 }
+
+// Backwards-compatible name
+const extractSpanishWords = (params) => extractWords({ ...params, lang: params?.lang || 'es' });
 
 const SENTENCE_SCHEMA = {
   type: 'OBJECT',
@@ -341,16 +352,17 @@ const SENTENCE_SCHEMA = {
   required: ['translation_zh', 'tokens']
 };
 
-const SENTENCE_INSTRUCTION = `
-你是一位西班牙語老師，要幫台灣學生逐字解析一個西語句子，以 JSON 回傳。
-- tokens：依句中順序，每個西語單字一筆（略過標點）。
+const sentenceInstruction = memo(({ ai }) => `
+你是一位${ai.teacher}，要幫台灣學生逐字解析一個${ai.short}句子，以 JSON 回傳。
+- tokens：依句中順序，每個${ai.short}單字一筆（略過標點）。
   - text：必須和句中原文完全一致（含大小寫與重音）。
-  - lemma：原形（動詞用不定式、名詞用單數、形容詞用陽性單數）。
-  - pos：sustantivo / verbo / adjetivo / adverbio / frase / conjunción / preposición / pronombre / interjección（冠詞填 frase）。
+  - lemma：${ai.lemmaRule}。
+  - pos：sustantivo / verbo / adjetivo / adverbio / frase / conjunción / preposición / pronombre / interjección（${ai.articlePos}）。
   - zh：這個字在本句中的繁體中文意思，簡短。
-  - usage：本句中的用法，40 字以內。動詞寫出時態與人稱（例如「ir 的簡單過去式，第一人稱單數」）；也可以寫固定搭配、片語或容易混淆的地方。屬於片語的字（例如 a pesar de）每個字各一筆，usage 註明是哪個片語。
+  - usage：本句中的用法，40 字以內。${ai.usageExample}
 - translation_zh：整句自然的繁體中文翻譯。
-`;
+`);
+const SENTENCE_INSTRUCTION = sentenceInstruction('es');
 
 const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
@@ -358,11 +370,11 @@ const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
  * Word-by-word analysis of one sentence for the tap-a-word popover. Uses the cheaper model.
  * Tokens whose text is not actually in the sentence are dropped.
  */
-async function analyzeSentence({ apiKey, sentence }) {
+async function analyzeSentence({ apiKey, sentence, lang = 'es' }) {
   const { data, usage, model } = await callGemini({
     apiKey,
     parts: [{ text: sentence }],
-    systemInstruction: SENTENCE_INSTRUCTION,
+    systemInstruction: sentenceInstruction(lang),
     responseSchema: SENTENCE_SCHEMA,
     model: getFallbackModel(),
     fallbackModel: getPrimaryModel(),
@@ -391,20 +403,21 @@ async function analyzeSentence({ apiKey, sentence }) {
  * Dictionary entry for one word (or a Chinese meaning) as a ready-to-save card.
  * Inflected input is reduced to its dictionary form by EXTRACT_INSTRUCTION's rules (fui -> ir).
  */
-async function lookupWordAi({ apiKey, word }) {
+async function lookupWordAi({ apiKey, word, lang = 'es' }) {
+  const L = getLanguage(lang);
   const { data, usage, model } = await callGemini({
     apiKey,
     parts: [{
       text: `請查字典，為這個詞輸出一張生詞卡（單一 JSON 物件）：「${word}」\n` +
-        '若是變化形，word 用原形，並在 notes 第一行註明「' + word + '」是哪個形式。若輸入是中文，給出最常用的對應西語詞。'
+        '若是變化形，word 用原形，並在 notes 第一行註明「' + word + '」是哪個形式。若輸入是中文，給出最常用的對應' + L.ai.short + '詞。'
     }],
-    systemInstruction: EXTRACT_INSTRUCTION,
-    responseSchema: CARD_SCHEMA,
+    systemInstruction: extractInstruction(lang),
+    responseSchema: cardSchema(lang),
     model: getFallbackModel(),
     fallbackModel: getPrimaryModel(),
     timeoutMs: 30_000
   });
-  const card = normalizeAiCard(Array.isArray(data) ? data[0] : data);
+  const card = normalizeAiCard(Array.isArray(data) ? data[0] : data, lang);
   if (!card) {
     throw new GeminiError(`AI 查不到「${word}」，請確認拼字。`, { status: 404 });
   }
@@ -416,10 +429,11 @@ const MAX_POINTS = 6;
 const MAX_EXAMPLES = 2;
 const MAX_ALTERNATIVES = 2;
 
-const TRANSLATE_SCHEMA = {
+// `spanish` keeps its historical name: it holds the sentence in the learning language
+const translateSchema = memo((L) => ({
   type: 'OBJECT',
   properties: {
-    source_lang: { type: 'STRING', enum: ['es', 'zh'] },
+    source_lang: { type: 'STRING', enum: [L.code, 'zh'] },
     spanish: { type: 'STRING' },
     correction: { type: 'STRING' },
     translation_zh: { type: 'STRING' },
@@ -454,26 +468,35 @@ const TRANSLATE_SCHEMA = {
     }
   },
   required: ['source_lang', 'spanish', 'correction', 'translation_zh', 'translation_en', 'points']
-};
+}));
+const TRANSLATE_SCHEMA = translateSchema('es');
 
-const TRANSLATE_INSTRUCTION = `
-你是一位西班牙語老師，學生是台灣人。學生會給你一個句子（通常是西語，偶爾是中文），請翻譯並講解重點，以 JSON 回傳。
-- source_lang：輸入是西語填 es，是中文填 zh。
-- spanish：正確的西語句子。輸入是正確的西語時照抄原句；輸入的西語有錯時給修正後的句子；輸入是中文時，給出自然、常用的西語說法。
-- correction：只有輸入的西語有拼字、重音或文法錯誤時才填，用一兩句繁體中文說明原句哪裡錯、為什麼（不要重抄整句，修正後的句子已經在 spanish）；沒有錯就填空字串。
+const translateInstruction = memo(({ code, ai }) => {
+  // Field-name hints only for non-Spanish languages, so the Spanish prompt stays as it was
+  const es = code === 'es';
+  const fieldNote = es ? '' : '（欄位名稱沿用 spanish）';
+  const exampleFields = es ? `${ai.short} es` : `${ai.short}放在 es 欄位`;
+  const altFields = es ? 'es' : `es 欄位放${ai.short}`;
+  return `
+你是一位${ai.teacher}，學生是台灣人。學生會給你一個句子（通常是${ai.short}，偶爾是中文），請翻譯並講解重點，以 JSON 回傳。
+- source_lang：輸入是${ai.short}填 ${code}，是中文填 zh。
+- spanish：正確的${ai.short}句子${fieldNote}。輸入是正確的${ai.short}時照抄原句；輸入的${ai.short}有錯時給修正後的句子；輸入是中文時，給出自然、常用的${ai.short}說法。
+- correction：只有輸入的${ai.short}有${ai.spellingErrors}時才填，用一兩句繁體中文說明原句哪裡錯、為什麼（不要重抄整句，修正後的句子已經在 spanish）；沒有錯就填空字串。
 - translation_zh：自然的繁體中文翻譯。translation_en：自然的英文翻譯。
 - points：這個句子值得學的重點，依句子難度給 1–6 點，簡單的句子 1 點就好，不要硬湊。
-  - type：grammar（文法，例如時態、gustar 句型、受詞代名詞、虛擬式）、idiom（慣用語、固定搭配）、usage（用法、語氣、正式與非正式）、culture（文化或地區差異）、mistake（台灣學生常犯的錯）。
-  - title：簡短標題，可以直接用句中的片語（例如「me gusta + 單數名詞」）。
+  - type：grammar（${ai.grammarExamples}）、idiom（慣用語、固定搭配）、usage（用法、語氣、正式與非正式）、culture（文化或地區差異）、mistake（台灣學生常犯的錯）。
+  - title：簡短標題，可以直接用句中的片語（例如${ai.titleExample}）。
   - explanation：繁體中文說明，60–120 字，講清楚規則和為什麼。
-  - examples：0–2 個補充例句（西語 es + 繁中 zh），用來示範同一個重點的其他情況或特殊例子。
-- alternatives：0–2 個意思相同、自然的其他說法（es、zh、note 說明語氣差異）；沒有合適的就給空陣列。
+  - examples：0–2 個補充例句（${exampleFields} + 繁中 zh），用來示範同一個重點的其他情況或特殊例子。
+- alternatives：0–2 個意思相同、自然的其他說法（${altFields}、zh、note 說明語氣差異）；沒有合適的就給空陣列。
 - 不要逐字解釋單字（學生可以點單字查詢），重點放在句型、用法與文化。
-- 時態與語氣名稱統一用：陳述式現在式、簡單過去式、過去未完成式、未來式、條件式、虛擬式現在式、虛擬式過去式、命令式、現在完成式。
+- 時態與語氣名稱統一用：${ai.tenseNames}。
 `;
+});
+const TRANSLATE_INSTRUCTION = translateInstruction('es');
 
 // Clean the AI translation so it is safe to show and store
-function normalizeTranslation(data) {
+function normalizeTranslation(data, lang = 'es') {
   if (!data || typeof data !== 'object') {
     throw new GeminiError('AI 翻譯結果格式不正確，請再試一次。', { status: 502 });
   }
@@ -496,7 +519,7 @@ function normalizeTranslation(data) {
   }
 
   const result = {
-    source_lang: str(data.source_lang) === 'zh' ? 'zh' : 'es',
+    source_lang: str(data.source_lang) === 'zh' ? 'zh' : getLanguage(lang).code,
     spanish: str(data.spanish),
     correction: str(data.correction),
     translation_zh: str(data.translation_zh),
@@ -517,33 +540,30 @@ function normalizeTranslation(data) {
  * Translate one sentence (Spanish <-> Chinese, plus English) and explain its key points.
  * One call on the cheaper model.
  */
-async function translateSentence({ apiKey, text }) {
+async function translateSentence({ apiKey, text, lang = 'es' }) {
   const { data, usage, model } = await callGemini({
     apiKey,
     parts: [{ text }],
-    systemInstruction: TRANSLATE_INSTRUCTION,
-    responseSchema: TRANSLATE_SCHEMA,
+    systemInstruction: translateInstruction(lang),
+    responseSchema: translateSchema(lang),
     temperature: 0.3,
     model: getFallbackModel(),
     fallbackModel: getPrimaryModel(),
     timeoutMs: 30_000
   });
-  return { result: normalizeTranslation(data), usage, model };
+  return { result: normalizeTranslation(data, lang), usage, model };
 }
 
 /**
- * Calibrate DELE/CEFR levels for a batch of Spanish words
+ * Calibrate CEFR levels (DELE for Spanish, Goethe for German) for a batch of words
  */
-async function calibrateDeleLevels(wordsList, apiKey) {
+async function calibrateDeleLevels(wordsList, apiKey, lang = 'es') {
+  const { ai, levelSystem } = getLanguage(lang);
   const wordsToEvaluate = wordsList.map(w => ({ id: w.id, word: w.word, translation: w.translation }));
-  const prompt = `你是一位精通西班牙語檢定（Instituto Cervantes DELE / CEFR）權威專家。
-請為以下西語單字清單評估其精確的 DELE / CEFR 級別（'A1', 'A2', 'B1', 'B2', 'C1', 或 'C2'）。
+  const prompt = `你是一位${ai.calibrationAuthority}。
+請為以下${ai.short}單字清單評估其精確的 ${levelSystem} 級別（'A1', 'A2', 'B1', 'B2', 'C1', 或 'C2'）。
 請嚴格遵循標準：
-- A1: 最基礎生存單字（例如: hola, gracias, manzana, libro, escuela, estudiante, aprender, feliz, ser, estar, comer, beber, día, agua, casa, número, pequeño）
-- A2: 基礎日常生活交流（例如: costumbre, desarrollar, viajar, tiempo, regalo, invierno, problema）
-- B1: 進階獨立表達、情感與常用抽象詞（例如: acostumbrarse, maravilloso, opinión, sociedad, éxito）
-- B2: 深度討論、專業與高級修辭
-- C1/C2: 高階學術、文學與罕見專有名詞
+${ai.calibration}
 
 請評估下列 ${wordsToEvaluate.length} 個單字，每個 id 回傳一筆：
 ${JSON.stringify(wordsToEvaluate, null, 2)}`;
@@ -572,6 +592,11 @@ module.exports = {
   GeminiError,
   callGemini,
   normalizeAiCard,
+  cardSchema,
+  extractInstruction,
+  sentenceInstruction,
+  translateInstruction,
+  extractWords,
   extractSpanishWords,
   calibrateDeleLevels,
   analyzeSentence,

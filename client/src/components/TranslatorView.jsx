@@ -2,9 +2,11 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Languages, Search, Trash2, ChevronDown, ChevronUp, Sparkles } from 'lucide-react';
 import { fetchAPI } from '../utils/api';
 import TranslationResult from './TranslationResult';
+import { getLangConfig } from '../utils/learnLang';
 
 const MAX_LENGTH = 300;
-const SPANISH_SPECIAL_KEYS = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ', '¿', '¡'];
+// Special-character keys of the learning language (es: á é ñ ¿ …, de: ä ö ü ß)
+const specialKeys = () => getLangConfig().specialChars;
 
 const readError = async (res, fallback) => {
   try {
@@ -131,7 +133,7 @@ export default function TranslatorView() {
           disabled={translating}
         />
         <div className="spanish-keys translator-keys">
-          {SPANISH_SPECIAL_KEYS.map(char => (
+          {specialKeys().map(char => (
             <button key={char} type="button" className="spanish-key" onClick={() => handleInsertChar(char)}>
               {char}
             </button>

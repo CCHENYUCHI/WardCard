@@ -156,12 +156,12 @@ const hasLatin = (s) => /[a-zñáéíóúü]/i.test(s);
  * The user's cards that match the query or any of its lemmas.
  * A Chinese query ("蘋果") searches translations instead.
  */
-function findMyCards(db, userId, query, lemmas = []) {
+function findMyCards(db, userId, query, lemmas = [], lang = 'es') {
   const rows = db.prepare(`
     SELECT id, word, article, gender, part_of_speech, translation, english_translation,
            example_es, example_zh, notes, lifecycle_status, mastery_stage, is_starred
-    FROM cards WHERE user_id = ?
-  `).all(userId);
+    FROM cards WHERE user_id = ? AND lang = ?
+  `).all(userId, lang);
 
   const q = String(query || '').trim();
   if (!hasLatin(q)) {

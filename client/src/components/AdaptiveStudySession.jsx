@@ -13,8 +13,10 @@ import {
   stripArticle, normalizeAnswer, getAcceptableAnswers,
   findInflectedForms, maskSentence, displayWord, pickDistractors
 } from '../utils/spanish';
+import { getLangConfig } from '../utils/learnLang';
 
-const SPANISH_SPECIAL_KEYS = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ', '¿', '¡'];
+// Special-character keys of the learning language (es: á é ñ ¿ …, de: ä ö ü ß)
+const specialKeys = () => getLangConfig().specialChars;
 // Stage 5 multiple choice: a correct answer within this time counts as Easy
 const FAST_ANSWER_MS = 3000;
 
@@ -592,7 +594,7 @@ export default function AdaptiveStudySession({
               {/* Special Characters Keyboard */}
               {spellingStatus === 'typing' && (
                 <div className="spanish-keys">
-                  {SPANISH_SPECIAL_KEYS.map(char => (
+                  {specialKeys().map(char => (
                     <button
                       key={char}
                       onClick={() => handleInsertChar(char)}
@@ -702,7 +704,7 @@ export default function AdaptiveStudySession({
 
                 {/* Special Characters Keyboard */}
                 <div className="spanish-keys">
-                  {SPANISH_SPECIAL_KEYS.map(char => (
+                  {specialKeys().map(char => (
                     <button
                       key={char}
                       onClick={() => handleInsertChar(char)}

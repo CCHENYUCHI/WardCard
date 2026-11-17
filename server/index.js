@@ -9,7 +9,8 @@ const { parse } = require('csv-parse/sync');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('./db');
-const { extractSpanishWords, calibrateDeleLevels, analyzeSentence, lookupWordAi, translateSentence } = require('./ai');
+const { extractWords, calibrateDeleLevels, analyzeSentence, lookupWordAi, translateSentence } = require('./ai');
+const { LANGUAGES, DEFAULT_LANG, resolveLang } = require('./languages');
 const {
   translationHash, findOwnTranslation, findSharedTranslation, saveTranslation, listTranslations, deleteTranslation
 } = require('./translations');
@@ -21,7 +22,7 @@ const { linkCard, linkPendingCards, enrichCards } = require('./cardDict');
 const { auditCards, applyFixes, dismissIssues, undoBatch } = require('./cardAudit');
 const { findLexiconEntry } = require('./lexicon');
 const { reviewCardFSRS } = require('./fsrs');
-const { classifyReview, buildTodayPlan, getTodaySummary, getHistory, getWeeklyForecast, getPracticeCards } = require('./dailyProgress');
+const { getActiveCurriculum, classifyReview, buildTodayPlan, getTodaySummary, getHistory, getWeeklyForecast, getPracticeCards } = require('./dailyProgress');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'palabracard-super-secret-key-2026';
 
@@ -51,11 +52,32 @@ const authenticateToken = (req, res, next) => {
   });
 };
 
+// --- Learning language ---
+// The web client sends the deck it is showing (🇪🇸 / 🇩🇪) in `x-learn-lang`; unknown or missing = Spanish,
+// so older clients (mobile app) keep working on the Spanish deck.
+app.use('/api', (req, res, next) => {
+  req.lang = resolveLang(req.headers['x-learn-lang']);
+  next();
+});
+
+// Only Spanish has the offline Wiktionary dictionary, A1 lexicon and card audit for now
+const hasOfflineDict = (lang) => lang === 'es';
+// AI caches are shared by all users: keep Spanish keys as they were, prefix the others ("de:haus")
+const langKey = (lang, key) => (lang === DEFAULT_LANG ? key : `${lang}:${key}`);
+
 // --- API Routes ---
 
 // Healthcheck
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', time: new Date().toISOString() });
+});
+
+// Available learning languages (public: the switcher shows before login too)
+app.get('/api/languages', (req, res) => {
+  res.json({
+    default: DEFAULT_LANG,
+    languages: Object.values(LANGUAGES).map(({ ai, genderedPos, ...pub }) => pub)
+  });
 });
 
 // Spanish TTS Audio Proxy (Ultra-lightweight, native Node 22 fetch, browser cached)
@@ -133,7 +155,7 @@ app.get('/api/auth/me', authenticateToken, (req, res) => {
 // Categories list
 app.get('/api/categories', authenticateToken, (req, res) => {
   try {
-    const rows = db.prepare(`SELECT DISTINCT category FROM cards WHERE user_id = ? AND category IS NOT NULL AND category != ''`).all(req.user.userId);
+    const rows = db.prepare(`SELECT DISTINCT category FROM cards WHERE user_id = ? AND lang = ? AND category IS NOT NULL AND category != ''`).all(req.user.userId, req.lang);
     const categories = rows.map(r => r.category);
     res.json(categories);
   } catch (err) {
@@ -145,8 +167,8 @@ app.get('/api/categories', authenticateToken, (req, res) => {
 app.get('/api/cards', authenticateToken, (req, res) => {
   try {
     const { category, dele, search, filter, status, stage, unit, starred } = req.query;
-    let sql = 'SELECT * FROM cards WHERE user_id = ?';
-    const params = [req.user.userId];
+    let sql = 'SELECT * FROM cards WHERE user_id = ? AND lang = ?';
+    const params = [req.user.userId, req.lang];
 
     if (category && category !== 'all') {
       sql += ' AND category = ?';
@@ -204,8 +226,8 @@ app.get('/api/cards', authenticateToken, (req, res) => {
 app.get('/api/cards/due', authenticateToken, (req, res) => {
   try {
     const { category, limit = 50 } = req.query;
-    let sql = `SELECT * FROM cards WHERE user_id = ? AND lifecycle_status = 'active' AND due_date < ${TODAY_END_SQL}`;
-    const params = [req.user.userId];
+    let sql = `SELECT * FROM cards WHERE user_id = ? AND lang = ? AND lifecycle_status = 'active' AND due_date < ${TODAY_END_SQL}`;
+    const params = [req.user.userId, req.lang];
 
     if (category && category !== 'all') {
       sql += ' AND category = ?';
@@ -231,12 +253,12 @@ app.post('/api/cards', authenticateToken, (req, res) => {
 
     const insertStmt = db.prepare(`
       INSERT INTO cards (
-        user_id, word, article, gender, part_of_speech, translation, english_translation,
+        user_id, lang, word, article, gender, part_of_speech, translation, english_translation,
         definition_es, example_es, example_zh, notes, category, dele_level,
         lifecycle_status, is_starred, mastery_stage, curriculum_unit, due_date
       )
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
-      ON CONFLICT(user_id, word) DO UPDATE SET
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
+      ON CONFLICT(user_id, lang, word) DO UPDATE SET
         article=excluded.article,
         gender=excluded.gender,
         part_of_speech=excluded.part_of_speech,
@@ -254,12 +276,13 @@ app.post('/api/cards', authenticateToken, (req, res) => {
         updated_at=datetime('now', 'localtime')
     `);
 
-    const selectId = db.prepare('SELECT id FROM cards WHERE user_id = ? AND word = ?');
+    const selectId = db.prepare('SELECT id FROM cards WHERE user_id = ? AND lang = ? AND word = ?');
     const insertedIds = [];
     for (const card of cards) {
       if (!card.word || !card.translation) continue;
-      
-      const { word: w, article: a } = splitArticle(card.word, card.article);
+      // A card may name its own language (import); otherwise it joins the deck being shown
+      const lang = card.lang ? resolveLang(card.lang) : req.lang;
+      const { word: w, article: a } = splitArticle(card.word, card.article, lang);
 
       const cat = card.category || '日常生活';
       const unit = card.curriculum_unit || cat;
@@ -269,6 +292,7 @@ app.post('/api/cards', authenticateToken, (req, res) => {
 
       const result = insertStmt.run(
         userId,
+        lang,
         w,
         a,
         card.gender || 'none',
@@ -280,16 +304,16 @@ app.post('/api/cards', authenticateToken, (req, res) => {
         card.example_zh || '',
         card.notes || '',
         cat,
-        card.dele_level || 'A2',
+        card.dele_level || LANGUAGES[lang].defaultLevel,
         status,
         starred,
         stage,
         unit
       );
       // On an upsert that hits an existing word, lastInsertRowid still holds the previous insert: look the card up
-      const cardId = Number(selectId.get(userId, w)?.id ?? result.lastInsertRowid);
+      const cardId = Number(selectId.get(userId, lang, w)?.id ?? result.lastInsertRowid);
       insertedIds.push(cardId);
-      linkCard(db, { id: cardId, word: w, part_of_speech: card.part_of_speech || 'sustantivo' });
+      linkCard(db, { id: cardId, word: w, part_of_speech: card.part_of_speech || 'sustantivo', lang });
     }
 
     res.status(201).json({ success: true, count: insertedIds.length, ids: insertedIds });
@@ -349,7 +373,7 @@ app.put('/api/cards/:id', authenticateToken, (req, res) => {
       userId
     );
 
-    linkCard(db, { id: Number(id), word: word.trim(), part_of_speech: part_of_speech || 'sustantivo' });
+    linkCard(db, { id: Number(id), word: word.trim(), part_of_speech: part_of_speech || 'sustantivo', lang: existing.lang });
     const updated = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
     res.json(enrichCards([updated])[0]);
   } catch (err) {
@@ -383,9 +407,9 @@ app.post('/api/cards/upload-csv', authenticateToken, upload.single('file'), (req
     });
 
     const insertStmt = db.prepare(`
-      INSERT INTO cards (user_id, word, article, gender, translation, english_translation, notes, definition_es, example_es, example_zh, category, due_date)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
-      ON CONFLICT(user_id, word) DO UPDATE SET
+      INSERT INTO cards (user_id, lang, word, article, gender, translation, english_translation, notes, definition_es, example_es, example_zh, category, due_date)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
+      ON CONFLICT(user_id, lang, word) DO UPDATE SET
         article=excluded.article,
         gender=excluded.gender,
         translation=excluded.translation,
@@ -400,13 +424,16 @@ app.post('/api/cards/upload-csv', authenticateToken, upload.single('file'), (req
 
     let processed = 0;
     for (const record of records) {
-      let rawWord = record.Spanish || record.word || '';
+      // Header names: Spanish / German / word (or a lang column) — default is the deck being shown
+      const rowLang = record.lang ? resolveLang(record.lang) : (record.German ? 'de' : (record.Spanish ? 'es' : req.lang));
+      let rawWord = record.Spanish || record.German || record.word || '';
       if (!rawWord) continue;
 
-      const { word: w, article: a } = splitArticle(rawWord);
+      const { word: w, article: a } = splitArticle(rawWord, '', rowLang);
 
       insertStmt.run(
         userId,
+        rowLang,
         w,
         a,
         record.Gender || record.gender || 'none',
@@ -495,9 +522,9 @@ app.post('/api/cards/:id/review', authenticateToken, (req, res) => {
 
     // 3. Log review
     db.prepare(`
-      INSERT INTO review_logs (user_id, card_id, rating, review_mode, task_type, reviewed_at)
-      VALUES (?, ?, ?, ?, ?, datetime('now', 'localtime'))
-    `).run(userId, Number(id), score, `${review_mode}:${tested_stage || fsrsRes.stage}`, taskType);
+      INSERT INTO review_logs (user_id, card_id, rating, review_mode, task_type, lang, reviewed_at)
+      VALUES (?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
+    `).run(userId, Number(id), score, `${review_mode}:${tested_stage || fsrsRes.stage}`, taskType, card.lang || DEFAULT_LANG);
 
     const updated = db.prepare('SELECT * FROM cards WHERE id = ?').get(Number(id));
     res.json({
@@ -505,7 +532,7 @@ app.post('/api/cards/:id/review', authenticateToken, (req, res) => {
       card: enrichCards([updated])[0],
       fsrs: fsrsRes,
       task_type: taskType,
-      today: getTodaySummary(userId)
+      today: getTodaySummary(userId, null, card.lang || DEFAULT_LANG)
     });
   } catch (err) {
     console.error('Review Error:', err);
@@ -521,16 +548,17 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
     const userId = req.user.userId;
     const user = db.prepare('SELECT * FROM users WHERE id = ?').get(userId) || {};
     const quota = Number(user.daily_new_quota) || 15;
-    const activeCurriculum = user.active_curriculum || '';
+    const lang = req.lang;
+    const activeCurriculum = getActiveCurriculum(user, lang);
 
-    // Unit filter clause for active curriculum
+    // Language + unit filter clause for active curriculum
     const unitFilterSql = activeCurriculum 
-      ? " AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?))" 
-      : "";
-    const unitParams = activeCurriculum ? [activeCurriculum, activeCurriculum] : [];
+      ? " AND lang = ? AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?))" 
+      : " AND lang = ?";
+    const unitParams = activeCurriculum ? [lang, activeCurriculum, activeCurriculum] : [lang];
 
     // 1~2. Today's plan: due reviews (any time today) + new words within today's remaining quota
-    const plan = buildTodayPlan(userId);
+    const plan = buildTodayPlan(userId, true, lang);
     const dueCards = enrichCards(plan.dueCards);
     const candidateNew = enrichCards(plan.newCards);
 
@@ -563,8 +591,8 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
           SUM(CASE WHEN lifecycle_status = 'active' THEN 1 ELSE 0 END) as active,
           SUM(CASE WHEN lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as mastered
         FROM cards 
-        WHERE user_id = ? AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?))
-      `).get(userId, activeCurriculum, activeCurriculum);
+        WHERE user_id = ? AND lang = ? AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?))
+      `).get(userId, lang, activeCurriculum, activeCurriculum);
       
       const total = Number(curRow.total) || 0;
       const proficient = Number(curRow.proficient) || 0;
@@ -583,8 +611,8 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
           SUM(CASE WHEN lifecycle_status = 'active' THEN 1 ELSE 0 END) as active,
           SUM(CASE WHEN lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as mastered
         FROM cards 
-        WHERE user_id = ? AND lifecycle_status IN ('active', 'mastered')
-      `).get(userId);
+        WHERE user_id = ? AND lang = ? AND lifecycle_status IN ('active', 'mastered')
+      `).get(userId, lang);
       
       const total = Number(curRow.total) || 0;
       const proficient = Number(curRow.proficient) || 0;
@@ -598,6 +626,7 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
 
     res.json({
       today: getTodaySummary(userId, plan),
+      lang,
       agenda: {
         total_due: plan.dueTotal,
         urgent_reviews: urgentReviews,
@@ -631,7 +660,7 @@ app.get('/api/study/agenda', authenticateToken, (req, res) => {
 // Today's progress summary (goal / done / remaining / streak)
 app.get('/api/study/today', authenticateToken, (req, res) => {
   try {
-    res.json(getTodaySummary(req.user.userId));
+    res.json(getTodaySummary(req.user.userId, null, req.lang));
   } catch (err) {
     console.error('Today Summary Error:', err);
     res.status(500).json({ error: err.message });
@@ -641,7 +670,7 @@ app.get('/api/study/today', authenticateToken, (req, res) => {
 // Per-day study history (newest first)
 app.get('/api/study/history', authenticateToken, (req, res) => {
   try {
-    res.json({ days: getHistory(req.user.userId, req.query.days) });
+    res.json({ days: getHistory(req.user.userId, req.query.days, req.lang) });
   } catch (err) {
     console.error('Study History Error:', err);
     res.status(500).json({ error: err.message });
@@ -651,7 +680,7 @@ app.get('/api/study/history', authenticateToken, (req, res) => {
 // Extra practice: cards not due today, weakest first
 app.get('/api/study/practice', authenticateToken, (req, res) => {
   try {
-    res.json({ cards: enrichCards(getPracticeCards(req.user.userId, req.query.limit)) });
+    res.json({ cards: enrichCards(getPracticeCards(req.user.userId, req.query.limit, req.lang)) });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -785,10 +814,10 @@ app.post('/api/study/activate-batch', authenticateToken, (req, res) => {
     } else if (unit) {
       const rows = db.prepare(`
         SELECT id FROM cards 
-        WHERE user_id = ? AND curriculum_unit = ? AND lifecycle_status IN ('ready', 'inbox')
+        WHERE user_id = ? AND lang = ? AND curriculum_unit = ? AND lifecycle_status IN ('ready', 'inbox')
         ORDER BY is_starred DESC, id ASC
         LIMIT ?
-      `).all(userId, unit, Number(limit) || 20);
+      `).all(userId, req.lang, unit, Number(limit) || 20);
       targetIds = rows.map(r => r.id);
     }
 
@@ -823,10 +852,10 @@ app.get('/api/study/units', authenticateToken, (req, res) => {
         SUM(CASE WHEN lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as mastered_count,
         SUM(CASE WHEN mastery_stage >= 3 OR lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as proficient_count
       FROM cards
-      WHERE user_id = ? AND curriculum_unit IS NOT NULL AND curriculum_unit != ''
+      WHERE user_id = ? AND lang = ? AND curriculum_unit IS NOT NULL AND curriculum_unit != ''
       GROUP BY curriculum_unit
       ORDER BY total DESC
-    `).all(userId);
+    `).all(userId, req.lang);
 
     const units = rows.map(r => ({
       unit: r.curriculum_unit,
@@ -846,10 +875,17 @@ app.get('/api/study/units', authenticateToken, (req, res) => {
 });
 
 // Get & Update user study preferences
+// active_curriculum is per learning language (see getActiveCurriculum); the rest is shared
+const settingsFor = (userId, lang) => {
+  const user = db.prepare('SELECT id, username, daily_new_quota, target_retention, active_curriculum, lang_settings FROM users WHERE id = ?').get(userId);
+  if (!user) return user;
+  const { lang_settings, ...rest } = user;
+  return { ...rest, active_curriculum: getActiveCurriculum(user, lang), lang };
+};
+
 app.get('/api/user/settings', authenticateToken, (req, res) => {
   try {
-    const user = db.prepare('SELECT id, username, daily_new_quota, target_retention, active_curriculum FROM users WHERE id = ?').get(req.user.userId);
-    res.json(user);
+    res.json(settingsFor(req.user.userId, req.lang));
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -860,28 +896,32 @@ const handleUpdateSettings = (req, res) => {
     const userId = req.user.userId;
     const { daily_new_quota, target_retention, active_curriculum } = req.body;
 
+    const lang = req.lang;
     const existing = db.prepare('SELECT * FROM users WHERE id = ?').get(userId);
     const newQuota = daily_new_quota !== undefined ? Number(daily_new_quota) : (existing.daily_new_quota || 15);
     const newRetention = target_retention !== undefined ? Number(target_retention) : (existing.target_retention || 0.9);
-    const newCurriculum = active_curriculum !== undefined ? String(active_curriculum).trim() : (existing.active_curriculum || '');
+    const newCurriculum = active_curriculum !== undefined ? String(active_curriculum).trim() : getActiveCurriculum(existing, lang);
 
-    db.prepare(`
-      UPDATE users
-      SET daily_new_quota = ?, target_retention = ?, active_curriculum = ?
-      WHERE id = ?
-    `).run(newQuota, newRetention, newCurriculum, userId);
+    db.prepare('UPDATE users SET daily_new_quota = ?, target_retention = ? WHERE id = ?').run(newQuota, newRetention, userId);
+    if (lang === DEFAULT_LANG) {
+      db.prepare('UPDATE users SET active_curriculum = ? WHERE id = ?').run(newCurriculum, userId);
+    } else {
+      let langSettings = {};
+      try { langSettings = JSON.parse(existing.lang_settings || '{}') || {}; } catch (_) { /* reset broken JSON */ }
+      langSettings[lang] = { ...(langSettings[lang] || {}), active_curriculum: newCurriculum };
+      db.prepare('UPDATE users SET lang_settings = ? WHERE id = ?').run(JSON.stringify(langSettings), userId);
+    }
 
-    // Auto-activate all ready/inbox cards of this curriculum unit into active study
+    // Auto-activate all ready/inbox cards of this curriculum unit (in this language) into active study
     if (newCurriculum && newCurriculum !== 'ALL_ACTIVE') {
       db.prepare(`
         UPDATE cards
         SET lifecycle_status = 'active', due_date = datetime('now', 'localtime'), updated_at = datetime('now', 'localtime')
-        WHERE user_id = ? AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?)) AND lifecycle_status IN ('ready', 'inbox')
-      `).run(userId, newCurriculum, newCurriculum);
+        WHERE user_id = ? AND lang = ? AND (curriculum_unit = ? OR ((curriculum_unit IS NULL OR curriculum_unit = '') AND category = ?)) AND lifecycle_status IN ('ready', 'inbox')
+      `).run(userId, lang, newCurriculum, newCurriculum);
     }
 
-    const updated = db.prepare('SELECT id, username, daily_new_quota, target_retention, active_curriculum FROM users WHERE id = ?').get(userId);
-    res.json(updated);
+    res.json(settingsFor(userId, lang));
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -894,6 +934,7 @@ app.post('/api/user/settings', authenticateToken, handleUpdateSettings);
 app.get('/api/stats', authenticateToken, (req, res) => {
   try {
     const userId = req.user.userId;
+    const lang = req.lang;
     
     // Overview counts
     const overview = db.prepare(`
@@ -908,23 +949,23 @@ app.get('/api/stats', authenticateToken, (req, res) => {
         SUM(CASE WHEN mastery_stage = 2 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage2,
         SUM(CASE WHEN mastery_stage = 3 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage3,
         SUM(CASE WHEN mastery_stage = 4 AND lifecycle_status = 'active' THEN 1 ELSE 0 END) as stage4
-      FROM cards WHERE user_id = ?
-    `).get(userId);
+      FROM cards WHERE user_id = ? AND lang = ?
+    `).get(userId, lang);
 
     // Today's numbers and the forecast use the same rules and unit scope as the daily task
-    const plan = buildTodayPlan(userId, false);
+    const plan = buildTodayPlan(userId, false, lang);
     const today = getTodaySummary(userId, plan);
     const forecast = getWeeklyForecast(userId, plan);
 
     // Total review logs
     const totalReviews = db.prepare(`
-      SELECT count(*) as count FROM review_logs WHERE user_id = ?
-    `).get(userId).count;
+      SELECT count(*) as count FROM review_logs WHERE user_id = ? AND lang = ?
+    `).get(userId, lang).count;
 
     // Level breakdown
     const levelCounts = db.prepare(`
-      SELECT dele_level, count(*) as count FROM cards WHERE user_id = ? GROUP BY dele_level ORDER BY dele_level
-    `).all(userId);
+      SELECT dele_level, count(*) as count FROM cards WHERE user_id = ? AND lang = ? GROUP BY dele_level ORDER BY dele_level
+    `).all(userId, lang);
 
     // Curriculum units breakdown
     const unitRows = db.prepare(`
@@ -937,9 +978,9 @@ app.get('/api/stats', authenticateToken, (req, res) => {
         SUM(CASE WHEN lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as mastered_count,
         SUM(CASE WHEN mastery_stage >= 3 OR lifecycle_status = 'mastered' THEN 1 ELSE 0 END) as proficient_count
       FROM cards
-      WHERE user_id = ?
+      WHERE user_id = ? AND lang = ?
       GROUP BY unit_name
-    `).all(userId);
+    `).all(userId, lang);
 
     const unitCounts = unitRows.map(r => ({
       unit: r.unit_name,
@@ -953,10 +994,11 @@ app.get('/api/stats', authenticateToken, (req, res) => {
     }));
 
     const readyReserveCount = db.prepare(`
-      SELECT count(*) as count FROM cards WHERE user_id = ? AND lifecycle_status = 'ready'
-    `).get(userId).count;
+      SELECT count(*) as count FROM cards WHERE user_id = ? AND lang = ? AND lifecycle_status = 'ready'
+    `).get(userId, lang).count;
 
     res.json({
+      lang,
       total: Number(overview.total) || 0,
       active: Number(overview.active) || 0,
       ready: Number(overview.ready) || 0,
@@ -1000,16 +1042,17 @@ app.post('/api/ai/extract', authenticateToken, upload.single('image'), async (re
       });
     }
 
-    const extracted = await extractSpanishWords({
+    const extracted = await extractWords({
       promptText,
       apiKey: userApiKey,
-      imageFile: req.file || null
+      imageFile: req.file || null,
+      lang: req.lang
     });
 
     // Preview only: the client saves the cards the user keeps via POST /api/cards
     const existingWords = new Set(
-      db.prepare('SELECT word FROM cards WHERE user_id = ?')
-        .all(req.user.userId)
+      db.prepare('SELECT word FROM cards WHERE user_id = ? AND lang = ?')
+        .all(req.user.userId, req.lang)
         .map(row => row.word.toLowerCase())
     );
     const cards = extracted.map(card => ({ ...card, exists: existingWords.has(card.word.toLowerCase()) }));
@@ -1033,7 +1076,7 @@ app.post('/api/cards/calibrate-dele', authenticateToken, async (req, res) => {
       });
     }
 
-    const cards = db.prepare('SELECT id, word, translation, dele_level FROM cards WHERE user_id = ?').all(userId);
+    const cards = db.prepare('SELECT id, word, translation, dele_level FROM cards WHERE user_id = ? AND lang = ?').all(userId, req.lang);
     if (!cards || cards.length === 0) {
       return res.json({ success: true, totalCards: 0, updatedCount: 0, message: '目前庫中無單字' });
     }
@@ -1046,7 +1089,7 @@ app.post('/api/cards/calibrate-dele', authenticateToken, async (req, res) => {
 
     for (let i = 0; i < cards.length; i += BATCH_SIZE) {
       const batch = cards.slice(i, i + BATCH_SIZE);
-      const evaluated = await calibrateDeleLevels(batch, userApiKey);
+      const evaluated = await calibrateDeleLevels(batch, userApiKey, req.lang);
       if (Array.isArray(evaluated)) {
         for (const item of evaluated) {
           if (item.id && item.dele_level) {
@@ -1078,12 +1121,14 @@ app.post('/api/cards/calibrate-dele', authenticateToken, async (req, res) => {
 const resolveApiKey = (req) => req.body?.apiKey || req.headers['x-gemini-key'] || process.env.GEMINI_API_KEY;
 const NO_KEY_ERROR = '未偵測到 Gemini API Key。請在頁面設定中填入您的 API Key，或在伺服端 .env 設定 GEMINI_API_KEY。';
 const sentenceHash = (s) => crypto.createHash('sha1').update(String(s).replace(/\s+/g, ' ').trim()).digest('hex');
-const getSentenceAnalysis = (sentence) => {
-  const row = db.prepare('SELECT result FROM sentence_analyses WHERE sentence_hash = ?').get(sentenceHash(sentence));
+const sentenceKey = (sentence, lang = DEFAULT_LANG) => sentenceHash(langKey(lang, sentence));
+const getSentenceAnalysis = (sentence, lang = DEFAULT_LANG) => {
+  const row = db.prepare('SELECT result FROM sentence_analyses WHERE sentence_hash = ?').get(sentenceKey(sentence, lang));
   return row ? parseJson(row.result, null) : null;
 };
-const getCachedEntry = (query) => {
-  const row = db.prepare('SELECT result FROM dictionary_cache WHERE query_norm = ?').get(normalizeWord(query));
+const entryKey = (query, lang = DEFAULT_LANG) => langKey(lang, normalizeWord(query));
+const getCachedEntry = (query, lang = DEFAULT_LANG) => {
+  const row = db.prepare('SELECT result FROM dictionary_cache WHERE query_norm = ?').get(entryKey(query, lang));
   return row ? parseJson(row.result, null) : null;
 };
 
@@ -1094,20 +1139,22 @@ app.get('/api/dictionary/lookup', authenticateToken, (req, res) => {
     const sentence = String(req.query.sentence || '').trim().slice(0, 500);
     if (!q) return res.status(400).json({ error: '請輸入要查的字' });
 
-    const wiktionary = hasLatin(q) ? lookupForm(q) : [];
+    const lang = req.lang;
+    const offline = hasOfflineDict(lang);
+    const wiktionary = offline && hasLatin(q) ? lookupForm(q) : [];
     const lemmas = wiktionary.map(i => i.lemma);
-    const myCards = findMyCards(db, req.user.userId, q, lemmas);
+    const myCards = findMyCards(db, req.user.userId, q, lemmas, lang);
 
     let context = null;
     let translation_zh = '';
-    const analysis = sentence ? getSentenceAnalysis(sentence) : null;
+    const analysis = sentence ? getSentenceAnalysis(sentence, lang) : null;
     if (analysis) {
       const norm = normalizeWord(q);
       context = analysis.tokens.find(t => normalizeWord(t.text) === norm) || null;
       translation_zh = analysis.translation_zh || '';
     }
-    const aiEntry = getCachedEntry(q) || (context?.lemma ? getCachedEntry(context.lemma) : null);
-    const story = findLexiconEntry(getDict(), [q, context?.lemma, ...lemmas, ...myCards.map(c => c.word)]);
+    const aiEntry = getCachedEntry(q, lang) || (context?.lemma ? getCachedEntry(context.lemma, lang) : null);
+    const story = offline ? findLexiconEntry(getDict(), [q, context?.lemma, ...lemmas, ...myCards.map(c => c.word)]) : null;
 
     // Same lemma / meaning priority as WordLookupPanel; a failed write must not fail the lookup
     try {
@@ -1130,8 +1177,8 @@ app.get('/api/dictionary/lookup', authenticateToken, (req, res) => {
       translation_zh,
       analyzed: Boolean(analysis),
       aiEntry,
-      links: externalLinks(context?.lemma || lemmas[0] || q),
-      hasOfflineDictionary: dictionaryHasEntries(),
+      links: offline ? externalLinks(context?.lemma || lemmas[0] || q) : [],
+      hasOfflineDictionary: offline && dictionaryHasEntries(),
       story
     });
   } catch (err) {
@@ -1144,7 +1191,7 @@ app.get('/api/lexicon', authenticateToken, (req, res) => {
   try {
     const word = String(req.query.word || '').trim().slice(0, 80);
     if (!word) return res.status(400).json({ error: '缺少單字' });
-    res.json({ entry: findLexiconEntry(getDict(), [word]) });
+    res.json({ entry: hasOfflineDict(req.lang) ? findLexiconEntry(getDict(), [word]) : null });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1153,6 +1200,7 @@ app.get('/api/lexicon', authenticateToken, (req, res) => {
 // 單字庫健檢: cards whose part of speech / gender / article / spelling disagree with the dictionary
 app.get('/api/cards/audit', authenticateToken, (req, res) => {
   try {
+    if (!hasOfflineDict(req.lang)) return res.json({ available: false, summary: {}, labels: {}, issues: [] });
     res.json(auditCards(db, req.user.userId));
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -1221,8 +1269,11 @@ app.get('/api/dictionary/entry', authenticateToken, (req, res) => {
 
 app.get('/api/cards/:id/dictionary', authenticateToken, (req, res) => {
   try {
-    const card = db.prepare('SELECT id, word, part_of_speech, dict_lemma, dict_pos FROM cards WHERE id = ? AND user_id = ?').get(Number(req.params.id), req.user.userId);
+    const card = db.prepare('SELECT id, word, part_of_speech, dict_lemma, dict_pos, lang FROM cards WHERE id = ? AND user_id = ?').get(Number(req.params.id), req.user.userId);
     if (!card) return res.status(404).json({ error: 'Card not found' });
+    if (!hasOfflineDict(card.lang)) {
+      return res.json({ linked: false, lemma: '', pos: '', ipa: '', forms: null, examples: null, etymology: null, story: null });
+    }
     if (card.dict_lemma) return res.json({ linked: true, ...dictionaryEntry(card.dict_lemma, card.dict_pos) });
     // Not linked (phrase, made-up word, no dictionary): the lexicon can still know the card's word
     res.json({ linked: false, lemma: '', pos: '', ipa: '', forms: null, examples: null, etymology: null, story: findLexiconEntry(getDict(), [card.word]) });
@@ -1238,15 +1289,15 @@ app.post('/api/sentences/analyze', authenticateToken, async (req, res) => {
     if (!sentence) return res.status(400).json({ error: '缺少句子' });
     if (sentence.length > 500) return res.status(400).json({ error: '句子太長（上限 500 字）' });
 
-    const cached = getSentenceAnalysis(sentence);
+    const cached = getSentenceAnalysis(sentence, req.lang);
     if (cached) return res.json({ ...cached, cached: true });
 
     const apiKey = resolveApiKey(req);
     if (!apiKey) return res.status(400).json({ error: NO_KEY_ERROR });
 
-    const { result, model } = await analyzeSentence({ apiKey, sentence });
+    const { result, model } = await analyzeSentence({ apiKey, sentence, lang: req.lang });
     db.prepare('INSERT OR REPLACE INTO sentence_analyses (sentence_hash, sentence, result, model) VALUES (?, ?, ?, ?)')
-      .run(sentenceHash(sentence), sentence, JSON.stringify(result), model);
+      .run(sentenceKey(sentence, req.lang), sentence, JSON.stringify(result), model);
     res.json({ ...result, cached: false });
   } catch (err) {
     console.error('Sentence Analyze Error:', err.message);
@@ -1260,7 +1311,8 @@ app.post('/api/dictionary/ai', authenticateToken, async (req, res) => {
     const q = String(req.body.q || '').trim().slice(0, 80);
     if (!q || !normalizeWord(q)) return res.status(400).json({ error: '請輸入要查的字' });
 
-    const cached = getCachedEntry(q);
+    const lang = req.lang;
+    const cached = getCachedEntry(q, lang);
     if (cached) {
       setLookupTranslation(db, req.user.userId, q, cached.translation);
       return res.json({ card: cached, cached: true });
@@ -1269,11 +1321,11 @@ app.post('/api/dictionary/ai', authenticateToken, async (req, res) => {
     const apiKey = resolveApiKey(req);
     if (!apiKey) return res.status(400).json({ error: NO_KEY_ERROR });
 
-    const { card, model } = await lookupWordAi({ apiKey, word: q });
+    const { card, model } = await lookupWordAi({ apiKey, word: q, lang });
     const save = db.prepare('INSERT OR REPLACE INTO dictionary_cache (query_norm, result, model) VALUES (?, ?, ?)');
-    save.run(normalizeWord(q), JSON.stringify(card), model);
+    save.run(entryKey(q, lang), JSON.stringify(card), model);
     // Also cache under the dictionary form, so "fui" and "ir" share one entry
-    if (normalizeWord(card.word) !== normalizeWord(q)) save.run(normalizeWord(card.word), JSON.stringify(card), model);
+    if (normalizeWord(card.word) !== normalizeWord(q)) save.run(entryKey(card.word, lang), JSON.stringify(card), model);
     setLookupTranslation(db, req.user.userId, q, card.translation);
     res.json({ card, cached: false });
   } catch (err) {
@@ -1317,7 +1369,8 @@ app.delete('/api/dictionary/history', authenticateToken, (req, res) => {
 app.post('/api/dictionary/add', authenticateToken, (req, res) => {
   try {
     const card = req.body || {};
-    const { word, article } = splitArticle(card.word, card.article);
+    const lang = req.lang;
+    const { word, article } = splitArticle(card.word, card.article, lang);
     const translation = String(card.translation || '').trim();
     if (!word || !translation) return res.status(400).json({ error: '缺少單字或中文釋義' });
 
@@ -1325,14 +1378,14 @@ app.post('/api/dictionary/add', authenticateToken, (req, res) => {
     const category = card.category || '字典查詞';
     const result = db.prepare(`
       INSERT INTO cards (
-        user_id, word, article, gender, part_of_speech, translation, english_translation,
+        user_id, lang, word, article, gender, part_of_speech, translation, english_translation,
         definition_es, example_es, example_zh, notes, category, dele_level,
         lifecycle_status, curriculum_unit, due_date
       )
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'inbox', ?, datetime('now', 'localtime'))
-      ON CONFLICT(user_id, word) DO NOTHING
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'inbox', ?, datetime('now', 'localtime'))
+      ON CONFLICT(user_id, lang, word) DO NOTHING
     `).run(
-      userId, word, article,
+      userId, lang, word, article,
       card.gender || 'none',
       card.part_of_speech || 'sustantivo',
       translation,
@@ -1342,16 +1395,16 @@ app.post('/api/dictionary/add', authenticateToken, (req, res) => {
       card.example_zh || '',
       card.notes || '',
       category,
-      card.dele_level || 'A2',
+      card.dele_level || LANGUAGES[lang].defaultLevel,
       category
     );
 
     if (result.changes > 0) {
       const id = Number(result.lastInsertRowid);
-      linkCard(db, { id, word, part_of_speech: card.part_of_speech || 'sustantivo' });
+      linkCard(db, { id, word, part_of_speech: card.part_of_speech || 'sustantivo', lang });
       return res.status(201).json({ created: true, id });
     }
-    const existing = db.prepare('SELECT id, lifecycle_status FROM cards WHERE user_id = ? AND word = ?').get(userId, word);
+    const existing = db.prepare('SELECT id, lifecycle_status FROM cards WHERE user_id = ? AND lang = ? AND word = ?').get(userId, lang, word);
     res.json({ created: false, id: existing?.id, lifecycle_status: existing?.lifecycle_status });
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -1373,7 +1426,8 @@ app.post('/api/translations', authenticateToken, async (req, res) => {
     }
 
     const userId = req.user.userId;
-    const hash = translationHash(text);
+    // Spanish keeps its old hashes; other languages get their own (a Chinese input means a different answer)
+    const hash = translationHash(langKey(req.lang, text));
     const own = findOwnTranslation(db, userId, hash);
     if (own) return res.json({ record: own, cached: true });
 
@@ -1386,7 +1440,7 @@ app.post('/api/translations', authenticateToken, async (req, res) => {
     const apiKey = resolveApiKey(req);
     if (!apiKey) return res.status(400).json({ error: NO_KEY_ERROR });
 
-    const { result, model } = await translateSentence({ apiKey, text });
+    const { result, model } = await translateSentence({ apiKey, text, lang: req.lang });
     const record = saveTranslation(db, { userId, inputText: text, hash, result, model });
     res.status(201).json({ record, cached: false });
   } catch (err) {
