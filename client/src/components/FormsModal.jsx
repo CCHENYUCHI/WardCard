@@ -3,6 +3,7 @@ import { X } from 'lucide-react';
 import { getEntryDetails, POS_LABELS } from '../utils/dictionary';
 import { playSpanishPronunciation } from '../utils/speech';
 import SpeakButton from './SpeakButton';
+import { getLearnLang } from '../utils/learnLang';
 
 const WIKT_POS_LABEL = { verb: '動詞', noun: '名詞', adj: '形容詞' };
 
@@ -10,7 +11,7 @@ const WIKT_POS_LABEL = { verb: '動詞', noun: '名詞', adj: '形容詞' };
 function FormCell({ form }) {
   if (!form) return <span className="fm-empty">—</span>;
   return (
-    <button type="button" className="fm-form" lang="es" onClick={() => playSpanishPronunciation(form)} title={`朗讀 ${form}`}>
+    <button type="button" className="fm-form" lang={getLearnLang()} onClick={() => playSpanishPronunciation(form)} title={`朗讀 ${form}`}>
       {form}
     </button>
   );
@@ -64,9 +65,41 @@ function VerbTables({ forms }) {
   );
 }
 
+// German nouns: case down, singular / plural across
+function DeclensionTable({ rows }) {
+  return (
+    <div className="fm-scroll">
+      <table className="fm-table">
+        <thead><tr><th scope="col" className="fm-person-head">格位</th><th scope="col">單數</th><th scope="col">複數</th></tr></thead>
+        <tbody>
+          {rows.map(r => (
+            <tr key={r.case}>
+              <th scope="row">{r.label}</th>
+              <td>{r.singular ? r.singular.split(' / ').map(f => <FormCell key={f} form={f} />) : <FormCell form="" />}</td>
+              <td>{r.plural ? r.plural.split(' / ').map(f => <FormCell key={f} form={f} />) : <FormCell form="" />}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 function InflectionTable({ lemma, items }) {
   const find = (...labels) => items.find(i => labels.includes(i.label))?.form || '';
   const gendered = items.some(i => ['陰性', '陰性複數', '陽性複數'].includes(i.label));
+  const comparison = items.some(i => ['比較級', '最高級'].includes(i.label));
+  if (comparison) {
+    // German adjectives: positive / comparative / superlative
+    return (
+      <div className="fm-scroll">
+        <table className="fm-table">
+          <thead><tr><th scope="col">原級</th><th scope="col">比較級</th><th scope="col">最高級</th></tr></thead>
+          <tbody><tr><td><FormCell form={lemma} /></td><td><FormCell form={find('比較級')} /></td><td><FormCell form={find('最高級')} /></td></tr></tbody>
+        </table>
+      </div>
+    );
+  }
   const used = new Set(['陰性', '陰性複數', '陽性複數', '複數', '陰陽性複數']);
   const others = items.filter(i => !used.has(i.label));
   return (
@@ -96,7 +129,8 @@ function InflectionTable({ lemma, items }) {
 }
 
 /**
- * Full conjugation table (verbs) or gender / number table (nouns, adjectives) in its own window.
+ * Full conjugation table (verbs), gender / number table (Spanish nouns, adjectives), case table (German nouns)
+ * or comparison (German adjectives) in its own window.
  * Every form can be tapped to hear it.
  */
 export default function FormsModal({ lemma, pos = '', onClose }) {
@@ -123,7 +157,7 @@ export default function FormsModal({ lemma, pos = '', onClose }) {
       <div className="modal-content fm-content" role="dialog" aria-modal="true" aria-label={`${lemma} 變化表`} onClick={e => e.stopPropagation()}>
         <div className="modal-header">
           <div className="fm-title">
-            <h2 className="modal-title" lang="es">{lemma}</h2>
+            <h2 className="modal-title" lang={getLearnLang()}>{lemma}</h2>
             <SpeakButton text={lemma} />
             {posLabel && <span className="badge-subtle">{posLabel}</span>}
             {data?.ipa && <span className="fm-ipa">{data.ipa}</span>}
@@ -136,6 +170,7 @@ export default function FormsModal({ lemma, pos = '', onClose }) {
         {data && !forms && <div className="lookup-sub">字典裡沒有這個字的變化形資料。</div>}
         {forms?.kind === 'verb' && <VerbTables forms={forms} />}
         {forms?.kind === 'inflection' && <InflectionTable lemma={data.lemma || lemma} items={forms.items} />}
+        {forms?.kind === 'declension' && <DeclensionTable rows={forms.rows} />}
         {forms && <div className="lookup-credit">點任一個形態可以聽發音 · 資料：Wiktionary · CC BY-SA</div>}
       </div>
     </div>

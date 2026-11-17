@@ -9,17 +9,22 @@ import FormsModal from './FormsModal';
 import { articleFor } from '../utils/learnLang';
 
 const sameWord = (a, b) => stripAccents(normalizeAnswer(a)) === stripAccents(normalizeAnswer(b));
-const ARTICLE_BY_GENDER = { masculino: 'el', femenino: 'la' };
+// The A1 lexicon (Spanish only) stores el / la
 const GENDER_BY_ARTICLE = { el: 'masculino', la: 'femenino' };
 const CARD_POS = new Set(Object.keys(POS_LABELS));
 // Parts of speech the dictionary has conjugation / gender-number tables for
 const HAS_FORMS = new Set(['verb', 'noun', 'adj']);
-// Nouns are read with their article (la casa), like the rest of the app
+// Nouns are read with their article (la casa, das Haus), like the rest of the app
 const wiktSpeech = (item) => (
-  item.part_of_speech === 'sustantivo' && ARTICLE_BY_GENDER[item.gender]
-    ? `${ARTICLE_BY_GENDER[item.gender]} ${item.lemma}`
+  item.part_of_speech === 'sustantivo' && articleFor(item.gender)
+    ? `${articleFor(item.gender)} ${item.lemma}`
     : item.lemma
 );
+// External dictionaries per language (server: dictionary.js externalLinks)
+const LINK_LABELS = {
+  wordreference: 'WordReference', spanishdict: 'SpanishDict', rae: 'RAE',
+  wiktionary: 'Wiktionary', duden: 'Duden', dwds: 'DWDS'
+};
 
 /**
  * Lookup result for one word: my cards, AI context / entry, offline Wiktionary meanings, actions.
@@ -241,11 +246,11 @@ export default function WordLookupPanel({ word, sentence = '', exampleZh = '', a
         {addState === 'exists' && <span className="lookup-added"><Check size={14} /> 已在單字庫</span>}
       </div>
 
-      {!compact && (
+      {!compact && result.links && Object.keys(result.links).length > 0 && (
         <div className="lookup-links">
-          <a href={result.links.wordreference} target="_blank" rel="noreferrer">WordReference <ExternalLink size={12} /></a>
-          <a href={result.links.spanishdict} target="_blank" rel="noreferrer">SpanishDict <ExternalLink size={12} /></a>
-          <a href={result.links.rae} target="_blank" rel="noreferrer">RAE <ExternalLink size={12} /></a>
+          {Object.entries(result.links).map(([key, href]) => (
+            <a key={key} href={href} target="_blank" rel="noreferrer">{LINK_LABELS[key] || key} <ExternalLink size={12} /></a>
+          ))}
         </div>
       )}
 

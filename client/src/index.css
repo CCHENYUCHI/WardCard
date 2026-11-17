@@ -4321,3 +4321,18 @@ textarea {
   background: var(--google-red-light);
   color: var(--google-red);
 }
+
+/* German noun declension summary in the card / lookup details (DictionaryExtras) */
+.dx-declension {
+  width: 100%;
+  margin-top: 6px;
+}
+.dx-declension th,
+.dx-declension td {
+  text-align: left;
+  padding: 3px 8px 3px 0;
+}
+/* Two forms in one cell (German dative "Haus / Hause") */
+.fm-table td .fm-form + .fm-form {
+  margin-left: 8px;
+}

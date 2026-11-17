@@ -4,7 +4,8 @@
 // Tags that only describe the table itself, or forms a learner should not see
 const DROP_TAGS = new Set([
   'table-tags', 'inflection-template', 'combined-form', 'obsolete', 'archaic', 'dialectal', 'alternative',
-  'imperfect-se', 'canonical', 'romanization', 'nonstandard', 'rare', 'misspelling'
+  'imperfect-se', 'canonical', 'romanization', 'nonstandard', 'rare', 'misspelling',
+  'class' // German "7 strong" verb class marker
 ]);
 const MAX_EXAMPLES = 2;
 const MAX_EXAMPLE_CHARS = 160;
@@ -18,11 +19,12 @@ const PROSE_START = /^(Inherited|Borrowed|From|Learned|Semi-learned|Derived|Univ
  * Inflected forms worth showing: [[form, "tag tag"]]. Verbs keep only the conjugation table (the head line repeats
  * a few forms with fewer tags); clitic combinations (hablarme, dándoselo) and the -se subjunctive are dropped.
  */
-function cleanForms(rawForms) {
+function cleanForms(rawForms, lang = 'es', pos = '') {
   const forms = Array.isArray(rawForms) ? rawForms : [];
   const useful = forms.filter(f => f && f.form && Array.isArray(f.tags) && !f.tags.some(t => DROP_TAGS.has(t)));
   const conjugation = useful.filter(f => f.source === 'conjugation');
-  const rows = conjugation.length > 0 && conjugation.some(f => f.tags.includes('infinitive')) ? conjugation : useful;
+  let rows = conjugation.length > 0 && conjugation.some(f => f.tags.includes('infinitive')) ? conjugation : useful;
+  if (lang === 'de') rows = germanFormRows(useful, conjugation, pos);
   const seen = new Set();
   const out = [];
   for (const f of rows) {
@@ -35,6 +37,23 @@ function cleanForms(rawForms) {
     out.push([f.form, f.tags.join(' ')]);
   }
   return out;
+}
+
+/**
+ * German: verbs keep the conjugation table (incl. Perfekt constructions and the auxiliary); nouns keep the
+ * declension table (case × number, no diminutives); adjectives keep only comparative / superlative
+ * (the full strong / weak / mixed declension would be ~170 cells).
+ */
+function germanFormRows(useful, conjugation, pos) {
+  if (conjugation.some(f => f.tags.includes('infinitive'))) return conjugation;
+  const declension = useful.filter(f => f.source === 'declension');
+  if (pos === 'noun' && declension.length > 0) {
+    return declension.filter(f => f.tags.some(t => ['nominative', 'genitive', 'dative', 'accusative'].includes(t)));
+  }
+  if (pos === 'adj') {
+    return useful.filter(f => f.source !== 'declension' && (f.tags.includes('comparative') || f.tags.includes('superlative')));
+  }
+  return useful.filter(f => f.source !== 'declension');
 }
 
 const looksLikeSentence = (text) => /[.!?]/.test(text) || text.split(/\s+/).length >= 4;
@@ -116,8 +135,8 @@ function etymologyChain(templates) {
 }
 
 /** Everything the extra tables need from one wiktextract entry */
-function extractExtras(entry) {
-  const forms = cleanForms(entry.forms);
+function extractExtras(entry, lang = 'es') {
+  const forms = cleanForms(entry.forms, lang, entry.pos);
   const examples = pickExamples(entry.senses);
   const text = cleanEtymologyText(entry.etymology_text);
   const chain = etymologyChain(entry.etymology_templates);

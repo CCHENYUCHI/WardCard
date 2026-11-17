@@ -3,6 +3,7 @@ import { Table2 } from 'lucide-react';
 import { getEntryDetails, getCardDictionary } from '../utils/dictionary';
 import SpeakButton from './SpeakButton';
 import FormsModal from './FormsModal';
+import { getLearnLang } from '../utils/learnLang';
 
 function VerbForms({ forms }) {
   const moods = [];
@@ -29,7 +30,7 @@ function VerbForms({ forms }) {
                 <caption>{t.tenseLabel}</caption>
                 <tbody>
                   {t.rows.map(r => (
-                    <tr key={r.person}><th scope="row">{r.person}</th><td lang="es">{r.form}</td></tr>
+                    <tr key={r.person}><th scope="row">{r.person}</th><td lang={getLearnLang()}>{r.form}</td></tr>
                   ))}
                 </tbody>
               </table>
@@ -47,11 +48,11 @@ function DetailSections({ data, showStory, onOpenForms }) {
   if (!hasAnything && !(showStory && data.story)) return null;
   return (
     <>
-      {data.ipa && <div className="dx-ipa">發音 <span lang="es">{data.ipa}</span></div>}
+      {data.ipa && <div className="dx-ipa">發音 <span lang={getLearnLang()}>{data.ipa}</span></div>}
 
       {forms && (
         <button type="button" className="btn btn-secondary btn-sm dx-open-forms" onClick={onOpenForms}>
-          <Table2 size={14} /> {forms.kind === 'verb' ? '動詞變位表' : '變化表（陰陽性、單複數）'}
+          <Table2 size={14} /> {forms.kind === 'verb' ? '動詞變位表' : forms.kind === 'declension' ? '變格表（格位、單複數）' : getLearnLang() === 'de' ? '比較級' : '變化表（陰陽性、單複數）'}
         </button>
       )}
       {forms && forms.kind === 'verb' && (
@@ -60,12 +61,25 @@ function DetailSections({ data, showStory, onOpenForms }) {
           <VerbForms forms={forms} />
         </details>
       )}
+      {forms && forms.kind === 'declension' && (
+        <details className="dx-fold dx-section" open>
+          <summary>變格（格位、單複數）</summary>
+          <table className="dx-table dx-declension">
+            <thead><tr><th /><th scope="col">單數</th><th scope="col">複數</th></tr></thead>
+            <tbody>
+              {forms.rows.map(r => (
+                <tr key={r.case}><th scope="row">{r.label}</th><td>{r.singular || '—'}</td><td>{r.plural || '—'}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </details>
+      )}
       {forms && forms.kind === 'inflection' && forms.items.length > 0 && (
         <details className="dx-fold dx-section" open>
-          <summary>變形（陰陽性、單複數）</summary>
+          <summary>{getLearnLang() === 'de' ? '比較級' : '變形（陰陽性、單複數）'}</summary>
           <div className="dx-inflection">
             {forms.items.map(item => (
-              <span key={`${item.label}-${item.form}`} className="dx-chip"><span className="dx-chip-label">{item.label}</span> <span lang="es">{item.form}</span></span>
+              <span key={`${item.label}-${item.form}`} className="dx-chip"><span className="dx-chip-label">{item.label}</span> <span lang={getLearnLang()}>{item.form}</span></span>
             ))}
           </div>
         </details>
@@ -94,7 +108,7 @@ function DetailSections({ data, showStory, onOpenForms }) {
           <ul className="dx-examples">
             {examples.map(ex => (
               <li key={ex.es}>
-                <span lang="es">{ex.es}</span><SpeakButton text={ex.es} />
+                <span lang={getLearnLang()}>{ex.es}</span><SpeakButton text={ex.es} />
                 <div className="lookup-sub">{ex.en}</div>
               </li>
             ))}

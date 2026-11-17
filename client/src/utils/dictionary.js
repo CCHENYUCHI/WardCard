@@ -127,7 +127,7 @@ export const POS_LABELS = {
   'conjunción': '連接詞', 'preposición': '介系詞', pronombre: '代名詞', 'interjección': '感嘆詞'
 };
 
-const GENDER_LABELS = { masculino: '陽性', femenino: '陰性' };
+const GENDER_LABELS = { masculino: '陽性', femenino: '陰性', neutro: '中性' };
 export const genderLabel = (g) => GENDER_LABELS[g] || '';
 
 // Wiktionary grammar tags -> Chinese; anything unknown keeps the English original
@@ -140,6 +140,10 @@ const TAG_ZH = {
   affirmative: '肯定', negative: '否定', formal: '尊稱', informal: '非正式',
   combined: '連寫', with: '加', and: '與', or: '或', of: '的', 'present/preterite': '現在/簡單過去式',
   accusative: '受格', dative: '與格', nominative: '主格', diminutive: '指小詞', augmentative: '指大詞',
+  // German
+  neuter: '中性', genitive: '屬格', 'first/third-person': '第一/第三人稱', 'subjunctive-i': '虛擬式一式', 'subjunctive-ii': '虛擬式二式',
+  strong: '強變化', weak: '弱變化', mixed: '混合變化', comparative: '比較級', superlative: '最高級', definite: '定冠詞', indefinite: '不定冠詞',
+  predicative: '述語', 'zu-infinitive': 'zu 不定式', perfect: '完成式',
   'voseo': 'vos 用法', 'tú': 'tú', 'usted': 'usted', 'ustedes': 'ustedes', 'vos': 'vos'
 };
 

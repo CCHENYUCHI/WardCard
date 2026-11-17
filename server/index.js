@@ -61,8 +61,11 @@ app.use('/api', (req, res, next) => {
   next();
 });
 
-// Only Spanish has the offline Wiktionary dictionary, A1 lexicon and card audit for now
-const hasOfflineDict = (lang) => lang === 'es';
+// Each learning language has its own offline Wiktionary file (data/dict/<lang>-en.sqlite);
+// the hand-written A1 lexicon and the card audit are Spanish only
+const hasLexicon = (lang) => lang === 'es';
+// The app's part_of_speech -> wiktextract pos (German cards are looked up by word, not linked)
+const WIKT_POS = { sustantivo: 'noun', verbo: 'verb', adjetivo: 'adj', adverbio: 'adv' };
 // AI caches are shared by all users: keep Spanish keys as they were, prefix the others ("de:haus")
 const langKey = (lang, key) => (lang === DEFAULT_LANG ? key : `${lang}:${key}`);
 
@@ -1135,8 +1138,8 @@ app.get('/api/dictionary/lookup', authenticateToken, (req, res) => {
     if (!q) return res.status(400).json({ error: '請輸入要查的字' });
 
     const lang = req.lang;
-    const offline = hasOfflineDict(lang);
-    const wiktionary = offline && hasLatin(q) ? lookupForm(q) : [];
+    const lexicon = hasLexicon(lang);
+    const wiktionary = hasLatin(q) ? lookupForm(q, lang) : [];
     const lemmas = wiktionary.map(i => i.lemma);
     const myCards = findMyCards(db, req.user.userId, q, lemmas, lang);
 
@@ -1149,7 +1152,7 @@ app.get('/api/dictionary/lookup', authenticateToken, (req, res) => {
       translation_zh = analysis.translation_zh || '';
     }
     const aiEntry = getCachedEntry(q, lang) || (context?.lemma ? getCachedEntry(context.lemma, lang) : null);
-    const story = offline ? findLexiconEntry(getDict(), [q, context?.lemma, ...lemmas, ...myCards.map(c => c.word)]) : null;
+    const story = lexicon ? findLexiconEntry(getDict(), [q, context?.lemma, ...lemmas, ...myCards.map(c => c.word)]) : null;
 
     // Same lemma / meaning priority as WordLookupPanel; a failed write must not fail the lookup
     try {
@@ -1173,8 +1176,8 @@ app.get('/api/dictionary/lookup', authenticateToken, (req, res) => {
       translation_zh,
       analyzed: Boolean(analysis),
       aiEntry,
-      links: offline ? externalLinks(context?.lemma || lemmas[0] || q) : [],
-      hasOfflineDictionary: offline && dictionaryHasEntries(),
+      links: externalLinks(context?.lemma || lemmas[0] || q, lang),
+      hasOfflineDictionary: dictionaryHasEntries(lang),
       story
     });
   } catch (err) {
@@ -1187,7 +1190,7 @@ app.get('/api/lexicon', authenticateToken, (req, res) => {
   try {
     const word = String(req.query.word || '').trim().slice(0, 80);
     if (!word) return res.status(400).json({ error: '缺少單字' });
-    res.json({ entry: hasOfflineDict(req.lang) ? findLexiconEntry(getDict(), [word]) : null });
+    res.json({ entry: hasLexicon(req.lang) ? findLexiconEntry(getDict(), [word]) : null });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1196,7 +1199,7 @@ app.get('/api/lexicon', authenticateToken, (req, res) => {
 // 單字庫健檢: cards whose part of speech / gender / article / spelling disagree with the dictionary
 app.get('/api/cards/audit', authenticateToken, (req, res) => {
   try {
-    if (!hasOfflineDict(req.lang)) return res.json({ available: false, summary: {}, labels: {}, issues: [] });
+    if (!hasLexicon(req.lang)) return res.json({ available: false, summary: {}, labels: {}, issues: [] });
     res.json(auditCards(db, req.user.userId));
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -1233,7 +1236,7 @@ app.get('/api/version', authenticateToken, (req, res) => {
     const cards = db.prepare("SELECT COUNT(*) AS total, SUM(CASE WHEN dict_lemma IS NOT NULL AND dict_lemma != '' THEN 1 ELSE 0 END) AS linked FROM cards WHERE user_id = ?").get(req.user.userId);
     res.json({
       server: getBuildInfo(),
-      dictionary: getDictionaryInfo(),
+      dictionary: getDictionaryInfo(req.lang),
       cards: { total: Number(cards.total) || 0, linked: Number(cards.linked) || 0 }
     });
   } catch (err) {
@@ -1243,21 +1246,22 @@ app.get('/api/version', authenticateToken, (req, res) => {
 
 // Everything the dictionary knows about one entry (IPA, forms, examples, etymology) plus the hand-written lexicon entry.
 // Loaded on demand (card detail, dictionary page) so card lists stay small.
-function dictionaryEntry(lemma, pos) {
+function dictionaryEntry(lemma, pos, lang = DEFAULT_LANG) {
   let entryPos = pos;
   if (!entryPos) {
     // A lemma without a part of speech (dictionary page): use the first entry that has meanings of its own
-    entryPos = getDict()?.prepare("SELECT pos FROM entries WHERE word_norm = ? AND word = ? AND glosses != '[]' LIMIT 1")
+    entryPos = getDict(lang)?.prepare("SELECT pos FROM entries WHERE word_norm = ? AND word = ? AND glosses != '[]' LIMIT 1")
       .get(normalizeWord(lemma), lemma)?.pos || '';
   }
-  return { lemma, pos: entryPos, ...getEntryExtras(lemma, entryPos), story: findLexiconEntry(getDict(), [lemma]) };
+  const story = hasLexicon(lang) ? findLexiconEntry(getDict(), [lemma]) : null;
+  return { lemma, pos: entryPos, ...getEntryExtras(lemma, entryPos, lang), story };
 }
 
 app.get('/api/dictionary/entry', authenticateToken, (req, res) => {
   try {
     const lemma = String(req.query.lemma || '').trim().slice(0, 80);
     if (!lemma) return res.status(400).json({ error: '缺少單字' });
-    res.json(dictionaryEntry(lemma, String(req.query.pos || '').trim().slice(0, 20)));
+    res.json(dictionaryEntry(lemma, String(req.query.pos || '').trim().slice(0, 20), req.lang));
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1267,8 +1271,17 @@ app.get('/api/cards/:id/dictionary', authenticateToken, (req, res) => {
   try {
     const card = db.prepare('SELECT id, word, part_of_speech, dict_lemma, dict_pos, lang FROM cards WHERE id = ? AND user_id = ?').get(Number(req.params.id), req.user.userId);
     if (!card) return res.status(404).json({ error: 'Card not found' });
-    if (!hasOfflineDict(card.lang)) {
-      return res.json({ linked: false, lemma: '', pos: '', ipa: '', forms: null, examples: null, etymology: null, story: null });
+    if (!hasLexicon(card.lang)) {
+      // German: no stored link, look the card's word up directly (same part of speech first)
+      const lang = card.lang;
+      const word = splitArticle(card.word, '', lang).word;
+      const exists = (pos) => getDict(lang)?.prepare("SELECT 1 FROM entries WHERE word_norm = ? AND word = ? AND pos = ? AND glosses != '[]' LIMIT 1")
+        .get(normalizeWord(word), word, pos);
+      const wanted = WIKT_POS[card.part_of_speech];
+      const pos = wanted && exists(wanted) ? wanted : '';
+      const entry = dictionaryEntry(word, pos, lang);
+      if (!entry.pos) return res.json({ linked: false, lemma: '', pos: '', ipa: '', forms: null, examples: null, etymology: null, story: null });
+      return res.json({ linked: true, ...entry });
     }
     if (card.dict_lemma) return res.json({ linked: true, ...dictionaryEntry(card.dict_lemma, card.dict_pos) });
     // Not linked (phrase, made-up word, no dictionary): the lexicon can still know the card's word

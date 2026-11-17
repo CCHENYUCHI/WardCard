@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Build the offline Spanish–English dictionary used by /api/dictionary/lookup.
+ * Build the offline Spanish–English (or German–English) dictionary used by /api/dictionary/lookup.
  *
  * Schema version 2 also stores per-lemma IPA, inflected forms, example sentences (with English translation) and
  * etymology, plus the hand-written A1 lexicon; older files without those tables keep working (see server/dictionary.js).
@@ -8,7 +8,10 @@
  * Input: the Spanish JSONL extract from kaikki.org (Wiktionary via wiktextract, CC BY-SA)
  *   https://kaikki.org/dictionary/Spanish/kaikki.org-dictionary-Spanish.jsonl  (~1GB)
  *
- * Usage: node server/scripts/build-dictionary.js <input.jsonl> [output.sqlite]
+ * German: https://kaikki.org/dictionary/German/kaikki.org-dictionary-German.jsonl  → data/dict/de-en.sqlite
+ *
+ * Usage: node server/scripts/build-dictionary.js <input.jsonl> [output.sqlite] [--lang es|de]
+ *        (the language defaults to es, or de when the input file name contains "German")
  *
  * The file is streamed line by line, so this also runs on the 1GB VM.
  */
@@ -20,7 +23,11 @@ const { normalizeWord } = require('../cardUtils');
 const { writeLexicon } = require('../lexicon');
 const { extractExtras } = require('../dictionaryExtras');
 
-const DEFAULT_OUT = path.join(__dirname, '../../data/dict/es-en.sqlite');
+const DEFAULT_OUTS = {
+  es: path.join(__dirname, '../../data/dict/es-en.sqlite'),
+  de: path.join(__dirname, '../../data/dict/de-en.sqlite')
+};
+const DEFAULT_OUT = DEFAULT_OUTS.es;
 const SKIP_POS = new Set(['name', 'character', 'symbol', 'punct', 'romanization', 'suffix', 'prefix', 'infix', 'interfix', 'affix', 'circumfix']);
 // Senses that only add noise to a learner's lookup ("me" -> initialism of "muerte encefálica")
 const SKIP_SENSE_TAGS = new Set(['abbreviation', 'initialism', 'acronym', 'obsolete', 'archaic', 'misspelling']);
@@ -30,22 +37,26 @@ const MAX_GLOSS = 140;
 
 const clip = (s) => (s.length > MAX_GLOSS ? `${s.slice(0, MAX_GLOSS - 1)}…` : s);
 
-// 'm' | 'f' | 'mf' | ''
+// 'm' | 'f' | 'mf' | 'n' (German neuter) | ''
 function detectGender(entry) {
   const tags = new Set([...(entry.tags || []), ...(entry.senses || []).flatMap(s => s.tags || [])]);
   let m = tags.has('masculine');
   let f = tags.has('feminine');
-  if (!m && !f) {
-    // Head line such as "casa f (plural casas)" or "artista m or f"
+  let n = tags.has('neuter');
+  if (!m && !f && !n) {
+    // Head line such as "casa f (plural casas)", "artista m or f" or "Haus n (strong, …)"
     const head = entry.head_templates?.[0]?.expansion || '';
     // Longest alternatives first: "m or f" must not stop at "m"
-    const match = head.match(/\s(m or f|f or m|mf|m pl|f pl|m|f)(?=\s|$|\()/);
+    const match = head.match(/\s(m or f|f or m|mf|m pl|f pl|n pl|m|f|n)(?=\s|$|\(|,)/);
     if (match) {
       m = match[1].startsWith('m');
       f = match[1].includes('f');
+      n = match[1].startsWith('n');
     }
   }
-  return m && f ? 'mf' : m ? 'm' : f ? 'f' : '';
+  if (m && f) return 'mf';
+  if (n && !m && !f) return 'n';
+  return m ? 'm' : f ? 'f' : n ? 'n' : '';
 }
 
 // "first-person singular preterite indicative of ir" -> "first-person singular preterite indicative"
@@ -63,8 +74,8 @@ function formDescription(glosses, lemma) {
  * Turn one wiktextract entry into a compact row, or null to skip it.
  * @returns {{ word, word_norm, pos, gender, glosses: string[], form_of: {lemma, via}[], extras } | null}
  */
-function toRow(entry) {
-  if (!entry || entry.lang_code !== 'es' || !entry.word || SKIP_POS.has(entry.pos)) return null;
+function toRow(entry, lang = 'es') {
+  if (!entry || entry.lang_code !== lang || !entry.word || SKIP_POS.has(entry.pos)) return null;
   if (entry.word.length > 1 && entry.word === entry.word.toUpperCase() && /\p{Lu}/u.test(entry.word)) return null; // "ME", "ONU"
   const glosses = [];
   const formOf = [];
@@ -93,7 +104,7 @@ function toRow(entry) {
     glosses,
     form_of: formOf,
     // Only lemmas (entries with their own meanings) get forms, examples and etymology
-    extras: glosses.length > 0 ? extractExtras(entry) : null
+    extras: glosses.length > 0 ? extractExtras(entry, lang) : null
   };
 }
 
@@ -105,7 +116,7 @@ function createSchema(db) {
       word TEXT NOT NULL,
       word_norm TEXT NOT NULL,   -- lowercase, no accents
       pos TEXT,                  -- wiktextract pos: noun, verb, adj, adv, ...
-      gender TEXT,               -- 'm' | 'f' | 'mf' | ''
+      gender TEXT,               -- 'm' | 'f' | 'mf' | 'n' | ''
       glosses TEXT,              -- JSON string[] (own meanings, English)
       form_of TEXT,              -- JSON {lemma, via}[] or NULL
       ipa TEXT                   -- '/aˈblaɾ/' (lemmas only)
@@ -121,7 +132,8 @@ function createSchema(db) {
   `);
 }
 
-async function build(input, output = DEFAULT_OUT) {
+async function build(input, output, { lang = 'es' } = {}) {
+  output = output || DEFAULT_OUTS[lang] || DEFAULT_OUT;
   fs.mkdirSync(path.dirname(output), { recursive: true });
   const tmp = `${output}.tmp`;
   fs.rmSync(tmp, { force: true });
@@ -144,7 +156,7 @@ async function build(input, output = DEFAULT_OUT) {
     lines++;
     let row;
     try {
-      row = toRow(JSON.parse(line));
+      row = toRow(JSON.parse(line), lang);
     } catch (_) {
       continue;
     }
@@ -173,8 +185,10 @@ async function build(input, output = DEFAULT_OUT) {
   meta.run('built_at', new Date().toISOString());
   meta.run('entries', String(rows));
   meta.run('schema_version', '2');
+  meta.run('lang', lang);
   // The file is replaced as a whole, so the hand-written lexicon has to be written before the rename
-  const lexiconEntries = writeLexicon(db);
+  // (the lexicon is Spanish only)
+  const lexiconEntries = lang === 'es' ? writeLexicon(db) : 0;
   db.exec('VACUUM');
   db.close();
   fs.renameSync(tmp, output);
@@ -182,16 +196,38 @@ async function build(input, output = DEFAULT_OUT) {
   return { lines, rows, lexiconEntries, bytes: fs.statSync(output).size, output };
 }
 
-module.exports = { build, toRow, createSchema, DEFAULT_OUT };
+// Language of a kaikki file: lang_code of its first entry, else the file name ("…German…"), else es
+function detectInputLang(input) {
+  try {
+    const fd = fs.openSync(input, 'r');
+    const buf = Buffer.alloc(256 * 1024);
+    const n = fs.readSync(fd, buf, 0, buf.length, 0);
+    fs.closeSync(fd);
+    const first = buf.toString('utf8', 0, n).split('\n').find(l => l.trim());
+    const code = first && JSON.parse(first).lang_code;
+    if (DEFAULT_OUTS[code]) return code;
+  } catch (_) { /* first line longer than the buffer or not JSON: fall back to the name */ }
+  return /german/i.test(path.basename(input)) ? 'de' : 'es';
+}
+
+module.exports = { build, toRow, createSchema, detectGender, detectInputLang, DEFAULT_OUT, DEFAULT_OUTS };
 
 if (require.main === module) {
-  const [input, output] = process.argv.slice(2);
+  const args = process.argv.slice(2);
+  const langAt = args.indexOf('--lang');
+  const langArg = langAt >= 0 ? args.splice(langAt, 2)[1] : '';
+  const [input, output] = args;
   if (!input) {
-    console.error('Usage: node server/scripts/build-dictionary.js <kaikki-Spanish.jsonl> [output.sqlite]');
+    console.error('Usage: node server/scripts/build-dictionary.js <kaikki-Spanish|German.jsonl> [output.sqlite] [--lang es|de]');
     process.exit(1);
   }
-  console.log(`Building dictionary from ${input}`);
-  build(input, output || DEFAULT_OUT)
+  const lang = langArg || detectInputLang(input);
+  if (!DEFAULT_OUTS[lang]) {
+    console.error(`Unknown language: ${lang} (es | de)`);
+    process.exit(1);
+  }
+  console.log(`Building ${lang} dictionary from ${input}`);
+  build(input, output, { lang })
     .then(({ lines, rows, lexiconEntries, bytes, output: out }) => {
       console.log(`\n✅ ${rows.toLocaleString()} entries (from ${lines.toLocaleString()} lines) + ${lexiconEntries} lexicon entries → ${out} (${(bytes / 1024 / 1024).toFixed(1)} MB)`);
     })
