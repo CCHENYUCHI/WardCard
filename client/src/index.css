@@ -4302,3 +4302,22 @@ textarea {
   max-width: 560px;
   box-sizing: border-box;
 }
+
+/* German spelling note under the answer: capital letter, umlaut, ae/oe/ue/ss (AdaptiveStudySession) */
+.spelling-hint {
+  max-width: 440px;
+  margin: 10px auto 0;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-align: center;
+}
+.spelling-hint-correct {
+  background: var(--google-yellow-light);
+  color: var(--google-yellow-dark);
+}
+.spelling-hint-incorrect {
+  background: var(--google-red-light);
+  color: var(--google-red);
+}

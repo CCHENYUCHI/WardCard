@@ -15,7 +15,8 @@ import {
   stripArticle, normalizeAnswer, getAcceptableAnswers,
   findInflectedForms, maskSentence, displayWord, pickDistractors
 } from '../utils/spanish';
-import { getLangConfig } from '../utils/learnLang';
+import { getLangConfig, getLearnLang } from '../utils/learnLang';
+import { checkGermanSpelling } from '../utils/germanSpelling';
 
 // Special-character keys of the learning language (es: á é ñ ¿ …, de: ä ö ü ß)
 const specialKeys = () => getLangConfig().specialChars;
@@ -35,6 +36,7 @@ export default function AdaptiveStudySession({
   const [showHint, setShowHint] = useState(false);
   const [userInput, setUserInput] = useState('');
   const [spellingStatus, setSpellingStatus] = useState('typing'); // 'typing', 'correct', 'incorrect'
+  const [spellingHint, setSpellingHint] = useState(''); // German: capital letter / umlaut / ae-oe-ue-ss note
   const [completedCount, setCompletedCount] = useState(0);
   const [stagePromotions, setStagePromotions] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
@@ -98,6 +100,7 @@ export default function AdaptiveStudySession({
     setShowHint(false);
     setUserInput('');
     setSpellingStatus('typing');
+    setSpellingHint('');
     setChosenIndex(null);
     questionStartRef.current = Date.now();
   }, [currentIndex]);
@@ -155,12 +158,29 @@ export default function AdaptiveStudySession({
     const typed = normalizeAnswer(userInput);
     if (!typed) return;
 
+    playSpanishPronunciation(displayWord(currentCard));
+
+    if (getLearnLang() === 'de') {
+      // Case matters for nouns; ae/oe/ue/ss passes as Hard with the proper spelling shown
+      const accepted = String(currentCard.word || '').split(/[/,]/).map(p => p.trim()).filter(Boolean);
+      if (mode === 'cloze') accepted.push(...clozeForms);
+      const result = checkGermanSpelling(userInput, accepted, { isNoun: currentCard.part_of_speech === 'sustantivo' });
+      setSpellingHint(result.hint);
+      if (result.status === 'wrong') {
+        setSpellingStatus('incorrect');
+        setIsFlipped(true);
+      } else {
+        setSpellingStatus('correct');
+        setTimeout(() => handleRate(result.status === 'variant' ? 2 : 3), result.status === 'variant' ? 2200 : 700);
+      }
+      return;
+    }
+
     const accepted = new Set(getAcceptableAnswers(currentCard.word));
     // In the cloze, the form used in the sentence (e.g. "hablamos") is also correct
     if (mode === 'cloze') clozeForms.forEach(f => accepted.add(normalizeAnswer(f)));
     const isMatch = accepted.has(typed) || accepted.has(normalizeAnswer(stripArticle(typed)));
 
-    playSpanishPronunciation(displayWord(currentCard));
     if (isMatch) {
       setSpellingStatus('correct');
       setTimeout(() => {
@@ -613,6 +633,10 @@ export default function AdaptiveStudySession({
               )}
             </div>
 
+            {spellingHint && spellingStatus !== 'typing' && (
+              <div className={`spelling-hint spelling-hint-${spellingStatus}`}>💡 {spellingHint}</div>
+            )}
+
             {/* Incorrect Feedback */}
             {spellingStatus === 'incorrect' && (
               <div style={{ 
@@ -736,6 +760,10 @@ export default function AdaptiveStudySession({
                   </button>
                 </div>
               </div>
+            )}
+
+            {spellingHint && spellingStatus !== 'typing' && (
+              <div className={`spelling-hint spelling-hint-${spellingStatus}`}>💡 {spellingHint}</div>
             )}
 
             {/* Correct Feedback Banner */}
