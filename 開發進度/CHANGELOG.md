@@ -62,6 +62,7 @@
 - **字典建置：`artista m or f` 這類詞條被讀成只有陽性**（比對順序讓 `m` 搶先於 `m or f`），現在正確標成陰陽同形（`mf`）。
 
 ### Documentation
+- **GitHub 倉庫改指向 `SeanYang613/WardCard`**：`專案開發狀況總覽.md`、`開發進度/README.md`、`GIT與GITHUB管理規範.md` 的倉庫網址改為自己的 fork（`origin`），原作者的 `CCHENYUCHI/WardCard` 標為 `upstream`；本機 `main` 改追蹤 `origin/main`。開 PR 時用 `gh pr create --repo SeanYang613/WardCard`。
 - **重寫 `README.md`**：改為給一般使用者看的應用程式介紹，反映目前功能（今日學習駕駛艙、五階段自適應練習、FSRS v4.5、例句點字查詢 / 離線字典、Mobile App 現況），移除過時的 SM-2 與 Gemini 1.5 說明，部署步驟精簡並收合。
 - **延伸功能規劃改為省額度優先版 (`開發進度/AI功能延伸規劃.md`)**：C0–C5 改為 D0–D6；S5 四選一、答錯提示、字典等改以本機邏輯為主，AI 只在必要時按需使用；圖片改為上傳、不做 AI 生圖；只做 Web。
 
