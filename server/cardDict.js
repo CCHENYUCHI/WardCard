@@ -86,11 +86,19 @@ function linkPendingCards(db, { relink = false } = {}) {
   return { checked, linked };
 }
 
-/** Dictionary fields of the entry a card is linked to (cached per call of enrichCards) */
+/** Dictionary entries (gender, glosses) a card's link points to; nouns like orden have one per gender */
 function entryFields(lemma, pos) {
-  const row = getDict()?.prepare("SELECT gender, glosses FROM entries WHERE word_norm = ? AND word = ? AND pos = ? AND glosses != '[]' LIMIT 1")
-    .get(normalizeWord(lemma), lemma, pos);
-  return row ? { gender: row.gender, glosses: parseJson(row.glosses, []) } : null;
+  return (getDict()?.prepare("SELECT gender, glosses FROM entries WHERE word_norm = ? AND word = ? AND pos = ? AND glosses != '[]'")
+    .all(normalizeWord(lemma), lemma, pos) || [])
+    .map(row => ({ gender: row.gender, glosses: parseJson(row.glosses, []) }));
+}
+
+// el orden (m) and la orden (f) link to the same lemma: take the entry whose gender matches the card's article
+function entryForCard(entries, card) {
+  const article = String(card.article || '').toLowerCase();
+  return entries.find(e => ARTICLE_BY_DICT[e.gender] && ARTICLE_BY_DICT[e.gender] === article)
+    || entries.find(e => GENDER_BY_DICT[e.gender] && GENDER_BY_DICT[e.gender] === card.gender)
+    || entries[0];
 }
 
 /** Replace a linked card's gender / part of speech / English meaning with the dictionary's; leave the rest alone. */
@@ -101,7 +109,7 @@ function enrichCards(cards) {
     if (!card.dict_lemma) return card;
     const key = `${card.dict_lemma}|${card.dict_pos}`;
     if (!cache.has(key)) cache.set(key, entryFields(card.dict_lemma, card.dict_pos));
-    const entry = cache.get(key);
+    const entry = entryForCard(cache.get(key), card);
     if (!entry) return card;
     const out = { ...card };
     const appPos = POS_MAP[card.dict_pos];

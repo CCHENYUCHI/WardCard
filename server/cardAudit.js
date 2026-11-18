@@ -58,10 +58,13 @@ function entriesFor(spelling) {
   return (exact.length ? exact : rows).map(toCandidate);
 }
 
-function entryFor(lemma, pos) {
-  const row = getDict().prepare("SELECT word, pos, gender, glosses FROM entries WHERE word_norm = ? AND word = ? AND pos = ? AND glosses != '[]' LIMIT 1")
-    .get(normalizeWord(lemma), lemma, pos);
-  return row ? toCandidate(row) : null;
+// orden has a masculine and a feminine noun entry: with a card given, take the one matching its article / gender
+function entryFor(lemma, pos, card = null) {
+  const candidates = getDict().prepare("SELECT word, pos, gender, glosses FROM entries WHERE word_norm = ? AND word = ? AND pos = ? AND glosses != '[]' LIMIT 10")
+    .all(normalizeWord(lemma), lemma, pos).map(toCandidate);
+  if (!candidates.length) return null;
+  return (card && (candidates.find(c => c.article && c.article === card.article)
+    || candidates.find(c => c.gender && c.gender !== 'none' && c.gender === card.gender))) || candidates[0];
 }
 
 // "el agua", "el hacha": feminine nouns starting with a stressed a- take el
@@ -114,7 +117,7 @@ function auditCards(db, userId) {
     let formOf = [];
 
     if (card.dict_lemma) {
-      linked = entryFor(card.dict_lemma, card.dict_pos);
+      linked = entryFor(card.dict_lemma, card.dict_pos, card);
       if (linked && !candidates.some(c => c.lemma === linked.lemma && c.pos === linked.pos)) candidates = [linked, ...candidates];
       if (linked) {
         expected = linked;
@@ -184,7 +187,7 @@ function applyFixes(db, userId, items) {
     for (const item of Array.isArray(items) ? items : []) {
       const card = getCard.get(Number(item.id), userId);
       if (!card) { skipped.push({ id: item.id, reason: '找不到這張卡' }); continue; }
-      const entry = entryFor(String(item.lemma || ''), String(item.pos || ''));
+      const entry = entryFor(String(item.lemma || ''), String(item.pos || ''), card);
       if (!entry) { skipped.push({ id: card.id, reason: '字典裡沒有這個條目' }); continue; }
       const after = { ...card, ...changesFor(card, entry), dict_lemma: entry.lemma, dict_pos: entry.pos };
       if (item.rename && entry.lemma !== card.word) {
