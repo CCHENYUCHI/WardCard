@@ -27,7 +27,7 @@
 ```
 
 - **目前主要分支**：`main`
-- **遠端倉庫**：`git@github.com:CCHENYUCHI/WardCard.git`
+- **遠端倉庫**：`https://github.com/SeanYang613/WardCard.git`（`origin`；原作者倉庫 `CCHENYUCHI/WardCard` 設為 `upstream`，只用來同步更新）
 - **正式環境網址**：`https://wardcard.ycctw.xyz`
 - **本機開發 Port**：
   - 前端 Web：`http://localhost:5173`
