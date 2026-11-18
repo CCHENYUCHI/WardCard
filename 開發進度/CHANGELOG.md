@@ -57,6 +57,7 @@
   - **驗證與測試**：`server/scripts/lexicon/validate.js`（欄位、長度、來源、例句含該字、SVG 大小與安全性）；`server/lexicon.test.js`。撰寫規範見 `server/scripts/lexicon/WRITING.md`。
 
 ### Fixed
+- **同形異義名詞顯示錯性別 (`server/cardDict.js`, `server/cardAudit.js`)**：orden 這類字典裡有陽性、陰性兩個名詞條目的字，卡片顯示與單字庫健檢原本都只拿第一個條目，el orden 會被顯示成陰性、英文釋義也是「命令」。現在依卡片的冠詞（其次是性別）挑對應的條目：el orden → 陽性「order (arrangement, sequence)」，la orden → 陰性「order (command)」。測試：`server/cardDict.test.js`。
 - **Windows 上 `npm test` 有 4 個檔案的清理步驟失敗（`EBUSY`）**：`cardAudit` / `cardDict` / `dictionary` / `dictionaryExtras` 測試在刪除暫存資料夾前沒有關閉離線字典的 SQLite 連線，Windows 不能刪除開啟中的檔案；改為先 `setDictionary(null)` 並關閉連線。
 - **`POST /api/cards` 更新既有單字時回傳錯誤的 id**：upsert 撞到已存在的單字時，SQLite 的 `lastInsertRowid` 仍是上一筆，回傳的 id（以及新的字典連結）會指到別張卡；改為依單字查回正確的 id。
 - **字典建置：`artista m or f` 這類詞條被讀成只有陽性**（比對順序讓 `m` 搶先於 `m or f`），現在正確標成陰陽同形（`mf`）。
