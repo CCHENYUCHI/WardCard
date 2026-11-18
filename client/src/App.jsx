@@ -156,11 +156,17 @@ export default function App() {
         curriculum_unit: (wordData.curriculum_unit && wordData.curriculum_unit.trim()) || wordData.category || ''
       };
       if (editingCard) {
-        await fetchAPI(`/api/cards/${editingCard.id}`, {
+        const res = await fetchAPI(`/api/cards/${editingCard.id}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
         });
+        // 409: another card is already this word + article (el orden / la orden are separate cards)
+        if (!res.ok) {
+          const body = await res.json().catch(() => ({}));
+          window.alert(body.error || '儲存失敗');
+          return;
+        }
       } else {
         await fetchAPI('/api/cards', {
           method: 'POST',

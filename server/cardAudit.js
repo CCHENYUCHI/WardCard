@@ -171,7 +171,8 @@ function applyFixes(db, userId, items) {
   if (!dictionaryHasEntries()) throw new Error('沒有離線字典，無法套用');
   const batchId = crypto.randomUUID();
   const getCard = db.prepare(`SELECT id, ${FIX_COLUMNS.join(', ')} FROM cards WHERE id = ? AND user_id = ?`);
-  const wordTaken = db.prepare("SELECT id FROM cards WHERE user_id = ? AND lang = 'es' AND word = ? AND id != ?");
+  // A rename collides only with a card of the same word AND article (el orden / la orden are two cards)
+  const wordTaken = db.prepare("SELECT id FROM cards WHERE user_id = ? AND lang = 'es' AND word = ? AND COALESCE(article, '') = ? AND id != ?");
   const update = db.prepare(`UPDATE cards SET ${FIX_COLUMNS.map(c => `${c} = ?`).join(', ')}, updated_at = datetime('now', 'localtime') WHERE id = ? AND user_id = ?`);
   const log = db.prepare('INSERT INTO card_audit_log (batch_id, user_id, card_id, before, after) VALUES (?, ?, ?, ?, ?)');
   const undismiss = db.prepare('DELETE FROM card_audit_dismissed WHERE card_id = ?');
@@ -187,7 +188,7 @@ function applyFixes(db, userId, items) {
       if (!entry) { skipped.push({ id: card.id, reason: '字典裡沒有這個條目' }); continue; }
       const after = { ...card, ...changesFor(card, entry), dict_lemma: entry.lemma, dict_pos: entry.pos };
       if (item.rename && entry.lemma !== card.word) {
-        if (wordTaken.get(userId, entry.lemma, card.id)) {
+        if (wordTaken.get(userId, entry.lemma, after.article || '', card.id)) {
           skipped.push({ id: card.id, reason: `單字庫已經有「${entry.lemma}」，沒有改名` });
         } else {
           after.word = entry.lemma;

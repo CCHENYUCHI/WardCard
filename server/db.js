@@ -358,10 +358,14 @@ try {
   // Column already exists
 }
 
-// Unique per user + learning language + word to support UPSERT (the same spelling may exist in two languages)
+// One card per user + learning language + word + article: the same spelling may exist in two languages, and
+// nouns whose meaning changes with the article are two cards (el orden / la orden, der See / die See).
+// Which existing card an import or a save hits is decided in server/cardKey.js.
 db.exec('DROP INDEX IF EXISTS idx_cards_word;');
 db.exec('DROP INDEX IF EXISTS idx_cards_user_word;');
-db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_cards_user_lang_word ON cards(user_id, lang, word);');
+db.exec("UPDATE cards SET article = LOWER(TRIM(COALESCE(article, ''))) WHERE article IS NULL OR article != LOWER(TRIM(article));");
+db.exec('DROP INDEX IF EXISTS idx_cards_user_lang_word;');
+db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_cards_user_lang_word_article ON cards(user_id, lang, word, article);');
 
 // Create a default admin user if none exists
 const userCountRow = db.prepare('SELECT count(*) as count FROM users').get();

@@ -16,6 +16,7 @@ const {
 } = require('./translations');
 const { recordLookup, setLookupTranslation, listLookups, deleteLookup, clearLookups } = require('./lookupHistory');
 const { csvRecordToCard, templateCsv } = require('./csvImport');
+const { findCardByKey, findKeyConflict, pickByArticle, normArticle } = require('./cardKey');
 const { splitArticle, normalizeWord } = require('./cardUtils');
 const { getDict, dictionaryHasEntries, lookupForm, getEntryExtras, getDictionaryInfo, findMyCards, externalLinks, parseJson, hasLatin } = require('./dictionary');
 const { getBuildInfo } = require('./buildInfo');
@@ -262,25 +263,16 @@ app.post('/api/cards', authenticateToken, (req, res) => {
         lifecycle_status, is_starred, mastery_stage, curriculum_unit, due_date
       )
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
-      ON CONFLICT(user_id, lang, word) DO UPDATE SET
-        article=excluded.article,
-        gender=excluded.gender,
-        part_of_speech=excluded.part_of_speech,
-        translation=excluded.translation,
-        english_translation=excluded.english_translation,
-        definition_es=excluded.definition_es,
-        example_es=excluded.example_es,
-        example_zh=excluded.example_zh,
-        notes=excluded.notes,
-        category=excluded.category,
-        dele_level=excluded.dele_level,
-        lifecycle_status=excluded.lifecycle_status,
-        is_starred=excluded.is_starred,
-        curriculum_unit=excluded.curriculum_unit,
-        updated_at=datetime('now', 'localtime')
+    `);
+    // Same word + article (see server/cardKey.js) updates the card; an empty incoming article keeps the card's own
+    const updateStmt = db.prepare(`
+      UPDATE cards SET
+        article = COALESCE(NULLIF(?, ''), article), gender = ?, part_of_speech = ?, translation = ?, english_translation = ?,
+        definition_es = ?, example_es = ?, example_zh = ?, notes = ?, category = ?, dele_level = ?,
+        lifecycle_status = ?, is_starred = ?, curriculum_unit = ?, updated_at = datetime('now', 'localtime')
+      WHERE id = ?
     `);
 
-    const selectId = db.prepare('SELECT id FROM cards WHERE user_id = ? AND lang = ? AND word = ?');
     const insertedIds = [];
     for (const card of cards) {
       if (!card.word || !card.translation) continue;
@@ -294,11 +286,7 @@ app.post('/api/cards', authenticateToken, (req, res) => {
       const starred = card.is_starred ? 1 : 0;
       const stage = Number(card.mastery_stage) || 1;
 
-      const result = insertStmt.run(
-        userId,
-        lang,
-        w,
-        a,
+      const content = [
         card.gender || 'none',
         card.part_of_speech || 'sustantivo',
         card.translation.trim(),
@@ -310,12 +298,16 @@ app.post('/api/cards', authenticateToken, (req, res) => {
         cat,
         card.dele_level || LANGUAGES[lang].defaultLevel,
         status,
-        starred,
-        stage,
-        unit
-      );
-      // On an upsert that hits an existing word, lastInsertRowid still holds the previous insert: look the card up
-      const cardId = Number(selectId.get(userId, lang, w)?.id ?? result.lastInsertRowid);
+        starred
+      ];
+      const existing = findCardByKey(db, userId, lang, w, a);
+      let cardId;
+      if (existing) {
+        updateStmt.run(a, ...content, unit, existing.id);
+        cardId = existing.id;
+      } else {
+        cardId = Number(insertStmt.run(userId, lang, w, a, ...content, stage, unit).lastInsertRowid);
+      }
       insertedIds.push(cardId);
       linkCard(db, { id: cardId, word: w, part_of_speech: card.part_of_speech || 'sustantivo', lang });
     }
@@ -347,6 +339,13 @@ app.put('/api/cards/:id', authenticateToken, (req, res) => {
     const status = lifecycle_status || existing.lifecycle_status || 'active';
     const starred = is_starred !== undefined ? (is_starred ? 1 : 0) : existing.is_starred;
     const stage = mastery_stage !== undefined ? Number(mastery_stage) : existing.mastery_stage;
+    const nextArticle = normArticle(article);
+
+    const taken = findKeyConflict(db, userId, existing.lang, word.trim(), nextArticle, Number(id));
+    if (taken) {
+      const label = nextArticle ? `${nextArticle} ${word.trim()}` : word.trim();
+      return res.status(409).json({ error: `單字庫已經有「${label}」，請改用其他冠詞或直接編輯那張卡`, id: taken.id });
+    }
 
     const stmt = db.prepare(`
       UPDATE cards
@@ -358,7 +357,7 @@ app.put('/api/cards/:id', authenticateToken, (req, res) => {
 
     stmt.run(
       word.trim(),
-      article ? article.trim() : '',
+      nextArticle,
       gender || 'none',
       part_of_speech || 'sustantivo',
       translation.trim(),
@@ -421,17 +420,13 @@ app.post('/api/cards/upload-csv', authenticateToken, upload.single('file'), (req
     const insertStmt = db.prepare(`
       INSERT INTO cards (user_id, lang, word, article, gender, translation, english_translation, notes, definition_es, example_es, example_zh, category, due_date)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now', 'localtime'))
-      ON CONFLICT(user_id, lang, word) DO UPDATE SET
-        article=excluded.article,
-        gender=excluded.gender,
-        translation=excluded.translation,
-        english_translation=excluded.english_translation,
-        notes=excluded.notes,
-        definition_es=excluded.definition_es,
-        example_es=excluded.example_es,
-        example_zh=excluded.example_zh,
-        category=excluded.category,
-        updated_at=datetime('now', 'localtime')
+    `);
+    // Same word + article updates the card (review progress and status stay); el orden / la orden are two rows
+    const updateStmt = db.prepare(`
+      UPDATE cards SET
+        article = COALESCE(NULLIF(?, ''), article), gender = ?, translation = ?, english_translation = ?, notes = ?,
+        definition_es = ?, example_es = ?, example_zh = ?, category = ?, updated_at = datetime('now', 'localtime')
+      WHERE id = ?
     `);
 
     let processed = 0;
@@ -439,10 +434,11 @@ app.post('/api/cards/upload-csv', authenticateToken, upload.single('file'), (req
       // Header names: Spanish / German / word (or a lang column) — default is the deck being shown
       const card = csvRecordToCard(record, req.lang);
       if (!card) continue;
-      insertStmt.run(
-        userId, card.lang, card.word, card.article, card.gender, card.translation, card.english_translation,
-        card.notes, card.definition_es, card.example_es, card.example_zh, card.category
-      );
+      const content = [card.gender, card.translation, card.english_translation, card.notes,
+        card.definition_es, card.example_es, card.example_zh, card.category];
+      const existing = findCardByKey(db, userId, card.lang, card.word, card.article);
+      if (existing) updateStmt.run(card.article, ...content, existing.id);
+      else insertStmt.run(userId, card.lang, card.word, card.article, ...content);
       processed++;
     }
 
@@ -1048,12 +1044,16 @@ app.post('/api/ai/extract', authenticateToken, upload.single('image'), async (re
     });
 
     // Preview only: the client saves the cards the user keeps via POST /api/cards
-    const existingWords = new Set(
-      db.prepare('SELECT word FROM cards WHERE user_id = ? AND lang = ?')
-        .all(req.user.userId, req.lang)
-        .map(row => row.word.toLowerCase())
-    );
-    const cards = extracted.map(card => ({ ...card, exists: existingWords.has(card.word.toLowerCase()) }));
+    // "Already in the deck" uses the same word + article rule as saving (la orden is new next to el orden)
+    const byWord = new Map();
+    for (const row of db.prepare('SELECT word, article FROM cards WHERE user_id = ? AND lang = ?').all(req.user.userId, req.lang)) {
+      const key = row.word.toLowerCase();
+      byWord.set(key, [...(byWord.get(key) || []), row]);
+    }
+    const cards = extracted.map(card => {
+      const { word, article } = splitArticle(card.word, card.article, req.lang);
+      return { ...card, exists: Boolean(pickByArticle(byWord.get(word.toLowerCase()) || [], article)) };
+    });
 
     res.json({ success: true, count: cards.length, cards });
   } catch (err) {
@@ -1384,6 +1384,10 @@ app.post('/api/dictionary/add', authenticateToken, (req, res) => {
     if (!word || !translation) return res.status(400).json({ error: '缺少單字或中文釋義' });
 
     const userId = req.user.userId;
+    // Already a card (same word + article, or no article on either side): report it, don't touch it
+    const found = findCardByKey(db, userId, lang, word, article);
+    if (found) return res.json({ created: false, id: found.id, lifecycle_status: found.lifecycle_status });
+
     const category = card.category || '字典查詞';
     const result = db.prepare(`
       INSERT INTO cards (
@@ -1392,7 +1396,6 @@ app.post('/api/dictionary/add', authenticateToken, (req, res) => {
         lifecycle_status, curriculum_unit, due_date
       )
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'inbox', ?, datetime('now', 'localtime'))
-      ON CONFLICT(user_id, lang, word) DO NOTHING
     `).run(
       userId, lang, word, article,
       card.gender || 'none',
@@ -1408,13 +1411,9 @@ app.post('/api/dictionary/add', authenticateToken, (req, res) => {
       category
     );
 
-    if (result.changes > 0) {
-      const id = Number(result.lastInsertRowid);
-      linkCard(db, { id, word, part_of_speech: card.part_of_speech || 'sustantivo', lang });
-      return res.status(201).json({ created: true, id });
-    }
-    const existing = db.prepare('SELECT id, lifecycle_status FROM cards WHERE user_id = ? AND lang = ? AND word = ?').get(userId, lang, word);
-    res.json({ created: false, id: existing?.id, lifecycle_status: existing?.lifecycle_status });
+    const id = Number(result.lastInsertRowid);
+    linkCard(db, { id, word, part_of_speech: card.part_of_speech || 'sustantivo', lang });
+    res.status(201).json({ created: true, id });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
