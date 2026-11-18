@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { X, Key, Check, Volume2, Download, Upload, ExternalLink, ShieldCheck, Sparkles } from 'lucide-react';
 import VersionInfo from './VersionInfo';
 import { playSpanishPronunciation, getTtsMode, setTtsMode, TTS_MODES } from '../utils/speech';
+import { getLangConfig, getLearnLang } from '../utils/learnLang';
 
 export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, onCardsChanged }) {
   const [apiKey, setApiKey] = useState('');
@@ -59,13 +60,13 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
   };
 
   const handleCalibrateDele = async () => {
-    if (!window.confirm(`將由 AI 重新評估全部 ${cards?.length || 0} 個單字的 DELE 級數並覆蓋原本的級數，確定要執行嗎？`)) return;
+    if (!window.confirm(`將由 AI 重新評估全部 ${cards?.length || 0} 個單字的 ${getLangConfig().levelLabel} 級數並覆蓋原本的級數，確定要執行嗎？`)) return;
     setIsCalibrating(true);
     setCalibrateResult('');
     try {
       const res = await fetchAPI('/api/cards/calibrate-dele', { method: 'POST' });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'DELE 校準失敗');
+      if (!res.ok) throw new Error(data.error || `${getLangConfig().levelLabel} 校準失敗`);
       const dist = Object.entries(data.distribution || {})
         .filter(([, n]) => n > 0)
         .map(([lvl, n]) => `${lvl}: ${n}`)
@@ -110,6 +111,24 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
     reader.readAsText(file);
   };
 
+  // Blank template for the current learning language (server builds it: header + one example row)
+  const handleCsvTemplate = async () => {
+    try {
+      const res = await fetchAPI('/api/cards/csv-template');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const url = URL.createObjectURL(await res.blob());
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `wardcard-template-${getLearnLang()}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    } catch (err) {
+      alert('下載範本失敗：' + err.message);
+    }
+  };
+
   const handleCsvImport = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -152,7 +171,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
             </label>
           </div>
           <p style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginBottom: '10px' }}>
-            用於 AI 拍照及筆記西語萃取（Gemini Flash 模型有免費額度，無需綁卡即可申請）。未填寫時會使用伺服器設定的 Key：
+            用於 AI 拍照及筆記{getLangConfig().ui.short}萃取（Gemini Flash 模型有免費額度，無需綁卡即可申請）。未填寫時會使用伺服器設定的 Key：
           </p>
 
           <div style={{ display: 'flex', gap: '10px' }}>
@@ -192,7 +211,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
               id="btn-calibrate-dele"
             >
               <Sparkles size={16} />
-              <span>{isCalibrating ? 'AI 校準中…' : 'AI 一鍵校準 DELE 級數'}</span>
+              <span>{isCalibrating ? 'AI 校準中…' : `AI 一鍵校準 ${getLangConfig().levelLabel} 級數`}</span>
             </button>
             {calibrateResult && (
               <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{calibrateResult}</span>
@@ -256,7 +275,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
         <div style={{ marginBottom: '24px', padding: '16px', background: '#f8f9fa', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
             <div>
-              <div style={{ fontWeight: 600, fontSize: '0.92rem', marginBottom: '2px', color: 'var(--text-primary)' }}>西班牙語真人發音測試</div>
+              <div style={{ fontWeight: 600, fontSize: '0.92rem', marginBottom: '2px', color: 'var(--text-primary)' }}>{getLangConfig().ui.long}真人發音測試</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>支援行動版 Safari、iOS、Android 與電腦瀏覽器</div>
             </div>
             <button
@@ -264,7 +283,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
               disabled={isPlayingAudio}
               onClick={() => {
                 setIsPlayingAudio(true);
-                const audioObj = playSpanishPronunciation('¡Hola! Bienvenidos a PalabraCard. ¿Cómo estás hoy?');
+                const audioObj = playSpanishPronunciation(getLangConfig().ui.ttsSample);
                 if (audioObj && audioObj.addEventListener) {
                   audioObj.addEventListener('ended', () => setIsPlayingAudio(false));
                   audioObj.addEventListener('error', () => setIsPlayingAudio(false));
@@ -274,7 +293,7 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
               }}
             >
               <Volume2 size={16} />
-              <span>{isPlayingAudio ? '播放中...' : '試聽西語'}</span>
+              <span>{isPlayingAudio ? '播放中...' : `試聽${getLangConfig().ui.short}`}</span>
             </button>
           </div>
 
@@ -327,7 +346,16 @@ export default function SettingsModal({ isOpen, onClose, cards, onImportBackup, 
                 style={{ display: 'none' }}
               />
             </label>
+
+            <button className="btn btn-secondary btn-sm" onClick={handleCsvTemplate}>
+              <Download size={14} />
+              <span>下載{getLangConfig().ui.short} CSV 空白範本</span>
+            </button>
           </div>
+          <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '8px', lineHeight: 1.5 }}>
+            CSV 欄位：<code>{getLearnLang() === 'de' ? 'German' : 'Spanish'}</code>（單字，可含冠詞）、<code>Chinese</code>、<code>English</code>、<code>Gender</code>、<code>Category</code>、<code>{getLearnLang() === 'de' ? 'Example' : 'Ejemplo'}</code>、<code>Example_ZH</code>、<code>Notes</code>、<code>lang</code>（<code>es</code> / <code>de</code>）。
+            沒有 <code>lang</code> 欄時，有 <code>German</code> 欄算德語、有 <code>Spanish</code> 欄算西語，否則匯入目前的學習語言；<code>Gender</code> 空白時依冠詞判斷{getLearnLang() === 'de' ? '（der / die / das）' : '（el / la）'}。
+          </p>
         </div>
 
         {/* Which build of the page, the server and the dictionary are running */}

@@ -254,6 +254,46 @@ textarea {
   gap: 4px;
 }
 
+/* Learning-language switcher (🇪🇸 / 🇩🇪) */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color, #dadce0);
+  background: var(--bg-tertiary, #f1f3f4);
+}
+
+.lang-switch-btn {
+  width: 32px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.45;
+  filter: grayscale(0.6);
+  transition: opacity 0.15s ease, filter 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+
+.lang-switch-btn:hover {
+  opacity: 0.85;
+  filter: none;
+}
+
+.lang-switch-btn.active {
+  opacity: 1;
+  filter: none;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.25);
+  transform: scale(1.05);
+  cursor: default;
+}
+
 /* ==========================================================================
    Google Style Buttons
    ========================================================================== */
@@ -354,6 +394,12 @@ textarea {
   background: var(--gender-fem-bg);
   border: 1px solid var(--gender-fem-border);
   color: var(--gender-fem-text);
+}
+
+.badge-gender.neutro {
+  background: #e6f4ea;
+  border: 1px solid #a8dab5;
+  color: #137333;
 }
 
 .badge-gender.none,
@@ -4202,4 +4248,91 @@ textarea {
   text-align: center;
   padding: 24px 0;
   color: var(--text-secondary);
+}
+
+/* Inflection forms of a card (German: plural, genitive, Präteritum / Perfekt, comparison) — WordForms.jsx */
+.word-forms {
+  background: var(--google-blue-light);
+  border: 1px solid #d2e3fc;
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.word-forms-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--google-blue);
+  margin-bottom: 6px;
+}
+.word-forms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 6px 14px;
+  margin: 0;
+}
+.word-forms-item {
+  min-width: 0;
+}
+.word-forms-item dt {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+.word-forms-item dd {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  overflow-wrap: anywhere;
+}
+.word-forms-item .speak-btn {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.word-forms-compact {
+  margin: 12px auto 0;
+  width: 100%;
+  max-width: 560px;
+  box-sizing: border-box;
+}
+
+/* German spelling note under the answer: capital letter, umlaut, ae/oe/ue/ss (AdaptiveStudySession) */
+.spelling-hint {
+  max-width: 440px;
+  margin: 10px auto 0;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-align: center;
+}
+.spelling-hint-correct {
+  background: var(--google-yellow-light);
+  color: var(--google-yellow-dark);
+}
+.spelling-hint-incorrect {
+  background: var(--google-red-light);
+  color: var(--google-red);
+}
+
+/* German noun declension summary in the card / lookup details (DictionaryExtras) */
+.dx-declension {
+  width: 100%;
+  margin-top: 6px;
+}
+.dx-declension th,
+.dx-declension td {
+  text-align: left;
+  padding: 3px 8px 3px 0;
+}
+/* Two forms in one cell (German dative "Haus / Hause") */
+.fm-table td .fm-form + .fm-form {
+  margin-left: 8px;
 }

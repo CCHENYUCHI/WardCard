@@ -49,6 +49,11 @@ function resolveCardLink(word, appPos = '') {
 
 /** Look one card up and store the result ('' when nothing matches). No-op without a dictionary. */
 function linkCard(db, card) {
+  // The offline dictionary is Spanish: cards of other learning languages stay unlinked ('')
+  if (card.lang && card.lang !== 'es') {
+    db.prepare("UPDATE cards SET dict_lemma = '', dict_pos = '' WHERE id = ?").run(card.id);
+    return null;
+  }
   if (!dictionaryHasEntries()) return null;
   const link = resolveCardLink(card.word, card.part_of_speech);
   db.prepare('UPDATE cards SET dict_lemma = ?, dict_pos = ? WHERE id = ?').run(link?.lemma || '', link?.pos || '', card.id);
@@ -60,7 +65,7 @@ function linkPendingCards(db, { relink = false } = {}) {
   if (!dictionaryHasEntries()) return { checked: 0, linked: 0 };
   let checked = 0;
   let linked = 0;
-  const select = db.prepare(`SELECT id, word, part_of_speech FROM cards ${relink ? 'WHERE id > ?' : 'WHERE dict_lemma IS NULL AND id > ?'} ORDER BY id LIMIT ${LINK_BATCH}`);
+  const select = db.prepare(`SELECT id, word, part_of_speech FROM cards ${relink ? "WHERE lang = 'es' AND id > ?" : "WHERE lang = 'es' AND dict_lemma IS NULL AND id > ?"} ORDER BY id LIMIT ${LINK_BATCH}`);
   let lastId = 0;
   for (;;) {
     const batch = select.all(lastId);

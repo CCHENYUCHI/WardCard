@@ -119,7 +119,7 @@ git commit -m "feat(scope): 實作某功能並同步更新開發進度文檔"
 ```bash
 git push -u origin feature/your-feature-name
 ```
-- 前往 GitHub 倉庫 (`https://github.com/CCHENYUCHI/WardCard`)。
+- 前往 GitHub 倉庫 (`https://github.com/SeanYang613/WardCard`)，或用 `gh pr create --repo SeanYang613/WardCard`（不加 `--repo` 時 gh 可能預設開到 fork 來源 `CCHENYUCHI/WardCard`）。
 - 開啟 Pull Request，標題填寫清晰，描述中勾選進度確認：
   ```markdown
   ### 本次變更內容

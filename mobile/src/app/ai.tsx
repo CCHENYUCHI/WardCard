@@ -4,6 +4,7 @@ import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as ImagePicker from 'expo-image-picker';
 import { API_URL, TOKEN_KEY, GEMINI_KEY_STORAGE } from '@/constants/api';
+import { apiFetch, getLangConfig, useLearnLang } from '@/constants/learn-lang';
 
 type ExtractedCard = {
   word: string;
@@ -25,6 +26,7 @@ const authHeaders = async () => {
 };
 
 export default function AiScreen() {
+  const lang = useLearnLang();
   const router = useRouter();
   const [text, setText] = useState('');
   const [photo, setPhoto] = useState<ImagePicker.ImagePickerAsset | null>(null);
@@ -51,7 +53,7 @@ export default function AiScreen() {
 
   const handleExtract = async () => {
     if (!text.trim() && !photo) {
-      Alert.alert('錯誤', '請貼上西班牙文內容，或拍一張講義照片！');
+      Alert.alert('錯誤', `請貼上${getLangConfig().short}內容，或拍一張講義照片！`);
       return;
     }
 
@@ -70,7 +72,7 @@ export default function AiScreen() {
         }
       }
 
-      const response = await fetch(`${API_URL}/ai/extract`, {
+      const response = await apiFetch(`${API_URL}/ai/extract`, {
         method: 'POST',
         headers: await authHeaders(),
         body: formData
@@ -108,7 +110,7 @@ export default function AiScreen() {
 
     setLoading(true);
     try {
-      const response = await fetch(`${API_URL}/cards`, {
+      const response = await apiFetch(`${API_URL}/cards`, {
         method: 'POST',
         headers: { ...(await authHeaders()), 'Content-Type': 'application/json' },
         body: JSON.stringify(cardsToSave)
@@ -145,7 +147,7 @@ export default function AiScreen() {
       <ScrollView style={styles.content}>
         {!results ? (
           <>
-            <Text style={styles.label}>貼上西班牙文文章、歌詞或單字清單，或拍一張講義照片：</Text>
+            <Text style={styles.label}>貼上{getLangConfig(lang).short}文章、歌詞或單字清單，或拍一張講義照片：</Text>
             <TextInput
               style={styles.inputArea}
               multiline

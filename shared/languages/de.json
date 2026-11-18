@@ -1,0 +1,95 @@
+{
+  "code": "de",
+  "name": "德語",
+  "nativeName": "Deutsch",
+  "flag": "🇩🇪",
+  "appName": "WortCard",
+  "tts": {
+    "bcp47": "de-DE",
+    "online": "de",
+    "voiceHints": [
+      "Google",
+      "Natural",
+      "Anna",
+      "Petra",
+      "Markus",
+      "Yannick",
+      "Katja",
+      "Conrad",
+      "German",
+      "Deutsch"
+    ]
+  },
+  "specialChars": [
+    "ä",
+    "ö",
+    "ü",
+    "ß",
+    "Ä",
+    "Ö",
+    "Ü"
+  ],
+  "articles": {
+    "detect": [
+      "der",
+      "die",
+      "das",
+      "ein",
+      "eine"
+    ],
+    "definite": {
+      "masculino": "der",
+      "femenino": "die",
+      "neutro": "das"
+    },
+    "plural": {
+      "masculino": "die",
+      "femenino": "die",
+      "neutro": "die"
+    }
+  },
+  "genders": [
+    "masculino",
+    "femenino",
+    "neutro",
+    "none"
+  ],
+  "genderLabels": {
+    "masculino": "陽性 (der)",
+    "femenino": "陰性 (die)",
+    "neutro": "中性 (das)",
+    "none": "無"
+  },
+  "levels": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1",
+    "C2"
+  ],
+  "defaultLevel": "A1",
+  "levelSystem": "Goethe-Zertifikat / CEFR",
+  "levelLabel": "Goethe",
+  "exams": "Goethe-Zertifikat / telc / TestDaF",
+  "formsNoteMarker": "詞形變化",
+  "ui": {
+    "short": "德語",
+    "articleHint": "der / die / das",
+    "wordHint": "例如: Gewohnheit, entwickeln（名詞字首大寫）",
+    "categoryHint": "例如: 考試必背 (Goethe) 或 日常生活",
+    "exampleHint": "例如: In Spanien ist es üblich, spät zu Abend zu essen.",
+    "exampleZhHint": "例如: 在西班牙，晚吃晚餐是很常見的。",
+    "notesHint": "例如: -ung 結尾皆為陰性名詞；sich gewöhnen an + Akk.",
+    "long": "德語",
+    "spellHint": "請完整拼出德語單字（注意變音符號，名詞字首大寫）",
+    "spellStageDesc": "盲測輸入正確拼寫、變音符號與名詞大寫",
+    "genderTerm": "名詞性別",
+    "searchPlaceholder": "搜尋德語單字、中文釋義、例句...",
+    "dictionaryPlaceholder": "查德語單字或變化形（ging、Häuser），也可以輸入中文",
+    "translatePlaceholder": "輸入一個德語句子（也可以輸入中文），例如：Ich möchte einen Tisch für zwei Personen reservieren.",
+    "importPlaceholder": "例如：\nHeute im Kurs gelernt:\n- die Gewohnheit: 習慣\n- das Mädchen: 女孩（中性名詞）\n- sich gewöhnen an + Akk.: 習慣於\n或者是整段德語閱讀短文，AI 都會自動抓出核心單字並補齊例句與 der / die / das！",
+    "ttsSample": "Hallo! Willkommen bei WortCard. Wie geht es dir heute?",
+    "spellCheckHint": "驗證變音符號 ä/ö/ü/ß、名詞字首大寫與字母拼法"
+  }
+}

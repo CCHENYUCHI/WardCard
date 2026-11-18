@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { fetchAPI, setToken } from '../utils/api';
+import { getLangConfig } from '../utils/learnLang';
 
 const LoginScreen = ({ onLogin }) => {
   const [isLogin, setIsLogin] = useState(true);
@@ -39,7 +40,7 @@ const LoginScreen = ({ onLogin }) => {
           <span style={{ fontSize: '3rem', display: 'block', marginBottom: '12px' }}>🇪🇸</span>
           <h2 style={{ fontSize: '1.6rem', fontWeight: 'bold', color: 'var(--text-primary)' }}>PalabraCard</h2>
           <p style={{ color: 'var(--text-secondary)', marginTop: '6px', fontSize: '0.92rem' }}>
-            {isLogin ? '登入繼續你的西語學習之旅' : '註冊帳號開始學習西語'}
+            {isLogin ? `登入繼續你的${getLangConfig().ui.short}學習之旅` : `註冊帳號開始學習${getLangConfig().ui.short}`}
           </p>
         </div>
 

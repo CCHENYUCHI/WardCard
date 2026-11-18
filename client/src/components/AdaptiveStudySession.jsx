@@ -9,12 +9,17 @@ import { shuffleArray } from '../utils/shuffle';
 import ProgressRing from './ProgressRing';
 import TappableSentence from './TappableSentence';
 import { CardStory } from './StoryCard';
+import WordForms from './WordForms';
+import { parseWordForms } from '../utils/wordForms';
 import {
   stripArticle, normalizeAnswer, getAcceptableAnswers,
   findInflectedForms, maskSentence, displayWord, pickDistractors
 } from '../utils/spanish';
+import { getLangConfig, getLearnLang } from '../utils/learnLang';
+import { checkGermanSpelling } from '../utils/germanSpelling';
 
-const SPANISH_SPECIAL_KEYS = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ', '¿', '¡'];
+// Special-character keys of the learning language (es: á é ñ ¿ …, de: ä ö ü ß)
+const specialKeys = () => getLangConfig().specialChars;
 // Stage 5 multiple choice: a correct answer within this time counts as Easy
 const FAST_ANSWER_MS = 3000;
 
@@ -31,6 +36,7 @@ export default function AdaptiveStudySession({
   const [showHint, setShowHint] = useState(false);
   const [userInput, setUserInput] = useState('');
   const [spellingStatus, setSpellingStatus] = useState('typing'); // 'typing', 'correct', 'incorrect'
+  const [spellingHint, setSpellingHint] = useState(''); // German: capital letter / umlaut / ae-oe-ue-ss note
   const [completedCount, setCompletedCount] = useState(0);
   const [stagePromotions, setStagePromotions] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
@@ -94,6 +100,7 @@ export default function AdaptiveStudySession({
     setShowHint(false);
     setUserInput('');
     setSpellingStatus('typing');
+    setSpellingHint('');
     setChosenIndex(null);
     questionStartRef.current = Date.now();
   }, [currentIndex]);
@@ -151,12 +158,29 @@ export default function AdaptiveStudySession({
     const typed = normalizeAnswer(userInput);
     if (!typed) return;
 
+    playSpanishPronunciation(displayWord(currentCard));
+
+    if (getLearnLang() === 'de') {
+      // Case matters for nouns; ae/oe/ue/ss passes as Hard with the proper spelling shown
+      const accepted = String(currentCard.word || '').split(/[/,]/).map(p => p.trim()).filter(Boolean);
+      if (mode === 'cloze') accepted.push(...clozeForms);
+      const result = checkGermanSpelling(userInput, accepted, { isNoun: currentCard.part_of_speech === 'sustantivo' });
+      setSpellingHint(result.hint);
+      if (result.status === 'wrong') {
+        setSpellingStatus('incorrect');
+        setIsFlipped(true);
+      } else {
+        setSpellingStatus('correct');
+        setTimeout(() => handleRate(result.status === 'variant' ? 2 : 3), result.status === 'variant' ? 2200 : 700);
+      }
+      return;
+    }
+
     const accepted = new Set(getAcceptableAnswers(currentCard.word));
     // In the cloze, the form used in the sentence (e.g. "hablamos") is also correct
     if (mode === 'cloze') clozeForms.forEach(f => accepted.add(normalizeAnswer(f)));
     const isMatch = accepted.has(typed) || accepted.has(normalizeAnswer(stripArticle(typed)));
 
-    playSpanishPronunciation(displayWord(currentCard));
     if (isMatch) {
       setSpellingStatus('correct');
       setTimeout(() => {
@@ -313,14 +337,17 @@ export default function AdaptiveStudySession({
 
   if (!currentCard) return null;
 
+  // Forms line of the notes ("詞形變化 → …") shown as its own block after answering
+  const cardForms = parseWordForms(currentCard.notes, currentCard.lang);
+
   const getStageHeader = () => {
     switch (Math.min(stage, 5)) {
       case 1:
-        return { label: 'Stage 1: 被動辨認', desc: '看西語，在腦海中回想中文意義與發音', color: '#f59e0b' };
+        return { label: 'Stage 1: 被動辨認', desc: `看${getLangConfig().ui.short}，在腦海中回想中文意義與發音`, color: '#f59e0b' };
       case 2:
-        return { label: 'Stage 2: 提示回想', desc: '看中文與例句，主動回想出對應的西語單字', color: '#3b82f6' };
+        return { label: 'Stage 2: 提示回想', desc: `看中文與例句，主動回想出對應的${getLangConfig().ui.short}單字`, color: '#3b82f6' };
       case 3:
-        return { label: 'Stage 3: 正字拼寫', desc: '盲測輸入正確拼寫與重音符號', color: '#8b5cf6' };
+        return { label: 'Stage 3: 正字拼寫', desc: getLangConfig().ui.spellStageDesc, color: '#8b5cf6' };
       case 4:
         return { label: 'Stage 4: 語境克漏字', desc: '掌握完整句型語意與詞形變位', color: '#137333' };
       case 5:
@@ -382,7 +409,7 @@ export default function AdaptiveStudySession({
       {/* Main Flashcard Container (Google Clean White Study Card) */}
       <div className="study-card">
 
-        {/* --- STAGE 1: Recognition (西語 -> 中文) --- */}
+        {/* --- STAGE 1: Recognition (學習語言 -> 中文) --- */}
         {mode === 'recognition' && (
           <div>
             <div style={{ textAlign: 'center', margin: '20px 0 30px 0' }}>
@@ -454,7 +481,7 @@ export default function AdaptiveStudySession({
           </div>
         )}
 
-        {/* --- STAGE 2: Cued Recall (中文 -> 主動回想西語) --- */}
+        {/* --- STAGE 2: Cued Recall (中文 -> 主動回想學習語言) --- */}
         {mode === 'cued' && (
           <div>
             <div style={{ textAlign: 'center', margin: '16px 0 24px 0' }}>
@@ -526,9 +553,9 @@ export default function AdaptiveStudySession({
                 <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                   {currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}
                 </div>
-                {currentCard.notes && (
+                {cardForms.rest && (
                   <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '6px' }}>
-                    📝 {currentCard.notes}
+                    📝 {cardForms.rest}
                   </div>
                 )}
               </div>
@@ -549,7 +576,7 @@ export default function AdaptiveStudySession({
                 {currentCard.translation}
               </div>
               <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
-                請完整拼出西語單字（注意重音符號）
+                {getLangConfig().ui.spellHint}
               </div>
             </div>
 
@@ -561,7 +588,7 @@ export default function AdaptiveStudySession({
                   type="text"
                   value={userInput}
                   onChange={(e) => setUserInput(e.target.value)}
-                  placeholder="輸入西語單字..."
+                  placeholder={`輸入${getLangConfig().ui.short}單字...`}
                   disabled={spellingStatus !== 'typing'}
                   style={{
                     background: '#ffffff',
@@ -592,7 +619,7 @@ export default function AdaptiveStudySession({
               {/* Special Characters Keyboard */}
               {spellingStatus === 'typing' && (
                 <div className="spanish-keys">
-                  {SPANISH_SPECIAL_KEYS.map(char => (
+                  {specialKeys().map(char => (
                     <button
                       key={char}
                       onClick={() => handleInsertChar(char)}
@@ -605,6 +632,10 @@ export default function AdaptiveStudySession({
                 </div>
               )}
             </div>
+
+            {spellingHint && spellingStatus !== 'typing' && (
+              <div className={`spelling-hint spelling-hint-${spellingStatus}`}>💡 {spellingHint}</div>
+            )}
 
             {/* Incorrect Feedback */}
             {spellingStatus === 'incorrect' && (
@@ -702,7 +733,7 @@ export default function AdaptiveStudySession({
 
                 {/* Special Characters Keyboard */}
                 <div className="spanish-keys">
-                  {SPANISH_SPECIAL_KEYS.map(char => (
+                  {specialKeys().map(char => (
                     <button
                       key={char}
                       onClick={() => handleInsertChar(char)}
@@ -729,6 +760,10 @@ export default function AdaptiveStudySession({
                   </button>
                 </div>
               </div>
+            )}
+
+            {spellingHint && spellingStatus !== 'typing' && (
+              <div className={`spelling-hint spelling-hint-${spellingStatus}`}>💡 {spellingHint}</div>
             )}
 
             {/* Correct Feedback Banner */}
@@ -767,9 +802,9 @@ export default function AdaptiveStudySession({
                 <div style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--text-primary)' }}>
                   {currentCard.article ? `${currentCard.article} ` : ''}{currentCard.word}
                 </div>
-                {currentCard.notes && (
+                {cardForms.rest && (
                   <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
-                    💡 {currentCard.notes}
+                    💡 {cardForms.rest}
                   </div>
                 )}
               </div>
@@ -790,7 +825,7 @@ export default function AdaptiveStudySession({
                 <span>Stage 5 · 語境四選一</span>
               </div>
               <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '6px' }}>
-                {clozeForms.length > 0 ? '⚡ 選出填入空格的單字（可按 1–4）' : '⚡ 選出符合中文意思的西語單字（可按 1–4）'}
+                {clozeForms.length > 0 ? '⚡ 選出填入空格的單字（可按 1–4）' : `⚡ 選出符合中文意思的${getLangConfig().ui.short}單字（可按 1–4）`}
               </div>
             </div>
 
@@ -844,9 +879,9 @@ export default function AdaptiveStudySession({
                 <div style={{ fontSize: '1.05rem', color: 'var(--text-primary)', marginTop: '6px' }}>
                   {displayWord(currentCard)} · <span style={{ color: 'var(--google-blue)', fontWeight: 600 }}>{currentCard.translation}</span>
                 </div>
-                {spellingStatus === 'incorrect' && currentCard.notes && (
+                {spellingStatus === 'incorrect' && cardForms.rest && (
                   <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginTop: '6px', whiteSpace: 'pre-line' }}>
-                    💡 {currentCard.notes}
+                    💡 {cardForms.rest}
                   </div>
                 )}
               </div>
@@ -874,7 +909,7 @@ export default function AdaptiveStudySession({
                 <span>Stage 5 · 長效精通極速驗證</span>
               </div>
               <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '6px' }}>
-                ⚡ 此詞彙已固化於長期記憶區，請在 2 秒內直覺反應西語語意：
+                ⚡ 此詞彙已固化於長期記憶區，請在 2 秒內直覺反應{getLangConfig().ui.short}語意：
               </div>
             </div>
 
@@ -937,7 +972,8 @@ export default function AdaptiveStudySession({
           </div>
         )}
 
-        {/* Word story from the lexicon, only once the answer is shown (never before answering) */}
+        {/* Inflection forms (German) and the word story, only once the answer is shown (never before answering) */}
+        {(isFlipped || spellingStatus !== 'typing') && <WordForms rows={cardForms.rows} compact />}
         {(isFlipped || spellingStatus !== 'typing') && (
           <div className="study-story"><CardStory cardId={currentCard.id} word={currentCard.word} /></div>
         )}

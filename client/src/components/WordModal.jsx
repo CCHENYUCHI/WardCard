@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { X, Check } from 'lucide-react';
+import { getLearnLang, getLangConfig } from '../utils/learnLang';
 
 export default function WordModal({ isOpen, onClose, onSave, initialData, categories }) {
+  const { ui } = getLangConfig();
   const [formData, setFormData] = useState({
     word: '',
     article: '',
@@ -59,7 +61,7 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <div className="modal-header">
           <h2 className="modal-title">
-            {initialData ? '編輯西語單字' : '手動新增西語單字'}
+            {initialData ? `編輯${ui.short}單字` : `手動新增${ui.short}單字`}
           </h2>
           <button className="btn-icon" onClick={onClose}><X size={18} /></button>
         </div>
@@ -72,17 +74,17 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
               <input
                 type="text"
                 className="form-input"
-                placeholder="el / la / los / las"
+                placeholder={ui.articleHint}
                 value={formData.article}
                 onChange={e => setFormData({ ...formData, article: e.target.value })}
               />
             </div>
             <div style={{ flex: 2 }}>
-              <label className="form-label">西語單字 *</label>
+              <label className="form-label">{ui.short}單字 *</label>
               <input
                 type="text"
                 className="form-input"
-                placeholder="例如: costumbre, desarrollar"
+                placeholder={ui.wordHint}
                 required
                 value={formData.word}
                 onChange={e => setFormData({ ...formData, word: e.target.value })}
@@ -92,16 +94,27 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
 
           <div className="form-row">
             <div>
-              <label className="form-label">陰陽性標籤</label>
+              <label className="form-label">{getLangConfig().ui.genderTerm}標籤</label>
               <select
                 className="form-input"
                 value={formData.gender}
                 onChange={e => setFormData({ ...formData, gender: e.target.value })}
               >
-                <option value="none">無陰陽性 (動詞/副詞)</option>
-                <option value="masculino">♂ 陽性名詞 (el / un)</option>
-                <option value="femenino">♀ 陰性名詞 (la / una)</option>
-                <option value="invariable">陰陽同形 / 中性</option>
+                {getLearnLang() === 'de' ? (
+                  <>
+                    <option value="none">無 (動詞/形容詞/複數名詞)</option>
+                    <option value="masculino">♂ 陽性名詞 (der / ein)</option>
+                    <option value="femenino">♀ 陰性名詞 (die / eine)</option>
+                    <option value="neutro">⚲ 中性名詞 (das / ein)</option>
+                  </>
+                ) : (
+                  <>
+                    <option value="none">無陰陽性 (動詞/副詞)</option>
+                    <option value="masculino">♂ 陽性名詞 (el / un)</option>
+                    <option value="femenino">♀ 陰性名詞 (la / una)</option>
+                    <option value="invariable">陰陽同形 / 中性</option>
+                  </>
+                )}
               </select>
             </div>
             <div>
@@ -142,7 +155,7 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
                 type="text"
                 className="form-input"
                 list="category-suggestions"
-                placeholder="例如: 考試必背 (DELE) 或 日常生活"
+                placeholder={ui.categoryHint}
                 value={formData.category}
                 onChange={e => setFormData({ ...formData, category: e.target.value })}
               />
@@ -191,11 +204,11 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
 
           {/* Example Sentences */}
           <div className="form-group">
-            <label className="form-label">西語道地例句</label>
+            <label className="form-label">{ui.short}道地例句</label>
             <input
               type="text"
               className="form-input"
-              placeholder="例如: Es una costumbre típica en España cenar tarde."
+              placeholder={ui.exampleHint}
               value={formData.example_es}
               onChange={e => setFormData({ ...formData, example_es: e.target.value })}
             />
@@ -206,7 +219,7 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
             <input
               type="text"
               className="form-input"
-              placeholder="例如: 在西班牙晚吃晚餐是一種典型習俗。"
+              placeholder={ui.exampleZhHint}
               value={formData.example_zh}
               onChange={e => setFormData({ ...formData, example_zh: e.target.value })}
             />
@@ -217,7 +230,7 @@ export default function WordModal({ isOpen, onClose, onSave, initialData, catego
             <label className="form-label">💡 文法筆記、動詞變化或搭配詞說明</label>
             <textarea
               className="form-textarea"
-              placeholder="例如: -umbre 結尾皆為陰性名詞；固定搭配介系詞 a..."
+              placeholder={ui.notesHint}
               value={formData.notes}
               onChange={e => setFormData({ ...formData, notes: e.target.value })}
             />

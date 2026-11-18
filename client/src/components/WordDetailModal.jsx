@@ -3,6 +3,9 @@ import { X, Volume2, Edit3, Trash2, Star, Flame, Calendar, Award, BookOpen, Cloc
 import { playSpanishPronunciation } from '../utils/speech';
 import DictionaryExtras from './DictionaryExtras';
 import StoryCard from './StoryCard';
+import WordForms from './WordForms';
+import { parseWordForms } from '../utils/wordForms';
+import { getLangConfig } from '../utils/learnLang';
 
 export default function WordDetailModal({ 
   card, 
@@ -14,6 +17,7 @@ export default function WordDetailModal({
   onQuickStatusChange 
 }) {
   if (!isOpen || !card) return null;
+  const forms = parseWordForms(card.notes, card.lang);
 
   const st = card.lifecycle_status || 'active';
   const stage = Number(card.mastery_stage) || 1;
@@ -67,7 +71,7 @@ export default function WordDetailModal({
             )}
             {card.gender && card.gender !== 'none' && (
               <span className={`badge-gender ${card.gender}`}>
-                {card.gender === 'masculino' ? '♂ 陽性' : '♀ 陰性'}
+                {{ masculino: '♂ 陽性', femenino: '♀ 陰性', neutro: '⚲ 中性' }[card.gender] || card.gender}
               </span>
             )}
             {card.part_of_speech && (
@@ -108,7 +112,7 @@ export default function WordDetailModal({
               className="btn-icon"
               style={{ width: '38px', height: '38px', background: 'var(--google-blue-light)', color: 'var(--google-blue)' }}
               onClick={() => playSpanishPronunciation(card.article ? `${card.article} ${card.word}` : card.word)}
-              title="播放西語發音"
+              title={`播放${getLangConfig().ui.short}發音`}
             >
               <Volume2 size={20} />
             </button>
@@ -159,8 +163,11 @@ export default function WordDetailModal({
           </div>
         )}
 
+        {/* Inflection forms (German), read from the notes line "詞形變化 → …" */}
+        <WordForms rows={forms.rows} />
+
         {/* Grammar Notes */}
-        {card.notes && (
+        {forms.rest && (
           <div style={{ 
             background: 'var(--google-yellow-light)', 
             border: '1px solid #fce8b2', 
@@ -172,7 +179,7 @@ export default function WordDetailModal({
           }}>
             <span style={{ fontWeight: 700 }}>💡 文法解析與重點：</span>
             <div style={{ marginTop: '4px', color: '#3c4043', lineHeight: 1.45 }}>
-              {card.notes}
+              {forms.rest}
             </div>
           </div>
         )}

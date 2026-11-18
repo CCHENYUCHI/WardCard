@@ -9,7 +9,8 @@ const TRANSLATIONS_SCHEMA = `
     user_id INTEGER NOT NULL,
     input_text TEXT NOT NULL,          -- what the user typed, as typed
     input_hash TEXT NOT NULL,          -- translationHash(input_text)
-    source_lang TEXT DEFAULT 'es',     -- 'es' | 'zh'
+    lang TEXT NOT NULL DEFAULT 'es',   -- learning language (server/languages); the list is per language
+    source_lang TEXT DEFAULT 'es',     -- language of the input: the learning language code | 'zh'
     translation_zh TEXT DEFAULT '',    -- copied out of result for the list and search
     result TEXT NOT NULL,              -- JSON (normalizeTranslation shape)
     model TEXT,
@@ -18,12 +19,31 @@ const TRANSLATIONS_SCHEMA = `
   );
   CREATE INDEX IF NOT EXISTS idx_translations_hash ON translations(input_hash);
   CREATE INDEX IF NOT EXISTS idx_translations_user_time ON translations(user_id, created_at);
+  CREATE INDEX IF NOT EXISTS idx_translations_user_lang_time ON translations(user_id, lang, created_at);
 `;
 
 const PAGE_SIZE = 30;
 
 const translationHash = (text) =>
   crypto.createHash('sha1').update(String(text).replace(/\s+/g, ' ').trim().toLowerCase()).digest('hex');
+
+// Older databases have no lang column: add it (existing rows are Spanish), then mark rows whose hash
+// was made with a language prefix (server/index.js langKey: "de:<text>") as that language.
+// Run before TRANSLATIONS_SCHEMA.
+function migrateTranslations(db, otherLangs = []) {
+  const columns = db.prepare('PRAGMA table_info(translations)').all().map(c => c.name);
+  if (columns.length === 0 || columns.includes('lang')) return false;
+  db.exec("ALTER TABLE translations ADD COLUMN lang TEXT NOT NULL DEFAULT 'es'");
+  if (otherLangs.length) {
+    const rows = db.prepare('SELECT id, input_text, input_hash FROM translations').all();
+    const mark = db.prepare('UPDATE translations SET lang = ? WHERE id = ?');
+    for (const row of rows) {
+      const lang = otherLangs.find(code => translationHash(`${code}:${row.input_text}`) === row.input_hash);
+      if (lang) mark.run(lang, row.id);
+    }
+  }
+  return true;
+}
 
 const parseResult = (raw) => {
   try {
@@ -54,18 +74,18 @@ function findSharedTranslation(db, hash) {
   return row ? { result: parseResult(row.result), model: row.model } : null;
 }
 
-function saveTranslation(db, { userId, inputText, hash, result, model }) {
+function saveTranslation(db, { userId, lang = 'es', inputText, hash, result, model }) {
   db.prepare(`
-    INSERT INTO translations (user_id, input_text, input_hash, source_lang, translation_zh, result, model)
-    VALUES (?, ?, ?, ?, ?, ?, ?)
+    INSERT INTO translations (user_id, lang, input_text, input_hash, source_lang, translation_zh, result, model)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     ON CONFLICT(user_id, input_hash) DO NOTHING
-  `).run(userId, inputText, hash, result.source_lang || 'es', result.translation_zh || '', JSON.stringify(result), model || null);
+  `).run(userId, lang, inputText, hash, result.source_lang || lang, result.translation_zh || '', JSON.stringify(result), model || null);
   return findOwnTranslation(db, userId, hash);
 }
 
-function listTranslations(db, userId, { q = '', offset = 0, limit = PAGE_SIZE } = {}) {
-  const params = [userId];
-  let where = 'user_id = ?';
+function listTranslations(db, userId, { lang = 'es', q = '', offset = 0, limit = PAGE_SIZE } = {}) {
+  const params = [userId, lang];
+  let where = 'user_id = ? AND lang = ?';
   const query = String(q).trim();
   if (query) {
     const like = `%${query.replace(/[\\%_]/g, '\\$&')}%`;
@@ -85,6 +105,7 @@ function deleteTranslation(db, userId, id) {
 
 module.exports = {
   TRANSLATIONS_SCHEMA,
+  migrateTranslations,
   translationHash,
   findOwnTranslation,
   findSharedTranslation,

@@ -28,20 +28,23 @@ const FIXTURE = [
 const CARDS_SCHEMA = `CREATE TABLE cards (
   id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, word TEXT, article TEXT DEFAULT '', gender TEXT DEFAULT 'none',
   part_of_speech TEXT DEFAULT 'sustantivo', translation TEXT DEFAULT '', lifecycle_status TEXT DEFAULT 'active',
-  dict_lemma TEXT DEFAULT NULL, dict_pos TEXT DEFAULT NULL, updated_at TEXT);
-  CREATE UNIQUE INDEX idx_cards_user_word ON cards(user_id, word);`;
+  dict_lemma TEXT DEFAULT NULL, dict_pos TEXT DEFAULT NULL, updated_at TEXT, lang TEXT NOT NULL DEFAULT 'es');
+  CREATE UNIQUE INDEX idx_cards_user_lang_word_article ON cards(user_id, lang, word, article);`;
 
 let tmpDir;
+let dictDb;
 test.before(async () => {
   tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'card-audit-'));
   const input = path.join(tmpDir, 'es.jsonl');
   fs.writeFileSync(input, FIXTURE.map(e => JSON.stringify(e)).join('\n'));
   const out = path.join(tmpDir, 'es-en.sqlite');
   await build(input, out);
-  setDictionary(new DatabaseSync(out, { readOnly: true }));
+  dictDb = new DatabaseSync(out, { readOnly: true });
+  setDictionary(dictDb);
 });
 test.after(() => {
   setDictionary(null);
+  dictDb?.close(); // Windows cannot delete an open SQLite file
   fs.rmSync(tmpDir, { recursive: true, force: true });
 });
 

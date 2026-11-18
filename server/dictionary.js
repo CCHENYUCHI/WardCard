@@ -7,7 +7,12 @@ const { splitArticle, normalizeWord, cardWordVariants } = require('./cardUtils')
 const { groupForms } = require('./forms');
 const { langName } = require('./langNames');
 
-const DICT_PATH = process.env.DICT_DB_PATH || path.join(__dirname, '../data/dict/es-en.sqlite');
+// One offline dictionary file per learning language; Spanish is the default everywhere
+const DICT_PATHS = {
+  es: process.env.DICT_DB_PATH || path.join(__dirname, '../data/dict/es-en.sqlite'),
+  de: process.env.DICT_DE_DB_PATH || path.join(__dirname, '../data/dict/de-en.sqlite')
+};
+const DICT_PATH = DICT_PATHS.es;
 const MAX_RESULTS = 6;
 
 // wiktextract pos -> the app's part_of_speech values
@@ -16,34 +21,42 @@ const POS_MAP = {
   conj: 'conjunción', prep: 'preposición', pron: 'pronombre', intj: 'interjección',
   phrase: 'frase', prep_phrase: 'frase', article: 'frase', det: 'frase', num: 'frase'
 };
-const GENDER_MAP = { m: 'masculino', f: 'femenino' };
+const GENDER_MAP = { m: 'masculino', f: 'femenino', n: 'neutro' };
 
-let dict; // undefined = not opened yet, null = file missing
-function getDict() {
-  if (dict !== undefined) return dict;
-  if (!fs.existsSync(DICT_PATH)) {
-    console.warn(`[dictionary] ${DICT_PATH} not found — offline dictionary disabled (see README to build it)`);
-    dict = null;
-    return dict;
+// Per language: undefined = not opened yet, null = file missing
+const dicts = {};
+const hasEntriesCache = {};
+const dictLang = (lang) => (DICT_PATHS[lang] ? lang : 'es');
+
+function getDict(lang = 'es') {
+  const code = dictLang(lang);
+  if (dicts[code] !== undefined) return dicts[code];
+  const file = DICT_PATHS[code];
+  if (!fs.existsSync(file)) {
+    console.warn(`[dictionary] ${file} not found — offline ${code} dictionary disabled (see README to build it)`);
+    dicts[code] = null;
+    return null;
   }
-  dict = new DatabaseSync(DICT_PATH, { readOnly: true });
-  dict.exec('PRAGMA cache_size = -2000'); // 2MB page cache keeps RSS flat
-  return dict;
+  const db = new DatabaseSync(file, { readOnly: true });
+  db.exec('PRAGMA cache_size = -2000'); // 2MB page cache keeps RSS flat
+  dicts[code] = db;
+  return db;
 }
 
 // Only for tests
-function setDictionary(db) {
-  dict = db;
-  hasEntriesCache = undefined;
+function setDictionary(db, lang = 'es') {
+  const code = dictLang(lang);
+  dicts[code] = db;
+  hasEntriesCache[code] = undefined;
 }
 
 // A dictionary file may hold only the lexicon (`npm run build:lexicon` without a kaikki build)
-let hasEntriesCache;
-function dictionaryHasEntries() {
-  if (hasEntriesCache !== undefined) return hasEntriesCache;
-  const db = getDict();
-  hasEntriesCache = Boolean(db) && Boolean(db.prepare('SELECT 1 FROM entries LIMIT 1').get());
-  return hasEntriesCache;
+function dictionaryHasEntries(lang = 'es') {
+  const code = dictLang(lang);
+  if (hasEntriesCache[code] !== undefined) return hasEntriesCache[code];
+  const db = getDict(code);
+  hasEntriesCache[code] = Boolean(db) && Boolean(db.prepare('SELECT 1 FROM entries LIMIT 1').get());
+  return hasEntriesCache[code];
 }
 
 const parseJson = (s, fallback) => {
@@ -68,8 +81,8 @@ const toItem = (row, via = null) => ({
  * Offline Wiktionary lookup. "fui" -> [{ lemma: 'ir', via: '...' }, { lemma: 'ser', via: '...' }]
  * Exact spelling ranks above accent-insensitive matches (año before ano).
  */
-function lookupForm(query) {
-  const db = getDict();
+function lookupForm(query, lang = 'es') {
+  const db = getDict(lang);
   const norm = normalizeWord(query);
   if (!db || !norm) return [];
   const lower = String(query).trim().toLowerCase();
@@ -102,9 +115,9 @@ function lookupForm(query) {
 }
 
 // A table missing from an older dictionary file reads as "no data", never as an error
-function optionalRow(sql, ...params) {
+function optionalRowIn(lang, sql, ...params) {
   try {
-    return getDict()?.prepare(sql).get(...params) || null;
+    return getDict(lang)?.prepare(sql).get(...params) || null;
   } catch (_) {
     return null;
   }
@@ -114,8 +127,9 @@ function optionalRow(sql, ...params) {
  * IPA, inflected forms (grouped for display), example sentences and etymology of one lemma + part of speech.
  * Every part is null when the dictionary file is missing or was built before that part existed.
  */
-function getEntryExtras(lemma, pos) {
+function getEntryExtras(lemma, pos, lang = 'es') {
   if (!lemma) return { ipa: '', forms: null, examples: null, etymology: null };
+  const optionalRow = (sql, ...params) => optionalRowIn(lang, sql, ...params);
   const ipa = optionalRow('SELECT ipa FROM entries WHERE word_norm = ? AND word = ? AND pos = ? AND ipa IS NOT NULL LIMIT 1', normalizeWord(lemma), lemma, pos)?.ipa
     || optionalRow('SELECT ipa FROM entries WHERE word_norm = ? AND word = ? AND ipa IS NOT NULL LIMIT 1', normalizeWord(lemma), lemma)?.ipa
     || '';
@@ -125,16 +139,16 @@ function getEntryExtras(lemma, pos) {
   const chain = parseJson(ety?.chain, []).map(([lang, word, kind]) => ({ lang, lang_zh: langName(lang), word, kind }));
   return {
     ipa,
-    forms: groupForms(pos, forms),
+    forms: groupForms(pos, forms, lang),
     examples: examples ? examples.map(([es, en]) => ({ es, en })) : null,
     etymology: ety ? { text: ety.text || '', chain } : null
   };
 }
 
 /** What the dictionary file holds, for the settings screen ("is my dictionary the new one?") */
-function getDictionaryInfo() {
-  const db = getDict();
-  const info = { path: DICT_PATH, exists: Boolean(db), schemaVersion: null, entries: 0, builtAt: '', extras: { forms: false, examples: false, etymology: false, ipa: false }, lexiconEntries: 0 };
+function getDictionaryInfo(lang = 'es') {
+  const db = getDict(lang);
+  const info = { lang: dictLang(lang), path: DICT_PATHS[dictLang(lang)], exists: Boolean(db), schemaVersion: null, entries: 0, builtAt: '', extras: { forms: false, examples: false, etymology: false, ipa: false }, lexiconEntries: 0 };
   if (!db) return info;
   const meta = {};
   try {
@@ -150,18 +164,18 @@ function getDictionaryInfo() {
   return info;
 }
 
-const hasLatin = (s) => /[a-zñáéíóúü]/i.test(s);
+const hasLatin = (s) => /[a-zñáéíóúüäöß]/i.test(s);
 
 /**
  * The user's cards that match the query or any of its lemmas.
  * A Chinese query ("蘋果") searches translations instead.
  */
-function findMyCards(db, userId, query, lemmas = []) {
+function findMyCards(db, userId, query, lemmas = [], lang = 'es') {
   const rows = db.prepare(`
     SELECT id, word, article, gender, part_of_speech, translation, english_translation,
            example_es, example_zh, notes, lifecycle_status, mastery_stage, is_starred
-    FROM cards WHERE user_id = ?
-  `).all(userId);
+    FROM cards WHERE user_id = ? AND lang = ?
+  `).all(userId, lang);
 
   const q = String(query || '').trim();
   if (!hasLatin(q)) {
@@ -170,9 +184,15 @@ function findMyCards(db, userId, query, lemmas = []) {
 
   const wanted = new Set();
   for (const w of [q, ...lemmas]) {
-    const n = normalizeWord(splitArticle(w).word);
+    const n = normalizeWord(splitArticle(w, '', lang).word);
     if (!n) continue;
     wanted.add(n);
+    if (lang === 'de') {
+      // Reflexive verbs: "freue" -> freuen should also find the card "sich freuen"
+      if (n.startsWith('sich ')) wanted.add(n.slice(5));
+      else wanted.add(`sich ${n}`);
+      continue;
+    }
     // Pronominal verbs: "acostumbro" -> acostumbrar should also find the card "acostumbrarse"
     if (n.endsWith('se')) wanted.add(n.slice(0, -2));
     else if (/(ar|er|ir)$/.test(n)) wanted.add(`${n}se`);
@@ -180,8 +200,15 @@ function findMyCards(db, userId, query, lemmas = []) {
   return rows.filter(r => cardWordVariants(r.word).some(v => wanted.has(v))).slice(0, MAX_RESULTS);
 }
 
-const externalLinks = (word) => {
+const externalLinks = (word, lang = 'es') => {
   const w = encodeURIComponent(word);
+  if (lang === 'de') {
+    return {
+      wiktionary: `https://en.wiktionary.org/wiki/${w}#German`,
+      duden: `https://www.duden.de/suchen/dudenonline/${w}`,
+      dwds: `https://www.dwds.de/wb/${w}`
+    };
+  }
   return {
     wordreference: `https://www.wordreference.com/es/en/translation.asp?spen=${w}`,
     spanishdict: `https://www.spanishdict.com/translate/${w}`,
@@ -192,6 +219,7 @@ const externalLinks = (word) => {
 module.exports = {
   POS_MAP,
   DICT_PATH,
+  DICT_PATHS,
   getDict,
   dictionaryHasEntries,
   setDictionary,

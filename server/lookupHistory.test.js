@@ -10,7 +10,8 @@ function makeDb() {
   db.exec(`
     CREATE TABLE cards (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      user_id INTEGER, word TEXT, translation TEXT DEFAULT '', lifecycle_status TEXT DEFAULT 'active'
+      user_id INTEGER, word TEXT, translation TEXT DEFAULT '', lifecycle_status TEXT DEFAULT 'active',
+      lang TEXT NOT NULL DEFAULT 'es'
     );
   `);
   db.exec(H.LOOKUP_HISTORY_SCHEMA);
@@ -120,4 +121,48 @@ test('users only see, delete and clear their own history', () => {
   assert.equal(H.clearLookups(db, 2), 2);
   assert.equal(H.listLookups(db, 2).total, 0);
   assert.equal(H.listLookups(db, 1).total, 1);
+});
+
+test('each learning language has its own history, card match and clear', () => {
+  const db = makeDb();
+  db.prepare("INSERT INTO cards (user_id, word, lifecycle_status, lang) VALUES (1, 'Hand', 'active', 'de'), (1, 'mano', 'inbox', 'es')").run();
+  H.recordLookup(db, { userId: 1, query: 'mano' });
+  H.recordLookup(db, { userId: 1, lang: 'de', query: 'Hand', translation: '手' });
+  H.recordLookup(db, { userId: 1, lang: 'de', query: 'hand' });
+  H.recordLookup(db, { userId: 1, lang: 'de', query: 'mano' }); // same spelling, other language: own row
+
+  assert.deepEqual(H.listLookups(db, 1).items.map(r => [r.query, r.lifecycle_status]), [['mano', 'inbox']]);
+  const de = H.listLookups(db, 1, { lang: 'de', sort: 'count' });
+  assert.equal(de.total, 2);
+  assert.deepEqual([de.items[0].query, de.items[0].lookup_count, de.items[0].lifecycle_status], ['hand', 2, null]);
+
+  H.setLookupTranslation(db, 1, 'mano', '手（西）'); // Spanish row only
+  assert.equal(H.listLookups(db, 1).items[0].translation, '手（西）');
+  assert.equal(H.listLookups(db, 1, { lang: 'de', q: 'mano' }).items[0].translation, '');
+
+  assert.equal(H.clearLookups(db, 1, 'de'), 2);
+  assert.equal(H.listLookups(db, 1).total, 1);
+});
+
+test('migrateLookupHistory rebuilds an old table as Spanish and keeps ids and counts', () => {
+  const db = new DatabaseSync(':memory:');
+  db.exec(`
+    CREATE TABLE cards (id INTEGER PRIMARY KEY, user_id INTEGER, word TEXT, translation TEXT DEFAULT '', lifecycle_status TEXT, lang TEXT DEFAULT 'es');
+    CREATE TABLE lookup_history (
+      id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, query TEXT NOT NULL, query_norm TEXT NOT NULL,
+      lemma TEXT DEFAULT '', translation TEXT DEFAULT '', lookup_count INTEGER DEFAULT 1, last_source TEXT DEFAULT 'dictionary',
+      first_at TEXT DEFAULT (datetime('now', 'localtime')), last_at TEXT DEFAULT (datetime('now', 'localtime')),
+      UNIQUE(user_id, query_norm)
+    );
+    CREATE INDEX idx_lookup_history_user_time ON lookup_history(user_id, last_at);
+    INSERT INTO lookup_history (id, user_id, query, query_norm, lookup_count) VALUES (7, 1, 'casa', 'casa', 3);
+  `);
+  assert.equal(H.migrateLookupHistory(db), true);
+  db.exec(H.LOOKUP_HISTORY_SCHEMA);
+  assert.equal(H.migrateLookupHistory(db), false); // already migrated
+
+  const [row] = H.listLookups(db, 1).items;
+  assert.deepEqual([row.id, row.query, row.lookup_count], [7, 'casa', 3]);
+  H.recordLookup(db, { userId: 1, lang: 'de', query: 'casa' }); // new unique key allows it
+  assert.equal(H.listLookups(db, 1, { lang: 'de' }).total, 1);
 });

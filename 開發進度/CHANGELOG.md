@@ -7,6 +7,21 @@
 ## [Unreleased] (進行中 / 待發布)
 
 ### Added
+- **冠詞不同、意思不同的名詞可以分成兩張卡 (`server/cardKey.js`)**：卡片的唯一鍵從「單字」改為「單字 + 冠詞」（索引 `idx_cards_user_lang_word_article`，伺服器啟動時自動轉換舊索引，並把冠詞統一成小寫、NULL 改為空字串）。el orden（順序）/ la orden（命令）、der See（湖）/ die See（海）可以同時存在。新增卡片、CSV 匯入、字典「加入暫存箱」與 AI 萃取的「已在單字庫」標示都用同一套規則（`findCardByKey`）：同字同冠詞就更新同一張卡；任一邊沒有冠詞（動詞、或匯入時沒寫冠詞）就對到那個字原本的卡，不會多出重複卡，且不會把卡片原有的冠詞清掉。編輯卡片時若改成另一張卡已有的「單字 + 冠詞」，回傳 409 並在畫面上提示。單字庫健檢的改名檢查也改為比對單字 + 冠詞。測試：`server/cardKey.test.js`。
+- **德語第二階段：德語離線字典與變位 / 變格表 (`data/dict/de-en.sqlite`, `npm run build:dict:de`)**：每個學習語言有自己的離線 Wiktionary 檔（`server/dictionary.js` 的 `getDict(lang)` / `lookupForm(q, lang)` / `getEntryExtras(…, lang)`，西語是預設，原本的呼叫不變；新環境變數 `DICT_DE_DB_PATH`）。德語模式查詞先查離線字典：變化形還原原形（`ging` → gehen「第一/第三人稱 單數 過去式」）、中性名詞顯示「中性」、外部連結改為 Wiktionary / Duden / DWDS。變化表：動詞有不定式、第一 / 第二分詞、完成式助動詞，以及 現在式 Präsens、過去式 Präteritum、現在完成式 Perfekt、Konjunktiv I / II、命令式（ich … sie / Sie）；名詞是格位 × 單複數的變格表（`kind: 'declension'`）；形容詞只留原級 / 比較級 / 最高級。德語卡片不存字典連結，詳情頁直接用卡片的字與詞性查。建置腳本 `--lang de`（未指定時看檔案第一筆的 `lang_code`），德語檔不寫入西語字源圖鑑。字源圖鑑與單字庫健檢仍只有西語。測試：`server/dictionaryGerman.test.js` 用 4 筆真實的 kaikki 資料（`server/fixtures/kaikki-de-sample.jsonl`：gehen、Haus、gut、ging）建字典後驗證查詢與各種表格。
+- **德語第二階段：行動 App 支援學習語言切換 (`mobile/src/constants/learn-lang.ts`, `mobile/src/components/lang-switch.tsx`)**：首頁右上角與設定頁有 🇪🇸 / 🇩🇪 切換鈕，選擇存在 AsyncStorage（`palabracard_learn_lang`）。所有 API 請求改走 `apiFetch`，自動帶 `x-learn-lang`；首頁統計、單字庫、複習、翻卡切換後重新載入該語言。拼字複習的特殊字元鍵盤、輸入提示、首頁 / 登入 / AI 萃取的文字跟著語言；德語拼字套用和 Web 相同的規則（名詞大寫、ae/oe/ue/ss 可過關但評為 Good 並提示正式寫法、漏變音提示），規則複製在 `mobile/src/utils/german-spelling.ts`（Metro 只打包 `mobile/` 內的檔案，修改時兩邊要同步）。`tsc` / `expo lint` 的問題數與修改前相同，未在實機上執行。
+- **德語第二階段：CSV 匯入範本與說明加上德語 / `lang` 欄 (`server/csvImport.js`, `GET /api/cards/csv-template`)**：設定頁新增「下載德語（西語）CSV 空白範本」，依目前學習語言給欄位標題與一列範例（UTF-8 BOM，Excel 打開不亂碼），下方列出所有欄位與判斷語言的規則。匯入時：`lang` 欄 → `German` / `Spanish` 欄 → 目前的學習語言；新增 `Example` / `Beispiel` / `Article` 欄；`Gender` 接受 `m / f / n`、`masculino`、`陽性` 等寫法，空白時依冠詞（der / die / das、el / la）判斷；不合該語言的性別（西語 `neutro`）改為 none。每列的解析抽成 `csvRecordToCard`，測試：`server/csvImport.test.js`。
+- **德語第二階段：拼字與克漏字的德語規則 (`client/src/utils/germanSpelling.js`)**：德語模式的 Stage 3 拼字、Stage 4 克漏字改用德語規則判斷——名詞必須字首大寫（`haus` 判錯並提示「德語名詞字首要大寫」），其他詞性不分大小寫（句首的克漏字答案也算對）；用 ae / oe / ue / ss 代替 ä / ö / ü / ß（`Haeuser`、`Strasse`）可以過關，但顯示正式寫法並評為「吃力」；漏掉變音（`Hauser`）判錯並提示注意變音符號。提示顯示在答案下方，西語判斷方式不變。測試：`server/germanSpelling.test.js`。
+- **德語第二階段：卡片詳情與學習畫面顯示詞形變化 (`WordForms.jsx`, `utils/wordForms.js`)**：德語卡筆記裡 AI 寫的「詞形變化 → 複數：die Häuser；屬格：des Hauses」「三態：ging – ist gegangen」「比較級：besser – am besten」改成獨立的藍色區塊，分成 複數 / 屬格 / 過去式 / 完成式 / 比較級 / 最高級，每個形式旁有 🔊；顯示在單字詳情視窗，以及今日學習翻卡 / 作答後（作答前不顯示，不洩漏答案）。筆記只顯示其餘的文法說明，不重複。直接從筆記解析，既有德語卡不用重建、不改資料表，行動 App 照舊看到筆記原文。解析標記放在 `shared/languages/de.json` 的 `formsNoteMarker`（伺服器 `server/languages/de.js` 共用）；西語沒有設定，畫面不變。另外瀏覽器分頁標題跟著學習語言（「WortCard - 德語智慧單字卡…」）。
+- **德語第二階段：查詞紀錄與翻譯紀錄依學習語言分開 (`lookup_history.lang`, `translations.lang`)**：查詞頁下方的查詢紀錄、翻譯頁的翻譯紀錄只顯示目前學習語言的資料；「清除全部」只清目前語言；查詢紀錄比對單字庫狀態時只找同語言的卡。`lookup_history` 唯一鍵改為 `(user_id, lang, query_norm)`（同一拼法在兩個語言各一筆）。**資料庫升級**：啟動時自動執行——`lookup_history` 重建成新唯一鍵（保留 id、次數與時間，既有紀錄為西語）；`translations` 補上 `lang` 欄位，第一階段以 `de:` 前綴雜湊存下的德語翻譯自動標成德語。測試：`lookupHistory.test.js`、`translations.test.js` 各新增語言分流與升級測試。
+- **德語第二階段：介面文字跟著學習語言 (`shared/languages/*.json` `ui`)**：今日學習五階段的說明與輸入提示、AI 萃取視窗、熟練度指南、統計、今日任務駕駛艙、設定頁（發音測試改念該語言的句子）、查詞 / 翻譯 / 單字庫搜尋框、登入頁、手動新增視窗等原本寫死的「西語 / 西班牙語 / 陰陽性 / 重音符號」，改讀 `getLangConfig().ui`（新增 `long`、`spellHint`、`spellStageDesc`、`spellCheckHint`、`genderTerm`、`searchPlaceholder`、`dictionaryPlaceholder`、`translatePlaceholder`、`importPlaceholder`、`ttsSample`）。德語模式顯示「德語」、「名詞性別」、「注意變音符號，名詞字首大寫」與德語範例；西語畫面文字不變。只有西語的功能（字典健檢、字源圖鑑）文字不動。
+- **學習語言切換：🇪🇸 西班牙語 / 🇩🇪 德語（第一階段，`feature/german`）**：導覽列右上角的 🇪🇸 / 🇩🇪 切換鈕切換「學習語言」，不是介面語言。每個語言有自己的單字庫、今日任務、連續天數、歷史、統計與主修單元；切換後畫面重新載入該語言的資料，選擇記在 localStorage（`palabracard_learn_lang`）。
+  - **語言設定檔**：`shared/languages/es.json`、`de.json`（國旗、TTS 語言 `es-ES` / `de-DE` 與偏好語音、特殊字元 `ä ö ü ß` / `á é ñ ¿ ¡`、定冠詞 `el/la` / `der/die/das`、性別代碼（德語多一個 `neutro`）、等級系統 DELE / Goethe-Zertifikat、介面提示文字），前後端共用同一份檔案；伺服器端 `server/languages/{es,de}.js` 再加上 AI 指令的語言片段，`server/languages/index.js` 是登錄表（`resolveLang` 不認得的代碼一律回到 `es`）。
+  - **API 依語言分流**：前端每個請求帶 `x-learn-lang` header（`client/src/utils/api.js`），伺服器的 `/api` middleware 設成 `req.lang`；沒帶 header 的舊客戶端（行動 App）照舊是西語。卡片清單、到期、新增 / CSV / 字典加入、今日任務、加練、歷史、統計、主修單元、設定、AI 萃取 / 查詞 / 句子解析 / 翻譯 / 等級校準都依語言過濾。新增 `GET /api/languages`（公開）。
+  - **AI 指令改成語言模板（`server/ai.js`）**：`extractInstruction` / `sentenceInstruction` / `translateInstruction` / `cardSchema` 依語言組出指令與 JSON schema（每個語言只組一次）；西語版本的指令與原本**逐字相同**（有測試比對）。德語版：名詞大寫、der/die/das 與 `neutro`、`forms` 改為 複數 / 屬格、動詞三態（過去式、第二分詞、haben / sein）、形容詞比較級，寫進筆記為「詞形變化 → …」；格位、可分離動詞、動詞第二位等文法重點；Goethe / CEFR 等級。`extractSpanishWords` 保留為 `extractWords` 的別名。
+  - **AI 快取依語言分開**：`dictionary_cache`、`sentence_analyses`、翻譯紀錄的雜湊，德語的 key 加 `de:` 前綴；西語沿用原本的 key，既有快取不失效。
+  - **前端**：導覽列語言切換鈕與品牌（🇩🇪 WortCard）、發音依語言選 `de-DE` 語音與線上 TTS、作答與翻譯頁的特殊字元鍵盤、手動新增視窗的 der/die/das 與中性選項和提示文字、AI 萃取預覽的冠詞與性別按鈕、中性名詞的綠色 ⚲ 標籤、設定頁的等級校準文字（DELE / Goethe）。
+  - **僅西語**：離線 Wiktionary 字典、字源圖鑑、單字庫健檢與卡片字典連結目前只有西語；德語模式下這些功能回傳空結果，查詞改用 AI。
 - **今日學習翻卡後顯示完整字源卡與人稱變位 (`StoryCard.jsx` `CardStory`, `AdaptiveStudySession.jsx`)**：翻卡 / 作答後不再只顯示圖片＋記憶聯想，改成和字典頁展開後一樣的完整字源卡（構詞、記憶聯想、英文同源、字源鏈、字源故事、用法、例句）。動詞另顯示「人稱變位」：可切換現在式、簡單過去式、過去未完成式、未來式、條件式、虛擬式現在式，每個人稱（yo … ellos / ellas / ustedes）可點播發音，下方列出副動詞與過去分詞，「完整變位表」開啟原有的變位表視窗。資料來自卡片連到的離線字典條目（`GET /api/cards/:id/dictionary`），沒連到字典的卡只顯示字源卡。移除不再使用的精簡版字源卡（`compact`）。
 - **常用字字源圖鑑（`server/data/lexicon/freq/`）**：把字源圖鑑從 A1 的 1,038 字往整本字典擴充，依西語使用頻率（wordfreq）從最常用的字做起，變化形併入原形、A1 已有的字跳過，每 100 個原形一批。
   - **文字由 Gemini 撰寫、直接寫入資料檔**：`gemini-write.js` 把每個字的 Wiktionary 事實（`fetch-facts.js`）送給 agy MCP 的 `ask_gemini`，產出中文的字根拆解、字源鏈、字源故事、英文同源字、記憶聯想、用法與例句。回答不經 Claude 審閱，改由 `geminiEntries.js` 機器檢查：schema 與長度（沿用 `validate.js`）、繁體中文（簡體字偵測）、字源鏈的每個祖先字都必須出現在事實裡、`sources` 只能是實際抓過的頁面、事實沒有詞源就改成只有記憶聯想（hook-only）；不合格的字帶著錯誤重問一次，仍不合格記進 `failed.json` 之後重跑。條目帶 `writer: "gemini"`，字源卡顯示「Gemini 撰寫、程式檢查」。
@@ -42,10 +57,12 @@
   - **驗證與測試**：`server/scripts/lexicon/validate.js`（欄位、長度、來源、例句含該字、SVG 大小與安全性）；`server/lexicon.test.js`。撰寫規範見 `server/scripts/lexicon/WRITING.md`。
 
 ### Fixed
+- **Windows 上 `npm test` 有 4 個檔案的清理步驟失敗（`EBUSY`）**：`cardAudit` / `cardDict` / `dictionary` / `dictionaryExtras` 測試在刪除暫存資料夾前沒有關閉離線字典的 SQLite 連線，Windows 不能刪除開啟中的檔案；改為先 `setDictionary(null)` 並關閉連線。
 - **`POST /api/cards` 更新既有單字時回傳錯誤的 id**：upsert 撞到已存在的單字時，SQLite 的 `lastInsertRowid` 仍是上一筆，回傳的 id（以及新的字典連結）會指到別張卡；改為依單字查回正確的 id。
 - **字典建置：`artista m or f` 這類詞條被讀成只有陽性**（比對順序讓 `m` 搶先於 `m or f`），現在正確標成陰陽同形（`mf`）。
 
 ### Documentation
+- **GitHub 倉庫改指向 `SeanYang613/WardCard`**：`專案開發狀況總覽.md`、`開發進度/README.md`、`GIT與GITHUB管理規範.md` 的倉庫網址改為自己的 fork（`origin`），原作者的 `CCHENYUCHI/WardCard` 標為 `upstream`；本機 `main` 改追蹤 `origin/main`。開 PR 時用 `gh pr create --repo SeanYang613/WardCard`。
 - **重寫 `README.md`**：改為給一般使用者看的應用程式介紹，反映目前功能（今日學習駕駛艙、五階段自適應練習、FSRS v4.5、例句點字查詢 / 離線字典、Mobile App 現況），移除過時的 SM-2 與 Gemini 1.5 說明，部署步驟精簡並收合。
 - **延伸功能規劃改為省額度優先版 (`開發進度/AI功能延伸規劃.md`)**：C0–C5 改為 D0–D6；S5 四選一、答錯提示、字典等改以本機邏輯為主，AI 只在必要時按需使用；圖片改為上傳、不做 AI 生圖；只做 Web。
 
@@ -102,6 +119,8 @@
 - **自由翻卡、盲測拼寫分頁 (Web)**：今日學習（五階自適應學習）已涵蓋翻卡與拼字練習，移除 `FlashcardReview.jsx`、`SpellingReview.jsx`、只有翻卡使用的 `utils/fsrsPreview.js`、相關導覽與 CSS，以及只給它們用的 `/api/cards/due` 抓取。後端 API、`review_mode` 欄位與 `mobile/` 不受影響。
 
 ### Changed
+- **資料庫（學習語言）**：`cards.lang`（預設 `es`，現有卡片全部是西語）、`review_logs.lang`、`users.lang_settings`（西語以外的主修單元，JSON）；`daily_progress` 主鍵改為 `(user_id, lang, day)`（自動重建、舊資料歸為 `es`）；卡片唯一索引由 `(user_id, word)` 改為 `(user_id, lang, word)`，同一拼法可以同時存在於兩個語言。`ON CONFLICT` 子句同步更新。
+- **Docker**：兩個 stage 都複製 `shared/`；Vite dev server 允許讀取上一層（`server.fs.allow: ['..']`）。
 - **`.dockerignore` 排除整個 `data/`**：資料庫與離線字典（約 90MB）由 volume 掛載，不再送進 Docker build context，避免每次重建都上傳。
 - **西語比對工具共用 (`client/src/utils/spanish.js`)**：`stripArticle`、`getAcceptableAnswers`、`maskSentence`、`findInflectedForms`、`pickDistractors` 等，供自適應學習與拼字測驗共用。
 - **Gemini 呼叫層重構 (`server/ai.js`)**：抽出共用 `callGemini()`，改用 Node 內建 `fetch`、`responseSchema` 強制 JSON 結構；API Key 改放在 `x-goog-api-key` header（不再出現在網址與 log 中）。

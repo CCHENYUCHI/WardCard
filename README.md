@@ -123,7 +123,8 @@ APP_COMMIT=$(git rev-parse --short HEAD) APP_BRANCH=$(git rev-parse --abbrev-ref
 | `GEMINI_API_KEY` | 伺服器端的 Gemini Key（使用者沒填自己的 Key 時使用） | 空 |
 | `GEMINI_MODEL` / `GEMINI_FALLBACK_MODEL` | 主要與備援模型 | `gemini-3.6-flash` / `gemini-3.5-flash-lite` |
 | `TZ` | 「今天」的換日時區（每天 00:00 重新計算任務） | `Asia/Taipei` |
-| `DICT_DB_PATH` | 離線字典檔位置 | `./data/dict/es-en.sqlite` |
+| `DICT_DB_PATH` | 西語離線字典檔位置 | `./data/dict/es-en.sqlite` |
+| `DICT_DE_DB_PATH` | 德語離線字典檔位置 | `./data/dict/de-en.sqlite` |
 
 ### 建置離線字典（選用）
 沒有字典也能用，只是查詞時少了「變化形 → 原形」、英文釋義、動詞變位、字源與例句，單字卡也不會連結字典。
@@ -133,6 +134,13 @@ npm run build:dict -- /tmp/es.jsonl      # 產生 data/dict/es-en.sqlite（約 1
 rm /tmp/es.jsonl
 npm run link:cards -- --relink           # 字典重建後，讓既有單字卡重新連結字典（伺服器啟動時也會補連結沒比對過的卡）
 ```
+德語字典（德語模式的查詞、變化形 → 原形、動詞變位表、名詞變格表、形容詞比較級）：
+```bash
+curl -L -o /tmp/de.jsonl https://kaikki.org/dictionary/German/kaikki.org-dictionary-German.jsonl   # 約 1.1GB
+npm run build:dict:de -- /tmp/de.jsonl   # 產生 data/dict/de-en.sqlite
+rm /tmp/de.jsonl
+```
+（不加 `--lang` 時，建置腳本會從檔案第一筆的 `lang_code` 判斷語言。）
 - 字典檔同時包含 A1 字源圖鑑（約 1,000 字的字源故事與插圖）。只更新圖鑑時用 `npm run build:lexicon`（幾秒，不必重新下載）。
 - 舊版（v1）字典檔仍可使用，只是少了上述額外資料；重建一次即升級。
 字典資料來自 Wiktionary，授權為 CC BY-SA。

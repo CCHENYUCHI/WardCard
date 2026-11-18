@@ -4,8 +4,10 @@ import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { API_URL } from '@/constants/api';
+import { apiFetch, getLangConfig, useLearnLang } from '@/constants/learn-lang';
 
 export default function IndexScreen() {
+  const lang = useLearnLang();
   const router = useRouter();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -24,7 +26,7 @@ export default function IndexScreen() {
 
     try {
       const endpoint = isLogin ? '/auth/login' : '/auth/register';
-      const response = await fetch(`${API_URL}${endpoint}`, {
+      const response = await apiFetch(`${API_URL}${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
@@ -57,7 +59,7 @@ export default function IndexScreen() {
           <Text style={styles.emoji}>🇪🇸</Text>
           <Text style={styles.title}>PalabraCard</Text>
           <Text style={styles.subtitle}>
-            {isLogin ? '登入你的專屬西語字卡庫' : '註冊帳號開始學習'}
+            {isLogin ? `登入你的專屬${getLangConfig(lang).short}字卡庫` : '註冊帳號開始學習'}
           </Text>
         </View>
 

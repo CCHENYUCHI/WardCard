@@ -49,6 +49,16 @@
 | **複習狀態過濾 (Due / Learned / New)** | Web | [x] | 快速檢索到期卡片、已學卡片或新單字 |
 | **CSV 批量匯入** | Web / Mobile | [x] | Web 端支援拖曳解析，Mobile 支援 DocumentPicker 上傳 |
 | **單字庫批次匯出 (CSV / JSON)** | Web | [x] | 已支援 JSON 完整結構備份與還原 |
+| **學習語言切換 🇪🇸 / 🇩🇪（第一階段）** | Web / Server | [x] | 導覽列切換學習語言；`cards.lang`，單字庫、今日任務、統計、AI 指令依語言分開；設定檔 `shared/languages/*.json` |
+| **德語第二階段：介面文字跟著學習語言** | Web | [x] | 學習畫面、AI 萃取、統計、設定、搜尋框等提示改讀 `shared/languages/*.json` 的 `ui` 文字 |
+| **德語第二階段：查詞 / 翻譯紀錄依語言分開** | Web / Server | [x] | `lookup_history.lang`、`translations.lang`；列表、清除與單字庫比對都只看目前學習語言，舊資料自動升級 |
+| **德語第二階段：卡片顯示詞形變化** | Web | [x] | 單字詳情與翻卡後顯示 複數 / 屬格 / 過去式 / 完成式 / 比較級 / 最高級（從筆記的「詞形變化 →」行解析） |
+| **德語第二階段：拼字測驗的德語規則** | Web | [x] | 名詞大寫才算對；ae/oe/ue/ss 可過關但提示正式寫法（評為吃力）；漏變音判錯並提示 |
+| **德語第二階段：CSV 範本加德語 / lang 欄** | Web / Server | [x] | 設定頁下載各語言空白範本與欄位說明；匯入時性別可由冠詞判斷 |
+| **德語第二階段：行動 App 語言切換** | Mobile | [x] | 首頁與設定頁 🇪🇸 / 🇩🇪；所有請求帶 `x-learn-lang`；德語拼字規則與特殊字元鍵盤 |
+| **德語第二階段：德語離線字典與變位表** | Web / Server | [x] | `de-en.sqlite`（`npm run build:dict:de`）；變化形 → 原形、動詞變位、名詞變格、形容詞比較級；Duden / DWDS 連結 |
+| **冠詞區分同形異義名詞** | Web / Server | [x] | 卡片以「單字 + 冠詞」為唯一鍵：el orden / la orden、der See / die See 分成兩張卡；沒寫冠詞的匯入仍對到原本的卡 |
+| **德語第二階段：介面文字與德語專屬功能** | Web / Server / Mobile | [x] | 全部完成（見上方各列）；德語字源圖鑑與單字庫健檢尚未規劃
 
 ---
 

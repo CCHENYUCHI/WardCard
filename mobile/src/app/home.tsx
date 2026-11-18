@@ -7,9 +7,13 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 // In a real app we'd use Context or SecureStore for the token,
 // but for this prototype we'll keep it simple and just fetch directly.
 import { API_URL } from '@/constants/api';
+import { apiFetch, getLangConfig, useLearnLang } from '@/constants/learn-lang';
+import LangSwitch from '@/components/lang-switch';
 
 export default function HomeScreen() {
   const router = useRouter();
+  const lang = useLearnLang();
+  const L = getLangConfig(lang);
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -22,7 +26,7 @@ export default function HomeScreen() {
           return;
         }
 
-        const response = await fetch(`${API_URL}/stats`, {
+        const response = await apiFetch(`${API_URL}/stats`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -42,18 +46,21 @@ export default function HomeScreen() {
     };
 
     fetchStats();
-  }, []);
+  }, [lang]); // reload when the learning language is switched
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <View>
-          <Text style={styles.greeting}>Hola, admin! 👋</Text>
-          <Text style={styles.subtitle}>準備好今天的西語練習了嗎？</Text>
+          <Text style={styles.greeting}>{lang === 'de' ? 'Hallo' : 'Hola'}, admin! 👋</Text>
+          <Text style={styles.subtitle}>準備好今天的{L.short}練習了嗎？</Text>
         </View>
+        <View style={styles.headerRight}>
+        <LangSwitch />
         <TouchableOpacity onPress={() => router.push('/settings')} style={styles.settingsBtn}>
           <Text style={styles.settingsIcon}>⚙️</Text>
         </TouchableOpacity>
+        </View>
       </View>
 
       <ScrollView style={styles.content}>
@@ -124,6 +131,11 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
+  headerRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
   container: {
     flex: 1,
     backgroundColor: '#0f172a',

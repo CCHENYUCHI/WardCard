@@ -2,9 +2,11 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Languages, Search, Trash2, ChevronDown, ChevronUp, Sparkles } from 'lucide-react';
 import { fetchAPI } from '../utils/api';
 import TranslationResult from './TranslationResult';
+import { getLangConfig } from '../utils/learnLang';
 
 const MAX_LENGTH = 300;
-const SPANISH_SPECIAL_KEYS = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ', '¿', '¡'];
+// Special-character keys of the learning language (es: á é ñ ¿ …, de: ä ö ü ß)
+const specialKeys = () => getLangConfig().specialChars;
 
 const readError = async (res, fallback) => {
   try {
@@ -122,7 +124,7 @@ export default function TranslatorView() {
           value={input}
           onChange={e => setInput(e.target.value.slice(0, MAX_LENGTH))}
           onKeyDown={handleKeyDown}
-          placeholder="輸入一個西語句子（也可以輸入中文），例如：Me gustaría reservar una mesa para dos."
+          placeholder={getLangConfig().ui.translatePlaceholder}
           rows={3}
           autoFocus
           autoCapitalize="sentences"
@@ -131,7 +133,7 @@ export default function TranslatorView() {
           disabled={translating}
         />
         <div className="spanish-keys translator-keys">
-          {SPANISH_SPECIAL_KEYS.map(char => (
+          {specialKeys().map(char => (
             <button key={char} type="button" className="spanish-key" onClick={() => handleInsertChar(char)}>
               {char}
             </button>

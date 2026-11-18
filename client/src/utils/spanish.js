@@ -1,13 +1,17 @@
 // Shared Spanish word helpers for the study and quiz views.
 // Regexes are Unicode-aware: JS `\b` / `\w` only know ASCII, so they break on á, é, ñ, ü.
 
+import { getLearnLang } from './learnLang';
+
 const ARTICLES = ['el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas'];
+const GERMAN_ARTICLES = ['der', 'die', 'das', 'den', 'dem', 'des', 'ein', 'eine', 'einen', 'einem', 'einer', 'eines'];
+const articlesFor = () => (getLearnLang() === 'de' ? GERMAN_ARTICLES : ARTICLES);
 
 export const stripArticle = (str) => {
   if (!str) return '';
   const trimmed = String(str).trim();
   const [first, ...rest] = trimmed.split(/\s+/);
-  if (rest.length > 0 && ARTICLES.includes(first.toLowerCase())) {
+  if (rest.length > 0 && articlesFor().includes(first.toLowerCase())) {
     return rest.join(' ');
   }
   return trimmed;

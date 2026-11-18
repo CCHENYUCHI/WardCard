@@ -35,6 +35,8 @@ export default defineConfig({
   },
   server: {
     port: 5173,
+    // shared/languages/*.json lives one level up (also read by the server)
+    fs: { allow: ['..'] },
     proxy: {
       '/api': {
         target: 'http://localhost:3000',

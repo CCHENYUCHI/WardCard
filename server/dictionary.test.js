@@ -41,6 +41,7 @@ const FIXTURE = [
 ];
 
 let tmpDir;
+let dictDb;
 
 test.before(async () => {
   tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'dict-test-'));
@@ -48,10 +49,13 @@ test.before(async () => {
   fs.writeFileSync(input, `${FIXTURE.map(e => JSON.stringify(e)).join('\n')}\nnot json\n`);
   const out = path.join(tmpDir, 'es-en.sqlite');
   await build(input, out);
-  setDictionary(new DatabaseSync(out, { readOnly: true }));
+  dictDb = new DatabaseSync(out, { readOnly: true });
+  setDictionary(dictDb);
 });
 
 test.after(() => {
+  setDictionary(null);
+  dictDb?.close(); // Windows cannot delete an open SQLite file
   fs.rmSync(tmpDir, { recursive: true, force: true });
 });
 
@@ -102,7 +106,7 @@ test('findMyCards matches through lemmas and translations', () => {
   const db = new DatabaseSync(':memory:');
   db.exec(`CREATE TABLE cards (id INTEGER PRIMARY KEY, user_id INTEGER, word TEXT, article TEXT, gender TEXT,
     part_of_speech TEXT, translation TEXT, english_translation TEXT, example_es TEXT, example_zh TEXT, notes TEXT,
-    lifecycle_status TEXT, mastery_stage INTEGER, is_starred INTEGER)`);
+    lifecycle_status TEXT, mastery_stage INTEGER, is_starred INTEGER, lang TEXT NOT NULL DEFAULT 'es')`);
   const add = db.prepare('INSERT INTO cards (user_id, word, translation) VALUES (?, ?, ?)');
   add.run(1, 'hablar', '說話');
   add.run(1, 'bonito/a', '漂亮的');

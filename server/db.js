@@ -2,8 +2,9 @@ require('./time'); // pin process TZ before SQLite evaluates 'localtime'
 const { DatabaseSync } = require('node:sqlite');
 const path = require('path');
 const fs = require('fs');
-const { TRANSLATIONS_SCHEMA } = require('./translations');
-const { LOOKUP_HISTORY_SCHEMA } = require('./lookupHistory');
+const { TRANSLATIONS_SCHEMA, migrateTranslations } = require('./translations');
+const { LOOKUP_HISTORY_SCHEMA, migrateLookupHistory } = require('./lookupHistory');
+const { LANG_CODES, DEFAULT_LANG } = require('./languages');
 
 const dataDir = path.join(__dirname, '../data');
 if (!fs.existsSync(dataDir)) {
@@ -94,6 +95,11 @@ function runMigrations() {
   if (!cardColumns.includes('dict_pos')) {
     db.exec("ALTER TABLE cards ADD COLUMN dict_pos TEXT DEFAULT NULL");
   }
+  // Learning language of the card (server/languages): every existing card is Spanish
+  if (!cardColumns.includes('lang')) {
+    db.exec("ALTER TABLE cards ADD COLUMN lang TEXT NOT NULL DEFAULT 'es'");
+  }
+  db.exec('CREATE INDEX IF NOT EXISTS idx_cards_user_lang ON cards(user_id, lang, lifecycle_status)');
 
   // Migrate users table
   const userColumns = db.prepare("PRAGMA table_info(users)").all().map(c => c.name);
@@ -106,6 +112,11 @@ function runMigrations() {
   if (!userColumns.includes('active_curriculum')) {
     db.exec("ALTER TABLE users ADD COLUMN active_curriculum TEXT DEFAULT ''");
   }
+  // Per-language settings for languages other than Spanish, JSON: { "de": { "active_curriculum": "..." } }
+  // (Spanish keeps using the active_curriculum column)
+  if (!userColumns.includes('lang_settings')) {
+    db.exec("ALTER TABLE users ADD COLUMN lang_settings TEXT DEFAULT '{}'");
+  }
 
   // Daily progress: classify each review as today's task or extra practice
   const logColumns = db.prepare("PRAGMA table_info(review_logs)").all().map(c => c.name);
@@ -113,20 +124,47 @@ function runMigrations() {
     // 'due' (scheduled review) | 'new' (first time learned) | 'extra' (not due, extra practice); NULL = legacy, treated as 'due'
     db.exec("ALTER TABLE review_logs ADD COLUMN task_type TEXT DEFAULT NULL");
   }
+  // Learning language of the reviewed card, so today's task / streak / history are per language
+  if (!logColumns.includes('lang')) {
+    db.exec("ALTER TABLE review_logs ADD COLUMN lang TEXT NOT NULL DEFAULT 'es'");
+  }
   db.exec(`
     CREATE INDEX IF NOT EXISTS idx_review_logs_user_time ON review_logs(user_id, reviewed_at);
+    CREATE INDEX IF NOT EXISTS idx_review_logs_user_lang_time ON review_logs(user_id, lang, reviewed_at);
+  `);
 
-    -- Snapshot of each day's goal so history can show whether it was met
+  // Snapshot of each day's goal so history can show whether it was met (one row per language)
+  const DAILY_PROGRESS_SQL = `
     CREATE TABLE IF NOT EXISTS daily_progress (
       user_id INTEGER NOT NULL,
+      lang TEXT NOT NULL DEFAULT 'es',
       day TEXT NOT NULL,              -- 'YYYY-MM-DD' local date
       goal INTEGER DEFAULT 0,         -- today's task size (done + remaining)
       done INTEGER DEFAULT 0,         -- task cards completed (due + new)
       extra INTEGER DEFAULT 0,        -- extra practice reviews
       updated_at TEXT DEFAULT (datetime('now', 'localtime')),
-      PRIMARY KEY (user_id, day)
-    );
-  `);
+      PRIMARY KEY (user_id, lang, day)
+    );`;
+  const progressColumns = db.prepare('PRAGMA table_info(daily_progress)').all().map(c => c.name);
+  if (progressColumns.length > 0 && !progressColumns.includes('lang')) {
+    // The primary key gains `lang`: rebuild the table, existing snapshots are Spanish
+    db.exec('BEGIN');
+    try {
+      db.exec('ALTER TABLE daily_progress RENAME TO daily_progress_old');
+      db.exec(DAILY_PROGRESS_SQL);
+      db.exec(`
+        INSERT INTO daily_progress (user_id, lang, day, goal, done, extra, updated_at)
+        SELECT user_id, 'es', day, goal, done, extra, updated_at FROM daily_progress_old;
+        DROP TABLE daily_progress_old;
+      `);
+      db.exec('COMMIT');
+    } catch (err) {
+      db.exec('ROLLBACK');
+      throw err;
+    }
+  } else {
+    db.exec(DAILY_PROGRESS_SQL);
+  }
 
   // One-off repair: due dates used to be written in UTC while everything else is local time,
   // making cards come due hours early. Recompute from last_reviewed + interval when the
@@ -205,10 +243,12 @@ function runMigrations() {
     );
   `);
 
-  // Sentence translator history (per user)
+  // Sentence translator history (per user and learning language)
+  migrateTranslations(db, LANG_CODES.filter(code => code !== DEFAULT_LANG));
   db.exec(TRANSLATIONS_SCHEMA);
 
-  // Word lookup history (per user)
+  // Word lookup history (per user and learning language)
+  migrateLookupHistory(db);
   db.exec(LOOKUP_HISTORY_SCHEMA);
 }
 
@@ -318,9 +358,14 @@ try {
   // Column already exists
 }
 
-// Create unique index for user_id + word to support UPSERT per user
+// One card per user + learning language + word + article: the same spelling may exist in two languages, and
+// nouns whose meaning changes with the article are two cards (el orden / la orden, der See / die See).
+// Which existing card an import or a save hits is decided in server/cardKey.js.
 db.exec('DROP INDEX IF EXISTS idx_cards_word;');
-db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_cards_user_word ON cards(user_id, word);');
+db.exec('DROP INDEX IF EXISTS idx_cards_user_word;');
+db.exec("UPDATE cards SET article = LOWER(TRIM(COALESCE(article, ''))) WHERE article IS NULL OR article != LOWER(TRIM(article));");
+db.exec('DROP INDEX IF EXISTS idx_cards_user_lang_word;');
+db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_cards_user_lang_word_article ON cards(user_id, lang, word, article);');
 
 // Create a default admin user if none exists
 const userCountRow = db.prepare('SELECT count(*) as count FROM users').get();
